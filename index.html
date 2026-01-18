@@ -140,175 +140,210 @@
     <div id="tooltip"></div>
   </div>
 
-  <script src="data/data.js"></script>
   <script>
-    const nodes = window.CHURCHTREE_DATA?.nodes || [];
-    const edges = window.CHURCHTREE_DATA?.edges || [];
-
-    const nodeMap = new Map(nodes.map(n => [n.id, n]));
-    const incoming = new Map(nodes.map(n => [n.id, 0]));
-    const outgoing = new Map(nodes.map(n => [n.id, []]));
-
-    edges.forEach(e => {
-      incoming.set(e.to_id, (incoming.get(e.to_id) || 0) + 1);
-      if (!outgoing.has(e.from_id)) outgoing.set(e.from_id, []);
-      outgoing.get(e.from_id).push(e.to_id);
-    });
-
-    const roots = nodes.filter(n => (incoming.get(n.id) || 0) === 0).map(n => n.id);
-    const depth = new Map();
-    roots.forEach(r => depth.set(r, 0));
-
-    for (let i = 0; i < nodes.length; i += 1) {
-      let changed = false;
-      edges.forEach(e => {
-        if (depth.has(e.from_id)) {
-          const d = depth.get(e.from_id) + 1;
-          if (!depth.has(e.to_id) || d < depth.get(e.to_id)) {
-            depth.set(e.to_id, d);
-            changed = true;
-          }
-        }
-      });
-      if (!changed) break;
+    function showError(message) {
+      const nodesGroup = document.getElementById("nodes");
+      const msg = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      msg.setAttribute("x", "40");
+      msg.setAttribute("y", "60");
+      msg.setAttribute("fill", "#9a5a45");
+      msg.setAttribute("font-size", "14");
+      msg.textContent = message;
+      nodesGroup.appendChild(msg);
     }
 
-    nodes.forEach(n => {
-      if (!depth.has(n.id)) depth.set(n.id, 0);
-    });
+    function renderGraph(data) {
+      const nodes = Array.isArray(data.nodes) ? data.nodes : [];
+      const edges = Array.isArray(data.edges) ? data.edges : [];
 
-    const columns = new Map();
-    nodes.forEach(n => {
-      const d = depth.get(n.id);
-      if (!columns.has(d)) columns.set(d, []);
-      columns.get(d).push(n);
-    });
-
-    columns.forEach(list => list.sort((a, b) => a.name.localeCompare(b.name)));
-
-    const columnWidth = 240;
-    const rowHeight = 70;
-    const margin = { x: 80, y: 60 };
-    const maxDepth = Math.max(...columns.keys());
-    const maxRows = Math.max(...Array.from(columns.values()).map(list => list.length));
-    const width = margin.x * 2 + (maxDepth + 1) * columnWidth;
-    const height = margin.y * 2 + Math.max(5, maxRows) * rowHeight;
-
-    const svg = document.getElementById("graph");
-    svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
-
-    const positions = new Map();
-    columns.forEach((list, d) => {
-      list.forEach((n, i) => {
-        const x = margin.x + d * columnWidth;
-        const y = margin.y + i * rowHeight;
-        positions.set(n.id, { x, y });
-      });
-    });
-
-    const edgesGroup = document.getElementById("edges");
-    const nodesGroup = document.getElementById("nodes");
-    const tooltip = document.getElementById("tooltip");
-
-    edges.forEach(e => {
-      const from = positions.get(e.from_id);
-      const to = positions.get(e.to_id);
-      if (!from || !to) return;
-
-      const x1 = from.x + 160;
-      const y1 = from.y + 18;
-      const x2 = to.x - 12;
-      const y2 = to.y + 18;
-      const midX = (x1 + x2) / 2;
-      const midY = (y1 + y2) / 2;
-
-      const line = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      line.setAttribute("d", `M ${x1} ${y1} C ${midX} ${y1}, ${midX} ${y2}, ${x2} ${y2}`);
-      line.setAttribute("class", "edge");
-      line.dataset.edgeId = e.id;
-
-      line.addEventListener("mousemove", (evt) => {
-        const fromNode = nodeMap.get(e.from_id);
-        const toNode = nodeMap.get(e.to_id);
-        const reasons = (e.reasons || []).join(", ");
-        tooltip.innerHTML = `
-          <div class="title">${e.name || `${fromNode?.short_label || fromNode?.name} -> ${toNode?.short_label || toNode?.name}`}</div>
-          <div><strong>${e.type.toUpperCase()}</strong> (${e.year || "unknown"})</div>
-          ${e.description ? `<div>${e.description}</div>` : ""}
-          ${reasons ? `<div class="meta">Reasons: ${reasons}</div>` : ""}
-        `;
-        tooltip.style.display = "block";
-        const wrap = document.getElementById("graph-wrap");
-        const rect = wrap.getBoundingClientRect();
-        tooltip.style.left = `${evt.clientX - rect.left + 12}px`;
-        tooltip.style.top = `${evt.clientY - rect.top + 12}px`;
-      });
-
-      line.addEventListener("mouseleave", () => {
-        tooltip.style.display = "none";
-      });
-
-      edgesGroup.appendChild(line);
-
-      if (e.name) {
-        const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
-        label.setAttribute("x", midX + 6);
-        label.setAttribute("y", midY - 6);
-        label.setAttribute("fill", "#5a5a5a");
-        label.setAttribute("font-size", "11");
-        label.textContent = e.name;
-        edgesGroup.appendChild(label);
+      if (!nodes.length) {
+        showError("No data loaded. Check that data/data.js exists and is reachable.");
+        return;
       }
-    });
 
-    nodes.forEach(n => {
-      const pos = positions.get(n.id);
-      const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
-      group.setAttribute("class", "node");
-      group.setAttribute("transform", `translate(${pos.x}, ${pos.y})`);
-      group.addEventListener("mousemove", (evt) => {
-        const years = n.start_year ? `${n.start_year}${n.end_year ? `–${n.end_year}` : ""}` : "unknown";
-        const distinctives = n.distinctives && n.distinctives.length
-          ? n.distinctives.join(", ")
-          : "Not yet captured";
-        tooltip.innerHTML = `
-          <div class="title">${n.name}</div>
-          <div><strong>${n.short_label || n.name}</strong> (${years})</div>
-          ${n.region ? `<div class="meta">Region: ${n.region}</div>` : ""}
-          ${n.notes ? `<div class="meta">Notes: ${n.notes}</div>` : ""}
-          <div class="meta">Theological distinctives: ${distinctives}</div>
-        `;
-        tooltip.style.display = "block";
-        const wrap = document.getElementById("graph-wrap");
-        const rect = wrap.getBoundingClientRect();
-        tooltip.style.left = `${evt.clientX - rect.left + 12}px`;
-        tooltip.style.top = `${evt.clientY - rect.top + 12}px`;
+      const nodeMap = new Map(nodes.map(n => [n.id, n]));
+      const incoming = new Map(nodes.map(n => [n.id, 0]));
+      const outgoing = new Map(nodes.map(n => [n.id, []]));
+
+      edges.forEach(e => {
+        incoming.set(e.to_id, (incoming.get(e.to_id) || 0) + 1);
+        if (!outgoing.has(e.from_id)) outgoing.set(e.from_id, []);
+        outgoing.get(e.from_id).push(e.to_id);
       });
 
-      group.addEventListener("mouseleave", () => {
-        tooltip.style.display = "none";
+      const roots = nodes.filter(n => (incoming.get(n.id) || 0) === 0).map(n => n.id);
+      const depth = new Map();
+      roots.forEach(r => depth.set(r, 0));
+
+      for (let i = 0; i < nodes.length; i += 1) {
+        let changed = false;
+        edges.forEach(e => {
+          if (depth.has(e.from_id)) {
+            const d = depth.get(e.from_id) + 1;
+            if (!depth.has(e.to_id) || d < depth.get(e.to_id)) {
+              depth.set(e.to_id, d);
+              changed = true;
+            }
+          }
+        });
+        if (!changed) break;
+      }
+
+      nodes.forEach(n => {
+        if (!depth.has(n.id)) depth.set(n.id, 0);
       });
 
-      const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-      rect.setAttribute("width", "160");
-      rect.setAttribute("height", "36");
-      group.appendChild(rect);
+      const columns = new Map();
+      nodes.forEach(n => {
+        const d = depth.get(n.id);
+        if (!columns.has(d)) columns.set(d, []);
+        columns.get(d).push(n);
+      });
 
-      const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
-      label.setAttribute("x", "8");
-      label.setAttribute("y", "16");
-      label.textContent = n.short_label ? `${n.short_label} (${n.start_year || "?"})` : n.name;
-      group.appendChild(label);
+      columns.forEach(list => list.sort((a, b) => a.name.localeCompare(b.name)));
 
-      const sub = document.createElementNS("http://www.w3.org/2000/svg", "text");
-      sub.setAttribute("x", "8");
-      sub.setAttribute("y", "30");
-      sub.setAttribute("fill", "#666");
-      sub.textContent = n.name;
-      group.appendChild(sub);
+      const columnWidth = 240;
+      const rowHeight = 70;
+      const margin = { x: 80, y: 60 };
+      const maxDepth = columns.size ? Math.max.apply(null, Array.from(columns.keys())) : 0;
+      const maxRows = columns.size ? Math.max.apply(null, Array.from(columns.values()).map(list => list.length)) : 1;
+      const width = margin.x * 2 + (maxDepth + 1) * columnWidth;
+      const height = margin.y * 2 + Math.max(5, maxRows) * rowHeight;
 
-      nodesGroup.appendChild(group);
-    });
+      const svg = document.getElementById("graph");
+      svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+
+      const positions = new Map();
+      columns.forEach((list, d) => {
+        list.forEach((n, i) => {
+          const x = margin.x + d * columnWidth;
+          const y = margin.y + i * rowHeight;
+          positions.set(n.id, { x, y });
+        });
+      });
+
+      const edgesGroup = document.getElementById("edges");
+      const nodesGroup = document.getElementById("nodes");
+      const tooltip = document.getElementById("tooltip");
+
+      edges.forEach(e => {
+        const from = positions.get(e.from_id);
+        const to = positions.get(e.to_id);
+        if (!from || !to) return;
+
+        const x1 = from.x + 160;
+        const y1 = from.y + 18;
+        const x2 = to.x - 12;
+        const y2 = to.y + 18;
+        const midX = (x1 + x2) / 2;
+        const midY = (y1 + y2) / 2;
+
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        line.setAttribute("d", `M ${x1} ${y1} C ${midX} ${y1}, ${midX} ${y2}, ${x2} ${y2}`);
+        line.setAttribute("class", "edge");
+        line.dataset.edgeId = e.id;
+
+        line.addEventListener("mousemove", (evt) => {
+          const fromNode = nodeMap.get(e.from_id);
+          const toNode = nodeMap.get(e.to_id);
+          const fromLabel = fromNode && fromNode.short_label ? fromNode.short_label : (fromNode ? fromNode.name : "");
+          const toLabel = toNode && toNode.short_label ? toNode.short_label : (toNode ? toNode.name : "");
+          const reasons = (e.reasons || []).join(", ");
+          const title = e.name ? e.name : `${fromLabel} -> ${toLabel}`;
+          tooltip.innerHTML = `
+            <div class="title">${title}</div>
+            <div><strong>${e.type.toUpperCase()}</strong> (${e.year || "unknown"})</div>
+            ${e.description ? `<div>${e.description}</div>` : ""}
+            ${reasons ? `<div class="meta">Reasons: ${reasons}</div>` : ""}
+          `;
+          tooltip.style.display = "block";
+          const wrap = document.getElementById("graph-wrap");
+          const rect = wrap.getBoundingClientRect();
+          tooltip.style.left = `${evt.clientX - rect.left + 12}px`;
+          tooltip.style.top = `${evt.clientY - rect.top + 12}px`;
+        });
+
+        line.addEventListener("mouseleave", () => {
+          tooltip.style.display = "none";
+        });
+
+        edgesGroup.appendChild(line);
+
+        if (e.name) {
+          const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+          label.setAttribute("x", midX + 6);
+          label.setAttribute("y", midY - 6);
+          label.setAttribute("fill", "#5a5a5a");
+          label.setAttribute("font-size", "11");
+          label.textContent = e.name;
+          edgesGroup.appendChild(label);
+        }
+      });
+
+      nodes.forEach(n => {
+        const pos = positions.get(n.id);
+        const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        group.setAttribute("class", "node");
+        group.setAttribute("transform", `translate(${pos.x}, ${pos.y})`);
+        group.addEventListener("mousemove", (evt) => {
+          const years = n.start_year ? `${n.start_year}${n.end_year ? `–${n.end_year}` : ""}` : "unknown";
+          const distinctives = n.distinctives && n.distinctives.length
+            ? n.distinctives.join(", ")
+            : "Not yet captured";
+          tooltip.innerHTML = `
+            <div class="title">${n.name}</div>
+            <div><strong>${n.short_label || n.name}</strong> (${years})</div>
+            ${n.region ? `<div class="meta">Region: ${n.region}</div>` : ""}
+            ${n.notes ? `<div class="meta">Notes: ${n.notes}</div>` : ""}
+            <div class="meta">Theological distinctives: ${distinctives}</div>
+          `;
+          tooltip.style.display = "block";
+          const wrap = document.getElementById("graph-wrap");
+          const rect = wrap.getBoundingClientRect();
+          tooltip.style.left = `${evt.clientX - rect.left + 12}px`;
+          tooltip.style.top = `${evt.clientY - rect.top + 12}px`;
+        });
+
+        group.addEventListener("mouseleave", () => {
+          tooltip.style.display = "none";
+        });
+
+        const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        rect.setAttribute("width", "160");
+        rect.setAttribute("height", "36");
+        group.appendChild(rect);
+
+        const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        label.setAttribute("x", "8");
+        label.setAttribute("y", "16");
+        label.textContent = n.short_label ? `${n.short_label} (${n.start_year || "?"})` : n.name;
+        group.appendChild(label);
+
+        const sub = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        sub.setAttribute("x", "8");
+        sub.setAttribute("y", "30");
+        sub.setAttribute("fill", "#666");
+        sub.textContent = n.name;
+        group.appendChild(sub);
+
+        nodesGroup.appendChild(group);
+      });
+    }
+
+    const dataScript = document.createElement("script");
+    dataScript.src = "data/data.js";
+    dataScript.onload = () => {
+      if (!window.CHURCHTREE_DATA) {
+        showError("Loaded data/data.js, but window.CHURCHTREE_DATA is missing.");
+        return;
+      }
+      renderGraph(window.CHURCHTREE_DATA);
+    };
+    dataScript.onerror = () => {
+      const expected = new URL("data/data.js", window.location.href).href;
+      showError(`Failed to load data/data.js. Expected at ${expected}`);
+    };
+    document.head.appendChild(dataScript);
   </script>
 </body>
 </html>

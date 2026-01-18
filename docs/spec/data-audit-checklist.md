@@ -19,6 +19,8 @@ Use this checklist to verify data accuracy, consistency, and citation quality.
 - Split/merge/origin/continuation type is appropriate.
 - Year matches cited sources.
 - Split reasons are factual and concise.
+- Description clearly states the role of each side (e.g., which group is
+  conservative or liberal), when applicable.
 
 ## Event accuracy
 - Event name is specific and time-bound.

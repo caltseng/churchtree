@@ -64,5 +64,59 @@
     "source_id": "src-wiki-upcusa",
     "locator": "Lead: union driven by ecumenical activity and reunion of long-separated branches",
     "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-1789-founded",
+    "source_id": "src-wiki-pcusa-1789",
+    "locator": "Infobox: founded_date",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcus-founded",
+    "source_id": "src-wiki-pcus",
+    "locator": "Infobox: founded_date, separated_from",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-opc-founded",
+    "source_id": "src-wiki-opc",
+    "locator": "Infobox: founded_date, separated_from",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pca-founded",
+    "source_id": "src-wiki-pca",
+    "locator": "Infobox: founded_date, separated_from",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcusa-founded",
+    "source_id": "src-wiki-upcusa",
+    "locator": "Infobox: founded_date, merger",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-founded",
+    "source_id": "src-wiki-pcusa",
+    "locator": "Infobox: founded_date, merger",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-merge-1983",
+    "source_id": "src-wiki-pcusa",
+    "locator": "Lead: established with 1983 merger of PCUS and UPCUSA",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcna-founded",
+    "source_id": "src-wiki-upcna",
+    "locator": "Infobox: founded_date",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcna-1958-merge",
+    "source_id": "src-wiki-upcna",
+    "locator": "Lead: merged with PCUSA to form UPCUSA (1958)",
+    "accessed": "2026-01-18"
   }
 ]

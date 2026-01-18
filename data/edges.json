@@ -7,7 +7,8 @@
     "type": "split",
     "year": 1861,
     "reasons": ["slavery", "politics", "theology", "Civil War tensions"],
-    "citations": ["cite-pcus-1861", "cite-pcus-1861-reasons"]
+    "description": "Southern Presbyterians separated from the PCUSA during Civil War-era disputes over slavery, politics, and theology.",
+    "citations": ["cite-pcus-1861", "cite-pcus-1861-reasons", "cite-pcus-founded"]
   },
   {
     "id": "pcusa-1789-to-opc-1936",
@@ -17,7 +18,8 @@
     "type": "split",
     "year": 1936,
     "reasons": ["liberal/modernist theology", "fundamentalist-modernist controversy"],
-    "citations": ["cite-opc-1936", "cite-opc-1936-reasons"]
+    "description": "Conservative members separated in response to liberal/modernist theology and the Fundamentalist-Modernist controversy.",
+    "citations": ["cite-opc-1936", "cite-opc-1936-reasons", "cite-opc-founded"]
   },
   {
     "id": "pcus-to-pca-1973",
@@ -28,7 +30,7 @@
     "year": 1973,
     "reasons": ["theological liberalism", "authority of Scripture", "deity of Jesus Christ"],
     "description": "Separation driven by concerns over perceived theological liberalism, including disputes about the authority and inerrancy of Scripture and the deity of Christ.",
-    "citations": ["cite-pca-1973", "cite-pca-1973-reasons", "cite-pcus-1973-reasons-detail"]
+    "citations": ["cite-pca-1973", "cite-pca-1973-reasons", "cite-pcus-1973-reasons-detail", "cite-pca-founded"]
   },
   {
     "id": "pcusa-1789-to-upcusa-1958",
@@ -38,7 +40,8 @@
     "type": "merge",
     "year": 1958,
     "reasons": ["ecumenical activity", "reunion of long-separated branches"],
-    "citations": ["cite-upcusa-1958", "cite-upcusa-1958-reasons"]
+    "description": "PCUSA joined UPCNA in an ecumenical reunion to form the UPCUSA.",
+    "citations": ["cite-upcusa-1958", "cite-upcusa-1958-reasons", "cite-upcusa-founded"]
   },
   {
     "id": "upcna-to-upcusa-1958",
@@ -48,7 +51,8 @@
     "type": "merge",
     "year": 1958,
     "reasons": ["ecumenical activity", "reunion of long-separated branches"],
-    "citations": ["cite-upcusa-1958", "cite-upcusa-1958-reasons"]
+    "description": "UPCNA joined PCUSA in an ecumenical reunion to form the UPCUSA.",
+    "citations": ["cite-upcusa-1958", "cite-upcusa-1958-reasons", "cite-upcusa-founded", "cite-upcna-1958-merge"]
   },
   {
     "id": "pcus-to-pcusa-1983",
@@ -58,7 +62,8 @@
     "type": "merge",
     "year": 1983,
     "reasons": ["reunion of northern and southern Presbyterian branches"],
-    "citations": ["cite-pcusa-1983", "cite-pcusa-1983-reasons"]
+    "description": "Southern Presbyterian churches (PCUS) reunited with the northern branch (UPCUSA) to form PC(USA).",
+    "citations": ["cite-pcusa-1983", "cite-pcusa-1983-reasons", "cite-pcusa-merge-1983", "cite-pcusa-founded"]
   },
   {
     "id": "upcusa-to-pcusa-1983",
@@ -68,6 +73,7 @@
     "type": "merge",
     "year": 1983,
     "reasons": ["reunion of northern and southern Presbyterian branches"],
-    "citations": ["cite-pcusa-1983", "cite-pcusa-1983-reasons"]
+    "description": "Northern Presbyterian churches (UPCUSA) reunited with the southern branch (PCUS) to form PC(USA).",
+    "citations": ["cite-pcusa-1983", "cite-pcusa-1983-reasons", "cite-pcusa-merge-1983", "cite-pcusa-founded"]
   }
 ]
