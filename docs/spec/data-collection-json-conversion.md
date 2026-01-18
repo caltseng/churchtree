@@ -77,5 +77,6 @@ Rules:
 - Every edge must reference existing nodes.
 - Every citation must reference an existing source.
 - Include split/merge reasons in edges and events when known.
+- Map theological distinctives into the node `distinctives` array when sourced.
 - Do not invent sources; include URLs or bibliographic details when possible.
 ```

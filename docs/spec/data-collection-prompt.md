@@ -27,7 +27,7 @@ Output in this format:
 Date collected: YYYY-MM-DD
 
 Facts:
-- Node: [Name] | Start year | End year (if any) | Region | Notes
+- Node: [Name] | Start year | End year (if any) | Region | Notes | Theological distinctives
 - Edge: [Parent] -> [Child] | Type (split/merge/origin/continuation) | Year
   | Reasons for split/merge (short list) | Description (1-2 sentences)
 - Event: [Name] | Year | Description | Related edge(s)

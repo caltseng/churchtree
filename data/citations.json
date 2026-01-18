@@ -118,5 +118,59 @@
     "source_id": "src-wiki-upcna",
     "locator": "Lead: merged with PCUSA to form UPCUSA (1958)",
     "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-theology",
+    "source_id": "src-wiki-pcusa",
+    "locator": "Infobox: theology (Reformed, Barthianist)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-mainline",
+    "source_id": "src-wiki-pcusa",
+    "locator": "Lead: mainline Protestant denomination",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pca-theology",
+    "source_id": "src-wiki-pca",
+    "locator": "Infobox: theology (Reformed; Evangelical)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-opc-theology",
+    "source_id": "src-wiki-opc",
+    "locator": "Infobox: theology (Confessional Reformed)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcus-distinctives",
+    "source_id": "src-wiki-pcus",
+    "locator": "History: Old School Presbyterianism and Westminster Confession emphasis",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-1789-orientation",
+    "source_id": "src-wiki-pcusa-1789",
+    "locator": "Infobox: orientation (Mainline Protestant; Reformed tradition)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcusa-theology",
+    "source_id": "src-wiki-upcusa",
+    "locator": "Infobox: theology (Reformed/Calvinism)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcna-orientation",
+    "source_id": "src-wiki-upcna",
+    "locator": "Infobox: orientation (Calvinist)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcna-distinctives",
+    "source_id": "src-wiki-upcna",
+    "locator": "History: Covenanter/Seceder distinctives including public covenanting and exclusive psalmody",
+    "accessed": "2026-01-18"
   }
 ]

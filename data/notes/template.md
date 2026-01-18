@@ -3,7 +3,7 @@
 Date collected: YYYY-MM-DD
 
 ## Facts
-- Node:
+- Node: [Name] | Start year | End year (if any) | Region | Notes | Theological distinctives
 - Edge:
 - Event:
 

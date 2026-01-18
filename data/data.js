@@ -8,7 +8,7 @@ window.CHURCHTREE_DATA = {
     "start_year": 1983,
     "short_label": "PC(USA)",
     "region": "US",
-    "distinctives": []
+    "distinctives": ["Reformed", "Barthianist", "Mainline Protestant"]
   },
   {
     "id": "pca",
@@ -17,7 +17,7 @@ window.CHURCHTREE_DATA = {
     "start_year": 1973,
     "short_label": "PCA",
     "region": "US",
-    "distinctives": []
+    "distinctives": ["Reformed", "Evangelical"]
   },
   {
     "id": "opc",
@@ -26,7 +26,7 @@ window.CHURCHTREE_DATA = {
     "start_year": 1936,
     "short_label": "OPC",
     "region": "US",
-    "distinctives": []
+    "distinctives": ["Confessional", "Reformed (Calvinist)"]
   },
   {
     "id": "pcus",
@@ -37,7 +37,7 @@ window.CHURCHTREE_DATA = {
     "short_label": "PCUS",
     "region": "US",
     "notes": "Merged into PC(USA) in 1983.",
-    "distinctives": []
+    "distinctives": ["Old School Presbyterian emphasis", "Westminster Confession subscription"]
   },
   {
     "id": "pcusa-1789",
@@ -48,7 +48,7 @@ window.CHURCHTREE_DATA = {
     "short_label": "PCUSA",
     "region": "US",
     "notes": "Merged into UPCUSA in 1958.",
-    "distinctives": []
+    "distinctives": ["Mainline Protestant", "Reformed tradition"]
   },
   {
     "id": "upcusa",
@@ -59,7 +59,7 @@ window.CHURCHTREE_DATA = {
     "short_label": "UPCUSA",
     "region": "US",
     "notes": "Merged into PC(USA) in 1983.",
-    "distinctives": []
+    "distinctives": ["Reformed (Calvinist)"]
   },
   {
     "id": "upcna",
@@ -70,7 +70,7 @@ window.CHURCHTREE_DATA = {
     "short_label": "UPCNA",
     "region": "US",
     "notes": "Merger partner in 1958 formation of UPCUSA.",
-    "distinctives": []
+    "distinctives": ["Calvinist", "Covenanter/Seceder distinctives", "Exclusive psalmody"]
   }
 ]
 ,

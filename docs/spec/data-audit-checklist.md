@@ -13,6 +13,7 @@ Use this checklist to verify data accuracy, consistency, and citation quality.
 - Start/end years are correct or explicitly marked as unknown.
 - Short labels are unambiguous.
 - Notes clearly flag any uncertainty.
+- Theological distinctives are cited when present.
 
 ## Edge accuracy
 - Parent/child direction is correct.
