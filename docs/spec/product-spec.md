@@ -46,6 +46,7 @@ lineage, including years, parent movements, and key points of division.
 - Start with a minimal tree of major branches.
 - Add American Protestant streams first.
 - Expand with more nodes once the UX is stable.
+ - Use natural-language notes with citations before converting to JSON.
 
 ## UX and interaction
 - Zoom and pan on the tree.

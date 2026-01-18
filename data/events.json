@@ -3,40 +3,40 @@
     "id": "event-pcus-split-1861",
     "name": "PCUS formed from PCUSA",
     "year": 1861,
-    "description": "Separation resulting in the Presbyterian Church in the United States.",
+    "description": "Separation amid disputes over slavery, politics, and theology during Civil War tensions.",
     "related_edge_ids": ["pcusa-1789-to-pcus-1861"],
-    "citations": ["cite-pcus-1861"]
+    "citations": ["cite-pcus-1861", "cite-pcus-1861-reasons"]
   },
   {
     "id": "event-opc-split-1936",
     "name": "OPC separated from PCUSA",
     "year": 1936,
-    "description": "Orthodox Presbyterian Church formed after separation.",
+    "description": "Conservative members separated over liberal/modernist theology in the Fundamentalist-Modernist controversy.",
     "related_edge_ids": ["pcusa-1789-to-opc-1936"],
-    "citations": ["cite-opc-1936"]
+    "citations": ["cite-opc-1936", "cite-opc-1936-reasons"]
   },
   {
     "id": "event-pca-split-1973",
     "name": "PCA separated from PCUS",
     "year": 1973,
-    "description": "Presbyterian Church in America formed after separation.",
+    "description": "Congregations separated amid concerns over perceived theological liberalism, including disputes about the authority and inerrancy of Scripture and the deity of Christ.",
     "related_edge_ids": ["pcus-to-pca-1973"],
-    "citations": ["cite-pca-1973"]
+    "citations": ["cite-pca-1973", "cite-pca-1973-reasons", "cite-pcus-1973-reasons-detail"]
   },
   {
     "id": "event-upcusa-merge-1958",
     "name": "UPCUSA formed by merger",
     "year": 1958,
-    "description": "Merger of PCUSA and UPCNA formed UPCUSA.",
+    "description": "Union of PCUSA and UPCNA driven by ecumenical efforts and reunion of long-separated branches.",
     "related_edge_ids": ["pcusa-1789-to-upcusa-1958", "upcna-to-upcusa-1958"],
-    "citations": ["cite-upcusa-1958"]
+    "citations": ["cite-upcusa-1958", "cite-upcusa-1958-reasons"]
   },
   {
     "id": "event-pcusa-merge-1983",
     "name": "PC(USA) formed by merger",
     "year": 1983,
-    "description": "Merger of PCUS and UPCUSA formed PC(USA).",
+    "description": "Reunion of the northern and southern Presbyterian branches into PC(USA).",
     "related_edge_ids": ["pcus-to-pcusa-1983", "upcusa-to-pcusa-1983"],
-    "citations": ["cite-pcusa-1983"]
+    "citations": ["cite-pcusa-1983", "cite-pcusa-1983-reasons"]
   }
 ]

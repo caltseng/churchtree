@@ -8,4 +8,5 @@ Planned contents:
 - Content model
 - UX flows and information architecture
 - Success metrics
-
+- Data collection prompts
+- Data audit checklist

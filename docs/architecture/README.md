@@ -6,6 +6,7 @@ Planned contents:
 - System overview
 - Data model
 - Data ingestion workflow
+- Data notes workflow
 - Stack and tooling choices
 - Hosting/deployment
 - Non-functional requirements

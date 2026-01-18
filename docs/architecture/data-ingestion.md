@@ -4,8 +4,9 @@ Reusable steps for gathering source material, extracting structured data, and
 converting it into the local JSON data model.
 
 ## Overview
-Goal: collect historical lineage information from external sources and produce
-validated local JSON files that match `docs/architecture/data-model.md`.
+Goal: collect historical lineage information from external sources, capture
+natural-language notes with citations, and then produce validated local JSON
+files that match `docs/architecture/data-model.md`.
 
 ## Inputs
 - Target denominations or movements to research.
@@ -14,19 +15,18 @@ validated local JSON files that match `docs/architecture/data-model.md`.
 ## Steps
 1. Identify candidate sources.
    - Prefer primary or official sources when available.
-   - Record source metadata in `data/sources.json` as you go.
-2. Extract claims from sources.
+2. Extract claims from sources into notes.
    - Split events, dates, parent/child relationships, and reasons.
-   - Capture the exact phrasing or summary in a working note.
+   - Store notes in `data/notes/[denomination-slug].md` with sources/citations.
 3. Normalize the data.
    - Convert names to stable slugs for `id`.
    - Normalize dates to integers; use null if unknown.
    - Keep split reasons short and factual.
-4. Map to the data model.
+4. Map notes to the data model.
    - Add nodes to `data/nodes.json`.
    - Add edges to `data/edges.json`.
    - Add events to `data/events.json` when a specific incident triggered a split.
-   - Add citations to `data/citations.json` with locators.
+   - Add sources to `data/sources.json` and citations to `data/citations.json`.
 5. Validate consistency.
    - Every edge must reference existing node ids.
    - Every citation must reference an existing source id.
@@ -47,3 +47,5 @@ Updated local JSON files:
 ## Notes
 - Keep everything local for Phase 0 and Phase 1.
 - If a claim is uncertain, set date to null and add a note.
+- Natural-language notes in `data/notes/` are the source of truth during data
+  collection.
