@@ -4,17 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ChurchTree - Presbyterian Lineage (Phase 0)</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.css"
+  />
   <style>
     :root {
       --bg-1: #f6f1e8;
       --bg-2: #e8efe6;
       --ink: #2b2b2b;
       --muted: #6b6b6b;
-      --node-fill: #fffdf9;
-      --node-stroke: #4b5a4a;
-      --edge: #6a776a;
-      --edge-hover: #a5422c;
       --accent: #9e4d2f;
+      --panel: #fffdfa;
     }
 
     * { box-sizing: border-box; }
@@ -32,7 +33,7 @@
     }
 
     header {
-      padding: 24px 24px 12px 24px;
+      padding: 22px 24px 10px 24px;
     }
 
     h1 {
@@ -48,76 +49,72 @@
     }
 
     #graph-wrap {
-      position: relative;
       padding: 12px 16px 24px 16px;
     }
 
-    svg {
+    #network {
       width: 100%;
-      height: auto;
+      height: 70vh;
+      min-height: 520px;
       border-radius: 16px;
       background: rgba(255, 255, 255, 0.6);
       box-shadow: 0 6px 22px rgba(0,0,0,0.08);
     }
 
-    .node {
-      cursor: default;
-    }
-
-    .node rect {
-      fill: var(--node-fill);
-      stroke: var(--node-stroke);
-      stroke-width: 1.2;
-      rx: 8;
-      ry: 8;
-    }
-
-    .node text {
+    .note {
+      margin: 10px 16px 0 16px;
+      padding: 10px 12px;
+      background: var(--panel);
+      border: 1px solid #d9c6b8;
+      border-radius: 10px;
       font-size: 12.5px;
-      fill: var(--ink);
-      pointer-events: none;
+      color: var(--muted);
     }
 
-    .edge {
-      stroke: var(--edge);
-      stroke-width: 1.4;
-      fill: none;
-      marker-end: url(#arrow);
-    }
-
-    .edge:hover {
-      stroke: var(--edge-hover);
-      stroke-width: 2;
-    }
-
-    #tooltip {
-      position: absolute;
+    #hover-tip {
+      position: fixed;
       display: none;
       max-width: 320px;
       padding: 10px 12px;
-      font-size: 12.5px;
+      font-size: 13px;
       line-height: 1.35;
+      color: #2c2c2c;
       background: #fffdfa;
       border: 1px solid #d9c6b8;
       border-radius: 10px;
       box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-      color: #2c2c2c;
       pointer-events: none;
+      z-index: 20;
     }
 
-    #tooltip .title {
+    #hover-tip .title {
       font-weight: 600;
-      margin-bottom: 4px;
       color: var(--accent);
+      margin-bottom: 4px;
     }
 
-    #tooltip .meta {
+    #hover-tip .meta {
       color: var(--muted);
+    }
+
+    .vis-tooltip {
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 13px;
+      line-height: 1.35;
+      color: #2c2c2c;
+      background: #fffdfa;
+      border: 1px solid #d9c6b8;
+      border-radius: 10px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+      padding: 10px 12px;
+      max-width: 320px;
+      white-space: normal;
+      z-index: 20;
     }
 
     @media (max-width: 720px) {
       h1 { font-size: 22px; }
-      svg { border-radius: 12px; }
+      #network { min-height: 420px; }
     }
   </style>
 </head>
@@ -128,28 +125,51 @@
   </header>
 
   <div id="graph-wrap">
-    <svg id="graph" viewBox="0 0 1200 800" preserveAspectRatio="xMinYMin meet">
-      <defs>
-        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-          <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--edge)" />
-        </marker>
-      </defs>
-      <g id="edges"></g>
-      <g id="nodes"></g>
-    </svg>
-    <div id="tooltip"></div>
+    <div id="network"></div>
   </div>
 
+  <div class="note">
+    Graph rendered with vis-network (MIT License).
+  </div>
+  <div id="hover-tip"></div>
+
+  <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
   <script>
     function showError(message) {
-      const nodesGroup = document.getElementById("nodes");
-      const msg = document.createElementNS("http://www.w3.org/2000/svg", "text");
-      msg.setAttribute("x", "40");
-      msg.setAttribute("y", "60");
-      msg.setAttribute("fill", "#9a5a45");
-      msg.setAttribute("font-size", "14");
-      msg.textContent = message;
-      nodesGroup.appendChild(msg);
+      const container = document.getElementById("network");
+      container.innerHTML = "";
+      const div = document.createElement("div");
+      div.style.padding = "16px";
+      div.style.color = "#9a5a45";
+      div.textContent = message;
+      container.appendChild(div);
+    }
+
+    function buildTooltip(edge, fromNode, toNode) {
+      const fromLabel = fromNode && fromNode.short_label ? fromNode.short_label : (fromNode ? fromNode.name : "");
+      const toLabel = toNode && toNode.short_label ? toNode.short_label : (toNode ? toNode.name : "");
+      const reasons = (edge.reasons || []).join(", ");
+      const title = edge.name ? edge.name : `${fromLabel} -> ${toLabel}`;
+      return `
+        <div class="title">${title}</div>
+        <div><em>${edge.type.toUpperCase()}</em> (${edge.year || "unknown"})</div>
+        ${edge.description ? `<div>${edge.description}</div>` : ""}
+        ${reasons ? `<div class="meta">Reasons: ${reasons}</div>` : ""}
+      `;
+    }
+
+    function buildNodeTooltip(node) {
+      const years = node.start_year ? `${node.start_year}${node.end_year ? `–${node.end_year}` : ""}` : "unknown";
+      const distinctives = node.distinctives && node.distinctives.length
+        ? node.distinctives.join(", ")
+        : "Not yet captured";
+      return `
+        <div class="title">${node.name}</div>
+        <div>${node.short_label || node.name} (${years})</div>
+        ${node.region ? `<div class="meta">Region: ${node.region}</div>` : ""}
+        ${node.notes ? `<div class="meta">Notes: ${node.notes}</div>` : ""}
+        <div class="meta">Theological distinctives: ${distinctives}</div>
+      `;
     }
 
     function renderGraph(data) {
@@ -162,172 +182,99 @@
       }
 
       const nodeMap = new Map(nodes.map(n => [n.id, n]));
-      const incoming = new Map(nodes.map(n => [n.id, 0]));
-      const outgoing = new Map(nodes.map(n => [n.id, []]));
 
-      edges.forEach(e => {
-        incoming.set(e.to_id, (incoming.get(e.to_id) || 0) + 1);
-        if (!outgoing.has(e.from_id)) outgoing.set(e.from_id, []);
-        outgoing.get(e.from_id).push(e.to_id);
+      const years = nodes
+        .map(n => n.start_year)
+        .filter(y => typeof y === "number" && !Number.isNaN(y));
+      const minYear = years.length ? Math.min.apply(null, years) : 0;
+      const maxYear = years.length ? Math.max.apply(null, years) : minYear;
+      const yearSpan = Math.max(1, maxYear - minYear);
+      const levelStep = Math.max(1, Math.round(yearSpan / 6));
+
+      const visNodes = nodes.map(n => {
+        const year = typeof n.start_year === "number" ? n.start_year : minYear;
+        const level = Math.round((year - minYear) / levelStep);
+        return {
+        id: n.id,
+        label: n.short_label ? `${n.short_label} (${n.start_year || "?"})` : n.name,
+        _tooltip: buildNodeTooltip(n),
+        level,
+        shape: "box",
+        margin: 8,
+        font: { size: 14, face: "Palatino Linotype", color: "#2b2b2b", align: "left" },
+        color: {
+          background: "#fffdf9",
+          border: "#4b5a4a",
+          highlight: { background: "#fff3e6", border: "#a5422c" }
+        }
+      };
       });
 
-      const roots = nodes.filter(n => (incoming.get(n.id) || 0) === 0).map(n => n.id);
-      const depth = new Map();
-      roots.forEach(r => depth.set(r, 0));
+      const visEdges = edges.map(e => ({
+        id: e.id,
+        from: e.from_id,
+        to: e.to_id,
+        label: e.name || "",
+        _tooltip: buildTooltip(e, nodeMap.get(e.from_id), nodeMap.get(e.to_id)),
+        arrows: "to",
+        width: 2,
+        color: { color: "#6a776a", highlight: "#a5422c" },
+        font: { size: 13, align: "horizontal", color: "#5a5a5a" }
+      }));
 
-      for (let i = 0; i < nodes.length; i += 1) {
-        let changed = false;
-        edges.forEach(e => {
-          if (depth.has(e.from_id)) {
-            const d = depth.get(e.from_id) + 1;
-            if (!depth.has(e.to_id) || d < depth.get(e.to_id)) {
-              depth.set(e.to_id, d);
-              changed = true;
-            }
+      const container = document.getElementById("network");
+      const dataSet = {
+        nodes: new vis.DataSet(visNodes),
+        edges: new vis.DataSet(visEdges)
+      };
+
+      const options = {
+        layout: {
+          hierarchical: {
+            enabled: true,
+            direction: "UD",
+            sortMethod: "directed",
+            nodeSpacing: 160,
+            levelSeparation: 110
           }
-        });
-        if (!changed) break;
+        },
+        physics: { enabled: false },
+        interaction: { hover: true, tooltipDelay: 80, hoverConnectedEdges: true },
+        nodes: {
+          shape: "box",
+          font: { size: 14, face: "Palatino Linotype", align: "left", color: "#2b2b2b" },
+          margin: 12
+        },
+        edges: {
+          smooth: false,
+          font: { size: 13, align: "horizontal", color: "#5a5a5a" }
+        }
+      };
+
+      const network = new vis.Network(container, dataSet, options);
+      const hoverTip = document.getElementById("hover-tip");
+
+      function showTip(html, evt) {
+        hoverTip.innerHTML = html;
+        hoverTip.style.display = "block";
+        hoverTip.style.left = `${evt.event.clientX + 12}px`;
+        hoverTip.style.top = `${evt.event.clientY + 12}px`;
       }
 
-      nodes.forEach(n => {
-        if (!depth.has(n.id)) depth.set(n.id, 0);
+      function hideTip() {
+        hoverTip.style.display = "none";
+      }
+
+      network.on("hoverNode", (evt) => {
+        const node = dataSet.nodes.get(evt.node);
+        if (node && node._tooltip) showTip(node._tooltip, evt);
       });
-
-      const columns = new Map();
-      nodes.forEach(n => {
-        const d = depth.get(n.id);
-        if (!columns.has(d)) columns.set(d, []);
-        columns.get(d).push(n);
+      network.on("hoverEdge", (evt) => {
+        const edge = dataSet.edges.get(evt.edge);
+        if (edge && edge._tooltip) showTip(edge._tooltip, evt);
       });
-
-      columns.forEach(list => list.sort((a, b) => a.name.localeCompare(b.name)));
-
-      const columnWidth = 240;
-      const rowHeight = 70;
-      const margin = { x: 80, y: 60 };
-      const maxDepth = columns.size ? Math.max.apply(null, Array.from(columns.keys())) : 0;
-      const maxRows = columns.size ? Math.max.apply(null, Array.from(columns.values()).map(list => list.length)) : 1;
-      const width = margin.x * 2 + (maxDepth + 1) * columnWidth;
-      const height = margin.y * 2 + Math.max(5, maxRows) * rowHeight;
-
-      const svg = document.getElementById("graph");
-      svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
-
-      const positions = new Map();
-      columns.forEach((list, d) => {
-        list.forEach((n, i) => {
-          const x = margin.x + d * columnWidth;
-          const y = margin.y + i * rowHeight;
-          positions.set(n.id, { x, y });
-        });
-      });
-
-      const edgesGroup = document.getElementById("edges");
-      const nodesGroup = document.getElementById("nodes");
-      const tooltip = document.getElementById("tooltip");
-
-      edges.forEach(e => {
-        const from = positions.get(e.from_id);
-        const to = positions.get(e.to_id);
-        if (!from || !to) return;
-
-        const x1 = from.x + 160;
-        const y1 = from.y + 18;
-        const x2 = to.x - 12;
-        const y2 = to.y + 18;
-        const midX = (x1 + x2) / 2;
-        const midY = (y1 + y2) / 2;
-
-        const line = document.createElementNS("http://www.w3.org/2000/svg", "path");
-        line.setAttribute("d", `M ${x1} ${y1} C ${midX} ${y1}, ${midX} ${y2}, ${x2} ${y2}`);
-        line.setAttribute("class", "edge");
-        line.dataset.edgeId = e.id;
-
-        line.addEventListener("mousemove", (evt) => {
-          const fromNode = nodeMap.get(e.from_id);
-          const toNode = nodeMap.get(e.to_id);
-          const fromLabel = fromNode && fromNode.short_label ? fromNode.short_label : (fromNode ? fromNode.name : "");
-          const toLabel = toNode && toNode.short_label ? toNode.short_label : (toNode ? toNode.name : "");
-          const reasons = (e.reasons || []).join(", ");
-          const title = e.name ? e.name : `${fromLabel} -> ${toLabel}`;
-          tooltip.innerHTML = `
-            <div class="title">${title}</div>
-            <div><strong>${e.type.toUpperCase()}</strong> (${e.year || "unknown"})</div>
-            ${e.description ? `<div>${e.description}</div>` : ""}
-            ${reasons ? `<div class="meta">Reasons: ${reasons}</div>` : ""}
-          `;
-          tooltip.style.display = "block";
-          const wrap = document.getElementById("graph-wrap");
-          const rect = wrap.getBoundingClientRect();
-          tooltip.style.left = `${evt.clientX - rect.left + 12}px`;
-          tooltip.style.top = `${evt.clientY - rect.top + 12}px`;
-        });
-
-        line.addEventListener("mouseleave", () => {
-          tooltip.style.display = "none";
-        });
-
-        edgesGroup.appendChild(line);
-
-        if (e.name) {
-          const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
-          label.setAttribute("x", midX + 6);
-          label.setAttribute("y", midY - 6);
-          label.setAttribute("fill", "#5a5a5a");
-          label.setAttribute("font-size", "11");
-          label.textContent = e.name;
-          edgesGroup.appendChild(label);
-        }
-      });
-
-      nodes.forEach(n => {
-        const pos = positions.get(n.id);
-        const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
-        group.setAttribute("class", "node");
-        group.setAttribute("transform", `translate(${pos.x}, ${pos.y})`);
-        group.addEventListener("mousemove", (evt) => {
-          const years = n.start_year ? `${n.start_year}${n.end_year ? `–${n.end_year}` : ""}` : "unknown";
-          const distinctives = n.distinctives && n.distinctives.length
-            ? n.distinctives.join(", ")
-            : "Not yet captured";
-          tooltip.innerHTML = `
-            <div class="title">${n.name}</div>
-            <div><strong>${n.short_label || n.name}</strong> (${years})</div>
-            ${n.region ? `<div class="meta">Region: ${n.region}</div>` : ""}
-            ${n.notes ? `<div class="meta">Notes: ${n.notes}</div>` : ""}
-            <div class="meta">Theological distinctives: ${distinctives}</div>
-          `;
-          tooltip.style.display = "block";
-          const wrap = document.getElementById("graph-wrap");
-          const rect = wrap.getBoundingClientRect();
-          tooltip.style.left = `${evt.clientX - rect.left + 12}px`;
-          tooltip.style.top = `${evt.clientY - rect.top + 12}px`;
-        });
-
-        group.addEventListener("mouseleave", () => {
-          tooltip.style.display = "none";
-        });
-
-        const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-        rect.setAttribute("width", "160");
-        rect.setAttribute("height", "36");
-        group.appendChild(rect);
-
-        const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
-        label.setAttribute("x", "8");
-        label.setAttribute("y", "16");
-        label.textContent = n.short_label ? `${n.short_label} (${n.start_year || "?"})` : n.name;
-        group.appendChild(label);
-
-        const sub = document.createElementNS("http://www.w3.org/2000/svg", "text");
-        sub.setAttribute("x", "8");
-        sub.setAttribute("y", "30");
-        sub.setAttribute("fill", "#666");
-        sub.textContent = n.name;
-        group.appendChild(sub);
-
-        nodesGroup.appendChild(group);
-      });
+      network.on("blurNode", hideTip);
+      network.on("blurEdge", hideTip);
     }
 
     const dataScript = document.createElement("script");
