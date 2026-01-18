@@ -30,3 +30,8 @@ with an interactive website, with emphasis on American Protestant movements.
 
 ## Status
 Starting from scratch. Next step: write the detailed specification.
+
+## Quick start (local)
+- Build data for the web view:
+  `powershell -ExecutionPolicy Bypass -File scripts/build-data-js.ps1`
+- Open `index.html` in a browser to view the graph.
