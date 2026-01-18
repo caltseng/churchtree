@@ -5,7 +5,8 @@
     "kind": "denomination",
     "start_year": 1983,
     "short_label": "PC(USA)",
-    "region": "US"
+    "region": "US",
+    "distinctives": []
   },
   {
     "id": "pca",
@@ -13,7 +14,8 @@
     "kind": "denomination",
     "start_year": 1973,
     "short_label": "PCA",
-    "region": "US"
+    "region": "US",
+    "distinctives": []
   },
   {
     "id": "opc",
@@ -21,7 +23,8 @@
     "kind": "denomination",
     "start_year": 1936,
     "short_label": "OPC",
-    "region": "US"
+    "region": "US",
+    "distinctives": []
   },
   {
     "id": "pcus",
@@ -31,7 +34,8 @@
     "end_year": 1983,
     "short_label": "PCUS",
     "region": "US",
-    "notes": "Merged into PC(USA) in 1983."
+    "notes": "Merged into PC(USA) in 1983.",
+    "distinctives": []
   },
   {
     "id": "pcusa-1789",
@@ -41,7 +45,8 @@
     "end_year": 1958,
     "short_label": "PCUSA",
     "region": "US",
-    "notes": "Merged into UPCUSA in 1958."
+    "notes": "Merged into UPCUSA in 1958.",
+    "distinctives": []
   },
   {
     "id": "upcusa",
@@ -51,7 +56,8 @@
     "end_year": 1983,
     "short_label": "UPCUSA",
     "region": "US",
-    "notes": "Merged into PC(USA) in 1983."
+    "notes": "Merged into PC(USA) in 1983.",
+    "distinctives": []
   },
   {
     "id": "upcna",
@@ -60,6 +66,7 @@
     "start_year": null,
     "short_label": "UPCNA",
     "region": "US",
-    "notes": "Merger partner in 1958 formation of UPCUSA."
+    "notes": "Merger partner in 1958 formation of UPCUSA.",
+    "distinctives": []
   }
 ]

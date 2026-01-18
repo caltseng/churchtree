@@ -53,6 +53,15 @@ lineage, including years, parent movements, and key points of division.
 - Click/tap to open detail panel.
 - Breadcrumb or lineage path to show ancestors.
 - Search by denomination name (optional in v1).
+- Hover on a denomination to show key details, including theological distinctives.
+- Future goal: zoom levels reveal more granularity (more nodes) or collapse
+  into higher-level branches.
+- Future goal: select a denomination to focus the view on its lineage and
+  show its full history path.
+- UI principle: preserve a visual throughline for renames or near-continuations
+  so users can follow the most similar lineage.
+- UI principle: keep the timeline hierarchy clear (left-to-right or
+  top-to-bottom) so chronology is readable at a glance.
 
 ## Content guidelines
 - Neutral, descriptive tone.

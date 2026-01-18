@@ -24,6 +24,7 @@ Optional fields:
 - summary: brief description
 - region: string (e.g., "US", "Global")
 - notes: freeform text
+- distinctives: list of short theological distinctives
 - tags: list of tag ids
 
 ### Edge (relationship)
@@ -31,6 +32,7 @@ Represents a lineage relationship between two nodes.
 
 Required fields:
 - id: stable slug
+- name: short readable label describing the reason
 - from_id: parent node id
 - to_id: child node id
 - type: "split" | "merge" | "origin" | "continuation"

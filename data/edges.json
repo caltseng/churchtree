@@ -1,6 +1,7 @@
 [
   {
     "id": "pcusa-1789-to-pcus-1861",
+    "name": "Civil War, slavery, politics",
     "from_id": "pcusa-1789",
     "to_id": "pcus",
     "type": "split",
@@ -10,6 +11,7 @@
   },
   {
     "id": "pcusa-1789-to-opc-1936",
+    "name": "Modernist theology disputes",
     "from_id": "pcusa-1789",
     "to_id": "opc",
     "type": "split",
@@ -19,6 +21,7 @@
   },
   {
     "id": "pcus-to-pca-1973",
+    "name": "Scripture authority, liberalism",
     "from_id": "pcus",
     "to_id": "pca",
     "type": "split",
@@ -29,6 +32,7 @@
   },
   {
     "id": "pcusa-1789-to-upcusa-1958",
+    "name": "Ecumenical reunion",
     "from_id": "pcusa-1789",
     "to_id": "upcusa",
     "type": "merge",
@@ -38,6 +42,7 @@
   },
   {
     "id": "upcna-to-upcusa-1958",
+    "name": "Ecumenical reunion",
     "from_id": "upcna",
     "to_id": "upcusa",
     "type": "merge",
@@ -47,6 +52,7 @@
   },
   {
     "id": "pcus-to-pcusa-1983",
+    "name": "Northern-Southern reunion",
     "from_id": "pcus",
     "to_id": "pcusa",
     "type": "merge",
@@ -56,6 +62,7 @@
   },
   {
     "id": "upcusa-to-pcusa-1983",
+    "name": "Northern-Southern reunion",
     "from_id": "upcusa",
     "to_id": "pcusa",
     "type": "merge",

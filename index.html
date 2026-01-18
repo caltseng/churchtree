@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChurchTree - Presbyterian Lineage (Phase 0)</title>
+  <style>
+    :root {
+      --bg-1: #f6f1e8;
+      --bg-2: #e8efe6;
+      --ink: #2b2b2b;
+      --muted: #6b6b6b;
+      --node-fill: #fffdf9;
+      --node-stroke: #4b5a4a;
+      --edge: #6a776a;
+      --edge-hover: #a5422c;
+      --accent: #9e4d2f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      color: var(--ink);
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.6), rgba(255,255,255,0.2)),
+        radial-gradient(circle at 20% 20%, #f7eadc 0%, transparent 55%),
+        radial-gradient(circle at 80% 30%, #e3efe9 0%, transparent 50%),
+        linear-gradient(180deg, var(--bg-1), var(--bg-2));
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 24px 24px 12px 24px;
+    }
+
+    h1 {
+      margin: 0 0 6px 0;
+      font-size: 28px;
+      letter-spacing: 0.4px;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    #graph-wrap {
+      position: relative;
+      padding: 12px 16px 24px 16px;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+    }
+
+    .node {
+      cursor: default;
+    }
+
+    .node rect {
+      fill: var(--node-fill);
+      stroke: var(--node-stroke);
+      stroke-width: 1.2;
+      rx: 8;
+      ry: 8;
+    }
+
+    .node text {
+      font-size: 12.5px;
+      fill: var(--ink);
+      pointer-events: none;
+    }
+
+    .edge {
+      stroke: var(--edge);
+      stroke-width: 1.4;
+      fill: none;
+      marker-end: url(#arrow);
+    }
+
+    .edge:hover {
+      stroke: var(--edge-hover);
+      stroke-width: 2;
+    }
+
+    #tooltip {
+      position: absolute;
+      display: none;
+      max-width: 320px;
+      padding: 10px 12px;
+      font-size: 12.5px;
+      line-height: 1.35;
+      background: #fffdfa;
+      border: 1px solid #d9c6b8;
+      border-radius: 10px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+      color: #2c2c2c;
+      pointer-events: none;
+    }
+
+    #tooltip .title {
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: var(--accent);
+    }
+
+    #tooltip .meta {
+      color: var(--muted);
+    }
+
+    @media (max-width: 720px) {
+      h1 { font-size: 22px; }
+      svg { border-radius: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ChurchTree - Presbyterian Lineage</h1>
+    <p>Phase 0 static graph. Hover an edge to view split/merge details.</p>
+  </header>
+
+  <div id="graph-wrap">
+    <svg id="graph" viewBox="0 0 1200 800" preserveAspectRatio="xMinYMin meet">
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--edge)" />
+        </marker>
+      </defs>
+      <g id="edges"></g>
+      <g id="nodes"></g>
+    </svg>
+    <div id="tooltip"></div>
+  </div>
+
+  <script src="data/data.js"></script>
+  <script>
+    const nodes = window.CHURCHTREE_DATA?.nodes || [];
+    const edges = window.CHURCHTREE_DATA?.edges || [];
+
+    const nodeMap = new Map(nodes.map(n => [n.id, n]));
+    const incoming = new Map(nodes.map(n => [n.id, 0]));
+    const outgoing = new Map(nodes.map(n => [n.id, []]));
+
+    edges.forEach(e => {
+      incoming.set(e.to_id, (incoming.get(e.to_id) || 0) + 1);
+      if (!outgoing.has(e.from_id)) outgoing.set(e.from_id, []);
+      outgoing.get(e.from_id).push(e.to_id);
+    });
+
+    const roots = nodes.filter(n => (incoming.get(n.id) || 0) === 0).map(n => n.id);
+    const depth = new Map();
+    roots.forEach(r => depth.set(r, 0));
+
+    for (let i = 0; i < nodes.length; i += 1) {
+      let changed = false;
+      edges.forEach(e => {
+        if (depth.has(e.from_id)) {
+          const d = depth.get(e.from_id) + 1;
+          if (!depth.has(e.to_id) || d < depth.get(e.to_id)) {
+            depth.set(e.to_id, d);
+            changed = true;
+          }
+        }
+      });
+      if (!changed) break;
+    }
+
+    nodes.forEach(n => {
+      if (!depth.has(n.id)) depth.set(n.id, 0);
+    });
+
+    const columns = new Map();
+    nodes.forEach(n => {
+      const d = depth.get(n.id);
+      if (!columns.has(d)) columns.set(d, []);
+      columns.get(d).push(n);
+    });
+
+    columns.forEach(list => list.sort((a, b) => a.name.localeCompare(b.name)));
+
+    const columnWidth = 240;
+    const rowHeight = 70;
+    const margin = { x: 80, y: 60 };
+    const maxDepth = Math.max(...columns.keys());
+    const maxRows = Math.max(...Array.from(columns.values()).map(list => list.length));
+    const width = margin.x * 2 + (maxDepth + 1) * columnWidth;
+    const height = margin.y * 2 + Math.max(5, maxRows) * rowHeight;
+
+    const svg = document.getElementById("graph");
+    svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+
+    const positions = new Map();
+    columns.forEach((list, d) => {
+      list.forEach((n, i) => {
+        const x = margin.x + d * columnWidth;
+        const y = margin.y + i * rowHeight;
+        positions.set(n.id, { x, y });
+      });
+    });
+
+    const edgesGroup = document.getElementById("edges");
+    const nodesGroup = document.getElementById("nodes");
+    const tooltip = document.getElementById("tooltip");
+
+    edges.forEach(e => {
+      const from = positions.get(e.from_id);
+      const to = positions.get(e.to_id);
+      if (!from || !to) return;
+
+      const x1 = from.x + 160;
+      const y1 = from.y + 18;
+      const x2 = to.x - 12;
+      const y2 = to.y + 18;
+      const midX = (x1 + x2) / 2;
+      const midY = (y1 + y2) / 2;
+
+      const line = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      line.setAttribute("d", `M ${x1} ${y1} C ${midX} ${y1}, ${midX} ${y2}, ${x2} ${y2}`);
+      line.setAttribute("class", "edge");
+      line.dataset.edgeId = e.id;
+
+      line.addEventListener("mousemove", (evt) => {
+        const fromNode = nodeMap.get(e.from_id);
+        const toNode = nodeMap.get(e.to_id);
+        const reasons = (e.reasons || []).join(", ");
+        tooltip.innerHTML = `
+          <div class="title">${e.name || `${fromNode?.short_label || fromNode?.name} -> ${toNode?.short_label || toNode?.name}`}</div>
+          <div><strong>${e.type.toUpperCase()}</strong> (${e.year || "unknown"})</div>
+          ${e.description ? `<div>${e.description}</div>` : ""}
+          ${reasons ? `<div class="meta">Reasons: ${reasons}</div>` : ""}
+        `;
+        tooltip.style.display = "block";
+        const wrap = document.getElementById("graph-wrap");
+        const rect = wrap.getBoundingClientRect();
+        tooltip.style.left = `${evt.clientX - rect.left + 12}px`;
+        tooltip.style.top = `${evt.clientY - rect.top + 12}px`;
+      });
+
+      line.addEventListener("mouseleave", () => {
+        tooltip.style.display = "none";
+      });
+
+      edgesGroup.appendChild(line);
+
+      if (e.name) {
+        const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        label.setAttribute("x", midX + 6);
+        label.setAttribute("y", midY - 6);
+        label.setAttribute("fill", "#5a5a5a");
+        label.setAttribute("font-size", "11");
+        label.textContent = e.name;
+        edgesGroup.appendChild(label);
+      }
+    });
+
+    nodes.forEach(n => {
+      const pos = positions.get(n.id);
+      const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      group.setAttribute("class", "node");
+      group.setAttribute("transform", `translate(${pos.x}, ${pos.y})`);
+      group.addEventListener("mousemove", (evt) => {
+        const years = n.start_year ? `${n.start_year}${n.end_year ? `–${n.end_year}` : ""}` : "unknown";
+        const distinctives = n.distinctives && n.distinctives.length
+          ? n.distinctives.join(", ")
+          : "Not yet captured";
+        tooltip.innerHTML = `
+          <div class="title">${n.name}</div>
+          <div><strong>${n.short_label || n.name}</strong> (${years})</div>
+          ${n.region ? `<div class="meta">Region: ${n.region}</div>` : ""}
+          ${n.notes ? `<div class="meta">Notes: ${n.notes}</div>` : ""}
+          <div class="meta">Theological distinctives: ${distinctives}</div>
+        `;
+        tooltip.style.display = "block";
+        const wrap = document.getElementById("graph-wrap");
+        const rect = wrap.getBoundingClientRect();
+        tooltip.style.left = `${evt.clientX - rect.left + 12}px`;
+        tooltip.style.top = `${evt.clientY - rect.top + 12}px`;
+      });
+
+      group.addEventListener("mouseleave", () => {
+        tooltip.style.display = "none";
+      });
+
+      const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+      rect.setAttribute("width", "160");
+      rect.setAttribute("height", "36");
+      group.appendChild(rect);
+
+      const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      label.setAttribute("x", "8");
+      label.setAttribute("y", "16");
+      label.textContent = n.short_label ? `${n.short_label} (${n.start_year || "?"})` : n.name;
+      group.appendChild(label);
+
+      const sub = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      sub.setAttribute("x", "8");
+      sub.setAttribute("y", "30");
+      sub.setAttribute("fill", "#666");
+      sub.textContent = n.name;
+      group.appendChild(sub);
+
+      nodesGroup.appendChild(group);
+    });
+  </script>
+</body>
+</html>
