@@ -3,7 +3,7 @@
 Date collected: 2026-01-18
 
 ## Facts
-- Node: Presbyterian Church in the United States | Start year 1861 | End year 1983 | Region US | Notes: Merged into PC(USA) in 1983. | Theological distinctives: Old School Presbyterian emphasis; Westminster Confession subscription
+- Node: Presbyterian Church in the United States | Start year 1861 | End year 1983 | Region US | Notes: Merged into PC(USA) in 1983. | Theological distinctives: Old School Presbyterian emphasis; Westminster Confession subscription | Size estimate: unknown
 - Edge: PCUS -> PCA | Type split | Year 1973 | Reasons: theological liberalism, authority of Scripture, deity of Jesus Christ | Description: Conservatives cited theological liberalism, denial of Christ's deity, and denial of Scripture's authority/inerrancy.
 - Edge: PCUS -> PC(USA) | Type merge | Year 1983 | Reasons: reunion of northern and southern Presbyterian branches | Description: PCUS merged with UPCUSA to form PC(USA).
 

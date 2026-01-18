@@ -14,6 +14,7 @@ Use this checklist to verify data accuracy, consistency, and citation quality.
 - Short labels are unambiguous.
 - Notes clearly flag any uncertainty.
 - Theological distinctives are cited when present.
+- Size estimates are cited when present.
 
 ## Edge accuracy
 - Parent/child direction is correct.

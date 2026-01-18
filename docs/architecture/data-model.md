@@ -25,6 +25,7 @@ Optional fields:
 - region: string (e.g., "US", "Global")
 - notes: freeform text
 - distinctives: list of short theological distinctives
+- size_estimate: short text (e.g., "approx 1.0M members, 2024")
 - tags: list of tag ids
 
 ### Edge (relationship)

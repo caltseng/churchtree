@@ -1,7 +1,7 @@
 [
   {
     "id": "pcusa-1789-to-pcus-1861",
-    "name": "Southern branch over slavery/politics",
+    "name": "Southern branch (Civil War, slavery)",
     "from_id": "pcusa-1789",
     "to_id": "pcus",
     "type": "split",
@@ -12,7 +12,7 @@
   },
   {
     "id": "pcusa-1789-to-opc-1936",
-    "name": "Modernist theology disputes",
+    "name": "Conservative response to modernism",
     "from_id": "pcusa-1789",
     "to_id": "opc",
     "type": "split",
@@ -23,7 +23,7 @@
   },
   {
     "id": "pcus-to-pca-1973",
-    "name": "Scripture authority, liberalism",
+    "name": "Conservative response to liberalism",
     "from_id": "pcus",
     "to_id": "pca",
     "type": "split",

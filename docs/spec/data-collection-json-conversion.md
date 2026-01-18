@@ -24,7 +24,8 @@ Output strictly in this JSON shape:
       "short_label": "",
       "region": "",
       "notes": "",
-      "distinctives": []
+      "distinctives": [],
+      "size_estimate": ""
     }
   ],
   "edges": [
@@ -78,5 +79,6 @@ Rules:
 - Every citation must reference an existing source.
 - Include split/merge reasons in edges and events when known.
 - Map theological distinctives into the node `distinctives` array when sourced.
+- Map denomination size estimates into `size_estimate` when sourced.
 - Do not invent sources; include URLs or bibliographic details when possible.
 ```

@@ -8,7 +8,8 @@ window.CHURCHTREE_DATA = {
     "start_year": 1983,
     "short_label": "PC(USA)",
     "region": "US",
-    "distinctives": ["Reformed", "Barthianist", "Mainline Protestant"]
+    "distinctives": ["Reformed", "Barthianist", "Mainline Protestant"],
+    "size_estimate": "approx 1,045,848 active members (2024)"
   },
   {
     "id": "pca",
@@ -17,7 +18,8 @@ window.CHURCHTREE_DATA = {
     "start_year": 1973,
     "short_label": "PCA",
     "region": "US",
-    "distinctives": ["Reformed", "Evangelical"]
+    "distinctives": ["Reformed", "Evangelical"],
+    "size_estimate": "approx 400,751 members (2024)"
   },
   {
     "id": "opc",
@@ -26,7 +28,8 @@ window.CHURCHTREE_DATA = {
     "start_year": 1936,
     "short_label": "OPC",
     "region": "US",
-    "distinctives": ["Confessional", "Reformed (Calvinist)"]
+    "distinctives": ["Confessional", "Reformed (Calvinist)"],
+    "size_estimate": "unknown"
   },
   {
     "id": "pcus",
@@ -37,7 +40,8 @@ window.CHURCHTREE_DATA = {
     "short_label": "PCUS",
     "region": "US",
     "notes": "Merged into PC(USA) in 1983.",
-    "distinctives": ["Old School Presbyterian emphasis", "Westminster Confession subscription"]
+    "distinctives": ["Old School Presbyterian emphasis", "Westminster Confession subscription"],
+    "size_estimate": "unknown"
   },
   {
     "id": "pcusa-1789",
@@ -48,7 +52,8 @@ window.CHURCHTREE_DATA = {
     "short_label": "PCUSA",
     "region": "US",
     "notes": "Merged into UPCUSA in 1958.",
-    "distinctives": ["Mainline Protestant", "Reformed tradition"]
+    "distinctives": ["Mainline Protestant", "Reformed tradition"],
+    "size_estimate": "approx 2.8 million members (1957)"
   },
   {
     "id": "upcusa",
@@ -59,7 +64,8 @@ window.CHURCHTREE_DATA = {
     "short_label": "UPCUSA",
     "region": "US",
     "notes": "Merged into PC(USA) in 1983.",
-    "distinctives": ["Reformed (Calvinist)"]
+    "distinctives": ["Reformed (Calvinist)"],
+    "size_estimate": "approx 2,351,119 members (1982)"
   },
   {
     "id": "upcna",
@@ -70,14 +76,15 @@ window.CHURCHTREE_DATA = {
     "short_label": "UPCNA",
     "region": "US",
     "notes": "Merger partner in 1958 formation of UPCUSA.",
-    "distinctives": ["Calvinist", "Covenanter/Seceder distinctives", "Exclusive psalmody"]
+    "distinctives": ["Calvinist", "Covenanter/Seceder distinctives", "Exclusive psalmody"],
+    "size_estimate": "approx 257,513 members (1957)"
   }
 ]
 ,
   edges: [
   {
     "id": "pcusa-1789-to-pcus-1861",
-    "name": "Southern branch over slavery/politics",
+    "name": "Southern branch (Civil War, slavery)",
     "from_id": "pcusa-1789",
     "to_id": "pcus",
     "type": "split",
@@ -88,7 +95,7 @@ window.CHURCHTREE_DATA = {
   },
   {
     "id": "pcusa-1789-to-opc-1936",
-    "name": "Modernist theology disputes",
+    "name": "Conservative response to modernism",
     "from_id": "pcusa-1789",
     "to_id": "opc",
     "type": "split",
@@ -99,7 +106,7 @@ window.CHURCHTREE_DATA = {
   },
   {
     "id": "pcus-to-pca-1973",
-    "name": "Scripture authority, liberalism",
+    "name": "Conservative response to liberalism",
     "from_id": "pcus",
     "to_id": "pca",
     "type": "split",
