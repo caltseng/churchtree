@@ -4,8 +4,8 @@ Date collected: 2026-01-18
 
 ## Facts
 - Node: United Presbyterian Church in the United States of America | Start year 1958 | End year 1983 | Region US | Notes: Formed by merger; later merged into PC(USA). | Theological distinctives: Reformed (Calvinist)
-- Edge: PCUSA (1789) -> UPCUSA | Type merge | Year 1958 | Reasons: ecumenical activity, reunion of long-separated branches | Description: PCUSA merged with UPCNA to form UPCUSA.
-- Edge: UPCNA -> UPCUSA | Type merge | Year 1958 | Reasons: ecumenical activity, reunion of long-separated branches | Description: UPCNA merged with PCUSA to form UPCUSA.
+- Edge: PCUSA (1789) -> UPCUSA | Type merge | Year 1958 | Reasons: ecumenical activity, reunion of long-separated branches | Description: The northern PCUSA merged with the smaller UPCNA to form the UPCUSA.
+- Edge: UPCNA -> UPCUSA | Type merge | Year 1958 | Reasons: ecumenical activity, reunion of long-separated branches | Description: The smaller UPCNA merged with the larger PCUSA to form the UPCUSA.
 - Edge: UPCUSA -> PC(USA) | Type merge | Year 1983 | Reasons: reunion of northern and southern Presbyterian branches | Description: UPCUSA merged with PCUS to form PC(USA).
 
 ## Sources

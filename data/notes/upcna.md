@@ -4,7 +4,7 @@ Date collected: 2026-01-18
 
 ## Facts
 - Node: United Presbyterian Church of North America | Start year 1858 | End year 1958 | Region US | Notes: Merged into UPCUSA in 1958. | Theological distinctives: Calvinist; Covenanter/Seceder distinctives; Exclusive psalmody
-- Edge: UPCNA -> UPCUSA | Type merge | Year 1958 | Reasons: ecumenical activity, reunion of long-separated branches | Description: UPCNA merged with PCUSA to form UPCUSA.
+- Edge: UPCNA -> UPCUSA | Type merge | Year 1958 | Reasons: ecumenical activity, reunion of long-separated branches | Description: The smaller UPCNA merged with the larger PCUSA to form the UPCUSA.
 
 ## Sources
 - src-wiki-upcna: United Presbyterian Church of North America - Wikipedia (website) https://en.wikipedia.org/wiki/United_Presbyterian_Church_of_North_America

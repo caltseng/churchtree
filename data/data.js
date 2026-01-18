@@ -77,13 +77,13 @@ window.CHURCHTREE_DATA = {
   edges: [
   {
     "id": "pcusa-1789-to-pcus-1861",
-    "name": "Civil War, slavery, politics",
+    "name": "Southern branch over slavery/politics",
     "from_id": "pcusa-1789",
     "to_id": "pcus",
     "type": "split",
     "year": 1861,
     "reasons": ["slavery", "politics", "theology", "Civil War tensions"],
-    "description": "Southern Presbyterians separated from the PCUSA during Civil War-era disputes over slavery, politics, and theology.",
+    "description": "Southern Presbyterians formed the PCUS as the Southern branch, separating from the PCUSA during Civil War-era disputes over slavery, politics, and theology.",
     "citations": ["cite-pcus-1861", "cite-pcus-1861-reasons", "cite-pcus-founded"]
   },
   {
@@ -94,7 +94,7 @@ window.CHURCHTREE_DATA = {
     "type": "split",
     "year": 1936,
     "reasons": ["liberal/modernist theology", "fundamentalist-modernist controversy"],
-    "description": "Conservative members separated in response to liberal/modernist theology and the Fundamentalist-Modernist controversy.",
+    "description": "Conservative/confessional Presbyterians separated to form the OPC in response to perceived liberal/modernist trends in the PCUSA.",
     "citations": ["cite-opc-1936", "cite-opc-1936-reasons", "cite-opc-founded"]
   },
   {
@@ -105,7 +105,7 @@ window.CHURCHTREE_DATA = {
     "type": "split",
     "year": 1973,
     "reasons": ["theological liberalism", "authority of Scripture", "deity of Jesus Christ"],
-    "description": "Separation driven by concerns over perceived theological liberalism, including disputes about the authority and inerrancy of Scripture and the deity of Christ.",
+    "description": "Conservative/confessional congregations separated from the PCUS to form the PCA, citing perceived theological liberalism, including disputes about Scripture's authority and Christ's deity.",
     "citations": ["cite-pca-1973", "cite-pca-1973-reasons", "cite-pcus-1973-reasons-detail", "cite-pca-founded"]
   },
   {
@@ -116,7 +116,7 @@ window.CHURCHTREE_DATA = {
     "type": "merge",
     "year": 1958,
     "reasons": ["ecumenical activity", "reunion of long-separated branches"],
-    "description": "PCUSA joined UPCNA in an ecumenical reunion to form the UPCUSA.",
+    "description": "The northern PCUSA merged with the smaller UPCNA to form the UPCUSA through ecumenical reunion.",
     "citations": ["cite-upcusa-1958", "cite-upcusa-1958-reasons", "cite-upcusa-founded"]
   },
   {
@@ -127,7 +127,7 @@ window.CHURCHTREE_DATA = {
     "type": "merge",
     "year": 1958,
     "reasons": ["ecumenical activity", "reunion of long-separated branches"],
-    "description": "UPCNA joined PCUSA in an ecumenical reunion to form the UPCUSA.",
+    "description": "The smaller UPCNA merged with the larger PCUSA to form the UPCUSA through ecumenical reunion.",
     "citations": ["cite-upcusa-1958", "cite-upcusa-1958-reasons", "cite-upcusa-founded", "cite-upcna-1958-merge"]
   },
   {
@@ -138,7 +138,7 @@ window.CHURCHTREE_DATA = {
     "type": "merge",
     "year": 1983,
     "reasons": ["reunion of northern and southern Presbyterian branches"],
-    "description": "Southern Presbyterian churches (PCUS) reunited with the northern branch (UPCUSA) to form PC(USA).",
+    "description": "The Southern branch (PCUS) merged with the northern branch (UPCUSA) to form the PC(USA).",
     "citations": ["cite-pcusa-1983", "cite-pcusa-1983-reasons", "cite-pcusa-merge-1983", "cite-pcusa-founded"]
   },
   {
@@ -149,7 +149,7 @@ window.CHURCHTREE_DATA = {
     "type": "merge",
     "year": 1983,
     "reasons": ["reunion of northern and southern Presbyterian branches"],
-    "description": "Northern Presbyterian churches (UPCUSA) reunited with the southern branch (PCUS) to form PC(USA).",
+    "description": "The northern branch (UPCUSA) merged with the Southern branch (PCUS) to form the PC(USA).",
     "citations": ["cite-pcusa-1983", "cite-pcusa-1983-reasons", "cite-pcusa-merge-1983", "cite-pcusa-founded"]
   }
 ]

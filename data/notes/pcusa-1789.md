@@ -4,7 +4,7 @@ Date collected: 2026-01-18
 
 ## Facts
 - Node: Presbyterian Church in the United States of America | Start year 1789 | End year 1958 | Region US | Notes: Merged into UPCUSA in 1958. | Theological distinctives: Mainline Protestant; Reformed tradition
-- Edge: PCUSA (1789) -> PCUS | Type split | Year 1861 | Reasons: slavery, politics, theology, Civil War tensions | Description: Southern Presbyterians split during the Civil War due to disputes over slavery, politics, and theology.
+- Edge: PCUSA (1789) -> PCUS | Type split | Year 1861 | Reasons: slavery, politics, theology, Civil War tensions | Description: Southern Presbyterians formed the PCUS as the Southern branch, splitting during the Civil War due to disputes over slavery, politics, and theology.
 - Edge: PCUSA (1789) -> OPC | Type split | Year 1936 | Reasons: liberal/modernist theology, Fundamentalist-Modernist controversy | Description: Conservatives dissatisfied with liberal trends formed the OPC in 1936.
 - Edge: PCUSA (1789) -> UPCUSA | Type merge | Year 1958 | Reasons: ecumenical activity, reunion of long-separated branches | Description: Union with UPCNA to form UPCUSA.
 

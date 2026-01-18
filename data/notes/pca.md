@@ -4,7 +4,7 @@ Date collected: 2026-01-18
 
 ## Facts
 - Node: Presbyterian Church in America | Start year 1973 | End year none | Region US | Notes: Formed by congregations separating from PCUS. | Theological distinctives: Reformed; Evangelical
-- Edge: PCUS -> PCA | Type split | Year 1973 | Reasons: doctrinal standards, theological direction; theological liberalism; authority/inerrancy of Scripture; deity of Jesus Christ | Description: Separation driven by disputes over doctrinal standards and theological direction; PCUS conservatives cited theological liberalism and denial of Scripture's authority and Christ's deity.
+- Edge: PCUS -> PCA | Type split | Year 1973 | Reasons: doctrinal standards, theological direction; theological liberalism; authority/inerrancy of Scripture; deity of Jesus Christ | Description: Conservative/confessional congregations separated from the PCUS to form the PCA, citing perceived theological liberalism and denial of Scripture's authority and Christ's deity.
 
 ## Sources
 - src-wiki-pca: Presbyterian Church in America - Wikipedia (website) https://en.wikipedia.org/wiki/Presbyterian_Church_in_America

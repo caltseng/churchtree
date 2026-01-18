@@ -4,8 +4,8 @@ Date collected: 2026-01-18
 
 ## Facts
 - Node: Presbyterian Church (USA) | Start year 1983 | End year none | Region US | Notes: Formed by merger of PCUS and UPCUSA. | Theological distinctives: Reformed; Barthianist; Mainline Protestant
-- Edge: PCUS -> PC(USA) | Type merge | Year 1983 | Reasons: reunion of northern and southern Presbyterian branches | Description: PCUS merged with UPCUSA to form PC(USA).
-- Edge: UPCUSA -> PC(USA) | Type merge | Year 1983 | Reasons: reunion of northern and southern Presbyterian branches | Description: UPCUSA merged with PCUS to form PC(USA).
+- Edge: PCUS -> PC(USA) | Type merge | Year 1983 | Reasons: reunion of northern and southern Presbyterian branches | Description: The Southern branch (PCUS) merged with the northern branch (UPCUSA) to form PC(USA).
+- Edge: UPCUSA -> PC(USA) | Type merge | Year 1983 | Reasons: reunion of northern and southern Presbyterian branches | Description: The northern branch (UPCUSA) merged with the Southern branch (PCUS) to form PC(USA).
 
 ## Sources
 - src-wiki-pcusa: Presbyterian Church (USA) - Wikipedia (website) https://en.wikipedia.org/wiki/Presbyterian_Church_(USA)

@@ -61,6 +61,31 @@
       box-shadow: 0 6px 22px rgba(0,0,0,0.08);
     }
 
+    .controls {
+      position: absolute;
+      top: 16px;
+      right: 22px;
+      display: flex;
+      gap: 8px;
+      z-index: 5;
+    }
+
+    .control-btn {
+      border: 1px solid #cdb7a8;
+      background: #fffdfa;
+      color: #2b2b2b;
+      font-size: 16px;
+      padding: 6px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .control-btn:hover {
+      border-color: #a87f6b;
+      color: #7b3a24;
+    }
+
     .note {
       margin: 10px 16px 0 16px;
       padding: 10px 12px;
@@ -124,7 +149,12 @@
     <p>Phase 0 static graph. Hover an edge to view split/merge details.</p>
   </header>
 
-  <div id="graph-wrap">
+  <div id="graph-wrap" style="position: relative;">
+    <div class="controls">
+      <button class="control-btn" id="zoom-in" aria-label="Zoom in">+</button>
+      <button class="control-btn" id="zoom-out" aria-label="Zoom out">−</button>
+      <button class="control-btn" id="zoom-reset" aria-label="Reset zoom">Reset</button>
+    </div>
     <div id="network"></div>
   </div>
 
@@ -189,7 +219,7 @@
       const minYear = years.length ? Math.min.apply(null, years) : 0;
       const maxYear = years.length ? Math.max.apply(null, years) : minYear;
       const yearSpan = Math.max(1, maxYear - minYear);
-      const levelStep = Math.max(1, Math.round(yearSpan / 6));
+      const levelStep = 25;
 
       const visNodes = nodes.map(n => {
         const year = typeof n.start_year === "number" ? n.start_year : minYear;
@@ -234,8 +264,8 @@
             enabled: true,
             direction: "UD",
             sortMethod: "directed",
-            nodeSpacing: 160,
-            levelSeparation: 110
+            nodeSpacing: 230,
+            levelSeparation: 120
           }
         },
         physics: { enabled: false },
@@ -252,6 +282,22 @@
       };
 
       const network = new vis.Network(container, dataSet, options);
+      const zoomIn = document.getElementById("zoom-in");
+      const zoomOut = document.getElementById("zoom-out");
+      const zoomReset = document.getElementById("zoom-reset");
+      const zoomStep = 0.15;
+
+      zoomIn.addEventListener("click", () => {
+        const scale = network.getScale();
+        network.moveTo({ scale: scale + zoomStep });
+      });
+      zoomOut.addEventListener("click", () => {
+        const scale = network.getScale();
+        network.moveTo({ scale: Math.max(0.2, scale - zoomStep) });
+      });
+      zoomReset.addEventListener("click", () => {
+        network.fit({ animation: { duration: 200 } });
+      });
       const hoverTip = document.getElementById("hover-tip");
 
       function showTip(html, evt) {
@@ -278,7 +324,7 @@
     }
 
     const dataScript = document.createElement("script");
-    dataScript.src = "data/data.js";
+    dataScript.src = `data/data.js?v=${Date.now()}`;
     dataScript.onload = () => {
       if (!window.CHURCHTREE_DATA) {
         showError("Loaded data/data.js, but window.CHURCHTREE_DATA is missing.");
