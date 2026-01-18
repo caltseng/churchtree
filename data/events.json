@@ -1,0 +1,42 @@
+[
+  {
+    "id": "event-pcus-split-1861",
+    "name": "PCUS formed from PCUSA",
+    "year": 1861,
+    "description": "Separation resulting in the Presbyterian Church in the United States.",
+    "related_edge_ids": ["pcusa-1789-to-pcus-1861"],
+    "citations": ["cite-pcus-1861"]
+  },
+  {
+    "id": "event-opc-split-1936",
+    "name": "OPC separated from PCUSA",
+    "year": 1936,
+    "description": "Orthodox Presbyterian Church formed after separation.",
+    "related_edge_ids": ["pcusa-1789-to-opc-1936"],
+    "citations": ["cite-opc-1936"]
+  },
+  {
+    "id": "event-pca-split-1973",
+    "name": "PCA separated from PCUS",
+    "year": 1973,
+    "description": "Presbyterian Church in America formed after separation.",
+    "related_edge_ids": ["pcus-to-pca-1973"],
+    "citations": ["cite-pca-1973"]
+  },
+  {
+    "id": "event-upcusa-merge-1958",
+    "name": "UPCUSA formed by merger",
+    "year": 1958,
+    "description": "Merger of PCUSA and UPCNA formed UPCUSA.",
+    "related_edge_ids": ["pcusa-1789-to-upcusa-1958", "upcna-to-upcusa-1958"],
+    "citations": ["cite-upcusa-1958"]
+  },
+  {
+    "id": "event-pcusa-merge-1983",
+    "name": "PC(USA) formed by merger",
+    "year": 1983,
+    "description": "Merger of PCUS and UPCUSA formed PC(USA).",
+    "related_edge_ids": ["pcus-to-pcusa-1983", "upcusa-to-pcusa-1983"],
+    "citations": ["cite-pcusa-1983"]
+  }
+]

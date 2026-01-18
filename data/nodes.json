@@ -1,0 +1,65 @@
+[
+  {
+    "id": "pcusa",
+    "name": "Presbyterian Church (USA)",
+    "kind": "denomination",
+    "start_year": 1983,
+    "short_label": "PC(USA)",
+    "region": "US"
+  },
+  {
+    "id": "pca",
+    "name": "Presbyterian Church in America",
+    "kind": "denomination",
+    "start_year": 1973,
+    "short_label": "PCA",
+    "region": "US"
+  },
+  {
+    "id": "opc",
+    "name": "Orthodox Presbyterian Church",
+    "kind": "denomination",
+    "start_year": 1936,
+    "short_label": "OPC",
+    "region": "US"
+  },
+  {
+    "id": "pcus",
+    "name": "Presbyterian Church in the United States",
+    "kind": "denomination",
+    "start_year": 1861,
+    "end_year": 1983,
+    "short_label": "PCUS",
+    "region": "US",
+    "notes": "Merged into PC(USA) in 1983."
+  },
+  {
+    "id": "pcusa-1789",
+    "name": "Presbyterian Church in the United States of America",
+    "kind": "denomination",
+    "start_year": 1789,
+    "end_year": 1958,
+    "short_label": "PCUSA",
+    "region": "US",
+    "notes": "Merged into UPCUSA in 1958."
+  },
+  {
+    "id": "upcusa",
+    "name": "United Presbyterian Church in the United States of America",
+    "kind": "denomination",
+    "start_year": 1958,
+    "end_year": 1983,
+    "short_label": "UPCUSA",
+    "region": "US",
+    "notes": "Merged into PC(USA) in 1983."
+  },
+  {
+    "id": "upcna",
+    "name": "United Presbyterian Church of North America",
+    "kind": "denomination",
+    "start_year": null,
+    "short_label": "UPCNA",
+    "region": "US",
+    "notes": "Merger partner in 1958 formation of UPCUSA."
+  }
+]

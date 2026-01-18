@@ -42,6 +42,20 @@ Optional fields:
 - confidence: "high" | "medium" | "low"
 - citations: list of citation ids
 
+### Event
+Marks a significant historical event that triggered or influenced a divide.
+
+Required fields:
+- id: stable slug
+- name: display name
+- year: integer or null if unknown
+
+Optional fields:
+- description: brief summary
+- related_edge_ids: list of edge ids
+- related_node_ids: list of node ids
+- citations: list of citation ids
+
 ### Citation
 Links a claim in the data to a source.
 
@@ -81,6 +95,7 @@ Static JSON files stored locally in the repo.
 Suggested files:
 - data/nodes.json
 - data/edges.json
+- data/events.json
 - data/sources.json
 - data/citations.json
 - data/tags.json
@@ -100,6 +115,16 @@ Suggested files:
       "type": "split",
       "year": 1973,
       "reasons": ["doctrinal disputes", "church governance"],
+      "citations": ["cite-1"]
+    }
+  ],
+  "events": [
+    {
+      "id": "pcusa-split-1973",
+      "name": "PC(USA) division leading to PCA",
+      "year": 1973,
+      "description": "Key points of contention that led to the PCA's formation.",
+      "related_edge_ids": ["pcusa-pca-1973"],
       "citations": ["cite-1"]
     }
   ],

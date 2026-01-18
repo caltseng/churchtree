@@ -1,0 +1,58 @@
+[
+  {
+    "id": "pcusa-1789-to-pcus-1861",
+    "from_id": "pcusa-1789",
+    "to_id": "pcus",
+    "type": "split",
+    "year": 1861,
+    "citations": ["cite-pcus-1861"]
+  },
+  {
+    "id": "pcusa-1789-to-opc-1936",
+    "from_id": "pcusa-1789",
+    "to_id": "opc",
+    "type": "split",
+    "year": 1936,
+    "citations": ["cite-opc-1936"]
+  },
+  {
+    "id": "pcus-to-pca-1973",
+    "from_id": "pcus",
+    "to_id": "pca",
+    "type": "split",
+    "year": 1973,
+    "citations": ["cite-pca-1973"]
+  },
+  {
+    "id": "pcusa-1789-to-upcusa-1958",
+    "from_id": "pcusa-1789",
+    "to_id": "upcusa",
+    "type": "merge",
+    "year": 1958,
+    "citations": ["cite-upcusa-1958"]
+  },
+  {
+    "id": "upcna-to-upcusa-1958",
+    "from_id": "upcna",
+    "to_id": "upcusa",
+    "type": "merge",
+    "year": 1958,
+    "citations": ["cite-upcusa-1958"]
+  },
+  {
+    "id": "pcus-to-pcusa-1983",
+    "from_id": "pcus",
+    "to_id": "pcusa",
+    "type": "merge",
+    "year": 1983,
+    "citations": ["cite-pcusa-1983"]
+  },
+  {
+    "id": "upcusa-to-pcusa-1983",
+    "from_id": "upcusa",
+    "to_id": "pcusa",
+    "type": "merge",
+    "year": 1983,
+    "citations": ["cite-pcusa-1983"]
+  }
+]
