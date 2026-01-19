@@ -22,6 +22,13 @@ Follow-up research needed for the items below.
 - Explicit linkage between the Zurich stream and the Genevan/Scottish lineage.
 - Decision on whether to model Synod of Ulster or Presbytery of Laggan as nodes.
 
+## Missing metadata fields
+- ecclesial_orientation: english-congregation-geneva (needs a direct source).
+- current_status: swiss-reformed-zurich and genevan-reformed (no end year or formal successor defined).
+
+## Missing size estimates
+- Roman Catholic Church (membership size).
+
 ## Notes
 - Add citations for any foundational dates and polity milestones.
 - Confirm formal founding date of the Church of Scotland.

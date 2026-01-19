@@ -376,5 +376,77 @@
     "source_id": "src-wiki-scottish-reformation",
     "locator": "Lead: established Protestant Church of Scotland; Presbyterian structure and Calvinist doctrine",
     "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-genevan-reformation-lead",
+    "source_id": "src-wiki-genevan-reformation",
+    "locator": "Lead: Geneva's Reformation and Reformed (Calvinist) orientation",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-zurich-reformation-lead",
+    "source_id": "src-wiki-zurich-reformation",
+    "locator": "Lead: Zurich Reformation as Reformed Protestant movement",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-presbyterian-us-colonial",
+    "source_id": "src-wiki-presbyterian-us",
+    "locator": "History: colonial era and early presbyteries",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-opc-doctrine",
+    "source_id": "src-wiki-opc",
+    "locator": "Doctrine: Reformed/Calvinist roots and Westminster Standards",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcusa-polity",
+    "source_id": "src-wiki-upcusa",
+    "locator": "Infobox: Reformed theology; Presbyterian polity",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcna-polity",
+    "source_id": "src-wiki-upcna",
+    "locator": "Infobox: Calvinist orientation; Presbyterian polity",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcus-polity",
+    "source_id": "src-wiki-pcus",
+    "locator": "Infobox: Calvinist orientation; Presbyterian polity",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-catholic-church-lead",
+    "source_id": "src-wiki-catholic-church",
+    "locator": "Lead: largest Christian church; communion with the Bishop of Rome",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-zurich-reformation-break",
+    "source_id": "src-wiki-zurich-reformation",
+    "locator": "Background/Course: rejection of Roman Catholic authority and reforms in Zurich",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-genevan-reformation-break",
+    "source_id": "src-wiki-genevan-reformation",
+    "locator": "Lead: Protestant movement replacing Roman Catholicism in Geneva",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-scottish-reformation-break",
+    "source_id": "src-wiki-scottish-reformation",
+    "locator": "Lead: Scotland broke away from Roman Catholic Church",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-church-of-scotland-history-break",
+    "source_id": "src-wiki-church-of-scotland",
+    "locator": "History: 1560 parliament repudiated papal authority and established a national church",
+    "accessed": "2026-01-18"
   }
 ]

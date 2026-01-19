@@ -8,6 +8,10 @@ window.CHURCHTREE_DATA = {
         "start_year":  1983,
         "short_label":  "PC(USA)",
         "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Presbyterian",
+        "ecclesial_orientation":  "mainline",
+        "current_status":  "active",
         "distinctives":  [
                              "Reformed",
                              "Barthianist",
@@ -22,6 +26,10 @@ window.CHURCHTREE_DATA = {
         "start_year":  1973,
         "short_label":  "PCA",
         "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Presbyterian",
+        "ecclesial_orientation":  "evangelical",
+        "current_status":  "active",
         "distinctives":  [
                              "Reformed",
                              "Evangelical"
@@ -35,6 +43,10 @@ window.CHURCHTREE_DATA = {
         "start_year":  1936,
         "short_label":  "OPC",
         "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Presbyterian",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
         "distinctives":  [
                              "Confessional",
                              "Reformed (Calvinist)"
@@ -49,6 +61,10 @@ window.CHURCHTREE_DATA = {
         "end_year":  1983,
         "short_label":  "PCUS",
         "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Presbyterian",
+        "ecclesial_orientation":  "other",
+        "current_status":  "merged",
         "notes":  "Merged into PC(USA) in 1983.",
         "distinctives":  [
                              "Old School Presbyterian emphasis",
@@ -64,6 +80,10 @@ window.CHURCHTREE_DATA = {
         "end_year":  1958,
         "short_label":  "PCUSA",
         "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Presbyterian",
+        "ecclesial_orientation":  "mainline",
+        "current_status":  "merged",
         "notes":  "Merged into UPCUSA in 1958.",
         "distinctives":  [
                              "Mainline Protestant",
@@ -79,6 +99,10 @@ window.CHURCHTREE_DATA = {
         "end_year":  1983,
         "short_label":  "UPCUSA",
         "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Presbyterian",
+        "ecclesial_orientation":  "other",
+        "current_status":  "merged",
         "notes":  "Merged into PC(USA) in 1983.",
         "distinctives":  [
                              "Reformed (Calvinist)"
@@ -93,6 +117,10 @@ window.CHURCHTREE_DATA = {
         "end_year":  1958,
         "short_label":  "UPCNA",
         "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Presbyterian",
+        "ecclesial_orientation":  "other",
+        "current_status":  "merged",
         "notes":  "Merger partner in 1958 formation of UPCUSA.",
         "distinctives":  [
                              "Calvinist",
@@ -102,12 +130,34 @@ window.CHURCHTREE_DATA = {
         "size_estimate":  "approx 257,513 members (1957)"
     },
     {
+        "id":  "catholic-church",
+        "name":  "Roman Catholic Church",
+        "kind":  "denomination",
+        "start_year":  null,
+        "short_label":  "Catholic Church",
+        "region":  "Global",
+        "geographic_origin":  "Roman Empire",
+        "tradition_family":  "Catholic",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "The Roman Catholic Church is the largest Christian church, centered on communion with the Bishop of Rome.",
+        "distinctives":  [
+                             "Communion with the Bishop of Rome",
+                             "Catholic sacramental theology"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
         "id":  "swiss-reformed-zurich",
         "name":  "Swiss Reformed (Zurich stream)",
         "kind":  "movement",
         "start_year":  1520,
         "short_label":  "Zurich Reformed",
         "region":  "Switzerland",
+        "geographic_origin":  "Switzerland",
+        "tradition_family":  "Reformed",
+        "ecclesial_orientation":  "other",
+        "current_status":  "unknown",
         "summary":  "Zurich\u0027s Reformation under Huldrych Zwingli became an early center of Reformed Protestantism in Switzerland.",
         "distinctives":  [
                              "Memorialist view of the Lord\u0027s Supper",
@@ -123,6 +173,10 @@ window.CHURCHTREE_DATA = {
         "start_year":  1536,
         "short_label":  "Genevan Reformed",
         "region":  "Geneva (Switzerland)",
+        "geographic_origin":  "Switzerland",
+        "tradition_family":  "Reformed",
+        "ecclesial_orientation":  "other",
+        "current_status":  "unknown",
         "summary":  "Geneva shifted from Roman Catholic rule to Reformed theology under John Calvin, becoming a hub of Reformed Protestantism.",
         "distinctives":  [
                              "Reformed theology (Calvinism)",
@@ -139,6 +193,10 @@ window.CHURCHTREE_DATA = {
         "end_year":  1559,
         "short_label":  "English Exiles (Geneva)",
         "region":  "Geneva (Switzerland)",
+        "geographic_origin":  "Switzerland",
+        "tradition_family":  "Reformed",
+        "ecclesial_orientation":  "unknown",
+        "current_status":  "dissolved",
         "summary":  "A Protestant exile congregation in Geneva (1555-1559), led mainly by John Knox, that modeled Reformed worship and governance.",
         "distinctives":  [
                              "Presbyterian worship model",
@@ -153,6 +211,10 @@ window.CHURCHTREE_DATA = {
         "start_year":  1560,
         "short_label":  "Scottish Reformation",
         "region":  "Scotland",
+        "geographic_origin":  "Scotland",
+        "tradition_family":  "Reformed",
+        "ecclesial_orientation":  "other",
+        "current_status":  "dissolved",
         "summary":  "The Scottish Reformation broke with Roman Catholicism and established a Protestant national church in Scotland.",
         "distinctives":  [
                              "Reformed theology",
@@ -167,6 +229,10 @@ window.CHURCHTREE_DATA = {
         "start_year":  1560,
         "short_label":  "CoS",
         "region":  "Scotland",
+        "geographic_origin":  "Scotland",
+        "tradition_family":  "Presbyterian",
+        "ecclesial_orientation":  "unknown",
+        "current_status":  "active",
         "summary":  "The Scottish Reformation established the Protestant Church of Scotland with Presbyterian structure and largely Calvinist doctrine.",
         "distinctives":  [
                              "Presbyterian polity",
@@ -182,6 +248,10 @@ window.CHURCHTREE_DATA = {
         "start_year":  1581,
         "short_label":  "Presbyterian Polity",
         "region":  "Scotland",
+        "geographic_origin":  "Scotland",
+        "tradition_family":  "Presbyterian",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
         "summary":  "Formal presbyteries in Scotland were created in 1581, establishing graded courts of elders (session, presbytery, synod, assembly).",
         "distinctives":  [
                              "Rule by elders",
@@ -196,6 +266,10 @@ window.CHURCHTREE_DATA = {
         "start_year":  1683,
         "short_label":  "Colonial Presbyterianism",
         "region":  "Colonial America",
+        "geographic_origin":  "Colonial America",
+        "tradition_family":  "Presbyterian",
+        "ecclesial_orientation":  "other",
+        "current_status":  "dissolved",
         "summary":  "In 1683 the first known Presbyterian church in America was organized in Maryland, and in 1706 the Presbytery of Philadelphia formed as an early institutional step.",
         "distinctives":  [
                              "Early congregational autonomy",
@@ -210,6 +284,10 @@ window.CHURCHTREE_DATA = {
         "start_year":  1706,
         "short_label":  "Presbyterian Founding",
         "region":  "Colonial America",
+        "geographic_origin":  "Colonial America",
+        "tradition_family":  "Presbyterian",
+        "ecclesial_orientation":  "other",
+        "current_status":  "dissolved",
         "summary":  "Francis Makemie helped organize the first American presbytery (Philadelphia, 1706), applying Presbyterian polity to the colonies.",
         "distinctives":  [
                              "Presbyterian polity in colonial context",
@@ -348,6 +426,70 @@ window.CHURCHTREE_DATA = {
                           "cite-pcusa-1983-reasons",
                           "cite-pcusa-merge-1983",
                           "cite-pcusa-founded"
+                      ]
+    },
+    {
+        "id":  "catholic-church-to-swiss-reformed-zurich-1523",
+        "name":  "Zurich Reformation",
+        "from_id":  "catholic-church",
+        "to_id":  "swiss-reformed-zurich",
+        "type":  "split",
+        "year":  1523,
+        "reasons":  [
+                        "reform movement",
+                        "rejection of Roman Catholic authority"
+                    ],
+        "description":  "The Zurich Reformation rejected Roman Catholic authority and practices under Zwingli, leading to a break from the Catholic Church.",
+        "citations":  [
+                          "cite-zurich-reformation-break"
+                      ]
+    },
+    {
+        "id":  "catholic-church-to-genevan-reformed-1536",
+        "name":  "Genevan Reformation",
+        "from_id":  "catholic-church",
+        "to_id":  "genevan-reformed",
+        "type":  "split",
+        "year":  1536,
+        "reasons":  [
+                        "Protestant Reformation",
+                        "rejection of papal authority"
+                    ],
+        "description":  "The Genevan Reformation replaced Roman Catholicism with Reformed Christianity in Geneva.",
+        "citations":  [
+                          "cite-genevan-reformation-break"
+                      ]
+    },
+    {
+        "id":  "catholic-church-to-scottish-reformation-1560",
+        "name":  "Scottish Reformation",
+        "from_id":  "catholic-church",
+        "to_id":  "scottish-reformation",
+        "type":  "split",
+        "year":  1560,
+        "reasons":  [
+                        "rejection of papal authority",
+                        "Reformation parliament"
+                    ],
+        "description":  "The Scottish Reformation broke Scotland away from the Roman Catholic Church and established a Protestant national church.",
+        "citations":  [
+                          "cite-scottish-reformation-break"
+                      ]
+    },
+    {
+        "id":  "catholic-church-to-church-of-scotland-1560",
+        "name":  "Church of Scotland established",
+        "from_id":  "catholic-church",
+        "to_id":  "church-of-scotland",
+        "type":  "origin",
+        "year":  1560,
+        "reasons":  [
+                        "repudiation of papal authority",
+                        "national church formed"
+                    ],
+        "description":  "In 1560 the Scottish Parliament repudiated papal authority, establishing the Church of Scotland as a national Protestant church separate from Rome.",
+        "citations":  [
+                          "cite-church-of-scotland-history-break"
                       ]
     },
     {

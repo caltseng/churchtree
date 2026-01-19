@@ -1,5 +1,49 @@
 [
   {
+    "id": "catholic-church-to-swiss-reformed-zurich-1523",
+    "name": "Zurich Reformation",
+    "from_id": "catholic-church",
+    "to_id": "swiss-reformed-zurich",
+    "type": "split",
+    "year": 1523,
+    "reasons": ["reform movement", "rejection of Roman Catholic authority"],
+    "description": "The Zurich Reformation rejected Roman Catholic authority and practices under Zwingli, leading to a break from the Catholic Church.",
+    "citations": ["cite-zurich-reformation-break"]
+  },
+  {
+    "id": "catholic-church-to-genevan-reformed-1536",
+    "name": "Genevan Reformation",
+    "from_id": "catholic-church",
+    "to_id": "genevan-reformed",
+    "type": "split",
+    "year": 1536,
+    "reasons": ["Protestant Reformation", "rejection of papal authority"],
+    "description": "The Genevan Reformation replaced Roman Catholicism with Reformed Christianity in Geneva.",
+    "citations": ["cite-genevan-reformation-break"]
+  },
+  {
+    "id": "catholic-church-to-scottish-reformation-1560",
+    "name": "Scottish Reformation",
+    "from_id": "catholic-church",
+    "to_id": "scottish-reformation",
+    "type": "split",
+    "year": 1560,
+    "reasons": ["rejection of papal authority", "Reformation parliament"],
+    "description": "The Scottish Reformation broke Scotland away from the Roman Catholic Church and established a Protestant national church.",
+    "citations": ["cite-scottish-reformation-break"]
+  },
+  {
+    "id": "catholic-church-to-church-of-scotland-1560",
+    "name": "Church of Scotland established",
+    "from_id": "catholic-church",
+    "to_id": "church-of-scotland",
+    "type": "origin",
+    "year": 1560,
+    "reasons": ["repudiation of papal authority", "national church formed"],
+    "description": "In 1560 the Scottish Parliament repudiated papal authority, establishing the Church of Scotland as a national Protestant church separate from Rome.",
+    "citations": ["cite-church-of-scotland-history-break"]
+  },
+  {
     "id": "genevan-reformed-to-church-of-scotland-1559",
     "name": "Knox returns from Geneva",
     "from_id": "genevan-reformed",
