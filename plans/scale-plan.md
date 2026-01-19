@@ -58,3 +58,9 @@ denominations without losing clarity or maintainability.
 2. Add gap-reporting + bundle build for multiple sets.
 3. UI filters + focus mode + progressive disclosure.
 4. Precomputed layouts + lazy-loading.
+
+## Checklist
+- [ ] Split data into sets and add validation script.
+- [ ] Add gap reporting and multi-set bundle build.
+- [ ] Implement UI filters and focus mode.
+- [ ] Add precomputed layouts and lazy-loading.

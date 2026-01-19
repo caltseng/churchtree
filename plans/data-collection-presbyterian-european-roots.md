@@ -75,3 +75,10 @@ Phase C: Transatlantic transmission
 - Notes files for each root movement/denomination.
 - Updated JSON datasets.
 - Updated citations for split/merge reasons.
+
+## Checklist
+- [ ] Create notes files for each root movement.
+- [ ] Extract facts with citations into notes.
+- [ ] Convert notes to JSON and validate ids.
+- [ ] Add lineage edges to US Presbyterian roots where sourced.
+- [ ] Rebuild `data/data.js` and run QA.

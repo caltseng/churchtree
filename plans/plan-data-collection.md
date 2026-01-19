@@ -24,3 +24,10 @@ JSON for Presbyterian denominations in the United States.
 
 ## Output
 - A detailed plan document for executing data collection in phases.
+
+## Checklist
+- [ ] Define initial denomination scope and clusters.
+- [ ] Select primary sources per cluster.
+- [ ] Draft notes collection tasks.
+- [ ] Define validation checks and JSON update order.
+- [ ] Review and finalize the plan.

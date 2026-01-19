@@ -74,3 +74,10 @@ Phase D: Historical branches
 - Notes files for each denomination.
 - Updated JSON datasets.
 - Updated citations for split/merge reasons.
+
+## Checklist
+- [ ] Create notes files for all scoped denominations.
+- [ ] Extract facts with citations into notes.
+- [ ] Convert notes to JSON and validate ids.
+- [ ] Update unknowns and size estimates.
+- [ ] Rebuild `data/data.js` and run QA.
