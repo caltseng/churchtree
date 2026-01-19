@@ -215,41 +215,7 @@
         return;
       }
 
-      const nodeMap = new Map(nodes.map(n => [n.id, n]));
-      const childToParent = new Map();
-      edges.forEach(e => {
-        if (!childToParent.has(e.to_id)) {
-          childToParent.set(e.to_id, e.from_id);
-        }
-      });
-
-      const rootIds = nodes
-        .filter(n => !childToParent.has(n.id))
-        .map(n => n.id);
-
-      const root = {
-        id: "__root__",
-        name: "Root",
-        children: rootIds.map(id => ({ id }))
-      };
-
-      const buildTree = (node) => {
-        const dataNode = nodeMap.get(node.id);
-        const children = edges
-          .filter(e => e.from_id === node.id)
-          .map(e => ({ id: e.to_id }));
-        return {
-          id: node.id,
-          data: dataNode || node,
-          children: children.length ? children.map(buildTree) : []
-        };
-      };
-
-      const treeRoot = {
-        id: root.id,
-        data: root,
-        children: root.children.map(buildTree)
-      };
+      const nodeData = nodes.map(n => ({ ...n }));
 
       const chart = document.getElementById("chart");
       chart.innerHTML = "";
@@ -303,25 +269,54 @@
         .attr("font-size", 11)
         .text(d => d);
 
-      const tree = d3.tree()
-        .nodeSize([180, 120]);
+      function bucketForYear(year) {
+        if (typeof year !== "number" || Number.isNaN(year)) {
+          return yearBuckets[0];
+        }
+        return yearBuckets.find(y => year >= y && year < y + bucket) || yearBuckets[yearBuckets.length - 1];
+      }
 
-      const rootNode = d3.hierarchy(treeRoot, d => d.children);
-      tree(rootNode);
-
-      const allNodes = rootNode.descendants().filter(d => d.data.id !== "__root__");
-      const allLinks = rootNode.links().filter(l => l.target.data.id !== "__root__");
-
-      allNodes.forEach(d => {
-        const year = d.data.data && typeof d.data.data.start_year === "number"
-          ? d.data.data.start_year
-          : minYear;
-        const bucketYear = yearBuckets.find(y => year >= y && year < y + bucket) || yearBuckets[yearBuckets.length - 1];
-        d.y = yScale(bucketYear);
+      const bucketGroups = new Map();
+      nodeData.forEach(n => {
+        n._bucket = bucketForYear(n.start_year);
+        if (!bucketGroups.has(n._bucket)) {
+          bucketGroups.set(n._bucket, []);
+        }
+        bucketGroups.get(n._bucket).push(n);
       });
 
+      bucketGroups.forEach(group => {
+        group.sort((a, b) => {
+          const ay = typeof a.start_year === "number" ? a.start_year : 0;
+          const by = typeof b.start_year === "number" ? b.start_year : 0;
+          return ay - by || a.name.localeCompare(b.name);
+        });
+      });
+
+      bucketGroups.forEach(group => {
+        const spacing = (width - 160) / (group.length + 1);
+        group.forEach((n, idx) => {
+          n._targetX = 80 + spacing * (idx + 1);
+          n.x = n._targetX;
+          n.y = yScale(n._bucket);
+        });
+      });
+
+      const links = edges.map(e => ({ ...e }));
+
+      const simulation = d3.forceSimulation(nodeData)
+        .force("link", d3.forceLink(links).id(d => d.id).distance(170).strength(0.7))
+        .force("y", d3.forceY(d => yScale(d._bucket)).strength(1))
+        .force("x", d3.forceX(d => d._targetX || width / 2).strength(0.6))
+        .force("collide", d3.forceCollide(80))
+        .stop();
+
+      for (let i = 0; i < 260; i += 1) {
+        simulation.tick();
+      }
+
       const link = g.selectAll(".link")
-        .data(allLinks)
+        .data(links)
         .enter()
         .append("path")
         .attr("class", "link")
@@ -338,7 +333,7 @@
         });
 
       const edgeLabels = g.selectAll(".edge-label")
-        .data(allLinks)
+        .data(links)
         .enter()
         .append("text")
         .attr("class", "edge-label")
@@ -347,15 +342,10 @@
         .attr("text-anchor", "middle")
         .attr("x", d => (d.source.x + d.target.x) / 2 + 60)
         .attr("y", d => (d.source.y + d.target.y) / 2 - 6)
-        .text(d => {
-          const target = d.target.data.data || {};
-          const source = d.source.data.data || {};
-          const edge = edges.find(e => e.from_id === source.id && e.to_id === target.id);
-          return edge && edge.name ? edge.name : "";
-        });
+        .text(d => d.name || "");
 
       const node = g.selectAll(".node")
-        .data(allNodes)
+        .data(nodeData)
         .enter()
         .append("g")
         .attr("class", "node")
@@ -376,8 +366,7 @@
         .attr("font-size", 13)
         .attr("fill", "var(--ink)")
         .text(d => {
-          const n = d.data.data || {};
-          return n.short_label ? `${n.short_label} (${n.start_year || "?"})` : (n.name || "");
+          return d.short_label ? `${d.short_label} (${d.start_year || "?"})` : (d.name || "");
         });
 
       node.append("text")
@@ -385,13 +374,12 @@
         .attr("y", 30)
         .attr("font-size", 11)
         .attr("fill", "var(--muted)")
-        .text(d => (d.data.data && d.data.data.name) ? d.data.data.name : "");
+        .text(d => d.name || "");
 
       const tooltip = document.getElementById("tooltip");
 
       node.on("mousemove", (event, d) => {
-        const n = d.data.data || {};
-        tooltip.innerHTML = buildNodeTooltip(n);
+        tooltip.innerHTML = buildNodeTooltip(d);
         tooltip.style.display = "block";
         tooltip.style.left = `${event.clientX + 12}px`;
         tooltip.style.top = `${event.clientY + 12}px`;
@@ -400,10 +388,9 @@
       });
 
       function showEdgeTooltip(event, d) {
-        const target = d.target.data.data || {};
-        const source = d.source.data.data || {};
-        const edge = edges.find(e => e.from_id === source.id && e.to_id === target.id) || {};
-        tooltip.innerHTML = buildEdgeTooltip(edge, source, target);
+        const target = d.target || {};
+        const source = d.source || {};
+        tooltip.innerHTML = buildEdgeTooltip(d, source, target);
         tooltip.style.display = "block";
         tooltip.style.left = `${event.clientX + 12}px`;
         tooltip.style.top = `${event.clientY + 12}px`;
