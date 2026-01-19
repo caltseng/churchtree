@@ -1,11 +1,11 @@
 # Data Collection - Extract Facts
 
 Use this prompt with ChatGPT (or another LLM) to extract lineage facts and save
-them as a notes file in `data/notes/`.
+them as a notes file in `data/sets/presbyterian-us/notes/`.
 
 ## Output location
 Save results to:
-- `data/notes/[denomination-slug].md`
+- `data/sets/presbyterian-us/notes/[denomination-slug].md`
 
 Each note should include:
 - Date collected
@@ -18,7 +18,7 @@ Each note should include:
 ```
 You are helping me build a church-history family tree. For the denomination(s)
 listed below, extract lineage facts with sources. Return output ready to save
-in a notes file under data/notes/.
+in a notes file under data/sets/presbyterian-us/notes/.
 
 Denominations:
 - [DENOMINATION NAMES]

@@ -36,8 +36,8 @@ Source rules:
 
 ## Workflow (notes-first)
 1. Create notes file per denomination:
-   - `data/notes/[denomination-slug].md`
-   - Use `data/notes/template.md`
+   - `data/sets/presbyterian-us/notes/[denomination-slug].md`
+   - Use `data/sets/presbyterian-us/notes/template.md`
 2. Extract facts using `docs/spec/data-collection-prompt.md`.
 3. Record sources and citations in the notes file.
 4. Review notes for gaps and contradictions.

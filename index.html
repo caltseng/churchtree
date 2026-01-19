@@ -193,12 +193,14 @@
       const distinctives = node.distinctives && node.distinctives.length
         ? node.distinctives.join(", ")
         : "Not yet captured";
+      const sizeEstimate = node.size_estimate ? node.size_estimate : "Not yet captured";
       return `
         <div class="title">${node.name}</div>
         <div>${node.short_label || node.name} (${years})</div>
         ${node.region ? `<div class="meta">Region: ${node.region}</div>` : ""}
         ${node.notes ? `<div class="meta">Notes: ${node.notes}</div>` : ""}
         <div class="meta">Theological distinctives: ${distinctives}</div>
+        <div class="meta">Size estimate: ${sizeEstimate}</div>
       `;
     }
 

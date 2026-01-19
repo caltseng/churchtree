@@ -17,7 +17,7 @@ files that match `docs/architecture/data-model.md`.
    - Prefer primary or official sources when available.
 2. Extract claims from sources into notes.
    - Split events, dates, parent/child relationships, and reasons.
-   - Store notes in `data/notes/[denomination-slug].md` with sources/citations.
+   - Store notes in `data/sets/presbyterian-us/notes/[denomination-slug].md` with sources/citations.
 3. Normalize the data.
    - Convert names to stable slugs for `id`.
    - Normalize dates to integers; use null if unknown.
@@ -47,5 +47,5 @@ Updated local JSON files:
 ## Notes
 - Keep everything local for Phase 0 and Phase 1.
 - If a claim is uncertain, set date to null and add a note.
-- Natural-language notes in `data/notes/` are the source of truth during data
-  collection.
+- Natural-language notes in `data/sets/presbyterian-us/notes/` are the source
+  of truth during data collection.

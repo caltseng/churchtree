@@ -10,7 +10,7 @@ JSON for Presbyterian denominations in the United States.
 ## Inputs
 - `docs/spec/data-collection-prompt.md` (notes extraction)
 - `docs/spec/data-collection-json-conversion.md` (JSON conversion)
-- `data/notes/template.md`
+- `data/sets/presbyterian-us/notes/template.md`
 - `docs/architecture/data-model.md`
 
 ## Steps to create the plan
