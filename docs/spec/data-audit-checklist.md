@@ -39,3 +39,4 @@ Use this checklist to verify data accuracy, consistency, and citation quality.
 - New data includes citations before merge.
 - Conflicts between sources are documented in notes.
 - Major changes are summarized in commit messages.
+- Periodic QA checklist: `plans/qa-periodic-check.md`.
