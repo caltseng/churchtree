@@ -5,7 +5,14 @@ param(
 $dataDir = Join-Path $RepoRoot "data"
 $setDirs = @(
   (Join-Path $dataDir "sets\\presbyterian-us"),
-  (Join-Path $dataDir "sets\\presbyterian-europe")
+  (Join-Path $dataDir "sets\\presbyterian-europe"),
+  (Join-Path $dataDir "sets\\baptist-us"),
+  (Join-Path $dataDir "sets\\methodist-us"),
+  (Join-Path $dataDir "sets\\lutheran-us"),
+  (Join-Path $dataDir "sets\\anglican-us"),
+  (Join-Path $dataDir "sets\\pentecostal-us"),
+  (Join-Path $dataDir "sets\\holiness-restorationist-us"),
+  (Join-Path $dataDir "sets\\adventist-us")
 )
 $outFile = Join-Path $dataDir "data.js"
 

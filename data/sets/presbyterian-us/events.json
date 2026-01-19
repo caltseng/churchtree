@@ -1,42 +1,81 @@
-[
-  {
-    "id": "event-pcus-split-1861",
-    "name": "PCUS formed from PCUSA",
-    "year": 1861,
-    "description": "Southern Presbyterians separated amid disputes over slavery, politics, and theology during Civil War tensions.",
-    "related_edge_ids": ["pcusa-1789-to-pcus-1861"],
-    "citations": ["cite-pcus-1861", "cite-pcus-1861-reasons", "cite-pcus-founded"]
-  },
-  {
-    "id": "event-opc-split-1936",
-    "name": "OPC separated from PCUSA",
-    "year": 1936,
-    "description": "Conservative members separated over liberal/modernist theology in the Fundamentalist-Modernist controversy.",
-    "related_edge_ids": ["pcusa-1789-to-opc-1936"],
-    "citations": ["cite-opc-1936", "cite-opc-1936-reasons", "cite-opc-founded"]
-  },
-  {
-    "id": "event-pca-split-1973",
-    "name": "PCA separated from PCUS",
-    "year": 1973,
-    "description": "Congregations separated amid concerns over perceived theological liberalism, including disputes about the authority and inerrancy of Scripture and the deity of Christ.",
-    "related_edge_ids": ["pcus-to-pca-1973"],
-    "citations": ["cite-pca-1973", "cite-pca-1973-reasons", "cite-pcus-1973-reasons-detail", "cite-pca-founded"]
-  },
-  {
-    "id": "event-upcusa-merge-1958",
-    "name": "UPCUSA formed by merger",
-    "year": 1958,
-    "description": "Union of PCUSA and UPCNA driven by ecumenical efforts and reunion of long-separated branches.",
-    "related_edge_ids": ["pcusa-1789-to-upcusa-1958", "upcna-to-upcusa-1958"],
-    "citations": ["cite-upcusa-1958", "cite-upcusa-1958-reasons", "cite-upcusa-founded"]
-  },
-  {
-    "id": "event-pcusa-merge-1983",
-    "name": "PC(USA) formed by merger",
-    "year": 1983,
-    "description": "Reunion of the northern (UPCUSA) and southern (PCUS) Presbyterian branches into PC(USA).",
-    "related_edge_ids": ["pcus-to-pcusa-1983", "upcusa-to-pcusa-1983"],
-    "citations": ["cite-pcusa-1983", "cite-pcusa-1983-reasons", "cite-pcusa-merge-1983", "cite-pcusa-founded"]
-  }
+﻿[
+    {
+        "id":  "event-pcus-split-1861",
+        "name":  "PCUS formed from PCUSA",
+        "year":  1861,
+        "description":  "Southern Presbyterians separated amid disputes over slavery, politics, and theology during Civil War tensions.",
+        "related_edge_ids":  [
+                                 "pcusa-1789-to-pcus-1861"
+                             ],
+        "citations":  [
+                          "cite-pcus-1861",
+                          "cite-pcus-1861-reasons",
+                          "cite-pcus-founded"
+                      ],
+        "zoom_tier":  "full"
+    },
+    {
+        "id":  "event-opc-split-1936",
+        "name":  "OPC separated from PCUSA",
+        "year":  1936,
+        "description":  "Conservative members separated over liberal/modernist theology in the Fundamentalist-Modernist controversy.",
+        "related_edge_ids":  [
+                                 "pcusa-1789-to-opc-1936"
+                             ],
+        "citations":  [
+                          "cite-opc-1936",
+                          "cite-opc-1936-reasons",
+                          "cite-opc-founded"
+                      ],
+        "zoom_tier":  "full"
+    },
+    {
+        "id":  "event-pca-split-1973",
+        "name":  "PCA separated from PCUS",
+        "year":  1973,
+        "description":  "Congregations separated amid concerns over perceived theological liberalism, including disputes about the authority and inerrancy of Scripture and the deity of Christ.",
+        "related_edge_ids":  [
+                                 "pcus-to-pca-1973"
+                             ],
+        "citations":  [
+                          "cite-pca-1973",
+                          "cite-pca-1973-reasons",
+                          "cite-pcus-1973-reasons-detail",
+                          "cite-pca-founded"
+                      ],
+        "zoom_tier":  "full"
+    },
+    {
+        "id":  "event-upcusa-merge-1958",
+        "name":  "UPCUSA formed by merger",
+        "year":  1958,
+        "description":  "Union of PCUSA and UPCNA driven by ecumenical efforts and reunion of long-separated branches.",
+        "related_edge_ids":  [
+                                 "pcusa-1789-to-upcusa-1958",
+                                 "upcna-to-upcusa-1958"
+                             ],
+        "citations":  [
+                          "cite-upcusa-1958",
+                          "cite-upcusa-1958-reasons",
+                          "cite-upcusa-founded"
+                      ],
+        "zoom_tier":  "full"
+    },
+    {
+        "id":  "event-pcusa-merge-1983",
+        "name":  "PC(USA) formed by merger",
+        "year":  1983,
+        "description":  "Reunion of the northern (UPCUSA) and southern (PCUS) Presbyterian branches into PC(USA).",
+        "related_edge_ids":  [
+                                 "pcus-to-pcusa-1983",
+                                 "upcusa-to-pcusa-1983"
+                             ],
+        "citations":  [
+                          "cite-pcusa-1983",
+                          "cite-pcusa-1983-reasons",
+                          "cite-pcusa-merge-1983",
+                          "cite-pcusa-founded"
+                      ],
+        "zoom_tier":  "full"
+    }
 ]

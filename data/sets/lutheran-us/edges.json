@@ -1,0 +1,50 @@
+﻿[
+  {
+    "id": "lcms-to-aelc-1976",
+    "name": "Separation from LCMS",
+    "from_id": "lutheran-church-missouri-synod",
+    "to_id": "association-of-evangelical-lutheran-churches",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1976,
+    "reasons": ["organizational separation"],
+    "description": "AELC formed in 1976 after separating from the LCMS.",
+    "citations": ["cite-aelc-1976"]
+  },
+  {
+    "id": "alc-to-elca-1987",
+    "name": "Merger into ELCA",
+    "from_id": "american-lutheran-church",
+    "to_id": "evangelical-lutheran-church-in-america",
+    "zoom_tier": "full",
+    "type": "merge",
+    "year": 1987,
+    "reasons": ["merger"],
+    "description": "ALC merged into the ELCA in 1987.",
+    "citations": ["cite-elca-merger", "cite-elca-founded"]
+  },
+  {
+    "id": "lca-to-elca-1987",
+    "name": "Merger into ELCA",
+    "from_id": "lutheran-church-in-america",
+    "to_id": "evangelical-lutheran-church-in-america",
+    "zoom_tier": "full",
+    "type": "merge",
+    "year": 1987,
+    "reasons": ["merger"],
+    "description": "LCA merged into the ELCA in 1987.",
+    "citations": ["cite-elca-merger", "cite-elca-founded"]
+  },
+  {
+    "id": "aelc-to-elca-1987",
+    "name": "Merger into ELCA",
+    "from_id": "association-of-evangelical-lutheran-churches",
+    "to_id": "evangelical-lutheran-church-in-america",
+    "zoom_tier": "full",
+    "type": "merge",
+    "year": 1987,
+    "reasons": ["merger"],
+    "description": "AELC merged into the ELCA in 1987.",
+    "citations": ["cite-elca-merger", "cite-elca-founded"]
+  }
+]

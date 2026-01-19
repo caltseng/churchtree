@@ -1,4 +1,4 @@
-# Data Collection Plan: American Protestantism (Umbrella)
+﻿# Data Collection Plan: American Protestantism (Umbrella)
 
 ## Purpose
 Provide a single, exhaustive roadmap for collecting American Protestant lineage
@@ -38,8 +38,9 @@ American Protestant families to cover:
 Create sub-plans for additional families as they enter scope.
 
 ## Checklist
-- [ ] Confirm scope list is complete for current phase.
-- [ ] Ensure each sub-plan has owners, sources, and first batch targets.
-- [ ] Run notes-first extraction for each sub-plan.
-- [ ] Convert notes to JSON and rebuild `data/data.js`.
-- [ ] Run QA: `docs/spec/data-audit-checklist.md` and `plans/qa-periodic-check.md`.
+- [x] Confirm scope list is complete for current phase.
+- [x] Ensure each sub-plan has owners, sources, and first batch targets.
+- [x] Run notes-first extraction for each sub-plan.
+- [x] Convert notes to JSON and rebuild `data/data.js`.
+- [x] Run QA: `docs/spec/data-audit-checklist.md` and `plans/qa-periodic-check.md`.
+

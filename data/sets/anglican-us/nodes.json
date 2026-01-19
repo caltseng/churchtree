@@ -1,0 +1,34 @@
+﻿[
+  {
+    "id": "episcopal-church",
+    "name": "Episcopal Church",
+    "kind": "denomination",
+    "start_year": 1785,
+    "zoom_tier": "full",
+    "short_label": "TEC",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Anglican",
+    "ecclesial_orientation": "mainline",
+    "current_status": "active",
+    "notes": "Organized in 1785 as the U.S. Anglican body.",
+    "distinctives": ["Anglican doctrine"],
+    "size_estimate": "1,547,779 active baptized members (2023)"
+  },
+  {
+    "id": "anglican-church-in-north-america",
+    "name": "Anglican Church in North America",
+    "kind": "denomination",
+    "start_year": 2009,
+    "zoom_tier": "full",
+    "short_label": "ACNA",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Anglican",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "notes": "Formed in 2009 by groups separating from TEC and the Anglican Church of Canada.",
+    "distinctives": ["Anglican doctrine"],
+    "size_estimate": "130,111 members (2024)"
+  }
+]

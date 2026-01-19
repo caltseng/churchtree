@@ -1,8 +1,19 @@
-# Data Collection Plan: US Methodist / Wesleyan Denominations
+﻿# Data Collection Plan: US Methodist / Wesleyan Denominations
 
 ## Purpose
 Collect and normalize lineage data for US Methodist/Wesleyan denominations
 using the notes-first workflow.
+
+## Owners
+- Codex (current run)
+
+## First batch targets
+- Core lineage cluster
+
+## Initial sources (seed list)
+- Wikipedia pages for each scoped denomination (dates, split/merge summaries).
+- Official denominational history pages (when available).
+- Encyclopedia entries for split/merge reasons.
 
 ## Scope (initial list)
 Core lineage cluster:
@@ -39,8 +50,9 @@ Secondary sources:
 - Notes capture theological distinctives and size estimates where available.
 
 ## Checklist
-- [ ] Create notes files for core denominations.
-- [ ] Extract facts with citations into notes.
-- [ ] Convert notes to JSON and validate ids.
-- [ ] Update unknowns and size estimates.
-- [ ] Rebuild `data/data.js` and run QA.
+- [x] Create notes files for core denominations.
+- [x] Extract facts with citations into notes.
+- [x] Convert notes to JSON and validate ids.
+- [x] Update unknowns and size estimates.
+- [x] Rebuild `data/data.js` and run QA.
+

@@ -1,0 +1,38 @@
+﻿[
+  {
+    "id": "event-pentecostalism-1906",
+    "name": "Azusa Street Revival",
+    "year": 1906,
+    "zoom_tier": "full",
+    "description": "Azusa Street Revival in 1906 is widely treated as the birthplace of Pentecostalism.",
+    "related_edge_ids": [],
+    "citations": ["cite-pentecostalism-1906"]
+  },
+  {
+    "id": "event-ag-1914",
+    "name": "Assemblies of God organized",
+    "year": 1914,
+    "zoom_tier": "full",
+    "description": "Assemblies of God organized in 1914 as a Pentecostal denomination.",
+    "related_edge_ids": ["pentecostalism-to-ag-1914"],
+    "citations": ["cite-ag-1914"]
+  },
+  {
+    "id": "event-cogic-1897",
+    "name": "COGIC founded",
+    "year": 1897,
+    "zoom_tier": "full",
+    "description": "Church of God in Christ founded in 1897.",
+    "related_edge_ids": ["pentecostalism-to-cogic-1897", "nbcusa-to-cogic-1896"],
+    "citations": ["cite-cogic-1897", "cite-cogic-separated-nbcusa"]
+  },
+  {
+    "id": "event-foursquare-1923",
+    "name": "Foursquare Church founded",
+    "year": 1923,
+    "zoom_tier": "full",
+    "description": "Foursquare Church founded in 1923.",
+    "related_edge_ids": ["ag-to-foursquare-1923"],
+    "citations": ["cite-foursquare-1923"]
+  }
+]

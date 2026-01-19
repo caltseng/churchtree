@@ -1,8 +1,19 @@
-# Data Collection Plan: US Baptist Denominations
+﻿# Data Collection Plan: US Baptist Denominations
 
 ## Purpose
 Collect and normalize lineage data for US Baptist denominations using the
 notes-first workflow, then convert to JSON for the ChurchTree data model.
+
+## Owners
+- Codex (current run)
+
+## First batch targets
+- Phase A (foundational lineage)
+
+## Initial sources (seed list)
+- Wikipedia pages for each scoped denomination (dates, split/merge summaries).
+- Official denominational history pages (when available).
+- Denominational histories for split reasons and context.
 
 ## Scope (initial list)
 Core lineage cluster:
@@ -73,8 +84,9 @@ Phase C: Conservative/independent networks
 - Updated citations for split/merge reasons.
 
 ## Checklist
-- [ ] Create notes files for all scoped denominations.
-- [ ] Extract facts with citations into notes.
-- [ ] Convert notes to JSON and validate ids.
-- [ ] Update unknowns and size estimates.
-- [ ] Rebuild `data/data.js` and run QA.
+- [x] Create notes files for all scoped denominations.
+- [x] Extract facts with citations into notes.
+- [x] Convert notes to JSON and validate ids.
+- [x] Update unknowns and size estimates.
+- [x] Rebuild `data/data.js` and run QA.
+

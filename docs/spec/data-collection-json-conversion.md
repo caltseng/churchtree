@@ -23,6 +23,10 @@ Output strictly in this JSON shape:
       "end_year": null,
       "short_label": "",
       "region": "",
+      "geographic_origin": "",
+      "tradition_family": "",
+      "ecclesial_orientation": "mainline|evangelical|other|unknown",
+      "current_status": "active|merged|dissolved|unknown",
       "notes": "",
       "distinctives": [],
       "size_estimate": ""
@@ -80,5 +84,6 @@ Rules:
 - Include split/merge reasons in edges and events when known.
 - Map theological distinctives into the node `distinctives` array when sourced.
 - Map denomination size estimates into `size_estimate` when sourced.
+- Map denomination origin and family fields when sourced.
 - Do not invent sources; include URLs or bibliographic details when possible.
 ```

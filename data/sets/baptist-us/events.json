@@ -1,0 +1,65 @@
+﻿[
+  {
+    "id": "event-triennial-1814",
+    "name": "Triennial Convention organized",
+    "year": 1814,
+    "zoom_tier": "full",
+    "description": "Baptists organized a national missionary convention for foreign missions.",
+    "related_edge_ids": ["baptist-movement-to-triennial-1814"],
+    "citations": ["cite-triennial-1814", "cite-triennial-missions"]
+  },
+  {
+    "id": "event-sbc-1845",
+    "name": "Southern Baptist Convention formed",
+    "year": 1845,
+    "zoom_tier": "full",
+    "description": "Southern Baptists separated from the Triennial Convention in 1845.",
+    "related_edge_ids": ["triennial-to-sbc-1845"],
+    "citations": ["cite-sbc-1845", "cite-sbc-slavery-split"]
+  },
+  {
+    "id": "event-abcusa-1907",
+    "name": "ABCUSA formed by reorganization",
+    "year": 1907,
+    "zoom_tier": "full",
+    "description": "The Triennial Convention reorganized as American Baptist Churches USA.",
+    "related_edge_ids": ["triennial-to-abcusa-1907"],
+    "citations": ["cite-triennial-1907", "cite-abcusa-1907"]
+  },
+  {
+    "id": "event-nbcusa-1895",
+    "name": "NBCUSA formed",
+    "year": 1895,
+    "zoom_tier": "full",
+    "description": "NBCUSA formed in 1895 by merging multiple Baptist conventions.",
+    "related_edge_ids": ["baptist-movement-to-nbcusa-1895"],
+    "citations": ["cite-nbcusa-1895", "cite-nbcusa-merger"]
+  },
+  {
+    "id": "event-nbca-1915",
+    "name": "NBCA separated from NBCUSA",
+    "year": 1915,
+    "zoom_tier": "full",
+    "description": "NBCA separated from NBCUSA in 1915.",
+    "related_edge_ids": ["nbcusa-to-nbca-1915"],
+    "citations": ["cite-nbcusa-separation-1915", "cite-nbca-1915"]
+  },
+  {
+    "id": "event-pnbc-1961",
+    "name": "PNBC separated from NBCUSA",
+    "year": 1961,
+    "zoom_tier": "full",
+    "description": "PNBC separated from NBCUSA in 1961.",
+    "related_edge_ids": ["nbcusa-to-pnbc-1961"],
+    "citations": ["cite-nbcusa-separation-1961", "cite-pnbc-1961"]
+  },
+  {
+    "id": "event-venture-1947",
+    "name": "Conservative Baptist Association organized",
+    "year": 1947,
+    "zoom_tier": "full",
+    "description": "Conservative Baptists organized in 1947, later known as Venture Church Network.",
+    "related_edge_ids": ["abcusa-to-venture-1947"],
+    "citations": ["cite-venture-1947", "cite-venture-history"]
+  }
+]

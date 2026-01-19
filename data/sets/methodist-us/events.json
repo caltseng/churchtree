@@ -1,0 +1,38 @@
+﻿[
+  {
+    "id": "event-mecs-1845",
+    "name": "MECS formed",
+    "year": 1845,
+    "zoom_tier": "full",
+    "description": "The Methodist Episcopal Church, South formed after the slavery-related split in 1845.",
+    "related_edge_ids": ["mec-to-mecs-1845"],
+    "citations": ["cite-mecs-1845"]
+  },
+  {
+    "id": "event-mpc-1828",
+    "name": "MPC separated from MEC",
+    "year": 1828,
+    "zoom_tier": "full",
+    "description": "The Methodist Protestant Church separated from the MEC in 1828.",
+    "related_edge_ids": ["mec-to-mpc-1828"],
+    "citations": ["cite-mpc-1828"]
+  },
+  {
+    "id": "event-methodist-church-1939",
+    "name": "Methodist Church formed",
+    "year": 1939,
+    "zoom_tier": "full",
+    "description": "The Methodist Church formed by the 1939 reunion of MEC, MECS, and MPC.",
+    "related_edge_ids": ["mec-to-methodist-church-1939", "mecs-to-methodist-church-1939", "mpc-to-methodist-church-1939"],
+    "citations": ["cite-methodist-church-1939"]
+  },
+  {
+    "id": "event-umc-1968",
+    "name": "United Methodist Church formed",
+    "year": 1968,
+    "zoom_tier": "full",
+    "description": "The Methodist Church and the Evangelical United Brethren Church merged to form the UMC.",
+    "related_edge_ids": ["methodist-church-to-umc-1968", "eub-to-umc-1968"],
+    "citations": ["cite-umc-1968", "cite-methodist-church-merged-into-umc"]
+  }
+]

@@ -1,0 +1,38 @@
+﻿[
+  {
+    "id": "restoration-to-disciples-1832",
+    "name": "Union in Lexington",
+    "from_id": "restoration-movement",
+    "to_id": "christian-church-disciples-of-christ",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1832,
+    "reasons": ["restorationist union"],
+    "description": "Restoration Movement union in 1832 is a milestone in the Disciples lineage.",
+    "citations": ["cite-disciples-1832"]
+  },
+  {
+    "id": "disciples-to-coc-1906",
+    "name": "Churches of Christ separation",
+    "from_id": "christian-church-disciples-of-christ",
+    "to_id": "churches-of-christ",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1906,
+    "reasons": ["organizational separation"],
+    "description": "Churches of Christ separated from the Disciples in 1906.",
+    "citations": ["cite-disciples-separation-1906"]
+  },
+  {
+    "id": "disciples-to-independent-1926",
+    "name": "Independent Christian Churches separation",
+    "from_id": "christian-church-disciples-of-christ",
+    "to_id": "independent-christian-churches",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1926,
+    "reasons": ["organizational separation"],
+    "description": "Independent Christian Churches separated from the Disciples between 1926 and 1971.",
+    "citations": ["cite-disciples-separation-1926"]
+  }
+]

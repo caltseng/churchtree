@@ -1,0 +1,11 @@
+﻿[
+  {
+    "id": "event-acna-2009",
+    "name": "ACNA formed",
+    "year": 2009,
+    "zoom_tier": "full",
+    "description": "ACNA formed in 2009 by groups separating from TEC and the Anglican Church of Canada.",
+    "related_edge_ids": ["tec-to-acna-2009"],
+    "citations": ["cite-acna-2009", "cite-acna-separated"]
+  }
+]

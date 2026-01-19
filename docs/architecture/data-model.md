@@ -23,6 +23,10 @@ Optional fields:
 - short_label: short display name
 - summary: brief description
 - region: string (e.g., "US", "Global")
+- geographic_origin: string (country/region of origin)
+- tradition_family: broad family (e.g., "Reformed", "Baptist")
+- ecclesial_orientation: "mainline" | "evangelical" | "other" | "unknown"
+- current_status: "active" | "merged" | "dissolved" | "unknown"
 - notes: freeform text
 - distinctives: list of short theological distinctives
 - size_estimate: short text (e.g., "approx 1.0M members, 2024")

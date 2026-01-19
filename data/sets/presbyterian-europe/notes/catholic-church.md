@@ -4,7 +4,7 @@
 - The Roman Catholic Church is the largest Christian church, centered on communion with the Bishop of Rome.
 
 ## Key Dates
-- start_year: unknown
+- start_year: 1054
 - end_year: unknown
 
 ## Metadata

@@ -1,152 +1,368 @@
-[
-  {
-    "id": "src-wiki-pca",
-    "title": "Presbyterian Church in America - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Presbyterian_Church_in_America"
-  },
-  {
-    "id": "src-wiki-pcusa",
-    "title": "Presbyterian Church (USA) - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Presbyterian_Church_(USA)"
-  },
-  {
-    "id": "src-wiki-opc",
-    "title": "Orthodox Presbyterian Church - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Orthodox_Presbyterian_Church"
-  },
-  {
-    "id": "src-wiki-pcus",
-    "title": "Presbyterian Church in the United States - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Presbyterian_Church_in_the_United_States"
-  },
-  {
-    "id": "src-wiki-pcusa-1789",
-    "title": "Presbyterian Church in the United States of America - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Presbyterian_Church_in_the_United_States_of_America"
-  },
-  {
-    "id": "src-wiki-upcusa",
-    "title": "United Presbyterian Church in the United States of America - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/United_Presbyterian_Church_in_the_United_States_of_America"
-  },
-  {
-    "id": "src-wiki-upcna",
-    "title": "United Presbyterian Church of North America - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/United_Presbyterian_Church_of_North_America"
-  },
-  {
-    "id": "src-wiki-zurich-reformation",
-    "title": "Reformation in Zurich - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Reformation_in_Z%C3%BCrich"
-  },
-  {
-    "id": "src-wiki-zwingli",
-    "title": "Huldrych Zwingli - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Huldrych_Zwingli"
-  },
-  {
-    "id": "src-wiki-genevan-reformation",
-    "title": "Genevan Reformation - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Genevan_Reformation"
-  },
-  {
-    "id": "src-wiki-calvins-geneva",
-    "title": "Calvin's Geneva - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Calvin%27s_Geneva"
-  },
-  {
-    "id": "src-wiki-scottish-reformation",
-    "title": "Scottish Reformation - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Scottish_Reformation"
-  },
-  {
-    "id": "src-wiki-presbyterian-polity",
-    "title": "Presbyterian polity - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Presbyterian_polity"
-  },
-  {
-    "id": "src-wiki-cos-synods-presbyteries",
-    "title": "List of Church of Scotland synods and presbyteries - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/List_of_Church_of_Scotland_synods_and_presbyteries"
-  },
-  {
-    "id": "src-wiki-presbyterian-us",
-    "title": "Presbyterianism in the United States - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Presbyterianism_in_the_United_States"
-  },
-  {
-    "id": "src-wiki-presbytery-philadelphia",
-    "title": "Presbytery of Philadelphia - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Presbytery_of_Philadelphia"
-  },
-  {
-    "id": "src-wiki-old-side-new-side",
-    "title": "Old Side–New Side Controversy - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Old_Side%E2%80%93New_Side_Controversy"
-  },
-  {
-    "id": "src-wiki-makemie",
-    "title": "Francis Makemie - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Francis_Makemie"
-  },
-  {
-    "id": "src-wiki-church-of-scotland",
-    "title": "Church of Scotland - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Church_of_Scotland"
-  },
-  {
-    "id": "src-wiki-english-congregation-geneva",
-    "title": "English Congregation in Geneva - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/English_Congregation_in_Geneva"
-  },
-  {
-    "id": "src-wiki-protestant-church-switzerland",
-    "title": "Protestant Church in Switzerland - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Protestant_Church_of_Switzerland"
-  },
-  {
-    "id": "src-wiki-scotch-irish",
-    "title": "Scotch-Irish Americans - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Scotch-Irish_Americans"
-  },
-  {
-    "id": "src-wiki-presbyterianism",
-    "title": "Presbyterianism - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Presbyterianism"
-  },
-  {
-    "id": "src-wiki-book-of-discipline",
-    "title": "Book of Discipline (Church of Scotland) - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Book_of_Discipline_(Church_of_Scotland)"
-  },
-  {
-    "id": "src-wiki-catholic-church",
-    "title": "Catholic Church - Wikipedia",
-    "kind": "website",
-    "url": "https://en.wikipedia.org/wiki/Catholic_Church"
-  }
+﻿[
+    {
+        "id":  "src-wiki-pca",
+        "title":  "Presbyterian Church in America - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Presbyterian_Church_in_America"
+    },
+    {
+        "id":  "src-wiki-pcusa",
+        "title":  "Presbyterian Church (USA) - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Presbyterian_Church_(USA)"
+    },
+    {
+        "id":  "src-wiki-opc",
+        "title":  "Orthodox Presbyterian Church - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Orthodox_Presbyterian_Church"
+    },
+    {
+        "id":  "src-wiki-pcus",
+        "title":  "Presbyterian Church in the United States - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Presbyterian_Church_in_the_United_States"
+    },
+    {
+        "id":  "src-wiki-pcusa-1789",
+        "title":  "Presbyterian Church in the United States of America - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Presbyterian_Church_in_the_United_States_of_America"
+    },
+    {
+        "id":  "src-wiki-upcusa",
+        "title":  "United Presbyterian Church in the United States of America - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/United_Presbyterian_Church_in_the_United_States_of_America"
+    },
+    {
+        "id":  "src-wiki-upcna",
+        "title":  "United Presbyterian Church of North America - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/United_Presbyterian_Church_of_North_America"
+    },
+    {
+        "id":  "src-wiki-zurich-reformation",
+        "title":  "Reformation in Zurich - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Reformation_in_Z%C3%BCrich"
+    },
+    {
+        "id":  "src-wiki-zwingli",
+        "title":  "Huldrych Zwingli - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Huldrych_Zwingli"
+    },
+    {
+        "id":  "src-wiki-genevan-reformation",
+        "title":  "Genevan Reformation - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Genevan_Reformation"
+    },
+    {
+        "id":  "src-wiki-calvins-geneva",
+        "title":  "Calvin\u0027s Geneva - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Calvin%27s_Geneva"
+    },
+    {
+        "id":  "src-wiki-scottish-reformation",
+        "title":  "Scottish Reformation - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Scottish_Reformation"
+    },
+    {
+        "id":  "src-wiki-presbyterian-polity",
+        "title":  "Presbyterian polity - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Presbyterian_polity"
+    },
+    {
+        "id":  "src-wiki-cos-synods-presbyteries",
+        "title":  "List of Church of Scotland synods and presbyteries - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/List_of_Church_of_Scotland_synods_and_presbyteries"
+    },
+    {
+        "id":  "src-wiki-presbyterian-us",
+        "title":  "Presbyterianism in the United States - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Presbyterianism_in_the_United_States"
+    },
+    {
+        "id":  "src-wiki-presbytery-philadelphia",
+        "title":  "Presbytery of Philadelphia - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Presbytery_of_Philadelphia"
+    },
+    {
+        "id":  "src-wiki-old-side-new-side",
+        "title":  "Old Sideâ€“New Side Controversy - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Old_Side%E2%80%93New_Side_Controversy"
+    },
+    {
+        "id":  "src-wiki-makemie",
+        "title":  "Francis Makemie - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Francis_Makemie"
+    },
+    {
+        "id":  "src-wiki-church-of-scotland",
+        "title":  "Church of Scotland - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Church_of_Scotland"
+    },
+    {
+        "id":  "src-wiki-english-congregation-geneva",
+        "title":  "English Congregation in Geneva - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/English_Congregation_in_Geneva"
+    },
+    {
+        "id":  "src-wiki-protestant-church-switzerland",
+        "title":  "Protestant Church in Switzerland - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Protestant_Church_of_Switzerland"
+    },
+    {
+        "id":  "src-wiki-scotch-irish",
+        "title":  "Scotch-Irish Americans - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Scotch-Irish_Americans"
+    },
+    {
+        "id":  "src-wiki-presbyterianism",
+        "title":  "Presbyterianism - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Presbyterianism"
+    },
+    {
+        "id":  "src-wiki-book-of-discipline",
+        "title":  "Book of Discipline (Church of Scotland) - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Book_of_Discipline_(Church_of_Scotland)"
+    },
+    {
+        "id":  "src-wiki-catholic-church",
+        "title":  "Catholic Church - Wikipedia",
+        "kind":  "website",
+        "url":  "https://en.wikipedia.org/wiki/Catholic_Church"
+    },
+    {
+        "title":  "Baptists - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Baptists",
+        "id":  "src-wiki-baptists",
+        "kind":  "website"
+    },
+    {
+        "title":  "Triennial Convention - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Triennial_Convention",
+        "id":  "src-wiki-triennial-convention",
+        "kind":  "website"
+    },
+    {
+        "title":  "Southern Baptist Convention - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Southern_Baptist_Convention",
+        "id":  "src-wiki-sbc",
+        "kind":  "website"
+    },
+    {
+        "title":  "American Baptist Churches USA - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/American_Baptist_Churches_USA",
+        "id":  "src-wiki-abcusa",
+        "kind":  "website"
+    },
+    {
+        "title":  "National Baptist Convention, USA - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/National_Baptist_Convention,_USA",
+        "id":  "src-wiki-nbcusa",
+        "kind":  "website"
+    },
+    {
+        "title":  "National Baptist Convention of America International - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/National_Baptist_Convention_of_America_International",
+        "id":  "src-wiki-nbca",
+        "kind":  "website"
+    },
+    {
+        "title":  "Progressive National Baptist Convention - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Progressive_National_Baptist_Convention",
+        "id":  "src-wiki-pnbc",
+        "kind":  "website"
+    },
+    {
+        "title":  "Venture Church Network - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Venture_Church_Network",
+        "id":  "src-wiki-venture-church-network",
+        "kind":  "website"
+    },
+    {
+        "title":  "Methodist Episcopal Church - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Methodist_Episcopal_Church",
+        "id":  "src-wiki-methodist-episcopal-church",
+        "kind":  "website"
+    },
+    {
+        "title":  "Methodist Episcopal Church, South - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Methodist_Episcopal_Church,_South",
+        "id":  "src-wiki-methodist-episcopal-church-south",
+        "kind":  "website"
+    },
+    {
+        "title":  "Methodist Protestant Church - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Methodist_Protestant_Church",
+        "id":  "src-wiki-methodist-protestant-church",
+        "kind":  "website"
+    },
+    {
+        "title":  "Methodist Church (United States) - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Methodist_Church_(United_States)",
+        "id":  "src-wiki-methodist-church-us",
+        "kind":  "website"
+    },
+    {
+        "title":  "United Methodist Church - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/United_Methodist_Church",
+        "id":  "src-wiki-united-methodist-church",
+        "kind":  "website"
+    },
+    {
+        "title":  "Evangelical United Brethren Church - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Evangelical_United_Brethren_Church",
+        "id":  "src-wiki-evangelical-united-brethren-church",
+        "kind":  "website"
+    },
+    {
+        "title":  "Lutheran Church - Missouri Synod - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Lutheran_Church_%E2%80%93_Missouri_Synod",
+        "id":  "src-wiki-lcms",
+        "kind":  "website"
+    },
+    {
+        "title":  "Wisconsin Evangelical Lutheran Synod - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Wisconsin_Evangelical_Lutheran_Synod",
+        "id":  "src-wiki-wels",
+        "kind":  "website"
+    },
+    {
+        "title":  "American Lutheran Church - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/American_Lutheran_Church",
+        "id":  "src-wiki-alc",
+        "kind":  "website"
+    },
+    {
+        "title":  "Lutheran Church in America - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Lutheran_Church_in_America",
+        "id":  "src-wiki-lca",
+        "kind":  "website"
+    },
+    {
+        "title":  "Association of Evangelical Lutheran Churches - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Association_of_Evangelical_Lutheran_Churches",
+        "id":  "src-wiki-aelc",
+        "kind":  "website"
+    },
+    {
+        "title":  "Evangelical Lutheran Church in America - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Evangelical_Lutheran_Church_in_America",
+        "id":  "src-wiki-elca",
+        "kind":  "website"
+    },
+    {
+        "title":  "Episcopal Church (United States) - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Episcopal_Church_(United_States)",
+        "id":  "src-wiki-episcopal-church",
+        "kind":  "website"
+    },
+    {
+        "title":  "Anglican Church in North America - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Anglican_Church_in_North_America",
+        "id":  "src-wiki-acna",
+        "kind":  "website"
+    },
+    {
+        "title":  "Pentecostalism - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Pentecostalism",
+        "id":  "src-wiki-pentecostalism",
+        "kind":  "website"
+    },
+    {
+        "title":  "Assemblies of God - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Assemblies_of_God",
+        "id":  "src-wiki-assemblies-of-god",
+        "kind":  "website"
+    },
+    {
+        "title":  "Church of God (Cleveland, Tennessee) - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Church_of_God_(Cleveland,_Tennessee)",
+        "id":  "src-wiki-church-of-god-cleveland",
+        "kind":  "website"
+    },
+    {
+        "title":  "Church of God in Christ - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Church_of_God_in_Christ",
+        "id":  "src-wiki-cogic",
+        "kind":  "website"
+    },
+    {
+        "title":  "Foursquare Church - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Foursquare_Church",
+        "id":  "src-wiki-foursquare",
+        "kind":  "website"
+    },
+    {
+        "title":  "Restoration Movement - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Restoration_Movement",
+        "id":  "src-wiki-restoration-movement",
+        "kind":  "website"
+    },
+    {
+        "title":  "Christian Church (Disciples of Christ) - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Christian_Church_(Disciples_of_Christ)",
+        "id":  "src-wiki-disciples",
+        "kind":  "website"
+    },
+    {
+        "title":  "Churches of Christ - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Churches_of_Christ",
+        "id":  "src-wiki-churches-of-christ",
+        "kind":  "website"
+    },
+    {
+        "title":  "Christian churches and churches of Christ - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Christian_churches_and_churches_of_Christ",
+        "id":  "src-wiki-independent-christian-churches",
+        "kind":  "website"
+    },
+    {
+        "title":  "Church of the Nazarene - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Church_of_the_Nazarene",
+        "id":  "src-wiki-church-of-the-nazarene",
+        "kind":  "website"
+    },
+    {
+        "title":  "Millerism - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Millerism",
+        "id":  "src-wiki-millerism",
+        "kind":  "website"
+    },
+    {
+        "title":  "Seventh-day Adventist Church - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Seventh-day_Adventist_Church",
+        "id":  "src-wiki-seventh-day-adventist",
+        "kind":  "website"
+    },
+    {
+        "title":  "Advent Christian Church - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Advent_Christian_Church",
+        "id":  "src-wiki-advent-christian",
+        "kind":  "website"
+    },
+    {
+        "title":  "Church of God (Seventh Day) - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Church_of_God_(Seventh_Day)",
+        "id":  "src-wiki-church-of-god-seventh-day",
+        "kind":  "website"
+    }
 ]

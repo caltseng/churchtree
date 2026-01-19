@@ -1,0 +1,62 @@
+﻿[
+  {
+    "id": "pentecostalism-to-ag-1914",
+    "name": "Pentecostal denomination formed",
+    "from_id": "pentecostalism",
+    "to_id": "assemblies-of-god",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1914,
+    "reasons": ["denominational organization"],
+    "description": "Assemblies of God organized in 1914 as a Pentecostal denomination.",
+    "citations": ["cite-ag-1914"]
+  },
+  {
+    "id": "pentecostalism-to-cog-cleveland-1886",
+    "name": "Holiness-Pentecostal roots",
+    "from_id": "pentecostalism",
+    "to_id": "church-of-god-cleveland",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1886,
+    "reasons": ["holiness-pentecostal origins"],
+    "description": "Church of God (Cleveland) traces to 1886 Holiness roots later within the Pentecostal movement.",
+    "citations": ["cite-cog-cleveland-1886"]
+  },
+  {
+    "id": "pentecostalism-to-cogic-1897",
+    "name": "Holiness-Pentecostal roots",
+    "from_id": "pentecostalism",
+    "to_id": "church-of-god-in-christ",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1897,
+    "reasons": ["holiness-pentecostal origins"],
+    "description": "COGIC began in 1897 and became a major Holiness-Pentecostal body.",
+    "citations": ["cite-cogic-1897"]
+  },
+  {
+    "id": "ag-to-foursquare-1923",
+    "name": "Separation from Assemblies of God",
+    "from_id": "assemblies-of-god",
+    "to_id": "foursquare-church",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1923,
+    "reasons": ["organizational separation"],
+    "description": "Foursquare Church formed in 1923 and is listed as separated from the Assemblies of God.",
+    "citations": ["cite-foursquare-1923", "cite-foursquare-separated"]
+  },
+  {
+    "id": "nbcusa-to-cogic-1896",
+    "name": "COGIC separation",
+    "from_id": "national-baptist-convention-usa",
+    "to_id": "church-of-god-in-christ",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1896,
+    "reasons": ["organizational separation"],
+    "description": "COGIC separated from the National Baptist Convention, USA in the late 1890s.",
+    "citations": ["cite-cogic-separated-nbcusa"]
+  }
+]

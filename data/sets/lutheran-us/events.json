@@ -1,0 +1,20 @@
+﻿[
+  {
+    "id": "event-aelc-1976",
+    "name": "AELC formed",
+    "year": 1976,
+    "zoom_tier": "full",
+    "description": "AELC formed in 1976 after separating from the LCMS.",
+    "related_edge_ids": ["lcms-to-aelc-1976"],
+    "citations": ["cite-aelc-1976"]
+  },
+  {
+    "id": "event-elca-1987",
+    "name": "ELCA formed by merger",
+    "year": 1987,
+    "zoom_tier": "full",
+    "description": "ELCA formed by merging the ALC, LCA, and AELC.",
+    "related_edge_ids": ["alc-to-elca-1987", "lca-to-elca-1987", "aelc-to-elca-1987"],
+    "citations": ["cite-elca-merger", "cite-elca-founded"]
+  }
+]

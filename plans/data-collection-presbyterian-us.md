@@ -4,6 +4,17 @@
 Collect and normalize lineage data for US Presbyterian denominations using the
 notes-first workflow, then convert to JSON for the ChurchTree data model.
 
+## Owners
+- Codex (current run)
+
+## First batch targets
+- Phase A (core lineage)
+
+## Initial sources (seed list)
+- Wikipedia pages for each scoped denomination (dates, split/merge summaries).
+- Official denominational history pages (when available).
+- Encyclopedias or denominational histories for split reasons.
+
 ## Scope (initial list)
 Core lineage cluster:
 - Presbyterian Church in the United States of America (PCUSA, 1789)

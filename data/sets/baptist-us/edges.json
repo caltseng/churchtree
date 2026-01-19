@@ -1,0 +1,86 @@
+﻿[
+  {
+    "id": "baptist-movement-to-triennial-1814",
+    "name": "Foreign missions convention",
+    "from_id": "baptist-movement",
+    "to_id": "triennial-convention",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1814,
+    "reasons": ["foreign missions cooperation"],
+    "description": "Baptist leaders organized a national missionary convention to coordinate foreign missions (the Triennial Convention).",
+    "citations": ["cite-triennial-1814", "cite-triennial-missions"]
+  },
+  {
+    "id": "triennial-to-sbc-1845",
+    "name": "Southern separation over slavery",
+    "from_id": "triennial-convention",
+    "to_id": "southern-baptist-convention",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1845,
+    "reasons": ["slavery"],
+    "description": "Southern Baptists separated from the Triennial Convention in 1845 to uphold slavery.",
+    "citations": ["cite-sbc-1845", "cite-sbc-slavery-split"]
+  },
+  {
+    "id": "triennial-to-abcusa-1907",
+    "name": "Reorganization into ABCUSA",
+    "from_id": "triennial-convention",
+    "to_id": "american-baptist-churches-usa",
+    "zoom_tier": "full",
+    "type": "continuation",
+    "year": 1907,
+    "reasons": ["reorganization"],
+    "description": "The Triennial Convention reorganized in 1907 as the American Baptist Churches USA.",
+    "citations": ["cite-triennial-1907", "cite-abcusa-1907"]
+  },
+  {
+    "id": "baptist-movement-to-nbcusa-1895",
+    "name": "Merger of conventions",
+    "from_id": "baptist-movement",
+    "to_id": "national-baptist-convention-usa",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1895,
+    "reasons": ["merger of conventions"],
+    "description": "NBCUSA formed in 1895 by merging multiple Baptist conventions.",
+    "citations": ["cite-nbcusa-1895", "cite-nbcusa-merger"]
+  },
+  {
+    "id": "nbcusa-to-nbca-1915",
+    "name": "Separation from NBCUSA",
+    "from_id": "national-baptist-convention-usa",
+    "to_id": "national-baptist-convention-of-america",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1915,
+    "reasons": ["organizational separation"],
+    "description": "NBCA separated from NBCUSA in 1915.",
+    "citations": ["cite-nbcusa-separation-1915", "cite-nbca-1915"]
+  },
+  {
+    "id": "nbcusa-to-pnbc-1961",
+    "name": "Separation from NBCUSA",
+    "from_id": "national-baptist-convention-usa",
+    "to_id": "progressive-national-baptist-convention",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1961,
+    "reasons": ["organizational separation"],
+    "description": "PNBC separated from NBCUSA in 1961.",
+    "citations": ["cite-nbcusa-separation-1961", "cite-pnbc-1961"]
+  },
+  {
+    "id": "abcusa-to-venture-1947",
+    "name": "Conservative Baptist separation",
+    "from_id": "american-baptist-churches-usa",
+    "to_id": "venture-church-network",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1947,
+    "reasons": ["fundamentalist-modernist controversy", "mission agency dispute"],
+    "description": "Conservative Baptists organized in 1947 amid controversy within the Northern Baptist Convention, forming the Conservative Baptist Association of America (now Venture Church Network).",
+    "citations": ["cite-venture-1947", "cite-venture-history"]
+  }
+]

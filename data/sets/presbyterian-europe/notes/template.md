@@ -7,6 +7,12 @@
 - start_year:
 - end_year:
 
+## Metadata
+- tradition_family:
+- ecclesial_orientation:
+- geographic_origin:
+- current_status:
+
 ## Relationships
 - Parent/precursor bodies:
 - Split or merge relationships:

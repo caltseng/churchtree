@@ -22,7 +22,7 @@ Run this checklist before major merges or data refreshes.
 - Re-run the bundle build: `powershell -ExecutionPolicy Bypass -File scripts/build-data-js.ps1`.
 
 ## Checklist
-- [ ] Run `docs/spec/data-audit-checklist.md`.
-- [ ] Validate zoom tier integrity and cluster labels.
+- [x] Run `docs/spec/data-audit-checklist.md`.
+- [x] Validate zoom tier integrity and cluster labels.
 - [ ] Review visual alignment and hover behavior.
-- [ ] Rebuild `data/data.js`.
+- [x] Rebuild `data/data.js`.

@@ -1,0 +1,14 @@
+﻿[
+  {
+    "id": "tec-to-acna-2009",
+    "name": "Formation of ACNA",
+    "from_id": "episcopal-church",
+    "to_id": "anglican-church-in-north-america",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 2009,
+    "reasons": ["organizational separation"],
+    "description": "ACNA formed in 2009 by groups separating from TEC and the Anglican Church of Canada.",
+    "citations": ["cite-acna-2009", "cite-acna-separated"]
+  }
+]

@@ -1,452 +1,854 @@
-[
-  {
-    "id": "cite-pca-1973",
-    "source_id": "src-wiki-pca",
-    "locator": "Infobox: founded_date, separated_from",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pca-1973-reasons",
-    "source_id": "src-wiki-pca",
-    "locator": "Lead: separated from PCUS amid disputes over doctrinal standards and theological direction",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcus-1973-reasons-detail",
-    "source_id": "src-wiki-pcus",
-    "locator": "History: PCA founded citing theological liberalism, denial of the deity of Jesus Christ, and denial of the inerrancy and authority of Scripture",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-1983",
-    "source_id": "src-wiki-pcusa",
-    "locator": "Infobox: founded_date, merger",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-1983-reasons",
-    "source_id": "src-wiki-pcus",
-    "locator": "History: reunion between northern and southern Presbyterians (1983 Plan of Union)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-opc-1936",
-    "source_id": "src-wiki-opc",
-    "locator": "Infobox: founded_date, separated_from",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-opc-1936-reasons",
-    "source_id": "src-wiki-opc",
-    "locator": "Lead: objected to Liberal and Modernist theology (Fundamentalist-Modernist controversy)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcus-1861",
-    "source_id": "src-wiki-pcus",
-    "locator": "Infobox: founded_date, separated_from",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcus-1861-reasons",
-    "source_id": "src-wiki-pcusa-1789",
-    "locator": "Lead: split over slavery, politics, and theology precipitated by the Civil War",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-upcusa-1958",
-    "source_id": "src-wiki-upcusa",
-    "locator": "Infobox: founded_date, merger",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-upcusa-1958-reasons",
-    "source_id": "src-wiki-upcusa",
-    "locator": "Lead: union driven by ecumenical activity and reunion of long-separated branches",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-1789-founded",
-    "source_id": "src-wiki-pcusa-1789",
-    "locator": "Infobox: founded_date",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcus-founded",
-    "source_id": "src-wiki-pcus",
-    "locator": "Infobox: founded_date, separated_from",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-opc-founded",
-    "source_id": "src-wiki-opc",
-    "locator": "Infobox: founded_date, separated_from",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pca-founded",
-    "source_id": "src-wiki-pca",
-    "locator": "Infobox: founded_date, separated_from",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-upcusa-founded",
-    "source_id": "src-wiki-upcusa",
-    "locator": "Infobox: founded_date, merger",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-founded",
-    "source_id": "src-wiki-pcusa",
-    "locator": "Infobox: founded_date, merger",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-merge-1983",
-    "source_id": "src-wiki-pcusa",
-    "locator": "Lead: established with 1983 merger of PCUS and UPCUSA",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-upcna-founded",
-    "source_id": "src-wiki-upcna",
-    "locator": "Infobox: founded_date",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-upcna-1958-merge",
-    "source_id": "src-wiki-upcna",
-    "locator": "Lead: merged with PCUSA to form UPCUSA (1958)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-theology",
-    "source_id": "src-wiki-pcusa",
-    "locator": "Infobox: theology (Reformed, Barthianist)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-mainline",
-    "source_id": "src-wiki-pcusa",
-    "locator": "Lead: mainline Protestant denomination",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pca-theology",
-    "source_id": "src-wiki-pca",
-    "locator": "Infobox: theology (Reformed; Evangelical)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-opc-theology",
-    "source_id": "src-wiki-opc",
-    "locator": "Infobox: theology (Confessional Reformed)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcus-distinctives",
-    "source_id": "src-wiki-pcus",
-    "locator": "History: Old School Presbyterianism and Westminster Confession emphasis",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-1789-orientation",
-    "source_id": "src-wiki-pcusa-1789",
-    "locator": "Infobox: orientation (Mainline Protestant; Reformed tradition)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-upcusa-theology",
-    "source_id": "src-wiki-upcusa",
-    "locator": "Infobox: theology (Reformed/Calvinism)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-upcna-orientation",
-    "source_id": "src-wiki-upcna",
-    "locator": "Infobox: orientation (Calvinist)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-upcna-distinctives",
-    "source_id": "src-wiki-upcna",
-    "locator": "History: Covenanter/Seceder distinctives including public covenanting and exclusive psalmody",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-size",
-    "source_id": "src-wiki-pcusa",
-    "locator": "Infobox: members 1,045,848 active members (2024)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pca-size",
-    "source_id": "src-wiki-pca",
-    "locator": "Infobox: members 400,751 (2024)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-1789-size",
-    "source_id": "src-wiki-pcusa-1789",
-    "locator": "Infobox: members 2.8 million in 1957",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-upcusa-size",
-    "source_id": "src-wiki-upcusa",
-    "locator": "Infobox: members 2,351,119 in 1982",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-upcna-size",
-    "source_id": "src-wiki-upcna",
-    "locator": "Infobox: members 257,513 in 1957",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-zurich-reformation",
-    "source_id": "src-wiki-zurich-reformation",
-    "locator": "Lead: early 1520s reform under Zwingli; Zurich magistrates and civic changes",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-zwingli",
-    "source_id": "src-wiki-zwingli",
-    "locator": "Lead/Theology: memorialism, iconoclasm; life dates 1484-1531",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-genevan-reformation",
-    "source_id": "src-wiki-genevan-reformation",
-    "locator": "Lead: shift from Roman Catholicism to Protestantism; Calvinist influence",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-calvins-geneva",
-    "source_id": "src-wiki-calvins-geneva",
-    "locator": "Lead/Key events: Calvin's Geneva (1536-1564), ordinances 1541, academy 1559, Servetus 1553",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-scottish-reformation",
-    "source_id": "src-wiki-scottish-reformation",
-    "locator": "Lead: 1560 Parliament; rejection of papal supremacy; Presbyterian structure",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-presbyterian-polity",
-    "source_id": "src-wiki-presbyterian-polity",
-    "locator": "Lead/Structure: rule by elders; sessions, presbyteries, synods, general assemblies",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-cos-synods-presbyteries",
-    "source_id": "src-wiki-cos-synods-presbyteries",
-    "locator": "History: original presbyteries created April 1581",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-presbyterian-us",
-    "source_id": "src-wiki-presbyterian-us",
-    "locator": "Lead: Presbyterianism in US since colonial times",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-presbytery-philadelphia",
-    "source_id": "src-wiki-presbytery-philadelphia",
-    "locator": "History: first known Presbyterian church in America organized in 1683; Presbytery of Philadelphia organized in 1706; Synod formed 1717",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-old-side-new-side",
-    "source_id": "src-wiki-old-side-new-side",
-    "locator": "History: Old Side-New Side division 1741-1758",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-makemie",
-    "source_id": "src-wiki-makemie",
-    "locator": "Lead/Ministry: founder of American Presbyterianism; trial in 1707; ordained 1681",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-church-of-scotland-lead",
-    "source_id": "src-wiki-church-of-scotland",
-    "locator": "Lead: national church; Reformed and Presbyterian tradition",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-church-of-scotland-knox",
-    "source_id": "src-wiki-church-of-scotland",
-    "locator": "History/Scottish Reformation: John Knox returned from Geneva to lead reform",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-church-of-scotland-polity",
-    "source_id": "src-wiki-church-of-scotland",
-    "locator": "Polity/Structure: Presbyterian system",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-english-congregation-geneva-overview",
-    "source_id": "src-wiki-english-congregation-geneva",
-    "locator": "Overview: exile congregation led mainly by John Knox (1555-1559)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-english-congregation-geneva-influence",
-    "source_id": "src-wiki-english-congregation-geneva",
-    "locator": "Influence/Numbers: Presbyterian model and influence on later reform",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-1789-origin",
-    "source_id": "src-wiki-pcusa-1789",
-    "locator": "Origin: colonial immigrants from Church of Scotland and Ireland",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-1789-overview",
-    "source_id": "src-wiki-pcusa-1789",
-    "locator": "Overview: first national Presbyterian denomination in the US",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcusa-1789-branched-from",
-    "source_id": "src-wiki-pcusa-1789",
-    "locator": "Infobox: branched from Church of Scotland and Synod of Ulster",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-protestant-church-switzerland-size",
-    "source_id": "src-wiki-protestant-church-switzerland",
-    "locator": "Statistics: members 1,782,513 (2024)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-church-of-scotland-size",
-    "source_id": "src-wiki-church-of-scotland",
-    "locator": "Lead: membership 245,000 (2024)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-scotch-irish-migration",
-    "source_id": "src-wiki-scotch-irish",
-    "locator": "American settlement: over 200,000 Scotch-Irish migrants (1717-1775)",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-presbyterian-polity-geneva",
-    "source_id": "src-wiki-presbyterian-polity",
-    "locator": "History: modern implementation established under Calvin in Geneva",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-presbyterian-polity-intro-scotland",
-    "source_id": "src-wiki-presbyterian-polity",
-    "locator": "History: introduced to Scotland by John Knox after exile in Geneva",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-presbyterianism-development",
-    "source_id": "src-wiki-presbyterianism",
-    "locator": "Development: influence of Calvin's Geneva and Knox's role in Scotland",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-book-of-discipline-1560",
-    "source_id": "src-wiki-book-of-discipline",
-    "locator": "Lead: First Book of Discipline (1560) sets out Presbyterian polity on Geneva model",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-book-of-discipline-1578",
-    "source_id": "src-wiki-book-of-discipline",
-    "locator": "Second Book of Discipline: more clearly Presbyterian; presbyteries, synods, general assembly",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-makemie-ordination",
-    "source_id": "src-wiki-makemie",
-    "locator": "Early life: ordained by Presbytery of Laggan in 1681",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-scottish-reformation-structure",
-    "source_id": "src-wiki-scottish-reformation",
-    "locator": "Lead: established Protestant Church of Scotland; Presbyterian structure and Calvinist doctrine",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-genevan-reformation-lead",
-    "source_id": "src-wiki-genevan-reformation",
-    "locator": "Lead: Geneva's Reformation and Reformed (Calvinist) orientation",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-zurich-reformation-lead",
-    "source_id": "src-wiki-zurich-reformation",
-    "locator": "Lead: Zurich Reformation as Reformed Protestant movement",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-presbyterian-us-colonial",
-    "source_id": "src-wiki-presbyterian-us",
-    "locator": "History: colonial era and early presbyteries",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-opc-doctrine",
-    "source_id": "src-wiki-opc",
-    "locator": "Doctrine: Reformed/Calvinist roots and Westminster Standards",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-upcusa-polity",
-    "source_id": "src-wiki-upcusa",
-    "locator": "Infobox: Reformed theology; Presbyterian polity",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-upcna-polity",
-    "source_id": "src-wiki-upcna",
-    "locator": "Infobox: Calvinist orientation; Presbyterian polity",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-pcus-polity",
-    "source_id": "src-wiki-pcus",
-    "locator": "Infobox: Calvinist orientation; Presbyterian polity",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-catholic-church-lead",
-    "source_id": "src-wiki-catholic-church",
-    "locator": "Lead: largest Christian church; communion with the Bishop of Rome",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-zurich-reformation-break",
-    "source_id": "src-wiki-zurich-reformation",
-    "locator": "Background/Course: rejection of Roman Catholic authority and reforms in Zurich",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-genevan-reformation-break",
-    "source_id": "src-wiki-genevan-reformation",
-    "locator": "Lead: Protestant movement replacing Roman Catholicism in Geneva",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-scottish-reformation-break",
-    "source_id": "src-wiki-scottish-reformation",
-    "locator": "Lead: Scotland broke away from Roman Catholic Church",
-    "accessed": "2026-01-18"
-  },
-  {
-    "id": "cite-church-of-scotland-history-break",
-    "source_id": "src-wiki-church-of-scotland",
-    "locator": "History: 1560 parliament repudiated papal authority and established a national church",
-    "accessed": "2026-01-18"
-  }
+﻿[
+    {
+        "id":  "cite-pca-1973",
+        "source_id":  "src-wiki-pca",
+        "locator":  "Infobox: founded_date, separated_from",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pca-1973-reasons",
+        "source_id":  "src-wiki-pca",
+        "locator":  "Lead: separated from PCUS amid disputes over doctrinal standards and theological direction",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcus-1973-reasons-detail",
+        "source_id":  "src-wiki-pcus",
+        "locator":  "History: PCA founded citing theological liberalism, denial of the deity of Jesus Christ, and denial of the inerrancy and authority of Scripture",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-1983",
+        "source_id":  "src-wiki-pcusa",
+        "locator":  "Infobox: founded_date, merger",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-1983-reasons",
+        "source_id":  "src-wiki-pcus",
+        "locator":  "History: reunion between northern and southern Presbyterians (1983 Plan of Union)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-opc-1936",
+        "source_id":  "src-wiki-opc",
+        "locator":  "Infobox: founded_date, separated_from",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-opc-1936-reasons",
+        "source_id":  "src-wiki-opc",
+        "locator":  "Lead: objected to Liberal and Modernist theology (Fundamentalist-Modernist controversy)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcus-1861",
+        "source_id":  "src-wiki-pcus",
+        "locator":  "Infobox: founded_date, separated_from",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcus-1861-reasons",
+        "source_id":  "src-wiki-pcusa-1789",
+        "locator":  "Lead: split over slavery, politics, and theology precipitated by the Civil War",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-upcusa-1958",
+        "source_id":  "src-wiki-upcusa",
+        "locator":  "Infobox: founded_date, merger",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-upcusa-1958-reasons",
+        "source_id":  "src-wiki-upcusa",
+        "locator":  "Lead: union driven by ecumenical activity and reunion of long-separated branches",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-1789-founded",
+        "source_id":  "src-wiki-pcusa-1789",
+        "locator":  "Infobox: founded_date",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcus-founded",
+        "source_id":  "src-wiki-pcus",
+        "locator":  "Infobox: founded_date, separated_from",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-opc-founded",
+        "source_id":  "src-wiki-opc",
+        "locator":  "Infobox: founded_date, separated_from",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pca-founded",
+        "source_id":  "src-wiki-pca",
+        "locator":  "Infobox: founded_date, separated_from",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-upcusa-founded",
+        "source_id":  "src-wiki-upcusa",
+        "locator":  "Infobox: founded_date, merger",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-founded",
+        "source_id":  "src-wiki-pcusa",
+        "locator":  "Infobox: founded_date, merger",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-merge-1983",
+        "source_id":  "src-wiki-pcusa",
+        "locator":  "Lead: established with 1983 merger of PCUS and UPCUSA",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-upcna-founded",
+        "source_id":  "src-wiki-upcna",
+        "locator":  "Infobox: founded_date",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-upcna-1958-merge",
+        "source_id":  "src-wiki-upcna",
+        "locator":  "Lead: merged with PCUSA to form UPCUSA (1958)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-theology",
+        "source_id":  "src-wiki-pcusa",
+        "locator":  "Infobox: theology (Reformed, Barthianist)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-mainline",
+        "source_id":  "src-wiki-pcusa",
+        "locator":  "Lead: mainline Protestant denomination",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pca-theology",
+        "source_id":  "src-wiki-pca",
+        "locator":  "Infobox: theology (Reformed; Evangelical)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-opc-theology",
+        "source_id":  "src-wiki-opc",
+        "locator":  "Infobox: theology (Confessional Reformed)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcus-distinctives",
+        "source_id":  "src-wiki-pcus",
+        "locator":  "History: Old School Presbyterianism and Westminster Confession emphasis",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-1789-orientation",
+        "source_id":  "src-wiki-pcusa-1789",
+        "locator":  "Infobox: orientation (Mainline Protestant; Reformed tradition)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-upcusa-theology",
+        "source_id":  "src-wiki-upcusa",
+        "locator":  "Infobox: theology (Reformed/Calvinism)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-upcna-orientation",
+        "source_id":  "src-wiki-upcna",
+        "locator":  "Infobox: orientation (Calvinist)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-upcna-distinctives",
+        "source_id":  "src-wiki-upcna",
+        "locator":  "History: Covenanter/Seceder distinctives including public covenanting and exclusive psalmody",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-size",
+        "source_id":  "src-wiki-pcusa",
+        "locator":  "Infobox: members 1,045,848 active members (2024)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pca-size",
+        "source_id":  "src-wiki-pca",
+        "locator":  "Infobox: members 400,751 (2024)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-1789-size",
+        "source_id":  "src-wiki-pcusa-1789",
+        "locator":  "Infobox: members 2.8 million in 1957",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-upcusa-size",
+        "source_id":  "src-wiki-upcusa",
+        "locator":  "Infobox: members 2,351,119 in 1982",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-upcna-size",
+        "source_id":  "src-wiki-upcna",
+        "locator":  "Infobox: members 257,513 in 1957",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-zurich-reformation",
+        "source_id":  "src-wiki-zurich-reformation",
+        "locator":  "Lead: early 1520s reform under Zwingli; Zurich magistrates and civic changes",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-zwingli",
+        "source_id":  "src-wiki-zwingli",
+        "locator":  "Lead/Theology: memorialism, iconoclasm; life dates 1484-1531",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-genevan-reformation",
+        "source_id":  "src-wiki-genevan-reformation",
+        "locator":  "Lead: shift from Roman Catholicism to Protestantism; Calvinist influence",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-calvins-geneva",
+        "source_id":  "src-wiki-calvins-geneva",
+        "locator":  "Lead/Key events: Calvin\u0027s Geneva (1536-1564), ordinances 1541, academy 1559, Servetus 1553",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-scottish-reformation",
+        "source_id":  "src-wiki-scottish-reformation",
+        "locator":  "Lead: 1560 Parliament; rejection of papal supremacy; Presbyterian structure",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-presbyterian-polity",
+        "source_id":  "src-wiki-presbyterian-polity",
+        "locator":  "Lead/Structure: rule by elders; sessions, presbyteries, synods, general assemblies",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-cos-synods-presbyteries",
+        "source_id":  "src-wiki-cos-synods-presbyteries",
+        "locator":  "History: original presbyteries created April 1581",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-presbyterian-us",
+        "source_id":  "src-wiki-presbyterian-us",
+        "locator":  "Lead: Presbyterianism in US since colonial times",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-presbytery-philadelphia",
+        "source_id":  "src-wiki-presbytery-philadelphia",
+        "locator":  "History: first known Presbyterian church in America organized in 1683; Presbytery of Philadelphia organized in 1706; Synod formed 1717",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-old-side-new-side",
+        "source_id":  "src-wiki-old-side-new-side",
+        "locator":  "History: Old Side-New Side division 1741-1758",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-makemie",
+        "source_id":  "src-wiki-makemie",
+        "locator":  "Lead/Ministry: founder of American Presbyterianism; trial in 1707; ordained 1681",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-church-of-scotland-lead",
+        "source_id":  "src-wiki-church-of-scotland",
+        "locator":  "Lead: national church; Reformed and Presbyterian tradition",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-church-of-scotland-knox",
+        "source_id":  "src-wiki-church-of-scotland",
+        "locator":  "History/Scottish Reformation: John Knox returned from Geneva to lead reform",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-church-of-scotland-polity",
+        "source_id":  "src-wiki-church-of-scotland",
+        "locator":  "Polity/Structure: Presbyterian system",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-english-congregation-geneva-overview",
+        "source_id":  "src-wiki-english-congregation-geneva",
+        "locator":  "Overview: exile congregation led mainly by John Knox (1555-1559)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-english-congregation-geneva-influence",
+        "source_id":  "src-wiki-english-congregation-geneva",
+        "locator":  "Influence/Numbers: Presbyterian model and influence on later reform",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-1789-origin",
+        "source_id":  "src-wiki-pcusa-1789",
+        "locator":  "Origin: colonial immigrants from Church of Scotland and Ireland",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-1789-overview",
+        "source_id":  "src-wiki-pcusa-1789",
+        "locator":  "Overview: first national Presbyterian denomination in the US",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcusa-1789-branched-from",
+        "source_id":  "src-wiki-pcusa-1789",
+        "locator":  "Infobox: branched from Church of Scotland and Synod of Ulster",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-protestant-church-switzerland-size",
+        "source_id":  "src-wiki-protestant-church-switzerland",
+        "locator":  "Statistics: members 1,782,513 (2024)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-church-of-scotland-size",
+        "source_id":  "src-wiki-church-of-scotland",
+        "locator":  "Lead: membership 245,000 (2024)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-scotch-irish-migration",
+        "source_id":  "src-wiki-scotch-irish",
+        "locator":  "American settlement: over 200,000 Scotch-Irish migrants (1717-1775)",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-presbyterian-polity-geneva",
+        "source_id":  "src-wiki-presbyterian-polity",
+        "locator":  "History: modern implementation established under Calvin in Geneva",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-presbyterian-polity-intro-scotland",
+        "source_id":  "src-wiki-presbyterian-polity",
+        "locator":  "History: introduced to Scotland by John Knox after exile in Geneva",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-presbyterianism-development",
+        "source_id":  "src-wiki-presbyterianism",
+        "locator":  "Development: influence of Calvin\u0027s Geneva and Knox\u0027s role in Scotland",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-book-of-discipline-1560",
+        "source_id":  "src-wiki-book-of-discipline",
+        "locator":  "Lead: First Book of Discipline (1560) sets out Presbyterian polity on Geneva model",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-book-of-discipline-1578",
+        "source_id":  "src-wiki-book-of-discipline",
+        "locator":  "Second Book of Discipline: more clearly Presbyterian; presbyteries, synods, general assembly",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-makemie-ordination",
+        "source_id":  "src-wiki-makemie",
+        "locator":  "Early life: ordained by Presbytery of Laggan in 1681",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-scottish-reformation-structure",
+        "source_id":  "src-wiki-scottish-reformation",
+        "locator":  "Lead: established Protestant Church of Scotland; Presbyterian structure and Calvinist doctrine",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-genevan-reformation-lead",
+        "source_id":  "src-wiki-genevan-reformation",
+        "locator":  "Lead: Geneva\u0027s Reformation and Reformed (Calvinist) orientation",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-zurich-reformation-lead",
+        "source_id":  "src-wiki-zurich-reformation",
+        "locator":  "Lead: Zurich Reformation as Reformed Protestant movement",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-presbyterian-us-colonial",
+        "source_id":  "src-wiki-presbyterian-us",
+        "locator":  "History: colonial era and early presbyteries",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-opc-doctrine",
+        "source_id":  "src-wiki-opc",
+        "locator":  "Doctrine: Reformed/Calvinist roots and Westminster Standards",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-upcusa-polity",
+        "source_id":  "src-wiki-upcusa",
+        "locator":  "Infobox: Reformed theology; Presbyterian polity",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-upcna-polity",
+        "source_id":  "src-wiki-upcna",
+        "locator":  "Infobox: Calvinist orientation; Presbyterian polity",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-pcus-polity",
+        "source_id":  "src-wiki-pcus",
+        "locator":  "Infobox: Calvinist orientation; Presbyterian polity",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-catholic-church-lead",
+        "source_id":  "src-wiki-catholic-church",
+        "locator":  "Lead: largest Christian church; communion with the Bishop of Rome",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-zurich-reformation-break",
+        "source_id":  "src-wiki-zurich-reformation",
+        "locator":  "Background/Course: rejection of Roman Catholic authority and reforms in Zurich",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-genevan-reformation-break",
+        "source_id":  "src-wiki-genevan-reformation",
+        "locator":  "Lead: Protestant movement replacing Roman Catholicism in Geneva",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-scottish-reformation-break",
+        "source_id":  "src-wiki-scottish-reformation",
+        "locator":  "Lead: Scotland broke away from Roman Catholic Church",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "id":  "cite-church-of-scotland-history-break",
+        "source_id":  "src-wiki-church-of-scotland",
+        "locator":  "History: 1560 parliament repudiated papal authority and established a national church",
+        "accessed":  "2026-01-18"
+    },
+    {
+        "source_id":  "src-wiki-baptists",
+        "locator":  "English Dissenters view: first Baptist church in Amsterdam in 1609",
+        "accessed":  "2026-01-19",
+        "id":  "cite-baptists-1609"
+    },
+    {
+        "source_id":  "src-wiki-triennial-convention",
+        "locator":  "Summary: denomination existed from 1814 to 1907",
+        "accessed":  "2026-01-19",
+        "id":  "cite-triennial-1814"
+    },
+    {
+        "source_id":  "src-wiki-triennial-convention",
+        "locator":  "Summary: General Missionary Convention for foreign missions",
+        "accessed":  "2026-01-19",
+        "id":  "cite-triennial-missions"
+    },
+    {
+        "source_id":  "src-wiki-triennial-convention",
+        "locator":  "Summary: reorganized into ABCUSA in 1907",
+        "accessed":  "2026-01-19",
+        "id":  "cite-triennial-1907"
+    },
+    {
+        "source_id":  "src-wiki-sbc",
+        "locator":  "Infobox: founded_date and separated_from",
+        "accessed":  "2026-01-19",
+        "id":  "cite-sbc-1845"
+    },
+    {
+        "source_id":  "src-wiki-sbc",
+        "locator":  "History: separated in 1845 to uphold slavery",
+        "accessed":  "2026-01-19",
+        "id":  "cite-sbc-slavery-split"
+    },
+    {
+        "source_id":  "src-wiki-sbc",
+        "locator":  "Infobox: members 12,722,266 (2024)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-sbc-members"
+    },
+    {
+        "source_id":  "src-wiki-abcusa",
+        "locator":  "Infobox: founded_date 1907",
+        "accessed":  "2026-01-19",
+        "id":  "cite-abcusa-1907"
+    },
+    {
+        "source_id":  "src-wiki-abcusa",
+        "locator":  "Infobox: members 1,107,206 (2023)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-abcusa-members"
+    },
+    {
+        "source_id":  "src-wiki-nbcusa",
+        "locator":  "Infobox: founded_date 1895",
+        "accessed":  "2026-01-19",
+        "id":  "cite-nbcusa-1895"
+    },
+    {
+        "source_id":  "src-wiki-nbcusa",
+        "locator":  "Infobox: merger list (1880, 1886, 1893 conventions)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-nbcusa-merger"
+    },
+    {
+        "source_id":  "src-wiki-nbcusa",
+        "locator":  "Infobox: separations list includes NBCA (separated 1915)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-nbcusa-separation-1915"
+    },
+    {
+        "source_id":  "src-wiki-nbcusa",
+        "locator":  "Infobox: separations list includes PNBC (separated 1961)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-nbcusa-separation-1961"
+    },
+    {
+        "source_id":  "src-wiki-nbca",
+        "locator":  "Infobox: founded_date 1915; separated_from NBCUSA",
+        "accessed":  "2026-01-19",
+        "id":  "cite-nbca-1915"
+    },
+    {
+        "source_id":  "src-wiki-pnbc",
+        "locator":  "Infobox: founded_date 1961; separated_from NBCUSA",
+        "accessed":  "2026-01-19",
+        "id":  "cite-pnbc-1961"
+    },
+    {
+        "source_id":  "src-wiki-venture-church-network",
+        "locator":  "Infobox: founded_date 1947; separated_from Northern Baptist Convention",
+        "accessed":  "2026-01-19",
+        "id":  "cite-venture-1947"
+    },
+    {
+        "source_id":  "src-wiki-venture-church-network",
+        "locator":  "History: organized in 1947 amid fundamentalist-modernist controversy and mission agency dispute",
+        "accessed":  "2026-01-19",
+        "id":  "cite-venture-history"
+    },
+    {
+        "source_id":  "src-wiki-methodist-episcopal-church",
+        "locator":  "Infobox: founded_date December 1784",
+        "accessed":  "2026-01-19",
+        "id":  "cite-mec-1784"
+    },
+    {
+        "source_id":  "src-wiki-methodist-episcopal-church",
+        "locator":  "Infobox: members 4.4 million in 1937",
+        "accessed":  "2026-01-19",
+        "id":  "cite-mec-members"
+    },
+    {
+        "source_id":  "src-wiki-methodist-episcopal-church-south",
+        "locator":  "Lead: split over slavery in 1845",
+        "accessed":  "2026-01-19",
+        "id":  "cite-mecs-1845"
+    },
+    {
+        "source_id":  "src-wiki-methodist-protestant-church",
+        "locator":  "Infobox: founded_date 1828; separated_from MEC",
+        "accessed":  "2026-01-19",
+        "id":  "cite-mpc-1828"
+    },
+    {
+        "source_id":  "src-wiki-methodist-church-us",
+        "locator":  "Lead: reunion on May 10, 1939",
+        "accessed":  "2026-01-19",
+        "id":  "cite-methodist-church-1939"
+    },
+    {
+        "source_id":  "src-wiki-methodist-church-us",
+        "locator":  "Infobox: merged_into United Methodist Church (1968)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-methodist-church-merged-into-umc"
+    },
+    {
+        "source_id":  "src-wiki-evangelical-united-brethren-church",
+        "locator":  "Lead: denomination from 1946 to 1968; formed by merger",
+        "accessed":  "2026-01-19",
+        "id":  "cite-eub-1946"
+    },
+    {
+        "source_id":  "src-wiki-united-methodist-church",
+        "locator":  "Infobox: founded_date 1968; merger",
+        "accessed":  "2026-01-19",
+        "id":  "cite-umc-1968"
+    },
+    {
+        "source_id":  "src-wiki-united-methodist-church",
+        "locator":  "Infobox: members 9,984,925 worldwide",
+        "accessed":  "2026-01-19",
+        "id":  "cite-umc-members"
+    },
+    {
+        "source_id":  "src-wiki-lcms",
+        "locator":  "Infobox: founded_date April 26, 1847",
+        "accessed":  "2026-01-19",
+        "id":  "cite-lcms-1847"
+    },
+    {
+        "source_id":  "src-wiki-wels",
+        "locator":  "Infobox: founded_date 1850",
+        "accessed":  "2026-01-19",
+        "id":  "cite-wels-1850"
+    },
+    {
+        "source_id":  "src-wiki-wels",
+        "locator":  "Infobox: members 340,511 baptized; 272,555 communicant",
+        "accessed":  "2026-01-19",
+        "id":  "cite-wels-members"
+    },
+    {
+        "source_id":  "src-wiki-alc",
+        "locator":  "Infobox: founded_date 1960; merger list",
+        "accessed":  "2026-01-19",
+        "id":  "cite-alc-1960"
+    },
+    {
+        "source_id":  "src-wiki-alc",
+        "locator":  "Infobox: members 2,319,443 (1986)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-alc-members"
+    },
+    {
+        "source_id":  "src-wiki-lca",
+        "locator":  "Infobox: founded_date 1962; merger list",
+        "accessed":  "2026-01-19",
+        "id":  "cite-lca-1962"
+    },
+    {
+        "source_id":  "src-wiki-lca",
+        "locator":  "Infobox: members 2,896,138 (1986)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-lca-members"
+    },
+    {
+        "source_id":  "src-wiki-aelc",
+        "locator":  "Infobox: founded_date December 1976; separated_from LCMS",
+        "accessed":  "2026-01-19",
+        "id":  "cite-aelc-1976"
+    },
+    {
+        "source_id":  "src-wiki-aelc",
+        "locator":  "Infobox: members 103,263 (1986)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-aelc-members"
+    },
+    {
+        "source_id":  "src-wiki-elca",
+        "locator":  "Infobox: constituting convention April 30, 1987",
+        "accessed":  "2026-01-19",
+        "id":  "cite-elca-founded"
+    },
+    {
+        "source_id":  "src-wiki-elca",
+        "locator":  "Infobox: merger list (LCA, ALC, AELC)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-elca-merger"
+    },
+    {
+        "source_id":  "src-wiki-elca",
+        "locator":  "Infobox: members 2,677,239 baptized (2024)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-elca-members"
+    },
+    {
+        "source_id":  "src-wiki-episcopal-church",
+        "locator":  "Infobox: founded_date 1785",
+        "accessed":  "2026-01-19",
+        "id":  "cite-tec-1785"
+    },
+    {
+        "source_id":  "src-wiki-episcopal-church",
+        "locator":  "Infobox: members 1,547,779 (2023)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-tec-members"
+    },
+    {
+        "source_id":  "src-wiki-acna",
+        "locator":  "Infobox: founded_date June 22, 2009",
+        "accessed":  "2026-01-19",
+        "id":  "cite-acna-2009"
+    },
+    {
+        "source_id":  "src-wiki-acna",
+        "locator":  "Infobox: separated_from TEC and Anglican Church of Canada",
+        "accessed":  "2026-01-19",
+        "id":  "cite-acna-separated"
+    },
+    {
+        "source_id":  "src-wiki-acna",
+        "locator":  "Infobox: members 130,111 (2024)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-acna-members"
+    },
+    {
+        "source_id":  "src-wiki-pentecostalism",
+        "locator":  "Early revivals: Azusa Street Revival in 1906",
+        "accessed":  "2026-01-19",
+        "id":  "cite-pentecostalism-1906"
+    },
+    {
+        "source_id":  "src-wiki-assemblies-of-god",
+        "locator":  "Infobox: founded_date 1914",
+        "accessed":  "2026-01-19",
+        "id":  "cite-ag-1914"
+    },
+    {
+        "source_id":  "src-wiki-assemblies-of-god",
+        "locator":  "Infobox: members 69-88.9 million",
+        "accessed":  "2026-01-19",
+        "id":  "cite-ag-members"
+    },
+    {
+        "source_id":  "src-wiki-church-of-god-cleveland",
+        "locator":  "Infobox: founded_date August 1886",
+        "accessed":  "2026-01-19",
+        "id":  "cite-cog-cleveland-1886"
+    },
+    {
+        "source_id":  "src-wiki-cogic",
+        "locator":  "Infobox: founded_date 1897",
+        "accessed":  "2026-01-19",
+        "id":  "cite-cogic-1897"
+    },
+    {
+        "source_id":  "src-wiki-cogic",
+        "locator":  "Infobox: members 6.5 million",
+        "accessed":  "2026-01-19",
+        "id":  "cite-cogic-members"
+    },
+    {
+        "source_id":  "src-wiki-cogic",
+        "locator":  "Infobox: separated_from National Baptist Convention, USA",
+        "accessed":  "2026-01-19",
+        "id":  "cite-cogic-separated-nbcusa"
+    },
+    {
+        "source_id":  "src-wiki-foursquare",
+        "locator":  "Infobox: founded_date 1923",
+        "accessed":  "2026-01-19",
+        "id":  "cite-foursquare-1923"
+    },
+    {
+        "source_id":  "src-wiki-foursquare",
+        "locator":  "Infobox: separated_from Assemblies of God",
+        "accessed":  "2026-01-19",
+        "id":  "cite-foursquare-separated"
+    },
+    {
+        "source_id":  "src-wiki-foursquare",
+        "locator":  "Infobox: members 8.8 million",
+        "accessed":  "2026-01-19",
+        "id":  "cite-foursquare-members"
+    },
+    {
+        "source_id":  "src-wiki-restoration-movement",
+        "locator":  "Summary: began on the American frontier during the Second Great Awakening (1790-1840)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-restoration-movement-1804"
+    },
+    {
+        "source_id":  "src-wiki-disciples",
+        "locator":  "Infobox: founded_date list includes 1832 union in Lexington",
+        "accessed":  "2026-01-19",
+        "id":  "cite-disciples-1832"
+    },
+    {
+        "source_id":  "src-wiki-disciples",
+        "locator":  "Infobox: separated_from list includes Churches of Christ (1906)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-disciples-separation-1906"
+    },
+    {
+        "source_id":  "src-wiki-disciples",
+        "locator":  "Infobox: separated_from list includes Christian churches and churches of Christ (1926-1971)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-disciples-separation-1926"
+    },
+    {
+        "source_id":  "src-wiki-disciples",
+        "locator":  "Infobox: members 277,864 (2022)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-disciples-members"
+    },
+    {
+        "source_id":  "src-wiki-churches-of-christ",
+        "locator":  "Infobox: members approx. 2,000,000 worldwide",
+        "accessed":  "2026-01-19",
+        "id":  "cite-coc-members"
+    },
+    {
+        "source_id":  "src-wiki-independent-christian-churches",
+        "locator":  "Infobox: founded_date list includes 1927 North American Christian Convention",
+        "accessed":  "2026-01-19",
+        "id":  "cite-independent-founded"
+    },
+    {
+        "source_id":  "src-wiki-church-of-the-nazarene",
+        "locator":  "Infobox: founded_date October 13, 1908",
+        "accessed":  "2026-01-19",
+        "id":  "cite-nazarene-1908"
+    },
+    {
+        "source_id":  "src-wiki-church-of-the-nazarene",
+        "locator":  "Infobox: members 2,640,216 (2020)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-nazarene-members"
+    },
+    {
+        "source_id":  "src-wiki-millerism",
+        "locator":  "Summary: William Miller first shared his belief publicly in 1831",
+        "accessed":  "2026-01-19",
+        "id":  "cite-millerism-1831"
+    },
+    {
+        "source_id":  "src-wiki-advent-christian",
+        "locator":  "Infobox: founded_date 1860",
+        "accessed":  "2026-01-19",
+        "id":  "cite-advent-christian-1860"
+    },
+    {
+        "source_id":  "src-wiki-seventh-day-adventist",
+        "locator":  "Infobox: founded_date 1863-05-21",
+        "accessed":  "2026-01-19",
+        "id":  "cite-sda-1863"
+    },
+    {
+        "source_id":  "src-wiki-seventh-day-adventist",
+        "locator":  "Infobox: members 23,684,237 (2024)",
+        "accessed":  "2026-01-19",
+        "id":  "cite-sda-members"
+    },
+    {
+        "source_id":  "src-wiki-church-of-god-seventh-day",
+        "locator":  "History: 1858 separation of Sabbatarian Adventists",
+        "accessed":  "2026-01-19",
+        "id":  "cite-cog7-1858"
+    }
 ]

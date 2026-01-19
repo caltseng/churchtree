@@ -1,0 +1,38 @@
+﻿[
+  {
+    "id": "millerism-to-advent-christian-1860",
+    "name": "Advent Christian formation",
+    "from_id": "millerism",
+    "to_id": "advent-christian-church",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1860,
+    "reasons": ["adventist organization"],
+    "description": "Advent Christian Church organized in 1860 within the Adventist stream.",
+    "citations": ["cite-advent-christian-1860"]
+  },
+  {
+    "id": "millerism-to-sda-1863",
+    "name": "SDA organization",
+    "from_id": "millerism",
+    "to_id": "seventh-day-adventist-church",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1863,
+    "reasons": ["adventist organization"],
+    "description": "Seventh-day Adventist Church organized in 1863.",
+    "citations": ["cite-sda-1863"]
+  },
+  {
+    "id": "millerism-to-cog7-1858",
+    "name": "Sabbatarian Adventist separation",
+    "from_id": "millerism",
+    "to_id": "church-of-god-seventh-day",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1858,
+    "reasons": ["sabbatarian adventist line"],
+    "description": "Sabbatarian Adventists separated in 1858, forming the line later known as Church of God (Seventh Day).",
+    "citations": ["cite-cog7-1858"]
+  }
+]

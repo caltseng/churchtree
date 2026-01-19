@@ -1,0 +1,86 @@
+﻿[
+  {
+    "id": "mec-to-mecs-1845",
+    "name": "Split over slavery",
+    "from_id": "methodist-episcopal-church",
+    "to_id": "methodist-episcopal-church-south",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1845,
+    "reasons": ["slavery"],
+    "description": "The Methodist Episcopal Church, South formed in 1845 after a split over slavery.",
+    "citations": ["cite-mecs-1845"]
+  },
+  {
+    "id": "mec-to-mpc-1828",
+    "name": "Separation from MEC",
+    "from_id": "methodist-episcopal-church",
+    "to_id": "methodist-protestant-church",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1828,
+    "reasons": ["organizational separation"],
+    "description": "The Methodist Protestant Church separated from the Methodist Episcopal Church in 1828.",
+    "citations": ["cite-mpc-1828"]
+  },
+  {
+    "id": "mec-to-methodist-church-1939",
+    "name": "Reunion into Methodist Church",
+    "from_id": "methodist-episcopal-church",
+    "to_id": "methodist-church",
+    "zoom_tier": "full",
+    "type": "merge",
+    "year": 1939,
+    "reasons": ["reunion"],
+    "description": "The Methodist Episcopal Church reunited in 1939 to form the Methodist Church.",
+    "citations": ["cite-methodist-church-1939"]
+  },
+  {
+    "id": "mecs-to-methodist-church-1939",
+    "name": "Reunion into Methodist Church",
+    "from_id": "methodist-episcopal-church-south",
+    "to_id": "methodist-church",
+    "zoom_tier": "full",
+    "type": "merge",
+    "year": 1939,
+    "reasons": ["reunion"],
+    "description": "The Methodist Episcopal Church, South joined the 1939 reunion forming the Methodist Church.",
+    "citations": ["cite-methodist-church-1939"]
+  },
+  {
+    "id": "mpc-to-methodist-church-1939",
+    "name": "Reunion into Methodist Church",
+    "from_id": "methodist-protestant-church",
+    "to_id": "methodist-church",
+    "zoom_tier": "full",
+    "type": "merge",
+    "year": 1939,
+    "reasons": ["reunion"],
+    "description": "The Methodist Protestant Church joined the 1939 reunion forming the Methodist Church.",
+    "citations": ["cite-methodist-church-1939"]
+  },
+  {
+    "id": "methodist-church-to-umc-1968",
+    "name": "Merger into United Methodist Church",
+    "from_id": "methodist-church",
+    "to_id": "united-methodist-church",
+    "zoom_tier": "full",
+    "type": "merge",
+    "year": 1968,
+    "reasons": ["merger"],
+    "description": "The Methodist Church merged with the Evangelical United Brethren Church in 1968 to form the UMC.",
+    "citations": ["cite-umc-1968", "cite-methodist-church-merged-into-umc"]
+  },
+  {
+    "id": "eub-to-umc-1968",
+    "name": "Merger into United Methodist Church",
+    "from_id": "evangelical-united-brethren-church",
+    "to_id": "united-methodist-church",
+    "zoom_tier": "full",
+    "type": "merge",
+    "year": 1968,
+    "reasons": ["merger"],
+    "description": "The Evangelical United Brethren Church merged with the Methodist Church in 1968 to form the UMC.",
+    "citations": ["cite-umc-1968", "cite-eub-1946"]
+  }
+]

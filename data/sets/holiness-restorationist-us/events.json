@@ -1,0 +1,38 @@
+﻿[
+  {
+    "id": "event-disciples-1832",
+    "name": "Restoration Movement union",
+    "year": 1832,
+    "zoom_tier": "full",
+    "description": "Union in Lexington (1832) is a milestone for the Disciples lineage.",
+    "related_edge_ids": ["restoration-to-disciples-1832"],
+    "citations": ["cite-disciples-1832"]
+  },
+  {
+    "id": "event-coc-1906",
+    "name": "Churches of Christ separation",
+    "year": 1906,
+    "zoom_tier": "full",
+    "description": "Churches of Christ separated from the Disciples in 1906.",
+    "related_edge_ids": ["disciples-to-coc-1906"],
+    "citations": ["cite-disciples-separation-1906"]
+  },
+  {
+    "id": "event-independent-1926",
+    "name": "Independent Christian Churches separation",
+    "year": 1926,
+    "zoom_tier": "full",
+    "description": "Independent Christian Churches separated from the Disciples between 1926 and 1971.",
+    "related_edge_ids": ["disciples-to-independent-1926"],
+    "citations": ["cite-disciples-separation-1926"]
+  },
+  {
+    "id": "event-nazarene-1908",
+    "name": "Church of the Nazarene formed",
+    "year": 1908,
+    "zoom_tier": "full",
+    "description": "Church of the Nazarene formed in 1908.",
+    "related_edge_ids": [],
+    "citations": ["cite-nazarene-1908"]
+  }
+]
