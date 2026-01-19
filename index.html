@@ -368,13 +368,19 @@
         simulation.tick();
       }
 
+      function edgeColor(edge) {
+        if (edge.type === "merge") return "#2b6cb0";
+        if (edge.type === "split") return "#6b46c1";
+        return "var(--edge)";
+      }
+
       const link = g.selectAll(".link")
         .data(links)
         .enter()
         .append("path")
         .attr("class", "link")
         .attr("fill", "none")
-        .attr("stroke", "var(--edge)")
+        .attr("stroke", d => edgeColor(d))
         .attr("stroke-width", 2)
         .attr("d", d => {
           const sx = d.source.x + 60;
@@ -460,9 +466,9 @@
       link.on("mousemove", (event, d) => {
         showEdgeTooltip(event, d);
         d3.select(event.currentTarget).attr("stroke", "var(--edge-hover)");
-      }).on("mouseleave", (event) => {
+      }).on("mouseleave", (event, d) => {
         hideEdgeTooltip();
-        d3.select(event.currentTarget).attr("stroke", "var(--edge)");
+        d3.select(event.currentTarget).attr("stroke", edgeColor(d));
       });
 
       edgeLabels.on("mousemove", (event, d) => {
@@ -473,7 +479,7 @@
       }).on("mouseleave", (event, d) => {
         hideEdgeTooltip();
         if (d && d._pathEl) {
-          d3.select(d._pathEl).attr("stroke", "var(--edge)");
+          d3.select(d._pathEl).attr("stroke", edgeColor(d));
         }
       });
 
