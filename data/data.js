@@ -133,7 +133,7 @@ window.CHURCHTREE_DATA = {
         "id":  "catholic-church",
         "name":  "Roman Catholic Church",
         "kind":  "denomination",
-        "start_year":  null,
+        "start_year":  1054,
         "short_label":  "Catholic Church",
         "region":  "Global",
         "geographic_origin":  "Roman Empire",
