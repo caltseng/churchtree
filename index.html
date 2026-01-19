@@ -4,10 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ChurchTree - Presbyterian Lineage (Phase 0)</title>
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.css"
-  />
   <style>
     :root {
       --bg-1: #f6f1e8;
@@ -16,6 +12,11 @@
       --muted: #6b6b6b;
       --accent: #9e4d2f;
       --panel: #fffdfa;
+      --grid: rgba(120, 110, 100, 0.2);
+      --edge: #6a776a;
+      --edge-hover: #a5422c;
+      --node-fill: #fffdf9;
+      --node-stroke: #4b5a4a;
     }
 
     * { box-sizing: border-box; }
@@ -50,15 +51,24 @@
 
     #graph-wrap {
       padding: 12px 16px 24px 16px;
+      position: relative;
     }
 
-    #network {
+    #chart {
       width: 100%;
       height: 70vh;
       min-height: 520px;
       border-radius: 16px;
       background: rgba(255, 255, 255, 0.6);
       box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+      overflow: hidden;
+      position: relative;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
 
     .controls {
@@ -96,7 +106,7 @@
       color: var(--muted);
     }
 
-    #hover-tip {
+    #tooltip {
       position: fixed;
       display: none;
       max-width: 320px;
@@ -109,73 +119,65 @@
       border-radius: 10px;
       box-shadow: 0 8px 18px rgba(0,0,0,0.12);
       pointer-events: none;
-      z-index: 20;
+      z-index: 9999;
     }
 
-    #hover-tip .title {
+    #tooltip .title {
       font-weight: 600;
       color: var(--accent);
       margin-bottom: 4px;
     }
 
-    #hover-tip .meta {
+    #tooltip .meta {
       color: var(--muted);
     }
 
-    .vis-tooltip {
-      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-      font-size: 13px;
-      line-height: 1.35;
-      color: #2c2c2c;
-      background: #fffdfa;
-      border: 1px solid #d9c6b8;
-      border-radius: 10px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-      padding: 10px 12px;
-      max-width: 320px;
-      white-space: normal;
-      z-index: 20;
+    .edge-label {
+      paint-order: stroke;
+      stroke: rgba(255, 253, 249, 0.9);
+      stroke-width: 3px;
+      cursor: pointer;
     }
 
     @media (max-width: 720px) {
       h1 { font-size: 22px; }
-      #network { min-height: 420px; }
+      #chart { min-height: 420px; }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>ChurchTree - Presbyterian Lineage</h1>
-    <p>Phase 0 static graph. Hover an edge to view split/merge details.</p>
+    <p>Phase 0 static graph. Hover nodes or edges for details.</p>
   </header>
 
-  <div id="graph-wrap" style="position: relative;">
+  <div id="graph-wrap">
     <div class="controls">
       <button class="control-btn" id="zoom-in" aria-label="Zoom in">+</button>
-      <button class="control-btn" id="zoom-out" aria-label="Zoom out">−</button>
+      <button class="control-btn" id="zoom-out" aria-label="Zoom out">-</button>
       <button class="control-btn" id="zoom-reset" aria-label="Reset zoom">Reset</button>
     </div>
-    <div id="network"></div>
+    <div id="chart"></div>
   </div>
 
   <div class="note">
-    Graph rendered with vis-network (MIT License).
+    Graph rendered with D3.js (BSD-3-Clause).
   </div>
-  <div id="hover-tip"></div>
+  <div id="tooltip"></div>
 
-  <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
   <script>
     function showError(message) {
-      const container = document.getElementById("network");
-      container.innerHTML = "";
+      const chart = document.getElementById("chart");
+      chart.innerHTML = "";
       const div = document.createElement("div");
       div.style.padding = "16px";
       div.style.color = "#9a5a45";
       div.textContent = message;
-      container.appendChild(div);
+      chart.appendChild(div);
     }
 
-    function buildTooltip(edge, fromNode, toNode) {
+    function buildEdgeTooltip(edge, fromNode, toNode) {
       const fromLabel = fromNode && fromNode.short_label ? fromNode.short_label : (fromNode ? fromNode.name : "");
       const toLabel = toNode && toNode.short_label ? toNode.short_label : (toNode ? toNode.name : "");
       const reasons = (edge.reasons || []).join(", ");
@@ -189,7 +191,7 @@
     }
 
     function buildNodeTooltip(node) {
-      const years = node.start_year ? `${node.start_year}${node.end_year ? `–${node.end_year}` : ""}` : "unknown";
+      const years = node.start_year ? `${node.start_year}${node.end_year ? `-${node.end_year}` : ""}` : "unknown";
       const distinctives = node.distinctives && node.distinctives.length
         ? node.distinctives.join(", ")
         : "Not yet captured";
@@ -214,115 +216,240 @@
       }
 
       const nodeMap = new Map(nodes.map(n => [n.id, n]));
+      const childToParent = new Map();
+      edges.forEach(e => {
+        if (!childToParent.has(e.to_id)) {
+          childToParent.set(e.to_id, e.from_id);
+        }
+      });
+
+      const rootIds = nodes
+        .filter(n => !childToParent.has(n.id))
+        .map(n => n.id);
+
+      const root = {
+        id: "__root__",
+        name: "Root",
+        children: rootIds.map(id => ({ id }))
+      };
+
+      const buildTree = (node) => {
+        const dataNode = nodeMap.get(node.id);
+        const children = edges
+          .filter(e => e.from_id === node.id)
+          .map(e => ({ id: e.to_id }));
+        return {
+          id: node.id,
+          data: dataNode || node,
+          children: children.length ? children.map(buildTree) : []
+        };
+      };
+
+      const treeRoot = {
+        id: root.id,
+        data: root,
+        children: root.children.map(buildTree)
+      };
+
+      const chart = document.getElementById("chart");
+      chart.innerHTML = "";
+      const width = chart.clientWidth;
+      const height = chart.clientHeight;
+
+      const svg = d3.select(chart)
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+      const g = svg.append("g");
 
       const years = nodes
         .map(n => n.start_year)
-        .filter(y => typeof y === "number" && !Number.isNaN(y));
-      const minYear = years.length ? Math.min.apply(null, years) : 0;
-      const maxYear = years.length ? Math.max.apply(null, years) : minYear;
-      const yearSpan = Math.max(1, maxYear - minYear);
-      const levelStep = 25;
+        .filter(y => typeof y === "number" && !Number.isNaN(y))
+        .sort((a, b) => a - b);
+      const minYear = years.length ? years[0] : 0;
+      const maxYear = years.length ? years[years.length - 1] : minYear;
+      const bucket = 25;
+      const yearBuckets = [];
+      for (let y = minYear; y <= maxYear; y += bucket) {
+        yearBuckets.push(y);
+      }
 
-      const visNodes = nodes.map(n => {
-        const year = typeof n.start_year === "number" ? n.start_year : minYear;
-        const level = Math.round((year - minYear) / levelStep);
-        return {
-        id: n.id,
-        label: n.short_label ? `${n.short_label} (${n.start_year || "?"})` : n.name,
-        _tooltip: buildNodeTooltip(n),
-        level,
-        shape: "box",
-        margin: 8,
-        font: { size: 14, face: "Palatino Linotype", color: "#2b2b2b", align: "left" },
-        color: {
-          background: "#fffdf9",
-          border: "#4b5a4a",
-          highlight: { background: "#fff3e6", border: "#a5422c" }
-        }
-      };
+      const yScale = d3.scaleBand()
+        .domain(yearBuckets)
+        .range([60, height - 40])
+        .paddingInner(0.2);
+
+      g.selectAll(".grid")
+        .data(yearBuckets)
+        .enter()
+        .append("line")
+        .attr("class", "grid")
+        .attr("x1", 40)
+        .attr("x2", width - 20)
+        .attr("y1", d => yScale(d))
+        .attr("y2", d => yScale(d))
+        .attr("stroke", "var(--grid)")
+        .attr("stroke-width", 1);
+
+      g.selectAll(".grid-label")
+        .data(yearBuckets)
+        .enter()
+        .append("text")
+        .attr("class", "grid-label")
+        .attr("x", 6)
+        .attr("y", d => yScale(d) - 6)
+        .attr("fill", "var(--muted)")
+        .attr("font-size", 11)
+        .text(d => d);
+
+      const tree = d3.tree()
+        .nodeSize([180, 120]);
+
+      const rootNode = d3.hierarchy(treeRoot, d => d.children);
+      tree(rootNode);
+
+      const allNodes = rootNode.descendants().filter(d => d.data.id !== "__root__");
+      const allLinks = rootNode.links().filter(l => l.target.data.id !== "__root__");
+
+      allNodes.forEach(d => {
+        const year = d.data.data && typeof d.data.data.start_year === "number"
+          ? d.data.data.start_year
+          : minYear;
+        const bucketYear = yearBuckets.find(y => year >= y && year < y + bucket) || yearBuckets[yearBuckets.length - 1];
+        d.y = yScale(bucketYear);
       });
 
-      const visEdges = edges.map(e => ({
-        id: e.id,
-        from: e.from_id,
-        to: e.to_id,
-        label: e.name || "",
-        _tooltip: buildTooltip(e, nodeMap.get(e.from_id), nodeMap.get(e.to_id)),
-        arrows: "to",
-        width: 2,
-        color: { color: "#6a776a", highlight: "#a5422c" },
-        font: { size: 13, align: "horizontal", color: "#5a5a5a" }
-      }));
+      const link = g.selectAll(".link")
+        .data(allLinks)
+        .enter()
+        .append("path")
+        .attr("class", "link")
+        .attr("fill", "none")
+        .attr("stroke", "var(--edge)")
+        .attr("stroke-width", 2)
+        .attr("d", d => {
+          const sx = d.source.x + 60;
+          const sy = d.source.y;
+          const tx = d.target.x + 60;
+          const ty = d.target.y;
+          const mx = (sx + tx) / 2;
+          return `M ${sx} ${sy} C ${mx} ${sy}, ${mx} ${ty}, ${tx} ${ty}`;
+        });
 
-      const container = document.getElementById("network");
-      const dataSet = {
-        nodes: new vis.DataSet(visNodes),
-        edges: new vis.DataSet(visEdges)
-      };
+      const edgeLabels = g.selectAll(".edge-label")
+        .data(allLinks)
+        .enter()
+        .append("text")
+        .attr("class", "edge-label")
+        .attr("font-size", 12)
+        .attr("fill", "var(--muted)")
+        .attr("text-anchor", "middle")
+        .attr("x", d => (d.source.x + d.target.x) / 2 + 60)
+        .attr("y", d => (d.source.y + d.target.y) / 2 - 6)
+        .text(d => {
+          const target = d.target.data.data || {};
+          const source = d.source.data.data || {};
+          const edge = edges.find(e => e.from_id === source.id && e.to_id === target.id);
+          return edge && edge.name ? edge.name : "";
+        });
 
-      const options = {
-        layout: {
-          hierarchical: {
-            enabled: true,
-            direction: "UD",
-            sortMethod: "directed",
-            nodeSpacing: 230,
-            levelSeparation: 120
-          }
-        },
-        physics: { enabled: false },
-        interaction: { hover: true, tooltipDelay: 80, hoverConnectedEdges: true },
-        nodes: {
-          shape: "box",
-          font: { size: 14, face: "Palatino Linotype", align: "left", color: "#2b2b2b" },
-          margin: 12
-        },
-        edges: {
-          smooth: false,
-          font: { size: 13, align: "horizontal", color: "#5a5a5a" }
-        }
-      };
+      const node = g.selectAll(".node")
+        .data(allNodes)
+        .enter()
+        .append("g")
+        .attr("class", "node")
+        .attr("transform", d => `translate(${d.x}, ${d.y})`);
 
-      const network = new vis.Network(container, dataSet, options);
+      node.append("rect")
+        .attr("width", 170)
+        .attr("height", 38)
+        .attr("rx", 8)
+        .attr("ry", 8)
+        .attr("fill", "var(--node-fill)")
+        .attr("stroke", "var(--node-stroke)")
+        .attr("stroke-width", 1.2);
+
+      node.append("text")
+        .attr("x", 8)
+        .attr("y", 16)
+        .attr("font-size", 13)
+        .attr("fill", "var(--ink)")
+        .text(d => {
+          const n = d.data.data || {};
+          return n.short_label ? `${n.short_label} (${n.start_year || "?"})` : (n.name || "");
+        });
+
+      node.append("text")
+        .attr("x", 8)
+        .attr("y", 30)
+        .attr("font-size", 11)
+        .attr("fill", "var(--muted)")
+        .text(d => (d.data.data && d.data.data.name) ? d.data.data.name : "");
+
+      const tooltip = document.getElementById("tooltip");
+
+      node.on("mousemove", (event, d) => {
+        const n = d.data.data || {};
+        tooltip.innerHTML = buildNodeTooltip(n);
+        tooltip.style.display = "block";
+        tooltip.style.left = `${event.clientX + 12}px`;
+        tooltip.style.top = `${event.clientY + 12}px`;
+      }).on("mouseleave", () => {
+        tooltip.style.display = "none";
+      });
+
+      function showEdgeTooltip(event, d) {
+        const target = d.target.data.data || {};
+        const source = d.source.data.data || {};
+        const edge = edges.find(e => e.from_id === source.id && e.to_id === target.id) || {};
+        tooltip.innerHTML = buildEdgeTooltip(edge, source, target);
+        tooltip.style.display = "block";
+        tooltip.style.left = `${event.clientX + 12}px`;
+        tooltip.style.top = `${event.clientY + 12}px`;
+      }
+
+      function hideEdgeTooltip() {
+        tooltip.style.display = "none";
+      }
+
+      link.on("mousemove", (event, d) => {
+        showEdgeTooltip(event, d);
+        d3.select(event.currentTarget).attr("stroke", "var(--edge-hover)");
+      }).on("mouseleave", (event) => {
+        hideEdgeTooltip();
+        d3.select(event.currentTarget).attr("stroke", "var(--edge)");
+      });
+
+      edgeLabels.on("mousemove", (event, d) => {
+        showEdgeTooltip(event, d);
+      }).on("mouseleave", () => {
+        hideEdgeTooltip();
+      });
+
+      edgeLabels.raise();
+
+      const zoom = d3.zoom()
+        .scaleExtent([0.4, 2.2])
+        .on("zoom", (event) => {
+          g.attr("transform", event.transform);
+        });
+
+      svg.call(zoom);
+
       const zoomIn = document.getElementById("zoom-in");
       const zoomOut = document.getElementById("zoom-out");
       const zoomReset = document.getElementById("zoom-reset");
-      const zoomStep = 0.15;
 
       zoomIn.addEventListener("click", () => {
-        const scale = network.getScale();
-        network.moveTo({ scale: scale + zoomStep });
+        svg.transition().call(zoom.scaleBy, 1.2);
       });
       zoomOut.addEventListener("click", () => {
-        const scale = network.getScale();
-        network.moveTo({ scale: Math.max(0.2, scale - zoomStep) });
+        svg.transition().call(zoom.scaleBy, 0.8);
       });
       zoomReset.addEventListener("click", () => {
-        network.fit({ animation: { duration: 200 } });
+        svg.transition().call(zoom.transform, d3.zoomIdentity);
       });
-      const hoverTip = document.getElementById("hover-tip");
-
-      function showTip(html, evt) {
-        hoverTip.innerHTML = html;
-        hoverTip.style.display = "block";
-        hoverTip.style.left = `${evt.event.clientX + 12}px`;
-        hoverTip.style.top = `${evt.event.clientY + 12}px`;
-      }
-
-      function hideTip() {
-        hoverTip.style.display = "none";
-      }
-
-      network.on("hoverNode", (evt) => {
-        const node = dataSet.nodes.get(evt.node);
-        if (node && node._tooltip) showTip(node._tooltip, evt);
-      });
-      network.on("hoverEdge", (evt) => {
-        const edge = dataSet.edges.get(evt.edge);
-        if (edge && edge._tooltip) showTip(edge._tooltip, evt);
-      });
-      network.on("blurNode", hideTip);
-      network.on("blurEdge", hideTip);
     }
 
     const dataScript = document.createElement("script");

@@ -29,7 +29,14 @@ with an interactive website, with emphasis on American Protestant movements.
 - Neutral tone; descriptive rather than argumentative.
 
 ## Status
-Starting from scratch. Next step: write the detailed specification.
+In early build-out. The data model and Phase 0 visualization are in place,
+with an initial Presbyterian US dataset and notes-first workflow.
+
+High-level progress:
+- Spec + architecture docs drafted.
+- Notes-first data pipeline established.
+- Presbyterian US dataset seeded with citations and size estimates.
+- Local D3 graph rendering working from static data.
 
 ## Quick start (local)
 - Build data for the web view:
