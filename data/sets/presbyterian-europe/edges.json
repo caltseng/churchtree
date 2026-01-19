@@ -1,0 +1,90 @@
+[
+  {
+    "id": "genevan-reformed-to-church-of-scotland-1559",
+    "name": "Knox returns from Geneva",
+    "from_id": "genevan-reformed",
+    "to_id": "church-of-scotland",
+    "type": "influence",
+    "year": 1559,
+    "reasons": ["Knox's Genevan ministry", "Reformed influence on Scottish Reformation"],
+    "description": "John Knox returned from ministering in Geneva to lead the Reformation in Scotland, carrying Genevan Reformed theology and practice into the emerging Church of Scotland.",
+    "citations": ["cite-church-of-scotland-knox", "cite-church-of-scotland-lead"]
+  },
+  {
+    "id": "genevan-reformed-to-presbyterian-polity-scotland-1555",
+    "name": "Geneva exile congregation model",
+    "from_id": "genevan-reformed",
+    "to_id": "presbyterian-polity-scotland",
+    "type": "influence",
+    "year": 1555,
+    "reasons": ["English Congregation in Geneva", "Presbyterian worship model"],
+    "description": "The English Congregation in Geneva (led mainly by John Knox) modeled Presbyterian worship and governance, providing a Genevan pattern that influenced later Scottish polity.",
+    "citations": ["cite-english-congregation-geneva-overview", "cite-english-congregation-geneva-influence"]
+  },
+  {
+    "id": "church-of-scotland-to-presbyterian-polity-scotland-1581",
+    "name": "First Scottish presbyteries",
+    "from_id": "church-of-scotland",
+    "to_id": "presbyterian-polity-scotland",
+    "type": "origin",
+    "year": 1581,
+    "reasons": ["formal presbyteries established"],
+    "description": "Original presbyteries in the Church of Scotland were created in April 1581, marking the concrete emergence of Presbyterian polity in Scotland.",
+    "citations": ["cite-cos-synods-presbyteries", "cite-church-of-scotland-polity"]
+  },
+  {
+    "id": "church-of-scotland-to-presbyterian-migrations-america-1706",
+    "name": "Scottish/Ulster migration",
+    "from_id": "church-of-scotland",
+    "to_id": "presbyterian-migrations-america",
+    "type": "origin",
+    "year": 1706,
+    "reasons": ["Scottish and Ulster migration"],
+    "description": "Colonial Presbyterianism originated in part through immigrants from the Church of Scotland and Presbyterians from Ireland to the American colonies.",
+    "citations": ["cite-pcusa-1789-origin", "cite-presbyterian-us"]
+  },
+  {
+    "id": "presbyterian-migrations-america-to-presbyterian-polity-founding-context-1706",
+    "name": "First American presbytery",
+    "from_id": "presbyterian-migrations-america",
+    "to_id": "presbyterian-polity-founding-context",
+    "type": "origin",
+    "year": 1706,
+    "reasons": ["Presbytery of Philadelphia organized"],
+    "description": "In 1706 seven ministers organized the Presbytery of Philadelphia and chose Francis Makemie as moderator, formalizing Presbyterian polity in the colonies.",
+    "citations": ["cite-presbytery-philadelphia"]
+  },
+  {
+    "id": "presbyterian-polity-founding-context-to-pcusa-1789",
+    "name": "National PCUSA formed",
+    "from_id": "presbyterian-polity-founding-context",
+    "to_id": "pcusa-1789",
+    "type": "continuation",
+    "year": 1789,
+    "reasons": ["national denomination organized"],
+    "description": "The Presbyterian Church in the United States of America was organized in 1789 as the first national Presbyterian denomination, building on colonial presbyteries and synods.",
+    "citations": ["cite-pcusa-1789-overview", "cite-pcusa-1789-founded"]
+  },
+  {
+    "id": "church-of-scotland-to-pcusa-1789",
+    "name": "Branching from Scottish roots",
+    "from_id": "church-of-scotland",
+    "to_id": "pcusa-1789",
+    "type": "origin",
+    "year": 1789,
+    "reasons": ["Scottish roots", "Synod of Ulster roots"],
+    "description": "The Presbyterian Church in the United States of America traces its roots to the Church of Scotland and the Synod of Ulster.",
+    "citations": ["cite-pcusa-1789-branched-from"]
+  },
+  {
+    "id": "presbyterian-migrations-america-to-pcusa-1789",
+    "name": "Colonial presbytery formation",
+    "from_id": "presbyterian-migrations-america",
+    "to_id": "pcusa-1789",
+    "type": "origin",
+    "year": 1789,
+    "reasons": ["colonial presbytery organization", "synod formation"],
+    "description": "Colonial Presbyterian presbyteries and synods formed the institutional base that led to the 1789 organization of the Presbyterian Church in the United States of America.",
+    "citations": ["cite-presbyterian-us", "cite-presbytery-philadelphia"]
+  }
+]

@@ -3,18 +3,27 @@ param(
 )
 
 $dataDir = Join-Path $RepoRoot "data"
-$setDir = Join-Path $dataDir "sets\\presbyterian-us"
+$setDirs = @(
+  (Join-Path $dataDir "sets\\presbyterian-us"),
+  (Join-Path $dataDir "sets\\presbyterian-europe")
+)
 $outFile = Join-Path $dataDir "data.js"
 
-$nodesPath = Join-Path $setDir "nodes.json"
-$edgesPath = Join-Path $setDir "edges.json"
+$nodes = @()
+$edges = @()
 
-if (!(Test-Path $nodesPath) -or !(Test-Path $edgesPath)) {
-  throw "Missing data files. Expected nodes.json and edges.json in $setDir"
+foreach ($setDir in $setDirs) {
+  $nodesPath = Join-Path $setDir "nodes.json"
+  $edgesPath = Join-Path $setDir "edges.json"
+  if (!(Test-Path $nodesPath) -or !(Test-Path $edgesPath)) {
+    throw "Missing data files. Expected nodes.json and edges.json in $setDir"
+  }
+  $nodes += Get-Content -Raw $nodesPath | ConvertFrom-Json
+  $edges += Get-Content -Raw $edgesPath | ConvertFrom-Json
 }
 
-$nodesJson = Get-Content -Raw $nodesPath
-$edgesJson = Get-Content -Raw $edgesPath
+$nodesJson = $nodes | ConvertTo-Json -Depth 10
+$edgesJson = $edges | ConvertTo-Json -Depth 10
 
 $content = @"
 // Generated from local JSON sources. Do not edit by hand.

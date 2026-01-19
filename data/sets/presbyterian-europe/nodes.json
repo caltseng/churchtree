@@ -1,0 +1,68 @@
+[
+  {
+    "id": "swiss-reformed-zurich",
+    "name": "Swiss Reformed (Zurich stream)",
+    "kind": "movement",
+    "start_year": 1520,
+    "short_label": "Zurich Reformed",
+    "region": "Switzerland",
+    "summary": "Zurich's Reformation under Huldrych Zwingli became an early center of Reformed Protestantism in Switzerland.",
+    "distinctives": ["Memorialist view of the Lord's Supper", "Iconoclasm in worship", "Civic-reform integration"],
+    "size_estimate": "unknown"
+  },
+  {
+    "id": "genevan-reformed",
+    "name": "Genevan Reformed (Calvin)",
+    "kind": "movement",
+    "start_year": 1536,
+    "short_label": "Genevan Reformed",
+    "region": "Geneva (Switzerland)",
+    "summary": "Geneva shifted from Roman Catholic rule to Reformed theology under John Calvin, becoming a hub of Reformed Protestantism.",
+    "distinctives": ["Reformed theology (Calvinism)", "Consistory-based church discipline", "Training center for Reformed pastors"],
+    "size_estimate": "unknown"
+  },
+  {
+    "id": "church-of-scotland",
+    "name": "Church of Scotland",
+    "kind": "denomination",
+    "start_year": 1560,
+    "short_label": "CoS",
+    "region": "Scotland",
+    "summary": "The Scottish Reformation established the Protestant Church of Scotland with Presbyterian structure and largely Calvinist doctrine.",
+    "distinctives": ["Presbyterian polity", "Calvinist doctrine", "National church"],
+    "size_estimate": "unknown"
+  },
+  {
+    "id": "presbyterian-polity-scotland",
+    "name": "Presbyterian polity (Scotland)",
+    "kind": "movement",
+    "start_year": 1581,
+    "short_label": "Presbyterian Polity",
+    "region": "Scotland",
+    "summary": "Formal presbyteries in Scotland were created in 1581, establishing graded courts of elders (session, presbytery, synod, assembly).",
+    "distinctives": ["Rule by elders", "Graded courts: session, presbytery, synod, general assembly"],
+    "size_estimate": "unknown"
+  },
+  {
+    "id": "presbyterian-migrations-america",
+    "name": "Presbyterian migrations to colonial America",
+    "kind": "movement",
+    "start_year": 1706,
+    "short_label": "Colonial Presbyterianism",
+    "region": "Colonial America",
+    "summary": "In 1706, seven ministers formed the Presbytery of Philadelphia, marking an early institutional step for Presbyterianism in the colonies.",
+    "distinctives": ["Early congregational autonomy", "Presbytery and synod oversight"],
+    "size_estimate": "unknown"
+  },
+  {
+    "id": "presbyterian-polity-founding-context",
+    "name": "Founding context of Presbyterian polity (America)",
+    "kind": "movement",
+    "start_year": 1706,
+    "short_label": "Presbyterian Founding",
+    "region": "Colonial America",
+    "summary": "Francis Makemie helped organize the first American presbytery (Philadelphia, 1706), applying Presbyterian polity to the colonies.",
+    "distinctives": ["Presbyterian polity in colonial context", "Elder-led governance"],
+    "size_estimate": "unknown"
+  }
+]
