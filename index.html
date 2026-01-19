@@ -216,6 +216,20 @@
       }
 
       const nodeData = nodes.map(n => ({ ...n }));
+      const nodeMap = new Map(nodeData.map(n => [n.id, n]));
+      const parentInfo = new Map();
+      edges.forEach(e => {
+        const parent = nodeMap.get(e.from_id);
+        if (!parent) return;
+        const info = {
+          year: typeof parent.start_year === "number" ? parent.start_year : 9999,
+          name: parent.name || ""
+        };
+        const current = parentInfo.get(e.to_id);
+        if (!current || info.year < current.year || (info.year === current.year && info.name < current.name)) {
+          parentInfo.set(e.to_id, info);
+        }
+      });
 
       const chart = document.getElementById("chart");
       chart.innerHTML = "";
@@ -236,18 +250,19 @@
       const minYear = years.length ? years[0] : 0;
       const maxYear = years.length ? years[years.length - 1] : minYear;
       const bucket = 25;
-      const yearBuckets = [];
-      for (let y = minYear; y <= maxYear; y += bucket) {
-        yearBuckets.push(y);
+      const startTick = Math.floor(minYear / bucket) * bucket;
+      const endTick = Math.ceil(maxYear / bucket) * bucket;
+      const yearTicks = [];
+      for (let y = startTick; y <= endTick; y += bucket) {
+        yearTicks.push(y);
       }
 
-      const yScale = d3.scaleBand()
-        .domain(yearBuckets)
-        .range([60, height - 40])
-        .paddingInner(0.2);
+      const yScale = d3.scaleLinear()
+        .domain([minYear, maxYear])
+        .range([60, height - 40]);
 
       g.selectAll(".grid")
-        .data(yearBuckets)
+        .data(yearTicks)
         .enter()
         .append("line")
         .attr("class", "grid")
@@ -259,7 +274,7 @@
         .attr("stroke-width", 1);
 
       g.selectAll(".grid-label")
-        .data(yearBuckets)
+        .data(yearTicks)
         .enter()
         .append("text")
         .attr("class", "grid-label")
@@ -271,9 +286,9 @@
 
       function bucketForYear(year) {
         if (typeof year !== "number" || Number.isNaN(year)) {
-          return yearBuckets[0];
+          return yearTicks[0];
         }
-        return yearBuckets.find(y => year >= y && year < y + bucket) || yearBuckets[yearBuckets.length - 1];
+        return yearTicks.find(y => year >= y && year < y + bucket) || yearTicks[yearTicks.length - 1];
       }
 
       const bucketGroups = new Map();
@@ -287,6 +302,14 @@
 
       bucketGroups.forEach(group => {
         group.sort((a, b) => {
+          const ap = parentInfo.get(a.id);
+          const bp = parentInfo.get(b.id);
+          const apYear = ap ? ap.year : 9999;
+          const bpYear = bp ? bp.year : 9999;
+          if (apYear !== bpYear) return apYear - bpYear;
+          const apName = ap ? ap.name : "";
+          const bpName = bp ? bp.name : "";
+          if (apName !== bpName) return apName.localeCompare(bpName);
           const ay = typeof a.start_year === "number" ? a.start_year : 0;
           const by = typeof b.start_year === "number" ? b.start_year : 0;
           return ay - by || a.name.localeCompare(b.name);
@@ -294,11 +317,12 @@
       });
 
       bucketGroups.forEach(group => {
-        const spacing = (width - 160) / (group.length + 1);
+        const spacing = Math.max(200, (width - 240) / (group.length + 1));
         group.forEach((n, idx) => {
-          n._targetX = 80 + spacing * (idx + 1);
+          n._targetX = 120 + spacing * (idx + 1);
           n.x = n._targetX;
-          n.y = yScale(n._bucket);
+          const year = typeof n.start_year === "number" ? n.start_year : minYear;
+          n.y = yScale(year);
         });
       });
 
@@ -307,10 +331,13 @@
         .filter(e => nodeData.some(n => n.id === e.source) && nodeData.some(n => n.id === e.target));
 
       const simulation = d3.forceSimulation(nodeData)
-        .force("link", d3.forceLink(links).id(d => d.id).distance(170).strength(0.7))
-        .force("y", d3.forceY(d => yScale(d._bucket)).strength(1))
-        .force("x", d3.forceX(d => d._targetX || width / 2).strength(0.6))
-        .force("collide", d3.forceCollide(80))
+        .force("link", d3.forceLink(links).id(d => d.id).distance(260).strength(0.7))
+        .force("y", d3.forceY(d => {
+          const year = typeof d.start_year === "number" ? d.start_year : minYear;
+          return yScale(year);
+        }).strength(1))
+        .force("x", d3.forceX(d => d._targetX || width / 2).strength(0.5))
+        .force("collide", d3.forceCollide(115))
         .stop();
 
       for (let i = 0; i < 260; i += 1) {
@@ -334,6 +361,10 @@
           return `M ${sx} ${sy} C ${mx} ${sy}, ${mx} ${ty}, ${tx} ${ty}`;
         });
 
+      link.each(function(d) {
+        d._pathEl = this;
+      });
+
       const edgeLabels = g.selectAll(".edge-label")
         .data(links)
         .enter()
@@ -354,8 +385,8 @@
         .attr("transform", d => `translate(${d.x}, ${d.y})`);
 
       node.append("rect")
-        .attr("width", 170)
-        .attr("height", 38)
+        .attr("width", 190)
+        .attr("height", 44)
         .attr("rx", 8)
         .attr("ry", 8)
         .attr("fill", "var(--node-fill)")
@@ -364,7 +395,7 @@
 
       node.append("text")
         .attr("x", 8)
-        .attr("y", 16)
+        .attr("y", 18)
         .attr("font-size", 13)
         .attr("fill", "var(--ink)")
         .text(d => {
@@ -373,7 +404,7 @@
 
       node.append("text")
         .attr("x", 8)
-        .attr("y", 30)
+        .attr("y", 34)
         .attr("font-size", 11)
         .attr("fill", "var(--muted)")
         .text(d => d.name || "");
@@ -412,8 +443,14 @@
 
       edgeLabels.on("mousemove", (event, d) => {
         showEdgeTooltip(event, d);
-      }).on("mouseleave", () => {
+        if (d._pathEl) {
+          d3.select(d._pathEl).attr("stroke", "var(--edge-hover)");
+        }
+      }).on("mouseleave", (event, d) => {
         hideEdgeTooltip();
+        if (d && d._pathEl) {
+          d3.select(d._pathEl).attr("stroke", "var(--edge)");
+        }
       });
 
       edgeLabels.raise();

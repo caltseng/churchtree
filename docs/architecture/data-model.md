@@ -147,3 +147,8 @@ Suggested files:
 - The graph can be rendered as a tree by selecting a root and traversing edges.
 - Multiple parents can be represented with multiple edges into a node.
 - For uncertain dates, use null and add a note in the edge or node.
+
+## Visualization heuristics (current)
+- Nodes are positioned by 25-year buckets on the y-axis (earlier on top).
+- Within each bucket, nodes are ordered by their earliest parent year/name (when available) to reduce edge crossings.
+- A light force layout (x/y + collision + link distance) is used to spread nodes while preserving bucket alignment.
