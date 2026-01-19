@@ -230,25 +230,36 @@
       }
 
       const nodeData = nodes.map(n => ({ ...n }));
-      const nodeMap = new Map(nodeData.map(n => [n.id, n]));
-      const parentInfo = new Map();
-      edges.forEach(e => {
-        const parent = nodeMap.get(e.from_id);
-        if (!parent) return;
-        const info = {
-          year: typeof parent.start_year === "number" ? parent.start_year : 9999,
-          name: parent.name || ""
-        };
-        const current = parentInfo.get(e.to_id);
-        if (!current || info.year < current.year || (info.year === current.year && info.name < current.name)) {
-          parentInfo.set(e.to_id, info);
-        }
-      });
 
       const chart = document.getElementById("chart");
       chart.innerHTML = "";
-      const width = chart.clientWidth;
+      const baseWidth = chart.clientWidth;
       const height = chart.clientHeight;
+
+      const rawFamilies = new Set(nodeData.map(n => (n.tradition_family || "Other").trim()).filter(Boolean));
+      const laneOrder = [
+        "Presbyterian",
+        "Reformed",
+        "Baptist",
+        "Methodist",
+        "Lutheran",
+        "Anglican",
+        "Pentecostal",
+        "Holiness",
+        "Restorationist",
+        "Adventist",
+        "Catholic",
+        "Other"
+      ];
+      const lanes = laneOrder.filter(f => rawFamilies.has(f)).concat(
+        Array.from(rawFamilies).filter(f => !laneOrder.includes(f)).sort()
+      );
+
+      const laneWidth = 260;
+      const chartPadding = 140;
+      const desiredWidth = Math.max(baseWidth, lanes.length * laneWidth + chartPadding * 2);
+      chart.style.width = `${desiredWidth}px`;
+      const width = desiredWidth;
 
       const svg = d3.select(chart)
         .append("svg")
@@ -316,83 +327,49 @@
         return yearTicks.find(y => year >= y && year < y + bucket) || yearTicks[yearTicks.length - 1];
       }
 
-      const bucketGroups = new Map();
+      const laneIndex = new Map(lanes.map((name, idx) => [name, idx]));
+      const laneGroups = new Map();
+
       nodeData.forEach(n => {
+        const family = (n.tradition_family || "Other").trim() || "Other";
+        n._lane = laneIndex.has(family) ? family : "Other";
         n._bucket = bucketForYear(n.start_year);
-        if (!bucketGroups.has(n._bucket)) {
-          bucketGroups.set(n._bucket, []);
-        }
-        bucketGroups.get(n._bucket).push(n);
+        const key = `${n._lane}|${n._bucket}`;
+        if (!laneGroups.has(key)) laneGroups.set(key, []);
+        laneGroups.get(key).push(n);
       });
 
-      bucketGroups.forEach(group => {
+      laneGroups.forEach(group => {
         group.sort((a, b) => {
-          const ap = parentInfo.get(a.id);
-          const bp = parentInfo.get(b.id);
-          const apYear = ap ? ap.year : 9999;
-          const bpYear = bp ? bp.year : 9999;
-          if (apYear !== bpYear) return apYear - bpYear;
-          const apName = ap ? ap.name : "";
-          const bpName = bp ? bp.name : "";
-          if (apName !== bpName) return apName.localeCompare(bpName);
           const ay = typeof a.start_year === "number" ? a.start_year : 0;
           const by = typeof b.start_year === "number" ? b.start_year : 0;
-          return ay - by || a.name.localeCompare(b.name);
+          return ay - by || (a.name || "").localeCompare(b.name || "");
         });
       });
 
-      function assignTargetX(group) {
-        const spacing = Math.max(200, (width - 240) / (group.length + 1));
-        group.forEach((n, idx) => {
-          n._targetX = 120 + spacing * (idx + 1);
-          n.x = n._targetX;
-          const year = typeof n.start_year === "number" ? n.start_year : minYear;
-          n.y = yScale(year);
-        });
-      }
-
-      bucketGroups.forEach(assignTargetX);
-
-      const parentX = new Map();
       nodeData.forEach(n => {
-        const parents = edges.filter(e => e.to_id === n.id).map(e => nodeMap.get(e.from_id)).filter(Boolean);
-        if (!parents.length) return;
-        const avg = parents.reduce((sum, p) => sum + (p._targetX || width / 2), 0) / parents.length;
-        parentX.set(n.id, avg);
+        const idx = laneIndex.get(n._lane);
+        const laneCenter = chartPadding + laneWidth * idx + laneWidth / 2;
+        const year = typeof n.start_year === "number" ? n.start_year : minYear;
+        n.y = yScale(year);
+        n.x = laneCenter - 95;
       });
 
-      bucketGroups.forEach(group => {
-        group.sort((a, b) => {
-          const ax = parentX.get(a.id);
-          const bx = parentX.get(b.id);
-          if (ax !== undefined && bx !== undefined && ax !== bx) return ax - bx;
-          if (ax !== undefined && bx === undefined) return -1;
-          if (ax === undefined && bx !== undefined) return 1;
-          const ay = typeof a.start_year === "number" ? a.start_year : 0;
-          const by = typeof b.start_year === "number" ? b.start_year : 0;
-          return ay - by || a.name.localeCompare(b.name);
+      laneGroups.forEach(group => {
+        if (group.length <= 1) return;
+        const idx = laneIndex.get(group[0]._lane);
+        const laneCenter = chartPadding + laneWidth * idx + laneWidth / 2;
+        const maxSpan = laneWidth - 40;
+        const spacing = Math.max(70, Math.min(180, maxSpan / (group.length - 1)));
+        group.forEach((n, i) => {
+          const offset = (i - (group.length - 1) / 2) * spacing;
+          n.x = laneCenter + offset - 95;
         });
-        assignTargetX(group);
       });
 
       const links = edges
         .map(e => ({ ...e, source: e.from_id, target: e.to_id }))
         .filter(e => nodeData.some(n => n.id === e.source) && nodeData.some(n => n.id === e.target));
-
-      const simulation = d3.forceSimulation(nodeData)
-        .force("link", d3.forceLink(links).id(d => d.id).distance(260).strength(0.7))
-        .force("x", d3.forceX(d => d._targetX || width / 2).strength(0.5))
-        .force("collide", d3.forceCollide(115))
-        .stop();
-
-      for (let i = 0; i < 260; i += 1) {
-        simulation.tick();
-      }
-
-      nodeData.forEach(d => {
-        const year = typeof d.start_year === "number" ? d.start_year : minYear;
-        d.y = yScale(year);
-      });
 
       function edgeColor(edge) {
         if (edge.type === "merge" || edge.type === "origin" || edge.type === "continuation") return "#2b6cb0";
