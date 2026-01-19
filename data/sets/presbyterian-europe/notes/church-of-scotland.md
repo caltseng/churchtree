@@ -18,7 +18,7 @@
 - National church closely tied to Scottish political developments.
 
 ## Size / Scale
-- Estimated size (if known): unknown
+- Estimated size (if known): approx 245,000 members (2024)
 
 ## Events
 - 1560: Reformation Parliament adopts Protestant creed and rejects papal supremacy.
@@ -26,9 +26,11 @@
 
 ## Sources
 - [ ] Scottish Reformation (Wikipedia) - lead section; history
+- [ ] Church of Scotland (Wikipedia) - lead section
 
 ## Citations
 - [ ] cite-scottish-reformation: https://en.wikipedia.org/wiki/Scottish_Reformation
+- [ ] cite-church-of-scotland-size: https://en.wikipedia.org/wiki/Church_of_Scotland
 
 ## Open Questions
 - [ ] Exact organizational founding date of the Church of Scotland as a formal body.

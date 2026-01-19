@@ -14,17 +14,13 @@ Follow-up research needed for the items below.
 - Founding context of Presbyterian polity
 
 ## Size estimates missing
-- Swiss Reformed (Zurich stream)
 - Genevan Reformed (Calvin)
-- Church of Scotland
 - Presbyterian polity (Scotland)
-- Presbyterian migrations to colonial America
 - Founding context of Presbyterian polity
 
 ## Missing relationships
-- Direct linkage chain between Zurich/Genevan streams and Scottish Presbyterian polity.
-- Key intermediary movements or documents to anchor lineage.
-- Direct linkage between British Isles presbyteries and early American presbyteries.
+- Explicit linkage between the Zurich stream and the Genevan/Scottish lineage.
+- Decision on whether to model Synod of Ulster or Presbytery of Laggan as nodes.
 
 ## Notes
 - Add citations for any foundational dates and polity milestones.

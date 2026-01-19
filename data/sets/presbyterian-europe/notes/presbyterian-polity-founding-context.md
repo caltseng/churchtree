@@ -32,6 +32,7 @@
 
 ## Citations
 - [ ] cite-makemie: https://en.wikipedia.org/wiki/Francis_Makemie
+- [ ] cite-makemie-ordination: https://en.wikipedia.org/wiki/Francis_Makemie
 - [ ] cite-presbytery-philadelphia: https://en.wikipedia.org/wiki/Presbytery_of_Philadelphia
 - [ ] cite-presbyterian-polity: https://en.wikipedia.org/wiki/Presbyterian_polity
 

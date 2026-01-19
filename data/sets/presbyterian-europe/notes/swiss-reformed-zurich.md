@@ -17,7 +17,7 @@
 - Close integration of civic authorities and church reform in Zurich.
 
 ## Size / Scale
-- Estimated size (if known): unknown
+- Estimated size (if known): approx 1,782,513 members (2024, Protestant Church in Switzerland)
 
 ## Events
 - Early 1520s: Zwingli's reform program adopted by Zurich magistrates.
@@ -26,10 +26,12 @@
 ## Sources
 - [ ] Reformation in Zurich (Wikipedia) - lead section
 - [ ] Huldrych Zwingli (Wikipedia) - lead section; theology
+- [ ] Protestant Church in Switzerland (Wikipedia) - statistics
 
 ## Citations
 - [ ] cite-zurich-reformation: https://en.wikipedia.org/wiki/Reformation_in_Z%C3%BCrich
 - [ ] cite-zwingli: https://en.wikipedia.org/wiki/Huldrych_Zwingli
+- [ ] cite-protestant-church-switzerland-size: https://en.wikipedia.org/wiki/Protestant_Church_of_Switzerland
 
 ## Open Questions
 - [ ] Exact founding date for formal Zurich Reformed bodies.

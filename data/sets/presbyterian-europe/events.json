@@ -1,2 +1,18 @@
 [
+  {
+    "id": "book-of-discipline-1560",
+    "name": "First Book of Discipline",
+    "year": 1560,
+    "description": "The First Book of Discipline set out a Presbyterian polity on the Geneva model.",
+    "related_node_ids": ["presbyterian-polity-scotland", "scottish-reformation"],
+    "citations": ["cite-book-of-discipline-1560"]
+  },
+  {
+    "id": "book-of-discipline-1578",
+    "name": "Second Book of Discipline",
+    "year": 1578,
+    "description": "The Second Book of Discipline clarified Presbyterian structures such as presbyteries, synods, and the general assembly.",
+    "related_node_ids": ["presbyterian-polity-scotland"],
+    "citations": ["cite-book-of-discipline-1578"]
+  }
 ]

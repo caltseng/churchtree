@@ -21,16 +21,21 @@
 - Estimated size (if known): unknown
 
 ## Events
+- 1560: First Book of Discipline set out Presbyterian polity on the Geneva model.
+- 1578: Second Book of Discipline clarified presbyterian structures (presbyteries, synods, general assembly).
 - 1581: Creation of original presbyteries in the Church of Scotland.
 - 1993: Synod level abolished in the Church of Scotland.
 
 ## Sources
 - [ ] Presbyterian polity (Wikipedia) - lead section; structure
 - [ ] List of Church of Scotland synods and presbyteries (Wikipedia) - history
+- [ ] Book of Discipline (Church of Scotland) (Wikipedia) - lead; Second Book of Discipline
 
 ## Citations
 - [ ] cite-presbyterian-polity: https://en.wikipedia.org/wiki/Presbyterian_polity
 - [ ] cite-cos-synods-presbyteries: https://en.wikipedia.org/wiki/List_of_Church_of_Scotland_synods_and_presbyteries
+- [ ] cite-book-of-discipline-1560: https://en.wikipedia.org/wiki/Book_of_Discipline_(Church_of_Scotland)
+- [ ] cite-book-of-discipline-1578: https://en.wikipedia.org/wiki/Book_of_Discipline_(Church_of_Scotland)
 
 ## Open Questions
 - [ ] Additional primary sources for first presbytery and synod dates.

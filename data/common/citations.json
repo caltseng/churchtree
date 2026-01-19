@@ -254,7 +254,7 @@
   {
     "id": "cite-presbytery-philadelphia",
     "source_id": "src-wiki-presbytery-philadelphia",
-    "locator": "History: Presbytery of Philadelphia organized in 1706; Synod formed 1717",
+    "locator": "History: first known Presbyterian church in America organized in 1683; Presbytery of Philadelphia organized in 1706; Synod formed 1717",
     "accessed": "2026-01-18"
   },
   {
@@ -315,6 +315,66 @@
     "id": "cite-pcusa-1789-branched-from",
     "source_id": "src-wiki-pcusa-1789",
     "locator": "Infobox: branched from Church of Scotland and Synod of Ulster",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-protestant-church-switzerland-size",
+    "source_id": "src-wiki-protestant-church-switzerland",
+    "locator": "Statistics: members 1,782,513 (2024)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-church-of-scotland-size",
+    "source_id": "src-wiki-church-of-scotland",
+    "locator": "Lead: membership 245,000 (2024)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-scotch-irish-migration",
+    "source_id": "src-wiki-scotch-irish",
+    "locator": "American settlement: over 200,000 Scotch-Irish migrants (1717-1775)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-presbyterian-polity-geneva",
+    "source_id": "src-wiki-presbyterian-polity",
+    "locator": "History: modern implementation established under Calvin in Geneva",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-presbyterian-polity-intro-scotland",
+    "source_id": "src-wiki-presbyterian-polity",
+    "locator": "History: introduced to Scotland by John Knox after exile in Geneva",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-presbyterianism-development",
+    "source_id": "src-wiki-presbyterianism",
+    "locator": "Development: influence of Calvin's Geneva and Knox's role in Scotland",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-book-of-discipline-1560",
+    "source_id": "src-wiki-book-of-discipline",
+    "locator": "Lead: First Book of Discipline (1560) sets out Presbyterian polity on Geneva model",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-book-of-discipline-1578",
+    "source_id": "src-wiki-book-of-discipline",
+    "locator": "Second Book of Discipline: more clearly Presbyterian; presbyteries, synods, general assembly",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-makemie-ordination",
+    "source_id": "src-wiki-makemie",
+    "locator": "Early life: ordained by Presbytery of Laggan in 1681",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-scottish-reformation-structure",
+    "source_id": "src-wiki-scottish-reformation",
+    "locator": "Lead: established Protestant Church of Scotland; Presbyterian structure and Calvinist doctrine",
     "accessed": "2026-01-18"
   }
 ]

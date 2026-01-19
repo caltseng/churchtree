@@ -118,5 +118,29 @@
     "title": "English Congregation in Geneva - Wikipedia",
     "kind": "website",
     "url": "https://en.wikipedia.org/wiki/English_Congregation_in_Geneva"
+  },
+  {
+    "id": "src-wiki-protestant-church-switzerland",
+    "title": "Protestant Church in Switzerland - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Protestant_Church_of_Switzerland"
+  },
+  {
+    "id": "src-wiki-scotch-irish",
+    "title": "Scotch-Irish Americans - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Scotch-Irish_Americans"
+  },
+  {
+    "id": "src-wiki-presbyterianism",
+    "title": "Presbyterianism - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Presbyterianism"
+  },
+  {
+    "id": "src-wiki-book-of-discipline",
+    "title": "Book of Discipline (Church of Scotland) - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Book_of_Discipline_(Church_of_Scotland)"
   }
 ]

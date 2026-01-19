@@ -8,7 +8,7 @@
     "region": "Switzerland",
     "summary": "Zurich's Reformation under Huldrych Zwingli became an early center of Reformed Protestantism in Switzerland.",
     "distinctives": ["Memorialist view of the Lord's Supper", "Iconoclasm in worship", "Civic-reform integration"],
-    "size_estimate": "unknown"
+    "size_estimate": "approx 1,782,513 members (2024, Protestant Church in Switzerland)"
   },
   {
     "id": "genevan-reformed",
@@ -22,6 +22,29 @@
     "size_estimate": "unknown"
   },
   {
+    "id": "english-congregation-geneva",
+    "name": "English Congregation in Geneva",
+    "kind": "movement",
+    "start_year": 1555,
+    "end_year": 1559,
+    "short_label": "English Exiles (Geneva)",
+    "region": "Geneva (Switzerland)",
+    "summary": "A Protestant exile congregation in Geneva (1555-1559), led mainly by John Knox, that modeled Reformed worship and governance.",
+    "distinctives": ["Presbyterian worship model", "Exile congregation governance"],
+    "size_estimate": "unknown"
+  },
+  {
+    "id": "scottish-reformation",
+    "name": "Scottish Reformation",
+    "kind": "movement",
+    "start_year": 1560,
+    "short_label": "Scottish Reformation",
+    "region": "Scotland",
+    "summary": "The Scottish Reformation broke with Roman Catholicism and established a Protestant national church in Scotland.",
+    "distinctives": ["Reformed theology", "Rejection of papal supremacy"],
+    "size_estimate": "unknown"
+  },
+  {
     "id": "church-of-scotland",
     "name": "Church of Scotland",
     "kind": "denomination",
@@ -30,7 +53,7 @@
     "region": "Scotland",
     "summary": "The Scottish Reformation established the Protestant Church of Scotland with Presbyterian structure and largely Calvinist doctrine.",
     "distinctives": ["Presbyterian polity", "Calvinist doctrine", "National church"],
-    "size_estimate": "unknown"
+    "size_estimate": "approx 245,000 members (2024)"
   },
   {
     "id": "presbyterian-polity-scotland",
@@ -47,12 +70,12 @@
     "id": "presbyterian-migrations-america",
     "name": "Presbyterian migrations to colonial America",
     "kind": "movement",
-    "start_year": 1706,
+    "start_year": 1683,
     "short_label": "Colonial Presbyterianism",
     "region": "Colonial America",
-    "summary": "In 1706, seven ministers formed the Presbytery of Philadelphia, marking an early institutional step for Presbyterianism in the colonies.",
+    "summary": "In 1683 the first known Presbyterian church in America was organized in Maryland, and in 1706 the Presbytery of Philadelphia formed as an early institutional step.",
     "distinctives": ["Early congregational autonomy", "Presbytery and synod oversight"],
-    "size_estimate": "unknown"
+    "size_estimate": "over 200,000 Scotch-Irish migrants to the Americas (1717-1775)"
   },
   {
     "id": "presbyterian-polity-founding-context",

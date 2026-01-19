@@ -114,7 +114,7 @@ window.CHURCHTREE_DATA = {
                              "Iconoclasm in worship",
                              "Civic-reform integration"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "approx 1,782,513 members (2024, Protestant Church in Switzerland)"
     },
     {
         "id":  "genevan-reformed",
@@ -132,6 +132,35 @@ window.CHURCHTREE_DATA = {
         "size_estimate":  "unknown"
     },
     {
+        "id":  "english-congregation-geneva",
+        "name":  "English Congregation in Geneva",
+        "kind":  "movement",
+        "start_year":  1555,
+        "end_year":  1559,
+        "short_label":  "English Exiles (Geneva)",
+        "region":  "Geneva (Switzerland)",
+        "summary":  "A Protestant exile congregation in Geneva (1555-1559), led mainly by John Knox, that modeled Reformed worship and governance.",
+        "distinctives":  [
+                             "Presbyterian worship model",
+                             "Exile congregation governance"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
+        "id":  "scottish-reformation",
+        "name":  "Scottish Reformation",
+        "kind":  "movement",
+        "start_year":  1560,
+        "short_label":  "Scottish Reformation",
+        "region":  "Scotland",
+        "summary":  "The Scottish Reformation broke with Roman Catholicism and established a Protestant national church in Scotland.",
+        "distinctives":  [
+                             "Reformed theology",
+                             "Rejection of papal supremacy"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
         "id":  "church-of-scotland",
         "name":  "Church of Scotland",
         "kind":  "denomination",
@@ -144,7 +173,7 @@ window.CHURCHTREE_DATA = {
                              "Calvinist doctrine",
                              "National church"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "approx 245,000 members (2024)"
     },
     {
         "id":  "presbyterian-polity-scotland",
@@ -164,15 +193,15 @@ window.CHURCHTREE_DATA = {
         "id":  "presbyterian-migrations-america",
         "name":  "Presbyterian migrations to colonial America",
         "kind":  "movement",
-        "start_year":  1706,
+        "start_year":  1683,
         "short_label":  "Colonial Presbyterianism",
         "region":  "Colonial America",
-        "summary":  "In 1706, seven ministers formed the Presbytery of Philadelphia, marking an early institutional step for Presbyterianism in the colonies.",
+        "summary":  "In 1683 the first known Presbyterian church in America was organized in Maryland, and in 1706 the Presbytery of Philadelphia formed as an early institutional step.",
         "distinctives":  [
                              "Early congregational autonomy",
                              "Presbytery and synod oversight"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "over 200,000 Scotch-Irish migrants to the Americas (1717-1775)"
     },
     {
         "id":  "presbyterian-polity-founding-context",
@@ -339,9 +368,9 @@ window.CHURCHTREE_DATA = {
                       ]
     },
     {
-        "id":  "genevan-reformed-to-presbyterian-polity-scotland-1555",
+        "id":  "english-congregation-geneva-to-presbyterian-polity-scotland-1555",
         "name":  "Geneva exile congregation model",
-        "from_id":  "genevan-reformed",
+        "from_id":  "english-congregation-geneva",
         "to_id":  "presbyterian-polity-scotland",
         "type":  "influence",
         "year":  1555,
@@ -353,6 +382,39 @@ window.CHURCHTREE_DATA = {
         "citations":  [
                           "cite-english-congregation-geneva-overview",
                           "cite-english-congregation-geneva-influence"
+                      ]
+    },
+    {
+        "id":  "genevan-reformed-to-presbyterian-polity-scotland-1541",
+        "name":  "Geneva polity model",
+        "from_id":  "genevan-reformed",
+        "to_id":  "presbyterian-polity-scotland",
+        "type":  "influence",
+        "year":  1541,
+        "reasons":  [
+                        "Calvin\u0027s Geneva polity",
+                        "Presbyterian governance model"
+                    ],
+        "description":  "Presbyterian polity is described as having its modern implementation under Calvin in Geneva, which was later introduced to Scotland by John Knox.",
+        "citations":  [
+                          "cite-presbyterian-polity-geneva",
+                          "cite-presbyterian-polity-intro-scotland"
+                      ]
+    },
+    {
+        "id":  "scottish-reformation-to-church-of-scotland-1560",
+        "name":  "Reformation parliament",
+        "from_id":  "scottish-reformation",
+        "to_id":  "church-of-scotland",
+        "type":  "continuation",
+        "year":  1560,
+        "reasons":  [
+                        "Protestant confession adopted",
+                        "Rejection of papal supremacy"
+                    ],
+        "description":  "The Scottish Reformation established the Protestant Church of Scotland, adopting a Presbyterian structure and largely Calvinist doctrine.",
+        "citations":  [
+                          "cite-scottish-reformation-structure"
                       ]
     },
     {
