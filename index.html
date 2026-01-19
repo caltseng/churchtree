@@ -230,6 +230,7 @@
       }
 
       const nodeData = nodes.map(n => ({ ...n }));
+      const nodeMap = new Map(nodeData.map(n => [n.id, n]));
 
       const chart = document.getElementById("chart");
       chart.innerHTML = "";
@@ -368,8 +369,8 @@
       });
 
       const links = edges
-        .map(e => ({ ...e, source: e.from_id, target: e.to_id }))
-        .filter(e => nodeData.some(n => n.id === e.source) && nodeData.some(n => n.id === e.target));
+        .map(e => ({ ...e, source: nodeMap.get(e.from_id), target: nodeMap.get(e.to_id) }))
+        .filter(e => e.source && e.target);
 
       function edgeColor(edge) {
         if (edge.type === "merge" || edge.type === "origin" || edge.type === "continuation") return "#2b6cb0";
