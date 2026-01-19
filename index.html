@@ -316,7 +316,7 @@
         });
       });
 
-      bucketGroups.forEach(group => {
+      function assignTargetX(group) {
         const spacing = Math.max(200, (width - 240) / (group.length + 1));
         group.forEach((n, idx) => {
           n._targetX = 120 + spacing * (idx + 1);
@@ -324,6 +324,30 @@
           const year = typeof n.start_year === "number" ? n.start_year : minYear;
           n.y = yScale(year);
         });
+      }
+
+      bucketGroups.forEach(assignTargetX);
+
+      const parentX = new Map();
+      nodeData.forEach(n => {
+        const parents = edges.filter(e => e.to_id === n.id).map(e => nodeMap.get(e.from_id)).filter(Boolean);
+        if (!parents.length) return;
+        const avg = parents.reduce((sum, p) => sum + (p._targetX || width / 2), 0) / parents.length;
+        parentX.set(n.id, avg);
+      });
+
+      bucketGroups.forEach(group => {
+        group.sort((a, b) => {
+          const ax = parentX.get(a.id);
+          const bx = parentX.get(b.id);
+          if (ax !== undefined && bx !== undefined && ax !== bx) return ax - bx;
+          if (ax !== undefined && bx === undefined) return -1;
+          if (ax === undefined && bx !== undefined) return 1;
+          const ay = typeof a.start_year === "number" ? a.start_year : 0;
+          const by = typeof b.start_year === "number" ? b.start_year : 0;
+          return ay - by || a.name.localeCompare(b.name);
+        });
+        assignTargetX(group);
       });
 
       const links = edges
