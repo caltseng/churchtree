@@ -35,8 +35,9 @@ with an initial Presbyterian US dataset and notes-first workflow.
 High-level progress:
 - Spec + architecture docs drafted.
 - Notes-first data pipeline established.
-- Presbyterian US dataset seeded with citations and size estimates.
-- Local D3 graph rendering working from static data.
+- US Presbyterian dataset seeded with citations, distinctives, and size estimates.
+- European Presbyterian roots notes and JSON added, with lineage edges into early US Presbyterianism.
+- D3 graph rendering from combined static datasets, with zoom, hover, and edge labeling.
 
 ## Quick start (local)
 - Build data for the web view:

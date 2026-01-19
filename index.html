@@ -53,6 +53,7 @@
       padding: 12px 16px 24px 16px;
       position: relative;
       min-width: 1400px;
+      overflow-x: auto;
     }
 
     #chart {
@@ -64,6 +65,17 @@
       box-shadow: 0 6px 22px rgba(0,0,0,0.08);
       overflow: hidden;
       position: relative;
+    }
+
+    #y-axis {
+      position: sticky;
+      left: 0;
+      top: 0;
+      width: 60px;
+      height: 100%;
+      z-index: 6;
+      pointer-events: none;
+      background: linear-gradient(90deg, rgba(246, 241, 232, 0.98), rgba(246, 241, 232, 0.6) 70%, rgba(246, 241, 232, 0));
     }
 
     svg {
@@ -158,6 +170,7 @@
       <button class="control-btn" id="zoom-out" aria-label="Zoom out">-</button>
       <button class="control-btn" id="zoom-reset" aria-label="Reset zoom">Reset</button>
     </div>
+    <div id="y-axis"></div>
     <div id="chart"></div>
   </div>
 
@@ -274,7 +287,18 @@
         .attr("stroke", "var(--grid)")
         .attr("stroke-width", 1);
 
-      g.selectAll(".grid-label")
+      const axis = document.getElementById("y-axis");
+      axis.innerHTML = "";
+      axis.style.height = `${height}px`;
+      axis.style.top = `${chart.offsetTop}px`;
+      const axisSvg = d3.select(axis)
+        .append("svg")
+        .attr("width", 60)
+        .attr("height", height);
+
+      const axisGroup = axisSvg.append("g");
+
+      axisGroup.selectAll(".grid-label")
         .data(yearTicks)
         .enter()
         .append("text")
@@ -491,6 +515,7 @@
         .scaleExtent([0.4, 2.2])
         .on("zoom", (event) => {
           g.attr("transform", event.transform);
+          axisGroup.attr("transform", `translate(0, ${event.transform.y}) scale(1, ${event.transform.k})`);
         });
 
       svg.call(zoom);
