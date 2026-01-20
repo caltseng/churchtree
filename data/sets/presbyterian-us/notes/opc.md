@@ -3,7 +3,7 @@
 Date collected: 2026-01-18
 
 ## Facts
-- Node: Orthodox Presbyterian Church | Start year 1936 | End year none | Region US | Notes: Formed by conservatives separating from PCUSA. | Theological distinctives: Confessional; Reformed (Calvinist) | Size estimate: unknown
+- Node: Orthodox Presbyterian Church | Start year 1936 | End year none | Region US | Notes: Formed by conservatives separating from PCUSA. | Theological distinctives: Confessional; Reformed (Calvinist) | Size estimate: 33,520 members; 332 congregations (2023)
 - Edge: PCUSA (1789) -> OPC | Type split | Year 1936 | Reasons: liberal/modernist theology, Fundamentalist-Modernist controversy | Description: Conservative/confessional Presbyterians separated to form the OPC in response to perceived liberal/modernist trends in the PCUSA.
 
 ## Sources
@@ -13,6 +13,7 @@ Date collected: 2026-01-18
 - cite-opc-founded: src-wiki-opc | Infobox: founded_date, separated_from | Accessed 2026-01-18
 - cite-opc-reasons: src-wiki-opc | Lead: objection to Liberal and Modernist theology (1930s) | Accessed 2026-01-18
 - cite-opc-theology: src-wiki-opc | Infobox: theology (Confessional Reformed) | Accessed 2026-01-18
+- cite-opc-members-2023: src-wiki-opc | Infobox: members 33,520 (2023); congregations 332 (2023) | Accessed 2026-01-19
 
 ## Notes Summary
 - OPC formed in 1936 from PCUSA conservatives objecting to liberal/modernist theology.

@@ -27,7 +27,7 @@ Follow-up research needed for the items below.
 - current_status: swiss-reformed-zurich and genevan-reformed (no end year or formal successor defined).
 
 ## Missing size estimates
-- Roman Catholic Church (membership size).
+- None currently.
 
 ## Notes
 - Add citations for any foundational dates and polity milestones.

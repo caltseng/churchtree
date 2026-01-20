@@ -10,7 +10,6 @@ Follow-up research needed for the items below.
 
 ## Size estimates missing
 - English Reformation
-- Church of England
 
 ## Notes
 - Add citations for any new size estimates (year + source).

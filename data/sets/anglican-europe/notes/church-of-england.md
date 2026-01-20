@@ -3,7 +3,7 @@
 Date collected: 2026-01-19
 
 ## Facts
-- Node: Church of England | 1534 | | England | Established as the English national church in the Reformation era. | Anglican doctrine | unknown
+- Node: Church of England | 1534 | | England | Established as the English national church in the Reformation era. | Anglican doctrine | 26 million baptized members (self-reported, 2024)
 - Edge: English Reformation -> Church of England | origin | 1534 | break with Rome; royal supremacy | The English Reformation established the Church of England as a national church.
 - Edge: Church of England -> Episcopal Church | origin | 1785 | American independence | The Episcopal Church formed as the U.S. Anglican body after separation from the Church of England.
 
@@ -13,6 +13,7 @@ Date collected: 2026-01-19
 
 ## Citations
 - cite-church-of-england-1534: src-wiki-church-of-england | Lead/History: established in the 16th century with the English Reformation | 2026-01-19
+- cite-church-of-england-members-2024: src-wiki-church-of-england | Infobox: members 26 million (baptised; self-reported in 2024) | 2026-01-19
 - cite-tec-1785: src-wiki-episcopal-church | Infobox: founded_date 1785 | 2026-01-19
 - cite-episcopal-derived-from-coe: src-wiki-episcopal-church | Lead: derives from the Church of England | 2026-01-19
 

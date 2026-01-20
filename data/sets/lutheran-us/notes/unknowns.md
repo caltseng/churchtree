@@ -9,7 +9,7 @@ Follow-up research needed for the items below.
 - None currently.
 
 ## Size estimates missing
-- Lutheran Church - Missouri Synod
+- None currently.
 
 ## Notes
 - Add citations for any new size estimates (year + source).

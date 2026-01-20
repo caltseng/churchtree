@@ -3,7 +3,7 @@
 Date collected: 2026-01-19
 
 ## Facts
-- Node: Independent Christian Churches and Churches of Christ | 1926 | | US | US | Restorationist | other | active | Restorationist churches separated from the Disciples between 1926-1971. | Restorationist | unknown
+- Node: Independent Christian Churches and Churches of Christ | 1926 | | US | US | Restorationist | other | active | Restorationist churches separated from the Disciples between 1926-1971. | Restorationist | 1,379,041 members in the US (2020)
 - Edge: Christian Church (Disciples of Christ) -> Independent Christian Churches and Churches of Christ | split | 1926 | organizational separation | Independent Christian Churches separated from the Disciples between 1926 and 1971.
 
 ## Sources
@@ -13,6 +13,7 @@ Date collected: 2026-01-19
 ## Citations
 - cite-disciples-separation-1926: src-wiki-disciples | Infobox: separated_from list includes Christian churches and churches of Christ (1926-1971) | 2026-01-19
 - cite-independent-founded: src-wiki-independent-christian-churches | Infobox: founded_date list includes 1927 North American Christian Convention | 2026-01-19
+- cite-independent-christian-members-2020: src-wiki-independent-christian-churches | Infobox: members 1,379,041 in the United States | 2026-01-19
 
 ## Notes Summary
 - Independent Christian Churches separated from the Disciples in the 1926-1971 period.

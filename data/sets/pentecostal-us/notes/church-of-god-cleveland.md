@@ -3,7 +3,7 @@
 Date collected: 2026-01-19
 
 ## Facts
-- Node: Church of God (Cleveland, Tennessee) | 1886 | | US | US | Pentecostal | other | active | Holiness Pentecostal body founded in 1886. | Holiness Pentecostal | unknown
+- Node: Church of God (Cleveland, Tennessee) | 1886 | | US | US | Pentecostal | other | active | Holiness Pentecostal body founded in 1886. | Holiness Pentecostal | 9.2 million members; 47,897 churches (2024)
 - Edge: Pentecostalism -> Church of God (Cleveland, Tennessee) | origin | 1886 | holiness-pentecostal origins | Church of God traces to 1886 Holiness roots.
 
 ## Sources
@@ -11,6 +11,7 @@ Date collected: 2026-01-19
 
 ## Citations
 - cite-cog-cleveland-1886: src-wiki-church-of-god-cleveland | Infobox: founded_date August 1886 | 2026-01-19
+- cite-cog-cleveland-members-2024: src-wiki-church-of-god-cleveland | Statistics: 47,897 churches; 9.2 million members (2024) | 2026-01-19
 
 ## Notes Summary
 - Church of God (Cleveland) traces to 1886 and is a Holiness-Pentecostal body.

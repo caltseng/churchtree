@@ -54,7 +54,7 @@ window.CHURCHTREE_DATA = {
                              "Confessional",
                              "Reformed (Calvinist)"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "33,520 members; 332 congregations (2023)"
     },
     {
         "id":  "pcus",
@@ -74,7 +74,7 @@ window.CHURCHTREE_DATA = {
                              "Old School Presbyterian emphasis",
                              "Westminster Confession subscription"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "814,931 members; 4,250 congregations (1982)"
     },
     {
         "id":  "pcusa-1789",
@@ -153,7 +153,7 @@ window.CHURCHTREE_DATA = {
                              "Communion with the Bishop of Rome",
                              "Catholic sacramental theology"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "1.272 billion members (2025, World Christian Database)"
     },
     {
         "id":  "swiss-reformed-zurich",
@@ -346,7 +346,7 @@ window.CHURCHTREE_DATA = {
         "distinctives":  [
                              "Anglican doctrine"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "26 million baptized members (self-reported, 2024)"
     },
     {
         "id":  "lutheran-reformation",
@@ -735,7 +735,7 @@ window.CHURCHTREE_DATA = {
         "distinctives":  [
                              "Confessional Lutheran"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "1,674,315 baptized; 1,328,392 confirmed (2024)"
     },
     {
         "id":  "wisconsin-evangelical-lutheran-synod",
@@ -883,7 +883,7 @@ window.CHURCHTREE_DATA = {
                              "Baptism with the Holy Spirit",
                              "Speaking in tongues"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "over 279 million classical Pentecostals worldwide"
     },
     {
         "id":  "assemblies-of-god",
@@ -920,7 +920,7 @@ window.CHURCHTREE_DATA = {
         "distinctives":  [
                              "Holiness Pentecostal"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "9.2 million members; 47,897 churches (2024)"
     },
     {
         "id":  "church-of-god-in-christ",
@@ -1030,7 +1030,7 @@ window.CHURCHTREE_DATA = {
         "distinctives":  [
                              "Restorationist"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "1,379,041 members in the US (2020)"
     },
     {
         "id":  "church-of-the-nazarene",
@@ -1102,7 +1102,7 @@ window.CHURCHTREE_DATA = {
         "distinctives":  [
                              "Adventist"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "25,600 members; 293 congregations (2006)"
     },
     {
         "id":  "church-of-god-seventh-day",
@@ -1120,7 +1120,7 @@ window.CHURCHTREE_DATA = {
         "distinctives":  [
                              "Sabbath observance"
                          ],
-        "size_estimate":  "unknown"
+        "size_estimate":  "approx 14,000 members; 233 congregations (2010, US/Canada)"
     }
 ],
   edges: [

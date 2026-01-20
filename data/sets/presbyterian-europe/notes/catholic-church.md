@@ -22,7 +22,7 @@
 - Catholic sacramental theology.
 
 ## Size / Scale
-- Estimated size (if known): unknown
+- Estimated size (if known): 1.272 billion members (2025, World Christian Database)
 
 ## Events
 - Significant events triggering splits/merges:
@@ -32,6 +32,7 @@
 
 ## Citations
 - [ ] cite-catholic-church-lead: https://en.wikipedia.org/wiki/Catholic_Church
+- [ ] cite-catholic-church-members-2025: https://en.wikipedia.org/wiki/Catholic_Church
 
 ## Open Questions
-- [ ] Add a sourced membership estimate for the Catholic Church.
+- None currently.

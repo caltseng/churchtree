@@ -910,5 +910,65 @@
         "locator":  "History: ALC influenced by Scandinavian and German immigration; LCA by immigrant roots",
         "accessed":  "2026-01-19",
         "id":  "cite-elca-scandinavian-roots"
+    },
+    {
+        "id":  "cite-church-of-england-members-2024",
+        "source_id":  "src-wiki-church-of-england",
+        "locator":  "Infobox: members 26 million (baptised; self-reported in 2024)",
+        "accessed":  "2026-01-19"
+    },
+    {
+        "id":  "cite-lcms-members-2024",
+        "source_id":  "src-wiki-lcms",
+        "locator":  "Infobox: members 1,674,315 baptized; 1,328,392 confirmed",
+        "accessed":  "2026-01-19"
+    },
+    {
+        "id":  "cite-opc-members-2023",
+        "source_id":  "src-wiki-opc",
+        "locator":  "Infobox: members 33,520 (2023); congregations 332 (2023)",
+        "accessed":  "2026-01-19"
+    },
+    {
+        "id":  "cite-pcus-members-1982",
+        "source_id":  "src-wiki-pcus",
+        "locator":  "Infobox: members 814,931 in 1982; congregations 4,250 in 1982",
+        "accessed":  "2026-01-19"
+    },
+    {
+        "id":  "cite-advent-christian-members-2006",
+        "source_id":  "src-wiki-advent-christian",
+        "locator":  "Infobox: congregations 293 in US (2006); members 25,600 in US (2006)",
+        "accessed":  "2026-01-19"
+    },
+    {
+        "id":  "cite-cog7-members-2010",
+        "source_id":  "src-wiki-church-of-god-seventh-day",
+        "locator":  "Membership: 233 congregations in US/Canada; estimated 14,000 members (2010)",
+        "accessed":  "2026-01-19"
+    },
+    {
+        "id":  "cite-independent-christian-members-2020",
+        "source_id":  "src-wiki-independent-christian-churches",
+        "locator":  "Infobox: members 1,379,041 in the United States",
+        "accessed":  "2026-01-19"
+    },
+    {
+        "id":  "cite-catholic-church-members-2025",
+        "source_id":  "src-wiki-catholic-church",
+        "locator":  "Infobox: members 1.272 billion (World Christian Database, 2025)",
+        "accessed":  "2026-01-19"
+    },
+    {
+        "id":  "cite-pentecostalism-members",
+        "source_id":  "src-wiki-pentecostalism",
+        "locator":  "Lead: over 279 million classical Pentecostals worldwide",
+        "accessed":  "2026-01-19"
+    },
+    {
+        "id":  "cite-cog-cleveland-members-2024",
+        "source_id":  "src-wiki-church-of-god-cleveland",
+        "locator":  "Statistics: 47,897 churches; 9.2 million members (2024)",
+        "accessed":  "2026-01-19"
     }
 ]

@@ -3,8 +3,7 @@
 Follow-up research needed for the items below.
 
 ## Denomination size estimates
-- OPC: membership/congregations count not captured.
-- PCUS (historical): membership/congregations count not captured.
+- None currently.
 
 ## Missing start_year
 - None currently.

@@ -10,7 +10,6 @@ Follow-up research needed for the items below.
 
 ## Size estimates missing
 - Restoration Movement
-- Independent Christian Churches and Churches of Christ
 
 ## Notes
 - Add citations for any new size estimates (year + source).

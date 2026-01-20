@@ -10,8 +10,6 @@ Follow-up research needed for the items below.
 
 ## Size estimates missing
 - Millerism
-- Advent Christian Church
-- Church of God (Seventh Day)
 
 ## Notes
 - Add citations for any new size estimates (year + source).
