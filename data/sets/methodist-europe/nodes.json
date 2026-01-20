@@ -1,0 +1,18 @@
+﻿[
+  {
+    "id": "methodist-movement-england",
+    "name": "Methodist movement (England)",
+    "kind": "movement",
+    "start_year": 1738,
+    "zoom_tier": "full",
+    "short_label": "Methodist movement",
+    "region": "England",
+    "geographic_origin": "England",
+    "tradition_family": "Methodist",
+    "ecclesial_orientation": "other",
+    "current_status": "dissolved",
+    "notes": "Methodism began as a renewal movement within the Church of England in the 18th century.",
+    "distinctives": ["Wesleyan theology", "Methodist societies"],
+    "size_estimate": "unknown"
+  }
+]

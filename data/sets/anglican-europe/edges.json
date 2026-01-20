@@ -1,0 +1,26 @@
+﻿[
+  {
+    "id": "english-reformation-to-church-of-england-1534",
+    "name": "National church established",
+    "from_id": "english-reformation",
+    "to_id": "church-of-england",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1534,
+    "reasons": ["break with Rome", "royal supremacy"],
+    "description": "The English Reformation established the Church of England as a national church.",
+    "citations": ["cite-english-reformation-1534", "cite-church-of-england-1534"]
+  },
+  {
+    "id": "church-of-england-to-episcopal-church-1785",
+    "name": "American church formed",
+    "from_id": "church-of-england",
+    "to_id": "episcopal-church",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1785,
+    "reasons": ["American independence"],
+    "description": "The Episcopal Church formed as the U.S. Anglican body after separation from the Church of England.",
+    "citations": ["cite-episcopal-derived-from-coe", "cite-tec-1785"]
+  }
+]

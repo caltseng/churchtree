@@ -1,0 +1,50 @@
+﻿[
+  {
+    "id": "lutheran-reformation-to-german-churches-1555",
+    "name": "Territorial churches formed",
+    "from_id": "lutheran-reformation",
+    "to_id": "german-lutheran-territorial-churches",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1555,
+    "reasons": ["reformation settlement"],
+    "description": "Lutheran territorial churches developed in German lands following the Reformation.",
+    "citations": ["cite-lutheranism-origins", "cite-lutheranism-germany"]
+  },
+  {
+    "id": "lutheran-reformation-to-scandinavian-churches-1536",
+    "name": "State churches established",
+    "from_id": "lutheran-reformation",
+    "to_id": "scandinavian-lutheran-state-churches",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1536,
+    "reasons": ["reformation adoption"],
+    "description": "Scandinavian state churches adopted Lutheranism in the Reformation era.",
+    "citations": ["cite-lutheranism-origins", "cite-lutheranism-scandinavia"]
+  },
+  {
+    "id": "german-churches-to-lcms-1847",
+    "name": "German immigrant roots",
+    "from_id": "german-lutheran-territorial-churches",
+    "to_id": "lutheran-church-missouri-synod",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1847,
+    "reasons": ["immigration from German churches"],
+    "description": "LCMS was founded by German immigrants from territorial churches in Germany.",
+    "citations": ["cite-lcms-1847", "cite-lcms-german-landeskirchen"]
+  },
+  {
+    "id": "scandinavian-churches-to-elca-1987",
+    "name": "Scandinavian immigrant roots",
+    "from_id": "scandinavian-lutheran-state-churches",
+    "to_id": "evangelical-lutheran-church-in-america",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1987,
+    "reasons": ["immigration heritage"],
+    "description": "ELCA predecessor bodies were shaped by Scandinavian immigrant church traditions.",
+    "citations": ["cite-elca-scandinavian-roots", "cite-elca-founded"]
+  }
+]

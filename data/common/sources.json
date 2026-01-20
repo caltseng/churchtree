@@ -364,5 +364,29 @@
         "url":  "https://en.wikipedia.org/wiki/Church_of_God_(Seventh_Day)",
         "id":  "src-wiki-church-of-god-seventh-day",
         "kind":  "website"
+    },
+    {
+        "title":  "English Reformation - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/English_Reformation",
+        "id":  "src-wiki-english-reformation",
+        "kind":  "website"
+    },
+    {
+        "title":  "Church of England - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Church_of_England",
+        "id":  "src-wiki-church-of-england",
+        "kind":  "website"
+    },
+    {
+        "title":  "Methodism - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Methodism",
+        "id":  "src-wiki-methodism",
+        "kind":  "website"
+    },
+    {
+        "title":  "Lutheranism - Wikipedia",
+        "url":  "https://en.wikipedia.org/wiki/Lutheranism",
+        "id":  "src-wiki-lutheranism",
+        "kind":  "website"
     }
 ]

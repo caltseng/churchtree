@@ -1,4 +1,4 @@
-# Data Collection Plan: European Origins (American Protestant Families)
+﻿# Data Collection Plan: European Origins (American Protestant Families)
 
 ## Purpose
 Provide a single roadmap for collecting European antecedents that feed the
@@ -35,8 +35,9 @@ Create sub-plans for specific European streams (e.g., Lutheran origins) as
 they enter active scope.
 
 ## Checklist
-- [ ] Confirm European scope list is complete for current phase.
-- [ ] Create sub-plans for any family needing deeper European roots.
-- [ ] Run notes-first extraction for each European origin cluster.
-- [ ] Convert notes to JSON and rebuild `data/data.js`.
-- [ ] Run QA: `docs/spec/data-audit-checklist.md` and `plans/qa-periodic-check.md`.
+- [x] Confirm European scope list is complete for current phase.
+- [x] Create sub-plans for any family needing deeper European roots.
+- [x] Run notes-first extraction for each European origin cluster.
+- [x] Convert notes to JSON and rebuild `data/data.js`.
+- [x] Run QA: `docs/spec/data-audit-checklist.md` and `plans/qa-periodic-check.md`.
+

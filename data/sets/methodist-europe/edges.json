@@ -1,0 +1,26 @@
+﻿[
+  {
+    "id": "church-of-england-to-methodist-movement-1738",
+    "name": "Methodist renewal movement",
+    "from_id": "church-of-england",
+    "to_id": "methodist-movement-england",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1738,
+    "reasons": ["renewal movement"],
+    "description": "Methodism began as a renewal movement within the Church of England in the 18th century.",
+    "citations": ["cite-methodism-origins", "cite-church-of-england-1534"]
+  },
+  {
+    "id": "methodist-movement-to-mec-1784",
+    "name": "American Methodist organization",
+    "from_id": "methodist-movement-england",
+    "to_id": "methodist-episcopal-church",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1784,
+    "reasons": ["organization of American Methodism"],
+    "description": "Methodist Episcopal Church formed in 1784 as American Methodism organized separately from the Church of England.",
+    "citations": ["cite-mec-1784", "cite-mec-separated-from-coe"]
+  }
+]

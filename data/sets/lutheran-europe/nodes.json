@@ -1,0 +1,50 @@
+﻿[
+  {
+    "id": "lutheran-reformation",
+    "name": "Lutheran Reformation",
+    "kind": "movement",
+    "start_year": 1517,
+    "zoom_tier": "full",
+    "short_label": "Lutheran Reformation",
+    "region": "Germany",
+    "geographic_origin": "Germany",
+    "tradition_family": "Lutheran",
+    "ecclesial_orientation": "other",
+    "current_status": "dissolved",
+    "notes": "Reformation movement initiated by Martin Luther in 1517.",
+    "distinctives": ["Sola fide", "Sola scriptura"],
+    "size_estimate": "unknown"
+  },
+  {
+    "id": "german-lutheran-territorial-churches",
+    "name": "German Lutheran territorial churches",
+    "kind": "movement",
+    "start_year": 1555,
+    "zoom_tier": "full",
+    "short_label": "German Lutheran churches",
+    "region": "Germany",
+    "geographic_origin": "Germany",
+    "tradition_family": "Lutheran",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "notes": "Territorial Lutheran churches in German lands following the Reformation.",
+    "distinctives": ["Confessional Lutheran"],
+    "size_estimate": "unknown"
+  },
+  {
+    "id": "scandinavian-lutheran-state-churches",
+    "name": "Scandinavian Lutheran state churches",
+    "kind": "movement",
+    "start_year": 1536,
+    "zoom_tier": "full",
+    "short_label": "Scandinavian Lutheran",
+    "region": "Scandinavia",
+    "geographic_origin": "Scandinavia",
+    "tradition_family": "Lutheran",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "notes": "Lutheran state churches established in Scandinavia in the Reformation era.",
+    "distinctives": ["State church heritage"],
+    "size_estimate": "unknown"
+  }
+]

@@ -312,6 +312,154 @@ window.CHURCHTREE_DATA = {
         "size_estimate":  "unknown"
     },
     {
+        "id":  "english-reformation",
+        "name":  "English Reformation",
+        "kind":  "movement",
+        "start_year":  1534,
+        "zoom_tier":  "full",
+        "short_label":  "English Reformation",
+        "region":  "England",
+        "geographic_origin":  "England",
+        "tradition_family":  "Anglican",
+        "ecclesial_orientation":  "other",
+        "current_status":  "dissolved",
+        "notes":  "Break with Rome and establishment of a national church in England.",
+        "distinctives":  [
+                             "Royal supremacy",
+                             "Reformation reforms"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
+        "id":  "church-of-england",
+        "name":  "Church of England",
+        "kind":  "denomination",
+        "start_year":  1534,
+        "zoom_tier":  "full",
+        "short_label":  "CoE",
+        "region":  "England",
+        "geographic_origin":  "England",
+        "tradition_family":  "Anglican",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "notes":  "Established as the English national church in the Reformation era.",
+        "distinctives":  [
+                             "Anglican doctrine"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
+        "id":  "lutheran-reformation",
+        "name":  "Lutheran Reformation",
+        "kind":  "movement",
+        "start_year":  1517,
+        "zoom_tier":  "full",
+        "short_label":  "Lutheran Reformation",
+        "region":  "Germany",
+        "geographic_origin":  "Germany",
+        "tradition_family":  "Lutheran",
+        "ecclesial_orientation":  "other",
+        "current_status":  "dissolved",
+        "notes":  "Reformation movement initiated by Martin Luther in 1517.",
+        "distinctives":  [
+                             "Sola fide",
+                             "Sola scriptura"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
+        "id":  "german-lutheran-territorial-churches",
+        "name":  "German Lutheran territorial churches",
+        "kind":  "movement",
+        "start_year":  1555,
+        "zoom_tier":  "full",
+        "short_label":  "German Lutheran churches",
+        "region":  "Germany",
+        "geographic_origin":  "Germany",
+        "tradition_family":  "Lutheran",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "notes":  "Territorial Lutheran churches in German lands following the Reformation.",
+        "distinctives":  [
+                             "Confessional Lutheran"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
+        "id":  "scandinavian-lutheran-state-churches",
+        "name":  "Scandinavian Lutheran state churches",
+        "kind":  "movement",
+        "start_year":  1536,
+        "zoom_tier":  "full",
+        "short_label":  "Scandinavian Lutheran",
+        "region":  "Scandinavia",
+        "geographic_origin":  "Scandinavia",
+        "tradition_family":  "Lutheran",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "notes":  "Lutheran state churches established in Scandinavia in the Reformation era.",
+        "distinctives":  [
+                             "State church heritage"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
+        "id":  "methodist-movement-england",
+        "name":  "Methodist movement (England)",
+        "kind":  "movement",
+        "start_year":  1738,
+        "zoom_tier":  "full",
+        "short_label":  "Methodist movement",
+        "region":  "England",
+        "geographic_origin":  "England",
+        "tradition_family":  "Methodist",
+        "ecclesial_orientation":  "other",
+        "current_status":  "dissolved",
+        "notes":  "Methodism began as a renewal movement within the Church of England in the 18th century.",
+        "distinctives":  [
+                             "Wesleyan theology",
+                             "Methodist societies"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
+        "id":  "english-separatists",
+        "name":  "English Separatists",
+        "kind":  "movement",
+        "start_year":  1606,
+        "zoom_tier":  "full",
+        "short_label":  "English Separatists",
+        "region":  "England",
+        "geographic_origin":  "England",
+        "tradition_family":  "Baptist",
+        "ecclesial_orientation":  "other",
+        "current_status":  "dissolved",
+        "notes":  "Separatist dissenters from the Church of England in the early 17th century.",
+        "distinctives":  [
+                             "Congregational separation",
+                             "Believer\u0027s baptism"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
+        "id":  "early-baptist-amsterdam",
+        "name":  "Early Baptist congregation (Amsterdam)",
+        "kind":  "movement",
+        "start_year":  1609,
+        "zoom_tier":  "full",
+        "short_label":  "Amsterdam Baptists",
+        "region":  "Netherlands",
+        "geographic_origin":  "Netherlands",
+        "tradition_family":  "Baptist",
+        "ecclesial_orientation":  "other",
+        "current_status":  "dissolved",
+        "notes":  "First Baptist church formed in Amsterdam in 1609.",
+        "distinctives":  [
+                             "Believer\u0027s baptism"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
         "id":  "baptist-movement",
         "name":  "Baptist movement",
         "kind":  "movement",
@@ -1183,6 +1331,40 @@ window.CHURCHTREE_DATA = {
                       ]
     },
     {
+        "id":  "catholic-church-to-english-reformation-1534",
+        "name":  "English Reformation",
+        "from_id":  "catholic-church",
+        "to_id":  "english-reformation",
+        "zoom_tier":  "full",
+        "type":  "split",
+        "year":  1534,
+        "reasons":  [
+                        "break with Rome",
+                        "royal supremacy"
+                    ],
+        "description":  "The English Reformation broke from Roman Catholic authority and established a national church under royal supremacy.",
+        "citations":  [
+                          "cite-english-reformation-1534"
+                      ]
+    },
+    {
+        "id":  "catholic-church-to-lutheran-reformation-1517",
+        "name":  "Lutheran Reformation",
+        "from_id":  "catholic-church",
+        "to_id":  "lutheran-reformation",
+        "zoom_tier":  "full",
+        "type":  "split",
+        "year":  1517,
+        "reasons":  [
+                        "Protestant Reformation",
+                        "doctrinal reform"
+                    ],
+        "description":  "The Lutheran Reformation emerged in opposition to Roman Catholic doctrine and authority, beginning in 1517.",
+        "citations":  [
+                          "cite-lutheranism-origins"
+                      ]
+    },
+    {
         "id":  "genevan-reformed-to-church-of-scotland-1559",
         "name":  "Knox returns from Geneva",
         "from_id":  "genevan-reformed",
@@ -1353,6 +1535,175 @@ window.CHURCHTREE_DATA = {
         "citations":  [
                           "cite-presbyterian-us",
                           "cite-presbytery-philadelphia"
+                      ]
+    },
+    {
+        "id":  "english-reformation-to-church-of-england-1534",
+        "name":  "National church established",
+        "from_id":  "english-reformation",
+        "to_id":  "church-of-england",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1534,
+        "reasons":  [
+                        "break with Rome",
+                        "royal supremacy"
+                    ],
+        "description":  "The English Reformation established the Church of England as a national church.",
+        "citations":  [
+                          "cite-english-reformation-1534",
+                          "cite-church-of-england-1534"
+                      ]
+    },
+    {
+        "id":  "church-of-england-to-episcopal-church-1785",
+        "name":  "American church formed",
+        "from_id":  "church-of-england",
+        "to_id":  "episcopal-church",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1785,
+        "reasons":  [
+                        "American independence"
+                    ],
+        "description":  "The Episcopal Church formed as the U.S. Anglican body after separation from the Church of England.",
+        "citations":  [
+                          "cite-episcopal-derived-from-coe",
+                          "cite-tec-1785"
+                      ]
+    },
+    {
+        "id":  "lutheran-reformation-to-german-churches-1555",
+        "name":  "Territorial churches formed",
+        "from_id":  "lutheran-reformation",
+        "to_id":  "german-lutheran-territorial-churches",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1555,
+        "reasons":  [
+                        "reformation settlement"
+                    ],
+        "description":  "Lutheran territorial churches developed in German lands following the Reformation.",
+        "citations":  [
+                          "cite-lutheranism-origins",
+                          "cite-lutheranism-germany"
+                      ]
+    },
+    {
+        "id":  "lutheran-reformation-to-scandinavian-churches-1536",
+        "name":  "State churches established",
+        "from_id":  "lutheran-reformation",
+        "to_id":  "scandinavian-lutheran-state-churches",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1536,
+        "reasons":  [
+                        "reformation adoption"
+                    ],
+        "description":  "Scandinavian state churches adopted Lutheranism in the Reformation era.",
+        "citations":  [
+                          "cite-lutheranism-origins",
+                          "cite-lutheranism-scandinavia"
+                      ]
+    },
+    {
+        "id":  "german-churches-to-lcms-1847",
+        "name":  "German immigrant roots",
+        "from_id":  "german-lutheran-territorial-churches",
+        "to_id":  "lutheran-church-missouri-synod",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1847,
+        "reasons":  [
+                        "immigration from German churches"
+                    ],
+        "description":  "LCMS was founded by German immigrants from territorial churches in Germany.",
+        "citations":  [
+                          "cite-lcms-1847",
+                          "cite-lcms-german-landeskirchen"
+                      ]
+    },
+    {
+        "id":  "scandinavian-churches-to-elca-1987",
+        "name":  "Scandinavian immigrant roots",
+        "from_id":  "scandinavian-lutheran-state-churches",
+        "to_id":  "evangelical-lutheran-church-in-america",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1987,
+        "reasons":  [
+                        "immigration heritage"
+                    ],
+        "description":  "ELCA predecessor bodies were shaped by Scandinavian immigrant church traditions.",
+        "citations":  [
+                          "cite-elca-scandinavian-roots",
+                          "cite-elca-founded"
+                      ]
+    },
+    {
+        "id":  "church-of-england-to-methodist-movement-1738",
+        "name":  "Methodist renewal movement",
+        "from_id":  "church-of-england",
+        "to_id":  "methodist-movement-england",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1738,
+        "reasons":  [
+                        "renewal movement"
+                    ],
+        "description":  "Methodism began as a renewal movement within the Church of England in the 18th century.",
+        "citations":  [
+                          "cite-methodism-origins",
+                          "cite-church-of-england-1534"
+                      ]
+    },
+    {
+        "id":  "methodist-movement-to-mec-1784",
+        "name":  "American Methodist organization",
+        "from_id":  "methodist-movement-england",
+        "to_id":  "methodist-episcopal-church",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1784,
+        "reasons":  [
+                        "organization of American Methodism"
+                    ],
+        "description":  "Methodist Episcopal Church formed in 1784 as American Methodism organized separately from the Church of England.",
+        "citations":  [
+                          "cite-mec-1784",
+                          "cite-mec-separated-from-coe"
+                      ]
+    },
+    {
+        "id":  "english-separatists-to-amsterdam-1609",
+        "name":  "Separatist exile congregation",
+        "from_id":  "english-separatists",
+        "to_id":  "early-baptist-amsterdam",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1609,
+        "reasons":  [
+                        "exile congregation"
+                    ],
+        "description":  "English Separatists formed the first Baptist church in Amsterdam in 1609.",
+        "citations":  [
+                          "cite-baptists-1609"
+                      ]
+    },
+    {
+        "id":  "amsterdam-to-baptist-movement-1609",
+        "name":  "Baptist tradition begins",
+        "from_id":  "early-baptist-amsterdam",
+        "to_id":  "baptist-movement",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1609,
+        "reasons":  [
+                        "founding congregation"
+                    ],
+        "description":  "The Amsterdam congregation is treated as the first Baptist church, marking the start of the Baptist movement.",
+        "citations":  [
+                          "cite-baptists-1609"
                       ]
     },
     {

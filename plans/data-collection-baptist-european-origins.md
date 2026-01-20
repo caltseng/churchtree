@@ -1,4 +1,4 @@
-# Data Collection Plan: European Origins of Baptists
+﻿# Data Collection Plan: European Origins of Baptists
 
 ## Purpose
 Collect and normalize European antecedents that feed the American Baptist
@@ -45,8 +45,9 @@ Source rules:
 - Notes capture distinctives where sourced.
 
 ## Checklist
-- [ ] Create notes files for core English Baptist lineage.
-- [ ] Extract facts with citations into notes.
-- [ ] Convert notes to JSON and validate ids.
-- [ ] Add edges linking to US Baptist movement where sourced.
-- [ ] Rebuild `data/data.js` and run QA.
+- [x] Create notes files for core English Baptist lineage.
+- [x] Extract facts with citations into notes.
+- [x] Convert notes to JSON and validate ids.
+- [x] Add edges linking to US Baptist movement where sourced.
+- [x] Rebuild `data/data.js` and run QA.
+

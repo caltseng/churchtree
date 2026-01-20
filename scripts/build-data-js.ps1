@@ -6,6 +6,10 @@ $dataDir = Join-Path $RepoRoot "data"
 $setDirs = @(
   (Join-Path $dataDir "sets\\presbyterian-us"),
   (Join-Path $dataDir "sets\\presbyterian-europe"),
+  (Join-Path $dataDir "sets\\anglican-europe"),
+  (Join-Path $dataDir "sets\\lutheran-europe"),
+  (Join-Path $dataDir "sets\\methodist-europe"),
+  (Join-Path $dataDir "sets\\baptist-europe"),
   (Join-Path $dataDir "sets\\baptist-us"),
   (Join-Path $dataDir "sets\\methodist-us"),
   (Join-Path $dataDir "sets\\lutheran-us"),

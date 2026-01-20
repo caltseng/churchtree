@@ -1,0 +1,11 @@
+﻿[
+  {
+    "id": "event-baptist-amsterdam-1609",
+    "name": "First Baptist church in Amsterdam",
+    "year": 1609,
+    "zoom_tier": "full",
+    "description": "The first Baptist church formed in Amsterdam in 1609.",
+    "related_edge_ids": ["english-separatists-to-amsterdam-1609", "amsterdam-to-baptist-movement-1609"],
+    "citations": ["cite-baptists-1609"]
+  }
+]

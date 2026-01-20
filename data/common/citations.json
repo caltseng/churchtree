@@ -850,5 +850,65 @@
         "locator":  "History: 1858 separation of Sabbatarian Adventists",
         "accessed":  "2026-01-19",
         "id":  "cite-cog7-1858"
+    },
+    {
+        "source_id":  "src-wiki-english-reformation",
+        "locator":  "Lead: Reformation and break with Rome in the 1530s",
+        "accessed":  "2026-01-19",
+        "id":  "cite-english-reformation-1534"
+    },
+    {
+        "source_id":  "src-wiki-church-of-england",
+        "locator":  "Lead/History: established in the 16th century with the English Reformation",
+        "accessed":  "2026-01-19",
+        "id":  "cite-church-of-england-1534"
+    },
+    {
+        "source_id":  "src-wiki-episcopal-church",
+        "locator":  "Lead: derives from the Church of England",
+        "accessed":  "2026-01-19",
+        "id":  "cite-episcopal-derived-from-coe"
+    },
+    {
+        "source_id":  "src-wiki-methodism",
+        "locator":  "Lead: began as a revival movement in 18th-century England under John and Charles Wesley",
+        "accessed":  "2026-01-19",
+        "id":  "cite-methodism-origins"
+    },
+    {
+        "source_id":  "src-wiki-methodist-episcopal-church",
+        "locator":  "Infobox: separated_from Church of England",
+        "accessed":  "2026-01-19",
+        "id":  "cite-mec-separated-from-coe"
+    },
+    {
+        "source_id":  "src-wiki-lutheranism",
+        "locator":  "Lead: origins in 16th-century Reformation and Martin Luther",
+        "accessed":  "2026-01-19",
+        "id":  "cite-lutheranism-origins"
+    },
+    {
+        "source_id":  "src-wiki-lutheranism",
+        "locator":  "History: spread in German lands",
+        "accessed":  "2026-01-19",
+        "id":  "cite-lutheranism-germany"
+    },
+    {
+        "source_id":  "src-wiki-lutheranism",
+        "locator":  "History: adoption in Scandinavia",
+        "accessed":  "2026-01-19",
+        "id":  "cite-lutheranism-scandinavia"
+    },
+    {
+        "source_id":  "src-wiki-lcms",
+        "locator":  "Infobox: separated_from German Landeskirchen",
+        "accessed":  "2026-01-19",
+        "id":  "cite-lcms-german-landeskirchen"
+    },
+    {
+        "source_id":  "src-wiki-elca",
+        "locator":  "History: ALC influenced by Scandinavian and German immigration; LCA by immigrant roots",
+        "accessed":  "2026-01-19",
+        "id":  "cite-elca-scandinavian-roots"
     }
 ]

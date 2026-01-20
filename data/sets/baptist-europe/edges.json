@@ -1,0 +1,26 @@
+﻿[
+  {
+    "id": "english-separatists-to-amsterdam-1609",
+    "name": "Separatist exile congregation",
+    "from_id": "english-separatists",
+    "to_id": "early-baptist-amsterdam",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1609,
+    "reasons": ["exile congregation"],
+    "description": "English Separatists formed the first Baptist church in Amsterdam in 1609.",
+    "citations": ["cite-baptists-1609"]
+  },
+  {
+    "id": "amsterdam-to-baptist-movement-1609",
+    "name": "Baptist tradition begins",
+    "from_id": "early-baptist-amsterdam",
+    "to_id": "baptist-movement",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1609,
+    "reasons": ["founding congregation"],
+    "description": "The Amsterdam congregation is treated as the first Baptist church, marking the start of the Baptist movement.",
+    "citations": ["cite-baptists-1609"]
+  }
+]

@@ -1,0 +1,11 @@
+﻿[
+  {
+    "id": "event-methodist-movement-1738",
+    "name": "Methodist movement begins",
+    "year": 1738,
+    "zoom_tier": "full",
+    "description": "Methodism emerged in 18th-century England as a renewal movement within the Church of England.",
+    "related_edge_ids": ["church-of-england-to-methodist-movement-1738"],
+    "citations": ["cite-methodism-origins"]
+  }
+]

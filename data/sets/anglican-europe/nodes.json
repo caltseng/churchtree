@@ -1,0 +1,34 @@
+﻿[
+  {
+    "id": "english-reformation",
+    "name": "English Reformation",
+    "kind": "movement",
+    "start_year": 1534,
+    "zoom_tier": "full",
+    "short_label": "English Reformation",
+    "region": "England",
+    "geographic_origin": "England",
+    "tradition_family": "Anglican",
+    "ecclesial_orientation": "other",
+    "current_status": "dissolved",
+    "notes": "Break with Rome and establishment of a national church in England.",
+    "distinctives": ["Royal supremacy", "Reformation reforms"],
+    "size_estimate": "unknown"
+  },
+  {
+    "id": "church-of-england",
+    "name": "Church of England",
+    "kind": "denomination",
+    "start_year": 1534,
+    "zoom_tier": "full",
+    "short_label": "CoE",
+    "region": "England",
+    "geographic_origin": "England",
+    "tradition_family": "Anglican",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "notes": "Established as the English national church in the Reformation era.",
+    "distinctives": ["Anglican doctrine"],
+    "size_estimate": "unknown"
+  }
+]

@@ -1,0 +1,11 @@
+﻿[
+  {
+    "id": "event-english-reformation-1534",
+    "name": "English Reformation begins",
+    "year": 1534,
+    "zoom_tier": "full",
+    "description": "The English Reformation established royal supremacy and a national church.",
+    "related_edge_ids": ["english-reformation-to-church-of-england-1534"],
+    "citations": ["cite-english-reformation-1534", "cite-church-of-england-1534"]
+  }
+]

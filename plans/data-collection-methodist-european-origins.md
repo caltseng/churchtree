@@ -1,4 +1,4 @@
-# Data Collection Plan: European Origins of Methodism
+﻿# Data Collection Plan: European Origins of Methodism
 
 ## Purpose
 Collect and normalize European (English) antecedents that feed the American
@@ -44,8 +44,9 @@ Source rules:
 - Notes capture distinctives where sourced.
 
 ## Checklist
-- [ ] Create notes files for core Wesleyan lineage.
-- [ ] Extract facts with citations into notes.
-- [ ] Convert notes to JSON and validate ids.
-- [ ] Add edges linking to MEC/UMC where sourced.
-- [ ] Rebuild `data/data.js` and run QA.
+- [x] Create notes files for core Wesleyan lineage.
+- [x] Extract facts with citations into notes.
+- [x] Convert notes to JSON and validate ids.
+- [x] Add edges linking to MEC/UMC where sourced.
+- [x] Rebuild `data/data.js` and run QA.
+

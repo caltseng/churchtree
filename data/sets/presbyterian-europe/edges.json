@@ -48,6 +48,30 @@
     "citations": ["cite-church-of-scotland-history-break"]
   },
   {
+    "id": "catholic-church-to-english-reformation-1534",
+    "name": "English Reformation",
+    "from_id": "catholic-church",
+    "to_id": "english-reformation",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1534,
+    "reasons": ["break with Rome", "royal supremacy"],
+    "description": "The English Reformation broke from Roman Catholic authority and established a national church under royal supremacy.",
+    "citations": ["cite-english-reformation-1534"]
+  },
+  {
+    "id": "catholic-church-to-lutheran-reformation-1517",
+    "name": "Lutheran Reformation",
+    "from_id": "catholic-church",
+    "to_id": "lutheran-reformation",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1517,
+    "reasons": ["Protestant Reformation", "doctrinal reform"],
+    "description": "The Lutheran Reformation emerged in opposition to Roman Catholic doctrine and authority, beginning in 1517.",
+    "citations": ["cite-lutheranism-origins"]
+  },
+  {
     "id": "genevan-reformed-to-church-of-scotland-1559",
     "name": "Knox returns from Geneva",
     "from_id": "genevan-reformed",
