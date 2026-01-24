@@ -235,21 +235,21 @@
       const chart = document.getElementById("chart");
       chart.innerHTML = "";
       const baseWidth = chart.clientWidth;
-      const height = chart.clientHeight;
+      const baseHeight = chart.clientHeight;
 
       const rawFamilies = new Set(nodeData.map(n => (n.tradition_family || "Other").trim()).filter(Boolean));
       const laneOrder = [
         "Presbyterian",
         "Reformed",
+        "Anglican",
         "Baptist",
+        "Pentecostal",
+        "Restorationist",
+        "Catholic",
         "Methodist",
         "Lutheran",
-        "Anglican",
-        "Pentecostal",
         "Holiness",
-        "Restorationist",
         "Adventist",
-        "Catholic",
         "Other"
       ];
       const lanes = laneOrder.filter(f => rawFamilies.has(f)).concat(
@@ -261,13 +261,6 @@
       const desiredWidth = Math.max(baseWidth, lanes.length * laneWidth + chartPadding * 2);
       chart.style.width = `${desiredWidth}px`;
       const width = desiredWidth;
-
-      const svg = d3.select(chart)
-        .append("svg")
-        .attr("width", width)
-        .attr("height", height);
-
-      const g = svg.append("g");
 
       const years = nodes
         .map(n => n.start_year)
@@ -283,9 +276,26 @@
         yearTicks.push(y);
       }
 
+      const pixelsPerBucket = 60;
+      const desiredHeight = Math.max(
+        baseHeight,
+        yearTicks.length * pixelsPerBucket + 100
+      );
+      chart.style.height = `${desiredHeight}px`;
+      const height = desiredHeight;
+
+      const svg = d3.select(chart)
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+      const g = svg.append("g");
+
+      const topPadding = 24;
+      const bottomPadding = 40;
       const yScale = d3.scaleLinear()
         .domain([startTick, endTick])
-        .range([60, height - 40]);
+        .range([topPadding, height - bottomPadding]);
 
       g.selectAll(".grid")
         .data(yearTicks)

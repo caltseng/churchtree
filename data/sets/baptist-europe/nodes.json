@@ -30,5 +30,21 @@
     "notes": "First Baptist church formed in Amsterdam in 1609.",
     "distinctives": ["Believer's baptism"],
     "size_estimate": "unknown"
+  },
+  {
+    "id": "eastern-orthodox-tradition",
+    "name": "Eastern Orthodox tradition",
+    "kind": "movement",
+    "start_year": 1054,
+    "zoom_tier": "full",
+    "short_label": "Eastern Orthodox",
+    "region": "Eastern Europe, Middle East",
+    "geographic_origin": "Constantinople",
+    "tradition_family": "Orthodox",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "notes": "Eastern tradition centered in Constantinople and the Eastern churches after the East-West Schism.",
+    "distinctives": ["Conciliar governance", "Eastern liturgical tradition"],
+    "size_estimate": "more than 200 million adherents worldwide (early 21st century)"
   }
 ]

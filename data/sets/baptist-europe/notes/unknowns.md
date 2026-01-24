@@ -13,5 +13,8 @@ Follow-up research needed for the items below.
 - English Separatists
 - Early Baptist congregation (Amsterdam)
 
+## Missing predecessor edges
+- English Separatists
+
 ## Notes
 - Add citations for any new size estimates (year + source).

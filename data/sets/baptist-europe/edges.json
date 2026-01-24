@@ -1,5 +1,17 @@
 ﻿[
   {
+    "id": "church-of-england-to-english-separatists-1534",
+    "name": "Separatist split from Church of England",
+    "from_id": "church-of-england",
+    "to_id": "english-separatists",
+    "zoom_tier": "full",
+    "type": "split",
+    "year": 1534,
+    "reasons": ["separatist dissent"],
+    "description": "English Separatists emerged as a separation from the Church of England during the Reformation era.",
+    "citations": ["cite-church-of-england-separatists"]
+  },
+  {
     "id": "english-separatists-to-amsterdam-1609",
     "name": "Separatist exile congregation",
     "from_id": "english-separatists",

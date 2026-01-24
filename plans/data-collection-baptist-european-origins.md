@@ -3,12 +3,16 @@
 ## Purpose
 Collect and normalize European antecedents that feed the American Baptist
 lineage (English Separatists and early Baptist churches).
+Also capture the high-level Eastern Orthodox backdrop and the East-West
+schism context that shaped later Western developments.
 
 ## Owners
 - Codex (current run)
 
 ## First batch targets
 - Core English Separatist lineage
+- Eastern Orthodox tradition (high-level only)
+- East-West Schism overview details
 
 ## Scope (initial list)
 Core lineage cluster:
@@ -19,6 +23,7 @@ Core lineage cluster:
 Optional early additions:
 - General vs. Particular Baptists (as movement branches)
 - Dutch Mennonite influence (if directly connected)
+- Brief Byzantine/Orthodox context if it directly clarifies the schism
 
 ## Sources strategy
 Primary sources:
@@ -30,6 +35,8 @@ Secondary sources:
 Source rules:
 - At least one source per major claim (date, origin).
 - Capture precise locators (section titles, page numbers, URL fragments).
+- Keep Orthodox coverage high-level: founder/era, geographic center, and
+  core schism facts only.
 
 ## Workflow (notes-first)
 1. Create notes file per denomination/movement:
@@ -50,4 +57,6 @@ Source rules:
 - [x] Convert notes to JSON and validate ids.
 - [x] Add edges linking to US Baptist movement where sourced.
 - [x] Rebuild `data/data.js` and run QA.
+- [ ] Add a high-level Eastern Orthodox node and capture core dates.
+- [ ] Add an East-West Schism node/edge with key dates and relations.
 

@@ -460,6 +460,25 @@ window.CHURCHTREE_DATA = {
         "size_estimate":  "unknown"
     },
     {
+        "id":  "eastern-orthodox-tradition",
+        "name":  "Eastern Orthodox tradition",
+        "kind":  "movement",
+        "start_year":  1054,
+        "zoom_tier":  "full",
+        "short_label":  "Eastern Orthodox",
+        "region":  "Eastern Europe, Middle East",
+        "geographic_origin":  "Constantinople",
+        "tradition_family":  "Orthodox",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "notes":  "Eastern tradition centered in Constantinople and the Eastern churches after the East-West Schism.",
+        "distinctives":  [
+                             "Conciliar governance",
+                             "Eastern liturgical tradition"
+                         ],
+        "size_estimate":  "more than 200 million adherents worldwide (early 21st century)"
+    },
+    {
         "id":  "baptist-movement",
         "name":  "Baptist movement",
         "kind":  "movement",
@@ -960,6 +979,44 @@ window.CHURCHTREE_DATA = {
         "size_estimate":  "8.8 million members"
     },
     {
+        "id":  "second-great-awakening",
+        "name":  "Second Great Awakening",
+        "kind":  "movement",
+        "start_year":  1790,
+        "zoom_tier":  "full",
+        "short_label":  "Second Great Awakening",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Revivalist",
+        "ecclesial_orientation":  "other",
+        "current_status":  "dissolved",
+        "notes":  "Religious revival during the late 18th to early 19th century in the United States.",
+        "distinctives":  [
+                             "Revival preaching",
+                             "Conversion emphasis"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
+        "id":  "holiness-movement",
+        "name":  "Holiness movement",
+        "kind":  "movement",
+        "start_year":  1850,
+        "zoom_tier":  "full",
+        "short_label":  "Holiness Movement",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Holiness",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "notes":  "Movement that emerged chiefly within 19th-century Methodism and emphasized entire sanctification.",
+        "distinctives":  [
+                             "Entire sanctification",
+                             "Second work of grace"
+                         ],
+        "size_estimate":  "unknown"
+    },
+    {
         "id":  "restoration-movement",
         "name":  "Restoration Movement",
         "kind":  "movement",
@@ -1348,6 +1405,22 @@ window.CHURCHTREE_DATA = {
                       ]
     },
     {
+        "id":  "english-reformation-to-english-congregation-geneva-1555",
+        "name":  "Marian exile congregation",
+        "from_id":  "english-reformation",
+        "to_id":  "english-congregation-geneva",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1555,
+        "reasons":  [
+                        "Protestant exile community"
+                    ],
+        "description":  "English and Scottish Protestant exiles formed the English Congregation in Geneva during the Marian exile period.",
+        "citations":  [
+                          "cite-english-congregation-geneva-exiles"
+                      ]
+    },
+    {
         "id":  "catholic-church-to-lutheran-reformation-1517",
         "name":  "Lutheran Reformation",
         "from_id":  "catholic-church",
@@ -1672,6 +1745,22 @@ window.CHURCHTREE_DATA = {
         "citations":  [
                           "cite-mec-1784",
                           "cite-mec-separated-from-coe"
+                      ]
+    },
+    {
+        "id":  "church-of-england-to-english-separatists-1534",
+        "name":  "Separatist split from Church of England",
+        "from_id":  "church-of-england",
+        "to_id":  "english-separatists",
+        "zoom_tier":  "full",
+        "type":  "split",
+        "year":  1534,
+        "reasons":  [
+                        "separatist dissent"
+                    ],
+        "description":  "English Separatists emerged as a separation from the Church of England during the Reformation era.",
+        "citations":  [
+                          "cite-church-of-england-separatists"
                       ]
     },
     {
@@ -2025,6 +2114,22 @@ window.CHURCHTREE_DATA = {
                       ]
     },
     {
+        "id":  "holiness-movement-to-pentecostalism-1900",
+        "name":  "Holiness roots",
+        "from_id":  "holiness-movement",
+        "to_id":  "pentecostalism",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1900,
+        "reasons":  [
+                        "Wesleyan-Holiness roots"
+                    ],
+        "description":  "Holiness Pentecostalism emerged among adherents of the Wesleyan-Holiness movement, feeding into Pentecostalism.",
+        "citations":  [
+                          "cite-pentecostalism-holiness-roots"
+                      ]
+    },
+    {
         "id":  "pentecostalism-to-ag-1914",
         "name":  "Pentecostal denomination formed",
         "from_id":  "pentecostalism",
@@ -2106,6 +2211,54 @@ window.CHURCHTREE_DATA = {
                       ]
     },
     {
+        "id":  "methodist-movement-to-holiness-movement-1850",
+        "name":  "Holiness movement within Methodism",
+        "from_id":  "methodist-movement-england",
+        "to_id":  "holiness-movement",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1850,
+        "reasons":  [
+                        "Wesleyan-Holiness emphasis"
+                    ],
+        "description":  "The Holiness movement emerged chiefly within 19th-century Methodism.",
+        "citations":  [
+                          "cite-holiness-movement-methodism"
+                      ]
+    },
+    {
+        "id":  "second-great-awakening-to-restoration-1804",
+        "name":  "Restorationist revival",
+        "from_id":  "second-great-awakening",
+        "to_id":  "restoration-movement",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1804,
+        "reasons":  [
+                        "revival context"
+                    ],
+        "description":  "The Restoration Movement emerged on the American frontier during the Second Great Awakening.",
+        "citations":  [
+                          "cite-restoration-movement-1804"
+                      ]
+    },
+    {
+        "id":  "holiness-movement-to-nazarene-1908",
+        "name":  "Wesleyan-Holiness denomination",
+        "from_id":  "holiness-movement",
+        "to_id":  "church-of-the-nazarene",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1908,
+        "reasons":  [
+                        "Wesleyan-Holiness movement"
+                    ],
+        "description":  "The Church of the Nazarene emerged from the Wesleyan-Holiness movement within Methodism.",
+        "citations":  [
+                          "cite-nazarene-holiness-origins"
+                      ]
+    },
+    {
         "id":  "restoration-to-disciples-1832",
         "name":  "Union in Lexington",
         "from_id":  "restoration-movement",
@@ -2151,6 +2304,22 @@ window.CHURCHTREE_DATA = {
         "description":  "Independent Christian Churches separated from the Disciples between 1926 and 1971.",
         "citations":  [
                           "cite-disciples-separation-1926"
+                      ]
+    },
+    {
+        "id":  "second-great-awakening-to-millerism-1831",
+        "name":  "Millerite revival context",
+        "from_id":  "second-great-awakening",
+        "to_id":  "millerism",
+        "zoom_tier":  "full",
+        "type":  "origin",
+        "year":  1831,
+        "reasons":  [
+                        "revival context"
+                    ],
+        "description":  "Millerism emerged during the Second Great Awakening.",
+        "citations":  [
+                          "cite-millerism-second-great-awakening"
                       ]
     },
     {
