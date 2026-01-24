@@ -26,6 +26,32 @@ Add fields (optional at first, required by Tier 1+ later):
    - Tier 2 (mid): major national churches and key denominational branches.
    - Tier 3 (full): current complete dataset.
 
+## Draft cluster chart (v0)
+This is a first-pass cluster map to guide tiering. Clusters can be refined as
+node coverage grows.
+
+| Cluster id | Label | Tier | Scope | Membership rule (v0) | Time window (v0) |
+| --- | --- | --- | --- | --- |
+| cluster-orthodox | Eastern Orthodox | macro | Eastern tradition after 1054 | `tradition_family == "Orthodox"` | 1054–present |
+| cluster-catholic | Catholic (Latin) | macro | Western Latin tradition | `tradition_family == "Catholic"` | 1054–present |
+| cluster-anglican | Anglican | macro | English Reformation lineage | `tradition_family == "Anglican"` | 1534–present |
+| cluster-lutheran | Lutheran | macro | Lutheran Reformation lineage | `tradition_family == "Lutheran"` | 1517–present |
+| cluster-reformed | Reformed/Presbyterian | macro | Reformed + Presbyterian lineages | `tradition_family in ["Reformed","Presbyterian"]` | 1520–present |
+| cluster-baptist | Baptist | macro | Baptist movements + US denominations | `tradition_family == "Baptist"` | 1609–present |
+| cluster-methodist | Methodist/Wesleyan | macro | Methodist movements + US branches | `tradition_family == "Methodist"` | 1730–present |
+| cluster-restorationist | Restorationist | macro | Restorationist lineages | `tradition_family == "Restorationist"` | 1800–present |
+| cluster-pentecostal | Pentecostal | macro | Pentecostal movements + US branches | `tradition_family == "Pentecostal"` | 1901–present |
+| cluster-holiness | Holiness | macro | Holiness movements | `tradition_family == "Holiness"` | 1830–present |
+| cluster-adventist | Adventist | macro | Adventist movement + denominations | `tradition_family == "Adventist"` | 1830–present |
+| cluster-revivalist | Revivalist | macro | Revivalist umbrella nodes | `tradition_family == "Revivalist"` | 1730–present |
+
+Notes:
+- Use macro clusters as single nodes at Tier 1.
+- Tier 2 should show major denominational nodes per tradition (top 1-3 per set).
+- Tier 3 shows the full dataset.
+- Time proximity: nodes outside a cluster's time window should not be grouped
+  into that cluster even if the tradition_family matches.
+
 3. **Create cluster nodes**
    - Add explicit cluster nodes in JSON (e.g., `cluster-reformation`).
    - Define cluster membership rules:
