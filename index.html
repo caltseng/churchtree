@@ -31,6 +31,9 @@
         radial-gradient(circle at 80% 30%, #e3efe9 0%, transparent 50%),
         linear-gradient(180deg, var(--bg-1), var(--bg-2));
       min-height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
@@ -52,23 +55,24 @@
     #graph-wrap {
       padding: 12px 16px 24px 16px;
       position: relative;
-      min-width: 1400px;
-      overflow-x: auto;
+      min-width: 0;
+      flex: 1;
+      overflow: hidden;
     }
 
     #chart {
-      width: 1600px;
-      height: 320vh;
-      min-height: 2400px;
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
       border-radius: 16px;
       background: rgba(255, 255, 255, 0.6);
       box-shadow: 0 6px 22px rgba(0,0,0,0.08);
-      overflow: hidden;
+      overflow: auto;
       position: relative;
     }
 
     #y-axis {
-      position: sticky;
+      position: absolute;
       left: 0;
       top: 0;
       width: 60px;
@@ -170,8 +174,9 @@
       <button class="control-btn" id="zoom-out" aria-label="Zoom out">-</button>
       <button class="control-btn" id="zoom-reset" aria-label="Reset zoom">Reset</button>
     </div>
-    <div id="y-axis"></div>
-    <div id="chart"></div>
+    <div id="chart">
+      <div id="y-axis"></div>
+    </div>
   </div>
 
   <div class="note">
@@ -183,7 +188,9 @@
   <script>
     function showError(message) {
       const chart = document.getElementById("chart");
+      const axis = chart.querySelector("#y-axis");
       chart.innerHTML = "";
+      chart.appendChild(axis);
       const div = document.createElement("div");
       div.style.padding = "16px";
       div.style.color = "#9a5a45";
@@ -233,7 +240,9 @@
       const nodeMap = new Map(nodeData.map(n => [n.id, n]));
 
       const chart = document.getElementById("chart");
+      const axis = chart.querySelector("#y-axis");
       chart.innerHTML = "";
+      chart.appendChild(axis);
       const baseWidth = chart.clientWidth;
       const baseHeight = chart.clientHeight;
 
@@ -259,7 +268,6 @@
       const laneWidth = 260;
       const chartPadding = 140;
       const desiredWidth = Math.max(baseWidth, lanes.length * laneWidth + chartPadding * 2);
-      chart.style.width = `${desiredWidth}px`;
       const width = desiredWidth;
 
       const years = nodes
@@ -281,7 +289,6 @@
         baseHeight,
         yearTicks.length * pixelsPerBucket + 100
       );
-      chart.style.height = `${desiredHeight}px`;
       const height = desiredHeight;
 
       const svg = d3.select(chart)
@@ -309,10 +316,8 @@
         .attr("stroke", "var(--grid)")
         .attr("stroke-width", 1);
 
-      const axis = document.getElementById("y-axis");
       axis.innerHTML = "";
       axis.style.height = `${height}px`;
-      axis.style.top = `${chart.offsetTop}px`;
       const axisSvg = d3.select(axis)
         .append("svg")
         .attr("width", 60)
