@@ -255,10 +255,10 @@
         "Pentecostal",
         "Restorationist",
         "Catholic",
-        "Methodist",
-        "Lutheran",
         "Holiness",
         "Adventist",
+        "Methodist",
+        "Lutheran",
         "Other"
       ];
       const lanes = laneOrder.filter(f => rawFamilies.has(f)).concat(
@@ -433,6 +433,23 @@
         .attr("class", "node")
         .attr("transform", d => `translate(${d.x}, ${d.y})`);
 
+      const nodeStyle = {
+        width: 190,
+        height: 44,
+        rx: 8,
+        ry: 8,
+        stroke: 1.2,
+        titleX: 8,
+        titleY: 18,
+        titleSize: 13,
+        subtitleX: 8,
+        subtitleY: 34,
+        subtitleSize: 11,
+        edgeLabelSize: 12,
+        edgeStroke: 2,
+        axisLabelSize: 11
+      };
+
       node.append("rect")
         .attr("width", 190)
         .attr("height", 44)
@@ -443,6 +460,7 @@
         .attr("stroke-width", 1.2);
 
       node.append("text")
+        .attr("class", "node-title")
         .attr("x", 8)
         .attr("y", 18)
         .attr("font-size", 13)
@@ -452,6 +470,7 @@
         });
 
       node.append("text")
+        .attr("class", "node-subtitle")
         .attr("x", 8)
         .attr("y", 34)
         .attr("font-size", 11)
@@ -507,8 +526,35 @@
       const zoom = d3.zoom()
         .scaleExtent([0.4, 2.2])
         .on("zoom", (event) => {
+          const sizeScale = 1 / event.transform.k;
+          const scaledHeight = Math.max(height, height * event.transform.k);
+          svg.attr("height", scaledHeight);
+          axis.style.height = `${scaledHeight}px`;
+          axisSvg.attr("height", scaledHeight);
           g.attr("transform", event.transform);
           axisGroup.attr("transform", `translate(0, ${event.transform.y}) scale(1, ${event.transform.k})`);
+
+          node.select("rect")
+            .attr("width", nodeStyle.width * sizeScale)
+            .attr("height", nodeStyle.height * sizeScale)
+            .attr("rx", nodeStyle.rx * sizeScale)
+            .attr("ry", nodeStyle.ry * sizeScale)
+            .attr("stroke-width", nodeStyle.stroke * sizeScale);
+
+          node.select(".node-title")
+            .attr("x", nodeStyle.titleX * sizeScale)
+            .attr("y", nodeStyle.titleY * sizeScale)
+            .attr("font-size", nodeStyle.titleSize * sizeScale);
+
+          node.select(".node-subtitle")
+            .attr("x", nodeStyle.subtitleX * sizeScale)
+            .attr("y", nodeStyle.subtitleY * sizeScale)
+            .attr("font-size", nodeStyle.subtitleSize * sizeScale);
+
+          link.attr("stroke-width", nodeStyle.edgeStroke * sizeScale);
+          edgeLabels.attr("font-size", nodeStyle.edgeLabelSize * sizeScale);
+          axisGroup.selectAll(".grid-label")
+            .attr("font-size", nodeStyle.axisLabelSize * sizeScale);
         });
 
       svg.call(zoom);
