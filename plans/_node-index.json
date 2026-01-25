@@ -1,0 +1,443 @@
+[
+    {
+        "id":  "millerism",
+        "name":  "Millerism",
+        "tradition_family":  "Adventist",
+        "start_year":  1831,
+        "set":  "adventist-us"
+    },
+    {
+        "id":  "seventh-day-adventist-church",
+        "name":  "Seventh-day Adventist Church",
+        "tradition_family":  "Adventist",
+        "start_year":  1863,
+        "set":  "adventist-us"
+    },
+    {
+        "id":  "advent-christian-church",
+        "name":  "Advent Christian Church",
+        "tradition_family":  "Adventist",
+        "start_year":  1860,
+        "set":  "adventist-us"
+    },
+    {
+        "id":  "church-of-god-seventh-day",
+        "name":  "Church of God (Seventh Day)",
+        "tradition_family":  "Adventist",
+        "start_year":  1858,
+        "set":  "adventist-us"
+    },
+    {
+        "id":  "english-reformation",
+        "name":  "English Reformation",
+        "tradition_family":  "Anglican",
+        "start_year":  1534,
+        "set":  "anglican-europe"
+    },
+    {
+        "id":  "church-of-england",
+        "name":  "Church of England",
+        "tradition_family":  "Anglican",
+        "start_year":  1534,
+        "set":  "anglican-europe"
+    },
+    {
+        "id":  "episcopal-church",
+        "name":  "Episcopal Church",
+        "tradition_family":  "Anglican",
+        "start_year":  1785,
+        "set":  "anglican-us"
+    },
+    {
+        "id":  "anglican-church-in-north-america",
+        "name":  "Anglican Church in North America",
+        "tradition_family":  "Anglican",
+        "start_year":  2009,
+        "set":  "anglican-us"
+    },
+    {
+        "id":  "english-separatists",
+        "name":  "English Separatists",
+        "tradition_family":  "Baptist",
+        "start_year":  1606,
+        "set":  "baptist-europe"
+    },
+    {
+        "id":  "early-baptist-amsterdam",
+        "name":  "Early Baptist congregation (Amsterdam)",
+        "tradition_family":  "Baptist",
+        "start_year":  1609,
+        "set":  "baptist-europe"
+    },
+    {
+        "id":  "eastern-orthodox-tradition",
+        "name":  "Eastern Orthodox tradition",
+        "tradition_family":  "Orthodox",
+        "start_year":  1054,
+        "set":  "baptist-europe"
+    },
+    {
+        "id":  "baptist-movement",
+        "name":  "Baptist movement",
+        "tradition_family":  "Baptist",
+        "start_year":  1609,
+        "set":  "baptist-us"
+    },
+    {
+        "id":  "triennial-convention",
+        "name":  "Triennial Convention",
+        "tradition_family":  "Baptist",
+        "start_year":  1814,
+        "set":  "baptist-us"
+    },
+    {
+        "id":  "southern-baptist-convention",
+        "name":  "Southern Baptist Convention",
+        "tradition_family":  "Baptist",
+        "start_year":  1845,
+        "set":  "baptist-us"
+    },
+    {
+        "id":  "american-baptist-churches-usa",
+        "name":  "American Baptist Churches USA",
+        "tradition_family":  "Baptist",
+        "start_year":  1907,
+        "set":  "baptist-us"
+    },
+    {
+        "id":  "national-baptist-convention-usa",
+        "name":  "National Baptist Convention, USA",
+        "tradition_family":  "Baptist",
+        "start_year":  1895,
+        "set":  "baptist-us"
+    },
+    {
+        "id":  "national-baptist-convention-of-america",
+        "name":  "National Baptist Convention of America International",
+        "tradition_family":  "Baptist",
+        "start_year":  1915,
+        "set":  "baptist-us"
+    },
+    {
+        "id":  "progressive-national-baptist-convention",
+        "name":  "Progressive National Baptist Convention",
+        "tradition_family":  "Baptist",
+        "start_year":  1961,
+        "set":  "baptist-us"
+    },
+    {
+        "id":  "venture-church-network",
+        "name":  "Venture Church Network",
+        "tradition_family":  "Baptist",
+        "start_year":  1947,
+        "set":  "baptist-us"
+    },
+    {
+        "id":  "second-great-awakening",
+        "name":  "Second Great Awakening",
+        "tradition_family":  "Revivalist",
+        "start_year":  1790,
+        "set":  "holiness-restorationist-us"
+    },
+    {
+        "id":  "holiness-movement",
+        "name":  "Holiness movement",
+        "tradition_family":  "Holiness",
+        "start_year":  1850,
+        "set":  "holiness-restorationist-us"
+    },
+    {
+        "id":  "restoration-movement",
+        "name":  "Restoration Movement",
+        "tradition_family":  "Restorationist",
+        "start_year":  1804,
+        "set":  "holiness-restorationist-us"
+    },
+    {
+        "id":  "christian-church-disciples-of-christ",
+        "name":  "Christian Church (Disciples of Christ)",
+        "tradition_family":  "Restorationist",
+        "start_year":  1832,
+        "set":  "holiness-restorationist-us"
+    },
+    {
+        "id":  "churches-of-christ",
+        "name":  "Churches of Christ",
+        "tradition_family":  "Restorationist",
+        "start_year":  1906,
+        "set":  "holiness-restorationist-us"
+    },
+    {
+        "id":  "independent-christian-churches",
+        "name":  "Independent Christian Churches and Churches of Christ",
+        "tradition_family":  "Restorationist",
+        "start_year":  1926,
+        "set":  "holiness-restorationist-us"
+    },
+    {
+        "id":  "church-of-the-nazarene",
+        "name":  "Church of the Nazarene",
+        "tradition_family":  "Holiness",
+        "start_year":  1908,
+        "set":  "holiness-restorationist-us"
+    },
+    {
+        "id":  "lutheran-reformation",
+        "name":  "Lutheran Reformation",
+        "tradition_family":  "Lutheran",
+        "start_year":  1517,
+        "set":  "lutheran-europe"
+    },
+    {
+        "id":  "german-lutheran-territorial-churches",
+        "name":  "German Lutheran territorial churches",
+        "tradition_family":  "Lutheran",
+        "start_year":  1555,
+        "set":  "lutheran-europe"
+    },
+    {
+        "id":  "scandinavian-lutheran-state-churches",
+        "name":  "Scandinavian Lutheran state churches",
+        "tradition_family":  "Lutheran",
+        "start_year":  1536,
+        "set":  "lutheran-europe"
+    },
+    {
+        "id":  "lutheran-church-missouri-synod",
+        "name":  "Lutheran Church - Missouri Synod",
+        "tradition_family":  "Lutheran",
+        "start_year":  1847,
+        "set":  "lutheran-us"
+    },
+    {
+        "id":  "wisconsin-evangelical-lutheran-synod",
+        "name":  "Wisconsin Evangelical Lutheran Synod",
+        "tradition_family":  "Lutheran",
+        "start_year":  1850,
+        "set":  "lutheran-us"
+    },
+    {
+        "id":  "american-lutheran-church",
+        "name":  "American Lutheran Church",
+        "tradition_family":  "Lutheran",
+        "start_year":  1960,
+        "set":  "lutheran-us"
+    },
+    {
+        "id":  "lutheran-church-in-america",
+        "name":  "Lutheran Church in America",
+        "tradition_family":  "Lutheran",
+        "start_year":  1962,
+        "set":  "lutheran-us"
+    },
+    {
+        "id":  "association-of-evangelical-lutheran-churches",
+        "name":  "Association of Evangelical Lutheran Churches",
+        "tradition_family":  "Lutheran",
+        "start_year":  1976,
+        "set":  "lutheran-us"
+    },
+    {
+        "id":  "evangelical-lutheran-church-in-america",
+        "name":  "Evangelical Lutheran Church in America",
+        "tradition_family":  "Lutheran",
+        "start_year":  1987,
+        "set":  "lutheran-us"
+    },
+    {
+        "id":  "methodist-movement-england",
+        "name":  "Methodist movement (England)",
+        "tradition_family":  "Methodist",
+        "start_year":  1738,
+        "set":  "methodist-europe"
+    },
+    {
+        "id":  "methodist-episcopal-church",
+        "name":  "Methodist Episcopal Church",
+        "tradition_family":  "Methodist",
+        "start_year":  1784,
+        "set":  "methodist-us"
+    },
+    {
+        "id":  "methodist-episcopal-church-south",
+        "name":  "Methodist Episcopal Church, South",
+        "tradition_family":  "Methodist",
+        "start_year":  1845,
+        "set":  "methodist-us"
+    },
+    {
+        "id":  "methodist-protestant-church",
+        "name":  "Methodist Protestant Church",
+        "tradition_family":  "Methodist",
+        "start_year":  1828,
+        "set":  "methodist-us"
+    },
+    {
+        "id":  "methodist-church",
+        "name":  "Methodist Church",
+        "tradition_family":  "Methodist",
+        "start_year":  1939,
+        "set":  "methodist-us"
+    },
+    {
+        "id":  "evangelical-united-brethren-church",
+        "name":  "Evangelical United Brethren Church",
+        "tradition_family":  "Methodist",
+        "start_year":  1946,
+        "set":  "methodist-us"
+    },
+    {
+        "id":  "united-methodist-church",
+        "name":  "United Methodist Church",
+        "tradition_family":  "Methodist",
+        "start_year":  1968,
+        "set":  "methodist-us"
+    },
+    {
+        "id":  "pentecostalism",
+        "name":  "Pentecostalism",
+        "tradition_family":  "Pentecostal",
+        "start_year":  1906,
+        "set":  "pentecostal-us"
+    },
+    {
+        "id":  "assemblies-of-god",
+        "name":  "Assemblies of God",
+        "tradition_family":  "Pentecostal",
+        "start_year":  1914,
+        "set":  "pentecostal-us"
+    },
+    {
+        "id":  "church-of-god-cleveland",
+        "name":  "Church of God (Cleveland, Tennessee)",
+        "tradition_family":  "Pentecostal",
+        "start_year":  1886,
+        "set":  "pentecostal-us"
+    },
+    {
+        "id":  "church-of-god-in-christ",
+        "name":  "Church of God in Christ",
+        "tradition_family":  "Pentecostal",
+        "start_year":  1897,
+        "set":  "pentecostal-us"
+    },
+    {
+        "id":  "foursquare-church",
+        "name":  "Foursquare Church",
+        "tradition_family":  "Pentecostal",
+        "start_year":  1923,
+        "set":  "pentecostal-us"
+    },
+    {
+        "id":  "catholic-church",
+        "name":  "Roman Catholic Church",
+        "tradition_family":  "Catholic",
+        "start_year":  1054,
+        "set":  "presbyterian-europe"
+    },
+    {
+        "id":  "swiss-reformed-zurich",
+        "name":  "Swiss Reformed (Zurich stream)",
+        "tradition_family":  "Reformed",
+        "start_year":  1520,
+        "set":  "presbyterian-europe"
+    },
+    {
+        "id":  "genevan-reformed",
+        "name":  "Genevan Reformed (Calvin)",
+        "tradition_family":  "Reformed",
+        "start_year":  1536,
+        "set":  "presbyterian-europe"
+    },
+    {
+        "id":  "english-congregation-geneva",
+        "name":  "English Congregation in Geneva",
+        "tradition_family":  "Reformed",
+        "start_year":  1555,
+        "set":  "presbyterian-europe"
+    },
+    {
+        "id":  "scottish-reformation",
+        "name":  "Scottish Reformation",
+        "tradition_family":  "Reformed",
+        "start_year":  1560,
+        "set":  "presbyterian-europe"
+    },
+    {
+        "id":  "church-of-scotland",
+        "name":  "Church of Scotland",
+        "tradition_family":  "Presbyterian",
+        "start_year":  1560,
+        "set":  "presbyterian-europe"
+    },
+    {
+        "id":  "presbyterian-polity-scotland",
+        "name":  "Presbyterian polity (Scotland)",
+        "tradition_family":  "Presbyterian",
+        "start_year":  1581,
+        "set":  "presbyterian-europe"
+    },
+    {
+        "id":  "presbyterian-migrations-america",
+        "name":  "Presbyterian migrations to colonial America",
+        "tradition_family":  "Presbyterian",
+        "start_year":  1683,
+        "set":  "presbyterian-europe"
+    },
+    {
+        "id":  "presbyterian-polity-founding-context",
+        "name":  "Founding context of Presbyterian polity (America)",
+        "tradition_family":  "Presbyterian",
+        "start_year":  1706,
+        "set":  "presbyterian-europe"
+    },
+    {
+        "id":  "pcusa",
+        "name":  "Presbyterian Church (USA)",
+        "tradition_family":  "Presbyterian",
+        "start_year":  1983,
+        "set":  "presbyterian-us"
+    },
+    {
+        "id":  "pca",
+        "name":  "Presbyterian Church in America",
+        "tradition_family":  "Presbyterian",
+        "start_year":  1973,
+        "set":  "presbyterian-us"
+    },
+    {
+        "id":  "opc",
+        "name":  "Orthodox Presbyterian Church",
+        "tradition_family":  "Presbyterian",
+        "start_year":  1936,
+        "set":  "presbyterian-us"
+    },
+    {
+        "id":  "pcus",
+        "name":  "Presbyterian Church in the United States",
+        "tradition_family":  "Presbyterian",
+        "start_year":  1861,
+        "set":  "presbyterian-us"
+    },
+    {
+        "id":  "pcusa-1789",
+        "name":  "Presbyterian Church in the United States of America",
+        "tradition_family":  "Presbyterian",
+        "start_year":  1789,
+        "set":  "presbyterian-us"
+    },
+    {
+        "id":  "upcusa",
+        "name":  "United Presbyterian Church in the United States of America",
+        "tradition_family":  "Presbyterian",
+        "start_year":  1958,
+        "set":  "presbyterian-us"
+    },
+    {
+        "id":  "upcna",
+        "name":  "United Presbyterian Church of North America",
+        "tradition_family":  "Presbyterian",
+        "start_year":  1858,
+        "set":  "presbyterian-us"
+    }
+]
