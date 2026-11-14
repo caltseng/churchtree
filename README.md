@@ -53,3 +53,5 @@ for the future theological-development explorer (planned, not implemented).
 For an interactive Playwright window, run `node scripts/launch-explorer.cjs` after starting a local server (default: http://127.0.0.1:8765). This uses the actual window size instead of a fixed test viewport.
 
 The Horizontal timeline layout runs dates left to right. Use the horizontal scrollbar, trackpad, or Shift + mouse wheel to travel through time; +/− and Ctrl + wheel zoom around the visible date. Tradition labels stay visible while scrolling. Both timeline orientations use named clusters and date-only subtitles.
+
+Implementation review findings, fixes, verification and remaining limitations are recorded in `docs/implementation-review.md`. Run `node scripts/test-timeline-model.cjs` for the shared clustering checks.
