@@ -2,6 +2,9 @@ const fs = require('fs'), path = require('path'), assert = require('node:assert/
 const root = path.resolve(__dirname, '../dist');
 function files(folder) { return fs.readdirSync(folder).flatMap(name => { const file = path.join(folder, name); return fs.statSync(file).isDirectory() ? files(file) : [file]; }); }
 const errors = [];
+// Inspect generated data and comments as well as visible links. Historical
+// citations and license notices for unrelated projects remain allowed.
+require('./verify-public-privacy.cjs')(root);
 for (const file of files(root).filter(n => n.endsWith('.html') || n.endsWith('.css'))) {
   const text = fs.readFileSync(file, 'utf8');
   const refs = file.endsWith('.html') ? [...text.matchAll(/\b(?:src|href)\s*=\s*["']([^"']+)["']/g)].map(m => m[1]) : [...text.matchAll(/url\(\s*["']?([^\s"')]+)["']?\s*\)/g)].map(m => m[1]);
