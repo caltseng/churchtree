@@ -14,7 +14,7 @@
       if (i + 1 === number) link.setAttribute('aria-current', 'page');
       else link.removeAttribute('aria-current');
     });
-    document.title = `${number}. ${chapters[number - 1].querySelector('h2').textContent} · Westminster · ChurchTree`;
+    document.title = `${number}. ${chapters[number - 1].querySelector('h2').textContent} · Westminster · Main Branch`;
     if (narrow.matches) contents.open = false;
     const target = document.getElementById(location.hash.slice(1));
     if (target) requestAnimationFrame(() => {
