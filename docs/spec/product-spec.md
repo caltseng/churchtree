@@ -1,106 +1,66 @@
-# Product Spec
+# Main Branch product specification
 
-## Vision
-Build an interactive, zoomable "family tree" of church history that lets users
-trace denominations back to early church roots. Focus on clarity and historical
-lineage, including years, parent movements, and key points of division.
+## Purpose
 
-## Goals
-- Visualize denominational lineage as a navigable tree that supports zoom in/out.
-- Make it easy to trace any denomination back through its ancestors.
-- Capture key splits: when they happened and why (contention points).
-- Start with a scoped dataset and expand iteratively.
-- Keep data local and static before any web service integration.
+Help curious readers explore Christian history through connected institutional
+histories and primary sources. Use clear explanations, traceable evidence and neutral
+attribution. This is an evolving collection, not a claim to exhaustive global history.
 
-## Non-goals (initial)
-- Exhaustive global coverage of every tradition.
-- Detailed doctrinal debate or apologetics.
-- Dynamic/remote data services.
+## Current experience
 
-## Target users
-- Curious learners exploring church history.
-- Students or educators who want a quick lineage overview.
-- Pastors or researchers needing a high-level map of movements.
+Home is a tile-based picker of available tools. Church History and the Westminster
+Confession reader are independent routes with shared identity and semantic theme
+tokens. Adding a tool should extend the inventory without displacing existing routes.
 
-## Core experience
-1. User sees a zoomed-out tree of major branches.
-2. User zooms into a branch to see sub-branches and detail.
-3. User selects a denomination to view metadata:
-   - Year of origin
-   - Parent denomination/movement
-   - Key points of division or contention
-   - Notes and citations (where available)
-4. User traces lineage upward to early church roots.
+Church History begins with connected major traditions. A drill-in opens a detailed
+scoped timeline in the last orientation. A Vertical/Horizontal toggle changes the
+proportional time axis while retaining date context. Compact lineage provides an
+alternative readable chronology. Splits diverge into lanes and mergers converge;
+zoomed-out temporal clusters have meaningful titles and do not invent new bodies.
 
-## Data model (initial)
-- Denomination
-  - id (stable slug)
-  - name
-  - year (approx ok)
-  - parent_id (or multiple parents if needed later)
-  - split_reason (short text)
-  - notes
-  - sources (list of citations/links)
+Users can search across branches, select nodes/edges, trace ancestors and navigate
+to supported successors. Profiles explain why a body formed and how it continued or
+ended; they include milestones before key people, beliefs, documents and sources.
+Lifespan labels distinguish present-day bodies, recorded endings and uncertainty.
+Origins can stay visible outside the time scale. Desktop uses a resizable split;
+mobile uses touch controls and a reading sheet, with no page-width overflow.
 
-## Scope strategy
-- Start with a minimal tree of major branches.
-- Add American Protestant streams first.
-- Expand with more nodes once the UX is stable.
- - Use natural-language notes with citations before converting to JSON.
-- Review every body's expected history and its graph neighborhood using
-  [the historical coverage standard](historical-coverage-standard.md).
-- Current coverage prioritizes US Protestant traditions and relevant European
-  roots. Catholic/Orthodox entries are bounded context, not exhaustive histories.
-- Expansion must repair misleading missing predecessors/merger partners first,
-  then major in-scope branches and tradition balance, then optional global breadth.
-- Separate missing data from records hidden by grouping/filtering. A display group
-  is not a denomination, and a populated profile is not a completed historical review.
+The Westminster reader prioritizes its complete, identified historical text, stable
+chapter/section links and accessible navigation. Editorial study material must be
+optional, attributed and distinct from the primary text. Edition differences and
+modern subscription policies must not be conflated. The deeper chapter layer is
+being researched in its separate plan; its completion requires content and UI review.
 
-## UX and interaction
-- Zoom and pan on the tree.
-- Click/tap to open detail panel.
-- Breadcrumb or lineage path to show ancestors.
-- Search by denomination name (optional in v1).
-- Hover on a denomination to show key details, including theological distinctives.
-- Future goal: zoom levels reveal more granularity (more nodes) or collapse
-  into higher-level branches.
-- Future goal: select a denomination to focus the view on its lineage and
-  show its full history path.
-- UI principle: preserve a visual throughline for renames or near-continuations
-  so users can follow the most similar lineage.
-- UI principle: keep the timeline hierarchy clear (left-to-right or
-  top-to-bottom) so chronology is readable at a glance.
+## Content/model
 
-## Content guidelines
-- Neutral, descriptive tone.
-- Sources cited for claims where feasible.
-- Keep split reasons concise and factual.
+Use the normalized node/edge/event/source/citation model in
+[architecture/data-model.md](../architecture/data-model.md), not parent_id/split_reason
+fields embedded in an oversimplified tree. Mergers and multiple influences require a
+graph. Notes and canonical set JSON precede bundling. Expected historical coverage
+and missing-node assessment are defined in [historical coverage](historical-coverage-standard.md).
 
-## Phases
-Phase 0 (starter)
-- Technical scope: static JSON data and simple Mermaid visualization.
-- Historical scope: PCA and PC(USA) only, with a single branch.
+The current scope emphasizes US Protestant traditions and European roots. Existing
+Pentecostal records do not establish complete Pentecostal coverage. Missing merger
+parents, intermediate organizations and major traditions must be prioritized and
+researched rather than hidden behind apparently direct edges. Broader early/global
+history is a separately bounded expansion, not an invented universal root date.
 
-Phase 1 (prototype)
-- Technical scope: lightweight web page with static JSON, basic zoom/pan, and
-  click-to-view details.
-- Historical scope: expand to a minimal American Presbyterian lineage with
-  a few key splits (e.g., PCA, PC(USA), OPC).
+## Quality and delivery
 
-Phase 2 (v1)
-- Technical scope: interactive tree UI, detail panel, search, and lineage path.
-- Historical scope: broaden to key American Protestant families (Baptist,
-  Methodist, Presbyterian/Reformed).
+The built artifact is checked and browser-tested before publication. Main requires
+PRs and passing CI; trusted PRs can auto-merge while that policy is enabled. Historical
+accuracy, licensing and source strength require editorial review beyond automation.
+Use [user scenarios](../user-scenarios.md) for observable acceptance and
+[deployment](../deployment.md) for current infrastructure.
 
-Phase 3 (expansion)
-- Technical scope: improved layout, filters, and citation display.
-- Historical scope: add early church roots and additional branches as needed.
+## Planned, not yet a completed product
 
-Phase 4 (sources)
-- Technical scope: clickable citations tied to data entries.
-- Historical scope: backfill sources for existing nodes and expand as needed.
+- Topic-centered histories of beliefs/disagreements, such as communion, with
+  positions, documents and milestones across traditions.
+- Expansion of canonical nodes according to the audited gap priorities.
+- A complete scholarly chapter-study layer for the confession; initial research or
+  a generated scaffold must not be counted as completed coverage.
 
-## Open questions
-- How to represent multiple parentage or mergers?
-- How to handle approximated dates and uncertain splits?
-- Minimum viable dataset size for a useful first release?
+The earlier Phase 0/Mermaid and single-Presbyterian prototype phasing is historical.
+The current site is static multi-page HTML/CSS/JavaScript with D3 for the explorer;
+there is no authentication, remote data service or doctrinal-apologetics product.

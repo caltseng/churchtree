@@ -1,46 +1,43 @@
-# Detail Panel Schema (v0)
+# Profile and relationship presentation
 
-The side panel displays richer details for a selected node or edge, including
-sources. Node and edge panels use different layouts.
+This describes the implemented explorer, not a new storage schema. Editorial
+coverage requirements live in historical-coverage-standard.md; runtime compatibility
+and field shapes live in ../architecture/data-model.md.
 
-## Node panel
-Sections:
-- Summary (rich text)
-- Key figures (names)
-- Key dates/milestones (year + label)
-- Identity (region, origin, tradition family, orientation, status)
-- Distinctives (bullets)
-- Scale (size estimate + year)
-- Relationships (parents, splits/merges, descendants)
-- Sources (grouped by claim with links)
+## Node profile
 
-Required data fields:
-- summary
-- key_figures
-- key_dates
-- distinctives
-- size_estimate
-- citations
+Current order:
 
-## Edge panel
-Sections:
-- Title + type
-- Parties (from/to)
-- Date/period
-- Causes/drivers (bullets)
-- Narrative (1–3 paragraphs)
-- Key figures (names)
-- Evidence (sources linked to claims)
-- Related events
+1. Kind and supported lifespan, full name, summary, Trace ancestry action.
+2. Identity (family, region, orientation, status).
+3. Why it formed; what happened to it; supported successor links.
+4. Core beliefs and distinctives.
+5. **Milestones**, then **Key people** with roles, snippets and article links.
+6. Key documents/confessions with significance; further reading previews.
+7. Scale; relationships; evidence.
 
-Required data fields:
-- reasons
-- causes
-- narrative
-- key_figures
-- key_dates
-- citations
+An active body without an end date shows start–present. A recorded end year takes
+precedence. Unknown status/ending is not silently converted to an active body.
+Sources/citations and profile-specific maps supply provenance; the UI also renders
+nested person/document evidence. A source list does not establish support for every
+sentence. Missing fields render explicit gaps rather than invented content.
 
-## Source linking
-Claims should be tied to citation ids. Citations reference sources that include
-URLs for clickable links.
+Desktop keeps the profile in a resizable side pane. Under 1100px it moves into a
+native modal reading sheet with a Back to graph action. The same profile element
+returns to desktop on resize; mobile controls do not replace desktop interactions.
+
+## Relationship profile
+
+Type/date, title, parties, narrative, reasons/drivers, milestones, people and evidence.
+Grouped lines list their underlying relationships instead of inventing a new direct
+split. A collapsed origin path is labeled as lineage context and can list intermediates.
+Mixed relationship types have a distinct dashed style. Relationship dates describe the
+transition/influence, not necessarily the founding date of either endpoint.
+
+## Data expectations
+
+Rich node profiles should include summary, formation/ending narratives, beliefs,
+people, milestones, documents, further reading and claim-linked evidence, plus
+scope/uncertainty. Applicable successors use stable existing IDs. Required editorial
+coverage and runtime-required fields differ; automated integrity checks alone are
+not an audit of complete history or interpretation.

@@ -20,7 +20,10 @@ Required fields:
 - id: stable slug (e.g., "pcusa", "pca")
 - name: display name
 - kind: "denomination" | "movement"
-- start_year: integer or null if unknown
+- start_year: finite integer for current published dated nodes. The release validator
+  currently rejects null node start years; document uncertain origins/date bases and
+  resolve that modeling before import rather than inventing a year. Origin context
+  can be displayed outside the proportional scale.
 
 Optional fields:
 - end_year: integer (if dissolved or merged)
@@ -70,7 +73,8 @@ Optional fields:
 - description: longer text
 - causes: short list of drivers (separate from reasons; used in detail panel)
 - narrative: 1-3 paragraph description of the split/merge/origin
-- key_figures: list of key figures (names or "Name — role")
+- key_figures: structured people { name, role, summary, url, citations }; legacy
+  name strings remain compatible
 - key_dates: list of milestone objects { year, label, citations }
 - confidence: "high" | "medium" | "low"
 - citations: list of citation ids
@@ -90,7 +94,8 @@ Required fields:
 
 Optional fields:
 - description: brief summary
-- key_figures: list of key figures (names or "Name — role")
+- key_figures: structured people { name, role, summary, url, citations }; legacy
+  name strings remain compatible
 - related_edge_ids: list of edge ids
 - related_node_ids: list of node ids
 - citations: list of citation ids
@@ -128,10 +133,10 @@ Required fields:
 - id: stable slug
 - name: display name
 
-## Data storage (phase 0+)
+## Current data storage
 Static JSON files stored locally in the repo.
 
-Suggested files:
+Canonical source files:
 - data/sets/[set-id]/nodes.json
 - data/sets/[set-id]/edges.json
 - data/sets/[set-id]/events.json

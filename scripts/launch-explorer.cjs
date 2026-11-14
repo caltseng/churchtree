@@ -4,7 +4,7 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 (async () => {
     const browser = await chromium.launch({ channel: 'msedge', headless: false, args: ['--start-maximized'] });
     const page = await browser.newPage({ viewport: null });
-    await page.goto(process.env.CHURCHTREE_URL || 'http://127.0.0.1:8765');
+    await page.goto(process.env.CHURCHTREE_URL || 'http://127.0.0.1:4173/church-history/');
     await page.locator('[data-id="family:Presbyterian"]').waitFor();
     const dimensions = await page.evaluate(() => ({ window: innerWidth, page: document.body.getBoundingClientRect().width, workspace: document.querySelector('main').getBoundingClientRect().right }));
     console.log('Responsive desktop browser:', JSON.stringify(dimensions));

@@ -1,0 +1,65 @@
+# User scenarios and verification
+
+This is the acceptance guide for Main Branch. It describes observable behavior,
+not just whether a function returns a value. Use the generated site, not a mixture
+of source files and an old data bundle.
+
+## Prepare a reproducible run
+
+1. Read `README.md` and `AGENTS.md`; work on a topic branch.
+2. Run `npm ci`, then `npx playwright install chromium` (CI additionally installs OS dependencies).
+3. Set `PLAYWRIGHT_CHANNEL=chromium` and `CHURCHTREE_TEST_ROOT=dist` in your shell.
+4. Run `npm run ci`. It rebuilds home, the Westminster reader and the release artifact.
+5. Run `npm run serve` and open `http://127.0.0.1:4173/` for manual review.
+6. Test a fresh/default preference with Appearance → Reset to Parchment. Also test
+   a saved theme; do not assume a private/incognito browser has saved state.
+
+The desktop baseline is 1440×1000, with additional widths 1280 and 1100px. Mobile
+emulation covers 320×568, 390×844, 768×1024, 1024×768 and 844×390. Below 1100px the
+profile uses a reading sheet; at 1100px and above it uses the desktop split. Also
+check a real touch device/Safari before claiming cross-browser certification.
+
+## Scenarios
+
+| ID | Steps | Expected result | Automated coverage |
+| --- | --- | --- | --- |
+| HOME-01 | Open `/`; activate Church History tile; return using Main Branch brand link; activate Westminster tile. | Home is an inventory, not the explorer. Links reach `/church-history/` and `/westminster/`, with no missing assets or console errors. | `scripts/test-features.cjs` |
+| HOME-02 | At 320px, scroll the home page and tab through controls. | Tiles stack; no page-wide horizontal overflow; full tile is a meaningful link; Appearance and focus are usable. | Feature suite plus manual keyboard review |
+| GRAPH-01 | In Church History, select Presbyterian from All branches. | Opens detailed timeline, skipping historical-group level. Root context remains outside the time scale. | `scripts/test-explorer.cjs` |
+| GRAPH-02 | Select Compact lineage and inspect PCUSA (1789), PCUS, OPC, PCA and the PC(USA) merger. | Splits diverge into different lanes; mergers converge. Chronological compact spacing does not claim proportional elapsed time. Nodes do not overlap. | Explorer suite and `scripts/test-timeline-model.cjs`; manually trace the actual arrows |
+| GRAPH-03 | Zoom out to historical groups, then in. | Group titles convey shared history; individual records return. A group is not represented as a new denomination. | Explorer/model suites |
+| TIME-01 | In Vertical, wheel inward/outward, then drag/pan. | Visible year span narrows/widens, nearby records separate/collapse, dates stay proportional. Same-date entries may remain grouped and can be opened individually. | Explorer suite checks visible domain and clustering, not only transform scale |
+| TIME-02 | Toggle Horizontal; zoom in; side-scroll with trackpad, scrollbar or Shift+wheel; zoom out/reset. | Time runs left to right. Zoom anchors the date rather than jumping to the beginning; named groups collapse without count-only labels. Tradition labels and dates remain available during scrolling. | Explorer suite |
+| TIME-03 | Toggle orientation while zoomed; edit date range; enter an invalid range, then correct it. | Toggle preserves the visible period; inputs reflect it while not being edited. Invalid/empty range produces an inline error; a valid range applies and clears the error. | Explorer suite; manually compare the period across orientations |
+| SEARCH-01 | Search `PCA`, open the result, then search `OPC`. | Search works outside the current branch; selected body's date is brought into view and its profile opens. No obsolete profile remains from an unrelated branch. | Explorer/mobile suites |
+| PROFILE-01 | Open PCA, PCUS, a historical movement, and an origin node. | Heading shows a supported lifespan (PCA 1973–present; PCUS 1861–1983). Unknown endings are not invented. Milestones precede Key people. Beliefs, formation/continuation, contextual biographies, documents and reading links are substantive. | Explorer covers rendering/links/ranges; substantive truth requires the data audit |
+| PROFILE-02 | Open PCUS and use its successor navigation; inspect a merger connection. | Goes to the supported successor(s); a split-off is not falsely treated as the ending of an active parent. Connection details explain parties and evidence. | Model/reference checks; manual successor/causation review |
+| MOBILE-01 | Select a branch on a phone; zoom using +/−; use Earlier/Later; switch to Horizontal and swipe sideways. | Controls fit, touch targets are usable, date range changes, graph scroll is contained; the page does not spill horizontally. | `scripts/test-mobile.cjs` includes actual dispatched touch events |
+| MOBILE-02 | Search PCA; read profile sheet; Back to graph; reopen. Resize to desktop with the sheet open, then back. | Sheet fits width and scrolls internally; close/Escape works and focus returns; desktop restores the same detail panel in the split view. | Mobile suite |
+| DESKTOP-01 | At 1100/1280/1440px, resize the divider with mouse and keyboard; maximize/restore browser. | Split view remains; graph recomputes layout and retains useful date context; width is announced; no fixed emulated viewport leaves a blank right strip. | Explorer suite; manual actual-window maximize/restore |
+| THEME-01 | On home, apply each palette, close, reload, navigate to both tools, then reset. | Semantic colors change consistently, selected preference persists locally, reader/explorer inherit it, reset restores Parchment. Main Branch logo keeps its fixed brand colors. | Feature suite; manual graph/selected/focus contrast review |
+| WCF-01 | Open chapter 23, section 23.3; reload; use Next and browser Back; open chapter 33 directly. | Correct chapter/section appears, URL is stable, keyboard focus follows chapter navigation, all 33 chapters and 172 sections are present. | `westminster/test-reader.cjs` |
+| WCF-02 | Disable JavaScript and open a section URL; read the edition/source note. | Entire primary text remains readable; source and edition are explicit. No modern adopted standard is silently substituted for the hosted historical edition. | Reader suite plus source/license memo |
+| STUDY-01 | When chapter study notes are released, open and close their optional entry for each chapter. | Text remains the default experience; commentary is labeled, edition/jurisdiction and disagreements are attributed, claim links work. | Planned research/acceptance in `westminster-study-plan.md`; not yet a completed test |
+| BUILD-01 | Run `npm run test:guards`. | Isolated fixtures with broken graph/citation references, missing assets or development files in a release fail; a valid fixture passes. Canonical source data is untouched. | `scripts/test-build-guards.cjs` |
+| RELEASE-01 | Push a topic branch and open a PR; inspect the required check. | CI runs on GitHub, PR does not deploy; failures block merge. Trusted passing PRs can merge automatically, but branch rules are never bypassed. | GitHub ruleset/check evidence; see deployment guide |
+| RELEASE-02 | After merge, inspect main's build and deployment; visit production routes. | Only the tested artifact deploys. A failed new build leaves the last successful site in place. DNS/certificate status is checked separately from repository settings. | Workflow dependency/environment plus live verification |
+
+## Review evidence and limits
+
+- Screenshots: `.tmp/browser-check/`; CI uploads them as `browser-screenshots`,
+  including on failure when screenshots exist. Inspect actual images after UI changes.
+- Record viewport, palette, route, reproduction, expected/actual result and CI URL
+  when reporting a regression. A local pass does not supersede a failing GitHub run.
+- Syntax, referential integrity, image loading and HTTP success do not prove that
+  history is complete, licensing is correct, or every claim is supported. Those
+  require the source and historical coverage reviews.
+- The study layer is an active separate task. Its plan/data should not be counted
+  as a finished user experience until the feature and chapter-by-chapter checks ship.
+
+## Adding or changing a feature
+
+Add/update its scenario here, implement an appropriate test, rebuild generated
+pages, review desktop/mobile screenshots, push its PR and verify the remote head
+and required check. Update README, architecture and deployment/docs when the
+source of truth changes. Keep intentional future plans clearly labeled.

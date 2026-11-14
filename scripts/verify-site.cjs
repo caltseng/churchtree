@@ -1,5 +1,5 @@
 const fs = require('fs'), path = require('path'), assert = require('node:assert/strict');
-const root = path.resolve(__dirname, '../dist');
+const root = process.argv[2] ? path.resolve(process.argv[2]) : path.resolve(__dirname, '../dist');
 function files(folder) { return fs.readdirSync(folder).flatMap(name => { const file = path.join(folder, name); return fs.statSync(file).isDirectory() ? files(file) : [file]; }); }
 const errors = [];
 for (const file of files(root).filter(n => n.endsWith('.html') || n.endsWith('.css'))) {
