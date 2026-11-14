@@ -2,6 +2,10 @@
 
 Use this prompt after the notes file is created to convert facts into the
 project JSON model.
+Read [the historical coverage standard](historical-coverage-standard.md) first.
+Conversion preserves research limits; it does not turn a thin note into a
+historically complete profile. Return a missing-research list alongside the
+conversion when the notes omit expected episodes or merger partners.
 
 ## Prompt Template
 ```
@@ -23,7 +27,15 @@ Output strictly in this JSON shape:
       "end_year": null,
       "short_label": "",
       "summary": "",
+      "formation_narrative": "",
+      "ending_narrative": "",
+      "core_beliefs": [],
       "key_figures": [],
+      "key_documents": [],
+      "further_reading": [],
+      "successor_ids": [],
+      "profile_scope": "",
+      "profile_citations": {},
       "key_dates": [
         { "year": null, "label": "", "citations": [] }
       ],
@@ -44,7 +56,7 @@ Output strictly in this JSON shape:
       "name": "",
       "from_id": "",
       "to_id": "",
-      "type": "split|merge|origin|continuation",
+      "type": "split|merge|origin|continuation|influence",
       "year": null,
       "reasons": [],
       "causes": [],

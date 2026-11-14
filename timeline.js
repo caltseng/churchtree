@@ -8,10 +8,13 @@ window.renderChurchTimeline = function ({ container, entries, edges, roots, onNo
     const clusterTitle = window.churchClusterTitle;
     const dated = entries.filter(n => !roots.some(r => r.id === n.id) && Number.isFinite(n.start_year));
     if (!dated.length) {
-        container.textContent = 'No dated records in this scope.';
+        window.ChurchTimelineModel.originOnly(container,roots,onNode);
         return null;
     }
-    const families = [...new Set(dated.map(family))].sort(), laneWidth = Math.max(105, (available - margin.left - margin.right) / families.length), width = Math.max(available, margin.left + families.length * laneWidth + margin.right);
+    const branchLayout=window.ChurchTimelineModel.branchLanes(dated,edges);
+    const scopedBranch=new Set(dated.map(family)).size===1;
+    const branchSpacing=Math.max(120,(available-margin.left-margin.right)/branchLayout.count);
+    const families = [...new Set(dated.map(family))].sort(), laneWidth = Math.max(105, (available - margin.left - margin.right) / families.length), width = Math.max(available, margin.left + (scopedBranch?branchLayout.count*branchSpacing:families.length*laneWidth) + margin.right);
     const years = dated.map(n => n.start_year), extent = period || [Math.min(...years) - 10, Math.max(...years) + 10];
     const scale = d3.scaleLinear().domain(extent).range([margin.top, height - margin.bottom]);
     const svg = d3.select(container).append('svg').attr('width', width).attr('height', height).attr('aria-label', 'Proportional timeline; mouse wheel zooms time and drag pans');
@@ -42,7 +45,7 @@ window.renderChurchTimeline = function ({ container, entries, edges, roots, onNo
         axis.selectAll('.tick line').attr('stroke', '#e0e5da');
         axis.selectAll('.tick text').attr('fill', '#697568');
         axis.select('.domain').remove();
-        const clusters = window.ChurchTimelineModel.cluster(dated, y, 54).map(c => ({ ...c, x: margin.left + families.indexOf(c.family) * laneWidth + laneWidth / 2, y: c.position }));
+        const clusters = window.ChurchTimelineModel.cluster(dated,y,54,scopedBranch?n=>branchLayout.positions.get(n.id):family).map(c=>({...c,x:scopedBranch?margin.left+branchSpacing/2+(branchLayout.positions.get(c.members[0].id)||0)*branchSpacing:margin.left+families.indexOf(c.family)*laneWidth+laneWidth/2,y:c.position}));
         currentClusters = clusters;
         const combined = window.ChurchTimelineModel.connections(clusters, edges);
         links.selectAll('path').data(combined, e => e.a.id + '>' + e.b.id).join('path').attr('class', e => 'link ' + (new Set(e.edges.map(x=>x.type)).size>1?'mixed':e.edges[0].type)).attr('marker-end', 'url(#time-arrow)').attr('d', e => {
@@ -61,7 +64,7 @@ window.renderChurchTimeline = function ({ container, entries, edges, roots, onNo
             g.append('text').attr('class', 'date');
             g.append('title');
             return g;
-        }).attr('class', c => 'node time-node' + (c.members.length > 1 ? ' aggregate' : '') + (c.members.some(n => n.id === highlighted) ? ' selected' : '')).attr('data-members', c => c.members.map(n => n.id).join(',')).attr('transform', c => `translate(${c.x},${c.y})`).attr('aria-label', c => c.members.length > 1 ? `${clusterTitle(c)}, ${c.members.length} entries, ${c.min} to ${c.max}` : c.members[0].name).on('click', (_, c) => {
+        }).attr('class', c => 'node time-node' + (c.members.length > 1 ? ' aggregate' : '') + (c.members.some(n => n.id === highlighted) ? ' selected' : '')).attr('data-id',c=>c.members.length===1?c.members[0].id:null).attr('data-members', c => c.members.map(n => n.id).join(',')).attr('transform', c => `translate(${c.x},${c.y})`).attr('aria-label', c => c.members.length > 1 ? `${clusterTitle(c)}, ${c.members.length} entries, ${c.min} to ${c.max}` : c.members[0].name).on('click', (_, c) => {
             if (c.members.length === 1)
                 onNode(c.members[0].id);
             else {
@@ -75,7 +78,7 @@ window.renderChurchTimeline = function ({ container, entries, edges, roots, onNo
                 this.dispatchEvent(new MouseEvent('click', { bubbles: true }));
             }
         });
-        const boxWidth = Math.min(195, laneWidth - 12);
+        const boxWidth = Math.min(195, (scopedBranch?branchSpacing:laneWidth) - 12);
         joined.select('rect').attr('x', -boxWidth / 2).attr('y', -22).attr('width', boxWidth).attr('height', 44);
         joined.select('.time-label').attr('x', 0).attr('y', -3).attr('text-anchor', 'middle').each(function (c) {
             const text = d3.select(this);

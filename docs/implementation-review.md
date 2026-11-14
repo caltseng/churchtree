@@ -64,3 +64,6 @@ These checks establish referential integrity, not historical accuracy.
    independent data audit's responsibility.
 
 Do not equate passing UI checks or resolved citations with publication-ready history.
+
+## Follow-up: branch geometry
+The earlier chronological single-column layout has been replaced with successor-based branch lanes. Both timeline orientations and compact lineage use the shared model. Scoped timelines cluster within a branch lane, not across all denominations in a tradition. The updated Baptist wheel test discloses eight clusters to nine and collapses back to eight; same-date entries remain grouped. Default drill-ins skip historical-group level and preserve the user's last timeline orientation.

@@ -13,3 +13,8 @@ assert(fine.some(c=>c.members.length===2&&c.min===1600&&c.max===1600),'Same-date
 const edges=[{from_id:'a',to_id:'d'},{from_id:'b',to_id:'d'},{from_id:'a',to_id:'b'}];
 const grouped=connections(coarse,edges);assert.equal(grouped.length,1);assert.equal(grouped[0].edges.length,2);
 console.log('Temporal clustering invariants and aggregated relationships pass.');
+
+const branchingNodes=['parent','split-a','split-b','union'].map(id=>({id}));
+const branching= context.window.ChurchTimelineModel.branchLanes(branchingNodes,[{from_id:'parent',to_id:'split-a'},{from_id:'parent',to_id:'split-b'},{from_id:'split-b',to_id:'union'}]);
+assert.notEqual(branching.positions.get('split-a'),branching.positions.get('union'));
+assert.equal(branching.positions.get('split-b'),branching.positions.get('union'));

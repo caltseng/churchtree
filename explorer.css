@@ -467,3 +467,10 @@ aside p,aside li {
 .link.mixed { stroke: #707b6b; stroke-dasharray: 4 3; }
 #period-error { color: #9b3e2b; font: 12px system-ui; }
 .node:focus-visible rect { stroke: #bd713e; stroke-width: 3; }
+.orientation { display: flex; border: 1px solid #bdcabe; border-radius: 7px; overflow: hidden; }
+.orientation[hidden] { display: none; }
+.orientation button { border: 0; border-radius: 0; background: transparent; padding: 7px 11px; }
+.orientation button + button { border-left: 1px solid #bdcabe; }
+.orientation button[aria-pressed="true"] { background: #315b43; color: #fffdf7; }
+.orientation button:focus-visible { outline-offset: -3px; }
+#layout { width: 145px; }

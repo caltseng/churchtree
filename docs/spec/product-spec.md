@@ -47,6 +47,14 @@ lineage, including years, parent movements, and key points of division.
 - Add American Protestant streams first.
 - Expand with more nodes once the UX is stable.
  - Use natural-language notes with citations before converting to JSON.
+- Review every body's expected history and its graph neighborhood using
+  [the historical coverage standard](historical-coverage-standard.md).
+- Current coverage prioritizes US Protestant traditions and relevant European
+  roots. Catholic/Orthodox entries are bounded context, not exhaustive histories.
+- Expansion must repair misleading missing predecessors/merger partners first,
+  then major in-scope branches and tradition balance, then optional global breadth.
+- Separate missing data from records hidden by grouping/filtering. A display group
+  is not a denomination, and a populated profile is not a completed historical review.
 
 ## UX and interaction
 - Zoom and pan on the tree.

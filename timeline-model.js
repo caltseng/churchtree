@@ -1,10 +1,10 @@
 /* Pure temporal clustering shared by both timeline orientations. Geometry is
  * supplied by the renderer; this module never changes historical dates. */
 window.ChurchTimelineModel = {
-    cluster(entries, scale, gap) {
+    cluster(entries, scale, gap, partition = entry => entry.tradition_family || 'Other') {
         const families = new Map();
         for (const entry of entries) {
-            const family = entry.tradition_family || 'Other';
+            const family = partition(entry);
             if (!families.has(family))
                 families.set(family, []);
             families.get(family).push(entry);
@@ -34,7 +34,7 @@ window.ChurchTimelineModel = {
             for (const group of groups)
                 output.push({
                     id: group.map(entry => entry.id).join('|'),
-                    family, members: group, position: position(group),
+                    family: group[0].tradition_family || 'Other', partition: family, members: group, position: position(group),
                     min: group[0].start_year, max: group.at(-1).start_year,
                 });
         }
@@ -56,4 +56,23 @@ window.ChurchTimelineModel = {
         }
         return [...combined.values()];
     },
+};
+// Place branches by the terminal histories reachable from each body. Splits
+// diverge toward different leaves; mergers converge on their shared successor.
+window.ChurchTimelineModel.branchLanes = function(entries, edges) {
+  const ids=new Set(entries.map(n=>n.id)),children=new Map(entries.map(n=>[n.id,[]]));
+  for(const e of edges)if(ids.has(e.from_id)&&ids.has(e.to_id))children.get(e.from_id).push(e.to_id);
+  const leaves=entries.filter(n=>!children.get(n.id).length).sort((a,b)=>a.id.localeCompare(b.id));
+  const leafIndex=new Map(leaves.map((n,i)=>[n.id,i])),cache=new Map(),visiting=new Set();
+  function terminals(id){if(cache.has(id))return cache.get(id);if(visiting.has(id))return new Set();visiting.add(id);const found=new Set();if(leafIndex.has(id))found.add(id);for(const child of children.get(id)||[])for(const leaf of terminals(child))found.add(leaf);visiting.delete(id);cache.set(id,found);return found;}
+  const positions=new Map();for(const n of entries){const reach=[...terminals(n.id)];positions.set(n.id,reach.length?Math.round(2*reach.reduce((sum,id)=>sum+leafIndex.get(id),0)/reach.length):0);}
+  const used=[...new Set(positions.values())].sort((a,b)=>a-b);
+  for(const [id,slot] of positions)positions.set(id,used.indexOf(slot));
+  return {positions,count:Math.max(1,used.length)};
+};
+window.ChurchTimelineModel.originOnly = function(container, roots, onNode) {
+  const panel=document.createElement('div');panel.className='empty';
+  const message=document.createElement('p');message.textContent='Origin context is shown without a fixed founding date. Open the profile to read its history, or choose another branch to explore dated developments.';panel.append(message);
+  for(const root of roots){const button=document.createElement('button');button.className='context';button.textContent=root.name;button.onclick=()=>onNode(root.id);panel.append(button);}
+  container.append(panel);
 };

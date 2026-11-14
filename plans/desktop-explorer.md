@@ -63,3 +63,5 @@ and rebuilding, all graph endpoints and citation references now resolve.
 Historical correctness and full profile depth are not established by browser tests.
 
 Added an optional horizontal proportional timeline with native side scrolling, fixed tradition labels, anchored button/Ctrl-wheel zoom, semantic titles and date-only subtitles. Regression checks cover horizontal scrolling, disclosure, reset, switching back to vertical zoom, and overlap checks for the all-branch view. Missing-node coverage analysis is assigned to the data-audit chat.
+
+Drill-ins from All branches now open level 3 in the last-used timeline orientation. Compact lineage and scoped timelines assign lanes from reachable successor branches: splits diverge and merger paths converge. Timeline clustering stays within those branch lanes so neighboring independent histories no longer collapse into one column. Verified default drill-in, preserved orientation, distinct Presbyterian branch positions, and origin-only scopes in Playwright.

@@ -20,6 +20,10 @@ const server = http.createServer((request, response) => {
         response.end(error ? 'Not found' : data);
     });
 });
+async function setView(page,value){
+    await page.locator('#layout').selectOption(value==='lineage'?'lineage':'timeline');
+    if(value!=='lineage')await page.getByRole('button',{name:value==='horizontal'?'Horizontal':'Vertical',exact:true}).click();
+}
 async function noOverlap(page, selector = '.node') {
     const boxes = await page.locator(selector).evaluateAll(items => items.map(item => item.getBoundingClientRect().toJSON()));
     for (let i = 0; i < boxes.length; i++)
@@ -41,6 +45,13 @@ async function noOverlap(page, selector = '.node') {
         await noOverlap(page);
         await page.screenshot({ path: path.join(output, 'review-overview.png') });
         await page.getByRole('button', { name: 'Presbyterian', exact: true }).click();
+        assert.equal(await page.locator('#layout').inputValue(),'timeline','Overview drill-in should open the detailed timeline');
+        await page.screenshot({path:path.join(output,'review-branch-timeline.png')});
+        await setView(page,'lineage');
+        const branchPositions=await page.locator('.node:not(.context)').evaluateAll(ns=>ns.map(n=>n.getAttribute('transform')));
+        assert(new Set(branchPositions.map(t=>t.split(',')[0])).size>1,'Branches must not form a single column');
+        await page.screenshot({path:path.join(output,'review-branch-lineage.png')});
+        await page.getByRole('button',{name:'Zoom out',exact:true}).click();
         const grouped = await page.locator('.node').count();
         assert(await page.locator('.context').count());
         await page.getByRole('button', { name: 'Zoom in', exact: true }).click();
@@ -55,6 +66,10 @@ async function noOverlap(page, selector = '.node') {
         await page.locator('#search').fill('PCA');
         await page.getByRole('button', { name: /^PCA ·/ }).click();
         assert.match(await page.locator('#details').innerText(), /Why it formed/);
+        assert.match(await page.locator('#details .badge').innerText(), /1973–present/i);
+        await page.locator('[data-id="pcus"]').click();
+        assert.match(await page.locator('#details .badge').innerText(), /1861–1983/);
+        await page.locator('[data-id="pca"]').click();
         assert(await page.locator('#details a').count());
         assert(await page.getByRole('link', { name: 'Person fixture', exact: true }).count());
         assert.match(await page.locator('#details').innerText(), /Biographical context fixture/);
@@ -66,12 +81,14 @@ async function noOverlap(page, selector = '.node') {
         const families = await page.locator('#branch option').evaluateAll(options => options.map(o => o.value).filter(Boolean));
         for (const family of families) {
             await page.locator('#branch').selectOption(family);
+            await setView(page,'lineage');
+            await page.getByRole('button',{name:'Zoom out',exact:true}).click();
             await noOverlap(page);
             await page.getByRole('button', { name: 'Zoom in', exact: true }).click();
             await noOverlap(page);
         }
         await page.locator('#branch').selectOption('Baptist');
-        await page.locator('#layout').selectOption('timeline');
+        await setView(page,'timeline');
         const initial = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot());
         assert(initial.clusters.some(c => c.count > 1));
         assert(initial.clusters.every(c => c.title && !/^\d+ (records|entries)$/.test(c.title)));
@@ -80,18 +97,18 @@ async function noOverlap(page, selector = '.node') {
         assert(clusterLabels.every(title => /Baptist/.test(title)));
         const box = await page.locator('#graph').boundingBox();
         await page.mouse.move(box.x + box.width / 2, box.y + box.height * .7);
-        await page.mouse.wheel(0, -900);
+        await page.mouse.wheel(0, -2000);
         await page.waitForTimeout(400);
         const zoomed = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot());
         assert(zoomed.scale > initial.scale);
         assert(zoomed.clusters.length > initial.clusters.length, 'Zoom must disclose additional nodes');
         await noOverlap(page);
-        await page.mouse.wheel(0, 900);
+        await page.mouse.wheel(0, 2000);
         await page.waitForTimeout(400);
         const collapsed = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot());
         assert(collapsed.clusters.length < zoomed.clusters.length, 'Zoom out must collapse nearby records');
         await page.screenshot({ path: path.join(output, 'review-timeline.png') });
-        await page.locator('#layout').selectOption('horizontal');
+        await setView(page,'horizontal');
         await page.waitForTimeout(180);
         const horizontalInitial = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot());
         assert(await page.locator('#graph').evaluate(el => el.scrollWidth <= el.clientWidth + 2), 'Horizontal overview should fit the complete date range');
@@ -100,7 +117,9 @@ async function noOverlap(page, selector = '.node') {
         const horizontalBox = await page.locator('#graph').boundingBox();
         await page.mouse.move(horizontalBox.x + horizontalBox.width * .65, horizontalBox.y + horizontalBox.height * .6);
         const beforeScroll = await page.locator('#graph').evaluate(el => el.scrollLeft);
+        await page.keyboard.down('Shift');
         await page.mouse.wheel(0, 300);
+        await page.keyboard.up('Shift');
         await page.waitForTimeout(100);
         assert(await page.locator('#graph').evaluate(el => el.scrollLeft) > beforeScroll);
         for (let i = 0; i < 4; i++)
@@ -121,7 +140,7 @@ async function noOverlap(page, selector = '.node') {
         const graphBox=await page.locator('#graph').boundingBox();
         assert(axisBox.y<graphBox.y+50,'Dates must remain visible while scrolling through traditions');
         await page.screenshot({ path: path.join(output, 'review-horizontal-all.png') });
-        await page.locator('#layout').selectOption('timeline');
+        await setView(page,'timeline');
         await page.locator('#search').fill('OPC');
         await page.getByRole('button',{name:/^OPC ·/}).click();
         await page.waitForTimeout(400);
@@ -143,7 +162,7 @@ async function noOverlap(page, selector = '.node') {
         assert((await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot())).scale > verticalBefore);
         await page.locator('#branch').selectOption('');
         await noOverlap(page);
-        await page.locator('#layout').selectOption('lineage');
+        await setView(page,'lineage');
         await page.getByRole('button', { name: 'Reset', exact: true }).click();
         await page.setViewportSize({ width: 1280, height: 800 });
         await page.waitForTimeout(180);
@@ -155,6 +174,14 @@ async function noOverlap(page, selector = '.node') {
         assert(await page.locator('#details').evaluate(el => el.clientWidth) > before);
         await page.waitForTimeout(180);
         await page.screenshot({ path: path.join(output, 'review-desktop.png') });
+        await setView(page,'horizontal');
+        await setView(page,'lineage');
+        await page.locator('#branch').selectOption('');
+        await page.getByRole('button',{name:'Presbyterian',exact:true}).click();
+        assert.equal(await page.getByRole('button',{name:'Horizontal',exact:true}).getAttribute('aria-pressed'),'true','Drill-in should preserve the last timeline orientation');
+        await page.locator('#branch').selectOption('Catholic');
+        assert(await page.getByRole('button',{name:'Roman Catholic Church',exact:true}).count() || await page.getByRole('button',{name:'Catholic Church',exact:true}).count());
+        assert(await page.getByRole('button',{name:'Zoom in',exact:true}).isDisabled());
         assert.deepEqual(errors, []);
         console.log(JSON.stringify({ passed: true, families: families.length, clustered: initial.clusters.length, zoomed: zoomed.clusters.length, collapsed: collapsed.clusters.length, browserErrors: errors }));
     }

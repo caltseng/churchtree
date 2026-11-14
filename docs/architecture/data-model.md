@@ -7,6 +7,10 @@ when possible. The data model needs to support:
 - Approximate dates and uncertain relationships.
 - Citations tied to specific claims.
 
+Editorial collection and review must follow
+[Historical coverage and completeness](../spec/historical-coverage-standard.md).
+The core schema is a storage contract, not a certificate of complete history.
+
 ## Core entities
 
 ### Node (denomination or movement)
@@ -22,7 +26,8 @@ Optional fields:
 - end_year: integer (if dissolved or merged)
 - short_label: short display name
 - summary: brief description
-- key_figures: list of key figures (names or "Name — role")
+- key_figures: structured people { name, role, summary, url, citations };
+  legacy name strings are accepted for compatibility
 - key_dates: list of milestone objects { year, label, citations }
 - region: string (e.g., "US", "Global")
 - geographic_origin: string (country/region of origin)
@@ -34,6 +39,20 @@ Optional fields:
 - size_estimate: short text (e.g., "approx 1.0M members, 2024")
 - citations: list of citation ids (for summary, key dates, distinctives, size)
 - tags: list of tag ids
+- formation_narrative: why/how the unit formed, with historical context and
+  attributed explanations rather than a founding date alone
+- ending_narrative: later trajectory and why/how it ended, merged, renamed,
+  reorganized, or continued; do not invent corporate endings for movements
+- core_beliefs: explanatory strings that distinguish actual teaching/practice
+- key_documents: { title, year, significance, url, citations }; significance
+  must identify adopted/proposed/inherited/influential/illustrative status
+- further_reading: { title, url, snippet, citations }; snippets are explanatory
+  editorial descriptions unless explicitly marked as source quotations
+- successor_ids: existing node IDs for supported continuation/end transitions;
+  not every split-off from an active parent
+- profile_scope: historical unit, period, diversity, uncertainty and research limits
+- profile_citations: field-name-to-citation-ID arrays for the supported profile
+  claims; these do not verify unrelated inherited fields automatically
 
 ### Edge (relationship)
 Represents a lineage relationship between two nodes.
@@ -43,7 +62,7 @@ Required fields:
 - name: short readable label describing the reason
 - from_id: parent node id
 - to_id: child node id
-- type: "split" | "merge" | "origin" | "continuation"
+- type: "split" | "merge" | "origin" | "continuation" | "influence"
 - year: integer or null if unknown
 
 Optional fields:
@@ -55,6 +74,11 @@ Optional fields:
 - key_dates: list of milestone objects { year, label, citations }
 - confidence: "high" | "medium" | "low"
 - citations: list of citation ids
+
+Relationship dates have explicit meanings in their labels/narratives. Influence
+is not institutional parentage and can predate a target's constitution. Do not
+force fellowship, cooperation, or theological influence into a split. Every
+merger needs all immediate partners or an explicit missing-research declaration.
 
 ### Event
 Marks a significant historical event that triggered or influenced a divide.
@@ -108,24 +132,30 @@ Required fields:
 Static JSON files stored locally in the repo.
 
 Suggested files:
-- data/nodes.json
-- data/edges.json
-- data/events.json
-- data/sources.json
-- data/citations.json
-- data/tags.json
+- data/sets/[set-id]/nodes.json
+- data/sets/[set-id]/edges.json
+- data/sets/[set-id]/events.json
+- data/sets/[set-id]/sources.json and citations.json (optional local evidence)
+- data/common/sources.json, citations.json, tags.json (shared metadata)
+
+Research notes and audit findings must separately record expected historical
+coverage, missing episodes/partners/intermediates, tradition balance, and whether
+an apparent omission is a missing record or a present record hidden by the UI.
+Proposed node identities stay proposals until reviewed/imported; display groups
+never count as new historical bodies.
 
 ## Example (minimal)
 ```json
 {
   "nodes": [
+    { "id": "pcus", "name": "Presbyterian Church in the United States", "kind": "denomination", "start_year": 1861 },
     { "id": "pcusa", "name": "PC(USA)", "kind": "denomination", "start_year": 1983 },
     { "id": "pca", "name": "Presbyterian Church in America", "kind": "denomination", "start_year": 1973 }
   ],
   "edges": [
     {
-      "id": "pcusa-pca-1973",
-      "from_id": "pcusa",
+      "id": "pcus-pca-1973",
+      "from_id": "pcus",
       "to_id": "pca",
       "type": "split",
       "year": 1973,
@@ -136,10 +166,10 @@ Suggested files:
   "events": [
     {
       "id": "pcusa-split-1973",
-      "name": "PC(USA) division leading to PCA",
+      "name": "PCUS division leading to PCA",
       "year": 1973,
       "description": "Key points of contention that led to the PCA's formation.",
-      "related_edge_ids": ["pcusa-pca-1973"],
+      "related_edge_ids": ["pcus-pca-1973"],
       "citations": ["cite-1"]
     }
   ],

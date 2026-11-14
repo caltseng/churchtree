@@ -8,7 +8,7 @@
     }
     const nodes = new Map(d.nodes.map(n => [n.id, n])), sources = new Map(d.sources.map(s => [s.id, s])), citations = new Map(d.citations.map(c => [c.id, c]));
     const families = [...new Set(d.nodes.map(n => n.tradition_family || 'Other'))].sort();
-    let level = 0, family = '', selected = null, focus = null, layout = 'lineage', period = null, timelineControl = null;
+    let level = 0, family = '', selected = null, focus = null, layout = 'lineage', period = null, timelineControl = null, lastTimeline = 'timeline';
     const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const label = n => n.short_label || n.name;
     families.forEach(f => {
@@ -95,11 +95,17 @@
         const ids = [...new Set([...(n.successor_ids || []), ...(n.end_year || ['merged', 'dissolved', 'inactive', 'defunct', 'historical'].includes(n.current_status) ? d.edges.filter(e => e.from_id === n.id && ['merge', 'continuation'].includes(e.type)).map(e => e.to_id) : [])])].filter(id => nodes.has(id));
         return ids.length ? '<h3>Continue to successors</h3>' + ids.map(id => '<button class="relationship successor" data-successor="' + esc(id) + '">' + esc(nodes.get(id).name) + ' →</button>').join('') : '';
     }
+    function lifespan(node) {
+        const start = node.start_year ?? 'Unknown origin';
+        if (Number.isFinite(node.end_year)) return start + '–' + node.end_year;
+        if (node.current_status === 'active') return start + '–present';
+        return start + '–end unknown';
+    }
     function showNode(id) {
         const n = nodes.get(id);
         selected = id;
         const relationships = d.edges.filter(e => e.from_id === id || e.to_id === id);
-        $('details').innerHTML = `<span class="badge">${esc(n.kind || 'Historical body')} · ${esc(n.start_year ?? 'Date unknown')}</span><h2>${esc(n.name)}</h2><p>${esc(n.summary || n.notes || 'A detailed summary has not yet been recorded.')}</p><button id="ancestry">Trace ancestry</button><h3>Identity</h3><p>${[n.tradition_family, n.region, n.ecclesial_orientation, n.current_status].filter(Boolean).map(esc).join(' · ')}</p><h3>Why it formed</h3><p>${esc(n.formation_narrative || 'The causes and circumstances of formation have not yet been fully documented.')}</p><h3>What happened to it</h3><p>${esc(n.ending_narrative || (n.current_status === 'active' ? 'Recorded as active. Its later development has not yet been fully documented.' : 'Its ending or continuation has not yet been fully documented.'))}</p>${successors(n)}${list('Core beliefs', n.core_beliefs)}${list('Distinctives', n.distinctives)}${people(n.key_figures)}${list('Milestones', n.key_dates?.map(x => `${x.year ?? '?'} — ${x.label}`))}${documents(n.key_documents)}${reading(n.further_reading)}<h3>Scale</h3><p>${esc(n.size_estimate || 'Not recorded')}</p><h3>Relationships</h3><div id="relationships"></div><h3>Evidence</h3>${evidence([...(n.citations || []), ...(n.key_dates || []).flatMap(x => x.citations || [])])}`;
+        $('details').innerHTML = `<span class="badge">${esc(n.kind || 'Historical body')} · ${esc(lifespan(n))}</span><h2>${esc(n.name)}</h2><p>${esc(n.summary || n.notes || 'A detailed summary has not yet been recorded.')}</p><button id="ancestry">Trace ancestry</button><h3>Identity</h3><p>${[n.tradition_family, n.region, n.ecclesial_orientation, n.current_status].filter(Boolean).map(esc).join(' · ')}</p><h3>Why it formed</h3><p>${esc(n.formation_narrative || 'The causes and circumstances of formation have not yet been fully documented.')}</p><h3>What happened to it</h3><p>${esc(n.ending_narrative || (n.current_status === 'active' ? 'Recorded as active. Its later development has not yet been fully documented.' : 'Its ending or continuation has not yet been fully documented.'))}</p>${successors(n)}${list('Core beliefs', n.core_beliefs)}${list('Distinctives', n.distinctives)}${list('Milestones', n.key_dates?.map(x => `${x.year ?? '?'} — ${x.label}`))}${people(n.key_figures)}${documents(n.key_documents)}${reading(n.further_reading)}<h3>Scale</h3><p>${esc(n.size_estimate || 'Not recorded')}</p><h3>Relationships</h3><div id="relationships"></div><h3>Evidence</h3>${evidence([...(n.citations || []), ...(n.key_dates || []).flatMap(x => x.citations || [])])}`;
         $('details').querySelectorAll('[data-successor]').forEach(b => b.onclick = () => openNode(b.dataset.successor));
         $('ancestry').onclick = () => {
             focus = ancestors(id);
@@ -120,9 +126,10 @@
         document.querySelectorAll('.node').forEach(el => el.classList.toggle('selected', el.dataset.id === id));
     }
     function showEdge(e) {
-        $('details').innerHTML = `<span class="badge">${esc(e.type)} · ${esc(e.year ?? 'Date unknown')}</span><h2>${esc(e.name || 'Historical relationship')}</h2><p>${esc(nodes.get(e.from_id)?.name)} → ${esc(nodes.get(e.to_id)?.name)}</p><p>${esc(e.narrative || e.description || 'Narrative not recorded.')}</p>${list('Reasons and drivers', [...new Set([...(e.reasons || []), ...(e.causes || [])])])}${people(e.key_figures)}${list('Milestones', e.key_dates?.map(x => `${x.year ?? '?'} — ${x.label}`))}<h3>Evidence</h3>${evidence([...(e.citations || []), ...(e.key_dates || []).flatMap(x => x.citations || [])])}`;
+        $('details').innerHTML = `<span class="badge">${esc(e.type)} · ${esc(e.year ?? 'Date unknown')}</span><h2>${esc(e.name || 'Historical relationship')}</h2><p>${esc(nodes.get(e.from_id)?.name)} → ${esc(nodes.get(e.to_id)?.name)}</p><p>${esc(e.narrative || e.description || 'Narrative not recorded.')}</p>${list('Reasons and drivers', [...new Set([...(e.reasons || []), ...(e.causes || [])])])}${list('Milestones', e.key_dates?.map(x => `${x.year ?? '?'} — ${x.label}`))}${people(e.key_figures)}<h3>Evidence</h3>${evidence([...(e.citations || []), ...(e.key_dates || []).flatMap(x => x.citations || [])])}`;
     }
     function openNode(id) {
+        if(!family&&!focus&&layout==='lineage')layout=lastTimeline;
         selected = id;
         period = null;
         family = nodes.get(id).tradition_family || 'Other';
@@ -166,7 +173,10 @@
     }
     function render() {
         $('branch').value = family;
-        $('layout').value = layout;
+        $('layout').value = layout==='lineage'?'lineage':'timeline';
+        $('orientation').hidden=layout==='lineage';
+        $('orientation-vertical').setAttribute('aria-pressed',String(layout==='timeline'));
+        $('orientation-horizontal').setAttribute('aria-pressed',String(layout==='horizontal'));
         $('period').hidden = layout !== 'timeline' || level === 0;
         $('level').textContent = ['1 · Major branches', '2 · Historical groups', '3 · Denominations'][level];
         $('zoom-out').disabled = level === 0;
@@ -192,7 +202,7 @@
             }
             $('scope-title').textContent = (focus ? label(nodes.get(selected)) + ' · ancestry' : family || 'All branches') + (layout === 'horizontal' ? ' · horizontal timeline' : ' · proportional timeline');
             $('scope-note').textContent = layout === 'horizontal' ? 'Time runs left to right. Scroll sideways (Shift + wheel) to travel through time. Use +/− or Ctrl + wheel to zoom; nearby records collapse into named groups.' : 'Mouse wheel zooms time; drag to pan. Nearby records cluster within each tradition and separate as you zoom in. Cluster dates show their actual range.';
-            timelineControl = (layout === 'horizontal' ? window.renderHorizontalTimeline : window.renderChurchTimeline)({ container: graph, entries: scoped, edges: d.edges, roots, period, onNode: showNode, onEdge: showEdge, onRange: domain => {
+            timelineControl = (layout === 'horizontal' ? window.renderHorizontalTimeline : window.renderChurchTimeline)({ container: graph, entries: scoped, edges: d.edges, roots, period, onNode: id => { if(!family&&!focus)openNode(id);else showNode(id); }, onEdge: showEdge, onRange: domain => {
                     if (!['year-from', 'year-to'].includes(document.activeElement?.id)) {
                         $('year-from').value = Math.floor(domain[0]);
                         $('year-to').value = Math.ceil(domain[1]);
@@ -212,6 +222,7 @@
                         $('cluster-members').append(b);
                     });
                 } });
+            if(!timelineControl){$('zoom-in').disabled=true;$('zoom-out').disabled=true;$('period').hidden=true;$('level').textContent='Origin context';$('count').textContent=scoped.length+' entries in scope';}
             window.CHURCHTREE_TIMELINE = timelineControl;
             return;
         }
@@ -291,31 +302,19 @@
         }
         else {
             const ordered = [...entries].sort((a, b) => (a.context ? -1 : b.context ? 1 : 0) || a.start_year - b.start_year || a.id.localeCompare(b.id));
-            let lastYear = null, row = -1, col = 0;
-            
-            
-            for (const n of ordered) {
-                if (n.context) {
-                    positions.set(n.id, { x: 85 + col * 240, y: 25 });
-                    col++;
-                    lastYear = null;
-                    continue;
-                }
-                let py;
-                {
-                    if (n.start_year !== lastYear) {
-                        row++;
-                        col = 0;
-                        lastYear = n.start_year;
-                    }
-                    py = 155 + row * 94;
-                }
-                positions.set(n.id, { x: 85 + col * 240, y: py });
-                maxColumn = Math.max(maxColumn, col + 1);
-                col++;
-                height = Math.max(height, py + 100);
+            const branchLayout=window.ChurchTimelineModel.branchLanes(entries,edges);
+            let lastYear=null,row=-1;const spacing=Math.min(235,(width-250)/Math.max(1,branchLayout.count-1));
+            for(const n of ordered){
+                if(!n.context&&n.start_year!==lastYear){row++;lastYear=n.start_year;}
+                let py=n.context?25:155+row*94;
+                const slot=branchLayout.positions.get(n.id)||0,px=25+slot*spacing;
+                // Compact chronology may add vertical room to keep full-size cards legible.
+                for(const previous of positions.values())if(Math.abs(previous.x-px)<220&&py<previous.y+65)py=previous.y+65;
+                positions.set(n.id,{x:px,y:py});
+                maxColumn=Math.max(maxColumn,slot+1);height=Math.max(height,py+100);
             }
         }
+
         // Route each overlapping connection through its own side channel. Horizontal
         // portions use gutters between rows rather than cutting through node cards.
         const lanes = [];
@@ -331,7 +330,7 @@
             lanes[lane].push([lo, hi]);
             e.lane = lane;
         }
-        const right = level === 0 ? width - 5 : 85 + maxColumn * 240;
+        const right = level === 0 ? width - 5 : Math.max(...[...positions.values()].map(p=>p.x+205))+25;
         const actualWidth = level === 0 ? width : Math.max(width, right + lanes.length * 16 + 25);
         height = Math.max(height, graph.clientHeight - 20);
         const svg = d3.select(graph).append('svg').attr('width', actualWidth).attr('height', height).attr('aria-label', level === 0 ? 'Connected major traditions' : 'Historical lineage graph');
@@ -397,9 +396,9 @@
                 family = n.family;
                 focus = null;
                 selected = null;
-                level = 1;
+                level = 2;
                 period = null;
-                layout = 'lineage';
+                layout = lastTimeline;
                 scopeIntroduction();
                 render();
             }
@@ -458,10 +457,12 @@
     };
     $('branch').onchange = () => {
         period = null;
+        const fromAll=!family&&!focus;
         family = $('branch').value;
+        if(fromAll&&family&&layout==='lineage')layout=lastTimeline;
         focus = null;
         selected = null;
-        level = family ? 1 : 0;
+        level = family ? 2 : 0;
         scopeIntroduction();
         render();
     };
@@ -485,12 +486,21 @@
         render();
     };
     $('layout').onchange = () => {
-        layout = $('layout').value;
+        layout = $('layout').value==='lineage'?'lineage':lastTimeline;
+        if(layout==='timeline'||layout==='horizontal')lastTimeline=layout;
         if (layout === 'timeline' || layout === 'horizontal')
             level = 2;
         period = null;
         render();
     };
+    function changeOrientation(next) {
+        if(layout===next)return;
+        period=timelineControl?.snapshot().domain || period;
+        layout=next;lastTimeline=next;level=2;
+        render();
+    }
+    $('orientation-vertical').onclick=()=>changeOrientation('timeline');
+    $('orientation-horizontal').onclick=()=>changeOrientation('horizontal');
     $('apply-period').onclick = () => {
         const a = Number($('year-from').value), b = Number($('year-to').value);
         if ($('year-from').value !== '' && $('year-to').value !== '' && Number.isInteger(a) && Number.isInteger(b) && a < b) {

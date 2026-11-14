@@ -3,12 +3,13 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, roots, 
     const family = n => n.tradition_family || 'Other', title = window.churchClusterTitle;
     const dated = entries.filter(n => !roots.some(r => r.id === n.id) && Number.isFinite(n.start_year));
     if (!dated.length) {
-        container.textContent = 'No dated records in this scope.';
+        window.ChurchTimelineModel.originOnly(container,roots,onNode);
         return null;
     }
+    const branchLayout=window.ChurchTimelineModel.branchLanes(dated,edges),scopedBranch=new Set(dated.map(family)).size===1;
     const families = [...new Set(dated.map(family))].sort(), left = 270, right = 120, top = 155, lane = 100;
     const years = dated.map(n => n.start_year), extent = period || [Math.min(...years) - 10, Math.max(...years) + 10];
-    const viewWidth = container.clientWidth, height = Math.max(container.clientHeight - 20, top + families.length * lane + 40), base = Math.max(280, viewWidth - left - right);
+    const viewWidth = container.clientWidth, height = Math.max(container.clientHeight - 20, top + (scopedBranch?branchLayout.count:families.length) * lane + 40), base = Math.max(280, viewWidth - left - right);
     const stateKey = dated.map(n => n.id).sort().join('|') + ':' + extent.join(',');
     const saved = window.CHURCHTREE_HORIZONTAL_STATE?.key === stateKey ? window.CHURCHTREE_HORIZONTAL_STATE : null;
     let k = saved?.scale || 1, clusters = [], scale, currentWidth, highlighted = null;
@@ -67,7 +68,7 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, roots, 
         axis.selectAll('text').attr('fill', '#697568');
         axis.selectAll('line,.domain').attr('stroke', '#cbd5c6');
         grid.selectAll('line').data(families).join('line').attr('x1', left).attr('x2', currentWidth - right).attr('y1', (_, i) => top + i * lane).attr('y2', (_, i) => top + i * lane).attr('stroke', '#e2e7dc');
-        clusters = window.ChurchTimelineModel.cluster(dated, scale, 225).map(c => ({ ...c, x: c.position, y: top + families.indexOf(c.family) * lane }));
+        clusters = window.ChurchTimelineModel.cluster(dated,scale,225,scopedBranch?n=>branchLayout.positions.get(n.id):family).map(c=>({...c,x:c.position,y:top+(scopedBranch?branchLayout.positions.get(c.members[0].id):families.indexOf(c.family))*lane}));
         const combined = window.ChurchTimelineModel.connections(clusters, edges);
         links.selectAll('path').data(combined, e => e.a.id + '>' + e.b.id).join('path').attr('class', e => 'link ' + (new Set(e.edges.map(x=>x.type)).size>1?'mixed':e.edges[0].type)).attr('marker-end', 'url(#horizontal-arrow)').attr('d', e => {
             const a = e.a, b = e.b;
