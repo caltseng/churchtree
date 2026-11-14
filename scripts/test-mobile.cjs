@@ -10,6 +10,16 @@ const server=require('./test-server.cjs')(root);
   await page.goto(`http://127.0.0.1:${server.address().port}/church-history/`);await page.locator('[data-id="family:Presbyterian"]').waitFor();
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Page must fit the mobile width');
   assert.equal(await page.locator('#splitter').isVisible(),false);
+  assert.equal(await page.locator('#branch').isVisible(),false,'Filters start collapsed');
+  const compactHeight=await page.locator('nav').evaluate(el=>el.clientHeight);
+  await page.getByRole('button',{name:'Filters / View',exact:true}).tap();
+  assert(await page.locator('#branch').isVisible());
+  await page.locator('#branch').focus();await page.keyboard.press('Escape');
+  assert.equal(await page.locator('#branch').isVisible(),false);
+  assert.equal(await page.locator('#mobile-settings-toggle').evaluate(el=>el===document.activeElement),true);
+  await page.getByRole('button',{name:'Filters / View',exact:true}).tap();
+  assert(compactHeight<await page.locator('nav').evaluate(el=>el.clientHeight),'Collapsed filters occupy less vertical space');
+  await page.screenshot({path:path.join(output,`mobile-settings-${size.width}x${size.height}.png`)});
   await page.locator('#branch').selectOption('Presbyterian');
   assert.equal(await page.getByRole('button',{name:'Vertical',exact:true}).getAttribute('aria-pressed'),'true');
   await page.waitForTimeout(250);
@@ -78,12 +88,14 @@ const server=require('./test-server.cjs')(root);
   await page.getByRole('button',{name:'Read details',exact:true}).tap();assert(await dialog.isVisible());
   if(size.width===390){
    await page.setViewportSize({width:1280,height:800});await page.waitForTimeout(200);
-   assert(!await dialog.isVisible());assert(await page.locator('#splitter').isVisible());assert.equal(await page.locator('#details').evaluate(el=>el.parentElement.tagName),'MAIN');
-   await page.setViewportSize(size);await page.waitForTimeout(200);assert(!await dialog.isVisible());
+   assert(!await dialog.isVisible());assert(await page.locator('#branch').isVisible(),'Desktop exposes settings');assert(await page.locator('#splitter').isVisible());assert.equal(await page.locator('#details').evaluate(el=>el.parentElement.tagName),'MAIN');
+   await page.setViewportSize(size);await page.waitForTimeout(200);assert(!await page.locator('#branch').isVisible(),'Returning to mobile collapses settings');assert(!await dialog.isVisible());
    await page.getByRole('button',{name:'Read details',exact:true}).tap();assert(await dialog.isVisible());
   }
   await page.getByRole('button',{name:'Back to graph',exact:true}).tap();
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  if(await page.locator('#branch').isVisible())await page.getByRole('button',{name:'Filters / View',exact:true}).tap();
+  await page.waitForTimeout(250);
   await page.screenshot({path:path.join(output,`mobile-graph-${size.width}x${size.height}.png`)});
   assert.deepEqual(errors,[]);await context.close();console.log(`Mobile ${size.width}×${size.height}: passed`);
  }

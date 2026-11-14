@@ -15,3 +15,9 @@ Chromium desktop with mobile emulation exercises browser touch input but is not
 physical Android certification. iOS Safari uses the same scoped touch-action
 and cancelable Touch Event handlers; real iPhone/iPad testing remains required,
 including Safari page zoom outside the viewport and interruption by system UI.
+
+## Compact controls
+
+| ID | Steps | Expected result | Coverage |
+| --- | --- | --- | --- |
+| MOBILE-04 | On a narrow screen, open Filters / View; change branch, view, orientation or date; close it using the toggle or Escape. Resize to desktop and back. | Settings start collapsed, zoom remains available, current branch/view stays in the heading. Settings use normal touch targets; Escape restores toggle focus. Desktop exposes all controls; returning to mobile collapses settings. | Mobile suite at five viewport sizes checks disclosure, focus, reduced toolbar height, and existing filter/zoom behavior; screenshots include expanded and collapsed states. |
