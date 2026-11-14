@@ -1,4 +1,4 @@
-# ChurchTree
+# Main Branch
 
 A desktop explorer of church-history relationships, with an emphasis on American
 Protestant movements and their historical roots. Content aims to be sourced,
@@ -57,3 +57,7 @@ The Horizontal timeline layout runs dates left to right. Use the horizontal scro
 Implementation review findings, fixes, verification and remaining limitations are recorded in `docs/implementation-review.md`. Run `node scripts/test-timeline-model.cjs` for the shared clustering checks.
 
 Mobile checks: `node scripts/test-mobile.cjs` covers phone/tablet portrait and landscape, real touch scrolling, zoom and earlier/later controls, profile sheets, and transitions back to desktop. Desktop checks remain in `scripts/test-explorer.cjs`.
+
+## Contributing changes
+
+Changes are delivered through pull requests targeting `main`. Commit and push each task’s work, then create a PR or update the existing PR for that branch. Local commits alone do not complete a task. Include validation results and the PR link when reporting completion. See [AGENTS.md](AGENTS.md) for the repository workflow and branding instructions.
