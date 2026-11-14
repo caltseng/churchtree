@@ -1,4 +1,4 @@
-# ChurchTree
+# Main Branch
 
 A desktop explorer of church-history relationships, with an emphasis on American
 Protestant movements and their historical roots. Content aims to be sourced,
@@ -14,7 +14,7 @@ neutral and clear about uncertainty; the dataset remains under active review.
   sources, people, documents and successor navigation where available.
 - Trace ancestry retains originating bodies as context outside the time scale.
 - Drag the divider to resize the graph and reading panel, or focus it and use
-  left/right arrows. Mobile is currently out of scope.
+  left/right arrows. On phones and tablets, profiles open in a reading sheet and controls adapt to touch.
 
 ## Run
 Build the static bundle:
@@ -55,3 +55,9 @@ For an interactive Playwright window, run `node scripts/launch-explorer.cjs` aft
 The Horizontal timeline layout runs dates left to right. Use the horizontal scrollbar, trackpad, or Shift + mouse wheel to travel through time; +/− and Ctrl + wheel zoom around the visible date. Tradition labels stay visible while scrolling. Both timeline orientations use named clusters and date-only subtitles.
 
 Implementation review findings, fixes, verification and remaining limitations are recorded in `docs/implementation-review.md`. Run `node scripts/test-timeline-model.cjs` for the shared clustering checks.
+
+Mobile checks: `node scripts/test-mobile.cjs` covers phone/tablet portrait and landscape, real touch scrolling, zoom and earlier/later controls, profile sheets, and transitions back to desktop. Desktop checks remain in `scripts/test-explorer.cjs`.
+
+## Contributing changes
+
+Changes are delivered through pull requests targeting `main`. Commit and push each task’s work, then create a PR or update the existing PR for that branch. Local commits alone do not complete a task. Include validation results and the PR link when reporting completion. See [AGENTS.md](AGENTS.md) for the repository workflow and branding instructions.

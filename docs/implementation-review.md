@@ -67,3 +67,28 @@ Do not equate passing UI checks or resolved citations with publication-ready his
 
 ## Follow-up: branch geometry
 The earlier chronological single-column layout has been replaced with successor-based branch lanes. Both timeline orientations and compact lineage use the shared model. Scoped timelines cluster within a branch lane, not across all denominations in a tradition. The updated Baptist wheel test discloses eight clusters to nine and collapses back to eight; same-date entries remain grouped. Default drill-ins skip historical-group level and preserve the user's last timeline orientation.
+
+## Mobile follow-up (2026-11-13)
+
+Mobile support is now implemented, superseding the original desktop-only scope.
+At widths below 1100px, controls use a touch-sized grid and historical profiles
+open in a native modal reading sheet. The desktop split panel is restored when
+resizing back to 1100px or wider, including when a mobile sheet was open.
+The graph remains scrollable within its own region; page content does not spill
+horizontally. Short landscape screens can scroll the page vertically.
+
+On mobile, the vertical timeline uses native sideways scrolling for branch lanes,
+with explicit zoom and Earlier/Later controls for navigating dates. The horizontal
+timeline supports native touch swipes, a narrower fixed tradition rail, zoom and
+Earlier/Later controls. Date-range editing is available through a disclosure so it
+does not crowd the default toolbar. Profile navigation remains keyboard accessible;
+the native dialog traps focus, supports Escape, and returns focus to Read details.
+
+`node scripts/test-mobile.cjs` passes Chromium mobile/touch emulation at 320×568,
+390×844, 768×1024, 1024×768, and 844×390. Checks cover touch zoom, time navigation,
+a genuine dispatched touch swipe, date controls, profile content fitting the sheet,
+closing/reopening profiles, and moving an open sheet back into the desktop panel.
+`node scripts/test-explorer.cjs` still passes the desktop journeys and additionally
+checks that split panels remain visible at 1100 and 1440px. The existing 1280px
+resize checks also pass. These are browser-emulation checks, not physical-device
+or Safari certification. Timeline-model and reference validation checks pass.

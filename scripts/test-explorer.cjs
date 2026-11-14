@@ -1,46 +1,33 @@
 const fs = require('fs');
 const path = require('path');
-const http = require('http');
 const assert = require('node:assert/strict');
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
-const root = path.resolve(__dirname, '..');
-const output = path.join(root, '.tmp', 'browser-check');
+const repoRoot = path.resolve(__dirname, '..');
+const root = process.env.CHURCHTREE_TEST_ROOT ? path.resolve(repoRoot, process.env.CHURCHTREE_TEST_ROOT) : repoRoot;
+const output = path.join(repoRoot, '.tmp', 'browser-check');
 fs.mkdirSync(output, { recursive: true });
-const server = http.createServer((request, response) => {
-    const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
-    const file = path.resolve(root, '.' + (pathname === '/' ? '/index.html' : pathname));
-    if (!file.startsWith(root + path.sep)) {
-        response.writeHead(403);
-        response.end();
-        return;
-    }
-    fs.readFile(file, (error, data) => {
-        const contentType = { '.css': 'text/css', '.js': 'application/javascript', '.html': 'text/html' }[path.extname(file)] || 'application/octet-stream';
-        response.writeHead(error ? 404 : 200, { 'Content-Type': contentType });
-        response.end(error ? 'Not found' : data);
-    });
-});
+const server=require('./test-server.cjs')(root);
 async function setView(page,value){
     await page.locator('#layout').selectOption(value==='lineage'?'lineage':'timeline');
     if(value!=='lineage')await page.getByRole('button',{name:value==='horizontal'?'Horizontal':'Vertical',exact:true}).click();
 }
 async function noOverlap(page, selector = '.node') {
-    const boxes = await page.locator(selector).evaluateAll(items => items.map(item => item.getBoundingClientRect().toJSON()));
+    const boxes = await page.locator(selector).evaluateAll(items => items.map(item => ({...item.getBoundingClientRect().toJSON(),record:item.getAttribute('data-members')||item.getAttribute('data-id')})));
     for (let i = 0; i < boxes.length; i++)
         for (let j = i + 1; j < boxes.length; j++) {
             const a = boxes[i], b = boxes[j];
-            assert(!(a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top), `Overlapping nodes ${i}, ${j}`);
+            assert(!(a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top), `Overlapping nodes ${JSON.stringify(a)}, ${JSON.stringify(b)}`);
         }
 }
 (async () => {
     let browser;
     try {
         await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
-        browser = await chromium.launch({ channel: 'msedge', headless: !process.env.HEADED });
+        browser = await chromium.launch({ ...(process.env.PLAYWRIGHT_CHANNEL === 'chromium' ? {} : {channel: process.env.PLAYWRIGHT_CHANNEL || 'msedge'}), headless: !process.env.HEADED });
         const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
         const errors = [];
         page.on('pageerror', error => errors.push(error.message));
-        await page.goto(`http://127.0.0.1:${server.address().port}`);
+        await page.goto(`http://127.0.0.1:${server.address().port}/church-history/`);
         await page.locator('[data-id="family:Presbyterian"]').waitFor();
         await noOverlap(page);
         await page.screenshot({ path: path.join(output, 'review-overview.png') });
@@ -155,11 +142,12 @@ async function noOverlap(page, selector = '.node') {
         await page.locator('#year-to').fill('2000');
         await page.getByRole('button',{name:'Apply',exact:true}).click();
         assert.equal(await page.locator('#period-error').innerText(),'');
-        const verticalBefore = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot().scale);
-        await page.mouse.move(horizontalBox.x + horizontalBox.width * .65, horizontalBox.y + horizontalBox.height * .6);
+        const verticalBefore = await page.evaluate(() => {const d=CHURCHTREE_TIMELINE.snapshot().domain;return d[1]-d[0];});
+        const verticalBox=await page.locator('#graph').boundingBox();
+        await page.mouse.move(verticalBox.x+verticalBox.width*.65,verticalBox.y+verticalBox.height*.6);
         await page.mouse.wheel(0, -300);
         await page.waitForTimeout(300);
-        assert((await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot())).scale > verticalBefore);
+        await page.waitForFunction(span=>{const d=CHURCHTREE_TIMELINE.snapshot().domain;return d[1]-d[0]<span*.99;},verticalBefore);
         await page.locator('#branch').selectOption('');
         await noOverlap(page);
         await setView(page,'lineage');
@@ -182,6 +170,13 @@ async function noOverlap(page, selector = '.node') {
         await page.locator('#branch').selectOption('Catholic');
         assert(await page.getByRole('button',{name:'Roman Catholic Church',exact:true}).count() || await page.getByRole('button',{name:'Catholic Church',exact:true}).count());
         assert(await page.getByRole('button',{name:'Zoom in',exact:true}).isDisabled());
+        for(const width of [1100,1440]){
+            await page.setViewportSize({width,height:800});await page.waitForTimeout(180);
+            assert(await page.locator('#splitter').isVisible(),'Desktop split view must remain available');
+            assert(!await page.locator('#mobile-open-details').isVisible());
+            assert.equal(await page.locator('#details').evaluate(el=>el.parentElement.tagName),'MAIN');
+            assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+        }
         assert.deepEqual(errors, []);
         console.log(JSON.stringify({ passed: true, families: families.length, clustered: initial.clusters.length, zoomed: zoomed.clusters.length, collapsed: collapsed.clusters.length, browserErrors: errors }));
     }

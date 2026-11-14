@@ -114,6 +114,7 @@
             layout = 'lineage';
             level = 2;
             render();
+            if(detailsDialog.open)detailsDialog.close();
         };
         relationships.forEach(e => {
             const b = document.createElement('button');
@@ -155,6 +156,7 @@
     function groupDetails(n) {
         $('details').innerHTML = `<span class="badge">Collapsed historical group</span><h2>${esc(n.name)}</h2><p>This is a display group containing ${n.members.length} recorded entries, rather than a separate denomination. Expand it to inspect the individual histories.</p><button id="expand-group">Expand group</button><h3>Included entries</h3><div id="group-members"></div>`;
         $('expand-group').onclick = () => {
+            if(detailsDialog.open)detailsDialog.close();
             level = 2;
             render();
             document.querySelector(`[data-id="${CSS.escape(n.members[0])}"]`)?.scrollIntoView({ block: 'center', inline: 'center' });
@@ -171,7 +173,28 @@
         const title = family || 'Church history';
         $('details').innerHTML = '<span class="badge">Explore this scope</span><h2>' + esc(title) + '</h2><p>Select a historical body to read its beliefs, formation, people and documents. Select a connection to understand the transition.</p><p>Compact lineage groups related records. The proportional timeline clusters nearby dates as you zoom out.</p>';
     }
+    const mobile = matchMedia('(max-width: 1099px)');
+    const detailsPanel=$('details'),detailsDialog=$('mobile-details');
+    function syncDetailLayout(){
+        if(mobile.matches)$('mobile-details-body').append(detailsPanel);
+        else {if(detailsDialog.open)detailsDialog.close();document.querySelector('main').append(detailsPanel);}
+    }
+    function openMobileDetails(){if(mobile.matches&&!detailsDialog.open)detailsDialog.showModal();}
+    $('mobile-open-details').onclick=openMobileDetails;
+    $('mobile-close-details').onclick=()=>detailsDialog.close();
+    detailsDialog.addEventListener('close',()=>{if(mobile.matches)$('mobile-open-details').focus({preventScroll:true});});
+    new MutationObserver(()=>{
+        const badge=detailsPanel.querySelector('.badge')?.textContent;
+        if(badge!=='Explore this scope')openMobileDetails();
+    }).observe(detailsPanel,{childList:true});
+    $('mobile-range-toggle').onclick=()=>{const expanded=document.body.classList.toggle('mobile-dates-open');$('mobile-range-toggle').setAttribute('aria-expanded',String(expanded));};
+    $('time-earlier').onclick=()=>timelineControl?.pan?.(-.65);
+    $('time-later').onclick=()=>timelineControl?.pan?.(.65);
+    syncDetailLayout();
+    mobile.addEventListener('change',()=>{syncDetailLayout();render();});
     function render() {
+        $('mobile-range-toggle').hidden=layout==='lineage';
+        $('mobile-pan').hidden=layout==='lineage';
         $('branch').value = family;
         $('layout').value = layout==='lineage'?'lineage':'timeline';
         $('orientation').hidden=layout==='lineage';
@@ -223,6 +246,8 @@
                     });
                 } });
             if(!timelineControl){$('zoom-in').disabled=true;$('zoom-out').disabled=true;$('period').hidden=true;$('level').textContent='Origin context';$('count').textContent=scoped.length+' entries in scope';}
+            $('mobile-pan').hidden=!timelineControl;
+            if(mobile.matches)$('scope-note').textContent=layout==='horizontal'?'Swipe sideways to explore time. Use +/− to zoom; tap a node for its history.':'Swipe sideways to explore branches. Use +/− to zoom and Earlier/Later to move through time.';
             window.CHURCHTREE_TIMELINE = timelineControl;
             return;
         }
@@ -334,7 +359,7 @@
         const actualWidth = level === 0 ? width : Math.max(width, right + lanes.length * 16 + 25);
         height = Math.max(height, graph.clientHeight - 20);
         const svg = d3.select(graph).append('svg').attr('width', actualWidth).attr('height', height).attr('aria-label', level === 0 ? 'Connected major traditions' : 'Historical lineage graph');
-        svg.append('defs').append('marker').attr('id', 'arrow').attr('viewBox', '0 -4 8 8').attr('refX', 7).attr('refY', 0).attr('markerWidth', 6).attr('markerHeight', 6).attr('orient', 'auto').append('path').attr('d', 'M0,-3L7,0L0,3Z').attr('fill', '#7a8c80');
+        svg.append('defs').append('marker').attr('id', 'arrow').attr('viewBox', '0 -4 8 8').attr('refX', 7).attr('refY', 0).attr('markerWidth', 6).attr('markerHeight', 6).attr('orient', 'auto').append('path').attr('d', 'M0,-3L7,0L0,3Z').attr('fill', 'var(--ct-arrow)');
         const showConnection = e => {
             if (e.originals.length === 1 && !e.context) {
                 showEdge(e.originals[0]);

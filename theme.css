@@ -1,0 +1,99 @@
+/* Shared semantic colors; contract: docs/design-language.md */
+:root {
+  color-scheme: light;
+  --ct-text: #253b36;
+  --ct-page: #f4f3ed;
+  --ct-surface: #fffdf7;
+  --ct-border: #d6ded4;
+  --ct-text-secondary: #58665e;
+  --ct-text-muted: #69796b;
+  --ct-border-control: #bdcabe;
+  --ct-hover: #e5eedf;
+  --ct-focus: #bd713e;
+  --ct-shadow: #0003;
+  --ct-node-border: #8d9f88;
+  --ct-node-selected: #e6efdf;
+  --ct-accent: #315b43;
+  --ct-link: #295b71;
+  --ct-relationship: #457b95;
+  --ct-relationship-split: #826296;
+  --ct-grid: #e4e7dd;
+  --ct-splitter: #dfe5da;
+  --ct-splitter-hover: #94a98c;
+  --ct-lane: #eef0e8;
+  --ct-group: #e8efdf;
+  --ct-group-border: #7b9271;
+  --ct-relationship-mixed: #707b6b;
+  --ct-error: #9b3e2b;
+  --ct-backdrop: #172b2480;
+  --ct-arrow: #7a8c80;
+  --ct-axis: #cbd5c6;
+  --ct-on-accent: #fffdf7;
+}
+:root[data-theme="slate"] {
+  color-scheme: light;
+  --ct-text: #243447;
+  --ct-page: #edf1f5;
+  --ct-surface: #fcfdff;
+  --ct-border: #ccd5e0;
+  --ct-text-secondary: #4e6075;
+  --ct-text-muted: #596a80;
+  --ct-border-control: #aab9cb;
+  --ct-hover: #e4edf7;
+  --ct-focus: #a04b18;
+  --ct-shadow: #0003;
+  --ct-node-border: #8096af;
+  --ct-node-selected: #dceaf9;
+  --ct-accent: #284f7a;
+  --ct-link: #245f92;
+  --ct-relationship: #3476a0;
+  --ct-relationship-split: #8560a6;
+  --ct-grid: #dce3ec;
+  --ct-splitter: #d8e1eb;
+  --ct-splitter-hover: #879db5;
+  --ct-lane: #e6ecf3;
+  --ct-group: #e2ebf6;
+  --ct-group-border: #7890ad;
+  --ct-relationship-mixed: #66798c;
+  --ct-error: #a33330;
+  --ct-backdrop: #14243e80;
+  --ct-arrow: #647e9d;
+  --ct-axis: #bdcadb;
+  --ct-on-accent: #ffffff;
+}
+:root[data-theme="ink"] {
+  color-scheme: dark;
+  --ct-text: #e8edf4;
+  --ct-page: #17212e;
+  --ct-surface: #202d3d;
+  --ct-border: #415165;
+  --ct-text-secondary: #becbd9;
+  --ct-text-muted: #acbdcf;
+  --ct-border-control: #657990;
+  --ct-hover: #30445b;
+  --ct-focus: #f4ba78;
+  --ct-shadow: #0006;
+  --ct-node-border: #8197af;
+  --ct-node-selected: #344d68;
+  --ct-accent: #a4c8ed;
+  --ct-link: #99cdf3;
+  --ct-relationship: #7db8e3;
+  --ct-relationship-split: #cba7ec;
+  --ct-grid: #344458;
+  --ct-splitter: #35465a;
+  --ct-splitter-hover: #7893b1;
+  --ct-lane: #1c2939;
+  --ct-group: #293c51;
+  --ct-group-border: #7c98b6;
+  --ct-relationship-mixed: #aab9c9;
+  --ct-error: #ffb3a5;
+  --ct-backdrop: #070d16b3;
+  --ct-arrow: #93abc5;
+  --ct-axis: #52667e;
+  --ct-on-accent: #17212e;
+}
+
+/* Fixed palette previews are independent of the active page theme. */
+.theme-option[data-theme="parchment"] { --s1: #fffdf7; --s2: #315b43; --s3: #457b95; --s4: #826296; }
+.theme-option[data-theme="slate"] { --s1: #fcfdff; --s2: #284f7a; --s3: #3476a0; --s4: #8560a6; }
+.theme-option[data-theme="ink"] { --s1: #202d3d; --s2: #a4c8ed; --s3: #7db8e3; --s4: #cba7ec; }

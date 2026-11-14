@@ -1,0 +1,45 @@
+name: Merge passing trusted PRs
+on:
+  workflow_run:
+    workflows: [Site checks and deployment]
+    types: [completed]
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+concurrency:
+  group: automatic-pr-merge
+  cancel-in-progress: false
+jobs:
+  merge:
+    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'pull_request' && vars.MAIN_BRANCH_AUTOMERGE != 'false'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      # No checkout and no execution of PR-supplied code in this privileged workflow.
+      - uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          script: |
+            const run = context.payload.workflow_run;
+            if (run.head_repository?.full_name !== `${context.repo.owner}/${context.repo.repo}`) return;
+            const {data: prs} = await github.rest.pulls.list({
+              ...context.repo, state: 'open', base: 'main',
+              head: `${context.repo.owner}:${run.head_branch}`
+            });
+            for (const candidate of prs) {
+              const {data: pr} = await github.rest.pulls.get({...context.repo, pull_number: candidate.number});
+              const trusted = ['OWNER','MEMBER','COLLABORATOR'].includes(pr.author_association) || pr.user.login === 'dependabot[bot]';
+              if (!trusted || pr.draft || pr.head.sha !== run.head_sha || pr.head.repo?.full_name !== run.head_repository.full_name) continue;
+              try {
+                const {data: merged} = await github.rest.pulls.merge({
+                  ...context.repo, pull_number: pr.number, sha: run.head_sha, merge_method: 'squash'
+                });
+                if (!merged.merged) continue;
+                // GITHUB_TOKEN merges do not emit another push workflow run.
+                await github.rest.actions.createWorkflowDispatch({...context.repo, workflow_id: 'site.yml', ref: 'main'});
+                core.info(`Merged PR #${pr.number}; dispatched main validation and deployment.`);
+              } catch (error) {
+                if ([405,409].includes(error.status)) core.notice(`PR #${pr.number} is not currently mergeable; branch rules remain enforced.`);
+                else throw error;
+              }
+            }

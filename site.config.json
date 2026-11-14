@@ -1,0 +1,52 @@
+{
+  "domain": "main-branch.com",
+  "publicDirectories": [
+    "church-history",
+    "westminster",
+    "assets"
+  ],
+  "publicExtensions": [
+    ".html",
+    ".css",
+    ".js",
+    ".json",
+    ".txt",
+    ".svg",
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".webp",
+    ".ico",
+    ".woff",
+    ".woff2",
+    ".webmanifest"
+  ],
+  "pages": [
+    {
+      "id": "church-history",
+      "title": "Church History",
+      "path": "church-history/",
+      "kind": "Interactive atlas",
+      "description": "Trace the people, churches, splits and reunions that shaped Christian traditions. Move between a branching map and timelines, then open the histories behind them.",
+      "tags": [
+        "Branching maps",
+        "Timelines",
+        "Sourced histories"
+      ],
+      "action": "Explore church history"
+    },
+    {
+      "id": "westminster",
+      "title": "The Westminster Confession",
+      "path": "westminster/",
+      "kind": "Primary-source reader",
+      "description": "Read a foundational Reformed confession, one chapter and section at a time. A quiet reading space with clear navigation, lasting links and a documented historical edition.",
+      "tags": [
+        "33 chapters",
+        "172 sections",
+        "Historical text"
+      ],
+      "action": "Read the confession"
+    }
+  ]
+}
