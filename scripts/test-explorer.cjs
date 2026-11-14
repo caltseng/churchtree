@@ -12,11 +12,11 @@ async function setView(page,value){
     if(value!=='lineage')await page.getByRole('button',{name:value==='horizontal'?'Horizontal':'Vertical',exact:true}).click();
 }
 async function noOverlap(page, selector = '.node') {
-    const boxes = await page.locator(selector).evaluateAll(items => items.map(item => item.getBoundingClientRect().toJSON()));
+    const boxes = await page.locator(selector).evaluateAll(items => items.map(item => ({...item.getBoundingClientRect().toJSON(),record:item.getAttribute('data-members')||item.getAttribute('data-id')})));
     for (let i = 0; i < boxes.length; i++)
         for (let j = i + 1; j < boxes.length; j++) {
             const a = boxes[i], b = boxes[j];
-            assert(!(a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top), `Overlapping nodes ${i}, ${j}`);
+            assert(!(a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top), `Overlapping nodes ${JSON.stringify(a)}, ${JSON.stringify(b)}`);
         }
 }
 (async () => {

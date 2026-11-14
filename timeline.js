@@ -102,6 +102,11 @@ window.renderChurchTimeline = function ({ container, entries, edges, roots, onNo
             text.attr('y', shown.length > 1 ? -10 : -3);
             shown.forEach((part, i) => text.append('tspan').attr('x', 0).attr('dy', i ? 12 : 0).text(part));
         });
+        // Measure rendered glyphs: system fonts differ between Windows and Linux.
+        joined.selectAll('.time-label tspan').each(function(){
+            const full=this.textContent;let length=full.length;
+            while(this.getComputedTextLength()>boxWidth-12&&length>1){length--;this.textContent=full.slice(0,length).replace(/…$/,'')+'…';}
+        });
         joined.select('.date').attr('x', 0).attr('y', 14).attr('text-anchor', 'middle').text(c => (c.min === c.max ? c.min : `${c.min}–${c.max}`));
         joined.select('title').text(c => clusterTitle(c) + '\n' + c.members.map(n => `${n.name} (${n.start_year})`).join('\n'));
     }
