@@ -54,7 +54,9 @@ module.exports=async function testStudy({browser,baseURL,root,repoRoot}) {
   await page.waitForFunction(()=>document.querySelector('#study-31>summary')===document.activeElement);
   assert.equal(await page.locator('#study-31>summary').evaluate(el=>el===document.activeElement),true);
   assert.equal(await page.locator('#study-31>summary').evaluate(el=>el.tabIndex),0,'Deep-linked summary remains in the Tab order');
-  await page.locator('#study-31 .study-disclaimer a').click();assert(await page.locator('#study-method[open]').isVisible());
+  await page.locator('#study-31 .study-disclaimer a').click();
+  await page.locator('#study-method[open]').waitFor({state:'visible'});
+  assert(await page.locator('#study-method[open]').isVisible());
   assert.match(await page.locator('#study-method').innerText(),/No individual presbytery grants/);
   await page.goto(readerURL+'#note-29-presence');
   await page.screenshot({path:path.join(repoRoot,`.tmp/browser-check/westminster-study-body-${size.width}.png`)});
