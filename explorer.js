@@ -359,7 +359,7 @@
                 $('connection-list').append(b);
             });
         };
-        svg.append('g').selectAll('path').data(edges).join('path').attr('class', e => `link ${e.type}`).attr('tabindex', 0).attr('role', 'button').attr('aria-label', e => `${entries.find(n => n.id === e.from_id).name} to ${entries.find(n => n.id === e.to_id).name}, ${e.originals.length} relationships`).attr('marker-end', 'url(#arrow)').attr('stroke-dasharray', e => e.context ? '5 4' : null).attr('d', e => {
+        svg.append('g').selectAll('path').data(edges).join('path').attr('class', e => `link ${new Set(e.originals.map(x=>x.type)).size>1?'mixed':e.type}`).attr('tabindex', 0).attr('role', 'button').attr('aria-label', e => `${entries.find(n => n.id === e.from_id).name} to ${entries.find(n => n.id === e.to_id).name}, ${e.originals.length} relationships`).attr('marker-end', 'url(#arrow)').attr('stroke-dasharray', e => e.context ? '5 4' : null).attr('d', e => {
             const a = positions.get(e.from_id), b = positions.get(e.to_id);
             if (a.y === b.y) {
                 const yy = a.y - 17 - (e.lane % 3) * 6;

@@ -463,3 +463,7 @@ aside p,aside li {
 .horizontal-axis text {
   font: 11px system-ui;
 }
+
+.link.mixed { stroke: #707b6b; stroke-dasharray: 4 3; }
+#period-error { color: #9b3e2b; font: 12px system-ui; }
+.node:focus-visible rect { stroke: #bd713e; stroke-width: 3; }

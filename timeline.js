@@ -45,7 +45,7 @@ window.renderChurchTimeline = function ({ container, entries, edges, roots, onNo
         const clusters = window.ChurchTimelineModel.cluster(dated, y, 54).map(c => ({ ...c, x: margin.left + families.indexOf(c.family) * laneWidth + laneWidth / 2, y: c.position }));
         currentClusters = clusters;
         const combined = window.ChurchTimelineModel.connections(clusters, edges);
-        links.selectAll('path').data(combined, e => e.a.id + '>' + e.b.id).join('path').attr('class', e => 'link ' + (e.edges.every(x => x.type === 'split') ? 'split' : '')).attr('marker-end', 'url(#time-arrow)').attr('d', e => {
+        links.selectAll('path').data(combined, e => e.a.id + '>' + e.b.id).join('path').attr('class', e => 'link ' + (new Set(e.edges.map(x=>x.type)).size>1?'mixed':e.edges[0].type)).attr('marker-end', 'url(#time-arrow)').attr('d', e => {
             const a = e.a, b = e.b;
             if (Math.abs(a.x - b.x) < 1) {
                 const side = a.x + Math.min(42, laneWidth * .35);

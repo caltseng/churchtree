@@ -69,7 +69,7 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, roots, 
         grid.selectAll('line').data(families).join('line').attr('x1', left).attr('x2', currentWidth - right).attr('y1', (_, i) => top + i * lane).attr('y2', (_, i) => top + i * lane).attr('stroke', '#e2e7dc');
         clusters = window.ChurchTimelineModel.cluster(dated, scale, 225).map(c => ({ ...c, x: c.position, y: top + families.indexOf(c.family) * lane }));
         const combined = window.ChurchTimelineModel.connections(clusters, edges);
-        links.selectAll('path').data(combined, e => e.a.id + '>' + e.b.id).join('path').attr('class', e => 'link ' + (e.edges.every(x => x.type === 'split') ? 'split' : '')).attr('marker-end', 'url(#horizontal-arrow)').attr('d', e => {
+        links.selectAll('path').data(combined, e => e.a.id + '>' + e.b.id).join('path').attr('class', e => 'link ' + (new Set(e.edges.map(x=>x.type)).size>1?'mixed':e.edges[0].type)).attr('marker-end', 'url(#horizontal-arrow)').attr('d', e => {
             const a = e.a, b = e.b;
             if (a.y === b.y) {
                 const bend = a.y + 44;
