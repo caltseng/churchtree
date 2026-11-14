@@ -76,3 +76,39 @@ window.ChurchTimelineModel.originOnly = function(container, roots, onNode) {
   for(const root of roots){const button=document.createElement('button');button.className='context';button.textContent=root.name;button.onclick=()=>onNode(root.id);panel.append(button);}
   container.append(panel);
 };
+// Own gestures only inside the interactive viewport. Rebase on every finger
+// transition so adding/removing a finger never jumps the time scale.
+window.ChurchTimelineModel.touch = function(element, {pan, pinch}) {
+  const oldAction=element.style.touchAction;
+  element.style.touchAction='none';
+  let previous=null, moved=false, suppressUntil=0, origin=null;
+  function points(event) {
+    const box=element.getBoundingClientRect(), touches=Array.from(event.touches).slice(0,2);
+    if(!touches.length)return null;
+    return {count:touches.length,x:touches.reduce((s,t)=>s+t.clientX-box.left,0)/touches.length,y:touches.reduce((s,t)=>s+t.clientY-box.top,0)/touches.length,d:touches.length===2?Math.hypot(touches[1].clientX-touches[0].clientX,touches[1].clientY-touches[0].clientY):0};
+  }
+  function start(event) {
+    if(!previous){moved=false;origin=points(event);suppressUntil=0;}
+    previous=points(event);
+    if(previous?.count===2){moved=true;event.preventDefault();}
+  }
+  function move(event) {
+    const next=points(event);
+    if(!next||!previous)return;
+    if(next.count===previous.count){
+      if(next.count===2){event.preventDefault();moved=true;pinch(next.d/Math.max(1,previous.d),previous,next);}
+      else if(moved||Math.hypot(next.x-origin.x,next.y-origin.y)>5){event.preventDefault();moved=true;pan(next.x-previous.x,next.y-previous.y);}
+    }
+    previous=next;
+  }
+  function end(event) {
+    if(moved){event.preventDefault();suppressUntil=Date.now()+500;}
+    previous=event.type==='touchcancel'?null:points(event);
+    if(previous)origin=previous;
+  }
+  function click(event){if(Date.now()<suppressUntil){event.preventDefault();event.stopImmediatePropagation();}}
+  const handlers={touchstart:start,touchmove:move,touchend:end,touchcancel:end};
+  for(const [type,handler] of Object.entries(handlers))element.addEventListener(type,handler,{passive:false});
+  element.addEventListener('click',click,true);
+  return ()=>{for(const [type,handler] of Object.entries(handlers))element.removeEventListener(type,handler);element.removeEventListener('click',click,true);element.style.touchAction=oldAction;};
+};
