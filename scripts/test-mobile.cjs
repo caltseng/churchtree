@@ -13,6 +13,43 @@ const server=require('./test-server.cjs')(root);
   await page.locator('#branch').selectOption('Presbyterian');
   assert.equal(await page.getByRole('button',{name:'Vertical',exact:true}).getAttribute('aria-pressed'),'true');
   await page.waitForTimeout(250);
+  if(size.width===390){
+   const client=await context.newCDPSession(page);
+   async function gesture(points,endPoints){
+    await client.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:points});
+    for(let i=1;i<=12;i++){
+     await client.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:points.map((p,j)=>({id:j,x:p.x+(endPoints[j].x-p.x)*i/12,y:p.y+(endPoints[j].y-p.y)*i/12}))});
+     await page.waitForTimeout(16);
+    }
+    await client.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(80);
+   }
+   for(const orientation of ['Vertical','Horizontal'])for(const branch of ['Presbyterian','']){
+    await page.locator('#branch').selectOption(branch);
+    await page.getByRole('button',{name:orientation,exact:true}).tap();
+    await page.locator('#graph').scrollIntoViewIfNeeded();await page.waitForTimeout(300);
+    const box=await page.locator('#graph').boundingBox(),x=box.x+box.width*.58,y=box.y+Math.min(box.height*.6,180);
+    const a=[{id:0,x:x-25,y:y-25},{id:1,x:x+25,y:y+25}],b=[{id:0,x:x-55,y:y-55},{id:1,x:x+55,y:y+55}];
+    const initial=await page.evaluate(()=>({s:CHURCHTREE_TIMELINE.snapshot(),v:visualViewport.scale}));
+    await gesture(a,b);
+    const zoomed=await page.evaluate(()=>({s:CHURCHTREE_TIMELINE.snapshot(),v:visualViewport.scale}));
+    assert(zoomed.s.scale>initial.s.scale*1.6,orientation+' real pinch must zoom timeline');
+    assert.equal(zoomed.v,initial.v,'Pinch inside timeline must not zoom webpage');
+    assert(zoomed.s.domain[1]-zoomed.s.domain[0]<initial.s.domain[1]-initial.s.domain[0]);
+    // Removing one finger rebases at the remaining contact; cancellation clears it.
+    await client.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:b});
+    await client.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[b[0]]});
+    const transition=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot());
+    assert(Math.abs(transition.scale-zoomed.s.scale)<.001,'Finger transition must not jump scale');
+    await client.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});
+    await gesture(b,a);
+    const reversed=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot());assert(reversed.scale<zoomed.s.scale*.7,'Reverse pinch must zoom out');
+    assert(!await page.getByRole('dialog',{name:'Historical details'}).isVisible(),'Pinch must not activate a node');
+    const domain=reversed.domain;
+    await gesture([{id:0,x,y}],[{id:0,x:x-65,y:y-65}]);
+    const panned=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain);assert(Math.max(...panned.map((v,i)=>Math.abs(v-domain[i])))>.1,orientation+' '+branch+' One-finger drag must pan time '+JSON.stringify({domain,panned}));
+   }
+   await page.locator('#branch').selectOption('Presbyterian');await page.getByRole('button',{name:'Vertical',exact:true}).tap();
+  }
   const start=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot());
   await page.getByRole('button',{name:'Zoom in',exact:true}).tap();await page.waitForTimeout(350);
   const afterZoom=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot());assert(afterZoom.domain[1]-afterZoom.domain[0]<start.domain[1]-start.domain[0],'Touch zoom must narrow the visible date range');
