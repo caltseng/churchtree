@@ -20,7 +20,7 @@ window.renderChurchTimeline = function ({ container, entries, edges, roots, onNo
     const svg = d3.select(container).append('svg').attr('width', width).attr('height', height).attr('aria-label', 'Proportional timeline; mouse wheel zooms time and drag pans');
     const defs = svg.append('defs');
     defs.append('clipPath').attr('id', 'timeline-clip').append('rect').attr('x', margin.left).attr('y', margin.top - 10).attr('width', width - margin.left).attr('height', height - margin.top - margin.bottom + 20);
-    defs.append('marker').attr('id', 'time-arrow').attr('viewBox', '0 -4 8 8').attr('refX', 7).attr('markerWidth', 5).attr('markerHeight', 5).attr('orient', 'auto').append('path').attr('d', 'M0,-3L7,0L0,3Z').attr('fill', '#829c8c');
+    defs.append('marker').attr('id', 'time-arrow').attr('viewBox', '0 -4 8 8').attr('refX', 7).attr('markerWidth', 5).attr('markerHeight', 5).attr('orient', 'auto').append('path').attr('d', 'M0,-3L7,0L0,3Z').attr('fill', 'var(--ct-arrow)');
     const axis = svg.append('g').attr('class', 'time-axis').attr('transform', `translate(${margin.left - 8},0)`), plot = svg.append('g').attr('clip-path', 'url(#timeline-clip)'), links = plot.append('g'), cards = plot.append('g');
     svg.append('text').attr('x', 14).attr('y', 16).attr('class', 'mode-note').text('True time scale · wheel to zoom · drag to pan · select a cluster to expand');
     const rootGroup = svg.append('g');
@@ -42,8 +42,8 @@ window.renderChurchTimeline = function ({ container, entries, edges, roots, onNo
         const y = t.rescaleY(scale), domain = y.domain();
         onRange?.(domain);
         axis.call(d3.axisLeft(y).ticks(Math.max(4, Math.floor((height - margin.top) / 65))).tickFormat(d3.format('d')).tickSize(-(width - margin.left - margin.right)));
-        axis.selectAll('.tick line').attr('stroke', '#e0e5da');
-        axis.selectAll('.tick text').attr('fill', '#697568');
+        axis.selectAll('.tick line').attr('stroke', 'var(--ct-grid)');
+        axis.selectAll('.tick text').attr('fill', 'var(--ct-text-muted)');
         axis.select('.domain').remove();
         const clusters = window.ChurchTimelineModel.cluster(dated,y,54,scopedBranch?n=>branchLayout.positions.get(n.id):family).map(c=>({...c,x:scopedBranch?margin.left+branchSpacing/2+(branchLayout.positions.get(c.members[0].id)||0)*branchSpacing:margin.left+families.indexOf(c.family)*laneWidth+laneWidth/2,y:c.position}));
         currentClusters = clusters;
@@ -107,12 +107,13 @@ window.renderChurchTimeline = function ({ container, entries, edges, roots, onNo
     }
     const zoom = d3.zoom().scaleExtent([.6, 100]).filter(e => !e.button && (!e.target.closest('.node') || e.type === 'wheel')).on('zoom', event => draw(event.transform));
     svg.call(zoom).on('dblclick.zoom', null);
+    if(matchMedia('(max-width:1099px)').matches){svg.on('touchstart.zoom touchmove.zoom touchend.zoom touchcancel.zoom',null).style('touch-action','pan-x pan-y pinch-zoom');}
     function fit(domain) {
         const k = (extent[1] - extent[0]) / (domain[1] - domain[0]), bounded = Math.max(.6, Math.min(100, k)), target = d3.zoomIdentity.translate(0, margin.top - bounded * scale(domain[0])).scale(bounded);
         svg.transition().duration(300).call(zoom.transform, target);
     }
     draw(d3.zoomIdentity);
-    return { destroy: () => { svg.interrupt(); svg.on('.zoom', null); }, reveal: id => {
+    return { pan: fraction => svg.transition().duration(250).call(zoom.translateBy,0,-fraction*(height-margin.top-margin.bottom)/transform.k), destroy: () => { svg.interrupt(); svg.on('.zoom', null); }, reveal: id => {
             const n = dated.find(n => n.id === id);
             if (!n)
                 return;

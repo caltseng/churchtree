@@ -1,0 +1,46 @@
+const fs = require('fs');
+const path = require('path');
+const repo = path.resolve(__dirname, '..');
+const output = path.join(repo, 'dist');
+const readJSON = file => JSON.parse(fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, ''));
+const {spawnSync}=require('child_process');
+for(const script of ['scripts/build-home.cjs','westminster/build.cjs'])if(fs.existsSync(path.join(repo,script))){const result=spawnSync(process.execPath,[path.join(repo,script)],{stdio:'inherit'});if(result.status!==0)throw new Error('Page build failed: '+script);}
+const config = readJSON(path.join(repo, 'site.config.json'));
+// Delete only this build's fixed output directory; refuse a redirected target.
+if (path.dirname(output) !== repo || path.basename(output) !== 'dist' || (fs.existsSync(output) && fs.lstatSync(output).isSymbolicLink())) throw new Error('Unsafe build output directory');
+fs.rmSync(output, { recursive: true, force: true });
+fs.mkdirSync(path.join(output, 'data'), { recursive: true });
+const data = { nodes: [], edges: [], events: [], sources: [], citations: [] };
+for (const type of ['sources', 'citations']) data[type].push(...readJSON(path.join(repo, 'data/common', type + '.json')));
+for (const set of fs.readdirSync(path.join(repo, 'data/sets')).sort()) {
+  const folder = path.join(repo, 'data/sets', set);
+  if (!fs.statSync(folder).isDirectory()) continue;
+  for (const type of Object.keys(data)) {
+    const file = path.join(folder, type + '.json');
+    if (!fs.existsSync(file)) { if (['nodes', 'edges'].includes(type)) throw new Error('Missing ' + file); continue; }
+    const rows = readJSON(file);
+    if (!Array.isArray(rows)) throw new Error('Expected an array in ' + file);
+    data[type].push(...rows);
+  }
+}
+const bundle = '// Generated from local JSON sources. Do not edit by hand.\nwindow.CHURCHTREE_DATA = ' + JSON.stringify(data, null, 2) + ';\n';
+fs.writeFileSync(path.join(output, 'data/data.js'), bundle);
+const allowed = new Set(config.publicExtensions);
+function copyPublic(source, destination) {
+  const stat = fs.lstatSync(source);
+  if (stat.isSymbolicLink()) throw new Error('Symlinks cannot be published: ' + source);
+  if (stat.isDirectory()) {
+    for (const child of fs.readdirSync(source).sort()) copyPublic(path.join(source, child), path.join(destination, child));
+  } else if (allowed.has(path.extname(source))) {
+    fs.mkdirSync(path.dirname(destination), { recursive: true });
+    fs.copyFileSync(source, destination);
+  }
+}
+for (const name of fs.readdirSync(repo).sort()) if (fs.statSync(path.join(repo, name)).isFile() && ['.html', '.css', '.js', '.svg', '.png', '.ico', '.webmanifest'].includes(path.extname(name))) copyPublic(path.join(repo, name), path.join(output, name));
+for (const name of config.publicDirectories) {
+  if (!name || name.startsWith('.') || path.resolve(repo, name) !== path.join(repo, name) || name.includes('..')) throw new Error('Invalid public directory: ' + name);
+  if (fs.existsSync(path.join(repo, name))) copyPublic(path.join(repo, name), path.join(output, name));
+}
+fs.writeFileSync(path.join(output, 'CNAME'), config.domain + '\n');
+fs.writeFileSync(path.join(output, '.nojekyll'), '');
+console.log(`Built dist/: ${data.nodes.length} nodes; website assets only.`);

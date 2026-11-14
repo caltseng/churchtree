@@ -7,7 +7,8 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, roots, 
         return null;
     }
     const branchLayout=window.ChurchTimelineModel.branchLanes(dated,edges),scopedBranch=new Set(dated.map(family)).size===1;
-    const families = [...new Set(dated.map(family))].sort(), left = 270, right = 120, top = 155, lane = 100;
+    const mobile=matchMedia('(max-width:1099px)').matches,rail=mobile?96:155;
+    const families = [...new Set(dated.map(family))].sort(), left = mobile?198:270, right = mobile?102:120, top = 155, lane = 100;
     const years = dated.map(n => n.start_year), extent = period || [Math.min(...years) - 10, Math.max(...years) + 10];
     const viewWidth = container.clientWidth, height = Math.max(container.clientHeight - 20, top + (scopedBranch?branchLayout.count:families.length) * lane + 40), base = Math.max(280, viewWidth - left - right);
     const stateKey = dated.map(n => n.id).sort().join('|') + ':' + extent.join(',');
@@ -18,8 +19,8 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, roots, 
     container.append(scene);
     const svg = d3.select(scene).append('svg').attr('height', height).attr('aria-label', 'Horizontal proportional timeline; scroll sideways and use zoom controls');
     const defs = svg.append('defs');
-    defs.append('marker').attr('id', 'horizontal-arrow').attr('viewBox', '0 -4 8 8').attr('refX', 7).attr('markerWidth', 5).attr('markerHeight', 5).attr('orient', 'auto').append('path').attr('d', 'M0,-3L7,0L0,3Z').attr('fill', '#819783');
-    const axisBackground = svg.append('rect').attr('x',155).attr('width','100%').attr('height',37).attr('fill','#fffdf7');
+    defs.append('marker').attr('id', 'horizontal-arrow').attr('viewBox', '0 -4 8 8').attr('refX', 7).attr('markerWidth', 5).attr('markerHeight', 5).attr('orient', 'auto').append('path').attr('d', 'M0,-3L7,0L0,3Z').attr('fill', 'var(--ct-arrow)');
+    const axisBackground = svg.append('rect').attr('x',rail).attr('width','100%').attr('height',37).attr('fill','var(--ct-surface)');
     const axis = svg.append('g').attr('class', 'horizontal-axis').attr('transform', 'translate(0,110)'), grid = svg.append('g'), links = svg.append('g'), cards = svg.append('g');
     const labels = document.createElement('div');
     labels.className = 'horizontal-lanes';
@@ -50,7 +51,7 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, roots, 
         labels.append(label);
     });
     function domain() {
-        return [scale.invert(Math.max(left, container.scrollLeft + 155)), scale.invert(Math.min(currentWidth - right, container.scrollLeft + container.clientWidth))];
+        return [scale.invert(Math.max(left, container.scrollLeft + rail)), scale.invert(Math.min(currentWidth - right, container.scrollLeft + container.clientWidth))];
     }
     function report() {
         const axisY=Math.max(110,container.scrollTop+28);
@@ -65,9 +66,9 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, roots, 
         svg.attr('width', currentWidth);
         scale = d3.scaleLinear().domain(extent).range([left, currentWidth - right]);
         axis.call(d3.axisTop(scale).ticks(Math.max(5, Math.floor(base * k / 110))).tickFormat(d3.format('d')));
-        axis.selectAll('text').attr('fill', '#697568');
-        axis.selectAll('line,.domain').attr('stroke', '#cbd5c6');
-        grid.selectAll('line').data(families).join('line').attr('x1', left).attr('x2', currentWidth - right).attr('y1', (_, i) => top + i * lane).attr('y2', (_, i) => top + i * lane).attr('stroke', '#e2e7dc');
+        axis.selectAll('text').attr('fill', 'var(--ct-text-muted)');
+        axis.selectAll('line,.domain').attr('stroke', 'var(--ct-axis)');
+        grid.selectAll('line').data(families).join('line').attr('x1', left).attr('x2', currentWidth - right).attr('y1', (_, i) => top + i * lane).attr('y2', (_, i) => top + i * lane).attr('stroke', 'var(--ct-grid)');
         clusters = window.ChurchTimelineModel.cluster(dated,scale,225,scopedBranch?n=>branchLayout.positions.get(n.id):family).map(c=>({...c,x:c.position,y:top+(scopedBranch?branchLayout.positions.get(c.members[0].id):families.indexOf(c.family))*lane}));
         const combined = window.ChurchTimelineModel.connections(clusters, edges);
         links.selectAll('path').data(combined, e => e.a.id + '>' + e.b.id).join('path').attr('class', e => 'link ' + (new Set(e.edges.map(x=>x.type)).size>1?'mixed':e.edges[0].type)).attr('marker-end', 'url(#horizontal-arrow)').attr('d', e => {
@@ -162,14 +163,14 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, roots, 
         container.scrollLeft = saved.scrollLeft;
         report();
     }
-    return { step: zoom, reveal: id => {
+    return { pan:fraction=>{container.scrollLeft+=fraction*container.clientWidth;report();}, step: zoom, reveal: id => {
             const n = dated.find(n => n.id === id);
             if (!n)
                 return;
             highlighted = id;
             const pad = Math.max(3, (extent[1] - extent[0]) / 35);
             fit([n.start_year - pad, n.start_year + pad]);
-            container.scrollTop = Math.max(0, top + families.indexOf(family(n)) * lane - container.clientHeight / 2);
+            container.scrollTop = Math.max(0, top + (scopedBranch?branchLayout.positions.get(n.id):families.indexOf(family(n))) * lane - container.clientHeight / 2);
         }, reset: () => {
             k = 1;
             draw();
