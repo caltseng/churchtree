@@ -142,11 +142,12 @@ async function noOverlap(page, selector = '.node') {
         await page.locator('#year-to').fill('2000');
         await page.getByRole('button',{name:'Apply',exact:true}).click();
         assert.equal(await page.locator('#period-error').innerText(),'');
-        const verticalBefore = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot().scale);
-        await page.mouse.move(horizontalBox.x + horizontalBox.width * .65, horizontalBox.y + horizontalBox.height * .6);
+        const verticalBefore = await page.evaluate(() => {const d=CHURCHTREE_TIMELINE.snapshot().domain;return d[1]-d[0];});
+        const verticalBox=await page.locator('#graph').boundingBox();
+        await page.mouse.move(verticalBox.x+verticalBox.width*.65,verticalBox.y+verticalBox.height*.6);
         await page.mouse.wheel(0, -300);
         await page.waitForTimeout(300);
-        assert((await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot())).scale > verticalBefore);
+        await page.waitForFunction(span=>{const d=CHURCHTREE_TIMELINE.snapshot().domain;return d[1]-d[0]<span*.99;},verticalBefore);
         await page.locator('#branch').selectOption('');
         await noOverlap(page);
         await setView(page,'lineage');
