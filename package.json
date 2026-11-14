@@ -19,6 +19,6 @@
     "serve": "node scripts/serve-site.cjs"
   },
   "devDependencies": {
-    "playwright": "1.57.0"
+    "playwright": "1.65.0"
   }
 }
