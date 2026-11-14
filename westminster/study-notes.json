@@ -1,0 +1,2059 @@
+{
+  "schemaVersion": 1,
+  "baselineEdition": "Hosted 1647 English confession in Schaff, fourth edition (1919); original section numbering",
+  "lastReviewed": "2026-11-14",
+  "editorialPolicy": "Optional editorial comparisons and reading notes. Descriptive, not denominational advice or an exhaustive commentary. Modern sources are paraphrased; the confession itself is unchanged.",
+  "researchLimits": [
+    "Source-checked editorial first release; not independently peer reviewed.",
+    "Comparisons concern named documents and editions, not every member or church in a tradition.",
+    "No comprehensive survey of modern subscription exceptions or present-day policy has been attempted. The 2024 PCA rule is a dated procedural example, not an individual grant.",
+    "Document comparisons establish what texts say; they do not prove the motives or unanimous private beliefs of the Westminster divines.",
+    "Historical polemics are described rather than endorsed."
+  ],
+  "subscriptionScope": {
+    "title": "What counts as an exception?",
+    "body": "A textual revision changes an adopted standard. A doctrinal comparison identifies different teachings. A formal subscription exception is a specific church court’s allowance under its rules. The PCA’s 2024 BCO 21-4(f–g) gives a dated example of disclosure and presbytery review; it does not prove that any disagreement listed here is allowed. No individual presbytery grants are claimed in this release.",
+    "citations": [
+      {
+        "sourceId": "pca-bco-2024",
+        "locator": "21-4(f–g)",
+        "supports": "Dated PCA examination procedure"
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "orientation": "Read this as an account of authority, interpretation and the need for revelation—not simply a list of biblical books.",
+      "entries": [
+        {
+          "id": "note-1-authority",
+          "kind": "doctrinal-comparison",
+          "title": "Scripture and tradition: the actual point of difference",
+          "sections": [
+            3,
+            6,
+            10
+          ],
+          "body": "Westminster locates the final doctrinal judge in the Spirit speaking through Scripture and rejects additions to its saving counsel. The Catholic Catechism instead describes apostolic Tradition and Scripture as a united transmission of revelation, denying that certainty about all revealed truths comes from Scripture alone. The disagreement concerns the rule of authority, not whether Scripture matters. Westminster also allows necessary inference and practical judgment; sufficiency is not a ban on reasoning.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "1.3; 1.6; 1.10",
+              "supports": "Historical text being explained",
+              "url": "#section-1-3"
+            },
+            {
+              "sourceId": "ccc-tradition",
+              "locator": "§§80–83",
+              "supports": "Catholic account of Scripture and apostolic Tradition"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-1-proofs",
+          "kind": "historical-context",
+          "title": "Why the confession and its proof texts are separate",
+          "sections": [
+            1,
+            6
+          ],
+          "body": "The confession existed before its attached Scripture proofs. The Westminster Assembly Project documents a manuscript and limited printing in 1646, followed by an edition with proofs requested by Parliament in 1647. This reader omits those proofs but preserves the confession’s assertions. That omission is a presentation choice, not a claim that the Assembly offered doctrine without biblical argument.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "1.1; 1.6",
+              "supports": "Historical text being explained",
+              "url": "#section-1-1"
+            },
+            {
+              "sourceId": "assembly-documents",
+              "locator": "“A Confession of Faith”: manuscript and second/third editions",
+              "supports": "Printing sequence and requested proofs"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "ccc-tradition",
+        "assembly-documents",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 2,
+      "orientation": "Notice how the chapter joins God’s attributes to the confession of Father, Son and Holy Spirit.",
+      "entries": [
+        {
+          "id": "note-2-shared-trinity",
+          "kind": "doctrinal-comparison",
+          "title": "Reformed theology within older Trinitarian Christianity",
+          "sections": [
+            1,
+            3
+          ],
+          "body": "The three persons are not three gods or parts of God: section 3 gives them one divine substance, power and eternity. This is shared ground with Augsburg I, which receives the Nicene teaching of one divine essence and three persons. Trinitarian belief itself is therefore not the distinctively Presbyterian disagreement with Lutheran Christianity.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "2.1; 2.3",
+              "supports": "Historical text being explained",
+              "url": "#section-2-1"
+            },
+            {
+              "sourceId": "augsburg",
+              "locator": "Article I, §§1–6",
+              "supports": "One essence and three persons"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-2-procession",
+          "kind": "doctrinal-comparison",
+          "title": "The Western wording about the Spirit",
+          "sections": [
+            3
+          ],
+          "body": "The Spirit’s eternal procession from the Father and the Son uses the Western filioque formulation. The Catholic Catechism identifies this as the Latin tradition and contrasts the Eastern emphasis on the Father as first origin, while explaining how Catholic theology understands the two expressions. This identifies a historic point of discussion; a Catholic explanation of the East is not a substitute for every Orthodox church’s own account.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "2.3",
+              "supports": "Historical text being explained",
+              "url": "#section-2-3"
+            },
+            {
+              "sourceId": "ccc-trinity",
+              "locator": "§§246–248",
+              "supports": "Latin formulation and account of Eastern emphasis"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "augsburg",
+        "ccc-trinity",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 3,
+      "orientation": "Keep the pastoral closing paragraph alongside the language about the divine decree.",
+      "entries": [
+        {
+          "id": "note-3-election",
+          "kind": "doctrinal-comparison",
+          "title": "Election and foreseen faith",
+          "sections": [
+            2,
+            5,
+            7
+          ],
+          "body": "Westminster denies that election rests on foreseen faith or obedience. Article I of the 1610 Remonstrance describes God’s purpose to save those who believe in Christ and persevere through grace, rather than this account of unconditional individual election. Both speak of salvation in Christ and dependence on grace. The disagreement is not adequately described as grace on one side and human self-salvation on the other.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "3.2; 3.5; 3.7",
+              "supports": "Historical text being explained",
+              "url": "#section-3-2"
+            },
+            {
+              "sourceId": "remonstrance",
+              "locator": "Five Articles, I",
+              "supports": "Conditional description of the saved"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-3-guardrails",
+          "kind": "reading-guide",
+          "title": "The chapter supplies its own guardrails",
+          "sections": [
+            1,
+            8
+          ],
+          "body": "Section 1 denies that the decree makes God the author of sin or coerces creatures’ wills, and affirms secondary causes. Section 8 directs readers toward assurance through their calling, humility and care in teaching. These qualifications belong to the doctrine confessed. Read them before using the chapter as shorthand for fatalism or as a warrant to speculate about particular people’s election.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "3.1; 3.8",
+              "supports": "Historical text being explained",
+              "url": "#section-3-1"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "remonstrance",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 4,
+      "orientation": "Separate the claims about creation from later arguments about interpreting the six days.",
+      "entries": [
+        {
+          "id": "note-4-creation-days",
+          "kind": "historical-context",
+          "title": "A documented Presbyterian debate about six days",
+          "sections": [
+            1
+          ],
+          "body": "The PCA’s 1999 Creation Study Committee report describes calendar-day, day-age, framework and analogical-day interpretations. Its authors agreed on creation from nothing and a historical Adam and Eve, while reporting no unanimity on the nature and duration of the days. This records a bounded committee debate; it neither rewrites the 1647 sentence nor establishes that every view is acceptable in every Presbyterian jurisdiction.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "4.1",
+              "supports": "Historical text being explained",
+              "url": "#section-4-1"
+            },
+            {
+              "sourceId": "pca-creation",
+              "locator": "I; IV.A–D; V–VI",
+              "supports": "Committee agreements and four interpretations"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-4-subscription",
+          "kind": "subscription-procedure",
+          "title": "An interpretation is not automatically an allowed exception",
+          "sections": [
+            1,
+            2
+          ],
+          "body": "The PCA’s 2024 Book of Church Order, 21-4(f–g), requires a candidate’s differences to be disclosed and evaluated by the presbytery against its doctrinal system. An exception is possible only within that boundary. This is a dated procedure, not a record granting a creation exception, and not a rule for another denomination. A specific allowance requires the actual court record.",
+          "citations": [
+            {
+              "sourceId": "pca-bco-2024",
+              "locator": "21-4(f–g), PDF pp. 76–77",
+              "supports": "PCA disclosure and exception procedure in this edition"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "pca-creation",
+        "pca-bco-2024",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 5,
+      "orientation": "Ask how divine providence relates to real creaturely actions, including sinful ones.",
+      "entries": [
+        {
+          "id": "note-5-second-causes",
+          "kind": "reading-guide",
+          "title": "Providence does not erase ordinary causes",
+          "sections": [
+            2,
+            3,
+            4
+          ],
+          "body": "Section 2 describes events occurring through necessary, free or contingent secondary causes. Section 3 affirms ordinary means and God’s freedom beyond them. Section 4 extends providence to sin while locating sinfulness in the creature. These distinctions explain why extensive divine government is not, in this account, a reason to dismiss prayer, medicine, choices or responsibility.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "5.2; 5.3; 5.4",
+              "supports": "Historical text being explained",
+              "url": "#section-5-2"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-5-cause-sin",
+          "kind": "doctrinal-comparison",
+          "title": "A shared denial, with different degrees of explanation",
+          "sections": [
+            4
+          ],
+          "body": "Augsburg XIX likewise says God creates and preserves nature while attributing sin to the wicked will of devil and human beings. Westminster adds a more elaborate account of God’s ordering and limiting sinful actions. The comparison shows a common rejection of God as the source of moral evil; Augsburg’s brevity should not be mistaken for teaching that nature exists independently of God.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "5.4",
+              "supports": "Historical text being explained",
+              "url": "#section-5-4"
+            },
+            {
+              "sourceId": "augsburg-sin",
+              "locator": "Article XIX",
+              "supports": "Preservation of nature and creaturely cause of sin"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "augsburg-sin",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 6,
+      "orientation": "Distinguish inherited guilt and corruption from the particular sins that follow them.",
+      "entries": [
+        {
+          "id": "note-6-extent",
+          "kind": "reading-guide",
+          "title": "Every faculty, not equal outward wickedness",
+          "sections": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "body": "The chapter says sin affects every part of human life and traces actual sins to an inherited condition. It does not say every person commits every possible crime or is as outwardly wicked as possible. Section 3’s imputation of Adam’s guilt and section 5’s account of remaining corruption are distinct claims that matter in comparisons with other traditions.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "6.2; 6.3; 6.4; 6.5",
+              "supports": "Historical text being explained",
+              "url": "#section-6-2"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-6-original-sin",
+          "kind": "doctrinal-comparison",
+          "title": "A Catholic comparison with its qualifications",
+          "sections": [
+            3,
+            5
+          ],
+          "body": "The Catholic Catechism also teaches an inherited fallen condition, but describes original sin in Adam’s descendants as a deprivation rather than a personally committed fault, and distinguishes remaining inclination from the guilt removed in baptism. Westminster imputes Adam’s guilt and calls remaining corruption and its movements truly sin. The difference concerns the condition and its remedy, not belief versus disbelief in the fall.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "6.3; 6.5",
+              "supports": "Historical text being explained",
+              "url": "#section-6-3"
+            },
+            {
+              "sourceId": "ccc-fall",
+              "locator": "§§404–406",
+              "supports": "Inherited deprivation and consequences after baptism"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "ccc-fall",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 7,
+      "orientation": "The works/grace distinction and the unity of the covenant of grace organize this chapter.",
+      "entries": [
+        {
+          "id": "note-7-one-covenant",
+          "kind": "reading-guide",
+          "title": "Different administrations, not different ways of salvation",
+          "sections": [
+            2,
+            3,
+            5,
+            6
+          ],
+          "body": "Westminster distinguishes Adam’s covenant of works from the covenant of grace, then treats law-era promises, sacrifices and circumcision and gospel-era preaching and sacraments as administrations of one covenant of grace. It explicitly rejects two covenants of grace differing in substance. Old Testament believers are not, in this account, saved by a fundamentally different route.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "7.2; 7.3; 7.5; 7.6",
+              "supports": "Historical text being explained",
+              "url": "#section-7-2"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-7-baptist-covenant",
+          "kind": "doctrinal-comparison",
+          "title": "The 1689 Baptist confession rearranges the account",
+          "sections": [
+            5,
+            6
+          ],
+          "body": "The Second London Baptist Confession’s chapter 7 describes the covenant of grace as progressively revealed from Adam to its full New Testament disclosure. It does not repeat Westminster 7.5–6’s formula of one covenant under two administrations. This locates a covenantal difference relevant to baptism; it does not establish that Baptists reject covenant theology or settle every later interpretation of their confession.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "7.5; 7.6",
+              "supports": "Historical text being explained",
+              "url": "#section-7-5"
+            },
+            {
+              "sourceId": "baptist-covenant",
+              "locator": "7.1–3",
+              "supports": "Progressive revelation and different formulation"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "baptist-covenant",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 8,
+      "orientation": "Distinguish the person of Christ from the scope and application of his saving work.",
+      "entries": [
+        {
+          "id": "note-8-person",
+          "kind": "doctrinal-comparison",
+          "title": "Two natures, one person: substantial shared ground",
+          "sections": [
+            2,
+            7
+          ],
+          "body": "Westminster affirms complete divine and human natures united in one person without being mixed or changed into each other. Augsburg III also confesses two natures inseparably united in the one Christ. Differences over salvation or the Supper should not obscure this shared starting point. Section 7 explains how acts proper to either nature can be spoken of the one person.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "8.2; 8.7",
+              "supports": "Historical text being explained",
+              "url": "#section-8-2"
+            },
+            {
+              "sourceId": "augsburg",
+              "locator": "Article III, §§1–6",
+              "supports": "Divine and human natures in one Christ"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-8-redemption",
+          "kind": "doctrinal-comparison",
+          "title": "For whom redemption is purchased and applied",
+          "sections": [
+            5,
+            8
+          ],
+          "body": "Westminster connects Christ’s purchase of redemption with its certain application to those given him by the Father. Article II of the 1610 Remonstrance instead says Christ died for all, while only believers actually enjoy forgiveness. The difference concerns the extent and saving intent of atonement, not whether faith matters or Christ’s death is necessary. This does not make every later Arminian system identical to the 1610 document.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "8.5; 8.8",
+              "supports": "Historical text being explained",
+              "url": "#section-8-5"
+            },
+            {
+              "sourceId": "remonstrance",
+              "locator": "Five Articles, II",
+              "supports": "Universal death and believer’s enjoyment of forgiveness"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "augsburg",
+        "remonstrance",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 9,
+      "orientation": "“Free” can mean freedom from coercion or freedom from bondage to sin.",
+      "entries": [
+        {
+          "id": "note-9-four-states",
+          "kind": "reading-guide",
+          "title": "The will in innocence, fall, grace and glory",
+          "sections": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "body": "The opening denies coercion and a natural necessity toward good or evil. The following sections distinguish Adam’s original ability, fallen inability toward saving good, grace-enabled freedom still affected by sin, and perfected freedom in glory. Reading only section 3 misses this sequence. Denial of unaided spiritual ability is not denial that people deliberate or make ordinary choices.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "9.1; 9.2; 9.3; 9.4; 9.5",
+              "supports": "Historical text being explained",
+              "url": "#section-9-1"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-9-lutheran-will",
+          "kind": "doctrinal-comparison",
+          "title": "Civil and spiritual ability in Augsburg",
+          "sections": [
+            3
+          ],
+          "body": "Augsburg XVIII grants a measure of ability in civil matters but denies unaided power to produce spiritual righteousness. That overlaps Westminster’s denial of self-conversion. These texts do not support a simple opposition in which Reformed theology denies all freedom and Lutheran theology teaches unaided saving choice. Wider accounts should be compared beyond this point of agreement.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "9.3",
+              "supports": "Historical text being explained",
+              "url": "#section-9-3"
+            },
+            {
+              "sourceId": "augsburg-will",
+              "locator": "Article XVIII, §§1–9",
+              "supports": "Civil liberty and inability without the Spirit"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "augsburg-will",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 10,
+      "orientation": "“Effectual” distinguishes the Spirit’s saving work from hearing an outward invitation.",
+      "entries": [
+        {
+          "id": "note-10-resistance",
+          "kind": "doctrinal-comparison",
+          "title": "Grace’s effect, not its necessity",
+          "sections": [
+            1,
+            2
+          ],
+          "body": "Westminster’s saving call renews the will so that the person willingly comes to Christ; its effect is certain. The Remonstrance’s articles III–IV also deny that people can produce saving faith without grace, but IV says grace can be resisted. The contrast is between accounts of grace’s operation, rather than grace versus no grace.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "10.1; 10.2",
+              "supports": "Historical text being explained",
+              "url": "#section-10-1"
+            },
+            {
+              "sourceId": "remonstrance",
+              "locator": "Five Articles, III–IV",
+              "supports": "Necessity of grace and resistibility"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-10-infants",
+          "kind": "reading-guide",
+          "title": "What the infant clause does—and does not—say",
+          "sections": [
+            3
+          ],
+          "body": "The paragraph names elect infants dying in infancy and other elect persons unable to receive the outward ministry. It asserts that the Spirit is not confined to that ministry. It does not explicitly classify every infant who dies or provide a way to identify which infants are elect. An expanded pastoral conclusion needs another argument or church statement; it should not be smuggled into the historical wording.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "10.3",
+              "supports": "Historical text being explained",
+              "url": "#section-10-3"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "remonstrance",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 11,
+      "orientation": "The question is what justification consists in and how faith receives it.",
+      "entries": [
+        {
+          "id": "note-11-imputation",
+          "kind": "doctrinal-comparison",
+          "title": "Accounting righteous and inward renewal",
+          "sections": [
+            1,
+            2
+          ],
+          "body": "Westminster describes justification as pardon and the accounting of Christ’s righteousness to the believer, distinguishing it from infused righteousness. The Catholic Catechism includes inward renewal within justification and associates its conferral with baptism. Both attribute salvation to Christ and grace. The difference concerns the content and means of justification, not a claim that Catholic doctrine teaches salvation without grace.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "11.1; 11.2",
+              "supports": "Historical text being explained",
+              "url": "#section-11-1"
+            },
+            {
+              "sourceId": "ccc-grace",
+              "locator": "§§1987–1993",
+              "supports": "Renewal and baptism within Catholic justification"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-11-faith-alone",
+          "kind": "reading-guide",
+          "title": "Faith alone, but never a solitary faith",
+          "sections": [
+            2,
+            4,
+            5
+          ],
+          "body": "The confession distinguishes faith as the sole instrument of justification from the whole life of the justified person: faith accompanies other graces and works through love. It also distinguishes an eternal decree to justify from justification applied in time. Continued forgiveness and fatherly displeasure do not, in this account, mean repeated loss and reacquisition of justification.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "11.2; 11.4; 11.5",
+              "supports": "Historical text being explained",
+              "url": "#section-11-2"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "ccc-grace",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 12,
+      "orientation": "Adoption describes belonging to God’s family, not merely a change of legal status.",
+      "entries": [
+        {
+          "id": "note-12-distinct-benefit",
+          "kind": "reading-guide",
+          "title": "Related benefits without collapsing them",
+          "sections": [
+            1
+          ],
+          "body": "All the justified receive adoption, but adoption has its own vocabulary: access to God, the Spirit, care, discipline and inheritance. Beside 11.1 and 13.1, it distinguishes acceptance, family membership and personal renewal while joining them in the same salvation. Fatherly chastening here belongs to the continuing relationship rather than expulsion from the family.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "12.1",
+              "supports": "Historical text being explained",
+              "url": "#section-12-1"
+            },
+            {
+              "sourceId": "wcf-1647",
+              "locator": "11.1; 13.1",
+              "supports": "Separately described benefits",
+              "url": "#section-11-1"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-12-shared-adoption",
+          "kind": "doctrinal-comparison",
+          "title": "Adoption is not exclusively Reformed",
+          "sections": [
+            1
+          ],
+          "body": "The Catholic Catechism likewise describes grace as participation in divine life and an adoptive relationship with the Father. That agreement does not remove the disagreement about justification in chapter 11. It shows why traditions should be compared benefit by benefit, rather than assuming that different accounts of justification leave no shared account of divine sonship.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "12.1",
+              "supports": "Historical text being explained",
+              "url": "#section-12-1"
+            },
+            {
+              "sourceId": "ccc-grace-life",
+              "locator": "§§1996–1997",
+              "supports": "Grace and adoptive participation"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "ccc-grace-life",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 13,
+      "orientation": "Real transformation and continuing struggle against sin belong together in this account.",
+      "entries": [
+        {
+          "id": "note-13-remaining-sin",
+          "kind": "reading-guide",
+          "title": "Progress is not perfection in this life",
+          "sections": [
+            1,
+            2,
+            3
+          ],
+          "body": "Westminster describes sanctification as a real work throughout the person while saying it remains incomplete in this life. The regenerate may experience serious conflict yet receive continuing strength from the Spirit. Growth is not a claim that every stage of experience is an uninterrupted improvement, or that the justified no longer need repentance.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "13.1; 13.2; 13.3",
+              "supports": "Historical text being explained",
+              "url": "#section-13-1"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-13-perfection",
+          "kind": "doctrinal-comparison",
+          "title": "A specific Wesleyan formulation of Christian perfection",
+          "sections": [
+            2
+          ],
+          "body": "The EUB Confession in the United Methodist Church’s 2016 Discipline, article XI, teaches entire sanctification as perfect love obtainable by regenerate believers. It also says this does not remove ignorance, mistakes, infirmities or the possibility of further sin. That qualified claim differs from Westminster’s remaining corruption; it should not be caricatured as omniscience or inability to be tempted.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "13.2",
+              "supports": "Historical text being explained",
+              "url": "#section-13-2"
+            },
+            {
+              "sourceId": "umc-confession",
+              "locator": "Article XI",
+              "supports": "Entire sanctification and express qualifications"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "umc-confession",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 14,
+      "orientation": "Faith includes assent, response and trust; assurance need not appear fully formed.",
+      "entries": [
+        {
+          "id": "note-14-trust",
+          "kind": "reading-guide",
+          "title": "Believing a proposition and resting in Christ",
+          "sections": [
+            2,
+            3
+          ],
+          "body": "The chapter describes different responses to commands, warnings and promises, identifying the chief acts of saving faith as receiving and resting on Christ. It also recognizes weak and contested faith. Do not reduce its faith to bare information or confuse the strength of someone’s confidence with the entire reality of saving faith.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "14.2; 14.3",
+              "supports": "Historical text being explained",
+              "url": "#section-14-2"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-14-baptist-faith",
+          "kind": "doctrinal-comparison",
+          "title": "Close agreement across a baptismal divide",
+          "sections": [
+            1,
+            2,
+            3
+          ],
+          "body": "The Second London Baptist Confession, chapter 14, also makes faith the Spirit’s work, treats it as receiving and resting on Christ, and allows differences in its strength. It names baptism and the Supper as means of strengthening faith. Rejecting infant baptism in that confession does not therefore entail rejecting every sacramental means or reducing faith to unaided resolve.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "14.1; 14.2; 14.3",
+              "supports": "Historical text being explained",
+              "url": "#section-14-1"
+            },
+            {
+              "sourceId": "baptist-faith",
+              "locator": "14.1–3",
+              "supports": "Spirit-wrought faith, means and degrees"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "baptist-faith",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 15,
+      "orientation": "Repentance is necessary grace without being a price paid for forgiveness.",
+      "entries": [
+        {
+          "id": "note-15-necessity",
+          "kind": "reading-guide",
+          "title": "Necessary does not mean meritorious",
+          "sections": [
+            1,
+            3,
+            5,
+            6
+          ],
+          "body": "Westminster holds together two claims: repentance is not satisfaction for sin or a cause of pardon, yet no sinner should expect pardon while refusing repentance. It moves from general sorrow to particular wrongs and reconciliation with people harmed. This is more than an inward feeling, but is not a payment purchasing God’s mercy.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "15.1; 15.3; 15.5; 15.6",
+              "supports": "Historical text being explained",
+              "url": "#section-15-1"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-15-confession",
+          "kind": "doctrinal-comparison",
+          "title": "Confession to God and sacramental confession",
+          "sections": [
+            6
+          ],
+          "body": "Section 6 requires confession to God and acknowledgment and reconciliation when others are scandalized. The Catholic Catechism additionally makes confession to a priest an essential act of sacramental Penance, including remembered mortal sins. The difference concerns sacramental office and required practice, not whether either tradition values honesty about particular sins.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "15.6",
+              "supports": "Historical text being explained",
+              "url": "#section-15-6"
+            },
+            {
+              "sourceId": "ccc-confession",
+              "locator": "§§1455–1458",
+              "supports": "Priestly confession and mortal/venial distinction"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "ccc-confession",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 16,
+      "orientation": "Distinguish works as evidence and obedience from a claim that they earn acceptance.",
+      "entries": [
+        {
+          "id": "note-16-fruit",
+          "kind": "reading-guide",
+          "title": "Works matter without becoming the basis of pardon",
+          "sections": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "body": "Good works are defined by God’s commands, described as fruits and evidence of faith, and accepted through Christ despite imperfection. The chapter denies that they merit pardon or eternal life and denies works beyond the duty owed to God. Rejecting merit is not rejecting obedience; rejecting supererogation is not denying differences in gifts or circumstances.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "16.1; 16.2; 16.4; 16.5; 16.6",
+              "supports": "Historical text being explained",
+              "url": "#section-16-1"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-16-merit",
+          "kind": "doctrinal-comparison",
+          "title": "What Catholic “merit” is claiming",
+          "sections": [
+            5
+          ],
+          "body": "The Catholic Catechism attributes Christian merit to God’s gracious initiative and human cooperation, not an initial claim on God independent of grace. It nevertheless connects grace-enabled merit with growth and eternal life. Westminster denies that even Spirit-enabled works merit eternal life. Both qualifications matter before treating either “grace” or “merit” as if the word alone settled the dispute.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "16.5",
+              "supports": "Historical text being explained",
+              "url": "#section-16-5"
+            },
+            {
+              "sourceId": "ccc-merit",
+              "locator": "§§2006–2011",
+              "supports": "Grace, cooperation and merit"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "ccc-merit",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 17,
+      "orientation": "Final preservation through failures is not a promise that believers cannot sin seriously.",
+      "entries": [
+        {
+          "id": "note-17-perseverance",
+          "kind": "doctrinal-comparison",
+          "title": "Can a justified person finally fall away?",
+          "sections": [
+            1,
+            2
+          ],
+          "body": "Westminster says those truly called and sanctified cannot finally fall from grace. Augsburg XII rejects the claim that those once justified cannot lose the Holy Spirit. These are different confessional formulations. The 1610 Remonstrance’s article V instead leaves final apostasy for further scriptural determination; it should not be quoted as having settled every later Arminian answer.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "17.1; 17.2",
+              "supports": "Historical text being explained",
+              "url": "#section-17-1"
+            },
+            {
+              "sourceId": "augsburg-repentance",
+              "locator": "Article XII, §§7–8",
+              "supports": "Rejection of indefectibility in this formulation"
+            },
+            {
+              "sourceId": "remonstrance",
+              "locator": "Five Articles, V",
+              "supports": "Express reservation about final apostasy"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-17-serious-falls",
+          "kind": "reading-guide",
+          "title": "Warnings and discipline still have a purpose",
+          "sections": [
+            3
+          ],
+          "body": "Section 3 allows grave sins, continuing in them for a time, wounded consciences, harm to others and temporal judgments. The assurance does not make these consequences imaginary. Beside repentance in chapter 15 and censures in chapter 30, perseverance concerns the final outcome of preserving grace rather than exemption from correction or moral accountability.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "17.3",
+              "supports": "Historical text being explained",
+              "url": "#section-17-3"
+            },
+            {
+              "sourceId": "wcf-1647",
+              "locator": "15.5–6; 30.3",
+              "supports": "Repentance and discipline alongside perseverance",
+              "url": "#section-30-3"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "augsburg-repentance",
+        "remonstrance",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 18,
+      "orientation": "Assurance and salvation are related without being identical experiences.",
+      "entries": [
+        {
+          "id": "note-18-assurance",
+          "kind": "reading-guide",
+          "title": "A believer may wait for assurance",
+          "sections": [
+            2,
+            3,
+            4
+          ],
+          "body": "Westminster grounds assurance in divine promises, evidence of grace and the Spirit’s witness. It then says full assurance is not so essential to faith that every true believer already possesses it. Assurance may be delayed, weakened or interrupted. Loss of assurance is distinguished from abandonment by God; this is not a demand for constant emotional certainty.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "18.2; 18.3; 18.4",
+              "supports": "Historical text being explained",
+              "url": "#section-18-2"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-18-experience",
+          "kind": "doctrinal-comparison",
+          "title": "Can experience certify one’s state of grace?",
+          "sections": [
+            2
+          ],
+          "body": "The Catholic Catechism cautions that grace exceeds ordinary experience: feelings or works alone cannot establish that one is justified and saved. Westminster also rejects presumption but makes a stronger positive claim for attainable infallible assurance. Neither licenses treating a passing feeling as proof of salvation.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "18.2",
+              "supports": "Historical text being explained",
+              "url": "#section-18-2"
+            },
+            {
+              "sourceId": "ccc-grace-life",
+              "locator": "§2005",
+              "supports": "Caution about experience and inferring one’s justified state"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "ccc-grace-life",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 19,
+      "orientation": "Follow moral, ceremonial and judicial law before asking how Christians use the law.",
+      "entries": [
+        {
+          "id": "note-19-general-equity",
+          "kind": "reading-guide",
+          "title": "Expired judicial laws and continuing equity",
+          "sections": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "body": "Ceremonial laws are abrogated, Israel’s judicial laws expire except for what their general equity requires, and moral law remains binding. The chapter does not simply transfer Israel’s entire civil code to every later state. Nor does it specify a complete method for every disputed application of “general equity.” Those later arguments require interpretation beyond the sentence.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "19.3; 19.4; 19.5; 19.6",
+              "supports": "Historical text being explained",
+              "url": "#section-19-3"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-19-lutheran-law",
+          "kind": "doctrinal-comparison",
+          "title": "Not law versus no law",
+          "sections": [
+            5,
+            6
+          ],
+          "body": "Augsburg VI requires good works commanded by God while denying reliance on them for justification. Westminster likewise rejects justification by law while giving moral law a continuing role. This shared ground complicates a simple contrast between a law-affirming Reformed tradition and a law-rejecting Lutheran one. Detailed accounts of the law’s uses require more than comparing slogans.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "19.5; 19.6",
+              "supports": "Historical text being explained",
+              "url": "#section-19-5"
+            },
+            {
+              "sourceId": "augsburg",
+              "locator": "Articles VI and XX",
+              "supports": "Required good works without justification by them"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "augsburg",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 20,
+      "orientation": "Read freedom of conscience together with this edition’s limits on religious liberty.",
+      "entries": [
+        {
+          "id": "note-20-liberty-limits",
+          "kind": "historical-context",
+          "title": "Not a modern religious-liberty charter",
+          "sections": [
+            2,
+            3,
+            4
+          ],
+          "body": "Section 2 denies human lordship over conscience in matters contrary to or additional to God’s Word. Sections 3–4 reject liberty as a pretext for sin or disorder, and original 20.4 allows proceedings against certain opinions by civil as well as church authority. Quoting only section 2 conceals that tension. Describe the original’s scope before praising or criticizing it through present-day categories.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "20.2; 20.3; 20.4",
+              "supports": "Historical text being explained",
+              "url": "#section-20-2"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-20-civil-clause",
+          "kind": "textual-revision",
+          "title": "The American text removes civil enforcement",
+          "sections": [
+            4
+          ],
+          "body": "The American comparison published by the OPC retains church censure in 20.4 but removes its closing reference to civil enforcement. This belongs to the 1788 American revisions in the OPC’s account. A reader using that standard is reading a changed paragraph, not merely interpreting the unaltered 1647 ending more generously.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "20.4",
+              "supports": "Historical text being explained",
+              "url": "#section-20-4"
+            },
+            {
+              "sourceId": "opc-revisions",
+              "locator": "Original XX.4 / American 20.4",
+              "supports": "Documented deletion"
+            },
+            {
+              "sourceId": "opc-preface",
+              "locator": "1788 revision history",
+              "supports": "Date and American scope"
+            },
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 20; printed/PDF pp. 92–98",
+              "supports": "The official PCA text directly confirms this adopted wording",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=92"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "opc-revisions",
+        "opc-preface",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 21,
+      "orientation": "Rules for worship are joined to a demanding account of the Christian Sabbath.",
+      "entries": [
+        {
+          "id": "note-21-worship",
+          "kind": "doctrinal-comparison",
+          "title": "Instituted worship and human church ordinances",
+          "sections": [
+            1,
+            5
+          ],
+          "body": "Westminster limits acceptable worship to what God appoints rather than human inventions. Augsburg XXVIII allows church ordinances made for order, provided they are not treated as necessary to salvation or binding conscience in themselves. The difference concerns authorization and status of practices, not whether worship should be orderly or Scripture authoritative.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "21.1; 21.5",
+              "supports": "Historical text being explained",
+              "url": "#section-21-1"
+            },
+            {
+              "sourceId": "augsburg-power",
+              "locator": "Article XXVIII, ordinances, conscience and ceremonies",
+              "supports": "Non-salvific church ordinances"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-21-sabbath",
+          "kind": "doctrinal-comparison",
+          "title": "Different rationales for Sunday observance",
+          "sections": [
+            7,
+            8
+          ],
+          "body": "Westminster treats one day in seven as a continuing moral command, identifies the first day as the Christian Sabbath, and requires rest from ordinary recreations as well as work. Augsburg XXVIII explains Sunday observance without imposing it as a divinely necessary replacement Sabbath. This is a doctrinal difference. Neither the comparison nor modern disagreement proves that a particular presbytery has granted a Sabbath exception.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "21.7; 21.8",
+              "supports": "Historical text being explained",
+              "url": "#section-21-7"
+            },
+            {
+              "sourceId": "augsburg-power",
+              "locator": "Article XXVIII, Sabbath and Sunday discussion",
+              "supports": "Different rationale for Sunday"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "augsburg-power",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 22,
+      "orientation": "Solemn oaths are permitted, with limits on what may be promised.",
+      "entries": [
+        {
+          "id": "note-22-oath-disagreement",
+          "kind": "doctrinal-comparison",
+          "title": "A contrast with historic Mennonite teaching",
+          "sections": [
+            1,
+            2,
+            3
+          ],
+          "body": "Westminster permits a lawful oath and, in original 22.3, condemns refusing a proper oath imposed by lawful authority. The Mennonite Dordrecht Confession of 1632, article XV, rejects all swearing of oaths and substitutes truthful yes and no. This is a specific disagreement about Christ’s command, not simply sincerity. Dordrecht here is not the Reformed Canons of Dort.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "22.1; 22.2; 22.3",
+              "supports": "Historical text being explained",
+              "url": "#section-22-1"
+            },
+            {
+              "sourceId": "dordrecht",
+              "locator": "Article XV: Swearing of Oaths",
+              "supports": "Historic Mennonite rejection of oaths"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-22-oath-revision",
+          "kind": "textual-revision",
+          "title": "The OPC text omits the required-oath sentence",
+          "sections": [
+            3
+          ],
+          "body": "The OPC comparison records deletion of 22.3’s last sentence, which calls refusal of a proper imposed oath sinful. Its historical account distinguishes this received change from other 1903 PCUSA revisions the OPC did not adopt. The deletion does not turn the remaining permission for lawful oaths into a Mennonite prohibition; it changes the narrower claim about refusing one.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "22.3",
+              "supports": "Historical text being explained",
+              "url": "#section-22-3"
+            },
+            {
+              "sourceId": "opc-revisions",
+              "locator": "Original XXII.3 / American 22.3; introduction",
+              "supports": "Omission and limited adoption of 1903 changes"
+            },
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 22; printed/PDF pp. 111–115",
+              "supports": "The official PCA text directly confirms this adopted wording",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=111"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "dordrecht",
+        "opc-revisions",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 23,
+      "orientation": "The original gives civil authority religious responsibilities later American texts revise.",
+      "entries": [
+        {
+          "id": "note-23-magistrate-revision",
+          "kind": "textual-revision",
+          "title": "A changed religious task for the magistrate",
+          "sections": [
+            3
+          ],
+          "body": "Original 23.3 tasks the magistrate with suppressing heresy and protecting doctrinal unity, while denying administration of Word, sacraments and church keys. The 1788 American revision replaces that enforcement account with protection, noninterference in ecclesiastical matters and no denominational preference. Both preserve civil government, but assign it different religious tasks.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "23.3",
+              "supports": "Historical text being explained",
+              "url": "#section-23-3"
+            },
+            {
+              "sourceId": "opc-revisions",
+              "locator": "Original XXIII.3 / American 23.3",
+              "supports": "Replacement paragraph"
+            },
+            {
+              "sourceId": "opc-preface",
+              "locator": "1788 revision history",
+              "supports": "Date and American reception"
+            },
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 23; printed/PDF pp. 116–120",
+              "supports": "The official PCA text directly confirms this adopted wording",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=116"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-23-civil-office",
+          "kind": "doctrinal-comparison",
+          "title": "Office-holding is distinct from religious establishment",
+          "sections": [
+            2,
+            4
+          ],
+          "body": "Westminster permits Christians to hold civil office and wage a just war. Augsburg XVI likewise permits office, judging and just war, limiting obedience when rulers command sin. Agreement on participation in public life does not decide all questions about state authority over religion. Keep those questions distinct from the revision of 23.3.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "23.2; 23.4",
+              "supports": "Historical text being explained",
+              "url": "#section-23-2"
+            },
+            {
+              "sourceId": "augsburg-civil",
+              "locator": "Article XVI, §§1–7",
+              "supports": "Civil office, war and limits of obedience"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "opc-revisions",
+        "opc-preface",
+        "augsburg-civil",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 24,
+      "orientation": "Marriage, prohibited relations and grounds for divorce have different histories of disagreement.",
+      "entries": [
+        {
+          "id": "note-24-affinity",
+          "kind": "textual-revision",
+          "title": "Deletion of the rule about a deceased spouse’s kin",
+          "sections": [
+            4
+          ],
+          "body": "The original prohibits marrying a spouse’s close kindred within the same blood-degree limits as one’s own. The OPC preface dates American removal of that final sentence to 1887. Its comparison retains the general incest prohibition while omitting the extended affinity rule. The deletion neither abolishes all close-kin prohibitions nor constitutes a personal exception for an officer.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "24.4",
+              "supports": "Historical text being explained",
+              "url": "#section-24-4"
+            },
+            {
+              "sourceId": "opc-preface",
+              "locator": "Account of the 1887 amendment",
+              "supports": "Date and scope"
+            },
+            {
+              "sourceId": "opc-revisions",
+              "locator": "Original XXIV.4 / American 24.4",
+              "supports": "Remaining and deleted wording"
+            },
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 24; printed/PDF pp. 120–123",
+              "supports": "The official PCA text directly confirms this adopted wording",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=120"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-24-divorce",
+          "kind": "doctrinal-comparison",
+          "title": "Dissolution and remarriage versus an indissoluble bond",
+          "sections": [
+            5,
+            6
+          ],
+          "body": "Westminster recognizes adultery and irremediable willful desertion as grounds for dissolution, with regulated proceedings rather than unilateral private judgment. The Catholic Catechism says a concluded and consummated marriage between baptized persons cannot be dissolved. This concerns a valid bond; a declaration that a marriage was invalid should not be confused with divorce from a valid marriage.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "24.5; 24.6",
+              "supports": "Historical text being explained",
+              "url": "#section-24-5"
+            },
+            {
+              "sourceId": "ccc-marriage",
+              "locator": "§§1639–1640",
+              "supports": "Indissolubility of a consummated sacramental bond"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "opc-preface",
+        "opc-revisions",
+        "ccc-marriage",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 25,
+      "orientation": "Invisible church, visible church and particular churches are related but distinct categories.",
+      "entries": [
+        {
+          "id": "note-25-visible-members",
+          "kind": "doctrinal-comparison",
+          "title": "Who belongs to the visible church?",
+          "sections": [
+            1,
+            2,
+            4
+          ],
+          "body": "Westminster’s visible church includes those professing the true religion and their children. The Second London Baptist Confession, 26.2, describes local congregations composed of visible saints professing gospel faith and obedience. Both distinguish reality from mere appearance, but frame visible membership differently. Neither claims that people can perfectly identify everyone’s inward state.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "25.1; 25.2; 25.4",
+              "supports": "Historical text being explained",
+              "url": "#section-25-1"
+            },
+            {
+              "sourceId": "baptist-church",
+              "locator": "26.1–2",
+              "supports": "Invisible church and professing local membership"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-25-pope",
+          "kind": "textual-revision",
+          "title": "The Antichrist identification is edition-specific",
+          "sections": [
+            6
+          ],
+          "body": "Original 25.6 identifies the pope with Antichrist. The OPC’s later adopted wording omits that identification while retaining its denial of papal headship. These are distinct claims: removing the first does not adopt Catholic ecclesiology. This reader preserves the original polemic as historical text, not as an editorial endorsement.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "25.6",
+              "supports": "Historical text being explained",
+              "url": "#section-25-6"
+            },
+            {
+              "sourceId": "opc-revisions",
+              "locator": "Original XXV.6 / American 25.6",
+              "supports": "Specific omission and retained denial"
+            },
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 25; printed/PDF pp. 123–128",
+              "supports": "The official PCA text directly confirms this adopted wording",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=123"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "baptist-church",
+        "opc-revisions",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 26,
+      "orientation": "Communion means shared spiritual life and practical obligations, with explicit limits.",
+      "entries": [
+        {
+          "id": "note-26-union",
+          "kind": "reading-guide",
+          "title": "Union without erasing the Creator–creature distinction",
+          "sections": [
+            1,
+            3
+          ],
+          "body": "The chapter describes fellowship in Christ’s graces and sufferings while denying participation in the substance of his Godhead or equality with him. Read these together before interpreting communion as absorption into deity. This union has social consequences: spiritual gifts and material help are to serve other saints.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "26.1; 26.3",
+              "supports": "Historical text being explained",
+              "url": "#section-26-1"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-26-property",
+          "kind": "doctrinal-comparison",
+          "title": "Mutual provision without abolishing property",
+          "sections": [
+            2,
+            3
+          ],
+          "body": "Westminster requires relief according to ability and need but denies that communion takes away ownership. Augsburg XVI also treats holding property as a lawful Christian activity. These statements do not settle a modern economic program, and permission to own property does not cancel generosity. Mutual care is distinguished from a claim that private ownership is necessarily unchristian.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "26.2; 26.3",
+              "supports": "Historical text being explained",
+              "url": "#section-26-2"
+            },
+            {
+              "sourceId": "augsburg-civil",
+              "locator": "Article XVI, §§1–4",
+              "supports": "Lawful ownership within Christian civil life"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "augsburg-civil",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 27,
+      "orientation": "Distinguish signs, the grace signified and the Spirit’s work without separating them entirely.",
+      "entries": [
+        {
+          "id": "note-27-efficacy",
+          "kind": "reading-guide",
+          "title": "Neither bare symbols nor an automatic effect",
+          "sections": [
+            1,
+            2,
+            3
+          ],
+          "body": "Westminster describes a sacramental relation between sign and thing signified, denying that efficacy resides in the elements themselves or the minister’s piety or intention. It locates efficacy in the Spirit and Christ’s institution. This is richer than reminders alone, while resisting the idea that a minister’s act mechanically guarantees saving benefit to every recipient.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "27.1; 27.2; 27.3",
+              "supports": "Historical text being explained",
+              "url": "#section-27-1"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-27-number",
+          "kind": "doctrinal-comparison",
+          "title": "Two gospel sacraments and the Catholic seven",
+          "sections": [
+            4,
+            5
+          ],
+          "body": "Westminster recognizes baptism and the Supper as the two sacraments instituted by Christ in the gospel. The Catholic Catechism names seven, including confirmation, penance, anointing, orders and matrimony. Definitions and classifications differ: counting two versus seven is a starting point, not a full account of what either church thinks happens in every rite.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "27.4; 27.5",
+              "supports": "Historical text being explained",
+              "url": "#section-27-4"
+            },
+            {
+              "sourceId": "ccc-sacraments",
+              "locator": "Opening paragraph, §1210",
+              "supports": "Number and list of Catholic sacraments"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "ccc-sacraments",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 28,
+      "orientation": "Subjects, mode and efficacy are separate questions in the baptismal disagreement.",
+      "entries": [
+        {
+          "id": "note-28-baptist",
+          "kind": "doctrinal-comparison",
+          "title": "Infants and immersion: two differences",
+          "sections": [
+            2,
+            3,
+            4
+          ],
+          "body": "Westminster includes the infants of one or both believing parents and accepts pouring or sprinkling without requiring dipping. The Second London Baptist Confession, 29.2 and 29.4, limits the proper subjects to those professing repentance, faith and obedience, and requires immersion for due administration. They disagree about both whom to baptize and the required mode, not merely the usual age at a ceremony.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "28.2; 28.3; 28.4",
+              "supports": "Historical text being explained",
+              "url": "#section-28-2"
+            },
+            {
+              "sourceId": "baptist-baptism",
+              "locator": "29.2–4",
+              "supports": "Professing subjects and immersion"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-28-baptism-salvation",
+          "kind": "reading-guide",
+          "title": "No simple baptized/saved equation",
+          "sections": [
+            1,
+            5,
+            6
+          ],
+          "body": "Baptism is a sign and seal of covenant grace, yet the confession denies both that everyone baptized is undoubtedly regenerated and that nobody can be saved without baptism. It also denies efficacy is tied to the moment of administration. These qualifications matter in comparisons: the common use of water does not make Catholic, Lutheran, Baptist and Westminster explanations identical.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "28.1; 28.5; 28.6",
+              "supports": "Historical text being explained",
+              "url": "#section-28-1"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "baptist-baptism",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 29,
+      "orientation": "Rejecting bodily presence is not, for Westminster, rejecting real spiritual participation.",
+      "entries": [
+        {
+          "id": "note-29-presence",
+          "kind": "doctrinal-comparison",
+          "title": "More than “real” versus “symbolic”",
+          "sections": [
+            5,
+            6,
+            7
+          ],
+          "body": "Westminster denies a change of the elements’ substance and bodily presence in them, yet says faithful recipients truly feed on Christ spiritually. Augsburg X affirms true presence and distribution of Christ’s body and blood. The Catholic Catechism describes a substantial conversion of bread and wine. These are different accounts of presence; Westminster’s positive language prevents treating its position as mere absence.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "29.5; 29.6; 29.7",
+              "supports": "Historical text being explained",
+              "url": "#section-29-5"
+            },
+            {
+              "sourceId": "augsburg",
+              "locator": "Article X",
+              "supports": "Lutheran presence and distribution"
+            },
+            {
+              "sourceId": "ccc-eucharist",
+              "locator": "§§1374–1376",
+              "supports": "Catholic substantial presence and conversion"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-29-sacrifice",
+          "kind": "doctrinal-comparison",
+          "title": "One sacrifice and a continuing celebration",
+          "sections": [
+            2
+          ],
+          "body": "Westminster rejects the Mass as an offering for the sins of living and dead, treating Christ’s sacrifice as once offered and the Supper as commemoration and nourishment. The Catholic Catechism also calls Christ’s sacrifice unique, but understands the Eucharist as making that same sacrifice sacramentally present. The dispute should not imply Catholic doctrine requires a fresh crucifixion each time.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "29.2",
+              "supports": "Historical text being explained",
+              "url": "#section-29-2"
+            },
+            {
+              "sourceId": "ccc-eucharist",
+              "locator": "§§1366–1367",
+              "supports": "Re-presentation and identity of the sacrifice"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "augsburg",
+        "ccc-eucharist",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 30,
+      "orientation": "Discipline is a spiritual responsibility with purposes beyond punishment.",
+      "entries": [
+        {
+          "id": "note-30-purposes",
+          "kind": "reading-guide",
+          "title": "Restoration, protection and the keys",
+          "sections": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "body": "Church officers receive the keys, their government is distinguished from the magistrate, and admonition, suspension from the Supper and excommunication are named. The purposes include reclaiming offenders and protecting the church, not only announcing guilt. Keep the listed stages and purposes together when discussing the authority the confession claims.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "30.1; 30.2; 30.3; 30.4",
+              "supports": "Historical text being explained",
+              "url": "#section-30-1"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-30-congregational",
+          "kind": "doctrinal-comparison",
+          "title": "Where church authority resides",
+          "sections": [
+            1,
+            2
+          ],
+          "body": "The Second London Baptist Confession, 26.7 and 26.15, locates the required authority for worship and discipline in each gathered church and denies jurisdiction to assemblies advising churches. Westminster assigns keys to officers and recognizes authoritative synodal determinations in chapter 31. The disagreement concerns authority’s location and reach, not a Presbyterian monopoly on discipline.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "30.1; 30.2",
+              "supports": "Historical text being explained",
+              "url": "#section-30-1"
+            },
+            {
+              "sourceId": "wcf-1647",
+              "locator": "31.3",
+              "supports": "Authoritative synodal determinations",
+              "url": "#section-31-3"
+            },
+            {
+              "sourceId": "baptist-church",
+              "locator": "26.7 and 26.15",
+              "supports": "Local authority and limits of advisory meetings"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "baptist-church",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 31,
+      "orientation": "Keep original text, Scottish reception and American numbering distinct.",
+      "entries": [
+        {
+          "id": "note-31-scottish-reception",
+          "kind": "historical-context",
+          "title": "Scottish approval qualified the magistrate’s role",
+          "sections": [
+            2
+          ],
+          "body": "The Scottish General Assembly’s act of 27 August 1647 explained parts of 31.2 as applying to churches not yet settled in government. It preserved a constituted church’s intrinsic ability to assemble, including when a magistrate withheld consent to its detriment. This is an institutional qualification in an adopting act, not a minister’s personal exception or a deletion from the confession.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "31.2",
+              "supports": "Historical text being explained",
+              "url": "#section-31-2"
+            },
+            {
+              "sourceId": "scotland-act",
+              "locator": "Final explanatory paragraph on chapter XXXI, article 2",
+              "supports": "Qualified Scottish reception"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-31-american-synods",
+          "kind": "textual-revision",
+          "title": "Five original sections become four",
+          "sections": [
+            1,
+            2,
+            3
+          ],
+          "body": "The American revision expands 31.1 to locate convening power in church rulers and omits original 31.2 about magistrates calling synods. Original sections 3–5 become 2–4. A citation to “31.2” can therefore identify different material depending on edition. This reader keeps the five original sections.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "31.1; 31.2; 31.3",
+              "supports": "Historical text being explained",
+              "url": "#section-31-1"
+            },
+            {
+              "sourceId": "opc-revisions",
+              "locator": "Original XXXI / American 31",
+              "supports": "Expanded first section, omitted second, renumbering"
+            },
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 31; printed/PDF pp. 145–147",
+              "supports": "The official PCA text directly confirms this adopted wording",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=145"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-31-councils",
+          "kind": "doctrinal-comparison",
+          "title": "Binding determinations or interchurch advice?",
+          "sections": [
+            3,
+            4
+          ],
+          "body": "Westminster gives councils ministerial authority when decisions agree with Scripture, while admitting they can err. Savoy’s church-order provisions and the Second London Baptist Confession’s 26.15 instead deny ecclesiastical jurisdiction to interchurch advisory meetings. The question is not whether churches should consult one another, but whether the meeting can exercise authority over a church.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "31.3; 31.4",
+              "supports": "Historical text being explained",
+              "url": "#section-31-3"
+            },
+            {
+              "sourceId": "savoy",
+              "locator": "Institution of Churches, XXII and XXVI–XXVII",
+              "supports": "Congregational limits on councils"
+            },
+            {
+              "sourceId": "baptist-church",
+              "locator": "26.15",
+              "supports": "Advice without ecclesiastical power"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "scotland-act",
+        "opc-revisions",
+        "savoy",
+        "baptist-church",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 32,
+      "orientation": "Distinguish the state after death from bodily resurrection at the last day.",
+      "entries": [
+        {
+          "id": "note-32-intermediate-state",
+          "kind": "doctrinal-comparison",
+          "title": "Immediate heavenly life and final purification",
+          "sections": [
+            1
+          ],
+          "body": "Westminster describes righteous souls as immediately perfected in holiness and received into heaven, rejecting a third place for separated souls. The Catholic Catechism describes final purification of people dying in grace but imperfectly purified, expressly distinguishing it from punishment of the damned. The dispute is not whether these people are finally saved, but about purification after death and the state preceding final glory.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "32.1",
+              "supports": "Historical text being explained",
+              "url": "#section-32-1"
+            },
+            {
+              "sourceId": "ccc-purgatory",
+              "locator": "§§1030–1032",
+              "supports": "Purification of the saved, distinct from damnation"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-32-body",
+          "kind": "reading-guide",
+          "title": "More than the soul’s survival",
+          "sections": [
+            2,
+            3
+          ],
+          "body": "Sections 2–3 describe raising the same bodies with different qualities, distinguishing the resurrection of the just and unjust. This is neither denial of embodied life nor simply an immortal soul’s continued existence. Christ’s resurrection, bodily transformation and the judgment of both groups are connected within the account.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "32.2; 32.3",
+              "supports": "Historical text being explained",
+              "url": "#section-32-2"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "ccc-purgatory",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    },
+    {
+      "chapter": 33,
+      "orientation": "Accountability and readiness take priority over a dated end-times chart.",
+      "entries": [
+        {
+          "id": "note-33-judgment",
+          "kind": "doctrinal-comparison",
+          "title": "Shared judgment, without manufacturing a dispute",
+          "sections": [
+            1,
+            2
+          ],
+          "body": "Westminster teaches judgment of all, eternal life for the righteous and punishment for the wicked. Augsburg XVII likewise confesses Christ’s judgment and rejects an end to the punishments of condemned people and devils. This is substantial agreement; the traditions’ differences elsewhere do not require a disagreement here.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "33.1; 33.2",
+              "supports": "Historical text being explained",
+              "url": "#section-33-1"
+            },
+            {
+              "sourceId": "augsburg",
+              "locator": "Article XVII, §§1–4",
+              "supports": "Judgment and unending destinies"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        },
+        {
+          "id": "note-33-chronology",
+          "kind": "reading-guide",
+          "title": "What the chapter leaves unspecified",
+          "sections": [
+            1,
+            3
+          ],
+          "body": "Judgment is appointed, its day unknown, and watchfulness required. The chapter does not name the later categories premillennial, postmillennial and amillennial or give a rapture/millennium sequence. This observation about its wording is not a ruling that every detailed scheme is equally compatible with every Westminster-subscribing church.",
+          "citations": [
+            {
+              "sourceId": "wcf-1647",
+              "locator": "33.1; 33.3",
+              "supports": "Historical text being explained",
+              "url": "#section-33-1"
+            }
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-14"
+        }
+      ],
+      "furtherReading": [
+        "augsburg",
+        "pca-wcf-2022",
+        "pca-wcf-preface"
+      ]
+    }
+  ]
+}
