@@ -7,9 +7,82 @@
     "zoom_tier": "full",
     "type": "split",
     "year": 1523,
-    "reasons": ["reform movement", "rejection of Roman Catholic authority"],
+    "reasons": [
+      "reform movement",
+      "rejection of Roman Catholic authority"
+    ],
     "description": "The Zurich Reformation rejected Roman Catholic authority and practices under Zwingli, leading to a break from the Catholic Church.",
-    "citations": ["cite-zurich-reformation-break"]
+    "citations": [
+      "cite-zurich-reformation-break",
+      "cite-profile-swiss-reformed-zurich-zwingli",
+      "cite-profile-swiss-reformed-zurich-pcusa-book"
+    ],
+    "narrative": "The Zurich Reformation rejected Roman Catholic authority and practices under Zwingli, leading to a break from the Catholic Church. Zwingli\u2019s biblical preaching and disputes about church practice drew the city council into reform. Public disputations in 1523 authorized Scripture-centered preaching and helped dismantle older religious arrangements. Civil government and church life remained closely entangled; reform also provoked conflict with Anabaptists and Catholic cantons. The node represents a local historical stream, not the entire present Protestant Church in Switzerland.",
+    "causes": [
+      "reform movement",
+      "rejection of Roman Catholic authority"
+    ],
+    "key_figures": [
+      {
+        "name": "Huldrych Zwingli",
+        "role": "Zurich preacher and reformer",
+        "summary": "A Zurich preacher who advanced Scripture-based reform with civic support and developed a distinctive account of the Lord\u2019s Supper.",
+        "url": "https://pcusa.org/resource/book-confessions",
+        "citations": [
+          "cite-profile-swiss-reformed-zurich-zwingli",
+          "cite-profile-swiss-reformed-zurich-pcusa-book"
+        ]
+      },
+      {
+        "name": "Heinrich Bullinger",
+        "role": "later Zurich reformer associated with the wider Swiss confessional tradition",
+        "summary": "Zwingli\u2019s successor in the Zurich Reformed tradition, associated with the later Second Helvetic Confession and wider Reformed connections.",
+        "url": "https://pcusa.org/resource/book-confessions",
+        "citations": [
+          "cite-profile-swiss-reformed-zurich-zwingli",
+          "cite-profile-swiss-reformed-zurich-pcusa-book"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1523,
+        "label": "Zurich Reformation",
+        "citations": [
+          "cite-zurich-reformation-break"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Ulrich Zwingli \u2014 Mus\u00e9e protestant",
+        "url": "https://museeprotestant.org/en/notice/ulrich-zwingli-1484-1531/",
+        "snippet": "Formation and development: Zwingli\u2019s biblical preaching and disputes about church practice drew the city council into reform. Public disputations in 1523 authorized Scripture-centered preaching and helped dismantle older religious arrangements.",
+        "citations": [
+          "cite-profile-swiss-reformed-zurich-zwingli"
+        ]
+      },
+      {
+        "title": "Second Helvetic Confession",
+        "url": "https://pcusa.org/resource/book-confessions",
+        "snippet": "Later Swiss Reformed confession associated with Bullinger; not a text already adopted at the 1523 disputation.",
+        "citations": [
+          "cite-profile-swiss-reformed-zurich-pcusa-book"
+        ]
+      },
+      {
+        "title": "Sixty-seven Articles",
+        "url": "https://museeprotestant.org/en/notice/ulrich-zwingli-1484-1531/",
+        "snippet": "Zwingli\u2019s disputation propositions presenting a scriptural case for reform; a formative local text.",
+        "citations": [
+          "cite-profile-swiss-reformed-zurich-zwingli"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-swiss-reformed-zurich-zwingli",
+      "cite-profile-swiss-reformed-zurich-pcusa-book"
+    ]
   },
   {
     "id": "catholic-church-to-genevan-reformed-1536",
@@ -19,9 +92,90 @@
     "zoom_tier": "full",
     "type": "split",
     "year": 1536,
-    "reasons": ["Protestant Reformation", "rejection of papal authority"],
+    "reasons": [
+      "Protestant Reformation",
+      "rejection of papal authority"
+    ],
     "description": "The Genevan Reformation replaced Roman Catholicism with Reformed Christianity in Geneva.",
-    "citations": ["cite-genevan-reformation-break"]
+    "citations": [
+      "cite-genevan-reformation-break",
+      "cite-profile-genevan-reformed-calvin",
+      "cite-profile-genevan-reformed-geneva-register"
+    ],
+    "narrative": "The Genevan Reformation replaced Roman Catholicism with Reformed Christianity in Geneva. Geneva\u2019s civic and religious changes opened a setting for Reformed teaching, but the relationship between pastors and magistrates remained contested. Calvin\u2019s return in 1541 led to ordinances organizing ministry and discipline. Refugees, pastoral training, publishing, and contact with other countries spread Geneva\u2019s influence. This was a city-based church order and a teaching center, not a global denomination controlled by one reformer.",
+    "causes": [
+      "Protestant Reformation",
+      "rejection of papal authority"
+    ],
+    "key_figures": [
+      {
+        "name": "John Calvin",
+        "role": "theologian, pastor, and architect of the 1541 ordinances",
+        "summary": "A French Reformed theologian and Genevan pastor whose writing and church ordinances influenced communities well beyond Geneva.",
+        "url": "https://www.musee-reforme.ch/en/first-register-company-of-pastors/",
+        "citations": [
+          "cite-profile-genevan-reformed-calvin",
+          "cite-profile-genevan-reformed-geneva-register"
+        ]
+      },
+      {
+        "name": "Guillaume Farel",
+        "role": "evangelist and reforming organizer in Geneva",
+        "summary": "evangelist and reforming organizer in Geneva. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://www.musee-reforme.ch/en/first-register-company-of-pastors/",
+        "citations": [
+          "cite-profile-genevan-reformed-calvin",
+          "cite-profile-genevan-reformed-geneva-register"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1536,
+        "label": "Genevan Reformation",
+        "citations": [
+          "cite-genevan-reformation-break"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Jean Calvin \u2014 Mus\u00e9e protestant",
+        "url": "https://museeprotestant.org/en/notice/jean-calvin-1509-1564/",
+        "snippet": "Formation and development: Geneva\u2019s civic and religious changes opened a setting for Reformed teaching, but the relationship between pastors and magistrates remained contested. Calvin\u2019s return in 1541 led to ordinances organizing ministry and discipline.",
+        "citations": [
+          "cite-profile-genevan-reformed-calvin"
+        ]
+      },
+      {
+        "title": "Ecclesiastical Ordinances (1541) \u2014 Mus\u00e9e protestant",
+        "url": "https://museeprotestant.org/en/notice/the-ecclesiastical-ordinances-1541/",
+        "snippet": "Teaching and practice: Grace and scriptural teaching: Calvin organized theology around God\u2019s work in Christ and sustained biblical instruction.",
+        "citations": [
+          "cite-profile-genevan-reformed-geneva-ordinances"
+        ]
+      },
+      {
+        "title": "Ecclesiastical Ordinances",
+        "url": "https://museeprotestant.org/en/notice/the-ecclesiastical-ordinances-1541/",
+        "snippet": "Sets out the organization of ministry and discipline and clarifies relationships with civic authorities.",
+        "citations": [
+          "cite-profile-genevan-reformed-geneva-ordinances"
+        ]
+      },
+      {
+        "title": "Institutes of the Christian Religion",
+        "url": "https://museeprotestant.org/en/notice/jean-calvin-1509-1564/",
+        "snippet": "Calvin\u2019s influential theological work, expanded in later editions; a formative exposition rather than a constitution imposed on all Reformed churches.",
+        "citations": [
+          "cite-profile-genevan-reformed-calvin"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-genevan-reformed-calvin",
+      "cite-profile-genevan-reformed-geneva-register"
+    ]
   },
   {
     "id": "catholic-church-to-scottish-reformation-1560",
@@ -31,9 +185,78 @@
     "zoom_tier": "full",
     "type": "split",
     "year": 1560,
-    "reasons": ["rejection of papal authority", "Reformation parliament"],
+    "reasons": [
+      "rejection of papal authority",
+      "Reformation parliament"
+    ],
     "description": "The Scottish Reformation broke Scotland away from the Roman Catholic Church and established a Protestant national church.",
-    "citations": ["cite-scottish-reformation-break"]
+    "citations": [
+      "cite-scottish-reformation-break",
+      "cite-profile-scottish-reformation-scotland-history"
+    ],
+    "narrative": "The Scottish Reformation broke Scotland away from the Roman Catholic Church and established a Protestant national church. Criticism of medieval religious practice joined the preaching of reformers and the political struggle over Scotland\u2019s future. Knox and colleagues produced a confession approved by Parliament in 1560; parliamentary acts rejected papal authority and the Mass. Reformers understood this as reforming the church rather than inventing Christianity in Scotland. A full Presbyterian court system developed later, so it should not be assumed complete at the first constitutional break.",
+    "causes": [
+      "rejection of papal authority",
+      "Reformation parliament"
+    ],
+    "key_figures": [
+      {
+        "name": "John Knox",
+        "role": "leading preacher and confessional drafter",
+        "summary": "A Scottish reformer whose ministry in England and Geneva influenced his preaching, worship, and church reform in Scotland.",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/history",
+        "citations": [
+          "cite-profile-scottish-reformation-scotland-history"
+        ]
+      },
+      {
+        "name": "George Wishart",
+        "role": "earlier preacher influencing the reforming cause",
+        "summary": "earlier preacher influencing the reforming cause. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/history",
+        "citations": [
+          "cite-profile-scottish-reformation-scotland-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1560,
+        "label": "Scottish Reformation",
+        "citations": [
+          "cite-scottish-reformation-break"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the Church of Scotland \u2014 official account",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/history",
+        "snippet": "Formation and development: Criticism of medieval religious practice joined the preaching of reformers and the political struggle over Scotland\u2019s future. Knox and colleagues produced a confession approved by Parliament in 1560; parliamentary acts rejected papal authority and the Mass.",
+        "citations": [
+          "cite-profile-scottish-reformation-scotland-history"
+        ]
+      },
+      {
+        "title": "Church of Scotland Book of Confessions \u2014 official full text",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0007/143584/printBookofConfessions.pdf",
+        "snippet": "Teaching and practice: Reformed confession: Scripture and the proclamation of Christ replaced the authority and worship rejected by the reformers.",
+        "citations": [
+          "cite-profile-scottish-reformation-scotland-texts"
+        ]
+      },
+      {
+        "title": "Scots Confession",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0007/143584/printBookofConfessions.pdf",
+        "snippet": "A Reformation statement articulating Scottish Protestant faith; its historical role differs from later Westminster standards.",
+        "citations": [
+          "cite-profile-scottish-reformation-scotland-texts"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-scottish-reformation-scotland-history"
+    ]
   },
   {
     "id": "catholic-church-to-church-of-scotland-1560",
@@ -43,9 +266,98 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1560,
-    "reasons": ["repudiation of papal authority", "national church formed"],
+    "reasons": [
+      "repudiation of papal authority",
+      "national church formed"
+    ],
     "description": "In 1560 the Scottish Parliament repudiated papal authority, establishing the Church of Scotland as a national Protestant church separate from Rome.",
-    "citations": ["cite-church-of-scotland-history-break"]
+    "citations": [
+      "cite-church-of-scotland-history-break",
+      "cite-profile-church-of-scotland-scotland-history",
+      "cite-profile-church-of-scotland-scotland-confessions"
+    ],
+    "narrative": "In 1560 the Scottish Parliament repudiated papal authority, establishing the Church of Scotland as a national Protestant church separate from Rome. The Reformation of 1560 supplied a Protestant confession and transformed existing church structures. Presbyterian government developed through later struggles over royal authority and episcopacy, with a full system recognized in 1592. Westminster became a principal doctrinal standard in 1647. From January 2026 a Book of Confessions adds other historic and contemporary statements, making a Westminster-only description of current standards incomplete.",
+    "causes": [
+      "repudiation of papal authority",
+      "national church formed"
+    ],
+    "key_figures": [
+      {
+        "name": "John Knox",
+        "role": "principal Reformation leader",
+        "summary": "A Scottish reformer whose ministry in England and Geneva influenced his preaching, worship, and church reform in Scotland.",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-history",
+          "cite-profile-church-of-scotland-scotland-confessions"
+        ]
+      },
+      {
+        "name": "John Calvin",
+        "role": "major theological influence through Knox and the Genevan connection",
+        "summary": "A French Reformed theologian and Genevan pastor whose writing and church ordinances influenced communities well beyond Geneva.",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-history",
+          "cite-profile-church-of-scotland-scotland-confessions"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1560,
+        "label": "Church of Scotland established",
+        "citations": [
+          "cite-church-of-scotland-history-break"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the Church of Scotland \u2014 official account",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/history",
+        "snippet": "Formation and development: The Reformation of 1560 supplied a Protestant confession and transformed existing church structures. Presbyterian government developed through later struggles over royal authority and episcopacy, with a full system recognized in 1592.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-history"
+        ]
+      },
+      {
+        "title": "Church of Scotland Book of Confessions \u2014 official full text",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0007/143584/printBookofConfessions.pdf",
+        "snippet": "Teaching and practice: God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-texts"
+        ]
+      },
+      {
+        "title": "Westminster Confession",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions",
+        "snippet": "Longstanding principal subordinate standard, now read alongside other received statements.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-confessions"
+        ]
+      },
+      {
+        "title": "Scots Confession",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0007/143584/printBookofConfessions.pdf",
+        "snippet": "A Reformation statement articulating Scottish Protestant faith; its historical role differs from later Westminster standards.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-texts"
+        ]
+      },
+      {
+        "title": "Book of Confessions",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions",
+        "snippet": "Current collection includes ecumenical creeds, Scots and Westminster Confessions, and the 1992 Statement of Faith.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-confessions"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-church-of-scotland-scotland-history",
+      "cite-profile-church-of-scotland-scotland-confessions"
+    ]
   },
   {
     "id": "catholic-church-to-english-reformation-1534",
@@ -55,9 +367,181 @@
     "zoom_tier": "full",
     "type": "split",
     "year": 1534,
-    "reasons": ["break with Rome", "royal supremacy"],
+    "reasons": [
+      "break with Rome",
+      "royal supremacy"
+    ],
     "description": "The English Reformation broke from Roman Catholic authority and established a national church under royal supremacy.",
-    "citations": ["cite-english-reformation-1534"]
+    "citations": [
+      "cite-english-reformation-1534",
+      "cite-profile-english-reformation-english-reformation",
+      "cite-profile-english-reformation-supremacy",
+      "cite-profile-english-reformation-tec-timeline"
+    ],
+    "narrative": "The English Reformation broke from Roman Catholic authority and established a national church under royal supremacy. Henry VIII\u2019s dispute over his marriage coincided with a struggle over jurisdiction and royal power. Parliamentary acts in the 1530s transferred authority from Rome to the crown. Further Protestant reform, Catholic restoration, and Elizabethan settlement followed under successive monarchs. The process cannot be reduced to one fully Protestant church springing into existence in 1534: political separation and doctrinal reform proceeded at different speeds.",
+    "causes": [
+      "break with Rome",
+      "royal supremacy"
+    ],
+    "key_figures": [
+      {
+        "name": "Henry VIII",
+        "role": "monarch who asserted royal supremacy",
+        "summary": "The English monarch whose marital and jurisdictional conflict with Rome led to royal supremacy; his political break did not immediately settle all later Protestant doctrine.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/",
+        "citations": [
+          "cite-profile-english-reformation-english-reformation",
+          "cite-profile-english-reformation-supremacy",
+          "cite-profile-english-reformation-tec-timeline"
+        ]
+      },
+      {
+        "name": "Thomas Cromwell",
+        "role": "minister who steered the parliamentary break",
+        "summary": "Henry VIII\u2019s minister who helped steer the parliamentary measures transferring English ecclesiastical authority away from Rome.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/",
+        "citations": [
+          "cite-profile-english-reformation-english-reformation",
+          "cite-profile-english-reformation-supremacy",
+          "cite-profile-english-reformation-tec-timeline"
+        ]
+      },
+      {
+        "name": "Thomas Cranmer",
+        "role": "archbishop central to later prayer-book reform",
+        "summary": "The English archbishop whose liturgical work helped make common prayer a central expression of reformed English Christianity.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/",
+        "citations": [
+          "cite-profile-english-reformation-english-reformation",
+          "cite-profile-english-reformation-supremacy",
+          "cite-profile-english-reformation-tec-timeline"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1534,
+        "label": "English Reformation",
+        "citations": [
+          "cite-english-reformation-1534"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "The Reformation \u2014 UK Parliament historical account",
+        "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+        "snippet": "Formation and development: Henry VIII\u2019s dispute over his marriage coincided with a struggle over jurisdiction and royal power. Parliamentary acts in the 1530s transferred authority from Rome to the crown.",
+        "citations": [
+          "cite-profile-english-reformation-english-reformation"
+        ]
+      },
+      {
+        "title": "Act of Supremacy 1534 \u2014 UK Parliament collection",
+        "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/collections/common-prayer/act-of-supremacy/",
+        "snippet": "Teaching and practice: Authority was contested: royal supremacy replaced papal jurisdiction before every doctrinal question was settled.",
+        "citations": [
+          "cite-profile-english-reformation-supremacy"
+        ]
+      },
+      {
+        "title": "Thirty-nine Articles",
+        "url": "https://www.churchofengland.org/liturgy/book-of-common-prayer/articles-religion",
+        "snippet": "Later Anglican doctrinal settlement; it should not be projected unchanged onto Henry\u2019s initial break.",
+        "citations": [
+          "cite-profile-english-reformation-anglican-articles"
+        ]
+      },
+      {
+        "title": "Act of Supremacy",
+        "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/collections/common-prayer/act-of-supremacy/",
+        "snippet": "A jurisdictional statute defining royal headship, not a complete Protestant confession.",
+        "citations": [
+          "cite-profile-english-reformation-supremacy"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-english-reformation-english-reformation",
+      "cite-profile-english-reformation-supremacy",
+      "cite-profile-english-reformation-tec-timeline"
+    ]
+  },
+  {
+    "id": "english-reformation-to-english-congregation-geneva-1555",
+    "name": "Marian exile congregation",
+    "from_id": "english-reformation",
+    "to_id": "english-congregation-geneva",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1555,
+    "reasons": [
+      "Protestant exile community"
+    ],
+    "description": "English and Scottish Protestant exiles formed the English Congregation in Geneva during the Marian exile period.",
+    "citations": [
+      "cite-english-congregation-geneva-exiles",
+      "cite-profile-english-congregation-geneva-geneva-knox",
+      "cite-profile-english-congregation-geneva-scotland-history",
+      "cite-profile-english-congregation-geneva-geneva-exiles"
+    ],
+    "narrative": "English and Scottish Protestant exiles formed the English Congregation in Geneva during the Marian exile period. Religious repression under Mary I drove English and Scottish Protestants into continental exile. A congregation gathered in Geneva in the mid-1550s, where John Knox and other ministers adapted Reformed worship to their community. Its practices and scriptural discussion helped transmit Genevan patterns back to Britain. When political conditions changed, the exile congregation dispersed; its significance continued through people and texts rather than a permanent denomination.",
+    "causes": [
+      "Protestant exile community"
+    ],
+    "key_figures": [
+      {
+        "name": "John Knox",
+        "role": "minister and conduit of Genevan influence to Scotland",
+        "summary": "A Scottish reformer whose ministry in England and Geneva influenced his preaching, worship, and church reform in Scotland.",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/history",
+        "citations": [
+          "cite-profile-english-congregation-geneva-geneva-knox",
+          "cite-profile-english-congregation-geneva-scotland-history"
+        ]
+      },
+      {
+        "name": "Christopher Goodman",
+        "role": "Minister of the exile congregation alongside Knox",
+        "summary": "An English Protestant exile whose ministry is identified with Knox\u2019s in the surviving Genevan congregational register.",
+        "url": "https://archives-etat-ge.ch/page_de_base/geneve-cite-daccueil/",
+        "citations": [
+          "cite-profile-english-congregation-geneva-geneva-exiles"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1555,
+        "label": "Marian exile congregation",
+        "citations": [
+          "cite-english-congregation-geneva-exiles"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Historic Origins of the Presbytery \u2014 OPC Ordained Servant",
+        "url": "https://opc.org/OS/html/V5/1e.html",
+        "snippet": "Formation and development: Religious repression under Mary I drove English and Scottish Protestants into continental exile. A congregation gathered in Geneva in the mid-1550s, where John Knox and other ministers adapted Reformed worship to their community.",
+        "citations": [
+          "cite-profile-english-congregation-geneva-geneva-knox"
+        ]
+      },
+      {
+        "title": "Livre des Anglois: register of the English church in Geneva",
+        "url": "https://archives-etat-ge.ch/page_de_base/geneve-cite-daccueil/",
+        "snippet": "A surviving congregational register for 1555\u20131559 under Knox and Christopher Goodman; a primary institutional record, not a confession imposed on later Presbyterian churches.",
+        "citations": [
+          "cite-profile-english-congregation-geneva-geneva-exiles"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-english-congregation-geneva-geneva-knox",
+      "cite-profile-english-congregation-geneva-scotland-history",
+      "cite-profile-english-congregation-geneva-geneva-exiles"
+    ]
   },
   {
     "id": "catholic-church-to-lutheran-reformation-1517",
@@ -67,9 +551,90 @@
     "zoom_tier": "full",
     "type": "split",
     "year": 1517,
-    "reasons": ["Protestant Reformation", "doctrinal reform"],
+    "reasons": [
+      "Protestant Reformation",
+      "doctrinal reform"
+    ],
     "description": "The Lutheran Reformation emerged in opposition to Roman Catholic doctrine and authority, beginning in 1517.",
-    "citations": ["cite-lutheranism-origins"]
+    "citations": [
+      "cite-lutheranism-origins",
+      "cite-profile-lutheran-reformation-lutheran-texts",
+      "cite-profile-lutheran-reformation-lcms-history"
+    ],
+    "narrative": "The Lutheran Reformation emerged in opposition to Roman Catholic doctrine and authority, beginning in 1517. Luther\u2019s controversy over indulgences expanded into disputes about salvation, authority, and church practice. Reform was transmitted through preaching, vernacular teaching, print, and political protection. The 1517 date is a conventional opening milestone; regional churches took institutional form over subsequent decades. The movement did not produce one worldwide denomination, and later Lutheran churches developed different political and confessional arrangements.",
+    "causes": [
+      "Protestant Reformation",
+      "doctrinal reform"
+    ],
+    "key_figures": [
+      {
+        "name": "Martin Luther",
+        "role": "reformer and catechist",
+        "summary": "A German reformer whose teaching on justification, catechesis, and sacramental life shaped the Lutheran confessional tradition.",
+        "url": "https://www.lcms.org/about/lcms-history",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts",
+          "cite-profile-lutheran-reformation-lcms-history"
+        ]
+      },
+      {
+        "name": "Philipp Melanchthon",
+        "role": "principal author of the Augsburg Confession",
+        "summary": "A scholar and colleague of Luther who was the principal author of the Augsburg Confession, helping explain Lutheran teaching in a public confessional form.",
+        "url": "https://www.lcms.org/about/lcms-history",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts",
+          "cite-profile-lutheran-reformation-lcms-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1517,
+        "label": "Lutheran Reformation",
+        "citations": [
+          "cite-lutheranism-origins"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Book of Concord \u2014 historical Lutheran confessional texts",
+        "url": "https://bookofconcord.org/",
+        "snippet": "Formation and development: Luther\u2019s controversy over indulgences expanded into disputes about salvation, authority, and church practice. Reform was transmitted through preaching, vernacular teaching, print, and political protection.",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Book of Concord",
+        "url": "https://bookofconcord.org/",
+        "snippet": "A collection of Lutheran confessional texts consolidating the tradition after Luther; not every regional church adopted every component identically.",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-lutheran-reformation-lutheran-texts",
+      "cite-profile-lutheran-reformation-lcms-history"
+    ]
   },
   {
     "id": "genevan-reformed-to-church-of-scotland-1559",
@@ -79,9 +644,100 @@
     "zoom_tier": "full",
     "type": "influence",
     "year": 1559,
-    "reasons": ["Knox's Genevan ministry", "Reformed influence on Scottish Reformation"],
+    "reasons": [
+      "Knox's Genevan ministry",
+      "Reformed influence on Scottish Reformation"
+    ],
     "description": "John Knox returned from ministering in Geneva to lead the Reformation in Scotland, carrying Genevan Reformed theology and practice into the emerging Church of Scotland.",
-    "citations": ["cite-church-of-scotland-knox", "cite-church-of-scotland-lead"]
+    "citations": [
+      "cite-church-of-scotland-knox",
+      "cite-church-of-scotland-lead",
+      "cite-profile-church-of-scotland-scotland-history",
+      "cite-profile-church-of-scotland-scotland-confessions"
+    ],
+    "narrative": "John Knox returned from ministering in Geneva to lead the Reformation in Scotland, carrying Genevan Reformed theology and practice into the emerging Church of Scotland. The Reformation of 1560 supplied a Protestant confession and transformed existing church structures. Presbyterian government developed through later struggles over royal authority and episcopacy, with a full system recognized in 1592. Westminster became a principal doctrinal standard in 1647. From January 2026 a Book of Confessions adds other historic and contemporary statements, making a Westminster-only description of current standards incomplete.",
+    "causes": [
+      "Knox's Genevan ministry",
+      "Reformed influence on Scottish Reformation"
+    ],
+    "key_figures": [
+      {
+        "name": "John Knox",
+        "role": "principal Reformation leader",
+        "summary": "A Scottish reformer whose ministry in England and Geneva influenced his preaching, worship, and church reform in Scotland.",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-history",
+          "cite-profile-church-of-scotland-scotland-confessions"
+        ]
+      },
+      {
+        "name": "John Calvin",
+        "role": "major theological influence through Knox and the Genevan connection",
+        "summary": "A French Reformed theologian and Genevan pastor whose writing and church ordinances influenced communities well beyond Geneva.",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-history",
+          "cite-profile-church-of-scotland-scotland-confessions"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1559,
+        "label": "Knox returns from Geneva",
+        "citations": [
+          "cite-church-of-scotland-knox",
+          "cite-church-of-scotland-lead"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the Church of Scotland \u2014 official account",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/history",
+        "snippet": "Formation and development: The Reformation of 1560 supplied a Protestant confession and transformed existing church structures. Presbyterian government developed through later struggles over royal authority and episcopacy, with a full system recognized in 1592.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-history"
+        ]
+      },
+      {
+        "title": "Church of Scotland Book of Confessions \u2014 official full text",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0007/143584/printBookofConfessions.pdf",
+        "snippet": "Teaching and practice: God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-texts"
+        ]
+      },
+      {
+        "title": "Westminster Confession",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions",
+        "snippet": "Longstanding principal subordinate standard, now read alongside other received statements.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-confessions"
+        ]
+      },
+      {
+        "title": "Scots Confession",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0007/143584/printBookofConfessions.pdf",
+        "snippet": "A Reformation statement articulating Scottish Protestant faith; its historical role differs from later Westminster standards.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-texts"
+        ]
+      },
+      {
+        "title": "Book of Confessions",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions",
+        "snippet": "Current collection includes ecumenical creeds, Scots and Westminster Confessions, and the 1992 Statement of Faith.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-confessions"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-church-of-scotland-scotland-history",
+      "cite-profile-church-of-scotland-scotland-confessions"
+    ]
   },
   {
     "id": "english-congregation-geneva-to-presbyterian-polity-scotland-1555",
@@ -91,9 +747,86 @@
     "zoom_tier": "full",
     "type": "influence",
     "year": 1555,
-    "reasons": ["English Congregation in Geneva", "Presbyterian worship model"],
+    "reasons": [
+      "English Congregation in Geneva",
+      "Presbyterian worship model"
+    ],
     "description": "The English Congregation in Geneva (led mainly by John Knox) modeled Presbyterian worship and governance, providing a Genevan pattern that influenced later Scottish polity.",
-    "citations": ["cite-english-congregation-geneva-overview", "cite-english-congregation-geneva-influence"]
+    "citations": [
+      "cite-english-congregation-geneva-overview",
+      "cite-english-congregation-geneva-influence",
+      "cite-profile-presbyterian-polity-scotland-scotland-history",
+      "cite-profile-presbyterian-polity-scotland-geneva-knox"
+    ],
+    "narrative": "The English Congregation in Geneva (led mainly by John Knox) modeled Presbyterian worship and governance, providing a Genevan pattern that influenced later Scottish polity. The Scottish Reformation created demand for a church order accountable through elders and assemblies rather than royal or episcopal control alone. Structures emerged unevenly, and disputes with monarchs continued for generations. The dataset uses 1581 for early presbyteries; official church history places recognition of the full system in 1592. This node is a governance tradition, not a separate denomination founded to teach another gospel.",
+    "causes": [
+      "English Congregation in Geneva",
+      "Presbyterian worship model"
+    ],
+    "key_figures": [
+      {
+        "name": "John Knox",
+        "role": "early reforming influence",
+        "summary": "A Scottish reformer whose ministry in England and Geneva influenced his preaching, worship, and church reform in Scotland.",
+        "url": "https://libraryblogs.is.ed.ac.uk/newcollegelibrarian/tag/presbyterian/",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-scotland-history",
+          "cite-profile-presbyterian-polity-scotland-geneva-knox",
+          "cite-profile-presbyterian-polity-scotland-melville"
+        ]
+      },
+      {
+        "name": "Andrew Melville",
+        "role": "scholar and advocate of Presbyterian church government",
+        "summary": "A Scottish theologian, biblical scholar, and university principal who became a major advocate of Presbyterian church government after Knox\u2019s generation.",
+        "url": "https://libraryblogs.is.ed.ac.uk/newcollegelibrarian/tag/presbyterian/",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-scotland-history",
+          "cite-profile-presbyterian-polity-scotland-geneva-knox",
+          "cite-profile-presbyterian-polity-scotland-melville"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1555,
+        "label": "Geneva exile congregation model",
+        "citations": [
+          "cite-english-congregation-geneva-overview",
+          "cite-english-congregation-geneva-influence"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the Church of Scotland \u2014 official account",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/history",
+        "snippet": "Formation and development: The Scottish Reformation created demand for a church order accountable through elders and assemblies rather than royal or episcopal control alone. Structures emerged unevenly, and disputes with monarchs continued for generations.",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-scotland-history"
+        ]
+      },
+      {
+        "title": "First Book of Discipline",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0016/36124/History_and_Theology_of_the_Eldership_Paper_Dec2015.pdf",
+        "snippet": "An early Scottish Reformation plan for ministry, teaching, and church order. The linked official research paper explains the text and its context rather than claiming it was the final form of the later Presbyterian system.",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-eldership"
+        ]
+      },
+      {
+        "title": "Second Book of Discipline",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0016/36124/History_and_Theology_of_the_Eldership_Paper_Dec2015.pdf",
+        "snippet": "A later statement of church order sharpening the account of ministers, elders, assemblies, and discipline; its history helps distinguish initial reform from later Presbyterian consolidation.",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-eldership"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-presbyterian-polity-scotland-scotland-history",
+      "cite-profile-presbyterian-polity-scotland-geneva-knox"
+    ]
   },
   {
     "id": "genevan-reformed-to-presbyterian-polity-scotland-1541",
@@ -103,9 +836,86 @@
     "zoom_tier": "full",
     "type": "influence",
     "year": 1541,
-    "reasons": ["Calvin's Geneva polity", "Presbyterian governance model"],
+    "reasons": [
+      "Calvin's Geneva polity",
+      "Presbyterian governance model"
+    ],
     "description": "Presbyterian polity is described as having its modern implementation under Calvin in Geneva, which was later introduced to Scotland by John Knox.",
-    "citations": ["cite-presbyterian-polity-geneva", "cite-presbyterian-polity-intro-scotland"]
+    "citations": [
+      "cite-presbyterian-polity-geneva",
+      "cite-presbyterian-polity-intro-scotland",
+      "cite-profile-presbyterian-polity-scotland-scotland-history",
+      "cite-profile-presbyterian-polity-scotland-geneva-knox"
+    ],
+    "narrative": "Presbyterian polity is described as having its modern implementation under Calvin in Geneva, which was later introduced to Scotland by John Knox. The Scottish Reformation created demand for a church order accountable through elders and assemblies rather than royal or episcopal control alone. Structures emerged unevenly, and disputes with monarchs continued for generations. The dataset uses 1581 for early presbyteries; official church history places recognition of the full system in 1592. This node is a governance tradition, not a separate denomination founded to teach another gospel.",
+    "causes": [
+      "Calvin's Geneva polity",
+      "Presbyterian governance model"
+    ],
+    "key_figures": [
+      {
+        "name": "John Knox",
+        "role": "early reforming influence",
+        "summary": "A Scottish reformer whose ministry in England and Geneva influenced his preaching, worship, and church reform in Scotland.",
+        "url": "https://libraryblogs.is.ed.ac.uk/newcollegelibrarian/tag/presbyterian/",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-scotland-history",
+          "cite-profile-presbyterian-polity-scotland-geneva-knox",
+          "cite-profile-presbyterian-polity-scotland-melville"
+        ]
+      },
+      {
+        "name": "Andrew Melville",
+        "role": "scholar and advocate of Presbyterian church government",
+        "summary": "A Scottish theologian, biblical scholar, and university principal who became a major advocate of Presbyterian church government after Knox\u2019s generation.",
+        "url": "https://libraryblogs.is.ed.ac.uk/newcollegelibrarian/tag/presbyterian/",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-scotland-history",
+          "cite-profile-presbyterian-polity-scotland-geneva-knox",
+          "cite-profile-presbyterian-polity-scotland-melville"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1541,
+        "label": "Geneva polity model",
+        "citations": [
+          "cite-presbyterian-polity-geneva",
+          "cite-presbyterian-polity-intro-scotland"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the Church of Scotland \u2014 official account",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/history",
+        "snippet": "Formation and development: The Scottish Reformation created demand for a church order accountable through elders and assemblies rather than royal or episcopal control alone. Structures emerged unevenly, and disputes with monarchs continued for generations.",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-scotland-history"
+        ]
+      },
+      {
+        "title": "First Book of Discipline",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0016/36124/History_and_Theology_of_the_Eldership_Paper_Dec2015.pdf",
+        "snippet": "An early Scottish Reformation plan for ministry, teaching, and church order. The linked official research paper explains the text and its context rather than claiming it was the final form of the later Presbyterian system.",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-eldership"
+        ]
+      },
+      {
+        "title": "Second Book of Discipline",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0016/36124/History_and_Theology_of_the_Eldership_Paper_Dec2015.pdf",
+        "snippet": "A later statement of church order sharpening the account of ministers, elders, assemblies, and discipline; its history helps distinguish initial reform from later Presbyterian consolidation.",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-eldership"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-presbyterian-polity-scotland-scotland-history",
+      "cite-profile-presbyterian-polity-scotland-geneva-knox"
+    ]
   },
   {
     "id": "scottish-reformation-to-church-of-scotland-1560",
@@ -115,9 +925,98 @@
     "zoom_tier": "full",
     "type": "continuation",
     "year": 1560,
-    "reasons": ["Protestant confession adopted", "Rejection of papal supremacy"],
+    "reasons": [
+      "Protestant confession adopted",
+      "Rejection of papal supremacy"
+    ],
     "description": "The Scottish Reformation established the Protestant Church of Scotland, adopting a Presbyterian structure and largely Calvinist doctrine.",
-    "citations": ["cite-scottish-reformation-structure"]
+    "citations": [
+      "cite-scottish-reformation-structure",
+      "cite-profile-church-of-scotland-scotland-history",
+      "cite-profile-church-of-scotland-scotland-confessions"
+    ],
+    "narrative": "The Scottish Reformation established the Protestant Church of Scotland, adopting a Presbyterian structure and largely Calvinist doctrine. The Reformation of 1560 supplied a Protestant confession and transformed existing church structures. Presbyterian government developed through later struggles over royal authority and episcopacy, with a full system recognized in 1592. Westminster became a principal doctrinal standard in 1647. From January 2026 a Book of Confessions adds other historic and contemporary statements, making a Westminster-only description of current standards incomplete.",
+    "causes": [
+      "Protestant confession adopted",
+      "Rejection of papal supremacy"
+    ],
+    "key_figures": [
+      {
+        "name": "John Knox",
+        "role": "principal Reformation leader",
+        "summary": "A Scottish reformer whose ministry in England and Geneva influenced his preaching, worship, and church reform in Scotland.",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-history",
+          "cite-profile-church-of-scotland-scotland-confessions"
+        ]
+      },
+      {
+        "name": "John Calvin",
+        "role": "major theological influence through Knox and the Genevan connection",
+        "summary": "A French Reformed theologian and Genevan pastor whose writing and church ordinances influenced communities well beyond Geneva.",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-history",
+          "cite-profile-church-of-scotland-scotland-confessions"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1560,
+        "label": "Reformation parliament",
+        "citations": [
+          "cite-scottish-reformation-structure"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the Church of Scotland \u2014 official account",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/history",
+        "snippet": "Formation and development: The Reformation of 1560 supplied a Protestant confession and transformed existing church structures. Presbyterian government developed through later struggles over royal authority and episcopacy, with a full system recognized in 1592.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-history"
+        ]
+      },
+      {
+        "title": "Church of Scotland Book of Confessions \u2014 official full text",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0007/143584/printBookofConfessions.pdf",
+        "snippet": "Teaching and practice: God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-texts"
+        ]
+      },
+      {
+        "title": "Westminster Confession",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions",
+        "snippet": "Longstanding principal subordinate standard, now read alongside other received statements.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-confessions"
+        ]
+      },
+      {
+        "title": "Scots Confession",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0007/143584/printBookofConfessions.pdf",
+        "snippet": "A Reformation statement articulating Scottish Protestant faith; its historical role differs from later Westminster standards.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-texts"
+        ]
+      },
+      {
+        "title": "Book of Confessions",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions",
+        "snippet": "Current collection includes ecumenical creeds, Scots and Westminster Confessions, and the 1992 Statement of Faith.",
+        "citations": [
+          "cite-profile-church-of-scotland-scotland-confessions"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-church-of-scotland-scotland-history",
+      "cite-profile-church-of-scotland-scotland-confessions"
+    ]
   },
   {
     "id": "church-of-scotland-to-presbyterian-polity-scotland-1581",
@@ -127,9 +1026,84 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1581,
-    "reasons": ["formal presbyteries established"],
+    "reasons": [
+      "formal presbyteries established"
+    ],
     "description": "Original presbyteries in the Church of Scotland were created in April 1581, marking the concrete emergence of Presbyterian polity in Scotland.",
-    "citations": ["cite-cos-synods-presbyteries", "cite-church-of-scotland-polity"]
+    "citations": [
+      "cite-cos-synods-presbyteries",
+      "cite-church-of-scotland-polity",
+      "cite-profile-presbyterian-polity-scotland-scotland-history",
+      "cite-profile-presbyterian-polity-scotland-geneva-knox"
+    ],
+    "narrative": "Original presbyteries in the Church of Scotland were created in April 1581, marking the concrete emergence of Presbyterian polity in Scotland. The Scottish Reformation created demand for a church order accountable through elders and assemblies rather than royal or episcopal control alone. Structures emerged unevenly, and disputes with monarchs continued for generations. The dataset uses 1581 for early presbyteries; official church history places recognition of the full system in 1592. This node is a governance tradition, not a separate denomination founded to teach another gospel.",
+    "causes": [
+      "formal presbyteries established"
+    ],
+    "key_figures": [
+      {
+        "name": "John Knox",
+        "role": "early reforming influence",
+        "summary": "A Scottish reformer whose ministry in England and Geneva influenced his preaching, worship, and church reform in Scotland.",
+        "url": "https://libraryblogs.is.ed.ac.uk/newcollegelibrarian/tag/presbyterian/",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-scotland-history",
+          "cite-profile-presbyterian-polity-scotland-geneva-knox",
+          "cite-profile-presbyterian-polity-scotland-melville"
+        ]
+      },
+      {
+        "name": "Andrew Melville",
+        "role": "scholar and advocate of Presbyterian church government",
+        "summary": "A Scottish theologian, biblical scholar, and university principal who became a major advocate of Presbyterian church government after Knox\u2019s generation.",
+        "url": "https://libraryblogs.is.ed.ac.uk/newcollegelibrarian/tag/presbyterian/",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-scotland-history",
+          "cite-profile-presbyterian-polity-scotland-geneva-knox",
+          "cite-profile-presbyterian-polity-scotland-melville"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1581,
+        "label": "First Scottish presbyteries",
+        "citations": [
+          "cite-cos-synods-presbyteries",
+          "cite-church-of-scotland-polity"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the Church of Scotland \u2014 official account",
+        "url": "https://www.churchofscotland.org.uk/about-us/our-faith/history",
+        "snippet": "Formation and development: The Scottish Reformation created demand for a church order accountable through elders and assemblies rather than royal or episcopal control alone. Structures emerged unevenly, and disputes with monarchs continued for generations.",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-scotland-history"
+        ]
+      },
+      {
+        "title": "First Book of Discipline",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0016/36124/History_and_Theology_of_the_Eldership_Paper_Dec2015.pdf",
+        "snippet": "An early Scottish Reformation plan for ministry, teaching, and church order. The linked official research paper explains the text and its context rather than claiming it was the final form of the later Presbyterian system.",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-eldership"
+        ]
+      },
+      {
+        "title": "Second Book of Discipline",
+        "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0016/36124/History_and_Theology_of_the_Eldership_Paper_Dec2015.pdf",
+        "snippet": "A later statement of church order sharpening the account of ministers, elders, assemblies, and discipline; its history helps distinguish initial reform from later Presbyterian consolidation.",
+        "citations": [
+          "cite-profile-presbyterian-polity-scotland-eldership"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-presbyterian-polity-scotland-scotland-history",
+      "cite-profile-presbyterian-polity-scotland-geneva-knox"
+    ]
   },
   {
     "id": "church-of-scotland-to-presbyterian-migrations-america-1706",
@@ -139,9 +1113,72 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1706,
-    "reasons": ["Scottish and Ulster migration"],
+    "reasons": [
+      "Scottish and Ulster migration"
+    ],
     "description": "Colonial Presbyterianism originated in part through immigrants from the Church of Scotland and Presbyterians from Ireland to the American colonies.",
-    "citations": ["cite-pcusa-1789-origin", "cite-presbyterian-us"]
+    "citations": [
+      "cite-pcusa-1789-origin",
+      "cite-presbyterian-us",
+      "cite-profile-presbyterian-migrations-america-colonial-history",
+      "cite-profile-presbyterian-migrations-america-makemie-presbytery"
+    ],
+    "narrative": "Colonial Presbyterianism originated in part through immigrants from the Church of Scotland and Presbyterians from Ireland to the American colonies. Migrants and ministers from Scotland, Ulster, and other backgrounds brought Reformed worship and church order to colonial settlements. They needed congregations, trained ministry, and mutual accountability in a setting without one national Presbyterian establishment. Francis Makemie\u2019s arrival in 1683 and the 1706 presbytery are useful markers. Migration itself was not an ecclesiastical corporation, and a count of migrants should not be confused with denominational membership.",
+    "causes": [
+      "Scottish and Ulster migration"
+    ],
+    "key_figures": [
+      {
+        "name": "Francis Makemie",
+        "role": "Irish-born minister involved in early congregations and presbytery organization",
+        "summary": "An Irish-born Presbyterian minister who served colonial communities and helped organize early American presbyterial cooperation.",
+        "url": "https://thisday.pcahistory.org/2013/03/march-28-the-first-presbytery-1706/",
+        "citations": [
+          "cite-profile-presbyterian-migrations-america-colonial-history",
+          "cite-profile-presbyterian-migrations-america-makemie-presbytery"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1706,
+        "label": "Scottish/Ulster migration",
+        "citations": [
+          "cite-pcusa-1789-origin",
+          "cite-presbyterian-us"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Church History \u2014 Presbyterian Mission Agency",
+        "url": "https://centernet.pcusa.org/what-we-believe/church-history/",
+        "snippet": "Formation and development: Migrants and ministers from Scotland, Ulster, and other backgrounds brought Reformed worship and church order to colonial settlements. They needed congregations, trained ministry, and mutual accountability in a setting without one national Presbyterian establishment.",
+        "citations": [
+          "cite-profile-presbyterian-migrations-america-colonial-history"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Catechisms \u2014 OPC official texts",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Teaching and practice: Inherited Reformed faith: settlers carried confessional traditions rather than developing one new migration-wide creed.",
+        "citations": [
+          "cite-profile-presbyterian-migrations-america-westminster"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Larger and Shorter Catechisms",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Historic Reformed doctrinal and teaching texts. American revisions and each church\u2019s subscription rules must be distinguished from the original Scottish form.",
+        "citations": [
+          "cite-profile-presbyterian-migrations-america-westminster"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-presbyterian-migrations-america-colonial-history",
+      "cite-profile-presbyterian-migrations-america-makemie-presbytery"
+    ]
   },
   {
     "id": "presbyterian-migrations-america-to-presbyterian-polity-founding-context-1706",
@@ -151,9 +1188,73 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1706,
-    "reasons": ["Presbytery of Philadelphia organized"],
+    "reasons": [
+      "Presbytery of Philadelphia organized"
+    ],
     "description": "In 1706 seven ministers organized the Presbytery of Philadelphia and chose Francis Makemie as moderator, formalizing Presbyterian polity in the colonies.",
-    "citations": ["cite-presbytery-philadelphia"]
+    "citations": [
+      "cite-presbytery-philadelphia",
+      "cite-profile-presbyterian-polity-founding-context-makemie-presbytery",
+      "cite-profile-presbyterian-polity-founding-context-colonial-history",
+      "cite-profile-presbyterian-polity-founding-context-presbyterian-history"
+    ],
+    "narrative": "In 1706 seven ministers organized the Presbytery of Philadelphia and chose Francis Makemie as moderator, formalizing Presbyterian polity in the colonies. Scattered colonial ministers needed mutual support, discipline, and a way to coordinate preaching and church life. The formation of a presbytery provided that connection without creating a state church. Makemie was a leading participant, but several ministers shared the work. The year is well established while the exact first meeting date is less secure because early records are incomplete. Later synods and national assemblies built on this organizational setting.",
+    "causes": [
+      "Presbytery of Philadelphia organized"
+    ],
+    "key_figures": [
+      {
+        "name": "Francis Makemie",
+        "role": "leading organizer and early moderator",
+        "summary": "An Irish-born Presbyterian minister who served colonial communities and helped organize early American presbyterial cooperation.",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "citations": [
+          "cite-profile-presbyterian-polity-founding-context-makemie-presbytery",
+          "cite-profile-presbyterian-polity-founding-context-colonial-history",
+          "cite-profile-presbyterian-polity-founding-context-presbyterian-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1706,
+        "label": "First American presbytery",
+        "citations": [
+          "cite-presbytery-philadelphia"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "The First Presbytery (1706) \u2014 PCA Historical Center",
+        "url": "https://thisday.pcahistory.org/2013/03/march-28-the-first-presbytery-1706/",
+        "snippet": "Formation and development: Scattered colonial ministers needed mutual support, discipline, and a way to coordinate preaching and church life. The formation of a presbytery provided that connection without creating a state church.",
+        "citations": [
+          "cite-profile-presbyterian-polity-founding-context-makemie-presbytery"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Catechisms \u2014 OPC official texts",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Teaching and practice: Presbyterial accountability: ministers and congregations participate in a connected form of oversight rather than complete institutional isolation.",
+        "citations": [
+          "cite-profile-presbyterian-polity-founding-context-westminster"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Larger and Shorter Catechisms",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Historic Reformed doctrinal and teaching texts. American revisions and each church\u2019s subscription rules must be distinguished from the original Scottish form.",
+        "citations": [
+          "cite-profile-presbyterian-polity-founding-context-westminster"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-presbyterian-polity-founding-context-makemie-presbytery",
+      "cite-profile-presbyterian-polity-founding-context-colonial-history",
+      "cite-profile-presbyterian-polity-founding-context-presbyterian-history"
+    ]
   },
   {
     "id": "presbyterian-polity-founding-context-to-pcusa-1789",
@@ -163,9 +1264,82 @@
     "zoom_tier": "full",
     "type": "continuation",
     "year": 1789,
-    "reasons": ["national denomination organized"],
+    "reasons": [
+      "national denomination organized"
+    ],
     "description": "The Presbyterian Church in the United States of America was organized in 1789 as the first national Presbyterian denomination, building on colonial presbyteries and synods.",
-    "citations": ["cite-pcusa-1789-overview", "cite-pcusa-1789-founded"]
+    "citations": [
+      "cite-pcusa-1789-overview",
+      "cite-pcusa-1789-founded",
+      "cite-profile-pcusa-1789-presbyterian-history",
+      "cite-profile-pcusa-1789-pcusa-1958"
+    ],
+    "narrative": "The Presbyterian Church in the United States of America was organized in 1789 as the first national Presbyterian denomination, building on colonial presbyteries and synods. Colonial presbyteries and synods developed national structures after American independence. Constitutional organization in 1788 and the first General Assembly in 1789 are distinct milestones. Subsequent disputes over revival, theology, slavery, and mission produced separations and reunions. Calling the entire 1789 body simply northern projects a later sectional identity backward. It joined the UPCNA in 1958 rather than becoming the present PCUSA directly.",
+    "causes": [
+      "national denomination organized"
+    ],
+    "key_figures": [
+      {
+        "name": "Francis Makemie",
+        "role": "earlier presbyterial organizer in the church\u2019s ancestry",
+        "summary": "An Irish-born Presbyterian minister who served colonial communities and helped organize early American presbyterial cooperation.",
+        "url": "https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history",
+          "cite-profile-pcusa-1789-pcusa-1958"
+        ]
+      },
+      {
+        "name": "Eugene Carson Blake",
+        "role": "stated clerk and advocate of the 1958 union",
+        "summary": "A Presbyterian stated clerk and advocate of ecumenical cooperation who helped advance the 1958 union creating UPCUSA.",
+        "url": "https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history",
+          "cite-profile-pcusa-1789-pcusa-1958"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1789,
+        "label": "National PCUSA formed",
+        "citations": [
+          "cite-pcusa-1789-overview",
+          "cite-pcusa-1789-founded"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the Church \u2014 Presbyterian Historical Society",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "snippet": "Formation and development: Colonial presbyteries and synods developed national structures after American independence. Constitutional organization in 1788 and the first General Assembly in 1789 are distinct milestones.",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Catechisms \u2014 OPC official texts",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Teaching and practice: God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+        "citations": [
+          "cite-profile-pcusa-1789-westminster"
+        ]
+      },
+      {
+        "title": "American revisions of the Westminster Standards",
+        "url": "https://opc.org/documents/WCF_orig.html",
+        "snippet": "Adapted the inherited confession for the American setting; later PCUSA revisions and OPC reception differ.",
+        "citations": [
+          "cite-profile-pcusa-1789-westminster-revisions"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-pcusa-1789-presbyterian-history",
+      "cite-profile-pcusa-1789-pcusa-1958"
+    ]
   },
   {
     "id": "church-of-scotland-to-pcusa-1789",
@@ -175,9 +1349,82 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1789,
-    "reasons": ["Scottish roots", "Synod of Ulster roots"],
+    "reasons": [
+      "Scottish roots",
+      "Synod of Ulster roots"
+    ],
     "description": "The Presbyterian Church in the United States of America traces its roots to the Church of Scotland and the Synod of Ulster.",
-    "citations": ["cite-pcusa-1789-branched-from"]
+    "citations": [
+      "cite-pcusa-1789-branched-from",
+      "cite-profile-pcusa-1789-presbyterian-history",
+      "cite-profile-pcusa-1789-pcusa-1958"
+    ],
+    "narrative": "The Presbyterian Church in the United States of America traces its roots to the Church of Scotland and the Synod of Ulster. Colonial presbyteries and synods developed national structures after American independence. Constitutional organization in 1788 and the first General Assembly in 1789 are distinct milestones. Subsequent disputes over revival, theology, slavery, and mission produced separations and reunions. Calling the entire 1789 body simply northern projects a later sectional identity backward. It joined the UPCNA in 1958 rather than becoming the present PCUSA directly.",
+    "causes": [
+      "Scottish roots",
+      "Synod of Ulster roots"
+    ],
+    "key_figures": [
+      {
+        "name": "Francis Makemie",
+        "role": "earlier presbyterial organizer in the church\u2019s ancestry",
+        "summary": "An Irish-born Presbyterian minister who served colonial communities and helped organize early American presbyterial cooperation.",
+        "url": "https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history",
+          "cite-profile-pcusa-1789-pcusa-1958"
+        ]
+      },
+      {
+        "name": "Eugene Carson Blake",
+        "role": "stated clerk and advocate of the 1958 union",
+        "summary": "A Presbyterian stated clerk and advocate of ecumenical cooperation who helped advance the 1958 union creating UPCUSA.",
+        "url": "https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history",
+          "cite-profile-pcusa-1789-pcusa-1958"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1789,
+        "label": "Branching from Scottish roots",
+        "citations": [
+          "cite-pcusa-1789-branched-from"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the Church \u2014 Presbyterian Historical Society",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "snippet": "Formation and development: Colonial presbyteries and synods developed national structures after American independence. Constitutional organization in 1788 and the first General Assembly in 1789 are distinct milestones.",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Catechisms \u2014 OPC official texts",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Teaching and practice: God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+        "citations": [
+          "cite-profile-pcusa-1789-westminster"
+        ]
+      },
+      {
+        "title": "American revisions of the Westminster Standards",
+        "url": "https://opc.org/documents/WCF_orig.html",
+        "snippet": "Adapted the inherited confession for the American setting; later PCUSA revisions and OPC reception differ.",
+        "citations": [
+          "cite-profile-pcusa-1789-westminster-revisions"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-pcusa-1789-presbyterian-history",
+      "cite-profile-pcusa-1789-pcusa-1958"
+    ]
   },
   {
     "id": "presbyterian-migrations-america-to-pcusa-1789",
@@ -187,8 +1434,83 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1789,
-    "reasons": ["colonial presbytery organization", "synod formation"],
+    "reasons": [
+      "colonial presbytery organization",
+      "synod formation"
+    ],
     "description": "Colonial Presbyterian presbyteries and synods formed the institutional base that led to the 1789 organization of the Presbyterian Church in the United States of America.",
-    "citations": ["cite-presbyterian-us", "cite-presbytery-philadelphia"]
+    "citations": [
+      "cite-presbyterian-us",
+      "cite-presbytery-philadelphia",
+      "cite-profile-pcusa-1789-presbyterian-history",
+      "cite-profile-pcusa-1789-pcusa-1958"
+    ],
+    "narrative": "Colonial Presbyterian presbyteries and synods formed the institutional base that led to the 1789 organization of the Presbyterian Church in the United States of America. Colonial presbyteries and synods developed national structures after American independence. Constitutional organization in 1788 and the first General Assembly in 1789 are distinct milestones. Subsequent disputes over revival, theology, slavery, and mission produced separations and reunions. Calling the entire 1789 body simply northern projects a later sectional identity backward. It joined the UPCNA in 1958 rather than becoming the present PCUSA directly.",
+    "causes": [
+      "colonial presbytery organization",
+      "synod formation"
+    ],
+    "key_figures": [
+      {
+        "name": "Francis Makemie",
+        "role": "earlier presbyterial organizer in the church\u2019s ancestry",
+        "summary": "An Irish-born Presbyterian minister who served colonial communities and helped organize early American presbyterial cooperation.",
+        "url": "https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history",
+          "cite-profile-pcusa-1789-pcusa-1958"
+        ]
+      },
+      {
+        "name": "Eugene Carson Blake",
+        "role": "stated clerk and advocate of the 1958 union",
+        "summary": "A Presbyterian stated clerk and advocate of ecumenical cooperation who helped advance the 1958 union creating UPCUSA.",
+        "url": "https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history",
+          "cite-profile-pcusa-1789-pcusa-1958"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1789,
+        "label": "Colonial presbytery formation",
+        "citations": [
+          "cite-presbyterian-us",
+          "cite-presbytery-philadelphia"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the Church \u2014 Presbyterian Historical Society",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "snippet": "Formation and development: Colonial presbyteries and synods developed national structures after American independence. Constitutional organization in 1788 and the first General Assembly in 1789 are distinct milestones.",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Catechisms \u2014 OPC official texts",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Teaching and practice: God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+        "citations": [
+          "cite-profile-pcusa-1789-westminster"
+        ]
+      },
+      {
+        "title": "American revisions of the Westminster Standards",
+        "url": "https://opc.org/documents/WCF_orig.html",
+        "snippet": "Adapted the inherited confession for the American setting; later PCUSA revisions and OPC reception differ.",
+        "citations": [
+          "cite-profile-pcusa-1789-westminster-revisions"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-pcusa-1789-presbyterian-history",
+      "cite-profile-pcusa-1789-pcusa-1958"
+    ]
   }
 ]

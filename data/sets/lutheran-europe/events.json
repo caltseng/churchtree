@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "event-lutheran-reformation-1517",
     "name": "Lutheran Reformation begins",
@@ -6,6 +6,8 @@
     "zoom_tier": "full",
     "description": "Martin Luther's reforming activity is commonly dated from 1517.",
     "related_edge_ids": [],
-    "citations": ["cite-lutheranism-origins"]
+    "citations": [
+      "cite-lutheranism-origins"
+    ]
   }
 ]

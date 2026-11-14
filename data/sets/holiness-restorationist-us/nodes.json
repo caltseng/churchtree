@@ -1,4 +1,282 @@
-﻿[
+[
+  {
+    "id": "second-great-awakening",
+    "name": "Second Great Awakening",
+    "kind": "movement",
+    "start_year": 1790,
+    "zoom_tier": "full",
+    "short_label": "Second Great Awakening",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Revivalist",
+    "ecclesial_orientation": "other",
+    "current_status": "unknown",
+    "notes": "Religious revival during the late 18th to early 19th century in the United States.",
+    "distinctives": [
+      "Revival preaching",
+      "Conversion emphasis"
+    ],
+    "size_estimate": "unknown",
+    "summary": "A broad period of American Protestant revival that reshaped conversion, voluntary religious organization, and public reform.",
+    "formation_narrative": "Revival expanded through different regional settings around the turn of the nineteenth century and into the following decades. Camp meetings and organized evangelism invited personal conversion, while some revivalists connected faith with reform. Calvinist and more voluntarist preachers disagreed about how revival occurred. This label names a historical era and overlapping networks, not a denomination with a founder, membership roll, or single constitution.",
+    "core_beliefs": [
+      "Personal conversion: hearers were called to respond actively to the Christian message.",
+      "Revival methods varied: ministers differed over human agency, divine sovereignty, and organized techniques for producing religious interest.",
+      "Consequences were diverse: church growth, reform campaigns, and new religious movements emerged from the same broad environment without sharing a universal creed."
+    ],
+    "key_figures": [
+      {
+        "name": "Charles G. Finney",
+        "role": "prominent revivalist associated with organized conversion appeals",
+        "summary": "A revival preacher associated with organized evangelistic methods and an emphasis on personal response and moral transformation.",
+        "url": "https://disciples.org/our-identity/history-of-the-disciples/",
+        "citations": [
+          "cite-profile-second-great-awakening-awakening",
+          "cite-profile-second-great-awakening-finney",
+          "cite-profile-second-great-awakening-disciples-history"
+        ]
+      },
+      {
+        "name": "Asahel Nettleton",
+        "role": "revival preacher representing a different Calvinist approach",
+        "summary": "revival preacher representing a different Calvinist approach. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://disciples.org/our-identity/history-of-the-disciples/",
+        "citations": [
+          "cite-profile-second-great-awakening-awakening",
+          "cite-profile-second-great-awakening-finney",
+          "cite-profile-second-great-awakening-disciples-history"
+        ]
+      },
+      {
+        "name": "Barton W. Stone",
+        "role": "frontier revival participant and later Restoration leader",
+        "summary": "A frontier revival preacher who challenged denominational tests of fellowship and helped form the stream later united with Campbell followers.",
+        "url": "https://disciples.org/our-identity/history-of-the-disciples/",
+        "citations": [
+          "cite-profile-second-great-awakening-awakening",
+          "cite-profile-second-great-awakening-finney",
+          "cite-profile-second-great-awakening-disciples-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1801,
+        "label": "Cane Ridge revival becomes a major frontier milestone",
+        "citations": [
+          "cite-profile-second-great-awakening-awakening",
+          "cite-profile-second-great-awakening-finney",
+          "cite-profile-second-great-awakening-disciples-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Last Will and Testament of Springfield Presbytery",
+        "year": 1804,
+        "significance": "An influential product of the frontier revival environment, not the official confession of an awakening-wide organization.",
+        "url": "https://digitalcommons.discipleshistory.org/files/Last%20Will%20and%20Testament%20of%20the%20Springfield%20Presbytery.pdf",
+        "citations": [
+          "cite-profile-second-great-awakening-springfield"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-second-great-awakening-awakening",
+        "cite-profile-second-great-awakening-finney",
+        "cite-profile-second-great-awakening-disciples-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-second-great-awakening-awakening"
+      ],
+      "key_figures": [
+        "cite-profile-second-great-awakening-awakening",
+        "cite-profile-second-great-awakening-finney",
+        "cite-profile-second-great-awakening-disciples-history"
+      ],
+      "key_dates": [
+        "cite-profile-second-great-awakening-awakening",
+        "cite-profile-second-great-awakening-finney",
+        "cite-profile-second-great-awakening-disciples-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-second-great-awakening-awakening",
+        "cite-profile-second-great-awakening-finney",
+        "cite-profile-second-great-awakening-disciples-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-second-great-awakening-awakening",
+      "cite-profile-second-great-awakening-finney",
+      "cite-profile-second-great-awakening-disciples-history",
+      "cite-profile-second-great-awakening-springfield"
+    ],
+    "profile_scope": "The existing 1790 start is approximate. Documents are illustrative products of the era because no awakening-wide governing body existed. No formal corporate dissolution is asserted for this historical process. The status is unknown at the institutional level; the ending narrative explains its diffusion or development.",
+    "ending_narrative": "Revival intensity changed across regions and decades, leaving churches, voluntary societies, reform causes, and new movements. Historians apply an era label rather than identifying one closing assembly. The awakening therefore diffused and transformed; it has no formal dissolution date or single institutional successor.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Early National Era and Second Great Awakening \u2014 Oxford history chapter",
+        "url": "https://academic.oup.com/book/25538/chapter-abstract/192809304",
+        "snippet": "Formation and development: Revival expanded through different regional settings around the turn of the nineteenth century and into the following decades. Camp meetings and organized evangelism invited personal conversion, while some revivalists connected faith with reform.",
+        "citations": [
+          "cite-profile-second-great-awakening-awakening"
+        ]
+      },
+      {
+        "title": "Last Will and Testament of Springfield Presbytery",
+        "url": "https://digitalcommons.discipleshistory.org/files/Last%20Will%20and%20Testament%20of%20the%20Springfield%20Presbytery.pdf",
+        "snippet": "An influential product of the frontier revival environment, not the official confession of an awakening-wide organization.",
+        "citations": [
+          "cite-profile-second-great-awakening-springfield"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "holiness-movement",
+    "name": "Holiness movement",
+    "kind": "movement",
+    "start_year": 1850,
+    "zoom_tier": "full",
+    "short_label": "Holiness Movement",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Holiness",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "notes": "Movement that emerged chiefly within 19th-century Methodism and emphasized entire sanctification.",
+    "distinctives": [
+      "Entire sanctification",
+      "Second work of grace"
+    ],
+    "size_estimate": "unknown",
+    "summary": "A revival movement seeking a deeper transformation of Christian life through sanctification, especially in the Wesleyan tradition.",
+    "formation_narrative": "Nineteenth-century Holiness advocates revived Wesley\u2019s teaching about love of God and neighbor and emphasized an identifiable experience of sanctifying grace. Meetings, publications, and later denominations carried this teaching beyond Methodist institutions. Some adherents remained Methodist; others formed independent Holiness churches. A portion of this environment later fed Pentecostal revival, although Holiness teaching and speaking-in-tongues Pentecostalism are not equivalent.",
+    "core_beliefs": [
+      "Sanctification: grace is expected to change a believer\u2019s character and love, not only provide pardon.",
+      "Entire sanctification: many Wesleyan advocates teach a further work of grace after conversion, without defining it as freedom from human limitation or every mistake.",
+      "Practical holiness: worship, testimony, disciplined conduct, and service express inward renewal; interpretations differ among churches."
+    ],
+    "key_figures": [
+      {
+        "name": "John Wesley",
+        "role": "earlier theological influence, not organizer of the nineteenth-century movement",
+        "summary": "An Anglican minister and organizer of Methodist societies who linked the message of grace to disciplined discipleship and growth in love.",
+        "url": "https://nazarene.org/our-history/",
+        "citations": [
+          "cite-profile-holiness-movement-holiness",
+          "cite-profile-holiness-movement-holiness-study",
+          "cite-profile-holiness-movement-nazarene-history"
+        ]
+      },
+      {
+        "name": "Phoebe Palmer",
+        "role": "influential promoter of Holiness teaching and meetings",
+        "summary": "A Methodist Holiness teacher whose meetings and writings popularized an experience of sanctifying grace and influenced later Holiness networks.",
+        "url": "https://nazarene.org/our-history/",
+        "citations": [
+          "cite-profile-holiness-movement-holiness",
+          "cite-profile-holiness-movement-holiness-study",
+          "cite-profile-holiness-movement-nazarene-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1850,
+        "label": "Approximate mid-century marker used for a movement with earlier roots",
+        "citations": [
+          "cite-profile-holiness-movement-holiness",
+          "cite-profile-holiness-movement-holiness-study",
+          "cite-profile-holiness-movement-nazarene-history"
+        ]
+      },
+      {
+        "year": 1908,
+        "label": "Nazarene union institutionalizes one Wesleyan-Holiness stream",
+        "citations": [
+          "cite-profile-holiness-movement-holiness",
+          "cite-profile-holiness-movement-holiness-study",
+          "cite-profile-holiness-movement-nazarene-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Nazarene Articles of Faith",
+        "year": null,
+        "significance": "A denominational formulation of Wesleyan-Holiness teaching, useful for one major later stream; not a confession binding the whole movement.",
+        "url": "https://nazarene.org/resources/articles-of-faith/",
+        "citations": [
+          "cite-profile-holiness-movement-nazarene-faith"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-holiness-movement-holiness",
+        "cite-profile-holiness-movement-holiness-study",
+        "cite-profile-holiness-movement-nazarene-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-holiness-movement-nazarene-explained",
+        "cite-profile-holiness-movement-holiness"
+      ],
+      "key_figures": [
+        "cite-profile-holiness-movement-holiness",
+        "cite-profile-holiness-movement-holiness-study",
+        "cite-profile-holiness-movement-nazarene-history"
+      ],
+      "key_dates": [
+        "cite-profile-holiness-movement-holiness",
+        "cite-profile-holiness-movement-holiness-study",
+        "cite-profile-holiness-movement-nazarene-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-holiness-movement-holiness",
+        "cite-profile-holiness-movement-holiness-study",
+        "cite-profile-holiness-movement-nazarene-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-holiness-movement-holiness",
+      "cite-profile-holiness-movement-holiness-study",
+      "cite-profile-holiness-movement-nazarene-history",
+      "cite-profile-holiness-movement-nazarene-explained",
+      "cite-profile-holiness-movement-nazarene-faith"
+    ],
+    "profile_scope": "The start year is approximate; this is a family of renewal networks, not one institution founded in 1850.",
+    "ending_narrative": "The movement continues through denominations, renewal networks, and teaching within other churches. Some Holiness settings contributed to Pentecostalism, but that development did not end the whole movement or make every Holiness Christian Pentecostal. No terminal successor applies.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "History of the Holiness Movement \u2014 movement historical account",
+        "url": "https://www.holinessmovement.org/history-of-the-holiness-movement/",
+        "snippet": "Formation and development: Nineteenth-century Holiness advocates revived Wesley\u2019s teaching about love of God and neighbor and emphasized an identifiable experience of sanctifying grace. Meetings, publications, and later denominations carried this teaching beyond Methodist institutions.",
+        "citations": [
+          "cite-profile-holiness-movement-holiness"
+        ]
+      },
+      {
+        "title": "What We Believe \u2014 Church of the Nazarene",
+        "url": "https://nazarene.org/what-we-believe/",
+        "snippet": "Teaching and practice: Sanctification: grace is expected to change a believer\u2019s character and love, not only provide pardon.",
+        "citations": [
+          "cite-profile-holiness-movement-nazarene-explained"
+        ]
+      },
+      {
+        "title": "Nazarene Articles of Faith",
+        "url": "https://nazarene.org/resources/articles-of-faith/",
+        "snippet": "A denominational formulation of Wesleyan-Holiness teaching, useful for one major later stream; not a confession binding the whole movement.",
+        "citations": [
+          "cite-profile-holiness-movement-nazarene-faith"
+        ]
+      }
+    ]
+  },
   {
     "id": "restoration-movement",
     "name": "Restoration Movement",
@@ -12,8 +290,171 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Began on the American frontier during the Second Great Awakening (1790-1840).",
-    "distinctives": ["Christian unity", "Restoration of New Testament church"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "Christian unity",
+      "Restoration of New Testament church"
+    ],
+    "size_estimate": "unknown",
+    "summary": "The Stone-Campbell family of movements seeking Christian unity through a return to New Testament faith and practice.",
+    "formation_narrative": "Stone\u2019s Kentucky revival circle and the Campbell movement in Pennsylvania developed separately in reaction to denominational tests of fellowship. Their streams united in 1832, but disputes about missions, worship, and church organization later divided their descendants. The 1804 date marks the dissolution of Springfield Presbytery, one formative act rather than a single founding of every Restoration church.",
+    "core_beliefs": [
+      "Christian unity: denominational labels and disputed human creeds should not unnecessarily divide believers.",
+      "New Testament restoration: church practices should be measured against apostolic teaching; descendants disagree about what that principle requires.",
+      "Local fellowship and baptism: congregational life and believer\u2019s baptism became characteristic, but later branches differ over communion, worship, and cooperation."
+    ],
+    "key_figures": [
+      {
+        "name": "Barton W. Stone",
+        "role": "leader in the Kentucky stream",
+        "summary": "A frontier revival preacher who challenged denominational tests of fellowship and helped form the stream later united with Campbell followers.",
+        "url": "https://disciples.org/our-identity/history-of-the-disciples/",
+        "citations": [
+          "cite-profile-restoration-movement-restoration-history",
+          "cite-profile-restoration-movement-disciples-history"
+        ]
+      },
+      {
+        "name": "Thomas Campbell",
+        "role": "author of the Declaration and Address",
+        "summary": "A minister whose Declaration and Address called for Christian unity and scriptural standards without unnecessary sectarian barriers.",
+        "url": "https://disciples.org/our-identity/history-of-the-disciples/",
+        "citations": [
+          "cite-profile-restoration-movement-restoration-history",
+          "cite-profile-restoration-movement-disciples-history"
+        ]
+      },
+      {
+        "name": "Alexander Campbell",
+        "role": "major teacher and organizer in the Campbell stream",
+        "summary": "A teacher, publisher, and organizer whose biblical arguments shaped the Campbell stream and the wider Stone-Campbell family.",
+        "url": "https://disciples.org/our-identity/history-of-the-disciples/",
+        "citations": [
+          "cite-profile-restoration-movement-restoration-history",
+          "cite-profile-restoration-movement-disciples-history"
+        ]
+      },
+      {
+        "name": "Walter Scott",
+        "role": "evangelist in the movement",
+        "summary": "An evangelist whose preaching helped spread the Campbell movement\u2019s message and congregational practice.",
+        "url": "https://disciples.org/our-identity/history-of-the-disciples/",
+        "citations": [
+          "cite-profile-restoration-movement-restoration-history",
+          "cite-profile-restoration-movement-disciples-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1804,
+        "label": "Springfield Presbytery dissolves in favor of wider Christian unity",
+        "citations": [
+          "cite-profile-restoration-movement-restoration-history",
+          "cite-profile-restoration-movement-disciples-history"
+        ]
+      },
+      {
+        "year": 1809,
+        "label": "Thomas Campbell publishes Declaration and Address",
+        "citations": [
+          "cite-profile-restoration-movement-restoration-history",
+          "cite-profile-restoration-movement-disciples-history"
+        ]
+      },
+      {
+        "year": 1832,
+        "label": "Stone and Campbell streams unite",
+        "citations": [
+          "cite-profile-restoration-movement-restoration-history",
+          "cite-profile-restoration-movement-disciples-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Last Will and Testament of Springfield Presbytery",
+        "year": 1804,
+        "significance": "Renounces the presbytery\u2019s separate identity to seek unity in the wider church.",
+        "url": "https://digitalcommons.discipleshistory.org/files/Last%20Will%20and%20Testament%20of%20the%20Springfield%20Presbytery.pdf",
+        "citations": [
+          "cite-profile-restoration-movement-springfield"
+        ]
+      },
+      {
+        "title": "Declaration and Address",
+        "year": 1809,
+        "significance": "Thomas Campbell\u2019s appeal for Christian unity and scriptural authority; a formative text, not a universal binding creed.",
+        "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/tcampbell/da/DA-1ST.HTM",
+        "citations": [
+          "cite-profile-restoration-movement-declaration-1809"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-restoration-movement-restoration-history",
+        "cite-profile-restoration-movement-disciples-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-restoration-movement-springfield",
+        "cite-profile-restoration-movement-declaration-1809"
+      ],
+      "key_figures": [
+        "cite-profile-restoration-movement-restoration-history",
+        "cite-profile-restoration-movement-disciples-history"
+      ],
+      "key_dates": [
+        "cite-profile-restoration-movement-restoration-history",
+        "cite-profile-restoration-movement-disciples-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-restoration-movement-restoration-history",
+        "cite-profile-restoration-movement-disciples-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-restoration-movement-restoration-history",
+      "cite-profile-restoration-movement-disciples-history",
+      "cite-profile-restoration-movement-springfield",
+      "cite-profile-restoration-movement-declaration-1809"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The movement developed into several enduring church families. Disputes about worship, mission organizations, and theological direction produced separations rather than a universal dissolution. The Disciples, Churches of Christ, and independent Christian churches are related continuing streams, not one exclusive successor.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Stone-Campbell History \u2014 Disciples of Christ Historical Society",
+        "url": "https://discipleshistory.org/history/",
+        "snippet": "Formation and development: Stone\u2019s Kentucky revival circle and the Campbell movement in Pennsylvania developed separately in reaction to denominational tests of fellowship. Their streams united in 1832, but disputes about missions, worship, and church organization later divided their descendants.",
+        "citations": [
+          "cite-profile-restoration-movement-restoration-history"
+        ]
+      },
+      {
+        "title": "Last Will and Testament of Springfield Presbytery (1804) \u2014 historical society primary text",
+        "url": "https://digitalcommons.discipleshistory.org/files/Last%20Will%20and%20Testament%20of%20the%20Springfield%20Presbytery.pdf",
+        "snippet": "Teaching and practice: Christian unity: denominational labels and disputed human creeds should not unnecessarily divide believers.",
+        "citations": [
+          "cite-profile-restoration-movement-springfield"
+        ]
+      },
+      {
+        "title": "Declaration and Address",
+        "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/tcampbell/da/DA-1ST.HTM",
+        "snippet": "Thomas Campbell\u2019s appeal for Christian unity and scriptural authority; a formative text, not a universal binding creed.",
+        "citations": [
+          "cite-profile-restoration-movement-declaration-1809"
+        ]
+      },
+      {
+        "title": "Last Will and Testament of Springfield Presbytery",
+        "url": "https://digitalcommons.discipleshistory.org/files/Last%20Will%20and%20Testament%20of%20the%20Springfield%20Presbytery.pdf",
+        "snippet": "Renounces the presbytery\u2019s separate identity to seek unity in the wider church.",
+        "citations": [
+          "cite-profile-restoration-movement-springfield"
+        ]
+      }
+    ]
   },
   {
     "id": "christian-church-disciples-of-christ",
@@ -28,8 +469,149 @@
     "ecclesial_orientation": "mainline",
     "current_status": "active",
     "notes": "Restorationist denomination with union milestone in 1832; later separations include Churches of Christ and Independent Christian Churches.",
-    "distinctives": ["Restorationist"],
-    "size_estimate": "277,864 members (2022)"
+    "distinctives": [
+      "Restorationist"
+    ],
+    "size_estimate": "277,864 members (2022)",
+    "summary": "The organized Disciples branch of the Stone-Campbell heritage, emphasizing Christian unity and a shared communion table.",
+    "formation_narrative": "The Disciples trace their story through the 1832 union of Stone and Campbell followers. Separation from a cappella Churches of Christ developed gradually and was recognized in the 1906 census; independent Christian churches later withdrew from cooperative institutions. The present denominational structure was established through the 1968 Design. Its 1832 start therefore identifies heritage rather than the date of the modern constitution.",
+    "core_beliefs": [
+      "Unity in Christ: confessions should serve witness without becoming unnecessary barriers to fellowship.",
+      "Baptism and table: believer\u2019s baptism and the Lord\u2019s Supper are central practices in a tradition that seeks broad Christian fellowship.",
+      "Covenantal organization: congregations and wider ministries cooperate through a common design while preserving local responsibilities."
+    ],
+    "key_figures": [
+      {
+        "name": "Barton W. Stone",
+        "role": "formative ancestor in the united movement",
+        "summary": "A frontier revival preacher who challenged denominational tests of fellowship and helped form the stream later united with Campbell followers.",
+        "url": "https://digitalcommons.discipleshistory.org/files/A%20Provisional%20Design%20for%20the%20Christian%20Church%20%28Disciples%20of%20Chris.pdf",
+        "citations": [
+          "cite-profile-christian-church-disciples-of-christ-disciples-history",
+          "cite-profile-christian-church-disciples-of-christ-design"
+        ]
+      },
+      {
+        "name": "Alexander Campbell",
+        "role": "formative teacher in the shared Stone-Campbell heritage",
+        "summary": "A teacher, publisher, and organizer whose biblical arguments shaped the Campbell stream and the wider Stone-Campbell family.",
+        "url": "https://digitalcommons.discipleshistory.org/files/A%20Provisional%20Design%20for%20the%20Christian%20Church%20%28Disciples%20of%20Chris.pdf",
+        "citations": [
+          "cite-profile-christian-church-disciples-of-christ-disciples-history",
+          "cite-profile-christian-church-disciples-of-christ-design"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1832,
+        "label": "Stone-Campbell union",
+        "citations": [
+          "cite-profile-christian-church-disciples-of-christ-disciples-history",
+          "cite-profile-christian-church-disciples-of-christ-design"
+        ]
+      },
+      {
+        "year": 1906,
+        "label": "Churches of Christ listed separately in the census",
+        "citations": [
+          "cite-profile-christian-church-disciples-of-christ-disciples-history",
+          "cite-profile-christian-church-disciples-of-christ-design"
+        ]
+      },
+      {
+        "year": 1968,
+        "label": "Provisional Design establishes modern denominational organization",
+        "citations": [
+          "cite-profile-christian-church-disciples-of-christ-disciples-history",
+          "cite-profile-christian-church-disciples-of-christ-design"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "A Provisional Design for the Christian Church (Disciples of Christ)",
+        "year": 1968,
+        "significance": "Governing framework for the restructured denomination, distinct from the earlier movement\u2019s history.",
+        "url": "https://digitalcommons.discipleshistory.org/files/A%20Provisional%20Design%20for%20the%20Christian%20Church%20%28Disciples%20of%20Chris.pdf",
+        "citations": [
+          "cite-profile-christian-church-disciples-of-christ-design"
+        ]
+      },
+      {
+        "title": "Declaration and Address",
+        "year": 1809,
+        "significance": "An inherited appeal to unity, not a later compulsory denominational creed.",
+        "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/tcampbell/da/DA-1ST.HTM",
+        "citations": [
+          "cite-profile-christian-church-disciples-of-christ-declaration-1809"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-christian-church-disciples-of-christ-disciples-history",
+        "cite-profile-christian-church-disciples-of-christ-design"
+      ],
+      "core_beliefs": [
+        "cite-profile-christian-church-disciples-of-christ-declaration-1809",
+        "cite-profile-christian-church-disciples-of-christ-design"
+      ],
+      "key_figures": [
+        "cite-profile-christian-church-disciples-of-christ-disciples-history",
+        "cite-profile-christian-church-disciples-of-christ-design"
+      ],
+      "key_dates": [
+        "cite-profile-christian-church-disciples-of-christ-disciples-history",
+        "cite-profile-christian-church-disciples-of-christ-design"
+      ],
+      "ending_narrative": [
+        "cite-profile-christian-church-disciples-of-christ-disciples-history",
+        "cite-profile-christian-church-disciples-of-christ-design"
+      ]
+    },
+    "citations": [
+      "cite-profile-christian-church-disciples-of-christ-disciples-history",
+      "cite-profile-christian-church-disciples-of-christ-design",
+      "cite-profile-christian-church-disciples-of-christ-declaration-1809"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The church continues in the organized form shaped by its 1968 Design. Earlier separations reduced the breadth of a common Restoration fellowship but did not dissolve the Disciples. Its present constitution is a reorganization of a tradition, not proof that the entire movement ended in 1968.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "History of the Disciples \u2014 Christian Church (Disciples of Christ)",
+        "url": "https://disciples.org/our-identity/history-of-the-disciples/",
+        "snippet": "Formation and development: The Disciples trace their story through the 1832 union of Stone and Campbell followers. Separation from a cappella Churches of Christ developed gradually and was recognized in the 1906 census; independent Christian churches later withdrew from cooperative institutions.",
+        "citations": [
+          "cite-profile-christian-church-disciples-of-christ-disciples-history"
+        ]
+      },
+      {
+        "title": "Thomas Campbell, Declaration and Address (1809) \u2014 ACU library",
+        "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/tcampbell/da/DA-1ST.HTM",
+        "snippet": "Teaching and practice: Unity in Christ: confessions should serve witness without becoming unnecessary barriers to fellowship.",
+        "citations": [
+          "cite-profile-christian-church-disciples-of-christ-declaration-1809"
+        ]
+      },
+      {
+        "title": "A Provisional Design for the Christian Church (Disciples of Christ)",
+        "url": "https://digitalcommons.discipleshistory.org/files/A%20Provisional%20Design%20for%20the%20Christian%20Church%20%28Disciples%20of%20Chris.pdf",
+        "snippet": "Governing framework for the restructured denomination, distinct from the earlier movement\u2019s history.",
+        "citations": [
+          "cite-profile-christian-church-disciples-of-christ-design"
+        ]
+      },
+      {
+        "title": "Declaration and Address",
+        "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/tcampbell/da/DA-1ST.HTM",
+        "snippet": "An inherited appeal to unity, not a later compulsory denominational creed.",
+        "citations": [
+          "cite-profile-christian-church-disciples-of-christ-declaration-1809"
+        ]
+      }
+    ]
   },
   {
     "id": "churches-of-christ",
@@ -44,8 +626,116 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Restorationist churches separated from the Disciples in 1906.",
-    "distinctives": ["Restorationist"],
-    "size_estimate": "2,000,000 members worldwide (approx.)"
+    "distinctives": [
+      "Restorationist"
+    ],
+    "size_estimate": "2,000,000 members worldwide (approx.)",
+    "summary": "Autonomous congregations in the Stone-Campbell heritage, commonly associated with restoration of New Testament practice and a cappella worship.",
+    "formation_narrative": "Congregations that opposed instrumental worship and missionary societies increasingly separated from other Restoration churches during the nineteenth century. A separate listing in the 1906 census recognized a division that had developed over time; it did not create all these churches on a single day. Without a central denominational authority, local congregations and networks developed significant internal differences.",
+    "core_beliefs": [
+      "Biblical pattern: congregations seek scriptural warrant for church teaching and practice, with disagreement over how silence and precedent should function.",
+      "Baptism and communion: believer\u2019s immersion and regular observance of the Lord\u2019s Supper are prominent in the tradition.",
+      "Congregational independence: a cappella worship is characteristic of many congregations, but one historical writer\u2019s account must not be made a rule for every church."
+    ],
+    "key_figures": [
+      {
+        "name": "Alexander Campbell",
+        "role": "shared formative ancestor",
+        "summary": "A teacher, publisher, and organizer whose biblical arguments shaped the Campbell stream and the wider Stone-Campbell family.",
+        "url": "https://disciples.org/our-identity/history-of-the-disciples/",
+        "citations": [
+          "cite-profile-churches-of-christ-disciples-history"
+        ]
+      },
+      {
+        "name": "Barton W. Stone",
+        "role": "shared formative ancestor",
+        "summary": "A frontier revival preacher who challenged denominational tests of fellowship and helped form the stream later united with Campbell followers.",
+        "url": "https://disciples.org/our-identity/history-of-the-disciples/",
+        "citations": [
+          "cite-profile-churches-of-christ-disciples-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1832,
+        "label": "Union in the common movement\u2019s ancestry",
+        "citations": [
+          "cite-profile-churches-of-christ-disciples-history"
+        ]
+      },
+      {
+        "year": 1906,
+        "label": "Separate census recognition of Churches of Christ",
+        "citations": [
+          "cite-profile-churches-of-christ-disciples-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Declaration and Address",
+        "year": 1809,
+        "significance": "A formative unity appeal within the shared heritage; Churches of Christ generally reject binding human creeds rather than adopting this as a universal confession.",
+        "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/tcampbell/da/DA-1ST.HTM",
+        "citations": [
+          "cite-profile-churches-of-christ-declaration-1809"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-churches-of-christ-disciples-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-churches-of-christ-coc-church",
+        "cite-profile-churches-of-christ-declaration-1809"
+      ],
+      "key_figures": [
+        "cite-profile-churches-of-christ-disciples-history"
+      ],
+      "key_dates": [
+        "cite-profile-churches-of-christ-disciples-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-churches-of-christ-disciples-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-churches-of-christ-disciples-history",
+      "cite-profile-churches-of-christ-coc-church",
+      "cite-profile-churches-of-christ-declaration-1809"
+    ],
+    "profile_scope": "The 1906 date marks recognition of an existing separation; there is no universal headquarters or confession governing all congregations.",
+    "ending_narrative": "The congregations continue as a decentralized family. Separate recognition in the 1906 census marked an already developing distinction from other Restoration churches; it was not the dissolution of a central parent corporation. No single terminal successor exists for this node.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "History of the Disciples \u2014 Christian Church (Disciples of Christ)",
+        "url": "https://disciples.org/our-identity/history-of-the-disciples/",
+        "snippet": "Formation and development: Congregations that opposed instrumental worship and missionary societies increasingly separated from other Restoration churches during the nineteenth century. A separate listing in the 1906 census recognized a division that had developed over time; it did not create all these churches on a single day.",
+        "citations": [
+          "cite-profile-churches-of-christ-disciples-history"
+        ]
+      },
+      {
+        "title": "The Concept of Church among Churches of Christ \u2014 ACU historical collection",
+        "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/issues/howard.html",
+        "snippet": "Teaching and practice: Biblical pattern: congregations seek scriptural warrant for church teaching and practice, with disagreement over how silence and precedent should function.",
+        "citations": [
+          "cite-profile-churches-of-christ-coc-church"
+        ]
+      },
+      {
+        "title": "Declaration and Address",
+        "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/tcampbell/da/DA-1ST.HTM",
+        "snippet": "A formative unity appeal within the shared heritage; Churches of Christ generally reject binding human creeds rather than adopting this as a universal confession.",
+        "citations": [
+          "cite-profile-churches-of-christ-declaration-1809"
+        ]
+      }
+    ]
   },
   {
     "id": "independent-christian-churches",
@@ -60,8 +750,125 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Restorationist churches separated from the Disciples between 1926-1971.",
-    "distinctives": ["Restorationist"],
-    "size_estimate": "1,379,041 members in the US (2020)"
+    "distinctives": [
+      "Restorationist"
+    ],
+    "size_estimate": "1,379,041 members in the US (2020)",
+    "summary": "Independent Christian Churches and Churches of Christ that share Restoration roots but remain outside the Disciples denominational structure.",
+    "formation_narrative": "Disagreement over missionary practice and theological direction contributed to separation beginning in the 1920s. Large numbers of congregations withdrew around the Disciples restructuring of the late 1960s. Their cooperation developed through voluntary conventions and independent ministries rather than a single denomination. The 1926 date represents the beginning of a process, not a universal founding assembly.",
+    "core_beliefs": [
+      "Restoration and unity: congregations seek to unite Christians around biblical teaching without a compulsory denominational creed.",
+      "Believer\u2019s baptism and communion: immersion and the Lord\u2019s Supper are characteristic practices rooted in the shared Stone-Campbell inheritance.",
+      "Independent cooperation: churches can cooperate in mission while rejecting control by a comprehensive denominational body; many use instrumental worship, distinguishing them from the a cappella stream."
+    ],
+    "key_figures": [
+      {
+        "name": "Thomas Campbell",
+        "role": "formative unity advocate in the inherited tradition",
+        "summary": "A minister whose Declaration and Address called for Christian unity and scriptural standards without unnecessary sectarian barriers.",
+        "url": "https://discipleshistory.org/history/",
+        "citations": [
+          "cite-profile-independent-christian-churches-disciples-history",
+          "cite-profile-independent-christian-churches-restoration-history"
+        ]
+      },
+      {
+        "name": "Alexander Campbell",
+        "role": "influential teacher in the shared Restoration ancestry",
+        "summary": "A teacher, publisher, and organizer whose biblical arguments shaped the Campbell stream and the wider Stone-Campbell family.",
+        "url": "https://discipleshistory.org/history/",
+        "citations": [
+          "cite-profile-independent-christian-churches-disciples-history",
+          "cite-profile-independent-christian-churches-restoration-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1926,
+        "label": "Separation begins in the historical account",
+        "citations": [
+          "cite-profile-independent-christian-churches-disciples-history",
+          "cite-profile-independent-christian-churches-restoration-history"
+        ]
+      },
+      {
+        "year": 1968,
+        "label": "Disciples restructuring sharpens institutional separation",
+        "citations": [
+          "cite-profile-independent-christian-churches-disciples-history",
+          "cite-profile-independent-christian-churches-restoration-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Declaration and Address",
+        "year": 1809,
+        "significance": "A shared historical appeal rather than an officially imposed creed for all independent congregations.",
+        "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/tcampbell/da/DA-1ST.HTM",
+        "citations": [
+          "cite-profile-independent-christian-churches-declaration-1809"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-independent-christian-churches-disciples-history",
+        "cite-profile-independent-christian-churches-restoration-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-independent-christian-churches-declaration-1809",
+        "cite-profile-independent-christian-churches-coc-church"
+      ],
+      "key_figures": [
+        "cite-profile-independent-christian-churches-disciples-history",
+        "cite-profile-independent-christian-churches-restoration-history"
+      ],
+      "key_dates": [
+        "cite-profile-independent-christian-churches-disciples-history",
+        "cite-profile-independent-christian-churches-restoration-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-independent-christian-churches-disciples-history",
+        "cite-profile-independent-christian-churches-restoration-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-independent-christian-churches-disciples-history",
+      "cite-profile-independent-christian-churches-restoration-history",
+      "cite-profile-independent-christian-churches-declaration-1809",
+      "cite-profile-independent-christian-churches-coc-church"
+    ],
+    "profile_scope": "The inherited figures are not claimed as founders of a 1926 denomination. More primary research is needed on individual independent conventions and their leaders.",
+    "ending_narrative": "These autonomous congregations continue through independent churches and voluntary ministries. Separation from Disciples institutions unfolded over decades, especially around the late-1960s restructuring. Because they did not form one universally governing denomination, there is no single corporate ending or successor.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "History of the Disciples \u2014 Christian Church (Disciples of Christ)",
+        "url": "https://disciples.org/our-identity/history-of-the-disciples/",
+        "snippet": "Formation and development: Disagreement over missionary practice and theological direction contributed to separation beginning in the 1920s. Large numbers of congregations withdrew around the Disciples restructuring of the late 1960s.",
+        "citations": [
+          "cite-profile-independent-christian-churches-disciples-history"
+        ]
+      },
+      {
+        "title": "Thomas Campbell, Declaration and Address (1809) \u2014 ACU library",
+        "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/tcampbell/da/DA-1ST.HTM",
+        "snippet": "Teaching and practice: Restoration and unity: congregations seek to unite Christians around biblical teaching without a compulsory denominational creed.",
+        "citations": [
+          "cite-profile-independent-christian-churches-declaration-1809"
+        ]
+      },
+      {
+        "title": "Declaration and Address",
+        "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/tcampbell/da/DA-1ST.HTM",
+        "snippet": "A shared historical appeal rather than an officially imposed creed for all independent congregations.",
+        "citations": [
+          "cite-profile-independent-christian-churches-declaration-1809"
+        ]
+      }
+    ]
   },
   {
     "id": "church-of-the-nazarene",
@@ -76,7 +883,129 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Holiness denomination formed in 1908.",
-    "distinctives": ["Wesleyan-Holiness"],
-    "size_estimate": "2,640,216 members (2020)"
+    "distinctives": [
+      "Wesleyan-Holiness"
+    ],
+    "size_estimate": "2,640,216 members (2020)",
+    "summary": "A Wesleyan-Holiness denomination formed through unions of churches seeking to express sanctification in worship, mission, and daily life.",
+    "formation_narrative": "Regional Holiness churches united in stages, with the 1908 Pilot Point union becoming the denomination\u2019s anniversary milestone. Its ancestry includes the Methodist teaching of sanctification and independent Holiness institutions. Subsequent mission work made it an international denomination. Its use of the language of Spirit baptism refers to sanctifying grace and must not be equated automatically with Pentecostal teaching about tongues.",
+    "core_beliefs": [
+      "Grace and faith: forgiveness and new life are received through Christ rather than earned by religious performance.",
+      "Entire sanctification: the Spirit\u2019s further work renews believers in love of God and neighbor; continuing Christian growth remains necessary.",
+      "Holy living and mission: education, service, and evangelism are practical expressions of the church\u2019s Wesleyan vocation."
+    ],
+    "key_figures": [
+      {
+        "name": "Phineas F. Bresee",
+        "role": "leader in the western Nazarene stream",
+        "summary": "leader in the western Nazarene stream. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://nazarene.org/our-history/",
+        "citations": [
+          "cite-profile-church-of-the-nazarene-nazarene-history"
+        ]
+      },
+      {
+        "name": "Hiram F. Reynolds",
+        "role": "important organizer and mission leader",
+        "summary": "important organizer and mission leader. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://nazarene.org/our-history/",
+        "citations": [
+          "cite-profile-church-of-the-nazarene-nazarene-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1908,
+        "label": "Pilot Point union becomes the anniversary date",
+        "citations": [
+          "cite-profile-church-of-the-nazarene-nazarene-history"
+        ]
+      },
+      {
+        "year": 1907,
+        "label": "First General Assembly unites northern and western streams",
+        "citations": [
+          "cite-profile-church-of-the-nazarene-nazarene-history"
+        ]
+      },
+      {
+        "year": 1915,
+        "label": "Further unions add Holiness churches and missions",
+        "citations": [
+          "cite-profile-church-of-the-nazarene-nazarene-history"
+        ]
+      },
+      {
+        "year": 1980,
+        "label": "Internationalization adopted as a deliberate policy",
+        "citations": [
+          "cite-profile-church-of-the-nazarene-nazarene-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Articles of Faith",
+        "year": null,
+        "significance": "Part of the denomination\u2019s constitutional teaching; explains entire sanctification alongside shared Christian doctrines.",
+        "url": "https://nazarene.org/resources/articles-of-faith/",
+        "citations": [
+          "cite-profile-church-of-the-nazarene-nazarene-faith"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-church-of-the-nazarene-nazarene-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-church-of-the-nazarene-nazarene-faith",
+        "cite-profile-church-of-the-nazarene-nazarene-explained"
+      ],
+      "key_figures": [
+        "cite-profile-church-of-the-nazarene-nazarene-history"
+      ],
+      "key_dates": [
+        "cite-profile-church-of-the-nazarene-nazarene-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-church-of-the-nazarene-nazarene-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-church-of-the-nazarene-nazarene-history",
+      "cite-profile-church-of-the-nazarene-nazarene-faith",
+      "cite-profile-church-of-the-nazarene-nazarene-explained"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The denomination continues internationally. The 1908 union combined earlier Holiness streams into a shared church rather than ending Holiness teaching; subsequent development expanded mission and institutions. No terminal successor applies.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Our History \u2014 Church of the Nazarene",
+        "url": "https://nazarene.org/our-history/",
+        "snippet": "Formation and development: Regional Holiness churches united in stages, with the 1908 Pilot Point union becoming the denomination\u2019s anniversary milestone. Its ancestry includes the Methodist teaching of sanctification and independent Holiness institutions.",
+        "citations": [
+          "cite-profile-church-of-the-nazarene-nazarene-history"
+        ]
+      },
+      {
+        "title": "Articles of Faith \u2014 Church of the Nazarene",
+        "url": "https://nazarene.org/resources/articles-of-faith/",
+        "snippet": "Teaching and practice: Grace and faith: forgiveness and new life are received through Christ rather than earned by religious performance.",
+        "citations": [
+          "cite-profile-church-of-the-nazarene-nazarene-faith"
+        ]
+      },
+      {
+        "title": "Articles of Faith",
+        "url": "https://nazarene.org/resources/articles-of-faith/",
+        "snippet": "Part of the denomination\u2019s constitutional teaching; explains entire sanctification alongside shared Christian doctrines.",
+        "citations": [
+          "cite-profile-church-of-the-nazarene-nazarene-faith"
+        ]
+      }
+    ]
   }
 ]

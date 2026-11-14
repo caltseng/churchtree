@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "tec-to-acna-2009",
     "name": "Formation of ACNA",
@@ -7,8 +7,76 @@
     "zoom_tier": "full",
     "type": "split",
     "year": 2009,
-    "reasons": ["organizational separation"],
+    "reasons": [
+      "organizational separation"
+    ],
     "description": "ACNA formed in 2009 by groups separating from TEC and the Anglican Church of Canada.",
-    "citations": ["cite-acna-2009", "cite-acna-separated"]
+    "citations": [
+      "cite-acna-2009",
+      "cite-acna-separated",
+      "cite-profile-anglican-church-in-north-america-acna-founding"
+    ],
+    "narrative": "ACNA formed in 2009 by groups separating from TEC and the Anglican Church of Canada. Disputes over doctrine, authority, and sexual ethics led departing Anglicans in the United States and Canada to seek a common provincial structure. The Common Cause partnership brought together groups with different histories, some previously supported by overseas Anglican provinces. The founders framed their project as preserving historic Anglican faith and enabling mission. This is their interpretation of the conflict, not a judgment that all other Anglicans abandoned Christianity.",
+    "causes": [
+      "organizational separation"
+    ],
+    "key_figures": [
+      {
+        "name": "Robert Duncan",
+        "role": "founding archbishop and Common Cause organizer",
+        "summary": "An Anglican bishop and Common Cause organizer who became ACNA\u2019s founding archbishop; his later account describes the founders\u2019 understanding of their project.",
+        "url": "https://anglicanchurch.net/wp-content/uploads/2017/11/Abp-Duncan-Address.pdf",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-acna-founding"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 2009,
+        "label": "Formation of ACNA",
+        "citations": [
+          "cite-acna-2009",
+          "cite-acna-separated"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "The Founding of the Anglican Church \u2014 Robert Duncan, Provincial Council 2025",
+        "url": "https://anglicanchurch.net/wp-content/uploads/2017/11/Abp-Duncan-Address.pdf",
+        "snippet": "Formation and development: Disputes over doctrine, authority, and sexual ethics led departing Anglicans in the United States and Canada to seek a common provincial structure. The Common Cause partnership brought together groups with different histories, some previously supported by overseas Anglican provinces.",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-acna-founding"
+        ]
+      },
+      {
+        "title": "Fundamental Declarations of the Province with explanatory notes \u2014 ACNA",
+        "url": "https://anglicanchurch.net/wp-content/uploads/2026/01/Fundamental-Declarations-of-the-Province-with-Explanatory-Notes.pdf",
+        "snippet": "Teaching and practice: Biblical authority: the Fundamental Declarations identify Scripture as the final norm for faith and life.",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-acna-declarations"
+        ]
+      },
+      {
+        "title": "Thirty-nine Articles",
+        "url": "https://www.churchofengland.org/liturgy/book-of-common-prayer/articles-religion",
+        "snippet": "Historical Anglican articles explicitly received in the province\u2019s declarations.",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-anglican-articles"
+        ]
+      },
+      {
+        "title": "Fundamental Declarations of the Province",
+        "url": "https://anglicanchurch.net/wp-content/uploads/2026/01/Fundamental-Declarations-of-the-Province-with-Explanatory-Notes.pdf",
+        "snippet": "Constitutional doctrinal foundation; the linked explanatory edition is later than the founding text.",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-acna-declarations"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-anglican-church-in-north-america-acna-founding"
+    ]
   }
 ]

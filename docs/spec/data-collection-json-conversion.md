@@ -22,6 +22,11 @@ Output strictly in this JSON shape:
       "start_year": null,
       "end_year": null,
       "short_label": "",
+      "summary": "",
+      "key_figures": [],
+      "key_dates": [
+        { "year": null, "label": "", "citations": [] }
+      ],
       "region": "",
       "geographic_origin": "",
       "tradition_family": "",
@@ -29,7 +34,8 @@ Output strictly in this JSON shape:
       "current_status": "active|merged|dissolved|unknown",
       "notes": "",
       "distinctives": [],
-      "size_estimate": ""
+      "size_estimate": "",
+      "citations": []
     }
   ],
   "edges": [
@@ -41,6 +47,12 @@ Output strictly in this JSON shape:
       "type": "split|merge|origin|continuation",
       "year": null,
       "reasons": [],
+      "causes": [],
+      "narrative": "",
+      "key_figures": [],
+      "key_dates": [
+        { "year": null, "label": "", "citations": [] }
+      ],
       "description": "",
       "citations": []
     }
@@ -51,6 +63,7 @@ Output strictly in this JSON shape:
       "name": "",
       "year": null,
       "description": "",
+      "key_figures": [],
       "related_edge_ids": [],
       "related_node_ids": [],
       "citations": []
@@ -85,5 +98,7 @@ Rules:
 - Map theological distinctives into the node `distinctives` array when sourced.
 - Map denomination size estimates into `size_estimate` when sourced.
 - Map denomination origin and family fields when sourced.
+- Map key figures into `key_figures` on nodes/edges/events when sourced.
+- Map key dates into `key_dates` with citations per milestone.
 - Do not invent sources; include URLs or bibliographic details when possible.
 ```

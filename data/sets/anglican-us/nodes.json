@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "episcopal-church",
     "name": "Episcopal Church",
@@ -12,8 +12,133 @@
     "ecclesial_orientation": "mainline",
     "current_status": "active",
     "notes": "Organized in 1785 as the U.S. Anglican body.",
-    "distinctives": ["Anglican doctrine"],
-    "size_estimate": "1,547,779 active baptized members (2023)"
+    "distinctives": [
+      "Anglican doctrine"
+    ],
+    "size_estimate": "1,547,779 active baptized members (2023)",
+    "summary": "The American Anglican church organized after independence, combining episcopal ministry with representative church government.",
+    "formation_narrative": "American independence made dependence on English royal and ecclesiastical structures impractical. Clergy and lay representatives developed conventions and a constitution while securing a local episcopate. The first General Convention in 1785 and the prayer-book and constitutional settlement of 1789 are distinct milestones. The resulting church continued Anglican worship while adapting governance to an American setting; later conflicts did not end the parent church.",
+    "core_beliefs": [
+      "Common prayer: the prayer book shapes worship and expresses doctrine through repeated shared practice.",
+      "Scripture, tradition, and teaching: biblical faith is interpreted in conversation with historical Christian wisdom and the church\u2019s catechism.",
+      "Bishops and representation: episcopal ministry operates alongside clergy and lay participation in church government."
+    ],
+    "key_figures": [
+      {
+        "name": "Samuel Seabury",
+        "role": "first bishop in the American Episcopal succession",
+        "summary": "The first bishop in the emerging American Episcopal succession, helping provide an episcopate independent of English royal arrangements.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/past-presiding-bishops/",
+        "citations": [
+          "cite-profile-episcopal-church-tec-timeline",
+          "cite-profile-episcopal-church-tec-bishops"
+        ]
+      },
+      {
+        "name": "William White",
+        "role": "organizer of representative American church structures",
+        "summary": "An American Episcopal leader who helped develop representative structures involving clergy and laity after independence.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/past-presiding-bishops/",
+        "citations": [
+          "cite-profile-episcopal-church-tec-timeline",
+          "cite-profile-episcopal-church-tec-bishops"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1785,
+        "label": "First General Convention",
+        "citations": [
+          "cite-profile-episcopal-church-tec-timeline",
+          "cite-profile-episcopal-church-tec-bishops"
+        ]
+      },
+      {
+        "year": 1789,
+        "label": "American prayer book and constitutional settlement",
+        "citations": [
+          "cite-profile-episcopal-church-tec-timeline",
+          "cite-profile-episcopal-church-tec-bishops"
+        ]
+      },
+      {
+        "year": 1979,
+        "label": "Current principal prayer-book edition approved",
+        "citations": [
+          "cite-profile-episcopal-church-tec-timeline",
+          "cite-profile-episcopal-church-tec-bishops"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Book of Common Prayer",
+        "year": 1979,
+        "significance": "Authorized worship and catechesis; the current edition stands in an American prayer-book tradition first published in 1789.",
+        "url": "https://www.episcopalchurch.org/who-we-are/how-we-worship/book-of-common-prayer/",
+        "citations": [
+          "cite-profile-episcopal-church-tec-prayer"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-episcopal-church-tec-timeline",
+        "cite-profile-episcopal-church-tec-bishops"
+      ],
+      "core_beliefs": [
+        "cite-profile-episcopal-church-tec-faith",
+        "cite-profile-episcopal-church-tec-prayer"
+      ],
+      "key_figures": [
+        "cite-profile-episcopal-church-tec-timeline",
+        "cite-profile-episcopal-church-tec-bishops"
+      ],
+      "key_dates": [
+        "cite-profile-episcopal-church-tec-timeline",
+        "cite-profile-episcopal-church-tec-bishops"
+      ],
+      "ending_narrative": [
+        "cite-profile-episcopal-church-tec-timeline",
+        "cite-profile-episcopal-church-tec-bishops"
+      ]
+    },
+    "citations": [
+      "cite-profile-episcopal-church-tec-timeline",
+      "cite-profile-episcopal-church-tec-bishops",
+      "cite-profile-episcopal-church-tec-faith",
+      "cite-profile-episcopal-church-tec-prayer"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The church continues. Groups departing into ACNA and other jurisdictions did not transfer the whole Episcopal Church into a successor body. The 2009 separation is a branch relationship, not an ending of the parent.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Timeline of the Episcopal Church",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/",
+        "snippet": "Formation and development: American independence made dependence on English royal and ecclesiastical structures impractical. Clergy and lay representatives developed conventions and a constitution while securing a local episcopate.",
+        "citations": [
+          "cite-profile-episcopal-church-tec-timeline"
+        ]
+      },
+      {
+        "title": "What Kind of Christians Are We? \u2014 Episcopal Church",
+        "url": "https://www.episcopalchurch.org/who-we-are/what-kind-of-christians-are-we/",
+        "snippet": "Teaching and practice: Common prayer: the prayer book shapes worship and expresses doctrine through repeated shared practice.",
+        "citations": [
+          "cite-profile-episcopal-church-tec-faith"
+        ]
+      },
+      {
+        "title": "Book of Common Prayer",
+        "url": "https://www.episcopalchurch.org/who-we-are/how-we-worship/book-of-common-prayer/",
+        "snippet": "Authorized worship and catechesis; the current edition stands in an American prayer-book tradition first published in 1789.",
+        "citations": [
+          "cite-profile-episcopal-church-tec-prayer"
+        ]
+      }
+    ]
   },
   {
     "id": "anglican-church-in-north-america",
@@ -28,7 +153,115 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Formed in 2009 by groups separating from TEC and the Anglican Church of Canada.",
-    "distinctives": ["Anglican doctrine"],
-    "size_estimate": "130,111 members (2024)"
+    "distinctives": [
+      "Anglican doctrine"
+    ],
+    "size_estimate": "130,111 members (2024)",
+    "summary": "A North American Anglican province formed in 2009 from several conservative Anglican networks and jurisdictions.",
+    "formation_narrative": "Disputes over doctrine, authority, and sexual ethics led departing Anglicans in the United States and Canada to seek a common provincial structure. The Common Cause partnership brought together groups with different histories, some previously supported by overseas Anglican provinces. The founders framed their project as preserving historic Anglican faith and enabling mission. This is their interpretation of the conflict, not a judgment that all other Anglicans abandoned Christianity.",
+    "core_beliefs": [
+      "Biblical authority: the Fundamental Declarations identify Scripture as the final norm for faith and life.",
+      "Historic Anglican teaching: creeds, sacraments, episcopal ministry, and the Thirty-nine Articles are explicitly received.",
+      "Common identity with diversity: evangelical, catholic, and charismatic emphases coexist, and the province has had internal differences on ministry questions."
+    ],
+    "key_figures": [
+      {
+        "name": "Robert Duncan",
+        "role": "founding archbishop and Common Cause organizer",
+        "summary": "An Anglican bishop and Common Cause organizer who became ACNA\u2019s founding archbishop; his later account describes the founders\u2019 understanding of their project.",
+        "url": "https://anglicanchurch.net/wp-content/uploads/2017/11/Abp-Duncan-Address.pdf",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-acna-founding"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 2009,
+        "label": "Province constituted",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-acna-founding"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Fundamental Declarations of the Province",
+        "year": 2009,
+        "significance": "Constitutional doctrinal foundation; the linked explanatory edition is later than the founding text.",
+        "url": "https://anglicanchurch.net/wp-content/uploads/2026/01/Fundamental-Declarations-of-the-Province-with-Explanatory-Notes.pdf",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-acna-declarations"
+        ]
+      },
+      {
+        "title": "Thirty-nine Articles",
+        "year": 1571,
+        "significance": "Historical Anglican articles explicitly received in the province\u2019s declarations.",
+        "url": "https://www.churchofengland.org/liturgy/book-of-common-prayer/articles-religion",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-anglican-articles"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-anglican-church-in-north-america-acna-founding"
+      ],
+      "core_beliefs": [
+        "cite-profile-anglican-church-in-north-america-acna-declarations"
+      ],
+      "key_figures": [
+        "cite-profile-anglican-church-in-north-america-acna-founding"
+      ],
+      "key_dates": [
+        "cite-profile-anglican-church-in-north-america-acna-founding"
+      ],
+      "ending_narrative": [
+        "cite-profile-anglican-church-in-north-america-acna-founding"
+      ]
+    },
+    "citations": [
+      "cite-profile-anglican-church-in-north-america-acna-founding",
+      "cite-profile-anglican-church-in-north-america-acna-declarations",
+      "cite-profile-anglican-church-in-north-america-anglican-articles"
+    ],
+    "profile_scope": "The dataset currently represents only part of its multi-jurisdictional parentage. The founders\u2019 retrospective address is a primary perspective rather than an independent evaluation of every dispute.",
+    "ending_narrative": "The province continues as a distinct Anglican organization. It claims continuity with historic Anglican faith, but that theological claim is different from being the universal institutional successor to every North American Anglican church. No terminal successor applies.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "The Founding of the Anglican Church \u2014 Robert Duncan, Provincial Council 2025",
+        "url": "https://anglicanchurch.net/wp-content/uploads/2017/11/Abp-Duncan-Address.pdf",
+        "snippet": "Formation and development: Disputes over doctrine, authority, and sexual ethics led departing Anglicans in the United States and Canada to seek a common provincial structure. The Common Cause partnership brought together groups with different histories, some previously supported by overseas Anglican provinces.",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-acna-founding"
+        ]
+      },
+      {
+        "title": "Fundamental Declarations of the Province with explanatory notes \u2014 ACNA",
+        "url": "https://anglicanchurch.net/wp-content/uploads/2026/01/Fundamental-Declarations-of-the-Province-with-Explanatory-Notes.pdf",
+        "snippet": "Teaching and practice: Biblical authority: the Fundamental Declarations identify Scripture as the final norm for faith and life.",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-acna-declarations"
+        ]
+      },
+      {
+        "title": "Thirty-nine Articles",
+        "url": "https://www.churchofengland.org/liturgy/book-of-common-prayer/articles-religion",
+        "snippet": "Historical Anglican articles explicitly received in the province\u2019s declarations.",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-anglican-articles"
+        ]
+      },
+      {
+        "title": "Fundamental Declarations of the Province",
+        "url": "https://anglicanchurch.net/wp-content/uploads/2026/01/Fundamental-Declarations-of-the-Province-with-Explanatory-Notes.pdf",
+        "snippet": "Constitutional doctrinal foundation; the linked explanatory edition is later than the founding text.",
+        "citations": [
+          "cite-profile-anglican-church-in-north-america-acna-declarations"
+        ]
+      }
+    ]
   }
 ]

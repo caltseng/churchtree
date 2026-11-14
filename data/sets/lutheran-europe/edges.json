@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "lutheran-reformation-to-german-churches-1555",
     "name": "Territorial churches formed",
@@ -7,9 +7,82 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1555,
-    "reasons": ["reformation settlement"],
+    "reasons": [
+      "reformation settlement"
+    ],
     "description": "Lutheran territorial churches developed in German lands following the Reformation.",
-    "citations": ["cite-lutheranism-origins", "cite-lutheranism-germany"]
+    "citations": [
+      "cite-lutheranism-origins",
+      "cite-lutheranism-germany",
+      "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+      "cite-profile-german-lutheran-territorial-churches-lcms-history"
+    ],
+    "narrative": "Lutheran territorial churches developed in German lands following the Reformation. Princes and civic governments helped organize Lutheran worship, schools, and ministry in different German lands. Political settlements such as the Peace of Augsburg in 1555 shaped the setting in which territorial churches developed. This node groups multiple churches rather than naming one denomination founded that year. Emigration later carried several of these traditions to North America, where churches adopted new organizational forms.",
+    "causes": [
+      "reformation settlement"
+    ],
+    "key_figures": [
+      {
+        "name": "Martin Luther",
+        "role": "formative theological influence",
+        "summary": "A German reformer whose teaching on justification, catechesis, and sacramental life shaped the Lutheran confessional tradition.",
+        "url": "https://www.lcms.org/about/lcms-history",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+          "cite-profile-german-lutheran-territorial-churches-lcms-history"
+        ]
+      },
+      {
+        "name": "Philipp Melanchthon",
+        "role": "confessional author; not sole organizer of every territorial church",
+        "summary": "A scholar and colleague of Luther who was the principal author of the Augsburg Confession, helping explain Lutheran teaching in a public confessional form.",
+        "url": "https://www.lcms.org/about/lcms-history",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+          "cite-profile-german-lutheran-territorial-churches-lcms-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1555,
+        "label": "Territorial churches formed",
+        "citations": [
+          "cite-lutheranism-origins",
+          "cite-lutheranism-germany"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Book of Concord \u2014 historical Lutheran confessional texts",
+        "url": "https://bookofconcord.org/",
+        "snippet": "Formation and development: Princes and civic governments helped organize Lutheran worship, schools, and ministry in different German lands. Political settlements such as the Peace of Augsburg in 1555 shaped the setting in which territorial churches developed.",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Book of Concord",
+        "url": "https://bookofconcord.org/",
+        "snippet": "Widely influential confessional collection; adoption and political arrangements differed among territories.",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+      "cite-profile-german-lutheran-territorial-churches-lcms-history"
+    ]
   },
   {
     "id": "lutheran-reformation-to-scandinavian-churches-1536",
@@ -19,9 +92,92 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1536,
-    "reasons": ["reformation adoption"],
+    "reasons": [
+      "reformation adoption"
+    ],
     "description": "Scandinavian state churches adopted Lutheranism in the Reformation era.",
-    "citations": ["cite-lutheranism-origins", "cite-lutheranism-scandinavia"]
+    "citations": [
+      "cite-lutheranism-origins",
+      "cite-lutheranism-scandinavia",
+      "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+      "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+    ],
+    "narrative": "Scandinavian state churches adopted Lutheranism in the Reformation era. Lutheran reform entered Scandinavian kingdoms through preaching, teaching, and royal action. The resulting churches retained different national histories and forms of oversight. The dataset\u2019s 1536 marker should not imply that all Scandinavian churches were founded or reformed simultaneously. Migration connected these national traditions to American Lutheran communities, especially through bodies that later entered the ELCA.",
+    "causes": [
+      "reformation adoption"
+    ],
+    "key_figures": [
+      {
+        "name": "Hans Tausen",
+        "role": "early Danish Lutheran preacher",
+        "summary": "A Danish preacher influenced by study with Luther who helped introduce Lutheran reform in Denmark.",
+        "url": "https://museeprotestant.org/en/notice/protestantism-in-the-scandinavian-countries/",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts",
+          "cite-profile-scandinavian-lutheran-state-churches-scandinavia"
+        ]
+      },
+      {
+        "name": "Mikael Agricola",
+        "role": "Finnish reformer and biblical translator",
+        "summary": "A Finnish reformer and translator whose work helped make biblical and religious texts accessible in Finnish.",
+        "url": "https://museeprotestant.org/en/notice/protestantism-in-the-scandinavian-countries/",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts",
+          "cite-profile-scandinavian-lutheran-state-churches-scandinavia"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1536,
+        "label": "State churches established",
+        "citations": [
+          "cite-lutheranism-origins",
+          "cite-lutheranism-scandinavia"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "ELCA and its predecessor churches \u2014 World Council of Churches",
+        "url": "https://www.oikoumene.org/member-churches/evangelical-lutheran-church-in-america",
+        "snippet": "Formation and development: Lutheran reform entered Scandinavian kingdoms through preaching, teaching, and royal action. The resulting churches retained different national histories and forms of oversight.",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-elca-wcc"
+        ]
+      },
+      {
+        "title": "Book of Concord \u2014 historical Lutheran confessional texts",
+        "url": "https://bookofconcord.org/",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+      "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+    ]
   },
   {
     "id": "german-churches-to-lcms-1847",
@@ -31,20 +187,161 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1847,
-    "reasons": ["immigration from German churches"],
+    "reasons": [
+      "immigration from German churches"
+    ],
     "description": "LCMS was founded by German immigrants from territorial churches in Germany.",
-    "citations": ["cite-lcms-1847", "cite-lcms-german-landeskirchen"]
+    "citations": [
+      "cite-lcms-1847",
+      "cite-lcms-german-landeskirchen",
+      "cite-profile-lutheran-church-missouri-synod-lcms-history",
+      "cite-profile-lutheran-church-missouri-synod-elca-wcc"
+    ],
+    "narrative": "LCMS was founded by German immigrants from territorial churches in Germany. German immigrant and mission communities formed a synod to preserve Lutheran teaching and coordinate ministry in the United States. C. F. W. Walther became its first president. The church developed educational and mission institutions while insisting on doctrinal agreement. Disputes in the 1970s led some congregations into the AELC, later an ELCA predecessor; this was a division within American Lutheran history, not the origin of Lutheranism itself.",
+    "causes": [
+      "immigration from German churches"
+    ],
+    "key_figures": [
+      {
+        "name": "C. F. W. Walther",
+        "role": "founding leader and first synod president",
+        "summary": "A German immigrant Lutheran pastor and theologian who became the first president of the Missouri Synod and a central advocate of its confessional identity.",
+        "url": "https://www.oikoumene.org/member-churches/evangelical-lutheran-church-in-america",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lcms-history",
+          "cite-profile-lutheran-church-missouri-synod-elca-wcc"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1847,
+        "label": "German immigrant roots",
+        "citations": [
+          "cite-lcms-1847",
+          "cite-lcms-german-landeskirchen"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "LCMS History \u2014 official account",
+        "url": "https://www.lcms.org/about/lcms-history",
+        "snippet": "Formation and development: German immigrant and mission communities formed a synod to preserve Lutheran teaching and coordinate ministry in the United States. C.",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lcms-history"
+        ]
+      },
+      {
+        "title": "Beliefs \u2014 Lutheran Church Missouri Synod",
+        "url": "https://www.lcms.org/what-we-believe/beliefs",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lcms-beliefs"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Book of Concord",
+        "url": "https://www.lcms.org/what-we-believe/beliefs",
+        "snippet": "LCMS explicitly accepts the Lutheran Confessions as a correct presentation of biblical doctrine.",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lcms-beliefs"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-lutheran-church-missouri-synod-lcms-history",
+      "cite-profile-lutheran-church-missouri-synod-elca-wcc"
+    ]
   },
   {
     "id": "scandinavian-churches-to-elca-1987",
-    "name": "Scandinavian immigrant roots",
+    "name": "Scandinavian immigrant heritage",
     "from_id": "scandinavian-lutheran-state-churches",
     "to_id": "evangelical-lutheran-church-in-america",
     "zoom_tier": "full",
-    "type": "origin",
-    "year": 1987,
-    "reasons": ["immigration heritage"],
-    "description": "ELCA predecessor bodies were shaped by Scandinavian immigrant church traditions.",
-    "citations": ["cite-elca-scandinavian-roots", "cite-elca-founded"]
+    "type": "influence",
+    "year": null,
+    "reasons": [
+      "immigration heritage"
+    ],
+    "description": "Scandinavian immigrant traditions helped shape ELCA predecessor churches over generations. This is inherited influence through intervening American bodies, not direct institutional formation in 1987.",
+    "citations": [
+      "cite-elca-scandinavian-roots",
+      "cite-elca-founded",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+    ],
+    "narrative": "Scandinavian immigrant traditions helped shape ELCA predecessor churches over generations. This is inherited influence through intervening American bodies, not direct institutional formation in 1987. The constituting convention met in 1987, and the ELCA began operations in 1988.",
+    "causes": [
+      "immigration heritage"
+    ],
+    "key_figures": [
+      {
+        "name": "Herbert W. Chilstrom",
+        "role": "first ELCA bishop, elected at the 1987 constituting convention",
+        "summary": "A Lutheran bishop elected at the 1987 constituting convention as the first bishop of the ELCA.",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "key_dates": [],
+    "further_reading": [
+      {
+        "title": "History of the ELCA \u2014 official account",
+        "url": "https://www.elca.org/about-the-elca/who-we-are/history",
+        "snippet": "Formation and development: The merger brought together multiple strands of North American Lutheran history, including immigrant churches and the AELC\u2019s more recent division from the Missouri Synod. Its constituting convention in April 1987 elected Herbert Chilstrom; operations began January 1, 1988.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history"
+        ]
+      },
+      {
+        "title": "What Lutherans Believe \u2014 ELCA",
+        "url": "https://www.elca.org/about-the-elca/who-we-are/beliefs",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-faith"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Constituting Convention and transition record",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "snippet": "Primary organizational record distinguishing constitution in 1987 from operational startup in 1988.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+    ]
   }
 ]

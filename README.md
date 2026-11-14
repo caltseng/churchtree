@@ -1,45 +1,55 @@
 # ChurchTree
 
-Personal project to document and visualize major branches in church history
-with an interactive website, with emphasis on American Protestant movements.
+A desktop explorer of church-history relationships, with an emphasis on American
+Protestant movements and their historical roots. Content aims to be sourced,
+neutral and clear about uncertainty; the dataset remains under active review.
 
-## Goals
-- Create a clear, navigable timeline of major branches and movements.
-- Provide concise, sourced summaries with links for deeper study.
-- Build an interactive site that makes relationships easy to explore.
+## Explore
+- Major branches remain a connected graph, without a proportional time scale.
+- Compact lineage reveals historical groups, then individual denominations.
+- Proportional timeline preserves real date spacing: wheel to zoom, drag to pan.
+  Nearby records cluster within their tradition and separate as you zoom in.
+  Records at the same date may remain clustered; select them to inspect members.
+- Search reaches any recorded body. Select nodes and connections for details,
+  sources, people, documents and successor navigation where available.
+- Trace ancestry retains originating bodies as context outside the time scale.
+- Drag the divider to resize the graph and reading panel, or focus it and use
+  left/right arrows. Mobile is currently out of scope.
 
-## Scope (initial)
-- Focus on broad historical branches and key American Protestant streams.
-- Capture dates, people, movements, and connections at a high level.
-- Produce a written spec and architecture documents before coding.
+## Run
+Build the static bundle:
 
-## Non-goals (for now)
-- Exhaustive global coverage of every tradition.
-- Detailed doctrinal debate or apologetics.
-- A full academic reference work.
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/build-data-js.ps1
+```
 
-## Planned artifacts
-- Product spec: vision, user stories, content model, UX flows.
-- Architecture docs: data model, system design, stack choices.
-- Implementation plan: milestones, backlog, and release targets.
+Open `index.html`, or serve the repository using a local static HTTP server.
+D3 loads from d3js.org and requires an internet connection.
 
-## Project principles
-- Clarity over exhaustiveness.
-- Sources and citations for factual claims.
-- Neutral tone; descriptive rather than argumentative.
+## Validate
 
-## Status
-In early build-out. The data model and Phase 0 visualization are in place,
-with an initial Presbyterian US dataset and notes-first workflow.
+```powershell
+node scripts/validate-data.cjs
+node scripts/test-explorer.cjs
+```
 
-High-level progress:
-- Spec + architecture docs drafted.
-- Notes-first data pipeline established.
-- US Presbyterian dataset seeded with citations, distinctives, and size estimates.
-- European Presbyterian roots notes and JSON added, with lineage edges into early US Presbyterianism.
-- D3 graph rendering from combined static datasets, with zoom, hover, and edge labeling.
+Browser checks require Playwright and Microsoft Edge. If Playwright is installed
+outside the repository, set `PLAYWRIGHT_MODULE` to its package directory. Set
+`HEADED=1` to watch the checks. Screenshots are written under `.tmp/browser-check`.
+The validator deliberately fails for unresolved evidence; don't confuse a working
+UI with completed historical verification.
 
-## Quick start (local)
-- Build data for the web view:
-  `powershell -ExecutionPolicy Bypass -File scripts/build-data-js.ps1`
-- Open `index.html` in a browser to view the graph.
+## Structure
+Research notes and structured records live under `data/sets`. Shared evidence lives
+under `data/common`. The build combines these into generated `data/data.js`.
+`graph-groups.js` defines display groupings, not new historical denominations.
+`explorer.js` manages selection and compact rendering; `timeline.js` handles the
+proportional timeline and screen-space clustering.
+
+See `plans/desktop-explorer.md` for the implementation decisions,
+`docs/data-quality-audit.md` for data review, and `plans/belief-history-future.md`
+for the future theological-development explorer (planned, not implemented).
+
+For an interactive Playwright window, run `node scripts/launch-explorer.cjs` after starting a local server (default: http://127.0.0.1:8765). This uses the actual window size instead of a fixed test viewport.
+
+The Horizontal timeline layout runs dates left to right. Use the horizontal scrollbar, trackpad, or Shift + mouse wheel to travel through time; +/− and Ctrl + wheel zoom around the visible date. Tradition labels stay visible while scrolling. Both timeline orientations use named clusters and date-only subtitles.

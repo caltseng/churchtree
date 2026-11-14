@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "english-separatists",
     "name": "English Separatists",
@@ -10,10 +10,134 @@
     "geographic_origin": "England",
     "tradition_family": "Baptist",
     "ecclesial_orientation": "other",
-    "current_status": "dissolved",
-    "notes": "Separatist dissenters from the Church of England in the early 17th century.",
-    "distinctives": ["Congregational separation", "Believer's baptism"],
-    "size_estimate": "unknown"
+    "current_status": "unknown",
+    "notes": "The broad movement predates this node\u2019s retained 1606 immediate-Baptist-context marker. Separatism did not universally entail believer\u2019s baptism.",
+    "distinctives": [
+      "Gathered churches",
+      "Separation from the established church",
+      "Scripture-centered reform"
+    ],
+    "size_estimate": "unknown",
+    "summary": "English Protestants who concluded that reform required gathering churches outside the established Church of England.",
+    "formation_narrative": "Separatists went beyond Puritans who hoped to reform the national church from within. They formed dissenting communities, sometimes fled to the Netherlands, and developed different forms of church order. Smyth and Helwys belong to the part of this story that became Baptist; the wider movement also fed Congregational and Plymouth traditions. The existing 1606 date marks the immediate early-seventeenth-century Baptist context, not the beginning of all English Separatism.",
+    "core_beliefs": [
+      "Voluntary fellowship: churches should consist of committed Christians rather than everyone in a territorial parish.",
+      "Reform by Scripture: worship, ministry, and discipline should be tested against the biblical pattern rather than accepted solely because the established church authorized them.",
+      "Diversity before Baptist identity: separation from a state church did not itself mean rejection of infant baptism. Baptist convictions developed in one stream later."
+    ],
+    "key_figures": [
+      {
+        "name": "Robert Browne",
+        "role": "prominent early advocate of separation",
+        "summary": "An early English Separatist advocate whose name became associated with Brownist dissent; later Separatists did not all follow the same theology or church order.",
+        "url": "https://magazine.web.baylor.edu/news/story/2008/baptist-story",
+        "citations": [
+          "cite-profile-english-separatists-separatists",
+          "cite-profile-english-separatists-baylor-baptists"
+        ]
+      },
+      {
+        "name": "John Smyth",
+        "role": "Separatist minister whose congregation later adopted believer\u2019s baptism",
+        "summary": "An English minister whose search for a scriptural church led him from Anglican and Separatist settings into believer\u2019s baptism and then toward Mennonite fellowship.",
+        "url": "https://magazine.web.baylor.edu/news/story/2008/baptist-story",
+        "citations": [
+          "cite-profile-english-separatists-separatists",
+          "cite-profile-english-separatists-baylor-baptists"
+        ]
+      },
+      {
+        "name": "Thomas Helwys",
+        "role": "leader and supporter of the congregation\u2019s exile",
+        "summary": "An English exile leader who helped organize the Amsterdam Baptist community, returned to England, and defended liberty of conscience.",
+        "url": "https://magazine.web.baylor.edu/news/story/2008/baptist-story",
+        "citations": [
+          "cite-profile-english-separatists-separatists",
+          "cite-profile-english-separatists-baylor-baptists"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1606,
+        "label": "Immediate English Separatist context represented by this node",
+        "citations": [
+          "cite-profile-english-separatists-separatists",
+          "cite-profile-english-separatists-baylor-baptists"
+        ]
+      },
+      {
+        "year": 1609,
+        "label": "Smyth\u2019s Amsterdam congregation moves toward Baptist church membership",
+        "citations": [
+          "cite-profile-english-separatists-separatists",
+          "cite-profile-english-separatists-baylor-baptists"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "A True Confession",
+        "year": 1596,
+        "significance": "An exile Separatist church\u2019s statement of faith and church order. It represents a particular community, not every Separatist and not a general adoption of believer\u2019s baptism.",
+        "url": "https://www.reformedreader.org/ccc/atf.htm",
+        "citations": [
+          "cite-profile-english-separatists-separatist-confession",
+          "cite-profile-english-separatists-separatist-primary"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-english-separatists-separatists",
+        "cite-profile-english-separatists-baylor-baptists"
+      ],
+      "core_beliefs": [
+        "cite-profile-english-separatists-separatists",
+        "cite-profile-english-separatists-baylor-baptists"
+      ],
+      "key_figures": [
+        "cite-profile-english-separatists-separatists",
+        "cite-profile-english-separatists-baylor-baptists"
+      ],
+      "key_dates": [
+        "cite-profile-english-separatists-separatists",
+        "cite-profile-english-separatists-baylor-baptists"
+      ],
+      "ending_narrative": [
+        "cite-profile-english-separatists-separatists",
+        "cite-profile-english-separatists-baylor-baptists"
+      ]
+    },
+    "citations": [
+      "cite-profile-english-separatists-separatists",
+      "cite-profile-english-separatists-baylor-baptists",
+      "cite-profile-english-separatists-baptist-confessions",
+      "cite-profile-english-separatists-separatist-confession",
+      "cite-profile-english-separatists-separatist-primary"
+    ],
+    "profile_scope": "No single confession or founding assembly governed this diverse movement. The broad name and the narrow 1606 start date remain a modeling limitation. The 1596 confession now supplies a specific primary-document example; it is not a movement-wide standard. No formal corporate dissolution is asserted for this historical process. The status is unknown at the institutional level; the ending narrative explains its diffusion or development.",
+    "ending_narrative": "Separatism did not end in a universal dissolution. Exile congregations and English dissenting churches developed into several traditions, including Congregational and Baptist forms. The Amsterdam congregation is one documented development, not the only successor to all Separatists; no exclusive institutional successor is assigned here.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Pilgrims and Puritans: A Delicate Distinction \u2014 Pilgrim Hall Museum",
+        "url": "https://www.pilgrimhall.org/pdf/Pilgrim_Puritan_A_Delicate_Distinction.pdf",
+        "snippet": "Formation and development: Separatists went beyond Puritans who hoped to reform the national church from within. They formed dissenting communities, sometimes fled to the Netherlands, and developed different forms of church order.",
+        "citations": [
+          "cite-profile-english-separatists-separatists"
+        ]
+      },
+      {
+        "title": "A True Confession",
+        "url": "https://www.reformedreader.org/ccc/atf.htm",
+        "snippet": "An exile Separatist church\u2019s statement of faith and church order. It represents a particular community, not every Separatist and not a general adoption of believer\u2019s baptism.",
+        "citations": [
+          "cite-profile-english-separatists-separatist-confession",
+          "cite-profile-english-separatists-separatist-primary"
+        ]
+      }
+    ]
   },
   {
     "id": "early-baptist-amsterdam",
@@ -28,8 +152,149 @@
     "ecclesial_orientation": "other",
     "current_status": "dissolved",
     "notes": "First Baptist church formed in Amsterdam in 1609.",
-    "distinctives": ["Believer's baptism"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "Believer's baptism"
+    ],
+    "size_estimate": "unknown",
+    "summary": "The English exile congregation associated with John Smyth and Thomas Helwys, conventionally identified as an early Baptist church.",
+    "formation_narrative": "After leaving England for Amsterdam, Smyth\u2019s congregation reconsidered whether infant baptism could constitute a church of professing believers. Around 1609 Smyth baptized himself and fellow members. Contact with Waterlander Mennonites then raised questions about that act and about the nature of a true church. Smyth sought Mennonite fellowship; Helwys opposed that course and eventually returned to England. The congregation\u2019s importance lies in this contested process rather than a fully settled later Baptist system.",
+    "core_beliefs": [
+      "Professed faith before baptism: church membership was reconstructed around people able to confess faith and repentance themselves.",
+      "Biblical church order: the congregation sought to recover New Testament practice even when that meant revising its earlier Separatist position.",
+      "Unsettled theology: the precise timing of Smyth\u2019s move away from Calvinism remains debated; describing the congregation as uniformly General Baptist from its first day oversimplifies the evidence."
+    ],
+    "key_figures": [
+      {
+        "name": "John Smyth",
+        "role": "minister who initiated the baptisms and later sought Mennonite fellowship",
+        "summary": "An English minister whose search for a scriptural church led him from Anglican and Separatist settings into believer\u2019s baptism and then toward Mennonite fellowship.",
+        "url": "https://ora.ox.ac.uk/objects/uuid%3A78e43cb1-86b3-4ed9-995a-212dca242110",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-baylor-baptists",
+          "cite-profile-early-baptist-amsterdam-helwys"
+        ]
+      },
+      {
+        "name": "Thomas Helwys",
+        "role": "opposed Smyth\u2019s Mennonite alignment and led a returning group",
+        "summary": "An English exile leader who helped organize the Amsterdam Baptist community, returned to England, and defended liberty of conscience.",
+        "url": "https://ora.ox.ac.uk/objects/uuid%3A78e43cb1-86b3-4ed9-995a-212dca242110",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-baylor-baptists",
+          "cite-profile-early-baptist-amsterdam-helwys"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1609,
+        "label": "Conventional date of the congregation\u2019s Baptist reconstitution",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-baylor-baptists",
+          "cite-profile-early-baptist-amsterdam-helwys"
+        ]
+      },
+      {
+        "year": 1612,
+        "label": "Helwys\u2019s English congregation continues a distinct Baptist trajectory",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-baylor-baptists",
+          "cite-profile-early-baptist-amsterdam-helwys"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Short Confession of Faith in Twenty Articles",
+        "year": 1609,
+        "significance": "A personal statement associated with Smyth, not an officially adopted universal Baptist creed; useful evidence of theology in transition.",
+        "url": "https://www.reformedreader.org/ccc/scof.htm",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-smyth-confession",
+          "cite-profile-early-baptist-amsterdam-smyth-primary"
+        ]
+      },
+      {
+        "title": "A Declaration of Faith of English People Remaining at Amsterdam",
+        "year": 1611,
+        "significance": "Helwys\u2019s church\u2019s declaration after the dispute with Smyth. It distinguishes that party\u2019s developing position from both earlier Separatism and Mennonite affiliation.",
+        "url": "https://www.reformedreader.org/ccc/esbc.htm",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-helwys-confession"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-early-baptist-amsterdam-baylor-baptists",
+        "cite-profile-early-baptist-amsterdam-helwys"
+      ],
+      "core_beliefs": [
+        "cite-profile-early-baptist-amsterdam-smyth-study",
+        "cite-profile-early-baptist-amsterdam-baylor-baptists"
+      ],
+      "key_figures": [
+        "cite-profile-early-baptist-amsterdam-baylor-baptists",
+        "cite-profile-early-baptist-amsterdam-helwys"
+      ],
+      "key_dates": [
+        "cite-profile-early-baptist-amsterdam-baylor-baptists",
+        "cite-profile-early-baptist-amsterdam-helwys"
+      ],
+      "ending_narrative": [
+        "cite-profile-early-baptist-amsterdam-baylor-baptists",
+        "cite-profile-early-baptist-amsterdam-helwys"
+      ]
+    },
+    "citations": [
+      "cite-profile-early-baptist-amsterdam-baylor-baptists",
+      "cite-profile-early-baptist-amsterdam-helwys",
+      "cite-profile-early-baptist-amsterdam-smyth-study",
+      "cite-profile-early-baptist-amsterdam-baptist-confessions",
+      "cite-profile-early-baptist-amsterdam-smyth-confession",
+      "cite-profile-early-baptist-amsterdam-helwys-confession",
+      "cite-profile-early-baptist-amsterdam-smyth-primary"
+    ],
+    "profile_scope": "The year is conventionally 1609; Holmes\u2019s study explicitly qualifies the dating and disputes a simple early Arminian narrative.",
+    "ending_narrative": "The exile congregation divided as Smyth sought Mennonite fellowship and Helwys rejected that course and returned to England around 1612. It therefore ceased to be a single united starting community. The Baptist movement node links to one continuing historical trajectory, while the Mennonite connection is outside the present graph.",
+    "successor_ids": [
+      "baptist-movement"
+    ],
+    "further_reading": [
+      {
+        "title": "The Baptist Story \u2014 Doug Weaver, Baylor University",
+        "url": "https://magazine.web.baylor.edu/news/story/2008/baptist-story",
+        "snippet": "Formation and development: After leaving England for Amsterdam, Smyth\u2019s congregation reconsidered whether infant baptism could constitute a church of professing believers. Around 1609 Smyth baptized himself and fellow members.",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-baylor-baptists"
+        ]
+      },
+      {
+        "title": "Stephen R. Holmes: When Did John Smyth Embrace Arminianism?",
+        "url": "https://research-portal.st-andrews.ac.uk/en/publications/when-did-john-smyth-embrace-arminianism-and-was-the-first-baptist/",
+        "snippet": "Teaching and practice: Professed faith before baptism: church membership was reconstructed around people able to confess faith and repentance themselves.",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-smyth-study"
+        ]
+      },
+      {
+        "title": "Short Confession of Faith in Twenty Articles",
+        "url": "https://www.reformedreader.org/ccc/scof.htm",
+        "snippet": "A personal statement associated with Smyth, not an officially adopted universal Baptist creed; useful evidence of theology in transition.",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-smyth-confession",
+          "cite-profile-early-baptist-amsterdam-smyth-primary"
+        ]
+      },
+      {
+        "title": "A Declaration of Faith of English People Remaining at Amsterdam",
+        "url": "https://www.reformedreader.org/ccc/esbc.htm",
+        "snippet": "Helwys\u2019s church\u2019s declaration after the dispute with Smyth. It distinguishes that party\u2019s developing position from both earlier Separatism and Mennonite affiliation.",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-helwys-confession"
+        ]
+      }
+    ]
   },
   {
     "id": "eastern-orthodox-tradition",
@@ -44,7 +309,107 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Eastern tradition centered in Constantinople and the Eastern churches after the East-West Schism.",
-    "distinctives": ["Conciliar governance", "Eastern liturgical tradition"],
-    "size_estimate": "more than 200 million adherents worldwide (early 21st century)"
+    "distinctives": [
+      "Conciliar governance",
+      "Eastern liturgical tradition"
+    ],
+    "size_estimate": "more than 200 million adherents worldwide (early 21st century)",
+    "summary": "A communion of self-governing Eastern churches united by shared faith, sacramental life, and episcopal tradition.",
+    "formation_narrative": "Eastern Orthodox churches developed within the ancient Christian world through councils, liturgy, monastic life, and regional episcopal structures. Growing estrangement from the Latin West culminated in a separation conventionally marked by 1054 and deepened by later conflict. That date is not the beginning of Eastern Christianity. No single modern founder created the tradition, and self-governing churches do not relate to one another as branches of a single national denomination.",
+    "core_beliefs": [
+      "Trinitarian and Christological faith: ecumenical creeds and councils guide teaching about God and Christ.",
+      "Holy Tradition: Scripture is read within the worship, teaching, and historical life of the church rather than separated from it.",
+      "Sacramental communion: liturgical worship and the life of prayer express participation in Christ; conciliar relationships distinguish this structure from centralized papal government."
+    ],
+    "key_figures": [
+      {
+        "name": "Athanasius of Alexandria",
+        "role": "Ancient defender of Nicene teaching",
+        "summary": "A fourth-century Alexandrian bishop and theologian who defended the Nicene account of Christ. He belongs to the tradition\u2019s ancient formation, not to a supposed founding of Orthodoxy in 1054.",
+        "url": "https://www.oca.org/orthodoxy/the-orthodox-faith/church-history/fourth-century/saint-athanasius-and-his-defence-of-nicea",
+        "citations": [
+          "cite-profile-eastern-orthodox-tradition-athanasius"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1054,
+        "label": "Conventional milestone in East-West estrangement",
+        "citations": [
+          "cite-profile-eastern-orthodox-tradition-orthodox-schism"
+        ]
+      },
+      {
+        "year": 1204,
+        "label": "Sack of Constantinople deepens the rupture",
+        "citations": [
+          "cite-profile-eastern-orthodox-tradition-orthodox-schism"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Nicene-Constantinopolitan Creed",
+        "year": 381,
+        "significance": "Foundational confession used in Orthodox worship; dates refer to the council tradition, not the birth of an Orthodox denomination.",
+        "url": "https://www.oca.org/orthodoxy/the-orthodox-faith/doctrine-scripture",
+        "citations": [
+          "cite-profile-eastern-orthodox-tradition-orthodox-faith"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-eastern-orthodox-tradition-orthodox-schism"
+      ],
+      "core_beliefs": [
+        "cite-profile-eastern-orthodox-tradition-orthodox-faith"
+      ],
+      "key_figures": [
+        "cite-profile-eastern-orthodox-tradition-orthodox-schism",
+        "cite-profile-eastern-orthodox-tradition-athanasius"
+      ],
+      "key_dates": [
+        "cite-profile-eastern-orthodox-tradition-orthodox-schism"
+      ],
+      "ending_narrative": [
+        "cite-profile-eastern-orthodox-tradition-orthodox-schism"
+      ]
+    },
+    "citations": [
+      "cite-profile-eastern-orthodox-tradition-orthodox-schism",
+      "cite-profile-eastern-orthodox-tradition-orthodox-faith",
+      "cite-profile-eastern-orthodox-tradition-athanasius"
+    ],
+    "profile_scope": "No single founder applies. The model\u2019s 1054 start and Baptist-Europe storage location remain abstractions requiring explicit explanation.",
+    "ending_narrative": "Eastern Orthodox churches continue as a communion of self-governing bodies. The deepening rupture with Rome was not the dissolution of the Eastern churches, and no single terminal successor can represent the whole tradition.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "The Great Schism \u2014 Orthodox Church in America",
+        "url": "https://www.oca.org/orthodoxy/the-orthodox-faith/church-history/eleventh-century/the-great-schism",
+        "snippet": "Formation and development: Eastern Orthodox churches developed within the ancient Christian world through councils, liturgy, monastic life, and regional episcopal structures. Growing estrangement from the Latin West culminated in a separation conventionally marked by 1054 and deepened by later conflict.",
+        "citations": [
+          "cite-profile-eastern-orthodox-tradition-orthodox-schism"
+        ]
+      },
+      {
+        "title": "The Orthodox Faith: Doctrine and Scripture \u2014 Orthodox Church in America",
+        "url": "https://www.oca.org/orthodoxy/the-orthodox-faith/doctrine-scripture",
+        "snippet": "Teaching and practice: Trinitarian and Christological faith: ecumenical creeds and councils guide teaching about God and Christ.",
+        "citations": [
+          "cite-profile-eastern-orthodox-tradition-orthodox-faith"
+        ]
+      },
+      {
+        "title": "Nicene-Constantinopolitan Creed",
+        "url": "https://www.oca.org/orthodoxy/the-orthodox-faith/doctrine-scripture",
+        "snippet": "Foundational confession used in Orthodox worship; dates refer to the council tradition, not the birth of an Orthodox denomination.",
+        "citations": [
+          "cite-profile-eastern-orthodox-tradition-orthodox-faith"
+        ]
+      }
+    ]
   }
 ]

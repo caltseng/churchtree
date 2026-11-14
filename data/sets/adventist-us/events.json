@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "event-millerism-1831",
     "name": "Millerism begins",
@@ -6,7 +6,9 @@
     "zoom_tier": "full",
     "description": "William Miller first publicly taught his second advent expectation in 1831.",
     "related_edge_ids": [],
-    "citations": ["cite-millerism-1831"]
+    "citations": [
+      "cite-millerism-1831"
+    ]
   },
   {
     "id": "event-advent-christian-1860",
@@ -14,8 +16,12 @@
     "year": 1860,
     "zoom_tier": "full",
     "description": "Advent Christian Church organized in 1860.",
-    "related_edge_ids": ["millerism-to-advent-christian-1860"],
-    "citations": ["cite-advent-christian-1860"]
+    "related_edge_ids": [
+      "millerism-to-advent-christian-1860"
+    ],
+    "citations": [
+      "cite-advent-christian-1860"
+    ]
   },
   {
     "id": "event-sda-1863",
@@ -23,8 +29,12 @@
     "year": 1863,
     "zoom_tier": "full",
     "description": "Seventh-day Adventist Church organized in 1863.",
-    "related_edge_ids": ["millerism-to-sda-1863"],
-    "citations": ["cite-sda-1863"]
+    "related_edge_ids": [
+      "millerism-to-sda-1863"
+    ],
+    "citations": [
+      "cite-sda-1863"
+    ]
   },
   {
     "id": "event-cog7-1858",
@@ -32,7 +42,11 @@
     "year": 1858,
     "zoom_tier": "full",
     "description": "Sabbatarian Adventists separated in 1858, forming the CoG7 line.",
-    "related_edge_ids": ["millerism-to-cog7-1858"],
-    "citations": ["cite-cog7-1858"]
+    "related_edge_ids": [
+      "millerism-to-cog7-1858"
+    ],
+    "citations": [
+      "cite-cog7-1858"
+    ]
   }
 ]

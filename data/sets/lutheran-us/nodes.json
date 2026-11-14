@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "lutheran-church-missouri-synod",
     "name": "Lutheran Church - Missouri Synod",
@@ -12,8 +12,132 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Organized in 1847 by German Lutheran immigrants.",
-    "distinctives": ["Confessional Lutheran"],
-    "size_estimate": "1,674,315 baptized; 1,328,392 confirmed (2024)"
+    "distinctives": [
+      "Confessional Lutheran"
+    ],
+    "size_estimate": "1,674,315 baptized; 1,328,392 confirmed (2024)",
+    "summary": "A confessional Lutheran synod founded in 1847 whose churches share explicit commitment to Lutheran doctrinal standards.",
+    "formation_narrative": "German immigrant and mission communities formed a synod to preserve Lutheran teaching and coordinate ministry in the United States. C. F. W. Walther became its first president. The church developed educational and mission institutions while insisting on doctrinal agreement. Disputes in the 1970s led some congregations into the AELC, later an ELCA predecessor; this was a division within American Lutheran history, not the origin of Lutheranism itself.",
+    "core_beliefs": [
+      "Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+      "Word and sacraments: preaching, baptism, and the Lord\u2019s Supper are central ways in which the church communicates God\u2019s promise.",
+      "Confessional teaching: the Augsburg Confession and catechisms explain Lutheran readings of Scripture, though bodies differ in how they subscribe to the wider Book of Concord."
+    ],
+    "key_figures": [
+      {
+        "name": "C. F. W. Walther",
+        "role": "founding leader and first synod president",
+        "summary": "A German immigrant Lutheran pastor and theologian who became the first president of the Missouri Synod and a central advocate of its confessional identity.",
+        "url": "https://www.oikoumene.org/member-churches/evangelical-lutheran-church-in-america",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lcms-history",
+          "cite-profile-lutheran-church-missouri-synod-elca-wcc"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1847,
+        "label": "Synod organized",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lcms-history",
+          "cite-profile-lutheran-church-missouri-synod-elca-wcc"
+        ]
+      },
+      {
+        "year": 1976,
+        "label": "AELC emerges from congregations leaving the Missouri Synod",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lcms-history",
+          "cite-profile-lutheran-church-missouri-synod-elca-wcc"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Book of Concord",
+        "year": 1580,
+        "significance": "LCMS explicitly accepts the Lutheran Confessions as a correct presentation of biblical doctrine.",
+        "url": "https://www.lcms.org/what-we-believe/beliefs",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lcms-beliefs"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "year": 1529,
+        "significance": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lutheran-texts"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-lutheran-church-missouri-synod-lcms-history",
+        "cite-profile-lutheran-church-missouri-synod-elca-wcc"
+      ],
+      "core_beliefs": [
+        "cite-profile-lutheran-church-missouri-synod-lcms-beliefs",
+        "cite-profile-lutheran-church-missouri-synod-lutheran-texts"
+      ],
+      "key_figures": [
+        "cite-profile-lutheran-church-missouri-synod-lcms-history",
+        "cite-profile-lutheran-church-missouri-synod-elca-wcc"
+      ],
+      "key_dates": [
+        "cite-profile-lutheran-church-missouri-synod-lcms-history",
+        "cite-profile-lutheran-church-missouri-synod-elca-wcc"
+      ],
+      "ending_narrative": [
+        "cite-profile-lutheran-church-missouri-synod-lcms-history",
+        "cite-profile-lutheran-church-missouri-synod-elca-wcc"
+      ]
+    },
+    "citations": [
+      "cite-profile-lutheran-church-missouri-synod-lcms-history",
+      "cite-profile-lutheran-church-missouri-synod-elca-wcc",
+      "cite-profile-lutheran-church-missouri-synod-lcms-beliefs",
+      "cite-profile-lutheran-church-missouri-synod-lutheran-texts"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The synod continues. The 1976 AELC departure represented a subset of congregations leaving after doctrinal and institutional conflict; it did not end the LCMS or transfer all its institutions into the ELCA. No terminal successor applies.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "LCMS History \u2014 official account",
+        "url": "https://www.lcms.org/about/lcms-history",
+        "snippet": "Formation and development: German immigrant and mission communities formed a synod to preserve Lutheran teaching and coordinate ministry in the United States. C.",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lcms-history"
+        ]
+      },
+      {
+        "title": "Beliefs \u2014 Lutheran Church Missouri Synod",
+        "url": "https://www.lcms.org/what-we-believe/beliefs",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lcms-beliefs"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Book of Concord",
+        "url": "https://www.lcms.org/what-we-believe/beliefs",
+        "snippet": "LCMS explicitly accepts the Lutheran Confessions as a correct presentation of biblical doctrine.",
+        "citations": [
+          "cite-profile-lutheran-church-missouri-synod-lcms-beliefs"
+        ]
+      }
+    ]
   },
   {
     "id": "wisconsin-evangelical-lutheran-synod",
@@ -28,8 +152,119 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Organized in 1850; confessional Lutheran synod.",
-    "distinctives": ["Confessional Lutheran"],
-    "size_estimate": "340,511 baptized members (2022)"
+    "distinctives": [
+      "Confessional Lutheran"
+    ],
+    "size_estimate": "340,511 baptized members (2022)",
+    "summary": "A confessional Lutheran synod organizing congregations, schools, ministerial training, and mission through shared doctrine.",
+    "formation_narrative": "Founded in Wisconsin in 1850, the synod developed from immigrant Lutheran church life into a wider fellowship. Its present identity emphasizes doctrinal agreement as the basis for joint worship and mission. It is a distinct body rather than a regional district of the LCMS or ELCA. The current graph does not yet show its predecessor links or changing fellowship relationships.",
+    "core_beliefs": [
+      "Grace through Christ: forgiveness is God\u2019s gift received through faith, not a reward for moral achievement.",
+      "Scripture and confession: biblical teaching is articulated through the Lutheran Confessions and applied to preaching, sacraments, and life.",
+      "Church fellowship: WELS teaches that shared religious activity requires agreement in doctrine, giving its boundaries of cooperation a distinctive importance."
+    ],
+    "key_figures": [
+      {
+        "name": "Johannes Muehlhaeuser",
+        "role": "founding organizer and first synod president",
+        "summary": "A German immigrant pastor who organized a Milwaukee congregation and helped found the Wisconsin synod, serving as its first president from 1850 to 1860.",
+        "url": "https://welshistoricalinstitute.org/histories/personal/president/1850-1860-muehlhaeuser/",
+        "citations": [
+          "cite-profile-wisconsin-evangelical-lutheran-synod-wels-history",
+          "cite-profile-wisconsin-evangelical-lutheran-synod-muehlhaeuser"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1850,
+        "label": "Wisconsin synod organized",
+        "citations": [
+          "cite-profile-wisconsin-evangelical-lutheran-synod-wels-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "This We Believe",
+        "year": null,
+        "significance": "The synod\u2019s doctrinal explanation of Scripture, salvation, church, and fellowship.",
+        "url": "https://wels.net/about-wels/what-we-believe/",
+        "citations": [
+          "cite-profile-wisconsin-evangelical-lutheran-synod-wels-faith"
+        ]
+      },
+      {
+        "title": "Book of Concord",
+        "year": 1580,
+        "significance": "The confessional Lutheran inheritance identified in the synod\u2019s statement of mission.",
+        "url": "https://wels.net/about-wels/",
+        "citations": [
+          "cite-profile-wisconsin-evangelical-lutheran-synod-wels-history"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-wisconsin-evangelical-lutheran-synod-wels-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-wisconsin-evangelical-lutheran-synod-wels-faith",
+        "cite-profile-wisconsin-evangelical-lutheran-synod-wels-history"
+      ],
+      "key_figures": [
+        "cite-profile-wisconsin-evangelical-lutheran-synod-wels-history",
+        "cite-profile-wisconsin-evangelical-lutheran-synod-muehlhaeuser"
+      ],
+      "key_dates": [
+        "cite-profile-wisconsin-evangelical-lutheran-synod-wels-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-wisconsin-evangelical-lutheran-synod-wels-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-wisconsin-evangelical-lutheran-synod-wels-history",
+      "cite-profile-wisconsin-evangelical-lutheran-synod-wels-faith",
+      "cite-profile-wisconsin-evangelical-lutheran-synod-muehlhaeuser"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The synod continues as a distinct confessional Lutheran body. Its changing fellowship relationships and cooperative institutions need fuller treatment, but the present dataset contains no terminal merger or dissolution. No successor is assigned.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "About WELS \u2014 history and organization",
+        "url": "https://wels.net/about-wels/",
+        "snippet": "Formation and development: Founded in Wisconsin in 1850, the synod developed from immigrant Lutheran church life into a wider fellowship. Its present identity emphasizes doctrinal agreement as the basis for joint worship and mission.",
+        "citations": [
+          "cite-profile-wisconsin-evangelical-lutheran-synod-wels-history"
+        ]
+      },
+      {
+        "title": "What We Believe \u2014 WELS",
+        "url": "https://wels.net/about-wels/what-we-believe/",
+        "snippet": "Teaching and practice: Grace through Christ: forgiveness is God\u2019s gift received through faith, not a reward for moral achievement.",
+        "citations": [
+          "cite-profile-wisconsin-evangelical-lutheran-synod-wels-faith"
+        ]
+      },
+      {
+        "title": "This We Believe",
+        "url": "https://wels.net/about-wels/what-we-believe/",
+        "snippet": "The synod\u2019s doctrinal explanation of Scripture, salvation, church, and fellowship.",
+        "citations": [
+          "cite-profile-wisconsin-evangelical-lutheran-synod-wels-faith"
+        ]
+      },
+      {
+        "title": "Book of Concord",
+        "url": "https://wels.net/about-wels/",
+        "snippet": "The confessional Lutheran inheritance identified in the synod\u2019s statement of mission.",
+        "citations": [
+          "cite-profile-wisconsin-evangelical-lutheran-synod-wels-history"
+        ]
+      }
+    ]
   },
   {
     "id": "american-lutheran-church",
@@ -45,8 +280,140 @@
     "ecclesial_orientation": "other",
     "current_status": "merged",
     "notes": "Formed in 1960 by merger of earlier Lutheran bodies; merged into ELCA.",
-    "distinctives": ["Lutheran"],
-    "size_estimate": "2,319,443 members (1986)"
+    "distinctives": [
+      "Lutheran"
+    ],
+    "size_estimate": "2,319,443 members (1986)",
+    "summary": "A twentieth-century American Lutheran merger body drawing together several immigrant confessional traditions.",
+    "formation_narrative": "The 1960 American Lutheran Church brought together earlier church bodies with German, Norwegian, and Danish roots; additional development followed. It should not be confused with the older body that also used the ALC name. Its congregations and institutions later participated in the formation of the ELCA, constituted in 1987 and operational in 1988. Ethnic heritage explains part of its formation without defining every member\u2019s theology.",
+    "core_beliefs": [
+      "Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+      "Word and sacraments: preaching, baptism, and the Lord\u2019s Supper are central ways in which the church communicates God\u2019s promise.",
+      "Confessional teaching: the Augsburg Confession and catechisms explain Lutheran readings of Scripture, though bodies differ in how they subscribe to the wider Book of Concord."
+    ],
+    "key_figures": [
+      {
+        "name": "Fredrik Axel Schiotz",
+        "role": "First president of the 1960 American Lutheran Church",
+        "summary": "A Lutheran pastor and mission leader who moved from leadership of the Evangelical Lutheran Church into the first presidency of the newly united ALC. He also led the Lutheran World Federation, linking American merger work to international Lutheran cooperation.",
+        "url": "https://www.luthersem.edu/archives/archives-collections/special-collections/",
+        "citations": [
+          "cite-profile-american-lutheran-church-schiotz"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1960,
+        "label": "American Lutheran Church merger body forms",
+        "citations": [
+          "cite-profile-american-lutheran-church-augustana",
+          "cite-profile-american-lutheran-church-elca-wcc",
+          "cite-profile-american-lutheran-church-elca-history"
+        ]
+      },
+      {
+        "year": 1988,
+        "label": "Joins the operational ELCA",
+        "citations": [
+          "cite-profile-american-lutheran-church-augustana",
+          "cite-profile-american-lutheran-church-elca-wcc",
+          "cite-profile-american-lutheran-church-elca-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Augsburg Confession",
+        "year": 1530,
+        "significance": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "citations": [
+          "cite-profile-american-lutheran-church-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "year": 1529,
+        "significance": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "citations": [
+          "cite-profile-american-lutheran-church-lutheran-texts"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-american-lutheran-church-augustana",
+        "cite-profile-american-lutheran-church-elca-wcc",
+        "cite-profile-american-lutheran-church-elca-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-american-lutheran-church-lutheran-texts"
+      ],
+      "key_figures": [
+        "cite-profile-american-lutheran-church-augustana",
+        "cite-profile-american-lutheran-church-elca-wcc",
+        "cite-profile-american-lutheran-church-elca-history",
+        "cite-profile-american-lutheran-church-schiotz"
+      ],
+      "key_dates": [
+        "cite-profile-american-lutheran-church-augustana",
+        "cite-profile-american-lutheran-church-elca-wcc",
+        "cite-profile-american-lutheran-church-elca-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-american-lutheran-church-augustana",
+        "cite-profile-american-lutheran-church-elca-wcc",
+        "cite-profile-american-lutheran-church-elca-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-american-lutheran-church-augustana",
+      "cite-profile-american-lutheran-church-elca-wcc",
+      "cite-profile-american-lutheran-church-elca-history",
+      "cite-profile-american-lutheran-church-lutheran-texts",
+      "cite-profile-american-lutheran-church-schiotz"
+    ],
+    "profile_scope": "Confessional texts are identified as Lutheran inheritance; a full source-specific account of the ALC constitution and its exact subscription formula remains to be added.",
+    "ending_narrative": "The ALC\u2019s separate institutional identity ended in the union that created the ELCA, constituted in 1987 and operational from January 1, 1988. The union sought a broader Lutheran church across previous institutional and ethnic boundaries. The last full pre-union year and the effective merger date should not be conflated.",
+    "successor_ids": [
+      "evangelical-lutheran-church-in-america"
+    ],
+    "further_reading": [
+      {
+        "title": "Augustana and Lutheran Identity in America \u2014 Augustana Heritage",
+        "url": "https://augustanaheritage.augustana.edu/Augustana-and-Lutheran-Identity-in-America.pdf",
+        "snippet": "Formation and development: The 1960 American Lutheran Church brought together earlier church bodies with German, Norwegian, and Danish roots; additional development followed. It should not be confused with the older body that also used the ALC name.",
+        "citations": [
+          "cite-profile-american-lutheran-church-augustana"
+        ]
+      },
+      {
+        "title": "Book of Concord \u2014 historical Lutheran confessional texts",
+        "url": "https://bookofconcord.org/",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-american-lutheran-church-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-american-lutheran-church-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-american-lutheran-church-lutheran-texts"
+        ]
+      }
+    ]
   },
   {
     "id": "lutheran-church-in-america",
@@ -62,8 +429,133 @@
     "ecclesial_orientation": "other",
     "current_status": "merged",
     "notes": "Formed in 1962 by merger of several Lutheran bodies; merged into ELCA.",
-    "distinctives": ["Lutheran"],
-    "size_estimate": "2,896,138 members (1986)"
+    "distinctives": [
+      "Lutheran"
+    ],
+    "size_estimate": "2,896,138 members (1986)",
+    "summary": "A Lutheran union established in 1962 from churches with several European immigrant and American institutional histories.",
+    "formation_narrative": "Four predecessor bodies united in the LCA in 1962, bringing together traditions including the Augustana heritage. The union was part of a broader movement toward American Lutheran cooperation beyond older ethnic boundaries. The LCA later became one of the three principal bodies forming the ELCA. Its 1962 organization and 1988 successor relationship are separate milestones, not a change from Lutheran to non-Lutheran belief.",
+    "core_beliefs": [
+      "Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+      "Word and sacraments: preaching, baptism, and the Lord\u2019s Supper are central ways in which the church communicates God\u2019s promise.",
+      "Confessional teaching: the Augsburg Confession and catechisms explain Lutheran readings of Scripture, though bodies differ in how they subscribe to the wider Book of Concord."
+    ],
+    "key_figures": [
+      {
+        "name": "Franklin Clark Fry",
+        "role": "Lutheran church leader associated with the union era",
+        "summary": "A Lutheran pastor and ecumenical leader whose influence extended from American Lutheran institutions to the Lutheran World Federation and World Council of Churches. He illustrates how confessional commitment and church-union work interacted in the period.",
+        "url": "https://lutheranworld.org/sites/default/files/2024-04/LWF-Presidents-since-1947.pdf",
+        "citations": [
+          "cite-profile-lutheran-church-in-america-fry"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1962,
+        "label": "Lutheran Church in America forms",
+        "citations": [
+          "cite-profile-lutheran-church-in-america-augustana",
+          "cite-profile-lutheran-church-in-america-elca-wcc"
+        ]
+      },
+      {
+        "year": 1988,
+        "label": "Participates in ELCA union",
+        "citations": [
+          "cite-profile-lutheran-church-in-america-augustana",
+          "cite-profile-lutheran-church-in-america-elca-wcc"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Augsburg Confession",
+        "year": 1530,
+        "significance": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "citations": [
+          "cite-profile-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "year": 1529,
+        "significance": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "citations": [
+          "cite-profile-lutheran-church-in-america-lutheran-texts"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-lutheran-church-in-america-augustana",
+        "cite-profile-lutheran-church-in-america-elca-wcc"
+      ],
+      "core_beliefs": [
+        "cite-profile-lutheran-church-in-america-lutheran-texts"
+      ],
+      "key_figures": [
+        "cite-profile-lutheran-church-in-america-augustana",
+        "cite-profile-lutheran-church-in-america-elca-wcc",
+        "cite-profile-lutheran-church-in-america-fry"
+      ],
+      "key_dates": [
+        "cite-profile-lutheran-church-in-america-augustana",
+        "cite-profile-lutheran-church-in-america-elca-wcc"
+      ],
+      "ending_narrative": [
+        "cite-profile-lutheran-church-in-america-augustana",
+        "cite-profile-lutheran-church-in-america-elca-wcc"
+      ]
+    },
+    "citations": [
+      "cite-profile-lutheran-church-in-america-augustana",
+      "cite-profile-lutheran-church-in-america-elca-wcc",
+      "cite-profile-lutheran-church-in-america-lutheran-texts",
+      "cite-profile-lutheran-church-in-america-fry"
+    ],
+    "profile_scope": "The linked texts describe inherited Lutheran teaching; further research is needed on the exact 1962 constitution and individual leadership.",
+    "ending_narrative": "The LCA joined the ALC and AELC in the ELCA union. The constituting convention took place in 1987 and the new church began operations January 1, 1988. Union carried its congregations and ministry into a wider body rather than ending Lutheran religious life.",
+    "successor_ids": [
+      "evangelical-lutheran-church-in-america"
+    ],
+    "further_reading": [
+      {
+        "title": "Augustana and Lutheran Identity in America \u2014 Augustana Heritage",
+        "url": "https://augustanaheritage.augustana.edu/Augustana-and-Lutheran-Identity-in-America.pdf",
+        "snippet": "Formation and development: Four predecessor bodies united in the LCA in 1962, bringing together traditions including the Augustana heritage. The union was part of a broader movement toward American Lutheran cooperation beyond older ethnic boundaries.",
+        "citations": [
+          "cite-profile-lutheran-church-in-america-augustana"
+        ]
+      },
+      {
+        "title": "Book of Concord \u2014 historical Lutheran confessional texts",
+        "url": "https://bookofconcord.org/",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-lutheran-church-in-america-lutheran-texts"
+        ]
+      }
+    ]
   },
   {
     "id": "association-of-evangelical-lutheran-churches",
@@ -79,14 +571,156 @@
     "ecclesial_orientation": "other",
     "current_status": "merged",
     "notes": "Formed in 1976 after separation from the LCMS; merged into ELCA.",
-    "distinctives": ["Lutheran"],
-    "size_estimate": "103,263 members (1986)"
+    "distinctives": [
+      "Lutheran"
+    ],
+    "size_estimate": "103,263 members (1986)",
+    "summary": "A Lutheran association formed in 1976 by congregations leaving the LCMS and later participating in the ELCA union.",
+    "formation_narrative": "The AELC emerged from severe conflict within the Missouri Synod over theology and institutional direction. It provided an organizational home for departing congregations and became a partner in discussions for a new Lutheran church. Though much smaller than the ALC and LCA, it was a full participant in the resulting ELCA. A fuller account needs primary records of the dispute rather than a one-sided label about which party preserved Lutheranism.",
+    "core_beliefs": [
+      "Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+      "Word and sacraments: preaching, baptism, and the Lord\u2019s Supper are central ways in which the church communicates God\u2019s promise.",
+      "Confessional teaching: the Augsburg Confession and catechisms explain Lutheran readings of Scripture, though bodies differ in how they subscribe to the wider Book of Concord."
+    ],
+    "key_figures": [
+      {
+        "name": "William Kohn",
+        "role": "First AELC president",
+        "summary": "A Lutheran pastor and former LCMS mission executive elected president when the AELC was constituted in late 1976. Contemporary reporting connects his departure from Missouri Synod leadership to the conflict over its conservative direction.",
+        "url": "https://www.christianitytoday.com/1977/01/americas-newest-denomination/",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-aelc-founding"
+        ]
+      },
+      {
+        "name": "Will Herzfeld",
+        "role": "Founding vice-president of the AELC",
+        "summary": "An Oakland pastor and Black Lutheran leader elected vice-president at the AELC\u2019s founding convention, participating in the creation of an organizational home for departing congregations.",
+        "url": "https://www.christianitytoday.com/1977/01/americas-newest-denomination/",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-aelc-founding"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1976,
+        "label": "AELC organized",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc",
+          "cite-profile-association-of-evangelical-lutheran-churches-elca-1987"
+        ]
+      },
+      {
+        "year": 1987,
+        "label": "Participates in ELCA constitution",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc",
+          "cite-profile-association-of-evangelical-lutheran-churches-elca-1987"
+        ]
+      },
+      {
+        "year": 1988,
+        "label": "ELCA begins operations",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc",
+          "cite-profile-association-of-evangelical-lutheran-churches-elca-1987"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Augsburg Confession",
+        "year": 1530,
+        "significance": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "ELCA Constituting Convention record",
+        "year": 1987,
+        "significance": "Documents the union process in which the AELC participated; it is a successor-founding record rather than the association\u2019s original 1976 constitution.",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-elca-1987"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc",
+        "cite-profile-association-of-evangelical-lutheran-churches-elca-1987"
+      ],
+      "core_beliefs": [
+        "cite-profile-association-of-evangelical-lutheran-churches-lutheran-texts"
+      ],
+      "key_figures": [
+        "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc",
+        "cite-profile-association-of-evangelical-lutheran-churches-elca-1987",
+        "cite-profile-association-of-evangelical-lutheran-churches-aelc-founding"
+      ],
+      "key_dates": [
+        "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc",
+        "cite-profile-association-of-evangelical-lutheran-churches-elca-1987"
+      ],
+      "ending_narrative": [
+        "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc",
+        "cite-profile-association-of-evangelical-lutheran-churches-elca-1987"
+      ]
+    },
+    "citations": [
+      "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc",
+      "cite-profile-association-of-evangelical-lutheran-churches-elca-1987",
+      "cite-profile-association-of-evangelical-lutheran-churches-lutheran-texts",
+      "cite-profile-association-of-evangelical-lutheran-churches-aelc-founding"
+    ],
+    "profile_scope": "Do not confuse this association with the older American Evangelical Lutheran Church, also abbreviated AELC. Individual-founder and original constitution research remains incomplete.",
+    "ending_narrative": "The AELC ended as a separate church body when it entered the ELCA union, constituted in 1987 and operating from 1988. Its participation joined a recent Missouri Synod departure stream to older merger bodies in a common Lutheran organization.",
+    "successor_ids": [
+      "evangelical-lutheran-church-in-america"
+    ],
+    "further_reading": [
+      {
+        "title": "ELCA and its predecessor churches \u2014 World Council of Churches",
+        "url": "https://www.oikoumene.org/member-churches/evangelical-lutheran-church-in-america",
+        "snippet": "Formation and development: The AELC emerged from severe conflict within the Missouri Synod over theology and institutional direction. It provided an organizational home for departing congregations and became a partner in discussions for a new Lutheran church.",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc"
+        ]
+      },
+      {
+        "title": "Book of Concord \u2014 historical Lutheran confessional texts",
+        "url": "https://bookofconcord.org/",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "ELCA Constituting Convention record",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "snippet": "Documents the union process in which the AELC participated; it is a successor-founding record rather than the association\u2019s original 1976 constitution.",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-elca-1987"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-lutheran-texts"
+        ]
+      }
+    ]
   },
   {
     "id": "evangelical-lutheran-church-in-america",
     "name": "Evangelical Lutheran Church in America",
     "kind": "denomination",
-    "start_year": 1987,
+    "start_year": 1988,
     "zoom_tier": "full",
     "short_label": "ELCA",
     "region": "US",
@@ -95,7 +729,148 @@
     "ecclesial_orientation": "mainline",
     "current_status": "active",
     "notes": "Formed by the merger of LCA, ALC, and AELC; operations began in 1988.",
-    "distinctives": ["Mainline Lutheran"],
-    "size_estimate": "2,677,239 baptized members (2024)"
+    "distinctives": [
+      "Mainline Lutheran"
+    ],
+    "size_estimate": "2,677,239 baptized members (2024)",
+    "summary": "A Lutheran church constituted in 1987 that began operations in 1988 through the union of ALC, LCA, and AELC.",
+    "formation_narrative": "The merger brought together multiple strands of North American Lutheran history, including immigrant churches and the AELC\u2019s more recent division from the Missouri Synod. Its constituting convention in April 1987 elected Herbert Chilstrom; operations began January 1, 1988. The distinction reconciles official descriptions that use either a constituting year or a startup year. The ELCA\u2019s identity joins Lutheran confession with an extensive network of ministries and ecumenical relationships.",
+    "core_beliefs": [
+      "Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+      "Word and sacraments: preaching, baptism, and the Lord\u2019s Supper are central ways in which the church communicates God\u2019s promise.",
+      "Confessional teaching: the Augsburg Confession and catechisms explain Lutheran readings of Scripture, though bodies differ in how they subscribe to the wider Book of Concord."
+    ],
+    "key_figures": [
+      {
+        "name": "Herbert W. Chilstrom",
+        "role": "first ELCA bishop, elected at the 1987 constituting convention",
+        "summary": "A Lutheran bishop elected at the 1987 constituting convention as the first bishop of the ELCA.",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1987,
+        "label": "Constituting convention held",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      },
+      {
+        "year": 1988,
+        "label": "ELCA begins operations on January 1",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Augsburg Confession",
+        "year": 1530,
+        "significance": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "year": 1529,
+        "significance": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Constituting Convention and transition record",
+        "year": 1987,
+        "significance": "Primary organizational record distinguishing constitution in 1987 from operational startup in 1988.",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+        "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+      ],
+      "core_beliefs": [
+        "cite-profile-evangelical-lutheran-church-in-america-elca-faith",
+        "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+      ],
+      "key_figures": [
+        "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+        "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+      ],
+      "key_dates": [
+        "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+        "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+      ],
+      "ending_narrative": [
+        "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+        "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+      ]
+    },
+    "citations": [
+      "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-1987",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-faith",
+      "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The ELCA continues as the operational successor to the three uniting bodies. Its later internal developments and ecumenical relations do not constitute a terminal merger in this graph. No further terminal successor applies.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "History of the ELCA \u2014 official account",
+        "url": "https://www.elca.org/about-the-elca/who-we-are/history",
+        "snippet": "Formation and development: The merger brought together multiple strands of North American Lutheran history, including immigrant churches and the AELC\u2019s more recent division from the Missouri Synod. Its constituting convention in April 1987 elected Herbert Chilstrom; operations began January 1, 1988.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history"
+        ]
+      },
+      {
+        "title": "What Lutherans Believe \u2014 ELCA",
+        "url": "https://www.elca.org/about-the-elca/who-we-are/beliefs",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-faith"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Constituting Convention and transition record",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "snippet": "Primary organizational record distinguishing constitution in 1987 from operational startup in 1988.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ]
   }
 ]

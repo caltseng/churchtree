@@ -1,4 +1,87 @@
-﻿[
+[
+  {
+    "id": "second-great-awakening-to-millerism-1831",
+    "name": "Millerite revival context",
+    "from_id": "second-great-awakening",
+    "to_id": "millerism",
+    "zoom_tier": "full",
+    "type": "origin",
+    "year": 1831,
+    "reasons": [
+      "revival context"
+    ],
+    "description": "Millerism emerged during the Second Great Awakening.",
+    "citations": [
+      "cite-millerism-second-great-awakening",
+      "cite-profile-millerism-miller",
+      "cite-profile-millerism-himes"
+    ],
+    "narrative": "Millerism emerged during the Second Great Awakening. Miller\u2019s reading of Daniel led him to expect a literal return of Christ in the 1840s. Public lectures, Himes\u2019s publishing work, and camp meetings carried the message across denominational lines. The failed expectations of 1844 produced deep disappointment and competing explanations. Some followers abandoned the movement; others reorganized into distinct Adventist traditions. It was a revival network rather than a single church that formally dissolved on one date.",
+    "causes": [
+      "revival context"
+    ],
+    "key_figures": [
+      {
+        "name": "William Miller",
+        "role": "biblical interpreter and lecturer",
+        "summary": "A Baptist preacher and prophetic interpreter whose expectation of Christ\u2019s near return drew an interdenominational revival following.",
+        "url": "https://encyclopedia.adventist.org/article?highlight=Himes%2C&id=49HD",
+        "citations": [
+          "cite-profile-millerism-miller",
+          "cite-profile-millerism-himes"
+        ]
+      },
+      {
+        "name": "Joshua V. Himes",
+        "role": "publisher and organizer who expanded the revival\u2019s reach",
+        "summary": "An Adventist organizer and publisher who greatly expanded Miller\u2019s audience and later worked to sustain Adventist cooperation after the 1844 disappointment.",
+        "url": "https://encyclopedia.adventist.org/article?highlight=Himes%2C&id=49HD",
+        "citations": [
+          "cite-profile-millerism-miller",
+          "cite-profile-millerism-himes"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1831,
+        "label": "Millerite revival context",
+        "citations": [
+          "cite-millerism-second-great-awakening"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "William Miller \u2014 Encyclopedia of Seventh-day Adventists",
+        "url": "https://encyclopedia.adventist.org/article?highlight=Miller&id=19SO",
+        "snippet": "Formation and development: Miller\u2019s reading of Daniel led him to expect a literal return of Christ in the 1840s. Public lectures, Himes\u2019s publishing work, and camp meetings carried the message across denominational lines.",
+        "citations": [
+          "cite-profile-millerism-miller"
+        ]
+      },
+      {
+        "title": "Signs of the Times and Expositor of Prophecy, vol. 4 \u2014 primary Millerite periodical",
+        "url": "https://m.egwwritings.org/en/book/1656.4506",
+        "snippet": "Teaching and practice: Prophetic expectation: Daniel\u2019s time periods were read as pointing toward an imminent, visible advent.",
+        "citations": [
+          "cite-profile-millerism-miller-primary"
+        ]
+      },
+      {
+        "title": "Signs of the Times and Expositor of Prophecy",
+        "url": "https://m.egwwritings.org/en/book/1656.4506",
+        "snippet": "A movement periodical that circulated prophetic arguments; not a binding denominational confession.",
+        "citations": [
+          "cite-profile-millerism-miller-primary"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-millerism-miller",
+      "cite-profile-millerism-himes"
+    ]
+  },
   {
     "id": "millerism-to-advent-christian-1860",
     "name": "Advent Christian formation",
@@ -7,9 +90,73 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1860,
-    "reasons": ["adventist organization"],
+    "reasons": [
+      "adventist organization"
+    ],
     "description": "Advent Christian Church organized in 1860 within the Adventist stream.",
-    "citations": ["cite-advent-christian-1860"]
+    "citations": [
+      "cite-advent-christian-1860",
+      "cite-profile-advent-christian-church-himes",
+      "cite-profile-advent-christian-church-ac-about",
+      "cite-profile-advent-christian-church-ac-2026"
+    ],
+    "narrative": "Advent Christian Church organized in 1860 within the Adventist stream. Advent Christians developed within the post-Millerite search for a sustainable Advent witness, organizing in the nineteenth century rather than adopting the Sabbatarian Adventist system. The existing 1860 date marks organizational origins. Their identity joins evangelical faith with conditional immortality and the expectation of Christ\u2019s return. Contemporary statements must be checked for adoption status: the proposed 2026 Declaration of Principles did not receive the required vote.",
+    "causes": [
+      "adventist organization"
+    ],
+    "key_figures": [
+      {
+        "name": "Joshua V. Himes",
+        "role": "post-1844 organizer in the wider Adventist setting; his role is contextual rather than proof of sole denominational founder status",
+        "summary": "An Adventist organizer and publisher who greatly expanded Miller\u2019s audience and later worked to sustain Adventist cooperation after the 1844 disappointment.",
+        "url": "https://acgc.us/news/actions-taken-at-the-2026-triennial-convention/",
+        "citations": [
+          "cite-profile-advent-christian-church-himes",
+          "cite-profile-advent-christian-church-ac-about",
+          "cite-profile-advent-christian-church-ac-2026"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1860,
+        "label": "Advent Christian formation",
+        "citations": [
+          "cite-advent-christian-1860"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Joshua Vaughan Himes \u2014 Encyclopedia of Seventh-day Adventists",
+        "url": "https://encyclopedia.adventist.org/article?highlight=Himes%2C&id=49HD",
+        "snippet": "Formation and development: Advent Christians developed within the post-Millerite search for a sustainable Advent witness, organizing in the nineteenth century rather than adopting the Sabbatarian Adventist system. The existing 1860 date marks organizational origins.",
+        "citations": [
+          "cite-profile-advent-christian-church-himes"
+        ]
+      },
+      {
+        "title": "Advent Christian Declaration of Principles \u2014 official text",
+        "url": "https://acgc.us/news/declaration-of-principles/",
+        "snippet": "Teaching and practice: Conditional immortality: eternal life is given through Christ; the unsaved are not understood as possessing an inherently immortal soul.",
+        "citations": [
+          "cite-profile-advent-christian-church-ac-beliefs"
+        ]
+      },
+      {
+        "title": "Declaration of Principles",
+        "url": "https://acgc.us/news/declaration-of-principles/",
+        "snippet": "Published denominational principles explaining Adventist distinctives; consult the adopted text rather than treating the proposed 2026 revision as operative.",
+        "citations": [
+          "cite-profile-advent-christian-church-ac-beliefs"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-advent-christian-church-himes",
+      "cite-profile-advent-christian-church-ac-about",
+      "cite-profile-advent-christian-church-ac-2026"
+    ]
   },
   {
     "id": "millerism-to-sda-1863",
@@ -19,9 +166,90 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1863,
-    "reasons": ["adventist organization"],
+    "reasons": [
+      "adventist organization"
+    ],
     "description": "Seventh-day Adventist Church organized in 1863.",
-    "citations": ["cite-sda-1863"]
+    "citations": [
+      "cite-sda-1863",
+      "cite-profile-seventh-day-adventist-church-sda-history",
+      "cite-profile-seventh-day-adventist-church-sda-yearbook"
+    ],
+    "narrative": "Seventh-day Adventist Church organized in 1863. Sabbatarian believers emerging from the Millerite disappointment gradually developed a common identity, publications, and organization. The General Conference was organized in Battle Creek in May 1863. The resulting denomination combined mission, education, and health work with distinctive interpretation of the Sabbath and heavenly sanctuary. Its current beliefs reflect development beyond the original Millerite coalition, not an unchanged creed carried intact from 1844.",
+    "causes": [
+      "adventist organization"
+    ],
+    "key_figures": [
+      {
+        "name": "Ellen G. White",
+        "role": "prophetic writer and formative leader",
+        "summary": "A formative Adventist writer whose prophetic ministry influenced the denomination\u2019s teaching, organization, education, and health emphasis.",
+        "url": "https://www.adventistyearbook.org/entity?EntityID=10010&highlight=oh",
+        "citations": [
+          "cite-profile-seventh-day-adventist-church-sda-history",
+          "cite-profile-seventh-day-adventist-church-sda-yearbook"
+        ]
+      },
+      {
+        "name": "James White",
+        "role": "organizer and publisher",
+        "summary": "An Adventist minister, publisher, and organizer who helped build the institutions of the Sabbatarian Adventist movement.",
+        "url": "https://www.adventistyearbook.org/entity?EntityID=10010&highlight=oh",
+        "citations": [
+          "cite-profile-seventh-day-adventist-church-sda-history",
+          "cite-profile-seventh-day-adventist-church-sda-yearbook"
+        ]
+      },
+      {
+        "name": "Joseph Bates",
+        "role": "advocate of Sabbath observance",
+        "summary": "An early Sabbatarian Adventist leader who advocated seventh-day Sabbath observance in the developing movement.",
+        "url": "https://www.adventistyearbook.org/entity?EntityID=10010&highlight=oh",
+        "citations": [
+          "cite-profile-seventh-day-adventist-church-sda-history",
+          "cite-profile-seventh-day-adventist-church-sda-yearbook"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1863,
+        "label": "SDA organization",
+        "citations": [
+          "cite-sda-1863"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Our History \u2014 Seventh-day Adventist Church",
+        "url": "https://institucional.adventistas.org/en/who-we-are/identity/our-history/",
+        "snippet": "Formation and development: Sabbatarian believers emerging from the Millerite disappointment gradually developed a common identity, publications, and organization. The General Conference was organized in Battle Creek in May 1863.",
+        "citations": [
+          "cite-profile-seventh-day-adventist-church-sda-history"
+        ]
+      },
+      {
+        "title": "28 Fundamental Beliefs \u2014 Seventh-day Adventist Church",
+        "url": "https://adventist.org/beliefs",
+        "snippet": "Teaching and practice: Sabbath: Saturday is observed as a biblical day of worship and rest.",
+        "citations": [
+          "cite-profile-seventh-day-adventist-church-sda-beliefs"
+        ]
+      },
+      {
+        "title": "28 Fundamental Beliefs",
+        "url": "https://adventist.org/beliefs",
+        "snippet": "The denomination\u2019s present teaching summary; the church states that Scripture, rather than an unchangeable human creed, is its final norm.",
+        "citations": [
+          "cite-profile-seventh-day-adventist-church-sda-beliefs"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-seventh-day-adventist-church-sda-history",
+      "cite-profile-seventh-day-adventist-church-sda-yearbook"
+    ]
   },
   {
     "id": "millerism-to-cog7-1858",
@@ -31,8 +259,67 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1858,
-    "reasons": ["sabbatarian adventist line"],
+    "reasons": [
+      "sabbatarian adventist line"
+    ],
     "description": "Sabbatarian Adventists separated in 1858, forming the line later known as Church of God (Seventh Day).",
-    "citations": ["cite-cog7-1858"]
+    "citations": [
+      "cite-cog7-1858",
+      "cite-profile-church-of-god-seventh-day-cog7-history"
+    ],
+    "narrative": "Sabbatarian Adventists separated in 1858, forming the line later known as Church of God (Seventh Day). The church traces its development to believers in western Michigan in 1858. It grew within the Sabbatarian Adventist environment while developing separately from the denomination that became Seventh-day Adventist. Publishing and later conference organization sustained the fellowship. This node refers principally to the General Conference tradition; similarly named Church of God bodies are not automatically the same organization.",
+    "causes": [
+      "sabbatarian adventist line"
+    ],
+    "key_figures": [
+      {
+        "name": "Gilbert Cranmer",
+        "role": "early Michigan Sabbatarian leader",
+        "summary": "A Michigan religious leader associated with the early Sabbatarian congregations from which the Church of God (Seventh Day) developed.",
+        "url": "https://encyclopedia.adventist.org/assets/pdf/article-G96G.pdf",
+        "citations": [
+          "cite-profile-church-of-god-seventh-day-cog7-history",
+          "cite-profile-church-of-god-seventh-day-cranmer"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1858,
+        "label": "Sabbatarian Adventist separation",
+        "citations": [
+          "cite-cog7-1858"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Church of God (Seventh Day): Our History",
+        "url": "https://secure.cog7.org/our-history/",
+        "snippet": "Formation and development: The church traces its development to believers in western Michigan in 1858. It grew within the Sabbatarian Adventist environment while developing separately from the denomination that became Seventh-day Adventist.",
+        "citations": [
+          "cite-profile-church-of-god-seventh-day-cog7-history"
+        ]
+      },
+      {
+        "title": "Church of God (Seventh Day): What We Believe",
+        "url": "https://secure.cog7.org/what-we-believe/",
+        "snippet": "Teaching and practice: Seventh-day Sabbath: Saturday observance expresses gratitude and rest in God, rather than earning salvation.",
+        "citations": [
+          "cite-profile-church-of-god-seventh-day-cog7-faith"
+        ]
+      },
+      {
+        "title": "Statement of Faith",
+        "url": "https://secure.cog7.org/what-we-believe/",
+        "snippet": "The General Conference\u2019s published doctrinal summary; its scope should not be extended to every unrelated Church of God organization.",
+        "citations": [
+          "cite-profile-church-of-god-seventh-day-cog7-faith"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-church-of-god-seventh-day-cog7-history"
+    ]
   }
 ]

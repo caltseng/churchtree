@@ -11,5 +11,8 @@ Follow-up research needed for the items below.
 ## Size estimates missing
 - Millerism
 
+## Missing predecessor edges
+- Millerism
+
 ## Notes
 - Add citations for any new size estimates (year + source).

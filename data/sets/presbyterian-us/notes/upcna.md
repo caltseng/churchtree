@@ -1,22 +1,28 @@
 # Data Notes: United Presbyterian Church of North America (UPCNA)
 
-Date collected: 2026-01-18
+Date collected: 2026-01-25
 
 ## Facts
-- Node: United Presbyterian Church of North America | Start year 1858 | End year 1958 | Region US | Notes: Merged into UPCUSA in 1958. | Theological distinctives: Calvinist; Covenanter/Seceder distinctives; Exclusive psalmody | Size estimate: approx 257,513 members (1957)
-- Edge: UPCNA -> UPCUSA | Type merge | Year 1958 | Reasons: ecumenical activity, reunion of long-separated branches | Description: The smaller UPCNA merged with the larger PCUSA to form the UPCUSA.
+- Node: United Presbyterian Church of North America | 1858 | 1958 | US | US | Presbyterian | other | merged | Denomination constituted in 1858 by union of two older churches; merged with PCUSA to form UPCUSA in 1958. | Samuel W. Shane; Robert N. Montgomery | 1858: constituted; 1958-05-28: merged into UPCUSA | Reformed; Covenanter/Seceder heritage | unknown
+- Edge: UPCNA -> UPCUSA | merge | 1958 | ecumenical reunion | reunion merger | UPCNA merged with PCUSA to form the UPCUSA in 1958. | Samuel W. Shane; Robert N. Montgomery
+
+## Key figures (details)
+- Samuel W. Shane — UPCNA stated clerk (1958) | node upcna | cite-upcusa-1958-stated-clerks
+- Robert N. Montgomery — UPCNA moderator (1958) | node upcna | cite-upcusa-1958-montgomery
+
+## Key dates/milestones
+- 1858: UPCNA constituted by union of two older churches | node upcna | cite-upcusa-1958-formed
+- 1958-05-28: UPCUSA constituted at first GA (merger) | edge upcna-to-upcusa-1958 | cite-upcusa-1958-dates
 
 ## Sources
-- src-wiki-upcna: United Presbyterian Church of North America - Wikipedia (website) https://en.wikipedia.org/wiki/United_Presbyterian_Church_of_North_America
-- src-wiki-upcusa: United Presbyterian Church in the United States of America - Wikipedia (website) https://en.wikipedia.org/wiki/United_Presbyterian_Church_in_the_United_States_of_America
+- src-pcusa-history: History of the Church - Presbyterian Historical Society (website) https://pcusa.org/historical-society/history-online/history/history-church
+- src-pcusa-ga-1958: Stories from GA: 1958 Union of the UPCNA and the PCUSA (website) https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga
 
 ## Citations
-- cite-upcna-founded: src-wiki-upcna | Infobox: founded_date | Accessed 2026-01-18
-- cite-upcna-1958-merge: src-wiki-upcna | Lead: merged with PCUSA to form UPCUSA (1958) | Accessed 2026-01-18
-- cite-upcusa-ecumenical: src-wiki-upcusa | Lead: union driven by ecumenical activity and reunion | Accessed 2026-01-18
-- cite-upcna-orientation: src-wiki-upcna | Infobox: orientation (Calvinist) | Accessed 2026-01-18
-- cite-upcna-distinctives: src-wiki-upcna | History: Covenanter/Seceder distinctives including public covenanting and exclusive psalmody | Accessed 2026-01-18
-- cite-upcna-size: src-wiki-upcna | Infobox: members 257,513 in 1957 | Accessed 2026-01-18
+- cite-upcusa-1958-formed: src-pcusa-history | L510 (UPCNA constituted 1858 by union of two older churches) | 2026-01-25
+- cite-upcusa-1958-dates: src-pcusa-ga-1958 | L460-L461 (May 27-28, 1958 first UPCUSA GA) | 2026-01-25
+- cite-upcusa-1958-stated-clerks: src-pcusa-ga-1958 | L463-L470 (Shane and Blake stated clerks) | 2026-01-25
+- cite-upcusa-1958-montgomery: src-pcusa-ga-1958 | L467 (Rev. Robert N. Montgomery moderator of UPCNA assembly) | 2026-01-25
 
 ## Notes Summary
-- UPCNA formed in 1858 and merged with PCUSA in 1958 to form UPCUSA.
+- UPCNA constituted in 1858; merged with PCUSA in 1958 to form UPCUSA.

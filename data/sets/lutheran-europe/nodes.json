@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "lutheran-reformation",
     "name": "Lutheran Reformation",
@@ -10,10 +10,159 @@
     "geographic_origin": "Germany",
     "tradition_family": "Lutheran",
     "ecclesial_orientation": "other",
-    "current_status": "dissolved",
+    "current_status": "unknown",
     "notes": "Reformation movement initiated by Martin Luther in 1517.",
-    "distinctives": ["Sola fide", "Sola scriptura"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "Sola fide",
+      "Sola scriptura"
+    ],
+    "size_estimate": "unknown",
+    "summary": "The reforming movement associated with Martin Luther and the emergence of confessionally Lutheran churches.",
+    "formation_narrative": "Luther\u2019s controversy over indulgences expanded into disputes about salvation, authority, and church practice. Reform was transmitted through preaching, vernacular teaching, print, and political protection. The 1517 date is a conventional opening milestone; regional churches took institutional form over subsequent decades. The movement did not produce one worldwide denomination, and later Lutheran churches developed different political and confessional arrangements.",
+    "core_beliefs": [
+      "Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+      "Word and sacraments: preaching, baptism, and the Lord\u2019s Supper are central ways in which the church communicates God\u2019s promise.",
+      "Confessional teaching: the Augsburg Confession and catechisms explain Lutheran readings of Scripture, though bodies differ in how they subscribe to the wider Book of Concord."
+    ],
+    "key_figures": [
+      {
+        "name": "Martin Luther",
+        "role": "reformer and catechist",
+        "summary": "A German reformer whose teaching on justification, catechesis, and sacramental life shaped the Lutheran confessional tradition.",
+        "url": "https://www.lcms.org/about/lcms-history",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts",
+          "cite-profile-lutheran-reformation-lcms-history"
+        ]
+      },
+      {
+        "name": "Philipp Melanchthon",
+        "role": "principal author of the Augsburg Confession",
+        "summary": "A scholar and colleague of Luther who was the principal author of the Augsburg Confession, helping explain Lutheran teaching in a public confessional form.",
+        "url": "https://www.lcms.org/about/lcms-history",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts",
+          "cite-profile-lutheran-reformation-lcms-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1517,
+        "label": "Indulgence controversy becomes a conventional Reformation starting point",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts",
+          "cite-profile-lutheran-reformation-lcms-history"
+        ]
+      },
+      {
+        "year": 1529,
+        "label": "Lutheran catechisms published",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts",
+          "cite-profile-lutheran-reformation-lcms-history"
+        ]
+      },
+      {
+        "year": 1530,
+        "label": "Augsburg Confession presented",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts",
+          "cite-profile-lutheran-reformation-lcms-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Augsburg Confession",
+        "year": 1530,
+        "significance": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "year": 1529,
+        "significance": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Book of Concord",
+        "year": 1580,
+        "significance": "A collection of Lutheran confessional texts consolidating the tradition after Luther; not every regional church adopted every component identically.",
+        "url": "https://bookofconcord.org/",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-lutheran-reformation-lutheran-texts",
+        "cite-profile-lutheran-reformation-lcms-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-lutheran-reformation-lutheran-texts"
+      ],
+      "key_figures": [
+        "cite-profile-lutheran-reformation-lutheran-texts",
+        "cite-profile-lutheran-reformation-lcms-history"
+      ],
+      "key_dates": [
+        "cite-profile-lutheran-reformation-lutheran-texts",
+        "cite-profile-lutheran-reformation-lcms-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-lutheran-reformation-lutheran-texts",
+        "cite-profile-lutheran-reformation-lcms-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-lutheran-reformation-lutheran-texts",
+      "cite-profile-lutheran-reformation-lcms-history"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position. No formal corporate dissolution is asserted for this historical process. The status is unknown at the institutional level; the ending narrative explains its diffusion or development.",
+    "ending_narrative": "The reforming era developed into enduring Lutheran churches and confessional traditions. It had no single corporate dissolution; churches in different territories and countries followed different institutional paths. The regional nodes are outcomes of the movement rather than members of one universal terminal merger.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Book of Concord \u2014 historical Lutheran confessional texts",
+        "url": "https://bookofconcord.org/",
+        "snippet": "Formation and development: Luther\u2019s controversy over indulgences expanded into disputes about salvation, authority, and church practice. Reform was transmitted through preaching, vernacular teaching, print, and political protection.",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Book of Concord",
+        "url": "https://bookofconcord.org/",
+        "snippet": "A collection of Lutheran confessional texts consolidating the tradition after Luther; not every regional church adopted every component identically.",
+        "citations": [
+          "cite-profile-lutheran-reformation-lutheran-texts"
+        ]
+      }
+    ]
   },
   {
     "id": "german-lutheran-territorial-churches",
@@ -28,8 +177,139 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Territorial Lutheran churches in German lands following the Reformation.",
-    "distinctives": ["Confessional Lutheran"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "Confessional Lutheran"
+    ],
+    "size_estimate": "unknown",
+    "summary": "An aggregate of regional Lutheran churches shaped by the Reformation and the political structure of German territories.",
+    "formation_narrative": "Princes and civic governments helped organize Lutheran worship, schools, and ministry in different German lands. Political settlements such as the Peace of Augsburg in 1555 shaped the setting in which territorial churches developed. This node groups multiple churches rather than naming one denomination founded that year. Emigration later carried several of these traditions to North America, where churches adopted new organizational forms.",
+    "core_beliefs": [
+      "Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+      "Word and sacraments: preaching, baptism, and the Lord\u2019s Supper are central ways in which the church communicates God\u2019s promise.",
+      "Confessional teaching: the Augsburg Confession and catechisms explain Lutheran readings of Scripture, though bodies differ in how they subscribe to the wider Book of Concord."
+    ],
+    "key_figures": [
+      {
+        "name": "Martin Luther",
+        "role": "formative theological influence",
+        "summary": "A German reformer whose teaching on justification, catechesis, and sacramental life shaped the Lutheran confessional tradition.",
+        "url": "https://www.lcms.org/about/lcms-history",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+          "cite-profile-german-lutheran-territorial-churches-lcms-history"
+        ]
+      },
+      {
+        "name": "Philipp Melanchthon",
+        "role": "confessional author; not sole organizer of every territorial church",
+        "summary": "A scholar and colleague of Luther who was the principal author of the Augsburg Confession, helping explain Lutheran teaching in a public confessional form.",
+        "url": "https://www.lcms.org/about/lcms-history",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+          "cite-profile-german-lutheran-territorial-churches-lcms-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1530,
+        "label": "Augsburg Confession articulates a shared Lutheran witness",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+          "cite-profile-german-lutheran-territorial-churches-lcms-history"
+        ]
+      },
+      {
+        "year": 1555,
+        "label": "Political settlement used as this aggregate\u2019s timeline marker",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+          "cite-profile-german-lutheran-territorial-churches-lcms-history"
+        ]
+      },
+      {
+        "year": 1580,
+        "label": "Book of Concord consolidates many Lutheran confessional texts",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+          "cite-profile-german-lutheran-territorial-churches-lcms-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Augsburg Confession",
+        "year": 1530,
+        "significance": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Book of Concord",
+        "year": 1580,
+        "significance": "Widely influential confessional collection; adoption and political arrangements differed among territories.",
+        "url": "https://bookofconcord.org/",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+        "cite-profile-german-lutheran-territorial-churches-lcms-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-german-lutheran-territorial-churches-lutheran-texts"
+      ],
+      "key_figures": [
+        "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+        "cite-profile-german-lutheran-territorial-churches-lcms-history"
+      ],
+      "key_dates": [
+        "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+        "cite-profile-german-lutheran-territorial-churches-lcms-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+        "cite-profile-german-lutheran-territorial-churches-lcms-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+      "cite-profile-german-lutheran-territorial-churches-lcms-history"
+    ],
+    "profile_scope": "The 1555 marker is not a common founding date. This aggregate still needs a territory-by-territory historical expansion.",
+    "ending_narrative": "The churches in this aggregate followed different paths through political change, union, migration, and modern church organization. No single ending or successor applies to the whole group. The LCMS is one American church with relevant immigrant ancestry, not the legal successor to every German territorial church.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Book of Concord \u2014 historical Lutheran confessional texts",
+        "url": "https://bookofconcord.org/",
+        "snippet": "Formation and development: Princes and civic governments helped organize Lutheran worship, schools, and ministry in different German lands. Political settlements such as the Peace of Augsburg in 1555 shaped the setting in which territorial churches developed.",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Book of Concord",
+        "url": "https://bookofconcord.org/",
+        "snippet": "Widely influential confessional collection; adoption and political arrangements differed among territories.",
+        "citations": [
+          "cite-profile-german-lutheran-territorial-churches-lutheran-texts"
+        ]
+      }
+    ]
   },
   {
     "id": "scandinavian-lutheran-state-churches",
@@ -44,7 +324,142 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Lutheran state churches established in Scandinavia in the Reformation era.",
-    "distinctives": ["State church heritage"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "State church heritage"
+    ],
+    "size_estimate": "unknown",
+    "summary": "A regional grouping of northern European churches that adopted Lutheran reform under different national settlements.",
+    "formation_narrative": "Lutheran reform entered Scandinavian kingdoms through preaching, teaching, and royal action. The resulting churches retained different national histories and forms of oversight. The dataset\u2019s 1536 marker should not imply that all Scandinavian churches were founded or reformed simultaneously. Migration connected these national traditions to American Lutheran communities, especially through bodies that later entered the ELCA.",
+    "core_beliefs": [
+      "Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+      "Word and sacraments: preaching, baptism, and the Lord\u2019s Supper are central ways in which the church communicates God\u2019s promise.",
+      "Confessional teaching: the Augsburg Confession and catechisms explain Lutheran readings of Scripture, though bodies differ in how they subscribe to the wider Book of Concord."
+    ],
+    "key_figures": [
+      {
+        "name": "Hans Tausen",
+        "role": "early Danish Lutheran preacher",
+        "summary": "A Danish preacher influenced by study with Luther who helped introduce Lutheran reform in Denmark.",
+        "url": "https://museeprotestant.org/en/notice/protestantism-in-the-scandinavian-countries/",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts",
+          "cite-profile-scandinavian-lutheran-state-churches-scandinavia"
+        ]
+      },
+      {
+        "name": "Mikael Agricola",
+        "role": "Finnish reformer and biblical translator",
+        "summary": "A Finnish reformer and translator whose work helped make biblical and religious texts accessible in Finnish.",
+        "url": "https://museeprotestant.org/en/notice/protestantism-in-the-scandinavian-countries/",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts",
+          "cite-profile-scandinavian-lutheran-state-churches-scandinavia"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1530,
+        "label": "Augsburg Confession becomes a major Lutheran doctrinal reference",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+        ]
+      },
+      {
+        "year": 1536,
+        "label": "Regional Reformation marker used by this aggregate",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Augsburg Confession",
+        "year": 1530,
+        "significance": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "year": 1529,
+        "significance": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+        "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+      ],
+      "core_beliefs": [
+        "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+      ],
+      "key_figures": [
+        "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+        "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts",
+        "cite-profile-scandinavian-lutheran-state-churches-scandinavia"
+      ],
+      "key_dates": [
+        "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+        "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+      ],
+      "ending_narrative": [
+        "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+        "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+      ]
+    },
+    "citations": [
+      "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+      "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts",
+      "cite-profile-scandinavian-lutheran-state-churches-scandinavia"
+    ],
+    "profile_scope": "This is an aggregate, not one denomination. The exact national reform dates, leaders, and adoption histories remain a stated research gap rather than a claim of simultaneous formation.",
+    "ending_narrative": "The national churches continue in differing relationships to state and society; some ceased to be established churches without ceasing to exist. Migration also contributed to American Lutheran bodies. The ELCA is therefore a related outcome of immigrant histories, not a terminal successor to all Scandinavian churches.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "ELCA and its predecessor churches \u2014 World Council of Churches",
+        "url": "https://www.oikoumene.org/member-churches/evangelical-lutheran-church-in-america",
+        "snippet": "Formation and development: Lutheran reform entered Scandinavian kingdoms through preaching, teaching, and royal action. The resulting churches retained different national histories and forms of oversight.",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-elca-wcc"
+        ]
+      },
+      {
+        "title": "Book of Concord \u2014 historical Lutheran confessional texts",
+        "url": "https://bookofconcord.org/",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts"
+        ]
+      }
+    ]
   }
 ]

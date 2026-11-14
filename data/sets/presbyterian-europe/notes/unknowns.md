@@ -18,6 +18,9 @@ Follow-up research needed for the items below.
 - Presbyterian polity (Scotland)
 - Founding context of Presbyterian polity
 
+## Missing predecessor edges
+- English Congregation in Geneva
+
 ## Missing relationships
 - Explicit linkage between the Zurich stream and the Genevan/Scottish lineage.
 - Decision on whether to model Synod of Ulster or Presbytery of Laggan as nodes.

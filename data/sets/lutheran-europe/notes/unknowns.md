@@ -13,5 +13,8 @@ Follow-up research needed for the items below.
 - German Lutheran territorial churches
 - Scandinavian Lutheran state churches
 
+## Missing predecessor edges
+- Lutheran Reformation
+
 ## Notes
 - Add citations for any new size estimates (year + source).

@@ -1,15 +1,82 @@
-﻿[
+[
   {
     "id": "church-of-england-to-english-separatists-1534",
-    "name": "Separatist split from Church of England",
+    "name": "Separatist dissent from the established church",
     "from_id": "church-of-england",
     "to_id": "english-separatists",
     "zoom_tier": "full",
     "type": "split",
-    "year": 1534,
-    "reasons": ["separatist dissent"],
-    "description": "English Separatists emerged as a separation from the Church of England during the Reformation era.",
-    "citations": ["cite-church-of-england-separatists"]
+    "year": null,
+    "reasons": [
+      "separatist dissent"
+    ],
+    "description": "English Separatists formed dissenting churches outside the established Church of England. The relationship developed over time; 1534 is the royal-supremacy milestone, not a verified date for this Separatist split. The legacy record ID is retained for stable references.",
+    "citations": [
+      "cite-church-of-england-separatists",
+      "cite-profile-english-separatists-separatists",
+      "cite-profile-english-separatists-baylor-baptists"
+    ],
+    "confidence": "medium",
+    "narrative": "English Separatists formed dissenting churches outside the established Church of England. The relationship developed over time; 1534 is the royal-supremacy milestone, not a verified date for this Separatist split. The legacy record ID is retained for stable references. Separatists went beyond Puritans who hoped to reform the national church from within. They formed dissenting communities, sometimes fled to the Netherlands, and developed different forms of church order. Smyth and Helwys belong to the part of this story that became Baptist; the wider movement also fed Congregational and Plymouth traditions. The existing 1606 date marks the immediate early-seventeenth-century Baptist context, not the beginning of all English Separatism.",
+    "causes": [
+      "separatist dissent"
+    ],
+    "key_figures": [
+      {
+        "name": "Robert Browne",
+        "role": "prominent early advocate of separation",
+        "summary": "An early English Separatist advocate whose name became associated with Brownist dissent; later Separatists did not all follow the same theology or church order.",
+        "url": "https://magazine.web.baylor.edu/news/story/2008/baptist-story",
+        "citations": [
+          "cite-profile-english-separatists-separatists",
+          "cite-profile-english-separatists-baylor-baptists"
+        ]
+      },
+      {
+        "name": "John Smyth",
+        "role": "Separatist minister whose congregation later adopted believer\u2019s baptism",
+        "summary": "An English minister whose search for a scriptural church led him from Anglican and Separatist settings into believer\u2019s baptism and then toward Mennonite fellowship.",
+        "url": "https://magazine.web.baylor.edu/news/story/2008/baptist-story",
+        "citations": [
+          "cite-profile-english-separatists-separatists",
+          "cite-profile-english-separatists-baylor-baptists"
+        ]
+      },
+      {
+        "name": "Thomas Helwys",
+        "role": "leader and supporter of the congregation\u2019s exile",
+        "summary": "An English exile leader who helped organize the Amsterdam Baptist community, returned to England, and defended liberty of conscience.",
+        "url": "https://magazine.web.baylor.edu/news/story/2008/baptist-story",
+        "citations": [
+          "cite-profile-english-separatists-separatists",
+          "cite-profile-english-separatists-baylor-baptists"
+        ]
+      }
+    ],
+    "key_dates": [],
+    "further_reading": [
+      {
+        "title": "Pilgrims and Puritans: A Delicate Distinction \u2014 Pilgrim Hall Museum",
+        "url": "https://www.pilgrimhall.org/pdf/Pilgrim_Puritan_A_Delicate_Distinction.pdf",
+        "snippet": "Formation and development: Separatists went beyond Puritans who hoped to reform the national church from within. They formed dissenting communities, sometimes fled to the Netherlands, and developed different forms of church order.",
+        "citations": [
+          "cite-profile-english-separatists-separatists"
+        ]
+      },
+      {
+        "title": "A True Confession",
+        "url": "https://www.reformedreader.org/ccc/atf.htm",
+        "snippet": "An exile Separatist church\u2019s statement of faith and church order. It represents a particular community, not every Separatist and not a general adoption of believer\u2019s baptism.",
+        "citations": [
+          "cite-profile-english-separatists-separatist-confession",
+          "cite-profile-english-separatists-separatist-primary"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-english-separatists-separatists",
+      "cite-profile-english-separatists-baylor-baptists"
+    ]
   },
   {
     "id": "english-separatists-to-amsterdam-1609",
@@ -19,9 +86,89 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1609,
-    "reasons": ["exile congregation"],
+    "reasons": [
+      "exile congregation"
+    ],
     "description": "English Separatists formed the first Baptist church in Amsterdam in 1609.",
-    "citations": ["cite-baptists-1609"]
+    "citations": [
+      "cite-baptists-1609",
+      "cite-profile-early-baptist-amsterdam-baylor-baptists",
+      "cite-profile-early-baptist-amsterdam-helwys"
+    ],
+    "narrative": "English Separatists formed the first Baptist church in Amsterdam in 1609. After leaving England for Amsterdam, Smyth\u2019s congregation reconsidered whether infant baptism could constitute a church of professing believers. Around 1609 Smyth baptized himself and fellow members. Contact with Waterlander Mennonites then raised questions about that act and about the nature of a true church. Smyth sought Mennonite fellowship; Helwys opposed that course and eventually returned to England. The congregation\u2019s importance lies in this contested process rather than a fully settled later Baptist system.",
+    "causes": [
+      "exile congregation"
+    ],
+    "key_figures": [
+      {
+        "name": "John Smyth",
+        "role": "minister who initiated the baptisms and later sought Mennonite fellowship",
+        "summary": "An English minister whose search for a scriptural church led him from Anglican and Separatist settings into believer\u2019s baptism and then toward Mennonite fellowship.",
+        "url": "https://ora.ox.ac.uk/objects/uuid%3A78e43cb1-86b3-4ed9-995a-212dca242110",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-baylor-baptists",
+          "cite-profile-early-baptist-amsterdam-helwys"
+        ]
+      },
+      {
+        "name": "Thomas Helwys",
+        "role": "opposed Smyth\u2019s Mennonite alignment and led a returning group",
+        "summary": "An English exile leader who helped organize the Amsterdam Baptist community, returned to England, and defended liberty of conscience.",
+        "url": "https://ora.ox.ac.uk/objects/uuid%3A78e43cb1-86b3-4ed9-995a-212dca242110",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-baylor-baptists",
+          "cite-profile-early-baptist-amsterdam-helwys"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1609,
+        "label": "Separatist exile congregation",
+        "citations": [
+          "cite-baptists-1609"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "The Baptist Story \u2014 Doug Weaver, Baylor University",
+        "url": "https://magazine.web.baylor.edu/news/story/2008/baptist-story",
+        "snippet": "Formation and development: After leaving England for Amsterdam, Smyth\u2019s congregation reconsidered whether infant baptism could constitute a church of professing believers. Around 1609 Smyth baptized himself and fellow members.",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-baylor-baptists"
+        ]
+      },
+      {
+        "title": "Stephen R. Holmes: When Did John Smyth Embrace Arminianism?",
+        "url": "https://research-portal.st-andrews.ac.uk/en/publications/when-did-john-smyth-embrace-arminianism-and-was-the-first-baptist/",
+        "snippet": "Teaching and practice: Professed faith before baptism: church membership was reconstructed around people able to confess faith and repentance themselves.",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-smyth-study"
+        ]
+      },
+      {
+        "title": "Short Confession of Faith in Twenty Articles",
+        "url": "https://www.reformedreader.org/ccc/scof.htm",
+        "snippet": "A personal statement associated with Smyth, not an officially adopted universal Baptist creed; useful evidence of theology in transition.",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-smyth-confession",
+          "cite-profile-early-baptist-amsterdam-smyth-primary"
+        ]
+      },
+      {
+        "title": "A Declaration of Faith of English People Remaining at Amsterdam",
+        "url": "https://www.reformedreader.org/ccc/esbc.htm",
+        "snippet": "Helwys\u2019s church\u2019s declaration after the dispute with Smyth. It distinguishes that party\u2019s developing position from both earlier Separatism and Mennonite affiliation.",
+        "citations": [
+          "cite-profile-early-baptist-amsterdam-helwys-confession"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-early-baptist-amsterdam-baylor-baptists",
+      "cite-profile-early-baptist-amsterdam-helwys"
+    ]
   },
   {
     "id": "amsterdam-to-baptist-movement-1609",
@@ -31,8 +178,87 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1609,
-    "reasons": ["founding congregation"],
+    "reasons": [
+      "founding congregation"
+    ],
     "description": "The Amsterdam congregation is treated as the first Baptist church, marking the start of the Baptist movement.",
-    "citations": ["cite-baptists-1609"]
+    "citations": [
+      "cite-baptists-1609",
+      "cite-profile-baptist-movement-baylor-baptists",
+      "cite-profile-baptist-movement-helwys"
+    ],
+    "narrative": "The Amsterdam congregation is treated as the first Baptist church, marking the start of the Baptist movement. English dissenters sought churches whose membership rested on professed faith rather than residence in a parish. Smyth and Helwys established an early Baptist congregation in Amsterdam around 1609; Helwys returned to England around 1612. Later Particular Baptists developed another influential English stream. General and Particular Baptists differed over salvation and election, and subsequent migration, missions, revival, and Black church organization produced many separate conventions. Baptist identity therefore describes a family, not one governing institution.",
+    "causes": [
+      "founding congregation"
+    ],
+    "key_figures": [
+      {
+        "name": "John Smyth",
+        "role": "early Baptist organizer in Amsterdam",
+        "summary": "An English minister whose search for a scriptural church led him from Anglican and Separatist settings into believer\u2019s baptism and then toward Mennonite fellowship.",
+        "url": "https://ora.ox.ac.uk/objects/uuid%3A78e43cb1-86b3-4ed9-995a-212dca242110",
+        "citations": [
+          "cite-profile-baptist-movement-baylor-baptists",
+          "cite-profile-baptist-movement-helwys"
+        ]
+      },
+      {
+        "name": "Thomas Helwys",
+        "role": "returned to England and argued for liberty of conscience",
+        "summary": "An English exile leader who helped organize the Amsterdam Baptist community, returned to England, and defended liberty of conscience.",
+        "url": "https://ora.ox.ac.uk/objects/uuid%3A78e43cb1-86b3-4ed9-995a-212dca242110",
+        "citations": [
+          "cite-profile-baptist-movement-baylor-baptists",
+          "cite-profile-baptist-movement-helwys"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1609,
+        "label": "Baptist tradition begins",
+        "citations": [
+          "cite-baptists-1609"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "The Baptist Story \u2014 Doug Weaver, Baylor University",
+        "url": "https://magazine.web.baylor.edu/news/story/2008/baptist-story",
+        "snippet": "Formation and development: English dissenters sought churches whose membership rested on professed faith rather than residence in a parish. Smyth and Helwys established an early Baptist congregation in Amsterdam around 1609; Helwys returned to England around 1612.",
+        "citations": [
+          "cite-profile-baptist-movement-baylor-baptists"
+        ]
+      },
+      {
+        "title": "First London Baptist Confession \u2014 historical primary text",
+        "url": "https://www.1644.church/",
+        "snippet": "Teaching and practice: Believer\u2019s baptism: baptism follows a person\u2019s own confession of faith rather than being conferred simply because the person was born into a Christian household. Immersion became widespread, but the Amsterdam beginnings should not be read as already having every later practice.",
+        "citations": [
+          "cite-profile-baptist-movement-london-1644"
+        ]
+      },
+      {
+        "title": "Historic Baptist confessions collection",
+        "url": "https://www.reformedreader.org/ccc/hbd.htm",
+        "snippet": "Compare General and Particular Baptist confessions instead of assuming that one text binds the entire movement.",
+        "citations": [
+          "cite-profile-baptist-movement-baptist-confessions"
+        ]
+      },
+      {
+        "title": "First London Baptist Confession",
+        "url": "https://www.1644.church/",
+        "snippet": "A Particular Baptist statement defending its churches\u2019 Christian teaching and believer\u2019s baptism; historically influential, not a universal Baptist creed.",
+        "citations": [
+          "cite-profile-baptist-movement-london-1644"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-baptist-movement-baylor-baptists",
+      "cite-profile-baptist-movement-helwys"
+    ]
   }
 ]

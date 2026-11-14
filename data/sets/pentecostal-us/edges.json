@@ -1,4 +1,84 @@
-﻿[
+[
+  {
+    "id": "holiness-movement-to-pentecostalism-1900",
+    "name": "Holiness roots",
+    "from_id": "holiness-movement",
+    "to_id": "pentecostalism",
+    "zoom_tier": "full",
+    "type": "influence",
+    "year": 1900,
+    "reasons": [
+      "Wesleyan-Holiness roots"
+    ],
+    "description": "The nineteenth-century Holiness environment helped shape emerging Pentecostal revivals. The year 1900 is an approximate turn-of-century influence marker, not a legal founding event; Topeka followed in 1901 and Azusa in 1906.",
+    "citations": [
+      "cite-pentecostalism-holiness-roots",
+      "cite-profile-pentecostalism-ag-history"
+    ],
+    "confidence": "medium",
+    "narrative": "The nineteenth-century Holiness environment helped shape emerging Pentecostal revivals. The year 1900 is an approximate turn-of-century influence marker, not a legal founding event; Topeka followed in 1901 and Azusa in 1906. Pentecostal revival grew from several evangelical and Holiness environments. Charles Parham\u2019s Topeka circle in 1901 and William Seymour\u2019s Azusa Street revival from 1906 became influential American centers, but no single institution founded every global Pentecostal stream. Some older Holiness churches later adopted Pentecostal teaching. Trinitarian and Oneness traditions, and Wesleyan and Finished Work accounts of sanctification, demonstrate the movement\u2019s internal diversity.",
+    "causes": [
+      "Wesleyan-Holiness roots"
+    ],
+    "key_figures": [
+      {
+        "name": "William J. Seymour",
+        "role": "African American leader of the Azusa Street revival",
+        "summary": "An African American Holiness preacher who led the Azusa Street revival, an influential center for Pentecostal worship, spiritual gifts, and international connections.",
+        "url": "https://ag.org/About/About-the-AG/History",
+        "citations": [
+          "cite-profile-pentecostalism-ag-history"
+        ]
+      },
+      {
+        "name": "Charles F. Parham",
+        "role": "Topeka teacher influential in tongues-as-evidence teaching",
+        "summary": "A revival teacher associated with the Topeka Bible school and an influential formulation of tongues as evidence of Spirit baptism; he did not found every Pentecostal stream.",
+        "url": "https://ag.org/About/About-the-AG/History",
+        "citations": [
+          "cite-profile-pentecostalism-ag-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1900,
+        "label": "Holiness roots",
+        "citations": [
+          "cite-pentecostalism-holiness-roots"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History \u2014 Assemblies of God USA",
+        "url": "https://ag.org/About/About-the-AG/History",
+        "snippet": "Formation and development: Pentecostal revival grew from several evangelical and Holiness environments. Charles Parham\u2019s Topeka circle in 1901 and William Seymour\u2019s Azusa Street revival from 1906 became influential American centers, but no single institution founded every global Pentecostal stream.",
+        "citations": [
+          "cite-profile-pentecostalism-ag-history"
+        ]
+      },
+      {
+        "title": "Statement of Fundamental Truths \u2014 Assemblies of God USA",
+        "url": "https://ag.org/Beliefs/Statement-of-Fundamental-Truths",
+        "snippet": "Teaching and practice: Spirit baptism and gifts: participants expect the Spirit\u2019s activity in testimony, tongues, healing, and mission.",
+        "citations": [
+          "cite-profile-pentecostalism-ag-faith"
+        ]
+      },
+      {
+        "title": "Assemblies of God Statement of Fundamental Truths",
+        "url": "https://ag.org/Beliefs/Statement-of-Fundamental-Truths",
+        "snippet": "An influential Trinitarian Pentecostal formulation for one denomination, not a creed binding every Pentecostal.",
+        "citations": [
+          "cite-profile-pentecostalism-ag-faith"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-pentecostalism-ag-history"
+    ]
+  },
   {
     "id": "pentecostalism-to-ag-1914",
     "name": "Pentecostal denomination formed",
@@ -7,56 +87,390 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1914,
-    "reasons": ["denominational organization"],
+    "reasons": [
+      "denominational organization"
+    ],
     "description": "Assemblies of God organized in 1914 as a Pentecostal denomination.",
-    "citations": ["cite-ag-1914"]
+    "citations": [
+      "cite-ag-1914",
+      "cite-profile-assemblies-of-god-ag-history"
+    ],
+    "narrative": "Assemblies of God organized in 1914 as a Pentecostal denomination. Ministers gathered at Hot Springs, Arkansas, to coordinate a rapidly expanding Pentecostal network. E. N. Bell and J. Roswell Flower were elected early officers. The adoption of the Statement of Fundamental Truths in 1916 clarified a Trinitarian doctrinal basis. The United States body is part of a wider world fellowship of national organizations; global membership should not be mistaken for membership of the American General Council.",
+    "causes": [
+      "denominational organization"
+    ],
+    "key_figures": [
+      {
+        "name": "Eudorus N. Bell",
+        "role": "first chairman",
+        "summary": "first chairman. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://ag.org/About/About-the-AG/History",
+        "citations": [
+          "cite-profile-assemblies-of-god-ag-history"
+        ]
+      },
+      {
+        "name": "J. Roswell Flower",
+        "role": "first secretary",
+        "summary": "first secretary. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://ag.org/About/About-the-AG/History",
+        "citations": [
+          "cite-profile-assemblies-of-god-ag-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1914,
+        "label": "Pentecostal denomination formed",
+        "citations": [
+          "cite-ag-1914"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History \u2014 Assemblies of God USA",
+        "url": "https://ag.org/About/About-the-AG/History",
+        "snippet": "Formation and development: Ministers gathered at Hot Springs, Arkansas, to coordinate a rapidly expanding Pentecostal network. E.",
+        "citations": [
+          "cite-profile-assemblies-of-god-ag-history"
+        ]
+      },
+      {
+        "title": "Statement of Fundamental Truths \u2014 Assemblies of God USA",
+        "url": "https://ag.org/Beliefs/Statement-of-Fundamental-Truths",
+        "snippet": "Teaching and practice: Trinitarian faith: the statement affirms one God as Father, Son, and Spirit, distinguishing this fellowship from Oneness Pentecostal bodies.",
+        "citations": [
+          "cite-profile-assemblies-of-god-ag-faith"
+        ]
+      },
+      {
+        "title": "Statement of Fundamental Truths",
+        "url": "https://ag.org/Beliefs/Statement-of-Fundamental-Truths",
+        "snippet": "Defines the American fellowship\u2019s doctrinal basis, including Trinity, salvation, Spirit baptism, and healing; the wording has developed over time.",
+        "citations": [
+          "cite-profile-assemblies-of-god-ag-faith"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-assemblies-of-god-ag-history"
+    ]
   },
   {
     "id": "pentecostalism-to-cog-cleveland-1886",
-    "name": "Holiness-Pentecostal roots",
+    "name": "Later Pentecostal identity of an older church",
     "from_id": "pentecostalism",
     "to_id": "church-of-god-cleveland",
     "zoom_tier": "full",
-    "type": "origin",
-    "year": 1886,
-    "reasons": ["holiness-pentecostal origins"],
-    "description": "Church of God (Cleveland) traces to 1886 Holiness roots later within the Pentecostal movement.",
-    "citations": ["cite-cog-cleveland-1886"]
+    "type": "influence",
+    "year": null,
+    "reasons": [
+      "holiness-pentecostal origins"
+    ],
+    "description": "The church traces its institutional foundation to an 1886 Christian Union, before the Pentecostal movement marker used here. It later developed Holiness-Pentecostal teaching. This undated influence edge records religious development rather than formation by a future parent.",
+    "citations": [
+      "cite-cog-cleveland-1886",
+      "cite-profile-church-of-god-cleveland-cog-history"
+    ],
+    "confidence": "medium",
+    "narrative": "The church traces its institutional foundation to an 1886 Christian Union, before the Pentecostal movement marker used here. It later developed Holiness-Pentecostal teaching. This undated influence edge records religious development rather than formation by a future parent. Richard Green Spurling and a small community organized a Christian Union in 1886 seeking New Testament fellowship. Later Holiness revival and Pentecostal experience changed its religious life; the name Church of God was adopted in 1907. Under A. J. Tomlinson the movement expanded organization and mission. Its 1886 foundation therefore precedes the 1906 Azusa marker used for the Pentecostal movement node.",
+    "causes": [
+      "holiness-pentecostal origins"
+    ],
+    "key_figures": [
+      {
+        "name": "Richard Green Spurling",
+        "role": "early organizer of the Christian Union",
+        "summary": "early organizer of the Christian Union. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://churchofgod.org/about/a-brief-history-of-the-church-of-god/",
+        "citations": [
+          "cite-profile-church-of-god-cleveland-cog-history"
+        ]
+      },
+      {
+        "name": "A. J. Tomlinson",
+        "role": "influential organizer and expansion leader",
+        "summary": "influential organizer and expansion leader. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://churchofgod.org/about/a-brief-history-of-the-church-of-god/",
+        "citations": [
+          "cite-profile-church-of-god-cleveland-cog-history"
+        ]
+      }
+    ],
+    "key_dates": [],
+    "further_reading": [
+      {
+        "title": "A Brief History of the Church of God \u2014 official account",
+        "url": "https://churchofgod.org/about/a-brief-history-of-the-church-of-god/",
+        "snippet": "Formation and development: Richard Green Spurling and a small community organized a Christian Union in 1886 seeking New Testament fellowship. Later Holiness revival and Pentecostal experience changed its religious life; the name Church of God was adopted in 1907.",
+        "citations": [
+          "cite-profile-church-of-god-cleveland-cog-history"
+        ]
+      },
+      {
+        "title": "Doctrinal Commitments \u2014 Church of God",
+        "url": "https://churchofgod.org/beliefs/doctrinal-commitments/",
+        "snippet": "Teaching and practice: Sanctification: the church teaches sanctification after justification, expressing its Wesleyan-Holiness ancestry.",
+        "citations": [
+          "cite-profile-church-of-god-cleveland-cog-faith"
+        ]
+      },
+      {
+        "title": "Doctrinal Commitments",
+        "url": "https://churchofgod.org/beliefs/doctrinal-commitments/",
+        "snippet": "The denomination\u2019s published doctrinal commitments, including sanctification and Pentecostal teaching; a current statement rather than a verbatim 1886 constitution.",
+        "citations": [
+          "cite-profile-church-of-god-cleveland-cog-faith"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-church-of-god-cleveland-cog-history"
+    ]
   },
   {
     "id": "pentecostalism-to-cogic-1897",
-    "name": "Holiness-Pentecostal roots",
+    "name": "Mason adopts Pentecostal teaching",
     "from_id": "pentecostalism",
     "to_id": "church-of-god-in-christ",
     "zoom_tier": "full",
-    "type": "origin",
-    "year": 1897,
-    "reasons": ["holiness-pentecostal origins"],
-    "description": "COGIC began in 1897 and became a major Holiness-Pentecostal body.",
-    "citations": ["cite-cogic-1897"]
+    "type": "influence",
+    "year": 1907,
+    "reasons": [
+      "holiness-pentecostal origins"
+    ],
+    "description": "COGIC\u2019s name dates to 1897; Mason\u2019s 1907 Azusa experience and subsequent division with Jones mark its Pentecostal development. The edge records adoption and influence, not founding of the earlier Holiness body.",
+    "citations": [
+      "cite-cogic-1897",
+      "cite-profile-church-of-god-in-christ-cogic-history",
+      "cite-profile-church-of-god-in-christ-cogic-founder"
+    ],
+    "narrative": "COGIC\u2019s name dates to 1897; Mason\u2019s 1907 Azusa experience and subsequent division with Jones mark its Pentecostal development. The edge records adoption and influence, not founding of the earlier Holiness body. Charles Harrison Mason and Charles Price Jones worked in a Holiness revival setting after conflict with Baptist churches. The Church of God in Christ name dates to 1897. Mason\u2019s 1907 visit to Azusa Street and his acceptance of Pentecostal teaching led to a division with Jones. Mason\u2019s followers retained the COGIC name and built an episcopally organized church with national institutions in Memphis.",
+    "causes": [
+      "holiness-pentecostal origins"
+    ],
+    "key_figures": [
+      {
+        "name": "Charles Harrison Mason",
+        "role": "founder and principal Pentecostal organizer",
+        "summary": "A Holiness minister who became the principal Pentecostal organizer of COGIC after his 1907 Azusa experience and a division over Pentecostal teaching.",
+        "url": "https://www.cogic.org/about-us/our-founder/",
+        "citations": [
+          "cite-profile-church-of-god-in-christ-cogic-history",
+          "cite-profile-church-of-god-in-christ-cogic-founder"
+        ]
+      },
+      {
+        "name": "Charles Price Jones",
+        "role": "early Holiness colleague who separated over Pentecostal teaching",
+        "summary": "An early Holiness colleague of Mason who did not accept the same Pentecostal teaching and followed a separate institutional path after 1907.",
+        "url": "https://www.cogic.org/about-us/our-founder/",
+        "citations": [
+          "cite-profile-church-of-god-in-christ-cogic-history",
+          "cite-profile-church-of-god-in-christ-cogic-founder"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1907,
+        "label": "Mason adopts Pentecostal teaching",
+        "citations": [
+          "cite-cogic-1897",
+          "cite-profile-church-of-god-in-christ-cogic-history",
+          "cite-profile-church-of-god-in-christ-cogic-founder"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Our History \u2014 Church of God in Christ",
+        "url": "https://www.cogic.org/about-us/our-history/",
+        "snippet": "Formation and development: Charles Harrison Mason and Charles Price Jones worked in a Holiness revival setting after conflict with Baptist churches. The Church of God in Christ name dates to 1897.",
+        "citations": [
+          "cite-profile-church-of-god-in-christ-cogic-history"
+        ]
+      },
+      {
+        "title": "Statement of Faith \u2014 Church of God in Christ",
+        "url": "https://www.cogic.org/about-us/statement-of-faith/",
+        "snippet": "Teaching and practice: Conversion and sanctification: repentance, faith, and the Spirit\u2019s renewing work should produce a holy life.",
+        "citations": [
+          "cite-profile-church-of-god-in-christ-cogic-faith"
+        ]
+      },
+      {
+        "title": "Statement of Faith",
+        "url": "https://www.cogic.org/about-us/statement-of-faith/",
+        "snippet": "Published COGIC teaching on Scripture, Trinity, salvation, healing, Spirit baptism, and sanctified life.",
+        "citations": [
+          "cite-profile-church-of-god-in-christ-cogic-faith"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-church-of-god-in-christ-cogic-history",
+      "cite-profile-church-of-god-in-christ-cogic-founder"
+    ]
   },
   {
     "id": "ag-to-foursquare-1923",
-    "name": "Separation from Assemblies of God",
+    "name": "Reported AG separation: institutional relationship unresolved",
     "from_id": "assemblies-of-god",
     "to_id": "foursquare-church",
     "zoom_tier": "full",
     "type": "split",
     "year": 1923,
-    "reasons": ["organizational separation"],
-    "description": "Foursquare Church formed in 1923 and is listed as separated from the Assemblies of God.",
-    "citations": ["cite-foursquare-1923", "cite-foursquare-separated"]
+    "reasons": [
+      "organizational separation"
+    ],
+    "description": "Foursquare\u2019s 1923 Angelus Temple beginning is documented, but the official history consulted does not establish a direct denomination-wide split from Assemblies of God. The inherited split assertion remains a low-confidence hypothesis pending direct evidence.",
+    "citations": [
+      "cite-foursquare-1923",
+      "cite-foursquare-separated",
+      "cite-profile-foursquare-church-foursquare-history"
+    ],
+    "confidence": "low",
+    "narrative": "Foursquare\u2019s 1923 Angelus Temple beginning is documented, but the official history consulted does not establish a direct denomination-wide split from Assemblies of God. The inherited split assertion remains a low-confidence hypothesis pending direct evidence. McPherson established Los Angeles as a base for evangelism, opened Angelus Temple in 1923, and developed training, church planting, radio, and overseas mission. Incorporation steps followed in 1927 after a wider network had formed. Its name expresses a fourfold presentation of Jesus. Personal connections with other Pentecostal ministries do not by themselves prove that the entire body was created by an institutional split from the Assemblies of God.",
+    "causes": [
+      "organizational separation"
+    ],
+    "key_figures": [
+      {
+        "name": "Aimee Semple McPherson",
+        "role": "founder, evangelist, and organizer",
+        "summary": "An evangelist who built Angelus Temple, used radio, organized ministerial training, and developed the Foursquare church family.",
+        "url": "https://www.foursquare.org/about/history/",
+        "citations": [
+          "cite-profile-foursquare-church-foursquare-history"
+        ]
+      },
+      {
+        "name": "Rolf K. McPherson",
+        "role": "long-serving successor in the leadership of the church",
+        "summary": "long-serving successor in the leadership of the church. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://www.foursquare.org/about/history/",
+        "citations": [
+          "cite-profile-foursquare-church-foursquare-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1923,
+        "label": "Reported AG separation: institutional relationship unresolved",
+        "citations": [
+          "cite-foursquare-1923",
+          "cite-foursquare-separated"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History \u2014 Foursquare Church",
+        "url": "https://www.foursquare.org/about/history/",
+        "snippet": "Formation and development: McPherson established Los Angeles as a base for evangelism, opened Angelus Temple in 1923, and developed training, church planting, radio, and overseas mission. Incorporation steps followed in 1927 after a wider network had formed.",
+        "citations": [
+          "cite-profile-foursquare-church-foursquare-history"
+        ]
+      },
+      {
+        "title": "Beliefs and Declaration of Faith \u2014 Foursquare Church",
+        "url": "https://www.foursquare.org/about/beliefs/",
+        "snippet": "Teaching and practice: Jesus as Savior: salvation through Christ is the first element of the fourfold message.",
+        "citations": [
+          "cite-profile-foursquare-church-foursquare-faith"
+        ]
+      },
+      {
+        "title": "Declaration of Faith",
+        "url": "https://www.foursquare.org/about/beliefs/",
+        "snippet": "Foursquare\u2019s published doctrinal account explains its fourfold gospel and wider Christian beliefs; it is not a universal Pentecostal creed.",
+        "citations": [
+          "cite-profile-foursquare-church-foursquare-faith"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-foursquare-church-foursquare-history"
+    ]
   },
   {
     "id": "nbcusa-to-cogic-1896",
-    "name": "COGIC separation",
+    "name": "Reported Baptist separation: exact parent unresolved",
     "from_id": "national-baptist-convention-usa",
     "to_id": "church-of-god-in-christ",
     "zoom_tier": "full",
     "type": "split",
-    "year": 1896,
-    "reasons": ["organizational separation"],
-    "description": "COGIC separated from the National Baptist Convention, USA in the late 1890s.",
-    "citations": ["cite-cogic-separated-nbcusa"]
+    "year": null,
+    "reasons": [
+      "organizational separation"
+    ],
+    "description": "Mason and colleagues encountered opposition in Baptist settings before COGIC\u2019s organization. The precise National Baptist Convention USA institutional parentage and a single 1896 split date have not been established by the primary histories consulted. This inherited relationship remains a low-confidence research hypothesis.",
+    "citations": [
+      "cite-cogic-separated-nbcusa",
+      "cite-profile-church-of-god-in-christ-cogic-history",
+      "cite-profile-church-of-god-in-christ-cogic-founder"
+    ],
+    "confidence": "low",
+    "narrative": "Mason and colleagues encountered opposition in Baptist settings before COGIC\u2019s organization. The precise National Baptist Convention USA institutional parentage and a single 1896 split date have not been established by the primary histories consulted. This inherited relationship remains a low-confidence research hypothesis. Charles Harrison Mason and Charles Price Jones worked in a Holiness revival setting after conflict with Baptist churches. The Church of God in Christ name dates to 1897. Mason\u2019s 1907 visit to Azusa Street and his acceptance of Pentecostal teaching led to a division with Jones. Mason\u2019s followers retained the COGIC name and built an episcopally organized church with national institutions in Memphis.",
+    "causes": [
+      "organizational separation"
+    ],
+    "key_figures": [
+      {
+        "name": "Charles Harrison Mason",
+        "role": "founder and principal Pentecostal organizer",
+        "summary": "A Holiness minister who became the principal Pentecostal organizer of COGIC after his 1907 Azusa experience and a division over Pentecostal teaching.",
+        "url": "https://www.cogic.org/about-us/our-founder/",
+        "citations": [
+          "cite-profile-church-of-god-in-christ-cogic-history",
+          "cite-profile-church-of-god-in-christ-cogic-founder"
+        ]
+      },
+      {
+        "name": "Charles Price Jones",
+        "role": "early Holiness colleague who separated over Pentecostal teaching",
+        "summary": "An early Holiness colleague of Mason who did not accept the same Pentecostal teaching and followed a separate institutional path after 1907.",
+        "url": "https://www.cogic.org/about-us/our-founder/",
+        "citations": [
+          "cite-profile-church-of-god-in-christ-cogic-history",
+          "cite-profile-church-of-god-in-christ-cogic-founder"
+        ]
+      }
+    ],
+    "key_dates": [],
+    "further_reading": [
+      {
+        "title": "Our History \u2014 Church of God in Christ",
+        "url": "https://www.cogic.org/about-us/our-history/",
+        "snippet": "Formation and development: Charles Harrison Mason and Charles Price Jones worked in a Holiness revival setting after conflict with Baptist churches. The Church of God in Christ name dates to 1897.",
+        "citations": [
+          "cite-profile-church-of-god-in-christ-cogic-history"
+        ]
+      },
+      {
+        "title": "Statement of Faith \u2014 Church of God in Christ",
+        "url": "https://www.cogic.org/about-us/statement-of-faith/",
+        "snippet": "Teaching and practice: Conversion and sanctification: repentance, faith, and the Spirit\u2019s renewing work should produce a holy life.",
+        "citations": [
+          "cite-profile-church-of-god-in-christ-cogic-faith"
+        ]
+      },
+      {
+        "title": "Statement of Faith",
+        "url": "https://www.cogic.org/about-us/statement-of-faith/",
+        "snippet": "Published COGIC teaching on Scripture, Trinity, salvation, healing, Spirit baptism, and sanctified life.",
+        "citations": [
+          "cite-profile-church-of-god-in-christ-cogic-faith"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-church-of-god-in-christ-cogic-history",
+      "cite-profile-church-of-god-in-christ-cogic-founder"
+    ]
   }
 ]

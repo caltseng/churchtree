@@ -1,23 +1,36 @@
 # Data Notes: United Presbyterian Church in the United States of America (UPCUSA)
 
-Date collected: 2026-01-18
+Date collected: 2026-01-25
 
 ## Facts
-- Node: United Presbyterian Church in the United States of America | Start year 1958 | End year 1983 | Region US | Notes: Formed by merger; later merged into PC(USA). | Theological distinctives: Reformed (Calvinist) | Size estimate: approx 2,351,119 members (1982)
-- Edge: PCUSA (1789) -> UPCUSA | Type merge | Year 1958 | Reasons: ecumenical activity, reunion of long-separated branches | Description: The northern PCUSA merged with the smaller UPCNA to form the UPCUSA.
-- Edge: UPCNA -> UPCUSA | Type merge | Year 1958 | Reasons: ecumenical activity, reunion of long-separated branches | Description: The smaller UPCNA merged with the larger PCUSA to form the UPCUSA.
-- Edge: UPCUSA -> PC(USA) | Type merge | Year 1983 | Reasons: reunion of northern and southern Presbyterian branches | Description: UPCUSA merged with PCUS to form PC(USA).
+- Node: United Presbyterian Church in the United States of America | 1958 | 1983 | US | US | Presbyterian | mainline | merged | Denomination formed by 1958 merger of PCUSA and UPCNA; merged with PCUS to form PC(USA) in 1983. | Eugene Carson Blake; Samuel W. Shane; Theophilus M. Taylor | 1958-05-28: first GA; 1983-06-10: reunion to form PC(USA) | Reformed; mainline | unknown
+- Edge: PCUSA (1789) -> UPCUSA | merge | 1958 | ecumenical reunion | reunion merger | PCUSA merged with UPCNA to form UPCUSA in 1958. | Eugene Carson Blake; Samuel W. Shane
+- Edge: UPCNA -> UPCUSA | merge | 1958 | ecumenical reunion | reunion merger | UPCNA merged with PCUSA to form UPCUSA in 1958. | Eugene Carson Blake; Samuel W. Shane
+- Edge: UPCUSA -> PC(USA) | merge | 1983 | reunion of northern and southern branches | reunion merger | UPCUSA merged with PCUS to form PC(USA) in 1983. | James Costen; John Anderson
+
+## Key figures (details)
+- Eugene Carson Blake — PCUSA stated clerk (1958) | node upcusa | cite-upcusa-1958-stated-clerks
+- Samuel W. Shane — UPCNA stated clerk (1958) | node upcusa | cite-upcusa-1958-stated-clerks
+- Theophilus M. Taylor — moderator of 1958 UPCUSA GA | node upcusa | cite-upcusa-1958-moderator
+- James Costen — moderator of PCUS at 1983 reunion | edge upcusa-to-pcusa-1983 | cite-pcusa-1983-figures
+- John Anderson — moderator of UPCUSA at 1983 reunion | edge upcusa-to-pcusa-1983 | cite-pcusa-1983-figures
+
+## Key dates/milestones
+- 1958-05-28: First UPCUSA GA (United session) | node upcusa | cite-upcusa-1958-dates
+- 1983-06-10: Reunion forming PC(USA) | edge upcusa-to-pcusa-1983 | cite-pcusa-1983-reunion
 
 ## Sources
-- src-wiki-upcusa: United Presbyterian Church in the United States of America - Wikipedia (website) https://en.wikipedia.org/wiki/United_Presbyterian_Church_in_the_United_States_of_America
-- src-wiki-pcusa: Presbyterian Church (USA) - Wikipedia (website) https://en.wikipedia.org/wiki/Presbyterian_Church_(USA)
+- src-pcusa-history: History of the Church - Presbyterian Historical Society (website) https://pcusa.org/historical-society/history-online/history/history-church
+- src-pcusa-ga-1958: Stories from GA: 1958 Union of the UPCNA and the PCUSA (website) https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga
+- src-pcusa-heritage-1983: Presbyterian Heritage Sunday 2023: 40th Anniversary of PC(USA) (website) https://pcusa.org/news-storytelling/news/2023/6/5/minute-mission-presbyterian-heritage-sunday
 
 ## Citations
-- cite-upcusa-founded: src-wiki-upcusa | Infobox: founded_date, merger | Accessed 2026-01-18
-- cite-upcusa-ecumenical: src-wiki-upcusa | Lead: union driven by ecumenical activity and reunion | Accessed 2026-01-18
-- cite-pcusa-1983-merge: src-wiki-pcusa | Infobox: merger of PCUS and UPCUSA (June 10, 1983) | Accessed 2026-01-18
-- cite-upcusa-theology: src-wiki-upcusa | Infobox: theology (Reformed/Calvinism) | Accessed 2026-01-18
-- cite-upcusa-size: src-wiki-upcusa | Infobox: members 2,351,119 in 1982 | Accessed 2026-01-18
+- cite-upcusa-1958-formed: src-pcusa-history | L510 (UPCUSA formed by 1958 merger of PCUSA and UPCNA) | 2026-01-25
+- cite-pcusa-1983-reunion: src-pcusa-history | L509 (PCUS and UPCUSA reunited in 1983) | 2026-01-25
+- cite-upcusa-1958-dates: src-pcusa-ga-1958 | L460-L461 (May 27-28, 1958 first UPCUSA GA) | 2026-01-25
+- cite-upcusa-1958-stated-clerks: src-pcusa-ga-1958 | L463-L470 (Shane and Blake stated clerks) | 2026-01-25
+- cite-upcusa-1958-moderator: src-pcusa-ga-1958 | L471 (Theophilus M. Taylor moderator) | 2026-01-25
+- cite-pcusa-1983-figures: src-pcusa-heritage-1983 | L462 (moderators James Costen and John Anderson) | 2026-01-25
 
 ## Notes Summary
-- UPCUSA formed in 1958 by PCUSA+UPCNA merger; merged with PCUS in 1983 to form PC(USA).
+- UPCUSA formed in 1958; merged with PCUS in 1983 to create PC(USA).

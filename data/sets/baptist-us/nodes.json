@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "baptist-movement",
     "name": "Baptist movement",
@@ -12,15 +12,152 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Origins traced to English dissenters; first Baptist church in Amsterdam in 1609.",
-    "distinctives": ["Believer's baptism", "Congregational polity", "Sola scriptura"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "Believer's baptism",
+      "Congregational polity",
+      "Sola scriptura"
+    ],
+    "size_estimate": "unknown",
+    "summary": "A worldwide family of churches that joins personal faith and baptism to the idea of a voluntarily gathered congregation.",
+    "formation_narrative": "English dissenters sought churches whose membership rested on professed faith rather than residence in a parish. Smyth and Helwys established an early Baptist congregation in Amsterdam around 1609; Helwys returned to England around 1612. Later Particular Baptists developed another influential English stream. General and Particular Baptists differed over salvation and election, and subsequent migration, missions, revival, and Black church organization produced many separate conventions. Baptist identity therefore describes a family, not one governing institution.",
+    "core_beliefs": [
+      "Believer\u2019s baptism: baptism follows a person\u2019s own confession of faith rather than being conferred simply because the person was born into a Christian household. Immersion became widespread, but the Amsterdam beginnings should not be read as already having every later practice.",
+      "Gathered churches: a congregation is a community of people who intentionally covenant together. Local autonomy means a convention ordinarily cannot govern a congregation as a bishop or presbytery would.",
+      "Scripture and conscience: Baptists appeal to the Bible as their norm and have made influential arguments for religious liberty. They nevertheless disagree about predestination, ministry, biblical interpretation, and participation in wider church bodies."
+    ],
+    "key_figures": [
+      {
+        "name": "John Smyth",
+        "role": "early Baptist organizer in Amsterdam",
+        "summary": "An English minister whose search for a scriptural church led him from Anglican and Separatist settings into believer\u2019s baptism and then toward Mennonite fellowship.",
+        "url": "https://ora.ox.ac.uk/objects/uuid%3A78e43cb1-86b3-4ed9-995a-212dca242110",
+        "citations": [
+          "cite-profile-baptist-movement-baylor-baptists",
+          "cite-profile-baptist-movement-helwys"
+        ]
+      },
+      {
+        "name": "Thomas Helwys",
+        "role": "returned to England and argued for liberty of conscience",
+        "summary": "An English exile leader who helped organize the Amsterdam Baptist community, returned to England, and defended liberty of conscience.",
+        "url": "https://ora.ox.ac.uk/objects/uuid%3A78e43cb1-86b3-4ed9-995a-212dca242110",
+        "citations": [
+          "cite-profile-baptist-movement-baylor-baptists",
+          "cite-profile-baptist-movement-helwys"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1609,
+        "label": "Amsterdam congregation adopts believer\u2019s baptism",
+        "citations": [
+          "cite-profile-baptist-movement-baylor-baptists",
+          "cite-profile-baptist-movement-helwys"
+        ]
+      },
+      {
+        "year": 1612,
+        "label": "Helwys establishes a Baptist congregation in England",
+        "citations": [
+          "cite-profile-baptist-movement-baylor-baptists",
+          "cite-profile-baptist-movement-helwys"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "First London Baptist Confession",
+        "year": 1644,
+        "significance": "A Particular Baptist statement defending its churches\u2019 Christian teaching and believer\u2019s baptism; historically influential, not a universal Baptist creed.",
+        "url": "https://www.1644.church/",
+        "citations": [
+          "cite-profile-baptist-movement-london-1644"
+        ]
+      },
+      {
+        "title": "Historic Baptist confessions collection",
+        "year": null,
+        "significance": "Compare General and Particular Baptist confessions instead of assuming that one text binds the entire movement.",
+        "url": "https://www.reformedreader.org/ccc/hbd.htm",
+        "citations": [
+          "cite-profile-baptist-movement-baptist-confessions"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-baptist-movement-baylor-baptists",
+        "cite-profile-baptist-movement-helwys"
+      ],
+      "core_beliefs": [
+        "cite-profile-baptist-movement-london-1644",
+        "cite-profile-baptist-movement-abc-beliefs"
+      ],
+      "key_figures": [
+        "cite-profile-baptist-movement-baylor-baptists",
+        "cite-profile-baptist-movement-helwys"
+      ],
+      "key_dates": [
+        "cite-profile-baptist-movement-baylor-baptists",
+        "cite-profile-baptist-movement-helwys"
+      ],
+      "ending_narrative": [
+        "cite-profile-baptist-movement-baylor-baptists",
+        "cite-profile-baptist-movement-helwys"
+      ]
+    },
+    "citations": [
+      "cite-profile-baptist-movement-baylor-baptists",
+      "cite-profile-baptist-movement-helwys",
+      "cite-profile-baptist-movement-london-1644",
+      "cite-profile-baptist-movement-abc-beliefs",
+      "cite-profile-baptist-movement-baptist-confessions"
+    ],
+    "profile_scope": "The 1609 date is a conventional early-church milestone, not evidence that every Baptist body descends institutionally from this congregation.",
+    "ending_narrative": "The Baptist family continues through many autonomous churches and conventions. There was no single governing movement to dissolve: new associations arose, some merged, and others separated while Baptist church life continued. The graph\u2019s later conventions are branches and partners, not a collective replacement for a terminated parent.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "The Baptist Story \u2014 Doug Weaver, Baylor University",
+        "url": "https://magazine.web.baylor.edu/news/story/2008/baptist-story",
+        "snippet": "Formation and development: English dissenters sought churches whose membership rested on professed faith rather than residence in a parish. Smyth and Helwys established an early Baptist congregation in Amsterdam around 1609; Helwys returned to England around 1612.",
+        "citations": [
+          "cite-profile-baptist-movement-baylor-baptists"
+        ]
+      },
+      {
+        "title": "First London Baptist Confession \u2014 historical primary text",
+        "url": "https://www.1644.church/",
+        "snippet": "Teaching and practice: Believer\u2019s baptism: baptism follows a person\u2019s own confession of faith rather than being conferred simply because the person was born into a Christian household. Immersion became widespread, but the Amsterdam beginnings should not be read as already having every later practice.",
+        "citations": [
+          "cite-profile-baptist-movement-london-1644"
+        ]
+      },
+      {
+        "title": "Historic Baptist confessions collection",
+        "url": "https://www.reformedreader.org/ccc/hbd.htm",
+        "snippet": "Compare General and Particular Baptist confessions instead of assuming that one text binds the entire movement.",
+        "citations": [
+          "cite-profile-baptist-movement-baptist-confessions"
+        ]
+      },
+      {
+        "title": "First London Baptist Confession",
+        "url": "https://www.1644.church/",
+        "snippet": "A Particular Baptist statement defending its churches\u2019 Christian teaching and believer\u2019s baptism; historically influential, not a universal Baptist creed.",
+        "citations": [
+          "cite-profile-baptist-movement-london-1644"
+        ]
+      }
+    ]
   },
   {
     "id": "triennial-convention",
     "name": "Triennial Convention",
     "kind": "denomination",
     "start_year": 1814,
-    "end_year": 1907,
+    "end_year": 1846,
     "zoom_tier": "full",
     "short_label": "Triennial Convention",
     "region": "US",
@@ -28,9 +165,131 @@
     "tradition_family": "Baptist",
     "ecclesial_orientation": "other",
     "current_status": "merged",
-    "notes": "General Missionary Convention for foreign missions; reorganized into ABCUSA in 1907.",
-    "distinctives": ["Mission cooperation"],
-    "size_estimate": "unknown"
+    "notes": "1814 missionary convention; reorganization/name transition to American Baptist Missionary Union in 1846, with later continuity in International Ministries. Distinct from the Northern Baptist Convention founded in 1907.",
+    "distinctives": [
+      "Mission cooperation"
+    ],
+    "size_estimate": "unknown",
+    "summary": "An early national Baptist foreign-missions convention, not a denomination exercising authority over local churches.",
+    "formation_narrative": "Baptist support for overseas missions produced the General Missionary Convention in 1814, popularly called Triennial because of its meeting cycle. Mission societies coordinated work that individual autonomous congregations could not easily sustain alone. Conflict over appointing slaveholders as missionaries contributed to Southern Baptist organization in 1845. Northern mission societies later participated in the coordination established by the Northern Baptist Convention in 1907; that is a broader institutional history than a simple renaming of this convention.",
+    "core_beliefs": [
+      "Missionary cooperation: churches pooled resources to send and support missionaries without surrendering congregational government.",
+      "Baptist church membership: participating churches shared a believer-church heritage, but this convention\u2019s defining purpose was foreign missions rather than a new complete doctrinal system.",
+      "Limits of cooperation: slavery exposed deep moral and sectional divisions inside a network that otherwise claimed a common mission."
+    ],
+    "key_figures": [
+      {
+        "name": "Adoniram Judson",
+        "role": "missionary whose work helped mobilize organized Baptist overseas support",
+        "summary": "An American missionary to Burma whose work helped mobilize Baptist foreign-missions support; he belongs to the missionary heritage rather than the 1907 founding generation.",
+        "url": "https://www.abc-usa.org/our-history",
+        "citations": [
+          "cite-profile-triennial-convention-abc-history"
+        ]
+      },
+      {
+        "name": "Luther Rice",
+        "role": "Mission-support organizer who helped mobilize the 1814 convention",
+        "summary": "A missionary who returned to the United States and organized financial support for the Judsons and other overseas workers. The successor agency identifies his organizing work as a central stimulus to the convention.",
+        "url": "https://internationalministries.org/history/",
+        "citations": [
+          "cite-profile-triennial-convention-im-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1814,
+        "label": "National foreign-missions convention organized",
+        "citations": [
+          "cite-profile-triennial-convention-abc-history"
+        ]
+      },
+      {
+        "year": 1845,
+        "label": "Slaveholder missionary controversy contributes to Southern Baptist separation",
+        "citations": [
+          "cite-profile-triennial-convention-abc-history"
+        ]
+      },
+      {
+        "year": 1907,
+        "label": "Northern Baptist Convention coordinates northern societies",
+        "citations": [
+          "cite-profile-triennial-convention-abc-history"
+        ]
+      },
+      {
+        "year": 1846,
+        "label": "Mission agency takes American Baptist Missionary Union name",
+        "citations": [
+          "cite-profile-triennial-convention-im-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "American Baptist historical account of missionary organization",
+        "year": null,
+        "significance": "Institutional history explaining the 1814 convention and the later societal structure; an explanatory source, not a founding confession.",
+        "url": "https://www.abc-usa.org/our-history",
+        "citations": [
+          "cite-profile-triennial-convention-abc-history"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-triennial-convention-abc-history",
+        "cite-profile-triennial-convention-im-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-triennial-convention-abc-history"
+      ],
+      "key_figures": [
+        "cite-profile-triennial-convention-abc-history"
+      ],
+      "key_dates": [
+        "cite-profile-triennial-convention-abc-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-triennial-convention-abc-history",
+        "cite-profile-triennial-convention-im-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-triennial-convention-abc-history",
+      "cite-profile-triennial-convention-im-history"
+    ],
+    "profile_scope": "This node represents the original missionary-convention stage, not a denomination governing all Baptists. The official successor agency dates the Missionary Union name to 1846; the earlier 1907 end marker was incorrect. A separate proposed Missionary Union node is recommended in the coverage audit rather than silently added.",
+    "ending_narrative": "The missionary organization took the American Baptist Missionary Union name in 1846, after the slavery-related southern separation. Its later agency names included American Baptist Foreign Mission Society in 1910 and American Baptist Board of International Ministries in 1973, now International Ministries. That mission-agency continuity is distinct from the Northern Baptist Convention organized in 1907. The immediate agency successor is outside the current graph, so no existing node is falsely labeled a direct terminal successor.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Our History \u2014 American Baptist Churches USA",
+        "url": "https://www.abc-usa.org/our-history",
+        "snippet": "Formation and development: Baptist support for overseas missions produced the General Missionary Convention in 1814, popularly called Triennial because of its meeting cycle. Mission societies coordinated work that individual autonomous congregations could not easily sustain alone.",
+        "citations": [
+          "cite-profile-triennial-convention-abc-history"
+        ]
+      },
+      {
+        "title": "American Baptist historical account of missionary organization",
+        "url": "https://www.abc-usa.org/our-history",
+        "snippet": "Institutional history explaining the 1814 convention and the later societal structure; an explanatory source, not a founding confession.",
+        "citations": [
+          "cite-profile-triennial-convention-abc-history"
+        ]
+      },
+      {
+        "title": "What became of the Triennial missionary organization?",
+        "url": "https://internationalministries.org/history/",
+        "snippet": "The successor agency identifies the 1846 Missionary Union, 1910 Foreign Mission Society, and 1973 Board of International Ministries names. These stages explain why a direct 1907 transition to ABCUSA is misleading.",
+        "citations": [
+          "cite-profile-triennial-convention-im-history"
+        ]
+      }
+    ]
   },
   {
     "id": "southern-baptist-convention",
@@ -45,8 +304,141 @@
     "ecclesial_orientation": "evangelical",
     "current_status": "active",
     "notes": "Separated from the Triennial Convention in 1845.",
-    "distinctives": ["Evangelical Baptist"],
-    "size_estimate": "12,722,266 members (2024)"
+    "distinctives": [
+      "Evangelical Baptist"
+    ],
+    "size_estimate": "12,722,266 members (2024)",
+    "summary": "A cooperative convention of autonomous Baptist churches, established in the slaveholding South in 1845.",
+    "formation_narrative": "Southern organizers created a separate missionary convention after national mission agencies would not accept slaveholding missionary candidates. The convention developed common mission, educational, and publishing institutions while affirming local church autonomy. Its contemporary statement of faith defines a conservative evangelical identity. In 1995 the convention formally acknowledged slavery\u2019s part in its origins and repented of racism; its founding context and subsequent self-examination both belong in the account.",
+    "core_beliefs": [
+      "Biblical authority: the Baptist Faith and Message describes Scripture as wholly trustworthy and the standard for teaching and conduct.",
+      "Salvation and church membership: repentance and faith in Christ precede believer\u2019s baptism by immersion; the local congregation governs its own life.",
+      "Cooperation with boundaries: churches voluntarily cooperate in missions while doctrinal standards shape convention institutions. The confession also teaches a male pastoral office; this is a Southern Baptist position, not a rule for all Baptists."
+    ],
+    "key_figures": [
+      {
+        "name": "William Bullein Johnson",
+        "role": "first president and important constitutional organizer",
+        "summary": "A South Carolina Baptist minister who helped shape the missionary conventions of both 1814 and 1845 and became the SBC\u2019s first president.",
+        "url": "https://sbhla.org/biographies/william-bullein-johnson/",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-slavery",
+          "cite-profile-southern-baptist-convention-abc-history",
+          "cite-profile-southern-baptist-convention-johnson"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1845,
+        "label": "Southern Baptist Convention organized",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-slavery",
+          "cite-profile-southern-baptist-convention-abc-history"
+        ]
+      },
+      {
+        "year": 1995,
+        "label": "Convention adopts racial-reconciliation resolution",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-slavery",
+          "cite-profile-southern-baptist-convention-abc-history"
+        ]
+      },
+      {
+        "year": 2000,
+        "label": "Baptist Faith and Message revised",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-slavery",
+          "cite-profile-southern-baptist-convention-abc-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Baptist Faith and Message",
+        "year": 2000,
+        "significance": "Convention statement of shared doctrine; local churches remain autonomous.",
+        "url": "https://bfm.sbc.net/bfm2000/",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-faith"
+        ]
+      },
+      {
+        "title": "Resolution on Racial Reconciliation",
+        "year": 1995,
+        "significance": "Acknowledges slavery and racism in convention history and commits to repentance and reconciliation; a resolution, not a replacement confession.",
+        "url": "https://www.sbc.net/resource-library/resolutions/resolution-on-racial-reconciliation-on-the-150th-anniversary-of-the-southern-baptist-convention/",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-slavery"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-southern-baptist-convention-sbc-slavery",
+        "cite-profile-southern-baptist-convention-abc-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-southern-baptist-convention-sbc-faith"
+      ],
+      "key_figures": [
+        "cite-profile-southern-baptist-convention-sbc-slavery",
+        "cite-profile-southern-baptist-convention-abc-history",
+        "cite-profile-southern-baptist-convention-johnson"
+      ],
+      "key_dates": [
+        "cite-profile-southern-baptist-convention-sbc-slavery",
+        "cite-profile-southern-baptist-convention-abc-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-southern-baptist-convention-sbc-slavery",
+        "cite-profile-southern-baptist-convention-abc-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-southern-baptist-convention-sbc-slavery",
+      "cite-profile-southern-baptist-convention-abc-history",
+      "cite-profile-southern-baptist-convention-sbc-faith",
+      "cite-profile-southern-baptist-convention-johnson"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The convention continues as a cooperative organization. Its 1995 repentance for slavery and racism changed its public account of its past; it did not dissolve the convention or transfer all its churches to another body. No terminal successor applies.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "1995 SBC Resolution on Racial Reconciliation",
+        "url": "https://www.sbc.net/resource-library/resolutions/resolution-on-racial-reconciliation-on-the-150th-anniversary-of-the-southern-baptist-convention/",
+        "snippet": "Formation and development: Southern organizers created a separate missionary convention after national mission agencies would not accept slaveholding missionary candidates. The convention developed common mission, educational, and publishing institutions while affirming local church autonomy.",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-slavery"
+        ]
+      },
+      {
+        "title": "Baptist Faith and Message 2000 \u2014 official text",
+        "url": "https://bfm.sbc.net/bfm2000/",
+        "snippet": "Teaching and practice: Biblical authority: the Baptist Faith and Message describes Scripture as wholly trustworthy and the standard for teaching and conduct.",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-faith"
+        ]
+      },
+      {
+        "title": "Baptist Faith and Message",
+        "url": "https://bfm.sbc.net/bfm2000/",
+        "snippet": "Convention statement of shared doctrine; local churches remain autonomous.",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-faith"
+        ]
+      },
+      {
+        "title": "Resolution on Racial Reconciliation",
+        "url": "https://www.sbc.net/resource-library/resolutions/resolution-on-racial-reconciliation-on-the-150th-anniversary-of-the-southern-baptist-convention/",
+        "snippet": "Acknowledges slavery and racism in convention history and commits to repentance and reconciliation; a resolution, not a replacement confession.",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-slavery"
+        ]
+      }
+    ]
   },
   {
     "id": "american-baptist-churches-usa",
@@ -61,8 +453,131 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Reorganization of the Triennial Convention in 1907.",
-    "distinctives": ["Baptist"],
-    "size_estimate": "1,107,206 members (2023)"
+    "distinctives": [
+      "Baptist"
+    ],
+    "size_estimate": "1,107,206 members (2023)",
+    "summary": "A Baptist communion combining autonomous congregations, cooperative mission, and considerable theological and cultural diversity.",
+    "formation_narrative": "Northern Baptist churches coordinated mission societies through a convention organized in 1907. It became the American Baptist Convention in 1950 and American Baptist Churches USA in 1972. The present body maintains a connection to earlier missionary work without being simply the Triennial Convention under a new name. Its history includes both evangelistic mission and social service, with unity negotiated among churches that do not agree on every question.",
+    "core_beliefs": [
+      "Christ-centered faith: confession of Christ\u2019s saving work accompanies an emphasis on the believer\u2019s direct relationship with God.",
+      "Local freedom and responsibility: congregations govern themselves, practice believer\u2019s baptism, and cooperate in wider mission.",
+      "Religious liberty and diversity: freedom of worship and opinion is valued within a shared Christian witness; one faction\u2019s conclusions should not be assigned to every church."
+    ],
+    "key_figures": [
+      {
+        "name": "Adoniram Judson",
+        "role": "earlier missionary figure in the foreign-missions heritage, not a founder of the 1907 convention",
+        "summary": "An American missionary to Burma whose work helped mobilize Baptist foreign-missions support; he belongs to the missionary heritage rather than the 1907 founding generation.",
+        "url": "https://www.abc-usa.org/our-history",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1907,
+        "label": "Northern Baptist Convention organized",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-history"
+        ]
+      },
+      {
+        "year": 1950,
+        "label": "Name becomes American Baptist Convention",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-history"
+        ]
+      },
+      {
+        "year": 1972,
+        "label": "American Baptist Churches USA name adopted",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "What We Believe",
+        "year": null,
+        "significance": "Official explanatory account of shared convictions; it does not function as a compulsory detailed creed for every congregation.",
+        "url": "https://abc-usa.org/what-we-believe",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-beliefs"
+        ]
+      },
+      {
+        "title": "10 Facts About American Baptists",
+        "year": null,
+        "significance": "Explains the tradition\u2019s shared practices and cooperative identity.",
+        "url": "https://abc-usa.org/10facts",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-facts"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-american-baptist-churches-usa-abc-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-american-baptist-churches-usa-abc-beliefs",
+        "cite-profile-american-baptist-churches-usa-abc-facts"
+      ],
+      "key_figures": [
+        "cite-profile-american-baptist-churches-usa-abc-history"
+      ],
+      "key_dates": [
+        "cite-profile-american-baptist-churches-usa-abc-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-american-baptist-churches-usa-abc-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-american-baptist-churches-usa-abc-history",
+      "cite-profile-american-baptist-churches-usa-abc-beliefs",
+      "cite-profile-american-baptist-churches-usa-abc-facts"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The body continues under the ABCUSA name adopted in 1972. Earlier name changes reflected reorganization and recognition of a wider geographic mission, rather than the disappearance of its congregations. There is no terminal successor in the present dataset.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Our History \u2014 American Baptist Churches USA",
+        "url": "https://www.abc-usa.org/our-history",
+        "snippet": "Formation and development: Northern Baptist churches coordinated mission societies through a convention organized in 1907. It became the American Baptist Convention in 1950 and American Baptist Churches USA in 1972.",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-history"
+        ]
+      },
+      {
+        "title": "What We Believe \u2014 American Baptist Churches USA",
+        "url": "https://abc-usa.org/what-we-believe",
+        "snippet": "Teaching and practice: Christ-centered faith: confession of Christ\u2019s saving work accompanies an emphasis on the believer\u2019s direct relationship with God.",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-beliefs"
+        ]
+      },
+      {
+        "title": "10 Facts About American Baptists",
+        "url": "https://abc-usa.org/10facts",
+        "snippet": "Explains the tradition\u2019s shared practices and cooperative identity.",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-facts"
+        ]
+      },
+      {
+        "title": "What We Believe",
+        "url": "https://abc-usa.org/what-we-believe",
+        "snippet": "Official explanatory account of shared convictions; it does not function as a compulsory detailed creed for every congregation.",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-beliefs"
+        ]
+      }
+    ]
   },
   {
     "id": "national-baptist-convention-usa",
@@ -77,8 +592,147 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Formed in 1895 by merger of multiple Baptist conventions.",
-    "distinctives": ["Baptist"],
-    "size_estimate": "8,415,100 members (2023 self-reported)"
+    "distinctives": [
+      "Baptist"
+    ],
+    "size_estimate": "8,415,100 members (2023 self-reported)",
+    "summary": "A historically Black Baptist convention created to coordinate mission, education, and the work of autonomous churches.",
+    "formation_narrative": "In 1895 earlier Black Baptist conventions united their mission and educational efforts. This organization grew in a society shaped by slavery\u2019s aftermath and racial exclusion, creating institutions under Black leadership. Later disputes over the publishing board and over leadership and civil-rights strategy produced separate conventions. Organizational separation should not be mistaken for an entirely new theology each time.",
+    "core_beliefs": [
+      "Baptist Christian faith: the convention\u2019s Articles of Faith use the New Hampshire confessional tradition to express beliefs about Scripture, salvation, and the church.",
+      "Autonomous churches: cooperation in mission and education operates through a convention rather than a hierarchy controlling every congregation.",
+      "Institution-building: publishing, training, and missionary work express a corporate religious vocation as well as the pursuit of Black institutional independence."
+    ],
+    "key_figures": [
+      {
+        "name": "E. C. Morris",
+        "role": "early convention president associated with the united organization",
+        "summary": "Elias Camp Morris was an early president who helped lead the united National Baptist organization and its institutional development.",
+        "url": "https://kinginstitute.stanford.edu/progressive-national-baptist-convention-pnbc",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-nbc-1939",
+          "cite-profile-national-baptist-convention-usa-black-confessions",
+          "cite-profile-national-baptist-convention-usa-pnbc-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1895,
+        "label": "Earlier conventions unite",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-nbc-1939",
+          "cite-profile-national-baptist-convention-usa-black-confessions",
+          "cite-profile-national-baptist-convention-usa-pnbc-history"
+        ]
+      },
+      {
+        "year": 1915,
+        "label": "Publishing controversy produces a convention division",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-nbc-1939",
+          "cite-profile-national-baptist-convention-usa-black-confessions",
+          "cite-profile-national-baptist-convention-usa-pnbc-history"
+        ]
+      },
+      {
+        "year": 1961,
+        "label": "Progressive National Baptist Convention emerges from another division",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-nbc-1939",
+          "cite-profile-national-baptist-convention-usa-black-confessions",
+          "cite-profile-national-baptist-convention-usa-pnbc-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "National Baptist Convention constitution and historical preamble",
+        "year": 1939,
+        "significance": "A primary annual preserving the convention\u2019s account of its union and purposes.",
+        "url": "https://media2.sbhla.org.s3.amazonaws.com/aaa/nbc/NBC_1939.pdf",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-nbc-1939"
+        ]
+      },
+      {
+        "title": "Articles of Faith / New Hampshire confessional tradition",
+        "year": null,
+        "significance": "An adopted Baptist doctrinal tradition, distinct from the convention\u2019s constitutional rules.",
+        "url": "https://equip.sbts.edu/publications/magazine/a-confessing-people-a-brief-history-of-baptist-confessions-of-faith/",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-black-confessions"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-national-baptist-convention-usa-nbc-1939",
+        "cite-profile-national-baptist-convention-usa-black-confessions",
+        "cite-profile-national-baptist-convention-usa-pnbc-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-national-baptist-convention-usa-black-confessions",
+        "cite-profile-national-baptist-convention-usa-nbc-1939"
+      ],
+      "key_figures": [
+        "cite-profile-national-baptist-convention-usa-nbc-1939",
+        "cite-profile-national-baptist-convention-usa-black-confessions",
+        "cite-profile-national-baptist-convention-usa-pnbc-history"
+      ],
+      "key_dates": [
+        "cite-profile-national-baptist-convention-usa-nbc-1939",
+        "cite-profile-national-baptist-convention-usa-black-confessions",
+        "cite-profile-national-baptist-convention-usa-pnbc-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-national-baptist-convention-usa-nbc-1939",
+        "cite-profile-national-baptist-convention-usa-black-confessions",
+        "cite-profile-national-baptist-convention-usa-pnbc-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-national-baptist-convention-usa-nbc-1939",
+      "cite-profile-national-baptist-convention-usa-black-confessions",
+      "cite-profile-national-baptist-convention-usa-pnbc-history"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The convention continues despite publishing-related and leadership-related divisions that produced other conventions in 1915 and 1961. Those departures did not terminate the parent, so the separate conventions are not labeled its terminal successors.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "National Baptist Convention 1939 annual \u2014 constitution and historical preamble",
+        "url": "https://media2.sbhla.org.s3.amazonaws.com/aaa/nbc/NBC_1939.pdf",
+        "snippet": "Formation and development: In 1895 earlier Black Baptist conventions united their mission and educational efforts. This organization grew in a society shaped by slavery\u2019s aftermath and racial exclusion, creating institutions under Black leadership.",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-nbc-1939"
+        ]
+      },
+      {
+        "title": "A Confessing People \u2014 Baptist confessions and National Baptist divisions",
+        "url": "https://equip.sbts.edu/publications/magazine/a-confessing-people-a-brief-history-of-baptist-confessions-of-faith/",
+        "snippet": "Teaching and practice: Baptist Christian faith: the convention\u2019s Articles of Faith use the New Hampshire confessional tradition to express beliefs about Scripture, salvation, and the church.",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-black-confessions"
+        ]
+      },
+      {
+        "title": "National Baptist Convention constitution and historical preamble",
+        "url": "https://media2.sbhla.org.s3.amazonaws.com/aaa/nbc/NBC_1939.pdf",
+        "snippet": "A primary annual preserving the convention\u2019s account of its union and purposes.",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-nbc-1939"
+        ]
+      },
+      {
+        "title": "Articles of Faith / New Hampshire confessional tradition",
+        "url": "https://equip.sbts.edu/publications/magazine/a-confessing-people-a-brief-history-of-baptist-confessions-of-faith/",
+        "snippet": "An adopted Baptist doctrinal tradition, distinct from the convention\u2019s constitutional rules.",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-black-confessions"
+        ]
+      }
+    ]
   },
   {
     "id": "national-baptist-convention-of-america",
@@ -93,8 +747,92 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Separated from NBCUSA in 1915.",
-    "distinctives": ["Baptist"],
-    "size_estimate": "225,776 members"
+    "distinctives": [
+      "Baptist"
+    ],
+    "size_estimate": "225,776 members",
+    "summary": "A historically Black Baptist convention emerging from the 1915 conflict over control of Baptist publishing.",
+    "formation_narrative": "The National Baptist publishing-board controversy divided leaders who otherwise shared much Baptist theology. The National Baptist Convention of America developed as a separate cooperative body rather than as the result of a new doctrine of baptism or salvation. Its history is therefore best explained through institutional authority, publishing, and autonomous Black church cooperation, with attention to subsequent organizational changes that need further detailed research.",
+    "core_beliefs": [
+      "Shared Baptist inheritance: local congregations emphasize the Bible, conversion, and believer\u2019s baptism, but practice varies among autonomous churches.",
+      "Cooperative autonomy: the convention coordinates ministries while the congregation remains the basic governing church body.",
+      "Confessional caution: the historical survey used here reports no single convention-wide statement of faith; it would be misleading to assign the SBC confession to this body."
+    ],
+    "key_figures": [
+      {
+        "name": "R. H. Boyd",
+        "role": "publishing-board leader central to the institutional context of the 1915 dispute",
+        "summary": "Richard Henry Boyd was a Black Baptist publishing organizer whose struggle over publishing-board independence helped produce the 1915 convention division.",
+        "url": "https://media2.sbhla.org.s3.amazonaws.com/aaa/nbc/NBC_1917.pdf",
+        "citations": [
+          "cite-profile-national-baptist-convention-of-america-black-confessions",
+          "cite-profile-national-baptist-convention-of-america-nbc-1917"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1915,
+        "label": "Publishing-board dispute divides National Baptists",
+        "citations": [
+          "cite-profile-national-baptist-convention-of-america-black-confessions"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "National Baptist Convention annual account of the publishing dispute",
+        "year": 1917,
+        "significance": "A primary witness from the opposing convention describing Boyd and the 1915 rupture. Read as a party\u2019s testimony, not as NBCA\u2019s own constitution. An authoritative NBCA founding constitution remains missing research.",
+        "url": "https://media2.sbhla.org.s3.amazonaws.com/aaa/nbc/NBC_1917.pdf",
+        "citations": [
+          "cite-profile-national-baptist-convention-of-america-nbc-1917"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-national-baptist-convention-of-america-black-confessions"
+      ],
+      "core_beliefs": [
+        "cite-profile-national-baptist-convention-of-america-black-confessions"
+      ],
+      "key_figures": [
+        "cite-profile-national-baptist-convention-of-america-black-confessions",
+        "cite-profile-national-baptist-convention-of-america-nbc-1917"
+      ],
+      "key_dates": [
+        "cite-profile-national-baptist-convention-of-america-black-confessions"
+      ],
+      "ending_narrative": [
+        "cite-profile-national-baptist-convention-of-america-black-confessions"
+      ]
+    },
+    "citations": [
+      "cite-profile-national-baptist-convention-of-america-black-confessions",
+      "cite-profile-national-baptist-convention-of-america-nbc-1917"
+    ],
+    "profile_scope": "Further research is needed on the body\u2019s own constitutional texts and later milestones; absence of a located text is not proof that no governing documents exist.",
+    "ending_narrative": "The convention is represented as continuing, not as merged or dissolved. The current profile establishes its 1915 context; a detailed account of later reorganizations and similarly named bodies remains a research gap. No termination or exclusive successor is asserted.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "A Confessing People \u2014 Baptist confessions and National Baptist divisions",
+        "url": "https://equip.sbts.edu/publications/magazine/a-confessing-people-a-brief-history-of-baptist-confessions-of-faith/",
+        "snippet": "Formation and development: The National Baptist publishing-board controversy divided leaders who otherwise shared much Baptist theology. The National Baptist Convention of America developed as a separate cooperative body rather than as the result of a new doctrine of baptism or salvation.",
+        "citations": [
+          "cite-profile-national-baptist-convention-of-america-black-confessions"
+        ]
+      },
+      {
+        "title": "National Baptist Convention annual account of the publishing dispute",
+        "url": "https://media2.sbhla.org.s3.amazonaws.com/aaa/nbc/NBC_1917.pdf",
+        "snippet": "A primary witness from the opposing convention describing Boyd and the 1915 rupture. Read as a party\u2019s testimony, not as NBCA\u2019s own constitution. An authoritative NBCA founding constitution remains missing research.",
+        "citations": [
+          "cite-profile-national-baptist-convention-of-america-nbc-1917"
+        ]
+      }
+    ]
   },
   {
     "id": "progressive-national-baptist-convention",
@@ -109,8 +847,101 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Separated from NBCUSA in 1961.",
-    "distinctives": ["Progressive Baptist"],
-    "size_estimate": "1,500,000 members (2022 self-reported)"
+    "distinctives": [
+      "Progressive Baptist"
+    ],
+    "size_estimate": "1,500,000 members (2022 self-reported)",
+    "summary": "A historically Black Baptist convention whose formation joined church-governance disputes to support for civil-rights activism.",
+    "formation_narrative": "The 1961 National Baptist Convention meeting exposed conflict over incumbent leadership and the use of nonviolent direct action. Ministers associated with Gardner Taylor and supporters of Martin Luther King Jr.\u2019s approach formed a separate convention in Cincinnati that November. Its distinctive historical role is the institutional space it provided for civil-rights advocacy within a Baptist framework, rather than a wholly separate baptismal theology.",
+    "core_beliefs": [
+      "Baptist church life: congregations retain a shared believer-church heritage and local independence.",
+      "Faith and public action: Christian witness is connected with racial justice and nonviolent efforts to change discriminatory institutions.",
+      "Freedom within fellowship: the convention\u2019s cooperative identity should not be reduced to a single compulsory creed or one political personality."
+    ],
+    "key_figures": [
+      {
+        "name": "Gardner C. Taylor",
+        "role": "central leader in the opposition to the incumbent National Baptist leadership",
+        "summary": "A Baptist preacher and leader in the 1961 opposition to J. H. Jackson, associated with the emerging Progressive National Baptist Convention.",
+        "url": "https://kinginstitute.stanford.edu/progressive-national-baptist-convention-pnbc",
+        "citations": [
+          "cite-profile-progressive-national-baptist-convention-pnbc-history"
+        ]
+      },
+      {
+        "name": "Martin Luther King Jr.",
+        "role": "minister whose nonviolent activism was supported by the new convention",
+        "summary": "A Baptist minister and civil-rights leader whose support for nonviolent direct action was central to the conflict behind PNBC formation.",
+        "url": "https://kinginstitute.stanford.edu/progressive-national-baptist-convention-pnbc",
+        "citations": [
+          "cite-profile-progressive-national-baptist-convention-pnbc-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1961,
+        "label": "Convention established in Cincinnati after the National Baptist leadership conflict",
+        "citations": [
+          "cite-profile-progressive-national-baptist-convention-pnbc-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "PNBC resolutions",
+        "year": 2019,
+        "significance": "Official public statements illustrating the convention\u2019s social and civic witness; resolutions are distinct from a doctrinal confession or founding constitution.",
+        "url": "https://www.pnbc.org/assets/uploads/2019/10/2019-PNBC-Resolutions.pdf",
+        "citations": [
+          "cite-profile-progressive-national-baptist-convention-pnbc-resolutions"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-progressive-national-baptist-convention-pnbc-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-progressive-national-baptist-convention-pnbc-history",
+        "cite-profile-progressive-national-baptist-convention-black-confessions"
+      ],
+      "key_figures": [
+        "cite-profile-progressive-national-baptist-convention-pnbc-history"
+      ],
+      "key_dates": [
+        "cite-profile-progressive-national-baptist-convention-pnbc-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-progressive-national-baptist-convention-pnbc-history"
+      ]
+    },
+    "citations": [
+      "cite-profile-progressive-national-baptist-convention-pnbc-history",
+      "cite-profile-progressive-national-baptist-convention-black-confessions",
+      "cite-profile-progressive-national-baptist-convention-pnbc-resolutions"
+    ],
+    "profile_scope": "No universal formal confession is supplied here; further primary constitutional-document research remains distinct from the well-documented founding history.",
+    "ending_narrative": "The convention continues as a separate Baptist fellowship. Its founding division did not end the National Baptist Convention USA, and its civil-rights identity should not be described as a temporary organization that ended with the 1960s movement. No terminal successor applies.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Progressive National Baptist Convention \u2014 Stanford King Institute",
+        "url": "https://kinginstitute.stanford.edu/progressive-national-baptist-convention-pnbc",
+        "snippet": "Formation and development: The 1961 National Baptist Convention meeting exposed conflict over incumbent leadership and the use of nonviolent direct action. Ministers associated with Gardner Taylor and supporters of Martin Luther King Jr.\u2019s approach formed a separate convention in Cincinnati that November.",
+        "citations": [
+          "cite-profile-progressive-national-baptist-convention-pnbc-history"
+        ]
+      },
+      {
+        "title": "PNBC resolutions",
+        "url": "https://www.pnbc.org/assets/uploads/2019/10/2019-PNBC-Resolutions.pdf",
+        "snippet": "Official public statements illustrating the convention\u2019s social and civic witness; resolutions are distinct from a doctrinal confession or founding constitution.",
+        "citations": [
+          "cite-profile-progressive-national-baptist-convention-pnbc-resolutions"
+        ]
+      }
+    ]
   },
   {
     "id": "venture-church-network",
@@ -125,7 +956,97 @@
     "ecclesial_orientation": "evangelical",
     "current_status": "active",
     "notes": "Formerly Conservative Baptist Association of America; formed in 1947 after separation from the Northern Baptist Convention.",
-    "distinctives": ["Evangelical Baptist"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "Evangelical Baptist"
+    ],
+    "size_estimate": "unknown",
+    "summary": "An evangelical Baptist network continuing the Conservative Baptist Association\u2019s emphasis on doctrinal conviction and voluntary cooperation.",
+    "formation_narrative": "Conservative Baptists first established mission agencies and then, in 1947, a separate association of churches amid conflict over theological direction in northern Baptist institutions. The present Venture Church Network describes that separation as a defense of historic evangelical convictions. Its network structure aims to strengthen local churches without replacing their government; the account of the dispute is the organization\u2019s own interpretation and should be read as such.",
+    "core_beliefs": [
+      "Biblical authority: its statement teaches that Scripture is inspired, trustworthy, and sufficient for faith and conduct.",
+      "Evangelical salvation: the network centers its message on Christ and the gospel rather than treating social or institutional cooperation as sufficient in itself.",
+      "Local churches in partnership: shared doctrine supports mission and leadership development while churches retain their own life and governance."
+    ],
+    "key_figures": [
+      {
+        "name": "B. Myron Cedarholm",
+        "role": "Early Conservative Baptist worker and national general director",
+        "summary": "A Baptist minister who began work with the new association in 1947 and served as its second national general director from 1950 to 1965. He later founded Maranatha; his departure shows that the association\u2019s early leadership was not a uniform, unchanging bloc.",
+        "url": "https://www.mbu.edu/seminary/maranatha-is-baptist/",
+        "citations": [
+          "cite-profile-venture-church-network-cedarholm"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1947,
+        "label": "Conservative Baptist Association of America organized",
+        "citations": [
+          "cite-profile-venture-church-network-venture"
+        ]
+      },
+      {
+        "year": 1950,
+        "label": "B. Myron Cedarholm becomes second national general director",
+        "citations": [
+          "cite-profile-venture-church-network-cedarholm"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "What We Believe",
+        "year": null,
+        "significance": "The network\u2019s published doctrinal statement explains its present basis of cooperation; it is not evidence that every detail had identical wording in 1947.",
+        "url": "https://venturechurches.org/about-us/",
+        "citations": [
+          "cite-profile-venture-church-network-venture"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-venture-church-network-venture"
+      ],
+      "core_beliefs": [
+        "cite-profile-venture-church-network-venture"
+      ],
+      "key_figures": [
+        "cite-profile-venture-church-network-venture",
+        "cite-profile-venture-church-network-cedarholm"
+      ],
+      "key_dates": [
+        "cite-profile-venture-church-network-venture"
+      ],
+      "ending_narrative": [
+        "cite-profile-venture-church-network-venture"
+      ]
+    },
+    "citations": [
+      "cite-profile-venture-church-network-venture",
+      "cite-profile-venture-church-network-cedarholm"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The association continues under the Venture Church Network identity. The change from Conservative Baptist Association branding expresses a continuing network\u2019s development, not the extinction of every member church. No terminal successor is assigned.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "About Us: History and Beliefs \u2014 Venture Church Network",
+        "url": "https://venturechurches.org/about-us/",
+        "snippet": "Formation and development: Conservative Baptists first established mission agencies and then, in 1947, a separate association of churches amid conflict over theological direction in northern Baptist institutions. The present Venture Church Network describes that separation as a defense of historic evangelical convictions.",
+        "citations": [
+          "cite-profile-venture-church-network-venture"
+        ]
+      },
+      {
+        "title": "What We Believe",
+        "url": "https://venturechurches.org/about-us/",
+        "snippet": "The network\u2019s published doctrinal statement explains its present basis of cooperation; it is not evidence that every detail had identical wording in 1947.",
+        "citations": [
+          "cite-profile-venture-church-network-venture"
+        ]
+      }
+    ]
   }
 ]

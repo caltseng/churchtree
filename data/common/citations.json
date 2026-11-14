@@ -1,974 +1,2535 @@
-﻿[
-    {
-        "id":  "cite-pca-1973",
-        "source_id":  "src-wiki-pca",
-        "locator":  "Infobox: founded_date, separated_from",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pca-1973-reasons",
-        "source_id":  "src-wiki-pca",
-        "locator":  "Lead: separated from PCUS amid disputes over doctrinal standards and theological direction",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcus-1973-reasons-detail",
-        "source_id":  "src-wiki-pcus",
-        "locator":  "History: PCA founded citing theological liberalism, denial of the deity of Jesus Christ, and denial of the inerrancy and authority of Scripture",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-1983",
-        "source_id":  "src-wiki-pcusa",
-        "locator":  "Infobox: founded_date, merger",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-1983-reasons",
-        "source_id":  "src-wiki-pcus",
-        "locator":  "History: reunion between northern and southern Presbyterians (1983 Plan of Union)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-opc-1936",
-        "source_id":  "src-wiki-opc",
-        "locator":  "Infobox: founded_date, separated_from",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-opc-1936-reasons",
-        "source_id":  "src-wiki-opc",
-        "locator":  "Lead: objected to Liberal and Modernist theology (Fundamentalist-Modernist controversy)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcus-1861",
-        "source_id":  "src-wiki-pcus",
-        "locator":  "Infobox: founded_date, separated_from",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcus-1861-reasons",
-        "source_id":  "src-wiki-pcusa-1789",
-        "locator":  "Lead: split over slavery, politics, and theology precipitated by the Civil War",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-upcusa-1958",
-        "source_id":  "src-wiki-upcusa",
-        "locator":  "Infobox: founded_date, merger",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-upcusa-1958-reasons",
-        "source_id":  "src-wiki-upcusa",
-        "locator":  "Lead: union driven by ecumenical activity and reunion of long-separated branches",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-1789-founded",
-        "source_id":  "src-wiki-pcusa-1789",
-        "locator":  "Infobox: founded_date",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcus-founded",
-        "source_id":  "src-wiki-pcus",
-        "locator":  "Infobox: founded_date, separated_from",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-opc-founded",
-        "source_id":  "src-wiki-opc",
-        "locator":  "Infobox: founded_date, separated_from",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pca-founded",
-        "source_id":  "src-wiki-pca",
-        "locator":  "Infobox: founded_date, separated_from",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-upcusa-founded",
-        "source_id":  "src-wiki-upcusa",
-        "locator":  "Infobox: founded_date, merger",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-founded",
-        "source_id":  "src-wiki-pcusa",
-        "locator":  "Infobox: founded_date, merger",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-merge-1983",
-        "source_id":  "src-wiki-pcusa",
-        "locator":  "Lead: established with 1983 merger of PCUS and UPCUSA",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-upcna-founded",
-        "source_id":  "src-wiki-upcna",
-        "locator":  "Infobox: founded_date",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-upcna-1958-merge",
-        "source_id":  "src-wiki-upcna",
-        "locator":  "Lead: merged with PCUSA to form UPCUSA (1958)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-theology",
-        "source_id":  "src-wiki-pcusa",
-        "locator":  "Infobox: theology (Reformed, Barthianist)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-mainline",
-        "source_id":  "src-wiki-pcusa",
-        "locator":  "Lead: mainline Protestant denomination",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pca-theology",
-        "source_id":  "src-wiki-pca",
-        "locator":  "Infobox: theology (Reformed; Evangelical)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-opc-theology",
-        "source_id":  "src-wiki-opc",
-        "locator":  "Infobox: theology (Confessional Reformed)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcus-distinctives",
-        "source_id":  "src-wiki-pcus",
-        "locator":  "History: Old School Presbyterianism and Westminster Confession emphasis",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-1789-orientation",
-        "source_id":  "src-wiki-pcusa-1789",
-        "locator":  "Infobox: orientation (Mainline Protestant; Reformed tradition)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-upcusa-theology",
-        "source_id":  "src-wiki-upcusa",
-        "locator":  "Infobox: theology (Reformed/Calvinism)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-upcna-orientation",
-        "source_id":  "src-wiki-upcna",
-        "locator":  "Infobox: orientation (Calvinist)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-upcna-distinctives",
-        "source_id":  "src-wiki-upcna",
-        "locator":  "History: Covenanter/Seceder distinctives including public covenanting and exclusive psalmody",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-size",
-        "source_id":  "src-wiki-pcusa",
-        "locator":  "Infobox: members 1,045,848 active members (2024)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pca-size",
-        "source_id":  "src-wiki-pca",
-        "locator":  "Infobox: members 400,751 (2024)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-1789-size",
-        "source_id":  "src-wiki-pcusa-1789",
-        "locator":  "Infobox: members 2.8 million in 1957",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-upcusa-size",
-        "source_id":  "src-wiki-upcusa",
-        "locator":  "Infobox: members 2,351,119 in 1982",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-upcna-size",
-        "source_id":  "src-wiki-upcna",
-        "locator":  "Infobox: members 257,513 in 1957",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-zurich-reformation",
-        "source_id":  "src-wiki-zurich-reformation",
-        "locator":  "Lead: early 1520s reform under Zwingli; Zurich magistrates and civic changes",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-zwingli",
-        "source_id":  "src-wiki-zwingli",
-        "locator":  "Lead/Theology: memorialism, iconoclasm; life dates 1484-1531",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-genevan-reformation",
-        "source_id":  "src-wiki-genevan-reformation",
-        "locator":  "Lead: shift from Roman Catholicism to Protestantism; Calvinist influence",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-calvins-geneva",
-        "source_id":  "src-wiki-calvins-geneva",
-        "locator":  "Lead/Key events: Calvin\u0027s Geneva (1536-1564), ordinances 1541, academy 1559, Servetus 1553",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-scottish-reformation",
-        "source_id":  "src-wiki-scottish-reformation",
-        "locator":  "Lead: 1560 Parliament; rejection of papal supremacy; Presbyterian structure",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-presbyterian-polity",
-        "source_id":  "src-wiki-presbyterian-polity",
-        "locator":  "Lead/Structure: rule by elders; sessions, presbyteries, synods, general assemblies",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-cos-synods-presbyteries",
-        "source_id":  "src-wiki-cos-synods-presbyteries",
-        "locator":  "History: original presbyteries created April 1581",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-presbyterian-us",
-        "source_id":  "src-wiki-presbyterian-us",
-        "locator":  "Lead: Presbyterianism in US since colonial times",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-presbytery-philadelphia",
-        "source_id":  "src-wiki-presbytery-philadelphia",
-        "locator":  "History: first known Presbyterian church in America organized in 1683; Presbytery of Philadelphia organized in 1706; Synod formed 1717",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-old-side-new-side",
-        "source_id":  "src-wiki-old-side-new-side",
-        "locator":  "History: Old Side-New Side division 1741-1758",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-makemie",
-        "source_id":  "src-wiki-makemie",
-        "locator":  "Lead/Ministry: founder of American Presbyterianism; trial in 1707; ordained 1681",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-church-of-scotland-lead",
-        "source_id":  "src-wiki-church-of-scotland",
-        "locator":  "Lead: national church; Reformed and Presbyterian tradition",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-church-of-scotland-knox",
-        "source_id":  "src-wiki-church-of-scotland",
-        "locator":  "History/Scottish Reformation: John Knox returned from Geneva to lead reform",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-church-of-scotland-polity",
-        "source_id":  "src-wiki-church-of-scotland",
-        "locator":  "Polity/Structure: Presbyterian system",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-english-congregation-geneva-overview",
-        "source_id":  "src-wiki-english-congregation-geneva",
-        "locator":  "Overview: exile congregation led mainly by John Knox (1555-1559)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-english-congregation-geneva-influence",
-        "source_id":  "src-wiki-english-congregation-geneva",
-        "locator":  "Influence/Numbers: Presbyterian model and influence on later reform",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-1789-origin",
-        "source_id":  "src-wiki-pcusa-1789",
-        "locator":  "Origin: colonial immigrants from Church of Scotland and Ireland",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-1789-overview",
-        "source_id":  "src-wiki-pcusa-1789",
-        "locator":  "Overview: first national Presbyterian denomination in the US",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcusa-1789-branched-from",
-        "source_id":  "src-wiki-pcusa-1789",
-        "locator":  "Infobox: branched from Church of Scotland and Synod of Ulster",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-protestant-church-switzerland-size",
-        "source_id":  "src-wiki-protestant-church-switzerland",
-        "locator":  "Statistics: members 1,782,513 (2024)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-church-of-scotland-size",
-        "source_id":  "src-wiki-church-of-scotland",
-        "locator":  "Lead: membership 245,000 (2024)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-scotch-irish-migration",
-        "source_id":  "src-wiki-scotch-irish",
-        "locator":  "American settlement: over 200,000 Scotch-Irish migrants (1717-1775)",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-presbyterian-polity-geneva",
-        "source_id":  "src-wiki-presbyterian-polity",
-        "locator":  "History: modern implementation established under Calvin in Geneva",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-presbyterian-polity-intro-scotland",
-        "source_id":  "src-wiki-presbyterian-polity",
-        "locator":  "History: introduced to Scotland by John Knox after exile in Geneva",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-presbyterianism-development",
-        "source_id":  "src-wiki-presbyterianism",
-        "locator":  "Development: influence of Calvin\u0027s Geneva and Knox\u0027s role in Scotland",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-book-of-discipline-1560",
-        "source_id":  "src-wiki-book-of-discipline",
-        "locator":  "Lead: First Book of Discipline (1560) sets out Presbyterian polity on Geneva model",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-book-of-discipline-1578",
-        "source_id":  "src-wiki-book-of-discipline",
-        "locator":  "Second Book of Discipline: more clearly Presbyterian; presbyteries, synods, general assembly",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-makemie-ordination",
-        "source_id":  "src-wiki-makemie",
-        "locator":  "Early life: ordained by Presbytery of Laggan in 1681",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-scottish-reformation-structure",
-        "source_id":  "src-wiki-scottish-reformation",
-        "locator":  "Lead: established Protestant Church of Scotland; Presbyterian structure and Calvinist doctrine",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-genevan-reformation-lead",
-        "source_id":  "src-wiki-genevan-reformation",
-        "locator":  "Lead: Geneva\u0027s Reformation and Reformed (Calvinist) orientation",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-zurich-reformation-lead",
-        "source_id":  "src-wiki-zurich-reformation",
-        "locator":  "Lead: Zurich Reformation as Reformed Protestant movement",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-presbyterian-us-colonial",
-        "source_id":  "src-wiki-presbyterian-us",
-        "locator":  "History: colonial era and early presbyteries",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-opc-doctrine",
-        "source_id":  "src-wiki-opc",
-        "locator":  "Doctrine: Reformed/Calvinist roots and Westminster Standards",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-upcusa-polity",
-        "source_id":  "src-wiki-upcusa",
-        "locator":  "Infobox: Reformed theology; Presbyterian polity",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-upcna-polity",
-        "source_id":  "src-wiki-upcna",
-        "locator":  "Infobox: Calvinist orientation; Presbyterian polity",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-pcus-polity",
-        "source_id":  "src-wiki-pcus",
-        "locator":  "Infobox: Calvinist orientation; Presbyterian polity",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-catholic-church-lead",
-        "source_id":  "src-wiki-catholic-church",
-        "locator":  "Lead: largest Christian church; communion with the Bishop of Rome",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-zurich-reformation-break",
-        "source_id":  "src-wiki-zurich-reformation",
-        "locator":  "Background/Course: rejection of Roman Catholic authority and reforms in Zurich",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-genevan-reformation-break",
-        "source_id":  "src-wiki-genevan-reformation",
-        "locator":  "Lead: Protestant movement replacing Roman Catholicism in Geneva",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-scottish-reformation-break",
-        "source_id":  "src-wiki-scottish-reformation",
-        "locator":  "Lead: Scotland broke away from Roman Catholic Church",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "id":  "cite-church-of-scotland-history-break",
-        "source_id":  "src-wiki-church-of-scotland",
-        "locator":  "History: 1560 parliament repudiated papal authority and established a national church",
-        "accessed":  "2026-01-18"
-    },
-    {
-        "source_id":  "src-wiki-baptists",
-        "locator":  "English Dissenters view: first Baptist church in Amsterdam in 1609",
-        "accessed":  "2026-01-19",
-        "id":  "cite-baptists-1609"
-    },
-    {
-        "source_id":  "src-wiki-triennial-convention",
-        "locator":  "Summary: denomination existed from 1814 to 1907",
-        "accessed":  "2026-01-19",
-        "id":  "cite-triennial-1814"
-    },
-    {
-        "source_id":  "src-wiki-triennial-convention",
-        "locator":  "Summary: General Missionary Convention for foreign missions",
-        "accessed":  "2026-01-19",
-        "id":  "cite-triennial-missions"
-    },
-    {
-        "source_id":  "src-wiki-triennial-convention",
-        "locator":  "Summary: reorganized into ABCUSA in 1907",
-        "accessed":  "2026-01-19",
-        "id":  "cite-triennial-1907"
-    },
-    {
-        "source_id":  "src-wiki-sbc",
-        "locator":  "Infobox: founded_date and separated_from",
-        "accessed":  "2026-01-19",
-        "id":  "cite-sbc-1845"
-    },
-    {
-        "source_id":  "src-wiki-sbc",
-        "locator":  "History: separated in 1845 to uphold slavery",
-        "accessed":  "2026-01-19",
-        "id":  "cite-sbc-slavery-split"
-    },
-    {
-        "source_id":  "src-wiki-sbc",
-        "locator":  "Infobox: members 12,722,266 (2024)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-sbc-members"
-    },
-    {
-        "source_id":  "src-wiki-abcusa",
-        "locator":  "Infobox: founded_date 1907",
-        "accessed":  "2026-01-19",
-        "id":  "cite-abcusa-1907"
-    },
-    {
-        "source_id":  "src-wiki-abcusa",
-        "locator":  "Infobox: members 1,107,206 (2023)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-abcusa-members"
-    },
-    {
-        "source_id":  "src-wiki-nbcusa",
-        "locator":  "Infobox: founded_date 1895",
-        "accessed":  "2026-01-19",
-        "id":  "cite-nbcusa-1895"
-    },
-    {
-        "source_id":  "src-wiki-nbcusa",
-        "locator":  "Infobox: merger list (1880, 1886, 1893 conventions)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-nbcusa-merger"
-    },
-    {
-        "source_id":  "src-wiki-nbcusa",
-        "locator":  "Infobox: separations list includes NBCA (separated 1915)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-nbcusa-separation-1915"
-    },
-    {
-        "source_id":  "src-wiki-nbcusa",
-        "locator":  "Infobox: separations list includes PNBC (separated 1961)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-nbcusa-separation-1961"
-    },
-    {
-        "source_id":  "src-wiki-nbca",
-        "locator":  "Infobox: founded_date 1915; separated_from NBCUSA",
-        "accessed":  "2026-01-19",
-        "id":  "cite-nbca-1915"
-    },
-    {
-        "source_id":  "src-wiki-pnbc",
-        "locator":  "Infobox: founded_date 1961; separated_from NBCUSA",
-        "accessed":  "2026-01-19",
-        "id":  "cite-pnbc-1961"
-    },
-    {
-        "source_id":  "src-wiki-venture-church-network",
-        "locator":  "Infobox: founded_date 1947; separated_from Northern Baptist Convention",
-        "accessed":  "2026-01-19",
-        "id":  "cite-venture-1947"
-    },
-    {
-        "source_id":  "src-wiki-venture-church-network",
-        "locator":  "History: organized in 1947 amid fundamentalist-modernist controversy and mission agency dispute",
-        "accessed":  "2026-01-19",
-        "id":  "cite-venture-history"
-    },
-    {
-        "source_id":  "src-wiki-methodist-episcopal-church",
-        "locator":  "Infobox: founded_date December 1784",
-        "accessed":  "2026-01-19",
-        "id":  "cite-mec-1784"
-    },
-    {
-        "source_id":  "src-wiki-methodist-episcopal-church",
-        "locator":  "Infobox: members 4.4 million in 1937",
-        "accessed":  "2026-01-19",
-        "id":  "cite-mec-members"
-    },
-    {
-        "source_id":  "src-wiki-methodist-episcopal-church-south",
-        "locator":  "Lead: split over slavery in 1845",
-        "accessed":  "2026-01-19",
-        "id":  "cite-mecs-1845"
-    },
-    {
-        "source_id":  "src-wiki-methodist-protestant-church",
-        "locator":  "Infobox: founded_date 1828; separated_from MEC",
-        "accessed":  "2026-01-19",
-        "id":  "cite-mpc-1828"
-    },
-    {
-        "source_id":  "src-wiki-methodist-church-us",
-        "locator":  "Lead: reunion on May 10, 1939",
-        "accessed":  "2026-01-19",
-        "id":  "cite-methodist-church-1939"
-    },
-    {
-        "source_id":  "src-wiki-methodist-church-us",
-        "locator":  "Infobox: merged_into United Methodist Church (1968)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-methodist-church-merged-into-umc"
-    },
-    {
-        "source_id":  "src-wiki-evangelical-united-brethren-church",
-        "locator":  "Lead: denomination from 1946 to 1968; formed by merger",
-        "accessed":  "2026-01-19",
-        "id":  "cite-eub-1946"
-    },
-    {
-        "source_id":  "src-wiki-united-methodist-church",
-        "locator":  "Infobox: founded_date 1968; merger",
-        "accessed":  "2026-01-19",
-        "id":  "cite-umc-1968"
-    },
-    {
-        "source_id":  "src-wiki-united-methodist-church",
-        "locator":  "Infobox: members 9,984,925 worldwide",
-        "accessed":  "2026-01-19",
-        "id":  "cite-umc-members"
-    },
-    {
-        "source_id":  "src-wiki-lcms",
-        "locator":  "Infobox: founded_date April 26, 1847",
-        "accessed":  "2026-01-19",
-        "id":  "cite-lcms-1847"
-    },
-    {
-        "source_id":  "src-wiki-wels",
-        "locator":  "Infobox: founded_date 1850",
-        "accessed":  "2026-01-19",
-        "id":  "cite-wels-1850"
-    },
-    {
-        "source_id":  "src-wiki-wels",
-        "locator":  "Infobox: members 340,511 baptized; 272,555 communicant",
-        "accessed":  "2026-01-19",
-        "id":  "cite-wels-members"
-    },
-    {
-        "source_id":  "src-wiki-alc",
-        "locator":  "Infobox: founded_date 1960; merger list",
-        "accessed":  "2026-01-19",
-        "id":  "cite-alc-1960"
-    },
-    {
-        "source_id":  "src-wiki-alc",
-        "locator":  "Infobox: members 2,319,443 (1986)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-alc-members"
-    },
-    {
-        "source_id":  "src-wiki-lca",
-        "locator":  "Infobox: founded_date 1962; merger list",
-        "accessed":  "2026-01-19",
-        "id":  "cite-lca-1962"
-    },
-    {
-        "source_id":  "src-wiki-lca",
-        "locator":  "Infobox: members 2,896,138 (1986)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-lca-members"
-    },
-    {
-        "source_id":  "src-wiki-aelc",
-        "locator":  "Infobox: founded_date December 1976; separated_from LCMS",
-        "accessed":  "2026-01-19",
-        "id":  "cite-aelc-1976"
-    },
-    {
-        "source_id":  "src-wiki-aelc",
-        "locator":  "Infobox: members 103,263 (1986)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-aelc-members"
-    },
-    {
-        "source_id":  "src-wiki-elca",
-        "locator":  "Infobox: constituting convention April 30, 1987",
-        "accessed":  "2026-01-19",
-        "id":  "cite-elca-founded"
-    },
-    {
-        "source_id":  "src-wiki-elca",
-        "locator":  "Infobox: merger list (LCA, ALC, AELC)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-elca-merger"
-    },
-    {
-        "source_id":  "src-wiki-elca",
-        "locator":  "Infobox: members 2,677,239 baptized (2024)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-elca-members"
-    },
-    {
-        "source_id":  "src-wiki-episcopal-church",
-        "locator":  "Infobox: founded_date 1785",
-        "accessed":  "2026-01-19",
-        "id":  "cite-tec-1785"
-    },
-    {
-        "source_id":  "src-wiki-episcopal-church",
-        "locator":  "Infobox: members 1,547,779 (2023)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-tec-members"
-    },
-    {
-        "source_id":  "src-wiki-acna",
-        "locator":  "Infobox: founded_date June 22, 2009",
-        "accessed":  "2026-01-19",
-        "id":  "cite-acna-2009"
-    },
-    {
-        "source_id":  "src-wiki-acna",
-        "locator":  "Infobox: separated_from TEC and Anglican Church of Canada",
-        "accessed":  "2026-01-19",
-        "id":  "cite-acna-separated"
-    },
-    {
-        "source_id":  "src-wiki-acna",
-        "locator":  "Infobox: members 130,111 (2024)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-acna-members"
-    },
-    {
-        "source_id":  "src-wiki-pentecostalism",
-        "locator":  "Early revivals: Azusa Street Revival in 1906",
-        "accessed":  "2026-01-19",
-        "id":  "cite-pentecostalism-1906"
-    },
-    {
-        "source_id":  "src-wiki-assemblies-of-god",
-        "locator":  "Infobox: founded_date 1914",
-        "accessed":  "2026-01-19",
-        "id":  "cite-ag-1914"
-    },
-    {
-        "source_id":  "src-wiki-assemblies-of-god",
-        "locator":  "Infobox: members 69-88.9 million",
-        "accessed":  "2026-01-19",
-        "id":  "cite-ag-members"
-    },
-    {
-        "source_id":  "src-wiki-church-of-god-cleveland",
-        "locator":  "Infobox: founded_date August 1886",
-        "accessed":  "2026-01-19",
-        "id":  "cite-cog-cleveland-1886"
-    },
-    {
-        "source_id":  "src-wiki-cogic",
-        "locator":  "Infobox: founded_date 1897",
-        "accessed":  "2026-01-19",
-        "id":  "cite-cogic-1897"
-    },
-    {
-        "source_id":  "src-wiki-cogic",
-        "locator":  "Infobox: members 6.5 million",
-        "accessed":  "2026-01-19",
-        "id":  "cite-cogic-members"
-    },
-    {
-        "source_id":  "src-wiki-cogic",
-        "locator":  "Infobox: separated_from National Baptist Convention, USA",
-        "accessed":  "2026-01-19",
-        "id":  "cite-cogic-separated-nbcusa"
-    },
-    {
-        "source_id":  "src-wiki-foursquare",
-        "locator":  "Infobox: founded_date 1923",
-        "accessed":  "2026-01-19",
-        "id":  "cite-foursquare-1923"
-    },
-    {
-        "source_id":  "src-wiki-foursquare",
-        "locator":  "Infobox: separated_from Assemblies of God",
-        "accessed":  "2026-01-19",
-        "id":  "cite-foursquare-separated"
-    },
-    {
-        "source_id":  "src-wiki-foursquare",
-        "locator":  "Infobox: members 8.8 million",
-        "accessed":  "2026-01-19",
-        "id":  "cite-foursquare-members"
-    },
-    {
-        "source_id":  "src-wiki-restoration-movement",
-        "locator":  "Summary: began on the American frontier during the Second Great Awakening (1790-1840)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-restoration-movement-1804"
-    },
-    {
-        "source_id":  "src-wiki-disciples",
-        "locator":  "Infobox: founded_date list includes 1832 union in Lexington",
-        "accessed":  "2026-01-19",
-        "id":  "cite-disciples-1832"
-    },
-    {
-        "source_id":  "src-wiki-disciples",
-        "locator":  "Infobox: separated_from list includes Churches of Christ (1906)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-disciples-separation-1906"
-    },
-    {
-        "source_id":  "src-wiki-disciples",
-        "locator":  "Infobox: separated_from list includes Christian churches and churches of Christ (1926-1971)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-disciples-separation-1926"
-    },
-    {
-        "source_id":  "src-wiki-disciples",
-        "locator":  "Infobox: members 277,864 (2022)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-disciples-members"
-    },
-    {
-        "source_id":  "src-wiki-churches-of-christ",
-        "locator":  "Infobox: members approx. 2,000,000 worldwide",
-        "accessed":  "2026-01-19",
-        "id":  "cite-coc-members"
-    },
-    {
-        "source_id":  "src-wiki-independent-christian-churches",
-        "locator":  "Infobox: founded_date list includes 1927 North American Christian Convention",
-        "accessed":  "2026-01-19",
-        "id":  "cite-independent-founded"
-    },
-    {
-        "source_id":  "src-wiki-church-of-the-nazarene",
-        "locator":  "Infobox: founded_date October 13, 1908",
-        "accessed":  "2026-01-19",
-        "id":  "cite-nazarene-1908"
-    },
-    {
-        "source_id":  "src-wiki-church-of-the-nazarene",
-        "locator":  "Infobox: members 2,640,216 (2020)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-nazarene-members"
-    },
-    {
-        "source_id":  "src-wiki-millerism",
-        "locator":  "Summary: William Miller first shared his belief publicly in 1831",
-        "accessed":  "2026-01-19",
-        "id":  "cite-millerism-1831"
-    },
-    {
-        "source_id":  "src-wiki-advent-christian",
-        "locator":  "Infobox: founded_date 1860",
-        "accessed":  "2026-01-19",
-        "id":  "cite-advent-christian-1860"
-    },
-    {
-        "source_id":  "src-wiki-seventh-day-adventist",
-        "locator":  "Infobox: founded_date 1863-05-21",
-        "accessed":  "2026-01-19",
-        "id":  "cite-sda-1863"
-    },
-    {
-        "source_id":  "src-wiki-seventh-day-adventist",
-        "locator":  "Infobox: members 23,684,237 (2024)",
-        "accessed":  "2026-01-19",
-        "id":  "cite-sda-members"
-    },
-    {
-        "source_id":  "src-wiki-church-of-god-seventh-day",
-        "locator":  "History: 1858 separation of Sabbatarian Adventists",
-        "accessed":  "2026-01-19",
-        "id":  "cite-cog7-1858"
-    },
-    {
-        "source_id":  "src-wiki-english-reformation",
-        "locator":  "Lead: Reformation and break with Rome in the 1530s",
-        "accessed":  "2026-01-19",
-        "id":  "cite-english-reformation-1534"
-    },
-    {
-        "source_id":  "src-wiki-church-of-england",
-        "locator":  "Lead/History: established in the 16th century with the English Reformation",
-        "accessed":  "2026-01-19",
-        "id":  "cite-church-of-england-1534"
-    },
-    {
-        "source_id":  "src-wiki-episcopal-church",
-        "locator":  "Lead: derives from the Church of England",
-        "accessed":  "2026-01-19",
-        "id":  "cite-episcopal-derived-from-coe"
-    },
-    {
-        "source_id":  "src-wiki-methodism",
-        "locator":  "Lead: began as a revival movement in 18th-century England under John and Charles Wesley",
-        "accessed":  "2026-01-19",
-        "id":  "cite-methodism-origins"
-    },
-    {
-        "source_id":  "src-wiki-methodist-episcopal-church",
-        "locator":  "Infobox: separated_from Church of England",
-        "accessed":  "2026-01-19",
-        "id":  "cite-mec-separated-from-coe"
-    },
-    {
-        "source_id":  "src-wiki-lutheranism",
-        "locator":  "Lead: origins in 16th-century Reformation and Martin Luther",
-        "accessed":  "2026-01-19",
-        "id":  "cite-lutheranism-origins"
-    },
-    {
-        "source_id":  "src-wiki-lutheranism",
-        "locator":  "History: spread in German lands",
-        "accessed":  "2026-01-19",
-        "id":  "cite-lutheranism-germany"
-    },
-    {
-        "source_id":  "src-wiki-lutheranism",
-        "locator":  "History: adoption in Scandinavia",
-        "accessed":  "2026-01-19",
-        "id":  "cite-lutheranism-scandinavia"
-    },
-    {
-        "source_id":  "src-wiki-lcms",
-        "locator":  "Infobox: separated_from German Landeskirchen",
-        "accessed":  "2026-01-19",
-        "id":  "cite-lcms-german-landeskirchen"
-    },
-    {
-        "source_id":  "src-wiki-elca",
-        "locator":  "History: ALC influenced by Scandinavian and German immigration; LCA by immigrant roots",
-        "accessed":  "2026-01-19",
-        "id":  "cite-elca-scandinavian-roots"
-    },
-    {
-        "id":  "cite-church-of-england-members-2024",
-        "source_id":  "src-wiki-church-of-england",
-        "locator":  "Infobox: members 26 million (baptised; self-reported in 2024)",
-        "accessed":  "2026-01-19"
-    },
-    {
-        "id":  "cite-lcms-members-2024",
-        "source_id":  "src-wiki-lcms",
-        "locator":  "Infobox: members 1,674,315 baptized; 1,328,392 confirmed",
-        "accessed":  "2026-01-19"
-    },
-    {
-        "id":  "cite-opc-members-2023",
-        "source_id":  "src-wiki-opc",
-        "locator":  "Infobox: members 33,520 (2023); congregations 332 (2023)",
-        "accessed":  "2026-01-19"
-    },
-    {
-        "id":  "cite-pcus-members-1982",
-        "source_id":  "src-wiki-pcus",
-        "locator":  "Infobox: members 814,931 in 1982; congregations 4,250 in 1982",
-        "accessed":  "2026-01-19"
-    },
-    {
-        "id":  "cite-advent-christian-members-2006",
-        "source_id":  "src-wiki-advent-christian",
-        "locator":  "Infobox: congregations 293 in US (2006); members 25,600 in US (2006)",
-        "accessed":  "2026-01-19"
-    },
-    {
-        "id":  "cite-cog7-members-2010",
-        "source_id":  "src-wiki-church-of-god-seventh-day",
-        "locator":  "Membership: 233 congregations in US/Canada; estimated 14,000 members (2010)",
-        "accessed":  "2026-01-19"
-    },
-    {
-        "id":  "cite-independent-christian-members-2020",
-        "source_id":  "src-wiki-independent-christian-churches",
-        "locator":  "Infobox: members 1,379,041 in the United States",
-        "accessed":  "2026-01-19"
-    },
-    {
-        "id":  "cite-catholic-church-members-2025",
-        "source_id":  "src-wiki-catholic-church",
-        "locator":  "Infobox: members 1.272 billion (World Christian Database, 2025)",
-        "accessed":  "2026-01-19"
-    },
-    {
-        "id":  "cite-pentecostalism-members",
-        "source_id":  "src-wiki-pentecostalism",
-        "locator":  "Lead: over 279 million classical Pentecostals worldwide",
-        "accessed":  "2026-01-19"
-    },
-    {
-        "id":  "cite-cog-cleveland-members-2024",
-        "source_id":  "src-wiki-church-of-god-cleveland",
-        "locator":  "Statistics: 47,897 churches; 9.2 million members (2024)",
-        "accessed":  "2026-01-19"
-    }
+[
+  {
+    "id": "cite-pca-1973",
+    "source_id": "src-wiki-pca",
+    "locator": "Infobox: founded_date, separated_from",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pca-1973-reasons",
+    "source_id": "src-wiki-pca",
+    "locator": "Lead: separated from PCUS amid disputes over doctrinal standards and theological direction",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcus-1973-reasons-detail",
+    "source_id": "src-wiki-pcus",
+    "locator": "History: PCA founded citing theological liberalism, denial of the deity of Jesus Christ, and denial of the inerrancy and authority of Scripture",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-1983",
+    "source_id": "src-wiki-pcusa",
+    "locator": "Infobox: founded_date, merger",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-1983-reasons",
+    "source_id": "src-wiki-pcus",
+    "locator": "History: reunion between northern and southern Presbyterians (1983 Plan of Union)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-opc-1936",
+    "source_id": "src-wiki-opc",
+    "locator": "Infobox: founded_date, separated_from",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-opc-1936-reasons",
+    "source_id": "src-wiki-opc",
+    "locator": "Lead: objected to Liberal and Modernist theology (Fundamentalist-Modernist controversy)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcus-1861",
+    "source_id": "src-wiki-pcus",
+    "locator": "Infobox: founded_date, separated_from",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcus-1861-reasons",
+    "source_id": "src-wiki-pcusa-1789",
+    "locator": "Lead: split over slavery, politics, and theology precipitated by the Civil War",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcusa-1958",
+    "source_id": "src-wiki-upcusa",
+    "locator": "Infobox: founded_date, merger",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcusa-1958-reasons",
+    "source_id": "src-wiki-upcusa",
+    "locator": "Lead: union driven by ecumenical activity and reunion of long-separated branches",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-1789-founded",
+    "source_id": "src-wiki-pcusa-1789",
+    "locator": "Infobox: founded_date",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcus-founded",
+    "source_id": "src-wiki-pcus",
+    "locator": "Infobox: founded_date, separated_from",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-opc-founded",
+    "source_id": "src-wiki-opc",
+    "locator": "Infobox: founded_date, separated_from",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pca-founded",
+    "source_id": "src-wiki-pca",
+    "locator": "Infobox: founded_date, separated_from",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcusa-founded",
+    "source_id": "src-wiki-upcusa",
+    "locator": "Infobox: founded_date, merger",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-founded",
+    "source_id": "src-wiki-pcusa",
+    "locator": "Infobox: founded_date, merger",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-merge-1983",
+    "source_id": "src-wiki-pcusa",
+    "locator": "Lead: established with 1983 merger of PCUS and UPCUSA",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcna-founded",
+    "source_id": "src-wiki-upcna",
+    "locator": "Infobox: founded_date",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcna-1958-merge",
+    "source_id": "src-wiki-upcna",
+    "locator": "Lead: merged with PCUSA to form UPCUSA (1958)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-theology",
+    "source_id": "src-wiki-pcusa",
+    "locator": "Infobox: theology (Reformed, Barthianist)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-mainline",
+    "source_id": "src-wiki-pcusa",
+    "locator": "Lead: mainline Protestant denomination",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pca-theology",
+    "source_id": "src-wiki-pca",
+    "locator": "Infobox: theology (Reformed; Evangelical)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-opc-theology",
+    "source_id": "src-wiki-opc",
+    "locator": "Infobox: theology (Confessional Reformed)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcus-distinctives",
+    "source_id": "src-wiki-pcus",
+    "locator": "History: Old School Presbyterianism and Westminster Confession emphasis",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-1789-orientation",
+    "source_id": "src-wiki-pcusa-1789",
+    "locator": "Infobox: orientation (Mainline Protestant; Reformed tradition)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcusa-theology",
+    "source_id": "src-wiki-upcusa",
+    "locator": "Infobox: theology (Reformed/Calvinism)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcna-orientation",
+    "source_id": "src-wiki-upcna",
+    "locator": "Infobox: orientation (Calvinist)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcna-distinctives",
+    "source_id": "src-wiki-upcna",
+    "locator": "History: Covenanter/Seceder distinctives including public covenanting and exclusive psalmody",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-size",
+    "source_id": "src-wiki-pcusa",
+    "locator": "Infobox: members 1,045,848 active members (2024)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pca-size",
+    "source_id": "src-wiki-pca",
+    "locator": "Infobox: members 400,751 (2024)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-1789-size",
+    "source_id": "src-wiki-pcusa-1789",
+    "locator": "Infobox: members 2.8 million in 1957",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcusa-size",
+    "source_id": "src-wiki-upcusa",
+    "locator": "Infobox: members 2,351,119 in 1982",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcna-size",
+    "source_id": "src-wiki-upcna",
+    "locator": "Infobox: members 257,513 in 1957",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-zurich-reformation",
+    "source_id": "src-wiki-zurich-reformation",
+    "locator": "Lead: early 1520s reform under Zwingli; Zurich magistrates and civic changes",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-zwingli",
+    "source_id": "src-wiki-zwingli",
+    "locator": "Lead/Theology: memorialism, iconoclasm; life dates 1484-1531",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-genevan-reformation",
+    "source_id": "src-wiki-genevan-reformation",
+    "locator": "Lead: shift from Roman Catholicism to Protestantism; Calvinist influence",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-calvins-geneva",
+    "source_id": "src-wiki-calvins-geneva",
+    "locator": "Lead/Key events: Calvin's Geneva (1536-1564), ordinances 1541, academy 1559, Servetus 1553",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-scottish-reformation",
+    "source_id": "src-wiki-scottish-reformation",
+    "locator": "Lead: 1560 Parliament; rejection of papal supremacy; Presbyterian structure",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-presbyterian-polity",
+    "source_id": "src-wiki-presbyterian-polity",
+    "locator": "Lead/Structure: rule by elders; sessions, presbyteries, synods, general assemblies",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-cos-synods-presbyteries",
+    "source_id": "src-wiki-cos-synods-presbyteries",
+    "locator": "History: original presbyteries created April 1581",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-presbyterian-us",
+    "source_id": "src-wiki-presbyterian-us",
+    "locator": "Lead: Presbyterianism in US since colonial times",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-presbytery-philadelphia",
+    "source_id": "src-wiki-presbytery-philadelphia",
+    "locator": "History: first known Presbyterian church in America organized in 1683; Presbytery of Philadelphia organized in 1706; Synod formed 1717",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-old-side-new-side",
+    "source_id": "src-wiki-old-side-new-side",
+    "locator": "History: Old Side-New Side division 1741-1758",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-makemie",
+    "source_id": "src-wiki-makemie",
+    "locator": "Lead/Ministry: founder of American Presbyterianism; trial in 1707; ordained 1681",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-church-of-scotland-lead",
+    "source_id": "src-wiki-church-of-scotland",
+    "locator": "Lead: national church; Reformed and Presbyterian tradition",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-church-of-scotland-knox",
+    "source_id": "src-wiki-church-of-scotland",
+    "locator": "History/Scottish Reformation: John Knox returned from Geneva to lead reform",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-church-of-scotland-polity",
+    "source_id": "src-wiki-church-of-scotland",
+    "locator": "Polity/Structure: Presbyterian system",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-english-congregation-geneva-overview",
+    "source_id": "src-wiki-english-congregation-geneva",
+    "locator": "Overview: exile congregation led mainly by John Knox (1555-1559)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-english-congregation-geneva-influence",
+    "source_id": "src-wiki-english-congregation-geneva",
+    "locator": "Influence/Numbers: Presbyterian model and influence on later reform",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-1789-origin",
+    "source_id": "src-wiki-pcusa-1789",
+    "locator": "Origin: colonial immigrants from Church of Scotland and Ireland",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-1789-overview",
+    "source_id": "src-wiki-pcusa-1789",
+    "locator": "Overview: first national Presbyterian denomination in the US",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcusa-1789-branched-from",
+    "source_id": "src-wiki-pcusa-1789",
+    "locator": "Infobox: branched from Church of Scotland and Synod of Ulster",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-protestant-church-switzerland-size",
+    "source_id": "src-wiki-protestant-church-switzerland",
+    "locator": "Statistics: members 1,782,513 (2024)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-church-of-scotland-size",
+    "source_id": "src-wiki-church-of-scotland",
+    "locator": "Lead: membership 245,000 (2024)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-scotch-irish-migration",
+    "source_id": "src-wiki-scotch-irish",
+    "locator": "American settlement: over 200,000 Scotch-Irish migrants (1717-1775)",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-presbyterian-polity-geneva",
+    "source_id": "src-wiki-presbyterian-polity",
+    "locator": "History: modern implementation established under Calvin in Geneva",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-presbyterian-polity-intro-scotland",
+    "source_id": "src-wiki-presbyterian-polity",
+    "locator": "History: introduced to Scotland by John Knox after exile in Geneva",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-presbyterianism-development",
+    "source_id": "src-wiki-presbyterianism",
+    "locator": "Development: influence of Calvin's Geneva and Knox's role in Scotland",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-book-of-discipline-1560",
+    "source_id": "src-wiki-book-of-discipline",
+    "locator": "Lead: First Book of Discipline (1560) sets out Presbyterian polity on Geneva model",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-book-of-discipline-1578",
+    "source_id": "src-wiki-book-of-discipline",
+    "locator": "Second Book of Discipline: more clearly Presbyterian; presbyteries, synods, general assembly",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-makemie-ordination",
+    "source_id": "src-wiki-makemie",
+    "locator": "Early life: ordained by Presbytery of Laggan in 1681",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-scottish-reformation-structure",
+    "source_id": "src-wiki-scottish-reformation",
+    "locator": "Lead: established Protestant Church of Scotland; Presbyterian structure and Calvinist doctrine",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-genevan-reformation-lead",
+    "source_id": "src-wiki-genevan-reformation",
+    "locator": "Lead: Geneva's Reformation and Reformed (Calvinist) orientation",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-zurich-reformation-lead",
+    "source_id": "src-wiki-zurich-reformation",
+    "locator": "Lead: Zurich Reformation as Reformed Protestant movement",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-presbyterian-us-colonial",
+    "source_id": "src-wiki-presbyterian-us",
+    "locator": "History: colonial era and early presbyteries",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-opc-doctrine",
+    "source_id": "src-wiki-opc",
+    "locator": "Doctrine: Reformed/Calvinist roots and Westminster Standards",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcusa-polity",
+    "source_id": "src-wiki-upcusa",
+    "locator": "Infobox: Reformed theology; Presbyterian polity",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-upcna-polity",
+    "source_id": "src-wiki-upcna",
+    "locator": "Infobox: Calvinist orientation; Presbyterian polity",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-pcus-polity",
+    "source_id": "src-wiki-pcus",
+    "locator": "Infobox: Calvinist orientation; Presbyterian polity",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-catholic-church-lead",
+    "source_id": "src-wiki-catholic-church",
+    "locator": "Lead: largest Christian church; communion with the Bishop of Rome",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-zurich-reformation-break",
+    "source_id": "src-wiki-zurich-reformation",
+    "locator": "Background/Course: rejection of Roman Catholic authority and reforms in Zurich",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-genevan-reformation-break",
+    "source_id": "src-wiki-genevan-reformation",
+    "locator": "Lead: Protestant movement replacing Roman Catholicism in Geneva",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-scottish-reformation-break",
+    "source_id": "src-wiki-scottish-reformation",
+    "locator": "Lead: Scotland broke away from Roman Catholic Church",
+    "accessed": "2026-01-18"
+  },
+  {
+    "id": "cite-church-of-scotland-history-break",
+    "source_id": "src-wiki-church-of-scotland",
+    "locator": "History: 1560 parliament repudiated papal authority and established a national church",
+    "accessed": "2026-01-18"
+  },
+  {
+    "source_id": "src-wiki-baptists",
+    "locator": "English Dissenters view: first Baptist church in Amsterdam in 1609",
+    "accessed": "2026-01-19",
+    "id": "cite-baptists-1609"
+  },
+  {
+    "source_id": "src-wiki-triennial-convention",
+    "locator": "Summary: denomination existed from 1814 to 1907",
+    "accessed": "2026-01-19",
+    "id": "cite-triennial-1814"
+  },
+  {
+    "source_id": "src-wiki-triennial-convention",
+    "locator": "Summary: General Missionary Convention for foreign missions",
+    "accessed": "2026-01-19",
+    "id": "cite-triennial-missions"
+  },
+  {
+    "source_id": "src-wiki-triennial-convention",
+    "locator": "Summary: reorganized into ABCUSA in 1907",
+    "accessed": "2026-01-19",
+    "id": "cite-triennial-1907"
+  },
+  {
+    "source_id": "src-wiki-sbc",
+    "locator": "Infobox: founded_date and separated_from",
+    "accessed": "2026-01-19",
+    "id": "cite-sbc-1845"
+  },
+  {
+    "source_id": "src-wiki-sbc",
+    "locator": "History: separated in 1845 to uphold slavery",
+    "accessed": "2026-01-19",
+    "id": "cite-sbc-slavery-split"
+  },
+  {
+    "source_id": "src-wiki-sbc",
+    "locator": "Infobox: members 12,722,266 (2024)",
+    "accessed": "2026-01-19",
+    "id": "cite-sbc-members"
+  },
+  {
+    "source_id": "src-wiki-abcusa",
+    "locator": "Infobox: founded_date 1907",
+    "accessed": "2026-01-19",
+    "id": "cite-abcusa-1907"
+  },
+  {
+    "source_id": "src-wiki-abcusa",
+    "locator": "Infobox: members 1,107,206 (2023)",
+    "accessed": "2026-01-19",
+    "id": "cite-abcusa-members"
+  },
+  {
+    "source_id": "src-wiki-nbcusa",
+    "locator": "Infobox: founded_date 1895",
+    "accessed": "2026-01-19",
+    "id": "cite-nbcusa-1895"
+  },
+  {
+    "source_id": "src-wiki-nbcusa",
+    "locator": "Infobox: merger list (1880, 1886, 1893 conventions)",
+    "accessed": "2026-01-19",
+    "id": "cite-nbcusa-merger"
+  },
+  {
+    "source_id": "src-wiki-nbcusa",
+    "locator": "Infobox: separations list includes NBCA (separated 1915)",
+    "accessed": "2026-01-19",
+    "id": "cite-nbcusa-separation-1915"
+  },
+  {
+    "source_id": "src-wiki-nbcusa",
+    "locator": "Infobox: separations list includes PNBC (separated 1961)",
+    "accessed": "2026-01-19",
+    "id": "cite-nbcusa-separation-1961"
+  },
+  {
+    "source_id": "src-wiki-nbca",
+    "locator": "Infobox: founded_date 1915; separated_from NBCUSA",
+    "accessed": "2026-01-19",
+    "id": "cite-nbca-1915"
+  },
+  {
+    "source_id": "src-wiki-pnbc",
+    "locator": "Infobox: founded_date 1961; separated_from NBCUSA",
+    "accessed": "2026-01-19",
+    "id": "cite-pnbc-1961"
+  },
+  {
+    "source_id": "src-wiki-venture-church-network",
+    "locator": "Infobox: founded_date 1947; separated_from Northern Baptist Convention",
+    "accessed": "2026-01-19",
+    "id": "cite-venture-1947"
+  },
+  {
+    "source_id": "src-wiki-venture-church-network",
+    "locator": "History: organized in 1947 amid fundamentalist-modernist controversy and mission agency dispute",
+    "accessed": "2026-01-19",
+    "id": "cite-venture-history"
+  },
+  {
+    "source_id": "src-wiki-methodist-episcopal-church",
+    "locator": "Infobox: founded_date December 1784",
+    "accessed": "2026-01-19",
+    "id": "cite-mec-1784"
+  },
+  {
+    "source_id": "src-wiki-methodist-episcopal-church",
+    "locator": "Infobox: members 4.4 million in 1937",
+    "accessed": "2026-01-19",
+    "id": "cite-mec-members"
+  },
+  {
+    "source_id": "src-wiki-methodist-episcopal-church-south",
+    "locator": "Lead: split over slavery in 1845",
+    "accessed": "2026-01-19",
+    "id": "cite-mecs-1845"
+  },
+  {
+    "source_id": "src-wiki-methodist-protestant-church",
+    "locator": "Infobox: founded_date 1828; separated_from MEC",
+    "accessed": "2026-01-19",
+    "id": "cite-mpc-1828"
+  },
+  {
+    "source_id": "src-wiki-methodist-church-us",
+    "locator": "Lead: reunion on May 10, 1939",
+    "accessed": "2026-01-19",
+    "id": "cite-methodist-church-1939"
+  },
+  {
+    "source_id": "src-wiki-methodist-church-us",
+    "locator": "Infobox: merged_into United Methodist Church (1968)",
+    "accessed": "2026-01-19",
+    "id": "cite-methodist-church-merged-into-umc"
+  },
+  {
+    "source_id": "src-wiki-evangelical-united-brethren-church",
+    "locator": "Lead: denomination from 1946 to 1968; formed by merger",
+    "accessed": "2026-01-19",
+    "id": "cite-eub-1946"
+  },
+  {
+    "source_id": "src-wiki-united-methodist-church",
+    "locator": "Infobox: founded_date 1968; merger",
+    "accessed": "2026-01-19",
+    "id": "cite-umc-1968"
+  },
+  {
+    "source_id": "src-wiki-united-methodist-church",
+    "locator": "Infobox: members 9,984,925 worldwide",
+    "accessed": "2026-01-19",
+    "id": "cite-umc-members"
+  },
+  {
+    "source_id": "src-wiki-lcms",
+    "locator": "Infobox: founded_date April 26, 1847",
+    "accessed": "2026-01-19",
+    "id": "cite-lcms-1847"
+  },
+  {
+    "source_id": "src-wiki-wels",
+    "locator": "Infobox: founded_date 1850",
+    "accessed": "2026-01-19",
+    "id": "cite-wels-1850"
+  },
+  {
+    "source_id": "src-wiki-wels",
+    "locator": "Infobox: members 340,511 baptized; 272,555 communicant",
+    "accessed": "2026-01-19",
+    "id": "cite-wels-members"
+  },
+  {
+    "source_id": "src-wiki-alc",
+    "locator": "Infobox: founded_date 1960; merger list",
+    "accessed": "2026-01-19",
+    "id": "cite-alc-1960"
+  },
+  {
+    "source_id": "src-wiki-alc",
+    "locator": "Infobox: members 2,319,443 (1986)",
+    "accessed": "2026-01-19",
+    "id": "cite-alc-members"
+  },
+  {
+    "source_id": "src-wiki-lca",
+    "locator": "Infobox: founded_date 1962; merger list",
+    "accessed": "2026-01-19",
+    "id": "cite-lca-1962"
+  },
+  {
+    "source_id": "src-wiki-lca",
+    "locator": "Infobox: members 2,896,138 (1986)",
+    "accessed": "2026-01-19",
+    "id": "cite-lca-members"
+  },
+  {
+    "source_id": "src-wiki-aelc",
+    "locator": "Infobox: founded_date December 1976; separated_from LCMS",
+    "accessed": "2026-01-19",
+    "id": "cite-aelc-1976"
+  },
+  {
+    "source_id": "src-wiki-aelc",
+    "locator": "Infobox: members 103,263 (1986)",
+    "accessed": "2026-01-19",
+    "id": "cite-aelc-members"
+  },
+  {
+    "source_id": "src-wiki-elca",
+    "locator": "Infobox: constituting convention April 30, 1987",
+    "accessed": "2026-01-19",
+    "id": "cite-elca-founded"
+  },
+  {
+    "source_id": "src-wiki-elca",
+    "locator": "Infobox: merger list (LCA, ALC, AELC)",
+    "accessed": "2026-01-19",
+    "id": "cite-elca-merger"
+  },
+  {
+    "source_id": "src-wiki-elca",
+    "locator": "Infobox: members 2,677,239 baptized (2024)",
+    "accessed": "2026-01-19",
+    "id": "cite-elca-members"
+  },
+  {
+    "source_id": "src-wiki-episcopal-church",
+    "locator": "Infobox: founded_date 1785",
+    "accessed": "2026-01-19",
+    "id": "cite-tec-1785"
+  },
+  {
+    "source_id": "src-wiki-episcopal-church",
+    "locator": "Infobox: members 1,547,779 (2023)",
+    "accessed": "2026-01-19",
+    "id": "cite-tec-members"
+  },
+  {
+    "source_id": "src-wiki-acna",
+    "locator": "Infobox: founded_date June 22, 2009",
+    "accessed": "2026-01-19",
+    "id": "cite-acna-2009"
+  },
+  {
+    "source_id": "src-wiki-acna",
+    "locator": "Infobox: separated_from TEC and Anglican Church of Canada",
+    "accessed": "2026-01-19",
+    "id": "cite-acna-separated"
+  },
+  {
+    "source_id": "src-wiki-acna",
+    "locator": "Infobox: members 130,111 (2024)",
+    "accessed": "2026-01-19",
+    "id": "cite-acna-members"
+  },
+  {
+    "source_id": "src-wiki-pentecostalism",
+    "locator": "Early revivals: Azusa Street Revival in 1906",
+    "accessed": "2026-01-19",
+    "id": "cite-pentecostalism-1906"
+  },
+  {
+    "source_id": "src-wiki-assemblies-of-god",
+    "locator": "Infobox: founded_date 1914",
+    "accessed": "2026-01-19",
+    "id": "cite-ag-1914"
+  },
+  {
+    "source_id": "src-wiki-assemblies-of-god",
+    "locator": "Infobox: members 69-88.9 million",
+    "accessed": "2026-01-19",
+    "id": "cite-ag-members"
+  },
+  {
+    "source_id": "src-wiki-church-of-god-cleveland",
+    "locator": "Infobox: founded_date August 1886",
+    "accessed": "2026-01-19",
+    "id": "cite-cog-cleveland-1886"
+  },
+  {
+    "source_id": "src-wiki-cogic",
+    "locator": "Infobox: founded_date 1897",
+    "accessed": "2026-01-19",
+    "id": "cite-cogic-1897"
+  },
+  {
+    "source_id": "src-wiki-cogic",
+    "locator": "Infobox: members 6.5 million",
+    "accessed": "2026-01-19",
+    "id": "cite-cogic-members"
+  },
+  {
+    "source_id": "src-wiki-cogic",
+    "locator": "Infobox: separated_from National Baptist Convention, USA",
+    "accessed": "2026-01-19",
+    "id": "cite-cogic-separated-nbcusa"
+  },
+  {
+    "source_id": "src-wiki-foursquare",
+    "locator": "Infobox: founded_date 1923",
+    "accessed": "2026-01-19",
+    "id": "cite-foursquare-1923"
+  },
+  {
+    "source_id": "src-wiki-foursquare",
+    "locator": "Infobox: separated_from Assemblies of God",
+    "accessed": "2026-01-19",
+    "id": "cite-foursquare-separated"
+  },
+  {
+    "source_id": "src-wiki-foursquare",
+    "locator": "Infobox: members 8.8 million",
+    "accessed": "2026-01-19",
+    "id": "cite-foursquare-members"
+  },
+  {
+    "source_id": "src-wiki-restoration-movement",
+    "locator": "Summary: began on the American frontier during the Second Great Awakening (1790-1840)",
+    "accessed": "2026-01-19",
+    "id": "cite-restoration-movement-1804"
+  },
+  {
+    "source_id": "src-wiki-disciples",
+    "locator": "Infobox: founded_date list includes 1832 union in Lexington",
+    "accessed": "2026-01-19",
+    "id": "cite-disciples-1832"
+  },
+  {
+    "source_id": "src-wiki-disciples",
+    "locator": "Infobox: separated_from list includes Churches of Christ (1906)",
+    "accessed": "2026-01-19",
+    "id": "cite-disciples-separation-1906"
+  },
+  {
+    "source_id": "src-wiki-disciples",
+    "locator": "Infobox: separated_from list includes Christian churches and churches of Christ (1926-1971)",
+    "accessed": "2026-01-19",
+    "id": "cite-disciples-separation-1926"
+  },
+  {
+    "source_id": "src-wiki-disciples",
+    "locator": "Infobox: members 277,864 (2022)",
+    "accessed": "2026-01-19",
+    "id": "cite-disciples-members"
+  },
+  {
+    "source_id": "src-wiki-churches-of-christ",
+    "locator": "Infobox: members approx. 2,000,000 worldwide",
+    "accessed": "2026-01-19",
+    "id": "cite-coc-members"
+  },
+  {
+    "source_id": "src-wiki-independent-christian-churches",
+    "locator": "Infobox: founded_date list includes 1927 North American Christian Convention",
+    "accessed": "2026-01-19",
+    "id": "cite-independent-founded"
+  },
+  {
+    "source_id": "src-wiki-church-of-the-nazarene",
+    "locator": "Infobox: founded_date October 13, 1908",
+    "accessed": "2026-01-19",
+    "id": "cite-nazarene-1908"
+  },
+  {
+    "source_id": "src-wiki-church-of-the-nazarene",
+    "locator": "Infobox: members 2,640,216 (2020)",
+    "accessed": "2026-01-19",
+    "id": "cite-nazarene-members"
+  },
+  {
+    "source_id": "src-wiki-millerism",
+    "locator": "Summary: William Miller first shared his belief publicly in 1831",
+    "accessed": "2026-01-19",
+    "id": "cite-millerism-1831"
+  },
+  {
+    "source_id": "src-wiki-advent-christian",
+    "locator": "Infobox: founded_date 1860",
+    "accessed": "2026-01-19",
+    "id": "cite-advent-christian-1860"
+  },
+  {
+    "source_id": "src-wiki-seventh-day-adventist",
+    "locator": "Infobox: founded_date 1863-05-21",
+    "accessed": "2026-01-19",
+    "id": "cite-sda-1863"
+  },
+  {
+    "source_id": "src-wiki-seventh-day-adventist",
+    "locator": "Infobox: members 23,684,237 (2024)",
+    "accessed": "2026-01-19",
+    "id": "cite-sda-members"
+  },
+  {
+    "source_id": "src-wiki-church-of-god-seventh-day",
+    "locator": "History: 1858 separation of Sabbatarian Adventists",
+    "accessed": "2026-01-19",
+    "id": "cite-cog7-1858"
+  },
+  {
+    "source_id": "src-wiki-english-reformation",
+    "locator": "Lead: Reformation and break with Rome in the 1530s",
+    "accessed": "2026-01-19",
+    "id": "cite-english-reformation-1534"
+  },
+  {
+    "source_id": "src-wiki-church-of-england",
+    "locator": "Lead/History: established in the 16th century with the English Reformation",
+    "accessed": "2026-01-19",
+    "id": "cite-church-of-england-1534"
+  },
+  {
+    "source_id": "src-wiki-episcopal-church",
+    "locator": "Lead: derives from the Church of England",
+    "accessed": "2026-01-19",
+    "id": "cite-episcopal-derived-from-coe"
+  },
+  {
+    "source_id": "src-wiki-methodism",
+    "locator": "Lead: began as a revival movement in 18th-century England under John and Charles Wesley",
+    "accessed": "2026-01-19",
+    "id": "cite-methodism-origins"
+  },
+  {
+    "source_id": "src-wiki-methodist-episcopal-church",
+    "locator": "Infobox: separated_from Church of England",
+    "accessed": "2026-01-19",
+    "id": "cite-mec-separated-from-coe"
+  },
+  {
+    "source_id": "src-wiki-lutheranism",
+    "locator": "Lead: origins in 16th-century Reformation and Martin Luther",
+    "accessed": "2026-01-19",
+    "id": "cite-lutheranism-origins"
+  },
+  {
+    "source_id": "src-wiki-lutheranism",
+    "locator": "History: spread in German lands",
+    "accessed": "2026-01-19",
+    "id": "cite-lutheranism-germany"
+  },
+  {
+    "source_id": "src-wiki-lutheranism",
+    "locator": "History: adoption in Scandinavia",
+    "accessed": "2026-01-19",
+    "id": "cite-lutheranism-scandinavia"
+  },
+  {
+    "source_id": "src-wiki-lcms",
+    "locator": "Infobox: separated_from German Landeskirchen",
+    "accessed": "2026-01-19",
+    "id": "cite-lcms-german-landeskirchen"
+  },
+  {
+    "source_id": "src-wiki-elca",
+    "locator": "History: ALC influenced by Scandinavian and German immigration; LCA by immigrant roots",
+    "accessed": "2026-01-19",
+    "id": "cite-elca-scandinavian-roots"
+  },
+  {
+    "id": "cite-church-of-england-members-2024",
+    "source_id": "src-wiki-church-of-england",
+    "locator": "Infobox: members 26 million (baptised; self-reported in 2024)",
+    "accessed": "2026-01-19"
+  },
+  {
+    "id": "cite-lcms-members-2024",
+    "source_id": "src-wiki-lcms",
+    "locator": "Infobox: members 1,674,315 baptized; 1,328,392 confirmed",
+    "accessed": "2026-01-19"
+  },
+  {
+    "id": "cite-opc-members-2023",
+    "source_id": "src-wiki-opc",
+    "locator": "Infobox: members 33,520 (2023); congregations 332 (2023)",
+    "accessed": "2026-01-19"
+  },
+  {
+    "id": "cite-pcus-members-1982",
+    "source_id": "src-wiki-pcus",
+    "locator": "Infobox: members 814,931 in 1982; congregations 4,250 in 1982",
+    "accessed": "2026-01-19"
+  },
+  {
+    "id": "cite-advent-christian-members-2006",
+    "source_id": "src-wiki-advent-christian",
+    "locator": "Infobox: congregations 293 in US (2006); members 25,600 in US (2006)",
+    "accessed": "2026-01-19"
+  },
+  {
+    "id": "cite-cog7-members-2010",
+    "source_id": "src-wiki-church-of-god-seventh-day",
+    "locator": "Membership: 233 congregations in US/Canada; estimated 14,000 members (2010)",
+    "accessed": "2026-01-19"
+  },
+  {
+    "id": "cite-independent-christian-members-2020",
+    "source_id": "src-wiki-independent-christian-churches",
+    "locator": "Infobox: members 1,379,041 in the United States",
+    "accessed": "2026-01-19"
+  },
+  {
+    "id": "cite-catholic-church-members-2025",
+    "source_id": "src-wiki-catholic-church",
+    "locator": "Infobox: members 1.272 billion (World Christian Database, 2025)",
+    "accessed": "2026-01-19"
+  },
+  {
+    "id": "cite-pentecostalism-members",
+    "source_id": "src-wiki-pentecostalism",
+    "locator": "Lead: over 279 million classical Pentecostals worldwide",
+    "accessed": "2026-01-19"
+  },
+  {
+    "id": "cite-cog-cleveland-members-2024",
+    "source_id": "src-wiki-church-of-god-cleveland",
+    "locator": "Statistics: 47,897 churches; 9.2 million members (2024)",
+    "accessed": "2026-01-19"
+  },
+  {
+    "id": "cite-profile-millerism-miller",
+    "source_id": "src-profile-miller",
+    "locator": "William Miller \u2014 Encyclopedia of Seventh-day Adventists",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Millerism. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-millerism-himes",
+    "source_id": "src-profile-himes",
+    "locator": "Joshua Vaughan Himes \u2014 Encyclopedia of Seventh-day Adventists",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Millerism. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-millerism-miller-primary",
+    "source_id": "src-profile-miller-primary",
+    "locator": "Signs of the Times and Expositor of Prophecy, vol. 4 \u2014 primary Millerite periodical",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Millerism. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-seventh-day-adventist-church-sda-history",
+    "source_id": "src-profile-sda-history",
+    "locator": "Our History \u2014 Seventh-day Adventist Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Seventh-day Adventist Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-seventh-day-adventist-church-sda-yearbook",
+    "source_id": "src-profile-sda-yearbook",
+    "locator": "General Conference \u2014 Adventist Yearbook",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Seventh-day Adventist Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-seventh-day-adventist-church-sda-beliefs",
+    "source_id": "src-profile-sda-beliefs",
+    "locator": "28 Fundamental Beliefs \u2014 Seventh-day Adventist Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Seventh-day Adventist Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-advent-christian-church-himes",
+    "source_id": "src-profile-himes",
+    "locator": "Joshua Vaughan Himes \u2014 Encyclopedia of Seventh-day Adventists",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Advent Christian Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-advent-christian-church-ac-about",
+    "source_id": "src-profile-ac-about",
+    "locator": "About Advent Christians \u2014 General Conference",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Advent Christian Church. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-advent-christian-church-ac-2026",
+    "source_id": "src-profile-ac-2026",
+    "locator": "Actions Taken at the 2026 Triennial Convention",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Advent Christian Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-advent-christian-church-ac-beliefs",
+    "source_id": "src-profile-ac-beliefs",
+    "locator": "Advent Christian Declaration of Principles \u2014 official text",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Advent Christian Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-god-seventh-day-cog7-history",
+    "source_id": "src-profile-cog7-history",
+    "locator": "Church of God (Seventh Day): Our History",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of God (Seventh Day). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-god-seventh-day-cog7-faith",
+    "source_id": "src-profile-cog7-faith",
+    "locator": "Church of God (Seventh Day): What We Believe",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of God (Seventh Day). Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-english-reformation-english-reformation",
+    "source_id": "src-profile-english-reformation",
+    "locator": "The Reformation \u2014 UK Parliament historical account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for English Reformation. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-english-reformation-supremacy",
+    "source_id": "src-profile-supremacy",
+    "locator": "Act of Supremacy 1534 \u2014 UK Parliament collection",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for English Reformation. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-english-reformation-tec-timeline",
+    "source_id": "src-profile-tec-timeline",
+    "locator": "Timeline of the Episcopal Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for English Reformation. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-english-reformation-anglican-articles",
+    "source_id": "src-profile-anglican-articles",
+    "locator": "Thirty-nine Articles of Religion \u2014 Church of England text",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for English Reformation. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-england-english-reformation",
+    "source_id": "src-profile-english-reformation",
+    "locator": "The Reformation \u2014 UK Parliament historical account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of England. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-england-tec-timeline",
+    "source_id": "src-profile-tec-timeline",
+    "locator": "Timeline of the Episcopal Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of England. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-england-coe-canons",
+    "source_id": "src-profile-coe-canons",
+    "locator": "Canons of the Church of England: Section A",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of England. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-england-anglican-articles",
+    "source_id": "src-profile-anglican-articles",
+    "locator": "Thirty-nine Articles of Religion \u2014 Church of England text",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of England. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-episcopal-church-tec-timeline",
+    "source_id": "src-profile-tec-timeline",
+    "locator": "Timeline of the Episcopal Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Episcopal Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-episcopal-church-tec-bishops",
+    "source_id": "src-profile-tec-bishops",
+    "locator": "Past Presiding Bishops \u2014 Episcopal Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Episcopal Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-episcopal-church-tec-faith",
+    "source_id": "src-profile-tec-faith",
+    "locator": "What Kind of Christians Are We? \u2014 Episcopal Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Episcopal Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-episcopal-church-tec-prayer",
+    "source_id": "src-profile-tec-prayer",
+    "locator": "Book of Common Prayer \u2014 Episcopal Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Episcopal Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-anglican-church-in-north-america-acna-founding",
+    "source_id": "src-profile-acna-founding",
+    "locator": "The Founding of the Anglican Church \u2014 Robert Duncan, Provincial Council 2025",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Anglican Church in North America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-anglican-church-in-north-america-acna-declarations",
+    "source_id": "src-profile-acna-declarations",
+    "locator": "Fundamental Declarations of the Province with explanatory notes \u2014 ACNA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Anglican Church in North America. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-anglican-church-in-north-america-anglican-articles",
+    "source_id": "src-profile-anglican-articles",
+    "locator": "Thirty-nine Articles of Religion \u2014 Church of England text",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Anglican Church in North America. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-english-separatists-separatists",
+    "source_id": "src-profile-separatists",
+    "locator": "Pilgrims and Puritans: A Delicate Distinction \u2014 Pilgrim Hall Museum",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for English Separatists. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-english-separatists-baylor-baptists",
+    "source_id": "src-profile-baylor-baptists",
+    "locator": "The Baptist Story \u2014 Doug Weaver, Baylor University",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for English Separatists. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-english-separatists-baptist-confessions",
+    "source_id": "src-profile-baptist-confessions",
+    "locator": "Historic Baptist Documents \u2014 primary confessions and catechisms",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for English Separatists. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-early-baptist-amsterdam-baylor-baptists",
+    "source_id": "src-profile-baylor-baptists",
+    "locator": "The Baptist Story \u2014 Doug Weaver, Baylor University",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Early Baptist congregation (Amsterdam). Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-early-baptist-amsterdam-helwys",
+    "source_id": "src-profile-helwys",
+    "locator": "Thomas Helwys and His World \u2014 Oxford research record",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Early Baptist congregation (Amsterdam). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-early-baptist-amsterdam-smyth-study",
+    "source_id": "src-profile-smyth-study",
+    "locator": "Stephen R. Holmes: When Did John Smyth Embrace Arminianism?",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Early Baptist congregation (Amsterdam). Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-early-baptist-amsterdam-baptist-confessions",
+    "source_id": "src-profile-baptist-confessions",
+    "locator": "Historic Baptist Documents \u2014 primary confessions and catechisms",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Early Baptist congregation (Amsterdam). Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-eastern-orthodox-tradition-orthodox-schism",
+    "source_id": "src-profile-orthodox-schism",
+    "locator": "The Great Schism \u2014 Orthodox Church in America",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Eastern Orthodox tradition. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-eastern-orthodox-tradition-orthodox-faith",
+    "source_id": "src-profile-orthodox-faith",
+    "locator": "The Orthodox Faith: Doctrine and Scripture \u2014 Orthodox Church in America",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Eastern Orthodox tradition. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-baptist-movement-baylor-baptists",
+    "source_id": "src-profile-baylor-baptists",
+    "locator": "The Baptist Story \u2014 Doug Weaver, Baylor University",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Baptist movement. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-baptist-movement-helwys",
+    "source_id": "src-profile-helwys",
+    "locator": "Thomas Helwys and His World \u2014 Oxford research record",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Baptist movement. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-baptist-movement-london-1644",
+    "source_id": "src-profile-london-1644",
+    "locator": "First London Baptist Confession \u2014 historical primary text",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Baptist movement. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-baptist-movement-abc-beliefs",
+    "source_id": "src-profile-abc-beliefs",
+    "locator": "What We Believe \u2014 American Baptist Churches USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Baptist movement. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-baptist-movement-baptist-confessions",
+    "source_id": "src-profile-baptist-confessions",
+    "locator": "Historic Baptist Documents \u2014 primary confessions and catechisms",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Baptist movement. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-triennial-convention-abc-history",
+    "source_id": "src-profile-abc-history",
+    "locator": "Our History \u2014 American Baptist Churches USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Triennial Convention. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-southern-baptist-convention-sbc-slavery",
+    "source_id": "src-profile-sbc-slavery",
+    "locator": "1995 SBC Resolution on Racial Reconciliation",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Southern Baptist Convention. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-southern-baptist-convention-abc-history",
+    "source_id": "src-profile-abc-history",
+    "locator": "Our History \u2014 American Baptist Churches USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Southern Baptist Convention. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-southern-baptist-convention-sbc-faith",
+    "source_id": "src-profile-sbc-faith",
+    "locator": "Baptist Faith and Message 2000 \u2014 official text",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Southern Baptist Convention. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-american-baptist-churches-usa-abc-history",
+    "source_id": "src-profile-abc-history",
+    "locator": "Our History \u2014 American Baptist Churches USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for American Baptist Churches USA. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-american-baptist-churches-usa-abc-beliefs",
+    "source_id": "src-profile-abc-beliefs",
+    "locator": "What We Believe \u2014 American Baptist Churches USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for American Baptist Churches USA. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-american-baptist-churches-usa-abc-facts",
+    "source_id": "src-profile-abc-facts",
+    "locator": "10 Facts About American Baptists",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for American Baptist Churches USA. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-national-baptist-convention-usa-nbc-1939",
+    "source_id": "src-profile-nbc-1939",
+    "locator": "National Baptist Convention 1939 annual \u2014 constitution and historical preamble",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for National Baptist Convention, USA. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-national-baptist-convention-usa-black-confessions",
+    "source_id": "src-profile-black-confessions",
+    "locator": "A Confessing People \u2014 Baptist confessions and National Baptist divisions",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for National Baptist Convention, USA. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-national-baptist-convention-usa-pnbc-history",
+    "source_id": "src-profile-pnbc-history",
+    "locator": "Progressive National Baptist Convention \u2014 Stanford King Institute",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for National Baptist Convention, USA. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-national-baptist-convention-of-america-black-confessions",
+    "source_id": "src-profile-black-confessions",
+    "locator": "A Confessing People \u2014 Baptist confessions and National Baptist divisions",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for National Baptist Convention of America International. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-progressive-national-baptist-convention-pnbc-history",
+    "source_id": "src-profile-pnbc-history",
+    "locator": "Progressive National Baptist Convention \u2014 Stanford King Institute",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Progressive National Baptist Convention. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-progressive-national-baptist-convention-black-confessions",
+    "source_id": "src-profile-black-confessions",
+    "locator": "A Confessing People \u2014 Baptist confessions and National Baptist divisions",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Progressive National Baptist Convention. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-venture-church-network-venture",
+    "source_id": "src-profile-venture",
+    "locator": "About Us: History and Beliefs \u2014 Venture Church Network",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Venture Church Network. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-second-great-awakening-awakening",
+    "source_id": "src-profile-awakening",
+    "locator": "Early National Era and Second Great Awakening \u2014 Oxford history chapter",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Second Great Awakening. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-second-great-awakening-finney",
+    "source_id": "src-profile-finney",
+    "locator": "Charles Grandison Finney \u2014 PBS American Experience",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Second Great Awakening. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-second-great-awakening-disciples-history",
+    "source_id": "src-profile-disciples-history",
+    "locator": "History of the Disciples \u2014 Christian Church (Disciples of Christ)",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Second Great Awakening. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-second-great-awakening-springfield",
+    "source_id": "src-profile-springfield",
+    "locator": "Last Will and Testament of Springfield Presbytery (1804) \u2014 historical society primary text",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Second Great Awakening. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-holiness-movement-holiness",
+    "source_id": "src-profile-holiness",
+    "locator": "History of the Holiness Movement \u2014 movement historical account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Holiness movement. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-holiness-movement-holiness-study",
+    "source_id": "src-profile-holiness-study",
+    "locator": "The Quest for Holiness \u2014 Oxford Handbook chapter",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Holiness movement. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-holiness-movement-nazarene-history",
+    "source_id": "src-profile-nazarene-history",
+    "locator": "Our History \u2014 Church of the Nazarene",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Holiness movement. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-holiness-movement-nazarene-explained",
+    "source_id": "src-profile-nazarene-explained",
+    "locator": "What We Believe \u2014 Church of the Nazarene",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Holiness movement. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-holiness-movement-nazarene-faith",
+    "source_id": "src-profile-nazarene-faith",
+    "locator": "Articles of Faith \u2014 Church of the Nazarene",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Holiness movement. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-restoration-movement-restoration-history",
+    "source_id": "src-profile-restoration-history",
+    "locator": "Stone-Campbell History \u2014 Disciples of Christ Historical Society",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Restoration Movement. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-restoration-movement-disciples-history",
+    "source_id": "src-profile-disciples-history",
+    "locator": "History of the Disciples \u2014 Christian Church (Disciples of Christ)",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Restoration Movement. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-restoration-movement-springfield",
+    "source_id": "src-profile-springfield",
+    "locator": "Last Will and Testament of Springfield Presbytery (1804) \u2014 historical society primary text",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Restoration Movement. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-restoration-movement-declaration-1809",
+    "source_id": "src-profile-declaration-1809",
+    "locator": "Thomas Campbell, Declaration and Address (1809) \u2014 ACU library",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Restoration Movement. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-christian-church-disciples-of-christ-disciples-history",
+    "source_id": "src-profile-disciples-history",
+    "locator": "History of the Disciples \u2014 Christian Church (Disciples of Christ)",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Christian Church (Disciples of Christ). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-christian-church-disciples-of-christ-design",
+    "source_id": "src-profile-design",
+    "locator": "A Provisional Design for the Christian Church (Disciples of Christ), 1968 \u2014 historical society",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Christian Church (Disciples of Christ). Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-christian-church-disciples-of-christ-declaration-1809",
+    "source_id": "src-profile-declaration-1809",
+    "locator": "Thomas Campbell, Declaration and Address (1809) \u2014 ACU library",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Christian Church (Disciples of Christ). Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-churches-of-christ-disciples-history",
+    "source_id": "src-profile-disciples-history",
+    "locator": "History of the Disciples \u2014 Christian Church (Disciples of Christ)",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Churches of Christ. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-churches-of-christ-coc-church",
+    "source_id": "src-profile-coc-church",
+    "locator": "The Concept of Church among Churches of Christ \u2014 ACU historical collection",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Churches of Christ. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-churches-of-christ-declaration-1809",
+    "source_id": "src-profile-declaration-1809",
+    "locator": "Thomas Campbell, Declaration and Address (1809) \u2014 ACU library",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Churches of Christ. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-independent-christian-churches-disciples-history",
+    "source_id": "src-profile-disciples-history",
+    "locator": "History of the Disciples \u2014 Christian Church (Disciples of Christ)",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Independent Christian Churches and Churches of Christ. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-independent-christian-churches-restoration-history",
+    "source_id": "src-profile-restoration-history",
+    "locator": "Stone-Campbell History \u2014 Disciples of Christ Historical Society",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Independent Christian Churches and Churches of Christ. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-independent-christian-churches-declaration-1809",
+    "source_id": "src-profile-declaration-1809",
+    "locator": "Thomas Campbell, Declaration and Address (1809) \u2014 ACU library",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Independent Christian Churches and Churches of Christ. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-independent-christian-churches-coc-church",
+    "source_id": "src-profile-coc-church",
+    "locator": "The Concept of Church among Churches of Christ \u2014 ACU historical collection",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Independent Christian Churches and Churches of Christ. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-the-nazarene-nazarene-history",
+    "source_id": "src-profile-nazarene-history",
+    "locator": "Our History \u2014 Church of the Nazarene",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of the Nazarene. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-the-nazarene-nazarene-faith",
+    "source_id": "src-profile-nazarene-faith",
+    "locator": "Articles of Faith \u2014 Church of the Nazarene",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of the Nazarene. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-the-nazarene-nazarene-explained",
+    "source_id": "src-profile-nazarene-explained",
+    "locator": "What We Believe \u2014 Church of the Nazarene",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of the Nazarene. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-lutheran-reformation-lutheran-texts",
+    "source_id": "src-profile-lutheran-texts",
+    "locator": "Book of Concord \u2014 historical Lutheran confessional texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Lutheran Reformation. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-lutheran-reformation-lcms-history",
+    "source_id": "src-profile-lcms-history",
+    "locator": "LCMS History \u2014 official account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Lutheran Reformation. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-german-lutheran-territorial-churches-lutheran-texts",
+    "source_id": "src-profile-lutheran-texts",
+    "locator": "Book of Concord \u2014 historical Lutheran confessional texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for German Lutheran territorial churches. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-german-lutheran-territorial-churches-lcms-history",
+    "source_id": "src-profile-lcms-history",
+    "locator": "LCMS History \u2014 official account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for German Lutheran territorial churches. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-scandinavian-lutheran-state-churches-elca-wcc",
+    "source_id": "src-profile-elca-wcc",
+    "locator": "ELCA and its predecessor churches \u2014 World Council of Churches",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Scandinavian Lutheran state churches. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-scandinavian-lutheran-state-churches-lutheran-texts",
+    "source_id": "src-profile-lutheran-texts",
+    "locator": "Book of Concord \u2014 historical Lutheran confessional texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Scandinavian Lutheran state churches. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-lutheran-church-missouri-synod-lcms-history",
+    "source_id": "src-profile-lcms-history",
+    "locator": "LCMS History \u2014 official account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Lutheran Church - Missouri Synod. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-lutheran-church-missouri-synod-elca-wcc",
+    "source_id": "src-profile-elca-wcc",
+    "locator": "ELCA and its predecessor churches \u2014 World Council of Churches",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Lutheran Church - Missouri Synod. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-lutheran-church-missouri-synod-lcms-beliefs",
+    "source_id": "src-profile-lcms-beliefs",
+    "locator": "Beliefs \u2014 Lutheran Church Missouri Synod",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Lutheran Church - Missouri Synod. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-lutheran-church-missouri-synod-lutheran-texts",
+    "source_id": "src-profile-lutheran-texts",
+    "locator": "Book of Concord \u2014 historical Lutheran confessional texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Lutheran Church - Missouri Synod. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-wisconsin-evangelical-lutheran-synod-wels-history",
+    "source_id": "src-profile-wels-history",
+    "locator": "About WELS \u2014 history and organization",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Wisconsin Evangelical Lutheran Synod. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-wisconsin-evangelical-lutheran-synod-wels-faith",
+    "source_id": "src-profile-wels-faith",
+    "locator": "What We Believe \u2014 WELS",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Wisconsin Evangelical Lutheran Synod. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-american-lutheran-church-augustana",
+    "source_id": "src-profile-augustana",
+    "locator": "Augustana and Lutheran Identity in America \u2014 Augustana Heritage",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for American Lutheran Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-american-lutheran-church-elca-wcc",
+    "source_id": "src-profile-elca-wcc",
+    "locator": "ELCA and its predecessor churches \u2014 World Council of Churches",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for American Lutheran Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-american-lutheran-church-elca-history",
+    "source_id": "src-profile-elca-history",
+    "locator": "History of the ELCA \u2014 official account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for American Lutheran Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-american-lutheran-church-lutheran-texts",
+    "source_id": "src-profile-lutheran-texts",
+    "locator": "Book of Concord \u2014 historical Lutheran confessional texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for American Lutheran Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-lutheran-church-in-america-augustana",
+    "source_id": "src-profile-augustana",
+    "locator": "Augustana and Lutheran Identity in America \u2014 Augustana Heritage",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Lutheran Church in America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-lutheran-church-in-america-elca-wcc",
+    "source_id": "src-profile-elca-wcc",
+    "locator": "ELCA and its predecessor churches \u2014 World Council of Churches",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Lutheran Church in America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-lutheran-church-in-america-lutheran-texts",
+    "source_id": "src-profile-lutheran-texts",
+    "locator": "Book of Concord \u2014 historical Lutheran confessional texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Lutheran Church in America. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc",
+    "source_id": "src-profile-elca-wcc",
+    "locator": "ELCA and its predecessor churches \u2014 World Council of Churches",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Association of Evangelical Lutheran Churches. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-association-of-evangelical-lutheran-churches-elca-1987",
+    "source_id": "src-profile-elca-1987",
+    "locator": "1987 Constituting Convention transition record \u2014 ELCA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Association of Evangelical Lutheran Churches. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-association-of-evangelical-lutheran-churches-lutheran-texts",
+    "source_id": "src-profile-lutheran-texts",
+    "locator": "Book of Concord \u2014 historical Lutheran confessional texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Association of Evangelical Lutheran Churches. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+    "source_id": "src-profile-elca-history",
+    "locator": "History of the ELCA \u2014 official account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Evangelical Lutheran Church in America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-evangelical-lutheran-church-in-america-elca-1987",
+    "source_id": "src-profile-elca-1987",
+    "locator": "1987 Constituting Convention transition record \u2014 ELCA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Evangelical Lutheran Church in America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-evangelical-lutheran-church-in-america-elca-faith",
+    "source_id": "src-profile-elca-faith",
+    "locator": "What Lutherans Believe \u2014 ELCA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Evangelical Lutheran Church in America. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts",
+    "source_id": "src-profile-lutheran-texts",
+    "locator": "Book of Concord \u2014 historical Lutheran confessional texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Evangelical Lutheran Church in America. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-movement-england-methodist-roots",
+    "source_id": "src-profile-methodist-roots",
+    "locator": "Roots of the United Methodist family tree",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist movement (England). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-movement-england-methodist-heritage",
+    "source_id": "src-profile-methodist-heritage",
+    "locator": "Our Wesleyan Heritage \u2014 UMC",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist movement (England). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-movement-england-methodist-doctrine",
+    "source_id": "src-profile-methodist-doctrine",
+    "locator": "Our Doctrinal History \u2014 United Methodist Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist movement (England). Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-movement-england-methodist-documents",
+    "source_id": "src-profile-methodist-documents",
+    "locator": "United Methodist Foundational Documents",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist movement (England). Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-episcopal-church-methodist-1784",
+    "source_id": "src-profile-methodist-1784",
+    "locator": "Methodist History: The Christmas Conference",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Episcopal Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-episcopal-church-methodist-mec",
+    "source_id": "src-profile-methodist-mec",
+    "locator": "Methodist Episcopal Church \u2014 UMC historical glossary",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Episcopal Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-episcopal-church-methodist-documents",
+    "source_id": "src-profile-methodist-documents",
+    "locator": "United Methodist Foundational Documents",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Episcopal Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-episcopal-church-south-methodist-splits",
+    "source_id": "src-profile-methodist-splits",
+    "locator": "Splits, Separations and Reconciliations \u2014 UMC historical series",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Episcopal Church, South. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-episcopal-church-south-methodist-mec",
+    "source_id": "src-profile-methodist-mec",
+    "locator": "Methodist Episcopal Church \u2014 UMC historical glossary",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Episcopal Church, South. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-episcopal-church-south-methodist-documents",
+    "source_id": "src-profile-methodist-documents",
+    "locator": "United Methodist Foundational Documents",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Episcopal Church, South. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-protestant-church-methodist-emory",
+    "source_id": "src-profile-methodist-emory",
+    "locator": "Wesleyana historical exhibition \u2014 Emory University",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Protestant Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-protestant-church-methodist-splits",
+    "source_id": "src-profile-methodist-splits",
+    "locator": "Splits, Separations and Reconciliations \u2014 UMC historical series",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Protestant Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-protestant-church-methodist-documents",
+    "source_id": "src-profile-methodist-documents",
+    "locator": "United Methodist Foundational Documents",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Protestant Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-church-methodist-roots",
+    "source_id": "src-profile-methodist-roots",
+    "locator": "Roots of the United Methodist family tree",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-church-methodist-splits",
+    "source_id": "src-profile-methodist-splits",
+    "locator": "Splits, Separations and Reconciliations \u2014 UMC historical series",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-church-methodist-documents",
+    "source_id": "src-profile-methodist-documents",
+    "locator": "United Methodist Foundational Documents",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-methodist-church-methodist-doctrine",
+    "source_id": "src-profile-methodist-doctrine",
+    "locator": "Our Doctrinal History \u2014 United Methodist Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Methodist Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-evangelical-united-brethren-church-eub-history",
+    "source_id": "src-profile-eub-history",
+    "locator": "Evangelical United Brethren historical chronology \u2014 GCAH",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Evangelical United Brethren Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-evangelical-united-brethren-church-methodist-roots",
+    "source_id": "src-profile-methodist-roots",
+    "locator": "Roots of the United Methodist family tree",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Evangelical United Brethren Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-evangelical-united-brethren-church-methodist-documents",
+    "source_id": "src-profile-methodist-documents",
+    "locator": "United Methodist Foundational Documents",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Evangelical United Brethren Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-united-methodist-church-methodist-roots",
+    "source_id": "src-profile-methodist-roots",
+    "locator": "Roots of the United Methodist family tree",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for United Methodist Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-united-methodist-church-methodist-heritage",
+    "source_id": "src-profile-methodist-heritage",
+    "locator": "Our Wesleyan Heritage \u2014 UMC",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for United Methodist Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-united-methodist-church-methodist-doctrine",
+    "source_id": "src-profile-methodist-doctrine",
+    "locator": "Our Doctrinal History \u2014 United Methodist Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for United Methodist Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-united-methodist-church-methodist-documents",
+    "source_id": "src-profile-methodist-documents",
+    "locator": "United Methodist Foundational Documents",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for United Methodist Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pentecostalism-ag-history",
+    "source_id": "src-profile-ag-history",
+    "locator": "History \u2014 Assemblies of God USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Pentecostalism. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pentecostalism-ag-faith",
+    "source_id": "src-profile-ag-faith",
+    "locator": "Statement of Fundamental Truths \u2014 Assemblies of God USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Pentecostalism. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pentecostalism-cogic-faith",
+    "source_id": "src-profile-cogic-faith",
+    "locator": "Statement of Faith \u2014 Church of God in Christ",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Pentecostalism. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-assemblies-of-god-ag-history",
+    "source_id": "src-profile-ag-history",
+    "locator": "History \u2014 Assemblies of God USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Assemblies of God. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-assemblies-of-god-ag-faith",
+    "source_id": "src-profile-ag-faith",
+    "locator": "Statement of Fundamental Truths \u2014 Assemblies of God USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Assemblies of God. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-god-cleveland-cog-history",
+    "source_id": "src-profile-cog-history",
+    "locator": "A Brief History of the Church of God \u2014 official account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of God (Cleveland, Tennessee). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-god-cleveland-cog-faith",
+    "source_id": "src-profile-cog-faith",
+    "locator": "Doctrinal Commitments \u2014 Church of God",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of God (Cleveland, Tennessee). Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-god-in-christ-cogic-history",
+    "source_id": "src-profile-cogic-history",
+    "locator": "Our History \u2014 Church of God in Christ",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of God in Christ. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-god-in-christ-cogic-founder",
+    "source_id": "src-profile-cogic-founder",
+    "locator": "Our Founder \u2014 Church of God in Christ",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of God in Christ. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-god-in-christ-cogic-faith",
+    "source_id": "src-profile-cogic-faith",
+    "locator": "Statement of Faith \u2014 Church of God in Christ",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of God in Christ. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-foursquare-church-foursquare-history",
+    "source_id": "src-profile-foursquare-history",
+    "locator": "History \u2014 Foursquare Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Foursquare Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-foursquare-church-foursquare-faith",
+    "source_id": "src-profile-foursquare-faith",
+    "locator": "Beliefs and Declaration of Faith \u2014 Foursquare Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Foursquare Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-catholic-church-orthodox-schism",
+    "source_id": "src-profile-orthodox-schism",
+    "locator": "The Great Schism \u2014 Orthodox Church in America",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Roman Catholic Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-catholic-church-catholic-catechism",
+    "source_id": "src-profile-catholic-catechism",
+    "locator": "Catechism of the Catholic Church \u2014 Vatican text",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Roman Catholic Church. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-swiss-reformed-zurich-zwingli",
+    "source_id": "src-profile-zwingli",
+    "locator": "Ulrich Zwingli \u2014 Mus\u00e9e protestant",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Swiss Reformed (Zurich stream). Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-swiss-reformed-zurich-pcusa-book",
+    "source_id": "src-profile-pcusa-book",
+    "locator": "Book of Confessions \u2014 official resource",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Swiss Reformed (Zurich stream). Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-genevan-reformed-calvin",
+    "source_id": "src-profile-calvin",
+    "locator": "Jean Calvin \u2014 Mus\u00e9e protestant",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Genevan Reformed (Calvin). Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-genevan-reformed-geneva-register",
+    "source_id": "src-profile-geneva-register",
+    "locator": "First Register of the Company of Pastors \u2014 International Museum of the Reformation",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Genevan Reformed (Calvin). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-genevan-reformed-geneva-ordinances",
+    "source_id": "src-profile-geneva-ordinances",
+    "locator": "Ecclesiastical Ordinances (1541) \u2014 Mus\u00e9e protestant",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Genevan Reformed (Calvin). Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-english-congregation-geneva-geneva-knox",
+    "source_id": "src-profile-geneva-knox",
+    "locator": "Historic Origins of the Presbytery \u2014 OPC Ordained Servant",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for English Congregation in Geneva. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-english-congregation-geneva-scotland-history",
+    "source_id": "src-profile-scotland-history",
+    "locator": "History of the Church of Scotland \u2014 official account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for English Congregation in Geneva. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-scottish-reformation-scotland-history",
+    "source_id": "src-profile-scotland-history",
+    "locator": "History of the Church of Scotland \u2014 official account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Scottish Reformation. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-scottish-reformation-scotland-texts",
+    "source_id": "src-profile-scotland-texts",
+    "locator": "Church of Scotland Book of Confessions \u2014 official full text",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Scottish Reformation. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-scotland-scotland-history",
+    "source_id": "src-profile-scotland-history",
+    "locator": "History of the Church of Scotland \u2014 official account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of Scotland. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-scotland-scotland-confessions",
+    "source_id": "src-profile-scotland-confessions",
+    "locator": "Book of Confessions \u2014 Church of Scotland, effective 2026",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of Scotland. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-scotland-scotland-texts",
+    "source_id": "src-profile-scotland-texts",
+    "locator": "Church of Scotland Book of Confessions \u2014 official full text",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Church of Scotland. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-presbyterian-polity-scotland-scotland-history",
+    "source_id": "src-profile-scotland-history",
+    "locator": "History of the Church of Scotland \u2014 official account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian polity (Scotland). Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-presbyterian-polity-scotland-geneva-knox",
+    "source_id": "src-profile-geneva-knox",
+    "locator": "Historic Origins of the Presbytery \u2014 OPC Ordained Servant",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian polity (Scotland). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-presbyterian-polity-scotland-scotland-texts",
+    "source_id": "src-profile-scotland-texts",
+    "locator": "Church of Scotland Book of Confessions \u2014 official full text",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian polity (Scotland). Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-presbyterian-migrations-america-colonial-history",
+    "source_id": "src-profile-colonial-history",
+    "locator": "Church History \u2014 Presbyterian Mission Agency",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian migrations to colonial America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-presbyterian-migrations-america-makemie-presbytery",
+    "source_id": "src-profile-makemie-presbytery",
+    "locator": "The First Presbytery (1706) \u2014 PCA Historical Center",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian migrations to colonial America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-presbyterian-migrations-america-westminster",
+    "source_id": "src-profile-westminster",
+    "locator": "Westminster Confession and Catechisms \u2014 OPC official texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian migrations to colonial America. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-presbyterian-polity-founding-context-makemie-presbytery",
+    "source_id": "src-profile-makemie-presbytery",
+    "locator": "The First Presbytery (1706) \u2014 PCA Historical Center",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Founding context of Presbyterian polity (America). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-presbyterian-polity-founding-context-colonial-history",
+    "source_id": "src-profile-colonial-history",
+    "locator": "Church History \u2014 Presbyterian Mission Agency",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Founding context of Presbyterian polity (America). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-presbyterian-polity-founding-context-presbyterian-history",
+    "source_id": "src-profile-presbyterian-history",
+    "locator": "History of the Church \u2014 Presbyterian Historical Society",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Founding context of Presbyterian polity (America). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-presbyterian-polity-founding-context-westminster",
+    "source_id": "src-profile-westminster",
+    "locator": "Westminster Confession and Catechisms \u2014 OPC official texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Founding context of Presbyterian polity (America). Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pcusa-presbyterian-history",
+    "source_id": "src-profile-presbyterian-history",
+    "locator": "History of the Church \u2014 Presbyterian Historical Society",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church (USA). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pcusa-pcusa-1983",
+    "source_id": "src-profile-pcusa-1983",
+    "locator": "Presbyterian Heritage Sunday 2023 \u2014 reunion account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church (USA). Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pcusa-pcusa-confessions",
+    "source_id": "src-profile-pcusa-confessions",
+    "locator": "Confessions \u2014 Presbyterian Church USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church (USA). Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pcusa-pcusa-book",
+    "source_id": "src-profile-pcusa-book",
+    "locator": "Book of Confessions \u2014 official resource",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church (USA). Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pca-pca-about",
+    "source_id": "src-profile-pca-about",
+    "locator": "About the PCA \u2014 official description",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church in America. Historical context, formation, people and development. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pca-pca-morton",
+    "source_id": "src-profile-pca-morton",
+    "locator": "Significant Actions of the 28th PCA General Assembly, 2000 \u2014 Morton H. Smith biography",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church in America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pca-pca-archives",
+    "source_id": "src-profile-pca-archives",
+    "locator": "Historical Center position paper \u2014 founding clerk Morton H. Smith",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church in America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pca-westminster",
+    "source_id": "src-profile-westminster",
+    "locator": "Westminster Confession and Catechisms \u2014 OPC official texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church in America. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-opc-opc-history",
+    "source_id": "src-profile-opc-history",
+    "locator": "Our History \u2014 Orthodox Presbyterian Church",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Orthodox Presbyterian Church. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-opc-westminster",
+    "source_id": "src-profile-westminster",
+    "locator": "Westminster Confession and Catechisms \u2014 OPC official texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Orthodox Presbyterian Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-opc-westminster-revisions",
+    "source_id": "src-profile-westminster-revisions",
+    "locator": "American Revisions to the Westminster Confession \u2014 OPC",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Orthodox Presbyterian Church. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pcus-presbyterian-history",
+    "source_id": "src-profile-presbyterian-history",
+    "locator": "History of the Church \u2014 Presbyterian Historical Society",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church in the United States. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pcus-pcusa-1983",
+    "source_id": "src-profile-pcusa-1983",
+    "locator": "Presbyterian Heritage Sunday 2023 \u2014 reunion account",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church in the United States. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pcus-pca-about",
+    "source_id": "src-profile-pca-about",
+    "locator": "About the PCA \u2014 official description",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church in the United States. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pcus-westminster",
+    "source_id": "src-profile-westminster",
+    "locator": "Westminster Confession and Catechisms \u2014 OPC official texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church in the United States. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pcusa-1789-presbyterian-history",
+    "source_id": "src-profile-presbyterian-history",
+    "locator": "History of the Church \u2014 Presbyterian Historical Society",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church in the United States of America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pcusa-1789-pcusa-1958",
+    "source_id": "src-profile-pcusa-1958",
+    "locator": "Stories from GA: 1958 Union \u2014 Presbyterian Church USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church in the United States of America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pcusa-1789-westminster",
+    "source_id": "src-profile-westminster",
+    "locator": "Westminster Confession and Catechisms \u2014 OPC official texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church in the United States of America. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-pcusa-1789-westminster-revisions",
+    "source_id": "src-profile-westminster-revisions",
+    "locator": "American Revisions to the Westminster Confession \u2014 OPC",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for Presbyterian Church in the United States of America. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-upcusa-pcusa-1958",
+    "source_id": "src-profile-pcusa-1958",
+    "locator": "Stories from GA: 1958 Union \u2014 Presbyterian Church USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for United Presbyterian Church in the United States of America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-upcusa-presbyterian-history",
+    "source_id": "src-profile-presbyterian-history",
+    "locator": "History of the Church \u2014 Presbyterian Historical Society",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for United Presbyterian Church in the United States of America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-upcusa-pcusa-book",
+    "source_id": "src-profile-pcusa-book",
+    "locator": "Book of Confessions \u2014 official resource",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for United Presbyterian Church in the United States of America. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-upcusa-westminster",
+    "source_id": "src-profile-westminster",
+    "locator": "Westminster Confession and Catechisms \u2014 OPC official texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for United Presbyterian Church in the United States of America. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-upcna-pcusa-1958",
+    "source_id": "src-profile-pcusa-1958",
+    "locator": "Stories from GA: 1958 Union \u2014 Presbyterian Church USA",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for United Presbyterian Church of North America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-upcna-presbyterian-history",
+    "source_id": "src-profile-presbyterian-history",
+    "locator": "History of the Church \u2014 Presbyterian Historical Society",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for United Presbyterian Church of North America. Historical context, formation, people and development. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-upcna-westminster",
+    "source_id": "src-profile-westminster",
+    "locator": "Westminster Confession and Catechisms \u2014 OPC official texts",
+    "accessed": "2026-11-13",
+    "note": "Profile evidence for United Presbyterian Church of North America. Beliefs and qualifications. Document descriptions use the linked text or its institutional catalog; category applicability and research limits are stated in the profile."
+  },
+  {
+    "id": "cite-profile-church-of-god-seventh-day-cranmer",
+    "source_id": "src-profile-cranmer",
+    "locator": "Gilbert Cranmer \u2014 Encyclopedia of Seventh-day Adventists",
+    "accessed": "2026-11-13",
+    "note": "Supports named historical figures and their roles."
+  },
+  {
+    "id": "cite-profile-southern-baptist-convention-johnson",
+    "source_id": "src-profile-johnson",
+    "locator": "William Bullein Johnson \u2014 Southern Baptist Historical Library",
+    "accessed": "2026-11-13",
+    "note": "Supports named historical figures and their roles."
+  },
+  {
+    "id": "cite-profile-scandinavian-lutheran-state-churches-scandinavia",
+    "source_id": "src-profile-scandinavia",
+    "locator": "Protestantism in the Scandinavian Countries \u2014 Mus\u00e9e protestant",
+    "accessed": "2026-11-13",
+    "note": "Supports named historical figures and their roles."
+  },
+  {
+    "id": "cite-profile-wisconsin-evangelical-lutheran-synod-muehlhaeuser",
+    "source_id": "src-profile-muehlhaeuser",
+    "locator": "Johannes Muehlhaeuser \u2014 WELS Historical Institute",
+    "accessed": "2026-11-13",
+    "note": "Supports named historical figures and their roles."
+  },
+  {
+    "id": "cite-profile-methodist-protestant-church-mpc-founders",
+    "source_id": "src-profile-mpc-founders",
+    "locator": "Sketches of the Founders of the Methodist Protestant Church \u2014 primary historical book",
+    "accessed": "2026-11-13",
+    "note": "Supports named historical figures and their roles."
+  },
+  {
+    "id": "cite-profile-presbyterian-polity-scotland-melville",
+    "source_id": "src-profile-melville",
+    "locator": "Andrew Melville \u2014 University of Edinburgh library",
+    "accessed": "2026-11-13",
+    "note": "Supports named historical figures and their roles."
+  },
+  {
+    "id": "cite-profile-pcus-pcus-moderators",
+    "source_id": "src-profile-pcus-moderators",
+    "locator": "Clerks and Moderators of PCUS \u2014 PCA Historical Center",
+    "accessed": "2026-11-13",
+    "note": "Supports named historical figures and their roles."
+  },
+  {
+    "id": "cite-profile-english-congregation-geneva-geneva-exiles",
+    "source_id": "src-profile-geneva-exiles",
+    "locator": "Geneva, city of refuge \u2014 Geneva State Archives",
+    "accessed": "2026-11-13",
+    "note": "Archive catalog identifies the English church register under John Knox and Christopher Goodman, 1555\u20131559."
+  },
+  {
+    "id": "cite-profile-national-baptist-convention-of-america-nbc-1917",
+    "source_id": "src-profile-nbc-1917",
+    "locator": "National Baptist Convention 1917 annual \u2014 contemporary account of the publishing dispute",
+    "accessed": "2026-11-13",
+    "note": "Contemporary opposing-side account of Boyd and the publishing-board dispute. Its hostile judgments are not adopted as neutral facts."
+  },
+  {
+    "id": "cite-profile-progressive-national-baptist-convention-pnbc-resolutions",
+    "source_id": "src-profile-pnbc-resolutions",
+    "locator": "PNBC resolutions, 2019",
+    "accessed": "2026-11-13",
+    "note": "Official resolutions illustrate public commitments; they are not a creed binding every congregation."
+  },
+  {
+    "id": "cite-millerism-second-great-awakening",
+    "source_id": "src-profile-miller-movement",
+    "locator": "Opening historical setting: Millerite revival in the final phase of the Second Great Awakening",
+    "accessed": "2026-11-13",
+    "note": "Researched replacement for an unresolved reference. The locator identifies the supported relationship; it does not validate every pre-existing date or explanation."
+  },
+  {
+    "id": "cite-church-of-england-separatists",
+    "source_id": "src-profile-separatists",
+    "locator": "Distinction between reforming the established church and separating from it; supports relationship, not a split in 1534",
+    "accessed": "2026-11-13",
+    "note": "Researched replacement for an unresolved reference. The locator identifies the supported relationship; it does not validate every pre-existing date or explanation."
+  },
+  {
+    "id": "cite-holiness-movement-methodism",
+    "source_id": "src-profile-nazarene-history",
+    "locator": "Wesleyan and Methodist roots of the Holiness movement; 1850 is an approximate era marker",
+    "accessed": "2026-11-13",
+    "note": "Researched replacement for an unresolved reference. The locator identifies the supported relationship; it does not validate every pre-existing date or explanation."
+  },
+  {
+    "id": "cite-nazarene-holiness-origins",
+    "source_id": "src-profile-nazarene-history",
+    "locator": "Wesleyan-Holiness ancestry and the 1908 union",
+    "accessed": "2026-11-13",
+    "note": "Researched replacement for an unresolved reference. The locator identifies the supported relationship; it does not validate every pre-existing date or explanation."
+  },
+  {
+    "id": "cite-pentecostalism-holiness-roots",
+    "source_id": "src-profile-ag-history",
+    "locator": "Historical Roots and Pentecostal Revival sections: Holiness setting, Topeka 1901, Azusa 1906",
+    "accessed": "2026-11-13",
+    "note": "Researched replacement for an unresolved reference. The locator identifies the supported relationship; it does not validate every pre-existing date or explanation."
+  },
+  {
+    "id": "cite-english-congregation-geneva-exiles",
+    "source_id": "src-profile-geneva-exiles",
+    "locator": "Livre des Anglois register: English church under Knox and Goodman, 1555\u20131559",
+    "accessed": "2026-11-13",
+    "note": "Researched replacement for an unresolved reference. The locator identifies the supported relationship; it does not validate every pre-existing date or explanation."
+  },
+  {
+    "id": "cite-profile-eastern-orthodox-tradition-athanasius",
+    "source_id": "src-profile-athanasius",
+    "locator": "Fourth-century church history: Athanasius",
+    "accessed": "2026-11-13",
+    "note": "Supports the named person\u2019s historical role and the biographical explanation."
+  },
+  {
+    "id": "cite-profile-venture-church-network-cedarholm",
+    "source_id": "src-profile-cedarholm",
+    "locator": "How Maranatha Got to This Point",
+    "accessed": "2026-11-13",
+    "note": "Supports the named person\u2019s historical role and the biographical explanation."
+  },
+  {
+    "id": "cite-profile-american-lutheran-church-schiotz",
+    "source_id": "src-profile-schiotz",
+    "locator": "Fredrik Axel Schiotz: biographical sketch",
+    "accessed": "2026-11-13",
+    "note": "Supports the named person\u2019s historical role and the biographical explanation."
+  },
+  {
+    "id": "cite-profile-lutheran-church-in-america-fry",
+    "source_id": "src-profile-fry",
+    "locator": "Franklin Clark Fry biography, page 3",
+    "accessed": "2026-11-13",
+    "note": "Supports the named person\u2019s historical role and the biographical explanation."
+  },
+  {
+    "id": "cite-profile-association-of-evangelical-lutheran-churches-aelc-founding",
+    "source_id": "src-profile-aelc-founding",
+    "locator": "January 7, 1977 report, opening account of constitution and election",
+    "accessed": "2026-11-13",
+    "note": "Supports the named person\u2019s historical role and the biographical explanation."
+  },
+  {
+    "id": "cite-profile-methodist-episcopal-church-south-methodist-racism",
+    "source_id": "src-profile-methodist-racism",
+    "locator": "Historical account of slavery and Bishop Andrew",
+    "accessed": "2026-11-13",
+    "note": "Supports the named person\u2019s historical role and the biographical explanation."
+  },
+  {
+    "id": "cite-profile-english-separatists-separatist-confession",
+    "source_id": "src-profile-separatist-confession",
+    "locator": "A True Confession, 1596: introduction and primary-text link",
+    "accessed": "2026-11-13",
+    "note": "Supports this document\u2019s title, content, historical setting, and limited applicability."
+  },
+  {
+    "id": "cite-profile-early-baptist-amsterdam-smyth-confession",
+    "source_id": "src-profile-smyth-confession",
+    "locator": "Short Confession of Faith in XX Articles, 1609",
+    "accessed": "2026-11-13",
+    "note": "Supports this document\u2019s title, content, historical setting, and limited applicability."
+  },
+  {
+    "id": "cite-profile-early-baptist-amsterdam-helwys-confession",
+    "source_id": "src-profile-helwys-confession",
+    "locator": "A Declaration of Faith of English People Remaining at Amsterdam, 1611",
+    "accessed": "2026-11-13",
+    "note": "Supports this document\u2019s title, content, historical setting, and limited applicability."
+  },
+  {
+    "id": "cite-profile-presbyterian-polity-scotland-eldership",
+    "source_id": "src-profile-eldership",
+    "locator": "Section One, First Book and Second Book of Discipline",
+    "accessed": "2026-11-13",
+    "note": "Explains development of eldership, church-order documents, and disputed understandings of office."
+  },
+  {
+    "id": "cite-profile-english-separatists-separatist-primary",
+    "source_id": "src-profile-separatist-primary",
+    "locator": "Articles on Scripture, salvation, and gathered church order",
+    "accessed": "2026-11-13",
+    "note": "Specific community confession, not a creed adopted by all Separatists."
+  },
+  {
+    "id": "cite-profile-early-baptist-amsterdam-smyth-primary",
+    "source_id": "src-profile-smyth-primary",
+    "locator": "Twenty-article confession",
+    "accessed": "2026-11-13",
+    "note": "Primary theological text; conventional 1609 association and publication/adoption status are qualified in the profile."
+  },
+  {
+    "id": "cite-profile-triennial-convention-im-history",
+    "source_id": "src-profile-im-history",
+    "locator": "Foundation in 1814 and agency names: Missionary Union 1846, Foreign Mission Society 1910, Board of International Ministries 1973",
+    "accessed": "2026-11-13",
+    "note": "Official successor-agency account establishes the missionary lineage independently of the 1907 northern umbrella convention."
+  },
+  {
+    "id": "cite-profile-upcna-upcna-parents",
+    "source_id": "src-profile-upcna-parents",
+    "locator": "Administrative History: 1858 union of ARPC and Associate Presbyterian Church of North America",
+    "accessed": "2026-11-13",
+    "note": "Identifies the actual merger parents; do not collapse Associate Reformed into a generic Reformed Presbyterian body."
+  }
 ]

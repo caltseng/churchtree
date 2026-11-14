@@ -11,8 +11,153 @@
     "tradition_family": "Presbyterian",
     "ecclesial_orientation": "mainline",
     "current_status": "active",
-    "distinctives": ["Reformed", "Barthianist", "Mainline Protestant"],
-    "size_estimate": "approx 1,045,848 active members (2024)"
+    "distinctives": [
+      "Reformed",
+      "Mainline Protestant"
+    ],
+    "size_estimate": "unknown",
+    "summary": "A Presbyterian church formed in 1983 by reunion of the northern UPCUSA and southern PCUS traditions.",
+    "key_figures": [
+      {
+        "name": "James Costen",
+        "role": "moderator associated with the northern church at reunion",
+        "summary": "moderator associated with the northern church at reunion. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://pcusa.org/news-storytelling/news/2023/6/5/minute-mission-presbyterian-heritage-sunday",
+        "citations": [
+          "cite-profile-pcusa-presbyterian-history",
+          "cite-profile-pcusa-pcusa-1983"
+        ]
+      },
+      {
+        "name": "John Anderson",
+        "role": "moderator associated with the southern church at reunion",
+        "summary": "moderator associated with the southern church at reunion. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://pcusa.org/news-storytelling/news/2023/6/5/minute-mission-presbyterian-heritage-sunday",
+        "citations": [
+          "cite-profile-pcusa-presbyterian-history",
+          "cite-profile-pcusa-pcusa-1983"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "label": "Reunion forming PC(USA)",
+        "citations": [
+          "cite-pcusa-1983-reunion"
+        ],
+        "year": 1983
+      },
+      {
+        "year": 1983,
+        "label": "PCUS and UPCUSA reunite",
+        "citations": [
+          "cite-profile-pcusa-presbyterian-history",
+          "cite-profile-pcusa-pcusa-1983"
+        ]
+      },
+      {
+        "year": 2016,
+        "label": "Belhar Confession added to the Book of Confessions",
+        "citations": [
+          "cite-profile-pcusa-presbyterian-history",
+          "cite-profile-pcusa-pcusa-1983"
+        ]
+      }
+    ],
+    "citations": [
+      "cite-pcusa-1983-formed",
+      "cite-pcusa-1983-reunion",
+      "cite-pcusa-1983-figures",
+      "cite-profile-pcusa-presbyterian-history",
+      "cite-profile-pcusa-pcusa-1983",
+      "cite-profile-pcusa-pcusa-confessions",
+      "cite-profile-pcusa-pcusa-book"
+    ],
+    "formation_narrative": "The 1983 reunion sought to reunite major American Presbyterian streams divided since the Civil War era and to strengthen shared ministry. It joined institutions with overlapping Reformed ancestry but distinct histories. The resulting church uses a collection of confessional witnesses rather than reducing its identity to one theologian. Its continuing internal diversity requires care when explaining social policy or theological orientation; a blanket Barthian label is inadequate.",
+    "core_beliefs": [
+      "God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+      "Scripture and confession: the Bible is the primary norm; confessions and catechisms explain the church\u2019s accountable reading of it.",
+      "Church and sacraments: preaching, baptism, and the Lord\u2019s Supper belong to a disciplined Christian community, with government through ministers and elders in Presbyterian forms."
+    ],
+    "key_documents": [
+      {
+        "title": "Book of Confessions",
+        "year": null,
+        "significance": "Constitutional collection of creeds, confessions, and catechisms from different periods; it is not a claim that every statement originated in 1983.",
+        "url": "https://pcusa.org/resource/book-confessions",
+        "citations": [
+          "cite-profile-pcusa-pcusa-book"
+        ]
+      },
+      {
+        "title": "Confession of Belhar",
+        "year": 1986,
+        "significance": "South African confession addressing unity, reconciliation, and justice; received by PCUSA in 2016.",
+        "url": "https://pcusa.org/confessions",
+        "citations": [
+          "cite-profile-pcusa-pcusa-confessions"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-pcusa-presbyterian-history",
+        "cite-profile-pcusa-pcusa-1983"
+      ],
+      "core_beliefs": [
+        "cite-profile-pcusa-pcusa-confessions",
+        "cite-profile-pcusa-pcusa-book"
+      ],
+      "key_figures": [
+        "cite-profile-pcusa-presbyterian-history",
+        "cite-profile-pcusa-pcusa-1983"
+      ],
+      "key_dates": [
+        "cite-profile-pcusa-presbyterian-history",
+        "cite-profile-pcusa-pcusa-1983"
+      ],
+      "ending_narrative": [
+        "cite-profile-pcusa-presbyterian-history",
+        "cite-profile-pcusa-pcusa-1983"
+      ]
+    },
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "PCUSA continues as the church formed in 1983. Subsequent congregational departures and continuing theological disagreements do not constitute dissolution of the whole denomination. No terminal successor applies.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "History of the Church \u2014 Presbyterian Historical Society",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "snippet": "Formation and development: The 1983 reunion sought to reunite major American Presbyterian streams divided since the Civil War era and to strengthen shared ministry. It joined institutions with overlapping Reformed ancestry but distinct histories.",
+        "citations": [
+          "cite-profile-pcusa-presbyterian-history"
+        ]
+      },
+      {
+        "title": "Confessions \u2014 Presbyterian Church USA",
+        "url": "https://pcusa.org/confessions",
+        "snippet": "Teaching and practice: God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+        "citations": [
+          "cite-profile-pcusa-pcusa-confessions"
+        ]
+      },
+      {
+        "title": "Book of Confessions",
+        "url": "https://pcusa.org/resource/book-confessions",
+        "snippet": "Constitutional collection of creeds, confessions, and catechisms from different periods; it is not a claim that every statement originated in 1983.",
+        "citations": [
+          "cite-profile-pcusa-pcusa-book"
+        ]
+      },
+      {
+        "title": "Confession of Belhar",
+        "url": "https://pcusa.org/confessions",
+        "snippet": "South African confession addressing unity, reconciliation, and justice; received by PCUSA in 2016.",
+        "citations": [
+          "cite-profile-pcusa-pcusa-confessions"
+        ]
+      }
+    ]
   },
   {
     "id": "pca",
@@ -26,8 +171,143 @@
     "tradition_family": "Presbyterian",
     "ecclesial_orientation": "evangelical",
     "current_status": "active",
-    "distinctives": ["Reformed", "Evangelical"],
-    "size_estimate": "approx 400,751 members (2024)"
+    "distinctives": [
+      "Reformed",
+      "Evangelical"
+    ],
+    "size_estimate": "unknown",
+    "summary": "A conservative Reformed Presbyterian denomination organized in 1973 by churches leaving the PCUS.",
+    "key_figures": [
+      {
+        "name": "Morton H. Smith",
+        "role": "Reformed theologian and founding stated clerk of the PCA, serving 1973\u20131988; distinct from Morton Smith the ancient historian",
+        "summary": "Morton Howison Smith was a Reformed theologian and the PCA\u2019s first stated clerk (1973\u20131988), responsible for important early administrative continuity. He is a different person from Morton Smith, the Columbia ancient historian associated with the Secret Gospel of Mark debate.",
+        "url": "https://www.pcahistory.org/pca/ga/actions/28thGA_2000_Actions.pdf",
+        "citations": [
+          "cite-profile-pca-pca-morton"
+        ]
+      },
+      {
+        "name": "W. Jack Williamson",
+        "role": "founding-era Presbyterian leader",
+        "summary": "A Presbyterian leader associated with the PCA\u2019s founding generation. His inclusion concerns organizational beginnings rather than authorship of the whole Reformed tradition.",
+        "url": "https://pcahistory.org/pcahc/policies/positionpaper.html",
+        "citations": [
+          "cite-profile-pca-pca-about",
+          "cite-profile-pca-pca-morton",
+          "cite-profile-pca-pca-archives"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "label": "First General Assembly at Briarwood (Birmingham)",
+        "citations": [
+          "cite-pca-1973-ga"
+        ],
+        "year": 1973
+      },
+      {
+        "year": 1973,
+        "label": "PCA organized and first General Assembly meets",
+        "citations": [
+          "cite-profile-pca-pca-about",
+          "cite-profile-pca-pca-morton",
+          "cite-profile-pca-pca-archives"
+        ]
+      }
+    ],
+    "citations": [
+      "cite-pca-1973-formed",
+      "cite-pca-1973-ga",
+      "cite-pca-1973-key-figures",
+      "cite-pca-1973-leaving-pcus",
+      "cite-profile-pca-pca-about",
+      "cite-profile-pca-pca-morton",
+      "cite-profile-pca-pca-archives",
+      "cite-profile-pca-westminster"
+    ],
+    "formation_narrative": "Organizers opposed what they regarded as theological liberalism and weakening commitment to biblical and Reformed teaching in the PCUS. They sought a church explicitly committed to Scripture, Westminster doctrine, and evangelistic mission. Those are the founders\u2019 stated aims, not a neutral verdict on the Christianity of everyone who remained. The new church organized representative courts and a General Assembly; Morton H. Smith helped establish its continuing administration.",
+    "core_beliefs": [
+      "Reformed doctrine: the Westminster Confession and catechisms summarize its reading of biblical teaching.",
+      "Biblical authority and mission: the denomination identifies fidelity to Scripture and evangelistic work as core purposes.",
+      "Presbyterian government: local sessions, regional presbyteries, and the General Assembly share responsibility through representative elders."
+    ],
+    "key_documents": [
+      {
+        "title": "Westminster Confession and Larger and Shorter Catechisms",
+        "year": 1647,
+        "significance": "Historic Reformed doctrinal and teaching texts. American revisions and each church\u2019s subscription rules must be distinguished from the original Scottish form.",
+        "url": "https://opc.org/confessions.html",
+        "citations": [
+          "cite-profile-pca-westminster"
+        ]
+      },
+      {
+        "title": "About the PCA: purpose and government",
+        "year": null,
+        "significance": "Official contemporary explanation of the church\u2019s aims and Westminster commitments; self-description rather than independent proof of every founding allegation.",
+        "url": "https://pcanet.org/about-the-pca/",
+        "citations": [
+          "cite-profile-pca-pca-about"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-pca-pca-about",
+        "cite-profile-pca-pca-morton",
+        "cite-profile-pca-pca-archives"
+      ],
+      "core_beliefs": [
+        "cite-profile-pca-pca-about",
+        "cite-profile-pca-westminster"
+      ],
+      "key_figures": [
+        "cite-profile-pca-pca-about",
+        "cite-profile-pca-pca-morton",
+        "cite-profile-pca-pca-archives"
+      ],
+      "key_dates": [
+        "cite-profile-pca-pca-about",
+        "cite-profile-pca-pca-morton",
+        "cite-profile-pca-pca-archives"
+      ],
+      "ending_narrative": [
+        "cite-profile-pca-pca-about",
+        "cite-profile-pca-pca-morton",
+        "cite-profile-pca-pca-archives"
+      ]
+    },
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The PCA continues as a distinct denomination. Its 1973 formation was a departure from PCUS, not the terminal successor to every southern Presbyterian congregation. No merger ending the PCA is represented here.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "About the PCA \u2014 official description",
+        "url": "https://pcanet.org/about-the-pca/",
+        "snippet": "Formation and development: Organizers opposed what they regarded as theological liberalism and weakening commitment to biblical and Reformed teaching in the PCUS. They sought a church explicitly committed to Scripture, Westminster doctrine, and evangelistic mission.",
+        "citations": [
+          "cite-profile-pca-pca-about"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Larger and Shorter Catechisms",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Historic Reformed doctrinal and teaching texts. American revisions and each church\u2019s subscription rules must be distinguished from the original Scottish form.",
+        "citations": [
+          "cite-profile-pca-westminster"
+        ]
+      },
+      {
+        "title": "About the PCA: purpose and government",
+        "url": "https://pcanet.org/about-the-pca/",
+        "snippet": "Official contemporary explanation of the church\u2019s aims and Westminster commitments; self-description rather than independent proof of every founding allegation.",
+        "citations": [
+          "cite-profile-pca-pca-about"
+        ]
+      }
+    ]
   },
   {
     "id": "opc",
@@ -41,8 +321,126 @@
     "tradition_family": "Presbyterian",
     "ecclesial_orientation": "other",
     "current_status": "active",
-    "distinctives": ["Confessional", "Reformed (Calvinist)"],
-    "size_estimate": "33,520 members; 332 congregations (2023)"
+    "distinctives": [
+      "Confessional",
+      "Reformed (Calvinist)"
+    ],
+    "size_estimate": "over 30,000 members in over 300 churches",
+    "summary": "A confessional Presbyterian church founded in 1936 during disputes over theology, mission, and authority in the PCUSA.",
+    "key_figures": [
+      {
+        "name": "J. Gresham Machen",
+        "role": "New Testament scholar, Westminster Seminary founder, and leading organizer of the church",
+        "summary": "A New Testament scholar formerly at Princeton, founder of Westminster Theological Seminary, and leading figure in the 1936 Presbyterian separation.",
+        "url": "https://www.opc.org/historian.html",
+        "citations": [
+          "cite-profile-opc-opc-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "label": "OPC founded",
+        "citations": [
+          "cite-opc-1936-founded"
+        ],
+        "year": 1936
+      },
+      {
+        "label": "Name changed to Orthodox Presbyterian Church",
+        "citations": [
+          "cite-opc-1939-name"
+        ],
+        "year": 1939
+      },
+      {
+        "year": 1936,
+        "label": "Church organized on June 11",
+        "citations": [
+          "cite-profile-opc-opc-history"
+        ]
+      },
+      {
+        "year": 1939,
+        "label": "Orthodox Presbyterian Church name adopted",
+        "citations": [
+          "cite-profile-opc-opc-history"
+        ]
+      }
+    ],
+    "citations": [
+      "cite-opc-1936-founded",
+      "cite-opc-1936-causes",
+      "cite-opc-1939-name",
+      "cite-opc-size-30k",
+      "cite-profile-opc-opc-history",
+      "cite-profile-opc-westminster",
+      "cite-profile-opc-westminster-revisions"
+    ],
+    "formation_narrative": "Machen and colleagues believed modernist teaching had undermined the church\u2019s doctrinal and missionary witness. Their conflict with the PCUSA produced a separate body in June 1936, first called the Presbyterian Church of America. The name changed in 1939 under legal pressure. The OPC\u2019s own historical account presents its separation as preservation of historic Christianity; that evaluation should be attributed rather than assigned to all historians or all parties.",
+    "core_beliefs": [
+      "Westminster subscription: the confession and catechisms are subordinate standards under Scripture.",
+      "Reformed salvation: teaching emphasizes God\u2019s sovereignty and Christ\u2019s saving work rather than human merit.",
+      "Ordered church life: ministers and elders govern through sessions, presbyteries, and assemblies; doctrinal discipline and missions remain closely connected."
+    ],
+    "key_documents": [
+      {
+        "title": "Westminster Confession and Catechisms",
+        "year": 1647,
+        "significance": "The OPC receives an American revised form; its account explicitly distinguishes revisions it accepts from PCUSA changes it did not adopt.",
+        "url": "https://opc.org/documents/WCF_orig.html",
+        "citations": [
+          "cite-profile-opc-westminster-revisions"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-opc-opc-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-opc-westminster",
+        "cite-profile-opc-westminster-revisions"
+      ],
+      "key_figures": [
+        "cite-profile-opc-opc-history"
+      ],
+      "key_dates": [
+        "cite-profile-opc-opc-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-opc-opc-history"
+      ]
+    },
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The church continues under the OPC name adopted in 1939. That legal-pressure name change did not create a new denomination with a separate founding, and it did not end the church formed in 1936. No terminal successor applies.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Our History \u2014 Orthodox Presbyterian Church",
+        "url": "https://www.opc.org/historian.html",
+        "snippet": "Formation and development: Machen and colleagues believed modernist teaching had undermined the church\u2019s doctrinal and missionary witness. Their conflict with the PCUSA produced a separate body in June 1936, first called the Presbyterian Church of America.",
+        "citations": [
+          "cite-profile-opc-opc-history"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Catechisms \u2014 OPC official texts",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Teaching and practice: Westminster subscription: the confession and catechisms are subordinate standards under Scripture.",
+        "citations": [
+          "cite-profile-opc-westminster"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Catechisms",
+        "url": "https://opc.org/documents/WCF_orig.html",
+        "snippet": "The OPC receives an American revised form; its account explicitly distinguishes revisions it accepts from PCUSA changes it did not adopt.",
+        "citations": [
+          "cite-profile-opc-westminster-revisions"
+        ]
+      }
+    ]
   },
   {
     "id": "pcus",
@@ -58,8 +456,164 @@
     "ecclesial_orientation": "other",
     "current_status": "merged",
     "notes": "Merged into PC(USA) in 1983.",
-    "distinctives": ["Old School Presbyterian emphasis", "Westminster Confession subscription"],
-    "size_estimate": "814,931 members; 4,250 congregations (1982)"
+    "distinctives": [
+      "Old School Presbyterian emphasis",
+      "Westminster Confession subscription"
+    ],
+    "size_estimate": "unknown",
+    "summary": "The southern Presbyterian denomination formed in the Civil War era and reunited with UPCUSA in 1983.",
+    "key_figures": [
+      {
+        "name": "Benjamin Morgan Palmer",
+        "role": "moderator of the first southern General Assembly in 1861",
+        "summary": "A southern Presbyterian preacher selected as moderator of the first Confederate-era General Assembly. His role belongs in the context of church organization, secession, and slavery rather than being reduced to an honorary founder label.",
+        "url": "https://www.pcahistory.org/rgs/pcus/clerks_and_moderators.html",
+        "citations": [
+          "cite-profile-pcus-presbyterian-history",
+          "cite-profile-pcus-pcusa-1983",
+          "cite-profile-pcus-pca-about",
+          "cite-profile-pcus-pcus-moderators"
+        ]
+      },
+      {
+        "name": "John Anderson",
+        "role": "reunion-era moderator associated with PCUS",
+        "summary": "reunion-era moderator associated with PCUS. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://www.pcahistory.org/rgs/pcus/clerks_and_moderators.html",
+        "citations": [
+          "cite-profile-pcus-presbyterian-history",
+          "cite-profile-pcus-pcusa-1983",
+          "cite-profile-pcus-pca-about",
+          "cite-profile-pcus-pcus-moderators"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "label": "PCUS formed",
+        "citations": [
+          "cite-pcus-1861-split"
+        ],
+        "year": 1861
+      },
+      {
+        "label": "Merged into PC(USA)",
+        "citations": [
+          "cite-pcusa-1983-formed"
+        ],
+        "year": 1983
+      },
+      {
+        "year": 1861,
+        "label": "Southern Presbyterian body organized",
+        "citations": [
+          "cite-profile-pcus-presbyterian-history",
+          "cite-profile-pcus-pcusa-1983",
+          "cite-profile-pcus-pca-about"
+        ]
+      },
+      {
+        "year": 1973,
+        "label": "PCA organizes from departing PCUS churches",
+        "citations": [
+          "cite-profile-pcus-presbyterian-history",
+          "cite-profile-pcus-pcusa-1983",
+          "cite-profile-pcus-pca-about"
+        ]
+      },
+      {
+        "year": 1983,
+        "label": "PCUS reunites with UPCUSA",
+        "citations": [
+          "cite-profile-pcus-presbyterian-history",
+          "cite-profile-pcus-pcusa-1983",
+          "cite-profile-pcus-pca-about"
+        ]
+      }
+    ],
+    "citations": [
+      "cite-pcus-1861-split",
+      "cite-pcusa-1983-formed",
+      "cite-profile-pcus-presbyterian-history",
+      "cite-profile-pcus-pcusa-1983",
+      "cite-profile-pcus-pca-about",
+      "cite-profile-pcus-westminster",
+      "cite-profile-pcus-pcus-moderators"
+    ],
+    "formation_narrative": "The national crisis over slavery and federal union divided Presbyterians as well as the country. Southern Presbyterians organized the Presbyterian Church in the Confederate States of America in 1861; the body later used the PCUS name. Shared Reformed doctrine did not erase political and moral differences. A conservative departure created the PCA in 1973, but the PCUS itself continued until its 1983 reunion with the northern UPCUSA.",
+    "core_beliefs": [
+      "God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+      "Scripture and confession: the Bible is the primary norm; confessions and catechisms explain the church\u2019s accountable reading of it.",
+      "Church and sacraments: preaching, baptism, and the Lord\u2019s Supper belong to a disciplined Christian community, with government through ministers and elders in Presbyterian forms."
+    ],
+    "key_documents": [
+      {
+        "title": "Westminster Confession and Larger and Shorter Catechisms",
+        "year": 1647,
+        "significance": "Historic Reformed doctrinal and teaching texts. American revisions and each church\u2019s subscription rules must be distinguished from the original Scottish form.",
+        "url": "https://opc.org/confessions.html",
+        "citations": [
+          "cite-profile-pcus-westminster"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-pcus-presbyterian-history",
+        "cite-profile-pcus-pcusa-1983",
+        "cite-profile-pcus-pca-about"
+      ],
+      "core_beliefs": [
+        "cite-profile-pcus-westminster"
+      ],
+      "key_figures": [
+        "cite-profile-pcus-presbyterian-history",
+        "cite-profile-pcus-pcusa-1983",
+        "cite-profile-pcus-pca-about",
+        "cite-profile-pcus-pcus-moderators"
+      ],
+      "key_dates": [
+        "cite-profile-pcus-presbyterian-history",
+        "cite-profile-pcus-pcusa-1983",
+        "cite-profile-pcus-pca-about"
+      ],
+      "ending_narrative": [
+        "cite-profile-pcus-presbyterian-history",
+        "cite-profile-pcus-pcusa-1983",
+        "cite-profile-pcus-pca-about"
+      ]
+    },
+    "profile_scope": "The 1647 text is the inherited confessional tradition; exact PCUS revisions and subscription history need fuller primary-document comparison.",
+    "ending_narrative": "PCUS ended its separate institutional life in the 1983 reunion with UPCUSA, forming PCUSA. Reunion sought to heal the major northern-southern institutional division and combine ministries. The earlier PCA departure did not itself end PCUS.",
+    "successor_ids": [
+      "pcusa"
+    ],
+    "further_reading": [
+      {
+        "title": "History of the Church \u2014 Presbyterian Historical Society",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "snippet": "Formation and development: The national crisis over slavery and federal union divided Presbyterians as well as the country. Southern Presbyterians organized the Presbyterian Church in the Confederate States of America in 1861; the body later used the PCUS name.",
+        "citations": [
+          "cite-profile-pcus-presbyterian-history"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Catechisms \u2014 OPC official texts",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Teaching and practice: God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+        "citations": [
+          "cite-profile-pcus-westminster"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Larger and Shorter Catechisms",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Historic Reformed doctrinal and teaching texts. American revisions and each church\u2019s subscription rules must be distinguished from the original Scottish form.",
+        "citations": [
+          "cite-profile-pcus-westminster"
+        ]
+      }
+    ]
   },
   {
     "id": "pcusa-1789",
@@ -74,9 +628,161 @@
     "tradition_family": "Presbyterian",
     "ecclesial_orientation": "mainline",
     "current_status": "merged",
-    "notes": "Merged into UPCUSA in 1958.",
-    "distinctives": ["Mainline Protestant", "Reformed tradition"],
-    "size_estimate": "approx 2.8 million members (1957)"
+    "notes": "Merged into UPCUSA in 1958. The national body began before the Civil War; \u201cNorthern\u201d describes its later sectional history, not all of its membership in 1789.",
+    "distinctives": [
+      "Mainline Protestant",
+      "Reformed tradition"
+    ],
+    "size_estimate": "well over 2 million members (1958)",
+    "summary": "The national Presbyterian body whose first General Assembly met in 1789 and whose later northern history led to UPCUSA.",
+    "key_figures": [
+      {
+        "name": "Francis Makemie",
+        "role": "earlier presbyterial organizer in the church\u2019s ancestry",
+        "summary": "An Irish-born Presbyterian minister who served colonial communities and helped organize early American presbyterial cooperation.",
+        "url": "https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history",
+          "cite-profile-pcusa-1789-pcusa-1958"
+        ]
+      },
+      {
+        "name": "Eugene Carson Blake",
+        "role": "stated clerk and advocate of the 1958 union",
+        "summary": "A Presbyterian stated clerk and advocate of ecumenical cooperation who helped advance the 1958 union creating UPCUSA.",
+        "url": "https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history",
+          "cite-profile-pcusa-1789-pcusa-1958"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "label": "First General Assembly",
+        "citations": [
+          "cite-pcusa-1789-first-ga"
+        ],
+        "year": 1789
+      },
+      {
+        "label": "Southern split forming PCUS",
+        "citations": [
+          "cite-pcus-1861-split"
+        ],
+        "year": 1861
+      },
+      {
+        "label": "Merged into UPCUSA",
+        "citations": [
+          "cite-upcusa-1958-formed"
+        ],
+        "year": 1958
+      },
+      {
+        "year": 1788,
+        "label": "Constitutional organization and American confessional revisions",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history",
+          "cite-profile-pcusa-1789-pcusa-1958"
+        ]
+      },
+      {
+        "year": 1861,
+        "label": "Southern Presbyterian separation",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history",
+          "cite-profile-pcusa-1789-pcusa-1958"
+        ]
+      },
+      {
+        "year": 1958,
+        "label": "Union with UPCNA forms UPCUSA",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history",
+          "cite-profile-pcusa-1789-pcusa-1958"
+        ]
+      }
+    ],
+    "citations": [
+      "cite-pcusa-1789-first-ga",
+      "cite-pcus-1861-split",
+      "cite-upcusa-1958-formed",
+      "cite-profile-pcusa-1789-presbyterian-history",
+      "cite-profile-pcusa-1789-pcusa-1958",
+      "cite-profile-pcusa-1789-westminster",
+      "cite-profile-pcusa-1789-westminster-revisions"
+    ],
+    "formation_narrative": "Colonial presbyteries and synods developed national structures after American independence. Constitutional organization in 1788 and the first General Assembly in 1789 are distinct milestones. Subsequent disputes over revival, theology, slavery, and mission produced separations and reunions. Calling the entire 1789 body simply northern projects a later sectional identity backward. It joined the UPCNA in 1958 rather than becoming the present PCUSA directly.",
+    "core_beliefs": [
+      "God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+      "Scripture and confession: the Bible is the primary norm; confessions and catechisms explain the church\u2019s accountable reading of it.",
+      "Church and sacraments: preaching, baptism, and the Lord\u2019s Supper belong to a disciplined Christian community, with government through ministers and elders in Presbyterian forms."
+    ],
+    "key_documents": [
+      {
+        "title": "American revisions of the Westminster Standards",
+        "year": 1788,
+        "significance": "Adapted the inherited confession for the American setting; later PCUSA revisions and OPC reception differ.",
+        "url": "https://opc.org/documents/WCF_orig.html",
+        "citations": [
+          "cite-profile-pcusa-1789-westminster-revisions"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-pcusa-1789-presbyterian-history",
+        "cite-profile-pcusa-1789-pcusa-1958"
+      ],
+      "core_beliefs": [
+        "cite-profile-pcusa-1789-westminster",
+        "cite-profile-pcusa-1789-westminster-revisions"
+      ],
+      "key_figures": [
+        "cite-profile-pcusa-1789-presbyterian-history",
+        "cite-profile-pcusa-1789-pcusa-1958"
+      ],
+      "key_dates": [
+        "cite-profile-pcusa-1789-presbyterian-history",
+        "cite-profile-pcusa-1789-pcusa-1958"
+      ],
+      "ending_narrative": [
+        "cite-profile-pcusa-1789-presbyterian-history",
+        "cite-profile-pcusa-1789-pcusa-1958"
+      ]
+    },
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "This body merged with UPCNA in 1958 to form UPCUSA. Union advocates sought stronger common ministry across previously separate Presbyterian institutions. Its later continuity runs through UPCUSA and then the 1983 PCUSA reunion; it should not be collapsed into the present denomination without those stages.",
+    "successor_ids": [
+      "upcusa"
+    ],
+    "further_reading": [
+      {
+        "title": "History of the Church \u2014 Presbyterian Historical Society",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "snippet": "Formation and development: Colonial presbyteries and synods developed national structures after American independence. Constitutional organization in 1788 and the first General Assembly in 1789 are distinct milestones.",
+        "citations": [
+          "cite-profile-pcusa-1789-presbyterian-history"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Catechisms \u2014 OPC official texts",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Teaching and practice: God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+        "citations": [
+          "cite-profile-pcusa-1789-westminster"
+        ]
+      },
+      {
+        "title": "American revisions of the Westminster Standards",
+        "url": "https://opc.org/documents/WCF_orig.html",
+        "snippet": "Adapted the inherited confession for the American setting; later PCUSA revisions and OPC reception differ.",
+        "citations": [
+          "cite-profile-pcusa-1789-westminster-revisions"
+        ]
+      }
+    ]
   },
   {
     "id": "upcusa",
@@ -92,8 +798,181 @@
     "ecclesial_orientation": "other",
     "current_status": "merged",
     "notes": "Merged into PC(USA) in 1983.",
-    "distinctives": ["Reformed (Calvinist)"],
-    "size_estimate": "approx 2,351,119 members (1982)"
+    "distinctives": [
+      "Reformed (Calvinist)"
+    ],
+    "size_estimate": "unknown",
+    "summary": "The Presbyterian denomination formed in 1958 by PCUSA and UPCNA union, later a partner in the 1983 reunion.",
+    "key_figures": [
+      {
+        "name": "Eugene Carson Blake",
+        "role": "stated clerk and union advocate",
+        "summary": "A Presbyterian stated clerk and advocate of ecumenical cooperation who helped advance the 1958 union creating UPCUSA.",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "citations": [
+          "cite-profile-upcusa-pcusa-1958",
+          "cite-profile-upcusa-presbyterian-history"
+        ]
+      },
+      {
+        "name": "Samuel W. Shane",
+        "role": "UPCNA stated clerk and later associate stated clerk",
+        "summary": "The UPCNA stated clerk at the 1958 union, later serving as associate stated clerk in the new denomination.",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "citations": [
+          "cite-profile-upcusa-pcusa-1958",
+          "cite-profile-upcusa-presbyterian-history"
+        ]
+      },
+      {
+        "name": "Theophilus M. Taylor",
+        "role": "first moderator of the new denomination",
+        "summary": "A former UPCNA missionary and seminary professor elected first moderator of UPCUSA, symbolizing the participation of both uniting churches.",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "citations": [
+          "cite-profile-upcusa-pcusa-1958",
+          "cite-profile-upcusa-presbyterian-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "label": "First UPCUSA General Assembly",
+        "citations": [
+          "cite-upcusa-1958-dates"
+        ],
+        "year": 1958
+      },
+      {
+        "label": "Merged into PC(USA)",
+        "citations": [
+          "cite-pcusa-1983-formed"
+        ],
+        "year": 1983
+      },
+      {
+        "year": 1958,
+        "label": "PCUSA and UPCNA unite on May 28",
+        "citations": [
+          "cite-profile-upcusa-pcusa-1958",
+          "cite-profile-upcusa-presbyterian-history"
+        ]
+      },
+      {
+        "year": 1967,
+        "label": "Confession of 1967 expands the church\u2019s confessional framework",
+        "citations": [
+          "cite-profile-upcusa-pcusa-1958",
+          "cite-profile-upcusa-presbyterian-history"
+        ]
+      },
+      {
+        "year": 1983,
+        "label": "Reunites with PCUS to form PCUSA",
+        "citations": [
+          "cite-profile-upcusa-pcusa-1958",
+          "cite-profile-upcusa-presbyterian-history"
+        ]
+      }
+    ],
+    "citations": [
+      "cite-upcusa-1958-formed",
+      "cite-upcusa-1958-dates",
+      "cite-upcusa-1958-stated-clerks",
+      "cite-upcusa-1958-moderator",
+      "cite-pcusa-1983-formed",
+      "cite-profile-upcusa-pcusa-1958",
+      "cite-profile-upcusa-presbyterian-history",
+      "cite-profile-upcusa-pcusa-book",
+      "cite-profile-upcusa-westminster"
+    ],
+    "formation_narrative": "Union advocates sought stronger shared ministry across previously distinct Reformed institutions. Eugene Carson Blake promoted ecumenical cooperation, while some UPCNA members worried about losing their independent identity. The new denomination assembled in Pittsburgh in May 1958. It subsequently broadened its confessional collection and in 1983 joined the PCUS to form the present PCUSA. The merger did not mean every congregation agreed equally with every motive.",
+    "core_beliefs": [
+      "God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+      "Scripture and confession: the Bible is the primary norm; confessions and catechisms explain the church\u2019s accountable reading of it.",
+      "Church and sacraments: preaching, baptism, and the Lord\u2019s Supper belong to a disciplined Christian community, with government through ministers and elders in Presbyterian forms."
+    ],
+    "key_documents": [
+      {
+        "title": "Confession of 1967 / Book of Confessions",
+        "year": 1967,
+        "significance": "A major expansion from a Westminster-centered framework to a historical collection of confessional witnesses.",
+        "url": "https://pcusa.org/resource/book-confessions",
+        "citations": [
+          "cite-profile-upcusa-pcusa-book"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Larger and Shorter Catechisms",
+        "year": 1647,
+        "significance": "Historic Reformed doctrinal and teaching texts. American revisions and each church\u2019s subscription rules must be distinguished from the original Scottish form.",
+        "url": "https://opc.org/confessions.html",
+        "citations": [
+          "cite-profile-upcusa-westminster"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-upcusa-pcusa-1958",
+        "cite-profile-upcusa-presbyterian-history"
+      ],
+      "core_beliefs": [
+        "cite-profile-upcusa-pcusa-book",
+        "cite-profile-upcusa-westminster"
+      ],
+      "key_figures": [
+        "cite-profile-upcusa-pcusa-1958",
+        "cite-profile-upcusa-presbyterian-history"
+      ],
+      "key_dates": [
+        "cite-profile-upcusa-pcusa-1958",
+        "cite-profile-upcusa-presbyterian-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-upcusa-pcusa-1958",
+        "cite-profile-upcusa-presbyterian-history"
+      ]
+    },
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "UPCUSA joined PCUS in 1983 to form PCUSA, ending its separate corporate identity in a northern-southern reunion. Its congregations, institutions, and confessional heritage continued in the new body.",
+    "successor_ids": [
+      "pcusa"
+    ],
+    "further_reading": [
+      {
+        "title": "Stories from GA: 1958 Union \u2014 Presbyterian Church USA",
+        "url": "https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga",
+        "snippet": "Formation and development: Union advocates sought stronger shared ministry across previously distinct Reformed institutions. Eugene Carson Blake promoted ecumenical cooperation, while some UPCNA members worried about losing their independent identity.",
+        "citations": [
+          "cite-profile-upcusa-pcusa-1958"
+        ]
+      },
+      {
+        "title": "Book of Confessions \u2014 official resource",
+        "url": "https://pcusa.org/resource/book-confessions",
+        "snippet": "Teaching and practice: God\u2019s grace and sovereignty: salvation is understood as God\u2019s initiative in Christ rather than a human achievement.",
+        "citations": [
+          "cite-profile-upcusa-pcusa-book"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Larger and Shorter Catechisms",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Historic Reformed doctrinal and teaching texts. American revisions and each church\u2019s subscription rules must be distinguished from the original Scottish form.",
+        "citations": [
+          "cite-profile-upcusa-westminster"
+        ]
+      },
+      {
+        "title": "Confession of 1967 / Book of Confessions",
+        "url": "https://pcusa.org/resource/book-confessions",
+        "snippet": "A major expansion from a Westminster-centered framework to a historical collection of confessional witnesses.",
+        "citations": [
+          "cite-profile-upcusa-pcusa-book"
+        ]
+      }
+    ]
   },
   {
     "id": "upcna",
@@ -109,7 +988,163 @@
     "ecclesial_orientation": "other",
     "current_status": "merged",
     "notes": "Merger partner in 1958 formation of UPCUSA.",
-    "distinctives": ["Calvinist", "Covenanter/Seceder distinctives", "Exclusive psalmody"],
-    "size_estimate": "approx 257,513 members (1957)"
+    "distinctives": [
+      "Calvinist",
+      "Covenanter/Seceder distinctives",
+      "Exclusive psalmody"
+    ],
+    "size_estimate": "unknown",
+    "summary": "A Presbyterian denomination formed in 1858 from Associate and Reformed Presbyterian streams and merged into UPCUSA in 1958.",
+    "key_figures": [
+      {
+        "name": "Samuel W. Shane",
+        "role": "stated clerk at the 1958 union",
+        "summary": "The UPCNA stated clerk at the 1958 union, later serving as associate stated clerk in the new denomination.",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "citations": [
+          "cite-profile-upcna-pcusa-1958",
+          "cite-profile-upcna-presbyterian-history"
+        ]
+      },
+      {
+        "name": "Robert N. Montgomery",
+        "role": "moderator of the final UPCNA assembly",
+        "summary": "moderator of the final UPCNA assembly. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "citations": [
+          "cite-profile-upcna-pcusa-1958",
+          "cite-profile-upcna-presbyterian-history"
+        ]
+      },
+      {
+        "name": "Theophilus M. Taylor",
+        "role": "former UPCNA missionary and first moderator of the successor UPCUSA",
+        "summary": "A former UPCNA missionary and seminary professor elected first moderator of UPCUSA, symbolizing the participation of both uniting churches.",
+        "url": "https://pcusa.org/historical-society/history-online/history/history-church",
+        "citations": [
+          "cite-profile-upcna-pcusa-1958",
+          "cite-profile-upcna-presbyterian-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "label": "Constituted by union of two older churches",
+        "citations": [
+          "cite-upcusa-1958-formed"
+        ],
+        "year": 1858
+      },
+      {
+        "label": "Merged into UPCUSA",
+        "citations": [
+          "cite-upcusa-1958-formed"
+        ],
+        "year": 1958
+      },
+      {
+        "year": 1858,
+        "label": "Two older Presbyterian streams unite",
+        "citations": [
+          "cite-profile-upcna-pcusa-1958",
+          "cite-profile-upcna-presbyterian-history"
+        ]
+      },
+      {
+        "year": 1958,
+        "label": "Union with PCUSA forms UPCUSA",
+        "citations": [
+          "cite-profile-upcna-pcusa-1958",
+          "cite-profile-upcna-presbyterian-history"
+        ]
+      }
+    ],
+    "citations": [
+      "cite-upcusa-1958-formed",
+      "cite-upcusa-1958-stated-clerks",
+      "cite-upcusa-1958-montgomery",
+      "cite-profile-upcna-pcusa-1958",
+      "cite-profile-upcna-presbyterian-history",
+      "cite-profile-upcna-westminster",
+      "cite-profile-upcna-upcna-parents"
+    ],
+    "formation_narrative": "The Associate Reformed Presbyterian Church and Associate Presbyterian Church of North America united in 1858, seeking common Presbyterian ministry across previously separate institutions. The northern Associate Reformed stream must be distinguished from continuing southern ARP church life. A century later union with the larger PCUSA promised broader ministry but prompted concern about independence and continuity. The 1958 merger ended UPCNA as a separate body and created UPCUSA; both its own formation and its eventual union matter to the lineage.",
+    "core_beliefs": [
+      "Reformed inheritance: Westminster teaching supplied a common doctrinal language for the uniting traditions.",
+      "Presbyterian order: congregations participated through elders, presbyteries, and wider assemblies.",
+      "Distinctive identity and union: members disagreed about how confessional continuity should relate to wider Presbyterian cooperation; the earlier exclusive-psalmody label needs its own detailed historical sourcing."
+    ],
+    "key_documents": [
+      {
+        "title": "Westminster Confession and Larger and Shorter Catechisms",
+        "year": 1647,
+        "significance": "Historic Reformed doctrinal and teaching texts. American revisions and each church\u2019s subscription rules must be distinguished from the original Scottish form.",
+        "url": "https://opc.org/confessions.html",
+        "citations": [
+          "cite-profile-upcna-westminster"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-upcna-pcusa-1958",
+        "cite-profile-upcna-presbyterian-history",
+        "cite-profile-upcna-upcna-parents"
+      ],
+      "core_beliefs": [
+        "cite-profile-upcna-westminster"
+      ],
+      "key_figures": [
+        "cite-profile-upcna-pcusa-1958",
+        "cite-profile-upcna-presbyterian-history"
+      ],
+      "key_dates": [
+        "cite-profile-upcna-pcusa-1958",
+        "cite-profile-upcna-presbyterian-history"
+      ],
+      "ending_narrative": [
+        "cite-profile-upcna-pcusa-1958",
+        "cite-profile-upcna-presbyterian-history"
+      ]
+    },
+    "profile_scope": "The Westminster link explains inherited doctrine; original 1858 union standards and changes to worship practice remain research priorities.",
+    "ending_narrative": "UPCNA entered the 1958 union with PCUSA to form UPCUSA. Supporters sought a wider common ministry, while substantial internal opposition reflected concern about independence and identity. The main body ceased as a separate denomination; the source records limited provision for opting out rather than universal unanimity.",
+    "successor_ids": [
+      "upcusa"
+    ],
+    "further_reading": [
+      {
+        "title": "Stories from GA: 1958 Union \u2014 Presbyterian Church USA",
+        "url": "https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga",
+        "snippet": "Formation and development: Two churches with Scottish Presbyterian ancestry united to create a stronger common denomination while retaining a distinctive identity. A century later union with the larger PCUSA promised broader ministry but prompted significant concern among members about independence and continuity.",
+        "citations": [
+          "cite-profile-upcna-pcusa-1958"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Catechisms \u2014 OPC official texts",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Teaching and practice: Reformed inheritance: Westminster teaching supplied a common doctrinal language for the uniting traditions.",
+        "citations": [
+          "cite-profile-upcna-westminster"
+        ]
+      },
+      {
+        "title": "Westminster Confession and Larger and Shorter Catechisms",
+        "url": "https://opc.org/confessions.html",
+        "snippet": "Historic Reformed doctrinal and teaching texts. American revisions and each church\u2019s subscription rules must be distinguished from the original Scottish form.",
+        "citations": [
+          "cite-profile-upcna-westminster"
+        ]
+      },
+      {
+        "title": "Which churches formed UPCNA?",
+        "url": "https://pcusa.org/es/historical-society/collections/research-tools/guides-archival-collections/rg-209",
+        "snippet": "The archival administrative history identifies Associate and Associate Reformed Presbyterian merger parents in 1858. This is more precise than treating all Covenanter or Reformed Presbyterian bodies as one parent.",
+        "citations": [
+          "cite-profile-upcna-upcna-parents"
+        ]
+      }
+    ]
   }
 ]

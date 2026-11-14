@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "baptist-movement-to-triennial-1814",
     "name": "Foreign missions convention",
@@ -7,9 +7,79 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1814,
-    "reasons": ["foreign missions cooperation"],
+    "reasons": [
+      "foreign missions cooperation"
+    ],
     "description": "Baptist leaders organized a national missionary convention to coordinate foreign missions (the Triennial Convention).",
-    "citations": ["cite-triennial-1814", "cite-triennial-missions"]
+    "citations": [
+      "cite-triennial-1814",
+      "cite-triennial-missions",
+      "cite-profile-triennial-convention-abc-history",
+      "cite-profile-triennial-convention-im-history"
+    ],
+    "narrative": "Baptist leaders organized a national missionary convention to coordinate foreign missions (the Triennial Convention). Baptist support for overseas missions produced the General Missionary Convention in 1814, popularly called Triennial because of its meeting cycle. Mission societies coordinated work that individual autonomous congregations could not easily sustain alone. Conflict over appointing slaveholders as missionaries contributed to Southern Baptist organization in 1845. Northern mission societies later participated in the coordination established by the Northern Baptist Convention in 1907; that is a broader institutional history than a simple renaming of this convention.",
+    "causes": [
+      "foreign missions cooperation"
+    ],
+    "key_figures": [
+      {
+        "name": "Adoniram Judson",
+        "role": "missionary whose work helped mobilize organized Baptist overseas support",
+        "summary": "An American missionary to Burma whose work helped mobilize Baptist foreign-missions support; he belongs to the missionary heritage rather than the 1907 founding generation.",
+        "url": "https://www.abc-usa.org/our-history",
+        "citations": [
+          "cite-profile-triennial-convention-abc-history"
+        ]
+      },
+      {
+        "name": "Luther Rice",
+        "role": "Mission-support organizer who helped mobilize the 1814 convention",
+        "summary": "A missionary who returned to the United States and organized financial support for the Judsons and other overseas workers. The successor agency identifies his organizing work as a central stimulus to the convention.",
+        "url": "https://internationalministries.org/history/",
+        "citations": [
+          "cite-profile-triennial-convention-im-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1814,
+        "label": "Foreign missions convention",
+        "citations": [
+          "cite-triennial-1814",
+          "cite-triennial-missions"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Our History \u2014 American Baptist Churches USA",
+        "url": "https://www.abc-usa.org/our-history",
+        "snippet": "Formation and development: Baptist support for overseas missions produced the General Missionary Convention in 1814, popularly called Triennial because of its meeting cycle. Mission societies coordinated work that individual autonomous congregations could not easily sustain alone.",
+        "citations": [
+          "cite-profile-triennial-convention-abc-history"
+        ]
+      },
+      {
+        "title": "American Baptist historical account of missionary organization",
+        "url": "https://www.abc-usa.org/our-history",
+        "snippet": "Institutional history explaining the 1814 convention and the later societal structure; an explanatory source, not a founding confession.",
+        "citations": [
+          "cite-profile-triennial-convention-abc-history"
+        ]
+      },
+      {
+        "title": "What became of the Triennial missionary organization?",
+        "url": "https://internationalministries.org/history/",
+        "snippet": "The successor agency identifies the 1846 Missionary Union, 1910 Foreign Mission Society, and 1973 Board of International Ministries names. These stages explain why a direct 1907 transition to ABCUSA is misleading.",
+        "citations": [
+          "cite-profile-triennial-convention-im-history"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-triennial-convention-abc-history"
+    ]
   },
   {
     "id": "triennial-to-sbc-1845",
@@ -19,21 +89,162 @@
     "zoom_tier": "full",
     "type": "split",
     "year": 1845,
-    "reasons": ["slavery"],
+    "reasons": [
+      "slavery"
+    ],
     "description": "Southern Baptists separated from the Triennial Convention in 1845 to uphold slavery.",
-    "citations": ["cite-sbc-1845", "cite-sbc-slavery-split"]
+    "citations": [
+      "cite-sbc-1845",
+      "cite-sbc-slavery-split",
+      "cite-profile-southern-baptist-convention-sbc-slavery",
+      "cite-profile-southern-baptist-convention-abc-history"
+    ],
+    "narrative": "Southern Baptists separated from the Triennial Convention in 1845 to uphold slavery. Southern organizers created a separate missionary convention after national mission agencies would not accept slaveholding missionary candidates. The convention developed common mission, educational, and publishing institutions while affirming local church autonomy. Its contemporary statement of faith defines a conservative evangelical identity. In 1995 the convention formally acknowledged slavery\u2019s part in its origins and repented of racism; its founding context and subsequent self-examination both belong in the account.",
+    "causes": [
+      "slavery"
+    ],
+    "key_figures": [
+      {
+        "name": "William Bullein Johnson",
+        "role": "first president and important constitutional organizer",
+        "summary": "A South Carolina Baptist minister who helped shape the missionary conventions of both 1814 and 1845 and became the SBC\u2019s first president.",
+        "url": "https://sbhla.org/biographies/william-bullein-johnson/",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-slavery",
+          "cite-profile-southern-baptist-convention-abc-history",
+          "cite-profile-southern-baptist-convention-johnson"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1845,
+        "label": "Southern separation over slavery",
+        "citations": [
+          "cite-sbc-1845",
+          "cite-sbc-slavery-split"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "1995 SBC Resolution on Racial Reconciliation",
+        "url": "https://www.sbc.net/resource-library/resolutions/resolution-on-racial-reconciliation-on-the-150th-anniversary-of-the-southern-baptist-convention/",
+        "snippet": "Formation and development: Southern organizers created a separate missionary convention after national mission agencies would not accept slaveholding missionary candidates. The convention developed common mission, educational, and publishing institutions while affirming local church autonomy.",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-slavery"
+        ]
+      },
+      {
+        "title": "Baptist Faith and Message 2000 \u2014 official text",
+        "url": "https://bfm.sbc.net/bfm2000/",
+        "snippet": "Teaching and practice: Biblical authority: the Baptist Faith and Message describes Scripture as wholly trustworthy and the standard for teaching and conduct.",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-faith"
+        ]
+      },
+      {
+        "title": "Baptist Faith and Message",
+        "url": "https://bfm.sbc.net/bfm2000/",
+        "snippet": "Convention statement of shared doctrine; local churches remain autonomous.",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-faith"
+        ]
+      },
+      {
+        "title": "Resolution on Racial Reconciliation",
+        "url": "https://www.sbc.net/resource-library/resolutions/resolution-on-racial-reconciliation-on-the-150th-anniversary-of-the-southern-baptist-convention/",
+        "snippet": "Acknowledges slavery and racism in convention history and commits to repentance and reconciliation; a resolution, not a replacement confession.",
+        "citations": [
+          "cite-profile-southern-baptist-convention-sbc-slavery"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-southern-baptist-convention-sbc-slavery",
+      "cite-profile-southern-baptist-convention-abc-history"
+    ]
   },
   {
     "id": "triennial-to-abcusa-1907",
-    "name": "Reorganization into ABCUSA",
+    "name": "Missionary heritage and northern coordination",
     "from_id": "triennial-convention",
     "to_id": "american-baptist-churches-usa",
     "zoom_tier": "full",
-    "type": "continuation",
+    "type": "influence",
     "year": 1907,
-    "reasons": ["reorganization"],
-    "description": "The Triennial Convention reorganized in 1907 as the American Baptist Churches USA.",
-    "citations": ["cite-triennial-1907", "cite-abcusa-1907"]
+    "reasons": [
+      "reorganization"
+    ],
+    "description": "Earlier Baptist missionary organizations supplied an institutional heritage for the Northern Baptist Convention organized in 1907. The American Baptist Churches USA name dates to 1972; this is not a direct 1907 renaming of the original Triennial Convention.",
+    "citations": [
+      "cite-triennial-1907",
+      "cite-abcusa-1907",
+      "cite-profile-american-baptist-churches-usa-abc-history"
+    ],
+    "narrative": "Earlier Baptist missionary organizations supplied an institutional heritage for the Northern Baptist Convention organized in 1907. The American Baptist Churches USA name dates to 1972; this is not a direct 1907 renaming of the original Triennial Convention. Northern Baptist churches coordinated mission societies through a convention organized in 1907. It became the American Baptist Convention in 1950 and American Baptist Churches USA in 1972. The present body maintains a connection to earlier missionary work without being simply the Triennial Convention under a new name. Its history includes both evangelistic mission and social service, with unity negotiated among churches that do not agree on every question.",
+    "causes": [
+      "reorganization"
+    ],
+    "key_figures": [
+      {
+        "name": "Adoniram Judson",
+        "role": "earlier missionary figure in the foreign-missions heritage, not a founder of the 1907 convention",
+        "summary": "An American missionary to Burma whose work helped mobilize Baptist foreign-missions support; he belongs to the missionary heritage rather than the 1907 founding generation.",
+        "url": "https://www.abc-usa.org/our-history",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1907,
+        "label": "Missionary heritage and northern coordination",
+        "citations": [
+          "cite-triennial-1907",
+          "cite-abcusa-1907",
+          "cite-profile-american-baptist-churches-usa-abc-history"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Our History \u2014 American Baptist Churches USA",
+        "url": "https://www.abc-usa.org/our-history",
+        "snippet": "Formation and development: Northern Baptist churches coordinated mission societies through a convention organized in 1907. It became the American Baptist Convention in 1950 and American Baptist Churches USA in 1972.",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-history"
+        ]
+      },
+      {
+        "title": "What We Believe \u2014 American Baptist Churches USA",
+        "url": "https://abc-usa.org/what-we-believe",
+        "snippet": "Teaching and practice: Christ-centered faith: confession of Christ\u2019s saving work accompanies an emphasis on the believer\u2019s direct relationship with God.",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-beliefs"
+        ]
+      },
+      {
+        "title": "10 Facts About American Baptists",
+        "url": "https://abc-usa.org/10facts",
+        "snippet": "Explains the tradition\u2019s shared practices and cooperative identity.",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-facts"
+        ]
+      },
+      {
+        "title": "What We Believe",
+        "url": "https://abc-usa.org/what-we-believe",
+        "snippet": "Official explanatory account of shared convictions; it does not function as a compulsory detailed creed for every congregation.",
+        "citations": [
+          "cite-profile-american-baptist-churches-usa-abc-beliefs"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-american-baptist-churches-usa-abc-history"
+    ]
   },
   {
     "id": "baptist-movement-to-nbcusa-1895",
@@ -43,9 +254,83 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1895,
-    "reasons": ["merger of conventions"],
+    "reasons": [
+      "merger of conventions"
+    ],
     "description": "NBCUSA formed in 1895 by merging multiple Baptist conventions.",
-    "citations": ["cite-nbcusa-1895", "cite-nbcusa-merger"]
+    "citations": [
+      "cite-nbcusa-1895",
+      "cite-nbcusa-merger",
+      "cite-profile-national-baptist-convention-usa-nbc-1939",
+      "cite-profile-national-baptist-convention-usa-black-confessions",
+      "cite-profile-national-baptist-convention-usa-pnbc-history"
+    ],
+    "narrative": "NBCUSA formed in 1895 by merging multiple Baptist conventions. In 1895 earlier Black Baptist conventions united their mission and educational efforts. This organization grew in a society shaped by slavery\u2019s aftermath and racial exclusion, creating institutions under Black leadership. Later disputes over the publishing board and over leadership and civil-rights strategy produced separate conventions. Organizational separation should not be mistaken for an entirely new theology each time.",
+    "causes": [
+      "merger of conventions"
+    ],
+    "key_figures": [
+      {
+        "name": "E. C. Morris",
+        "role": "early convention president associated with the united organization",
+        "summary": "Elias Camp Morris was an early president who helped lead the united National Baptist organization and its institutional development.",
+        "url": "https://kinginstitute.stanford.edu/progressive-national-baptist-convention-pnbc",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-nbc-1939",
+          "cite-profile-national-baptist-convention-usa-black-confessions",
+          "cite-profile-national-baptist-convention-usa-pnbc-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1895,
+        "label": "Merger of conventions",
+        "citations": [
+          "cite-nbcusa-1895",
+          "cite-nbcusa-merger"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "National Baptist Convention 1939 annual \u2014 constitution and historical preamble",
+        "url": "https://media2.sbhla.org.s3.amazonaws.com/aaa/nbc/NBC_1939.pdf",
+        "snippet": "Formation and development: In 1895 earlier Black Baptist conventions united their mission and educational efforts. This organization grew in a society shaped by slavery\u2019s aftermath and racial exclusion, creating institutions under Black leadership.",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-nbc-1939"
+        ]
+      },
+      {
+        "title": "A Confessing People \u2014 Baptist confessions and National Baptist divisions",
+        "url": "https://equip.sbts.edu/publications/magazine/a-confessing-people-a-brief-history-of-baptist-confessions-of-faith/",
+        "snippet": "Teaching and practice: Baptist Christian faith: the convention\u2019s Articles of Faith use the New Hampshire confessional tradition to express beliefs about Scripture, salvation, and the church.",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-black-confessions"
+        ]
+      },
+      {
+        "title": "National Baptist Convention constitution and historical preamble",
+        "url": "https://media2.sbhla.org.s3.amazonaws.com/aaa/nbc/NBC_1939.pdf",
+        "snippet": "A primary annual preserving the convention\u2019s account of its union and purposes.",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-nbc-1939"
+        ]
+      },
+      {
+        "title": "Articles of Faith / New Hampshire confessional tradition",
+        "url": "https://equip.sbts.edu/publications/magazine/a-confessing-people-a-brief-history-of-baptist-confessions-of-faith/",
+        "snippet": "An adopted Baptist doctrinal tradition, distinct from the convention\u2019s constitutional rules.",
+        "citations": [
+          "cite-profile-national-baptist-convention-usa-black-confessions"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-national-baptist-convention-usa-nbc-1939",
+      "cite-profile-national-baptist-convention-usa-black-confessions",
+      "cite-profile-national-baptist-convention-usa-pnbc-history"
+    ]
   },
   {
     "id": "nbcusa-to-nbca-1915",
@@ -55,9 +340,62 @@
     "zoom_tier": "full",
     "type": "split",
     "year": 1915,
-    "reasons": ["organizational separation"],
+    "reasons": [
+      "organizational separation"
+    ],
     "description": "NBCA separated from NBCUSA in 1915.",
-    "citations": ["cite-nbcusa-separation-1915", "cite-nbca-1915"]
+    "citations": [
+      "cite-nbcusa-separation-1915",
+      "cite-nbca-1915",
+      "cite-profile-national-baptist-convention-of-america-black-confessions"
+    ],
+    "narrative": "NBCA separated from NBCUSA in 1915. The National Baptist publishing-board controversy divided leaders who otherwise shared much Baptist theology. The National Baptist Convention of America developed as a separate cooperative body rather than as the result of a new doctrine of baptism or salvation. Its history is therefore best explained through institutional authority, publishing, and autonomous Black church cooperation, with attention to subsequent organizational changes that need further detailed research.",
+    "causes": [
+      "organizational separation"
+    ],
+    "key_figures": [
+      {
+        "name": "R. H. Boyd",
+        "role": "publishing-board leader central to the institutional context of the 1915 dispute",
+        "summary": "Richard Henry Boyd was a Black Baptist publishing organizer whose struggle over publishing-board independence helped produce the 1915 convention division.",
+        "url": "https://media2.sbhla.org.s3.amazonaws.com/aaa/nbc/NBC_1917.pdf",
+        "citations": [
+          "cite-profile-national-baptist-convention-of-america-black-confessions",
+          "cite-profile-national-baptist-convention-of-america-nbc-1917"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1915,
+        "label": "Separation from NBCUSA",
+        "citations": [
+          "cite-nbcusa-separation-1915",
+          "cite-nbca-1915"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "A Confessing People \u2014 Baptist confessions and National Baptist divisions",
+        "url": "https://equip.sbts.edu/publications/magazine/a-confessing-people-a-brief-history-of-baptist-confessions-of-faith/",
+        "snippet": "Formation and development: The National Baptist publishing-board controversy divided leaders who otherwise shared much Baptist theology. The National Baptist Convention of America developed as a separate cooperative body rather than as the result of a new doctrine of baptism or salvation.",
+        "citations": [
+          "cite-profile-national-baptist-convention-of-america-black-confessions"
+        ]
+      },
+      {
+        "title": "National Baptist Convention annual account of the publishing dispute",
+        "url": "https://media2.sbhla.org.s3.amazonaws.com/aaa/nbc/NBC_1917.pdf",
+        "snippet": "A primary witness from the opposing convention describing Boyd and the 1915 rupture. Read as a party\u2019s testimony, not as NBCA\u2019s own constitution. An authoritative NBCA founding constitution remains missing research.",
+        "citations": [
+          "cite-profile-national-baptist-convention-of-america-nbc-1917"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-national-baptist-convention-of-america-black-confessions"
+    ]
   },
   {
     "id": "nbcusa-to-pnbc-1961",
@@ -67,9 +405,70 @@
     "zoom_tier": "full",
     "type": "split",
     "year": 1961,
-    "reasons": ["organizational separation"],
+    "reasons": [
+      "organizational separation"
+    ],
     "description": "PNBC separated from NBCUSA in 1961.",
-    "citations": ["cite-nbcusa-separation-1961", "cite-pnbc-1961"]
+    "citations": [
+      "cite-nbcusa-separation-1961",
+      "cite-pnbc-1961",
+      "cite-profile-progressive-national-baptist-convention-pnbc-history"
+    ],
+    "narrative": "PNBC separated from NBCUSA in 1961. The 1961 National Baptist Convention meeting exposed conflict over incumbent leadership and the use of nonviolent direct action. Ministers associated with Gardner Taylor and supporters of Martin Luther King Jr.\u2019s approach formed a separate convention in Cincinnati that November. Its distinctive historical role is the institutional space it provided for civil-rights advocacy within a Baptist framework, rather than a wholly separate baptismal theology.",
+    "causes": [
+      "organizational separation"
+    ],
+    "key_figures": [
+      {
+        "name": "Gardner C. Taylor",
+        "role": "central leader in the opposition to the incumbent National Baptist leadership",
+        "summary": "A Baptist preacher and leader in the 1961 opposition to J. H. Jackson, associated with the emerging Progressive National Baptist Convention.",
+        "url": "https://kinginstitute.stanford.edu/progressive-national-baptist-convention-pnbc",
+        "citations": [
+          "cite-profile-progressive-national-baptist-convention-pnbc-history"
+        ]
+      },
+      {
+        "name": "Martin Luther King Jr.",
+        "role": "minister whose nonviolent activism was supported by the new convention",
+        "summary": "A Baptist minister and civil-rights leader whose support for nonviolent direct action was central to the conflict behind PNBC formation.",
+        "url": "https://kinginstitute.stanford.edu/progressive-national-baptist-convention-pnbc",
+        "citations": [
+          "cite-profile-progressive-national-baptist-convention-pnbc-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1961,
+        "label": "Separation from NBCUSA",
+        "citations": [
+          "cite-nbcusa-separation-1961",
+          "cite-pnbc-1961"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Progressive National Baptist Convention \u2014 Stanford King Institute",
+        "url": "https://kinginstitute.stanford.edu/progressive-national-baptist-convention-pnbc",
+        "snippet": "Formation and development: The 1961 National Baptist Convention meeting exposed conflict over incumbent leadership and the use of nonviolent direct action. Ministers associated with Gardner Taylor and supporters of Martin Luther King Jr.\u2019s approach formed a separate convention in Cincinnati that November.",
+        "citations": [
+          "cite-profile-progressive-national-baptist-convention-pnbc-history"
+        ]
+      },
+      {
+        "title": "PNBC resolutions",
+        "url": "https://www.pnbc.org/assets/uploads/2019/10/2019-PNBC-Resolutions.pdf",
+        "snippet": "Official public statements illustrating the convention\u2019s social and civic witness; resolutions are distinct from a doctrinal confession or founding constitution.",
+        "citations": [
+          "cite-profile-progressive-national-baptist-convention-pnbc-resolutions"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-progressive-national-baptist-convention-pnbc-history"
+    ]
   },
   {
     "id": "abcusa-to-venture-1947",
@@ -79,8 +478,62 @@
     "zoom_tier": "full",
     "type": "split",
     "year": 1947,
-    "reasons": ["fundamentalist-modernist controversy", "mission agency dispute"],
+    "reasons": [
+      "fundamentalist-modernist controversy",
+      "mission agency dispute"
+    ],
     "description": "Conservative Baptists organized in 1947 amid controversy within the Northern Baptist Convention, forming the Conservative Baptist Association of America (now Venture Church Network).",
-    "citations": ["cite-venture-1947", "cite-venture-history"]
+    "citations": [
+      "cite-venture-1947",
+      "cite-venture-history",
+      "cite-profile-venture-church-network-venture"
+    ],
+    "narrative": "Conservative Baptists organized in 1947 amid controversy within the Northern Baptist Convention, forming the Conservative Baptist Association of America (now Venture Church Network). Conservative Baptists first established mission agencies and then, in 1947, a separate association of churches amid conflict over theological direction in northern Baptist institutions. The present Venture Church Network describes that separation as a defense of historic evangelical convictions. Its network structure aims to strengthen local churches without replacing their government; the account of the dispute is the organization\u2019s own interpretation and should be read as such.",
+    "causes": [
+      "fundamentalist-modernist controversy",
+      "mission agency dispute"
+    ],
+    "key_figures": [
+      {
+        "name": "B. Myron Cedarholm",
+        "role": "Early Conservative Baptist worker and national general director",
+        "summary": "A Baptist minister who began work with the new association in 1947 and served as its second national general director from 1950 to 1965. He later founded Maranatha; his departure shows that the association\u2019s early leadership was not a uniform, unchanging bloc.",
+        "url": "https://www.mbu.edu/seminary/maranatha-is-baptist/",
+        "citations": [
+          "cite-profile-venture-church-network-cedarholm"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1947,
+        "label": "Conservative Baptist separation",
+        "citations": [
+          "cite-venture-1947",
+          "cite-venture-history"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "About Us: History and Beliefs \u2014 Venture Church Network",
+        "url": "https://venturechurches.org/about-us/",
+        "snippet": "Formation and development: Conservative Baptists first established mission agencies and then, in 1947, a separate association of churches amid conflict over theological direction in northern Baptist institutions. The present Venture Church Network describes that separation as a defense of historic evangelical convictions.",
+        "citations": [
+          "cite-profile-venture-church-network-venture"
+        ]
+      },
+      {
+        "title": "What We Believe",
+        "url": "https://venturechurches.org/about-us/",
+        "snippet": "The network\u2019s published doctrinal statement explains its present basis of cooperation; it is not evidence that every detail had identical wording in 1947.",
+        "citations": [
+          "cite-profile-venture-church-network-venture"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-venture-church-network-venture"
+    ]
   }
 ]

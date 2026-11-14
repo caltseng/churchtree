@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "english-reformation",
     "name": "English Reformation",
@@ -10,10 +10,175 @@
     "geographic_origin": "England",
     "tradition_family": "Anglican",
     "ecclesial_orientation": "other",
-    "current_status": "dissolved",
+    "current_status": "unknown",
     "notes": "Break with Rome and establishment of a national church in England.",
-    "distinctives": ["Royal supremacy", "Reformation reforms"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "Royal supremacy",
+      "Reformation reforms"
+    ],
+    "size_estimate": "unknown",
+    "summary": "A sequence of political and religious changes that separated English church government from Rome and transformed worship and doctrine.",
+    "formation_narrative": "Henry VIII\u2019s dispute over his marriage coincided with a struggle over jurisdiction and royal power. Parliamentary acts in the 1530s transferred authority from Rome to the crown. Further Protestant reform, Catholic restoration, and Elizabethan settlement followed under successive monarchs. The process cannot be reduced to one fully Protestant church springing into existence in 1534: political separation and doctrinal reform proceeded at different speeds.",
+    "core_beliefs": [
+      "Authority was contested: royal supremacy replaced papal jurisdiction before every doctrinal question was settled.",
+      "Protestant teaching developed: later articles and vernacular worship expressed reform beyond the initial constitutional break.",
+      "No single movement creed: the participants\u2019 aims differed across reigns; the later Anglican settlement is one outcome of the process."
+    ],
+    "key_figures": [
+      {
+        "name": "Henry VIII",
+        "role": "monarch who asserted royal supremacy",
+        "summary": "The English monarch whose marital and jurisdictional conflict with Rome led to royal supremacy; his political break did not immediately settle all later Protestant doctrine.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/",
+        "citations": [
+          "cite-profile-english-reformation-english-reformation",
+          "cite-profile-english-reformation-supremacy",
+          "cite-profile-english-reformation-tec-timeline"
+        ]
+      },
+      {
+        "name": "Thomas Cromwell",
+        "role": "minister who steered the parliamentary break",
+        "summary": "Henry VIII\u2019s minister who helped steer the parliamentary measures transferring English ecclesiastical authority away from Rome.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/",
+        "citations": [
+          "cite-profile-english-reformation-english-reformation",
+          "cite-profile-english-reformation-supremacy",
+          "cite-profile-english-reformation-tec-timeline"
+        ]
+      },
+      {
+        "name": "Thomas Cranmer",
+        "role": "archbishop central to later prayer-book reform",
+        "summary": "The English archbishop whose liturgical work helped make common prayer a central expression of reformed English Christianity.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/",
+        "citations": [
+          "cite-profile-english-reformation-english-reformation",
+          "cite-profile-english-reformation-supremacy",
+          "cite-profile-english-reformation-tec-timeline"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1534,
+        "label": "Act of Supremacy establishes royal headship",
+        "citations": [
+          "cite-profile-english-reformation-english-reformation",
+          "cite-profile-english-reformation-supremacy",
+          "cite-profile-english-reformation-tec-timeline"
+        ]
+      },
+      {
+        "year": 1549,
+        "label": "First Book of Common Prayer",
+        "citations": [
+          "cite-profile-english-reformation-english-reformation",
+          "cite-profile-english-reformation-supremacy",
+          "cite-profile-english-reformation-tec-timeline"
+        ]
+      },
+      {
+        "year": 1571,
+        "label": "Thirty-nine Articles receive their received Elizabethan form",
+        "citations": [
+          "cite-profile-english-reformation-english-reformation",
+          "cite-profile-english-reformation-supremacy",
+          "cite-profile-english-reformation-tec-timeline"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Act of Supremacy",
+        "year": 1534,
+        "significance": "A jurisdictional statute defining royal headship, not a complete Protestant confession.",
+        "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/collections/common-prayer/act-of-supremacy/",
+        "citations": [
+          "cite-profile-english-reformation-supremacy"
+        ]
+      },
+      {
+        "title": "Thirty-nine Articles",
+        "year": 1571,
+        "significance": "Later Anglican doctrinal settlement; it should not be projected unchanged onto Henry\u2019s initial break.",
+        "url": "https://www.churchofengland.org/liturgy/book-of-common-prayer/articles-religion",
+        "citations": [
+          "cite-profile-english-reformation-anglican-articles"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-english-reformation-english-reformation",
+        "cite-profile-english-reformation-supremacy",
+        "cite-profile-english-reformation-tec-timeline"
+      ],
+      "core_beliefs": [
+        "cite-profile-english-reformation-supremacy",
+        "cite-profile-english-reformation-anglican-articles"
+      ],
+      "key_figures": [
+        "cite-profile-english-reformation-english-reformation",
+        "cite-profile-english-reformation-supremacy",
+        "cite-profile-english-reformation-tec-timeline"
+      ],
+      "key_dates": [
+        "cite-profile-english-reformation-english-reformation",
+        "cite-profile-english-reformation-supremacy",
+        "cite-profile-english-reformation-tec-timeline"
+      ],
+      "ending_narrative": [
+        "cite-profile-english-reformation-english-reformation",
+        "cite-profile-english-reformation-supremacy",
+        "cite-profile-english-reformation-tec-timeline"
+      ]
+    },
+    "citations": [
+      "cite-profile-english-reformation-english-reformation",
+      "cite-profile-english-reformation-supremacy",
+      "cite-profile-english-reformation-tec-timeline",
+      "cite-profile-english-reformation-anglican-articles"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position. No formal corporate dissolution is asserted for this historical process. The status is unknown at the institutional level; the ending narrative explains its diffusion or development.",
+    "ending_narrative": "The process passed through Protestant reform, Catholic restoration, and later Anglican settlement rather than ending in one formal dissolution. Its institutional and theological consequences continue in the Church of England and wider traditions. The Church of England link is a principal outcome, not proof that every reforming participant intended the same result.",
+    "successor_ids": [
+      "church-of-england"
+    ],
+    "further_reading": [
+      {
+        "title": "The Reformation \u2014 UK Parliament historical account",
+        "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+        "snippet": "Formation and development: Henry VIII\u2019s dispute over his marriage coincided with a struggle over jurisdiction and royal power. Parliamentary acts in the 1530s transferred authority from Rome to the crown.",
+        "citations": [
+          "cite-profile-english-reformation-english-reformation"
+        ]
+      },
+      {
+        "title": "Act of Supremacy 1534 \u2014 UK Parliament collection",
+        "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/collections/common-prayer/act-of-supremacy/",
+        "snippet": "Teaching and practice: Authority was contested: royal supremacy replaced papal jurisdiction before every doctrinal question was settled.",
+        "citations": [
+          "cite-profile-english-reformation-supremacy"
+        ]
+      },
+      {
+        "title": "Thirty-nine Articles",
+        "url": "https://www.churchofengland.org/liturgy/book-of-common-prayer/articles-religion",
+        "snippet": "Later Anglican doctrinal settlement; it should not be projected unchanged onto Henry\u2019s initial break.",
+        "citations": [
+          "cite-profile-english-reformation-anglican-articles"
+        ]
+      },
+      {
+        "title": "Act of Supremacy",
+        "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/collections/common-prayer/act-of-supremacy/",
+        "snippet": "A jurisdictional statute defining royal headship, not a complete Protestant confession.",
+        "citations": [
+          "cite-profile-english-reformation-supremacy"
+        ]
+      }
+    ]
   },
   {
     "id": "church-of-england",
@@ -28,7 +193,149 @@
     "ecclesial_orientation": "other",
     "current_status": "active",
     "notes": "Established as the English national church in the Reformation era.",
-    "distinctives": ["Anglican doctrine"],
-    "size_estimate": "26 million baptized members (self-reported, 2024)"
+    "distinctives": [
+      "Anglican doctrine"
+    ],
+    "size_estimate": "26 million baptized members (self-reported, 2024)",
+    "summary": "England\u2019s established church, shaped by ancient Christian continuity, the Reformation, and a shared liturgical and episcopal inheritance.",
+    "formation_narrative": "The Reformation separated English church authority from Rome through royal and parliamentary action. Subsequent settlements established a distinctive combination of Reformed teaching, common prayer, and historic episcopal ministry. The church\u2019s own doctrinal canons identify Scripture, the Articles, prayer book, and Ordinal as guiding sources. Its members have differed substantially in churchmanship, and the 1534 marker should be explained as a jurisdictional break rather than the beginning of Christianity in England.",
+    "core_beliefs": [
+      "Scripture and creeds: biblical teaching is read within the inherited Christian tradition.",
+      "Common prayer and sacraments: worship is shaped by authorized liturgy, baptism, and the Lord\u2019s Supper.",
+      "Episcopal and national structure: bishops and parishes organize an established church whose internal traditions include evangelical, catholic, and broad-church emphases."
+    ],
+    "key_figures": [
+      {
+        "name": "Thomas Cranmer",
+        "role": "archbishop and principal prayer-book reformer",
+        "summary": "The English archbishop whose liturgical work helped make common prayer a central expression of reformed English Christianity.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/",
+        "citations": [
+          "cite-profile-church-of-england-english-reformation",
+          "cite-profile-church-of-england-tec-timeline"
+        ]
+      },
+      {
+        "name": "Henry VIII",
+        "role": "political agent of separation from Rome, not author of the later entire doctrinal settlement",
+        "summary": "The English monarch whose marital and jurisdictional conflict with Rome led to royal supremacy; his political break did not immediately settle all later Protestant doctrine.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/",
+        "citations": [
+          "cite-profile-church-of-england-english-reformation",
+          "cite-profile-church-of-england-tec-timeline"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1534,
+        "label": "Royal supremacy replaces papal jurisdiction",
+        "citations": [
+          "cite-profile-church-of-england-english-reformation",
+          "cite-profile-church-of-england-tec-timeline"
+        ]
+      },
+      {
+        "year": 1549,
+        "label": "First English Book of Common Prayer",
+        "citations": [
+          "cite-profile-church-of-england-english-reformation",
+          "cite-profile-church-of-england-tec-timeline"
+        ]
+      },
+      {
+        "year": 1662,
+        "label": "Prayer-book settlement becomes a lasting doctrinal and liturgical reference",
+        "citations": [
+          "cite-profile-church-of-england-english-reformation",
+          "cite-profile-church-of-england-tec-timeline"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Thirty-nine Articles",
+        "year": 1571,
+        "significance": "Historical doctrinal standard named in the church\u2019s canons.",
+        "url": "https://www.churchofengland.org/liturgy/book-of-common-prayer/articles-religion",
+        "citations": [
+          "cite-profile-church-of-england-anglican-articles"
+        ]
+      },
+      {
+        "title": "Book of Common Prayer and Ordinal",
+        "year": 1662,
+        "significance": "Doctrinal and liturgical standards identified in Canon A5; common worship is a major carrier of Anglican theology.",
+        "url": "https://www.churchofengland.org/resources/legal/canons-church-england/section-a",
+        "citations": [
+          "cite-profile-church-of-england-coe-canons"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-church-of-england-english-reformation",
+        "cite-profile-church-of-england-tec-timeline"
+      ],
+      "core_beliefs": [
+        "cite-profile-church-of-england-coe-canons",
+        "cite-profile-church-of-england-anglican-articles"
+      ],
+      "key_figures": [
+        "cite-profile-church-of-england-english-reformation",
+        "cite-profile-church-of-england-tec-timeline"
+      ],
+      "key_dates": [
+        "cite-profile-church-of-england-english-reformation",
+        "cite-profile-church-of-england-tec-timeline"
+      ],
+      "ending_narrative": [
+        "cite-profile-church-of-england-english-reformation",
+        "cite-profile-church-of-england-tec-timeline"
+      ]
+    },
+    "citations": [
+      "cite-profile-church-of-england-english-reformation",
+      "cite-profile-church-of-england-tec-timeline",
+      "cite-profile-church-of-england-coe-canons",
+      "cite-profile-church-of-england-anglican-articles"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The Church of England continues as England\u2019s established church. American Anglican organization and later Methodist or Separatist developments did not terminate it. Those are related histories and departures, not terminal successors to a vanished parent.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "The Reformation \u2014 UK Parliament historical account",
+        "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+        "snippet": "Formation and development: The Reformation separated English church authority from Rome through royal and parliamentary action. Subsequent settlements established a distinctive combination of Reformed teaching, common prayer, and historic episcopal ministry.",
+        "citations": [
+          "cite-profile-church-of-england-english-reformation"
+        ]
+      },
+      {
+        "title": "Canons of the Church of England: Section A",
+        "url": "https://www.churchofengland.org/resources/legal/canons-church-england/section-a",
+        "snippet": "Teaching and practice: Scripture and creeds: biblical teaching is read within the inherited Christian tradition.",
+        "citations": [
+          "cite-profile-church-of-england-coe-canons"
+        ]
+      },
+      {
+        "title": "Thirty-nine Articles",
+        "url": "https://www.churchofengland.org/liturgy/book-of-common-prayer/articles-religion",
+        "snippet": "Historical doctrinal standard named in the church\u2019s canons.",
+        "citations": [
+          "cite-profile-church-of-england-anglican-articles"
+        ]
+      },
+      {
+        "title": "Book of Common Prayer and Ordinal",
+        "url": "https://www.churchofengland.org/resources/legal/canons-church-england/section-a",
+        "snippet": "Doctrinal and liturgical standards identified in Canon A5; common worship is a major carrier of Anglican theology.",
+        "citations": [
+          "cite-profile-church-of-england-coe-canons"
+        ]
+      }
+    ]
   }
 ]

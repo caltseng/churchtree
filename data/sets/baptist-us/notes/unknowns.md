@@ -13,5 +13,8 @@ Follow-up research needed for the items below.
 - Triennial Convention
 - Venture Church Network
 
+## Missing predecessor edges
+- Baptist movement
+
 ## Notes
 - Add citations for any new size estimates (year + source).

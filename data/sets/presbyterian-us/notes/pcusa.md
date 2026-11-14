@@ -1,21 +1,27 @@
-# Data Notes: Presbyterian Church (USA)
+# Data Notes: Presbyterian Church (USA) [PC(USA)]
 
-Date collected: 2026-01-18
+Date collected: 2026-01-25
 
 ## Facts
-- Node: Presbyterian Church (USA) | Start year 1983 | End year none | Region US | Notes: Formed by merger of PCUS and UPCUSA. | Theological distinctives: Reformed; Barthianist; Mainline Protestant | Size estimate: approx 1,045,848 active members (2024)
-- Edge: PCUS -> PC(USA) | Type merge | Year 1983 | Reasons: reunion of northern and southern Presbyterian branches | Description: The Southern branch (PCUS) merged with the northern branch (UPCUSA) to form PC(USA).
-- Edge: UPCUSA -> PC(USA) | Type merge | Year 1983 | Reasons: reunion of northern and southern Presbyterian branches | Description: The northern branch (UPCUSA) merged with the Southern branch (PCUS) to form PC(USA).
+- Node: Presbyterian Church (USA) | 1983 | | US | US | Presbyterian | mainline | active | PC(USA) formed by reunion of PCUS and UPCUSA in 1983. | James Costen; John Anderson | 1983-06-10: reunion forming PC(USA) | Reformed; mainline | unknown
+- Edge: PCUS -> PC(USA) | merge | 1983 | reunion of northern and southern branches | reunion merger | PCUS merged with UPCUSA to form PC(USA) in 1983. | James Costen; John Anderson
+- Edge: UPCUSA -> PC(USA) | merge | 1983 | reunion of northern and southern branches | reunion merger | UPCUSA merged with PCUS to form PC(USA) in 1983. | James Costen; John Anderson
+
+## Key figures (details)
+- James Costen — PCUS moderator at reunion | node pcusa | cite-pcusa-1983-figures
+- John Anderson — UPCUSA moderator at reunion | node pcusa | cite-pcusa-1983-figures
+
+## Key dates/milestones
+- 1983-06-10: Reunion forming PC(USA) | node pcusa | cite-pcusa-1983-reunion
 
 ## Sources
-- src-wiki-pcusa: Presbyterian Church (USA) - Wikipedia (website) https://en.wikipedia.org/wiki/Presbyterian_Church_(USA)
+- src-pcusa-history: History of the Church - Presbyterian Historical Society (website) https://pcusa.org/historical-society/history-online/history/history-church
+- src-pcusa-heritage-1983: Presbyterian Heritage Sunday 2023: 40th Anniversary of PC(USA) (website) https://pcusa.org/news-storytelling/news/2023/6/5/minute-mission-presbyterian-heritage-sunday
 
 ## Citations
-- cite-pcusa-founded: src-wiki-pcusa | Infobox: founded_date, merger | Accessed 2026-01-18
-- cite-pcusa-merge-1983: src-wiki-pcusa | Lead: established with 1983 merger of PCUS and UPCUSA | Accessed 2026-01-18
-- cite-pcusa-theology: src-wiki-pcusa | Infobox: theology (Reformed, Barthianist) | Accessed 2026-01-18
-- cite-pcusa-mainline: src-wiki-pcusa | Lead: mainline Protestant denomination | Accessed 2026-01-18
-- cite-pcusa-size: src-wiki-pcusa | Infobox: members 1,045,848 active members (2024) | Accessed 2026-01-18
+- cite-pcusa-1983-formed: src-pcusa-history | L509 (PCUS and UPCUSA reunited in 1983 as PC(USA)) | 2026-01-25
+- cite-pcusa-1983-reunion: src-pcusa-heritage-1983 | L460-L462 (June 10, 1983 reunion; moderators Costen and Anderson) | 2026-01-25
+- cite-pcusa-1983-figures: src-pcusa-heritage-1983 | L462 (moderators James Costen and John Anderson) | 2026-01-25
 
 ## Notes Summary
-- PC(USA) formed in 1983 by merger of PCUS and UPCUSA.
+- PC(USA) formed in 1983 by reunion of PCUS and UPCUSA.

@@ -1,392 +1,1148 @@
-﻿[
-    {
-        "id":  "src-wiki-pca",
-        "title":  "Presbyterian Church in America - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Presbyterian_Church_in_America"
-    },
-    {
-        "id":  "src-wiki-pcusa",
-        "title":  "Presbyterian Church (USA) - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Presbyterian_Church_(USA)"
-    },
-    {
-        "id":  "src-wiki-opc",
-        "title":  "Orthodox Presbyterian Church - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Orthodox_Presbyterian_Church"
-    },
-    {
-        "id":  "src-wiki-pcus",
-        "title":  "Presbyterian Church in the United States - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Presbyterian_Church_in_the_United_States"
-    },
-    {
-        "id":  "src-wiki-pcusa-1789",
-        "title":  "Presbyterian Church in the United States of America - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Presbyterian_Church_in_the_United_States_of_America"
-    },
-    {
-        "id":  "src-wiki-upcusa",
-        "title":  "United Presbyterian Church in the United States of America - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/United_Presbyterian_Church_in_the_United_States_of_America"
-    },
-    {
-        "id":  "src-wiki-upcna",
-        "title":  "United Presbyterian Church of North America - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/United_Presbyterian_Church_of_North_America"
-    },
-    {
-        "id":  "src-wiki-zurich-reformation",
-        "title":  "Reformation in Zurich - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Reformation_in_Z%C3%BCrich"
-    },
-    {
-        "id":  "src-wiki-zwingli",
-        "title":  "Huldrych Zwingli - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Huldrych_Zwingli"
-    },
-    {
-        "id":  "src-wiki-genevan-reformation",
-        "title":  "Genevan Reformation - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Genevan_Reformation"
-    },
-    {
-        "id":  "src-wiki-calvins-geneva",
-        "title":  "Calvin\u0027s Geneva - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Calvin%27s_Geneva"
-    },
-    {
-        "id":  "src-wiki-scottish-reformation",
-        "title":  "Scottish Reformation - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Scottish_Reformation"
-    },
-    {
-        "id":  "src-wiki-presbyterian-polity",
-        "title":  "Presbyterian polity - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Presbyterian_polity"
-    },
-    {
-        "id":  "src-wiki-cos-synods-presbyteries",
-        "title":  "List of Church of Scotland synods and presbyteries - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/List_of_Church_of_Scotland_synods_and_presbyteries"
-    },
-    {
-        "id":  "src-wiki-presbyterian-us",
-        "title":  "Presbyterianism in the United States - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Presbyterianism_in_the_United_States"
-    },
-    {
-        "id":  "src-wiki-presbytery-philadelphia",
-        "title":  "Presbytery of Philadelphia - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Presbytery_of_Philadelphia"
-    },
-    {
-        "id":  "src-wiki-old-side-new-side",
-        "title":  "Old Sideâ€“New Side Controversy - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Old_Side%E2%80%93New_Side_Controversy"
-    },
-    {
-        "id":  "src-wiki-makemie",
-        "title":  "Francis Makemie - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Francis_Makemie"
-    },
-    {
-        "id":  "src-wiki-church-of-scotland",
-        "title":  "Church of Scotland - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Church_of_Scotland"
-    },
-    {
-        "id":  "src-wiki-english-congregation-geneva",
-        "title":  "English Congregation in Geneva - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/English_Congregation_in_Geneva"
-    },
-    {
-        "id":  "src-wiki-protestant-church-switzerland",
-        "title":  "Protestant Church in Switzerland - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Protestant_Church_of_Switzerland"
-    },
-    {
-        "id":  "src-wiki-scotch-irish",
-        "title":  "Scotch-Irish Americans - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Scotch-Irish_Americans"
-    },
-    {
-        "id":  "src-wiki-presbyterianism",
-        "title":  "Presbyterianism - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Presbyterianism"
-    },
-    {
-        "id":  "src-wiki-book-of-discipline",
-        "title":  "Book of Discipline (Church of Scotland) - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Book_of_Discipline_(Church_of_Scotland)"
-    },
-    {
-        "id":  "src-wiki-catholic-church",
-        "title":  "Catholic Church - Wikipedia",
-        "kind":  "website",
-        "url":  "https://en.wikipedia.org/wiki/Catholic_Church"
-    },
-    {
-        "title":  "Baptists - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Baptists",
-        "id":  "src-wiki-baptists",
-        "kind":  "website"
-    },
-    {
-        "title":  "Triennial Convention - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Triennial_Convention",
-        "id":  "src-wiki-triennial-convention",
-        "kind":  "website"
-    },
-    {
-        "title":  "Southern Baptist Convention - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Southern_Baptist_Convention",
-        "id":  "src-wiki-sbc",
-        "kind":  "website"
-    },
-    {
-        "title":  "American Baptist Churches USA - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/American_Baptist_Churches_USA",
-        "id":  "src-wiki-abcusa",
-        "kind":  "website"
-    },
-    {
-        "title":  "National Baptist Convention, USA - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/National_Baptist_Convention,_USA",
-        "id":  "src-wiki-nbcusa",
-        "kind":  "website"
-    },
-    {
-        "title":  "National Baptist Convention of America International - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/National_Baptist_Convention_of_America_International",
-        "id":  "src-wiki-nbca",
-        "kind":  "website"
-    },
-    {
-        "title":  "Progressive National Baptist Convention - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Progressive_National_Baptist_Convention",
-        "id":  "src-wiki-pnbc",
-        "kind":  "website"
-    },
-    {
-        "title":  "Venture Church Network - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Venture_Church_Network",
-        "id":  "src-wiki-venture-church-network",
-        "kind":  "website"
-    },
-    {
-        "title":  "Methodist Episcopal Church - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Methodist_Episcopal_Church",
-        "id":  "src-wiki-methodist-episcopal-church",
-        "kind":  "website"
-    },
-    {
-        "title":  "Methodist Episcopal Church, South - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Methodist_Episcopal_Church,_South",
-        "id":  "src-wiki-methodist-episcopal-church-south",
-        "kind":  "website"
-    },
-    {
-        "title":  "Methodist Protestant Church - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Methodist_Protestant_Church",
-        "id":  "src-wiki-methodist-protestant-church",
-        "kind":  "website"
-    },
-    {
-        "title":  "Methodist Church (United States) - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Methodist_Church_(United_States)",
-        "id":  "src-wiki-methodist-church-us",
-        "kind":  "website"
-    },
-    {
-        "title":  "United Methodist Church - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/United_Methodist_Church",
-        "id":  "src-wiki-united-methodist-church",
-        "kind":  "website"
-    },
-    {
-        "title":  "Evangelical United Brethren Church - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Evangelical_United_Brethren_Church",
-        "id":  "src-wiki-evangelical-united-brethren-church",
-        "kind":  "website"
-    },
-    {
-        "title":  "Lutheran Church - Missouri Synod - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Lutheran_Church_%E2%80%93_Missouri_Synod",
-        "id":  "src-wiki-lcms",
-        "kind":  "website"
-    },
-    {
-        "title":  "Wisconsin Evangelical Lutheran Synod - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Wisconsin_Evangelical_Lutheran_Synod",
-        "id":  "src-wiki-wels",
-        "kind":  "website"
-    },
-    {
-        "title":  "American Lutheran Church - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/American_Lutheran_Church",
-        "id":  "src-wiki-alc",
-        "kind":  "website"
-    },
-    {
-        "title":  "Lutheran Church in America - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Lutheran_Church_in_America",
-        "id":  "src-wiki-lca",
-        "kind":  "website"
-    },
-    {
-        "title":  "Association of Evangelical Lutheran Churches - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Association_of_Evangelical_Lutheran_Churches",
-        "id":  "src-wiki-aelc",
-        "kind":  "website"
-    },
-    {
-        "title":  "Evangelical Lutheran Church in America - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Evangelical_Lutheran_Church_in_America",
-        "id":  "src-wiki-elca",
-        "kind":  "website"
-    },
-    {
-        "title":  "Episcopal Church (United States) - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Episcopal_Church_(United_States)",
-        "id":  "src-wiki-episcopal-church",
-        "kind":  "website"
-    },
-    {
-        "title":  "Anglican Church in North America - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Anglican_Church_in_North_America",
-        "id":  "src-wiki-acna",
-        "kind":  "website"
-    },
-    {
-        "title":  "Pentecostalism - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Pentecostalism",
-        "id":  "src-wiki-pentecostalism",
-        "kind":  "website"
-    },
-    {
-        "title":  "Assemblies of God - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Assemblies_of_God",
-        "id":  "src-wiki-assemblies-of-god",
-        "kind":  "website"
-    },
-    {
-        "title":  "Church of God (Cleveland, Tennessee) - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Church_of_God_(Cleveland,_Tennessee)",
-        "id":  "src-wiki-church-of-god-cleveland",
-        "kind":  "website"
-    },
-    {
-        "title":  "Church of God in Christ - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Church_of_God_in_Christ",
-        "id":  "src-wiki-cogic",
-        "kind":  "website"
-    },
-    {
-        "title":  "Foursquare Church - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Foursquare_Church",
-        "id":  "src-wiki-foursquare",
-        "kind":  "website"
-    },
-    {
-        "title":  "Restoration Movement - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Restoration_Movement",
-        "id":  "src-wiki-restoration-movement",
-        "kind":  "website"
-    },
-    {
-        "title":  "Christian Church (Disciples of Christ) - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Christian_Church_(Disciples_of_Christ)",
-        "id":  "src-wiki-disciples",
-        "kind":  "website"
-    },
-    {
-        "title":  "Churches of Christ - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Churches_of_Christ",
-        "id":  "src-wiki-churches-of-christ",
-        "kind":  "website"
-    },
-    {
-        "title":  "Christian churches and churches of Christ - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Christian_churches_and_churches_of_Christ",
-        "id":  "src-wiki-independent-christian-churches",
-        "kind":  "website"
-    },
-    {
-        "title":  "Church of the Nazarene - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Church_of_the_Nazarene",
-        "id":  "src-wiki-church-of-the-nazarene",
-        "kind":  "website"
-    },
-    {
-        "title":  "Millerism - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Millerism",
-        "id":  "src-wiki-millerism",
-        "kind":  "website"
-    },
-    {
-        "title":  "Seventh-day Adventist Church - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Seventh-day_Adventist_Church",
-        "id":  "src-wiki-seventh-day-adventist",
-        "kind":  "website"
-    },
-    {
-        "title":  "Advent Christian Church - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Advent_Christian_Church",
-        "id":  "src-wiki-advent-christian",
-        "kind":  "website"
-    },
-    {
-        "title":  "Church of God (Seventh Day) - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Church_of_God_(Seventh_Day)",
-        "id":  "src-wiki-church-of-god-seventh-day",
-        "kind":  "website"
-    },
-    {
-        "title":  "English Reformation - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/English_Reformation",
-        "id":  "src-wiki-english-reformation",
-        "kind":  "website"
-    },
-    {
-        "title":  "Church of England - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Church_of_England",
-        "id":  "src-wiki-church-of-england",
-        "kind":  "website"
-    },
-    {
-        "title":  "Methodism - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Methodism",
-        "id":  "src-wiki-methodism",
-        "kind":  "website"
-    },
-    {
-        "title":  "Lutheranism - Wikipedia",
-        "url":  "https://en.wikipedia.org/wiki/Lutheranism",
-        "id":  "src-wiki-lutheranism",
-        "kind":  "website"
-    }
+[
+  {
+    "id": "src-wiki-pca",
+    "title": "Presbyterian Church in America - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Presbyterian_Church_in_America"
+  },
+  {
+    "id": "src-wiki-pcusa",
+    "title": "Presbyterian Church (USA) - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Presbyterian_Church_(USA)"
+  },
+  {
+    "id": "src-wiki-opc",
+    "title": "Orthodox Presbyterian Church - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Orthodox_Presbyterian_Church"
+  },
+  {
+    "id": "src-wiki-pcus",
+    "title": "Presbyterian Church in the United States - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Presbyterian_Church_in_the_United_States"
+  },
+  {
+    "id": "src-wiki-pcusa-1789",
+    "title": "Presbyterian Church in the United States of America - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Presbyterian_Church_in_the_United_States_of_America"
+  },
+  {
+    "id": "src-wiki-upcusa",
+    "title": "United Presbyterian Church in the United States of America - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/United_Presbyterian_Church_in_the_United_States_of_America"
+  },
+  {
+    "id": "src-wiki-upcna",
+    "title": "United Presbyterian Church of North America - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/United_Presbyterian_Church_of_North_America"
+  },
+  {
+    "id": "src-wiki-zurich-reformation",
+    "title": "Reformation in Zurich - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Reformation_in_Z%C3%BCrich"
+  },
+  {
+    "id": "src-wiki-zwingli",
+    "title": "Huldrych Zwingli - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Huldrych_Zwingli"
+  },
+  {
+    "id": "src-wiki-genevan-reformation",
+    "title": "Genevan Reformation - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Genevan_Reformation"
+  },
+  {
+    "id": "src-wiki-calvins-geneva",
+    "title": "Calvin's Geneva - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Calvin%27s_Geneva"
+  },
+  {
+    "id": "src-wiki-scottish-reformation",
+    "title": "Scottish Reformation - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Scottish_Reformation"
+  },
+  {
+    "id": "src-wiki-presbyterian-polity",
+    "title": "Presbyterian polity - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Presbyterian_polity"
+  },
+  {
+    "id": "src-wiki-cos-synods-presbyteries",
+    "title": "List of Church of Scotland synods and presbyteries - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/List_of_Church_of_Scotland_synods_and_presbyteries"
+  },
+  {
+    "id": "src-wiki-presbyterian-us",
+    "title": "Presbyterianism in the United States - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Presbyterianism_in_the_United_States"
+  },
+  {
+    "id": "src-wiki-presbytery-philadelphia",
+    "title": "Presbytery of Philadelphia - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Presbytery_of_Philadelphia"
+  },
+  {
+    "id": "src-wiki-old-side-new-side",
+    "title": "Old Side\u00e2\u20ac\u201cNew Side Controversy - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Old_Side%E2%80%93New_Side_Controversy"
+  },
+  {
+    "id": "src-wiki-makemie",
+    "title": "Francis Makemie - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Francis_Makemie"
+  },
+  {
+    "id": "src-wiki-church-of-scotland",
+    "title": "Church of Scotland - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Church_of_Scotland"
+  },
+  {
+    "id": "src-wiki-english-congregation-geneva",
+    "title": "English Congregation in Geneva - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/English_Congregation_in_Geneva"
+  },
+  {
+    "id": "src-wiki-protestant-church-switzerland",
+    "title": "Protestant Church in Switzerland - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Protestant_Church_of_Switzerland"
+  },
+  {
+    "id": "src-wiki-scotch-irish",
+    "title": "Scotch-Irish Americans - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Scotch-Irish_Americans"
+  },
+  {
+    "id": "src-wiki-presbyterianism",
+    "title": "Presbyterianism - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Presbyterianism"
+  },
+  {
+    "id": "src-wiki-book-of-discipline",
+    "title": "Book of Discipline (Church of Scotland) - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Book_of_Discipline_(Church_of_Scotland)"
+  },
+  {
+    "id": "src-wiki-catholic-church",
+    "title": "Catholic Church - Wikipedia",
+    "kind": "website",
+    "url": "https://en.wikipedia.org/wiki/Catholic_Church"
+  },
+  {
+    "title": "Baptists - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Baptists",
+    "id": "src-wiki-baptists",
+    "kind": "website"
+  },
+  {
+    "title": "Triennial Convention - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Triennial_Convention",
+    "id": "src-wiki-triennial-convention",
+    "kind": "website"
+  },
+  {
+    "title": "Southern Baptist Convention - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Southern_Baptist_Convention",
+    "id": "src-wiki-sbc",
+    "kind": "website"
+  },
+  {
+    "title": "American Baptist Churches USA - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/American_Baptist_Churches_USA",
+    "id": "src-wiki-abcusa",
+    "kind": "website"
+  },
+  {
+    "title": "National Baptist Convention, USA - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/National_Baptist_Convention,_USA",
+    "id": "src-wiki-nbcusa",
+    "kind": "website"
+  },
+  {
+    "title": "National Baptist Convention of America International - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/National_Baptist_Convention_of_America_International",
+    "id": "src-wiki-nbca",
+    "kind": "website"
+  },
+  {
+    "title": "Progressive National Baptist Convention - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Progressive_National_Baptist_Convention",
+    "id": "src-wiki-pnbc",
+    "kind": "website"
+  },
+  {
+    "title": "Venture Church Network - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Venture_Church_Network",
+    "id": "src-wiki-venture-church-network",
+    "kind": "website"
+  },
+  {
+    "title": "Methodist Episcopal Church - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Methodist_Episcopal_Church",
+    "id": "src-wiki-methodist-episcopal-church",
+    "kind": "website"
+  },
+  {
+    "title": "Methodist Episcopal Church, South - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Methodist_Episcopal_Church,_South",
+    "id": "src-wiki-methodist-episcopal-church-south",
+    "kind": "website"
+  },
+  {
+    "title": "Methodist Protestant Church - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Methodist_Protestant_Church",
+    "id": "src-wiki-methodist-protestant-church",
+    "kind": "website"
+  },
+  {
+    "title": "Methodist Church (United States) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Methodist_Church_(United_States)",
+    "id": "src-wiki-methodist-church-us",
+    "kind": "website"
+  },
+  {
+    "title": "United Methodist Church - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/United_Methodist_Church",
+    "id": "src-wiki-united-methodist-church",
+    "kind": "website"
+  },
+  {
+    "title": "Evangelical United Brethren Church - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Evangelical_United_Brethren_Church",
+    "id": "src-wiki-evangelical-united-brethren-church",
+    "kind": "website"
+  },
+  {
+    "title": "Lutheran Church - Missouri Synod - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lutheran_Church_%E2%80%93_Missouri_Synod",
+    "id": "src-wiki-lcms",
+    "kind": "website"
+  },
+  {
+    "title": "Wisconsin Evangelical Lutheran Synod - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Wisconsin_Evangelical_Lutheran_Synod",
+    "id": "src-wiki-wels",
+    "kind": "website"
+  },
+  {
+    "title": "American Lutheran Church - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/American_Lutheran_Church",
+    "id": "src-wiki-alc",
+    "kind": "website"
+  },
+  {
+    "title": "Lutheran Church in America - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lutheran_Church_in_America",
+    "id": "src-wiki-lca",
+    "kind": "website"
+  },
+  {
+    "title": "Association of Evangelical Lutheran Churches - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Association_of_Evangelical_Lutheran_Churches",
+    "id": "src-wiki-aelc",
+    "kind": "website"
+  },
+  {
+    "title": "Evangelical Lutheran Church in America - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Evangelical_Lutheran_Church_in_America",
+    "id": "src-wiki-elca",
+    "kind": "website"
+  },
+  {
+    "title": "Episcopal Church (United States) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Episcopal_Church_(United_States)",
+    "id": "src-wiki-episcopal-church",
+    "kind": "website"
+  },
+  {
+    "title": "Anglican Church in North America - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Anglican_Church_in_North_America",
+    "id": "src-wiki-acna",
+    "kind": "website"
+  },
+  {
+    "title": "Pentecostalism - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pentecostalism",
+    "id": "src-wiki-pentecostalism",
+    "kind": "website"
+  },
+  {
+    "title": "Assemblies of God - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Assemblies_of_God",
+    "id": "src-wiki-assemblies-of-god",
+    "kind": "website"
+  },
+  {
+    "title": "Church of God (Cleveland, Tennessee) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Church_of_God_(Cleveland,_Tennessee)",
+    "id": "src-wiki-church-of-god-cleveland",
+    "kind": "website"
+  },
+  {
+    "title": "Church of God in Christ - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Church_of_God_in_Christ",
+    "id": "src-wiki-cogic",
+    "kind": "website"
+  },
+  {
+    "title": "Foursquare Church - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Foursquare_Church",
+    "id": "src-wiki-foursquare",
+    "kind": "website"
+  },
+  {
+    "title": "Restoration Movement - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Restoration_Movement",
+    "id": "src-wiki-restoration-movement",
+    "kind": "website"
+  },
+  {
+    "title": "Christian Church (Disciples of Christ) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Christian_Church_(Disciples_of_Christ)",
+    "id": "src-wiki-disciples",
+    "kind": "website"
+  },
+  {
+    "title": "Churches of Christ - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Churches_of_Christ",
+    "id": "src-wiki-churches-of-christ",
+    "kind": "website"
+  },
+  {
+    "title": "Christian churches and churches of Christ - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Christian_churches_and_churches_of_Christ",
+    "id": "src-wiki-independent-christian-churches",
+    "kind": "website"
+  },
+  {
+    "title": "Church of the Nazarene - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Church_of_the_Nazarene",
+    "id": "src-wiki-church-of-the-nazarene",
+    "kind": "website"
+  },
+  {
+    "title": "Millerism - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Millerism",
+    "id": "src-wiki-millerism",
+    "kind": "website"
+  },
+  {
+    "title": "Seventh-day Adventist Church - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Seventh-day_Adventist_Church",
+    "id": "src-wiki-seventh-day-adventist",
+    "kind": "website"
+  },
+  {
+    "title": "Advent Christian Church - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Advent_Christian_Church",
+    "id": "src-wiki-advent-christian",
+    "kind": "website"
+  },
+  {
+    "title": "Church of God (Seventh Day) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Church_of_God_(Seventh_Day)",
+    "id": "src-wiki-church-of-god-seventh-day",
+    "kind": "website"
+  },
+  {
+    "title": "English Reformation - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/English_Reformation",
+    "id": "src-wiki-english-reformation",
+    "kind": "website"
+  },
+  {
+    "title": "Church of England - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Church_of_England",
+    "id": "src-wiki-church-of-england",
+    "kind": "website"
+  },
+  {
+    "title": "Methodism - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Methodism",
+    "id": "src-wiki-methodism",
+    "kind": "website"
+  },
+  {
+    "title": "Lutheranism - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lutheranism",
+    "id": "src-wiki-lutheranism",
+    "kind": "website"
+  },
+  {
+    "id": "src-profile-miller",
+    "title": "William Miller \u2014 Encyclopedia of Seventh-day Adventists",
+    "kind": "website",
+    "url": "https://encyclopedia.adventist.org/article?highlight=Miller&id=19SO"
+  },
+  {
+    "id": "src-profile-himes",
+    "title": "Joshua Vaughan Himes \u2014 Encyclopedia of Seventh-day Adventists",
+    "kind": "website",
+    "url": "https://encyclopedia.adventist.org/article?highlight=Himes%2C&id=49HD"
+  },
+  {
+    "id": "src-profile-miller-primary",
+    "title": "Signs of the Times and Expositor of Prophecy, vol. 4 \u2014 primary Millerite periodical",
+    "kind": "website",
+    "url": "https://m.egwwritings.org/en/book/1656.4506"
+  },
+  {
+    "id": "src-profile-sda-history",
+    "title": "Our History \u2014 Seventh-day Adventist Church",
+    "kind": "website",
+    "url": "https://institucional.adventistas.org/en/who-we-are/identity/our-history/"
+  },
+  {
+    "id": "src-profile-sda-yearbook",
+    "title": "General Conference \u2014 Adventist Yearbook",
+    "kind": "website",
+    "url": "https://www.adventistyearbook.org/entity?EntityID=10010&highlight=oh"
+  },
+  {
+    "id": "src-profile-sda-beliefs",
+    "title": "28 Fundamental Beliefs \u2014 Seventh-day Adventist Church",
+    "kind": "website",
+    "url": "https://adventist.org/beliefs"
+  },
+  {
+    "id": "src-profile-ac-about",
+    "title": "About Advent Christians \u2014 General Conference",
+    "kind": "website",
+    "url": "https://acgc.us/about/"
+  },
+  {
+    "id": "src-profile-ac-2026",
+    "title": "Actions Taken at the 2026 Triennial Convention",
+    "kind": "website",
+    "url": "https://acgc.us/news/actions-taken-at-the-2026-triennial-convention/"
+  },
+  {
+    "id": "src-profile-ac-beliefs",
+    "title": "Advent Christian Declaration of Principles \u2014 official text",
+    "kind": "website",
+    "url": "https://acgc.us/news/declaration-of-principles/"
+  },
+  {
+    "id": "src-profile-cog7-history",
+    "title": "Church of God (Seventh Day): Our History",
+    "kind": "website",
+    "url": "https://secure.cog7.org/our-history/"
+  },
+  {
+    "id": "src-profile-cog7-faith",
+    "title": "Church of God (Seventh Day): What We Believe",
+    "kind": "website",
+    "url": "https://secure.cog7.org/what-we-believe/"
+  },
+  {
+    "id": "src-profile-english-reformation",
+    "title": "The Reformation \u2014 UK Parliament historical account",
+    "kind": "website",
+    "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/"
+  },
+  {
+    "id": "src-profile-supremacy",
+    "title": "Act of Supremacy 1534 \u2014 UK Parliament collection",
+    "kind": "website",
+    "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/collections/common-prayer/act-of-supremacy/"
+  },
+  {
+    "id": "src-profile-tec-timeline",
+    "title": "Timeline of the Episcopal Church",
+    "kind": "website",
+    "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/"
+  },
+  {
+    "id": "src-profile-anglican-articles",
+    "title": "Thirty-nine Articles of Religion \u2014 Church of England text",
+    "kind": "website",
+    "url": "https://www.churchofengland.org/liturgy/book-of-common-prayer/articles-religion"
+  },
+  {
+    "id": "src-profile-coe-canons",
+    "title": "Canons of the Church of England: Section A",
+    "kind": "website",
+    "url": "https://www.churchofengland.org/resources/legal/canons-church-england/section-a"
+  },
+  {
+    "id": "src-profile-tec-bishops",
+    "title": "Past Presiding Bishops \u2014 Episcopal Church",
+    "kind": "website",
+    "url": "https://www.episcopalchurch.org/who-we-are/our-history/past-presiding-bishops/"
+  },
+  {
+    "id": "src-profile-tec-faith",
+    "title": "What Kind of Christians Are We? \u2014 Episcopal Church",
+    "kind": "website",
+    "url": "https://www.episcopalchurch.org/who-we-are/what-kind-of-christians-are-we/"
+  },
+  {
+    "id": "src-profile-tec-prayer",
+    "title": "Book of Common Prayer \u2014 Episcopal Church",
+    "kind": "website",
+    "url": "https://www.episcopalchurch.org/who-we-are/how-we-worship/book-of-common-prayer/"
+  },
+  {
+    "id": "src-profile-acna-founding",
+    "title": "The Founding of the Anglican Church \u2014 Robert Duncan, Provincial Council 2025",
+    "kind": "website",
+    "url": "https://anglicanchurch.net/wp-content/uploads/2017/11/Abp-Duncan-Address.pdf"
+  },
+  {
+    "id": "src-profile-acna-declarations",
+    "title": "Fundamental Declarations of the Province with explanatory notes \u2014 ACNA",
+    "kind": "website",
+    "url": "https://anglicanchurch.net/wp-content/uploads/2026/01/Fundamental-Declarations-of-the-Province-with-Explanatory-Notes.pdf"
+  },
+  {
+    "id": "src-profile-separatists",
+    "title": "Pilgrims and Puritans: A Delicate Distinction \u2014 Pilgrim Hall Museum",
+    "kind": "website",
+    "url": "https://www.pilgrimhall.org/pdf/Pilgrim_Puritan_A_Delicate_Distinction.pdf"
+  },
+  {
+    "id": "src-profile-baylor-baptists",
+    "title": "The Baptist Story \u2014 Doug Weaver, Baylor University",
+    "kind": "website",
+    "url": "https://magazine.web.baylor.edu/news/story/2008/baptist-story"
+  },
+  {
+    "id": "src-profile-baptist-confessions",
+    "title": "Historic Baptist Documents \u2014 primary confessions and catechisms",
+    "kind": "website",
+    "url": "https://www.reformedreader.org/ccc/hbd.htm"
+  },
+  {
+    "id": "src-profile-helwys",
+    "title": "Thomas Helwys and His World \u2014 Oxford research record",
+    "kind": "website",
+    "url": "https://ora.ox.ac.uk/objects/uuid%3A78e43cb1-86b3-4ed9-995a-212dca242110"
+  },
+  {
+    "id": "src-profile-smyth-study",
+    "title": "Stephen R. Holmes: When Did John Smyth Embrace Arminianism?",
+    "kind": "website",
+    "url": "https://research-portal.st-andrews.ac.uk/en/publications/when-did-john-smyth-embrace-arminianism-and-was-the-first-baptist/"
+  },
+  {
+    "id": "src-profile-orthodox-schism",
+    "title": "The Great Schism \u2014 Orthodox Church in America",
+    "kind": "website",
+    "url": "https://www.oca.org/orthodoxy/the-orthodox-faith/church-history/eleventh-century/the-great-schism"
+  },
+  {
+    "id": "src-profile-orthodox-faith",
+    "title": "The Orthodox Faith: Doctrine and Scripture \u2014 Orthodox Church in America",
+    "kind": "website",
+    "url": "https://www.oca.org/orthodoxy/the-orthodox-faith/doctrine-scripture"
+  },
+  {
+    "id": "src-profile-london-1644",
+    "title": "First London Baptist Confession \u2014 historical primary text",
+    "kind": "website",
+    "url": "https://www.1644.church/"
+  },
+  {
+    "id": "src-profile-abc-beliefs",
+    "title": "What We Believe \u2014 American Baptist Churches USA",
+    "kind": "website",
+    "url": "https://abc-usa.org/what-we-believe"
+  },
+  {
+    "id": "src-profile-abc-history",
+    "title": "Our History \u2014 American Baptist Churches USA",
+    "kind": "website",
+    "url": "https://www.abc-usa.org/our-history"
+  },
+  {
+    "id": "src-profile-sbc-slavery",
+    "title": "1995 SBC Resolution on Racial Reconciliation",
+    "kind": "website",
+    "url": "https://www.sbc.net/resource-library/resolutions/resolution-on-racial-reconciliation-on-the-150th-anniversary-of-the-southern-baptist-convention/"
+  },
+  {
+    "id": "src-profile-sbc-faith",
+    "title": "Baptist Faith and Message 2000 \u2014 official text",
+    "kind": "website",
+    "url": "https://bfm.sbc.net/bfm2000/"
+  },
+  {
+    "id": "src-profile-abc-facts",
+    "title": "10 Facts About American Baptists",
+    "kind": "website",
+    "url": "https://abc-usa.org/10facts"
+  },
+  {
+    "id": "src-profile-nbc-1939",
+    "title": "National Baptist Convention 1939 annual \u2014 constitution and historical preamble",
+    "kind": "website",
+    "url": "https://media2.sbhla.org.s3.amazonaws.com/aaa/nbc/NBC_1939.pdf"
+  },
+  {
+    "id": "src-profile-black-confessions",
+    "title": "A Confessing People \u2014 Baptist confessions and National Baptist divisions",
+    "kind": "website",
+    "url": "https://equip.sbts.edu/publications/magazine/a-confessing-people-a-brief-history-of-baptist-confessions-of-faith/"
+  },
+  {
+    "id": "src-profile-pnbc-history",
+    "title": "Progressive National Baptist Convention \u2014 Stanford King Institute",
+    "kind": "website",
+    "url": "https://kinginstitute.stanford.edu/progressive-national-baptist-convention-pnbc"
+  },
+  {
+    "id": "src-profile-venture",
+    "title": "About Us: History and Beliefs \u2014 Venture Church Network",
+    "kind": "website",
+    "url": "https://venturechurches.org/about-us/"
+  },
+  {
+    "id": "src-profile-awakening",
+    "title": "Early National Era and Second Great Awakening \u2014 Oxford history chapter",
+    "kind": "website",
+    "url": "https://academic.oup.com/book/25538/chapter-abstract/192809304"
+  },
+  {
+    "id": "src-profile-finney",
+    "title": "Charles Grandison Finney \u2014 PBS American Experience",
+    "kind": "website",
+    "url": "https://www.pbs.org/wgbh/americanexperience/features/godinamerica-early-american-individuals/"
+  },
+  {
+    "id": "src-profile-disciples-history",
+    "title": "History of the Disciples \u2014 Christian Church (Disciples of Christ)",
+    "kind": "website",
+    "url": "https://disciples.org/our-identity/history-of-the-disciples/"
+  },
+  {
+    "id": "src-profile-springfield",
+    "title": "Last Will and Testament of Springfield Presbytery (1804) \u2014 historical society primary text",
+    "kind": "website",
+    "url": "https://digitalcommons.discipleshistory.org/files/Last%20Will%20and%20Testament%20of%20the%20Springfield%20Presbytery.pdf"
+  },
+  {
+    "id": "src-profile-holiness",
+    "title": "History of the Holiness Movement \u2014 movement historical account",
+    "kind": "website",
+    "url": "https://www.holinessmovement.org/history-of-the-holiness-movement/"
+  },
+  {
+    "id": "src-profile-holiness-study",
+    "title": "The Quest for Holiness \u2014 Oxford Handbook chapter",
+    "kind": "website",
+    "url": "https://academic.oup.com/edited-volume/34326/chapter-abstract/291336981"
+  },
+  {
+    "id": "src-profile-nazarene-history",
+    "title": "Our History \u2014 Church of the Nazarene",
+    "kind": "website",
+    "url": "https://nazarene.org/our-history/"
+  },
+  {
+    "id": "src-profile-nazarene-explained",
+    "title": "What We Believe \u2014 Church of the Nazarene",
+    "kind": "website",
+    "url": "https://nazarene.org/what-we-believe/"
+  },
+  {
+    "id": "src-profile-nazarene-faith",
+    "title": "Articles of Faith \u2014 Church of the Nazarene",
+    "kind": "website",
+    "url": "https://nazarene.org/resources/articles-of-faith/"
+  },
+  {
+    "id": "src-profile-restoration-history",
+    "title": "Stone-Campbell History \u2014 Disciples of Christ Historical Society",
+    "kind": "website",
+    "url": "https://discipleshistory.org/history/"
+  },
+  {
+    "id": "src-profile-declaration-1809",
+    "title": "Thomas Campbell, Declaration and Address (1809) \u2014 ACU library",
+    "kind": "website",
+    "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/tcampbell/da/DA-1ST.HTM"
+  },
+  {
+    "id": "src-profile-design",
+    "title": "A Provisional Design for the Christian Church (Disciples of Christ), 1968 \u2014 historical society",
+    "kind": "website",
+    "url": "https://digitalcommons.discipleshistory.org/files/A%20Provisional%20Design%20for%20the%20Christian%20Church%20%28Disciples%20of%20Chris.pdf"
+  },
+  {
+    "id": "src-profile-coc-church",
+    "title": "The Concept of Church among Churches of Christ \u2014 ACU historical collection",
+    "kind": "website",
+    "url": "https://webfiles.acu.edu/departments/Library/HR/restmov_nov11/www.mun.ca/rels/restmov/texts/issues/howard.html"
+  },
+  {
+    "id": "src-profile-lutheran-texts",
+    "title": "Book of Concord \u2014 historical Lutheran confessional texts",
+    "kind": "website",
+    "url": "https://bookofconcord.org/"
+  },
+  {
+    "id": "src-profile-lcms-history",
+    "title": "LCMS History \u2014 official account",
+    "kind": "website",
+    "url": "https://www.lcms.org/about/lcms-history"
+  },
+  {
+    "id": "src-profile-elca-wcc",
+    "title": "ELCA and its predecessor churches \u2014 World Council of Churches",
+    "kind": "website",
+    "url": "https://www.oikoumene.org/member-churches/evangelical-lutheran-church-in-america"
+  },
+  {
+    "id": "src-profile-lcms-beliefs",
+    "title": "Beliefs \u2014 Lutheran Church Missouri Synod",
+    "kind": "website",
+    "url": "https://www.lcms.org/what-we-believe/beliefs"
+  },
+  {
+    "id": "src-profile-wels-history",
+    "title": "About WELS \u2014 history and organization",
+    "kind": "website",
+    "url": "https://wels.net/about-wels/"
+  },
+  {
+    "id": "src-profile-wels-faith",
+    "title": "What We Believe \u2014 WELS",
+    "kind": "website",
+    "url": "https://wels.net/about-wels/what-we-believe/"
+  },
+  {
+    "id": "src-profile-augustana",
+    "title": "Augustana and Lutheran Identity in America \u2014 Augustana Heritage",
+    "kind": "website",
+    "url": "https://augustanaheritage.augustana.edu/Augustana-and-Lutheran-Identity-in-America.pdf"
+  },
+  {
+    "id": "src-profile-elca-history",
+    "title": "History of the ELCA \u2014 official account",
+    "kind": "website",
+    "url": "https://www.elca.org/about-the-elca/who-we-are/history"
+  },
+  {
+    "id": "src-profile-elca-1987",
+    "title": "1987 Constituting Convention transition record \u2014 ELCA",
+    "kind": "website",
+    "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf"
+  },
+  {
+    "id": "src-profile-elca-faith",
+    "title": "What Lutherans Believe \u2014 ELCA",
+    "kind": "website",
+    "url": "https://www.elca.org/about-the-elca/who-we-are/beliefs"
+  },
+  {
+    "id": "src-profile-methodist-roots",
+    "title": "Roots of the United Methodist family tree",
+    "kind": "website",
+    "url": "https://www.umc.org/en/content/the-roots-of-the-united-methodist-family-tree-digging-deeper"
+  },
+  {
+    "id": "src-profile-methodist-heritage",
+    "title": "Our Wesleyan Heritage \u2014 UMC",
+    "kind": "website",
+    "url": "https://www.umc.org/en/who-we-are/what-we-believe/our-wesleyan-heritage"
+  },
+  {
+    "id": "src-profile-methodist-doctrine",
+    "title": "Our Doctrinal History \u2014 United Methodist Church",
+    "kind": "website",
+    "url": "https://www.umc.org/en/content/section-2-our-doctrinal-history"
+  },
+  {
+    "id": "src-profile-methodist-documents",
+    "title": "United Methodist Foundational Documents",
+    "kind": "website",
+    "url": "https://www.umc.org/en/content/foundational-documents"
+  },
+  {
+    "id": "src-profile-methodist-1784",
+    "title": "Methodist History: The Christmas Conference",
+    "kind": "website",
+    "url": "https://www.umc.org/content/methodist-history-the-christmas-conference"
+  },
+  {
+    "id": "src-profile-methodist-mec",
+    "title": "Methodist Episcopal Church \u2014 UMC historical glossary",
+    "kind": "website",
+    "url": "https://www.umc.org/en/content/glossary-methodist-episcopal-church-the"
+  },
+  {
+    "id": "src-profile-methodist-splits",
+    "title": "Splits, Separations and Reconciliations \u2014 UMC historical series",
+    "kind": "website",
+    "url": "https://www.umc.org/content/splits-separations-reconciliations-gcah-video-series"
+  },
+  {
+    "id": "src-profile-methodist-emory",
+    "title": "Wesleyana historical exhibition \u2014 Emory University",
+    "kind": "website",
+    "url": "https://dia.pitts.emory.edu/exhibits/exhibitcatalogs/Pitts_WesleyanaExhibitionCatalog_Spring2018.pdf"
+  },
+  {
+    "id": "src-profile-eub-history",
+    "title": "Evangelical United Brethren historical chronology \u2014 GCAH",
+    "kind": "website",
+    "url": "https://archives.gcah.org/server/api/core/bitstreams/15b598c2-a84f-4d60-ad40-16beb9d9d07a/content"
+  },
+  {
+    "id": "src-profile-ag-history",
+    "title": "History \u2014 Assemblies of God USA",
+    "kind": "website",
+    "url": "https://ag.org/About/About-the-AG/History"
+  },
+  {
+    "id": "src-profile-ag-faith",
+    "title": "Statement of Fundamental Truths \u2014 Assemblies of God USA",
+    "kind": "website",
+    "url": "https://ag.org/Beliefs/Statement-of-Fundamental-Truths"
+  },
+  {
+    "id": "src-profile-cogic-faith",
+    "title": "Statement of Faith \u2014 Church of God in Christ",
+    "kind": "website",
+    "url": "https://www.cogic.org/about-us/statement-of-faith/"
+  },
+  {
+    "id": "src-profile-cog-history",
+    "title": "A Brief History of the Church of God \u2014 official account",
+    "kind": "website",
+    "url": "https://churchofgod.org/about/a-brief-history-of-the-church-of-god/"
+  },
+  {
+    "id": "src-profile-cog-faith",
+    "title": "Doctrinal Commitments \u2014 Church of God",
+    "kind": "website",
+    "url": "https://churchofgod.org/beliefs/doctrinal-commitments/"
+  },
+  {
+    "id": "src-profile-cogic-history",
+    "title": "Our History \u2014 Church of God in Christ",
+    "kind": "website",
+    "url": "https://www.cogic.org/about-us/our-history/"
+  },
+  {
+    "id": "src-profile-cogic-founder",
+    "title": "Our Founder \u2014 Church of God in Christ",
+    "kind": "website",
+    "url": "https://www.cogic.org/about-us/our-founder/"
+  },
+  {
+    "id": "src-profile-foursquare-history",
+    "title": "History \u2014 Foursquare Church",
+    "kind": "website",
+    "url": "https://www.foursquare.org/about/history/"
+  },
+  {
+    "id": "src-profile-foursquare-faith",
+    "title": "Beliefs and Declaration of Faith \u2014 Foursquare Church",
+    "kind": "website",
+    "url": "https://www.foursquare.org/about/beliefs/"
+  },
+  {
+    "id": "src-profile-catholic-catechism",
+    "title": "Catechism of the Catholic Church \u2014 Vatican text",
+    "kind": "website",
+    "url": "https://www.vatican.va/archive/ENG0015/_INDEX.HTM"
+  },
+  {
+    "id": "src-profile-zwingli",
+    "title": "Ulrich Zwingli \u2014 Mus\u00e9e protestant",
+    "kind": "website",
+    "url": "https://museeprotestant.org/en/notice/ulrich-zwingli-1484-1531/"
+  },
+  {
+    "id": "src-profile-pcusa-book",
+    "title": "Book of Confessions \u2014 official resource",
+    "kind": "website",
+    "url": "https://pcusa.org/resource/book-confessions"
+  },
+  {
+    "id": "src-profile-calvin",
+    "title": "Jean Calvin \u2014 Mus\u00e9e protestant",
+    "kind": "website",
+    "url": "https://museeprotestant.org/en/notice/jean-calvin-1509-1564/"
+  },
+  {
+    "id": "src-profile-geneva-register",
+    "title": "First Register of the Company of Pastors \u2014 International Museum of the Reformation",
+    "kind": "website",
+    "url": "https://www.musee-reforme.ch/en/first-register-company-of-pastors/"
+  },
+  {
+    "id": "src-profile-geneva-ordinances",
+    "title": "Ecclesiastical Ordinances (1541) \u2014 Mus\u00e9e protestant",
+    "kind": "website",
+    "url": "https://museeprotestant.org/en/notice/the-ecclesiastical-ordinances-1541/"
+  },
+  {
+    "id": "src-profile-geneva-knox",
+    "title": "Historic Origins of the Presbytery \u2014 OPC Ordained Servant",
+    "kind": "website",
+    "url": "https://opc.org/OS/html/V5/1e.html"
+  },
+  {
+    "id": "src-profile-scotland-history",
+    "title": "History of the Church of Scotland \u2014 official account",
+    "kind": "website",
+    "url": "https://www.churchofscotland.org.uk/about-us/our-faith/history"
+  },
+  {
+    "id": "src-profile-scotland-texts",
+    "title": "Church of Scotland Book of Confessions \u2014 official full text",
+    "kind": "website",
+    "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0007/143584/printBookofConfessions.pdf"
+  },
+  {
+    "id": "src-profile-scotland-confessions",
+    "title": "Book of Confessions \u2014 Church of Scotland, effective 2026",
+    "kind": "website",
+    "url": "https://www.churchofscotland.org.uk/about-us/our-faith/book-of-confessions"
+  },
+  {
+    "id": "src-profile-colonial-history",
+    "title": "Church History \u2014 Presbyterian Mission Agency",
+    "kind": "website",
+    "url": "https://centernet.pcusa.org/what-we-believe/church-history/"
+  },
+  {
+    "id": "src-profile-makemie-presbytery",
+    "title": "The First Presbytery (1706) \u2014 PCA Historical Center",
+    "kind": "website",
+    "url": "https://thisday.pcahistory.org/2013/03/march-28-the-first-presbytery-1706/"
+  },
+  {
+    "id": "src-profile-westminster",
+    "title": "Westminster Confession and Catechisms \u2014 OPC official texts",
+    "kind": "website",
+    "url": "https://opc.org/confessions.html"
+  },
+  {
+    "id": "src-profile-presbyterian-history",
+    "title": "History of the Church \u2014 Presbyterian Historical Society",
+    "kind": "website",
+    "url": "https://pcusa.org/historical-society/history-online/history/history-church"
+  },
+  {
+    "id": "src-profile-pcusa-1983",
+    "title": "Presbyterian Heritage Sunday 2023 \u2014 reunion account",
+    "kind": "website",
+    "url": "https://pcusa.org/news-storytelling/news/2023/6/5/minute-mission-presbyterian-heritage-sunday"
+  },
+  {
+    "id": "src-profile-pcusa-confessions",
+    "title": "Confessions \u2014 Presbyterian Church USA",
+    "kind": "website",
+    "url": "https://pcusa.org/confessions"
+  },
+  {
+    "id": "src-profile-pca-about",
+    "title": "About the PCA \u2014 official description",
+    "kind": "website",
+    "url": "https://pcanet.org/about-the-pca/"
+  },
+  {
+    "id": "src-profile-pca-morton",
+    "title": "Significant Actions of the 28th PCA General Assembly, 2000 \u2014 Morton H. Smith biography",
+    "kind": "website",
+    "url": "https://www.pcahistory.org/pca/ga/actions/28thGA_2000_Actions.pdf"
+  },
+  {
+    "id": "src-profile-pca-archives",
+    "title": "Historical Center position paper \u2014 founding clerk Morton H. Smith",
+    "kind": "website",
+    "url": "https://pcahistory.org/pcahc/policies/positionpaper.html"
+  },
+  {
+    "id": "src-profile-opc-history",
+    "title": "Our History \u2014 Orthodox Presbyterian Church",
+    "kind": "website",
+    "url": "https://www.opc.org/historian.html"
+  },
+  {
+    "id": "src-profile-westminster-revisions",
+    "title": "American Revisions to the Westminster Confession \u2014 OPC",
+    "kind": "website",
+    "url": "https://opc.org/documents/WCF_orig.html"
+  },
+  {
+    "id": "src-profile-pcusa-1958",
+    "title": "Stories from GA: 1958 Union \u2014 Presbyterian Church USA",
+    "kind": "website",
+    "url": "https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga"
+  },
+  {
+    "id": "src-profile-cranmer",
+    "title": "Gilbert Cranmer \u2014 Encyclopedia of Seventh-day Adventists",
+    "kind": "website",
+    "url": "https://encyclopedia.adventist.org/assets/pdf/article-G96G.pdf"
+  },
+  {
+    "id": "src-profile-johnson",
+    "title": "William Bullein Johnson \u2014 Southern Baptist Historical Library",
+    "kind": "website",
+    "url": "https://sbhla.org/biographies/william-bullein-johnson/"
+  },
+  {
+    "id": "src-profile-scandinavia",
+    "title": "Protestantism in the Scandinavian Countries \u2014 Mus\u00e9e protestant",
+    "kind": "website",
+    "url": "https://museeprotestant.org/en/notice/protestantism-in-the-scandinavian-countries/"
+  },
+  {
+    "id": "src-profile-muehlhaeuser",
+    "title": "Johannes Muehlhaeuser \u2014 WELS Historical Institute",
+    "kind": "website",
+    "url": "https://welshistoricalinstitute.org/histories/personal/president/1850-1860-muehlhaeuser/"
+  },
+  {
+    "id": "src-profile-mpc-founders",
+    "title": "Sketches of the Founders of the Methodist Protestant Church \u2014 primary historical book",
+    "kind": "website",
+    "url": "https://nbc.whdl.org/sites/default/files/resource/7387091/Colhouer_Sketches_Founders_Methodist_Protestant_ArchiveOrg.pdf"
+  },
+  {
+    "id": "src-profile-melville",
+    "title": "Andrew Melville \u2014 University of Edinburgh library",
+    "kind": "website",
+    "url": "https://libraryblogs.is.ed.ac.uk/newcollegelibrarian/tag/presbyterian/"
+  },
+  {
+    "id": "src-profile-pcus-moderators",
+    "title": "Clerks and Moderators of PCUS \u2014 PCA Historical Center",
+    "kind": "website",
+    "url": "https://www.pcahistory.org/rgs/pcus/clerks_and_moderators.html"
+  },
+  {
+    "id": "src-profile-geneva-exiles",
+    "title": "Geneva, city of refuge \u2014 Geneva State Archives",
+    "kind": "website",
+    "url": "https://archives-etat-ge.ch/page_de_base/geneve-cite-daccueil/"
+  },
+  {
+    "id": "src-profile-nbc-1917",
+    "title": "National Baptist Convention 1917 annual \u2014 contemporary account of the publishing dispute",
+    "kind": "website",
+    "url": "https://media2.sbhla.org.s3.amazonaws.com/aaa/nbc/NBC_1917.pdf"
+  },
+  {
+    "id": "src-profile-pnbc-resolutions",
+    "title": "PNBC resolutions, 2019",
+    "kind": "website",
+    "url": "https://www.pnbc.org/assets/uploads/2019/10/2019-PNBC-Resolutions.pdf"
+  },
+  {
+    "id": "src-profile-miller-movement",
+    "title": "Millerite Movement \u2014 Encyclopedia of Seventh-day Adventists",
+    "kind": "website",
+    "url": "https://encyclopedia.adventist.org/article?id=C9SQ"
+  },
+  {
+    "id": "src-profile-athanasius",
+    "title": "Athanasius and his defence of Nicaea \u2014 Orthodox Church in America",
+    "kind": "website",
+    "url": "https://www.oca.org/orthodoxy/the-orthodox-faith/church-history/fourth-century/saint-athanasius-and-his-defence-of-nicea"
+  },
+  {
+    "id": "src-profile-cedarholm",
+    "title": "Maranatha is Baptist \u2014 Maranatha Baptist Seminary institutional history",
+    "kind": "website",
+    "url": "https://www.mbu.edu/seminary/maranatha-is-baptist/"
+  },
+  {
+    "id": "src-profile-schiotz",
+    "title": "Fredrik Axel Schiotz papers \u2014 Luther Seminary",
+    "kind": "website",
+    "url": "https://www.luthersem.edu/archives/archives-collections/special-collections/"
+  },
+  {
+    "id": "src-profile-fry",
+    "title": "LWF presidents since 1947 \u2014 institutional archive biographies",
+    "kind": "website",
+    "url": "https://lutheranworld.org/sites/default/files/2024-04/LWF-Presidents-since-1947.pdf"
+  },
+  {
+    "id": "src-profile-aelc-founding",
+    "title": "America\u2019s Newest Denomination \u2014 contemporary founding report",
+    "kind": "website",
+    "url": "https://www.christianitytoday.com/1977/01/americas-newest-denomination/"
+  },
+  {
+    "id": "src-profile-methodist-racism",
+    "title": "United Methodist historical account of racism",
+    "kind": "website",
+    "url": "https://www.umc.org/en/content/ask-the-umc-what-does-the-united-methodist-church-say-about-racism"
+  },
+  {
+    "id": "src-profile-separatist-confession",
+    "title": "A True Confession",
+    "kind": "website",
+    "url": "https://www.reformedreader.org/ccc/esbc.htm"
+  },
+  {
+    "id": "src-profile-smyth-confession",
+    "title": "Short Confession of Faith in Twenty Articles",
+    "kind": "website",
+    "url": "https://www.reformedreader.org/ccc/esbc.htm"
+  },
+  {
+    "id": "src-profile-helwys-confession",
+    "title": "A Declaration of Faith of English People Remaining at Amsterdam",
+    "kind": "website",
+    "url": "https://www.reformedreader.org/ccc/esbc.htm"
+  },
+  {
+    "id": "src-profile-eldership",
+    "title": "History and Theology of the Eldership \u2014 Church of Scotland research paper",
+    "kind": "website",
+    "url": "https://www.churchofscotland.org.uk/__data/assets/pdf_file/0016/36124/History_and_Theology_of_the_Eldership_Paper_Dec2015.pdf"
+  },
+  {
+    "id": "src-profile-separatist-primary",
+    "title": "A True Confession (1596) \u2014 primary text",
+    "kind": "website",
+    "url": "https://www.reformedreader.org/ccc/atf.htm"
+  },
+  {
+    "id": "src-profile-smyth-primary",
+    "title": "John Smyth, Short Confession in Twenty Articles \u2014 primary text",
+    "kind": "website",
+    "url": "https://www.reformedreader.org/ccc/scof.htm"
+  },
+  {
+    "id": "src-profile-im-history",
+    "title": "Our History of Mission \u2014 International Ministries",
+    "kind": "website",
+    "url": "https://internationalministries.org/history/"
+  },
+  {
+    "id": "src-profile-upcna-parents",
+    "title": "UPCUSA mission records: administrative history \u2014 Presbyterian Historical Society",
+    "kind": "website",
+    "url": "https://pcusa.org/es/historical-society/collections/research-tools/guides-archival-collections/rg-209"
+  }
 ]

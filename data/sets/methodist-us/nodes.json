@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "methodist-episcopal-church",
     "name": "Methodist Episcopal Church",
@@ -13,8 +13,152 @@
     "ecclesial_orientation": "other",
     "current_status": "merged",
     "notes": "Organized in 1784; later reunited in 1939.",
-    "distinctives": ["Methodism"],
-    "size_estimate": "4.4 million members (1937)"
+    "distinctives": [
+      "Methodism"
+    ],
+    "size_estimate": "4.4 million members (1937)",
+    "summary": "The principal early American Methodist denomination, organized after independence to provide its own ministry and sacramental life.",
+    "formation_narrative": "The American Revolution disrupted Anglican structures that had served Methodist societies. Wesley commissioned Thomas Coke, and the Christmas Conference in Baltimore organized the Methodist Episcopal Church in 1784 with Francis Asbury as a central leader. An itinerant ministry helped it expand widely. Slavery, authority, and representation later generated divisions; northern and southern branches participated in the 1939 Methodist reunion.",
+    "core_beliefs": [
+      "Grace and response: salvation begins with God\u2019s grace, calls for faith, and leads into a transformed life.",
+      "Holiness: love of God and neighbor is the aim of Christian growth, not merely formal membership.",
+      "Connectional practice: preaching, sacraments, disciplined fellowship, and mission join personal faith to shared church life."
+    ],
+    "key_figures": [
+      {
+        "name": "Thomas Coke",
+        "role": "commissioned by Wesley to assist American organization",
+        "summary": "commissioned by Wesley to assist American organization. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://www.umc.org/en/content/glossary-methodist-episcopal-church-the",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-1784",
+          "cite-profile-methodist-episcopal-church-methodist-mec"
+        ]
+      },
+      {
+        "name": "Francis Asbury",
+        "role": "leading American superintendent and itinerant organizer",
+        "summary": "leading American superintendent and itinerant organizer. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://www.umc.org/en/content/glossary-methodist-episcopal-church-the",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-1784",
+          "cite-profile-methodist-episcopal-church-methodist-mec"
+        ]
+      },
+      {
+        "name": "John Wesley",
+        "role": "supplied doctrinal and liturgical resources",
+        "summary": "An Anglican minister and organizer of Methodist societies who linked the message of grace to disciplined discipleship and growth in love.",
+        "url": "https://www.umc.org/en/content/glossary-methodist-episcopal-church-the",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-1784",
+          "cite-profile-methodist-episcopal-church-methodist-mec"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1784,
+        "label": "Christmas Conference organizes the church",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-1784",
+          "cite-profile-methodist-episcopal-church-methodist-mec"
+        ]
+      },
+      {
+        "year": 1939,
+        "label": "Participates in the Methodist Church union",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-1784",
+          "cite-profile-methodist-episcopal-church-methodist-mec"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Articles of Religion",
+        "year": 1784,
+        "significance": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-documents"
+        ]
+      },
+      {
+        "title": "Sunday Service of the Methodists",
+        "year": 1784,
+        "significance": "Wesley\u2019s liturgical adaptation gave the new American church worship and sacramental forms.",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-documents"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-methodist-episcopal-church-methodist-1784",
+        "cite-profile-methodist-episcopal-church-methodist-mec"
+      ],
+      "core_beliefs": [
+        "cite-profile-methodist-episcopal-church-methodist-documents"
+      ],
+      "key_figures": [
+        "cite-profile-methodist-episcopal-church-methodist-1784",
+        "cite-profile-methodist-episcopal-church-methodist-mec"
+      ],
+      "key_dates": [
+        "cite-profile-methodist-episcopal-church-methodist-1784",
+        "cite-profile-methodist-episcopal-church-methodist-mec"
+      ],
+      "ending_narrative": [
+        "cite-profile-methodist-episcopal-church-methodist-1784",
+        "cite-profile-methodist-episcopal-church-methodist-mec"
+      ]
+    },
+    "citations": [
+      "cite-profile-methodist-episcopal-church-methodist-1784",
+      "cite-profile-methodist-episcopal-church-methodist-mec",
+      "cite-profile-methodist-episcopal-church-methodist-documents"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "In 1939 this body joined the Methodist Episcopal Church South and Methodist Protestant Church to form the Methodist Church. The union sought to overcome earlier institutional divisions and coordinate a common ministry. Its separate denominational identity ended through that union; its congregations and traditions continued in the successor.",
+    "successor_ids": [
+      "methodist-church"
+    ],
+    "further_reading": [
+      {
+        "title": "Methodist History: The Christmas Conference",
+        "url": "https://www.umc.org/content/methodist-history-the-christmas-conference",
+        "snippet": "Formation and development: The American Revolution disrupted Anglican structures that had served Methodist societies. Wesley commissioned Thomas Coke, and the Christmas Conference in Baltimore organized the Methodist Episcopal Church in 1784 with Francis Asbury as a central leader.",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-1784"
+        ]
+      },
+      {
+        "title": "United Methodist Foundational Documents",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Teaching and practice: Grace and response: salvation begins with God\u2019s grace, calls for faith, and leads into a transformed life.",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-documents"
+        ]
+      },
+      {
+        "title": "Articles of Religion",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-documents"
+        ]
+      },
+      {
+        "title": "Sunday Service of the Methodists",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Wesley\u2019s liturgical adaptation gave the new American church worship and sacramental forms.",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-documents"
+        ]
+      }
+    ]
   },
   {
     "id": "methodist-episcopal-church-south",
@@ -30,8 +174,134 @@
     "ecclesial_orientation": "other",
     "current_status": "merged",
     "notes": "Formed in 1845 after a split over slavery; merged in 1939.",
-    "distinctives": ["Methodism"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "Methodism"
+    ],
+    "size_estimate": "unknown",
+    "summary": "The southern Methodist body created after the slavery-related division of the Methodist Episcopal Church.",
+    "formation_narrative": "The 1844 conflict over slavery and episcopal authority led to separate southern organization in 1845. The resulting church preserved much Methodist doctrine while institutionalizing a sectional division tied to slaveholding. It entered the 1939 union with northern Methodists and Methodist Protestants. Explaining this as merely administrative geography would obscure the moral and political conflict behind the separation.",
+    "core_beliefs": [
+      "Wesleyan inheritance: grace, conversion, sanctification, and Methodist preaching remained central.",
+      "Episcopal connection: bishops and conferences organized ministry across congregations.",
+      "Doctrine and slavery: shared confessional ancestry did not prevent leaders from taking opposing positions on slavery; the separation was not a new doctrine of salvation."
+    ],
+    "key_figures": [
+      {
+        "name": "John Wesley",
+        "role": "theological ancestor rather than founder of the southern separation",
+        "summary": "An Anglican minister and organizer of Methodist societies who linked the message of grace to disciplined discipleship and growth in love.",
+        "url": "https://www.umc.org/en/content/glossary-methodist-episcopal-church-the",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-south-methodist-splits",
+          "cite-profile-methodist-episcopal-church-south-methodist-mec"
+        ]
+      },
+      {
+        "name": "James Osgood Andrew",
+        "role": "Bishop central to the slavery controversy",
+        "summary": "A Methodist bishop whose slaveholding became a focal point in the sectional conflict. His place in the story helps explain why shared Methodist doctrine did not prevent a split over slavery and episcopal authority.",
+        "url": "https://www.umc.org/en/content/ask-the-umc-what-does-the-united-methodist-church-say-about-racism",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-south-methodist-racism"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1844,
+        "label": "Slavery and episcopal conflict produces a plan of separation",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-south-methodist-splits",
+          "cite-profile-methodist-episcopal-church-south-methodist-mec"
+        ]
+      },
+      {
+        "year": 1845,
+        "label": "Southern church organized",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-south-methodist-splits",
+          "cite-profile-methodist-episcopal-church-south-methodist-mec"
+        ]
+      },
+      {
+        "year": 1939,
+        "label": "Joins Methodist reunion",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-south-methodist-splits",
+          "cite-profile-methodist-episcopal-church-south-methodist-mec"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Articles of Religion",
+        "year": 1784,
+        "significance": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-south-methodist-documents"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-methodist-episcopal-church-south-methodist-splits",
+        "cite-profile-methodist-episcopal-church-south-methodist-mec"
+      ],
+      "core_beliefs": [
+        "cite-profile-methodist-episcopal-church-south-methodist-documents"
+      ],
+      "key_figures": [
+        "cite-profile-methodist-episcopal-church-south-methodist-splits",
+        "cite-profile-methodist-episcopal-church-south-methodist-mec",
+        "cite-profile-methodist-episcopal-church-south-methodist-racism"
+      ],
+      "key_dates": [
+        "cite-profile-methodist-episcopal-church-south-methodist-splits",
+        "cite-profile-methodist-episcopal-church-south-methodist-mec"
+      ],
+      "ending_narrative": [
+        "cite-profile-methodist-episcopal-church-south-methodist-splits",
+        "cite-profile-methodist-episcopal-church-south-methodist-mec"
+      ]
+    },
+    "citations": [
+      "cite-profile-methodist-episcopal-church-south-methodist-splits",
+      "cite-profile-methodist-episcopal-church-south-methodist-mec",
+      "cite-profile-methodist-episcopal-church-south-methodist-documents",
+      "cite-profile-methodist-episcopal-church-south-methodist-racism"
+    ],
+    "profile_scope": "A fuller profile should add the southern organizing proceedings and named leadership from primary records; these are missing research, not categories that do not apply.",
+    "ending_narrative": "In 1939 the southern body reunited with the Methodist Episcopal and Methodist Protestant churches in the Methodist Church. Reunion ended its separate institutional identity while carrying forward its congregations and the unresolved legacy of sectional and racial division.",
+    "successor_ids": [
+      "methodist-church"
+    ],
+    "further_reading": [
+      {
+        "title": "Splits, Separations and Reconciliations \u2014 UMC historical series",
+        "url": "https://www.umc.org/content/splits-separations-reconciliations-gcah-video-series",
+        "snippet": "Formation and development: The 1844 conflict over slavery and episcopal authority led to separate southern organization in 1845. The resulting church preserved much Methodist doctrine while institutionalizing a sectional division tied to slaveholding.",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-south-methodist-splits"
+        ]
+      },
+      {
+        "title": "United Methodist Foundational Documents",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Teaching and practice: Wesleyan inheritance: grace, conversion, sanctification, and Methodist preaching remained central.",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-south-methodist-documents"
+        ]
+      },
+      {
+        "title": "Articles of Religion",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-south-methodist-documents"
+        ]
+      }
+    ]
   },
   {
     "id": "methodist-protestant-church",
@@ -47,8 +317,137 @@
     "ecclesial_orientation": "other",
     "current_status": "merged",
     "notes": "Separated from the Methodist Episcopal Church in 1828; merged in 1939.",
-    "distinctives": ["Wesleyan"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "Wesleyan"
+    ],
+    "size_estimate": "unknown",
+    "summary": "A Methodist body that challenged episcopal concentration of authority and sought greater representative participation.",
+    "formation_narrative": "Reformers dissatisfied with Methodist governance organized the Associated Methodist Churches in 1828 and adopted the Methodist Protestant name in 1830. Their dispute centered on representation and church government rather than abandonment of Wesleyan faith. Most of the body joined the 1939 Methodist union. Some official summaries compress the process to an 1828 split, so the two milestones should be distinguished.",
+    "core_beliefs": [
+      "Wesleyan teaching: conversion, grace, and growth in holiness remained part of the movement\u2019s inheritance.",
+      "Representative government: reformers sought a stronger voice for laypeople and ministers in church decision-making.",
+      "Non-episcopal organization: rejecting bishop-centered government did not mean rejecting cooperative conferences or shared discipline."
+    ],
+    "key_figures": [
+      {
+        "name": "Nicholas Snethen",
+        "role": "advocate of lay representation and Methodist Protestant organizer",
+        "summary": "A Methodist minister and writer who argued for lay representation and helped organize Methodist Protestant church life.",
+        "url": "https://nbc.whdl.org/sites/default/files/resource/7387091/Colhouer_Sketches_Founders_Methodist_Protestant_ArchiveOrg.pdf",
+        "citations": [
+          "cite-profile-methodist-protestant-church-methodist-emory",
+          "cite-profile-methodist-protestant-church-methodist-splits",
+          "cite-profile-methodist-protestant-church-mpc-founders"
+        ]
+      },
+      {
+        "name": "Asa Shinn",
+        "role": "Methodist Protestant reforming minister",
+        "summary": "A Methodist Protestant minister and reform advocate whose preaching and writing belonged to the movement for a different form of Methodist government.",
+        "url": "https://nbc.whdl.org/sites/default/files/resource/7387091/Colhouer_Sketches_Founders_Methodist_Protestant_ArchiveOrg.pdf",
+        "citations": [
+          "cite-profile-methodist-protestant-church-methodist-emory",
+          "cite-profile-methodist-protestant-church-methodist-splits",
+          "cite-profile-methodist-protestant-church-mpc-founders"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1828,
+        "label": "Associated Methodist Churches organized",
+        "citations": [
+          "cite-profile-methodist-protestant-church-methodist-emory",
+          "cite-profile-methodist-protestant-church-methodist-splits"
+        ]
+      },
+      {
+        "year": 1830,
+        "label": "Methodist Protestant name adopted",
+        "citations": [
+          "cite-profile-methodist-protestant-church-methodist-emory",
+          "cite-profile-methodist-protestant-church-methodist-splits"
+        ]
+      },
+      {
+        "year": 1939,
+        "label": "Main body enters the Methodist union",
+        "citations": [
+          "cite-profile-methodist-protestant-church-methodist-emory",
+          "cite-profile-methodist-protestant-church-methodist-splits"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Articles of Religion",
+        "year": 1784,
+        "significance": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "citations": [
+          "cite-profile-methodist-protestant-church-methodist-documents"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-methodist-protestant-church-methodist-emory",
+        "cite-profile-methodist-protestant-church-methodist-splits"
+      ],
+      "core_beliefs": [
+        "cite-profile-methodist-protestant-church-methodist-documents"
+      ],
+      "key_figures": [
+        "cite-profile-methodist-protestant-church-methodist-emory",
+        "cite-profile-methodist-protestant-church-methodist-splits",
+        "cite-profile-methodist-protestant-church-mpc-founders"
+      ],
+      "key_dates": [
+        "cite-profile-methodist-protestant-church-methodist-emory",
+        "cite-profile-methodist-protestant-church-methodist-splits"
+      ],
+      "ending_narrative": [
+        "cite-profile-methodist-protestant-church-methodist-emory",
+        "cite-profile-methodist-protestant-church-methodist-splits"
+      ]
+    },
+    "citations": [
+      "cite-profile-methodist-protestant-church-methodist-emory",
+      "cite-profile-methodist-protestant-church-methodist-splits",
+      "cite-profile-methodist-protestant-church-methodist-documents",
+      "cite-profile-methodist-protestant-church-mpc-founders"
+    ],
+    "profile_scope": "The Articles are identified as inherited Methodist teaching, not as proof of the exact text adopted by every Methodist Protestant conference. Original constitutions need further research.",
+    "ending_narrative": "Most Methodist Protestants entered the Methodist Church in the 1939 union, seeking common organization with the other major Methodist bodies. The graph models that principal institutional stream; it should not imply that every dissenting congregation joined or that every later use of the name ceased.",
+    "successor_ids": [
+      "methodist-church"
+    ],
+    "further_reading": [
+      {
+        "title": "Wesleyana historical exhibition \u2014 Emory University",
+        "url": "https://dia.pitts.emory.edu/exhibits/exhibitcatalogs/Pitts_WesleyanaExhibitionCatalog_Spring2018.pdf",
+        "snippet": "Formation and development: Reformers dissatisfied with Methodist governance organized the Associated Methodist Churches in 1828 and adopted the Methodist Protestant name in 1830. Their dispute centered on representation and church government rather than abandonment of Wesleyan faith.",
+        "citations": [
+          "cite-profile-methodist-protestant-church-methodist-emory"
+        ]
+      },
+      {
+        "title": "United Methodist Foundational Documents",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Teaching and practice: Wesleyan teaching: conversion, grace, and growth in holiness remained part of the movement\u2019s inheritance.",
+        "citations": [
+          "cite-profile-methodist-protestant-church-methodist-documents"
+        ]
+      },
+      {
+        "title": "Articles of Religion",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "citations": [
+          "cite-profile-methodist-protestant-church-methodist-documents"
+        ]
+      }
+    ]
   },
   {
     "id": "methodist-church",
@@ -64,8 +463,117 @@
     "ecclesial_orientation": "other",
     "current_status": "merged",
     "notes": "Formed in 1939 by reunion of MEC, MECS, and MPC; merged into the UMC in 1968.",
-    "distinctives": ["Methodism"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "Methodism"
+    ],
+    "size_estimate": "unknown",
+    "summary": "The American church formed in 1939 by union of three major Methodist bodies and later a parent of the United Methodist Church.",
+    "formation_narrative": "The Methodist Episcopal Church, Methodist Episcopal Church South, and Methodist Protestant Church united in 1939. Reunion overcame longstanding sectional and governmental divisions but did not erase the history of racial exclusion in American Methodism. The combined body later joined the Evangelical United Brethren in 1968. Its identity therefore combines a new institutional union with older Wesleyan doctrinal continuity.",
+    "core_beliefs": [
+      "Wesleyan continuity: grace, faith, and sanctification remained foundational despite the union of different institutional histories.",
+      "Connectional ministry: congregations shared oversight, mission, and educational institutions through conferences.",
+      "Unity with unresolved tensions: institutional reunion did not itself settle every question of racial equality or church governance."
+    ],
+    "key_figures": [
+      {
+        "name": "John Wesley",
+        "role": "principal theological ancestor",
+        "summary": "An Anglican minister and organizer of Methodist societies who linked the message of grace to disciplined discipleship and growth in love.",
+        "url": "https://www.umc.org/content/splits-separations-reconciliations-gcah-video-series",
+        "citations": [
+          "cite-profile-methodist-church-methodist-roots",
+          "cite-profile-methodist-church-methodist-splits"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1939,
+        "label": "Three Methodist bodies unite",
+        "citations": [
+          "cite-profile-methodist-church-methodist-roots",
+          "cite-profile-methodist-church-methodist-splits"
+        ]
+      },
+      {
+        "year": 1968,
+        "label": "Unites with EUB to form the UMC",
+        "citations": [
+          "cite-profile-methodist-church-methodist-roots",
+          "cite-profile-methodist-church-methodist-splits"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Articles of Religion",
+        "year": 1784,
+        "significance": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "citations": [
+          "cite-profile-methodist-church-methodist-documents"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-methodist-church-methodist-roots",
+        "cite-profile-methodist-church-methodist-splits"
+      ],
+      "core_beliefs": [
+        "cite-profile-methodist-church-methodist-documents",
+        "cite-profile-methodist-church-methodist-doctrine"
+      ],
+      "key_figures": [
+        "cite-profile-methodist-church-methodist-roots",
+        "cite-profile-methodist-church-methodist-splits"
+      ],
+      "key_dates": [
+        "cite-profile-methodist-church-methodist-roots",
+        "cite-profile-methodist-church-methodist-splits"
+      ],
+      "ending_narrative": [
+        "cite-profile-methodist-church-methodist-roots",
+        "cite-profile-methodist-church-methodist-splits"
+      ]
+    },
+    "citations": [
+      "cite-profile-methodist-church-methodist-roots",
+      "cite-profile-methodist-church-methodist-splits",
+      "cite-profile-methodist-church-methodist-documents",
+      "cite-profile-methodist-church-methodist-doctrine"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position. The union was a corporate action of three bodies, so an inherited theological ancestor is identified rather than a fictitious sole founder.",
+    "ending_narrative": "The Methodist Church joined the Evangelical United Brethren Church in 1968 to form the United Methodist Church. The union combined related Wesleyan and revival traditions and institutions; it ended this separate corporate identity while continuing its ministry in the new denomination.",
+    "successor_ids": [
+      "united-methodist-church"
+    ],
+    "further_reading": [
+      {
+        "title": "Roots of the United Methodist family tree",
+        "url": "https://www.umc.org/en/content/the-roots-of-the-united-methodist-family-tree-digging-deeper",
+        "snippet": "Formation and development: The Methodist Episcopal Church, Methodist Episcopal Church South, and Methodist Protestant Church united in 1939. Reunion overcame longstanding sectional and governmental divisions but did not erase the history of racial exclusion in American Methodism.",
+        "citations": [
+          "cite-profile-methodist-church-methodist-roots"
+        ]
+      },
+      {
+        "title": "United Methodist Foundational Documents",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Teaching and practice: Wesleyan continuity: grace, faith, and sanctification remained foundational despite the union of different institutional histories.",
+        "citations": [
+          "cite-profile-methodist-church-methodist-documents"
+        ]
+      },
+      {
+        "title": "Articles of Religion",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "citations": [
+          "cite-profile-methodist-church-methodist-documents"
+        ]
+      }
+    ]
   },
   {
     "id": "evangelical-united-brethren-church",
@@ -81,8 +589,135 @@
     "ecclesial_orientation": "other",
     "current_status": "merged",
     "notes": "Formed in 1946 by merger of Evangelical Church and United Brethren in Christ; merged into the UMC in 1968.",
-    "distinctives": ["Arminian"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "Arminian"
+    ],
+    "size_estimate": "unknown",
+    "summary": "A church formed in 1946 from two revival traditions rooted in German-speaking American Christianity.",
+    "formation_narrative": "The Evangelical Church and United Brethren in Christ united in 1946 after developing parallel traditions of evangelical preaching and Christian discipleship. Their earlier leaders ministered among German-speaking communities in a religious environment influenced by Pietism and Methodism. In 1968 the EUB joined the Methodist Church to create the United Methodist Church. The earlier founders belong to its ancestry rather than the 1946 organizing generation.",
+    "core_beliefs": [
+      "Evangelical conversion: preaching called people to personal trust in Christ and a changed life.",
+      "Holy living: inward faith was expected to produce practical Christian conduct.",
+      "Shared confession and ministry: the EUB Confession of Faith later became one of the doctrinal standards inherited by the United Methodist Church."
+    ],
+    "key_figures": [
+      {
+        "name": "Philip William Otterbein",
+        "role": "earlier United Brethren leader",
+        "summary": "earlier United Brethren leader. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://www.umc.org/en/content/the-roots-of-the-united-methodist-family-tree-digging-deeper",
+        "citations": [
+          "cite-profile-evangelical-united-brethren-church-eub-history",
+          "cite-profile-evangelical-united-brethren-church-methodist-roots"
+        ]
+      },
+      {
+        "name": "Martin Boehm",
+        "role": "earlier United Brethren leader",
+        "summary": "earlier United Brethren leader. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://www.umc.org/en/content/the-roots-of-the-united-methodist-family-tree-digging-deeper",
+        "citations": [
+          "cite-profile-evangelical-united-brethren-church-eub-history",
+          "cite-profile-evangelical-united-brethren-church-methodist-roots"
+        ]
+      },
+      {
+        "name": "Jacob Albright",
+        "role": "formative figure in the Evangelical stream",
+        "summary": "formative figure in the Evangelical stream. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://www.umc.org/en/content/the-roots-of-the-united-methodist-family-tree-digging-deeper",
+        "citations": [
+          "cite-profile-evangelical-united-brethren-church-eub-history",
+          "cite-profile-evangelical-united-brethren-church-methodist-roots"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1946,
+        "label": "Evangelical Church and United Brethren unite",
+        "citations": [
+          "cite-profile-evangelical-united-brethren-church-eub-history",
+          "cite-profile-evangelical-united-brethren-church-methodist-roots"
+        ]
+      },
+      {
+        "year": 1968,
+        "label": "EUB joins Methodist Church in the UMC",
+        "citations": [
+          "cite-profile-evangelical-united-brethren-church-eub-history",
+          "cite-profile-evangelical-united-brethren-church-methodist-roots"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Confession of Faith of the Evangelical United Brethren Church",
+        "year": null,
+        "significance": "An EUB doctrinal statement retained in United Methodist foundational documents; distinct from the Methodist Articles of Religion.",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "citations": [
+          "cite-profile-evangelical-united-brethren-church-methodist-documents"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-evangelical-united-brethren-church-eub-history",
+        "cite-profile-evangelical-united-brethren-church-methodist-roots"
+      ],
+      "core_beliefs": [
+        "cite-profile-evangelical-united-brethren-church-methodist-documents"
+      ],
+      "key_figures": [
+        "cite-profile-evangelical-united-brethren-church-eub-history",
+        "cite-profile-evangelical-united-brethren-church-methodist-roots"
+      ],
+      "key_dates": [
+        "cite-profile-evangelical-united-brethren-church-eub-history",
+        "cite-profile-evangelical-united-brethren-church-methodist-roots"
+      ],
+      "ending_narrative": [
+        "cite-profile-evangelical-united-brethren-church-eub-history",
+        "cite-profile-evangelical-united-brethren-church-methodist-roots"
+      ]
+    },
+    "citations": [
+      "cite-profile-evangelical-united-brethren-church-eub-history",
+      "cite-profile-evangelical-united-brethren-church-methodist-roots",
+      "cite-profile-evangelical-united-brethren-church-methodist-documents"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The EUB joined the Methodist Church in 1968 to form the United Methodist Church. Union brought complementary revival traditions and ministries into one connection; the EUB Confession of Faith remained an inherited doctrinal standard rather than being erased.",
+    "successor_ids": [
+      "united-methodist-church"
+    ],
+    "further_reading": [
+      {
+        "title": "Evangelical United Brethren historical chronology \u2014 GCAH",
+        "url": "https://archives.gcah.org/server/api/core/bitstreams/15b598c2-a84f-4d60-ad40-16beb9d9d07a/content",
+        "snippet": "Formation and development: The Evangelical Church and United Brethren in Christ united in 1946 after developing parallel traditions of evangelical preaching and Christian discipleship. Their earlier leaders ministered among German-speaking communities in a religious environment influenced by Pietism and Methodism.",
+        "citations": [
+          "cite-profile-evangelical-united-brethren-church-eub-history"
+        ]
+      },
+      {
+        "title": "United Methodist Foundational Documents",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Teaching and practice: Evangelical conversion: preaching called people to personal trust in Christ and a changed life.",
+        "citations": [
+          "cite-profile-evangelical-united-brethren-church-methodist-documents"
+        ]
+      },
+      {
+        "title": "Confession of Faith of the Evangelical United Brethren Church",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "An EUB doctrinal statement retained in United Methodist foundational documents; distinct from the Methodist Articles of Religion.",
+        "citations": [
+          "cite-profile-evangelical-united-brethren-church-methodist-documents"
+        ]
+      }
+    ]
   },
   {
     "id": "united-methodist-church",
@@ -97,7 +732,160 @@
     "ecclesial_orientation": "mainline",
     "current_status": "active",
     "notes": "Formed in 1968 by merger of the Methodist Church and the Evangelical United Brethren Church.",
-    "distinctives": ["Wesleyan"],
-    "size_estimate": "9,984,925 members (worldwide)"
+    "distinctives": [
+      "Wesleyan"
+    ],
+    "size_estimate": "9,984,925 members (worldwide)",
+    "summary": "A worldwide Methodist church created in 1968 from Methodist and Evangelical United Brethren traditions.",
+    "formation_narrative": "The 1968 union brought together two American connectional churches with overlapping revival and holiness histories. United Methodism links local congregations through conferences and an episcopal system and joins personal discipleship to service and mission. Its contemporary history includes substantial disagreements and departures; the dataset\u2019s lineage is introductory and does not yet represent all recent branches or regions.",
+    "core_beliefs": [
+      "Grace and response: salvation begins with God\u2019s grace, calls for faith, and leads into a transformed life.",
+      "Holiness: love of God and neighbor is the aim of Christian growth, not merely formal membership.",
+      "Connectional practice: preaching, sacraments, disciplined fellowship, and mission join personal faith to shared church life."
+    ],
+    "key_figures": [
+      {
+        "name": "John Wesley",
+        "role": "foundational theological influence",
+        "summary": "An Anglican minister and organizer of Methodist societies who linked the message of grace to disciplined discipleship and growth in love.",
+        "url": "https://www.umc.org/en/who-we-are/what-we-believe/our-wesleyan-heritage",
+        "citations": [
+          "cite-profile-united-methodist-church-methodist-roots",
+          "cite-profile-united-methodist-church-methodist-heritage"
+        ]
+      },
+      {
+        "name": "Charles Wesley",
+        "role": "formative hymn writer",
+        "summary": "An Anglican minister and prolific hymn writer whose songs taught Methodist theology and helped sustain its devotional and congregational life.",
+        "url": "https://www.umc.org/en/who-we-are/what-we-believe/our-wesleyan-heritage",
+        "citations": [
+          "cite-profile-united-methodist-church-methodist-roots",
+          "cite-profile-united-methodist-church-methodist-heritage"
+        ]
+      },
+      {
+        "name": "Philip William Otterbein",
+        "role": "ancestor of the EUB stream, not a 1968 founder",
+        "summary": "ancestor of the EUB stream, not a 1968 founder. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://www.umc.org/en/who-we-are/what-we-believe/our-wesleyan-heritage",
+        "citations": [
+          "cite-profile-united-methodist-church-methodist-roots",
+          "cite-profile-united-methodist-church-methodist-heritage"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1968,
+        "label": "Methodist Church and EUB unite",
+        "citations": [
+          "cite-profile-united-methodist-church-methodist-roots",
+          "cite-profile-united-methodist-church-methodist-heritage"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Articles of Religion",
+        "year": 1784,
+        "significance": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "citations": [
+          "cite-profile-united-methodist-church-methodist-documents"
+        ]
+      },
+      {
+        "title": "EUB Confession of Faith",
+        "year": null,
+        "significance": "A second inherited doctrinal standard, preserving the contribution of the EUB stream.",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "citations": [
+          "cite-profile-united-methodist-church-methodist-documents"
+        ]
+      },
+      {
+        "title": "Doctrinal history and Wesleyan standards",
+        "year": null,
+        "significance": "Explains how sermons, scriptural interpretation, and inherited doctrinal texts guide United Methodist teaching.",
+        "url": "https://www.umc.org/en/content/section-2-our-doctrinal-history",
+        "citations": [
+          "cite-profile-united-methodist-church-methodist-doctrine"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-united-methodist-church-methodist-roots",
+        "cite-profile-united-methodist-church-methodist-heritage"
+      ],
+      "core_beliefs": [
+        "cite-profile-united-methodist-church-methodist-doctrine",
+        "cite-profile-united-methodist-church-methodist-documents"
+      ],
+      "key_figures": [
+        "cite-profile-united-methodist-church-methodist-roots",
+        "cite-profile-united-methodist-church-methodist-heritage"
+      ],
+      "key_dates": [
+        "cite-profile-united-methodist-church-methodist-roots",
+        "cite-profile-united-methodist-church-methodist-heritage"
+      ],
+      "ending_narrative": [
+        "cite-profile-united-methodist-church-methodist-roots",
+        "cite-profile-united-methodist-church-methodist-heritage"
+      ]
+    },
+    "citations": [
+      "cite-profile-united-methodist-church-methodist-roots",
+      "cite-profile-united-methodist-church-methodist-heritage",
+      "cite-profile-united-methodist-church-methodist-doctrine",
+      "cite-profile-united-methodist-church-methodist-documents"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position.",
+    "ending_narrative": "The United Methodist Church continues. Recent departures, including congregations entering the Global Methodist Church, are important developments still incompletely represented in this dataset; they do not amount to a dissolution of the UMC. No terminal successor is assigned.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Roots of the United Methodist family tree",
+        "url": "https://www.umc.org/en/content/the-roots-of-the-united-methodist-family-tree-digging-deeper",
+        "snippet": "Formation and development: The 1968 union brought together two American connectional churches with overlapping revival and holiness histories. United Methodism links local congregations through conferences and an episcopal system and joins personal discipleship to service and mission.",
+        "citations": [
+          "cite-profile-united-methodist-church-methodist-roots"
+        ]
+      },
+      {
+        "title": "Our Doctrinal History \u2014 United Methodist Church",
+        "url": "https://www.umc.org/en/content/section-2-our-doctrinal-history",
+        "snippet": "Teaching and practice: Grace and response: salvation begins with God\u2019s grace, calls for faith, and leads into a transformed life.",
+        "citations": [
+          "cite-profile-united-methodist-church-methodist-doctrine"
+        ]
+      },
+      {
+        "title": "Articles of Religion",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "citations": [
+          "cite-profile-united-methodist-church-methodist-documents"
+        ]
+      },
+      {
+        "title": "EUB Confession of Faith",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "A second inherited doctrinal standard, preserving the contribution of the EUB stream.",
+        "citations": [
+          "cite-profile-united-methodist-church-methodist-documents"
+        ]
+      },
+      {
+        "title": "Doctrinal history and Wesleyan standards",
+        "url": "https://www.umc.org/en/content/section-2-our-doctrinal-history",
+        "snippet": "Explains how sermons, scriptural interpretation, and inherited doctrinal texts guide United Methodist teaching.",
+        "citations": [
+          "cite-profile-united-methodist-church-methodist-doctrine"
+        ]
+      }
+    ]
   }
 ]

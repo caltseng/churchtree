@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "church-of-england-to-methodist-movement-1738",
     "name": "Methodist renewal movement",
@@ -7,9 +7,90 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1738,
-    "reasons": ["renewal movement"],
+    "reasons": [
+      "renewal movement"
+    ],
     "description": "Methodism began as a renewal movement within the Church of England in the 18th century.",
-    "citations": ["cite-methodism-origins", "cite-church-of-england-1534"]
+    "citations": [
+      "cite-methodism-origins",
+      "cite-church-of-england-1534",
+      "cite-profile-methodist-movement-england-methodist-roots",
+      "cite-profile-methodist-movement-england-methodist-heritage"
+    ],
+    "narrative": "Methodism began as a renewal movement within the Church of England in the 18th century. John and Charles Wesley worked within the Church of England while organizing societies and preaching beyond ordinary parish settings. Regular meetings, lay leadership, and hymns helped participants sustain a demanding devotional life. John Wesley\u2019s 1738 assurance experience is a major milestone, not the only possible beginning of Methodism. Separate Methodist institutions developed gradually; the movement should not simply be treated as dissolved when new churches emerged.",
+    "causes": [
+      "renewal movement"
+    ],
+    "key_figures": [
+      {
+        "name": "John Wesley",
+        "role": "preacher, organizer, and theological leader",
+        "summary": "An Anglican minister and organizer of Methodist societies who linked the message of grace to disciplined discipleship and growth in love.",
+        "url": "https://www.umc.org/en/who-we-are/what-we-believe/our-wesleyan-heritage",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-roots",
+          "cite-profile-methodist-movement-england-methodist-heritage"
+        ]
+      },
+      {
+        "name": "Charles Wesley",
+        "role": "hymn writer and renewal leader",
+        "summary": "An Anglican minister and prolific hymn writer whose songs taught Methodist theology and helped sustain its devotional and congregational life.",
+        "url": "https://www.umc.org/en/who-we-are/what-we-believe/our-wesleyan-heritage",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-roots",
+          "cite-profile-methodist-movement-england-methodist-heritage"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1738,
+        "label": "Methodist renewal movement",
+        "citations": [
+          "cite-methodism-origins",
+          "cite-church-of-england-1534"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Roots of the United Methodist family tree",
+        "url": "https://www.umc.org/en/content/the-roots-of-the-united-methodist-family-tree-digging-deeper",
+        "snippet": "Formation and development: John and Charles Wesley worked within the Church of England while organizing societies and preaching beyond ordinary parish settings. Regular meetings, lay leadership, and hymns helped participants sustain a demanding devotional life.",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-roots"
+        ]
+      },
+      {
+        "title": "Our Doctrinal History \u2014 United Methodist Church",
+        "url": "https://www.umc.org/en/content/section-2-our-doctrinal-history",
+        "snippet": "Teaching and practice: Grace and response: salvation begins with God\u2019s grace, calls for faith, and leads into a transformed life.",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-doctrine"
+        ]
+      },
+      {
+        "title": "Articles of Religion",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-documents"
+        ]
+      },
+      {
+        "title": "Wesleyan sermons and doctrinal heritage",
+        "url": "https://www.umc.org/en/content/section-2-our-doctrinal-history",
+        "snippet": "Foundational teaching about grace and holiness; the exact collection and constitutional status vary among Methodist churches.",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-doctrine"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-methodist-movement-england-methodist-roots",
+      "cite-profile-methodist-movement-england-methodist-heritage"
+    ]
   },
   {
     "id": "methodist-movement-to-mec-1784",
@@ -19,8 +100,99 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1784,
-    "reasons": ["organization of American Methodism"],
+    "reasons": [
+      "organization of American Methodism"
+    ],
     "description": "Methodist Episcopal Church formed in 1784 as American Methodism organized separately from the Church of England.",
-    "citations": ["cite-mec-1784", "cite-mec-separated-from-coe"]
+    "citations": [
+      "cite-mec-1784",
+      "cite-mec-separated-from-coe",
+      "cite-profile-methodist-episcopal-church-methodist-1784",
+      "cite-profile-methodist-episcopal-church-methodist-mec"
+    ],
+    "narrative": "Methodist Episcopal Church formed in 1784 as American Methodism organized separately from the Church of England. The American Revolution disrupted Anglican structures that had served Methodist societies. Wesley commissioned Thomas Coke, and the Christmas Conference in Baltimore organized the Methodist Episcopal Church in 1784 with Francis Asbury as a central leader. An itinerant ministry helped it expand widely. Slavery, authority, and representation later generated divisions; northern and southern branches participated in the 1939 Methodist reunion.",
+    "causes": [
+      "organization of American Methodism"
+    ],
+    "key_figures": [
+      {
+        "name": "Thomas Coke",
+        "role": "commissioned by Wesley to assist American organization",
+        "summary": "commissioned by Wesley to assist American organization. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://www.umc.org/en/content/glossary-methodist-episcopal-church-the",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-1784",
+          "cite-profile-methodist-episcopal-church-methodist-mec"
+        ]
+      },
+      {
+        "name": "Francis Asbury",
+        "role": "leading American superintendent and itinerant organizer",
+        "summary": "leading American superintendent and itinerant organizer. This role should be read in the formation and development described above, rather than as a claim of sole authorship of the tradition.",
+        "url": "https://www.umc.org/en/content/glossary-methodist-episcopal-church-the",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-1784",
+          "cite-profile-methodist-episcopal-church-methodist-mec"
+        ]
+      },
+      {
+        "name": "John Wesley",
+        "role": "supplied doctrinal and liturgical resources",
+        "summary": "An Anglican minister and organizer of Methodist societies who linked the message of grace to disciplined discipleship and growth in love.",
+        "url": "https://www.umc.org/en/content/glossary-methodist-episcopal-church-the",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-1784",
+          "cite-profile-methodist-episcopal-church-methodist-mec"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1784,
+        "label": "American Methodist organization",
+        "citations": [
+          "cite-mec-1784",
+          "cite-mec-separated-from-coe"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Methodist History: The Christmas Conference",
+        "url": "https://www.umc.org/content/methodist-history-the-christmas-conference",
+        "snippet": "Formation and development: The American Revolution disrupted Anglican structures that had served Methodist societies. Wesley commissioned Thomas Coke, and the Christmas Conference in Baltimore organized the Methodist Episcopal Church in 1784 with Francis Asbury as a central leader.",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-1784"
+        ]
+      },
+      {
+        "title": "United Methodist Foundational Documents",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Teaching and practice: Grace and response: salvation begins with God\u2019s grace, calls for faith, and leads into a transformed life.",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-documents"
+        ]
+      },
+      {
+        "title": "Articles of Religion",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-documents"
+        ]
+      },
+      {
+        "title": "Sunday Service of the Methodists",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Wesley\u2019s liturgical adaptation gave the new American church worship and sacramental forms.",
+        "citations": [
+          "cite-profile-methodist-episcopal-church-methodist-documents"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-methodist-episcopal-church-methodist-1784",
+      "cite-profile-methodist-episcopal-church-methodist-mec"
+    ]
   }
 ]

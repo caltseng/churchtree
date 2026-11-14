@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "methodist-movement-england",
     "name": "Methodist movement (England)",
@@ -10,9 +10,143 @@
     "geographic_origin": "England",
     "tradition_family": "Methodist",
     "ecclesial_orientation": "other",
-    "current_status": "dissolved",
+    "current_status": "unknown",
     "notes": "Methodism began as a renewal movement within the Church of England in the 18th century.",
-    "distinctives": ["Wesleyan theology", "Methodist societies"],
-    "size_estimate": "unknown"
+    "distinctives": [
+      "Wesleyan theology",
+      "Methodist societies"
+    ],
+    "size_estimate": "unknown",
+    "summary": "An eighteenth-century renewal movement emphasizing conversion, disciplined Christian fellowship, and practical holiness.",
+    "formation_narrative": "John and Charles Wesley worked within the Church of England while organizing societies and preaching beyond ordinary parish settings. Regular meetings, lay leadership, and hymns helped participants sustain a demanding devotional life. John Wesley\u2019s 1738 assurance experience is a major milestone, not the only possible beginning of Methodism. Separate Methodist institutions developed gradually; the movement should not simply be treated as dissolved when new churches emerged.",
+    "core_beliefs": [
+      "Grace and response: salvation begins with God\u2019s grace, calls for faith, and leads into a transformed life.",
+      "Holiness: love of God and neighbor is the aim of Christian growth, not merely formal membership.",
+      "Connectional practice: preaching, sacraments, disciplined fellowship, and mission join personal faith to shared church life."
+    ],
+    "key_figures": [
+      {
+        "name": "John Wesley",
+        "role": "preacher, organizer, and theological leader",
+        "summary": "An Anglican minister and organizer of Methodist societies who linked the message of grace to disciplined discipleship and growth in love.",
+        "url": "https://www.umc.org/en/who-we-are/what-we-believe/our-wesleyan-heritage",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-roots",
+          "cite-profile-methodist-movement-england-methodist-heritage"
+        ]
+      },
+      {
+        "name": "Charles Wesley",
+        "role": "hymn writer and renewal leader",
+        "summary": "An Anglican minister and prolific hymn writer whose songs taught Methodist theology and helped sustain its devotional and congregational life.",
+        "url": "https://www.umc.org/en/who-we-are/what-we-believe/our-wesleyan-heritage",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-roots",
+          "cite-profile-methodist-movement-england-methodist-heritage"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1738,
+        "label": "John Wesley\u2019s Aldersgate experience becomes a defining spiritual milestone",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-roots",
+          "cite-profile-methodist-movement-england-methodist-heritage"
+        ]
+      },
+      {
+        "year": 1784,
+        "label": "American Methodist organization gains a separate institutional form",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-roots",
+          "cite-profile-methodist-movement-england-methodist-heritage"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Wesleyan sermons and doctrinal heritage",
+        "year": null,
+        "significance": "Foundational teaching about grace and holiness; the exact collection and constitutional status vary among Methodist churches.",
+        "url": "https://www.umc.org/en/content/section-2-our-doctrinal-history",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-doctrine"
+        ]
+      },
+      {
+        "title": "Articles of Religion",
+        "year": 1784,
+        "significance": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-documents"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-profile-methodist-movement-england-methodist-roots",
+        "cite-profile-methodist-movement-england-methodist-heritage"
+      ],
+      "core_beliefs": [
+        "cite-profile-methodist-movement-england-methodist-doctrine"
+      ],
+      "key_figures": [
+        "cite-profile-methodist-movement-england-methodist-roots",
+        "cite-profile-methodist-movement-england-methodist-heritage"
+      ],
+      "key_dates": [
+        "cite-profile-methodist-movement-england-methodist-roots",
+        "cite-profile-methodist-movement-england-methodist-heritage"
+      ],
+      "ending_narrative": [
+        "cite-profile-methodist-movement-england-methodist-roots",
+        "cite-profile-methodist-movement-england-methodist-heritage"
+      ]
+    },
+    "citations": [
+      "cite-profile-methodist-movement-england-methodist-roots",
+      "cite-profile-methodist-movement-england-methodist-heritage",
+      "cite-profile-methodist-movement-england-methodist-doctrine",
+      "cite-profile-methodist-movement-england-methodist-documents"
+    ],
+    "profile_scope": "This is an introductory profile. It distinguishes shared teaching from historical development; sources do not imply that every member held an identical position. No formal corporate dissolution is asserted for this historical process. The status is unknown at the institutional level; the ending narrative explains its diffusion or development.",
+    "ending_narrative": "The original renewal societies developed into distinct Methodist church structures while Wesleyan influence also continued outside them. There is no single date when Methodism as a movement dissolved. The American Methodist Episcopal Church is an important institutional development, not the sole replacement for all English Methodism.",
+    "successor_ids": [],
+    "further_reading": [
+      {
+        "title": "Roots of the United Methodist family tree",
+        "url": "https://www.umc.org/en/content/the-roots-of-the-united-methodist-family-tree-digging-deeper",
+        "snippet": "Formation and development: John and Charles Wesley worked within the Church of England while organizing societies and preaching beyond ordinary parish settings. Regular meetings, lay leadership, and hymns helped participants sustain a demanding devotional life.",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-roots"
+        ]
+      },
+      {
+        "title": "Our Doctrinal History \u2014 United Methodist Church",
+        "url": "https://www.umc.org/en/content/section-2-our-doctrinal-history",
+        "snippet": "Teaching and practice: Grace and response: salvation begins with God\u2019s grace, calls for faith, and leads into a transformed life.",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-doctrine"
+        ]
+      },
+      {
+        "title": "Articles of Religion",
+        "url": "https://www.umc.org/en/content/foundational-documents",
+        "snippet": "Wesley\u2019s adaptation of Anglican articles supplied a doctrinal foundation for American Methodism; later bodies retained this heritage in different constitutional settings.",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-documents"
+        ]
+      },
+      {
+        "title": "Wesleyan sermons and doctrinal heritage",
+        "url": "https://www.umc.org/en/content/section-2-our-doctrinal-history",
+        "snippet": "Foundational teaching about grace and holiness; the exact collection and constitutional status vary among Methodist churches.",
+        "citations": [
+          "cite-profile-methodist-movement-england-methodist-doctrine"
+        ]
+      }
+    ]
   }
 ]

@@ -1,21 +1,27 @@
 # Data Notes: Presbyterian Church in America (PCA)
 
-Date collected: 2026-01-18
+Date collected: 2026-01-25
 
 ## Facts
-- Node: Presbyterian Church in America | Start year 1973 | End year none | Region US | Notes: Formed by congregations separating from PCUS. | Theological distinctives: Reformed; Evangelical | Size estimate: approx 400,751 members (2024)
-- Edge: PCUS -> PCA | Type split | Year 1973 | Reasons: doctrinal standards, theological direction; theological liberalism; authority/inerrancy of Scripture; deity of Jesus Christ | Description: Conservative/confessional congregations separated from the PCUS to form the PCA, citing perceived theological liberalism and denial of Scripture's authority and Christ's deity.
+- Node: Presbyterian Church in America | 1973 | | US | US | Presbyterian | evangelical | active | Denomination formed in 1973 with the stated aim to be faithful to Scripture, Reformed in faith, and obedient to the Great Commission. | W. Jack Williamson; Morton Smith | 1973-12-04: First General Assembly at Briarwood (Birmingham) | Reformed; evangelical | unknown
+- Edge: PCUS -> PCA | split | 1973 | doctrinal concerns; faithfulness to Scripture | conservative departure | PCA formed in 1973; the founding assembly noted it was leaving the PCUS. | W. Jack Williamson; Morton Smith
+
+## Key figures (details)
+- W. Jack Williamson — first moderator (1973) | node pca | cite-pca-1973-key-figures
+- Morton Smith — stated clerk (1973) | node pca | cite-pca-1973-key-figures
+
+## Key dates/milestones
+- 1973-12-04: First PCA General Assembly opens at Briarwood (Birmingham) | node pca | cite-pca-1973-ga
 
 ## Sources
-- src-wiki-pca: Presbyterian Church in America - Wikipedia (website) https://en.wikipedia.org/wiki/Presbyterian_Church_in_America
-- src-wiki-pcus: Presbyterian Church in the United States - Wikipedia (website) https://en.wikipedia.org/wiki/Presbyterian_Church_in_the_United_States
+- src-pca-about: About the PCA (website) https://pcanet.org/about-the-pca/
+- src-pca-history-1973: December 4: 1st General Assembly of the PCA (website) https://pcahistory.org/thisday/december-4/
 
 ## Citations
-- cite-pca-founded: src-wiki-pca | Infobox: founded_date, separated_from | Accessed 2026-01-18
-- cite-pca-reasons: src-wiki-pca | Lead: disputes over doctrinal standards and theological direction | Accessed 2026-01-18
-- cite-pcus-pca-reasons: src-wiki-pcus | History: theological liberalism, denial of deity of Christ, denial of Scripture's authority/inerrancy | Accessed 2026-01-18
-- cite-pca-theology: src-wiki-pca | Infobox: theology (Reformed; Evangelical) | Accessed 2026-01-18
-- cite-pca-size: src-wiki-pca | Infobox: members 400,751 (2024) | Accessed 2026-01-18
+- cite-pca-1973-formed: src-pca-about | L22 (formed in 1973; faithful to Scriptures, Reformed, Great Commission) | 2026-01-25
+- cite-pca-1973-ga: src-pca-history-1973 | L13-L16 (Dec 4-7, 1973 GA at Briarwood, Birmingham) | 2026-01-25
+- cite-pca-1973-leaving-pcus: src-pca-history-1973 | L16-L17 (assembly noted leaving the PCUS) | 2026-01-25
+- cite-pca-1973-key-figures: src-pca-history-1973 | L20-L21 (W. Jack Williamson moderator; Morton Smith stated clerk) | 2026-01-25
 
 ## Notes Summary
-- PCA formed in 1973 from PCUS churches citing doctrinal and theological disputes.
+- PCA formed in 1973; first GA held in Birmingham with Williamson and Smith leading.

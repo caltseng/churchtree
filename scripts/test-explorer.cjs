@@ -1,0 +1,168 @@
+const fs = require('fs');
+const path = require('path');
+const http = require('http');
+const assert = require('node:assert/strict');
+const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const root = path.resolve(__dirname, '..');
+const output = path.join(root, '.tmp', 'browser-check');
+fs.mkdirSync(output, { recursive: true });
+const server = http.createServer((request, response) => {
+    const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
+    const file = path.resolve(root, '.' + (pathname === '/' ? '/index.html' : pathname));
+    if (!file.startsWith(root + path.sep)) {
+        response.writeHead(403);
+        response.end();
+        return;
+    }
+    fs.readFile(file, (error, data) => {
+        const contentType = { '.css': 'text/css', '.js': 'application/javascript', '.html': 'text/html' }[path.extname(file)] || 'application/octet-stream';
+        response.writeHead(error ? 404 : 200, { 'Content-Type': contentType });
+        response.end(error ? 'Not found' : data);
+    });
+});
+async function noOverlap(page, selector = '.node') {
+    const boxes = await page.locator(selector).evaluateAll(items => items.map(item => item.getBoundingClientRect().toJSON()));
+    for (let i = 0; i < boxes.length; i++)
+        for (let j = i + 1; j < boxes.length; j++) {
+            const a = boxes[i], b = boxes[j];
+            assert(!(a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top), `Overlapping nodes ${i}, ${j}`);
+        }
+}
+(async () => {
+    let browser;
+    try {
+        await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+        browser = await chromium.launch({ channel: 'msedge', headless: !process.env.HEADED });
+        const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+        const errors = [];
+        page.on('pageerror', error => errors.push(error.message));
+        await page.goto(`http://127.0.0.1:${server.address().port}`);
+        await page.locator('[data-id="family:Presbyterian"]').waitFor();
+        await noOverlap(page);
+        await page.screenshot({ path: path.join(output, 'review-overview.png') });
+        await page.getByRole('button', { name: 'Presbyterian', exact: true }).click();
+        const grouped = await page.locator('.node').count();
+        assert(await page.locator('.context').count());
+        await page.getByRole('button', { name: 'Zoom in', exact: true }).click();
+        assert(await page.locator('.node').count() > grouped);
+        await noOverlap(page);
+        await page.evaluate(() => {
+            const n = CHURCHTREE_DATA.nodes.find(n => n.id === 'pca');
+            n.key_figures = [{ name: 'Person fixture', role: 'Role fixture', summary: 'Biographical context fixture', url: 'https://example.com/person', citations: [] }];
+            n.further_reading = [{ title: 'Article fixture', snippet: 'Article context fixture', url: 'https://example.com/article' }];
+            n.key_documents = [{ title: 'Document fixture', year: 1973, significance: 'Document context fixture', url: 'https://example.com/document', citations: [] }];
+        });
+        await page.locator('#search').fill('PCA');
+        await page.getByRole('button', { name: /^PCA ·/ }).click();
+        assert.match(await page.locator('#details').innerText(), /Why it formed/);
+        assert(await page.locator('#details a').count());
+        assert(await page.getByRole('link', { name: 'Person fixture', exact: true }).count());
+        assert.match(await page.locator('#details').innerText(), /Biographical context fixture/);
+        assert.match(await page.locator('#details').innerText(), /Article context fixture/);
+        assert.match(await page.locator('#details').innerText(), /Document context fixture/);
+        await page.getByRole('button', { name: 'Trace ancestry' }).click();
+        assert(await page.locator('.context').count());
+        await noOverlap(page);
+        const families = await page.locator('#branch option').evaluateAll(options => options.map(o => o.value).filter(Boolean));
+        for (const family of families) {
+            await page.locator('#branch').selectOption(family);
+            await noOverlap(page);
+            await page.getByRole('button', { name: 'Zoom in', exact: true }).click();
+            await noOverlap(page);
+        }
+        await page.locator('#branch').selectOption('Baptist');
+        await page.locator('#layout').selectOption('timeline');
+        const initial = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot());
+        assert(initial.clusters.some(c => c.count > 1));
+        assert(initial.clusters.every(c => c.title && !/^\d+ (records|entries)$/.test(c.title)));
+        assert(initial.clusters.some(c => c.title === 'Baptist and Separatist beginnings'));
+        const clusterLabels = await page.locator('.time-node.aggregate .time-label').allTextContents();
+        assert(clusterLabels.every(title => /Baptist/.test(title)));
+        const box = await page.locator('#graph').boundingBox();
+        await page.mouse.move(box.x + box.width / 2, box.y + box.height * .7);
+        await page.mouse.wheel(0, -900);
+        await page.waitForTimeout(400);
+        const zoomed = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot());
+        assert(zoomed.scale > initial.scale);
+        assert(zoomed.clusters.length > initial.clusters.length, 'Zoom must disclose additional nodes');
+        await noOverlap(page);
+        await page.mouse.wheel(0, 900);
+        await page.waitForTimeout(400);
+        const collapsed = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot());
+        assert(collapsed.clusters.length < zoomed.clusters.length, 'Zoom out must collapse nearby records');
+        await page.screenshot({ path: path.join(output, 'review-timeline.png') });
+        await page.locator('#layout').selectOption('horizontal');
+        await page.waitForTimeout(180);
+        const horizontalInitial = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot());
+        assert(await page.locator('#graph').evaluate(el => el.scrollWidth <= el.clientWidth + 2), 'Horizontal overview should fit the complete date range');
+        await page.getByRole('button', { name: 'Zoom in', exact: true }).click();
+        assert(await page.locator('#graph').evaluate(el => el.scrollWidth > el.clientWidth));
+        const horizontalBox = await page.locator('#graph').boundingBox();
+        await page.mouse.move(horizontalBox.x + horizontalBox.width * .65, horizontalBox.y + horizontalBox.height * .6);
+        const beforeScroll = await page.locator('#graph').evaluate(el => el.scrollLeft);
+        await page.mouse.wheel(0, 300);
+        await page.waitForTimeout(100);
+        assert(await page.locator('#graph').evaluate(el => el.scrollLeft) > beforeScroll);
+        for (let i = 0; i < 4; i++)
+            await page.getByRole('button', { name: 'Zoom in', exact: true }).click();
+        const horizontalZoomed = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot());
+        assert(horizontalZoomed.clusters.length > horizontalInitial.clusters.length);
+        await noOverlap(page);
+        assert((await page.locator('.horizontal-node .date').allTextContents()).every(label => !/(entries|records)/.test(label)));
+        await page.screenshot({ path: path.join(output, 'review-horizontal.png') });
+        await page.getByRole('button', { name: 'Reset', exact: true }).click();
+        assert.equal((await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot())).scale, 1);
+        await page.screenshot({ path: path.join(output, 'review-horizontal-initial.png') });
+        await page.locator('#branch').selectOption('');
+        await noOverlap(page);
+        await page.locator('#graph').evaluate(el=>el.scrollTop=350);
+        await page.waitForTimeout(120);
+        const axisBox=await page.locator('.horizontal-axis').boundingBox();
+        const graphBox=await page.locator('#graph').boundingBox();
+        assert(axisBox.y<graphBox.y+50,'Dates must remain visible while scrolling through traditions');
+        await page.screenshot({ path: path.join(output, 'review-horizontal-all.png') });
+        await page.locator('#layout').selectOption('timeline');
+        await page.locator('#search').fill('OPC');
+        await page.getByRole('button',{name:/^OPC ·/}).click();
+        await page.waitForTimeout(400);
+        const revealDomain=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain);
+        assert(revealDomain[0]<1936&&revealDomain[1]>1936,'Search must bring the selected date into view');
+        assert(await page.locator('.time-node.selected').count());
+        await page.locator('#year-from').fill('2000');
+        await page.locator('#year-to').fill('1800');
+        await page.getByRole('button',{name:'Apply',exact:true}).click();
+        assert.match(await page.locator('#period-error').innerText(),/start earlier/);
+        await page.locator('#year-from').fill('1800');
+        await page.locator('#year-to').fill('2000');
+        await page.getByRole('button',{name:'Apply',exact:true}).click();
+        assert.equal(await page.locator('#period-error').innerText(),'');
+        const verticalBefore = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot().scale);
+        await page.mouse.move(horizontalBox.x + horizontalBox.width * .65, horizontalBox.y + horizontalBox.height * .6);
+        await page.mouse.wheel(0, -300);
+        await page.waitForTimeout(300);
+        assert((await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot())).scale > verticalBefore);
+        await page.locator('#branch').selectOption('');
+        await noOverlap(page);
+        await page.locator('#layout').selectOption('lineage');
+        await page.getByRole('button', { name: 'Reset', exact: true }).click();
+        await page.setViewportSize({ width: 1280, height: 800 });
+        await page.waitForTimeout(180);
+        assert(await page.evaluate(() => document.body.scrollHeight <= innerHeight));
+        assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+        const before = await page.locator('#details').evaluate(el => el.clientWidth);
+        await page.locator('#splitter').focus();
+        await page.keyboard.press('ArrowLeft');
+        assert(await page.locator('#details').evaluate(el => el.clientWidth) > before);
+        await page.waitForTimeout(180);
+        await page.screenshot({ path: path.join(output, 'review-desktop.png') });
+        assert.deepEqual(errors, []);
+        console.log(JSON.stringify({ passed: true, families: families.length, clustered: initial.clusters.length, zoomed: zoomed.clusters.length, collapsed: collapsed.clusters.length, browserErrors: errors }));
+    }
+    finally {
+        await browser?.close();
+        server.close();
+    }
+})().catch(error => {
+    console.error(error);
+    process.exitCode = 1;
+});

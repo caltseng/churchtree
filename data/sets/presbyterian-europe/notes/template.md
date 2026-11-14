@@ -1,36 +1,23 @@
-# Notes Template
+# Data Notes: [Denomination Name]
 
-## Summary
-- One or two sentences describing the denomination or movement.
+Date collected: YYYY-MM-DD
 
-## Key Dates
-- start_year:
-- end_year:
+## Facts
+- Node: [Name] | Start year | End year (if any) | Region | Geographic origin | Tradition family | Ecclesial orientation | Current status | Summary | Key figures | Key dates | Theological distinctives | Size estimate
+- Edge: [Parent] -> [Child] | Type (split/merge/origin/continuation) | Year | Reasons | Causes/drivers | Narrative | Key figures
+- Event: [Name] | Year | Description | Key figures | Related edge(s)
 
-## Metadata
-- tradition_family:
-- ecclesial_orientation:
-- geographic_origin:
-- current_status:
+## Key figures (details)
+- Name — role | related node/edge | citations
 
-## Relationships
-- Parent/precursor bodies:
-- Split or merge relationships:
-
-## Distinctives
-- Theological distinctives (with sources).
-
-## Size / Scale
-- Estimated size (if known):
-
-## Events
-- Significant events triggering splits/merges:
+## Key dates/milestones
+- YYYY: label | related node/edge | citations
 
 ## Sources
-- [ ] Source title (author, year) - locator
+- [Source id]:
 
 ## Citations
-- [ ] citation-id: note
+- [Citation id]:
 
-## Open Questions
-- [ ] Missing dates, unclear relationships, or disputed claims.
+## Notes Summary
+-

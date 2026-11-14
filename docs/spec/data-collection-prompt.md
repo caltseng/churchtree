@@ -27,10 +27,10 @@ Output in this format:
 Date collected: YYYY-MM-DD
 
 Facts:
-- Node: [Name] | Start year | End year (if any) | Region | Geographic origin | Tradition family | Ecclesial orientation | Current status | Notes | Theological distinctives | Size estimate
+- Node: [Name] | Start year | End year (if any) | Region | Geographic origin | Tradition family | Ecclesial orientation | Current status | Summary | Key figures | Key dates | Theological distinctives | Size estimate
 - Edge: [Parent] -> [Child] | Type (split/merge/origin/continuation) | Year
-  | Reasons for split/merge (short list) | Description (1-2 sentences)
-- Event: [Name] | Year | Description | Related edge(s)
+  | Reasons for split/merge (short list) | Causes/drivers (short list) | Narrative (1-3 paragraphs) | Key figures
+- Event: [Name] | Year | Description | Key figures | Related edge(s)
 
 Sources:
 - [Source id]: [Title] ([Kind]) [Author/Publisher/Year if known] [URL]
@@ -46,6 +46,8 @@ Rules:
 - Keep reasons concise and factual; avoid editorial tone.
 - If a date is unknown, say "unknown" and explain briefly.
 - Only use sources you can name; do not invent sources.
+- Key figures should be names only or "Name — role".
+- Key dates should be short bullets (YYYY: label) and must be cited.
 ```
 
 ## Practical alternatives to LLM-only extraction

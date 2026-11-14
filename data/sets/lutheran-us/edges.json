@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "lcms-to-aelc-1976",
     "name": "Separation from LCMS",
@@ -7,9 +7,86 @@
     "zoom_tier": "full",
     "type": "split",
     "year": 1976,
-    "reasons": ["organizational separation"],
+    "reasons": [
+      "organizational separation"
+    ],
     "description": "AELC formed in 1976 after separating from the LCMS.",
-    "citations": ["cite-aelc-1976"]
+    "citations": [
+      "cite-aelc-1976",
+      "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc",
+      "cite-profile-association-of-evangelical-lutheran-churches-elca-1987"
+    ],
+    "narrative": "AELC formed in 1976 after separating from the LCMS. The AELC emerged from severe conflict within the Missouri Synod over theology and institutional direction. It provided an organizational home for departing congregations and became a partner in discussions for a new Lutheran church. Though much smaller than the ALC and LCA, it was a full participant in the resulting ELCA. A fuller account needs primary records of the dispute rather than a one-sided label about which party preserved Lutheranism.",
+    "causes": [
+      "organizational separation"
+    ],
+    "key_figures": [
+      {
+        "name": "William Kohn",
+        "role": "First AELC president",
+        "summary": "A Lutheran pastor and former LCMS mission executive elected president when the AELC was constituted in late 1976. Contemporary reporting connects his departure from Missouri Synod leadership to the conflict over its conservative direction.",
+        "url": "https://www.christianitytoday.com/1977/01/americas-newest-denomination/",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-aelc-founding"
+        ]
+      },
+      {
+        "name": "Will Herzfeld",
+        "role": "Founding vice-president of the AELC",
+        "summary": "An Oakland pastor and Black Lutheran leader elected vice-president at the AELC\u2019s founding convention, participating in the creation of an organizational home for departing congregations.",
+        "url": "https://www.christianitytoday.com/1977/01/americas-newest-denomination/",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-aelc-founding"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1976,
+        "label": "Separation from LCMS",
+        "citations": [
+          "cite-aelc-1976"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "ELCA and its predecessor churches \u2014 World Council of Churches",
+        "url": "https://www.oikoumene.org/member-churches/evangelical-lutheran-church-in-america",
+        "snippet": "Formation and development: The AELC emerged from severe conflict within the Missouri Synod over theology and institutional direction. It provided an organizational home for departing congregations and became a partner in discussions for a new Lutheran church.",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc"
+        ]
+      },
+      {
+        "title": "Book of Concord \u2014 historical Lutheran confessional texts",
+        "url": "https://bookofconcord.org/",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-lutheran-texts"
+        ]
+      },
+      {
+        "title": "ELCA Constituting Convention record",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "snippet": "Documents the union process in which the AELC participated; it is a successor-founding record rather than the association\u2019s original 1976 constitution.",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-elca-1987"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-association-of-evangelical-lutheran-churches-lutheran-texts"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-association-of-evangelical-lutheran-churches-elca-wcc",
+      "cite-profile-association-of-evangelical-lutheran-churches-elca-1987"
+    ]
   },
   {
     "id": "alc-to-elca-1987",
@@ -18,10 +95,91 @@
     "to_id": "evangelical-lutheran-church-in-america",
     "zoom_tier": "full",
     "type": "merge",
-    "year": 1987,
-    "reasons": ["merger"],
-    "description": "ALC merged into the ELCA in 1987.",
-    "citations": ["cite-elca-merger", "cite-elca-founded"]
+    "year": 1988,
+    "reasons": [
+      "merger"
+    ],
+    "description": "ALC merged into the ELCA effective January 1, 1988, following the 1987 constituting convention.",
+    "citations": [
+      "cite-elca-merger",
+      "cite-elca-founded",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+    ],
+    "narrative": "ALC merged into the ELCA effective January 1, 1988, following the 1987 constituting convention. The merger brought together multiple strands of North American Lutheran history, including immigrant churches and the AELC\u2019s more recent division from the Missouri Synod. Its constituting convention in April 1987 elected Herbert Chilstrom; operations began January 1, 1988. The distinction reconciles official descriptions that use either a constituting year or a startup year. The ELCA\u2019s identity joins Lutheran confession with an extensive network of ministries and ecumenical relationships.",
+    "causes": [
+      "merger"
+    ],
+    "key_figures": [
+      {
+        "name": "Herbert W. Chilstrom",
+        "role": "first ELCA bishop, elected at the 1987 constituting convention",
+        "summary": "A Lutheran bishop elected at the 1987 constituting convention as the first bishop of the ELCA.",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1988,
+        "label": "Merger into ELCA",
+        "citations": [
+          "cite-elca-merger",
+          "cite-elca-founded",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the ELCA \u2014 official account",
+        "url": "https://www.elca.org/about-the-elca/who-we-are/history",
+        "snippet": "Formation and development: The merger brought together multiple strands of North American Lutheran history, including immigrant churches and the AELC\u2019s more recent division from the Missouri Synod. Its constituting convention in April 1987 elected Herbert Chilstrom; operations began January 1, 1988.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history"
+        ]
+      },
+      {
+        "title": "What Lutherans Believe \u2014 ELCA",
+        "url": "https://www.elca.org/about-the-elca/who-we-are/beliefs",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-faith"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Constituting Convention and transition record",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "snippet": "Primary organizational record distinguishing constitution in 1987 from operational startup in 1988.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+    ]
   },
   {
     "id": "lca-to-elca-1987",
@@ -30,10 +188,91 @@
     "to_id": "evangelical-lutheran-church-in-america",
     "zoom_tier": "full",
     "type": "merge",
-    "year": 1987,
-    "reasons": ["merger"],
-    "description": "LCA merged into the ELCA in 1987.",
-    "citations": ["cite-elca-merger", "cite-elca-founded"]
+    "year": 1988,
+    "reasons": [
+      "merger"
+    ],
+    "description": "LCA merged into the ELCA effective January 1, 1988, following the 1987 constituting convention.",
+    "citations": [
+      "cite-elca-merger",
+      "cite-elca-founded",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+    ],
+    "narrative": "LCA merged into the ELCA effective January 1, 1988, following the 1987 constituting convention. The merger brought together multiple strands of North American Lutheran history, including immigrant churches and the AELC\u2019s more recent division from the Missouri Synod. Its constituting convention in April 1987 elected Herbert Chilstrom; operations began January 1, 1988. The distinction reconciles official descriptions that use either a constituting year or a startup year. The ELCA\u2019s identity joins Lutheran confession with an extensive network of ministries and ecumenical relationships.",
+    "causes": [
+      "merger"
+    ],
+    "key_figures": [
+      {
+        "name": "Herbert W. Chilstrom",
+        "role": "first ELCA bishop, elected at the 1987 constituting convention",
+        "summary": "A Lutheran bishop elected at the 1987 constituting convention as the first bishop of the ELCA.",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1988,
+        "label": "Merger into ELCA",
+        "citations": [
+          "cite-elca-merger",
+          "cite-elca-founded",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the ELCA \u2014 official account",
+        "url": "https://www.elca.org/about-the-elca/who-we-are/history",
+        "snippet": "Formation and development: The merger brought together multiple strands of North American Lutheran history, including immigrant churches and the AELC\u2019s more recent division from the Missouri Synod. Its constituting convention in April 1987 elected Herbert Chilstrom; operations began January 1, 1988.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history"
+        ]
+      },
+      {
+        "title": "What Lutherans Believe \u2014 ELCA",
+        "url": "https://www.elca.org/about-the-elca/who-we-are/beliefs",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-faith"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Constituting Convention and transition record",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "snippet": "Primary organizational record distinguishing constitution in 1987 from operational startup in 1988.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+    ]
   },
   {
     "id": "aelc-to-elca-1987",
@@ -42,9 +281,90 @@
     "to_id": "evangelical-lutheran-church-in-america",
     "zoom_tier": "full",
     "type": "merge",
-    "year": 1987,
-    "reasons": ["merger"],
-    "description": "AELC merged into the ELCA in 1987.",
-    "citations": ["cite-elca-merger", "cite-elca-founded"]
+    "year": 1988,
+    "reasons": [
+      "merger"
+    ],
+    "description": "AELC merged into the ELCA effective January 1, 1988, following the 1987 constituting convention.",
+    "citations": [
+      "cite-elca-merger",
+      "cite-elca-founded",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+    ],
+    "narrative": "AELC merged into the ELCA effective January 1, 1988, following the 1987 constituting convention. The merger brought together multiple strands of North American Lutheran history, including immigrant churches and the AELC\u2019s more recent division from the Missouri Synod. Its constituting convention in April 1987 elected Herbert Chilstrom; operations began January 1, 1988. The distinction reconciles official descriptions that use either a constituting year or a startup year. The ELCA\u2019s identity joins Lutheran confession with an extensive network of ministries and ecumenical relationships.",
+    "causes": [
+      "merger"
+    ],
+    "key_figures": [
+      {
+        "name": "Herbert W. Chilstrom",
+        "role": "first ELCA bishop, elected at the 1987 constituting convention",
+        "summary": "A Lutheran bishop elected at the 1987 constituting convention as the first bishop of the ELCA.",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1988,
+        "label": "Merger into ELCA",
+        "citations": [
+          "cite-elca-merger",
+          "cite-elca-founded",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the ELCA \u2014 official account",
+        "url": "https://www.elca.org/about-the-elca/who-we-are/history",
+        "snippet": "Formation and development: The merger brought together multiple strands of North American Lutheran history, including immigrant churches and the AELC\u2019s more recent division from the Missouri Synod. Its constituting convention in April 1987 elected Herbert Chilstrom; operations began January 1, 1988.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-history"
+        ]
+      },
+      {
+        "title": "What Lutherans Believe \u2014 ELCA",
+        "url": "https://www.elca.org/about-the-elca/who-we-are/beliefs",
+        "snippet": "Teaching and practice: Justification by grace through faith: reconciliation with God is received through Christ rather than earned by religious merit.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-faith"
+        ]
+      },
+      {
+        "title": "Augsburg Confession",
+        "url": "https://bookofconcord.org/augsburg-confession/",
+        "snippet": "A foundational Lutheran confession addressing salvation, church, and sacraments; the precise legal form of subscription varies by body.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Luther\u2019s Small Catechism",
+        "url": "https://bookofconcord.org/small-catechism/",
+        "snippet": "An instructional text explaining the commandments, creed, prayer, and sacraments for ordinary Christian life.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-lutheran-texts"
+        ]
+      },
+      {
+        "title": "Constituting Convention and transition record",
+        "url": "https://elcamediaresources.blob.core.windows.net/cdn/wp-content/uploads/CWA1987.pdf",
+        "snippet": "Primary organizational record distinguishing constitution in 1987 from operational startup in 1988.",
+        "citations": [
+          "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-evangelical-lutheran-church-in-america-elca-history",
+      "cite-profile-evangelical-lutheran-church-in-america-elca-1987"
+    ]
   }
 ]

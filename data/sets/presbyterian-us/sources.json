@@ -1,0 +1,56 @@
+[
+  {
+    "id": "src-pcusa-history",
+    "title": "History of the Church",
+    "kind": "website",
+    "author": "Presbyterian Historical Society",
+    "publisher": "Presbyterian Church (U.S.A.)",
+    "year": null,
+    "url": "https://pcusa.org/historical-society/history-online/history/history-church"
+  },
+  {
+    "id": "src-pcusa-heritage-1983",
+    "title": "Minute for Mission: Presbyterian Heritage Sunday 2023",
+    "kind": "website",
+    "author": "Presbyterian Church (U.S.A.)",
+    "publisher": "Presbyterian Church (U.S.A.)",
+    "year": 2023,
+    "url": "https://pcusa.org/news-storytelling/news/2023/6/5/minute-mission-presbyterian-heritage-sunday"
+  },
+  {
+    "id": "src-pcusa-ga-1958",
+    "title": "Stories from GA: 1958 Union of the UPCNA and the PCUSA",
+    "kind": "website",
+    "author": "Presbyterian Church (U.S.A.)",
+    "publisher": "Presbyterian Church (U.S.A.)",
+    "year": 2022,
+    "url": "https://pcusa.org/news-storytelling/news/2022/6/21/stories-ga"
+  },
+  {
+    "id": "src-opc-history",
+    "title": "Historian of the OPC: Our History",
+    "kind": "website",
+    "author": "Orthodox Presbyterian Church",
+    "publisher": "Orthodox Presbyterian Church",
+    "year": null,
+    "url": "https://www.opc.org/historian.html"
+  },
+  {
+    "id": "src-pca-about",
+    "title": "About the PCA",
+    "kind": "website",
+    "author": "Presbyterian Church in America",
+    "publisher": "Presbyterian Church in America",
+    "year": null,
+    "url": "https://pcanet.org/about-the-pca/"
+  },
+  {
+    "id": "src-pca-history-1973",
+    "title": "December 4: 1st General Assembly of the PCA",
+    "kind": "website",
+    "author": "PCA Historical Center",
+    "publisher": "Presbyterian Church in America",
+    "year": null,
+    "url": "https://pcahistory.org/thisday/december-4/"
+  }
+]

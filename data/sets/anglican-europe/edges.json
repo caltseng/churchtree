@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "english-reformation-to-church-of-england-1534",
     "name": "National church established",
@@ -7,9 +7,92 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1534,
-    "reasons": ["break with Rome", "royal supremacy"],
+    "reasons": [
+      "break with Rome",
+      "royal supremacy"
+    ],
     "description": "The English Reformation established the Church of England as a national church.",
-    "citations": ["cite-english-reformation-1534", "cite-church-of-england-1534"]
+    "citations": [
+      "cite-english-reformation-1534",
+      "cite-church-of-england-1534",
+      "cite-profile-church-of-england-english-reformation",
+      "cite-profile-church-of-england-tec-timeline"
+    ],
+    "narrative": "The English Reformation established the Church of England as a national church. The Reformation separated English church authority from Rome through royal and parliamentary action. Subsequent settlements established a distinctive combination of Reformed teaching, common prayer, and historic episcopal ministry. The church\u2019s own doctrinal canons identify Scripture, the Articles, prayer book, and Ordinal as guiding sources. Its members have differed substantially in churchmanship, and the 1534 marker should be explained as a jurisdictional break rather than the beginning of Christianity in England.",
+    "causes": [
+      "break with Rome",
+      "royal supremacy"
+    ],
+    "key_figures": [
+      {
+        "name": "Thomas Cranmer",
+        "role": "archbishop and principal prayer-book reformer",
+        "summary": "The English archbishop whose liturgical work helped make common prayer a central expression of reformed English Christianity.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/",
+        "citations": [
+          "cite-profile-church-of-england-english-reformation",
+          "cite-profile-church-of-england-tec-timeline"
+        ]
+      },
+      {
+        "name": "Henry VIII",
+        "role": "political agent of separation from Rome, not author of the later entire doctrinal settlement",
+        "summary": "The English monarch whose marital and jurisdictional conflict with Rome led to royal supremacy; his political break did not immediately settle all later Protestant doctrine.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/",
+        "citations": [
+          "cite-profile-church-of-england-english-reformation",
+          "cite-profile-church-of-england-tec-timeline"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1534,
+        "label": "National church established",
+        "citations": [
+          "cite-english-reformation-1534",
+          "cite-church-of-england-1534"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "The Reformation \u2014 UK Parliament historical account",
+        "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+        "snippet": "Formation and development: The Reformation separated English church authority from Rome through royal and parliamentary action. Subsequent settlements established a distinctive combination of Reformed teaching, common prayer, and historic episcopal ministry.",
+        "citations": [
+          "cite-profile-church-of-england-english-reformation"
+        ]
+      },
+      {
+        "title": "Canons of the Church of England: Section A",
+        "url": "https://www.churchofengland.org/resources/legal/canons-church-england/section-a",
+        "snippet": "Teaching and practice: Scripture and creeds: biblical teaching is read within the inherited Christian tradition.",
+        "citations": [
+          "cite-profile-church-of-england-coe-canons"
+        ]
+      },
+      {
+        "title": "Thirty-nine Articles",
+        "url": "https://www.churchofengland.org/liturgy/book-of-common-prayer/articles-religion",
+        "snippet": "Historical doctrinal standard named in the church\u2019s canons.",
+        "citations": [
+          "cite-profile-church-of-england-anglican-articles"
+        ]
+      },
+      {
+        "title": "Book of Common Prayer and Ordinal",
+        "url": "https://www.churchofengland.org/resources/legal/canons-church-england/section-a",
+        "snippet": "Doctrinal and liturgical standards identified in Canon A5; common worship is a major carrier of Anglican theology.",
+        "citations": [
+          "cite-profile-church-of-england-coe-canons"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-church-of-england-english-reformation",
+      "cite-profile-church-of-england-tec-timeline"
+    ]
   },
   {
     "id": "church-of-england-to-episcopal-church-1785",
@@ -19,8 +102,81 @@
     "zoom_tier": "full",
     "type": "origin",
     "year": 1785,
-    "reasons": ["American independence"],
+    "reasons": [
+      "American independence"
+    ],
     "description": "The Episcopal Church formed as the U.S. Anglican body after separation from the Church of England.",
-    "citations": ["cite-episcopal-derived-from-coe", "cite-tec-1785"]
+    "citations": [
+      "cite-episcopal-derived-from-coe",
+      "cite-tec-1785",
+      "cite-profile-episcopal-church-tec-timeline",
+      "cite-profile-episcopal-church-tec-bishops"
+    ],
+    "narrative": "The Episcopal Church formed as the U.S. Anglican body after separation from the Church of England. American independence made dependence on English royal and ecclesiastical structures impractical. Clergy and lay representatives developed conventions and a constitution while securing a local episcopate. The first General Convention in 1785 and the prayer-book and constitutional settlement of 1789 are distinct milestones. The resulting church continued Anglican worship while adapting governance to an American setting; later conflicts did not end the parent church.",
+    "causes": [
+      "American independence"
+    ],
+    "key_figures": [
+      {
+        "name": "Samuel Seabury",
+        "role": "first bishop in the American Episcopal succession",
+        "summary": "The first bishop in the emerging American Episcopal succession, helping provide an episcopate independent of English royal arrangements.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/past-presiding-bishops/",
+        "citations": [
+          "cite-profile-episcopal-church-tec-timeline",
+          "cite-profile-episcopal-church-tec-bishops"
+        ]
+      },
+      {
+        "name": "William White",
+        "role": "organizer of representative American church structures",
+        "summary": "An American Episcopal leader who helped develop representative structures involving clergy and laity after independence.",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/past-presiding-bishops/",
+        "citations": [
+          "cite-profile-episcopal-church-tec-timeline",
+          "cite-profile-episcopal-church-tec-bishops"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1785,
+        "label": "American church formed",
+        "citations": [
+          "cite-episcopal-derived-from-coe",
+          "cite-tec-1785"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Timeline of the Episcopal Church",
+        "url": "https://www.episcopalchurch.org/who-we-are/our-history/timeline-of-the-episcopal-church/",
+        "snippet": "Formation and development: American independence made dependence on English royal and ecclesiastical structures impractical. Clergy and lay representatives developed conventions and a constitution while securing a local episcopate.",
+        "citations": [
+          "cite-profile-episcopal-church-tec-timeline"
+        ]
+      },
+      {
+        "title": "What Kind of Christians Are We? \u2014 Episcopal Church",
+        "url": "https://www.episcopalchurch.org/who-we-are/what-kind-of-christians-are-we/",
+        "snippet": "Teaching and practice: Common prayer: the prayer book shapes worship and expresses doctrine through repeated shared practice.",
+        "citations": [
+          "cite-profile-episcopal-church-tec-faith"
+        ]
+      },
+      {
+        "title": "Book of Common Prayer",
+        "url": "https://www.episcopalchurch.org/who-we-are/how-we-worship/book-of-common-prayer/",
+        "snippet": "Authorized worship and catechesis; the current edition stands in an American prayer-book tradition first published in 1789.",
+        "citations": [
+          "cite-profile-episcopal-church-tec-prayer"
+        ]
+      }
+    ],
+    "context_citations": [
+      "cite-profile-episcopal-church-tec-timeline",
+      "cite-profile-episcopal-church-tec-bishops"
+    ]
   }
 ]

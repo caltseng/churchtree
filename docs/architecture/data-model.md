@@ -22,6 +22,8 @@ Optional fields:
 - end_year: integer (if dissolved or merged)
 - short_label: short display name
 - summary: brief description
+- key_figures: list of key figures (names or "Name — role")
+- key_dates: list of milestone objects { year, label, citations }
 - region: string (e.g., "US", "Global")
 - geographic_origin: string (country/region of origin)
 - tradition_family: broad family (e.g., "Reformed", "Baptist")
@@ -30,6 +32,7 @@ Optional fields:
 - notes: freeform text
 - distinctives: list of short theological distinctives
 - size_estimate: short text (e.g., "approx 1.0M members, 2024")
+- citations: list of citation ids (for summary, key dates, distinctives, size)
 - tags: list of tag ids
 
 ### Edge (relationship)
@@ -46,6 +49,10 @@ Required fields:
 Optional fields:
 - reasons: short list of contention points
 - description: longer text
+- causes: short list of drivers (separate from reasons; used in detail panel)
+- narrative: 1-3 paragraph description of the split/merge/origin
+- key_figures: list of key figures (names or "Name — role")
+- key_dates: list of milestone objects { year, label, citations }
 - confidence: "high" | "medium" | "low"
 - citations: list of citation ids
 
@@ -59,6 +66,7 @@ Required fields:
 
 Optional fields:
 - description: brief summary
+- key_figures: list of key figures (names or "Name — role")
 - related_edge_ids: list of edge ids
 - related_node_ids: list of node ids
 - citations: list of citation ids

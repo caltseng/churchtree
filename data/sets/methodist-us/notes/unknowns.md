@@ -14,5 +14,9 @@ Follow-up research needed for the items below.
 - Methodist Church
 - Evangelical United Brethren Church
 
+## Missing predecessor edges
+- Methodist Episcopal Church
+- Evangelical United Brethren Church
+
 ## Notes
 - Add citations for any new size estimates (year + source).
