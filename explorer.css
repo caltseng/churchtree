@@ -545,3 +545,26 @@ aside p,aside li {
 
 .site-home { color: inherit; text-decoration: none; }
 .site-home:hover { text-decoration: underline; }
+/* A single compact row leaves the timeline in charge on touch screens. */
+#view-settings { display: contents; }
+@media (max-width: 1099px) {
+  header { padding: 5px 10px; gap: 4px; }
+  header h1 { margin: 0; }
+  nav { display: flex; flex-wrap: wrap; align-items: center; padding: 5px 10px; gap: 5px 8px; }
+  nav .zoom { flex: 1; margin: 0; }
+  #mobile-settings-toggle { padding: 6px 10px; font-size: 13px; }
+  #view-settings { display: none; width: 100%; }
+  .mobile-settings-open #view-settings { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 6px 8px; padding: 6px 0; }
+  #view-settings>label { display: flex; flex-direction: column; gap: 3px; }
+  #view-settings .orientation { grid-column: 1 / -1; grid-row: auto; }
+  #view-settings #reset,#view-settings #mobile-range-toggle { grid-column: auto; }
+  #canvas { padding: 6px 10px; }
+  .scope { align-items: center; }
+  .scope h2 { font-size: 15px; line-height: 1.25; margin: 0; }
+  .scope p,#count { display: none; }
+  .scope-actions { flex-basis: auto; }
+  #mobile-open-details { width: auto; padding: 6px 8px; }
+  .scope { margin-bottom: 5px; }
+  #mobile-pan { padding-top: 3px; }
+  #mobile-pan button { padding: 5px 10px; font-size: 13px; }
+}
