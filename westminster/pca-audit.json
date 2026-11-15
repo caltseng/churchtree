@@ -1,0 +1,1962 @@
+{
+  "schemaVersion": 1,
+  "id": "pca-adopted-2022",
+  "reviewedOn": "2026-11-14",
+  "baseline": {
+    "file": "content.json",
+    "edition": "1647 English text in Philip Schaff, The Creeds of Christendom, Volume III (fourth edition, 1919); original wording, modernized spelling and punctuation; without American alterations or proof texts",
+    "sha256": "b88e156a87a174a2ff456ddc2dde9444154bf9ec901bcf16eff455d6deed3912",
+    "chapters": 33,
+    "sections": 172,
+    "hashAlgorithm": "sha256-utf8-lf"
+  },
+  "comparison": {
+    "sourceId": "pca-wcf-2022",
+    "edition": "Official PCA-published confession, 2022 PDF, accessed 14 November 2026; PCA preface identifies this publication as the standards adopted by the PCA",
+    "sha256": "d24cbbcdd3e581f24830e7da88ca670d0ab5da7a1d644d1eb42c7bd115556955",
+    "pages": 152,
+    "chapters": 33,
+    "sections": 171,
+    "prefaceSourceId": "pca-wcf-preface",
+    "prefaceSha256": "c40baa2f624a50671632812a2ff6b12ce1af219d7fc0d544881e5dc959444f46"
+  },
+  "method": [
+    "Compared every confession section in the local baseline with the corresponding PCA confession paragraph, excluding the Scripture-proof apparatus.",
+    "Extracted body text separately from smaller proof text and superscript markers; checked the complete section sequence and examined every lexical difference.",
+    "Treated capitalization, punctuation, compound spacing, spelling and book-list arrangement separately from substantive adopted-text differences.",
+    "Recorded smaller wording differences and apparent errors separately; no doctrinal intention is inferred from a typographical variant.",
+    "Used the official PCA PDF and preface directly. OPC’s revision table is corroborating evidence, not a substitute for PCA verification."
+  ],
+  "limits": [
+    "This compares the named official PCA publication available at review time; it is not a survey of individual subscriptions or a claim about all Presbyterian editions.",
+    "The hosted transcript is unchanged. Its apparent errors have not been silently repaired or certified as readings of the printed Schaff edition; a separate facsimile collation is needed.",
+    "No complete modern edition, proof apparatus or publisher commentary is reproduced here. The audit summaries are original editorial comparisons."
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "status": "no-substantive-difference",
+      "summary": "All 10 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 10,
+      "pcaSections": 10,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        },
+        {
+          "historicalSection": 7,
+          "pcaSection": 7
+        },
+        {
+          "historicalSection": 8,
+          "pcaSection": 8
+        },
+        {
+          "historicalSection": 9,
+          "pcaSection": 9
+        },
+        {
+          "historicalSection": 10,
+          "pcaSection": 10
+        }
+      ],
+      "comparisonPages": {
+        "first": 1,
+        "last": 8
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 1; printed/PDF pp. 1–8",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=1"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            1,
+            2
+          ],
+          "kind": "presentation",
+          "summary": "Spelling includes inexcusable/unexcusable; capitalization, punctuation and the arrangement of the same biblical book list differ. No substantive doctrinal change identified."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "status": "no-substantive-difference",
+      "summary": "All 3 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 3,
+      "pcaSections": 3,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        }
+      ],
+      "comparisonPages": {
+        "first": 8,
+        "last": 12
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 2; printed/PDF pp. 8–12",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=8"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            2,
+            3
+          ],
+          "kind": "transcription-review",
+          "summary": "The hosted transcript has foundation where the PCA edition has fountain, and duplicates head after Godhead. These are baseline/source readings needing separate facsimile review, not established PCA doctrinal amendments."
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "status": "no-substantive-difference",
+      "summary": "All 8 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 8,
+      "pcaSections": 8,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        },
+        {
+          "historicalSection": 7,
+          "pcaSection": 7
+        },
+        {
+          "historicalSection": 8,
+          "pcaSection": 8
+        }
+      ],
+      "comparisonPages": {
+        "first": 12,
+        "last": 17
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 3; printed/PDF pp. 12–17",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=12"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            4
+          ],
+          "kind": "wording",
+          "summary": "The hosted sentence includes is after number; the PCA sentence omits it. The assertion that the number cannot change is retained."
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "status": "no-substantive-difference",
+      "summary": "All 2 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 2,
+      "pcaSections": 2,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        }
+      ],
+      "comparisonPages": {
+        "first": 17,
+        "last": 19
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 4; printed/PDF pp. 17–19",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=17"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": []
+    },
+    {
+      "chapter": 5,
+      "status": "no-substantive-difference",
+      "summary": "All 7 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 7,
+      "pcaSections": 7,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        },
+        {
+          "historicalSection": 7,
+          "pcaSection": 7
+        }
+      ],
+      "comparisonPages": {
+        "first": 19,
+        "last": 25
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 5; printed/PDF pp. 19–25",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=19"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            5,
+            6
+          ],
+          "kind": "wording",
+          "summary": "Minor readings include unto/upon for dependence on God, and occasion/occasions of sin. No substantive doctrinal revision is established by these differences."
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "status": "no-substantive-difference",
+      "summary": "All 6 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 6,
+      "pcaSections": 6,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        }
+      ],
+      "comparisonPages": {
+        "first": 26,
+        "last": 29
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 6; printed/PDF pp. 26–29",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=26"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            2
+          ],
+          "kind": "wording",
+          "summary": "The order of parts and faculties is reversed. Both versions extend corruption to the whole person."
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "status": "no-substantive-difference",
+      "summary": "All 6 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 6,
+      "pcaSections": 6,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        }
+      ],
+      "comparisonPages": {
+        "first": 29,
+        "last": 34
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 7; printed/PDF pp. 29–34",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=29"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            3,
+            6
+          ],
+          "kind": "transcription-review",
+          "summary": "The hosted transcript reads offered rather than offereth, lacks eternal before life in the closing promise of 7.3, and has aud for and in 7.6. These source/transcription variants are recorded without changing the hosted text or treating them as established PCA amendments."
+        },
+        {
+          "sections": [
+            4
+          ],
+          "kind": "wording",
+          "summary": "There is a minor article difference before reference; the covenant/testament claim remains. Compound spelling and incapable/uncapable also vary."
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "status": "no-substantive-difference",
+      "summary": "All 8 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 8,
+      "pcaSections": 8,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        },
+        {
+          "historicalSection": 7,
+          "pcaSection": 7
+        },
+        {
+          "historicalSection": 8,
+          "pcaSection": 8
+        }
+      ],
+      "comparisonPages": {
+        "first": 34,
+        "last": 42
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 8; printed/PDF pp. 34–42",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=34"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            1,
+            2
+          ],
+          "kind": "transcription-review",
+          "summary": "The hosted 8.1 lacks unto before whom, and 8.2 has fake where the PCA prints take. These are apparent transcript/source problems, not a PCA change to the doctrine of the incarnation. The historical display is left unchanged pending a separate facsimile collation."
+        },
+        {
+          "sections": [
+            7
+          ],
+          "kind": "wording",
+          "summary": "The verbal form acteth becomes acts. American spelling also changes saviour to savior."
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "status": "no-substantive-difference",
+      "summary": "All 5 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 5,
+      "pcaSections": 5,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        }
+      ],
+      "comparisonPages": {
+        "first": 42,
+        "last": 45
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 9; printed/PDF pp. 42–45",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=42"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            1,
+            2
+          ],
+          "kind": "wording",
+          "summary": "The PCA adds it in the description of natural liberty and uses was rather than is for Adam’s original ability. No doctrinal amendment is identified."
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "status": "no-substantive-difference",
+      "summary": "All 4 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 4,
+      "pcaSections": 4,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        }
+      ],
+      "comparisonPages": {
+        "first": 45,
+        "last": 50
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 10; printed/PDF pp. 45–50",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=45"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            1,
+            3,
+            4
+          ],
+          "kind": "wording",
+          "summary": "Minor article/spelling variants occur; law becomes laws in the reference to other religions. The assertions about effectual calling, infants and salvation are unchanged in substance."
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "status": "no-substantive-difference",
+      "summary": "All 6 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 6,
+      "pcaSections": 6,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        }
+      ],
+      "comparisonPages": {
+        "first": 50,
+        "last": 56
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 11; printed/PDF pp. 50–56",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=50"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            1,
+            3
+          ],
+          "kind": "presentation",
+          "summary": "Anything is joined rather than written as two words; punctuation and capitalization vary."
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "status": "no-substantive-difference",
+      "summary": "All 1 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 1,
+      "pcaSections": 1,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        }
+      ],
+      "comparisonPages": {
+        "first": 56,
+        "last": 57
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 12; printed/PDF pp. 56–57",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=56"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": []
+    },
+    {
+      "chapter": 13,
+      "status": "no-substantive-difference",
+      "summary": "All 3 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 3,
+      "pcaSections": 3,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        }
+      ],
+      "comparisonPages": {
+        "first": 58,
+        "last": 60
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 13; printed/PDF pp. 58–60",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=58"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            1,
+            2
+          ],
+          "kind": "wording",
+          "summary": "The PCA wording includes once before effectually called and uses abiding rather than abideth. Both describe real sanctification that remains incomplete in this life."
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "status": "no-substantive-difference",
+      "summary": "All 3 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 3,
+      "pcaSections": 3,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        }
+      ],
+      "comparisonPages": {
+        "first": 60,
+        "last": 64
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 14; printed/PDF pp. 60–64",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=60"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": []
+    },
+    {
+      "chapter": 15,
+      "status": "no-substantive-difference",
+      "summary": "All 6 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 6,
+      "pcaSections": 6,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        }
+      ],
+      "comparisonPages": {
+        "first": 64,
+        "last": 67
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 15; printed/PDF pp. 64–67",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=64"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            3
+          ],
+          "kind": "wording",
+          "summary": "The placement of it in the necessity-of-repentance sentence changes. Its denial of repentance as satisfaction and its assertion of necessity remain."
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "status": "no-substantive-difference",
+      "summary": "All 7 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 7,
+      "pcaSections": 7,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        },
+        {
+          "historicalSection": 7,
+          "pcaSection": 7
+        }
+      ],
+      "comparisonPages": {
+        "first": 67,
+        "last": 74
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 16; printed/PDF pp. 67–74",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=67"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            3,
+            6,
+            7
+          ],
+          "kind": "wording",
+          "summary": "Besides/beside, a/an and a sentence-opening yet vary. The PCA text still retains the historical teaching about unregenerate works in 16.7; it does not receive the PCUSA’s separate 1903 rewrite of that paragraph."
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "status": "no-substantive-difference",
+      "summary": "All 3 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 3,
+      "pcaSections": 3,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        }
+      ],
+      "comparisonPages": {
+        "first": 74,
+        "last": 78
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 17; printed/PDF pp. 74–78",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=74"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            2
+          ],
+          "kind": "presentation",
+          "summary": "Freewill/free will differs in spacing. No substantive doctrinal change identified."
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "status": "no-substantive-difference",
+      "summary": "All 4 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 4,
+      "pcaSections": 4,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        }
+      ],
+      "comparisonPages": {
+        "first": 79,
+        "last": 82
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 18; printed/PDF pp. 79–82",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=79"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            1,
+            3,
+            4
+          ],
+          "kind": "wording",
+          "summary": "A/the before state of grace differs; everyone and meantime are joined rather than spaced. The chapter’s account of assurance remains unchanged in substance."
+        }
+      ]
+    },
+    {
+      "chapter": 19,
+      "status": "no-substantive-difference",
+      "summary": "All 7 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 7,
+      "pcaSections": 7,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        },
+        {
+          "historicalSection": 7,
+          "pcaSection": 7
+        }
+      ],
+      "comparisonPages": {
+        "first": 83,
+        "last": 92
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 19; printed/PDF pp. 83–92",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=83"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            6
+          ],
+          "kind": "transcription-review",
+          "summary": "The hosted transcript says covenant of words in one occurrence; the PCA prints works. This apparent transcription/source problem must not be described as a PCA doctrinal amendment. The hosted reading is preserved for this task."
+        }
+      ]
+    },
+    {
+      "chapter": 20,
+      "status": "substantive-difference",
+      "summary": "An adopted-text difference is identified below; ordinary wording and transcript variants are listed separately.",
+      "historicalSections": 4,
+      "pcaSections": 4,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        }
+      ],
+      "comparisonPages": {
+        "first": 92,
+        "last": 98
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 20; printed/PDF pp. 92–98",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=92"
+        }
+      ],
+      "changes": [
+        {
+          "id": "civil-enforcement",
+          "kind": "adopted-text-difference",
+          "historicalSections": [
+            4
+          ],
+          "pcaSections": [
+            4
+          ],
+          "title": "Civil enforcement removed",
+          "summary": "The PCA paragraph retains ecclesiastical censure but omits the historical closing authorization for the civil magistrate to proceed against the described opinions and practices.",
+          "citations": [
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 20; printed/PDF pp. 92–98",
+              "supports": "Direct comparison with the PCA-published confession",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=92"
+            }
+          ],
+          "notSubscriptionException": true
+        }
+      ],
+      "wordingVariants": [
+        {
+          "sections": [
+            2
+          ],
+          "kind": "comparison-print-review",
+          "summary": "The official 2022 PDF visibly prints if matters where the hosted transcript has in matters (p. 95). This apparent printing/source variant is separate from the documented amendment in 20.4; no doctrinal intention is inferred from the letter difference."
+        },
+        {
+          "sections": [
+            4
+          ],
+          "kind": "wording",
+          "summary": "Power/powers differs in the opening reference to ordained authority, apart from the substantive deletion summarized above."
+        }
+      ]
+    },
+    {
+      "chapter": 21,
+      "status": "no-substantive-difference",
+      "summary": "All 8 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 8,
+      "pcaSections": 8,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        },
+        {
+          "historicalSection": 7,
+          "pcaSection": 7
+        },
+        {
+          "historicalSection": 8,
+          "pcaSection": 8
+        }
+      ],
+      "comparisonPages": {
+        "first": 99,
+        "last": 110
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 21; printed/PDF pp. 99–110",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=99"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            1,
+            5,
+            7
+          ],
+          "kind": "wording",
+          "summary": "Minor readings include limited to/by, singular/plural representation, several/special occasions and an extra of in the law-of-nature sentence. These are recorded source wording variants, not evidence of a new PCA worship or Sabbath doctrine."
+        },
+        {
+          "sections": [
+            5
+          ],
+          "kind": "transcription-review",
+          "summary": "The hosted transcript has dne where the PCA prints due in the sacrament-administration sentence. It is flagged as an apparent transcription problem without silently correcting the historical display."
+        }
+      ]
+    },
+    {
+      "chapter": 22,
+      "status": "substantive-difference",
+      "summary": "An adopted-text difference is identified below; ordinary wording and transcript variants are listed separately.",
+      "historicalSections": 7,
+      "pcaSections": 7,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        },
+        {
+          "historicalSection": 7,
+          "pcaSection": 7
+        }
+      ],
+      "comparisonPages": {
+        "first": 111,
+        "last": 115
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 22; printed/PDF pp. 111–115",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=111"
+        }
+      ],
+      "changes": [
+        {
+          "id": "required-oath",
+          "kind": "adopted-text-difference",
+          "historicalSections": [
+            3
+          ],
+          "pcaSections": [
+            3
+          ],
+          "title": "Refusal-of-oath sentence omitted",
+          "summary": "The PCA omits the sentence declaring refusal of a good and just oath imposed by lawful authority sinful. The surrounding permission and limits for lawful oaths remain.",
+          "citations": [
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 22; printed/PDF pp. 111–115",
+              "supports": "Direct comparison with the PCA-published confession",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=111"
+            }
+          ],
+          "notSubscriptionException": true
+        }
+      ],
+      "wordingVariants": [
+        {
+          "sections": [
+            7
+          ],
+          "kind": "transcription-review",
+          "summary": "The hosted text has promise or ability where the PCA has promise of ability, plus respect/respects and superstitions/superstitious. These source-level variants are distinct from the documented deletion in 22.3 and require separate transcript review."
+        }
+      ]
+    },
+    {
+      "chapter": 23,
+      "status": "substantive-difference",
+      "summary": "An adopted-text difference is identified below; ordinary wording and transcript variants are listed separately.",
+      "historicalSections": 4,
+      "pcaSections": 4,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        }
+      ],
+      "comparisonPages": {
+        "first": 116,
+        "last": 120
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 23; printed/PDF pp. 116–120",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=116"
+        }
+      ],
+      "changes": [
+        {
+          "id": "magistrate-task",
+          "kind": "adopted-text-difference",
+          "historicalSections": [
+            3
+          ],
+          "pcaSections": [
+            3
+          ],
+          "title": "Religious-enforcement task replaced",
+          "summary": "The historical duty to suppress heresy, secure doctrinal unity and oversee synods is replaced by duties of protection, freedom for church functions, noninterference in faith and discipline, and protection without denominational preference. This is a replacement of the paragraph, not merely deletion of one phrase.",
+          "citations": [
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 23; printed/PDF pp. 116–120",
+              "supports": "Direct comparison with the PCA-published confession",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=116"
+            }
+          ],
+          "notSubscriptionException": true
+        }
+      ],
+      "wordingVariants": [
+        {
+          "sections": [
+            4
+          ],
+          "kind": "wording",
+          "summary": "Minor conjunction and pronoun readings differ: tribute and/or other dues, him/them, and power or/and jurisdiction. They are separate from the substantive replacement of 23.3."
+        }
+      ]
+    },
+    {
+      "chapter": 24,
+      "status": "substantive-difference",
+      "summary": "An adopted-text difference is identified below; ordinary wording and transcript variants are listed separately.",
+      "historicalSections": 6,
+      "pcaSections": 6,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        }
+      ],
+      "comparisonPages": {
+        "first": 120,
+        "last": 123
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 24; printed/PDF pp. 120–123",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=120"
+        }
+      ],
+      "changes": [
+        {
+          "id": "affinity",
+          "kind": "adopted-text-difference",
+          "historicalSections": [
+            4
+          ],
+          "pcaSections": [
+            4
+          ],
+          "title": "Additional spouse-kindred rule omitted",
+          "summary": "The PCA retains the general prohibition of forbidden close relations, but omits the extra sentence applying the same blood-degree limit to a spouse’s relatives. This is a change in the adopted text, not a general removal of incest restrictions.",
+          "citations": [
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 24; printed/PDF pp. 120–123",
+              "supports": "Direct comparison with the PCA-published confession",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=120"
+            }
+          ],
+          "notSubscriptionException": true
+        }
+      ],
+      "wordingVariants": [
+        {
+          "sections": [
+            2,
+            4
+          ],
+          "kind": "wording",
+          "summary": "Minor a/omitted-article and forbidden in/by readings occur, apart from the substantive affinity-rule deletion in 24.4."
+        }
+      ]
+    },
+    {
+      "chapter": 25,
+      "status": "substantive-difference",
+      "summary": "An adopted-text difference is identified below; ordinary wording and transcript variants are listed separately.",
+      "historicalSections": 6,
+      "pcaSections": 6,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        }
+      ],
+      "comparisonPages": {
+        "first": 123,
+        "last": 128
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 25; printed/PDF pp. 123–128",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=123"
+        }
+      ],
+      "changes": [
+        {
+          "id": "antichrist",
+          "kind": "adopted-text-difference",
+          "historicalSections": [
+            6
+          ],
+          "pcaSections": [
+            6
+          ],
+          "title": "Antichrist identification omitted",
+          "summary": "The PCA omits the identification of the pope as Antichrist while retaining the denial of papal headship. Removing that identification does not itself adopt Roman Catholic ecclesiology.",
+          "citations": [
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 25; printed/PDF pp. 123–128",
+              "supports": "Direct comparison with the PCA-published confession",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=123"
+            }
+          ],
+          "notSubscriptionException": true
+        }
+      ],
+      "wordingVariants": []
+    },
+    {
+      "chapter": 26,
+      "status": "no-substantive-difference",
+      "summary": "All 3 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 3,
+      "pcaSections": 3,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        }
+      ],
+      "comparisonPages": {
+        "first": 128,
+        "last": 130
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 26; printed/PDF pp. 128–130",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=128"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            3
+          ],
+          "kind": "presentation",
+          "summary": "Anywise/any wise differs in spacing. No substantive doctrinal change identified."
+        }
+      ]
+    },
+    {
+      "chapter": 27,
+      "status": "no-substantive-difference",
+      "summary": "All 5 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 5,
+      "pcaSections": 5,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        }
+      ],
+      "comparisonPages": {
+        "first": 131,
+        "last": 133
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 27; printed/PDF pp. 131–133",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=131"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            2
+          ],
+          "kind": "wording",
+          "summary": "The PCA omits a repeated the before effects. The sacramental relation is unchanged in substance."
+        }
+      ]
+    },
+    {
+      "chapter": 28,
+      "status": "no-substantive-difference",
+      "summary": "All 7 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 7,
+      "pcaSections": 7,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        },
+        {
+          "historicalSection": 7,
+          "pcaSection": 7
+        }
+      ],
+      "comparisonPages": {
+        "first": 133,
+        "last": 137
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 28; printed/PDF pp. 133–137",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=133"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            7
+          ],
+          "kind": "wording",
+          "summary": "To/unto differs in the once-only administration statement. Infant subjects, accepted modes and the account of efficacy remain unchanged in substance."
+        }
+      ]
+    },
+    {
+      "chapter": 29,
+      "status": "no-substantive-difference",
+      "summary": "All 8 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 8,
+      "pcaSections": 8,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 5
+        },
+        {
+          "historicalSection": 6,
+          "pcaSection": 6
+        },
+        {
+          "historicalSection": 7,
+          "pcaSection": 7
+        },
+        {
+          "historicalSection": 8,
+          "pcaSection": 8
+        }
+      ],
+      "comparisonPages": {
+        "first": 138,
+        "last": 142
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 29; printed/PDF pp. 138–142",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=138"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            2
+          ],
+          "kind": "wording",
+          "summary": "The/his differs before elect. The rejection of a repeated propitiatory offering remains unchanged."
+        },
+        {
+          "sections": [
+            8
+          ],
+          "kind": "transcription-review",
+          "summary": "The hosted transcript includes andj where the PCA has and. This apparent transcription artifact is flagged without changing the hosted text."
+        }
+      ]
+    },
+    {
+      "chapter": 30,
+      "status": "no-substantive-difference",
+      "summary": "All 4 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 4,
+      "pcaSections": 4,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 4
+        }
+      ],
+      "comparisonPages": {
+        "first": 142,
+        "last": 144
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 30; printed/PDF pp. 142–144",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=142"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": []
+    },
+    {
+      "chapter": 31,
+      "status": "substantive-difference",
+      "summary": "Adopted-text differences are identified below; ordinary wording and transcript variants are listed separately.",
+      "historicalSections": 5,
+      "pcaSections": 4,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": null
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 4,
+          "pcaSection": 3
+        },
+        {
+          "historicalSection": 5,
+          "pcaSection": 4
+        }
+      ],
+      "comparisonPages": {
+        "first": 145,
+        "last": 147
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 31; printed/PDF pp. 145–147",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=145"
+        }
+      ],
+      "changes": [
+        {
+          "id": "church-convening",
+          "kind": "adopted-text-difference",
+          "historicalSections": [
+            1
+          ],
+          "pcaSections": [
+            1
+          ],
+          "title": "Church rulers explicitly convene assemblies",
+          "summary": "The PCA expands the first section to assign the appointment and convening of synods to the overseers and other rulers of particular churches, acting under Christ’s authority.",
+          "citations": [
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 31; printed/PDF pp. 145–147",
+              "supports": "Direct comparison with the PCA-published confession",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=145"
+            }
+          ],
+          "notSubscriptionException": true
+        },
+        {
+          "id": "magistrate-synod",
+          "kind": "adopted-text-difference",
+          "historicalSections": [
+            2
+          ],
+          "pcaSections": [],
+          "title": "Original second section omitted",
+          "summary": "The PCA has no counterpart to original 31.2 about magistrates calling synods and ministers meeting when magistrates oppose the church. Original 31.3–5 correspond to PCA 31.2–4; cite the edition as well as the number.",
+          "citations": [
+            {
+              "sourceId": "pca-wcf-2022",
+              "locator": "Chapter 31; printed/PDF pp. 145–147",
+              "supports": "Direct comparison with the PCA-published confession",
+              "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=145"
+            }
+          ],
+          "notSubscriptionException": true
+        }
+      ],
+      "wordingVariants": []
+    },
+    {
+      "chapter": 32,
+      "status": "no-substantive-difference",
+      "summary": "All 3 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 3,
+      "pcaSections": 3,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        }
+      ],
+      "comparisonPages": {
+        "first": 147,
+        "last": 149
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 32; printed/PDF pp. 147–149",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=147"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": [
+        {
+          "sections": [
+            1,
+            2
+          ],
+          "kind": "presentation",
+          "summary": "Beside/besides and self-same/selfsame differ. The immediate state after death and bodily resurrection remain unchanged in substance."
+        }
+      ]
+    },
+    {
+      "chapter": 33,
+      "status": "no-substantive-difference",
+      "summary": "All 3 sections map directly to the PCA chapter. Wording and transcript variants, where found, are recorded separately.",
+      "historicalSections": 3,
+      "pcaSections": 3,
+      "sectionMap": [
+        {
+          "historicalSection": 1,
+          "pcaSection": 1
+        },
+        {
+          "historicalSection": 2,
+          "pcaSection": 2
+        },
+        {
+          "historicalSection": 3,
+          "pcaSection": 3
+        }
+      ],
+      "comparisonPages": {
+        "first": 149,
+        "last": 151
+      },
+      "reviewStatus": "source-checked-editorial",
+      "reviewedOn": "2026-11-14",
+      "citations": [
+        {
+          "sourceId": "pca-wcf-2022",
+          "locator": "Chapter 33; printed/PDF pp. 149–151",
+          "supports": "Direct comparison with the PCA-published confession",
+          "url": "https://www.pcaac.org/wp-content/uploads/2022/04/WCFScripureProofs2022.pdf#page=149"
+        }
+      ],
+      "changes": [],
+      "wordingVariants": []
+    }
+  ]
+}
