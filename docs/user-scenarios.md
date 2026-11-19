@@ -23,7 +23,7 @@ check a real touch device/Safari before claiming cross-browser certification.
 
 | ID | Steps | Expected result | Automated coverage |
 | --- | --- | --- | --- |
-| HOME-01 | Open `/`; activate Church History tile; return using Main Branch brand link; activate Westminster tile. | Home is an inventory, not the explorer. Links reach `/church-history/` and `/westminster/`, with no missing assets or console errors. | `scripts/test-features.cjs` |
+| HOME-01 | Open `/`; activate Church History tile; return using Main Branch brand link; activate Westminster tile. | Home is an inventory, not the explorer. Links reach `/church-history/` and `/wcf/`, with no missing assets or console errors. | `scripts/test-features.cjs` |
 | HOME-02 | At 320px, scroll the home page and tab through controls. | Tiles stack; no page-wide horizontal overflow; full tile is a meaningful link; Appearance and focus are usable. | Feature suite plus manual keyboard review |
 | GRAPH-01 | In Church History, select Presbyterian from All branches. | Opens detailed timeline, skipping historical-group level. Root context remains outside the time scale. | `scripts/test-explorer.cjs` |
 | GRAPH-02 | Select Compact lineage and inspect PCUSA (1789), PCUS, OPC, PCA and the PC(USA) merger. | Splits diverge into different lanes; mergers converge. Chronological compact spacing does not claim proportional elapsed time. Nodes do not overlap. | Explorer suite and `scripts/test-timeline-model.cjs`; manually trace the actual arrows |
