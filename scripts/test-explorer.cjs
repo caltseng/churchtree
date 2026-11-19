@@ -29,6 +29,18 @@ async function noOverlap(page, selector = '.node') {
         page.on('pageerror', error => errors.push(error.message));
         await page.goto(`http://127.0.0.1:${server.address().port}/church-history/`);
         await page.locator('[data-id="family:Presbyterian"]').waitFor();
+        const overviewBox=await page.locator('#graph').boundingBox();
+        await page.mouse.move(overviewBox.x+overviewBox.width/2,overviewBox.y+overviewBox.height/2);
+        await page.keyboard.down('Control');await page.mouse.wheel(0,-200);await page.keyboard.up('Control');await page.waitForTimeout(100);
+        assert(await page.evaluate(()=>CHURCHTREE_GRAPH.snapshot().scale)>1.5,'Desktop Ctrl+wheel zooms spatial overview');
+        const spatialBefore=await page.evaluate(()=>CHURCHTREE_GRAPH.snapshot());
+        const dragPoint=await page.locator('#graph').evaluate(el=>{const r=el.getBoundingClientRect();for(let y=r.top+8;y<r.bottom-20;y+=20)for(let x=r.left+80;x<r.right-20;x+=20){const hit=document.elementFromPoint(x,y);if(el.contains(hit)&&!hit.closest('.node,.link'))return {x,y};}throw Error('No background point');});
+        await page.mouse.move(dragPoint.x,dragPoint.y);await page.mouse.down();await page.mouse.move(dragPoint.x-60,dragPoint.y,{steps:6});await page.mouse.up();
+        assert(await page.evaluate(()=>CHURCHTREE_GRAPH.snapshot().left)>spatialBefore.left+40,'Desktop background drag pans overview '+JSON.stringify({spatialBefore,after:await page.evaluate(()=>CHURCHTREE_GRAPH.snapshot())}));
+        await page.locator('#graph').focus();await page.keyboard.press('-');
+        assert(await page.evaluate(()=>CHURCHTREE_GRAPH.snapshot().scale)<spatialBefore.scale,'Keyboard minus zooms the spatial graph');
+        await page.keyboard.press('0');assert(Math.abs(await page.evaluate(()=>CHURCHTREE_GRAPH.snapshot().scale)-1)<1e-9,'Keyboard zero resets spatial zoom');
+        await page.reload();await page.locator('[data-id="family:Presbyterian"]').waitFor();
         await noOverlap(page);
         await page.screenshot({ path: path.join(output, 'review-overview.png') });
         await page.getByRole('button', { name: 'Presbyterian', exact: true }).click();

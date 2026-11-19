@@ -9,6 +9,7 @@
     const nodes = new Map(d.nodes.map(n => [n.id, n])), sources = new Map(d.sources.map(s => [s.id, s])), citations = new Map(d.citations.map(c => [c.id, c]));
     const families = [...new Set(d.nodes.map(n => n.tradition_family || 'Other'))].sort();
     let level = 0, family = '', selected = null, focus = null, layout = 'lineage', period = null, timelineControl = null, lastTimeline = 'timeline';
+    let graphControl=null,graphViewKey='';
     const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const label = n => n.short_label || n.name;
     families.forEach(f => {
@@ -218,9 +219,18 @@
     $('mobile-range-toggle').onclick=()=>{const expanded=document.body.classList.toggle('mobile-dates-open');$('mobile-range-toggle').setAttribute('aria-expanded',String(expanded));};
     $('time-earlier').onclick=()=>timelineControl?.pan?.(-.65);
     $('time-later').onclick=()=>timelineControl?.pan?.(.65);
+    const scopeHeader=document.querySelector('.scope');
+    function syncScopeHeader(){if(mobile.matches)document.querySelector('nav').append(scopeHeader);else $('canvas').insertBefore(scopeHeader,$('graph'));}
+    syncScopeHeader();
+    mobile.addEventListener('change',syncScopeHeader);
+    $('mobile-close-search').onclick=()=>closeSearch(true);
     syncDetailLayout();
     mobile.addEventListener('change',()=>{syncDetailLayout();render();});
     function render() {
+        const nextGraphKey=layout+':'+level+':'+family+':'+(focus||'');
+        const graphScale=nextGraphKey===graphViewKey?graphControl?.snapshot().scale||1:1;
+        graphControl?.destroy();graphControl=null;window.CHURCHTREE_GRAPH=null;graphViewKey=nextGraphKey;
+        document.body.classList.toggle('major-overview',layout==='lineage'&&level===0);
         $('mobile-range-toggle').hidden=layout==='lineage';
         $('mobile-pan').hidden=layout==='lineage';
         $('branch').value = family;
@@ -251,7 +261,9 @@
                 $('year-from').value = period?.[0] ?? Math.min(...years) - 10;
                 $('year-to').value = period?.[1] ?? Math.max(...years) + 10;
             }
-            $('scope-title').textContent = (focus ? label(nodes.get(selected)) + ' · ancestry' : family || 'All branches') + (layout === 'horizontal' ? ' · horizontal timeline' : ' · proportional timeline');
+            const scopeTitle=(focus ? label(nodes.get(selected)) + ' · ancestry' : family || 'All branches')+(layout==='horizontal'?' · horizontal timeline':' · proportional timeline');
+            $('scope-title').textContent=mobile.matches?(focus ? label(nodes.get(selected)) + ' · ancestry' : family || 'All branches'):scopeTitle;
+            $('scope-title').setAttribute('aria-label',scopeTitle);$('scope-title').title=scopeTitle;
             $('scope-note').textContent = layout === 'horizontal' ? 'Time runs left to right. Scroll sideways (Shift + wheel) to travel through time. Use +/− or Ctrl + wheel to zoom; nearby records collapse into named groups.' : 'Mouse wheel zooms time; drag to pan. Nearby records cluster within each tradition and separate as you zoom in. Cluster dates show their actual range.';
             timelineControl = (layout === 'horizontal' ? window.renderHorizontalTimeline : window.renderChurchTimeline)({ container: graph, entries: scoped, edges: d.edges, roots, period, onNode: id => { if(!family&&!focus)openNode(id);else showNode(id); }, onEdge: showEdge, onRange: domain => {
                     if (!['year-from', 'year-to'].includes(document.activeElement?.id)) {
@@ -280,8 +292,9 @@
             return;
         }
         window.CHURCHTREE_TIMELINE = null;
+        $('scope-title').removeAttribute('aria-label');$('scope-title').removeAttribute('title');
         if (level === 0) {
-            $('scope-title').textContent = 'Major branches · connected histories';
+            $('scope-title').textContent = 'Major branches';
             $('scope-note').textContent = 'Connections summarize recorded relationships between traditions. Spacing is for readability, not elapsed time. Select a branch to drill in.';
             entries = families.map(f => ({ id: 'family:' + f, name: f, short_label: f, members: d.nodes.filter(n => (n.tradition_family || 'Other') === f).map(n => n.id), family: f, aggregate: true }));
             rawEdges = d.edges;
@@ -388,6 +401,9 @@
         height = Math.max(height, graph.clientHeight - 20);
         const svg = d3.select(graph).append('svg').attr('width', actualWidth).attr('height', height).attr('aria-label', level === 0 ? 'Connected major traditions' : 'Historical lineage graph');
         svg.append('defs').append('marker').attr('id', 'arrow').attr('viewBox', '0 -4 8 8').attr('refX', 7).attr('refY', 0).attr('markerWidth', 6).attr('markerHeight', 6).attr('orient', 'auto').append('path').attr('d', 'M0,-3L7,0L0,3Z').attr('fill', 'var(--ct-arrow)');
+        const scene=svg.append('g').attr('class','graph-scene');
+        graphControl=window.ChurchTimelineModel.graphGestures(graph,svg,scene,actualWidth,height,graphScale);
+        window.CHURCHTREE_GRAPH=graphControl;
         const showConnection = e => {
             if (e.originals.length === 1 && !e.context) {
                 showEdge(e.originals[0]);
@@ -411,7 +427,7 @@
                 $('connection-list').append(b);
             });
         };
-        svg.append('g').selectAll('path').data(edges).join('path').attr('class', e => `link ${new Set(e.originals.map(x=>x.type)).size>1?'mixed':e.type}`).attr('tabindex', 0).attr('role', 'button').attr('aria-label', e => `${entries.find(n => n.id === e.from_id).name} to ${entries.find(n => n.id === e.to_id).name}, ${e.originals.length} relationships`).attr('marker-end', 'url(#arrow)').attr('stroke-dasharray', e => e.context ? '5 4' : null).attr('d', e => {
+        scene.append('g').selectAll('path').data(edges).join('path').attr('class', e => `link ${new Set(e.originals.map(x=>x.type)).size>1?'mixed':e.type}`).attr('tabindex', 0).attr('role', 'button').attr('aria-label', e => `${entries.find(n => n.id === e.from_id).name} to ${entries.find(n => n.id === e.to_id).name}, ${e.originals.length} relationships`).attr('marker-end', 'url(#arrow)').attr('stroke-dasharray', e => e.context ? '5 4' : null).attr('d', e => {
             const a = positions.get(e.from_id), b = positions.get(e.to_id);
             if (a.y === b.y) {
                 const yy = a.y - 17 - (e.lane % 3) * 6;
@@ -441,7 +457,7 @@
                 showConnection(e);
             }
         }).append('title').text(e => e.originals.map(x => x.name || x.type).join('; '));
-        const groups = svg.append('g').selectAll('g').data(entries).join('g').attr('class', n => `node ${n.aggregate ? 'aggregate' : ''} ${n.context ? 'context' : ''}${n.id === selected ? ' selected' : ''}`).attr('data-id', n => n.id).attr('transform', n => {
+        const groups = scene.append('g').selectAll('g').data(entries).join('g').attr('class', n => `node ${n.aggregate ? 'aggregate' : ''} ${n.context ? 'context' : ''}${n.id === selected ? ' selected' : ''}`).attr('data-id', n => n.id).attr('transform', n => {
             const p = positions.get(n.id);
             return `translate(${p.x},${p.y})`;
         }).attr('tabindex', 0).attr('role', 'button').attr('aria-label', n => n.name).on('click', (_, n) => {
@@ -520,6 +536,7 @@
         render();
     };
     $('reset').onclick = () => {
+        graphViewKey='';
         if (timelineControl) {
             if (layout === 'horizontal') {
                 timelineControl.reset();
