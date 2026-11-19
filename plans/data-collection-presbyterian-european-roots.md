@@ -47,11 +47,11 @@ Source rules:
 5. Convert notes to JSON using `docs/spec/data-collection-json-conversion.md`.
 
 ## JSON update order
-1. `data/sources.json`
-2. `data/citations.json`
-3. `data/nodes.json`
-4. `data/edges.json`
-5. `data/events.json`
+1. `data/common/sources.json`
+2. `data/common/citations.json`
+3. `data/sets/presbyterian-europe/nodes.json`
+4. `data/sets/presbyterian-europe/edges.json`
+5. `data/sets/presbyterian-europe/events.json`
 
 ## Validation checklist
 - Every edge references valid node ids.

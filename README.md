@@ -1,63 +1,131 @@
 # Main Branch
 
-A desktop explorer of church-history relationships, with an emphasis on American
-Protestant movements and their historical roots. Content aims to be sourced,
-neutral and clear about uncertainty; the dataset remains under active review.
+Main Branch is a growing collection of tools for exploring Christian history and
+its sources. The project began as ChurchTree; the public site is **Main Branch** at
+**main-branch.com**. It is a static website, with no application server, database,
+or login required.
 
-## Explore
-- Major branches remain a connected graph, without a proportional time scale.
-- Compact lineage reveals historical groups, then individual denominations.
-- Proportional timeline preserves real date spacing: wheel to zoom, drag to pan.
-  Nearby records cluster within their tradition and separate as you zoom in.
-  Records at the same date may remain clustered; select them to inspect members.
-- Search reaches any recorded body. Select nodes and connections for details,
-  sources, people, documents and successor navigation where available.
-- Trace ancestry retains originating bodies as context outside the time scale.
-- Drag the divider to resize the graph and reading panel, or focus it and use
-  left/right arrows. On phones and tablets, profiles open in a reading sheet and controls adapt to touch.
+## What's here
 
-## Run
-Build the static bundle:
+| Page | Route | Current experience |
+| --- | --- | --- |
+| Home | `/` | Tile-based inventory of the available explorations |
+| Church History | `/church-history/` | Connected branch overview, compact lineage, vertical and horizontal timelines, search, sourced profiles, ancestry and successor navigation |
+| Westminster Confession | `/wcf/` | Text-first reader of all 33 chapters / 172 sections, chapter navigation, section links and historical-edition source notes |
+| Logo studies | `/assets/brand/logos/` | Design-study archive, not another primary exploration |
 
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts/build-data-js.ps1
+The reader hosts the historical 1647 English text in Schaff's 1919 edition, with
+specified exclusions and spelling conventions; see the [source/licensing memo](docs/westminster-content-sources.md).
+The optional chapter-study layer is being developed separately; don't treat a
+research plan or an incomplete note file as a published scholarly commentary.
+
+The explorer supports desktop and mobile. Drill-ins open the detailed timeline;
+Vertical / Horizontal is a direct toggle. Nearby timeline entries collapse into
+named groups, while splits and mergers use distinct branch lanes. Origin context
+can remain visible without a fixed place on the time scale. Mobile profiles open
+in a reading sheet; desktop keeps a resizable graph/profile split.
+
+## Run and test
+
+Use Node.js 20 or newer. CI uses Node 24 on **Ubuntu 24.04**, pinned because the
+current Playwright version does not support the newer `ubuntu-latest` image.
+
+```sh
+npm ci
+npx playwright install chromium
+npm run build
+npm run serve
 ```
 
-Open `index.html`, or serve the repository using a local static HTTP server.
-D3 loads from d3js.org and requires an internet connection.
+Open **http://127.0.0.1:4173/**. The server serves the generated `dist/` website.
+Rebuild after editing source files. D3 currently loads from d3js.org, so the explorer
+needs access to that CDN. The home page and reader have no D3 dependency.
 
-## Validate
+For the same checks used in GitHub Actions:
 
 ```powershell
-node scripts/validate-data.cjs
-node scripts/test-explorer.cjs
+$env:PLAYWRIGHT_CHANNEL = 'chromium'
+$env:CHURCHTREE_TEST_ROOT = 'dist'
+npm run ci
 ```
 
-Browser checks require Playwright and Microsoft Edge. If Playwright is installed
-outside the repository, set `PLAYWRIGHT_MODULE` to its package directory. Set
-`HEADED=1` to watch the checks. Screenshots are written under `.tmp/browser-check`.
-The validator deliberately fails for unresolved evidence; don't confuse a working
-UI with completed historical verification.
+On macOS/Linux, set those two environment variables in your shell before running
+`npm run ci`. Tests can use an existing Playwright installation via
+`PLAYWRIGHT_MODULE`; locally the browser defaults to Microsoft Edge unless
+`PLAYWRIGHT_CHANNEL=chromium` is set. Screenshots go to `.tmp/browser-check/`.
 
-## Structure
-Research notes and structured records live under `data/sets`. Shared evidence lives
-under `data/common`. The build combines these into generated `data/data.js`.
-`graph-groups.js` defines display groupings, not new historical denominations.
-`explorer.js` manages selection and compact rendering; `timeline.js` handles the
-proportional timeline and screen-space clustering.
+`npm run ci` builds the artifact, checks JavaScript/JSON syntax, validates data and
+local asset references, and runs model, failure-guard, desktop, mobile, reader and
+landing/theme checks. See [user scenarios](docs/user-scenarios.md) for manual steps,
+expected behavior, automated coverage and the difference between emulation and
+physical-device testing.
 
-See `plans/desktop-explorer.md` for the implementation decisions,
-`docs/data-quality-audit.md` for data review, and `plans/belief-history-future.md`
-for the future theological-development explorer (planned, not implemented).
+## Delivery and hosting
 
-For an interactive Playwright window, run `node scripts/launch-explorer.cjs` after starting a local server (default: http://127.0.0.1:8765). This uses the actual window size instead of a fixed test viewport.
+Changes go through **topic branch → pushed PR → required CI → merge → deployment**.
+A local commit is not completion: push the relevant work and open/update its PR.
+Follow [AGENTS.md](AGENTS.md) and preserve other chats' unrelated working files.
 
-The Horizontal timeline layout runs dates left to right. Use the horizontal scrollbar, trackpad, or Shift + mouse wheel to travel through time; +/− and Ctrl + wheel zoom around the visible date. Tradition labels stay visible while scrolling. Both timeline orientations use named clusters and date-only subtitles.
+- The active GitHub `main` ruleset requires a PR and the **Build and test** check.
+  It blocks force pushes and has no bypass actors.
+- PRs are checked but do not publish. Main builds publish only after all checks pass.
+- The deployment uploads exactly `dist/`, not the repository or a local server.
+- Passing trusted same-repository PRs can merge automatically for now. The automation
+  honors branch rules; it does not merge arbitrary public-fork PRs or drafts. Set
+  repository variable `MAIN_BRANCH_AUTOMERGE=false` to pause it.
+- GitHub Pages is configured for GitHub Actions and `main-branch.com`. **The GoDaddy
+  DNS cutover is still pending**; repository configuration is not proof that the
+  domain is serving the site. See [deployment instructions](docs/deployment.md).
 
-Implementation review findings, fixes, verification and remaining limitations are recorded in `docs/implementation-review.md`. Run `node scripts/test-timeline-model.cjs` for the shared clustering checks.
+The checked-in workflow and ruleset template describe the intended policy;
+GitHub settings and the actual workflow/check/deployment results establish its live
+state. A passing PR, merged commit and successful production deployment are distinct.
 
-Mobile checks: `node scripts/test-mobile.cjs` covers phone/tablet portrait and landscape, real touch scrolling, zoom and earlier/later controls, profile sheets, and transitions back to desktop. Desktop checks remain in `scripts/test-explorer.cjs`.
+## Data and historical coverage
 
-## Contributing changes
+Research notes and canonical JSON live under `data/sets/<set>/`; shared sources and
+citations live under `data/common/`. The release build discovers all sets and
+regenerates the browser bundle from those sources. `data/data.js` is the legacy
+source-preview bundle, regenerated by `scripts/build-data-js.ps1`; do not edit it
+by hand. Tests of a release use **`dist/data/data.js`**.
 
-Changes are delivered through pull requests targeting `main`. Commit and push each task’s work, then create a PR or update the existing PR for that branch. Local commits alone do not complete a task. Include validation results and the PR link when reporting completion. See [AGENTS.md](AGENTS.md) for the repository workflow and branding instructions.
+The current baseline has 63 nodes across 13 sets. It is **not exhaustive**. Pentecostal
+records exist, but additional streams and precursor bodies are among the audited
+coverage gaps. Read the [data audit](docs/data-quality-audit.md) and
+[historical coverage standard](docs/spec/historical-coverage-standard.md) before
+adding records. Filled fields and resolved citations do not prove historical accuracy.
+
+## Design language and identity
+
+The selected mark is **Woodland solid**, a side-graft symbol, with three fixed colors:
+bark `#9B7555`, leaf `#6E9D50`, and straw `#D6B579`. Shared lockups live in `brand.css`;
+canonical SVGs are `assets/brand/logos/main-branch.svg` and
+`main-branch-wordmark.svg`. Update source templates/builders and their generated
+pages so branding survives rebuilding.
+
+Shared semantic colors live in `theme.css`. Appearance previews **Parchment**
+(default), **Slate**, and **Ink**; the selection is saved only in that browser and
+shared across pages. These interface palettes remain evolving proposals, separate
+from the selected logo's fixed colors. See the [design-language contract](docs/design-language.md).
+
+## Where to make changes
+
+- `site.config.json`: landing-page entries, public folders and custom domain.
+- `templates/home.html` + `scripts/build-home.cjs`: generated home page.
+- `church-history/index.html`, root explorer CSS/JS and timeline modules: history UI.
+- `timeline-model.js`: shared temporal clustering and branch-lane model.
+- `westminster/content.json` + `westminster/build.cjs`: reader text and generated HTML.
+- `theme.css`, `theme.js`, `theme-controls.css`, `brand.css`: shared visual foundation.
+- `scripts/build-site.cjs`: clean website-only artifact; `.github/workflows/`: CI/deploy.
+
+When adding an exploration, add its card metadata and public folder to
+`site.config.json`, build the page, and add a scenario/test before exposing its link.
+Keep default reading/navigating simple and deeper tools optional.
+
+[Architecture](docs/architecture/README.md) · [Product spec](docs/spec/product-spec.md) ·
+[Documentation drift audit](docs/documentation-drift-audit.md) ·
+[Implementation review](docs/implementation-review.md)
+
+Tracing the history of beliefs and disagreements is **planned**, not implemented:
+[future belief-history plan](plans/belief-history-future.md). Older plans record
+historical decisions; current README/spec/architecture take precedence.

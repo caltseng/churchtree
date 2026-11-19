@@ -39,8 +39,12 @@ function copyPublic(source, destination) {
 for (const name of fs.readdirSync(repo).sort()) if (fs.statSync(path.join(repo, name)).isFile() && ['.html', '.css', '.js', '.svg', '.png', '.ico', '.webmanifest'].includes(path.extname(name))) copyPublic(path.join(repo, name), path.join(output, name));
 for (const name of config.publicDirectories) {
   if (!name || name.startsWith('.') || path.resolve(repo, name) !== path.join(repo, name) || name.includes('..')) throw new Error('Invalid public directory: ' + name);
-  if (fs.existsSync(path.join(repo, name))) copyPublic(path.join(repo, name), path.join(output, name));
+  if (fs.existsSync(path.join(repo, name))) copyPublic(path.join(repo, name), path.join(output, name === 'westminster' ? 'wcf' : name));
 }
+// Preserve existing bookmarks, including chapter and section fragments.
+fs.mkdirSync(path.join(output, 'westminster'), { recursive: true });
+fs.writeFileSync(path.join(output, 'westminster/index.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Westminster Confession · Main Branch</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="https://main-branch.com/wcf/"><script>location.replace('../wcf/'+location.search+location.hash);</script><noscript><meta http-equiv="refresh" content="0;url=../wcf/"></noscript></head><body><p>The reader has moved to <a href="../wcf/">the Westminster Confession</a>.</p></body></html>`);
+
 fs.writeFileSync(path.join(output, 'CNAME'), config.domain + '\n');
 fs.writeFileSync(path.join(output, '.nojekyll'), '');
 console.log(`Built dist/: ${data.nodes.length} nodes; website assets only.`);

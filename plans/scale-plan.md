@@ -1,3 +1,7 @@
+> Historical planning record. For implemented behavior and current source paths,
+> use the README, product spec, architecture and user-scenario guide. Unchecked or
+> completed items below are a past planning snapshot, not current coverage proof.
+
 # Plan: Scaling ChurchTree for Many Denominations
 
 ## Goal

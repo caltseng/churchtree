@@ -1,3 +1,7 @@
+> Historical planning record. For implemented behavior and current source paths,
+> use the README, product spec, architecture and user-scenario guide. Unchecked or
+> completed items below are a past planning snapshot, not current coverage proof.
+
 # Plan: Plan for US Presbyterian Data Collection
 
 This document defines how we will create the detailed data-collection plan

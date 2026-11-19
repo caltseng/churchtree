@@ -1,7 +1,8 @@
 # Desktop explorer implementation
 
 ## Product decision
-Desktop first; mobile is out of scope. Start with major tradition branches,
+Current: desktop and mobile are supported. This plan began desktop-first; see
+the responsive follow-up below for the implemented mobile scope. Start with major tradition branches,
 then reveal movements and denominations through three semantic zoom levels.
 Use chronology only within a tradition or a selected lineage. Overview cards
 represent data groupings, not claims that traditions are independent roots.

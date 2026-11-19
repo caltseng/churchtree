@@ -38,7 +38,7 @@
     {
       "id": "westminster",
       "title": "The Westminster Confession",
-      "path": "westminster/",
+      "path": "wcf/",
       "kind": "Primary-source reader",
       "description": "Read a foundational Reformed confession, one chapter and section at a time. A quiet reading space with clear navigation, lasting links and a documented historical edition.",
       "tags": [
