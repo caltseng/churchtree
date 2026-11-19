@@ -11,7 +11,7 @@ or login required.
 | --- | --- | --- |
 | Home | `/` | Tile-based inventory of the available explorations |
 | Church History | `/church-history/` | Connected branch overview, compact lineage, vertical and horizontal timelines, search, sourced profiles, ancestry and successor navigation |
-| Westminster Confession | `/westminster/` | Text-first reader of all 33 chapters / 172 sections, chapter navigation, section links and historical-edition source notes |
+| Westminster Confession | `/wcf/` | Text-first reader of all 33 chapters / 172 sections, chapter navigation, section links and historical-edition source notes |
 | Logo studies | `/assets/brand/logos/` | Design-study archive, not another primary exploration |
 
 The reader hosts the historical 1647 English text in Schaff's 1919 edition, with
