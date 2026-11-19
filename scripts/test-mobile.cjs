@@ -18,7 +18,7 @@ const server=require('./test-server.cjs')(root);
   assert.equal(await searchToggle.getAttribute('aria-expanded'),'true');
   assert(await page.locator('#search').evaluate(el=>el===document.activeElement),'Opening search focuses input');
   assert(await page.locator('#search').evaluate(el=>parseFloat(getComputedStyle(el).fontSize)>=16),'Input avoids iOS focus zoom');
-  assert.equal(await page.locator('#search-form .search-row button').evaluate(el=>getComputedStyle(el).fontSize),await page.locator('#mobile-settings-toggle').evaluate(el=>getComputedStyle(el).fontSize));
+  assert.equal(await page.locator('#search-form').getByRole('button',{name:'Find',exact:true}).evaluate(el=>getComputedStyle(el).fontSize),await page.locator('#mobile-settings-toggle').evaluate(el=>getComputedStyle(el).fontSize));
   assert(await page.locator('header').evaluate(el=>el.clientHeight)>=headerBefore+44,'Collapsed search saves at least one touch-target row');
   await page.locator('#search').fill('OPC');
   await page.screenshot({path:path.join(output,`mobile-search-expanded-${size.width}.png`)});
@@ -121,12 +121,12 @@ const server=require('./test-server.cjs')(root);
   await page.screenshot({path:path.join(output,`mobile-profile-${size.width}x${size.height}.png`)});
   await page.getByRole('button',{name:'Back to graph',exact:true}).tap();assert(!await dialog.isVisible());
   const selectedRange=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain);assert(selectedRange[0]<=1973&&selectedRange[1]>=1973,'Search must reveal the selected date on mobile');
-  await page.getByRole('button',{name:'Read details',exact:true}).tap();assert(await dialog.isVisible());
+  await page.getByRole('button',{name:'Details',exact:true}).tap();assert(await dialog.isVisible());
   if(size.width===390){
    await page.setViewportSize({width:1280,height:800});await page.waitForTimeout(200);
    assert(!await dialog.isVisible());assert(await page.locator('#search').isVisible(),'Desktop search remains visible');assert(!await searchToggle.isVisible());assert(await page.locator('#branch').isVisible(),'Desktop exposes settings');assert(await page.locator('#splitter').isVisible());assert.equal(await page.locator('#details').evaluate(el=>el.parentElement.tagName),'MAIN');
    await page.setViewportSize(size);await page.waitForTimeout(200);assert(!await page.locator('#search-form').isVisible(),'Returning to mobile collapses search');assert(!await page.locator('#branch').isVisible(),'Returning to mobile collapses settings');assert(!await dialog.isVisible());
-   await page.getByRole('button',{name:'Read details',exact:true}).tap();assert(await dialog.isVisible());
+   await page.getByRole('button',{name:'Details',exact:true}).tap();assert(await dialog.isVisible());
   }
   await page.getByRole('button',{name:'Back to graph',exact:true}).tap();
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));

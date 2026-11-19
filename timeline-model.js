@@ -112,3 +112,26 @@ window.ChurchTimelineModel.touch = function(element, {pan, pinch}) {
   element.addEventListener('click',click,true);
   return ()=>{for(const [type,handler] of Object.entries(handlers))element.removeEventListener(type,handler);element.removeEventListener('click',click,true);element.style.touchAction=oldAction;};
 };
+// The overview/compact lineage has spatial zoom rather than a time domain.
+window.ChurchTimelineModel.graphGestures = function(container,svg,scene,width,height,initial=1){
+  let k=initial,drag=null;
+  function size(){svg.attr('width',Math.max(container.clientWidth-2,width*k)).attr('height',Math.max(container.clientHeight-2,height*k));scene.attr('transform',`scale(${k})`);}
+  function zoom(factor,a,b=a){
+    const x=(container.scrollLeft+a.x)/k,y=(container.scrollTop+a.y)/k;
+    k=Math.max(.5,Math.min(4,k*factor));size();
+    container.scrollLeft=x*k-b.x;container.scrollTop=y*k-b.y;
+  }
+  const stop=window.ChurchTimelineModel.touch(container,{pan:(dx,dy)=>{container.scrollLeft-=dx;container.scrollTop-=dy;},pinch:zoom});
+  const wheel=event=>{if(event.ctrlKey||event.metaKey){event.preventDefault();const box=container.getBoundingClientRect();zoom(Math.exp(-event.deltaY*.003),{x:event.clientX-box.left,y:event.clientY-box.top});}};
+  const down=event=>{if(event.pointerType!=='mouse'||event.button||event.target.closest('.node,.link'))return;drag={x:event.clientX,y:event.clientY};container.setPointerCapture(event.pointerId);};
+  const move=event=>{if(!drag)return;container.scrollLeft+=drag.x-event.clientX;container.scrollTop+=drag.y-event.clientY;drag={x:event.clientX,y:event.clientY};};
+  const up=()=>drag=null;
+  const key=event=>{if(event.target!==container)return;const center={x:container.clientWidth/2,y:container.clientHeight/2};
+    if(['+','=','-','0'].includes(event.key)){event.preventDefault();zoom(event.key==='0'?1/k:event.key==='-'?1/1.25:1.25,center);}
+    else if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(event.key)){event.preventDefault();container.scrollLeft+=event.key==='ArrowLeft'?-60:event.key==='ArrowRight'?60:0;container.scrollTop+=event.key==='ArrowUp'?-60:event.key==='ArrowDown'?60:0;}
+  };
+  const handlers={pointerdown:down,pointermove:move,pointerup:up,pointercancel:up,keydown:key};
+  container.addEventListener('wheel',wheel,{passive:false});for(const [type,handler]of Object.entries(handlers))container.addEventListener(type,handler);
+  size();
+  return {snapshot:()=>({scale:k,left:container.scrollLeft,top:container.scrollTop}),destroy:()=>{stop();container.removeEventListener('wheel',wheel);for(const [type,handler]of Object.entries(handlers))container.removeEventListener(type,handler);}};
+};

@@ -584,3 +584,19 @@ aside p,aside li {
   /* Keep the close toggle reachable even while suggestions are present. */
   #search-form #results:not(:empty) { position: static; max-height: min(35dvh,260px); margin-top: 4px; }
 }
+/* One mobile workspace row: scope, graph actions and disclosure icons. */
+@media (max-width:1099px) {
+  nav { gap: 2px; padding: 4px 6px; }
+  #mobile-settings-toggle,#mobile-open-details,#mobile-close-search { width:44px; min-width:44px; flex:0 0 44px; padding:9px; }
+  #mobile-settings-toggle svg,#mobile-open-details svg,#mobile-close-search svg { display:block; margin:auto; }
+  nav .scope { display:contents; }
+  nav .scope>div:first-child { flex:1; min-width:0; }
+  nav .scope h2 { font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; line-height:1.3; }
+  nav .scope-actions { order:2; flex:0 0 44px; }
+  nav .zoom { order:1; flex:0 0 auto; gap:2px; }
+  nav #level { display:none; }
+  body.major-overview nav .zoom { display:none; }
+  #view-settings { order:3; }
+  #mobile-search-toggle { order:0; }
+  #search-form .search-row #mobile-close-search { display:block; }
+}
