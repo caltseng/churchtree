@@ -102,10 +102,15 @@ const server=require('./test-server.cjs')(root);
    const before=await page.locator('#graph').evaluate(el=>el.scrollLeft);
    await client.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});
    for(let i=1;i<=8;i++)await client.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x-i*20,y}]});
-   await client.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(200);
+   await client.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+   // Let the real-touch click suppression and resize settle before a toolbar tap.
+   await page.waitForTimeout(650);
    assert(await page.locator('#graph').evaluate(el=>el.scrollLeft)>before,'A real touch swipe must scroll time horizontally');
   }
-  await searchToggle.tap();await page.locator('#search').fill('PCA');
+  assert.equal(await searchToggle.getAttribute('aria-expanded'),'false','Search remains collapsed while exploring timeline');
+  await searchToggle.tap();
+  assert.equal(await searchToggle.getAttribute('aria-expanded'),'true','Search toolbar tap opens after a swipe');
+  await page.locator('#search').fill('PCA');
   if(size.width===390)await page.keyboard.press('Enter');else if(size.width===320)await page.locator('#search-form').getByRole('button',{name:'Find',exact:true}).tap();else await page.getByRole('button',{name:/^PCA ·/}).tap();
   assert(!await page.locator('#search-form').isVisible(),'Choosing a result collapses mobile search');
   assert.equal(await page.locator('#search').inputValue(),'PCA','Result selection preserves query');

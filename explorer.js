@@ -187,7 +187,12 @@
         const badge=detailsPanel.querySelector('.badge')?.textContent;
         if(badge!=='Explore this scope')openMobileDetails();
     }).observe(detailsPanel,{childList:true});
+    // CSS can blur a newly hidden input before the media-query callback runs.
+    let searchHadFocus=false;
+    document.addEventListener('focusin',event=>{searchHadFocus=$('search-form').contains(event.target);});
+    document.addEventListener('pointerdown',event=>{if(!$('search-form').contains(event.target))searchHadFocus=false;});
     function closeSearch(restoreFocus=false){
+        searchHadFocus=false;
         document.body.classList.remove('mobile-search-open');
         $('mobile-search-toggle').setAttribute('aria-expanded','false');
         $('results').replaceChildren();
@@ -205,7 +210,7 @@
     $('search-form').addEventListener('keydown',event=>{
         if(event.key==='Escape'&&mobile.matches){event.preventDefault();event.stopPropagation();closeSearch(true);}
     });
-    mobile.addEventListener('change',()=>{const focused=$('search-form').contains(document.activeElement);closeSearch(mobile.matches&&focused);});
+    mobile.addEventListener('change',()=>{const focused=searchHadFocus||$('search-form').contains(document.activeElement);closeSearch(mobile.matches&&focused);searchHadFocus=!mobile.matches&&focused;});
     function closeSettings(){document.body.classList.remove('mobile-settings-open');$('mobile-settings-toggle').setAttribute('aria-expanded','false');}
     $('mobile-settings-toggle').onclick=()=>{const open=document.body.classList.toggle('mobile-settings-open');$('mobile-settings-toggle').setAttribute('aria-expanded',String(open));};
     $('view-settings').addEventListener('keydown',event=>{if(event.key==='Escape'&&mobile.matches){closeSettings();$('mobile-settings-toggle').focus();}});
