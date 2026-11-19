@@ -112,13 +112,22 @@ window.renderChurchTimeline = function ({ container, entries, edges, roots, onNo
     }
     const zoom = d3.zoom().scaleExtent([.6, 100]).filter(e => !e.button && (!e.target.closest('.node') || e.type === 'wheel')).on('zoom', event => draw(event.transform));
     svg.call(zoom).on('dblclick.zoom', null);
-    if(matchMedia('(max-width:1099px)').matches){svg.on('touchstart.zoom touchmove.zoom touchend.zoom touchcancel.zoom',null).style('touch-action','pan-x pan-y pinch-zoom');}
+    svg.on('touchstart.zoom touchmove.zoom touchend.zoom touchcancel.zoom',null);
+    const stopTouch=window.ChurchTimelineModel.touch(container,{
+        pan:(dx,dy)=>{container.scrollLeft-=dx;svg.interrupt().call(zoom.transform,d3.zoomIdentity.translate(transform.x,transform.y+dy).scale(transform.k));},
+        pinch:(factor,a,b)=>{
+            const box=svg.node().getBoundingClientRect(), parent=container.getBoundingClientRect();
+            const before=a.y+parent.top-box.top, after=b.y+parent.top-box.top;
+            const k=Math.max(.6,Math.min(100,transform.k*factor));
+            svg.interrupt().call(zoom.transform,d3.zoomIdentity.translate(0,after-(before-transform.y)*k/transform.k).scale(k));
+        }
+    });
     function fit(domain) {
         const k = (extent[1] - extent[0]) / (domain[1] - domain[0]), bounded = Math.max(.6, Math.min(100, k)), target = d3.zoomIdentity.translate(0, margin.top - bounded * scale(domain[0])).scale(bounded);
         svg.transition().duration(300).call(zoom.transform, target);
     }
     draw(d3.zoomIdentity);
-    return { pan: fraction => svg.transition().duration(250).call(zoom.translateBy,0,-fraction*(height-margin.top-margin.bottom)/transform.k), destroy: () => { svg.interrupt(); svg.on('.zoom', null); }, reveal: id => {
+    return { pan: fraction => svg.transition().duration(250).call(zoom.translateBy,0,-fraction*(height-margin.top-margin.bottom)/transform.k), destroy: () => { stopTouch(); svg.interrupt(); svg.on('.zoom', null); }, reveal: id => {
             const n = dated.find(n => n.id === id);
             if (!n)
                 return;

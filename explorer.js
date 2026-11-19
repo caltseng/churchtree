@@ -187,6 +187,10 @@
         const badge=detailsPanel.querySelector('.badge')?.textContent;
         if(badge!=='Explore this scope')openMobileDetails();
     }).observe(detailsPanel,{childList:true});
+    function closeSettings(){document.body.classList.remove('mobile-settings-open');$('mobile-settings-toggle').setAttribute('aria-expanded','false');}
+    $('mobile-settings-toggle').onclick=()=>{const open=document.body.classList.toggle('mobile-settings-open');$('mobile-settings-toggle').setAttribute('aria-expanded',String(open));};
+    $('view-settings').addEventListener('keydown',event=>{if(event.key==='Escape'&&mobile.matches){closeSettings();$('mobile-settings-toggle').focus();}});
+    mobile.addEventListener('change',()=>{closeSettings();document.body.classList.remove('mobile-dates-open');$('mobile-range-toggle').setAttribute('aria-expanded','false');});
     $('mobile-range-toggle').onclick=()=>{const expanded=document.body.classList.toggle('mobile-dates-open');$('mobile-range-toggle').setAttribute('aria-expanded',String(expanded));};
     $('time-earlier').onclick=()=>timelineControl?.pan?.(-.65);
     $('time-later').onclick=()=>timelineControl?.pan?.(.65);
@@ -247,7 +251,7 @@
                 } });
             if(!timelineControl){$('zoom-in').disabled=true;$('zoom-out').disabled=true;$('period').hidden=true;$('level').textContent='Origin context';$('count').textContent=scoped.length+' entries in scope';}
             $('mobile-pan').hidden=!timelineControl;
-            if(mobile.matches)$('scope-note').textContent=layout==='horizontal'?'Swipe sideways to explore time. Use +/− to zoom; tap a node for its history.':'Swipe sideways to explore branches. Use +/− to zoom and Earlier/Later to move through time.';
+            if(mobile.matches)$('scope-note').textContent=layout==='horizontal'?'Drag to explore time; pinch to zoom around your fingers. Tap a node for its history.':'Drag to pan time and branches; pinch to zoom around your fingers. Earlier/Later and +/− also work.';
             window.CHURCHTREE_TIMELINE = timelineControl;
             return;
         }
