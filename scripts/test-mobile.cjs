@@ -10,6 +10,34 @@ const server=require('./test-server.cjs')(root);
   await page.goto(`http://127.0.0.1:${server.address().port}/church-history/`);await page.locator('[data-id="family:Presbyterian"]').waitFor();
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Page must fit the mobile width');
   assert.equal(await page.locator('#splitter').isVisible(),false);
+  const searchToggle=page.getByRole('button',{name:'Search church history',exact:true});
+  assert(!await page.locator('#search-form').isVisible(),'Search starts collapsed');
+  const headerBefore=await page.locator('header').evaluate(el=>el.clientHeight);
+  await page.screenshot({path:path.join(output,`mobile-search-collapsed-${size.width}.png`)});
+  await searchToggle.tap();
+  assert.equal(await searchToggle.getAttribute('aria-expanded'),'true');
+  assert(await page.locator('#search').evaluate(el=>el===document.activeElement),'Opening search focuses input');
+  assert(await page.locator('#search').evaluate(el=>parseFloat(getComputedStyle(el).fontSize)>=16),'Input avoids iOS focus zoom');
+  assert.equal(await page.locator('#search-form .search-row button').evaluate(el=>getComputedStyle(el).fontSize),await page.locator('#mobile-settings-toggle').evaluate(el=>getComputedStyle(el).fontSize));
+  assert(await page.locator('header').evaluate(el=>el.clientHeight)>=headerBefore+44,'Collapsed search saves at least one touch-target row');
+  await page.locator('#search').fill('OPC');
+  await page.screenshot({path:path.join(output,`mobile-search-expanded-${size.width}.png`)});
+  await page.keyboard.press('Escape');
+  assert(!await page.locator('#search-form').isVisible());
+  assert(await searchToggle.evaluate(el=>el===document.activeElement),'Escape returns toggle focus');
+  await searchToggle.tap();assert.equal(await page.locator('#search').inputValue(),'OPC','Closing preserves query');
+  assert(await page.getByRole('button',{name:/^OPC ·/}).isVisible(),'Reopening restores suggestions');
+  await searchToggle.tap();assert(!await page.locator('#search-form').isVisible());
+  if(size.width===390){
+   await searchToggle.tap();
+   await page.setViewportSize({width:1280,height:800});await page.waitForTimeout(200);
+   assert(await page.locator('#search').isVisible());assert(!await searchToggle.isVisible());
+   await page.locator('#search').focus();
+   await page.setViewportSize(size);await page.waitForTimeout(200);
+   assert(!await page.locator('#search-form').isVisible());
+   assert(await searchToggle.evaluate(el=>el===document.activeElement),'Resizing must not strand focus inside hidden search');
+   assert.equal(await page.locator('#search').inputValue(),'OPC');
+  }
   assert.equal(await page.locator('#branch').isVisible(),false,'Filters start collapsed');
   const compactHeight=await page.locator('nav').evaluate(el=>el.clientHeight);
   await page.getByRole('button',{name:'Filters / View',exact:true}).tap();
@@ -74,10 +102,18 @@ const server=require('./test-server.cjs')(root);
    const before=await page.locator('#graph').evaluate(el=>el.scrollLeft);
    await client.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});
    for(let i=1;i<=8;i++)await client.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x-i*20,y}]});
-   await client.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(200);
+   await client.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+   // Let the real-touch click suppression and resize settle before a toolbar tap.
+   await page.waitForTimeout(650);
    assert(await page.locator('#graph').evaluate(el=>el.scrollLeft)>before,'A real touch swipe must scroll time horizontally');
   }
-  await page.locator('#search').fill('PCA');await page.getByRole('button',{name:/^PCA ·/}).tap();
+  assert.equal(await searchToggle.getAttribute('aria-expanded'),'false','Search remains collapsed while exploring timeline');
+  await searchToggle.tap();
+  assert.equal(await searchToggle.getAttribute('aria-expanded'),'true','Search toolbar tap opens after a swipe');
+  await page.locator('#search').fill('PCA');
+  if(size.width===390)await page.keyboard.press('Enter');else if(size.width===320)await page.locator('#search-form').getByRole('button',{name:'Find',exact:true}).tap();else await page.getByRole('button',{name:/^PCA ·/}).tap();
+  assert(!await page.locator('#search-form').isVisible(),'Choosing a result collapses mobile search');
+  assert.equal(await page.locator('#search').inputValue(),'PCA','Result selection preserves query');
   const dialog=page.getByRole('dialog',{name:'Historical details'});await dialog.waitFor();
   assert.match(await page.locator('#details h2').innerText(),/Presbyterian Church in America/);
   assert.match(await page.locator('#details').innerText(),/Why it formed/);
@@ -88,8 +124,8 @@ const server=require('./test-server.cjs')(root);
   await page.getByRole('button',{name:'Read details',exact:true}).tap();assert(await dialog.isVisible());
   if(size.width===390){
    await page.setViewportSize({width:1280,height:800});await page.waitForTimeout(200);
-   assert(!await dialog.isVisible());assert(await page.locator('#branch').isVisible(),'Desktop exposes settings');assert(await page.locator('#splitter').isVisible());assert.equal(await page.locator('#details').evaluate(el=>el.parentElement.tagName),'MAIN');
-   await page.setViewportSize(size);await page.waitForTimeout(200);assert(!await page.locator('#branch').isVisible(),'Returning to mobile collapses settings');assert(!await dialog.isVisible());
+   assert(!await dialog.isVisible());assert(await page.locator('#search').isVisible(),'Desktop search remains visible');assert(!await searchToggle.isVisible());assert(await page.locator('#branch').isVisible(),'Desktop exposes settings');assert(await page.locator('#splitter').isVisible());assert.equal(await page.locator('#details').evaluate(el=>el.parentElement.tagName),'MAIN');
+   await page.setViewportSize(size);await page.waitForTimeout(200);assert(!await page.locator('#search-form').isVisible(),'Returning to mobile collapses search');assert(!await page.locator('#branch').isVisible(),'Returning to mobile collapses settings');assert(!await dialog.isVisible());
    await page.getByRole('button',{name:'Read details',exact:true}).tap();assert(await dialog.isVisible());
   }
   await page.getByRole('button',{name:'Back to graph',exact:true}).tap();

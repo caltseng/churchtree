@@ -50,6 +50,8 @@ async function noOverlap(page, selector = '.node') {
             n.further_reading = [{ title: 'Article fixture', snippet: 'Article context fixture', url: 'https://example.com/article' }];
             n.key_documents = [{ title: 'Document fixture', year: 1973, significance: 'Document context fixture', url: 'https://example.com/document', citations: [] }];
         });
+        assert(await page.locator('#search').isVisible(),'Desktop search stays expanded');
+        assert(!await page.locator('#mobile-search-toggle').isVisible());
         await page.locator('#search').fill('PCA');
         await page.getByRole('button', { name: /^PCA ·/ }).click();
         assert.match(await page.locator('#details').innerText(), /Why it formed/);

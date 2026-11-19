@@ -568,3 +568,19 @@ aside p,aside li {
   #mobile-pan { padding-top: 3px; }
   #mobile-pan button { padding: 5px 10px; font-size: 13px; }
 }
+
+@media (max-width: 1099px) {
+  header #search-form { display: none; }
+  body.mobile-search-open header #search-form { display: block; }
+  #mobile-search-toggle { width: 44px; flex: 0 0 44px; padding: 9px; }
+  #mobile-search-toggle svg { display: block; margin: auto; }
+  #mobile-search-toggle[aria-expanded="true"] { background: var(--ct-hover); }
+  nav .zoom { min-width: 0; }
+  #level { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #search-form .search-row button { font-size: 13px; padding: 6px 10px; }
+  #search-form #search { font-size: 16px; padding: 6px 10px; }
+}
+@media (max-width: 1099px) {
+  /* Keep the close toggle reachable even while suggestions are present. */
+  #search-form #results:not(:empty) { position: static; max-height: min(35dvh,260px); margin-top: 4px; }
+}
