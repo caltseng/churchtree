@@ -157,6 +157,10 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, roots, 
     };
     container.addEventListener('wheel', wheel, { passive: false });
     container.onscroll = report;
+    const stopTouch=window.ChurchTimelineModel.touch(container,{
+        pan:(dx,dy)=>{container.scrollLeft-=dx;container.scrollTop-=dy;report();},
+        pinch:(factor,a,b)=>{zoom(factor,a.x);container.scrollLeft+=a.x-b.x;container.scrollTop+=a.y-b.y;report();}
+    });
     // The parent calls destroy when changing views, avoiding stale wheel listeners.
     draw();
     if (saved) {
@@ -177,6 +181,7 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, roots, 
             container.scrollLeft = 0;
             report();
         }, snapshot: () => ({ domain: domain(), scale: k, clusters: clusters.map(c => ({ title: title(c), count: c.members.length, min: c.min, max: c.max })) }), destroy: () => {
+            stopTouch();
             container.removeEventListener('wheel', wheel);
             container.onscroll = null;
         } };

@@ -12,7 +12,7 @@
     "test:model": "node scripts/test-timeline-model.cjs",
     "test:desktop": "node scripts/test-explorer.cjs",
     "test:mobile": "node scripts/test-mobile.cjs",
-    "test": "npm run test:guards && npm run test:model && npm run test:desktop && npm run test:mobile && npm run test:reader && npm run test:features",
+    "test": "npm run test:guards && npm run test:model && npm run test:desktop && npm run test:mobile && npm run test:reader && npm run test:features && node scripts/test-public-privacy.cjs",
     "ci": "npm run build && npm run check && npm test",
     "test:reader": "node westminster/test-reader.cjs",
     "test:features": "node scripts/test-features.cjs",
@@ -20,6 +20,6 @@
     "test:guards": "node scripts/test-build-guards.cjs"
   },
   "devDependencies": {
-    "playwright": "1.57.0"
+    "playwright": "1.65.0"
   }
 }
