@@ -11,3 +11,5 @@ Current implementation:
 
 This is a static multi-page site. Older plan documents are historical context,
 not evidence that an old renderer, single-set model, or backend is current.
+
+See the [Azure hosting proposal](../../plans/hosting-azure.md) for an earlier deployment option.
