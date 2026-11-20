@@ -81,6 +81,8 @@ The checked-in workflow and ruleset template describe the intended policy;
 GitHub settings and the actual workflow/check/deployment results establish its live
 state. A passing PR, merged commit and successful production deployment are distinct.
 
+The [Azure hosting proposal](plans/hosting-azure.md) records an earlier option.
+
 ## Data and historical coverage
 
 Research notes and canonical JSON live under `data/sets/<set>/`; shared sources and
