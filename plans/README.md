@@ -4,6 +4,7 @@ Current operational behavior is documented in README and docs/spec/product-spec.
 with architecture, deployment and user scenarios under docs/. Plans are not a second
 source of truth for implemented behavior.
 
+- [Progressive content delivery](progressive-content-delivery.md) defines when to defer detail and add server reads.
 - `desktop-explorer.md`: implementation decisions and later mobile/branching follow-ups.
 - `belief-history-future.md`: intentionally future topic/controversy exploration.
 - `data-collection-*.md`: research plans; use the historical-coverage standard and
