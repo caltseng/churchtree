@@ -72,9 +72,10 @@ Include the exact public citation/source closure in each response, including
 nested milestones, people and documents. Preserve claim links, suggested
 readings, source locators and uncertainty. Render the identity, short summary
 and graph-derived relations immediately. Prebuild shareable, readable profile
-HTML from the same records with an apex canonical and source links. If edge
-links become useful, establish stable edge IDs first. Preserve aliases when
-titles change.
+HTML from the same records with an apex canonical and source links. Edges
+already have canonical record IDs. If shareable edge pages are needed,
+decide their public URL and alias/redirect policy before publishing links.
+Preserve profile and edge links when titles change.
 
 Keep Westminster's full text, TOC, edition/provenance, download and existing
 chapter, section, study, note and audit anchors during the pilot. For new
@@ -139,7 +140,7 @@ and DNS. A generated CNAME file has no effect on Actions publishing settings.
 [Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
 · [Custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
 
-If justified, pilot one Cloudflare Worker reading immutable release files from
+If production rollout is justified, pilot one Cloudflare Worker reading immutable release files from
 an R2 bucket with public access disabled. Use a separate publisher identity
 in a protected release job. Expose only keyed reads. The Worker binding
 supports object access, and R2 has strong read-after-write consistency.
@@ -185,8 +186,9 @@ manifest members or sustained detail failures.
 | 1. Inventory and baseline | Record actual renderer/search field reads, routes and anchors. Capture initial compressed bytes, time to usable graph/search and profile latency under a repeatable cold-cache throttled mobile profile |
 | 2. Build projections and fallbacks | Data and artifact checks pass. Public projections exclude unpublished fields. Graph/search work with detail requests blocked. No-JS index and profiles show content and evidence. Reader anchors, legacy compatibility and JSON download pass |
 | 3. Enable static lazy details | Desktop/mobile checks cover rapid reselection, slow/missing reads, keyboard/focus, prior shell and retries. Aim for at least 30% fewer compressed initial explorer data bytes and no graph/search latency regression in paired trials. Record the profile latency tradeoff |
-| 4. Pilot server reads after a trigger below | Static and API payloads match. Test interrupted promotion, cache skew, API outage and rollback. Initial routes and reading links work. Before expanding, target p95 selected-to-detail below one second under the defined mobile profile and under 1% detail timeout/error responses in a representative pilot |
-| 5. Reassess HTML hosting | Quantify a route's missed freshness or publish budget after testing prebuilding/sharding. Verify canonicals, redirects, no-script reading and rollback on staging |
+| 4. Prove the API locally or in isolated preview | Complete the time-boxed handler and fixture checks above. Record parity, failure handling and remaining work |
+| 5. Pilot production server reads after a trigger below | Static and API payloads match. Test interrupted promotion, cache skew, API outage and rollback. Initial routes and reading links work. Before expanding, target p95 selected-to-detail below one second under the defined mobile profile and under 1% detail timeout/error responses in a representative pilot |
+| 6. Reassess HTML hosting | Quantify a route's missed freshness or publish budget after testing prebuilding/sharding. Verify canonicals, redirects, no-script reading and rollback on staging |
 
 Revisit hosting if measured growth projects site size or bandwidth above 70%
 of the documented limit within six months, or if repeated static releases
