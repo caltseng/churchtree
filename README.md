@@ -121,6 +121,8 @@ from the selected logo's fixed colors. See the [design-language contract](docs/d
 When adding an exploration, add its card metadata and public folder to
 `site.config.json`, build the page, and add a scenario/test before exposing its link.
 Keep default reading/navigating simple and deeper tools optional.
+See the [second timeline guide](docs/second-historical-timeline.md) for a worked
+example covering research, data modeling, layout, validation and publication.
 
 [Architecture](docs/architecture/README.md) · [Product spec](docs/spec/product-spec.md) ·
 [Documentation drift audit](docs/documentation-drift-audit.md) ·
