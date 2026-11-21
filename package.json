@@ -20,6 +20,6 @@
     "test:guards": "node scripts/test-build-guards.cjs"
   },
   "devDependencies": {
-    "playwright": "1.65.0"
+    "playwright": "1.65.1"
   }
 }
