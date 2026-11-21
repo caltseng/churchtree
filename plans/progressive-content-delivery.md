@@ -130,6 +130,27 @@ negative caching. Measure actual Pages headers. For an expired release, offer
 refresh. For withdrawals, disable affected reads and purge controlled caches
 where possible. Previously downloaded copies can persist.
 
+## Local or preview API proof
+
+Time-box the proof to two engineering days after the static projection exists.
+Use a Worker fetch handler at services/content-api/worker.js as the proposed
+entry point. Run it locally with Wrangler against a fixture-backed object
+reader. Generate one release fixture from the same build as the Pages adapter.
+Include a cited node, a relationship, the manifest and a manifest-listed
+object that the test can make temporarily unavailable. Validate the fixture
+with the same schema, public field allowlist, digest and citation closure
+checks used for publication.
+
+Compare GET bytes, response identity and evidence against the static files.
+Check that HEAD returns matching representation headers and an empty body,
+a matching If-None-Match yields 304, an unknown ID yields 404, and a known
+record with a simulated store outage yields 503. Run the loader against a
+second release or manipulated response to confirm it rejects wrong release
+and schema values. Record results and unresolved issues at the end of the
+time box. Any shared demo uses an isolated preview with validated public
+fixtures. Production continues with Pages and static reads during this proof.
+Evaluate the production rollout gates separately.
+
 ## Hosting and operations
 
 Keep the Pages apex and existing publishing workflow for the static pilot.
