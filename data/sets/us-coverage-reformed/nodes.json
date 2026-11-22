@@ -1,0 +1,1060 @@
+[
+  {
+    "id": "united-church-of-christ",
+    "name": "United Church of Christ",
+    "short_label": "UCC",
+    "aliases": [
+      "UCC",
+      "United Church of Christ (UCC)"
+    ],
+    "kind": "denomination",
+    "start_year": 1957,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Reformed",
+    "ecclesial_orientation": "mainline",
+    "current_status": "active",
+    "summary": "An ecumenical Protestant denomination formed in 1957 by the Evangelical and Reformed Church and the Congregational Christian Churches. Its union is distinct from the Stone–Campbell Churches of Christ.",
+    "formation_narrative": "In 1931, Congregational churches and Christian churches in the Christian Connection tradition united as the Congregational Christian Churches. The Afro-Christian Convention, an organization of Black churches rooted in Virginia and North Carolina, contributed a distinct stream through the Congregational Christian side and the Convention of the South. In 1934, the Evangelical Synod of North America and the predominantly German Reformed Church in the United States formed the Evangelical and Reformed Church. Their two successor bodies negotiated a Basis of Union that paired shared Christian witness with room for local self-government. Congregational opponents challenged the authority of their General Council to effect the union in the Cadman Memorial Church litigation. The two bodies united on June 25, 1957, at Cleveland. Some Congregational churches remained outside the UCC, including congregations associated with the National Association of Congregational Christian Churches or the Conservative Congregational Christian Conference.",
+    "ending_narrative": "The General Synod adopted a Statement of Faith in 1959 and elected Ben Mohr Herbster as its first single president under a new constitution in 1961. The UCC continues through local congregations, associations, conferences, and a General Synod. Its 2005 General Synod endorsed equal marriage rights, an example of national witness within a polity that leaves local churches authority over their own affairs. In 2023 General Synod acknowledged the Afro-Christian Convention as a distinct ancestral stream.",
+    "core_beliefs": [
+      "The Basis of Union grounds common faith in the biblical witness to God through Christ and acknowledges the historic creeds and Reformation confessions.",
+      "The 1959 Statement of Faith affirms Jesus Christ as crucified and risen and describes baptism, Communion, and service as parts of Christian discipleship.",
+      "Local congregations govern their own worship and affairs while participating in covenant relationships with other parts of the church."
+    ],
+    "key_figures": [
+      {
+        "name": "Fred Hoskins",
+        "role": "Congregational Christian leader and founding co-president",
+        "summary": "He led the Congregational Christian General Council at the union and became one of the UCC's two initial co-presidents.",
+        "url": "https://www.ucc.org/who-we-are/about/history/",
+        "citations": [
+          "cite-uscr-ucc-union"
+        ]
+      },
+      {
+        "name": "James E. Wagner",
+        "role": "Evangelical and Reformed leader and founding co-president",
+        "summary": "He headed the Evangelical and Reformed General Synod during the final negotiations and served as a founding UCC co-president.",
+        "url": "https://www.ucc.org/who-we-are/about/history/",
+        "citations": [
+          "cite-uscr-ucc-union"
+        ]
+      },
+      {
+        "name": "Helen Kenyon",
+        "role": "Congregational Christian moderator",
+        "summary": "The Cadman Memorial Church litigation named Kenyon as moderator, putting the authority of the General Council at issue.",
+        "url": "https://congrelib.libraryhost.com/repositories/2/resources/1164",
+        "citations": [
+          "cite-uscr-ucc-minorities"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1931,
+        "label": "Congregational Christian Churches formed by union",
+        "citations": [
+          "cite-uscr-ucc-streams",
+          "cite-uscr-ucc-union"
+        ]
+      },
+      {
+        "year": 1934,
+        "label": "Evangelical and Reformed Church formed by union",
+        "citations": [
+          "cite-uscr-ucc-streams",
+          "cite-uscr-ucc-union"
+        ]
+      },
+      {
+        "year": 1957,
+        "label": "Two denominations effect union at the Cleveland synod",
+        "citations": [
+          "cite-uscr-ucc-union",
+          "cite-uscr-ucc-minorities"
+        ]
+      },
+      {
+        "year": 1959,
+        "label": "General Synod adopts the UCC Statement of Faith",
+        "citations": [
+          "cite-uscr-ucc-faith"
+        ]
+      },
+      {
+        "year": 1961,
+        "label": "New constitution guides election of first sole president",
+        "citations": [
+          "cite-uscr-ucc-constitutional"
+        ]
+      },
+      {
+        "year": 2005,
+        "label": "General Synod passes marriage equality resolution",
+        "citations": [
+          "cite-uscr-ucc-marriage"
+        ]
+      },
+      {
+        "year": 2023,
+        "label": "General Synod recognizes the Afro-Christian Convention as a fifth historical stream",
+        "citations": [
+          "cite-uscr-ucc-afro-recognition",
+          "cite-uscr-ucc-afro-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Basis of Union",
+        "year": 1943,
+        "significance": "Negotiated agreement that set the terms for the 1957 union and guided the new church until it had a constitution.",
+        "url": "https://www.ucc.org/who-we-are/about/general-synod/general-synod-resolutions-regarding-environmental-justice/beliefs/beliefs_basis-of-union/",
+        "citations": [
+          "cite-uscr-ucc-union-text",
+          "cite-uscr-ucc-union"
+        ]
+      },
+      {
+        "title": "UCC Statement of Faith",
+        "year": 1959,
+        "significance": "Synod-adopted testimony that expresses common faith within a church of locally governed congregations.",
+        "url": "https://www.ucc.org/what-we-believe/beliefs_statement-of-faith/",
+        "citations": [
+          "cite-uscr-ucc-faith",
+          "cite-uscr-ucc-autonomy"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Merger records and Cadman litigation",
+        "snippet": "The archive inventories correspondence, votes, legal records, and the negotiating groups' papers.",
+        "url": "https://congrelib.libraryhost.com/repositories/2/resources/1164",
+        "citations": [
+          "cite-uscr-ucc-minorities"
+        ]
+      },
+      {
+        "title": "UCC history and polity resources",
+        "snippet": "Primary statements and study guides explain autonomy, covenant, and the role of General Synod.",
+        "url": "https://www.ucc.org/what-we-do/justice-local-church-ministries/mesa/ucc-history-and-polity-resources/",
+        "citations": [
+          "cite-uscr-ucc-autonomy",
+          "cite-uscr-ucc-marriage"
+        ]
+      },
+      {
+        "title": "Afro-Christian Convention Archives",
+        "snippet": "The Historical Council describes the archive preserving the convention, regional churches, and Convention of the South records.",
+        "url": "https://www.ucc.org/who-we-are/about/history/historical-council-of-the-united-church-of-christ/",
+        "citations": [
+          "cite-uscr-ucc-afro-recognition"
+        ]
+      }
+    ],
+    "profile_scope": "Introductory profile of the U.S. denomination, centered on the 1931–1961 unions and selected later developments. The Reformed family label reflects one of several traditions within this united church. Separate corporate histories and dissenting bodies need fuller profiles.",
+    "size_estimate": "924,744 U.S. adherents (2020 U.S. Religion Census)",
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-uscr-ucc-union",
+        "cite-uscr-ucc-streams"
+      ],
+      "formation_narrative": [
+        "cite-uscr-ucc-streams",
+        "cite-uscr-ucc-union",
+        "cite-uscr-ucc-union-text",
+        "cite-uscr-ucc-minorities",
+        "cite-uscr-ucc-afro-history"
+      ],
+      "ending_narrative": [
+        "cite-uscr-ucc-faith",
+        "cite-uscr-ucc-constitutional",
+        "cite-uscr-ucc-autonomy",
+        "cite-uscr-ucc-marriage",
+        "cite-uscr-ucc-afro-recognition"
+      ],
+      "core_beliefs": [
+        "cite-uscr-ucc-union-text",
+        "cite-uscr-ucc-faith",
+        "cite-uscr-ucc-autonomy"
+      ],
+      "size_estimate": [
+        "cite-uscr-ucc-census"
+      ]
+    },
+    "citations": [
+      "cite-uscr-ucc-union",
+      "cite-uscr-ucc-streams",
+      "cite-uscr-ucc-union-text",
+      "cite-uscr-ucc-minorities",
+      "cite-uscr-ucc-faith",
+      "cite-uscr-ucc-constitutional",
+      "cite-uscr-ucc-autonomy",
+      "cite-uscr-ucc-marriage",
+      "cite-uscr-ucc-census",
+      "cite-uscr-ucc-afro-history",
+      "cite-uscr-ucc-afro-recognition"
+    ]
+  },
+  {
+    "id": "reformed-church-in-america",
+    "name": "Reformed Church in America",
+    "short_label": "RCA",
+    "aliases": [
+      "RCA",
+      "R.C.A.",
+      "Reformed Protestant Dutch Church",
+      "Reformed Dutch Church"
+    ],
+    "kind": "denomination",
+    "start_year": 1628,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Reformed",
+    "ecclesial_orientation": "mainline",
+    "current_status": "active",
+    "summary": "A Dutch-rooted denomination in the United States and Canada. It traces its origin to the 1628 New Amsterdam congregation and took its current name in 1867.",
+    "formation_narrative": "Jonas Michaelius organized the Dutch Reformed congregation at New Amsterdam in 1628. Its celebration of Communion is the RCA's conventional start date. Colonial congregations looked to the Netherlands for ministerial oversight and ordination, then developed their own governance in North America. New York incorporated the General Synod of the Reformed Protestant Dutch Church in 1819. The denomination took the name Reformed Church in America in 1867 as it broadened beyond its original Dutch constituency.",
+    "ending_narrative": "John and Harriet Scudder began mission work in Ceylon in 1819. Nineteenth-century immigration brought additional Dutch Reformed congregations, including the communities around Albertus Van Raalte's Holland, Michigan, settlement. In 1857 several congregations withdrew to establish the body now known as the CRCNA. The RCA continued as a separate denomination. After years of disputes over sexuality, biblical interpretation, and church government, its 2021 General Synod approved a restructuring process and rules for congregations seeking to leave. Some churches subsequently withdrew.",
+    "core_beliefs": [
+      "The Heidelberg Catechism, Belgic Confession, and Canons of Dort express the church's inherited Reformed teaching, including salvation by grace and the authority of Scripture for faith.",
+      "The RCA added the Confession of Belhar as a fourth doctrinal standard in 2010. Belhar calls the church to unity, reconciliation, and justice out of the South African struggle against apartheid.",
+      "The Book of Church Order gives congregations and regional assemblies responsibilities in a representative system of church government."
+    ],
+    "key_figures": [
+      {
+        "name": "Jonas Michaelius",
+        "role": "Minister of the New Amsterdam congregation",
+        "summary": "His 1628 letter describes organizing a church and its first Communion in New Netherland.",
+        "url": "https://readingroo.ms/3/1/6/3161/3161-h/3161-h.htm",
+        "citations": [
+          "cite-uscr-rca-michaelius",
+          "cite-uscr-rca-origins"
+        ]
+      },
+      {
+        "name": "Albertus C. Van Raalte",
+        "role": "Dutch immigrant pastor and founder of Holland, Michigan",
+        "summary": "He led migrants who formed the 1847 settlement. Its churches became central to the story of the RCA and the 1857 separation.",
+        "url": "https://www.hope.edu/offices/van-raalte-institute/history-institute.html",
+        "citations": [
+          "cite-uscr-rca-vanraalte-role",
+          "cite-uscr-rca-west"
+        ]
+      },
+      {
+        "name": "Harriet and John Scudder",
+        "role": "Early overseas missionaries",
+        "summary": "They began mission work in Ceylon with the American Board of Commissioners for Foreign Missions in 1819.",
+        "url": "https://www.rca.org/about/history/",
+        "citations": [
+          "cite-uscr-rca-missions"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1628,
+        "label": "First New Amsterdam congregation and Communion, the conventional RCA origin",
+        "citations": [
+          "cite-uscr-rca-origins",
+          "cite-uscr-rca-michaelius"
+        ]
+      },
+      {
+        "year": 1819,
+        "label": "New York incorporates the General Synod",
+        "citations": [
+          "cite-uscr-rca-charter"
+        ]
+      },
+      {
+        "year": 1857,
+        "label": "Several Michigan congregations withdraw and organize separately",
+        "citations": [
+          "cite-uscr-rca-west"
+        ]
+      },
+      {
+        "year": 1867,
+        "label": "Denomination adopts its current name",
+        "citations": [
+          "cite-uscr-rca-charter"
+        ]
+      },
+      {
+        "year": 2010,
+        "label": "Belhar enters the Book of Church Order as a doctrinal standard",
+        "citations": [
+          "cite-uscr-rca-belhar-status"
+        ]
+      },
+      {
+        "year": 2021,
+        "label": "General Synod authorizes restructuring and a process for departures",
+        "citations": [
+          "cite-uscr-rca-departures"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Book of Church Order, 2021 edition",
+        "year": 2021,
+        "significance": "Edition of the denomination's governing text. Its historical note distinguishes the colonial roots, corporate charter, and 1867 name change.",
+        "url": "https://www.rca.org/wp-content/uploads/2022/02/BCO-2021-English.pdf",
+        "citations": [
+          "cite-uscr-rca-charter"
+        ]
+      },
+      {
+        "title": "Confession of Belhar",
+        "year": 1986,
+        "significance": "Adopted by the Dutch Reformed Mission Church in 1986. After classis ratification, incorporated as an RCA Standard of Unity in 2010.",
+        "url": "https://www.rca.org/about/theology/creeds-and-confessions/the-belhar-confession/",
+        "citations": [
+          "cite-uscr-rca-belhar-status"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "RCA–CRCNA joint historical account",
+        "snippet": "The joint account places the 1857 separation within a longer history of migration, disputes, and cooperation.",
+        "url": "https://rca.org/wp-content/uploads/2014/10/Synod2014-ConciseHistory-RCA-CRC.pdf",
+        "citations": [
+          "cite-uscr-rca-west"
+        ]
+      },
+      {
+        "title": "Standards of Unity",
+        "snippet": "The RCA's collection contains its four doctrinal standards and the ancient creeds it recognizes.",
+        "url": "https://www.rca.org/about/theology/creeds-and-confessions/",
+        "citations": [
+          "cite-uscr-rca-doctrine"
+        ]
+      }
+    ],
+    "profile_scope": "Selected North American episodes from 1628 through the 2021 General Synod and subsequent departures. The colonial congregation marks the beginning of the lineage. The incorporated synod dates to 1819. The recent affiliations and restructuring process need fuller coverage.",
+    "size_estimate": "235,195 U.S. adherents (2020 U.S. Religion Census)",
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-uscr-rca-origins",
+        "cite-uscr-rca-charter"
+      ],
+      "formation_narrative": [
+        "cite-uscr-rca-origins",
+        "cite-uscr-rca-michaelius",
+        "cite-uscr-rca-charter"
+      ],
+      "ending_narrative": [
+        "cite-uscr-rca-west",
+        "cite-uscr-rca-missions",
+        "cite-uscr-rca-vanraalte-role",
+        "cite-uscr-rca-departures"
+      ],
+      "core_beliefs": [
+        "cite-uscr-rca-doctrine",
+        "cite-uscr-rca-belhar-status",
+        "cite-uscr-rca-charter"
+      ],
+      "size_estimate": [
+        "cite-uscr-rca-census"
+      ]
+    },
+    "citations": [
+      "cite-uscr-rca-origins",
+      "cite-uscr-rca-charter",
+      "cite-uscr-rca-michaelius",
+      "cite-uscr-rca-west",
+      "cite-uscr-rca-missions",
+      "cite-uscr-rca-vanraalte-role",
+      "cite-uscr-rca-departures",
+      "cite-uscr-rca-doctrine",
+      "cite-uscr-rca-belhar-status",
+      "cite-uscr-rca-census"
+    ]
+  },
+  {
+    "id": "christian-reformed-church-in-north-america",
+    "name": "Christian Reformed Church in North America",
+    "short_label": "CRCNA",
+    "aliases": [
+      "CRCNA",
+      "CRC",
+      "Christian Reformed Church"
+    ],
+    "kind": "denomination",
+    "start_year": 1857,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Reformed",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "summary": "A separate Dutch Reformed denomination formed by congregations that withdrew from the historic Reformed Dutch Church in 1857. It now has congregations in both the United States and Canada.",
+    "formation_narrative": "Some Dutch immigrants to western Michigan came from the 1834 secession in the Netherlands and joined the existing Reformed Dutch Church's Classis of Holland. In 1857 a group of congregations withdrew and organized separately. Seceders objected to changes they saw in worship and church discipline, including hymn singing, admission to Communion, and departures from the Church Order of Dort. The two denominations' joint account places the controversy in a broader disagreement about preserving Dutch Reformed practices in North America. Additional congregations joined in the 1880s after the parent denomination declined to impose a uniform prohibition on Masonic membership.",
+    "ending_narrative": "In 1890 the new body united with the eastern True Protestant Dutch Reformed Church. In the early twentieth century it shifted from Dutch toward English. After the 1924 synod adopted its teaching on common grace, regional assemblies deposed ministers and church councils who opposed the decision. Herman Hoeksema and others organized the Protestant Reformed Churches in 1924–1925. Immigration after World War II strengthened the CRC presence in Canada. Late twentieth-century disputes over church authority and women's ordination led some departing congregations to federate as the United Reformed Churches in North America in 1996. The CRCNA continues independently of the RCA and those departing bodies.",
+    "core_beliefs": [
+      "The CRCNA treats Scripture as authoritative and affirms the historic creeds together with the Belgic Confession, Heidelberg Catechism, and Canons of Dort as Reformed expressions of biblical teaching.",
+      "The denomination recognizes the Confession of Belhar as a contemporary testimony on unity, reconciliation, and justice. This category gives Belhar a different role from the historic confessions.",
+      "Churches are governed by local councils and share oversight through classes and synod under a Church Order rooted in the Dutch Reformed tradition."
+    ],
+    "key_figures": [
+      {
+        "name": "Albertus C. Van Raalte",
+        "role": "Leader in the immigrant churches that joined the Reformed Dutch Church",
+        "summary": "The Holland settlement he led supplied the setting for the classis from which seceding congregations withdrew.",
+        "url": "https://rca.org/wp-content/uploads/2014/10/Synod2014-ConciseHistory-RCA-CRC.pdf",
+        "citations": [
+          "cite-uscr-rca-west",
+          "cite-uscr-rca-vanraalte-role"
+        ]
+      },
+      {
+        "name": "Herman Hoeksema",
+        "role": "CRC minister and opponent of the 1924 common grace decisions",
+        "summary": "He challenged the synod's teaching on God's favor outside the church and helped establish the Protestant Reformed Churches after the controversy.",
+        "url": "https://www.crcna.org/welcome/history",
+        "citations": [
+          "cite-uscr-crc-expansion"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1857,
+        "label": "Seceding congregations organize separately from the Classis of Holland",
+        "citations": [
+          "cite-uscr-crc-formation",
+          "cite-uscr-crc-separation",
+          "cite-uscr-crc-early-acts"
+        ]
+      },
+      {
+        "year": 1890,
+        "label": "Union with the True Protestant Dutch Reformed Church",
+        "citations": [
+          "cite-uscr-crc-milestones"
+        ]
+      },
+      {
+        "year": 1905,
+        "label": "First Canadian congregation organized in Alberta",
+        "citations": [
+          "cite-uscr-crc-milestones"
+        ]
+      },
+      {
+        "year": 1924,
+        "label": "Synod acts on common grace, setting up the Protestant Reformed separation",
+        "citations": [
+          "cite-uscr-crc-expansion",
+          "cite-uscr-crc-milestones",
+          "cite-uscr-crc-prc-testimony"
+        ]
+      },
+      {
+        "year": 1996,
+        "label": "United Reformed Churches hold their first synod after congregational departures",
+        "citations": [
+          "cite-uscr-crc-women-office",
+          "cite-uscr-crc-urc-organization"
+        ]
+      },
+      {
+        "year": 2017,
+        "label": "CRC Synod recategorizes Belhar as a contemporary testimony",
+        "citations": [
+          "cite-uscr-crc-belhar-status"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Church Order of Dort",
+        "year": 1619,
+        "significance": "Inherited Dutch Reformed polity and a reference point in the 1857 withdrawal. CRC Church Order subsequently developed through its own revisions.",
+        "url": "https://library.calvin.edu/hh/church-order",
+        "citations": [
+          "cite-uscr-crc-polity"
+        ]
+      },
+      {
+        "title": "Confession of Belhar",
+        "year": 1986,
+        "significance": "South African confession recategorized by the CRC in 2017 as a contemporary testimony. Synod did not add adherence to it to the Covenant for Officebearers.",
+        "url": "https://www.crcna.org/sites/default/files/letter_re_summary_of_synod_2017_to_churches.pdf",
+        "citations": [
+          "cite-uscr-crc-belhar-status",
+          "cite-uscr-rca-belhar-status"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Earliest assembly minutes",
+        "snippet": "Calvin University's Heritage Hall provides translations of early assembly minutes and links to later Acts of Synod.",
+        "url": "https://library.calvin.edu/hh/acts-of-synod",
+        "citations": [
+          "cite-uscr-crc-early-acts"
+        ]
+      },
+      {
+        "title": "Joint history of the RCA and CRCNA",
+        "snippet": "A jointly prepared account of the churches' origins, separation, and later relationships.",
+        "url": "https://rca.org/wp-content/uploads/2014/10/Synod2014-ConciseHistory-RCA-CRC.pdf",
+        "citations": [
+          "cite-uscr-crc-separation"
+        ]
+      }
+    ],
+    "profile_scope": "Selected U.S. and Canadian denominational episodes from 1857 to 2017, with Dutch antecedents. Secession accounts describe objections raised by participants. The 1890 merger partner and later departures need fuller profiles.",
+    "size_estimate": "149,096 U.S. adherents (2020 U.S. Religion Census)",
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-uscr-crc-formation",
+        "cite-uscr-crc-expansion"
+      ],
+      "formation_narrative": [
+        "cite-uscr-crc-formation",
+        "cite-uscr-crc-separation",
+        "cite-uscr-crc-polity",
+        "cite-uscr-crc-early-acts"
+      ],
+      "ending_narrative": [
+        "cite-uscr-crc-milestones",
+        "cite-uscr-crc-expansion",
+        "cite-uscr-crc-women-office",
+        "cite-uscr-crc-urc-organization",
+        "cite-uscr-crc-prc-testimony"
+      ],
+      "core_beliefs": [
+        "cite-uscr-crc-confessions",
+        "cite-uscr-crc-polity",
+        "cite-uscr-crc-belhar-status"
+      ],
+      "size_estimate": [
+        "cite-uscr-crc-census"
+      ]
+    },
+    "citations": [
+      "cite-uscr-crc-formation",
+      "cite-uscr-crc-expansion",
+      "cite-uscr-crc-separation",
+      "cite-uscr-crc-polity",
+      "cite-uscr-crc-early-acts",
+      "cite-uscr-crc-milestones",
+      "cite-uscr-crc-women-office",
+      "cite-uscr-crc-urc-organization",
+      "cite-uscr-crc-confessions",
+      "cite-uscr-crc-belhar-status",
+      "cite-uscr-crc-census",
+      "cite-uscr-rca-west",
+      "cite-uscr-rca-vanraalte-role",
+      "cite-uscr-rca-belhar-status",
+      "cite-uscr-crc-prc-testimony"
+    ]
+  },
+  {
+    "id": "lutheran-congregations-in-mission-for-christ",
+    "name": "Lutheran Congregations in Mission for Christ",
+    "short_label": "LCMC",
+    "aliases": [
+      "LCMC",
+      "L.C.M.C."
+    ],
+    "kind": "denomination",
+    "start_year": 2001,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Lutheran",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "summary": "A Lutheran association organized in 2001 at a WordAlone convention. Its congregations cooperate in mission and retain local authority.",
+    "formation_narrative": "The ELCA's 1999 approval of Called to Common Mission with The Episcopal Church prompted an organized response. The agreement set terms for full communion and the ELCA's participation in the historic episcopate. WordAlone organizers objected to making episcopal participation a requirement for ordination. Some sought reform within the ELCA. On March 27, 2001, during the second WordAlone convention in Phoenix, LCMC adopted its constitution and received 25 charter congregations. Its early constituency included congregations that also belonged to the ELCA.",
+    "ending_narrative": "LCMC established its own office and was operating independently of WordAlone by 2003, when its convention voted to receive international congregations. It grew substantially between its 2009 and 2010 gatherings. The association continues through locally governed congregations, district and international relationships, and a common gathering for mission and governance.",
+    "core_beliefs": [
+      "The constitution identifies the Old and New Testaments as authoritative for faith and life and receives the ecumenical creeds as statements of the church's faith.",
+      "LCMC confesses the Unaltered Augsburg Confession and Luther's Small Catechism as true witnesses to the Gospel and recognizes the other Book of Concord writings as valid interpretations of the church's faith.",
+      "Congregations cooperate in mission and retain authority over their own affairs within an association of churches."
+    ],
+    "key_figures": [
+      {
+        "name": "Mark Chavez",
+        "role": "WordAlone director and witness to early affiliations",
+        "summary": "He documented the ordination dispute and the overlap between WordAlone, LCMC, and ELCA congregations in a public letter.",
+        "url": "https://archives.wordalone.com/docs/open-ltr-lehmann.html",
+        "citations": [
+          "cite-uscr-lcmc-dual"
+        ]
+      },
+      {
+        "name": "Mark Vander Tuig",
+        "role": "Second LCMC service coordinator",
+        "summary": "He joined the association's staff in 2010 during a period of rapid congregational growth.",
+        "url": "https://lcmc.net/history",
+        "citations": [
+          "cite-uscr-lcmc-coordinator"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1999,
+        "label": "ELCA Churchwide Assembly adopts Called to Common Mission",
+        "citations": [
+          "cite-uscr-lcmc-agreement",
+          "cite-uscr-lcmc-elca-view"
+        ]
+      },
+      {
+        "year": 2001,
+        "label": "LCMC adopts its constitution and receives charter congregations on March 27",
+        "citations": [
+          "cite-uscr-lcmc-foundation"
+        ]
+      },
+      {
+        "year": 2003,
+        "label": "Association operates separately from WordAlone and votes to receive international congregations",
+        "citations": [
+          "cite-uscr-lcmc-early-growth"
+        ]
+      },
+      {
+        "year": 2010,
+        "label": "Second service coordinator begins work amid growth",
+        "citations": [
+          "cite-uscr-lcmc-coordinator"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Called to Common Mission",
+        "year": 1999,
+        "significance": "Full communion agreement adopted by the ELCA in 1999 and The Episcopal Church in 2000. Its provisions on episcopacy helped prompt WordAlone organizing.",
+        "url": "https://download.elca.org/ELCA%20Resource%20Repository/Called_To_Common_Mission.pdf",
+        "citations": [
+          "cite-uscr-lcmc-agreement",
+          "cite-uscr-lcmc-elca-view"
+        ]
+      },
+      {
+        "title": "LCMC Constitution",
+        "year": 2001,
+        "significance": "Constitution first adopted in 2001. The current text defines the association's confession, mission, and congregation-centered governance.",
+        "url": "https://lcmc.net/lcmcconstitution/278",
+        "citations": [
+          "cite-uscr-lcmc-doctrine",
+          "cite-uscr-lcmc-foundation"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "LCMC's organizational chronology",
+        "snippet": "The association documents the WordAlone convention, independent office, and international growth.",
+        "url": "https://lcmc.net/history",
+        "citations": [
+          "cite-uscr-lcmc-foundation",
+          "cite-uscr-lcmc-early-growth"
+        ]
+      },
+      {
+        "title": "ELCA News account of WordAlone's organizing convention",
+        "snippet": "Reports how convention participants described their aims in 2000.",
+        "url": "https://listserv.elca.org/scripts/wa.exe?A2=ELCANEWS%3Bbdc6f27a.0004&FT=&H=A&P=T&S=",
+        "citations": [
+          "cite-uscr-lcmc-elca-view"
+        ]
+      }
+    ],
+    "profile_scope": "U.S. formation in 1999–2003 and selected milestones through 2020. A congregation-based association with early overlapping affiliations. The later growth and the effects of ELCA decisions in 2009 require congregation-level research.",
+    "size_estimate": "194,144 U.S. adherents (2020 U.S. Religion Census)",
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-uscr-lcmc-foundation",
+        "cite-uscr-lcmc-doctrine"
+      ],
+      "formation_narrative": [
+        "cite-uscr-lcmc-agreement",
+        "cite-uscr-lcmc-elca-view",
+        "cite-uscr-lcmc-foundation",
+        "cite-uscr-lcmc-dual"
+      ],
+      "ending_narrative": [
+        "cite-uscr-lcmc-early-growth",
+        "cite-uscr-lcmc-coordinator",
+        "cite-uscr-lcmc-doctrine"
+      ],
+      "core_beliefs": [
+        "cite-uscr-lcmc-doctrine"
+      ],
+      "size_estimate": [
+        "cite-uscr-lcmc-census"
+      ]
+    },
+    "citations": [
+      "cite-uscr-lcmc-foundation",
+      "cite-uscr-lcmc-doctrine",
+      "cite-uscr-lcmc-agreement",
+      "cite-uscr-lcmc-elca-view",
+      "cite-uscr-lcmc-dual",
+      "cite-uscr-lcmc-early-growth",
+      "cite-uscr-lcmc-coordinator",
+      "cite-uscr-lcmc-census"
+    ]
+  },
+  {
+    "id": "evangelical-covenant-church",
+    "name": "Evangelical Covenant Church",
+    "short_label": "ECC",
+    "aliases": [
+      "ECC",
+      "The Covenant Church",
+      "Swedish Evangelical Mission Covenant"
+    ],
+    "kind": "denomination",
+    "start_year": 1885,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Evangelical",
+    "ecclesial_orientation": "evangelical",
+    "current_status": "active",
+    "summary": "A denomination organized in Chicago in 1885 by Swedish Mission Friends. Its Pietist heritage joins personal faith, Christian fellowship, and a commitment to mission.",
+    "formation_narrative": "The Swedish Mission Friends grew out of renewal circles associated with Carl Olof Rosenius and Paul Peter Waldenström. Pastors and lay preachers gathered people for Bible reading, prayer, and mission. Swedish immigrants carried these practices to American settlements, organized congregations and regional associations, and experimented with Lutheran synods. On February 20, 1885, delegates organized an American Covenant body in Chicago. The Swedish Mission Covenant organized in 1878 was a related transatlantic movement with its own institutional history.",
+    "ending_narrative": "The Covenant assumed responsibility for the school that became North Park in 1891 and moved it to Chicago in 1894. Home and overseas missions included charitable institutions, work in Alaska, and work in China. After World War II the church broadened beyond its Swedish immigrant base. In Chicago, Willie Jemison helped Oakdale Covenant become a thriving majority African American congregation. The denomination voted to ordain women in 1976. In 1989 the Covenant established a Spanish-language ministry training center. The denomination continues in the United States and Canada.",
+    "core_beliefs": [
+      "The Covenant Affirmations give Scripture final authority for faith and life and stress the necessity of new birth, a transformed life through faith in Christ.",
+      "The church understands itself as a fellowship of believers committed to the whole mission of the church, including outreach and care for neighbors.",
+      "Its Pietist emphasis on dependence on the Holy Spirit and freedom in Christ allows room for disagreement within a shared faith."
+    ],
+    "key_figures": [
+      {
+        "name": "Paul Peter Waldenström",
+        "role": "Swedish Mission Friend theologian",
+        "summary": "His preaching and writing influenced the Swedish renewal circles from which American Covenant congregations drew.",
+        "url": "https://covchurch.org/resource/evangelical-covenant-church-history/",
+        "citations": [
+          "cite-uscr-ecc-organization"
+        ]
+      },
+      {
+        "name": "F. M. Johnson",
+        "role": "Preacher at the 1885 organizing meeting",
+        "summary": "Johnson's sermon drew on the Psalms to describe a church organized around fellowship in faith.",
+        "url": "https://covchurch.org/resource/evangelical-covenant-church-history/",
+        "citations": [
+          "cite-uscr-ecc-organization"
+        ]
+      },
+      {
+        "name": "Willie Jemison",
+        "role": "Pastor of Oakdale Covenant Church in Chicago",
+        "summary": "Jemison led the congregation through demographic change and mentored other African American pastors in the Covenant.",
+        "url": "https://covchurch.org/resource/evangelical-covenant-church-history/",
+        "citations": [
+          "cite-uscr-ecc-growth"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1885,
+        "label": "American Covenant body organizes in Chicago on February 20",
+        "citations": [
+          "cite-uscr-ecc-organization",
+          "cite-uscr-ecc-yearbook-series"
+        ]
+      },
+      {
+        "year": 1889,
+        "label": "Covenant starts mission work in Alaska",
+        "citations": [
+          "cite-uscr-ecc-missions"
+        ]
+      },
+      {
+        "year": 1891,
+        "label": "Covenant takes responsibility for the school that became North Park",
+        "citations": [
+          "cite-uscr-ecc-school",
+          "cite-uscr-ecc-archives"
+        ]
+      },
+      {
+        "year": 1976,
+        "label": "Annual Meeting votes to ordain women",
+        "citations": [
+          "cite-uscr-ecc-ordination"
+        ]
+      },
+      {
+        "year": 1989,
+        "label": "Covenant begins Spanish-language theological training through CHET",
+        "citations": [
+          "cite-uscr-ecc-growth"
+        ]
+      },
+      {
+        "year": 2005,
+        "label": "Annual Meeting adopts revised Covenant Affirmations",
+        "citations": [
+          "cite-uscr-ecc-identity"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Covenant Affirmations",
+        "year": 2005,
+        "significance": "First published in 1976 and adopted in revised form by the 2005 Annual Meeting. The booklet presents six guiding convictions.",
+        "url": "https://covchurch.org/wp-content/uploads/2015/03/covenant_affirmations_booklet.pdf",
+        "citations": [
+          "cite-uscr-ecc-identity"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Frisk Collection of Covenant Yearbooks",
+        "snippet": "Primary annual reports cover governance, mission fields, education, and benevolence.",
+        "url": "https://collections.carli.illinois.edu/digital/collection/npu_covyb",
+        "citations": [
+          "cite-uscr-ecc-yearbook-series"
+        ]
+      },
+      {
+        "title": "F. M. Johnson Archives",
+        "snippet": "North Park holds significant institutional records for both the denomination and its school.",
+        "url": "https://www.northpark.edu/academics/brandel-library/archives/",
+        "citations": [
+          "cite-uscr-ecc-archives"
+        ]
+      }
+    ],
+    "profile_scope": "Introductory profile of the North American denomination, from Swedish and immigrant roots to selected twentieth-century changes. The early synods and the 1885 organizational process still need a records-based reconstruction.",
+    "size_estimate": "154,267 U.S. adherents (2020 U.S. Religion Census)",
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-uscr-ecc-organization",
+        "cite-uscr-ecc-identity"
+      ],
+      "formation_narrative": [
+        "cite-uscr-ecc-organization",
+        "cite-uscr-ecc-yearbook-series"
+      ],
+      "ending_narrative": [
+        "cite-uscr-ecc-school",
+        "cite-uscr-ecc-missions",
+        "cite-uscr-ecc-growth",
+        "cite-uscr-ecc-ordination"
+      ],
+      "core_beliefs": [
+        "cite-uscr-ecc-identity"
+      ],
+      "size_estimate": [
+        "cite-uscr-ecc-census"
+      ]
+    },
+    "citations": [
+      "cite-uscr-ecc-organization",
+      "cite-uscr-ecc-identity",
+      "cite-uscr-ecc-yearbook-series",
+      "cite-uscr-ecc-school",
+      "cite-uscr-ecc-missions",
+      "cite-uscr-ecc-growth",
+      "cite-uscr-ecc-census",
+      "cite-uscr-ecc-archives",
+      "cite-uscr-ecc-ordination"
+    ]
+  },
+  {
+    "id": "evangelical-free-church-of-america",
+    "name": "Evangelical Free Church of America",
+    "short_label": "EFCA",
+    "aliases": [
+      "EFCA",
+      "Evangelical Free Church of America (EFCA)"
+    ],
+    "kind": "denomination",
+    "start_year": 1950,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Evangelical",
+    "ecclesial_orientation": "evangelical",
+    "current_status": "active",
+    "summary": "An association of autonomous evangelical churches formed in 1950 when the Swedish Evangelical Free Church and the Norwegian-Danish Free Church Association united.",
+    "formation_narrative": "Scandinavian immigrant congregations organized Free Church fellowships in the United States. The Swedish association incorporated in Minnesota in 1908 and separate Norwegian and Danish bodies united as the Norwegian-Danish Evangelical Free Church Association in 1912. By the late 1940s the Swedish and Norwegian-Danish associations were already combining their Bible schools and coordinating publishing. They united as the Evangelical Free Church of America at Medicine Lake near Minneapolis in June 1950. The merger gave them common institutions and a shared Statement of Faith while retaining local church government.",
+    "ending_narrative": "Under E. A. Halleen and then Arnold T. Olson, the merged church developed its national institutions. It expanded domestic church planting and overseas missions. President Thomas McDill called for greater ethnic diversity at the 1984 conference. The association adopted a revised Statement of Faith in 2008 and in 2019 removed the requirement in Article 9 that Christ's return be premillennial. It continues as an association of congregations.",
+    "core_beliefs": [
+      "The current Statement of Faith teaches the authority and inerrancy of Scripture, the Trinity, and the saving death and bodily resurrection of Jesus Christ.",
+      "Autonomous congregations are accountable to their own membership and cooperate in mission through an association with shared doctrinal commitments.",
+      "The current confession affirms Christ's visible return. The 1950 statement explicitly taught a premillennial return, a position retained in 2008 and made optional in 2019."
+    ],
+    "key_figures": [
+      {
+        "name": "E. A. Halleen",
+        "role": "First president of the merged EFCA",
+        "summary": "Halleen served the united association from 1950 to 1952.",
+        "url": "https://www.efca.org/our-history",
+        "citations": [
+          "cite-uscr-efca-merger",
+          "cite-uscr-efca-first-year"
+        ]
+      },
+      {
+        "name": "Arnold T. Olson",
+        "role": "Merger organizer and second EFCA president",
+        "summary": "Olson led the effort to unite the associations and became president in 1952.",
+        "url": "https://www.efca.org/our-history",
+        "citations": [
+          "cite-uscr-efca-merger"
+        ]
+      },
+      {
+        "name": "Thomas McDill",
+        "role": "EFCA president from 1976 to 1990",
+        "summary": "McDill urged congregations to broaden their ethnic reach at the 1984 conference.",
+        "url": "https://www.efca.org/our-history",
+        "citations": [
+          "cite-uscr-efca-development"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1908,
+        "label": "Swedish Free Church association incorporates in Minnesota",
+        "citations": [
+          "cite-uscr-efca-roots"
+        ]
+      },
+      {
+        "year": 1912,
+        "label": "Norwegian and Danish associations unite",
+        "citations": [
+          "cite-uscr-efca-roots"
+        ]
+      },
+      {
+        "year": 1950,
+        "label": "Swedish and Norwegian-Danish bodies unite at Medicine Lake",
+        "citations": [
+          "cite-uscr-efca-merger",
+          "cite-uscr-efca-first-year"
+        ]
+      },
+      {
+        "year": 2008,
+        "label": "EFCA conference adopts revised ten-article Statement of Faith",
+        "citations": [
+          "cite-uscr-efca-development"
+        ]
+      },
+      {
+        "year": 2019,
+        "label": "Conference revises Article 9 on Christ's return",
+        "citations": [
+          "cite-uscr-efca-development",
+          "cite-uscr-efca-2019-beliefs"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "1950 Statement of Faith",
+        "year": 1950,
+        "significance": "Founding statement of the united association. Its articles addressed scriptural authority, autonomous churches, and the premillennial return of Christ.",
+        "url": "https://go.efca.org/sites/default/files/resources/docs/2013/04/microsoft-word-1950-sof.pdf",
+        "citations": [
+          "cite-uscr-efca-1950-beliefs",
+          "cite-uscr-efca-merger"
+        ]
+      },
+      {
+        "title": "Statement of Faith, 2019 revision",
+        "year": 2019,
+        "significance": "Current conference-adopted statement. Article 9 affirms Christ's return without requiring a premillennial interpretation.",
+        "url": "https://www.efca.org/sof/",
+        "citations": [
+          "cite-uscr-efca-2019-beliefs",
+          "cite-uscr-efca-development"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "1951 Evangelical Free Church Yearbook",
+        "snippet": "The first post-merger yearbook records financial and ministry activity and the work of Trinity.",
+        "url": "https://collections.carli.illinois.edu/digital/collection/tiu_efcadir/id/87/",
+        "citations": [
+          "cite-uscr-efca-first-year"
+        ]
+      },
+      {
+        "title": "Trinity's institutional history",
+        "snippet": "Describes the predecessor Bible schools and their union ahead of the 1950 denominational merger.",
+        "url": "https://www.tiu.edu/history-heritage/",
+        "citations": [
+          "cite-uscr-efca-schools"
+        ]
+      }
+    ],
+    "profile_scope": "Selected U.S. milestones from Scandinavian predecessor associations through the 2019 confession revision. Both merger partners are covered in prose. The 2020 U.S. Religion Census reports congregations and leaves adherents blank.",
+    "size_estimate": "1,602 U.S. congregations (2020 U.S. Religion Census)",
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-uscr-efca-merger"
+      ],
+      "formation_narrative": [
+        "cite-uscr-efca-roots",
+        "cite-uscr-efca-merger",
+        "cite-uscr-efca-first-year",
+        "cite-uscr-efca-schools",
+        "cite-uscr-efca-1950-beliefs"
+      ],
+      "ending_narrative": [
+        "cite-uscr-efca-merger",
+        "cite-uscr-efca-development",
+        "cite-uscr-efca-congregations"
+      ],
+      "core_beliefs": [
+        "cite-uscr-efca-congregations",
+        "cite-uscr-efca-1950-beliefs",
+        "cite-uscr-efca-2019-beliefs",
+        "cite-uscr-efca-development"
+      ],
+      "size_estimate": [
+        "cite-uscr-efca-census"
+      ]
+    },
+    "citations": [
+      "cite-uscr-efca-merger",
+      "cite-uscr-efca-roots",
+      "cite-uscr-efca-first-year",
+      "cite-uscr-efca-schools",
+      "cite-uscr-efca-1950-beliefs",
+      "cite-uscr-efca-development",
+      "cite-uscr-efca-congregations",
+      "cite-uscr-efca-2019-beliefs",
+      "cite-uscr-efca-census"
+    ]
+  }
+]

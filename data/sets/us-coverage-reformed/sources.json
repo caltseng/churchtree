@@ -1,0 +1,303 @@
+[
+  {
+    "id": "src-uscr-census",
+    "title": "2020 U.S. Religion Census group-detail workbook",
+    "kind": "website",
+    "publisher": "Association of Statisticians of American Religious Bodies",
+    "url": "https://www.usreligioncensus.org/sites/default/files/2023-06/2020_USRC_Group_Detail.xlsx"
+  },
+  {
+    "id": "src-uscr-ucc-history",
+    "title": "A Short Course in the History of the United Church of Christ",
+    "kind": "website",
+    "publisher": "United Church of Christ",
+    "url": "https://www.ucc.org/who-we-are/about/history/"
+  },
+  {
+    "id": "src-uscr-ucc-basis",
+    "title": "Basis of Union",
+    "kind": "website",
+    "publisher": "United Church of Christ",
+    "url": "https://www.ucc.org/who-we-are/about/general-synod/general-synod-resolutions-regarding-environmental-justice/beliefs/beliefs_basis-of-union/"
+  },
+  {
+    "id": "src-uscr-ucc-archive",
+    "title": "Congregational Christian and Evangelical and Reformed Church merger records",
+    "kind": "website",
+    "publisher": "Congregational Library & Archives",
+    "url": "https://congrelib.libraryhost.com/repositories/2/resources/1164"
+  },
+  {
+    "id": "src-uscr-ucc-polity",
+    "title": "UCC History and Polity Resources",
+    "kind": "website",
+    "publisher": "United Church of Christ",
+    "url": "https://www.ucc.org/what-we-do/justice-local-church-ministries/mesa/ucc-history-and-polity-resources/"
+  },
+  {
+    "id": "src-uscr-ucc-herbster",
+    "title": "The First President of the United Church of Christ",
+    "kind": "website",
+    "publisher": "United Church of Christ",
+    "url": "https://www.ucc.org/ucc_roots_april_2019/"
+  },
+  {
+    "id": "src-uscr-ucc-beliefs",
+    "title": "What is the United Church of Christ?",
+    "kind": "website",
+    "publisher": "United Church of Christ",
+    "url": "https://www.ucc.org/domestic-policy/ourfaithourvote_about/about-us_what-is-the-united-church-of/"
+  },
+  {
+    "id": "src-uscr-rca-history",
+    "title": "History of the RCA",
+    "kind": "website",
+    "publisher": "Reformed Church in America",
+    "url": "https://www.rca.org/about/history/"
+  },
+  {
+    "id": "src-uscr-rca-letter",
+    "title": "Letter of Reverend Jonas Michaelius, 1628",
+    "kind": "website",
+    "publisher": "Narratives of New Netherland, 1609–1664",
+    "url": "https://readingroo.ms/3/1/6/3161/3161-h/3161-h.htm"
+  },
+  {
+    "id": "src-uscr-rca-order",
+    "title": "Book of Church Order, 2021 edition",
+    "kind": "website",
+    "publisher": "Reformed Church in America",
+    "url": "https://www.rca.org/wp-content/uploads/2022/02/BCO-2021-English.pdf"
+  },
+  {
+    "id": "src-uscr-rca-joint",
+    "title": "A Concise History of Relationships Between the RCA and CRCNA",
+    "kind": "website",
+    "publisher": "Reformed Church in America and Christian Reformed Church in North America",
+    "url": "https://rca.org/wp-content/uploads/2014/10/Synod2014-ConciseHistory-RCA-CRC.pdf"
+  },
+  {
+    "id": "src-uscr-rca-confessions",
+    "title": "Creeds and Confessions",
+    "kind": "website",
+    "publisher": "Reformed Church in America",
+    "url": "https://www.rca.org/about/theology/creeds-and-confessions/"
+  },
+  {
+    "id": "src-uscr-rca-belhar",
+    "title": "The Belhar Confession",
+    "kind": "website",
+    "publisher": "Reformed Church in America",
+    "url": "https://www.rca.org/about/theology/creeds-and-confessions/the-belhar-confession/"
+  },
+  {
+    "id": "src-uscr-rca-vanraalte",
+    "title": "History of the Van Raalte Institute",
+    "kind": "website",
+    "publisher": "Hope College",
+    "url": "https://www.hope.edu/offices/van-raalte-institute/history-institute.html"
+  },
+  {
+    "id": "src-uscr-rca-vision",
+    "title": "General Synod Council financial statements, 2023 and 2022",
+    "kind": "website",
+    "publisher": "Reformed Church in America",
+    "url": "https://www.rca.org/wp-content/uploads/2024/03/RCA-GSC-Final-Financial-Statements.pdf"
+  },
+  {
+    "id": "src-uscr-crc-history",
+    "title": "Our History",
+    "kind": "website",
+    "publisher": "Christian Reformed Church in North America",
+    "url": "https://www.crcna.org/welcome/history"
+  },
+  {
+    "id": "src-uscr-crc-timeline",
+    "title": "Memorable Events in the History of the CRC",
+    "kind": "website",
+    "publisher": "Christian Reformed Church in North America",
+    "url": "https://www.crcna.org/welcome/history/memorable-events"
+  },
+  {
+    "id": "src-uscr-crc-acts",
+    "title": "Minutes, Acts, and Agendas of Synod",
+    "kind": "website",
+    "publisher": "Heritage Hall, Calvin University",
+    "url": "https://library.calvin.edu/hh/acts-of-synod"
+  },
+  {
+    "id": "src-uscr-crc-order",
+    "title": "CRC Church Order",
+    "kind": "website",
+    "publisher": "Heritage Hall, Calvin University",
+    "url": "https://library.calvin.edu/hh/church-order"
+  },
+  {
+    "id": "src-uscr-crc-faith",
+    "title": "Our Faith",
+    "kind": "website",
+    "publisher": "Christian Reformed Church in North America",
+    "url": "https://www.crcna.org/welcome/beliefs"
+  },
+  {
+    "id": "src-uscr-crc-belhar",
+    "title": "Summary of Decisions of Synod 2017 for the Churches",
+    "kind": "website",
+    "publisher": "Christian Reformed Church in North America",
+    "url": "https://www.crcna.org/sites/default/files/letter_re_summary_of_synod_2017_to_churches.pdf"
+  },
+  {
+    "id": "src-uscr-crc-women",
+    "title": "Women in Ecclesiastical Office",
+    "kind": "website",
+    "publisher": "Christian Reformed Church in North America",
+    "url": "https://www.crcna.org/welcome/beliefs/position-statements/women-ecclesiastical-office"
+  },
+  {
+    "id": "src-uscr-crc-urc",
+    "title": "History of the URCNA",
+    "kind": "website",
+    "publisher": "United Reformed Churches in North America",
+    "url": "https://www.urcna.org/about"
+  },
+  {
+    "id": "src-uscr-lcmc-history",
+    "title": "LCMC History",
+    "kind": "website",
+    "publisher": "Lutheran Congregations in Mission for Christ",
+    "url": "https://lcmc.net/history"
+  },
+  {
+    "id": "src-uscr-lcmc-constitution",
+    "title": "Constitution of Lutheran Congregations in Mission for Christ",
+    "kind": "website",
+    "publisher": "Lutheran Congregations in Mission for Christ",
+    "url": "https://lcmc.net/lcmcconstitution/278"
+  },
+  {
+    "id": "src-uscr-lcmc-ccm",
+    "title": "Called to Common Mission",
+    "kind": "website",
+    "publisher": "Evangelical Lutheran Church in America and The Episcopal Church",
+    "url": "https://download.elca.org/ELCA%20Resource%20Repository/Called_To_Common_Mission.pdf"
+  },
+  {
+    "id": "src-uscr-lcmc-wordalone",
+    "title": "Open letter to Daniel Lehmann",
+    "kind": "website",
+    "publisher": "WordAlone Network",
+    "url": "https://archives.wordalone.com/docs/open-ltr-lehmann.html"
+  },
+  {
+    "id": "src-uscr-lcmc-elca-news",
+    "title": "WordAlone Network Formed, Speakers Say They Want to Stay in ELCA",
+    "kind": "website",
+    "publisher": "ELCA News",
+    "url": "https://listserv.elca.org/scripts/wa.exe?A2=ELCANEWS%3Bbdc6f27a.0004&FT=&H=A&P=T&S="
+  },
+  {
+    "id": "src-uscr-ecc-history",
+    "title": "Evangelical Covenant Church History",
+    "kind": "website",
+    "publisher": "Evangelical Covenant Church",
+    "url": "https://covchurch.org/resource/evangelical-covenant-church-history/"
+  },
+  {
+    "id": "src-uscr-ecc-affirmations",
+    "title": "Covenant Affirmations",
+    "kind": "website",
+    "publisher": "Evangelical Covenant Church",
+    "url": "https://covchurch.org/wp-content/uploads/2015/03/covenant_affirmations_booklet.pdf"
+  },
+  {
+    "id": "src-uscr-ecc-yearbooks",
+    "title": "Frisk Collection of Covenant Yearbooks",
+    "kind": "website",
+    "publisher": "North Park University and CARLI Digital Collections",
+    "url": "https://collections.carli.illinois.edu/digital/collection/npu_covyb"
+  },
+  {
+    "id": "src-uscr-ecc-northpark",
+    "title": "F. M. Johnson Archives and Special Collections",
+    "kind": "website",
+    "publisher": "North Park University",
+    "url": "https://www.northpark.edu/academics/brandel-library/archives/"
+  },
+  {
+    "id": "src-uscr-efca-history",
+    "title": "Our History",
+    "kind": "website",
+    "publisher": "Evangelical Free Church of America",
+    "url": "https://www.efca.org/our-history"
+  },
+  {
+    "id": "src-uscr-efca-yearbook",
+    "title": "1951 EFCA Yearbook",
+    "kind": "website",
+    "publisher": "Trinity International University and CARLI Digital Collections",
+    "url": "https://collections.carli.illinois.edu/digital/collection/tiu_efcadir/id/87/"
+  },
+  {
+    "id": "src-uscr-efca-trinity",
+    "title": "History & Heritage",
+    "kind": "website",
+    "publisher": "Trinity International University",
+    "url": "https://www.tiu.edu/history-heritage/"
+  },
+  {
+    "id": "src-uscr-efca-original",
+    "title": "1950 Statement of Faith",
+    "kind": "website",
+    "publisher": "Evangelical Free Church of America",
+    "url": "https://go.efca.org/sites/default/files/resources/docs/2013/04/microsoft-word-1950-sof.pdf"
+  },
+  {
+    "id": "src-uscr-efca-current",
+    "title": "Statement of Faith",
+    "kind": "website",
+    "publisher": "Evangelical Free Church of America",
+    "url": "https://www.efca.org/sof/"
+  },
+  {
+    "id": "src-uscr-efca-polity",
+    "title": "EFCA Distinctives",
+    "kind": "website",
+    "publisher": "Evangelical Free Church of America",
+    "url": "https://www.efca.org/distinctives"
+  },
+  {
+    "id": "src-uscr-crc-prc",
+    "title": "Why Protestant Reformed? An Early Testimony to the CRC",
+    "kind": "website",
+    "publisher": "Protestant Reformed Churches in America",
+    "url": "https://www.prca.org/resources/pamphlets/why-protestant-reformed-an-early-testimony-to-the-crc"
+  },
+  {
+    "id": "src-uscr-ecc-women",
+    "title": "A Biblical and Theological Basis for Women in Ministry",
+    "kind": "website",
+    "publisher": "Evangelical Covenant Church",
+    "url": "https://covchurch.org/resource/occasional-women-in-ministry/"
+  },
+  {
+    "id": "src-uscr-ucc-statement",
+    "title": "Statement of Faith of the United Church of Christ",
+    "kind": "website",
+    "publisher": "United Church of Christ",
+    "url": "https://www.ucc.org/what-we-believe/beliefs_statement-of-faith/"
+  },
+  {
+    "id": "src-uscr-ucc-afro-archive",
+    "title": "Historical Council of the United Church of Christ",
+    "kind": "website",
+    "publisher": "United Church of Christ",
+    "url": "https://www.ucc.org/who-we-are/about/history/historical-council-of-the-united-church-of-christ/"
+  },
+  {
+    "id": "src-uscr-ucc-afro-stream",
+    "title": "Afro-Christian tradition's status as distinct UCC stream gets Historical Council support",
+    "kind": "website",
+    "publisher": "United Church of Christ",
+    "url": "https://www.ucc.org/afro-christian-traditions-status-as-distinct-ucc-stream-gets-historical-council-support/"
+  }
+]

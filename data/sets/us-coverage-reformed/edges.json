@@ -1,0 +1,42 @@
+[
+  {
+    "id": "uscr-rca-crcna-1857",
+    "name": "1857 separation from the Classis of Holland",
+    "from_id": "reformed-church-in-america",
+    "to_id": "christian-reformed-church-in-north-america",
+    "type": "split",
+    "year": 1857,
+    "zoom_tier": "full",
+    "description": "Several congregations withdrew from the Reformed Dutch Church's Classis of Holland and organized the denomination now known as CRCNA in 1857.",
+    "narrative": "Seceders raised objections about worship, discipline, and church order. The joint RCA–CRCNA history puts the disagreement in the context of Dutch immigrant congregations negotiating their place in an American denomination. The parent church continued and adopted the name Reformed Church in America in 1867.",
+    "reasons": [
+      "Disagreement about worship and the application of Reformed church order"
+    ],
+    "citations": [
+      "cite-uscr-crc-separation",
+      "cite-uscr-crc-formation",
+      "cite-uscr-crc-polity",
+      "cite-uscr-rca-charter"
+    ]
+  },
+  {
+    "id": "uscr-elca-lcmc-2001",
+    "name": "ELCA full communion dispute and LCMC formation",
+    "from_id": "evangelical-lutheran-church-in-america",
+    "to_id": "lutheran-congregations-in-mission-for-christ",
+    "type": "influence",
+    "year": 2001,
+    "zoom_tier": "full",
+    "description": "Dissent over an ELCA full communion agreement helped prompt LCMC's organization at a WordAlone convention in 2001.",
+    "narrative": "The ELCA adopted Called to Common Mission in 1999. WordAlone organizers opposed its provisions for episcopal ordination, and a new association was constituted at the network's convention in 2001. Some early congregations retained ELCA affiliation. The year marks LCMC's constitution.",
+    "reasons": [
+      "Disagreement over episcopal ordination and Lutheran church governance"
+    ],
+    "citations": [
+      "cite-uscr-lcmc-agreement",
+      "cite-uscr-lcmc-elca-view",
+      "cite-uscr-lcmc-foundation",
+      "cite-uscr-lcmc-dual"
+    ]
+  }
+]
