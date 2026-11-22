@@ -1,0 +1,8 @@
+# Armenian Apostolic Church, Catholicosate of Etchmiadzin (United States)
+
+Reviewed November 22, 2026. See the field-level citations in the associated profile.
+
+- **Covered within scope (1891–2020).** Worcester parish history and the 1898 encyclical anniversary support the starting sequence. The 1927 official foundation and 1928 constitution labels follow the Western and Eastern dioceses’ own accounts. The census records the U.S. Etchmiadzin jurisdictions under code 050 and Cilicia separately under code 049. Both affiliations share the Armenian Apostolic confession.
+- **Missing research, priority A.** Verify the 1927–1928 sequence against the founding encyclical and the first Western diocesan assembly’s records before assigning exact organizational effects to each step. Compare both jurisdictions’ histories and period sources for the American dispute that led to parallel Cilicia jurisdiction. The Prelacy’s own history documents its separate affiliation and a New York office re-established in 1958. Causal and property claims need further archival assessment.
+- **Missing node, priority B.** A proposed Cilicia U.S. profile should model the prelacies and establish the date and basis of affiliation from records of both sees. It belongs to the same Oriental Orthodox family, but a successor relation from the active Etchmiadzin aggregate would be inaccurate. Canadian dioceses and ancient Armenian church development are outside this U.S. scope.
+- **Missing research, priority B.** Expand the account of lay organizers and parish life in successive diaspora waves. No terminal successor applies to the continuing dioceses.

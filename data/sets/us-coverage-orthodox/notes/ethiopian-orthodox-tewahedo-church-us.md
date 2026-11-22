@@ -1,0 +1,8 @@
+# Ethiopian Orthodox Tewahedo Church (United States)
+
+Reviewed November 22, 2026. See the field-level citations in the associated profile.
+
+- **Covered within scope (1959–2020).** St. Gabriel’s history dates an early U.S. branch to 1959. The Schomburg Center finding aid anchors the Western Hemisphere mission and the Bronx authority and property dispute. An independent account from a WCC participant describes the 2018 agreement between the rival worldwide synods. That agreement supplies no determination about individual U.S. property disputes.
+- **Missing research, priority A.** Verify the New York branch’s founding instrument in the Schomburg records or Ethiopian church archive. A contemporary Anglican and Eastern Churches Association newsletter reported a New York headquarters dedication in 1970. A dedication is a different event from the branch organization reported by St. Gabriel’s. Check the jurisdictional path of the Bronx parish and the effect of the 2018 reconciliation on local congregations before proposing split or merger edges. The 2020 totals provide no synod-specific breakdown in the national table.
+- **Missing nodes, priority A.** The historic Western Hemisphere archdiocese, Addis Ababa and exile synods need separately scoped records if the graph is expanded to represent the dispute. A single present-day U.S. census aggregate lends no exact branch date or endpoints. The Eritrean Orthodox entry is a distinct census row and outside this batch.
+- **Missing research, priority B.** The records provide a starting point for tracing Black diaspora and Caribbean networks and the voices of Ethiopian American laypeople. No single terminal successor applies to the aggregate.
