@@ -40,6 +40,8 @@ async function selectOverview(page){
   assert.equal(await controls.count(),4,'Search, Filters, Details and Site menu share the header');
   const boxes=await Promise.all((await controls.all()).map(button=>button.boundingBox()));
   assert(boxes.every(box=>Math.abs(box.y-boxes[0].y)<3 && box.width>=44),'Header actions fit on one row');
+  const brand=await header.locator('.main-branch-brand').boundingBox();
+  assert(brand.x+brand.width+4<=boxes[0].x,'Brand leaves space before the header actions');
   assert(await page.locator('.graph-status').evaluate(el=>el.offsetHeight<=1),'Overview title takes no space above graph');
   await page.screenshot({path:path.join(output,'review-overview-header-'+size.width+'.png')});
   await page.getByRole('button',{name:'Search church history',exact:true}).tap();await page.locator('#search').fill('OPC');

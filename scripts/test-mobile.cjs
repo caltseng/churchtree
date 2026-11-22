@@ -13,6 +13,7 @@ const server=require('./test-server.cjs')(root);
   assert.equal(await page.locator('#orientation-vertical').getAttribute('aria-pressed'),'true');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Page must fit the mobile width');
   assert.equal(await page.locator('#splitter').isVisible(),false);
+  assert(await page.locator('#mobile-pan button').evaluateAll(buttons=>buttons.every(button=>getComputedStyle(button).whiteSpace==='nowrap'&&button.scrollWidth<=button.clientWidth)),'Time navigation fits on one line');
   const searchToggle=page.getByRole('button',{name:'Search church history',exact:true});
   assert(!await page.locator('#search-form').isVisible(),'Search starts collapsed');
   const graphBefore=await page.locator('#graph').boundingBox();

@@ -434,6 +434,6 @@ main.details-collapsed { grid-template-columns: minmax(0,1fr); }
 @media (max-width: 360px) {
   .explorer-header { gap: 4px; padding-inline: 6px; }
   .explorer-actions { gap: 3px; }
-  .explorer-header h1 .main-branch-brand { font-size: 16px; gap: 3px; white-space: nowrap; }
+  .explorer-header h1 .main-branch-brand { font-size: 15px; gap: 3px; white-space: nowrap; }
   .explorer-header .main-branch-symbol { width: 22px; flex-basis: 22px; }
 }
