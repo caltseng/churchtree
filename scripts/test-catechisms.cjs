@@ -47,10 +47,12 @@ async function run() {
       await page.goto(base + '/' + route + '/#q-' + count);
       await page.reload();
       assert.equal(await page.locator(':target').getAttribute('id'), 'q-' + count);
-      assert(await page.locator(':target').evaluate(element => {
-        const top = element.getBoundingClientRect().top;
-        return top >= 0 && top < innerHeight;
-      }));
+      await page.waitForFunction(() => {
+        const heading = document.querySelector(':target h2');
+        if (!heading) return false;
+        const { top, bottom } = heading.getBoundingClientRect();
+        return bottom > 0 && top < innerHeight;
+      });
       const other = books.find(([candidate]) => candidate !== route);
       await page.getByRole('link', { name: other[1], exact: true }).click();
       assert.equal(page.url(), base + '/' + other[0] + '/');
