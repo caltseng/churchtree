@@ -36,7 +36,7 @@ test('demographic validation rejects denominator qualifications, source drift an
     data => { data.demographics.populations[0].estimates[0].categoryId = 'baptist'; },
     data => { data.demographics.populations[0].estimates[1].categoryId = 'christian'; },
     data => { data.demographics.sources[0].sha256 = 'unknown'; },
-    data => { data.demographics.review.status = 'passed'; }
+    data => { data.demographics.review.status = 'passed'; delete data.demographics.review.reviewedCommit; }
   ]) {
     const fixture = copy();
     edit(fixture);
