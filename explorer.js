@@ -705,7 +705,10 @@
             searchMore.hidden = end === matches.length;
             searchMore.onclick = () => {
                 appendResults(end);
-                searchResults.children[end].focus();
+                const firstAdded = searchResults.children[end];
+                firstAdded.focus({preventScroll: true});
+                searchPanel.scrollTop += firstAdded.getBoundingClientRect().top
+                    - searchPanel.getBoundingClientRect().top - 8;
             };
         }
         appendResults(0);

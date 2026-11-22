@@ -66,7 +66,10 @@ const server=require('./test-server.cjs')(root);
    await page.locator('#search').fill('Church');
    const more=page.getByRole('button',{name:'Show more results',exact:true});
    await more.tap();
-   assert(await page.locator('#results button').nth(12).evaluate(button=>button===document.activeElement));
+   const firstAdded=page.locator('#results button').nth(12);
+   assert(await firstAdded.evaluate(button=>button===document.activeElement));
+   const hit=await firstAdded.boundingBox(),panel=await page.locator('#search-form').boundingBox();
+   assert(hit.y>=panel.y&&hit.y+hit.height<=panel.y+panel.height,'First added result is fully visible');
    assert(await page.locator('#search-form').evaluate(panel=>panel.scrollWidth<=panel.clientWidth));
    await page.screenshot({path:path.join(output,`mobile-search-more-${size.width}.png`)});
   }
