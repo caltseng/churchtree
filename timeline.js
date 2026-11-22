@@ -79,7 +79,7 @@ window.renderChurchTimeline = function ({ container, entries, edges, onNode, onE
             text.selectAll('*').remove();
             const words = clusterTitle(c).split(/\s+/), lines = [];
             let line = '';
-            const limit = Math.max(12, Math.floor(boxWidth / 6));
+            const limit = Math.max(12, Math.floor((boxWidth - 12) / 6));
             for (const word of words) {
                 if (line && (line + ' ' + word).length > limit) {
                     lines.push(line);
