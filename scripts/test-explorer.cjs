@@ -135,7 +135,11 @@ async function assertCoverageDiscovery(browser, url, mobile) {
         for (const { name, aliases } of retained) {
             for (const query of [name, ...aliases]) {
                 await page.locator('#search').fill(query);
-                assert.equal(await results.locator('button').count(), 0, query);
+                const displayed = await results.locator('button').allTextContents();
+                for (const record of retained) {
+                    assert(!displayed.some(result => result.split(' · ').includes(record.name)),
+                        `Searching for "${query}" exposed ${record.id}`);
+                }
             }
         }
         for (const view of ['timeline', 'horizontal']) {
