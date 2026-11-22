@@ -1,0 +1,898 @@
+[
+  {
+    "id": "greek-orthodox-archdiocese-of-america",
+    "name": "Greek Orthodox Archdiocese of America",
+    "kind": "denomination",
+    "start_year": 1922,
+    "zoom_tier": "full",
+    "short_label": "GOARCH",
+    "aliases": [
+      "Greek Orthodox Archdiocese",
+      "Greek Orthodox Archdiocese of North and South America"
+    ],
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Orthodox",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "notes": "Ecumenical Patriarchate recognizes and charters the archdiocese",
+    "summary": "U.S. Eastern Orthodox archdiocese under the Ecumenical Patriarchate of Constantinople.",
+    "formation_narrative": "Greek immigrant congregations organized locally before gaining a common hierarchy. Meletios Metaxakis and Bishop Alexander convened clergy and lay delegates in 1921. In 1922 the Ecumenical Patriarchate recognized the archdiocese of North and South America and issued its first charter. Competing ecclesiastical allegiances among parishes complicated consolidation. Athenagoras took office in 1931 under a new charter that strengthened central administration.",
+    "ending_narrative": "Under the patriarchate’s 1996 reorganization, Canada, Central America and South America received separate metropolitan jurisdictions and the U.S. jurisdiction continued as the Greek Orthodox Archdiocese of America.",
+    "core_beliefs": [
+      "The Creed confesses one God in three persons and Jesus Christ as truly divine and incarnate. In the Divine Liturgy the people recite the Creed and the church celebrates the Eucharist.",
+      "The parish regulations ground teaching and practice in Scripture and the seven ecumenical councils as received in the tradition of Constantinople."
+    ],
+    "key_figures": [
+      {
+        "name": "Meletios Metaxakis",
+        "role": "Organizing hierarch and later Ecumenical Patriarch",
+        "summary": "Helped convene the 1921 Clergy-Laity Congress and oversaw the return to Constantinople’s jurisdiction in 1922.",
+        "url": "https://prod.goarch.org/web/greek-orthodox-archdiocese-of-america/-/the-mission-of-the-greek-orthodox-parish-in-america",
+        "citations": [
+          "cite-us-orthodox-greek"
+        ]
+      },
+      {
+        "name": "Athenagoras",
+        "role": "Archbishop from 1931",
+        "summary": "Led consolidation under the new charter amid competing jurisdictional loyalties.",
+        "url": "https://charter.goarch.org/-/statement-patsavos-history-governance",
+        "citations": [
+          "cite-us-orthodox-patsavos"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1921,
+        "label": "First Clergy-Laity Congress convenes",
+        "citations": [
+          "cite-us-orthodox-greek"
+        ]
+      },
+      {
+        "year": 1922,
+        "label": "Ecumenical Patriarchate recognizes and charters the archdiocese",
+        "citations": [
+          "cite-us-orthodox-greek",
+          "cite-us-orthodox-charter"
+        ]
+      },
+      {
+        "year": 1931,
+        "label": "New charter centralizes archdiocesan governance",
+        "citations": [
+          "cite-us-orthodox-charter",
+          "cite-us-orthodox-patsavos"
+        ]
+      },
+      {
+        "year": 1996,
+        "label": "U.S. archdiocese takes present territorial form",
+        "citations": [
+          "cite-us-orthodox-greekregs"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "1996 Special Regulations and Uniform Parish Regulations",
+        "year": 1996,
+        "significance": "Documents the territorial reorganization and adopted parish governance of that period.",
+        "url": "https://www.goarch.org/-/1996-special-regulations-and-uniform-parish-regulations-of-the-greek-orthodox-archdiocese-of-america",
+        "citations": [
+          "cite-us-orthodox-greekregs"
+        ]
+      },
+      {
+        "title": "Divine Liturgy of Saint John Chrysostom",
+        "year": null,
+        "significance": "Inherited Byzantine Eucharistic service used in the archdiocese.",
+        "url": "https://www.goarch.org/-/the-divine-liturgy-of-saint-john-chrysostom",
+        "citations": [
+          "cite-us-orthodox-greeklit"
+        ]
+      }
+    ],
+    "size_estimate": "375,117 U.S. 2020 adherents · 533 U.S. congregations (2020 U.S. Religion Census)",
+    "profile_scope": "Introductory U.S. jurisdictional history from the immigrant parishes through the 1996 reorganization and subsequent continuation. The plot starts with church recognition and chartering of the wider predecessor jurisdiction. The figures cover the U.S. jurisdiction in 2020.",
+    "successor_ids": [],
+    "profile_citations": {
+      "notes": [
+        "cite-us-orthodox-greek",
+        "cite-us-orthodox-charter"
+      ],
+      "summary": [
+        "cite-us-orthodox-greek",
+        "cite-us-orthodox-charter",
+        "cite-us-orthodox-patsavos",
+        "cite-us-orthodox-greekregs",
+        "cite-us-orthodox-assembly"
+      ],
+      "formation_narrative": [
+        "cite-us-orthodox-greek",
+        "cite-us-orthodox-charter",
+        "cite-us-orthodox-patsavos"
+      ],
+      "ending_narrative": [
+        "cite-us-orthodox-greekregs",
+        "cite-us-orthodox-assembly"
+      ],
+      "core_beliefs": [
+        "cite-us-orthodox-greeklit",
+        "cite-us-orthodox-greekregs"
+      ],
+      "key_figures": [
+        "cite-us-orthodox-greek",
+        "cite-us-orthodox-patsavos"
+      ],
+      "key_dates": [
+        "cite-us-orthodox-greek",
+        "cite-us-orthodox-charter",
+        "cite-us-orthodox-patsavos",
+        "cite-us-orthodox-greekregs"
+      ],
+      "key_documents": [
+        "cite-us-orthodox-greekregs",
+        "cite-us-orthodox-greeklit"
+      ],
+      "profile_scope": [
+        "cite-us-orthodox-greek",
+        "cite-us-orthodox-charter",
+        "cite-us-orthodox-patsavos",
+        "cite-us-orthodox-census-246"
+      ],
+      "size_estimate": [
+        "cite-us-orthodox-census-246",
+        "cite-us-orthodox-methods"
+      ]
+    },
+    "citations": [
+      "cite-us-orthodox-greek",
+      "cite-us-orthodox-charter",
+      "cite-us-orthodox-patsavos",
+      "cite-us-orthodox-greekregs",
+      "cite-us-orthodox-assembly",
+      "cite-us-orthodox-greeklit",
+      "cite-us-orthodox-census-246",
+      "cite-us-orthodox-methods"
+    ],
+    "further_reading": [
+      {
+        "title": "Greek Orthodox Archdiocese: The Mission of the Greek Orthodox Parish in America",
+        "url": "https://prod.goarch.org/web/greek-orthodox-archdiocese-of-america/-/the-mission-of-the-greek-orthodox-parish-in-america",
+        "snippet": "Early parish organization, 1921 congress, patriarchal recognition and archbishops.",
+        "citations": [
+          "cite-us-orthodox-greek"
+        ]
+      },
+      {
+        "title": "Greek Orthodox Archdiocese: 1996 Special Regulations and Uniform Parish Regulations",
+        "url": "https://www.goarch.org/-/1996-special-regulations-and-uniform-parish-regulations-of-the-greek-orthodox-archdiocese-of-america",
+        "snippet": "Introduction and Chapter 11, parish mission and governance.",
+        "citations": [
+          "cite-us-orthodox-greekregs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "coptic-orthodox-church-us",
+    "name": "Coptic Orthodox Church (United States)",
+    "kind": "denomination",
+    "start_year": 1968,
+    "zoom_tier": "full",
+    "short_label": "Coptic Orthodox",
+    "aliases": [
+      "Coptic Orthodox Church",
+      "Coptic Church",
+      "Coptic Orthodox Church in the United States"
+    ],
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Oriental Orthodox",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "notes": "Documented immigrant worship in Jersey City",
+    "summary": "U.S. communities of the Coptic Orthodox Patriarchate of Alexandria, organized across multiple diocesan jurisdictions.",
+    "formation_narrative": "Egyptian immigrants in the New York and New Jersey area arranged services in homes and other borrowed spaces. A founding account at St. Mark’s records visiting priest Fr. Mankarious celebrating liturgies in Jersey City in 1968. Pope Kyrillos VI ordained Gabriel Abdelsayed and sent him to serve the community in 1970. As congregations spread, Pope Shenouda III organized the Southern U.S. diocese in 1993 and appointed Bishop Youssef to oversee it.",
+    "ending_narrative": "U.S. parishes continue within the patriarchate through multiple dioceses. Bishops Serapion and Youssef worked with clergy and laypeople on standardized English liturgical texts for diaspora worship. St. Mark’s records a full English Sunday liturgy introduced at a daughter parish.",
+    "core_beliefs": [
+      "The church receives the Alexandrian teaching associated with Cyril, confessing Christ’s full divinity and humanity united in the incarnate Word within the Oriental Orthodox communion.",
+      "The Eucharist is celebrated in the Coptic rites of St. Basil, St. Cyril and St. Gregory. American diocesan work produced revised English liturgical texts alongside Coptic and Arabic."
+    ],
+    "key_figures": [
+      {
+        "name": "Medhat Riad Wassef",
+        "role": "Deacon and founding-period witness",
+        "summary": "Recorded how lay households provided worship space and how visiting clergy served the community.",
+        "url": "https://saintmark.com/about-us/",
+        "citations": [
+          "cite-us-orthodox-coptic"
+        ]
+      },
+      {
+        "name": "Gabriel Abdelsayed",
+        "role": "Priest assigned to St. Mark’s",
+        "summary": "Ordained by Pope Kyrillos VI and sent to Jersey City in 1970 as the parish developed.",
+        "url": "https://saintmark.com/about-us/",
+        "citations": [
+          "cite-us-orthodox-coptic"
+        ]
+      },
+      {
+        "name": "Pope Shenouda III",
+        "role": "Patriarch of Alexandria",
+        "summary": "Established the Southern U.S. diocese in 1993 as the American parish network grew.",
+        "url": "https://www.youtube.com/watch?v=_Tn4yUit1vk",
+        "citations": [
+          "cite-us-orthodox-south"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1968,
+        "label": "Early documented Jersey City liturgies",
+        "citations": [
+          "cite-us-orthodox-coptic"
+        ]
+      },
+      {
+        "year": 1970,
+        "label": "Gabriel Abdelsayed ordained and sent to St. Mark’s",
+        "citations": [
+          "cite-us-orthodox-coptic"
+        ]
+      },
+      {
+        "year": 1993,
+        "label": "Southern U.S. diocese organized",
+        "citations": [
+          "cite-us-orthodox-south"
+        ]
+      },
+      {
+        "year": 1997,
+        "label": "Work begins on revised English liturgical texts in late 1997 or early 1998",
+        "citations": [
+          "cite-us-orthodox-coptlit"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Divine Liturgies of the Coptic Orthodox Patriarchate of Alexandria",
+        "year": null,
+        "significance": "The linked preface documents how U.S. bishops, priests and laity prepared a multilingual edition of three received liturgies.",
+        "url": "https://cdn.suscopts.org/files/messages/preface.pdf",
+        "citations": [
+          "cite-us-orthodox-coptlit"
+        ]
+      }
+    ],
+    "size_estimate": "179,155 U.S. 2020 adherents · 292 U.S. congregations (2020 U.S. Religion Census)",
+    "profile_scope": "Introductory history of the U.S. presence from late-1960s parish worship through diocesan growth and the 2020 census. The plot date is a documented worship milestone. Egypt’s ancient church history and the organization dates of individual U.S. dioceses lie outside that date.",
+    "successor_ids": [],
+    "profile_citations": {
+      "notes": [
+        "cite-us-orthodox-coptic"
+      ],
+      "summary": [
+        "cite-us-orthodox-coptic",
+        "cite-us-orthodox-south",
+        "cite-us-orthodox-coptlit"
+      ],
+      "formation_narrative": [
+        "cite-us-orthodox-coptic",
+        "cite-us-orthodox-south"
+      ],
+      "ending_narrative": [
+        "cite-us-orthodox-coptlit",
+        "cite-us-orthodox-coptic"
+      ],
+      "core_beliefs": [
+        "cite-us-orthodox-oriental",
+        "cite-us-orthodox-coptlit"
+      ],
+      "key_figures": [
+        "cite-us-orthodox-coptic",
+        "cite-us-orthodox-south"
+      ],
+      "key_dates": [
+        "cite-us-orthodox-coptic",
+        "cite-us-orthodox-south",
+        "cite-us-orthodox-coptlit"
+      ],
+      "key_documents": [
+        "cite-us-orthodox-coptlit"
+      ],
+      "profile_scope": [
+        "cite-us-orthodox-coptic",
+        "cite-us-orthodox-south",
+        "cite-us-orthodox-census-186"
+      ],
+      "size_estimate": [
+        "cite-us-orthodox-census-186",
+        "cite-us-orthodox-methods"
+      ]
+    },
+    "citations": [
+      "cite-us-orthodox-coptic",
+      "cite-us-orthodox-south",
+      "cite-us-orthodox-coptlit",
+      "cite-us-orthodox-oriental",
+      "cite-us-orthodox-census-186",
+      "cite-us-orthodox-methods"
+    ],
+    "further_reading": [
+      {
+        "title": "St. Mark’s Coptic Church, Jersey City: About Us",
+        "url": "https://saintmark.com/about-us/",
+        "snippet": "Summary and Medhat Riad Wassef’s account of the foundation.",
+        "citations": [
+          "cite-us-orthodox-coptic"
+        ]
+      },
+      {
+        "title": "Divine Liturgies of the Coptic Orthodox Patriarchate of Alexandria",
+        "url": "https://cdn.suscopts.org/files/messages/preface.pdf",
+        "snippet": "Preface: work on the English, Coptic and Arabic liturgical texts.",
+        "citations": [
+          "cite-us-orthodox-coptlit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethiopian-orthodox-tewahedo-church-us",
+    "name": "Ethiopian Orthodox Tewahedo Church (United States)",
+    "kind": "denomination",
+    "start_year": 1959,
+    "zoom_tier": "full",
+    "short_label": "Ethiopian Orthodox",
+    "aliases": [
+      "Ethiopian Orthodox Tewahedo Church",
+      "Ethiopian Orthodox Church",
+      "Ethiopian Orthodox",
+      "EOTC"
+    ],
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Oriental Orthodox",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "notes": "New York branch established according to a U.S. parish history",
+    "summary": "U.S. presence of the Ethiopian Orthodox Tewahedo Church, including communities formed through diaspora mission and Ethiopian migration.",
+    "formation_narrative": "A U.S. parish history dates the establishment of a New York branch to 1959 and describes appeals from the African diaspora for clergy. Abba Laike Mandefro, later Archbishop Abune Yesehaq, served the expanding Western Hemisphere mission. Later Ethiopian migration contributed to parish growth. The Church of Our Savior in New York dates its own organization to 1984.",
+    "ending_narrative": "After political change in Ethiopia in 1991, rival synods developed in Ethiopia and in exile. Schomburg records document a related but locally distinct dispute over Archbishop Yesehaq, Addis Ababa’s authority and the Bronx congregation’s property. The worldwide synods announced reconciliation in 2018. The census groups U.S. Ethiopian Orthodox congregations under a single entry.",
+    "core_beliefs": [
+      "Tewahedo refers to the unity of the incarnate Christ. The Ethiopian church shares the Oriental Orthodox confession of Christ’s full humanity and divinity united in the Word.",
+      "The Eucharistic liturgy confesses the Creed and preserves an ancient Ge’ez liturgical tradition, still used in U.S. parish worship."
+    ],
+    "key_figures": [
+      {
+        "name": "Abune Yesehaq",
+        "role": "Western Hemisphere mission leader",
+        "summary": "Served as a priest and was consecrated to the episcopate in 1979. His ministry linked communities in the United States and the Caribbean.",
+        "url": "https://www.stgabrielseotcnj.com/copy-of-the-church",
+        "citations": [
+          "cite-us-orthodox-ethstart",
+          "cite-us-orthodox-etharchive"
+        ]
+      },
+      {
+        "name": "Abune Merkorios",
+        "role": "Patriarch in exile",
+        "summary": "Lived in the United States during the split and participated in reconciliation with the synod headed by Abune Mathias.",
+        "url": "https://www.oikoumene.org/news/jubilation-after-ethiopian-orthodox-tewahedo-churchs-27-year-old-schism-is-healed",
+        "citations": [
+          "cite-us-orthodox-ethrecon"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1959,
+        "label": "New York branch established in the parish account",
+        "citations": [
+          "cite-us-orthodox-ethstart"
+        ]
+      },
+      {
+        "year": 1979,
+        "label": "Abune Yesehaq consecrated bishop",
+        "citations": [
+          "cite-us-orthodox-ethstart"
+        ]
+      },
+      {
+        "year": 1984,
+        "label": "Church of Our Savior founded in New York",
+        "citations": [
+          "cite-us-orthodox-ethlocal"
+        ]
+      },
+      {
+        "year": 2018,
+        "label": "Ethiopian and exile synods announce reconciliation",
+        "citations": [
+          "cite-us-orthodox-ethrecon"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "The Liturgy of the Ethiopian Orthodox Church",
+        "year": 1959,
+        "significance": "English edition of inherited Ethiopian Eucharistic worship. Its publication year is separate from U.S. institutional milestones.",
+        "url": "https://www.ethiopianorthodox.org/english/church/englishethiopianliturgy.pdf",
+        "citations": [
+          "cite-us-orthodox-ethlit"
+        ]
+      }
+    ],
+    "size_estimate": "96,374 U.S. 2020 adherents · 197 U.S. congregations (2020 U.S. Religion Census)",
+    "profile_scope": "Introductory history of U.S. mission and parishes through the 2020 census. The 1959 plot date follows the parish account of organizational beginnings and does not date a legal incorporation, permanent church building, or the founding of Christianity in Ethiopia.",
+    "successor_ids": [],
+    "profile_citations": {
+      "notes": [
+        "cite-us-orthodox-ethstart"
+      ],
+      "summary": [
+        "cite-us-orthodox-ethstart",
+        "cite-us-orthodox-etharchive",
+        "cite-us-orthodox-ethlocal",
+        "cite-us-orthodox-ethap",
+        "cite-us-orthodox-ethrecon",
+        "cite-us-orthodox-census-204"
+      ],
+      "formation_narrative": [
+        "cite-us-orthodox-ethstart",
+        "cite-us-orthodox-etharchive",
+        "cite-us-orthodox-ethlocal",
+        "cite-us-orthodox-ethap"
+      ],
+      "ending_narrative": [
+        "cite-us-orthodox-ethrecon",
+        "cite-us-orthodox-etharchive",
+        "cite-us-orthodox-census-204"
+      ],
+      "core_beliefs": [
+        "cite-us-orthodox-oriental",
+        "cite-us-orthodox-ethlit",
+        "cite-us-orthodox-ethap"
+      ],
+      "key_figures": [
+        "cite-us-orthodox-ethstart",
+        "cite-us-orthodox-etharchive",
+        "cite-us-orthodox-ethrecon"
+      ],
+      "key_dates": [
+        "cite-us-orthodox-ethstart",
+        "cite-us-orthodox-ethlocal",
+        "cite-us-orthodox-ethrecon"
+      ],
+      "key_documents": [
+        "cite-us-orthodox-ethlit"
+      ],
+      "profile_scope": [
+        "cite-us-orthodox-ethstart",
+        "cite-us-orthodox-etharchive",
+        "cite-us-orthodox-ethlocal",
+        "cite-us-orthodox-ethap",
+        "cite-us-orthodox-census-204"
+      ],
+      "size_estimate": [
+        "cite-us-orthodox-census-204",
+        "cite-us-orthodox-methods"
+      ]
+    },
+    "citations": [
+      "cite-us-orthodox-ethstart",
+      "cite-us-orthodox-etharchive",
+      "cite-us-orthodox-ethlocal",
+      "cite-us-orthodox-ethap",
+      "cite-us-orthodox-ethrecon",
+      "cite-us-orthodox-census-204",
+      "cite-us-orthodox-oriental",
+      "cite-us-orthodox-ethlit",
+      "cite-us-orthodox-methods"
+    ],
+    "further_reading": [
+      {
+        "title": "St. Gabriel Ethiopian Orthodox Tewahedo Church: Abune Yesehaq",
+        "url": "https://www.stgabrielseotcnj.com/copy-of-the-church",
+        "snippet": "New York branch, mission and episcopal ordination.",
+        "citations": [
+          "cite-us-orthodox-ethstart"
+        ]
+      },
+      {
+        "title": "World Council of Churches: Ethiopian Orthodox reconciliation",
+        "url": "https://www.oikoumene.org/news/jubilation-after-ethiopian-orthodox-tewahedo-churchs-27-year-old-schism-is-healed",
+        "snippet": "July 2018 reconciliation and roles of the two patriarchs.",
+        "citations": [
+          "cite-us-orthodox-ethrecon"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "armenian-apostolic-etchmiadzin-us",
+    "name": "Armenian Apostolic Church, Catholicosate of Etchmiadzin (United States)",
+    "kind": "denomination",
+    "start_year": 1898,
+    "zoom_tier": "full",
+    "short_label": "Armenian (Etchmiadzin)",
+    "aliases": [
+      "Armenian Apostolic Church",
+      "Armenian Church",
+      "Armenian Church of North America (Catholicosate of Etchmiadzin)",
+      "Armenian Apostolic Church (Catholicosate of Etchmiadzin)",
+      "Etchmiadzin"
+    ],
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Oriental Orthodox",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "notes": "Catholicos establishes the Diocese of America by encyclical",
+    "summary": "Eastern and Western U.S. dioceses of the Armenian Apostolic Church under the Mother See of Holy Etchmiadzin.",
+    "formation_narrative": "Armenians in Worcester petitioned for a priest and built a church in 1891. As immigrant communities multiplied, Catholicos Mkrtich Khrimian established the Diocese of America by encyclical in 1898. Immigration continued after the Armenian genocide and in later waves from the Middle East. The Western Diocese dates its official foundation to 1927. The Eastern Diocese’s history dates its constitution to 1928. St. Vartan Cathedral in New York was consecrated in 1968.",
+    "ending_narrative": "The Eastern and Western dioceses continue under Holy Etchmiadzin. Parallel Armenian Apostolic prelacies affiliated with the Holy See of Cilicia developed a distinct U.S. jurisdiction within the same church tradition. The census reports Cilicia separately.",
+    "core_beliefs": [
+      "The Armenian church shares the Oriental Orthodox confession of the unity of Christ’s full humanity and divinity in the incarnate Word.",
+      "The Armenian Eucharistic service, the Badarak, includes the Havadamk, the Armenian confession of Nicene faith that begins with a collective profession of belief."
+    ],
+    "key_figures": [
+      {
+        "name": "Mkrtich Khrimian",
+        "role": "Catholicos of All Armenians",
+        "summary": "Issued the 1898 encyclical establishing the Diocese of America for the growing diaspora.",
+        "url": "https://armenianchurch.us/the-lord-has-done-great-things-for-us/",
+        "citations": [
+          "cite-us-orthodox-armnews"
+        ]
+      },
+      {
+        "name": "Vasken I",
+        "role": "Catholicos of All Armenians",
+        "summary": "Consecrated St. Vartan Cathedral in New York in 1968.",
+        "url": "https://armenianchurch.us/history/",
+        "citations": [
+          "cite-us-orthodox-arm"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1891,
+        "label": "Armenian immigrant congregation builds Worcester church",
+        "citations": [
+          "cite-us-orthodox-arm"
+        ]
+      },
+      {
+        "year": 1898,
+        "label": "Diocese of America established by encyclical",
+        "citations": [
+          "cite-us-orthodox-armnews",
+          "cite-us-orthodox-armletter"
+        ]
+      },
+      {
+        "year": 1927,
+        "label": "Western Diocese marks its official foundation",
+        "citations": [
+          "cite-us-orthodox-armwest"
+        ]
+      },
+      {
+        "year": 1928,
+        "label": "Western Diocese constituted, per the Eastern Diocese history",
+        "citations": [
+          "cite-us-orthodox-arm"
+        ]
+      },
+      {
+        "year": 1968,
+        "label": "St. Vartan Cathedral consecrated in New York",
+        "citations": [
+          "cite-us-orthodox-arm"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Letter on the 125th Anniversary of the Eastern Diocese",
+        "year": 2023,
+        "significance": "Catholicos Karekin II’s anniversary letter confirms the 1898 foundation. The linked document commemorates the founding encyclical.",
+        "url": "https://armenianchurch.us/wp-content/uploads/2023/06/HHK2-230605-DAC125-Congrats-PDF.pdf",
+        "citations": [
+          "cite-us-orthodox-armletter"
+        ]
+      },
+      {
+        "title": "Havadamk (Armenian Creed)",
+        "year": null,
+        "significance": "Inherited liturgical profession of faith recited during the Badarak.",
+        "url": "https://armenianchurch.us/seventeen-centuries-of-we-believe/",
+        "citations": [
+          "cite-us-orthodox-armcreed"
+        ]
+      }
+    ],
+    "size_estimate": "95,207 U.S. 2020 adherents · 89 U.S. congregations (2020 U.S. Religion Census)",
+    "profile_scope": "Introductory history of the Etchmiadzin-affiliated U.S. dioceses from Worcester through the 2020 census. The plot date is the founding of their common diocesan predecessor. The scope excludes Canadian diocesan history and the separately counted Cilicia jurisdictions.",
+    "successor_ids": [],
+    "profile_citations": {
+      "notes": [
+        "cite-us-orthodox-armnews",
+        "cite-us-orthodox-armletter"
+      ],
+      "summary": [
+        "cite-us-orthodox-arm",
+        "cite-us-orthodox-armletter",
+        "cite-us-orthodox-armnews",
+        "cite-us-orthodox-armwest",
+        "cite-us-orthodox-armcil",
+        "cite-us-orthodox-census-050"
+      ],
+      "formation_narrative": [
+        "cite-us-orthodox-arm",
+        "cite-us-orthodox-armletter",
+        "cite-us-orthodox-armnews",
+        "cite-us-orthodox-armwest"
+      ],
+      "ending_narrative": [
+        "cite-us-orthodox-arm",
+        "cite-us-orthodox-armcil",
+        "cite-us-orthodox-census-050"
+      ],
+      "core_beliefs": [
+        "cite-us-orthodox-oriental",
+        "cite-us-orthodox-armcreed"
+      ],
+      "key_figures": [
+        "cite-us-orthodox-armnews",
+        "cite-us-orthodox-arm"
+      ],
+      "key_dates": [
+        "cite-us-orthodox-arm",
+        "cite-us-orthodox-armnews",
+        "cite-us-orthodox-armletter",
+        "cite-us-orthodox-armwest"
+      ],
+      "key_documents": [
+        "cite-us-orthodox-armletter",
+        "cite-us-orthodox-armcreed"
+      ],
+      "profile_scope": [
+        "cite-us-orthodox-arm",
+        "cite-us-orthodox-armletter",
+        "cite-us-orthodox-armnews",
+        "cite-us-orthodox-armwest",
+        "cite-us-orthodox-census-050"
+      ],
+      "size_estimate": [
+        "cite-us-orthodox-census-050",
+        "cite-us-orthodox-methods"
+      ]
+    },
+    "citations": [
+      "cite-us-orthodox-armnews",
+      "cite-us-orthodox-armletter",
+      "cite-us-orthodox-arm",
+      "cite-us-orthodox-armwest",
+      "cite-us-orthodox-armcil",
+      "cite-us-orthodox-census-050",
+      "cite-us-orthodox-oriental",
+      "cite-us-orthodox-armcreed",
+      "cite-us-orthodox-methods"
+    ],
+    "further_reading": [
+      {
+        "title": "Diocese of the Armenian Church of America (Eastern): Diocesan History",
+        "url": "https://armenianchurch.us/history/",
+        "snippet": "Armenian immigration, Worcester, diocesan establishment and St. Vartan Cathedral.",
+        "citations": [
+          "cite-us-orthodox-arm"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "orthodox-church-in-america",
+    "name": "Orthodox Church in America",
+    "kind": "denomination",
+    "start_year": 1970,
+    "zoom_tier": "full",
+    "short_label": "OCA",
+    "aliases": [
+      "OCA",
+      "The Orthodox Church in America",
+      "American Metropolia",
+      "Russian Orthodox Greek Catholic Metropolitanate of North America"
+    ],
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Orthodox",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "notes": "Moscow grants autocephaly and the All-American Council reorganizes under the OCA name",
+    "summary": "North American Eastern Orthodox church formed under its present name and status in 1970 from the American Metropolia.",
+    "formation_narrative": "The Russian Orthodox mission reached Kodiak in 1794 in the setting of Russian colonial expansion and built a lasting presence among Alaska Native communities. The North American diocese developed across the continent. Disruption following the Russian Revolution led the American Metropolia to govern itself provisionally. After negotiations, Moscow granted autocephaly in April 1970 and the All-American Council reorganized the church under its present name that October.",
+    "ending_narrative": "The OCA continues under its own statute and Holy Synod. Recognition of autocephaly varies across the Eastern Orthodox communion. The Ecumenical Patriarchate has maintained its position on withholding recognition of that status, while its hierarchs have concelebrated with OCA hierarchs. Both the OCA and Greek Orthodox Archdiocese participate in the U.S. Assembly of Canonical Orthodox Bishops.",
+    "core_beliefs": [
+      "The Nicene-Constantinopolitan Creed states the faith confessed at baptism and repeated in the Divine Liturgy, including the Trinity and the incarnation and resurrection of Christ.",
+      "The OCA sees its self-government as operating within Eastern Orthodox sacramental communion and the inherited canons of the church. The Tomos authorizes it to elect its own primate and bishops."
+    ],
+    "key_figures": [
+      {
+        "name": "Herman of Alaska",
+        "role": "Monk of the Kodiak mission",
+        "summary": "Served in the early Russian mission to Alaska and was glorified by the OCA in 1970.",
+        "url": "https://www.oca.org/orthodoxy/the-orthodox-faith/church-history/eighteenth-century/mission-to-alaska",
+        "citations": [
+          "cite-us-orthodox-ocamonk"
+        ]
+      },
+      {
+        "name": "Metropolitan Ireney",
+        "role": "Primate in 1970",
+        "summary": "Received the grant of autocephaly as the primate to whom Moscow addressed the Tomos.",
+        "url": "https://www.oca.org/history-archives/tomos-of-autocephaly",
+        "citations": [
+          "cite-us-orthodox-ocatomos"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1794,
+        "label": "Russian Orthodox mission reaches Kodiak",
+        "citations": [
+          "cite-us-orthodox-alaskan",
+          "cite-us-orthodox-ocamonk"
+        ]
+      },
+      {
+        "year": 1924,
+        "label": "All-American council declares temporary self-government",
+        "citations": [
+          "cite-us-orthodox-ocahist"
+        ]
+      },
+      {
+        "year": 1970,
+        "label": "Moscow issues the Tomos and the council adopts the OCA name",
+        "citations": [
+          "cite-us-orthodox-ocatomos",
+          "cite-us-orthodox-ocastat"
+        ]
+      },
+      {
+        "year": 2016,
+        "label": "OCA and Constantinople hierarchs concelebrate in Istanbul",
+        "citations": [
+          "cite-us-orthodox-ocarec"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Tomos of Autocephaly",
+        "year": 1970,
+        "significance": "Patriarchal and synodal act granting the Metropolia self-government and specifying its rights.",
+        "url": "https://www.oca.org/history-archives/tomos-of-autocephaly",
+        "citations": [
+          "cite-us-orthodox-ocatomos"
+        ]
+      },
+      {
+        "title": "Statute of the Orthodox Church in America",
+        "year": null,
+        "significance": "Governing text describing how the church organizes its synod, dioceses and parishes.",
+        "url": "https://www.oca.org/statute",
+        "citations": [
+          "cite-us-orthodox-ocastat"
+        ]
+      }
+    ],
+    "size_estimate": "74,449 U.S. 2020 adherents · 560 U.S. congregations (2020 U.S. Religion Census)",
+    "profile_scope": "Introductory account of the modern OCA, with Russian mission and Metropolia antecedents and recognition history. The plot date marks the current ecclesial form. The 2020 census totals cover U.S. congregations only.",
+    "successor_ids": [],
+    "profile_citations": {
+      "notes": [
+        "cite-us-orthodox-ocatomos",
+        "cite-us-orthodox-ocastat"
+      ],
+      "summary": [
+        "cite-us-orthodox-alaskan",
+        "cite-us-orthodox-ocamonk",
+        "cite-us-orthodox-ocahist",
+        "cite-us-orthodox-ocatomos",
+        "cite-us-orthodox-ocastat",
+        "cite-us-orthodox-ocarec",
+        "cite-us-orthodox-assembly"
+      ],
+      "formation_narrative": [
+        "cite-us-orthodox-alaskan",
+        "cite-us-orthodox-ocamonk",
+        "cite-us-orthodox-ocahist",
+        "cite-us-orthodox-ocatomos",
+        "cite-us-orthodox-ocastat"
+      ],
+      "ending_narrative": [
+        "cite-us-orthodox-ocastat",
+        "cite-us-orthodox-ocarec",
+        "cite-us-orthodox-assembly"
+      ],
+      "core_beliefs": [
+        "cite-us-orthodox-ocacreeds",
+        "cite-us-orthodox-ocatomos",
+        "cite-us-orthodox-ocastat"
+      ],
+      "key_figures": [
+        "cite-us-orthodox-ocamonk",
+        "cite-us-orthodox-ocatomos"
+      ],
+      "key_dates": [
+        "cite-us-orthodox-alaskan",
+        "cite-us-orthodox-ocamonk",
+        "cite-us-orthodox-ocahist",
+        "cite-us-orthodox-ocatomos",
+        "cite-us-orthodox-ocastat",
+        "cite-us-orthodox-ocarec"
+      ],
+      "key_documents": [
+        "cite-us-orthodox-ocatomos",
+        "cite-us-orthodox-ocastat"
+      ],
+      "profile_scope": [
+        "cite-us-orthodox-alaskan",
+        "cite-us-orthodox-ocamonk",
+        "cite-us-orthodox-ocahist",
+        "cite-us-orthodox-ocatomos",
+        "cite-us-orthodox-ocastat",
+        "cite-us-orthodox-census-331"
+      ],
+      "size_estimate": [
+        "cite-us-orthodox-census-331",
+        "cite-us-orthodox-methods"
+      ]
+    },
+    "citations": [
+      "cite-us-orthodox-ocatomos",
+      "cite-us-orthodox-ocastat",
+      "cite-us-orthodox-alaskan",
+      "cite-us-orthodox-ocamonk",
+      "cite-us-orthodox-ocahist",
+      "cite-us-orthodox-ocarec",
+      "cite-us-orthodox-assembly",
+      "cite-us-orthodox-ocacreeds",
+      "cite-us-orthodox-census-331",
+      "cite-us-orthodox-methods"
+    ],
+    "further_reading": [
+      {
+        "title": "National Park Service: Russian America",
+        "url": "https://home.nps.gov/subjects/nhlalaska/russian-alaska.htm",
+        "snippet": "Russian Orthodox missionaries and Alaska Native communities.",
+        "citations": [
+          "cite-us-orthodox-alaskan"
+        ]
+      },
+      {
+        "title": "Orthodox Church in America: Statute",
+        "url": "https://www.oca.org/statute",
+        "snippet": "Preamble and Article I, identity and governance.",
+        "citations": [
+          "cite-us-orthodox-ocastat"
+        ]
+      }
+    ]
+  }
+]
