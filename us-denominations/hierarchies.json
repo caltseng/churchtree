@@ -1,0 +1,48 @@
+{
+  "sharedPanels": [
+    {"parentId":"us-adults","coverage":"complete","children":["christian","other-religions","unaffiliated","no-answer"],"sourceId":"interactive","locator":"United States > Religious composition > 2023-24; nonresponse note alongside broad groups"},
+    {"parentId":"christian","coverage":"complete","children":["protestant","catholic","latter-day-saint","orthodox","jehovahs-witness","other-christian"],"sourceId":"identity","locator":"Trends within Christianity; Protestant is the NET of the three Protestant traditions"},
+    {"parentId":"other-religions","coverage":"complete","children":["jewish","muslim","buddhist","hindu","other-world-religions","something-else"],"sourceId":"interactive","locator":"United States > Religious composition > 2023-24 > Other religions"},
+    {"parentId":"unaffiliated","coverage":"complete","children":["atheist","agnostic","nothing-in-particular"],"sourceId":"interactive","locator":"United States > Religious composition > 2023-24 > Religiously unaffiliated"}
+  ],
+  "lenses": {
+    "families": {
+      "label": "Families and denominations",
+      "rootId": "us-adults",
+      "panels": [
+        {"parentId":"protestant","coverage":"complete","children":["baptist","nondenominational","pentecostal","methodist","lutheran","presbyterian","restorationist","episcopalian-anglican","holiness","congregational","reformed","adventist","anabaptist","pietist","friends","other-evangelical","nonspecific-protestant"],"sourceId":"report","locator":"Printed p. 86, denominational family rows under NET Protestant"},
+        {"parentId":"baptist","coverage":"selected","children":["sbc","abcusa","nbc-usa","nbca","pnbc"],"sourceId":"classification","locator":"Baptist > evangelical, mainline and historically Black Protestant families"},
+        {"parentId":"presbyterian","coverage":"selected","children":["pcusa","pca"],"sourceId":"classification","locator":"Presbyterian > evangelical and mainline Protestant families"},
+        {"parentId":"methodist","coverage":"selected","children":["umc","ame","global-methodist"],"sourceId":"classification","locator":"Methodist > evangelical, mainline and historically Black Protestant families"},
+        {"parentId":"lutheran","coverage":"selected","children":["elca","lcms"],"sourceId":"classification","locator":"Lutheran > evangelical and mainline Protestant families"},
+        {"parentId":"pentecostal","coverage":"selected","children":["assemblies-of-god","cogic","cog-cleveland"],"sourceId":"classification","locator":"Pentecostal > evangelical and historically Black Protestant families"},
+        {"parentId":"restorationist","coverage":"selected","children":["churches-of-christ","disciples-of-christ"],"sourceId":"classification","locator":"Restorationist > evangelical and mainline Protestant families"},
+        {"parentId":"episcopalian-anglican","coverage":"selected","children":["episcopal-church"],"sourceId":"classification","locator":"Episcopalian/Anglican > mainline Protestant tradition"},
+        {"parentId":"congregational","coverage":"selected","children":["ucc"],"sourceId":"classification","locator":"Congregational > mainline Protestant tradition"},
+        {"parentId":"adventist","coverage":"selected","children":["seventh-day-adventist"],"sourceId":"classification","locator":"Adventist > evangelical Protestant tradition"}
+      ]
+    },
+    "traditions": {
+      "label": "Protestant traditions",
+      "rootId": "us-adults",
+      "panels": [
+        {"parentId":"protestant","coverage":"complete","children":["evangelical","mainline","historically-black"],"sourceId":"report","locator":"Printed p. 85, Protestant tradition rows under NET Protestant"},
+        {"parentId":"evangelical","coverage":"selected","children":["baptist-evangelical","presbyterian-evangelical","methodist-evangelical","nondenominational-evangelical","lutheran-evangelical","pentecostal-evangelical","nonspecific-evangelical"],"sourceId":"interactive","locator":"United States > Religious composition > 2023-24 > Christians > Evangelical Protestant"},
+        {"parentId":"mainline","coverage":"selected","children":["baptist-mainline","presbyterian-mainline","methodist-mainline","nondenominational-mainline","lutheran-mainline","nonspecific-mainline"],"sourceId":"interactive","locator":"United States > Religious composition > 2023-24 > Christians > Mainline Protestant"},
+        {"parentId":"historically-black","coverage":"selected","children":["baptist-historically-black","methodist-historically-black","pentecostal-historically-black","nondenominational-historically-black","nonspecific-historically-black"],"sourceId":"interactive","locator":"United States > Religious composition > 2023-24 > Christians > Historically Black Protestant"},
+        {"parentId":"baptist-evangelical","coverage":"selected","children":["sbc","independent-baptist-evangelical","other-baptist-evangelical"],"sourceId":"classification","locator":"Baptist > Baptist family in the evangelical Protestant tradition; interactive rows"},
+        {"parentId":"baptist-mainline","coverage":"selected","children":["abcusa","other-baptist-mainline"],"sourceId":"classification","locator":"Baptist > Baptist family in the mainline Protestant tradition; interactive rows"},
+        {"parentId":"baptist-historically-black","coverage":"selected","children":["nbc-usa","nbca","pnbc","independent-baptist-historically-black","other-baptist-historically-black"],"sourceId":"classification","locator":"Baptist > Baptist family in the historically Black Protestant tradition; interactive rows"},
+        {"parentId":"presbyterian-evangelical","coverage":"selected","children":["pca","other-presbyterian-evangelical"],"sourceId":"classification","locator":"Presbyterian > Presbyterian in the evangelical Protestant tradition; interactive rows"},
+        {"parentId":"presbyterian-mainline","coverage":"selected","children":["pcusa","other-presbyterian-mainline"],"sourceId":"classification","locator":"Presbyterian > Presbyterian in the mainline Protestant tradition; interactive rows"},
+        {"parentId":"methodist-evangelical","coverage":"selected","children":["global-methodist"],"sourceId":"classification","locator":"Methodist > Methodist family in the evangelical Protestant tradition"},
+        {"parentId":"methodist-mainline","coverage":"selected","children":["umc"],"sourceId":"classification","locator":"Methodist > Methodist family in the mainline Protestant tradition"},
+        {"parentId":"methodist-historically-black","coverage":"selected","children":["ame"],"sourceId":"classification","locator":"Methodist > Methodist family in the historically Black Protestant tradition"},
+        {"parentId":"lutheran-evangelical","coverage":"selected","children":["lcms"],"sourceId":"classification","locator":"Lutheran > Lutheran in the evangelical Protestant tradition"},
+        {"parentId":"lutheran-mainline","coverage":"selected","children":["elca"],"sourceId":"classification","locator":"Lutheran > Lutheran in the mainline Protestant tradition"},
+        {"parentId":"pentecostal-evangelical","coverage":"selected","children":["assemblies-of-god","cog-cleveland"],"sourceId":"classification","locator":"Pentecostal > Pentecostal in the evangelical Protestant tradition"},
+        {"parentId":"pentecostal-historically-black","coverage":"selected","children":["cogic"],"sourceId":"classification","locator":"Pentecostal > Pentecostal in the historically Black Protestant tradition"}
+      ]
+    }
+  }
+}
