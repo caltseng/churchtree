@@ -19,7 +19,8 @@ specified exclusions and spelling conventions; see the [source/licensing memo](d
 The optional chapter-study layer is being developed separately; don't treat a
 research plan or an incomplete note file as a published scholarly commentary.
 
-The explorer supports desktop and mobile. Drill-ins open the detailed timeline;
+The explorer opens on the vertical timeline on desktop and mobile. Choose Compact
+lineage to see the connected major-branches overview. Drill-ins open the detailed timeline;
 Vertical / Horizontal is a direct toggle. Nearby timeline entries collapse into
 named groups, while splits and mergers use distinct branch lanes. Origin context
 can remain visible without a fixed place on the time scale. Mobile profiles open

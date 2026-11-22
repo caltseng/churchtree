@@ -12,7 +12,8 @@ Home is a tile-based picker of available tools. Church History and the Westminst
 Confession reader are independent routes with shared identity and semantic theme
 tokens. Adding a tool should extend the inventory without displacing existing routes.
 
-Church History begins with connected major traditions. A drill-in opens a detailed
+Church History opens on the vertical timeline across all branches. The Compact
+lineage overview shows connected major traditions. A drill-in opens a detailed
 scoped timeline in the last orientation. A Vertical/Horizontal toggle changes the
 proportional time axis while retaining date context. Compact lineage provides an
 alternative readable chronology. Splits diverge into lanes and mergers converge;

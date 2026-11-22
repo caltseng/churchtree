@@ -8,7 +8,7 @@
     }
     const nodes = new Map(d.nodes.map(n => [n.id, n])), sources = new Map(d.sources.map(s => [s.id, s])), citations = new Map(d.citations.map(c => [c.id, c]));
     const families = [...new Set(d.nodes.map(n => n.tradition_family || 'Other'))].sort();
-    let level = 0, family = '', selected = null, focus = null, layout = 'lineage', period = null, timelineControl = null, lastTimeline = 'timeline';
+    let level = 0, family = '', selected = null, focus = null, layout = 'timeline', period = null, timelineControl = null, lastTimeline = 'timeline';
     let graphControl=null,graphViewKey='';
     const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const label = n => n.short_label || n.name;

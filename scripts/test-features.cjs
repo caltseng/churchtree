@@ -17,12 +17,12 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   }
   await page.reload();assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
   await page.screenshot({path:path.join(output,`home-ink-${size.width}.png`),fullPage:true});
-  await page.locator('.tool-card[data-id="church-history"]').click();await page.locator('[data-id="family:Presbyterian"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
+  await page.locator('.tool-card[data-id="church-history"]').click();await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
   await page.getByRole('link',{name:'Main Branch home',exact:true}).click();assert.equal(await page.locator('.tool-card').count(),2);
   await page.locator('.tool-card[data-id="westminster"]').click();assert.match(page.url(),/\/wcf\/$/);assert.equal(await page.locator('.passage').count(),172);assert(await page.locator('#chapter-1').isVisible());assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
   await page.goto(base+'/');await page.locator('#theme-open').click();await page.locator('#theme-reset').click();await page.locator('#theme-close').click();assert.equal(await page.locator('html').getAttribute('data-theme'),'parchment');
   await page.screenshot({path:path.join(output,`home-${size.width}.png`),fullPage:true});
-  assert(await page.locator('.main-branch-symbol').evaluateAll(images=>images.length>0&&images.every(img=>img.complete&&img.naturalWidth>0)));assert.match(await page.locator('link[rel=icon]').getAttribute('href'),/main-branch\.svg$/);await page.locator('.growing-note a').click();await page.locator('[data-id="family:Presbyterian"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  assert(await page.locator('.main-branch-symbol').evaluateAll(images=>images.length>0&&images.every(img=>img.complete&&img.naturalWidth>0)));assert.match(await page.locator('link[rel=icon]').getAttribute('href'),/main-branch\.svg$/);await page.locator('.growing-note a').click();await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   assert.deepEqual(errors,[]);await page.close();console.log(`Landing, themes, links and logos ${size.width}px: passed`);
  }
  const redirectPage=await browser.newPage();await redirectPage.goto(base+'/westminster/#section-23-3');await redirectPage.waitForURL('**/wcf/#section-23-3');assert(await redirectPage.locator('#section-23-3').isVisible());await redirectPage.close();

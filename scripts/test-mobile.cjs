@@ -7,7 +7,10 @@ const server=require('./test-server.cjs')(root);
  browser=await chromium.launch({...(process.env.PLAYWRIGHT_CHANNEL==='chromium'?{}:{channel:process.env.PLAYWRIGHT_CHANNEL||'msedge'}),headless:true});
  for(const size of [{width:390,height:844},{width:320,height:568},{width:768,height:1024},{width:1024,height:768},{width:844,height:390}]){
   const context=await browser.newContext({viewport:size,isMobile:true,hasTouch:true,deviceScaleFactor:1});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
-  await page.goto(`http://127.0.0.1:${server.address().port}/church-history/`);await page.locator('[data-id="family:Presbyterian"]').waitFor();
+  await page.goto(`http://127.0.0.1:${server.address().port}/church-history/`);await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();
+  assert.equal(await page.locator('#layout').inputValue(),'timeline');
+  assert.equal(await page.locator('#branch').inputValue(),'');
+  assert.equal(await page.locator('#orientation-vertical').getAttribute('aria-pressed'),'true');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Page must fit the mobile width');
   assert.equal(await page.locator('#splitter').isVisible(),false);
   const searchToggle=page.getByRole('button',{name:'Search church history',exact:true});

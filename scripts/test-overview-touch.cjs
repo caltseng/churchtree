@@ -1,11 +1,17 @@
 const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const repo=path.resolve(__dirname,'..'),root=path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT||'.'),server=require('./test-server.cjs')(root),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
+async function selectOverview(page){
+  await page.getByRole('button',{name:'Filters / View',exact:true}).tap();
+  await page.locator('#layout').selectOption('lineage');
+  await page.getByRole('button',{name:'Filters / View',exact:true}).tap();
+  await page.locator('[data-id="family:Catholic"]').waitFor();
+}
 (async()=>{let browser;try{
  await new Promise(r=>server.listen(0,'127.0.0.1',r));browser=await chromium.launch({...(process.env.PLAYWRIGHT_CHANNEL==='chromium'?{}:{channel:process.env.PLAYWRIGHT_CHANNEL||'msedge'}),headless:true});
  for(const size of [{width:320,height:568},{width:390,height:844},{width:768,height:1024},{width:844,height:390}]){
   const context=await browser.newContext({viewport:size,isMobile:true,hasTouch:true});const page=await context.newPage();
-  await page.goto(process.env.OVERVIEW_TEST_URL||`http://127.0.0.1:${server.address().port}/church-history/`);await page.locator('[data-id="family:Catholic"]').waitFor();await page.waitForTimeout(250);
+  await page.goto(process.env.OVERVIEW_TEST_URL||`http://127.0.0.1:${server.address().port}/church-history/`);await selectOverview(page);await page.waitForTimeout(250);
   const client=await context.newCDPSession(page),graph=page.locator('#graph');
   async function gesture(a,b){await client.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:a});for(let i=1;i<=12;i++){await client.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:a.map((p,j)=>({id:j,x:p.x+(b[j].x-p.x)*i/12,y:p.y+(b[j].y-p.y)*i/12}))});await page.waitForTimeout(16);}await client.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(80);}
   const box=await graph.boundingBox(),x=box.x+box.width*.5,y=box.y+Math.min(190,(size.height-box.y)*.5);
@@ -28,7 +34,7 @@ const repo=path.resolve(__dirname,'..'),root=path.resolve(repo,process.env.CHURC
    for(let i=0;i<3;i++)await gesture(a,b);assert.equal(await page.evaluate(()=>CHURCHTREE_GRAPH.snapshot().scale),4,'Spatial zoom has a usable upper bound');
    for(let i=0;i<4;i++)await gesture(b,a);assert.equal(await page.evaluate(()=>CHURCHTREE_GRAPH.snapshot().scale),.5,'Repeated reverse pinch has a lower bound');
   }
-  await page.reload();await page.locator('[data-id="family:Catholic"]').waitFor();
+  await page.reload();await selectOverview(page);
   const header=await page.locator('#scope-title').boundingBox(),filter=await page.locator('#mobile-settings-toggle').boundingBox(),details=await page.getByRole('button',{name:'Details',exact:true}).boundingBox();
   assert.equal(await page.locator('#scope-title').innerText(),'Major branches');assert(Math.abs(header.y+header.height/2-filter.y-filter.height/2)<3);assert(Math.abs(details.y-filter.y)<3,'Scope and action buttons share one row');
   assert(await page.locator('#scope-title').evaluate(el=>el.scrollWidth<=el.clientWidth),'Major branches title fits without truncation');
