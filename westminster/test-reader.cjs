@@ -86,7 +86,7 @@ async function run() {
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
       await page.screenshot({ path: path.join(repoRoot, `.tmp/browser-check/reader-${size.width}x${size.height}.png`) });
       await page.goto(url + '#chapter-33');
-      await page.locator('#chapter-33 .chapter-nav-top a').click();
+      await page.locator('#chapter-33 .chapter-nav-top a').last().click();
       await page.locator('#chapter-1').waitFor({ state: 'visible' });
       await page.goBack();
       await page.locator('#chapter-33').waitFor({ state: 'visible' });
