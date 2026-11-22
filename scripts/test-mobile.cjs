@@ -7,13 +7,33 @@ const server=require('./test-server.cjs')(root);
  browser=await chromium.launch({...(process.env.PLAYWRIGHT_CHANNEL==='chromium'?{}:{channel:process.env.PLAYWRIGHT_CHANNEL||'msedge'}),headless:true});
  for(const size of [{width:390,height:844},{width:320,height:568},{width:768,height:1024},{width:1024,height:768},{width:844,height:390}]){
   const context=await browser.newContext({viewport:size,isMobile:true,hasTouch:true,deviceScaleFactor:1});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
-  await page.goto(`http://127.0.0.1:${server.address().port}/church-history/`);await page.locator('[data-id="family:Presbyterian"]').waitFor();
+  await page.goto(`http://127.0.0.1:${server.address().port}/church-history/`);await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();
+  assert.equal(await page.locator('#layout').inputValue(),'timeline');
+  assert.equal(await page.locator('#branch').inputValue(),'');
+  assert.equal(await page.locator('#orientation-vertical').getAttribute('aria-pressed'),'true');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Page must fit the mobile width');
   assert.equal(await page.locator('#splitter').isVisible(),false);
   const searchToggle=page.getByRole('button',{name:'Search church history',exact:true});
   assert(!await page.locator('#search-form').isVisible(),'Search starts collapsed');
   const headerBefore=await page.locator('header').evaluate(el=>el.clientHeight);
   await page.screenshot({path:path.join(output,`mobile-search-collapsed-${size.width}.png`)});
+  if(size.width===390){
+   await page.getByRole('button',{name:'Zoom in',exact:true}).tap();
+   await page.waitForFunction(()=>CHURCHTREE_TIMELINE.snapshot().scale>=1.7);
+   const node=page.locator('#graph .node[data-id="episcopal-church"]');
+   await node.scrollIntoViewIfNeeded();
+   const snapshot=()=>page.evaluate(()=>{
+    const {domain,scale}=CHURCHTREE_TIMELINE.snapshot();
+    return {domain,scale};
+   });
+   const before=await snapshot();
+   await node.tap();
+   await page.getByRole('dialog',{name:'Historical details'}).waitFor();
+   assert.match(await page.locator('#details h2').innerText(),/Episcopal Church/);
+   assert.equal(await page.locator('#branch').inputValue(),'');
+   assert.deepEqual(await snapshot(),before);
+   await page.getByRole('button',{name:'Back to graph'}).tap();
+  }
   await searchToggle.tap();
   assert.equal(await searchToggle.getAttribute('aria-expanded'),'true');
   assert(await page.locator('#search').evaluate(el=>el===document.activeElement),'Opening search focuses input');
