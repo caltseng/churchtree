@@ -186,13 +186,13 @@
       "reportStrings": {"evangelical": "23.1%", "mainline": "11.5%", "historically-black": "5.4%"},
       "scopeCheck": "Both are 2023-24 U.S. adults, adult affiliation, the three Pew Protestant traditions. Chapter 1 and Appendix B define the same denomination/race/born-again classification. Neither source is a percent-of-Protestants value here.",
       "precedence": "Prefer the report's expressly published national decimals after matching wave, denominator and taxonomy. Preserve the independently published interactive strings as corroboration, not as re-rounded values. No unrounded microdata is available here to explain the 11.5 versus 11 display; do not assert ordinary rounding of 11.5 produces 11.",
-      "reviewStatus": "awaiting-second-review"
+      "reviewStatus": "reconciled"
     },
     {
       "id": "named-denominations",
       "records": ["sbc", "abcusa", "nbc-usa", "nbca", "pnbc", "pcusa", "pca"],
       "precedence": "Use p. 87 decimals, corroborated by p. 30; PNB Convention's <0.3% is on p. 30 only. Match interactive parentage against Appendix B. Names offered or volunteered in Appendix B alone never generate a numeric row.",
-      "reviewStatus": "awaiting-second-review"
+      "reviewStatus": "reconciled"
     }
   ],
   "omissions": [
@@ -204,7 +204,13 @@
     "PRRI Christian nationalism and USRC counts remain link-only follow-ups; no reuse permission for their public data republication is claimed."
   ],
   "review": {
-    "status": "awaiting-second-review",
-    "instructions": "Reconcile every selected published string, qualifier, denominator and parentage against the source panels and record paths, especially tradition-precision. Initial transcription is not independent verification. Do not mark reviewed or enable auto-merge until the coordinator completes this reconciliation."
+    "status": "reconciled",
+    "checkedDate": "2026-11-22",
+    "reviewer": "Independent coordinating implementation session, separate from the initial transcription",
+    "reviewedCommit": "c9613120af2dd5aecc5c6d17b658fa47fbdf0ff5",
+    "sourceRevision": "Independent downloads matched both recorded report/topline SHA256 hashes; national interactive explicitly checked in its 2023-24 view on 2026-11-22.",
+    "scope": "All selected report family cells on printed pp. 25/86, denomination decimals on pp. 30/87, four p. 30 thresholds, p. 85 traditions, twelve p. 165 attendance NETs, topline p. 23 ATTENDPERRLS, every selected national-interactive path/value/qualifier, broad affiliation context, Appendix B family/tradition parentage including Independent Baptist race classification, and Terms sections 1-2 excerpt/attribution/non-endorsement boundaries.",
+    "result": "Passed with no selected value corrections. Approved report-decimal precedence after matching wave, national denominator and taxonomy; preserve the interactive's separate published strings without claiming ordinary rounding or an explanation from unobserved microdata.",
+    "instructions": "This reconciliation covers the cited selection and revision only. Changes to values, qualifiers, source mappings, classifications or excerpt scope require renewed independent review and a fresh reuse assessment as applicable."
   }
 }

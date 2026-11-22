@@ -65,11 +65,16 @@ This does not replace SBC's primary **4.4% of U.S. adults**.
 
 ## Source reconciliation procedure
 
-Initial source transcription and matching are complete. **Independent second
-review is pending**; see `review` and each decision's `reviewStatus` in
-`sources.json`. Do not claim that validation of local inputs is independent
-verification against the publisher. Do not enable auto-merge until the
-coordinator completes that reconciliation.
+**Independent second review passed November 22, 2026**, with no selected value
+corrections. The coordinating implementation session independently downloaded
+the report and topline, verified both recorded hashes, and reconciled every
+selected report cell, interactive path/value/qualifier, denominator and
+classification against the publisher. The review covered commit
+`c9613120af2dd5aecc5c6d17b658fa47fbdf0ff5`; subsequent changes here record the
+review, not new values. See `review` and each decision's `reviewStatus` in
+`sources.json` for revision, scope, source-precedence approval and reuse limits.
+Offline validation remains distinct from that independent source verification.
+Any expanded or changed selection requires renewed review.
 
 1. Open the [dated report](https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf).
    Check its SHA256 against `sources.json`. Report printed p. 85 is PDF p. 86,
