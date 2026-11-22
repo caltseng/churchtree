@@ -4,12 +4,19 @@
   "wave": "2023-24",
   "metric": "Adult religious self-identification within the selected demographic population",
   "checkedDate": "2026-11-22",
-  "review": {"status": "pending", "scope": "36 broad affiliation cells in twelve independent demographic populations; definitions, denominators, source precedence and excerpt reuse"},
+  "review": {
+    "status": "passed",
+    "reviewedCommit": "606dff5b766d74d5c8af8e75898296c5e4142e9b",
+    "checkedDate": "2026-11-22",
+    "reviewer": "Coordinating implementation session, independent primary-source reconciliation",
+    "scope": "All 36 broad affiliation cells, twelve published nonresponse notes, four age subgroup margins of error, denominators, demographic definitions, source locators and renewed limited-excerpt reuse",
+    "result": "No numeric corrections. Independently checked report printed pp. 89, 95, 97, 98 and 348, all four interactive 2023-24 top-level cards and footnotes, and the pinned questionnaire SHA256. Corrected instrument locator to YOBMOD p. 74 (not unsupported BIRTHYR); clarified EDUC_ACS p. 74. Reviewer approved these locator/review-only corrections without further reconciliation."
+  },
   "reuse": {
     "termsUrl": "https://www.pewresearch.org/about/terms-and-conditions/",
     "effectiveDate": "2018-05-25",
     "checkedDate": "2026-11-22",
-    "decision": "Selected original broad-affiliation comparison under sections 1 and 2; section 3 restrictions and section 13 dataset terms reviewed. Independent reconciliation pending.",
+    "decision": "Selected original broad-affiliation comparison under sections 1 and 2; section 3 restrictions and section 13 dataset terms reviewed. Independent reconciliation passed November 22, 2026 for this 36-cell limited selection plus existing excerpt.",
     "limits": "Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database."
   },
   "caveat": "Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.",
@@ -19,10 +26,10 @@
     {"id": "unaffiliated", "label": "Religiously unaffiliated", "sourceRow": "Religiously unaffiliated"}
   ],
   "dimensions": [
-    {"id": "age", "label": "Age", "definition": "Published age bins: 18-29, 30-49, 50-64 and 65+. The survey asks year of birth; approximate age is survey year (2023 or 2024) minus birth year. These are not birth-cohort tables or ages in the current calendar year.", "instrumentLocator": "BIRTHYR; report printed p. 89 (PDF p. 90), age calculation note."},
+    {"id": "age", "label": "Age", "definition": "Published age bins: 18-29, 30-49, 50-64 and 65+. The survey asks year of birth; approximate age is survey year (2023 or 2024) minus birth year. These are not birth-cohort tables or ages in the current calendar year.", "instrumentLocator": "English/Spanish web/phone questionnaire printed/PDF p. 74, YOBMOD; report printed p. 89 (PDF p. 90), age calculation note."},
     {"id": "gender", "label": "Gender", "definition": "Self-described gender, not sex assigned at birth. GENDER asks: Do you describe yourself as a man, a woman or in some other way? Only the published Men and Women columns are selected; no estimate for In some other way is available in this table. The selection is not an exhaustive gender classification.", "instrumentLocator": "English/Spanish web/phone questionnaire printed/PDF p. 82, GENDER; Appendix A, report printed p. 348 (PDF p. 349)."},
     {"id": "race-ethnicity", "label": "Race/ethnicity", "definition": "White, Black and Asian adults report only one race and are not Hispanic. Hispanic adults may be of any race. Asian estimates represent English speakers only. Other racial identities and multiracial groups are not included in this selected published table.", "instrumentLocator": "Report printed p. 95 (PDF p. 96), table note; questionnaire race and Hispanic-origin items."},
-    {"id": "education", "label": "Education", "definition": "Use the report's two published groups: college graduates and adults with less than a college degree. College graduates include bachelor's and postgraduate degrees. Less than a college degree includes some college and associate degrees; do not interpret it as high school only.", "instrumentLocator": "English/Spanish web/phone questionnaire, EDUC_ACS; report printed p. 97 (PDF p. 98)."}
+    {"id": "education", "label": "Education", "definition": "Use the report's two published groups: college graduates and adults with less than a college degree. College graduates include bachelor's and postgraduate degrees. Less than a college degree includes some college and associate degrees; do not interpret it as high school only.", "instrumentLocator": "English/Spanish web/phone questionnaire printed/PDF p. 74, EDUC_ACS; report printed p. 97 (PDF p. 98)."}
   ],
   "sources": [
     {"id": "report", "title": "Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off", "publisher": "Pew Research Center", "publicationDate": "2025-02-26", "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf", "revision": "Dated February 26, 2025 report downloaded November 22, 2026", "sha256": "0851c7a9bea9d6bb85a43d6dea1281037550e535e6f35db9d04cd6e60cb4e4c3"},

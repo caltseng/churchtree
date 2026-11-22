@@ -273,11 +273,19 @@ HTML snapshot is identical. The main and demographic ledgers resolve every
 cell and preserve exact source-row/column/path locators. No downloaded report,
 image, instrument, full database or snapshot is committed or published.
 
-**Independent demographic reconciliation is pending.** Existing national
-affiliation and attendance review does not cover this expansion. Keep its PR
-draft even with passing CI: the repository's trusted-PR workflow can merge
-non-draft PRs. Send the draft revision and complete demographic ledger to the
-coordinator; record the reviewed commit/scope and corrections before making it
-ready. Renewed Terms review limits this expansion to the original 36-cell
-broad comparison and preserves credit/notices/no endorsement; no written
-permission or principal-part republication is claimed.
+**Independent demographic reconciliation passed November 22, 2026**, covering
+revision `606dff5b766d74d5c8af8e75898296c5e4142e9b`: all 36 cells, twelve
+nonresponse notes, four age margins of error, denominators, definitions and
+renewed limited-excerpt reuse. No numeric corrections. The reviewer corrected
+the age instrument item to **YOBMOD, questionnaire p. 74** (not BIRTHYR), and
+clarified **EDUC_ACS, p. 74**. These locator/review-only follow-ups were approved
+without a second reconciliation. The recorded review does not imply Pew's
+review or endorsement of Main Branch.
+
+For future expanded selections, existing national affiliation/attendance review
+is not sufficient. Keep the PR draft even with passing CI: the repository's
+trusted-PR workflow can merge non-draft PRs. Send the draft revision and complete
+demographic ledger to the coordinator; record the reviewed commit/scope and
+corrections before making it ready. Renewed Terms review limits this expansion
+to the original 36-cell broad comparison and preserves credit/notices/no
+endorsement; no written permission or principal-part republication is claimed.
