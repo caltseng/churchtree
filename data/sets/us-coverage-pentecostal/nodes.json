@@ -1,0 +1,812 @@
+[
+  {
+    "id": "full-gospel-christian-assemblies-international",
+    "name": "Full Gospel Christian Assemblies International",
+    "short_label": "FGCAI",
+    "aliases": [
+      "FGCAI"
+    ],
+    "kind": "movement",
+    "start_year": 1983,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Pentecostal",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "summary": "An Apostolic and prophetic ministry organized in the Chicago area by Ron and Barbara Wilson. Its public history centers on the Illinois congregation and its outreach.",
+    "profile_scope": "U.S. origins in 1983, publicly documented Illinois ministry and the 2020 FFR census entry. The nationwide affiliate relationship remains unverified.",
+    "formation_narrative": "On October 2, 1983, Ron and Barbara Wilson began the ministry in the home of elders Tyrone and Bernice Green. The church recalls its first public service above a Chicago camera shop and several temporary meeting places. Its stated aim is restoration through the Christian gospel, with ministries for families and people of different ages.",
+    "ending_narrative": "From a permanent base in South Chicago Heights, the church developed radio and television outreach and a school for ministry training. It later moved to Hazel Crest. The ministry continues there and describes Ron Wilson’s Coalition of Apostolic and International Ministries as a network for mutual support. The relationship between that coalition and the national census list is unresolved.",
+    "core_beliefs": [
+      "The church identifies its ministry as Apostolic and prophetic, centering its message on salvation in Jesus.",
+      "Its public account emphasizes repentance, restoration and deliverance. Its formal position on the Godhead and the baptismal formula remains unverified."
+    ],
+    "size_estimate": "240,878 estimated U.S. adherents across 722 listed congregations (2020 U.S. Religion Census, FFR). The census relied on commercial mailing lists. The affiliation roster has not been verified.",
+    "key_figures": [
+      {
+        "name": "Ron Wilson",
+        "role": "Co-founder",
+        "summary": "Led the church with Barbara Wilson and organized the Coalition of Apostolic and International Ministries.",
+        "url": "https://fgcai.org/history/",
+        "citations": [
+          "cite-us-pent-fgh",
+          "cite-us-pent-fgc"
+        ]
+      },
+      {
+        "name": "Barbara Wilson",
+        "role": "Co-founder",
+        "summary": "Helped launch the church and taught with Ron Wilson in the United States and abroad.",
+        "url": "https://fgcai.org/history/",
+        "citations": [
+          "cite-us-pent-fgh"
+        ]
+      },
+      {
+        "name": "Tyrone and Bernice Green",
+        "role": "Founding hosts",
+        "summary": "The church’s elders hosted the 1983 founding gathering in their home.",
+        "url": "https://fgcai.org/history/",
+        "citations": [
+          "cite-us-pent-fgh"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1983,
+        "label": "Ministry founded on October 2 in the Greens’ home",
+        "citations": [
+          "cite-us-pent-fgh"
+        ]
+      },
+      {
+        "year": 2020,
+        "label": "National census lists the body under code FFR",
+        "citations": [
+          "cite-us-pent-ffr-count",
+          "cite-us-pent-mailing"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "FGCAI Mission Statement",
+        "year": null,
+        "significance": "Public statement of the ministry’s purpose. No dated founding constitution or formal confession has been verified.",
+        "url": "https://fgcai.org/mission-statement/",
+        "citations": [
+          "cite-us-pent-fgm"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "FGCAI church history",
+        "url": "https://fgcai.org/history/",
+        "snippet": "Read the account of the people, events, and institutions behind the profile.",
+        "citations": [
+          "cite-us-pent-fgh"
+        ]
+      },
+      {
+        "title": "FGCAI mission statement",
+        "url": "https://fgcai.org/mission-statement/",
+        "snippet": "Public statement of the ministry’s purpose. No dated founding constitution or formal confession has been verified.",
+        "citations": [
+          "cite-us-pent-fgm"
+        ]
+      }
+    ],
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-us-pent-fgh"
+      ],
+      "profile_scope": [
+        "cite-us-pent-fgh",
+        "cite-us-pent-fgm"
+      ],
+      "formation_narrative": [
+        "cite-us-pent-fgh",
+        "cite-us-pent-fgm"
+      ],
+      "ending_narrative": [
+        "cite-us-pent-fgh",
+        "cite-us-pent-fgc",
+        "cite-us-pent-mailing"
+      ],
+      "core_beliefs": [
+        "cite-us-pent-fgh",
+        "cite-us-pent-fgm"
+      ],
+      "size_estimate": [
+        "cite-us-pent-ffr-count",
+        "cite-us-pent-mailing"
+      ]
+    },
+    "citations": [
+      "cite-us-pent-fgh",
+      "cite-us-pent-fgm",
+      "cite-us-pent-fgc",
+      "cite-us-pent-mailing",
+      "cite-us-pent-ffr-count"
+    ]
+  },
+  {
+    "id": "vineyard-usa",
+    "name": "Vineyard USA",
+    "short_label": "Vineyard",
+    "aliases": [
+      "Vineyard",
+      "Association of Vineyard Churches"
+    ],
+    "kind": "movement",
+    "start_year": 1974,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Pentecostal",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "summary": "A U.S. association of locally governed churches with roots in Southern California evangelical and charismatic renewal. Vineyard emphasizes God’s kingdom, prayer for healing, and the gifts of the Holy Spirit.",
+    "profile_scope": "U.S. network. The 1974 marker denotes the first congregation in the network’s own origin account. The wider international movement and individual congregations are outside this profile.",
+    "formation_narrative": "In 1974 Calvary Chapel sent Kenn Gulliksen to start a church in West Los Angeles. A small fellowship of churches took the Vineyard name. John Wimber’s Anaheim congregation separated from its Calvary Chapel affiliation and joined the Vineyard in 1982, when Wimber emerged as the network’s leader. Church planting and ministry that combined evangelism with prayer for healing helped give the early network its shape.",
+    "ending_narrative": "The network grew through church planting under Wimber. The national body later clarified its relationship to local churches through revised bylaws and a National Leadership Handbook. Its 2026 handbook sets shared standards for affiliation and pastoral accountability while affirming local governance.",
+    "core_beliefs": [
+      "Vineyard’s Trinitarian statement describes the kingdom of God as already breaking into the present through Jesus, with its fullness still to come.",
+      "Churches are encouraged to pray for healing, welcome the Spirit’s gifts, pursue justice and care for people in need."
+    ],
+    "size_estimate": "155,836 U.S. adherents across 499 congregations (2020 U.S. Religion Census).",
+    "key_figures": [
+      {
+        "name": "Kenn Gulliksen",
+        "role": "Founding church planter",
+        "summary": "Started the West Los Angeles congregation and led the early association.",
+        "url": "https://vineyardusa.org/about/history/",
+        "citations": [
+          "cite-us-pent-vh"
+        ]
+      },
+      {
+        "name": "John Wimber",
+        "role": "Early network leader",
+        "summary": "Brought the Anaheim church into the association and helped spread its model of church planting and healing prayer.",
+        "url": "https://vineyardusa.org/about/john-wimber/",
+        "citations": [
+          "cite-us-pent-vw",
+          "cite-us-pent-vh"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1974,
+        "label": "Gulliksen starts the first Vineyard congregation in West Los Angeles",
+        "citations": [
+          "cite-us-pent-vh"
+        ]
+      },
+      {
+        "year": 1982,
+        "label": "Wimber’s Anaheim congregation joins the Vineyard network",
+        "citations": [
+          "cite-us-pent-vw"
+        ]
+      },
+      {
+        "year": 2026,
+        "label": "Version 3.0 of the National Leadership Handbook takes effect",
+        "citations": [
+          "cite-us-pent-vn"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Vineyard Core Values and Statement of Faith",
+        "year": null,
+        "significance": "Published statement setting out Vineyard’s kingdom theology and Trinitarian beliefs.",
+        "url": "https://vineyardusa.org/Vineyard-Core-Values-Beliefs.pdf",
+        "citations": [
+          "cite-us-pent-vb"
+        ]
+      },
+      {
+        "title": "National Leadership Handbook, version 3.0",
+        "year": 2026,
+        "significance": "Ratified handbook governing the United States network’s shared life and relationship to local churches.",
+        "url": "https://vineyardusa.org/handbook/",
+        "citations": [
+          "cite-us-pent-vn"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Vineyard USA — History & Legacy",
+        "url": "https://vineyardusa.org/about/history/",
+        "snippet": "Read the account of the people, events, and institutions behind the profile.",
+        "citations": [
+          "cite-us-pent-vh"
+        ]
+      },
+      {
+        "title": "Vineyard USA — Core Values & Beliefs",
+        "url": "https://vineyardusa.org/Vineyard-Core-Values-Beliefs.pdf",
+        "snippet": "Published statement setting out Vineyard’s kingdom theology and Trinitarian beliefs.",
+        "citations": [
+          "cite-us-pent-vb"
+        ]
+      },
+      {
+        "title": "Vineyard USA — National Leadership Handbook",
+        "url": "https://vineyardusa.org/handbook/",
+        "snippet": "Ratified handbook governing the United States network’s shared life and relationship to local churches.",
+        "citations": [
+          "cite-us-pent-vn"
+        ]
+      }
+    ],
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-us-pent-vh"
+      ],
+      "profile_scope": [
+        "cite-us-pent-vh",
+        "cite-us-pent-vw",
+        "cite-us-pent-vg"
+      ],
+      "formation_narrative": [
+        "cite-us-pent-vh",
+        "cite-us-pent-vw",
+        "cite-us-pent-vg"
+      ],
+      "ending_narrative": [
+        "cite-us-pent-vg",
+        "cite-us-pent-vn"
+      ],
+      "core_beliefs": [
+        "cite-us-pent-vb"
+      ],
+      "size_estimate": [
+        "cite-us-pent-vineyard-count"
+      ]
+    },
+    "citations": [
+      "cite-us-pent-vh",
+      "cite-us-pent-vw",
+      "cite-us-pent-vg",
+      "cite-us-pent-vn",
+      "cite-us-pent-vb",
+      "cite-us-pent-vineyard-count"
+    ]
+  },
+  {
+    "id": "church-of-our-lord-jesus-christ-of-the-apostolic-faith",
+    "name": "Church of Our Lord Jesus Christ of the Apostolic Faith, Inc.",
+    "short_label": "COOLJC",
+    "aliases": [
+      "Church of Our Lord Jesus Christ",
+      "COOLJC"
+    ],
+    "kind": "denomination",
+    "start_year": 1919,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Pentecostal",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "summary": "A historically Black Oneness Pentecostal denomination founded by Robert C. Lawson in Harlem in 1919.",
+    "profile_scope": "The denomination founded by Lawson, with selected U.S. developments from founding to its continuing organization.",
+    "formation_narrative": "Robert C. Lawson founded the church in Harlem in 1919 after ministering in several cities. His church’s history connects his preaching to his 1914 baptism in Jesus’ name and experience of receiving the Holy Spirit. The Harlem work became the center of a denomination with an evangelistic mission and its own congregations.",
+    "ending_narrative": "The national convocation organized a women’s missionary department in 1923, giving women a formal role in evangelism, care, and missions. The Schomburg collection documents distinct bodies that emerged from Lawson’s church, including Sherrod C. Johnson’s church in 1933 and Bible Way as a separately incorporated denomination in 1957. After Lawson died in 1961, Hubert J. Spencer presided and William L. Bonner took leadership of Greater Refuge Temple. Bonner later presided over the denomination from 1973 to 1995. The church continues with a Board of Apostles and missionary work.",
+    "core_beliefs": [
+      "Oneness teaching identifies the one God as Father in creation, Son in redemption, and Holy Spirit in the church. COOLJC understands Jesus as fully divine.",
+      "The published Statement of Faith treats water baptism in Jesus’ name and rebirth by the Holy Spirit as essential and anticipates Christ’s return and resurrection."
+    ],
+    "size_estimate": "85,938 estimated U.S. adherents across 527 congregations (2020 U.S. Religion Census, using directory and address-list data).",
+    "key_figures": [
+      {
+        "name": "Robert C. Lawson",
+        "role": "Founder",
+        "summary": "Established the Harlem work in 1919 after ministering in several U.S. cities.",
+        "url": "https://www.cooljc.org/founder/",
+        "citations": [
+          "cite-us-pent-ch",
+          "cite-us-pent-ca"
+        ]
+      },
+      {
+        "name": "Hubert J. Spencer",
+        "role": "Presider after Lawson",
+        "summary": "Chosen to preside when a Board of Apostles took shape after Lawson’s death.",
+        "url": "https://www.cooljc.org/our-story/",
+        "citations": [
+          "cite-us-pent-cb"
+        ]
+      },
+      {
+        "name": "William L. Bonner",
+        "role": "Greater Refuge Temple pastor and later presider",
+        "summary": "Took charge of the Harlem mother church in 1961 and later led the denomination.",
+        "url": "https://www.cooljc.org/our-story/",
+        "citations": [
+          "cite-us-pent-cb"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1919,
+        "label": "Lawson establishes the Harlem work and denomination",
+        "citations": [
+          "cite-us-pent-ca",
+          "cite-us-pent-ch"
+        ]
+      },
+      {
+        "year": 1923,
+        "label": "National Missionary Department organized at the New York convocation",
+        "citations": [
+          "cite-us-pent-cm"
+        ]
+      },
+      {
+        "year": 1957,
+        "label": "Bible Way incorporates as a separate denomination",
+        "citations": [
+          "cite-us-pent-ca"
+        ]
+      },
+      {
+        "year": 1961,
+        "label": "Lawson dies and Spencer is chosen to preside",
+        "citations": [
+          "cite-us-pent-cb"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "COOLJC Statement of Faith",
+        "year": null,
+        "significance": "Published denominational account of Oneness, baptism, and the work of the Holy Spirit.",
+        "url": "https://www.cooljc.org/our-story/",
+        "citations": [
+          "cite-us-pent-cb"
+        ]
+      },
+      {
+        "title": "COOLJC Discipline Book",
+        "year": null,
+        "significance": "The credential application requires assent to the doctrine and rules in this book. Its full text and original adoption date remain unverified.",
+        "url": "https://www.cooljc.org/wp-content/uploads/2024/06/COOLJC-APPLICATION-FOR-CREDENTIAL-20240527.pdf",
+        "citations": [
+          "cite-us-pent-cd"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Schomburg Center — Alexander and Shirlene Stewart Pentecostal collection",
+        "url": "https://archives.nypl.org/scm/20818",
+        "snippet": "Read the account of the people, events, and institutions behind the profile.",
+        "citations": [
+          "cite-us-pent-ca"
+        ]
+      },
+      {
+        "title": "COOLJC — Our Story and Statement of Faith",
+        "url": "https://www.cooljc.org/our-story/",
+        "snippet": "Published denominational account of Oneness, baptism, and the work of the Holy Spirit.",
+        "citations": [
+          "cite-us-pent-cb"
+        ]
+      },
+      {
+        "title": "COOLJC — Ministerial credential application",
+        "url": "https://www.cooljc.org/wp-content/uploads/2024/06/COOLJC-APPLICATION-FOR-CREDENTIAL-20240527.pdf",
+        "snippet": "The credential application requires assent to the doctrine and rules in this book. Its full text and original adoption date remain unverified.",
+        "citations": [
+          "cite-us-pent-cd"
+        ]
+      }
+    ],
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-us-pent-ca"
+      ],
+      "profile_scope": [
+        "cite-us-pent-ca",
+        "cite-us-pent-ch",
+        "cite-us-pent-cb"
+      ],
+      "formation_narrative": [
+        "cite-us-pent-ca",
+        "cite-us-pent-ch",
+        "cite-us-pent-cb"
+      ],
+      "ending_narrative": [
+        "cite-us-pent-cm",
+        "cite-us-pent-ca",
+        "cite-us-pent-cb"
+      ],
+      "core_beliefs": [
+        "cite-us-pent-cb"
+      ],
+      "size_estimate": [
+        "cite-us-pent-cooljc-count",
+        "cite-us-pent-directory"
+      ]
+    },
+    "citations": [
+      "cite-us-pent-ca",
+      "cite-us-pent-ch",
+      "cite-us-pent-cb",
+      "cite-us-pent-cm",
+      "cite-us-pent-cooljc-count",
+      "cite-us-pent-directory",
+      "cite-us-pent-cd"
+    ]
+  },
+  {
+    "id": "united-pentecostal-church-international",
+    "name": "United Pentecostal Church International",
+    "short_label": "UPCI",
+    "aliases": [
+      "UPCI",
+      "United Pentecostal Church"
+    ],
+    "kind": "denomination",
+    "start_year": 1945,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Pentecostal",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "summary": "A Oneness Pentecostal denomination formed in 1945 by the union of the Pentecostal Church Incorporated and the Pentecostal Assemblies of Jesus Christ.",
+    "profile_scope": "The merger-created denomination and selected U.S. development. International structures are described only to distinguish them from the U.S. census footprint.",
+    "formation_narrative": "The Pentecostal Church Incorporated and the Pentecostal Assemblies of Jesus Christ united in 1945 at Kiel Auditorium in St. Louis. Merger discussions resumed in 1944. The union brought two existing Oneness fellowships into one organization with a shared doctrine and mission. The UPCI’s racial and ethnic affirmation places the merger in the history of earlier interracial unions and separations, and reports that most Black ministers had already left the Pentecostal Assemblies of Jesus Christ by 1938 amid segregation pressures.",
+    "ending_narrative": "The denomination reports that the union began with 521 North American churches and work in nine other nations. It developed Bible colleges and relief and mission ministries. It now operates internationally through a Global Council that brings together national organizations. The 2020 U.S. census count below covers congregations in the United States alone.",
+    "core_beliefs": [
+      "The Articles of Faith describe one God revealed in Jesus Christ.",
+      "The denomination teaches repentance, baptism by immersion in Jesus’ name, and receiving the Holy Spirit with speaking in tongues as the initial sign. It also emphasizes holy living."
+    ],
+    "size_estimate": "4,549 U.S. congregations (2020 U.S. Religion Census). U.S. adherent total unreported.",
+    "key_figures": [
+      {
+        "name": "Howard A. Goss",
+        "role": "First general superintendent",
+        "summary": "An early Assemblies of God organizer who left in 1916 after embracing Oneness teaching, then helped organize the UPCI as a leader of the PCI.",
+        "url": "https://archives.ifphc.org/pdf/Heritage/2011.pdf",
+        "citations": [
+          "cite-us-pent-goss",
+          "cite-us-pent-goss-office"
+        ]
+      },
+      {
+        "name": "William T. Witherspoon",
+        "role": "PAJC chair and first assistant general superintendent",
+        "summary": "Chaired the PAJC from 1938 to the 1945 merger and was elected assistant general superintendent at the conference.",
+        "url": "https://www.apostolicarchives.com/articles/article/8795590/173099.htm",
+        "citations": [
+          "cite-us-pent-witherspoon"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1938,
+        "label": "By this year, most Black ministers had left the Pentecostal Assemblies of Jesus Christ",
+        "citations": [
+          "cite-us-pent-ur"
+        ]
+      },
+      {
+        "year": 1945,
+        "label": "PCI and PAJC unite at the St. Louis merger conference",
+        "citations": [
+          "cite-us-pent-ua",
+          "cite-us-pent-uh"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "UPCI Articles of Faith",
+        "year": 2023,
+        "significance": "The cited edition documents the denomination’s fundamental doctrine and practical commitments. The year identifies this edition.",
+        "url": "https://dmc.upci.org/wp-content/uploads/2023/03/2023-UPCI-ARTICLES-OF-FAITH.pdf",
+        "citations": [
+          "cite-us-pent-ub"
+        ]
+      },
+      {
+        "title": "Racial and Ethnic Affirmation",
+        "year": null,
+        "significance": "Denominational position paper that assesses segregation and racial separation in the predecessor bodies.",
+        "url": "https://upci.org/wp-content/uploads/2022/12/Racial_and_Ethnic_Affirmation-with-Addendum.pdf",
+        "citations": [
+          "cite-us-pent-ur"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "UPCI — About the UPCI",
+        "url": "https://upci.org/about-the-upci/",
+        "snippet": "Read the account of the people, events, and institutions behind the profile.",
+        "citations": [
+          "cite-us-pent-uh"
+        ]
+      },
+      {
+        "title": "UPCI — 2023 Articles of Faith",
+        "url": "https://dmc.upci.org/wp-content/uploads/2023/03/2023-UPCI-ARTICLES-OF-FAITH.pdf",
+        "snippet": "The cited edition documents the denomination’s fundamental doctrine and practical commitments. The year identifies this edition.",
+        "citations": [
+          "cite-us-pent-ub"
+        ]
+      },
+      {
+        "title": "UPCI — Racial and Ethnic Affirmation",
+        "url": "https://upci.org/wp-content/uploads/2022/12/Racial_and_Ethnic_Affirmation-with-Addendum.pdf",
+        "snippet": "Denominational position paper that assesses segregation and racial separation in the predecessor bodies.",
+        "citations": [
+          "cite-us-pent-ur"
+        ]
+      }
+    ],
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-us-pent-uh"
+      ],
+      "profile_scope": [
+        "cite-us-pent-uh",
+        "cite-us-pent-ua",
+        "cite-us-pent-ur"
+      ],
+      "formation_narrative": [
+        "cite-us-pent-uh",
+        "cite-us-pent-ua",
+        "cite-us-pent-ur",
+        "cite-us-pent-merger"
+      ],
+      "ending_narrative": [
+        "cite-us-pent-ua",
+        "cite-us-pent-uh",
+        "cite-us-pent-upci-count"
+      ],
+      "core_beliefs": [
+        "cite-us-pent-ub",
+        "cite-us-pent-uh"
+      ],
+      "size_estimate": [
+        "cite-us-pent-upci-count"
+      ]
+    },
+    "citations": [
+      "cite-us-pent-uh",
+      "cite-us-pent-ua",
+      "cite-us-pent-ur",
+      "cite-us-pent-upci-count",
+      "cite-us-pent-ub",
+      "cite-us-pent-goss",
+      "cite-us-pent-goss-office",
+      "cite-us-pent-merger",
+      "cite-us-pent-witherspoon"
+    ]
+  },
+  {
+    "id": "church-of-god-of-prophecy",
+    "name": "Church of God of Prophecy",
+    "short_label": "COGOP",
+    "aliases": [
+      "COGOP",
+      "Tomlinson Church of God"
+    ],
+    "kind": "denomination",
+    "start_year": 1923,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Pentecostal",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "summary": "A Holiness Pentecostal denomination whose separate institutional history begins with the 1923 Church of God division and whose present name emerged from later litigation.",
+    "profile_scope": "Tomlinson-led branch and its continuation. The 1923 date marks separate organization, with shared roots in the earlier Appalachian Church of God.",
+    "formation_narrative": "The two churches trace their shared history to the Appalachian Christian Union and the early Church of God. In 1923 a conflict over leadership, finances and constitutional authority resulted in the removal of General Overseer A. J. Tomlinson. He and supporters continued separately. Their assembly minutes present rejection of the constitution as a return to biblical government. The Cleveland branch remained separately organized under F. J. Lee.",
+    "ending_narrative": "The Tomlinson branch expanded its missions, establishing a congregation in Costa Rica in 1932. M. A. Tomlinson succeeded his father after his death in 1943. After litigation over the shared name, the church adopted Church of God of Prophecy for public and business use in the early 1950s. The denomination continues today. The Church of God now based in Charleston, Tennessee, organized separately in 1993 and is a distinct body.",
+    "core_beliefs": [
+      "The church’s current published teaching affirms the Trinity, sanctification and growth in holiness, and baptism with the Holy Spirit evidenced initially by speaking in tongues.",
+      "The same sequence of sanctification followed by Spirit baptism appears in the Tomlinson branch’s 1951 Assembly minutes."
+    ],
+    "size_estimate": "1,614 U.S. congregations (2020 U.S. Religion Census). U.S. adherent total unreported.",
+    "key_figures": [
+      {
+        "name": "A. J. Tomlinson",
+        "role": "Leader of the continuing Tomlinson branch",
+        "summary": "Organized with supporters after losing the office of general overseer in the 1923 division.",
+        "url": "https://cogheritage.libraryhost.com/repositories/2/resources/25",
+        "citations": [
+          "cite-us-pent-pc",
+          "cite-us-pent-pa"
+        ]
+      },
+      {
+        "name": "F. J. Lee",
+        "role": "General overseer of the other Cleveland branch",
+        "summary": "Led the separately continuing branch and represented it in the name dispute.",
+        "url": "https://cogheritage.libraryhost.com/repositories/2/resources/25",
+        "citations": [
+          "cite-us-pent-pc",
+          "cite-us-pent-pj"
+        ]
+      },
+      {
+        "name": "M. A. Tomlinson",
+        "role": "Successor as general overseer",
+        "summary": "Succeeded his father and led the denomination during the subsequent dispute over its public name.",
+        "url": "https://cogheritage.libraryhost.com/repositories/2/resources/25",
+        "citations": [
+          "cite-us-pent-pc",
+          "cite-us-pent-pm",
+          "cite-us-pent-pf"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1907,
+        "label": "Undivided church adopts the name Church of God",
+        "citations": [
+          "cite-us-pent-pf"
+        ]
+      },
+      {
+        "year": 1923,
+        "label": "Removal of A. J. Tomlinson and separate organization of his followers",
+        "citations": [
+          "cite-us-pent-pc",
+          "cite-us-pent-pa"
+        ]
+      },
+      {
+        "year": 1943,
+        "label": "M. A. Tomlinson follows A. J. Tomlinson as general overseer",
+        "citations": [
+          "cite-us-pent-pc"
+        ]
+      },
+      {
+        "year": 1952,
+        "label": "Tennessee Supreme Court rules in the name dispute",
+        "citations": [
+          "cite-us-pent-pj"
+        ]
+      },
+      {
+        "year": 1993,
+        "label": "The Church of God now based in Charleston organizes separately",
+        "citations": [
+          "cite-us-pent-ps"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Tomlinson branch Assembly minutes",
+        "year": 1923,
+        "significance": "Contemporaneous record of the branch’s own case against the church constitution.",
+        "url": "https://cogop.org/wp-content/uploads/2025/03/1923-18th-Assembly-Minutes-compressed.pdf",
+        "citations": [
+          "cite-us-pent-pa"
+        ]
+      },
+      {
+        "title": "Assembly minutes",
+        "year": 1951,
+        "significance": "Records the Tomlinson branch’s published teachings before the public name change.",
+        "url": "https://library.cogop.org/documents/assembly-minutes-1951",
+        "citations": [
+          "cite-us-pent-pm"
+        ]
+      },
+      {
+        "title": "What We Believe",
+        "year": null,
+        "significance": "Current presentation of the church’s doctrines and practices.",
+        "url": "https://cogop.org/what-we-believe/",
+        "citations": [
+          "cite-us-pent-pb"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Hal Bernard Dixon Jr. Pentecostal Research Center — Tomlinson family collection",
+        "url": "https://cogheritage.libraryhost.com/repositories/2/resources/25",
+        "snippet": "Read the account of the people, events, and institutions behind the profile.",
+        "citations": [
+          "cite-us-pent-pc"
+        ]
+      },
+      {
+        "title": "Church of God of Prophecy — 1923 Assembly minutes",
+        "url": "https://cogop.org/wp-content/uploads/2025/03/1923-18th-Assembly-Minutes-compressed.pdf",
+        "snippet": "Contemporaneous record of the branch’s own case against the church constitution.",
+        "citations": [
+          "cite-us-pent-pa"
+        ]
+      },
+      {
+        "title": "Church of God of Prophecy Archives — 1951 Assembly minutes",
+        "url": "https://library.cogop.org/documents/assembly-minutes-1951",
+        "snippet": "Records the Tomlinson branch’s published teachings before the public name change.",
+        "citations": [
+          "cite-us-pent-pm"
+        ]
+      },
+      {
+        "title": "Church of God of Prophecy — What We Believe",
+        "url": "https://cogop.org/what-we-believe/",
+        "snippet": "Current presentation of the church’s doctrines and practices.",
+        "citations": [
+          "cite-us-pent-pb"
+        ]
+      }
+    ],
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-us-pent-pc"
+      ],
+      "profile_scope": [
+        "cite-us-pent-pc",
+        "cite-us-pent-pa",
+        "cite-us-pent-ph",
+        "cite-us-pent-pj"
+      ],
+      "formation_narrative": [
+        "cite-us-pent-pc",
+        "cite-us-pent-pa",
+        "cite-us-pent-ph",
+        "cite-us-pent-pj"
+      ],
+      "ending_narrative": [
+        "cite-us-pent-ph",
+        "cite-us-pent-pc",
+        "cite-us-pent-pf",
+        "cite-us-pent-pj",
+        "cite-us-pent-pd",
+        "cite-us-pent-ps"
+      ],
+      "core_beliefs": [
+        "cite-us-pent-pb",
+        "cite-us-pent-pm"
+      ],
+      "size_estimate": [
+        "cite-us-pent-cogop-count"
+      ]
+    },
+    "citations": [
+      "cite-us-pent-pc",
+      "cite-us-pent-pa",
+      "cite-us-pent-ph",
+      "cite-us-pent-pj",
+      "cite-us-pent-pf",
+      "cite-us-pent-pd",
+      "cite-us-pent-ps",
+      "cite-us-pent-pb",
+      "cite-us-pent-pm",
+      "cite-us-pent-cogop-count"
+    ]
+  }
+]

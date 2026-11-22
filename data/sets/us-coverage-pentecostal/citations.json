@@ -1,0 +1,224 @@
+[
+  {
+    "id": "cite-us-pent-ffr-count",
+    "source_id": "src-us-pent-census",
+    "locator": "Table 1, national row FFR",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-vineyard-count",
+    "source_id": "src-us-pent-census",
+    "locator": "Table 1, national row 463",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-cooljc-count",
+    "source_id": "src-us-pent-census",
+    "locator": "Table 1, national row 155",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-upci-count",
+    "source_id": "src-us-pent-census",
+    "locator": "Table 1, national row 454 (adherents NR)",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-cogop-count",
+    "source_id": "src-us-pent-census",
+    "locator": "Table 1, national row 145 (adherents NR)",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-mailing",
+    "source_id": "src-us-pent-mailing",
+    "locator": "p. 1, concluding paragraph on the two address-list-only bodies",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-directory",
+    "source_id": "src-us-pent-directory",
+    "locator": "pp. 1–2, online directories with address-list size data",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-fgh",
+    "source_id": "src-us-pent-fgh",
+    "locator": "Opening account and 1983–1989, 1989–1996, and 1996–2008 sections",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-fgm",
+    "source_id": "src-us-pent-fgm",
+    "locator": "Mission Statement",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-fgc",
+    "source_id": "src-us-pent-fgc",
+    "locator": "Coalition overview",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-vh",
+    "source_id": "src-us-pent-vh",
+    "locator": "Kenn Gulliksen and John Wimber sections",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-vw",
+    "source_id": "src-us-pent-vw",
+    "locator": "Relationship with Calvary Chapel and start of Anaheim Vineyard",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-vb",
+    "source_id": "src-us-pent-vb",
+    "locator": "Core Values and Statement of Faith",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-vg",
+    "source_id": "src-us-pent-vg",
+    "locator": "Brief Governance History and Bylaws Review",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-vn",
+    "source_id": "src-us-pent-vn",
+    "locator": "Version history, Version 3.0 ratification and effective date",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-ch",
+    "source_id": "src-us-pent-ch",
+    "locator": "Our Founder, including Lawson’s 1914 baptism and 1919 inception",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-cb",
+    "source_id": "src-us-pent-cb",
+    "locator": "Opening history and Statement of Faith",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-cm",
+    "source_id": "src-us-pent-cm",
+    "locator": "History of the National Missionary Department",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-ca",
+    "source_id": "src-us-pent-ca",
+    "locator": "Collection overview, including related denominations",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-cd",
+    "source_id": "src-us-pent-cd",
+    "locator": "Doctrinal subscription question",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-uh",
+    "source_id": "src-us-pent-uh",
+    "locator": "History, organization and international structure",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-ua",
+    "source_id": "src-us-pent-ua",
+    "locator": "Original merger conference at Kiel Auditorium and founding footprint",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-ub",
+    "source_id": "src-us-pent-ub",
+    "locator": "Fundamental Doctrine, The One True God, and Baptism of the Holy Ghost",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-ur",
+    "source_id": "src-us-pent-ur",
+    "locator": "Historical account of predecessor unions, racial separation and 1945 merger",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-ph",
+    "source_id": "src-us-pent-ph",
+    "locator": "1886, 1923 and subsequent mission milestones",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-pa",
+    "source_id": "src-us-pent-pa",
+    "locator": "November 23 proceedings on the constitution",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-pc",
+    "source_id": "src-us-pent-pc",
+    "locator": "Historical note on 1923 removal, reorganizing meetings, and succession",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-pj",
+    "source_id": "src-us-pent-pj",
+    "locator": "Opinion of March 7, 1952, procedural history and injunction",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-pf",
+    "source_id": "src-us-pent-pf",
+    "locator": "How did you get the name Church of God of Prophecy?",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-pb",
+    "source_id": "src-us-pent-pb",
+    "locator": "Trinity, sanctification, and baptism with the Holy Spirit",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-pm",
+    "source_id": "src-us-pent-pm",
+    "locator": "Teachings of the Church of God over which M. A. Tomlinson is General Overseer",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-pd",
+    "source_id": "src-us-pent-pd",
+    "locator": "Catalog description of the published naming case",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-ps",
+    "source_id": "src-us-pent-ps",
+    "locator": "History, separation in 1993",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-goss-office",
+    "source_id": "src-us-pent-goss-office",
+    "locator": "Biography, election in 1945 and service through 1951",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-goss",
+    "source_id": "src-us-pent-goss",
+    "locator": "From Infidel to Christ, opening and closing biographical sections",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-merger",
+    "source_id": "src-us-pent-merger",
+    "locator": "Merger preparations and first officers",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-us-pent-witherspoon",
+    "source_id": "src-us-pent-witherspoon",
+    "locator": "PAJC chairmanship and election at the 1945 merger",
+    "accessed": "2026-11-22"
+  }
+]

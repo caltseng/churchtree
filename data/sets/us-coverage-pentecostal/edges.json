@@ -1,0 +1,21 @@
+[
+  {
+    "id": "us-pent-cleveland-to-cogop-1923",
+    "name": "Tomlinson branch organizes separately",
+    "from_id": "church-of-god-cleveland",
+    "to_id": "church-of-god-of-prophecy",
+    "type": "split",
+    "year": 1923,
+    "zoom_tier": "full",
+    "reasons": [
+      "dispute over leadership and constitutional authority"
+    ],
+    "description": "A. J. Tomlinson’s supporters organized separately after his removal in 1923. The Cleveland node represents the shared church before this division and the separately continuing Cleveland body thereafter.",
+    "citations": [
+      "cite-us-pent-pc",
+      "cite-us-pent-pa",
+      "cite-us-pent-pj"
+    ],
+    "confidence": "high"
+  }
+]
