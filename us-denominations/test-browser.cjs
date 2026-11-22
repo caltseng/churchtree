@@ -18,7 +18,7 @@ fs.mkdirSync(output, {recursive: true});
     });
     const base = `http://127.0.0.1:${server.address().port}`;
     for (const size of [{width: 320, height: 568}, {width: 667, height: 375}, {width: 1440, height: 1000}]) {
-      const context = await browser.newContext({viewport: size, hasTouch: size.width < 700, reducedMotion: 'reduce'});
+      const context = await browser.newContext({viewport: size, isMobile: size.width < 700, hasTouch: size.width < 700, reducedMotion: 'reduce'});
       const page = await context.newPage(), errors = [];
       page.on('pageerror', error => errors.push(error.message));
       await page.goto(base + '/');
@@ -44,6 +44,101 @@ fs.mkdirSync(output, {recursive: true});
         assert(await content.locator('#group-heading').evaluate(el => el === document.activeElement), 'Drill-in focuses heading');
         await fits();
       }
+      async function chartSnapshot() {
+        return page.evaluate(() => {
+          const viewport = document.querySelector('.chart-viewport'), chart = viewport.firstElementChild;
+          return {scale: Number(chart.style.zoom), left: viewport.scrollLeft, top: viewport.scrollTop,
+            width: chart.getBoundingClientRect().width, pageScale: visualViewport.scale};
+        });
+      }
+      const viewport = content.locator('.chart-viewport');
+      await viewport.scrollIntoViewIfNeeded();
+      const initialChart = await chartSnapshot();
+      if (size.width < 700) {
+        const client = await context.newCDPSession(page);
+        async function gesture(start, end) {
+          await client.send('Input.dispatchTouchEvent', {type: 'touchStart', touchPoints: start});
+          for (let i = 1; i <= 12; i++) {
+            await client.send('Input.dispatchTouchEvent', {type: 'touchMove', touchPoints: start.map((point, index) => ({
+              id: index, x: point.x + (end[index].x - point.x) * i / 12,
+              y: point.y + (end[index].y - point.y) * i / 12
+            }))});
+            await page.waitForTimeout(16);
+          }
+          await client.send('Input.dispatchTouchEvent', {type: 'touchEnd', touchPoints: []});
+        }
+        const box = await viewport.boundingBox();
+        const x = box.x + box.width / 2;
+        const y = (Math.max(15, box.y) + Math.min(size.height - 15, box.y + box.height)) / 2;
+        const start = [{id: 0, x: x - 25, y}, {id: 1, x: x + 25, y}];
+        const end = [{id: 0, x: x - 55, y}, {id: 1, x: x + 55, y}];
+        await gesture(start, end);
+        const pinched = await chartSnapshot();
+        assert(pinched.width > initialChart.width * 1.8, 'Real pinch enlarges actual chart geometry');
+        assert.equal(pinched.pageScale, initialChart.pageScale, 'Chart pinch never zooms the webpage');
+        assert(Math.abs((pinched.left + box.width / 2) / pinched.scale - box.width / 2) < 4,
+          'Pinch anchors the chart midpoint');
+        assert.equal(new URL(page.url()).searchParams.get('group'), 'us-adults', 'Pinch never drills in');
+        await gesture([{id: 0, x, y}], [{id: 0, x: x - 50, y: y - 40}]);
+        const panned = await chartSnapshot();
+        assert(panned.left > pinched.left + 30 && panned.top > pinched.top + 20, 'Real drag pans both axes');
+        await client.send('Input.dispatchTouchEvent', {type: 'touchStart', touchPoints: end});
+        await client.send('Input.dispatchTouchEvent', {type: 'touchEnd', touchPoints: [end[0]]});
+        assert.equal((await chartSnapshot()).scale, panned.scale, 'Finger transition does not jump zoom');
+        await client.send('Input.dispatchTouchEvent', {type: 'touchCancel', touchPoints: []});
+        await gesture(end, start);
+        assert((await chartSnapshot()).scale < panned.scale * .7, 'Reverse pinch zooms out');
+        for (let i = 0; i < 3; i++) await gesture(start, end);
+        assert.equal((await chartSnapshot()).scale, 4, 'Pinch upper bound');
+        for (let i = 0; i < 4; i++) await gesture(end, start);
+        assert.equal((await chartSnapshot()).scale, 1, 'Pinch lower bound');
+        await page.waitForTimeout(450);
+        await page.screenshot({path: path.join(output, `us-chart-gestures-${size.width}.png`), fullPage: true});
+        await page.reload();
+      } else {
+        await viewport.focus();
+        await page.keyboard.press('+');
+        assert((await chartSnapshot()).width > initialChart.width * 1.2, 'Keyboard zoom enlarges geometry');
+        await page.keyboard.press('ArrowRight');
+        assert((await chartSnapshot()).left > 0, 'Keyboard pans chart');
+        const box = await viewport.boundingBox();
+        await page.mouse.move(box.x + box.width / 2, box.y + 80);
+        await page.keyboard.down('Control');
+        await page.mouse.wheel(0, -250);
+        await page.keyboard.up('Control');
+        assert((await chartSnapshot()).scale > 1.5, 'Ctrl+wheel zooms chart');
+        await page.keyboard.press('0');
+        assert.equal((await chartSnapshot()).scale, 1);
+      }
+      await page.goto(base + '/us-denominations/?view=families&group=baptist');
+      await content.locator('[data-record="sbc"] summary').click();
+      await page.getByRole('button', {name: 'Zoom chart in', exact: true}).click();
+      await content.locator('[data-record="sbc"] .bar-link').scrollIntoViewIfNeeded();
+      const beforeDetail = await chartSnapshot();
+      await content.locator('[data-record="sbc"] .bar-link').click();
+      await heading('Southern Baptist Convention');
+      assert.match(await content.textContent(), /No published drill-down/);
+      assert(await content.locator('.row-source a').first().isVisible() === false, 'Sources start collapsed on leaf');
+      await content.locator('.row-source summary').click();
+      assert(await content.locator('.row-source a').first().isVisible(), 'Leaf detail exposes source link');
+      await page.locator('#back').click();
+      await heading('Baptist');
+      const restoredChart = await chartSnapshot();
+      assert.equal(restoredChart.scale, beforeDetail.scale, 'Back restores chart zoom');
+      assert(Math.abs(restoredChart.left - beforeDetail.left) < 2 && Math.abs(restoredChart.top - beforeDetail.top) < 2,
+        'Back restores chart scroll');
+      assert(await content.locator('[data-record="sbc"] .row-source').getAttribute('open') !== null, 'Back restores source disclosure');
+      await page.locator('#list-toggle').click();
+      assert(await content.locator('.chart-controls').isHidden(), 'List removes zoom controls');
+      await page.locator('#list-toggle').click();
+      assert.equal((await chartSnapshot()).scale, beforeDetail.scale, 'List round trip preserves zoom');
+      await page.getByRole('button', {name: 'Fit chart', exact: true}).click();
+      assert.equal((await chartSnapshot()).scale, 1);
+      await content.locator('[data-record="pnbc"] .row-detail').click();
+      await heading('Progressive National Baptist Convention');
+      assert.match(await content.locator('.selected-estimate').textContent(), /<0.3% of U.S. adults/);
+      assert.equal(await content.locator('.bar').count(), 0, 'Threshold leaf never acquires a bar');
+      await page.goto(base + '/us-denominations/');
       await heading('U.S. adults');
       assert.equal(await content.locator('.national-value').count(), 4);
       assert(await page.locator('#back').isDisabled());

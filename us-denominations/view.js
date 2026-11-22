@@ -94,11 +94,12 @@
     const expandable = Boolean(panelFor(data, target));
     const name = expandable
       ? `<a class="row-target" data-group="${esc(id)}" href="${query(target)}${staticMode ? '#static-' + state.view + '-' + id : ''}">${esc(record.label)} <span aria-hidden="true">&rsaquo;</span></a>`
-      : `<span class="row-name">${esc(record.label)}</span>`;
+      : staticMode ? `<span class="row-name">${esc(record.label)}</span>`
+      : `<a class="row-detail" data-group="${esc(id)}" href="${query(target)}">${esc(record.label)} <span aria-hidden="true">&rsaquo;</span></a>`;
     return `<div class="estimate-row" data-record="${esc(id)}" data-status="${esc(record.status)}">
       <div class="row-label">${name}<strong class="national-value">${estimate(record)}</strong></div>
       <small class="row-kind">${esc(record.kind.replace(/-/g, ' '))}${record.scope.tradition ? ' / ' + esc(record.scope.tradition.replace(/-/g, ' ')) : ''}</small>
-      ${record.barValue !== null && !staticMode ? `<div class="bar-track" aria-hidden="true"><span class="bar" style="width:${record.barValue / maximum * 100}%"></span></div>` : ''}
+      ${record.barValue !== null && !staticMode ? `<a class="bar-link" data-group="${esc(id)}" href="${query(target)}" aria-label="${expandable ? 'Explore' : 'Details for'} ${esc(record.label)}"><div class="bar-track" aria-hidden="true"><span class="bar" style="width:${record.barValue / maximum * 100}%"></span></div></a>` : ''}
       ${record.status === 'threshold' ? '<small>Published upper threshold; no numeric bar.</small>' : ''}
       ${['unavailable', 'suppressed'].includes(record.status) ? `<small>${esc(record.reason)}; no numeric bar.</small>` : ''}
       ${sourceDetail(record)}</div>`;

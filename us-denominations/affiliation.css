@@ -20,7 +20,7 @@ h3 { font-size: 1.15rem; }
 #demographic-controls { margin: 0; min-width: 0; max-width: 100%; }
 button, select { font: inherit; color: var(--ct-text); border: 1px solid var(--ct-border-control); border-radius: .4rem; background: var(--ct-surface); min-height: 44px; padding: .5rem .75rem; max-width: 100%; }
 button:not(:disabled), select, summary { cursor: pointer; }
-button:hover:not(:disabled), .row-target:hover { background: var(--ct-hover); }
+button:hover:not(:disabled), .row-target:hover, .row-detail:hover, .bar-link:hover { background: var(--ct-hover); }
 button:disabled { opacity: .6; }
 button[aria-pressed="true"] { background: var(--ct-accent); color: var(--ct-on-accent); }
 .breadcrumbs { display: flex; flex-wrap: wrap; list-style: none; gap: .25rem; padding: 0; }
@@ -31,12 +31,22 @@ button[aria-pressed="true"] { background: var(--ct-accent); color: var(--ct-on-a
 .estimate-list { list-style: none; padding: 0; margin: 0; }
 .estimate-list > li { padding: .7rem 0; border-bottom: 1px solid var(--ct-border); }
 .row-label { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
-.row-target, .row-name { display: inline-flex; gap: .5rem; align-items: center; min-height: 44px; overflow-wrap: anywhere; min-width: 0; }
-.row-target { padding: .25rem .35rem; margin-left: -.35rem; }
+.row-target, .row-detail, .row-name { display: inline-flex; gap: .5rem; align-items: center; min-height: 44px; overflow-wrap: anywhere; min-width: 0; }
+.row-target, .row-detail { padding: .25rem .35rem; margin-left: -.35rem; }
 .national-value { text-align: right; flex-shrink: 0; font-variant-numeric: tabular-nums; }
 .row-kind { display: block; color: var(--ct-text-secondary); }
 .bar-track { height: .65rem; background: var(--ct-grid); border-left: 1px solid var(--ct-axis); margin: .5rem 0; }
 .bar { display: block; height: 100%; background: var(--ct-accent); }
+.bar-link { display: flex; align-items: center; min-height: 44px; }
+.bar-link .bar-track { width: 100%; }
+.chart[data-format="list"] .bar-link { display: none; }
+.chart-controls { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.chart-controls output { min-width: 4ch; text-align: center; font-variant-numeric: tabular-nums; }
+.chart-help { font-size: .9rem; color: var(--ct-text-secondary); }
+.chart-viewport { overflow: auto; max-height: max(280px, 65dvh); border: 1px solid var(--ct-border-control); touch-action: none; overscroll-behavior: contain; }
+.chart-viewport > .chart { padding: .5rem; transform-origin: top left; }
+.chart-viewport:focus-visible { outline: 3px solid var(--ct-focus); outline-offset: 3px; }
+.chart-list .chart-viewport { max-height: none; overflow: visible; border: 0; touch-action: auto; }
 .axis { display: flex; justify-content: space-between; gap: .5rem; color: var(--ct-text-secondary); font-size: .9rem; }
 .chart[data-format="list"] .bar-track, .chart[data-format="list"] .axis { display: none; }
 .attendance-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
