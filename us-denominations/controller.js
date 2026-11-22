@@ -12,10 +12,12 @@
   const status = document.getElementById('route-status');
   const initial = view.readURL(data, location.search);
   let state = initial.state;
+  let affiliationGroup = 'us-adults';
 
   function render(previous, focus) {
     container.innerHTML = view.renderView(data, state);
     selector.value = state.view;
+    back.hidden = reset.hidden = state.view === 'attendance';
     back.disabled = state.group === 'us-adults';
     reset.disabled = state.group === 'us-adults';
     toggle.setAttribute('aria-pressed', String(state.format === 'list'));
@@ -30,6 +32,7 @@
     const next = view.normalize(data, input);
     if (view.query(next) === view.query(state)) return;
     const previous = state;
+    if (state.view !== 'attendance') affiliationGroup = state.group;
     state = next;
     history.pushState(null, '', view.query(state));
     status.textContent = '';
@@ -41,7 +44,9 @@
     event.preventDefault();
     navigate({...state, group: anchor.dataset.group});
   });
-  selector.addEventListener('change', () => navigate({...state, view: selector.value}));
+  selector.addEventListener('change', () => navigate({
+    ...state, group: state.view === 'attendance' ? affiliationGroup : state.group, view: selector.value
+  }));
   back.addEventListener('click', () => {
     const ancestors = view.ancestors(data, state.view, state.group);
     navigate({...state, group: ancestors.at(-1) || 'us-adults'});
@@ -53,15 +58,16 @@
   });
   window.addEventListener('popstate', () => {
     const previous = state;
+    if (state.view !== 'attendance') affiliationGroup = state.group;
     const parsed = view.readURL(data, location.search);
     state = parsed.state;
     history.replaceState(null, '', view.query(state));
-    status.textContent = parsed.corrected ? 'Invalid or incompatible link corrected to a supported affiliation view.' : '';
+    status.textContent = parsed.corrected ? 'Invalid or incompatible link corrected to a supported view.' : '';
     render(previous, true);
   });
   render(null, false);
   history.replaceState(null, '', view.query(state));
-  status.textContent = initial.corrected ? 'Invalid or incompatible link corrected to a supported affiliation view.' : '';
+  status.textContent = initial.corrected ? 'Invalid or incompatible link corrected to a supported view.' : '';
   container.hidden = false;
   controls.hidden = false;
   document.getElementById('static-view').hidden = true;

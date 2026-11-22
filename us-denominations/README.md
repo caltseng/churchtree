@@ -157,12 +157,14 @@ states that detailed identity variables are omitted; no dataset was used here.
 
 The route does not register `us-denominations` in the public directory allowlist.
 `build.cjs` intentionally emits only browser-needed affiliation records,
-hierarchy and source/reuse context in `public-data.js`, plus static nested lists.
+hierarchy, attendance and source/reuse context in `public-data.js`, plus static
+nested lists and an attendance table.
 Do **not** copy this directory recursively: `data.cjs`, `test-data.cjs`, the
 review tooling and source inputs are internal. `site.config.json` registers five
 exact public files, never this directory. Route tests assert both the generated
-payload shape and the complete published directory; attendance inputs are not
-serialized. Run `npm run build` before route tests.
+payload shape and the complete published directory. Attendance has an explicit
+public projection, not a copy of the input or internal provenance. Run
+`npm run build` before route tests.
 
 Do not sum displayed children, infer missing denominations from Appendix B,
 create an all-family Independent Baptist total, assign group attendance to a
@@ -177,10 +179,10 @@ and site configuration. No timeline files or state are changed.
 Its public projection has `schemaVersion: 1`, keyed `records`, two `lenses` with
 ranked panel children, estimate-specific source locators, selected source links,
 the exact separate tradition interactive strings and applicable reuse context.
-Internal review hashes, inputs, source extraction tooling and attendance records
-are not browser assets. `data.cjs` remains the authoritative build-time API.
+Internal review hashes, inputs and source extraction tooling are not browser
+assets. `data.cjs` remains the authoritative build-time API.
 
-`controller.js` enhances the static page without requests. State is
+`controller.js` enhances the static page without requests. Affiliation state is
 `{view: "families" | "traditions", group: recordId, format: "chart" | "list"}`.
 URLs use `?view=families&group=baptist` with optional `&format=list`; native links
 also carry static fragments in nested fallback content. Invalid IDs resolve to
@@ -191,11 +193,31 @@ parameters are corrected with a visible status message. Back goes up one parent;
 Reset keeps the lens. Browser history replays state. Drill-in focuses the selected
 heading; going up restores the departing child link when available.
 
-Later attendance and demographic views must remain independent of affiliation
-state and denominator. Add only their explicitly reviewed public projection and
-their own controls; do not add them to these affiliation trees or inherit a
-denomination's parent answers. This chunk intentionally implements affiliation
-only. The spec's attendance acceptance belongs to its separate implementation PR.
+Attendance extends state with `{view: "attendance", group: null, format:
+"chart" | "list"}`. Its canonical URL is `?view=attendance` (optionally
+`&format=list`), without an affiliation group. A supplied group is removed with
+the same visible correction notice. Back and Reset are hidden: attendance has no
+ancestor tree. Switching back to an affiliation lens restores the last in-memory
+affiliation focus using the existing identical-scope/fallback rules. Reloading
+an attendance URL starts without an affiliation focus; switching then opens the
+selected lens's national root. History replays attendance and affiliation states;
+List remains the current display preference on selector changes.
+
+The intentional `attendance` payload includes twelve source-ordered independent
+population rows, exact published NET strings and numeric values, row/column/table
+locators, measure, question/instrument locator, fixed scale and caveats. It does
+not insert rows into `records` or `lenses`. The semantic table is the chart's text
+equivalent, not a duplicate set of controls; CSS bars use a fixed 0-100% scale,
+and List hides them. Static `#static-attendance` provides the same rows and source
+context without JavaScript. Each row uses adults in its named religious group;
+the overall row uses all U.S. adults. No affiliation ratios, denomination
+inference, virtual measure or sums of rounded frequency cells are used.
+
+Later demographic views must likewise remain independent and add only their
+explicitly reviewed public projection. No timeline or home-card changes belong
+to this attendance integration. The route tests exercise both affiliation
+lenses/paths and attendance together as v1 acceptance, including source context,
+public boundary, focus, view switching, history and no-JavaScript access.
 
 Automated browser tests cover 320px portrait, 667x375 landscape, desktop,
 keyboard-only interaction, no-JavaScript nested content, and a 640px CSS layout
