@@ -13,7 +13,7 @@
     return new Set([data.lenses[lens].rootId, ...data.lenses[lens].panels.flatMap(p => p.children)]);
   }
   function ancestors(data, lens, id) {
-    if (lens === 'attendance') return [];
+    if (lens === 'attendance' || lens === 'demographics') return [];
     const parents = new Map(data.lenses[lens].panels.flatMap(p => p.children.map(child => [child, p.parentId])));
     const result = [];
     let parent = parents.get(id);
@@ -21,6 +21,12 @@
     return result;
   }
   function normalize(data, input) {
+    if (input.view === 'demographics') {
+      const dimension = data.demographics.dimensions.some(row => row.id === input.dimension) ? input.dimension : 'age';
+      const populations = data.demographics.populations.filter(row => row.dimension === dimension);
+      const population = populations.some(row => row.id === input.population) ? input.population : populations[0].id;
+      return {view: 'demographics', group: null, dimension, population, format: input.format === 'list' ? 'list' : 'chart'};
+    }
     if (input.view === 'attendance') {
       return {view: 'attendance', group: null, format: input.format === 'list' ? 'list' : 'chart'};
     }
@@ -35,22 +41,27 @@
   function readURL(data, search) {
     const params = new URLSearchParams(search);
     const one = key => params.getAll(key).length === 1 ? params.get(key) : null;
-    const input = {view: one('view'), group: one('group'), format: one('format')};
+    const input = {view: one('view'), group: one('group'), format: one('format'), dimension: one('dimension'), population: one('population')};
     const state = normalize(data, input);
     const corrected = (params.has('view') && input.view !== state.view) ||
       (params.has('group') && input.group !== state.group) ||
+      (params.has('dimension') && input.dimension !== state.dimension) ||
+      (params.has('population') && input.population !== state.population) ||
       (params.has('format') && input.format !== state.format) ||
-      [...params.keys()].some(key => !['view', 'group', 'format'].includes(key) || params.getAll(key).length !== 1);
+      [...params.keys()].some(key => !['view', 'group', 'format', 'dimension', 'population'].includes(key) || params.getAll(key).length !== 1);
     return {state, corrected};
   }
   function query(state) {
     const params = new URLSearchParams({view: state.view});
-    if (state.view !== 'attendance') params.set('group', state.group);
+    if (state.view === 'demographics') {
+      params.set('dimension', state.dimension);
+      params.set('population', state.population);
+    } else if (state.view !== 'attendance') params.set('group', state.group);
     if (state.format === 'list') params.set('format', 'list');
     return '?' + params.toString();
   }
   function panelFor(data, state) {
-    if (state.view === 'attendance') return undefined;
+    if (state.view === 'attendance' || state.view === 'demographics') return undefined;
     return data.lenses[state.view].panels.find(p => p.parentId === state.group);
   }
   function link(source) {
@@ -110,6 +121,7 @@
       Each row's Source and caveats identifies its estimate, source column and precise locator.</p>${context(data)}`;
   }
   function renderView(data, state) {
+    if (state.view === 'demographics') return renderDemographics(data, state);
     if (state.view === 'attendance') return renderAttendance(data, state.format);
     const record = data.records[state.group];
     const panel = panelFor(data, state);
@@ -161,6 +173,37 @@
       <p class="credit">${data.reuse.notices.map(esc).join(' ')}. ${esc(data.reuse.disclaimer)}
       <a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a>; <a href="#methodology">Methods and excerpt reuse limits</a>.</p>`;
   }
+  function renderDemographics(data, state, staticMode = false) {
+    const demographics = data.demographics;
+    const population = demographics.populations.find(row => row.id === state.population);
+    const dimension = demographics.dimensions.find(row => row.id === population.dimension);
+    return `<h2 id="${staticMode ? 'static-demographics-' + population.id + '-heading' : 'group-heading'}" tabindex="-1">Affiliations within ${esc(population.label)}</h2>
+      <p><strong>Denominator: ${esc(population.denominatorLabel)}</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="${state.format}">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within ${esc(population.denominatorLabel)}, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody>${population.records.map(record => `<tr data-demographic="${esc(record.id)}" data-status="${esc(record.status)}">
+        <th scope="row">${esc(record.label)}<details class="row-source"><summary>Source for ${esc(record.label)}</summary>
+        <p>${citation(record.source)}</p><p>Denominator: ${esc(population.denominatorLabel)}.</p></details></th>
+        <td><strong>${esc(record.valueText)}</strong>
+        ${record.barValue !== null && !staticMode ? `<div class="bar-track" aria-hidden="true"><span class="bar" style="width:${record.barValue}%"></span></div>` : ''}
+        ${record.status === 'threshold' ? '<small>Published upper threshold; no numeric bar.</small>' : ''}
+        ${record.reason ? `<small>${esc(record.reason)}; no numeric bar.</small>` : ''}</td>
+      </tr>`).join('')}</tbody></table></div>
+      <p>${esc(dimension.definition)}</p>
+      <p class="coverage">${esc(demographics.caveat)}</p>
+      <p>${esc(population.nonresponse)} ${esc(population.uncertainty)}</p>
+      <p class="panel-source">${citation(population.records[0].source)} All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published ${esc(data.study.publicationDate)}.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: ${esc(demographics.metric)}. Denominator: ${esc(population.denominatorLabel)}.</p>
+      <p>${esc(dimension.instrumentLocator)} ${link(demographics.questionnaire)}; ${link(data.sources.methods)}; ${link(data.sources.classification)}.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">${data.reuse.notices.map(esc).join(' ')}. ${esc(data.reuse.disclaimer)}
+      <a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a>. ${esc(demographics.reuseLimits)}</p>`;
+  }
   function renderStatic(data) {
     function nested(state) {
       const panel = panelFor(data, state);
@@ -174,7 +217,12 @@
     }
     return Object.keys(data.lenses).map(view => `<section aria-labelledby="static-${view}-title"><h2 id="static-${view}-title">${esc(data.lenses[view].label)}</h2>
       ${nested({view, group: 'us-adults', format: 'list'})}</section>`).join('') +
-      `<section id="static-attendance" aria-labelledby="static-attendance-heading">${renderAttendance(data, 'list', true)}</section>`;
+      `<section id="static-attendance" aria-labelledby="static-attendance-heading">${renderAttendance(data, 'list', true)}</section>` +
+      `<section id="static-demographics"><h2>Affiliations within demographic populations</h2>
+      <p>Select one published population at a time. No combined demographic filters or inferred denominations.</p>
+      ${data.demographics.populations.map(population => `<details id="static-demographics-${population.id}">
+      <summary>${esc(data.demographics.dimensions.find(row => row.id === population.dimension).label)}: ${esc(population.label)}</summary>
+      ${renderDemographics(data, {population: population.id, format: 'list'}, true)}</details>`).join('')}</section>`;
   }
   return {esc, normalize, readURL, query, ancestors, panelFor, renderView, renderStatic, context};
 });

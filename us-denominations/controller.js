@@ -6,6 +6,9 @@
   const container = document.getElementById('interactive-view');
   const controls = document.getElementById('route-controls');
   const selector = document.getElementById('affiliation-view');
+  const dimension = document.getElementById('demographic-dimension');
+  const population = document.getElementById('demographic-population');
+  const demographicControls = document.getElementById('demographic-controls');
   const back = document.getElementById('back');
   const reset = document.getElementById('reset');
   const toggle = document.getElementById('list-toggle');
@@ -13,11 +16,25 @@
   const initial = view.readURL(data, location.search);
   let state = initial.state;
   let affiliationGroup = 'us-adults';
+  let demographicState = {dimension: 'age', population: 'age-18-29'};
+  const isAffiliation = value => value.view === 'families' || value.view === 'traditions';
+
+  function remember() {
+    if (isAffiliation(state)) affiliationGroup = state.group;
+    if (state.view === 'demographics') demographicState = {dimension: state.dimension, population: state.population};
+  }
 
   function render(previous, focus) {
     container.innerHTML = view.renderView(data, state);
     selector.value = state.view;
-    back.hidden = reset.hidden = state.view === 'attendance';
+    back.hidden = reset.hidden = !isAffiliation(state);
+    demographicControls.hidden = state.view !== 'demographics';
+    if (state.view === 'demographics') {
+      dimension.value = state.dimension;
+      population.innerHTML = data.demographics.populations.filter(row => row.dimension === state.dimension)
+        .map(row => `<option value="${view.esc(row.id)}">${view.esc(row.label)}</option>`).join('');
+      population.value = state.population;
+    }
     back.disabled = state.group === 'us-adults';
     reset.disabled = state.group === 'us-adults';
     toggle.setAttribute('aria-pressed', String(state.format === 'list'));
@@ -32,7 +49,7 @@
     const next = view.normalize(data, input);
     if (view.query(next) === view.query(state)) return;
     const previous = state;
-    if (state.view !== 'attendance') affiliationGroup = state.group;
+    remember();
     state = next;
     history.pushState(null, '', view.query(state));
     status.textContent = '';
@@ -45,8 +62,10 @@
     navigate({...state, group: anchor.dataset.group});
   });
   selector.addEventListener('change', () => navigate({
-    ...state, group: state.view === 'attendance' ? affiliationGroup : state.group, view: selector.value
+    ...state, ...demographicState, group: isAffiliation(state) ? state.group : affiliationGroup, view: selector.value
   }));
+  dimension.addEventListener('change', () => navigate({...state, dimension: dimension.value, population: null}));
+  population.addEventListener('change', () => navigate({...state, population: population.value}));
   back.addEventListener('click', () => {
     const ancestors = view.ancestors(data, state.view, state.group);
     navigate({...state, group: ancestors.at(-1) || 'us-adults'});
@@ -58,7 +77,7 @@
   });
   window.addEventListener('popstate', () => {
     const previous = state;
-    if (state.view !== 'attendance') affiliationGroup = state.group;
+    remember();
     const parsed = view.readURL(data, location.search);
     state = parsed.state;
     history.replaceState(null, '', view.query(state));

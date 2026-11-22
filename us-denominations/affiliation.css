@@ -17,6 +17,7 @@ h3 { font-size: 1.15rem; }
 .intro { color: var(--ct-text-secondary); }
 .route-controls { display: flex; gap: .5rem; flex-wrap: wrap; align-items: end; margin: 1rem 0; }
 .route-controls label { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; max-width: 100%; }
+#demographic-controls { margin: 0; min-width: 0; max-width: 100%; }
 button, select { font: inherit; color: var(--ct-text); border: 1px solid var(--ct-border-control); border-radius: .4rem; background: var(--ct-surface); min-height: 44px; padding: .5rem .75rem; max-width: 100%; }
 button:not(:disabled), select, summary { cursor: pointer; }
 button:hover:not(:disabled), .row-target:hover { background: var(--ct-hover); }
