@@ -208,10 +208,10 @@ fs.mkdirSync(output, {recursive: true});
     await page.keyboard.press('Enter');
     assert.equal(await content.locator('#group-heading').textContent(), 'Religious service attendance');
     assert(await content.locator('#group-heading').evaluate(el => el === document.activeElement));
-    await tabTo('[data-attendance="attendance-us-adults"] summary');
+    await tabTo('#interactive-view [data-attendance="attendance-us-adults"] summary');
     assert(await page.evaluate(() => getComputedStyle(document.activeElement).outlineStyle !== 'none'));
     await page.keyboard.press('Enter');
-    await tabTo('[data-attendance="attendance-us-adults"] a');
+    await tabTo('#interactive-view [data-attendance="attendance-us-adults"] a');
     assert(await page.evaluate(() => document.activeElement.href.includes('pewresearch.org')));
     // A 1280px desktop browser at 200% page zoom has a 640px CSS layout viewport.
     const session = await page.context().newCDPSession(page);
