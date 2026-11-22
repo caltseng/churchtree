@@ -10,7 +10,10 @@ Use `npm run build` and the validator on that artifact. `data/data.js` remains a
 legacy source-preview bundle refreshed by `scripts/build-data-js.ps1`; don't edit
 it by hand. Build discovery is not permission to import unreviewed or malformed data.
 
-Current baseline: 63 nodes across 13 sets; coverage is incomplete. Read
+The catalog contains 94 nodes across 20 sets. Church History shows 92 of them.
+The Latter-day Saints and Jehovah’s Witnesses profiles remain in the public data
+bundles. The U.S. denomination coverage audit documents the pre-expansion
+baseline. Coverage remains incomplete. Read
 `docs/spec/historical-coverage-standard.md`, the data-audit checklist and
 `docs/data-quality-audit.md`. A citation's presence, a populated profile, and a
 passing build establish different things. Missing nodes, unsupported causes,
