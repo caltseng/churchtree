@@ -9103,6 +9103,5450 @@ window.CHURCHTREE_DATA = {
                                                   ]
                                 }
                             ]
+    },
+    {
+        "id":  "national-missionary-baptist-convention-of-america",
+        "name":  "National Missionary Baptist Convention of America",
+        "aliases":  [
+                        "NMBCA",
+                        "National Missionary Baptist Convention",
+                        "National Missionary Baptist Convention, Inc."
+                    ],
+        "short_label":  "National Missionary Baptist (NMBCA)",
+        "kind":  "denomination",
+        "start_year":  1988,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "Dallas, Texas",
+        "tradition_family":  "Baptist",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "A historically Black Baptist convention organized in Dallas in 1988 after a dispute over who would direct religious education and publishing.",
+        "profile_scope":  "This U.S. profile covers the convention organized in Dallas in 1988, its early education work and selected evidence of its continuation. It is distinct from National Baptist Convention of America (NBCA), National Baptist Convention, USA, Inc. (NBCUSA), and Progressive National Baptist Convention (PNBC).",
+        "formation_narrative":  "At its 1988 session in San Antonio, the National Baptist Convention of America decided to organize a Christian education congress under its own officers. Contemporary reporting describes a dispute with the publishing house led by the Boyd family over control of the congress, curriculum and funds. Leaders who backed continued cooperation with the publishing house and its congress met in Dallas and organized the National Missionary Baptist Convention of America, with S. M. Lockridge as its first president. The National Baptist Convention of America continued separately.",
+        "distinctives":  [
+                             "Historically Black Baptist convention",
+                             "Christian education and evangelism"
+                         ],
+        "core_beliefs":  [
+                             "In its public mission, the convention centers its cooperation on proclaiming the Christian gospel and equipping member churches for evangelism and Christian education.",
+                             "Its mission calls on member churches to use spiritual gifts, leadership and shared resources to build up congregations and serve their communities. Its published priorities include benevolence and outreach."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Shadrach Meshach Lockridge",
+                                "role":  "First president",
+                                "summary":  "The San Diego pastor led the new convention and explained its aims ahead of the planned 1989 national session.",
+                                "url":  "https://www.latimes.com/archives/la-xpm-1996-02-24-me-39550-story.html",
+                                "citations":  [
+                                                  "cite-us-coverage-baptist-nmbca-lockridge",
+                                                  "cite-us-coverage-baptist-nmbca-session"
+                                              ]
+                            },
+                            {
+                                "name":  "E. Edward Jones",
+                                "role":  "President of the continuing NBCA during the dispute",
+                                "summary":  "He publicly argued for convention officers to direct their own congress and curriculum.",
+                                "url":  "https://www.washingtonpost.com/archive/local/1988/12/03/black-baptist-group-splits-over-control-of-education/48cb198e-6e81-4556-9266-ae1ae906e82c/",
+                                "citations":  [
+                                                  "cite-us-coverage-baptist-nmbca-dispute"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1988,
+                              "label":  "Organized in Dallas after the NBCA education and publishing dispute",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-nmbca-about",
+                                                "cite-us-coverage-baptist-nbca-annuals",
+                                                "cite-us-coverage-baptist-nmbca-dispute"
+                                            ]
+                          },
+                          {
+                              "year":  1989,
+                              "label":  "First national session under the new structure announced for Chicago",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-nmbca-session"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "NMBCA mission and vision",
+                                  "year":  null,
+                                  "significance":  "The convention’s public statement of ministry priorities, including Christian education and congregational support.",
+                                  "url":  "https://www.nmbca.org/who-we-are",
+                                  "citations":  [
+                                                    "cite-us-coverage-baptist-nmbca-about"
+                                                ]
+                              }
+                          ],
+        "ending_narrative":  "The convention continues to organize national sessions and work through member churches, boards and auxiliaries. Its registration materials include separate forms for the Women’s Auxiliary. Its public mission continues to emphasize congregational support, education and outreach.",
+        "successor_ids":  [
+
+                          ],
+        "size_estimate":  "2,428,820 U.S. adherents across 7,564 congregations (2020 U.S. Religion Census)",
+        "further_reading":  [
+                                {
+                                    "title":  "National Baptist Convention of America Annuals",
+                                    "url":  "https://sbhla.org/digital-resources/national-baptist-america-annuals/",
+                                    "snippet":  "The archive identifies the parent convention and links to its historical proceedings.",
+                                    "citations":  [
+                                                      "cite-us-coverage-baptist-nbca-annuals"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Contemporary reporting on the education dispute",
+                                    "url":  "https://www.washingtonpost.com/archive/local/1988/12/03/black-baptist-group-splits-over-control-of-education/48cb198e-6e81-4556-9266-ae1ae906e82c/",
+                                    "snippet":  "The article records why leaders on both sides sought different arrangements for the congress.",
+                                    "citations":  [
+                                                      "cite-us-coverage-baptist-nmbca-dispute"
+                                                  ]
+                                }
+                            ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-us-coverage-baptist-nmbca-about",
+                                                  "cite-us-coverage-baptist-nbca-annuals",
+                                                  "cite-us-coverage-baptist-nmbca-dispute"
+                                              ],
+                                  "start_year":  [
+                                                     "cite-us-coverage-baptist-nmbca-about",
+                                                     "cite-us-coverage-baptist-nmbca-dispute"
+                                                 ],
+                                  "profile_scope":  [
+                                                        "cite-us-coverage-baptist-nmbca-about",
+                                                        "cite-us-coverage-baptist-nbca-annuals",
+                                                        "cite-us-coverage-baptist-usrc-302"
+                                                    ],
+                                  "formation_narrative":  [
+                                                              "cite-us-coverage-baptist-nbca-annuals",
+                                                              "cite-us-coverage-baptist-nmbca-dispute",
+                                                              "cite-us-coverage-baptist-nmbca-lockridge"
+                                                          ],
+                                  "core_beliefs":  [
+                                                       "cite-us-coverage-baptist-nmbca-about"
+                                                   ],
+                                  "distinctives":  [
+                                                       "cite-us-coverage-baptist-nmbca-about"
+                                                   ],
+                                  "ending_narrative":  [
+                                                           "cite-us-coverage-baptist-nmbca-about",
+                                                           "cite-us-coverage-baptist-nmbca-registration"
+                                                       ],
+                                  "size_estimate":  [
+                                                        "cite-us-coverage-baptist-usrc-302"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-coverage-baptist-nmbca-about",
+                          "cite-us-coverage-baptist-nbca-annuals",
+                          "cite-us-coverage-baptist-nmbca-dispute",
+                          "cite-us-coverage-baptist-usrc-302",
+                          "cite-us-coverage-baptist-nmbca-lockridge",
+                          "cite-us-coverage-baptist-nmbca-registration",
+                          "cite-us-coverage-baptist-nmbca-session"
+                      ]
+    },
+    {
+        "id":  "national-association-of-free-will-baptists",
+        "name":  "National Association of Free Will Baptists",
+        "aliases":  [
+                        "NAFWB",
+                        "Free Will Baptists",
+                        "National Association of Free Will Baptists, Inc."
+                    ],
+        "short_label":  "Free Will Baptists (NAFWB)",
+        "kind":  "denomination",
+        "start_year":  1935,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "Nashville, Tennessee",
+        "tradition_family":  "Baptist",
+        "ecclesial_orientation":  "evangelical",
+        "current_status":  "active",
+        "summary":  "A fellowship formed in 1935 when southern Free Will Baptist churches and the reorganized remnant of a northern movement united in Nashville.",
+        "profile_scope":  "The 1935 date marks organization of the national association. This U.S. profile traces its two antecedent streams and selected national developments. Free Will Baptist is also used for churches outside this association.",
+        "formation_narrative":  "The association traces its southern line to Paul Palmer’s congregation in Chowan County, North Carolina, in 1727 and its northern line to Benjamin Randall’s church in New Durham, New Hampshire, in 1780. Both streams taught free salvation and human response to grace. Much of the Randall line joined the Northern Baptist denomination in 1910–1911. Remaining congregations organized the Cooperative General Association in 1916. The Palmer-line churches had organized the General Conference by 1921. Representatives of these two associations met at Cofer’s Chapel in Nashville on November 5, 1935 to form a single national fellowship and provide a common statement of faith and practice.",
+        "distinctives":  [
+                             "Free grace, free salvation and free will",
+                             "Washing of the saints’ feet"
+                         ],
+        "core_beliefs":  [
+                             "The Treatise teaches that Christ’s atonement is offered to all, that people can resist grace, and that believers are warned against apostasy.",
+                             "It teaches immersion of professing believers and observes the Lord’s Supper and the washing of the saints’ feet.",
+                             "Local congregations govern their own affairs and cooperate through associations."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Paul Palmer",
+                                "role":  "Early southern organizer",
+                                "summary":  "Organized the North Carolina congregation to which the association traces one antecedent stream.",
+                                "url":  "https://nafwb.org/site/about/history/",
+                                "citations":  [
+                                                  "cite-us-coverage-baptist-nafwb-history"
+                                              ]
+                            },
+                            {
+                                "name":  "Benjamin Randall",
+                                "role":  "Early northern organizer",
+                                "summary":  "Organized the New Durham congregation. The churches that reorganized in 1916 traced their history through this movement.",
+                                "url":  "https://nafwb.org/site/about/history/",
+                                "citations":  [
+                                                  "cite-us-coverage-baptist-nafwb-history"
+                                              ]
+                            },
+                            {
+                                "name":  "J. C. Griffin",
+                                "role":  "Member of the national Treatise drafting committee",
+                                "summary":  "Helped formulate the national statement using disciplines and treatises already in use among the churches.",
+                                "url":  "https://fwbhistory.com/site?p=298",
+                                "citations":  [
+                                                  "cite-us-coverage-baptist-nafwb-treatise-history"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1727,
+                              "label":  "Palmer’s Chowan congregation organized",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-nafwb-history"
+                                            ]
+                          },
+                          {
+                              "year":  1780,
+                              "label":  "Randall’s New Durham congregation organized",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-nafwb-history"
+                                            ]
+                          },
+                          {
+                              "year":  1910,
+                              "label":  "Union of much of the Randall movement with Northern Baptists begins",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-nafwb-history"
+                                            ]
+                          },
+                          {
+                              "year":  1916,
+                              "label":  "Cooperative General Association organized by remaining Randall-line churches",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-nafwb-history"
+                                            ]
+                          },
+                          {
+                              "year":  1921,
+                              "label":  "Palmer-line churches organize the General Conference",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-nafwb-history",
+                                                "cite-us-coverage-baptist-nafwb-treatise-history"
+                                            ]
+                          },
+                          {
+                              "year":  1935,
+                              "label":  "National association organized at Cofer’s Chapel on November 5",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-nafwb-history",
+                                                "cite-us-coverage-baptist-nafwb-treatise-history"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "A Treatise of the Faith and Practices of the Original Free Will Baptists",
+                                  "year":  2023,
+                                  "significance":  "Revised edition of the association’s doctrinal and organizational guide. The 1935 organization commissioned a text drawing on earlier Free Will Baptist documents.",
+                                  "url":  "https://nafwb.org/site/wp-content/uploads/2023/05/2023-NAFWB-Treatise.pdf",
+                                  "citations":  [
+                                                    "cite-us-coverage-baptist-nafwb-treatise",
+                                                    "cite-us-coverage-baptist-nafwb-treatise-history"
+                                                ]
+                              }
+                          ],
+        "ending_narrative":  "The national association continues as a fellowship of congregations. It has revised its Treatise over time while retaining a shared doctrinal and organizational guide for participating churches.",
+        "successor_ids":  [
+
+                          ],
+        "size_estimate":  "156,895 U.S. adherents across 1,930 congregations (2020 U.S. Religion Census)",
+        "further_reading":  [
+                                {
+                                    "title":  "Free Will Baptist Historical Commission — The Treatise",
+                                    "url":  "https://fwbhistory.com/site?p=298",
+                                    "snippet":  "Traces the 1834 Randall treatise and explains the drafting of a national successor after organization in 1935.",
+                                    "citations":  [
+                                                      "cite-us-coverage-baptist-nafwb-treatise-history"
+                                                  ]
+                                }
+                            ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-us-coverage-baptist-nafwb-history",
+                                                  "cite-us-coverage-baptist-nafwb-treatise-history"
+                                              ],
+                                  "start_year":  [
+                                                     "cite-us-coverage-baptist-nafwb-history",
+                                                     "cite-us-coverage-baptist-nafwb-treatise-history"
+                                                 ],
+                                  "profile_scope":  [
+                                                        "cite-us-coverage-baptist-nafwb-history",
+                                                        "cite-us-coverage-baptist-nafwb-treatise"
+                                                    ],
+                                  "formation_narrative":  [
+                                                              "cite-us-coverage-baptist-nafwb-history",
+                                                              "cite-us-coverage-baptist-nafwb-treatise-history"
+                                                          ],
+                                  "core_beliefs":  [
+                                                       "cite-us-coverage-baptist-nafwb-treatise"
+                                                   ],
+                                  "distinctives":  [
+                                                       "cite-us-coverage-baptist-nafwb-treatise"
+                                                   ],
+                                  "ending_narrative":  [
+                                                           "cite-us-coverage-baptist-nafwb-history",
+                                                           "cite-us-coverage-baptist-nafwb-treatise"
+                                                       ],
+                                  "size_estimate":  [
+                                                        "cite-us-coverage-baptist-usrc-223"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-coverage-baptist-nafwb-history",
+                          "cite-us-coverage-baptist-nafwb-treatise-history",
+                          "cite-us-coverage-baptist-nafwb-treatise",
+                          "cite-us-coverage-baptist-usrc-223"
+                      ]
+    },
+    {
+        "id":  "american-baptist-association",
+        "name":  "American Baptist Association",
+        "aliases":  [
+                        "ABA"
+                    ],
+        "short_label":  "American Baptist Association (ABA)",
+        "kind":  "denomination",
+        "start_year":  1924,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "Texarkana, Texas–Arkansas",
+        "tradition_family":  "Baptist",
+        "ecclesial_orientation":  "evangelical",
+        "current_status":  "active",
+        "summary":  "A voluntary fellowship of Missionary Baptist churches organized in 1924, with Landmark Baptist roots and a strong emphasis on church-directed missions.",
+        "profile_scope":  "This profile covers the U.S. association organized in 1924, selected antecedents, the 1950 division and present practice. American Baptist Churches USA is a separate denomination with Northern Baptist roots.",
+        "formation_narrative":  "Landmark Baptist churches organized in Arkansas in 1902 around church equality, with each church entitled to a voice regardless of size. In 1924 the Arkansas state association, the Baptist Missionary Association of Texas and other churches came together in Texarkana to form the American Baptist Association. Their model let churches cooperate in funding and outreach while keeping authority to send and supervise missionaries with local churches.",
+        "distinctives":  [
+                             "Landmark Baptist roots",
+                             "Church-sent missions",
+                             "Local church authority"
+                         ],
+        "core_beliefs":  [
+                             "The doctrinal statement teaches the inspiration and authority of Scripture and believer’s baptism by immersion under the authority of a New Testament church.",
+                             "It describes a church as a local congregation that governs itself and can cooperate with other churches. Its published mission policy assigns the sending and supervision of missionaries to churches.",
+                             "The statement teaches that miraculous manifestation gifts ceased with the completion of the Bible."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Ben M. Bogard",
+                                "role":  "Organizer in the Arkansas predecessor association",
+                                "summary":  "Helped bring Landmark churches together at the 1902 Arkansas meeting that preceded national organization.",
+                                "url":  "https://encyclopediaofarkansas.net/entries/State-Association-of-Missionary-Baptist-Churches-of-Arkansas-2689/",
+                                "citations":  [
+                                                  "cite-us-coverage-baptist-aba-arkansas"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1902,
+                              "label":  "Arkansas predecessor association organized in Little Rock",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-aba-arkansas"
+                                            ]
+                          },
+                          {
+                              "year":  1924,
+                              "label":  "American Baptist Association organized in Texarkana",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-aba-faq",
+                                                "cite-us-coverage-baptist-aba-arkansas",
+                                                "cite-us-coverage-baptist-aba-bma-mississippi"
+                                            ]
+                          },
+                          {
+                              "year":  1950,
+                              "label":  "Departing churches organize the North American Baptist Association",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-aba-bma-mississippi",
+                                                "cite-us-coverage-baptist-aba-1950"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "American Baptist Association Doctrinal Statement",
+                                  "year":  null,
+                                  "significance":  "Published statement of the fellowship’s teaching on Scripture, congregations, baptism and spiritual gifts.",
+                                  "url":  "https://bogardpress.org/doctrinal-statement/",
+                                  "citations":  [
+                                                    "cite-us-coverage-baptist-aba-doctrine"
+                                                ]
+                              },
+                              {
+                                  "title":  "ABA Mission Policy",
+                                  "year":  null,
+                                  "significance":  "The published policy sets out how churches may assist each other while retaining responsibility for sending and supervising missionaries.",
+                                  "url":  "https://www.abaptist.org/start-here-page",
+                                  "citations":  [
+                                                    "cite-us-coverage-baptist-aba-faq"
+                                                ]
+                              }
+                          ],
+        "ending_narrative":  "A 1950 division produced the North American Baptist Association, later the Baptist Missionary Association of America. The ABA continued as a separate voluntary fellowship. Churches still cooperate in missions, and the association maintains an archive of minutes and historical missionary lists.",
+        "successor_ids":  [
+
+                          ],
+        "size_estimate":  "146,820 U.S. adherents across 766 congregations (2020 U.S. Religion Census)",
+        "further_reading":  [
+                                {
+                                    "title":  "American Baptist Association History and Archives",
+                                    "url":  "https://baptistville.org/abahistory/",
+                                    "snippet":  "Browse minutes from the association and its antecedents and missionary lists by year.",
+                                    "citations":  [
+                                                      "cite-us-coverage-baptist-aba-archive"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Arkansas Missionary Baptist association history",
+                                    "url":  "https://encyclopediaofarkansas.net/entries/State-Association-of-Missionary-Baptist-Churches-of-Arkansas-2689/",
+                                    "snippet":  "Explains the 1902 organizing meeting and its connection to national organization.",
+                                    "citations":  [
+                                                      "cite-us-coverage-baptist-aba-arkansas"
+                                                  ]
+                                }
+                            ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-us-coverage-baptist-aba-faq",
+                                                  "cite-us-coverage-baptist-aba-arkansas"
+                                              ],
+                                  "start_year":  [
+                                                     "cite-us-coverage-baptist-aba-faq",
+                                                     "cite-us-coverage-baptist-aba-arkansas"
+                                                 ],
+                                  "profile_scope":  [
+                                                        "cite-us-coverage-baptist-usrc-017",
+                                                        "cite-us-coverage-baptist-aba-arkansas"
+                                                    ],
+                                  "formation_narrative":  [
+                                                              "cite-us-coverage-baptist-aba-arkansas",
+                                                              "cite-us-coverage-baptist-aba-faq",
+                                                              "cite-us-coverage-baptist-aba-bma-mississippi"
+                                                          ],
+                                  "core_beliefs":  [
+                                                       "cite-us-coverage-baptist-aba-doctrine",
+                                                       "cite-us-coverage-baptist-aba-faq"
+                                                   ],
+                                  "distinctives":  [
+                                                       "cite-us-coverage-baptist-aba-arkansas",
+                                                       "cite-us-coverage-baptist-aba-faq"
+                                                   ],
+                                  "ending_narrative":  [
+                                                           "cite-us-coverage-baptist-aba-bma-mississippi",
+                                                           "cite-us-coverage-baptist-aba-1950",
+                                                           "cite-us-coverage-baptist-aba-faq",
+                                                           "cite-us-coverage-baptist-aba-archive"
+                                                       ],
+                                  "size_estimate":  [
+                                                        "cite-us-coverage-baptist-usrc-017"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-coverage-baptist-aba-faq",
+                          "cite-us-coverage-baptist-aba-arkansas",
+                          "cite-us-coverage-baptist-usrc-017",
+                          "cite-us-coverage-baptist-aba-bma-mississippi",
+                          "cite-us-coverage-baptist-aba-doctrine",
+                          "cite-us-coverage-baptist-aba-1950",
+                          "cite-us-coverage-baptist-aba-archive"
+                      ]
+    },
+    {
+        "id":  "full-gospel-baptist-church-fellowship",
+        "name":  "Full Gospel Baptist Church Fellowship International",
+        "aliases":  [
+                        "Full Gospel Baptist Church Fellowship",
+                        "Full Gospel Baptist",
+                        "FGBCF",
+                        "FGBCFI"
+                    ],
+        "short_label":  "Full Gospel Baptist (FGBCF)",
+        "kind":  "denomination",
+        "start_year":  1994,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "New Orleans, Louisiana",
+        "tradition_family":  "Baptist",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "A fellowship with Black Baptist roots that brought charismatic worship and the active use of spiritual gifts into a network of autonomous congregations.",
+        "profile_scope":  "This profile covers the U.S. founding and selected developments in the international fellowship. The 1994 date marks public establishment and the New Orleans conference. Full Gospel Christian Assemblies International is a distinct congregation founded in the Chicago area.",
+        "formation_narrative":  "Paul S. Morton Sr., pastor of Greater Saint Stephen in New Orleans, sought to bring Baptist congregations together around the active exercise of spiritual gifts. Fellowship materials trace his vision to 1992. Paul and Debra Morton helped found the fellowship, which dates its establishment to 1994. Its first public conference at the New Orleans Superdome brought together churches interested in charismatic practice within a Baptist framework.",
+        "distinctives":  [
+                             "Charismatic Baptist worship",
+                             "Continuing spiritual gifts",
+                             "Autonomous participating churches"
+                         ],
+        "core_beliefs":  [
+                             "The fellowship teaches that the Holy Spirit continues to equip believers with spiritual gifts and emphasizes a Spirit-filled life.",
+                             "Its principle of freedom to exercise spiritual gifts pairs charismatic practice with local autonomy. It has a council and presiding bishop for fellowship leadership, while participating churches retain local government."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Paul S. Morton Sr.",
+                                "role":  "Founder and founding presiding bishop",
+                                "summary":  "The New Orleans pastor led the fellowship’s formation and spoke at the 1994 Superdome conference.",
+                                "url":  "https://www.fullgospelbaptist.org/leadership-2/",
+                                "citations":  [
+                                                  "cite-us-coverage-baptist-fgbcf-leadership",
+                                                  "cite-us-coverage-baptist-fgbcf-1994"
+                                              ]
+                            },
+                            {
+                                "name":  "Debra B. Morton",
+                                "role":  "Co-founder",
+                                "summary":  "The fellowship credits her as co-founder. An affiliate’s manual also identifies her in national women’s ministry leadership.",
+                                "url":  "https://www.youtube.com/watch?v=2x87czOIaxA",
+                                "citations":  [
+                                                  "cite-us-coverage-baptist-fgbcf-debra",
+                                                  "cite-us-coverage-baptist-fgbcf-manual"
+                                              ]
+                            },
+                            {
+                                "name":  "Joseph W. Walker III",
+                                "role":  "Presiding bishop in the next leadership generation",
+                                "summary":  "The Mt. Zion Baptist Church pastor in Nashville was announced as Morton’s successor in 2013.",
+                                "url":  "https://www.fullgospelbaptist.org/leadership-2/",
+                                "citations":  [
+                                                  "cite-us-coverage-baptist-fgbcf-leadership",
+                                                  "cite-us-coverage-baptist-fgbcf-walker"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1992,
+                              "label":  "Vision for the fellowship articulated in New Orleans, in the affiliate account",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-fgbcf-manual"
+                                            ]
+                          },
+                          {
+                              "year":  1994,
+                              "label":  "Fellowship launches at its first conference, New Orleans Superdome, July",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-fgbcf-about",
+                                                "cite-us-coverage-baptist-fgbcf-1994",
+                                                "cite-us-coverage-baptist-fgbcf-launch-interview"
+                                            ]
+                          },
+                          {
+                              "year":  2013,
+                              "label":  "Joseph W. Walker III announced as Morton’s successor",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-fgbcf-walker"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Who We Are and What We Believe",
+                                  "year":  null,
+                                  "significance":  "The fellowship’s public summary explains its founding principle and teaching on the Holy Spirit.",
+                                  "url":  "https://www.fullgospelbaptist.org/leadership/",
+                                  "citations":  [
+                                                    "cite-us-coverage-baptist-fgbcf-about"
+                                                ]
+                              },
+                              {
+                                  "title":  "New Member’s Manual — Impact Church",
+                                  "year":  null,
+                                  "significance":  "An affiliate’s orientation guide explains how local autonomy and fellowship participation work together.",
+                                  "url":  "https://storage2.snappages.site/MZSG9T/assets/files/NEW-MEMBER-MANUAL.pdf",
+                                  "citations":  [
+                                                    "cite-us-coverage-baptist-fgbcf-manual"
+                                                ]
+                              }
+                          ],
+        "ending_narrative":  "The fellowship continues under presiding bishop Joseph W. Walker III and maintains a network of churches and leaders. Its regional, state and district offices and recurring conferences support cooperation and ministry training.",
+        "successor_ids":  [
+
+                          ],
+        "size_estimate":  "138,354 U.S. adherents across 817 congregations (2020 U.S. Religion Census)",
+        "further_reading":  [
+                                {
+                                    "title":  "1994 New Orleans Superdome conference",
+                                    "url":  "https://www.youtube.com/watch?v=g682fHXlkUI",
+                                    "snippet":  "The founder’s recording documents the public launch period.",
+                                    "citations":  [
+                                                      "cite-us-coverage-baptist-fgbcf-1994"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Fellowship leadership",
+                                    "url":  "https://www.fullgospelbaptist.org/leadership-2/",
+                                    "snippet":  "Official biographies identify the founding and current presiding bishops and describe the wider leadership structure.",
+                                    "citations":  [
+                                                      "cite-us-coverage-baptist-fgbcf-leadership"
+                                                  ]
+                                }
+                            ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-us-coverage-baptist-fgbcf-about",
+                                                  "cite-us-coverage-baptist-fgbcf-manual",
+                                                  "cite-us-coverage-baptist-fgbcf-debra"
+                                              ],
+                                  "start_year":  [
+                                                     "cite-us-coverage-baptist-fgbcf-about",
+                                                     "cite-us-coverage-baptist-fgbcf-1994"
+                                                 ],
+                                  "profile_scope":  [
+                                                        "cite-us-coverage-baptist-fgbcf-about",
+                                                        "cite-us-coverage-baptist-fgbcf-1994",
+                                                        "cite-us-coverage-baptist-fgcai-identity"
+                                                    ],
+                                  "formation_narrative":  [
+                                                              "cite-us-coverage-baptist-fgbcf-about",
+                                                              "cite-us-coverage-baptist-fgbcf-manual",
+                                                              "cite-us-coverage-baptist-fgbcf-debra",
+                                                              "cite-us-coverage-baptist-fgbcf-1994",
+                                                              "cite-us-coverage-baptist-fgbcf-launch-interview"
+                                                          ],
+                                  "core_beliefs":  [
+                                                       "cite-us-coverage-baptist-fgbcf-about",
+                                                       "cite-us-coverage-baptist-fgbcf-manual",
+                                                       "cite-us-coverage-baptist-fgbcf-leadership"
+                                                   ],
+                                  "distinctives":  [
+                                                       "cite-us-coverage-baptist-fgbcf-about",
+                                                       "cite-us-coverage-baptist-fgbcf-manual"
+                                                   ],
+                                  "ending_narrative":  [
+                                                           "cite-us-coverage-baptist-fgbcf-leadership",
+                                                           "cite-us-coverage-baptist-fgbcf-manual"
+                                                       ],
+                                  "size_estimate":  [
+                                                        "cite-us-coverage-baptist-usrc-232"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-coverage-baptist-fgbcf-about",
+                          "cite-us-coverage-baptist-fgbcf-manual",
+                          "cite-us-coverage-baptist-fgbcf-debra",
+                          "cite-us-coverage-baptist-fgbcf-1994",
+                          "cite-us-coverage-baptist-fgcai-identity",
+                          "cite-us-coverage-baptist-fgbcf-leadership",
+                          "cite-us-coverage-baptist-usrc-232",
+                          "cite-us-coverage-baptist-fgbcf-walker",
+                          "cite-us-coverage-baptist-fgbcf-launch-interview"
+                      ]
+    },
+    {
+        "id":  "church-of-god-anderson",
+        "name":  "Church of God (Anderson, Indiana)",
+        "short_label":  "Church of God (Anderson)",
+        "aliases":  [
+                        "Church of God Reformation Movement",
+                        "Church of God (Anderson, IN)",
+                        "Anderson Church of God",
+                        "CHOG Anderson"
+                    ],
+        "start_year":  1881,
+        "geographic_origin":  "US",
+        "tradition_family":  "Holiness",
+        "ecclesial_orientation":  "evangelical",
+        "summary":  "A U.S. Holiness movement of churches identified by its Anderson, Indiana, offices, with roots in Daniel Sidney Warner\u0027s publishing and evangelism. Church of God (Cleveland), Church of God of Prophecy, and Church of God in Christ are separate bodies.",
+        "formation_narrative":  "In 1881, Daniel Sidney Warner began publishing The Gospel Trumpet under that title. The paper and traveling evangelists gave the movement a way to teach holy living and gather believers across existing denominational lines. Warner and coworkers understood Christian unity as a spiritual reality to be lived out. They appealed to Scripture and the Holy Spirit in place of formal creeds and denominational hierarchies. Mary Cole\u0027s account describes her encounter with Warner and her own work as an evangelist.",
+        "ending_narrative":  "The movement built durable institutions even as it retained its emphasis on Christian unity. The Anderson Bible Training School opened in 1917 and developed into Anderson University. Racial barriers constrained Black participants\u0027 access to shared venues. Black Church of God members held a camp meeting at West Middlesex, Pennsylvania, in 1917 and built a national ministry network through the National Association of the Church of God. Today Church of God Ministries serves the movement\u0027s General Assembly from Anderson.",
+        "profile_scope":  "1881 is the conventional movement start and the first year of The Gospel Trumpet under that title. The profile covers the U.S. Anderson movement, selected institutions and contemporary teaching. Early organizational breaks, the full history of racial integration and international churches remain outside this account.",
+        "distinctives":  [
+                             "Christian unity across denominational lines",
+                             "Holiness in daily life",
+                             "Baptism, communion and foot washing"
+                         ],
+        "core_beliefs":  [
+                             "Christian unity: salvation in Christ makes believers members of one church, and churches are called to make that unity visible.",
+                             "Holiness: the Holy Spirit shapes believers\u0027 conduct and service as they follow Jesus.",
+                             "Ordinances: the movement recognizes baptism, communion and foot washing. Foot washing enacts Jesus\u0027 example of serving others."
+                         ],
+        "size_estimate":  "427,038 U.S. adherents and 1,944 U.S. congregations (2020 U.S. Religion Census).",
+        "key_figures":  [
+                            {
+                                "name":  "Daniel Sidney Warner",
+                                "role":  "early leader and editor",
+                                "summary":  "Used The Gospel Trumpet to circulate the movement\u0027s message of holy living and Christian unity.",
+                                "url":  "https://omeka.anderson.edu/exhibits/show/periodicals/chog-periodicals",
+                                "citations":  [
+                                                  "cite-us-coverage-holiness-anderson-start",
+                                                  "cite-us-coverage-holiness-anderson-print"
+                                              ]
+                            },
+                            {
+                                "name":  "Mary Cole",
+                                "role":  "early evangelist",
+                                "summary":  "Her memoir recounts receiving the movement\u0027s teaching and preaching in early Church of God work.",
+                                "url":  "https://www.gutenberg.org/cache/epub/7429/pg7429.html",
+                                "citations":  [
+                                                  "cite-us-coverage-holiness-anderson-cole"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1881,
+                              "label":  "The Gospel Trumpet launches under that title, the conventional start of the movement",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-anderson-start",
+                                                "cite-us-coverage-holiness-anderson-print"
+                                            ]
+                          },
+                          {
+                              "year":  1917,
+                              "label":  "Anderson Bible Training School opens",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-anderson-training"
+                                            ]
+                          },
+                          {
+                              "year":  1917,
+                              "label":  "Black Church of God members hold their first camp meeting at West Middlesex",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-anderson-black-organizing"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "The Gospel Trumpet",
+                                  "year":  1881,
+                                  "significance":  "Influential periodical that circulated the movement\u0027s teaching. The year marks its launch under this title.",
+                                  "url":  "https://omeka.anderson.edu/exhibits/show/periodicals/chog-periodicals",
+                                  "citations":  [
+                                                    "cite-us-coverage-holiness-anderson-print"
+                                                ]
+                              },
+                              {
+                                  "title":  "Bylaws of Church of God Ministries, Inc.",
+                                  "year":  2016,
+                                  "significance":  "Bylaws of the national ministry corporation as amended in the linked edition. They describe its service to the General Assembly.",
+                                  "url":  "https://www.jesusisthesubject.org/files/downloads/documents/ga/ChoG_Ministries_Bylaws_adopted_March_17_2016.pdf",
+                                  "citations":  [
+                                                    "cite-us-coverage-holiness-anderson-government"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "Trials and Triumphs of Faith",
+                                    "url":  "https://www.gutenberg.org/cache/epub/7429/pg7429.html",
+                                    "snippet":  "Mary Cole\u0027s account of her evangelism and life in the movement.",
+                                    "citations":  [
+                                                      "cite-us-coverage-holiness-anderson-cole"
+                                                  ]
+                                },
+                                {
+                                    "title":  "National Association of the Church of God",
+                                    "url":  "https://omeka.anderson.edu/exhibits/show/black-and-white-relations/the-church-of-god/the-national-association-of-th",
+                                    "snippet":  "An Anderson University exhibit on Black congregational organizing and the West Middlesex camp meeting.",
+                                    "citations":  [
+                                                      "cite-us-coverage-holiness-anderson-black-organizing"
+                                                  ]
+                                }
+                            ],
+        "kind":  "denomination",
+        "region":  "US",
+        "current_status":  "active",
+        "zoom_tier":  "full",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-us-coverage-holiness-anderson-start",
+                                                  "cite-us-coverage-holiness-anderson-scale"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-us-coverage-holiness-anderson-start",
+                                                              "cite-us-coverage-holiness-anderson-print",
+                                                              "cite-us-coverage-holiness-anderson-cole"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-coverage-holiness-anderson-training",
+                                                           "cite-us-coverage-holiness-anderson-black-organizing",
+                                                           "cite-us-coverage-holiness-anderson-government",
+                                                           "cite-us-coverage-holiness-anderson-teaching"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-coverage-holiness-anderson-start",
+                                                       "cite-us-coverage-holiness-anderson-teaching"
+                                                   ],
+                                  "distinctives":  [
+                                                       "cite-us-coverage-holiness-anderson-teaching"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-us-coverage-holiness-anderson-scale"
+                                                    ],
+                                  "key_figures":  [
+                                                      "cite-us-coverage-holiness-anderson-start",
+                                                      "cite-us-coverage-holiness-anderson-print",
+                                                      "cite-us-coverage-holiness-anderson-cole"
+                                                  ],
+                                  "key_dates":  [
+                                                    "cite-us-coverage-holiness-anderson-start",
+                                                    "cite-us-coverage-holiness-anderson-print",
+                                                    "cite-us-coverage-holiness-anderson-training",
+                                                    "cite-us-coverage-holiness-anderson-black-organizing"
+                                                ],
+                                  "key_documents":  [
+                                                        "cite-us-coverage-holiness-anderson-print",
+                                                        "cite-us-coverage-holiness-anderson-government"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-coverage-holiness-anderson-start",
+                          "cite-us-coverage-holiness-anderson-scale",
+                          "cite-us-coverage-holiness-anderson-print",
+                          "cite-us-coverage-holiness-anderson-cole",
+                          "cite-us-coverage-holiness-anderson-training",
+                          "cite-us-coverage-holiness-anderson-black-organizing",
+                          "cite-us-coverage-holiness-anderson-government",
+                          "cite-us-coverage-holiness-anderson-teaching"
+                      ]
+    },
+    {
+        "id":  "christian-and-missionary-alliance",
+        "name":  "Christian and Missionary Alliance",
+        "short_label":  "C\u0026MA",
+        "aliases":  [
+                        "The Christian and Missionary Alliance",
+                        "Christian \u0026 Missionary Alliance",
+                        "The Alliance",
+                        "CMA",
+                        "U.S. Alliance"
+                    ],
+        "start_year":  1974,
+        "geographic_origin":  "US",
+        "tradition_family":  "Holiness",
+        "ecclesial_orientation":  "evangelical",
+        "summary":  "A U.S. evangelical denomination in the Holiness tradition, known as The Alliance. It emerged from A. B. Simpson\u0027s interdenominational evangelistic and missionary societies.",
+        "formation_narrative":  "Albert Benjamin Simpson organized evangelistic outreach through New York\u0027s Gospel Tabernacle and trained overseas workers through the Missionary Training Institute. In 1887 the Christian Alliance gathered believers around the Fourfold Gospel, while the Evangelical Missionary Alliance, later called the International Missionary Alliance, organized overseas missions. Both societies had distinct purposes and constitutions. Alliance archival records date their union as The Christian and Missionary Alliance to 1897. Women made up most of the early overseas workforce according to the U.S. Alliance\u0027s history.",
+        "ending_narrative":  "Paul Rader succeeded Simpson in leading the missions society. After World War II, the Alliance expanded its congregational work and restructured, formally declaring itself a denomination in 1974. The Canadian Alliance became autonomous in 1981. The U.S. denomination continues to plant churches, send workers overseas and govern through its General Council.",
+        "profile_scope":  "The timeline begins with the U.S. denomination\u0027s 1974 declaration and reorganization. It includes the 1887 societies and their 1897 union as predecessors. The federal 1916 report gives 1895 for the union, while the Alliance archival finding aid gives 1897. The latter date is used here. Canadian and other national church histories and the full Council vote sequence are outside this introductory account.",
+        "distinctives":  [
+                             "Fourfold Gospel",
+                             "Sanctification and divine healing",
+                             "Local church planting and overseas missions"
+                         ],
+        "core_beliefs":  [
+                             "The Fourfold Gospel describes Jesus as Savior, Sanctifier, Healer and Coming King. It connects salvation, holy living, prayer for healing and hope for Christ\u0027s return.",
+                             "Sanctification: the Holy Spirit empowers believers for holy living and service. The Alliance describes a decisive surrender to God and continued growth.",
+                             "Divine healing: the Alliance encourages prayer for healing and locates healing in Christ\u0027s redemptive work."
+                         ],
+        "size_estimate":  "414,360 U.S. adherents and 1,776 U.S. congregations (2020 U.S. Religion Census).",
+        "key_figures":  [
+                            {
+                                "name":  "Albert Benjamin Simpson",
+                                "role":  "founder of both predecessor societies",
+                                "summary":  "Organized urban evangelism and mission training and articulated the Fourfold Gospel.",
+                                "url":  "https://online.ambrose.edu/alliancestudies/ahtreadings/ahtr_s4.html",
+                                "citations":  [
+                                                  "cite-us-coverage-holiness-alliance-outreach",
+                                                  "cite-us-coverage-holiness-alliance-constitutions",
+                                                  "cite-us-coverage-holiness-alliance-simpson-teaching"
+                                              ]
+                            },
+                            {
+                                "name":  "Paul Rader",
+                                "role":  "successor to Simpson",
+                                "summary":  "Took leadership of the mission society after Simpson\u0027s death.",
+                                "url":  "https://cmalliance.org/who-we-are/our-history/",
+                                "citations":  [
+                                                  "cite-us-coverage-holiness-alliance-outreach"
+                                              ]
+                            },
+                            {
+                                "name":  "A. W. Tozer",
+                                "role":  "pastor and editor",
+                                "summary":  "Pastored Southside Alliance Church in Chicago and became editor of Alliance Weekly in 1950.",
+                                "url":  "https://cmalliance.org/who-we-are/our-history/",
+                                "citations":  [
+                                                  "cite-us-coverage-holiness-alliance-denomination"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1887,
+                              "label":  "Christian Alliance and Evangelical Missionary Alliance organize as separate societies",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-alliance-societies",
+                                                "cite-us-coverage-holiness-alliance-constitutions"
+                                            ]
+                          },
+                          {
+                              "year":  1897,
+                              "label":  "Christian Alliance and International Missionary Alliance unite as one missions society, per Alliance archives",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-alliance-societies",
+                                                "cite-us-coverage-holiness-alliance-date-conflict"
+                                            ]
+                          },
+                          {
+                              "year":  1974,
+                              "label":  "The U.S. Alliance formally declares itself a denomination and restructures",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-alliance-denomination"
+                                            ]
+                          },
+                          {
+                              "year":  1981,
+                              "label":  "The Canadian Alliance becomes autonomous",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-alliance-canada"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "The founding Alliance constitutions",
+                                  "year":  1887,
+                                  "significance":  "Adopted rules for the two predecessor societies. The transcriptions distinguish the home fellowship from the overseas mission organization.",
+                                  "url":  "https://online.ambrose.edu/alliancestudies/ahtreadings/ahtr_s4.html",
+                                  "citations":  [
+                                                    "cite-us-coverage-holiness-alliance-constitutions"
+                                                ]
+                              },
+                              {
+                                  "title":  "The Four-Fold Gospel",
+                                  "year":  1890,
+                                  "significance":  "Simpson\u0027s influential teaching in the revised third edition. The year refers to the edition linked here.",
+                                  "url":  "https://archive.org/details/fourfoldgospel00simp",
+                                  "citations":  [
+                                                    "cite-us-coverage-holiness-alliance-simpson-teaching"
+                                                ]
+                              },
+                              {
+                                  "title":  "Alliance Statement of Faith",
+                                  "significance":  "The U.S. denomination\u0027s published confession, presented with interpretive statements on sanctification and healing.",
+                                  "url":  "https://cmalliance.org/who-we-are/our-faith-and-mission/perspectives/",
+                                  "citations":  [
+                                                    "cite-us-coverage-holiness-alliance-doctrine"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "Board of Managers fonds",
+                                    "url":  "https://ambrose.edu/sites/default/files/2000-02_cma_board_of_managers_0.pdf",
+                                    "snippet":  "An archival guide to the predecessor societies, their union and the records of the united mission.",
+                                    "citations":  [
+                                                      "cite-us-coverage-holiness-alliance-societies"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Council 2025 report and minutes",
+                                    "url":  "https://cdn.cmalliance.org/wordpress/cmalliance/Council-2025-Report-and-Minutes.pdf",
+                                    "snippet":  "Proceedings showing the current U.S. denomination\u0027s governance and doctrinal deliberation.",
+                                    "citations":  [
+                                                      "cite-us-coverage-holiness-alliance-current"
+                                                  ]
+                                }
+                            ],
+        "kind":  "denomination",
+        "region":  "US",
+        "current_status":  "active",
+        "zoom_tier":  "full",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-us-coverage-holiness-alliance-outreach",
+                                                  "cite-us-coverage-holiness-alliance-denomination"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-us-coverage-holiness-alliance-outreach",
+                                                              "cite-us-coverage-holiness-alliance-societies",
+                                                              "cite-us-coverage-holiness-alliance-constitutions"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-coverage-holiness-alliance-outreach",
+                                                           "cite-us-coverage-holiness-alliance-denomination",
+                                                           "cite-us-coverage-holiness-alliance-canada",
+                                                           "cite-us-coverage-holiness-alliance-current"
+                                                       ],
+                                  "profile_scope":  [
+                                                        "cite-us-coverage-holiness-alliance-denomination",
+                                                        "cite-us-coverage-holiness-alliance-date-conflict",
+                                                        "cite-us-coverage-holiness-alliance-societies"
+                                                    ],
+                                  "core_beliefs":  [
+                                                       "cite-us-coverage-holiness-alliance-doctrine",
+                                                       "cite-us-coverage-holiness-alliance-simpson-teaching"
+                                                   ],
+                                  "distinctives":  [
+                                                       "cite-us-coverage-holiness-alliance-denomination",
+                                                       "cite-us-coverage-holiness-alliance-doctrine"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-us-coverage-holiness-alliance-scale"
+                                                    ],
+                                  "key_figures":  [
+                                                      "cite-us-coverage-holiness-alliance-outreach",
+                                                      "cite-us-coverage-holiness-alliance-constitutions",
+                                                      "cite-us-coverage-holiness-alliance-simpson-teaching",
+                                                      "cite-us-coverage-holiness-alliance-denomination"
+                                                  ],
+                                  "key_dates":  [
+                                                    "cite-us-coverage-holiness-alliance-societies",
+                                                    "cite-us-coverage-holiness-alliance-constitutions",
+                                                    "cite-us-coverage-holiness-alliance-date-conflict",
+                                                    "cite-us-coverage-holiness-alliance-denomination",
+                                                    "cite-us-coverage-holiness-alliance-canada"
+                                                ],
+                                  "key_documents":  [
+                                                        "cite-us-coverage-holiness-alliance-constitutions",
+                                                        "cite-us-coverage-holiness-alliance-simpson-teaching",
+                                                        "cite-us-coverage-holiness-alliance-doctrine"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-coverage-holiness-alliance-outreach",
+                          "cite-us-coverage-holiness-alliance-denomination",
+                          "cite-us-coverage-holiness-alliance-societies",
+                          "cite-us-coverage-holiness-alliance-constitutions",
+                          "cite-us-coverage-holiness-alliance-canada",
+                          "cite-us-coverage-holiness-alliance-current",
+                          "cite-us-coverage-holiness-alliance-date-conflict",
+                          "cite-us-coverage-holiness-alliance-doctrine",
+                          "cite-us-coverage-holiness-alliance-simpson-teaching",
+                          "cite-us-coverage-holiness-alliance-scale"
+                      ]
+    },
+    {
+        "id":  "church-of-the-brethren",
+        "name":  "Church of the Brethren",
+        "short_label":  "Church of the Brethren",
+        "aliases":  [
+                        "CoB",
+                        "German Baptist Brethren",
+                        "Dunkers",
+                        "Dunkards"
+                    ],
+        "start_year":  1723,
+        "geographic_origin":  "Germany",
+        "tradition_family":  "Schwarzenau Brethren",
+        "ecclesial_orientation":  "other",
+        "summary":  "A U.S. Historic Peace Church in the Schwarzenau Brethren tradition. Its American congregational history begins at Germantown, Pennsylvania, and its European roots go back to the 1708 Schwarzenau baptisms.",
+        "formation_narrative":  "In 1708 eight people, including Alexander Mack and Johanna Kipping, received believers\u0027 baptism at the Eder River in Schwarzenau. Pietist and Anabaptist ideas shaped their commitment to follow Jesus together as a disciplined community. Facing persecution and economic hardship, Brethren began emigrating under Peter Becker in 1719. The first American congregation organized at Germantown in 1723. Mack arrived with a later group in 1729.",
+        "ending_narrative":  "Disputes over how binding Annual Meeting decisions should be, and over changes such as paid ministry, Sunday schools and higher education, divided the German Baptist Brethren in the early 1880s. Old Order Brethren sought to preserve inherited practices. Progressives led by Henry Holsinger pressed for changes and organized The Brethren Church in 1883. The largest continuing branch adopted the name Church of the Brethren in 1908. Youth advocacy at Annual Conference led to Brethren Volunteer Service in 1948. The denomination continues through Annual Conference, congregations and ministries. Covenant Brethren Church incorporated in 2020 after organizing around its stated concerns about biblical authority and accountability. Church of the Brethren leaders objected to recruitment among their congregations.",
+        "profile_scope":  "1723 is the first American congregation, 1708 the European movement origin, and 1908 the adoption of the present name. This profile follows the U.S. line that took that name. German Baptist Brethren and Dunkers were names used for a wider historical community before the divisions. Plymouth Brethren, Brethren in Christ, and the later daughter bodies have distinct histories.",
+        "distinctives":  [
+                             "New Testament discipleship",
+                             "Believer\u0027s baptism by trine immersion",
+                             "Love feast and peacemaking"
+                         ],
+        "core_beliefs":  [
+                             "The New Testament guides congregational life and daily discipleship. Brethren emphasize living Jesus\u0027 teaching through service and accountability in community.",
+                             "Believers\u0027 baptism uses three forward immersions. The traditional love feast joins feet washing, a shared meal and communion.",
+                             "Peacemaking is part of discipleship. Annual Conference has affirmed nonviolence and conscientious objection, and the denomination has organized volunteer service."
+                         ],
+        "size_estimate":  "109,288 U.S. adherents and 921 U.S. congregations (2020 U.S. Religion Census).",
+        "key_figures":  [
+                            {
+                                "name":  "Alexander Mack",
+                                "role":  "early organizer",
+                                "summary":  "Received baptism at Schwarzenau and baptized the other members of the founding group. He came to Pennsylvania in 1729.",
+                                "url":  "https://www.brethren.org/about/history/",
+                                "citations":  [
+                                                  "cite-us-coverage-holiness-brethren-baptisms",
+                                                  "cite-us-coverage-holiness-brethren-migration"
+                                              ]
+                            },
+                            {
+                                "name":  "Johanna Kipping",
+                                "role":  "founding participant",
+                                "summary":  "Took part in the first baptisms and migrated to Pennsylvania in 1729.",
+                                "url":  "https://www.brethren.org/bhla/sketches/",
+                                "citations":  [
+                                                  "cite-us-coverage-holiness-brethren-founders"
+                                              ]
+                            },
+                            {
+                                "name":  "Peter Becker",
+                                "role":  "migration leader",
+                                "summary":  "Led the 1719 migration that preceded the formation of the Germantown congregation.",
+                                "url":  "https://www.brethren.org/about/history/",
+                                "citations":  [
+                                                  "cite-us-coverage-holiness-brethren-migration"
+                                              ]
+                            },
+                            {
+                                "name":  "Henry Holsinger",
+                                "role":  "Progressive Brethren leader",
+                                "summary":  "His publishing and advocacy for reforms helped shape the movement that organized The Brethren Church.",
+                                "url":  "https://brethrenchurch.org/history-series-this-chapter-in-brethren-hymnology-centers-on-henry-holsinger/",
+                                "citations":  [
+                                                  "cite-us-coverage-holiness-brethren-division",
+                                                  "cite-us-coverage-holiness-brethren-progressives"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1708,
+                              "label":  "First Schwarzenau Brethren baptisms at the Eder River",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-brethren-baptisms",
+                                                "cite-us-coverage-holiness-brethren-founders"
+                                            ]
+                          },
+                          {
+                              "year":  1723,
+                              "label":  "First American congregation organizes at Germantown",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-brethren-migration"
+                                            ]
+                          },
+                          {
+                              "year":  1883,
+                              "label":  "Progressive branch organizes The Brethren Church",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-brethren-division",
+                                                "cite-us-coverage-holiness-brethren-progressives"
+                                            ]
+                          },
+                          {
+                              "year":  1908,
+                              "label":  "Continuing German Baptist Brethren branch adopts the name Church of the Brethren",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-brethren-name",
+                                                "cite-us-coverage-holiness-brethren-division"
+                                            ]
+                          },
+                          {
+                              "year":  1948,
+                              "label":  "Annual Conference establishes Brethren Volunteer Service",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-brethren-volunteers",
+                                                "cite-us-coverage-holiness-brethren-peacemaking"
+                                            ]
+                          },
+                          {
+                              "year":  2020,
+                              "label":  "Departing Covenant Brethren Church incorporates separately",
+                              "citations":  [
+                                                "cite-us-coverage-holiness-brethren-recent",
+                                                "cite-us-coverage-holiness-brethren-covenant"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Early Brethren letter",
+                                  "year":  1708,
+                                  "significance":  "Founding-era statement of intent to follow Christ\u0027s teachings, quoted in the denomination\u0027s polity manual.",
+                                  "url":  "https://www.brethren.org/ac/wp-content/uploads/sites/18/2023/02/ch.-0-MOP-Overview-Feb.-2023.pdf",
+                                  "citations":  [
+                                                    "cite-us-coverage-holiness-brethren-old-letter"
+                                                ]
+                              },
+                              {
+                                  "title":  "Peacemaking: The Calling of God\u0027s People in History",
+                                  "year":  1991,
+                                  "significance":  "Annual Conference statement linking the church\u0027s peace witness with nonviolence, conscientious objection and volunteer service.",
+                                  "url":  "https://www.brethren.org/ac/statements/1991-peacemaking/",
+                                  "citations":  [
+                                                    "cite-us-coverage-holiness-brethren-peacemaking"
+                                                ]
+                              },
+                              {
+                                  "title":  "Manual of Organization and Polity: Overview",
+                                  "year":  2023,
+                                  "significance":  "Governance overview in the February 2023 edition. It relates contemporary polity to the historical commitments of the Brethren.",
+                                  "url":  "https://www.brethren.org/ac/wp-content/uploads/sites/18/2023/02/ch.-0-MOP-Overview-Feb.-2023.pdf",
+                                  "citations":  [
+                                                    "cite-us-coverage-holiness-brethren-old-letter"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "Historical sketches",
+                                    "url":  "https://www.brethren.org/bhla/sketches/",
+                                    "snippet":  "Archival sketches of the founding participants and the late nineteenth-century divisions.",
+                                    "citations":  [
+                                                      "cite-us-coverage-holiness-brethren-founders",
+                                                      "cite-us-coverage-holiness-brethren-division"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Covenant Brethren Church FAQ",
+                                    "url":  "https://covenantbrethren.org/frequently-asked-questions/",
+                                    "snippet":  "The departing body\u0027s account of its organization and concerns. The Church of the Brethren\u0027s response is listed in the evidence.",
+                                    "citations":  [
+                                                      "cite-us-coverage-holiness-brethren-covenant",
+                                                      "cite-us-coverage-holiness-brethren-recent"
+                                                  ]
+                                }
+                            ],
+        "kind":  "denomination",
+        "region":  "US",
+        "current_status":  "active",
+        "zoom_tier":  "full",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-us-coverage-holiness-brethren-baptisms",
+                                                  "cite-us-coverage-holiness-brethren-migration",
+                                                  "cite-us-coverage-holiness-brethren-peacemaking"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-us-coverage-holiness-brethren-baptisms",
+                                                              "cite-us-coverage-holiness-brethren-migration",
+                                                              "cite-us-coverage-holiness-brethren-founders"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-coverage-holiness-brethren-division",
+                                                           "cite-us-coverage-holiness-brethren-authority",
+                                                           "cite-us-coverage-holiness-brethren-progressives",
+                                                           "cite-us-coverage-holiness-brethren-name",
+                                                           "cite-us-coverage-holiness-brethren-volunteers",
+                                                           "cite-us-coverage-holiness-brethren-recent",
+                                                           "cite-us-coverage-holiness-brethren-covenant"
+                                                       ],
+                                  "profile_scope":  [
+                                                        "cite-us-coverage-holiness-brethren-name",
+                                                        "cite-us-coverage-holiness-brethren-migration",
+                                                        "cite-us-coverage-holiness-brethren-baptisms"
+                                                    ],
+                                  "core_beliefs":  [
+                                                       "cite-us-coverage-holiness-brethren-scripture",
+                                                       "cite-us-coverage-holiness-brethren-ordinances",
+                                                       "cite-us-coverage-holiness-brethren-peacemaking"
+                                                   ],
+                                  "distinctives":  [
+                                                       "cite-us-coverage-holiness-brethren-scripture",
+                                                       "cite-us-coverage-holiness-brethren-ordinances",
+                                                       "cite-us-coverage-holiness-brethren-peacemaking"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-us-coverage-holiness-brethren-scale"
+                                                    ],
+                                  "key_figures":  [
+                                                      "cite-us-coverage-holiness-brethren-baptisms",
+                                                      "cite-us-coverage-holiness-brethren-migration",
+                                                      "cite-us-coverage-holiness-brethren-founders",
+                                                      "cite-us-coverage-holiness-brethren-division",
+                                                      "cite-us-coverage-holiness-brethren-progressives"
+                                                  ],
+                                  "key_dates":  [
+                                                    "cite-us-coverage-holiness-brethren-baptisms",
+                                                    "cite-us-coverage-holiness-brethren-founders",
+                                                    "cite-us-coverage-holiness-brethren-migration",
+                                                    "cite-us-coverage-holiness-brethren-division",
+                                                    "cite-us-coverage-holiness-brethren-progressives",
+                                                    "cite-us-coverage-holiness-brethren-name",
+                                                    "cite-us-coverage-holiness-brethren-volunteers",
+                                                    "cite-us-coverage-holiness-brethren-peacemaking",
+                                                    "cite-us-coverage-holiness-brethren-recent",
+                                                    "cite-us-coverage-holiness-brethren-covenant"
+                                                ],
+                                  "key_documents":  [
+                                                        "cite-us-coverage-holiness-brethren-old-letter",
+                                                        "cite-us-coverage-holiness-brethren-peacemaking"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-coverage-holiness-brethren-baptisms",
+                          "cite-us-coverage-holiness-brethren-migration",
+                          "cite-us-coverage-holiness-brethren-peacemaking",
+                          "cite-us-coverage-holiness-brethren-founders",
+                          "cite-us-coverage-holiness-brethren-division",
+                          "cite-us-coverage-holiness-brethren-authority",
+                          "cite-us-coverage-holiness-brethren-progressives",
+                          "cite-us-coverage-holiness-brethren-name",
+                          "cite-us-coverage-holiness-brethren-volunteers",
+                          "cite-us-coverage-holiness-brethren-recent",
+                          "cite-us-coverage-holiness-brethren-covenant",
+                          "cite-us-coverage-holiness-brethren-scripture",
+                          "cite-us-coverage-holiness-brethren-ordinances",
+                          "cite-us-coverage-holiness-brethren-scale",
+                          "cite-us-coverage-holiness-brethren-old-letter"
+                      ]
+    },
+    {
+        "id":  "african-methodist-episcopal-church",
+        "name":  "African Methodist Episcopal Church",
+        "kind":  "denomination",
+        "start_year":  1816,
+        "short_label":  "AME Church",
+        "aliases":  [
+                        "AME",
+                        "A.M.E. Church",
+                        "AMEC"
+                    ],
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Methodist",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "A historically Black Methodist denomination organized in Philadelphia in 1816 under Richard Allen.",
+        "formation_narrative":  "Black Methodists in Philadelphia sought control over their worship and church life in the face of racial discrimination. Richard Allen and Absalom Jones helped establish the Free African Society in 1787. Allen’s group retained Methodist worship, dedicated Bethel in 1794, and secured local autonomy through litigation. In 1816 Allen brought Black Methodist congregations together in Philadelphia to organize an independent denomination.",
+        "ending_narrative":  "AME ministers and congregations expanded across the South during the Civil War and Reconstruction. Bishop Henry M. Turner promoted the connection’s expansion into Africa in the 1890s. The church continues across multiple continents under an episcopal structure. In 2000 it elected Vashti Murphy McKenzie as its first woman bishop.",
+        "profile_scope":  "Covers the Philadelphia origins, 1816 denominational organization, selected expansion and leadership milestones, and the 2020 U.S. adherent count. The exact chronology of the St. George’s withdrawal and the development of individual overseas districts require further research.",
+        "core_beliefs":  [
+                             "The Twenty-Five Articles confess the Trinity and teach that sinners are justified through faith in Christ. Good works follow faith.",
+                             "Baptism and the Lord’s Supper are the two Gospel sacraments. The AME connection is governed through bishops and districts."
+                         ],
+        "size_estimate":  "1,059,888 U.S. adherents (2020 U.S. Religion Census)",
+        "key_figures":  [
+                            {
+                                "name":  "Richard Allen",
+                                "role":  "Organizer and first bishop",
+                                "summary":  "A formerly enslaved Methodist preacher who organized Bethel and convened the new denomination.",
+                                "url":  "https://www.ame-church.com/our-church/our-history/",
+                                "citations":  [
+                                                  "cite-uscm-ame-roots",
+                                                  "cite-uscm-ame-site"
+                                              ]
+                            },
+                            {
+                                "name":  "Absalom Jones",
+                                "role":  "Free African Society co-organizer",
+                                "summary":  "Helped establish the mutual aid society that preceded Bethel’s organization.",
+                                "url":  "https://www.ame-church.com/our-church/our-history/",
+                                "citations":  [
+                                                  "cite-uscm-ame-roots"
+                                              ]
+                            },
+                            {
+                                "name":  "Henry M. Turner",
+                                "role":  "Bishop and advocate for African missions",
+                                "summary":  "Promoted the establishment of AME work in West and southern Africa.",
+                                "url":  "https://www.ame-church.com/our-church/our-history/",
+                                "citations":  [
+                                                  "cite-uscm-ame-growth"
+                                              ]
+                            },
+                            {
+                                "name":  "Vashti Murphy McKenzie",
+                                "role":  "First woman elected AME bishop",
+                                "summary":  "Her 2000 election opened the episcopacy to women in the denomination.",
+                                "url":  "https://www.ame-church.com/reports/General_Board_Docs_2022/General%20Officer%20Reports/Treasurer%3ACFO/Memorandum%20-%202022%20a.pdf",
+                                "citations":  [
+                                                  "cite-uscm-ame-election"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1787,
+                              "label":  "Free African Society founded in Philadelphia",
+                              "citations":  [
+                                                "cite-uscm-ame-roots"
+                                            ]
+                          },
+                          {
+                              "year":  1794,
+                              "label":  "Bethel congregation dedicates its church",
+                              "citations":  [
+                                                "cite-uscm-ame-roots"
+                                            ]
+                          },
+                          {
+                              "year":  1816,
+                              "label":  "Independent AME denomination organized in Philadelphia",
+                              "citations":  [
+                                                "cite-uscm-ame-organization",
+                                                "cite-uscm-ame-site"
+                                            ]
+                          },
+                          {
+                              "year":  2000,
+                              "label":  "General Conference elects the first woman bishop",
+                              "citations":  [
+                                                "cite-uscm-ame-election"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Apostles’ Creed and Twenty-Five Articles of Religion",
+                                  "year":  null,
+                                  "significance":  "Inherited Methodist doctrinal standards as published by the AME Church.",
+                                  "url":  "https://www.ame-church.com/our-church/our-beliefs/",
+                                  "citations":  [
+                                                    "cite-uscm-ame-articles"
+                                                ]
+                              },
+                              {
+                                  "title":  "The Life, Experience, and Gospel Labours of Richard Allen",
+                                  "year":  1833,
+                                  "significance":  "Posthumously published firsthand account of Allen’s ministry and struggle for autonomy.",
+                                  "url":  "https://classicslaunch.org/works/allen-life-experience-and-gospel-labours/read/",
+                                  "citations":  [
+                                                    "cite-uscm-ame-testimony"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "AME denominational history",
+                                    "url":  "https://www.ame-church.com/our-church/our-history/",
+                                    "snippet":  "Historian Dennis C. Dickerson surveys the founding, Reconstruction expansion, and overseas missions.",
+                                    "citations":  [
+                                                      "cite-uscm-ame-roots",
+                                                      "cite-uscm-ame-growth"
+                                                  ]
+                                }
+                            ],
+        "profile_citations":  {
+                                  "start_year":  [
+                                                     "cite-uscm-ame-organization",
+                                                     "cite-uscm-ame-site"
+                                                 ],
+                                  "summary":  [
+                                                  "cite-uscm-ame-roots",
+                                                  "cite-uscm-ame-organization",
+                                                  "cite-uscm-ame-site",
+                                                  "cite-uscm-ame-testimony"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-uscm-ame-roots",
+                                                              "cite-uscm-ame-organization",
+                                                              "cite-uscm-ame-site",
+                                                              "cite-uscm-ame-testimony"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-uscm-ame-growth",
+                                                           "cite-uscm-ame-current",
+                                                           "cite-uscm-ame-election"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-uscm-ame-articles",
+                                                       "cite-uscm-ame-current"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-uscm-african-methodist-episcopal-church-count"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-uscm-ame-roots",
+                          "cite-uscm-ame-organization",
+                          "cite-uscm-ame-site",
+                          "cite-uscm-ame-testimony",
+                          "cite-uscm-ame-articles",
+                          "cite-uscm-ame-current",
+                          "cite-uscm-ame-growth",
+                          "cite-uscm-ame-election",
+                          "cite-uscm-african-methodist-episcopal-church-count"
+                      ]
+    },
+    {
+        "id":  "african-methodist-episcopal-zion-church",
+        "name":  "African Methodist Episcopal Zion Church",
+        "kind":  "denomination",
+        "start_year":  1822,
+        "short_label":  "AME Zion",
+        "aliases":  [
+                        "AME Zion Church",
+                        "A.M.E. Zion",
+                        "A.M.E. Zion Church",
+                        "Freedom Church",
+                        "African Methodist Episcopal Church in the City of New York"
+                    ],
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Methodist",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "A historically Black Methodist denomination that grew from New York City’s Zion congregation and attained an independently ordained ministry in 1822.",
+        "formation_narrative":  "In 1796 Black worshippers from New York’s John Street Methodist Episcopal Church began meeting separately. Zion incorporated locally in 1801 and governed its own affairs, while John Street still provided an elder to administer the sacraments. Zion decided to withdraw and published its own Discipline in 1820. In 1822 former Methodist Episcopal elders ordained Zion’s ministers, giving the new denomination its own ordained ministry. The conference chose James Varick as its first bishop.",
+        "ending_narrative":  "Zion congregations spread beyond New York City. The Rochester congregation became associated with abolitionists including Harriet Tubman and Frederick Douglass. The church adopted Zion in its denominational name in 1848 to distinguish itself from the Philadelphia-based AME Church. The two connections discussed organic union in the 1880s and continued as separate denominations. AME Zion remains active internationally.",
+        "profile_scope":  "Covers the New York origins, stages of independence, selected abolitionist history, and the 2020 U.S. adherent count. The timeline uses the 1822 ordinations as the milestone for a fully functioning independent ministry.",
+        "core_beliefs":  [
+                             "AME Zion professes salvation through Jesus Christ and renewal of believers by divine grace through the Holy Spirit.",
+                             "The denomination’s historical Discipline applies Methodist teaching and episcopal order to church life and provides forms for baptism and the Lord’s Supper."
+                         ],
+        "size_estimate":  "304,704 U.S. adherents (2020 U.S. Religion Census)",
+        "key_figures":  [
+                            {
+                                "name":  "James Varick",
+                                "role":  "First bishop",
+                                "summary":  "A Zion minister ordained in 1822 and then elected to lead the independent connection.",
+                                "url":  "https://amezion.org/about/",
+                                "citations":  [
+                                                  "cite-uscm-zion-independent"
+                                              ]
+                            },
+                            {
+                                "name":  "Christopher Rush",
+                                "role":  "Second denominational superintendent",
+                                "summary":  "A formerly enslaved preacher who succeeded Varick in denominational leadership in 1828.",
+                                "url":  "https://omeka.hrvh.org/exhibits/show/ame-zion-church-in-new-paltz/history-of-the-a-m-e--zion-chu",
+                                "citations":  [
+                                                  "cite-uscm-zion-reform"
+                                              ]
+                            },
+                            {
+                                "name":  "Harriet Tubman",
+                                "role":  "Abolitionist associated with Rochester Zion",
+                                "summary":  "The Hudson River Valley Heritage exhibit connects Tubman’s Underground Railroad work with the Rochester church.",
+                                "url":  "https://omeka.hrvh.org/exhibits/show/ame-zion-church-in-new-paltz/history-of-the-a-m-e--zion-chu",
+                                "citations":  [
+                                                  "cite-uscm-zion-reform"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1796,
+                              "label":  "Black Methodists begin meeting separately in New York City",
+                              "citations":  [
+                                                "cite-uscm-zion-local"
+                                            ]
+                          },
+                          {
+                              "year":  1801,
+                              "label":  "Zion incorporates locally in New York",
+                              "citations":  [
+                                                "cite-uscm-zion-local"
+                                            ]
+                          },
+                          {
+                              "year":  1820,
+                              "label":  "Zion publishes its first Discipline after voting to withdraw",
+                              "citations":  [
+                                                "cite-uscm-zion-independent"
+                                            ]
+                          },
+                          {
+                              "year":  1822,
+                              "label":  "Zion ministers ordained and first bishop elected",
+                              "citations":  [
+                                                "cite-uscm-zion-independent"
+                                            ]
+                          },
+                          {
+                              "year":  1848,
+                              "label":  "Zion adopted in the denominational name",
+                              "citations":  [
+                                                "cite-uscm-zion-name"
+                                            ]
+                          },
+                          {
+                              "year":  1885,
+                              "label":  "Joint AME and AME Zion commission agrees to a union proposal",
+                              "citations":  [
+                                                "cite-uscm-zion-proposal"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Doctrines and Discipline of the African Methodist Episcopal Zion Church in America",
+                                  "year":  1892,
+                                  "significance":  "Historical published edition of the denomination’s doctrines and church order. Zion issued its first Discipline in 1820.",
+                                  "url":  "https://books.google.com/books?id=SVpPAQAAIAAJ",
+                                  "citations":  [
+                                                    "cite-uscm-zion-text",
+                                                    "cite-uscm-zion-independent"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "History of the A.M.E. Zion Church",
+                                    "url":  "https://omeka.hrvh.org/exhibits/show/ame-zion-church-in-new-paltz/history-of-the-a-m-e--zion-chu",
+                                    "snippet":  "A regional exhibit illustrates the growth of the denomination through the Rochester and New Paltz congregations.",
+                                    "citations":  [
+                                                      "cite-uscm-zion-reform"
+                                                  ]
+                                }
+                            ],
+        "profile_citations":  {
+                                  "start_year":  [
+                                                     "cite-uscm-zion-independent"
+                                                 ],
+                                  "summary":  [
+                                                  "cite-uscm-zion-local",
+                                                  "cite-uscm-zion-independent"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-uscm-zion-local",
+                                                              "cite-uscm-zion-independent"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-uscm-zion-reform",
+                                                           "cite-uscm-zion-name",
+                                                           "cite-uscm-zion-proposal",
+                                                           "cite-uscm-zion-living"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-uscm-zion-belief",
+                                                       "cite-uscm-zion-text"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-uscm-african-methodist-episcopal-zion-church-count"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-uscm-zion-local",
+                          "cite-uscm-zion-independent",
+                          "cite-uscm-zion-belief",
+                          "cite-uscm-zion-text",
+                          "cite-uscm-zion-reform",
+                          "cite-uscm-zion-name",
+                          "cite-uscm-zion-proposal",
+                          "cite-uscm-zion-living",
+                          "cite-uscm-african-methodist-episcopal-zion-church-count"
+                      ]
+    },
+    {
+        "id":  "christian-methodist-episcopal-church",
+        "name":  "Christian Methodist Episcopal Church",
+        "kind":  "denomination",
+        "start_year":  1870,
+        "short_label":  "CME Church",
+        "aliases":  [
+                        "CME",
+                        "C.M.E. Church",
+                        "Colored Methodist Episcopal Church",
+                        "Colored Methodist Episcopal Church in America"
+                    ],
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Methodist",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "A historically Black Methodist denomination organized by Black Methodists from the Methodist Episcopal Church, South, in 1870.",
+        "formation_narrative":  "After emancipation, Black members of the Methodist Episcopal Church, South sought a church they could govern. The Southern church’s 1866 General Conference authorized separate organization, followed by the development of Black conferences. Delegates organized the Colored Methodist Episcopal Church in Jackson, Tennessee, on December 16, 1870 and elected William Miles and Richard H. Vanderhorst as its first bishops.",
+        "ending_narrative":  "CME churches built schools as the connection grew. In 1882 the school that became Lane College opened in Jackson, with Jennie E. Lane as its first principal and teacher. The 1946 General Conference authorized a Connectional Council, which began operating in 1950. In 1954 the General Conference approved the name Christian Methodist Episcopal Church. The same connection continued under the new name. Research in the denomination’s archives documents CME participation in the civil rights movement. The church remains active under connectional government.",
+        "profile_scope":  "Covers Reconstruction-era organization, selected twentieth-century institutional and civil-rights developments, and the 2020 U.S. adherent count. It is an introductory U.S. profile of a wider church.",
+        "core_beliefs":  [
+                             "CME retained the Wesleyan Methodist doctrinal inheritance of the Methodist Episcopal Church, South when it formed its own connection.",
+                             "The church applies Methodist discipline through bishops and conferences, with a General Conference and a Connectional Council."
+                         ],
+        "size_estimate":  "269,126 U.S. adherents (2020 U.S. Religion Census)",
+        "key_figures":  [
+                            {
+                                "name":  "William Miles",
+                                "role":  "Founding bishop",
+                                "summary":  "One of the two bishops chosen at the organizing conference in 1870.",
+                                "url":  "https://thecmechurch.org/cme-church-history/",
+                                "citations":  [
+                                                  "cite-uscm-cme-bishops"
+                                              ]
+                            },
+                            {
+                                "name":  "Richard H. Vanderhorst",
+                                "role":  "Founding bishop",
+                                "summary":  "Elected at the organizing conference alongside William Miles.",
+                                "url":  "https://thecmechurch.org/cme-church-history/",
+                                "citations":  [
+                                                  "cite-uscm-cme-bishops"
+                                              ]
+                            },
+                            {
+                                "name":  "Jennie E. Lane",
+                                "role":  "First principal and teacher of CME High School",
+                                "summary":  "Led the school’s first session in 1882. The school became Lane College.",
+                                "url":  "https://lanecollege.edu/about/history-of-lane-college",
+                                "citations":  [
+                                                  "cite-uscm-cme-school"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1866,
+                              "label":  "Southern Methodist General Conference authorizes separate organization",
+                              "citations":  [
+                                                "cite-uscm-cme-formation"
+                                            ]
+                          },
+                          {
+                              "year":  1870,
+                              "label":  "Delegates organize the independent denomination in Jackson",
+                              "citations":  [
+                                                "cite-uscm-cme-formation",
+                                                "cite-uscm-cme-bishops"
+                                            ]
+                          },
+                          {
+                              "year":  1882,
+                              "label":  "CME High School, later Lane College, opens in Jackson",
+                              "citations":  [
+                                                "cite-uscm-cme-school"
+                                            ]
+                          },
+                          {
+                              "year":  1950,
+                              "label":  "Connectional Council begins operating",
+                              "citations":  [
+                                                "cite-uscm-cme-council"
+                                            ]
+                          },
+                          {
+                              "year":  1954,
+                              "label":  "General Conference approves the Christian Methodist Episcopal name",
+                              "citations":  [
+                                                "cite-uscm-cme-name"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Methodist Articles of Religion and Discipline",
+                                  "year":  null,
+                                  "significance":  "Inherited doctrinal and organizational basis of the new denomination, as described in the ecumenical profile.",
+                                  "url":  "https://www.oikoumene.org/member-churches/christian-methodist-episcopal-church",
+                                  "citations":  [
+                                                    "cite-uscm-cme-teaching"
+                                                ]
+                              },
+                              {
+                                  "title":  "The History of the Colored Methodist Episcopal Church in America",
+                                  "year":  1898,
+                                  "significance":  "Early denominational history by Bishop Charles Henry Phillips, reproduced by the church.",
+                                  "url":  "https://thecmechurch.org/cme-church-history/",
+                                  "citations":  [
+                                                    "cite-uscm-cme-bishops"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "CME Church in the Memory of the Civil Rights Movement",
+                                    "url":  "https://stars.library.ucf.edu/etd/6737/",
+                                    "snippet":  "An archival study of CME civil-rights participation from the 1950s to the 1970s.",
+                                    "citations":  [
+                                                      "cite-uscm-cme-activism"
+                                                  ]
+                                }
+                            ],
+        "profile_citations":  {
+                                  "start_year":  [
+                                                     "cite-uscm-cme-formation",
+                                                     "cite-uscm-cme-bishops"
+                                                 ],
+                                  "summary":  [
+                                                  "cite-uscm-cme-formation",
+                                                  "cite-uscm-cme-bishops"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-uscm-cme-formation",
+                                                              "cite-uscm-cme-bishops"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-uscm-cme-school",
+                                                           "cite-uscm-cme-name",
+                                                           "cite-uscm-cme-council",
+                                                           "cite-uscm-cme-activism",
+                                                           "cite-uscm-cme-active"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-uscm-cme-teaching",
+                                                       "cite-uscm-cme-council"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-uscm-christian-methodist-episcopal-church-count"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-uscm-cme-formation",
+                          "cite-uscm-cme-bishops",
+                          "cite-uscm-cme-teaching",
+                          "cite-uscm-cme-council",
+                          "cite-uscm-cme-name",
+                          "cite-uscm-cme-activism",
+                          "cite-uscm-cme-active",
+                          "cite-uscm-christian-methodist-episcopal-church-count",
+                          "cite-uscm-cme-school"
+                      ]
+    },
+    {
+        "id":  "wesleyan-church",
+        "name":  "The Wesleyan Church",
+        "kind":  "denomination",
+        "start_year":  1968,
+        "short_label":  "Wesleyan Church",
+        "aliases":  [
+                        "Wesleyan Church",
+                        "The Wesleyan Church (North America)"
+                    ],
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Holiness",
+        "ecclesial_orientation":  "evangelical",
+        "current_status":  "active",
+        "summary":  "A Wesleyan-Holiness denomination formed in 1968 by the union of the Pilgrim Holiness Church and the Wesleyan Methodist Church of America.",
+        "formation_narrative":  "The Wesleyan Methodist Church of America traced its origin to the antislavery organizing of Orange Scott and other Methodist reformers in the 1840s. The Pilgrim Holiness Church grew out of holiness evangelism and church unions. The two bodies shared an emphasis on sanctification. After an earlier merger proposal failed, both conferences adopted a basis for union in 1966. The uniting conference formed The Wesleyan Church on June 26, 1968.",
+        "ending_narrative":  "Some churches and ministers organized separately around the merger period, including congregations associated with the Bible Methodist Connection and Midwest Pilgrim Holiness. The united church continued its own denominational governance and publications. In 2004 it incorporated congregations from the Canadian-based Standard Church of America, and Wesleyan Life became its official publication.",
+        "profile_scope":  "Covers both immediate merger partners through the 1968 effective union, selected minority and later developments, and the 2020 U.S. adherent count. The two immediate merger partners lack standalone records in the explorer.",
+        "core_beliefs":  [
+                             "The Discipline teaches salvation through repentance and faith in Christ, and that the Holy Spirit frees believers from sin’s dominion.",
+                             "Entire sanctification describes purification and being made perfect in love by faith. Wesleyans also teach continued growth in grace."
+                         ],
+        "size_estimate":  "306,005 U.S. adherents (2020 U.S. Religion Census)",
+        "key_figures":  [
+                            {
+                                "name":  "Orange Scott",
+                                "role":  "Organizer in the Wesleyan Methodist predecessor",
+                                "summary":  "Helped organize a Methodist connection around opposition to slavery.",
+                                "url":  "https://discipline.wesleyan.org/wiki/Wesleyan_Church,_The:_History",
+                                "citations":  [
+                                                  "cite-uscm-wes-roots"
+                                              ]
+                            },
+                            {
+                                "name":  "Seth Cook Rees",
+                                "role":  "Holiness evangelist in the Pilgrim lineage",
+                                "summary":  "His Pilgrim Church joined what became the Pilgrim Holiness Church in 1922.",
+                                "url":  "https://discipline.wesleyan.org/wiki/Wesleyan_Church,_The:_History",
+                                "citations":  [
+                                                  "cite-uscm-wes-roots"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1843,
+                              "label":  "Wesleyan Methodist Connection organizes",
+                              "citations":  [
+                                                "cite-uscm-wes-roots"
+                                            ]
+                          },
+                          {
+                              "year":  1922,
+                              "label":  "Holiness bodies unite to form the Pilgrim Holiness Church",
+                              "citations":  [
+                                                "cite-uscm-wes-roots"
+                                            ]
+                          },
+                          {
+                              "year":  1966,
+                              "label":  "Both conferences adopt a basis for union",
+                              "citations":  [
+                                                "cite-uscm-wes-merger"
+                                            ]
+                          },
+                          {
+                              "year":  1968,
+                              "label":  "Uniting General Conference forms The Wesleyan Church",
+                              "citations":  [
+                                                "cite-uscm-wes-merger"
+                                            ]
+                          },
+                          {
+                              "year":  2004,
+                              "label":  "Standard Church of America merges into The Wesleyan Church",
+                              "citations":  [
+                                                "cite-uscm-wes-canada"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Basis for Merger and Constitution",
+                                  "year":  1966,
+                                  "significance":  "Adopted by both partner conferences. The Discipline records its adoption ahead of the effective union.",
+                                  "url":  "https://discipline.wesleyan.org/wiki/F._The_Formation_of_The_Wesleyan_Church",
+                                  "citations":  [
+                                                    "cite-uscm-wes-merger"
+                                                ]
+                              },
+                              {
+                                  "title":  "The Discipline, Summary of Articles of Religion",
+                                  "year":  null,
+                                  "significance":  "Current membership teaching in the denomination’s official Discipline.",
+                                  "url":  "https://discipline.wesleyan.org/wiki/Summary_of_Articles_of_Religion",
+                                  "citations":  [
+                                                    "cite-uscm-wes-faith"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "Wesleyan Archives and Historical Library",
+                                    "url":  "https://www.wesleyanarchives.com/",
+                                    "snippet":  "Collections preserve records of both immediate merger partners and the continuing church.",
+                                    "citations":  [
+                                                      "cite-uscm-wes-records"
+                                                  ]
+                                }
+                            ],
+        "profile_citations":  {
+                                  "start_year":  [
+                                                     "cite-uscm-wes-merger"
+                                                 ],
+                                  "summary":  [
+                                                  "cite-uscm-wes-roots",
+                                                  "cite-uscm-wes-merger"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-uscm-wes-roots",
+                                                              "cite-uscm-wes-merger"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-uscm-wes-separate-wm",
+                                                           "cite-uscm-wes-separate-ph",
+                                                           "cite-uscm-wes-media",
+                                                           "cite-uscm-wes-canada",
+                                                           "cite-uscm-wes-records"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-uscm-wes-faith"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-uscm-wesleyan-church-count"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-uscm-wes-roots",
+                          "cite-uscm-wes-merger",
+                          "cite-uscm-wes-faith",
+                          "cite-uscm-wes-separate-wm",
+                          "cite-uscm-wes-separate-ph",
+                          "cite-uscm-wes-media",
+                          "cite-uscm-wes-canada",
+                          "cite-uscm-wes-records",
+                          "cite-uscm-wesleyan-church-count"
+                      ]
+    },
+    {
+        "id":  "salvation-army",
+        "name":  "The Salvation Army",
+        "kind":  "denomination",
+        "start_year":  1865,
+        "short_label":  "Salvation Army",
+        "aliases":  [
+                        "Salvation Army",
+                        "The Salvation Army USA",
+                        "The Christian Mission",
+                        "East London Christian Mission"
+                    ],
+        "zoom_tier":  "full",
+        "region":  "Global",
+        "geographic_origin":  "England",
+        "tradition_family":  "Holiness",
+        "ecclesial_orientation":  "evangelical",
+        "current_status":  "active",
+        "summary":  "An international Wesleyan-Holiness church and social mission that began in East London in 1865 and took the Salvation Army name in 1878.",
+        "formation_narrative":  "William Booth, a former Methodist preacher, and Catherine Booth began an evangelistic mission in East London in 1865. They brought preaching to people who were often excluded from established congregations and combined it with practical help. The mission became known as the Christian Mission and in 1878 adopted the Salvation Army name and a military-style structure with William Booth as General.",
+        "ending_narrative":  "George Scott Railton led the official pioneer party to the United States in 1880. The international Army continues to organize local corps for worship and evangelism and to operate social services. The U.S. census count measures adherents of the religious body and is geographically limited to the United States.",
+        "profile_scope":  "Covers the international movement’s English origins, adoption of its name, official U.S. expansion and U.S. religious-adherent count. It uses 1865 for the mission’s beginning. National charities, territorial corporations and service recipients are outside the census profile.",
+        "core_beliefs":  [
+                             "The Army’s eleven doctrines teach salvation through repentance and faith in Christ and sanctification through the Holy Spirit, reflecting its Wesleyan heritage.",
+                             "Salvationists seek the spiritual realities associated with baptism and communion without prescribing the outward sacramental rites. Local corps combine worship, evangelism and practical service."
+                         ],
+        "size_estimate":  "141,098 U.S. adherents (2020 U.S. Religion Census)",
+        "key_figures":  [
+                            {
+                                "name":  "William Booth",
+                                "role":  "Co-founder and first General",
+                                "summary":  "A Methodist preacher who led the East London mission and the new Salvation Army.",
+                                "url":  "https://www.salvationarmy.org.au/about-us/our-history/william-and-catherine-booth/",
+                                "citations":  [
+                                                  "cite-uscm-army-cofounder",
+                                                  "cite-uscm-army-name"
+                                              ]
+                            },
+                            {
+                                "name":  "Catherine Booth",
+                                "role":  "Co-founder and preacher",
+                                "summary":  "Helped establish the mission and preached publicly in support of its work.",
+                                "url":  "https://www.salvationarmy.org.au/about-us/our-history/william-and-catherine-booth/",
+                                "citations":  [
+                                                  "cite-uscm-army-cofounder"
+                                              ]
+                            },
+                            {
+                                "name":  "George Scott Railton",
+                                "role":  "Leader of the official U.S. pioneer party",
+                                "summary":  "Arrived with seven Salvationists in 1880 to establish official Army operations in the United States.",
+                                "url":  "https://www.salvationarmy.org.uk/about-us/international-heritage-centre/virtual-heritage-centre/a-global-army",
+                                "citations":  [
+                                                  "cite-uscm-army-arrival"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1865,
+                              "label":  "The Booths’ East London mission begins",
+                              "citations":  [
+                                                "cite-uscm-army-roots",
+                                                "cite-uscm-army-cofounder"
+                                            ]
+                          },
+                          {
+                              "year":  1878,
+                              "label":  "Christian Mission adopts the Salvation Army name",
+                              "citations":  [
+                                                "cite-uscm-army-name",
+                                                "cite-uscm-army-deed"
+                                            ]
+                          },
+                          {
+                              "year":  1880,
+                              "label":  "Official U.S. pioneer party arrives",
+                              "citations":  [
+                                                "cite-uscm-army-arrival",
+                                                "cite-uscm-army-us-early"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Foundation Deed of The Salvation Army",
+                                  "year":  1878,
+                                  "significance":  "Organizational foundation carrying the eleven doctrines, discussed in the official Handbook of Doctrine.",
+                                  "url":  "https://www.salvationarmy.org/sites/default/files/2025-06/Handbook%2Bof%2BDoctrine.pdf",
+                                  "citations":  [
+                                                    "cite-uscm-army-deed"
+                                                ]
+                              },
+                              {
+                                  "title":  "Handbook of Doctrine",
+                                  "year":  null,
+                                  "significance":  "Official exposition of the doctrines and their implications for Salvationist practice.",
+                                  "url":  "https://www.salvationarmy.org/sites/default/files/2025-06/Handbook%2Bof%2BDoctrine.pdf",
+                                  "citations":  [
+                                                    "cite-uscm-army-teaching"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "A Global Army",
+                                    "url":  "https://www.salvationarmy.org.uk/about-us/international-heritage-centre/virtual-heritage-centre/a-global-army",
+                                    "snippet":  "The International Heritage Centre places official U.S. work in the context of early cross-border expansion.",
+                                    "citations":  [
+                                                      "cite-uscm-army-arrival"
+                                                  ]
+                                }
+                            ],
+        "profile_citations":  {
+                                  "start_year":  [
+                                                     "cite-uscm-army-roots",
+                                                     "cite-uscm-army-cofounder"
+                                                 ],
+                                  "summary":  [
+                                                  "cite-uscm-army-roots",
+                                                  "cite-uscm-army-name",
+                                                  "cite-uscm-army-cofounder"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-uscm-army-roots",
+                                                              "cite-uscm-army-name",
+                                                              "cite-uscm-army-cofounder"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-uscm-army-arrival",
+                                                           "cite-uscm-army-us-early",
+                                                           "cite-uscm-army-current"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-uscm-army-teaching",
+                                                       "cite-uscm-army-deed",
+                                                       "cite-uscm-army-current"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-uscm-salvation-army-count"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-uscm-army-roots",
+                          "cite-uscm-army-name",
+                          "cite-uscm-army-cofounder",
+                          "cite-uscm-army-teaching",
+                          "cite-uscm-army-deed",
+                          "cite-uscm-army-current",
+                          "cite-uscm-army-arrival",
+                          "cite-uscm-army-us-early",
+                          "cite-uscm-salvation-army-count"
+                      ]
+    },
+    {
+        "id":  "free-methodist-church-usa",
+        "name":  "Free Methodist Church–USA",
+        "kind":  "denomination",
+        "start_year":  1860,
+        "short_label":  "Free Methodist Church",
+        "aliases":  [
+                        "Free Methodist Church USA",
+                        "Free Methodist Church--USA",
+                        "FMCUSA",
+                        "Free Methodists"
+                    ],
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Holiness",
+        "ecclesial_orientation":  "evangelical",
+        "current_status":  "active",
+        "summary":  "The U.S. Free Methodist denomination traces its organization to an 1860 convention at Pekin, New York.",
+        "formation_narrative":  "Benjamin Titus Roberts and other Methodist Episcopal reformers promoted entire sanctification and challenged practices they believed favored wealth and status. Roberts opposed slavery and the renting of pews. After conflict and expulsions in the Genesee Conference, laypeople and ministers met in Pekin on August 23, 1860, organized the Free Methodist Church, and adopted its first Discipline.",
+        "ending_narrative":  "Roberts argued for women’s ordination, a position the 1890 General Conference did not adopt. In 1974 the General Conference voted to give women equal status in ministry. The U.S. church continues within a worldwide Free Methodist family and governs its own affairs through its General Conference and Book of Discipline.",
+        "profile_scope":  "Covers U.S. organizational origins, selected developments in doctrine and ordination, and the 2020 U.S. adherent count. The start year dates the founding convention of the original Free Methodist Church in the United States.",
+        "core_beliefs":  [
+                             "The founders added an explicit article on entire sanctification to their adapted Methodist Discipline. Free Methodists teach that the Holy Spirit enables believers to love God and neighbor and grow in holiness.",
+                             "The founding reform program linked holiness with access to worship, including free seating, and with opposition to slavery."
+                         ],
+        "size_estimate":  "71,634 U.S. adherents (2020 U.S. Religion Census)",
+        "key_figures":  [
+                            {
+                                "name":  "Benjamin Titus Roberts",
+                                "role":  "Founding organizer and reform advocate",
+                                "summary":  "A Methodist reformer who advocated free pews, abolition and women’s ordination.",
+                                "url":  "https://historical.fmcusa.org/historical-heritage-perspective/",
+                                "citations":  [
+                                                  "cite-uscm-free-origins",
+                                                  "cite-uscm-free-reforms",
+                                                  "cite-uscm-free-ordination"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1860,
+                              "label":  "Pekin convention organizes the Free Methodist Church and adopts its Discipline",
+                              "citations":  [
+                                                "cite-uscm-free-origins",
+                                                "cite-uscm-free-discipline"
+                                            ]
+                          },
+                          {
+                              "year":  1891,
+                              "label":  "Roberts publishes his argument for ordaining women",
+                              "citations":  [
+                                                "cite-uscm-free-ordination"
+                                            ]
+                          },
+                          {
+                              "year":  1974,
+                              "label":  "General Conference votes for equal status for women in ministry",
+                              "citations":  [
+                                                "cite-uscm-free-ordination"
+                                            ]
+                          },
+                          {
+                              "year":  2023,
+                              "label":  "U.S. General Conference edition of the Book of Discipline",
+                              "citations":  [
+                                                "cite-uscm-free-modern"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Doctrines and Discipline of the Free Methodist Church",
+                                  "year":  1860,
+                                  "significance":  "Founding Discipline as adopted at Pekin. It adapted Methodist Episcopal teaching and explicitly included entire sanctification.",
+                                  "url":  "https://historical.fmcusa.org/wp-content/uploads/1860-Book-of-Discipline.pdf",
+                                  "citations":  [
+                                                    "cite-uscm-free-discipline",
+                                                    "cite-uscm-free-holiness"
+                                                ]
+                              },
+                              {
+                                  "title":  "Book of Discipline of the Free Methodist Church–USA",
+                                  "year":  2023,
+                                  "significance":  "Modern General Conference edition containing the U.S. church’s teaching and polity.",
+                                  "url":  "https://fmcusa.org/wp-content/uploads/2023-Book-of-Discipline-Interactive-PDF-FINAL.pdf",
+                                  "citations":  [
+                                                    "cite-uscm-free-modern"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "Historical Heritage \u0026 Perspective",
+                                    "url":  "https://historical.fmcusa.org/historical-heritage-perspective/",
+                                    "snippet":  "The denominational archive recounts the reform conflict and the proceedings that led to the Pekin convention.",
+                                    "citations":  [
+                                                      "cite-uscm-free-origins"
+                                                  ]
+                                }
+                            ],
+        "profile_citations":  {
+                                  "start_year":  [
+                                                     "cite-uscm-free-origins",
+                                                     "cite-uscm-free-discipline"
+                                                 ],
+                                  "summary":  [
+                                                  "cite-uscm-free-origins",
+                                                  "cite-uscm-free-reforms",
+                                                  "cite-uscm-free-discipline"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-uscm-free-origins",
+                                                              "cite-uscm-free-reforms",
+                                                              "cite-uscm-free-discipline"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-uscm-free-ordination",
+                                                           "cite-uscm-free-modern"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-uscm-free-holiness",
+                                                       "cite-uscm-free-modern",
+                                                       "cite-uscm-free-reforms"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-uscm-free-methodist-church-usa-count"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-uscm-free-origins",
+                          "cite-uscm-free-reforms",
+                          "cite-uscm-free-discipline",
+                          "cite-uscm-free-holiness",
+                          "cite-uscm-free-modern",
+                          "cite-uscm-free-ordination",
+                          "cite-uscm-free-methodist-church-usa-count"
+                      ]
+    },
+    {
+        "id":  "greek-orthodox-archdiocese-of-america",
+        "name":  "Greek Orthodox Archdiocese of America",
+        "kind":  "denomination",
+        "start_year":  1922,
+        "zoom_tier":  "full",
+        "short_label":  "GOARCH",
+        "aliases":  [
+                        "Greek Orthodox Archdiocese",
+                        "Greek Orthodox Archdiocese of North and South America"
+                    ],
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Orthodox",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "notes":  "Ecumenical Patriarchate recognizes and charters the archdiocese",
+        "summary":  "U.S. Eastern Orthodox archdiocese under the Ecumenical Patriarchate of Constantinople.",
+        "formation_narrative":  "Greek immigrant congregations organized locally before gaining a common hierarchy. Meletios Metaxakis and Bishop Alexander convened clergy and lay delegates in 1921. In 1922 the Ecumenical Patriarchate recognized the archdiocese of North and South America and issued its first charter. Competing ecclesiastical allegiances among parishes complicated consolidation. Athenagoras took office in 1931 under a new charter that strengthened central administration.",
+        "ending_narrative":  "Under the patriarchate’s 1996 reorganization, Canada, Central America and South America received separate metropolitan jurisdictions and the U.S. jurisdiction continued as the Greek Orthodox Archdiocese of America.",
+        "core_beliefs":  [
+                             "The Creed confesses one God in three persons and Jesus Christ as truly divine and incarnate. In the Divine Liturgy the people recite the Creed and the church celebrates the Eucharist.",
+                             "The parish regulations ground teaching and practice in Scripture and the seven ecumenical councils as received in the tradition of Constantinople."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Meletios Metaxakis",
+                                "role":  "Organizing hierarch and later Ecumenical Patriarch",
+                                "summary":  "Helped convene the 1921 Clergy-Laity Congress and oversaw the return to Constantinople’s jurisdiction in 1922.",
+                                "url":  "https://prod.goarch.org/web/greek-orthodox-archdiocese-of-america/-/the-mission-of-the-greek-orthodox-parish-in-america",
+                                "citations":  [
+                                                  "cite-us-orthodox-greek"
+                                              ]
+                            },
+                            {
+                                "name":  "Athenagoras",
+                                "role":  "Archbishop from 1931",
+                                "summary":  "Led consolidation under the new charter amid competing jurisdictional loyalties.",
+                                "url":  "https://charter.goarch.org/-/statement-patsavos-history-governance",
+                                "citations":  [
+                                                  "cite-us-orthodox-patsavos"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1921,
+                              "label":  "First Clergy-Laity Congress convenes",
+                              "citations":  [
+                                                "cite-us-orthodox-greek"
+                                            ]
+                          },
+                          {
+                              "year":  1922,
+                              "label":  "Ecumenical Patriarchate recognizes and charters the archdiocese",
+                              "citations":  [
+                                                "cite-us-orthodox-greek",
+                                                "cite-us-orthodox-charter"
+                                            ]
+                          },
+                          {
+                              "year":  1931,
+                              "label":  "New charter centralizes archdiocesan governance",
+                              "citations":  [
+                                                "cite-us-orthodox-charter",
+                                                "cite-us-orthodox-patsavos"
+                                            ]
+                          },
+                          {
+                              "year":  1996,
+                              "label":  "U.S. archdiocese takes present territorial form",
+                              "citations":  [
+                                                "cite-us-orthodox-greekregs"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "1996 Special Regulations and Uniform Parish Regulations",
+                                  "year":  1996,
+                                  "significance":  "Documents the territorial reorganization and adopted parish governance of that period.",
+                                  "url":  "https://www.goarch.org/-/1996-special-regulations-and-uniform-parish-regulations-of-the-greek-orthodox-archdiocese-of-america",
+                                  "citations":  [
+                                                    "cite-us-orthodox-greekregs"
+                                                ]
+                              },
+                              {
+                                  "title":  "Divine Liturgy of Saint John Chrysostom",
+                                  "year":  null,
+                                  "significance":  "Inherited Byzantine Eucharistic service used in the archdiocese.",
+                                  "url":  "https://www.goarch.org/-/the-divine-liturgy-of-saint-john-chrysostom",
+                                  "citations":  [
+                                                    "cite-us-orthodox-greeklit"
+                                                ]
+                              }
+                          ],
+        "size_estimate":  "375,117 U.S. 2020 adherents · 533 U.S. congregations (2020 U.S. Religion Census)",
+        "profile_scope":  "Introductory U.S. jurisdictional history from the immigrant parishes through the 1996 reorganization and subsequent continuation. The plot starts with church recognition and chartering of the wider predecessor jurisdiction. The figures cover the U.S. jurisdiction in 2020.",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "notes":  [
+                                                "cite-us-orthodox-greek",
+                                                "cite-us-orthodox-charter"
+                                            ],
+                                  "summary":  [
+                                                  "cite-us-orthodox-greek",
+                                                  "cite-us-orthodox-charter",
+                                                  "cite-us-orthodox-patsavos",
+                                                  "cite-us-orthodox-greekregs",
+                                                  "cite-us-orthodox-assembly"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-us-orthodox-greek",
+                                                              "cite-us-orthodox-charter",
+                                                              "cite-us-orthodox-patsavos"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-orthodox-greekregs",
+                                                           "cite-us-orthodox-assembly"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-orthodox-greeklit",
+                                                       "cite-us-orthodox-greekregs"
+                                                   ],
+                                  "key_figures":  [
+                                                      "cite-us-orthodox-greek",
+                                                      "cite-us-orthodox-patsavos"
+                                                  ],
+                                  "key_dates":  [
+                                                    "cite-us-orthodox-greek",
+                                                    "cite-us-orthodox-charter",
+                                                    "cite-us-orthodox-patsavos",
+                                                    "cite-us-orthodox-greekregs"
+                                                ],
+                                  "key_documents":  [
+                                                        "cite-us-orthodox-greekregs",
+                                                        "cite-us-orthodox-greeklit"
+                                                    ],
+                                  "profile_scope":  [
+                                                        "cite-us-orthodox-greek",
+                                                        "cite-us-orthodox-charter",
+                                                        "cite-us-orthodox-patsavos",
+                                                        "cite-us-orthodox-census-246"
+                                                    ],
+                                  "size_estimate":  [
+                                                        "cite-us-orthodox-census-246",
+                                                        "cite-us-orthodox-methods"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-orthodox-greek",
+                          "cite-us-orthodox-charter",
+                          "cite-us-orthodox-patsavos",
+                          "cite-us-orthodox-greekregs",
+                          "cite-us-orthodox-assembly",
+                          "cite-us-orthodox-greeklit",
+                          "cite-us-orthodox-census-246",
+                          "cite-us-orthodox-methods"
+                      ],
+        "further_reading":  [
+                                {
+                                    "title":  "Greek Orthodox Archdiocese: The Mission of the Greek Orthodox Parish in America",
+                                    "url":  "https://prod.goarch.org/web/greek-orthodox-archdiocese-of-america/-/the-mission-of-the-greek-orthodox-parish-in-america",
+                                    "snippet":  "Early parish organization, 1921 congress, patriarchal recognition and archbishops.",
+                                    "citations":  [
+                                                      "cite-us-orthodox-greek"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Greek Orthodox Archdiocese: 1996 Special Regulations and Uniform Parish Regulations",
+                                    "url":  "https://www.goarch.org/-/1996-special-regulations-and-uniform-parish-regulations-of-the-greek-orthodox-archdiocese-of-america",
+                                    "snippet":  "Introduction and Chapter 11, parish mission and governance.",
+                                    "citations":  [
+                                                      "cite-us-orthodox-greekregs"
+                                                  ]
+                                }
+                            ]
+    },
+    {
+        "id":  "coptic-orthodox-church-us",
+        "name":  "Coptic Orthodox Church (United States)",
+        "kind":  "denomination",
+        "start_year":  1968,
+        "zoom_tier":  "full",
+        "short_label":  "Coptic Orthodox",
+        "aliases":  [
+                        "Coptic Orthodox Church",
+                        "Coptic Church",
+                        "Coptic Orthodox Church in the United States"
+                    ],
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Oriental Orthodox",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "notes":  "Documented immigrant worship in Jersey City",
+        "summary":  "U.S. communities of the Coptic Orthodox Patriarchate of Alexandria, organized across multiple diocesan jurisdictions.",
+        "formation_narrative":  "Egyptian immigrants in the New York and New Jersey area arranged services in homes and other borrowed spaces. A founding account at St. Mark’s records visiting priest Fr. Mankarious celebrating liturgies in Jersey City in 1968. Pope Kyrillos VI ordained Gabriel Abdelsayed and sent him to serve the community in 1970. As congregations spread, Pope Shenouda III organized the Southern U.S. diocese in 1993 and appointed Bishop Youssef to oversee it.",
+        "ending_narrative":  "U.S. parishes continue within the patriarchate through multiple dioceses. Bishops Serapion and Youssef worked with clergy and laypeople on standardized English liturgical texts for diaspora worship. St. Mark’s records a full English Sunday liturgy introduced at a daughter parish.",
+        "core_beliefs":  [
+                             "The church receives the Alexandrian teaching associated with Cyril, confessing Christ’s full divinity and humanity united in the incarnate Word within the Oriental Orthodox communion.",
+                             "The Eucharist is celebrated in the Coptic rites of St. Basil, St. Cyril and St. Gregory. American diocesan work produced revised English liturgical texts alongside Coptic and Arabic."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Medhat Riad Wassef",
+                                "role":  "Deacon and founding-period witness",
+                                "summary":  "Recorded how lay households provided worship space and how visiting clergy served the community.",
+                                "url":  "https://saintmark.com/about-us/",
+                                "citations":  [
+                                                  "cite-us-orthodox-coptic"
+                                              ]
+                            },
+                            {
+                                "name":  "Gabriel Abdelsayed",
+                                "role":  "Priest assigned to St. Mark’s",
+                                "summary":  "Ordained by Pope Kyrillos VI and sent to Jersey City in 1970 as the parish developed.",
+                                "url":  "https://saintmark.com/about-us/",
+                                "citations":  [
+                                                  "cite-us-orthodox-coptic"
+                                              ]
+                            },
+                            {
+                                "name":  "Pope Shenouda III",
+                                "role":  "Patriarch of Alexandria",
+                                "summary":  "Established the Southern U.S. diocese in 1993 as the American parish network grew.",
+                                "url":  "https://www.youtube.com/watch?v=_Tn4yUit1vk",
+                                "citations":  [
+                                                  "cite-us-orthodox-south"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1968,
+                              "label":  "Early documented Jersey City liturgies",
+                              "citations":  [
+                                                "cite-us-orthodox-coptic"
+                                            ]
+                          },
+                          {
+                              "year":  1970,
+                              "label":  "Gabriel Abdelsayed ordained and sent to St. Mark’s",
+                              "citations":  [
+                                                "cite-us-orthodox-coptic"
+                                            ]
+                          },
+                          {
+                              "year":  1993,
+                              "label":  "Southern U.S. diocese organized",
+                              "citations":  [
+                                                "cite-us-orthodox-south"
+                                            ]
+                          },
+                          {
+                              "year":  1997,
+                              "label":  "Work begins on revised English liturgical texts in late 1997 or early 1998",
+                              "citations":  [
+                                                "cite-us-orthodox-coptlit"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Divine Liturgies of the Coptic Orthodox Patriarchate of Alexandria",
+                                  "year":  null,
+                                  "significance":  "The linked preface documents how U.S. bishops, priests and laity prepared a multilingual edition of three received liturgies.",
+                                  "url":  "https://cdn.suscopts.org/files/messages/preface.pdf",
+                                  "citations":  [
+                                                    "cite-us-orthodox-coptlit"
+                                                ]
+                              }
+                          ],
+        "size_estimate":  "179,155 U.S. 2020 adherents · 292 U.S. congregations (2020 U.S. Religion Census)",
+        "profile_scope":  "Introductory history of the U.S. presence from late-1960s parish worship through diocesan growth and the 2020 census. The plot date is a documented worship milestone. Egypt’s ancient church history and the organization dates of individual U.S. dioceses lie outside that date.",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "notes":  [
+                                                "cite-us-orthodox-coptic"
+                                            ],
+                                  "summary":  [
+                                                  "cite-us-orthodox-coptic",
+                                                  "cite-us-orthodox-south",
+                                                  "cite-us-orthodox-coptlit"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-us-orthodox-coptic",
+                                                              "cite-us-orthodox-south"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-orthodox-coptlit",
+                                                           "cite-us-orthodox-coptic"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-orthodox-oriental",
+                                                       "cite-us-orthodox-coptlit"
+                                                   ],
+                                  "key_figures":  [
+                                                      "cite-us-orthodox-coptic",
+                                                      "cite-us-orthodox-south"
+                                                  ],
+                                  "key_dates":  [
+                                                    "cite-us-orthodox-coptic",
+                                                    "cite-us-orthodox-south",
+                                                    "cite-us-orthodox-coptlit"
+                                                ],
+                                  "key_documents":  [
+                                                        "cite-us-orthodox-coptlit"
+                                                    ],
+                                  "profile_scope":  [
+                                                        "cite-us-orthodox-coptic",
+                                                        "cite-us-orthodox-south",
+                                                        "cite-us-orthodox-census-186"
+                                                    ],
+                                  "size_estimate":  [
+                                                        "cite-us-orthodox-census-186",
+                                                        "cite-us-orthodox-methods"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-orthodox-coptic",
+                          "cite-us-orthodox-south",
+                          "cite-us-orthodox-coptlit",
+                          "cite-us-orthodox-oriental",
+                          "cite-us-orthodox-census-186",
+                          "cite-us-orthodox-methods"
+                      ],
+        "further_reading":  [
+                                {
+                                    "title":  "St. Mark’s Coptic Church, Jersey City: About Us",
+                                    "url":  "https://saintmark.com/about-us/",
+                                    "snippet":  "Summary and Medhat Riad Wassef’s account of the foundation.",
+                                    "citations":  [
+                                                      "cite-us-orthodox-coptic"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Divine Liturgies of the Coptic Orthodox Patriarchate of Alexandria",
+                                    "url":  "https://cdn.suscopts.org/files/messages/preface.pdf",
+                                    "snippet":  "Preface: work on the English, Coptic and Arabic liturgical texts.",
+                                    "citations":  [
+                                                      "cite-us-orthodox-coptlit"
+                                                  ]
+                                }
+                            ]
+    },
+    {
+        "id":  "ethiopian-orthodox-tewahedo-church-us",
+        "name":  "Ethiopian Orthodox Tewahedo Church (United States)",
+        "kind":  "denomination",
+        "start_year":  1959,
+        "zoom_tier":  "full",
+        "short_label":  "Ethiopian Orthodox",
+        "aliases":  [
+                        "Ethiopian Orthodox Tewahedo Church",
+                        "Ethiopian Orthodox Church",
+                        "Ethiopian Orthodox",
+                        "EOTC"
+                    ],
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Oriental Orthodox",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "notes":  "New York branch established according to a U.S. parish history",
+        "summary":  "U.S. presence of the Ethiopian Orthodox Tewahedo Church, including communities formed through diaspora mission and Ethiopian migration.",
+        "formation_narrative":  "A U.S. parish history dates the establishment of a New York branch to 1959 and describes appeals from the African diaspora for clergy. Abba Laike Mandefro, later Archbishop Abune Yesehaq, served the expanding Western Hemisphere mission. Later Ethiopian migration contributed to parish growth. The Church of Our Savior in New York dates its own organization to 1984.",
+        "ending_narrative":  "After political change in Ethiopia in 1991, rival synods developed in Ethiopia and in exile. Schomburg records document a related but locally distinct dispute over Archbishop Yesehaq, Addis Ababa’s authority and the Bronx congregation’s property. The worldwide synods announced reconciliation in 2018. The census groups U.S. Ethiopian Orthodox congregations under a single entry.",
+        "core_beliefs":  [
+                             "Tewahedo refers to the unity of the incarnate Christ. The Ethiopian church shares the Oriental Orthodox confession of Christ’s full humanity and divinity united in the Word.",
+                             "The Eucharistic liturgy confesses the Creed and preserves an ancient Ge’ez liturgical tradition, still used in U.S. parish worship."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Abune Yesehaq",
+                                "role":  "Western Hemisphere mission leader",
+                                "summary":  "Served as a priest and was consecrated to the episcopate in 1979. His ministry linked communities in the United States and the Caribbean.",
+                                "url":  "https://www.stgabrielseotcnj.com/copy-of-the-church",
+                                "citations":  [
+                                                  "cite-us-orthodox-ethstart",
+                                                  "cite-us-orthodox-etharchive"
+                                              ]
+                            },
+                            {
+                                "name":  "Abune Merkorios",
+                                "role":  "Patriarch in exile",
+                                "summary":  "Lived in the United States during the split and participated in reconciliation with the synod headed by Abune Mathias.",
+                                "url":  "https://www.oikoumene.org/news/jubilation-after-ethiopian-orthodox-tewahedo-churchs-27-year-old-schism-is-healed",
+                                "citations":  [
+                                                  "cite-us-orthodox-ethrecon"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1959,
+                              "label":  "New York branch established in the parish account",
+                              "citations":  [
+                                                "cite-us-orthodox-ethstart"
+                                            ]
+                          },
+                          {
+                              "year":  1979,
+                              "label":  "Abune Yesehaq consecrated bishop",
+                              "citations":  [
+                                                "cite-us-orthodox-ethstart"
+                                            ]
+                          },
+                          {
+                              "year":  1984,
+                              "label":  "Church of Our Savior founded in New York",
+                              "citations":  [
+                                                "cite-us-orthodox-ethlocal"
+                                            ]
+                          },
+                          {
+                              "year":  2018,
+                              "label":  "Ethiopian and exile synods announce reconciliation",
+                              "citations":  [
+                                                "cite-us-orthodox-ethrecon"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "The Liturgy of the Ethiopian Orthodox Church",
+                                  "year":  1959,
+                                  "significance":  "English edition of inherited Ethiopian Eucharistic worship. Its publication year is separate from U.S. institutional milestones.",
+                                  "url":  "https://www.ethiopianorthodox.org/english/church/englishethiopianliturgy.pdf",
+                                  "citations":  [
+                                                    "cite-us-orthodox-ethlit"
+                                                ]
+                              }
+                          ],
+        "size_estimate":  "96,374 U.S. 2020 adherents · 197 U.S. congregations (2020 U.S. Religion Census)",
+        "profile_scope":  "Introductory history of U.S. mission and parishes through the 2020 census. The 1959 plot date follows the parish account of organizational beginnings and does not date a legal incorporation, permanent church building, or the founding of Christianity in Ethiopia.",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "notes":  [
+                                                "cite-us-orthodox-ethstart"
+                                            ],
+                                  "summary":  [
+                                                  "cite-us-orthodox-ethstart",
+                                                  "cite-us-orthodox-etharchive",
+                                                  "cite-us-orthodox-ethlocal",
+                                                  "cite-us-orthodox-ethap",
+                                                  "cite-us-orthodox-ethrecon",
+                                                  "cite-us-orthodox-census-204"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-us-orthodox-ethstart",
+                                                              "cite-us-orthodox-etharchive",
+                                                              "cite-us-orthodox-ethlocal",
+                                                              "cite-us-orthodox-ethap"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-orthodox-ethrecon",
+                                                           "cite-us-orthodox-etharchive",
+                                                           "cite-us-orthodox-census-204"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-orthodox-oriental",
+                                                       "cite-us-orthodox-ethlit",
+                                                       "cite-us-orthodox-ethap"
+                                                   ],
+                                  "key_figures":  [
+                                                      "cite-us-orthodox-ethstart",
+                                                      "cite-us-orthodox-etharchive",
+                                                      "cite-us-orthodox-ethrecon"
+                                                  ],
+                                  "key_dates":  [
+                                                    "cite-us-orthodox-ethstart",
+                                                    "cite-us-orthodox-ethlocal",
+                                                    "cite-us-orthodox-ethrecon"
+                                                ],
+                                  "key_documents":  [
+                                                        "cite-us-orthodox-ethlit"
+                                                    ],
+                                  "profile_scope":  [
+                                                        "cite-us-orthodox-ethstart",
+                                                        "cite-us-orthodox-etharchive",
+                                                        "cite-us-orthodox-ethlocal",
+                                                        "cite-us-orthodox-ethap",
+                                                        "cite-us-orthodox-census-204"
+                                                    ],
+                                  "size_estimate":  [
+                                                        "cite-us-orthodox-census-204",
+                                                        "cite-us-orthodox-methods"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-orthodox-ethstart",
+                          "cite-us-orthodox-etharchive",
+                          "cite-us-orthodox-ethlocal",
+                          "cite-us-orthodox-ethap",
+                          "cite-us-orthodox-ethrecon",
+                          "cite-us-orthodox-census-204",
+                          "cite-us-orthodox-oriental",
+                          "cite-us-orthodox-ethlit",
+                          "cite-us-orthodox-methods"
+                      ],
+        "further_reading":  [
+                                {
+                                    "title":  "St. Gabriel Ethiopian Orthodox Tewahedo Church: Abune Yesehaq",
+                                    "url":  "https://www.stgabrielseotcnj.com/copy-of-the-church",
+                                    "snippet":  "New York branch, mission and episcopal ordination.",
+                                    "citations":  [
+                                                      "cite-us-orthodox-ethstart"
+                                                  ]
+                                },
+                                {
+                                    "title":  "World Council of Churches: Ethiopian Orthodox reconciliation",
+                                    "url":  "https://www.oikoumene.org/news/jubilation-after-ethiopian-orthodox-tewahedo-churchs-27-year-old-schism-is-healed",
+                                    "snippet":  "July 2018 reconciliation and roles of the two patriarchs.",
+                                    "citations":  [
+                                                      "cite-us-orthodox-ethrecon"
+                                                  ]
+                                }
+                            ]
+    },
+    {
+        "id":  "armenian-apostolic-etchmiadzin-us",
+        "name":  "Armenian Apostolic Church, Catholicosate of Etchmiadzin (United States)",
+        "kind":  "denomination",
+        "start_year":  1898,
+        "zoom_tier":  "full",
+        "short_label":  "Armenian (Etchmiadzin)",
+        "aliases":  [
+                        "Armenian Apostolic Church",
+                        "Armenian Church",
+                        "Armenian Church of North America (Catholicosate of Etchmiadzin)",
+                        "Armenian Apostolic Church (Catholicosate of Etchmiadzin)",
+                        "Etchmiadzin"
+                    ],
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Oriental Orthodox",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "notes":  "Catholicos establishes the Diocese of America by encyclical",
+        "summary":  "Eastern and Western U.S. dioceses of the Armenian Apostolic Church under the Mother See of Holy Etchmiadzin.",
+        "formation_narrative":  "Armenians in Worcester petitioned for a priest and built a church in 1891. As immigrant communities multiplied, Catholicos Mkrtich Khrimian established the Diocese of America by encyclical in 1898. Immigration continued after the Armenian genocide and in later waves from the Middle East. The Western Diocese dates its official foundation to 1927. The Eastern Diocese’s history dates its constitution to 1928. St. Vartan Cathedral in New York was consecrated in 1968.",
+        "ending_narrative":  "The Eastern and Western dioceses continue under Holy Etchmiadzin. Parallel Armenian Apostolic prelacies affiliated with the Holy See of Cilicia developed a distinct U.S. jurisdiction within the same church tradition. The census reports Cilicia separately.",
+        "core_beliefs":  [
+                             "The Armenian church shares the Oriental Orthodox confession of the unity of Christ’s full humanity and divinity in the incarnate Word.",
+                             "The Armenian Eucharistic service, the Badarak, includes the Havadamk, the Armenian confession of Nicene faith that begins with a collective profession of belief."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Mkrtich Khrimian",
+                                "role":  "Catholicos of All Armenians",
+                                "summary":  "Issued the 1898 encyclical establishing the Diocese of America for the growing diaspora.",
+                                "url":  "https://armenianchurch.us/the-lord-has-done-great-things-for-us/",
+                                "citations":  [
+                                                  "cite-us-orthodox-armnews"
+                                              ]
+                            },
+                            {
+                                "name":  "Vasken I",
+                                "role":  "Catholicos of All Armenians",
+                                "summary":  "Consecrated St. Vartan Cathedral in New York in 1968.",
+                                "url":  "https://armenianchurch.us/history/",
+                                "citations":  [
+                                                  "cite-us-orthodox-arm"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1891,
+                              "label":  "Armenian immigrant congregation builds Worcester church",
+                              "citations":  [
+                                                "cite-us-orthodox-arm"
+                                            ]
+                          },
+                          {
+                              "year":  1898,
+                              "label":  "Diocese of America established by encyclical",
+                              "citations":  [
+                                                "cite-us-orthodox-armnews",
+                                                "cite-us-orthodox-armletter"
+                                            ]
+                          },
+                          {
+                              "year":  1927,
+                              "label":  "Western Diocese marks its official foundation",
+                              "citations":  [
+                                                "cite-us-orthodox-armwest"
+                                            ]
+                          },
+                          {
+                              "year":  1928,
+                              "label":  "Western Diocese constituted, per the Eastern Diocese history",
+                              "citations":  [
+                                                "cite-us-orthodox-arm"
+                                            ]
+                          },
+                          {
+                              "year":  1968,
+                              "label":  "St. Vartan Cathedral consecrated in New York",
+                              "citations":  [
+                                                "cite-us-orthodox-arm"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Letter on the 125th Anniversary of the Eastern Diocese",
+                                  "year":  2023,
+                                  "significance":  "Catholicos Karekin II’s anniversary letter confirms the 1898 foundation. The linked document commemorates the founding encyclical.",
+                                  "url":  "https://armenianchurch.us/wp-content/uploads/2023/06/HHK2-230605-DAC125-Congrats-PDF.pdf",
+                                  "citations":  [
+                                                    "cite-us-orthodox-armletter"
+                                                ]
+                              },
+                              {
+                                  "title":  "Havadamk (Armenian Creed)",
+                                  "year":  null,
+                                  "significance":  "Inherited liturgical profession of faith recited during the Badarak.",
+                                  "url":  "https://armenianchurch.us/seventeen-centuries-of-we-believe/",
+                                  "citations":  [
+                                                    "cite-us-orthodox-armcreed"
+                                                ]
+                              }
+                          ],
+        "size_estimate":  "95,207 U.S. 2020 adherents · 89 U.S. congregations (2020 U.S. Religion Census)",
+        "profile_scope":  "Introductory history of the Etchmiadzin-affiliated U.S. dioceses from Worcester through the 2020 census. The plot date is the founding of their common diocesan predecessor. The scope excludes Canadian diocesan history and the separately counted Cilicia jurisdictions.",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "notes":  [
+                                                "cite-us-orthodox-armnews",
+                                                "cite-us-orthodox-armletter"
+                                            ],
+                                  "summary":  [
+                                                  "cite-us-orthodox-arm",
+                                                  "cite-us-orthodox-armletter",
+                                                  "cite-us-orthodox-armnews",
+                                                  "cite-us-orthodox-armwest",
+                                                  "cite-us-orthodox-armcil",
+                                                  "cite-us-orthodox-census-050"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-us-orthodox-arm",
+                                                              "cite-us-orthodox-armletter",
+                                                              "cite-us-orthodox-armnews",
+                                                              "cite-us-orthodox-armwest"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-orthodox-arm",
+                                                           "cite-us-orthodox-armcil",
+                                                           "cite-us-orthodox-census-050"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-orthodox-oriental",
+                                                       "cite-us-orthodox-armcreed"
+                                                   ],
+                                  "key_figures":  [
+                                                      "cite-us-orthodox-armnews",
+                                                      "cite-us-orthodox-arm"
+                                                  ],
+                                  "key_dates":  [
+                                                    "cite-us-orthodox-arm",
+                                                    "cite-us-orthodox-armnews",
+                                                    "cite-us-orthodox-armletter",
+                                                    "cite-us-orthodox-armwest"
+                                                ],
+                                  "key_documents":  [
+                                                        "cite-us-orthodox-armletter",
+                                                        "cite-us-orthodox-armcreed"
+                                                    ],
+                                  "profile_scope":  [
+                                                        "cite-us-orthodox-arm",
+                                                        "cite-us-orthodox-armletter",
+                                                        "cite-us-orthodox-armnews",
+                                                        "cite-us-orthodox-armwest",
+                                                        "cite-us-orthodox-census-050"
+                                                    ],
+                                  "size_estimate":  [
+                                                        "cite-us-orthodox-census-050",
+                                                        "cite-us-orthodox-methods"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-orthodox-armnews",
+                          "cite-us-orthodox-armletter",
+                          "cite-us-orthodox-arm",
+                          "cite-us-orthodox-armwest",
+                          "cite-us-orthodox-armcil",
+                          "cite-us-orthodox-census-050",
+                          "cite-us-orthodox-oriental",
+                          "cite-us-orthodox-armcreed",
+                          "cite-us-orthodox-methods"
+                      ],
+        "further_reading":  [
+                                {
+                                    "title":  "Diocese of the Armenian Church of America (Eastern): Diocesan History",
+                                    "url":  "https://armenianchurch.us/history/",
+                                    "snippet":  "Armenian immigration, Worcester, diocesan establishment and St. Vartan Cathedral.",
+                                    "citations":  [
+                                                      "cite-us-orthodox-arm"
+                                                  ]
+                                }
+                            ]
+    },
+    {
+        "id":  "orthodox-church-in-america",
+        "name":  "Orthodox Church in America",
+        "kind":  "denomination",
+        "start_year":  1970,
+        "zoom_tier":  "full",
+        "short_label":  "OCA",
+        "aliases":  [
+                        "OCA",
+                        "The Orthodox Church in America",
+                        "American Metropolia",
+                        "Russian Orthodox Greek Catholic Metropolitanate of North America"
+                    ],
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Orthodox",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "notes":  "Moscow grants autocephaly and the All-American Council reorganizes under the OCA name",
+        "summary":  "North American Eastern Orthodox church formed under its present name and status in 1970 from the American Metropolia.",
+        "formation_narrative":  "The Russian Orthodox mission reached Kodiak in 1794 in the setting of Russian colonial expansion and built a lasting presence among Alaska Native communities. The North American diocese developed across the continent. Disruption following the Russian Revolution led the American Metropolia to govern itself provisionally. After negotiations, Moscow granted autocephaly in April 1970 and the All-American Council reorganized the church under its present name that October.",
+        "ending_narrative":  "The OCA continues under its own statute and Holy Synod. Recognition of autocephaly varies across the Eastern Orthodox communion. The Ecumenical Patriarchate has maintained its position on withholding recognition of that status, while its hierarchs have concelebrated with OCA hierarchs. Both the OCA and Greek Orthodox Archdiocese participate in the U.S. Assembly of Canonical Orthodox Bishops.",
+        "core_beliefs":  [
+                             "The Nicene-Constantinopolitan Creed states the faith confessed at baptism and repeated in the Divine Liturgy, including the Trinity and the incarnation and resurrection of Christ.",
+                             "The OCA sees its self-government as operating within Eastern Orthodox sacramental communion and the inherited canons of the church. The Tomos authorizes it to elect its own primate and bishops."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Herman of Alaska",
+                                "role":  "Monk of the Kodiak mission",
+                                "summary":  "Served in the early Russian mission to Alaska and was glorified by the OCA in 1970.",
+                                "url":  "https://www.oca.org/orthodoxy/the-orthodox-faith/church-history/eighteenth-century/mission-to-alaska",
+                                "citations":  [
+                                                  "cite-us-orthodox-ocamonk"
+                                              ]
+                            },
+                            {
+                                "name":  "Metropolitan Ireney",
+                                "role":  "Primate in 1970",
+                                "summary":  "Received the grant of autocephaly as the primate to whom Moscow addressed the Tomos.",
+                                "url":  "https://www.oca.org/history-archives/tomos-of-autocephaly",
+                                "citations":  [
+                                                  "cite-us-orthodox-ocatomos"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1794,
+                              "label":  "Russian Orthodox mission reaches Kodiak",
+                              "citations":  [
+                                                "cite-us-orthodox-alaskan",
+                                                "cite-us-orthodox-ocamonk"
+                                            ]
+                          },
+                          {
+                              "year":  1924,
+                              "label":  "All-American council declares temporary self-government",
+                              "citations":  [
+                                                "cite-us-orthodox-ocahist"
+                                            ]
+                          },
+                          {
+                              "year":  1970,
+                              "label":  "Moscow issues the Tomos and the council adopts the OCA name",
+                              "citations":  [
+                                                "cite-us-orthodox-ocatomos",
+                                                "cite-us-orthodox-ocastat"
+                                            ]
+                          },
+                          {
+                              "year":  2016,
+                              "label":  "OCA and Constantinople hierarchs concelebrate in Istanbul",
+                              "citations":  [
+                                                "cite-us-orthodox-ocarec"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Tomos of Autocephaly",
+                                  "year":  1970,
+                                  "significance":  "Patriarchal and synodal act granting the Metropolia self-government and specifying its rights.",
+                                  "url":  "https://www.oca.org/history-archives/tomos-of-autocephaly",
+                                  "citations":  [
+                                                    "cite-us-orthodox-ocatomos"
+                                                ]
+                              },
+                              {
+                                  "title":  "Statute of the Orthodox Church in America",
+                                  "year":  null,
+                                  "significance":  "Governing text describing how the church organizes its synod, dioceses and parishes.",
+                                  "url":  "https://www.oca.org/statute",
+                                  "citations":  [
+                                                    "cite-us-orthodox-ocastat"
+                                                ]
+                              }
+                          ],
+        "size_estimate":  "74,449 U.S. 2020 adherents · 560 U.S. congregations (2020 U.S. Religion Census)",
+        "profile_scope":  "Introductory account of the modern OCA, with Russian mission and Metropolia antecedents and recognition history. The plot date marks the current ecclesial form. The 2020 census totals cover U.S. congregations only.",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "notes":  [
+                                                "cite-us-orthodox-ocatomos",
+                                                "cite-us-orthodox-ocastat"
+                                            ],
+                                  "summary":  [
+                                                  "cite-us-orthodox-alaskan",
+                                                  "cite-us-orthodox-ocamonk",
+                                                  "cite-us-orthodox-ocahist",
+                                                  "cite-us-orthodox-ocatomos",
+                                                  "cite-us-orthodox-ocastat",
+                                                  "cite-us-orthodox-ocarec",
+                                                  "cite-us-orthodox-assembly"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-us-orthodox-alaskan",
+                                                              "cite-us-orthodox-ocamonk",
+                                                              "cite-us-orthodox-ocahist",
+                                                              "cite-us-orthodox-ocatomos",
+                                                              "cite-us-orthodox-ocastat"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-orthodox-ocastat",
+                                                           "cite-us-orthodox-ocarec",
+                                                           "cite-us-orthodox-assembly"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-orthodox-ocacreeds",
+                                                       "cite-us-orthodox-ocatomos",
+                                                       "cite-us-orthodox-ocastat"
+                                                   ],
+                                  "key_figures":  [
+                                                      "cite-us-orthodox-ocamonk",
+                                                      "cite-us-orthodox-ocatomos"
+                                                  ],
+                                  "key_dates":  [
+                                                    "cite-us-orthodox-alaskan",
+                                                    "cite-us-orthodox-ocamonk",
+                                                    "cite-us-orthodox-ocahist",
+                                                    "cite-us-orthodox-ocatomos",
+                                                    "cite-us-orthodox-ocastat",
+                                                    "cite-us-orthodox-ocarec"
+                                                ],
+                                  "key_documents":  [
+                                                        "cite-us-orthodox-ocatomos",
+                                                        "cite-us-orthodox-ocastat"
+                                                    ],
+                                  "profile_scope":  [
+                                                        "cite-us-orthodox-alaskan",
+                                                        "cite-us-orthodox-ocamonk",
+                                                        "cite-us-orthodox-ocahist",
+                                                        "cite-us-orthodox-ocatomos",
+                                                        "cite-us-orthodox-ocastat",
+                                                        "cite-us-orthodox-census-331"
+                                                    ],
+                                  "size_estimate":  [
+                                                        "cite-us-orthodox-census-331",
+                                                        "cite-us-orthodox-methods"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-orthodox-ocatomos",
+                          "cite-us-orthodox-ocastat",
+                          "cite-us-orthodox-alaskan",
+                          "cite-us-orthodox-ocamonk",
+                          "cite-us-orthodox-ocahist",
+                          "cite-us-orthodox-ocarec",
+                          "cite-us-orthodox-assembly",
+                          "cite-us-orthodox-ocacreeds",
+                          "cite-us-orthodox-census-331",
+                          "cite-us-orthodox-methods"
+                      ],
+        "further_reading":  [
+                                {
+                                    "title":  "National Park Service: Russian America",
+                                    "url":  "https://home.nps.gov/subjects/nhlalaska/russian-alaska.htm",
+                                    "snippet":  "Russian Orthodox missionaries and Alaska Native communities.",
+                                    "citations":  [
+                                                      "cite-us-orthodox-alaskan"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Orthodox Church in America: Statute",
+                                    "url":  "https://www.oca.org/statute",
+                                    "snippet":  "Preamble and Article I, identity and governance.",
+                                    "citations":  [
+                                                      "cite-us-orthodox-ocastat"
+                                                  ]
+                                }
+                            ]
+    },
+    {
+        "id":  "full-gospel-christian-assemblies-international",
+        "name":  "Full Gospel Christian Assemblies International",
+        "short_label":  "FGCAI",
+        "aliases":  [
+                        "FGCAI"
+                    ],
+        "kind":  "movement",
+        "start_year":  1983,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Pentecostal",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "An Apostolic and prophetic ministry organized in the Chicago area by Ron and Barbara Wilson. Its public history centers on the Illinois congregation and its outreach.",
+        "profile_scope":  "U.S. origins in 1983, publicly documented Illinois ministry and the 2020 FFR census entry. The nationwide affiliate relationship remains unverified.",
+        "formation_narrative":  "On October 2, 1983, Ron and Barbara Wilson began the ministry in the home of elders Tyrone and Bernice Green. The church recalls its first public service above a Chicago camera shop and several temporary meeting places. Its stated aim is restoration through the Christian gospel, with ministries for families and people of different ages.",
+        "ending_narrative":  "From a permanent base in South Chicago Heights, the church developed radio and television outreach and a school for ministry training. It later moved to Hazel Crest. The ministry continues there and describes Ron Wilson’s Coalition of Apostolic and International Ministries as a network for mutual support. The relationship between that coalition and the national census list is unresolved.",
+        "core_beliefs":  [
+                             "The church identifies its ministry as Apostolic and prophetic, centering its message on salvation in Jesus.",
+                             "Its public account emphasizes repentance, restoration and deliverance. Its formal position on the Godhead and the baptismal formula remains unverified."
+                         ],
+        "size_estimate":  "240,878 estimated U.S. adherents across 722 listed congregations (2020 U.S. Religion Census, FFR). The census relied on commercial mailing lists. The affiliation roster has not been verified.",
+        "key_figures":  [
+                            {
+                                "name":  "Ron Wilson",
+                                "role":  "Co-founder",
+                                "summary":  "Led the church with Barbara Wilson and organized the Coalition of Apostolic and International Ministries.",
+                                "url":  "https://fgcai.org/history/",
+                                "citations":  [
+                                                  "cite-us-pent-fgh",
+                                                  "cite-us-pent-fgc"
+                                              ]
+                            },
+                            {
+                                "name":  "Barbara Wilson",
+                                "role":  "Co-founder",
+                                "summary":  "Helped launch the church and taught with Ron Wilson in the United States and abroad.",
+                                "url":  "https://fgcai.org/history/",
+                                "citations":  [
+                                                  "cite-us-pent-fgh"
+                                              ]
+                            },
+                            {
+                                "name":  "Tyrone and Bernice Green",
+                                "role":  "Founding hosts",
+                                "summary":  "The church’s elders hosted the 1983 founding gathering in their home.",
+                                "url":  "https://fgcai.org/history/",
+                                "citations":  [
+                                                  "cite-us-pent-fgh"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1983,
+                              "label":  "Ministry founded on October 2 in the Greens’ home",
+                              "citations":  [
+                                                "cite-us-pent-fgh"
+                                            ]
+                          },
+                          {
+                              "year":  2020,
+                              "label":  "National census lists the body under code FFR",
+                              "citations":  [
+                                                "cite-us-pent-ffr-count",
+                                                "cite-us-pent-mailing"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "FGCAI Mission Statement",
+                                  "year":  null,
+                                  "significance":  "Public statement of the ministry’s purpose. No dated founding constitution or formal confession has been verified.",
+                                  "url":  "https://fgcai.org/mission-statement/",
+                                  "citations":  [
+                                                    "cite-us-pent-fgm"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "FGCAI church history",
+                                    "url":  "https://fgcai.org/history/",
+                                    "snippet":  "Read the account of the people, events, and institutions behind the profile.",
+                                    "citations":  [
+                                                      "cite-us-pent-fgh"
+                                                  ]
+                                },
+                                {
+                                    "title":  "FGCAI mission statement",
+                                    "url":  "https://fgcai.org/mission-statement/",
+                                    "snippet":  "Public statement of the ministry’s purpose. No dated founding constitution or formal confession has been verified.",
+                                    "citations":  [
+                                                      "cite-us-pent-fgm"
+                                                  ]
+                                }
+                            ],
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-us-pent-fgh"
+                                              ],
+                                  "profile_scope":  [
+                                                        "cite-us-pent-fgh",
+                                                        "cite-us-pent-fgm"
+                                                    ],
+                                  "formation_narrative":  [
+                                                              "cite-us-pent-fgh",
+                                                              "cite-us-pent-fgm"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-pent-fgh",
+                                                           "cite-us-pent-fgc",
+                                                           "cite-us-pent-mailing"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-pent-fgh",
+                                                       "cite-us-pent-fgm"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-us-pent-ffr-count",
+                                                        "cite-us-pent-mailing"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-pent-fgh",
+                          "cite-us-pent-fgm",
+                          "cite-us-pent-fgc",
+                          "cite-us-pent-mailing",
+                          "cite-us-pent-ffr-count"
+                      ]
+    },
+    {
+        "id":  "vineyard-usa",
+        "name":  "Vineyard USA",
+        "short_label":  "Vineyard",
+        "aliases":  [
+                        "Vineyard",
+                        "Association of Vineyard Churches"
+                    ],
+        "kind":  "movement",
+        "start_year":  1974,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Pentecostal",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "A U.S. association of locally governed churches with roots in Southern California evangelical and charismatic renewal. Vineyard emphasizes God’s kingdom, prayer for healing, and the gifts of the Holy Spirit.",
+        "profile_scope":  "U.S. network. The 1974 marker denotes the first congregation in the network’s own origin account. The wider international movement and individual congregations are outside this profile.",
+        "formation_narrative":  "In 1974 Calvary Chapel sent Kenn Gulliksen to start a church in West Los Angeles. A small fellowship of churches took the Vineyard name. John Wimber’s Anaheim congregation separated from its Calvary Chapel affiliation and joined the Vineyard in 1982, when Wimber emerged as the network’s leader. Church planting and ministry that combined evangelism with prayer for healing helped give the early network its shape.",
+        "ending_narrative":  "The network grew through church planting under Wimber. The national body later clarified its relationship to local churches through revised bylaws and a National Leadership Handbook. Its 2026 handbook sets shared standards for affiliation and pastoral accountability while affirming local governance.",
+        "core_beliefs":  [
+                             "Vineyard’s Trinitarian statement describes the kingdom of God as already breaking into the present through Jesus, with its fullness still to come.",
+                             "Churches are encouraged to pray for healing, welcome the Spirit’s gifts, pursue justice and care for people in need."
+                         ],
+        "size_estimate":  "155,836 U.S. adherents across 499 congregations (2020 U.S. Religion Census).",
+        "key_figures":  [
+                            {
+                                "name":  "Kenn Gulliksen",
+                                "role":  "Founding church planter",
+                                "summary":  "Started the West Los Angeles congregation and led the early association.",
+                                "url":  "https://vineyardusa.org/about/history/",
+                                "citations":  [
+                                                  "cite-us-pent-vh"
+                                              ]
+                            },
+                            {
+                                "name":  "John Wimber",
+                                "role":  "Early network leader",
+                                "summary":  "Brought the Anaheim church into the association and helped spread its model of church planting and healing prayer.",
+                                "url":  "https://vineyardusa.org/about/john-wimber/",
+                                "citations":  [
+                                                  "cite-us-pent-vw",
+                                                  "cite-us-pent-vh"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1974,
+                              "label":  "Gulliksen starts the first Vineyard congregation in West Los Angeles",
+                              "citations":  [
+                                                "cite-us-pent-vh"
+                                            ]
+                          },
+                          {
+                              "year":  1982,
+                              "label":  "Wimber’s Anaheim congregation joins the Vineyard network",
+                              "citations":  [
+                                                "cite-us-pent-vw"
+                                            ]
+                          },
+                          {
+                              "year":  2026,
+                              "label":  "Version 3.0 of the National Leadership Handbook takes effect",
+                              "citations":  [
+                                                "cite-us-pent-vn"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Vineyard Core Values and Statement of Faith",
+                                  "year":  null,
+                                  "significance":  "Published statement setting out Vineyard’s kingdom theology and Trinitarian beliefs.",
+                                  "url":  "https://vineyardusa.org/Vineyard-Core-Values-Beliefs.pdf",
+                                  "citations":  [
+                                                    "cite-us-pent-vb"
+                                                ]
+                              },
+                              {
+                                  "title":  "National Leadership Handbook, version 3.0",
+                                  "year":  2026,
+                                  "significance":  "Ratified handbook governing the United States network’s shared life and relationship to local churches.",
+                                  "url":  "https://vineyardusa.org/handbook/",
+                                  "citations":  [
+                                                    "cite-us-pent-vn"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "Vineyard USA — History \u0026 Legacy",
+                                    "url":  "https://vineyardusa.org/about/history/",
+                                    "snippet":  "Read the account of the people, events, and institutions behind the profile.",
+                                    "citations":  [
+                                                      "cite-us-pent-vh"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Vineyard USA — Core Values \u0026 Beliefs",
+                                    "url":  "https://vineyardusa.org/Vineyard-Core-Values-Beliefs.pdf",
+                                    "snippet":  "Published statement setting out Vineyard’s kingdom theology and Trinitarian beliefs.",
+                                    "citations":  [
+                                                      "cite-us-pent-vb"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Vineyard USA — National Leadership Handbook",
+                                    "url":  "https://vineyardusa.org/handbook/",
+                                    "snippet":  "Ratified handbook governing the United States network’s shared life and relationship to local churches.",
+                                    "citations":  [
+                                                      "cite-us-pent-vn"
+                                                  ]
+                                }
+                            ],
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-us-pent-vh"
+                                              ],
+                                  "profile_scope":  [
+                                                        "cite-us-pent-vh",
+                                                        "cite-us-pent-vw",
+                                                        "cite-us-pent-vg"
+                                                    ],
+                                  "formation_narrative":  [
+                                                              "cite-us-pent-vh",
+                                                              "cite-us-pent-vw",
+                                                              "cite-us-pent-vg"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-pent-vg",
+                                                           "cite-us-pent-vn"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-pent-vb"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-us-pent-vineyard-count"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-pent-vh",
+                          "cite-us-pent-vw",
+                          "cite-us-pent-vg",
+                          "cite-us-pent-vn",
+                          "cite-us-pent-vb",
+                          "cite-us-pent-vineyard-count"
+                      ]
+    },
+    {
+        "id":  "church-of-our-lord-jesus-christ-of-the-apostolic-faith",
+        "name":  "Church of Our Lord Jesus Christ of the Apostolic Faith, Inc.",
+        "short_label":  "COOLJC",
+        "aliases":  [
+                        "Church of Our Lord Jesus Christ",
+                        "COOLJC"
+                    ],
+        "kind":  "denomination",
+        "start_year":  1919,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Pentecostal",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "A historically Black Oneness Pentecostal denomination founded by Robert C. Lawson in Harlem in 1919.",
+        "profile_scope":  "The denomination founded by Lawson, with selected U.S. developments from founding to its continuing organization.",
+        "formation_narrative":  "Robert C. Lawson founded the church in Harlem in 1919 after ministering in several cities. His church’s history connects his preaching to his 1914 baptism in Jesus’ name and experience of receiving the Holy Spirit. The Harlem work became the center of a denomination with an evangelistic mission and its own congregations.",
+        "ending_narrative":  "The national convocation organized a women’s missionary department in 1923, giving women a formal role in evangelism, care, and missions. The Schomburg collection documents distinct bodies that emerged from Lawson’s church, including Sherrod C. Johnson’s church in 1933 and Bible Way as a separately incorporated denomination in 1957. After Lawson died in 1961, Hubert J. Spencer presided and William L. Bonner took leadership of Greater Refuge Temple. Bonner later presided over the denomination from 1973 to 1995. The church continues with a Board of Apostles and missionary work.",
+        "core_beliefs":  [
+                             "Oneness teaching identifies the one God as Father in creation, Son in redemption, and Holy Spirit in the church. COOLJC understands Jesus as fully divine.",
+                             "The published Statement of Faith treats water baptism in Jesus’ name and rebirth by the Holy Spirit as essential and anticipates Christ’s return and resurrection."
+                         ],
+        "size_estimate":  "85,938 estimated U.S. adherents across 527 congregations (2020 U.S. Religion Census, using directory and address-list data).",
+        "key_figures":  [
+                            {
+                                "name":  "Robert C. Lawson",
+                                "role":  "Founder",
+                                "summary":  "Established the Harlem work in 1919 after ministering in several U.S. cities.",
+                                "url":  "https://www.cooljc.org/founder/",
+                                "citations":  [
+                                                  "cite-us-pent-ch",
+                                                  "cite-us-pent-ca"
+                                              ]
+                            },
+                            {
+                                "name":  "Hubert J. Spencer",
+                                "role":  "Presider after Lawson",
+                                "summary":  "Chosen to preside when a Board of Apostles took shape after Lawson’s death.",
+                                "url":  "https://www.cooljc.org/our-story/",
+                                "citations":  [
+                                                  "cite-us-pent-cb"
+                                              ]
+                            },
+                            {
+                                "name":  "William L. Bonner",
+                                "role":  "Greater Refuge Temple pastor and later presider",
+                                "summary":  "Took charge of the Harlem mother church in 1961 and later led the denomination.",
+                                "url":  "https://www.cooljc.org/our-story/",
+                                "citations":  [
+                                                  "cite-us-pent-cb"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1919,
+                              "label":  "Lawson establishes the Harlem work and denomination",
+                              "citations":  [
+                                                "cite-us-pent-ca",
+                                                "cite-us-pent-ch"
+                                            ]
+                          },
+                          {
+                              "year":  1923,
+                              "label":  "National Missionary Department organized at the New York convocation",
+                              "citations":  [
+                                                "cite-us-pent-cm"
+                                            ]
+                          },
+                          {
+                              "year":  1957,
+                              "label":  "Bible Way incorporates as a separate denomination",
+                              "citations":  [
+                                                "cite-us-pent-ca"
+                                            ]
+                          },
+                          {
+                              "year":  1961,
+                              "label":  "Lawson dies and Spencer is chosen to preside",
+                              "citations":  [
+                                                "cite-us-pent-cb"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "COOLJC Statement of Faith",
+                                  "year":  null,
+                                  "significance":  "Published denominational account of Oneness, baptism, and the work of the Holy Spirit.",
+                                  "url":  "https://www.cooljc.org/our-story/",
+                                  "citations":  [
+                                                    "cite-us-pent-cb"
+                                                ]
+                              },
+                              {
+                                  "title":  "COOLJC Discipline Book",
+                                  "year":  null,
+                                  "significance":  "The credential application requires assent to the doctrine and rules in this book. Its full text and original adoption date remain unverified.",
+                                  "url":  "https://www.cooljc.org/wp-content/uploads/2024/06/COOLJC-APPLICATION-FOR-CREDENTIAL-20240527.pdf",
+                                  "citations":  [
+                                                    "cite-us-pent-cd"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "Schomburg Center — Alexander and Shirlene Stewart Pentecostal collection",
+                                    "url":  "https://archives.nypl.org/scm/20818",
+                                    "snippet":  "Read the account of the people, events, and institutions behind the profile.",
+                                    "citations":  [
+                                                      "cite-us-pent-ca"
+                                                  ]
+                                },
+                                {
+                                    "title":  "COOLJC — Our Story and Statement of Faith",
+                                    "url":  "https://www.cooljc.org/our-story/",
+                                    "snippet":  "Published denominational account of Oneness, baptism, and the work of the Holy Spirit.",
+                                    "citations":  [
+                                                      "cite-us-pent-cb"
+                                                  ]
+                                },
+                                {
+                                    "title":  "COOLJC — Ministerial credential application",
+                                    "url":  "https://www.cooljc.org/wp-content/uploads/2024/06/COOLJC-APPLICATION-FOR-CREDENTIAL-20240527.pdf",
+                                    "snippet":  "The credential application requires assent to the doctrine and rules in this book. Its full text and original adoption date remain unverified.",
+                                    "citations":  [
+                                                      "cite-us-pent-cd"
+                                                  ]
+                                }
+                            ],
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-us-pent-ca"
+                                              ],
+                                  "profile_scope":  [
+                                                        "cite-us-pent-ca",
+                                                        "cite-us-pent-ch",
+                                                        "cite-us-pent-cb"
+                                                    ],
+                                  "formation_narrative":  [
+                                                              "cite-us-pent-ca",
+                                                              "cite-us-pent-ch",
+                                                              "cite-us-pent-cb"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-pent-cm",
+                                                           "cite-us-pent-ca",
+                                                           "cite-us-pent-cb"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-pent-cb"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-us-pent-cooljc-count",
+                                                        "cite-us-pent-directory"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-pent-ca",
+                          "cite-us-pent-ch",
+                          "cite-us-pent-cb",
+                          "cite-us-pent-cm",
+                          "cite-us-pent-cooljc-count",
+                          "cite-us-pent-directory",
+                          "cite-us-pent-cd"
+                      ]
+    },
+    {
+        "id":  "united-pentecostal-church-international",
+        "name":  "United Pentecostal Church International",
+        "short_label":  "UPCI",
+        "aliases":  [
+                        "UPCI",
+                        "United Pentecostal Church"
+                    ],
+        "kind":  "denomination",
+        "start_year":  1945,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Pentecostal",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "A Oneness Pentecostal denomination formed in 1945 by the union of the Pentecostal Church Incorporated and the Pentecostal Assemblies of Jesus Christ.",
+        "profile_scope":  "The merger-created denomination and selected U.S. development. International structures are described only to distinguish them from the U.S. census footprint.",
+        "formation_narrative":  "The Pentecostal Church Incorporated and the Pentecostal Assemblies of Jesus Christ united in 1945 at Kiel Auditorium in St. Louis. Merger discussions resumed in 1944. The union brought two existing Oneness fellowships into one organization with a shared doctrine and mission. The UPCI’s racial and ethnic affirmation places the merger in the history of earlier interracial unions and separations, and reports that most Black ministers had already left the Pentecostal Assemblies of Jesus Christ by 1938 amid segregation pressures.",
+        "ending_narrative":  "The denomination reports that the union began with 521 North American churches and work in nine other nations. It developed Bible colleges and relief and mission ministries. It now operates internationally through a Global Council that brings together national organizations. The 2020 U.S. census count below covers congregations in the United States alone.",
+        "core_beliefs":  [
+                             "The Articles of Faith describe one God revealed in Jesus Christ.",
+                             "The denomination teaches repentance, baptism by immersion in Jesus’ name, and receiving the Holy Spirit with speaking in tongues as the initial sign. It also emphasizes holy living."
+                         ],
+        "size_estimate":  "4,549 U.S. congregations (2020 U.S. Religion Census). U.S. adherent total unreported.",
+        "key_figures":  [
+                            {
+                                "name":  "Howard A. Goss",
+                                "role":  "First general superintendent",
+                                "summary":  "An early Assemblies of God organizer who left in 1916 after embracing Oneness teaching, then helped organize the UPCI as a leader of the PCI.",
+                                "url":  "https://archives.ifphc.org/pdf/Heritage/2011.pdf",
+                                "citations":  [
+                                                  "cite-us-pent-goss",
+                                                  "cite-us-pent-goss-office"
+                                              ]
+                            },
+                            {
+                                "name":  "William T. Witherspoon",
+                                "role":  "PAJC chair and first assistant general superintendent",
+                                "summary":  "Chaired the PAJC from 1938 to the 1945 merger and was elected assistant general superintendent at the conference.",
+                                "url":  "https://www.apostolicarchives.com/articles/article/8795590/173099.htm",
+                                "citations":  [
+                                                  "cite-us-pent-witherspoon"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1938,
+                              "label":  "By this year, most Black ministers had left the Pentecostal Assemblies of Jesus Christ",
+                              "citations":  [
+                                                "cite-us-pent-ur"
+                                            ]
+                          },
+                          {
+                              "year":  1945,
+                              "label":  "PCI and PAJC unite at the St. Louis merger conference",
+                              "citations":  [
+                                                "cite-us-pent-ua",
+                                                "cite-us-pent-uh"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "UPCI Articles of Faith",
+                                  "year":  2023,
+                                  "significance":  "The cited edition documents the denomination’s fundamental doctrine and practical commitments. The year identifies this edition.",
+                                  "url":  "https://dmc.upci.org/wp-content/uploads/2023/03/2023-UPCI-ARTICLES-OF-FAITH.pdf",
+                                  "citations":  [
+                                                    "cite-us-pent-ub"
+                                                ]
+                              },
+                              {
+                                  "title":  "Racial and Ethnic Affirmation",
+                                  "year":  null,
+                                  "significance":  "Denominational position paper that assesses segregation and racial separation in the predecessor bodies.",
+                                  "url":  "https://upci.org/wp-content/uploads/2022/12/Racial_and_Ethnic_Affirmation-with-Addendum.pdf",
+                                  "citations":  [
+                                                    "cite-us-pent-ur"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "UPCI — About the UPCI",
+                                    "url":  "https://upci.org/about-the-upci/",
+                                    "snippet":  "Read the account of the people, events, and institutions behind the profile.",
+                                    "citations":  [
+                                                      "cite-us-pent-uh"
+                                                  ]
+                                },
+                                {
+                                    "title":  "UPCI — 2023 Articles of Faith",
+                                    "url":  "https://dmc.upci.org/wp-content/uploads/2023/03/2023-UPCI-ARTICLES-OF-FAITH.pdf",
+                                    "snippet":  "The cited edition documents the denomination’s fundamental doctrine and practical commitments. The year identifies this edition.",
+                                    "citations":  [
+                                                      "cite-us-pent-ub"
+                                                  ]
+                                },
+                                {
+                                    "title":  "UPCI — Racial and Ethnic Affirmation",
+                                    "url":  "https://upci.org/wp-content/uploads/2022/12/Racial_and_Ethnic_Affirmation-with-Addendum.pdf",
+                                    "snippet":  "Denominational position paper that assesses segregation and racial separation in the predecessor bodies.",
+                                    "citations":  [
+                                                      "cite-us-pent-ur"
+                                                  ]
+                                }
+                            ],
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-us-pent-uh"
+                                              ],
+                                  "profile_scope":  [
+                                                        "cite-us-pent-uh",
+                                                        "cite-us-pent-ua",
+                                                        "cite-us-pent-ur"
+                                                    ],
+                                  "formation_narrative":  [
+                                                              "cite-us-pent-uh",
+                                                              "cite-us-pent-ua",
+                                                              "cite-us-pent-ur",
+                                                              "cite-us-pent-merger"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-pent-ua",
+                                                           "cite-us-pent-uh",
+                                                           "cite-us-pent-upci-count"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-pent-ub",
+                                                       "cite-us-pent-uh"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-us-pent-upci-count"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-pent-uh",
+                          "cite-us-pent-ua",
+                          "cite-us-pent-ur",
+                          "cite-us-pent-upci-count",
+                          "cite-us-pent-ub",
+                          "cite-us-pent-goss",
+                          "cite-us-pent-goss-office",
+                          "cite-us-pent-merger",
+                          "cite-us-pent-witherspoon"
+                      ]
+    },
+    {
+        "id":  "church-of-god-of-prophecy",
+        "name":  "Church of God of Prophecy",
+        "short_label":  "COGOP",
+        "aliases":  [
+                        "COGOP",
+                        "Tomlinson Church of God"
+                    ],
+        "kind":  "denomination",
+        "start_year":  1923,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Pentecostal",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "A Holiness Pentecostal denomination whose separate institutional history begins with the 1923 Church of God division and whose present name emerged from later litigation.",
+        "profile_scope":  "Tomlinson-led branch and its continuation. The 1923 date marks separate organization, with shared roots in the earlier Appalachian Church of God.",
+        "formation_narrative":  "The two churches trace their shared history to the Appalachian Christian Union and the early Church of God. In 1923 a conflict over leadership, finances and constitutional authority resulted in the removal of General Overseer A. J. Tomlinson. He and supporters continued separately. Their assembly minutes present rejection of the constitution as a return to biblical government. The Cleveland branch remained separately organized under F. J. Lee.",
+        "ending_narrative":  "The Tomlinson branch expanded its missions, establishing a congregation in Costa Rica in 1932. M. A. Tomlinson succeeded his father after his death in 1943. After litigation over the shared name, the church adopted Church of God of Prophecy for public and business use in the early 1950s. The denomination continues today. The Church of God now based in Charleston, Tennessee, organized separately in 1993 and is a distinct body.",
+        "core_beliefs":  [
+                             "The church’s current published teaching affirms the Trinity, sanctification and growth in holiness, and baptism with the Holy Spirit evidenced initially by speaking in tongues.",
+                             "The same sequence of sanctification followed by Spirit baptism appears in the Tomlinson branch’s 1951 Assembly minutes."
+                         ],
+        "size_estimate":  "1,614 U.S. congregations (2020 U.S. Religion Census). U.S. adherent total unreported.",
+        "key_figures":  [
+                            {
+                                "name":  "A. J. Tomlinson",
+                                "role":  "Leader of the continuing Tomlinson branch",
+                                "summary":  "Organized with supporters after losing the office of general overseer in the 1923 division.",
+                                "url":  "https://cogheritage.libraryhost.com/repositories/2/resources/25",
+                                "citations":  [
+                                                  "cite-us-pent-pc",
+                                                  "cite-us-pent-pa"
+                                              ]
+                            },
+                            {
+                                "name":  "F. J. Lee",
+                                "role":  "General overseer of the other Cleveland branch",
+                                "summary":  "Led the separately continuing branch and represented it in the name dispute.",
+                                "url":  "https://cogheritage.libraryhost.com/repositories/2/resources/25",
+                                "citations":  [
+                                                  "cite-us-pent-pc",
+                                                  "cite-us-pent-pj"
+                                              ]
+                            },
+                            {
+                                "name":  "M. A. Tomlinson",
+                                "role":  "Successor as general overseer",
+                                "summary":  "Succeeded his father and led the denomination during the subsequent dispute over its public name.",
+                                "url":  "https://cogheritage.libraryhost.com/repositories/2/resources/25",
+                                "citations":  [
+                                                  "cite-us-pent-pc",
+                                                  "cite-us-pent-pm",
+                                                  "cite-us-pent-pf"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1907,
+                              "label":  "Undivided church adopts the name Church of God",
+                              "citations":  [
+                                                "cite-us-pent-pf"
+                                            ]
+                          },
+                          {
+                              "year":  1923,
+                              "label":  "Removal of A. J. Tomlinson and separate organization of his followers",
+                              "citations":  [
+                                                "cite-us-pent-pc",
+                                                "cite-us-pent-pa"
+                                            ]
+                          },
+                          {
+                              "year":  1943,
+                              "label":  "M. A. Tomlinson follows A. J. Tomlinson as general overseer",
+                              "citations":  [
+                                                "cite-us-pent-pc"
+                                            ]
+                          },
+                          {
+                              "year":  1952,
+                              "label":  "Tennessee Supreme Court rules in the name dispute",
+                              "citations":  [
+                                                "cite-us-pent-pj"
+                                            ]
+                          },
+                          {
+                              "year":  1993,
+                              "label":  "The Church of God now based in Charleston organizes separately",
+                              "citations":  [
+                                                "cite-us-pent-ps"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Tomlinson branch Assembly minutes",
+                                  "year":  1923,
+                                  "significance":  "Contemporaneous record of the branch’s own case against the church constitution.",
+                                  "url":  "https://cogop.org/wp-content/uploads/2025/03/1923-18th-Assembly-Minutes-compressed.pdf",
+                                  "citations":  [
+                                                    "cite-us-pent-pa"
+                                                ]
+                              },
+                              {
+                                  "title":  "Assembly minutes",
+                                  "year":  1951,
+                                  "significance":  "Records the Tomlinson branch’s published teachings before the public name change.",
+                                  "url":  "https://library.cogop.org/documents/assembly-minutes-1951",
+                                  "citations":  [
+                                                    "cite-us-pent-pm"
+                                                ]
+                              },
+                              {
+                                  "title":  "What We Believe",
+                                  "year":  null,
+                                  "significance":  "Current presentation of the church’s doctrines and practices.",
+                                  "url":  "https://cogop.org/what-we-believe/",
+                                  "citations":  [
+                                                    "cite-us-pent-pb"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "Hal Bernard Dixon Jr. Pentecostal Research Center — Tomlinson family collection",
+                                    "url":  "https://cogheritage.libraryhost.com/repositories/2/resources/25",
+                                    "snippet":  "Read the account of the people, events, and institutions behind the profile.",
+                                    "citations":  [
+                                                      "cite-us-pent-pc"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Church of God of Prophecy — 1923 Assembly minutes",
+                                    "url":  "https://cogop.org/wp-content/uploads/2025/03/1923-18th-Assembly-Minutes-compressed.pdf",
+                                    "snippet":  "Contemporaneous record of the branch’s own case against the church constitution.",
+                                    "citations":  [
+                                                      "cite-us-pent-pa"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Church of God of Prophecy Archives — 1951 Assembly minutes",
+                                    "url":  "https://library.cogop.org/documents/assembly-minutes-1951",
+                                    "snippet":  "Records the Tomlinson branch’s published teachings before the public name change.",
+                                    "citations":  [
+                                                      "cite-us-pent-pm"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Church of God of Prophecy — What We Believe",
+                                    "url":  "https://cogop.org/what-we-believe/",
+                                    "snippet":  "Current presentation of the church’s doctrines and practices.",
+                                    "citations":  [
+                                                      "cite-us-pent-pb"
+                                                  ]
+                                }
+                            ],
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-us-pent-pc"
+                                              ],
+                                  "profile_scope":  [
+                                                        "cite-us-pent-pc",
+                                                        "cite-us-pent-pa",
+                                                        "cite-us-pent-ph",
+                                                        "cite-us-pent-pj"
+                                                    ],
+                                  "formation_narrative":  [
+                                                              "cite-us-pent-pc",
+                                                              "cite-us-pent-pa",
+                                                              "cite-us-pent-ph",
+                                                              "cite-us-pent-pj"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-pent-ph",
+                                                           "cite-us-pent-pc",
+                                                           "cite-us-pent-pf",
+                                                           "cite-us-pent-pj",
+                                                           "cite-us-pent-pd",
+                                                           "cite-us-pent-ps"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-pent-pb",
+                                                       "cite-us-pent-pm"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-us-pent-cogop-count"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-us-pent-pc",
+                          "cite-us-pent-pa",
+                          "cite-us-pent-ph",
+                          "cite-us-pent-pj",
+                          "cite-us-pent-pf",
+                          "cite-us-pent-pd",
+                          "cite-us-pent-ps",
+                          "cite-us-pent-pb",
+                          "cite-us-pent-pm",
+                          "cite-us-pent-cogop-count"
+                      ]
+    },
+    {
+        "id":  "united-church-of-christ",
+        "name":  "United Church of Christ",
+        "short_label":  "UCC",
+        "aliases":  [
+                        "UCC",
+                        "United Church of Christ (UCC)"
+                    ],
+        "kind":  "denomination",
+        "start_year":  1957,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Reformed",
+        "ecclesial_orientation":  "mainline",
+        "current_status":  "active",
+        "summary":  "An ecumenical Protestant denomination formed in 1957 by the Evangelical and Reformed Church and the Congregational Christian Churches. Its union is distinct from the Stone–Campbell Churches of Christ.",
+        "formation_narrative":  "In 1931, Congregational churches and Christian churches in the Christian Connection tradition united as the Congregational Christian Churches. The Afro-Christian Convention, an organization of Black churches rooted in Virginia and North Carolina, contributed a distinct stream through the Congregational Christian side and the Convention of the South. In 1934, the Evangelical Synod of North America and the predominantly German Reformed Church in the United States formed the Evangelical and Reformed Church. Their two successor bodies negotiated a Basis of Union that paired shared Christian witness with room for local self-government. Congregational opponents challenged the authority of their General Council to effect the union in the Cadman Memorial Church litigation. The two bodies united on June 25, 1957, at Cleveland. Some Congregational churches remained outside the UCC, including congregations associated with the National Association of Congregational Christian Churches or the Conservative Congregational Christian Conference.",
+        "ending_narrative":  "The General Synod adopted a Statement of Faith in 1959 and elected Ben Mohr Herbster as its first single president under a new constitution in 1961. The UCC continues through local congregations, associations, conferences, and a General Synod. Its 2005 General Synod endorsed equal marriage rights, an example of national witness within a polity that leaves local churches authority over their own affairs. In 2023 General Synod acknowledged the Afro-Christian Convention as a distinct ancestral stream.",
+        "core_beliefs":  [
+                             "The Basis of Union grounds common faith in the biblical witness to God through Christ and acknowledges the historic creeds and Reformation confessions.",
+                             "The 1959 Statement of Faith affirms Jesus Christ as crucified and risen and describes baptism, Communion, and service as parts of Christian discipleship.",
+                             "Local congregations govern their own worship and affairs while participating in covenant relationships with other parts of the church."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Fred Hoskins",
+                                "role":  "Congregational Christian leader and founding co-president",
+                                "summary":  "He led the Congregational Christian General Council at the union and became one of the UCC\u0027s two initial co-presidents.",
+                                "url":  "https://www.ucc.org/who-we-are/about/history/",
+                                "citations":  [
+                                                  "cite-uscr-ucc-union"
+                                              ]
+                            },
+                            {
+                                "name":  "James E. Wagner",
+                                "role":  "Evangelical and Reformed leader and founding co-president",
+                                "summary":  "He headed the Evangelical and Reformed General Synod during the final negotiations and served as a founding UCC co-president.",
+                                "url":  "https://www.ucc.org/who-we-are/about/history/",
+                                "citations":  [
+                                                  "cite-uscr-ucc-union"
+                                              ]
+                            },
+                            {
+                                "name":  "Helen Kenyon",
+                                "role":  "Congregational Christian moderator",
+                                "summary":  "The Cadman Memorial Church litigation named Kenyon as moderator, putting the authority of the General Council at issue.",
+                                "url":  "https://congrelib.libraryhost.com/repositories/2/resources/1164",
+                                "citations":  [
+                                                  "cite-uscr-ucc-minorities"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1931,
+                              "label":  "Congregational Christian Churches formed by union",
+                              "citations":  [
+                                                "cite-uscr-ucc-streams",
+                                                "cite-uscr-ucc-union"
+                                            ]
+                          },
+                          {
+                              "year":  1934,
+                              "label":  "Evangelical and Reformed Church formed by union",
+                              "citations":  [
+                                                "cite-uscr-ucc-streams",
+                                                "cite-uscr-ucc-union"
+                                            ]
+                          },
+                          {
+                              "year":  1957,
+                              "label":  "Two denominations effect union at the Cleveland synod",
+                              "citations":  [
+                                                "cite-uscr-ucc-union",
+                                                "cite-uscr-ucc-minorities"
+                                            ]
+                          },
+                          {
+                              "year":  1959,
+                              "label":  "General Synod adopts the UCC Statement of Faith",
+                              "citations":  [
+                                                "cite-uscr-ucc-faith"
+                                            ]
+                          },
+                          {
+                              "year":  1961,
+                              "label":  "New constitution guides election of first sole president",
+                              "citations":  [
+                                                "cite-uscr-ucc-constitutional"
+                                            ]
+                          },
+                          {
+                              "year":  2005,
+                              "label":  "General Synod passes marriage equality resolution",
+                              "citations":  [
+                                                "cite-uscr-ucc-marriage"
+                                            ]
+                          },
+                          {
+                              "year":  2023,
+                              "label":  "General Synod recognizes the Afro-Christian Convention as a fifth historical stream",
+                              "citations":  [
+                                                "cite-uscr-ucc-afro-recognition",
+                                                "cite-uscr-ucc-afro-history"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Basis of Union",
+                                  "year":  1943,
+                                  "significance":  "Negotiated agreement that set the terms for the 1957 union and guided the new church until it had a constitution.",
+                                  "url":  "https://www.ucc.org/who-we-are/about/general-synod/general-synod-resolutions-regarding-environmental-justice/beliefs/beliefs_basis-of-union/",
+                                  "citations":  [
+                                                    "cite-uscr-ucc-union-text",
+                                                    "cite-uscr-ucc-union"
+                                                ]
+                              },
+                              {
+                                  "title":  "UCC Statement of Faith",
+                                  "year":  1959,
+                                  "significance":  "Synod-adopted testimony that expresses common faith within a church of locally governed congregations.",
+                                  "url":  "https://www.ucc.org/what-we-believe/beliefs_statement-of-faith/",
+                                  "citations":  [
+                                                    "cite-uscr-ucc-faith",
+                                                    "cite-uscr-ucc-autonomy"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "Merger records and Cadman litigation",
+                                    "snippet":  "The archive inventories correspondence, votes, legal records, and the negotiating groups\u0027 papers.",
+                                    "url":  "https://congrelib.libraryhost.com/repositories/2/resources/1164",
+                                    "citations":  [
+                                                      "cite-uscr-ucc-minorities"
+                                                  ]
+                                },
+                                {
+                                    "title":  "UCC history and polity resources",
+                                    "snippet":  "Primary statements and study guides explain autonomy, covenant, and the role of General Synod.",
+                                    "url":  "https://www.ucc.org/what-we-do/justice-local-church-ministries/mesa/ucc-history-and-polity-resources/",
+                                    "citations":  [
+                                                      "cite-uscr-ucc-autonomy",
+                                                      "cite-uscr-ucc-marriage"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Afro-Christian Convention Archives",
+                                    "snippet":  "The Historical Council describes the archive preserving the convention, regional churches, and Convention of the South records.",
+                                    "url":  "https://www.ucc.org/who-we-are/about/history/historical-council-of-the-united-church-of-christ/",
+                                    "citations":  [
+                                                      "cite-uscr-ucc-afro-recognition"
+                                                  ]
+                                }
+                            ],
+        "profile_scope":  "Introductory profile of the U.S. denomination, centered on the 1931–1961 unions and selected later developments. The Reformed family label reflects one of several traditions within this united church. Separate corporate histories and dissenting bodies need fuller profiles.",
+        "size_estimate":  "924,744 U.S. adherents (2020 U.S. Religion Census)",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-uscr-ucc-union",
+                                                  "cite-uscr-ucc-streams"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-uscr-ucc-streams",
+                                                              "cite-uscr-ucc-union",
+                                                              "cite-uscr-ucc-union-text",
+                                                              "cite-uscr-ucc-minorities",
+                                                              "cite-uscr-ucc-afro-history"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-uscr-ucc-faith",
+                                                           "cite-uscr-ucc-constitutional",
+                                                           "cite-uscr-ucc-autonomy",
+                                                           "cite-uscr-ucc-marriage",
+                                                           "cite-uscr-ucc-afro-recognition"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-uscr-ucc-union-text",
+                                                       "cite-uscr-ucc-faith",
+                                                       "cite-uscr-ucc-autonomy"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-uscr-ucc-census"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-uscr-ucc-union",
+                          "cite-uscr-ucc-streams",
+                          "cite-uscr-ucc-union-text",
+                          "cite-uscr-ucc-minorities",
+                          "cite-uscr-ucc-faith",
+                          "cite-uscr-ucc-constitutional",
+                          "cite-uscr-ucc-autonomy",
+                          "cite-uscr-ucc-marriage",
+                          "cite-uscr-ucc-census",
+                          "cite-uscr-ucc-afro-history",
+                          "cite-uscr-ucc-afro-recognition"
+                      ]
+    },
+    {
+        "id":  "reformed-church-in-america",
+        "name":  "Reformed Church in America",
+        "short_label":  "RCA",
+        "aliases":  [
+                        "RCA",
+                        "R.C.A.",
+                        "Reformed Protestant Dutch Church",
+                        "Reformed Dutch Church"
+                    ],
+        "kind":  "denomination",
+        "start_year":  1628,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Reformed",
+        "ecclesial_orientation":  "mainline",
+        "current_status":  "active",
+        "summary":  "A Dutch-rooted denomination in the United States and Canada. It traces its origin to the 1628 New Amsterdam congregation and took its current name in 1867.",
+        "formation_narrative":  "Jonas Michaelius organized the Dutch Reformed congregation at New Amsterdam in 1628. Its celebration of Communion is the RCA\u0027s conventional start date. Colonial congregations looked to the Netherlands for ministerial oversight and ordination, then developed their own governance in North America. New York incorporated the General Synod of the Reformed Protestant Dutch Church in 1819. The denomination took the name Reformed Church in America in 1867 as it broadened beyond its original Dutch constituency.",
+        "ending_narrative":  "John and Harriet Scudder began mission work in Ceylon in 1819. Nineteenth-century immigration brought additional Dutch Reformed congregations, including the communities around Albertus Van Raalte\u0027s Holland, Michigan, settlement. In 1857 several congregations withdrew to establish the body now known as the CRCNA. The RCA continued as a separate denomination. After years of disputes over sexuality, biblical interpretation, and church government, its 2021 General Synod approved a restructuring process and rules for congregations seeking to leave. Some churches subsequently withdrew.",
+        "core_beliefs":  [
+                             "The Heidelberg Catechism, Belgic Confession, and Canons of Dort express the church\u0027s inherited Reformed teaching, including salvation by grace and the authority of Scripture for faith.",
+                             "The RCA added the Confession of Belhar as a fourth doctrinal standard in 2010. Belhar calls the church to unity, reconciliation, and justice out of the South African struggle against apartheid.",
+                             "The Book of Church Order gives congregations and regional assemblies responsibilities in a representative system of church government."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Jonas Michaelius",
+                                "role":  "Minister of the New Amsterdam congregation",
+                                "summary":  "His 1628 letter describes organizing a church and its first Communion in New Netherland.",
+                                "url":  "https://readingroo.ms/3/1/6/3161/3161-h/3161-h.htm",
+                                "citations":  [
+                                                  "cite-uscr-rca-michaelius",
+                                                  "cite-uscr-rca-origins"
+                                              ]
+                            },
+                            {
+                                "name":  "Albertus C. Van Raalte",
+                                "role":  "Dutch immigrant pastor and founder of Holland, Michigan",
+                                "summary":  "He led migrants who formed the 1847 settlement. Its churches became central to the story of the RCA and the 1857 separation.",
+                                "url":  "https://www.hope.edu/offices/van-raalte-institute/history-institute.html",
+                                "citations":  [
+                                                  "cite-uscr-rca-vanraalte-role",
+                                                  "cite-uscr-rca-west"
+                                              ]
+                            },
+                            {
+                                "name":  "Harriet and John Scudder",
+                                "role":  "Early overseas missionaries",
+                                "summary":  "They began mission work in Ceylon with the American Board of Commissioners for Foreign Missions in 1819.",
+                                "url":  "https://www.rca.org/about/history/",
+                                "citations":  [
+                                                  "cite-uscr-rca-missions"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1628,
+                              "label":  "First New Amsterdam congregation and Communion, the conventional RCA origin",
+                              "citations":  [
+                                                "cite-uscr-rca-origins",
+                                                "cite-uscr-rca-michaelius"
+                                            ]
+                          },
+                          {
+                              "year":  1819,
+                              "label":  "New York incorporates the General Synod",
+                              "citations":  [
+                                                "cite-uscr-rca-charter"
+                                            ]
+                          },
+                          {
+                              "year":  1857,
+                              "label":  "Several Michigan congregations withdraw and organize separately",
+                              "citations":  [
+                                                "cite-uscr-rca-west"
+                                            ]
+                          },
+                          {
+                              "year":  1867,
+                              "label":  "Denomination adopts its current name",
+                              "citations":  [
+                                                "cite-uscr-rca-charter"
+                                            ]
+                          },
+                          {
+                              "year":  2010,
+                              "label":  "Belhar enters the Book of Church Order as a doctrinal standard",
+                              "citations":  [
+                                                "cite-uscr-rca-belhar-status"
+                                            ]
+                          },
+                          {
+                              "year":  2021,
+                              "label":  "General Synod authorizes restructuring and a process for departures",
+                              "citations":  [
+                                                "cite-uscr-rca-departures"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Book of Church Order, 2021 edition",
+                                  "year":  2021,
+                                  "significance":  "Edition of the denomination\u0027s governing text. Its historical note distinguishes the colonial roots, corporate charter, and 1867 name change.",
+                                  "url":  "https://www.rca.org/wp-content/uploads/2022/02/BCO-2021-English.pdf",
+                                  "citations":  [
+                                                    "cite-uscr-rca-charter"
+                                                ]
+                              },
+                              {
+                                  "title":  "Confession of Belhar",
+                                  "year":  1986,
+                                  "significance":  "Adopted by the Dutch Reformed Mission Church in 1986. After classis ratification, incorporated as an RCA Standard of Unity in 2010.",
+                                  "url":  "https://www.rca.org/about/theology/creeds-and-confessions/the-belhar-confession/",
+                                  "citations":  [
+                                                    "cite-uscr-rca-belhar-status"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "RCA–CRCNA joint historical account",
+                                    "snippet":  "The joint account places the 1857 separation within a longer history of migration, disputes, and cooperation.",
+                                    "url":  "https://rca.org/wp-content/uploads/2014/10/Synod2014-ConciseHistory-RCA-CRC.pdf",
+                                    "citations":  [
+                                                      "cite-uscr-rca-west"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Standards of Unity",
+                                    "snippet":  "The RCA\u0027s collection contains its four doctrinal standards and the ancient creeds it recognizes.",
+                                    "url":  "https://www.rca.org/about/theology/creeds-and-confessions/",
+                                    "citations":  [
+                                                      "cite-uscr-rca-doctrine"
+                                                  ]
+                                }
+                            ],
+        "profile_scope":  "Selected North American episodes from 1628 through the 2021 General Synod and subsequent departures. The colonial congregation marks the beginning of the lineage. The incorporated synod dates to 1819. The recent affiliations and restructuring process need fuller coverage.",
+        "size_estimate":  "235,195 U.S. adherents (2020 U.S. Religion Census)",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-uscr-rca-origins",
+                                                  "cite-uscr-rca-charter"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-uscr-rca-origins",
+                                                              "cite-uscr-rca-michaelius",
+                                                              "cite-uscr-rca-charter"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-uscr-rca-west",
+                                                           "cite-uscr-rca-missions",
+                                                           "cite-uscr-rca-vanraalte-role",
+                                                           "cite-uscr-rca-departures"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-uscr-rca-doctrine",
+                                                       "cite-uscr-rca-belhar-status",
+                                                       "cite-uscr-rca-charter"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-uscr-rca-census"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-uscr-rca-origins",
+                          "cite-uscr-rca-charter",
+                          "cite-uscr-rca-michaelius",
+                          "cite-uscr-rca-west",
+                          "cite-uscr-rca-missions",
+                          "cite-uscr-rca-vanraalte-role",
+                          "cite-uscr-rca-departures",
+                          "cite-uscr-rca-doctrine",
+                          "cite-uscr-rca-belhar-status",
+                          "cite-uscr-rca-census"
+                      ]
+    },
+    {
+        "id":  "christian-reformed-church-in-north-america",
+        "name":  "Christian Reformed Church in North America",
+        "short_label":  "CRCNA",
+        "aliases":  [
+                        "CRCNA",
+                        "CRC",
+                        "Christian Reformed Church"
+                    ],
+        "kind":  "denomination",
+        "start_year":  1857,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Reformed",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "A separate Dutch Reformed denomination formed by congregations that withdrew from the historic Reformed Dutch Church in 1857. It now has congregations in both the United States and Canada.",
+        "formation_narrative":  "Some Dutch immigrants to western Michigan came from the 1834 secession in the Netherlands and joined the existing Reformed Dutch Church\u0027s Classis of Holland. In 1857 a group of congregations withdrew and organized separately. Seceders objected to changes they saw in worship and church discipline, including hymn singing, admission to Communion, and departures from the Church Order of Dort. The two denominations\u0027 joint account places the controversy in a broader disagreement about preserving Dutch Reformed practices in North America. Additional congregations joined in the 1880s after the parent denomination declined to impose a uniform prohibition on Masonic membership.",
+        "ending_narrative":  "In 1890 the new body united with the eastern True Protestant Dutch Reformed Church. In the early twentieth century it shifted from Dutch toward English. After the 1924 synod adopted its teaching on common grace, regional assemblies deposed ministers and church councils who opposed the decision. Herman Hoeksema and others organized the Protestant Reformed Churches in 1924–1925. Immigration after World War II strengthened the CRC presence in Canada. Late twentieth-century disputes over church authority and women\u0027s ordination led some departing congregations to federate as the United Reformed Churches in North America in 1996. The CRCNA continues independently of the RCA and those departing bodies.",
+        "core_beliefs":  [
+                             "The CRCNA treats Scripture as authoritative and affirms the historic creeds together with the Belgic Confession, Heidelberg Catechism, and Canons of Dort as Reformed expressions of biblical teaching.",
+                             "The denomination recognizes the Confession of Belhar as a contemporary testimony on unity, reconciliation, and justice. This category gives Belhar a different role from the historic confessions.",
+                             "Churches are governed by local councils and share oversight through classes and synod under a Church Order rooted in the Dutch Reformed tradition."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Albertus C. Van Raalte",
+                                "role":  "Leader in the immigrant churches that joined the Reformed Dutch Church",
+                                "summary":  "The Holland settlement he led supplied the setting for the classis from which seceding congregations withdrew.",
+                                "url":  "https://rca.org/wp-content/uploads/2014/10/Synod2014-ConciseHistory-RCA-CRC.pdf",
+                                "citations":  [
+                                                  "cite-uscr-rca-west",
+                                                  "cite-uscr-rca-vanraalte-role"
+                                              ]
+                            },
+                            {
+                                "name":  "Herman Hoeksema",
+                                "role":  "CRC minister and opponent of the 1924 common grace decisions",
+                                "summary":  "He challenged the synod\u0027s teaching on God\u0027s favor outside the church and helped establish the Protestant Reformed Churches after the controversy.",
+                                "url":  "https://www.crcna.org/welcome/history",
+                                "citations":  [
+                                                  "cite-uscr-crc-expansion"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1857,
+                              "label":  "Seceding congregations organize separately from the Classis of Holland",
+                              "citations":  [
+                                                "cite-uscr-crc-formation",
+                                                "cite-uscr-crc-separation",
+                                                "cite-uscr-crc-early-acts"
+                                            ]
+                          },
+                          {
+                              "year":  1890,
+                              "label":  "Union with the True Protestant Dutch Reformed Church",
+                              "citations":  [
+                                                "cite-uscr-crc-milestones"
+                                            ]
+                          },
+                          {
+                              "year":  1905,
+                              "label":  "First Canadian congregation organized in Alberta",
+                              "citations":  [
+                                                "cite-uscr-crc-milestones"
+                                            ]
+                          },
+                          {
+                              "year":  1924,
+                              "label":  "Synod acts on common grace, setting up the Protestant Reformed separation",
+                              "citations":  [
+                                                "cite-uscr-crc-expansion",
+                                                "cite-uscr-crc-milestones",
+                                                "cite-uscr-crc-prc-testimony"
+                                            ]
+                          },
+                          {
+                              "year":  1996,
+                              "label":  "United Reformed Churches hold their first synod after congregational departures",
+                              "citations":  [
+                                                "cite-uscr-crc-women-office",
+                                                "cite-uscr-crc-urc-organization"
+                                            ]
+                          },
+                          {
+                              "year":  2017,
+                              "label":  "CRC Synod recategorizes Belhar as a contemporary testimony",
+                              "citations":  [
+                                                "cite-uscr-crc-belhar-status"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Church Order of Dort",
+                                  "year":  1619,
+                                  "significance":  "Inherited Dutch Reformed polity and a reference point in the 1857 withdrawal. CRC Church Order subsequently developed through its own revisions.",
+                                  "url":  "https://library.calvin.edu/hh/church-order",
+                                  "citations":  [
+                                                    "cite-uscr-crc-polity"
+                                                ]
+                              },
+                              {
+                                  "title":  "Confession of Belhar",
+                                  "year":  1986,
+                                  "significance":  "South African confession recategorized by the CRC in 2017 as a contemporary testimony. Synod did not add adherence to it to the Covenant for Officebearers.",
+                                  "url":  "https://www.crcna.org/sites/default/files/letter_re_summary_of_synod_2017_to_churches.pdf",
+                                  "citations":  [
+                                                    "cite-uscr-crc-belhar-status",
+                                                    "cite-uscr-rca-belhar-status"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "Earliest assembly minutes",
+                                    "snippet":  "Calvin University\u0027s Heritage Hall provides translations of early assembly minutes and links to later Acts of Synod.",
+                                    "url":  "https://library.calvin.edu/hh/acts-of-synod",
+                                    "citations":  [
+                                                      "cite-uscr-crc-early-acts"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Joint history of the RCA and CRCNA",
+                                    "snippet":  "A jointly prepared account of the churches\u0027 origins, separation, and later relationships.",
+                                    "url":  "https://rca.org/wp-content/uploads/2014/10/Synod2014-ConciseHistory-RCA-CRC.pdf",
+                                    "citations":  [
+                                                      "cite-uscr-crc-separation"
+                                                  ]
+                                }
+                            ],
+        "profile_scope":  "Selected U.S. and Canadian denominational episodes from 1857 to 2017, with Dutch antecedents. Secession accounts describe objections raised by participants. The 1890 merger partner and later departures need fuller profiles.",
+        "size_estimate":  "149,096 U.S. adherents (2020 U.S. Religion Census)",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-uscr-crc-formation",
+                                                  "cite-uscr-crc-expansion"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-uscr-crc-formation",
+                                                              "cite-uscr-crc-separation",
+                                                              "cite-uscr-crc-polity",
+                                                              "cite-uscr-crc-early-acts"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-uscr-crc-milestones",
+                                                           "cite-uscr-crc-expansion",
+                                                           "cite-uscr-crc-women-office",
+                                                           "cite-uscr-crc-urc-organization",
+                                                           "cite-uscr-crc-prc-testimony"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-uscr-crc-confessions",
+                                                       "cite-uscr-crc-polity",
+                                                       "cite-uscr-crc-belhar-status"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-uscr-crc-census"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-uscr-crc-formation",
+                          "cite-uscr-crc-expansion",
+                          "cite-uscr-crc-separation",
+                          "cite-uscr-crc-polity",
+                          "cite-uscr-crc-early-acts",
+                          "cite-uscr-crc-milestones",
+                          "cite-uscr-crc-women-office",
+                          "cite-uscr-crc-urc-organization",
+                          "cite-uscr-crc-confessions",
+                          "cite-uscr-crc-belhar-status",
+                          "cite-uscr-crc-census",
+                          "cite-uscr-rca-west",
+                          "cite-uscr-rca-vanraalte-role",
+                          "cite-uscr-rca-belhar-status",
+                          "cite-uscr-crc-prc-testimony"
+                      ]
+    },
+    {
+        "id":  "lutheran-congregations-in-mission-for-christ",
+        "name":  "Lutheran Congregations in Mission for Christ",
+        "short_label":  "LCMC",
+        "aliases":  [
+                        "LCMC",
+                        "L.C.M.C."
+                    ],
+        "kind":  "denomination",
+        "start_year":  2001,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Lutheran",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "summary":  "A Lutheran association organized in 2001 at a WordAlone convention. Its congregations cooperate in mission and retain local authority.",
+        "formation_narrative":  "The ELCA\u0027s 1999 approval of Called to Common Mission with The Episcopal Church prompted an organized response. The agreement set terms for full communion and the ELCA\u0027s participation in the historic episcopate. WordAlone organizers objected to making episcopal participation a requirement for ordination. Some sought reform within the ELCA. On March 27, 2001, during the second WordAlone convention in Phoenix, LCMC adopted its constitution and received 25 charter congregations. Its early constituency included congregations that also belonged to the ELCA.",
+        "ending_narrative":  "LCMC established its own office and was operating independently of WordAlone by 2003, when its convention voted to receive international congregations. It grew substantially between its 2009 and 2010 gatherings. The association continues through locally governed congregations, district and international relationships, and a common gathering for mission and governance.",
+        "core_beliefs":  [
+                             "The constitution identifies the Old and New Testaments as authoritative for faith and life and receives the ecumenical creeds as statements of the church\u0027s faith.",
+                             "LCMC confesses the Unaltered Augsburg Confession and Luther\u0027s Small Catechism as true witnesses to the Gospel and recognizes the other Book of Concord writings as valid interpretations of the church\u0027s faith.",
+                             "Congregations cooperate in mission and retain authority over their own affairs within an association of churches."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Mark Chavez",
+                                "role":  "WordAlone director and witness to early affiliations",
+                                "summary":  "He documented the ordination dispute and the overlap between WordAlone, LCMC, and ELCA congregations in a public letter.",
+                                "url":  "https://archives.wordalone.com/docs/open-ltr-lehmann.html",
+                                "citations":  [
+                                                  "cite-uscr-lcmc-dual"
+                                              ]
+                            },
+                            {
+                                "name":  "Mark Vander Tuig",
+                                "role":  "Second LCMC service coordinator",
+                                "summary":  "He joined the association\u0027s staff in 2010 during a period of rapid congregational growth.",
+                                "url":  "https://lcmc.net/history",
+                                "citations":  [
+                                                  "cite-uscr-lcmc-coordinator"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1999,
+                              "label":  "ELCA Churchwide Assembly adopts Called to Common Mission",
+                              "citations":  [
+                                                "cite-uscr-lcmc-agreement",
+                                                "cite-uscr-lcmc-elca-view"
+                                            ]
+                          },
+                          {
+                              "year":  2001,
+                              "label":  "LCMC adopts its constitution and receives charter congregations on March 27",
+                              "citations":  [
+                                                "cite-uscr-lcmc-foundation"
+                                            ]
+                          },
+                          {
+                              "year":  2003,
+                              "label":  "Association operates separately from WordAlone and votes to receive international congregations",
+                              "citations":  [
+                                                "cite-uscr-lcmc-early-growth"
+                                            ]
+                          },
+                          {
+                              "year":  2010,
+                              "label":  "Second service coordinator begins work amid growth",
+                              "citations":  [
+                                                "cite-uscr-lcmc-coordinator"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Called to Common Mission",
+                                  "year":  1999,
+                                  "significance":  "Full communion agreement adopted by the ELCA in 1999 and The Episcopal Church in 2000. Its provisions on episcopacy helped prompt WordAlone organizing.",
+                                  "url":  "https://download.elca.org/ELCA%20Resource%20Repository/Called_To_Common_Mission.pdf",
+                                  "citations":  [
+                                                    "cite-uscr-lcmc-agreement",
+                                                    "cite-uscr-lcmc-elca-view"
+                                                ]
+                              },
+                              {
+                                  "title":  "LCMC Constitution",
+                                  "year":  2001,
+                                  "significance":  "Constitution first adopted in 2001. The current text defines the association\u0027s confession, mission, and congregation-centered governance.",
+                                  "url":  "https://lcmc.net/lcmcconstitution/278",
+                                  "citations":  [
+                                                    "cite-uscr-lcmc-doctrine",
+                                                    "cite-uscr-lcmc-foundation"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "LCMC\u0027s organizational chronology",
+                                    "snippet":  "The association documents the WordAlone convention, independent office, and international growth.",
+                                    "url":  "https://lcmc.net/history",
+                                    "citations":  [
+                                                      "cite-uscr-lcmc-foundation",
+                                                      "cite-uscr-lcmc-early-growth"
+                                                  ]
+                                },
+                                {
+                                    "title":  "ELCA News account of WordAlone\u0027s organizing convention",
+                                    "snippet":  "Reports how convention participants described their aims in 2000.",
+                                    "url":  "https://listserv.elca.org/scripts/wa.exe?A2=ELCANEWS%3Bbdc6f27a.0004\u0026FT=\u0026H=A\u0026P=T\u0026S=",
+                                    "citations":  [
+                                                      "cite-uscr-lcmc-elca-view"
+                                                  ]
+                                }
+                            ],
+        "profile_scope":  "U.S. formation in 1999–2003 and selected milestones through 2020. A congregation-based association with early overlapping affiliations. The later growth and the effects of ELCA decisions in 2009 require congregation-level research.",
+        "size_estimate":  "194,144 U.S. adherents (2020 U.S. Religion Census)",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-uscr-lcmc-foundation",
+                                                  "cite-uscr-lcmc-doctrine"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-uscr-lcmc-agreement",
+                                                              "cite-uscr-lcmc-elca-view",
+                                                              "cite-uscr-lcmc-foundation",
+                                                              "cite-uscr-lcmc-dual"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-uscr-lcmc-early-growth",
+                                                           "cite-uscr-lcmc-coordinator",
+                                                           "cite-uscr-lcmc-doctrine"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-uscr-lcmc-doctrine"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-uscr-lcmc-census"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-uscr-lcmc-foundation",
+                          "cite-uscr-lcmc-doctrine",
+                          "cite-uscr-lcmc-agreement",
+                          "cite-uscr-lcmc-elca-view",
+                          "cite-uscr-lcmc-dual",
+                          "cite-uscr-lcmc-early-growth",
+                          "cite-uscr-lcmc-coordinator",
+                          "cite-uscr-lcmc-census"
+                      ]
+    },
+    {
+        "id":  "evangelical-covenant-church",
+        "name":  "Evangelical Covenant Church",
+        "short_label":  "ECC",
+        "aliases":  [
+                        "ECC",
+                        "The Covenant Church",
+                        "Swedish Evangelical Mission Covenant"
+                    ],
+        "kind":  "denomination",
+        "start_year":  1885,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Evangelical",
+        "ecclesial_orientation":  "evangelical",
+        "current_status":  "active",
+        "summary":  "A denomination organized in Chicago in 1885 by Swedish Mission Friends. Its Pietist heritage joins personal faith, Christian fellowship, and a commitment to mission.",
+        "formation_narrative":  "The Swedish Mission Friends grew out of renewal circles associated with Carl Olof Rosenius and Paul Peter Waldenström. Pastors and lay preachers gathered people for Bible reading, prayer, and mission. Swedish immigrants carried these practices to American settlements, organized congregations and regional associations, and experimented with Lutheran synods. On February 20, 1885, delegates organized an American Covenant body in Chicago. The Swedish Mission Covenant organized in 1878 was a related transatlantic movement with its own institutional history.",
+        "ending_narrative":  "The Covenant assumed responsibility for the school that became North Park in 1891 and moved it to Chicago in 1894. Home and overseas missions included charitable institutions, work in Alaska, and work in China. After World War II the church broadened beyond its Swedish immigrant base. In Chicago, Willie Jemison helped Oakdale Covenant become a thriving majority African American congregation. The denomination voted to ordain women in 1976. In 1989 the Covenant established a Spanish-language ministry training center. The denomination continues in the United States and Canada.",
+        "core_beliefs":  [
+                             "The Covenant Affirmations give Scripture final authority for faith and life and stress the necessity of new birth, a transformed life through faith in Christ.",
+                             "The church understands itself as a fellowship of believers committed to the whole mission of the church, including outreach and care for neighbors.",
+                             "Its Pietist emphasis on dependence on the Holy Spirit and freedom in Christ allows room for disagreement within a shared faith."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "Paul Peter Waldenström",
+                                "role":  "Swedish Mission Friend theologian",
+                                "summary":  "His preaching and writing influenced the Swedish renewal circles from which American Covenant congregations drew.",
+                                "url":  "https://covchurch.org/resource/evangelical-covenant-church-history/",
+                                "citations":  [
+                                                  "cite-uscr-ecc-organization"
+                                              ]
+                            },
+                            {
+                                "name":  "F. M. Johnson",
+                                "role":  "Preacher at the 1885 organizing meeting",
+                                "summary":  "Johnson\u0027s sermon drew on the Psalms to describe a church organized around fellowship in faith.",
+                                "url":  "https://covchurch.org/resource/evangelical-covenant-church-history/",
+                                "citations":  [
+                                                  "cite-uscr-ecc-organization"
+                                              ]
+                            },
+                            {
+                                "name":  "Willie Jemison",
+                                "role":  "Pastor of Oakdale Covenant Church in Chicago",
+                                "summary":  "Jemison led the congregation through demographic change and mentored other African American pastors in the Covenant.",
+                                "url":  "https://covchurch.org/resource/evangelical-covenant-church-history/",
+                                "citations":  [
+                                                  "cite-uscr-ecc-growth"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1885,
+                              "label":  "American Covenant body organizes in Chicago on February 20",
+                              "citations":  [
+                                                "cite-uscr-ecc-organization",
+                                                "cite-uscr-ecc-yearbook-series"
+                                            ]
+                          },
+                          {
+                              "year":  1889,
+                              "label":  "Covenant starts mission work in Alaska",
+                              "citations":  [
+                                                "cite-uscr-ecc-missions"
+                                            ]
+                          },
+                          {
+                              "year":  1891,
+                              "label":  "Covenant takes responsibility for the school that became North Park",
+                              "citations":  [
+                                                "cite-uscr-ecc-school",
+                                                "cite-uscr-ecc-archives"
+                                            ]
+                          },
+                          {
+                              "year":  1976,
+                              "label":  "Annual Meeting votes to ordain women",
+                              "citations":  [
+                                                "cite-uscr-ecc-ordination"
+                                            ]
+                          },
+                          {
+                              "year":  1989,
+                              "label":  "Covenant begins Spanish-language theological training through CHET",
+                              "citations":  [
+                                                "cite-uscr-ecc-growth"
+                                            ]
+                          },
+                          {
+                              "year":  2005,
+                              "label":  "Annual Meeting adopts revised Covenant Affirmations",
+                              "citations":  [
+                                                "cite-uscr-ecc-identity"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Covenant Affirmations",
+                                  "year":  2005,
+                                  "significance":  "First published in 1976 and adopted in revised form by the 2005 Annual Meeting. The booklet presents six guiding convictions.",
+                                  "url":  "https://covchurch.org/wp-content/uploads/2015/03/covenant_affirmations_booklet.pdf",
+                                  "citations":  [
+                                                    "cite-uscr-ecc-identity"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "Frisk Collection of Covenant Yearbooks",
+                                    "snippet":  "Primary annual reports cover governance, mission fields, education, and benevolence.",
+                                    "url":  "https://collections.carli.illinois.edu/digital/collection/npu_covyb",
+                                    "citations":  [
+                                                      "cite-uscr-ecc-yearbook-series"
+                                                  ]
+                                },
+                                {
+                                    "title":  "F. M. Johnson Archives",
+                                    "snippet":  "North Park holds significant institutional records for both the denomination and its school.",
+                                    "url":  "https://www.northpark.edu/academics/brandel-library/archives/",
+                                    "citations":  [
+                                                      "cite-uscr-ecc-archives"
+                                                  ]
+                                }
+                            ],
+        "profile_scope":  "Introductory profile of the North American denomination, from Swedish and immigrant roots to selected twentieth-century changes. The early synods and the 1885 organizational process still need a records-based reconstruction.",
+        "size_estimate":  "154,267 U.S. adherents (2020 U.S. Religion Census)",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-uscr-ecc-organization",
+                                                  "cite-uscr-ecc-identity"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-uscr-ecc-organization",
+                                                              "cite-uscr-ecc-yearbook-series"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-uscr-ecc-school",
+                                                           "cite-uscr-ecc-missions",
+                                                           "cite-uscr-ecc-growth",
+                                                           "cite-uscr-ecc-ordination"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-uscr-ecc-identity"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-uscr-ecc-census"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-uscr-ecc-organization",
+                          "cite-uscr-ecc-identity",
+                          "cite-uscr-ecc-yearbook-series",
+                          "cite-uscr-ecc-school",
+                          "cite-uscr-ecc-missions",
+                          "cite-uscr-ecc-growth",
+                          "cite-uscr-ecc-census",
+                          "cite-uscr-ecc-archives",
+                          "cite-uscr-ecc-ordination"
+                      ]
+    },
+    {
+        "id":  "evangelical-free-church-of-america",
+        "name":  "Evangelical Free Church of America",
+        "short_label":  "EFCA",
+        "aliases":  [
+                        "EFCA",
+                        "Evangelical Free Church of America (EFCA)"
+                    ],
+        "kind":  "denomination",
+        "start_year":  1950,
+        "zoom_tier":  "full",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "tradition_family":  "Evangelical",
+        "ecclesial_orientation":  "evangelical",
+        "current_status":  "active",
+        "summary":  "An association of autonomous evangelical churches formed in 1950 when the Swedish Evangelical Free Church and the Norwegian-Danish Free Church Association united.",
+        "formation_narrative":  "Scandinavian immigrant congregations organized Free Church fellowships in the United States. The Swedish association incorporated in Minnesota in 1908 and separate Norwegian and Danish bodies united as the Norwegian-Danish Evangelical Free Church Association in 1912. By the late 1940s the Swedish and Norwegian-Danish associations were already combining their Bible schools and coordinating publishing. They united as the Evangelical Free Church of America at Medicine Lake near Minneapolis in June 1950. The merger gave them common institutions and a shared Statement of Faith while retaining local church government.",
+        "ending_narrative":  "Under E. A. Halleen and then Arnold T. Olson, the merged church developed its national institutions. It expanded domestic church planting and overseas missions. President Thomas McDill called for greater ethnic diversity at the 1984 conference. The association adopted a revised Statement of Faith in 2008 and in 2019 removed the requirement in Article 9 that Christ\u0027s return be premillennial. It continues as an association of congregations.",
+        "core_beliefs":  [
+                             "The current Statement of Faith teaches the authority and inerrancy of Scripture, the Trinity, and the saving death and bodily resurrection of Jesus Christ.",
+                             "Autonomous congregations are accountable to their own membership and cooperate in mission through an association with shared doctrinal commitments.",
+                             "The current confession affirms Christ\u0027s visible return. The 1950 statement explicitly taught a premillennial return, a position retained in 2008 and made optional in 2019."
+                         ],
+        "key_figures":  [
+                            {
+                                "name":  "E. A. Halleen",
+                                "role":  "First president of the merged EFCA",
+                                "summary":  "Halleen served the united association from 1950 to 1952.",
+                                "url":  "https://www.efca.org/our-history",
+                                "citations":  [
+                                                  "cite-uscr-efca-merger",
+                                                  "cite-uscr-efca-first-year"
+                                              ]
+                            },
+                            {
+                                "name":  "Arnold T. Olson",
+                                "role":  "Merger organizer and second EFCA president",
+                                "summary":  "Olson led the effort to unite the associations and became president in 1952.",
+                                "url":  "https://www.efca.org/our-history",
+                                "citations":  [
+                                                  "cite-uscr-efca-merger"
+                                              ]
+                            },
+                            {
+                                "name":  "Thomas McDill",
+                                "role":  "EFCA president from 1976 to 1990",
+                                "summary":  "McDill urged congregations to broaden their ethnic reach at the 1984 conference.",
+                                "url":  "https://www.efca.org/our-history",
+                                "citations":  [
+                                                  "cite-uscr-efca-development"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1908,
+                              "label":  "Swedish Free Church association incorporates in Minnesota",
+                              "citations":  [
+                                                "cite-uscr-efca-roots"
+                                            ]
+                          },
+                          {
+                              "year":  1912,
+                              "label":  "Norwegian and Danish associations unite",
+                              "citations":  [
+                                                "cite-uscr-efca-roots"
+                                            ]
+                          },
+                          {
+                              "year":  1950,
+                              "label":  "Swedish and Norwegian-Danish bodies unite at Medicine Lake",
+                              "citations":  [
+                                                "cite-uscr-efca-merger",
+                                                "cite-uscr-efca-first-year"
+                                            ]
+                          },
+                          {
+                              "year":  2008,
+                              "label":  "EFCA conference adopts revised ten-article Statement of Faith",
+                              "citations":  [
+                                                "cite-uscr-efca-development"
+                                            ]
+                          },
+                          {
+                              "year":  2019,
+                              "label":  "Conference revises Article 9 on Christ\u0027s return",
+                              "citations":  [
+                                                "cite-uscr-efca-development",
+                                                "cite-uscr-efca-2019-beliefs"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "1950 Statement of Faith",
+                                  "year":  1950,
+                                  "significance":  "Founding statement of the united association. Its articles addressed scriptural authority, autonomous churches, and the premillennial return of Christ.",
+                                  "url":  "https://go.efca.org/sites/default/files/resources/docs/2013/04/microsoft-word-1950-sof.pdf",
+                                  "citations":  [
+                                                    "cite-uscr-efca-1950-beliefs",
+                                                    "cite-uscr-efca-merger"
+                                                ]
+                              },
+                              {
+                                  "title":  "Statement of Faith, 2019 revision",
+                                  "year":  2019,
+                                  "significance":  "Current conference-adopted statement. Article 9 affirms Christ\u0027s return without requiring a premillennial interpretation.",
+                                  "url":  "https://www.efca.org/sof/",
+                                  "citations":  [
+                                                    "cite-uscr-efca-2019-beliefs",
+                                                    "cite-uscr-efca-development"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "1951 Evangelical Free Church Yearbook",
+                                    "snippet":  "The first post-merger yearbook records financial and ministry activity and the work of Trinity.",
+                                    "url":  "https://collections.carli.illinois.edu/digital/collection/tiu_efcadir/id/87/",
+                                    "citations":  [
+                                                      "cite-uscr-efca-first-year"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Trinity\u0027s institutional history",
+                                    "snippet":  "Describes the predecessor Bible schools and their union ahead of the 1950 denominational merger.",
+                                    "url":  "https://www.tiu.edu/history-heritage/",
+                                    "citations":  [
+                                                      "cite-uscr-efca-schools"
+                                                  ]
+                                }
+                            ],
+        "profile_scope":  "Selected U.S. milestones from Scandinavian predecessor associations through the 2019 confession revision. Both merger partners are covered in prose. The 2020 U.S. Religion Census reports congregations and leaves adherents blank.",
+        "size_estimate":  "1,602 U.S. congregations (2020 U.S. Religion Census)",
+        "successor_ids":  [
+
+                          ],
+        "profile_citations":  {
+                                  "summary":  [
+                                                  "cite-uscr-efca-merger"
+                                              ],
+                                  "formation_narrative":  [
+                                                              "cite-uscr-efca-roots",
+                                                              "cite-uscr-efca-merger",
+                                                              "cite-uscr-efca-first-year",
+                                                              "cite-uscr-efca-schools",
+                                                              "cite-uscr-efca-1950-beliefs"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-uscr-efca-merger",
+                                                           "cite-uscr-efca-development",
+                                                           "cite-uscr-efca-congregations"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-uscr-efca-congregations",
+                                                       "cite-uscr-efca-1950-beliefs",
+                                                       "cite-uscr-efca-2019-beliefs",
+                                                       "cite-uscr-efca-development"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-uscr-efca-census"
+                                                    ]
+                              },
+        "citations":  [
+                          "cite-uscr-efca-merger",
+                          "cite-uscr-efca-roots",
+                          "cite-uscr-efca-first-year",
+                          "cite-uscr-efca-schools",
+                          "cite-uscr-efca-1950-beliefs",
+                          "cite-uscr-efca-development",
+                          "cite-uscr-efca-congregations",
+                          "cite-uscr-efca-2019-beliefs",
+                          "cite-uscr-efca-census"
+                      ]
+    },
+    {
+        "kind":  "denomination",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "zoom_tier":  "overview",
+        "id":  "church-of-jesus-christ-of-latter-day-saints",
+        "name":  "The Church of Jesus Christ of Latter-day Saints",
+        "short_label":  "Latter-day Saints",
+        "aliases":  [
+                        "Church of Jesus Christ of Latter-day Saints",
+                        "LDS",
+                        "LDS Church",
+                        "Mormon Church",
+                        "Mormons"
+                    ],
+        "tradition_family":  "Latter-day Saints",
+        "start_year":  1830,
+        "notes":  "April 6, 1830 marks formal organization in New York as the Church of Christ. The foundational name behind the present name was recorded on April 26, 1838.",
+        "summary":  "The church organized by Joseph Smith and fellow believers in 1830, represented here through the branch led west by Brigham Young after the succession crisis of 1844.",
+        "formation_narrative":  "A circle of believers developed around Joseph Smith’s reported revelations and the Book of Mormon before formal organization. Smith and Oliver Cowdery helped organize the Church of Christ on April 6, 1830. The church identifies Fayette, New York, as the traditional site. The first church conference in June approved the Articles and Covenants, which specified offices and practices such as baptism and the Lord’s Supper. Sidney Rigdon, a preacher associated with Alexander Campbell’s movement, joined later in 1830 and became a church leader. An April 1838 revelation at Far West, Missouri, prescribed the name that underlies the modern form.",
+        "core_beliefs":  [
+                             "The church understands itself as the restoration of Jesus Christ’s church through divine revelation and restored priesthood authority.",
+                             "The Articles of Faith affirm salvation through Jesus Christ’s atonement and describe faith, repentance, immersion baptism and the laying on of hands for the gift of the Holy Ghost.",
+                             "The church receives the Bible and the Book of Mormon as scripture and affirms continuing revelation. It is led by a First Presidency and a Quorum of the Twelve Apostles."
+                         ],
+        "distinctives":  [
+                             "Restored priesthood authority",
+                             "Book of Mormon",
+                             "Continuing revelation"
+                         ],
+        "ending_narrative":  "After Joseph Smith was killed at Carthage in 1844, the church faced competing leadership claims, including Sidney Rigdon’s proposal to serve as guardian. The branch represented here followed the Twelve under Brigham Young, began leaving Nauvoo in 1846 and reached the Salt Lake Valley in 1847. Young reconstituted the First Presidency that December. In 1890 the church accepted Wilford Woodruff’s Manifesto against contracting plural marriages, beginning a transition away from the practice. In 1978 the church announced a revelation opening priesthood ordination and temple blessings without the previous racial restrictions. This branch continues as The Church of Jesus Christ of Latter-day Saints.",
+        "profile_scope":  "Introductory U.S. profile from early organization through selected twentieth-century changes and a 2020 census snapshot. Other Latter Day Saint succession lines and the full histories of plural marriage and racial restrictions require separate treatment. Mormon and LDS are historical search terms. The church prefers its full name.",
+        "size_estimate":  "6,721,031 U.S. 2020 adherents (U.S. Religion Census) · 14,567 U.S. 2020 congregations",
+        "key_figures":  [
+                            {
+                                "name":  "Joseph Smith Jr.",
+                                "role":  "founding leader",
+                                "summary":  "Organized the church with fellow believers and dictated the 1838 naming revelation.",
+                                "url":  "https://www.josephsmithpapers.org/site/the-organization-of-the-church",
+                                "citations":  [
+                                                  "cite-us-restoration-lds-organization",
+                                                  "cite-us-restoration-lds-name"
+                                              ]
+                            },
+                            {
+                                "name":  "Oliver Cowdery",
+                                "role":  "organizer and early record keeper",
+                                "summary":  "Prepared an early church instruction text and took part in the organization and first conference.",
+                                "url":  "https://www.josephsmithpapers.org/site/the-organization-of-the-church",
+                                "citations":  [
+                                                  "cite-us-restoration-lds-organization",
+                                                  "cite-us-restoration-lds-covenants"
+                                              ]
+                            },
+                            {
+                                "name":  "Sidney Rigdon",
+                                "role":  "early leader and succession claimant",
+                                "summary":  "Entered from the Campbellite preaching network and later advanced a competing claim to guide the church after Smith’s death.",
+                                "url":  "https://www.josephsmithpapers.org/person/sidney-rigdon",
+                                "citations":  [
+                                                  "cite-us-restoration-lds-rigdon",
+                                                  "cite-us-restoration-lds-succession"
+                                              ]
+                            },
+                            {
+                                "name":  "Brigham Young",
+                                "role":  "president of the Twelve and later of the church",
+                                "summary":  "Led the branch that settled in the Salt Lake Valley and reconstituted its First Presidency in 1847.",
+                                "url":  "https://www.churchofjesuschrist.org/study/history/topics/succession-of-church-leadership?lang=eng",
+                                "citations":  [
+                                                  "cite-us-restoration-lds-succession",
+                                                  "cite-us-restoration-lds-trail"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1830,
+                              "label":  "Church of Christ formally organized on April 6",
+                              "citations":  [
+                                                "cite-us-restoration-lds-organization"
+                                            ]
+                          },
+                          {
+                              "year":  1830,
+                              "label":  "First conference approves the Articles and Covenants on June 9",
+                              "citations":  [
+                                                "cite-us-restoration-lds-covenants"
+                                            ]
+                          },
+                          {
+                              "year":  1838,
+                              "label":  "April 26 revelation prescribes the name Church of Jesus Christ of Latter Day Saints",
+                              "citations":  [
+                                                "cite-us-restoration-lds-name"
+                                            ]
+                          },
+                          {
+                              "year":  1844,
+                              "label":  "Joseph Smith is killed and competing succession claims emerge",
+                              "citations":  [
+                                                "cite-us-restoration-lds-nps",
+                                                "cite-us-restoration-lds-succession"
+                                            ]
+                          },
+                          {
+                              "year":  1847,
+                              "label":  "Pioneers reach the Salt Lake Valley and Young reconstitutes the First Presidency",
+                              "citations":  [
+                                                "cite-us-restoration-lds-trail",
+                                                "cite-us-restoration-lds-succession"
+                                            ]
+                          },
+                          {
+                              "year":  1890,
+                              "label":  "General Conference accepts Woodruff’s Manifesto on plural marriage",
+                              "citations":  [
+                                                "cite-us-restoration-lds-manifesto"
+                                            ]
+                          },
+                          {
+                              "year":  1978,
+                              "label":  "General Conference sustains the revelation removing racial priesthood restrictions",
+                              "citations":  [
+                                                "cite-us-restoration-lds-1978"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Book of Mormon",
+                                  "year":  1830,
+                                  "significance":  "Published in 1830 and received by the church as scripture alongside the Bible.",
+                                  "url":  "https://www.josephsmithpapers.org/paper-summary/book-of-mormon-1830/1",
+                                  "citations":  [
+                                                    "cite-us-restoration-lds-book-of-mormon",
+                                                    "cite-us-restoration-lds-faith"
+                                                ]
+                              },
+                              {
+                                  "title":  "Minutes of the First Conference",
+                                  "year":  1830,
+                                  "significance":  "Records the first conference, at which the church approved an early governing text now known as Doctrine and Covenants 20.",
+                                  "url":  "https://www.josephsmithpapers.org/paper-summary/minutes-9-june-1830/1",
+                                  "citations":  [
+                                                    "cite-us-restoration-lds-covenants"
+                                                ]
+                              },
+                              {
+                                  "title":  "Revelation, 26 April 1838",
+                                  "year":  1838,
+                                  "significance":  "Records the naming instruction now published as Doctrine and Covenants 115.",
+                                  "url":  "https://www.josephsmithpapers.org/paper-summary/revelation-26-april-1838-dc-115/2",
+                                  "citations":  [
+                                                    "cite-us-restoration-lds-name"
+                                                ]
+                              },
+                              {
+                                  "title":  "Articles of Faith",
+                                  "year":  1842,
+                                  "significance":  "Statements first published in 1842 and now included in the Pearl of Great Price.",
+                                  "url":  "https://www.churchofjesuschrist.org/study/scriptures/pgp/a-of-f/1?lang=eng",
+                                  "citations":  [
+                                                    "cite-us-restoration-lds-faith"
+                                                ]
+                              },
+                              {
+                                  "title":  "Official Declaration 1",
+                                  "year":  1890,
+                                  "significance":  "Woodruff’s Manifesto, accepted by General Conference and now published in the Doctrine and Covenants.",
+                                  "url":  "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/od/1?lang=eng",
+                                  "citations":  [
+                                                    "cite-us-restoration-lds-manifesto"
+                                                ]
+                              },
+                              {
+                                  "title":  "Official Declaration 2",
+                                  "year":  1978,
+                                  "significance":  "The First Presidency’s announcement and the conference vote on removing the racial restrictions.",
+                                  "url":  "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/od/2?lang=eng",
+                                  "citations":  [
+                                                    "cite-us-restoration-lds-1978"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "The Organization of the Church",
+                                    "snippet":  "The Joseph Smith Papers discusses what the records establish about the organizing meeting and what remains uncertain about its location.",
+                                    "url":  "https://www.josephsmithpapers.org/site/the-organization-of-the-church",
+                                    "citations":  [
+                                                      "cite-us-restoration-lds-organization"
+                                                  ]
+                                },
+                                {
+                                    "title":  "Mormon Pioneer Trail Timeline",
+                                    "snippet":  "The National Park Service tracks the departure from Nauvoo and the first arrivals in the Salt Lake Valley.",
+                                    "url":  "https://www.nps.gov/articles/000/mormon-pioneer-trail-timeline.htm",
+                                    "citations":  [
+                                                      "cite-us-restoration-lds-trail"
+                                                  ]
+                                }
+                            ],
+        "citations":  [
+                          "cite-us-restoration-lds-organization",
+                          "cite-us-restoration-lds-name",
+                          "cite-us-restoration-lds-faith",
+                          "cite-us-restoration-lds-nps",
+                          "cite-us-restoration-census",
+                          "cite-us-restoration-lds-style"
+                      ],
+        "profile_citations":  {
+                                  "formation_narrative":  [
+                                                              "cite-us-restoration-lds-book-of-mormon",
+                                                              "cite-us-restoration-lds-organization",
+                                                              "cite-us-restoration-lds-covenants",
+                                                              "cite-us-restoration-lds-rigdon",
+                                                              "cite-us-restoration-lds-name"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-restoration-lds-nps",
+                                                           "cite-us-restoration-lds-succession",
+                                                           "cite-us-restoration-lds-trail",
+                                                           "cite-us-restoration-lds-manifesto",
+                                                           "cite-us-restoration-lds-1978",
+                                                           "cite-us-restoration-lds-style"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-restoration-lds-organization",
+                                                       "cite-us-restoration-lds-faith",
+                                                       "cite-us-restoration-lds-succession"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-us-restoration-census"
+                                                    ]
+                              }
+    },
+    {
+        "kind":  "denomination",
+        "region":  "US",
+        "geographic_origin":  "US",
+        "ecclesial_orientation":  "other",
+        "current_status":  "active",
+        "zoom_tier":  "overview",
+        "id":  "jehovahs-witnesses",
+        "name":  "Jehovah’s Witnesses",
+        "short_label":  "Jehovah’s Witnesses",
+        "aliases":  [
+                        "Jehovah\u0027s Witnesses",
+                        "Jehovah Witnesses",
+                        "JW",
+                        "JWs"
+                    ],
+        "tradition_family":  "Jehovah’s Witnesses",
+        "start_year":  1931,
+        "notes":  "July 26, 1931 marks adoption of the name in Columbus, Ohio. Organizational roots reach back to the early 1870s Bible Students in Allegheny, Pennsylvania.",
+        "summary":  "A Christian religious body that emerged from Charles Taze Russell’s Bible Student movement and adopted its present name in 1931 under Joseph F. Rutherford.",
+        "formation_narrative":  "Charles Taze Russell and associates began studying the Bible in Allegheny, Pennsylvania, in the early 1870s. Russell exchanged ideas with Second Adventist writers and collaborated with Nelson H. Barbour on prophetic chronology. They parted over the meaning of Christ’s ransom, and Russell launched Zion’s Watch Tower in 1879. A tract society was incorporated in Pennsylvania in 1884 to support publication and distribution. After Russell’s death in 1916, Joseph F. Rutherford’s presidency brought a contested reorganization and departures. Bible Students associated with the Watch Tower leadership adopted the name Jehovah’s Witnesses at a Columbus convention on July 26, 1931.",
+        "core_beliefs":  [
+                             "Witnesses describe their aim as following the Christianity practiced by Jesus and the apostles. They treat the 66 books of the Bible as authoritative.",
+                             "They worship Jehovah as the almighty God and recognize Jesus as God’s Son and the means of salvation through his ransom sacrifice. They reject the Trinity.",
+                             "They teach that God’s Kingdom is a heavenly government ruled by Jesus and expect it to bring lasting peace to earth. Public preaching communicates that hope."
+                         ],
+        "distinctives":  [
+                             "Use of the divine name Jehovah",
+                             "Non-Trinitarian teaching",
+                             "Public preaching about God’s Kingdom"
+                         ],
+        "ending_narrative":  "The Witnesses continued as a preaching and publishing community under the new name. The 1931 resolution distinguished the religious body from the corporations it used and from other Bible Student groups. In the United States, Witness families challenged compulsory flag salutes. In 1943 the Supreme Court ruled in Barnette that public schools could not compel the salute and pledge. The community began publishing its New World Translation in 1950 and continues internationally under the direction of a Governing Body.",
+        "profile_scope":  "Introductory U.S. profile of the Watch Tower-associated community that adopted the Witness name. The 1931 anchor marks naming, with earlier movement years given in the profile. Separate Bible Student branches, international persecution and local legal histories are outside this profile.",
+        "size_estimate":  "3,016,924 U.S. 2020 adherents (U.S. Religion Census) · 12,285 U.S. 2020 congregations",
+        "key_figures":  [
+                            {
+                                "name":  "Charles Taze Russell",
+                                "role":  "Bible Student organizer and publisher",
+                                "summary":  "Helped organize the Allegheny study circle and founded Zion’s Watch Tower.",
+                                "url":  "https://www.jw.org/en/library/brochures/Jehovahs-Witnesses-Who-Are-They-What-Do-They-Believe/Their-Modern-Development-and-Growth/",
+                                "citations":  [
+                                                  "cite-us-restoration-jw-origins",
+                                                  "cite-us-restoration-jw-history"
+                                              ]
+                            },
+                            {
+                                "name":  "Nelson H. Barbour",
+                                "role":  "Second Adventist collaborator in the precursor network",
+                                "summary":  "Worked with Russell on prophetic chronology before they parted over Christ’s ransom.",
+                                "url":  "https://www.cambridge.org/core/elements/jehovahs-witnesses/605AED05C9FA13DC68BB74FE3D2C651D",
+                                "citations":  [
+                                                  "cite-us-restoration-jw-history"
+                                              ]
+                            },
+                            {
+                                "name":  "Joseph F. Rutherford",
+                                "role":  "Watch Tower Society president",
+                                "summary":  "Succeeded Russell after his death and led the convention at which the name Jehovah’s Witnesses was adopted.",
+                                "url":  "https://wol.jw.org/en/wol/d/r1/lp-e/1101993013",
+                                "citations":  [
+                                                  "cite-us-restoration-jw-name",
+                                                  "cite-us-restoration-jw-succession"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1879,
+                              "label":  "Russell begins publishing Zion’s Watch Tower",
+                              "citations":  [
+                                                "cite-us-restoration-jw-origins",
+                                                "cite-us-restoration-jw-history"
+                                            ]
+                          },
+                          {
+                              "year":  1884,
+                              "label":  "Watch Tower tract society legally incorporated",
+                              "citations":  [
+                                                "cite-us-restoration-jw-origins"
+                                            ]
+                          },
+                          {
+                              "year":  1917,
+                              "label":  "Rutherford’s election is followed by a Watch Tower leadership schism",
+                              "citations":  [
+                                                "cite-us-restoration-jw-succession"
+                                            ]
+                          },
+                          {
+                              "year":  1931,
+                              "label":  "Columbus convention adopts the name Jehovah’s Witnesses on July 26",
+                              "citations":  [
+                                                "cite-us-restoration-jw-name",
+                                                "cite-us-restoration-jw-history"
+                                            ]
+                          },
+                          {
+                              "year":  1943,
+                              "label":  "U.S. Supreme Court decides the Barnette flag-salute case",
+                              "citations":  [
+                                                "cite-us-restoration-jw-barnette"
+                                            ]
+                          },
+                          {
+                              "year":  1950,
+                              "label":  "Witnesses begin releasing the New World Translation in installments",
+                              "citations":  [
+                                                "cite-us-restoration-jw-translation"
+                                            ]
+                          }
+                      ],
+        "key_documents":  [
+                              {
+                                  "title":  "Columbus convention name resolution",
+                                  "year":  1931,
+                                  "significance":  "Adopted resolution explaining the new name, drawn from Isaiah 43:10, and distinguishing it from corporate names.",
+                                  "url":  "https://wol.jw.org/en/wol/d/r1/lp-e/1101993013",
+                                  "citations":  [
+                                                    "cite-us-restoration-jw-name"
+                                                ]
+                              },
+                              {
+                                  "title":  "West Virginia State Board of Education v. Barnette",
+                                  "year":  1943,
+                                  "significance":  "U.S. Supreme Court decision in a challenge brought by Witness families to compelled flag salutes and pledges.",
+                                  "url":  "https://www.loc.gov/item/usrep319624/",
+                                  "citations":  [
+                                                    "cite-us-restoration-jw-barnette"
+                                                ]
+                              },
+                              {
+                                  "title":  "New World Translation",
+                                  "year":  1950,
+                                  "significance":  "Bible translation produced by Witnesses and first issued in installments from 1950 to 1960.",
+                                  "url":  "https://www.jw.org/en/library/books/Reasoning-From-the-Scriptures/New-World-Translation/",
+                                  "citations":  [
+                                                    "cite-us-restoration-jw-translation"
+                                                ]
+                              }
+                          ],
+        "further_reading":  [
+                                {
+                                    "title":  "Jehovah’s Witnesses",
+                                    "snippet":  "A scholarly account of the Bible Student roots, Adventist contacts and development of Witness identity.",
+                                    "url":  "https://www.cambridge.org/core/elements/jehovahs-witnesses/605AED05C9FA13DC68BB74FE3D2C651D",
+                                    "citations":  [
+                                                      "cite-us-restoration-jw-history"
+                                                  ]
+                                },
+                                {
+                                    "title":  "The 1917 Watch Tower schism",
+                                    "snippet":  "George D. Chryssides examines the disputed leadership transition and the alternative movements it produced.",
+                                    "url":  "https://www.cambridge.org/core/books/abs/sacred-schisms/finishing-the-mystery-the-watch-tower-and-the-1917-schism/9B4F69E1D685968292F535D157238F4B",
+                                    "citations":  [
+                                                      "cite-us-restoration-jw-succession"
+                                                  ]
+                                }
+                            ],
+        "citations":  [
+                          "cite-us-restoration-jw-origins",
+                          "cite-us-restoration-jw-history",
+                          "cite-us-restoration-jw-name",
+                          "cite-us-restoration-jw-beliefs",
+                          "cite-us-restoration-census"
+                      ],
+        "profile_citations":  {
+                                  "formation_narrative":  [
+                                                              "cite-us-restoration-jw-origins",
+                                                              "cite-us-restoration-jw-history",
+                                                              "cite-us-restoration-jw-succession",
+                                                              "cite-us-restoration-jw-name"
+                                                          ],
+                                  "ending_narrative":  [
+                                                           "cite-us-restoration-jw-name",
+                                                           "cite-us-restoration-jw-barnette",
+                                                           "cite-us-restoration-jw-translation",
+                                                           "cite-us-restoration-jw-government"
+                                                       ],
+                                  "core_beliefs":  [
+                                                       "cite-us-restoration-jw-beliefs"
+                                                   ],
+                                  "size_estimate":  [
+                                                        "cite-us-restoration-census"
+                                                    ]
+                              }
     }
 ],
   edges: [
@@ -15154,6 +20598,180 @@ window.CHURCHTREE_DATA = {
                                   "cite-profile-pcusa-presbyterian-history",
                                   "cite-profile-pcusa-pcusa-1983"
                               ]
+    },
+    {
+        "id":  "us-coverage-baptist-nbca-nmbca-1988",
+        "name":  "NMBCA organizes after education and publishing dispute",
+        "from_id":  "national-baptist-convention-of-america",
+        "to_id":  "national-missionary-baptist-convention-of-america",
+        "type":  "split",
+        "year":  1988,
+        "zoom_tier":  "full",
+        "confidence":  "high",
+        "reasons":  [
+                        "Publishing board independence",
+                        "Control of Christian education"
+                    ],
+        "description":  "The National Missionary Baptist Convention of America formed in Dallas in 1988. The National Baptist Convention of America continued separately.",
+        "narrative":  "At its 1988 session in San Antonio, the National Baptist Convention of America decided to organize a Christian education congress under its own officers. Contemporary reporting describes a dispute with the publishing house led by the Boyd family over control of the congress, curriculum and funds. Leaders who backed continued cooperation with the publishing house and its congress met in Dallas and organized the National Missionary Baptist Convention of America, with S. M. Lockridge as its first president. The National Baptist Convention of America continued separately.",
+        "key_figures":  [
+                            {
+                                "name":  "Shadrach Meshach Lockridge",
+                                "role":  "First president",
+                                "summary":  "The San Diego pastor led the new convention and explained its aims ahead of the planned 1989 national session.",
+                                "url":  "https://www.latimes.com/archives/la-xpm-1996-02-24-me-39550-story.html",
+                                "citations":  [
+                                                  "cite-us-coverage-baptist-nmbca-lockridge",
+                                                  "cite-us-coverage-baptist-nmbca-session"
+                                              ]
+                            },
+                            {
+                                "name":  "E. Edward Jones",
+                                "role":  "President of the continuing NBCA during the dispute",
+                                "summary":  "He publicly argued for convention officers to direct their own congress and curriculum.",
+                                "url":  "https://www.washingtonpost.com/archive/local/1988/12/03/black-baptist-group-splits-over-control-of-education/48cb198e-6e81-4556-9266-ae1ae906e82c/",
+                                "citations":  [
+                                                  "cite-us-coverage-baptist-nmbca-dispute"
+                                              ]
+                            }
+                        ],
+        "key_dates":  [
+                          {
+                              "year":  1988,
+                              "label":  "Organized in Dallas after the NBCA education and publishing dispute",
+                              "citations":  [
+                                                "cite-us-coverage-baptist-nmbca-about",
+                                                "cite-us-coverage-baptist-nbca-annuals",
+                                                "cite-us-coverage-baptist-nmbca-dispute"
+                                            ]
+                          }
+                      ],
+        "citations":  [
+                          "cite-us-coverage-baptist-nmbca-about",
+                          "cite-us-coverage-baptist-nbca-annuals",
+                          "cite-us-coverage-baptist-nmbca-dispute",
+                          "cite-us-coverage-baptist-nmbca-lockridge"
+                      ]
+    },
+    {
+        "id":  "uscm-african-methodist-episcopal-church-1816",
+        "name":  "Black Methodist congregations organize independently",
+        "from_id":  "methodist-episcopal-church",
+        "to_id":  "african-methodist-episcopal-church",
+        "type":  "split",
+        "year":  1816,
+        "zoom_tier":  "full",
+        "description":  "Local separation and Bethel’s legal struggle preceded the 1816 organization of an independent denomination.",
+        "confidence":  "high",
+        "citations":  [
+                          "cite-uscm-ame-roots",
+                          "cite-uscm-ame-organization",
+                          "cite-uscm-ame-site"
+                      ]
+    },
+    {
+        "id":  "uscm-african-methodist-episcopal-zion-church-1822",
+        "name":  "Zion ordains its own ministry",
+        "from_id":  "methodist-episcopal-church",
+        "to_id":  "african-methodist-episcopal-zion-church",
+        "type":  "split",
+        "year":  1822,
+        "zoom_tier":  "full",
+        "description":  "Black Methodists from John Street organized Zion locally. The 1822 ordinations completed a staged separation following the 1820 withdrawal decision.",
+        "confidence":  "high",
+        "citations":  [
+                          "cite-uscm-zion-local",
+                          "cite-uscm-zion-independent"
+                      ]
+    },
+    {
+        "id":  "uscm-christian-methodist-episcopal-church-1870",
+        "name":  "Black conferences organize the CME Church",
+        "from_id":  "methodist-episcopal-church-south",
+        "to_id":  "christian-methodist-episcopal-church",
+        "type":  "origin",
+        "year":  1870,
+        "zoom_tier":  "full",
+        "description":  "Southern Methodist authorization followed Black members’ requests for separate organization; Black delegates established an independent denomination in December 1870.",
+        "confidence":  "high",
+        "citations":  [
+                          "cite-uscm-cme-formation",
+                          "cite-uscm-cme-bishops"
+                      ]
+    },
+    {
+        "id":  "uscm-free-methodist-church-usa-1860",
+        "name":  "Free Methodist organization at Pekin",
+        "from_id":  "methodist-episcopal-church",
+        "to_id":  "free-methodist-church-usa",
+        "type":  "split",
+        "year":  1860,
+        "zoom_tier":  "full",
+        "description":  "After conflict and expulsions in the Genesee Conference, laypeople and ministers organized a new Methodist body at Pekin in 1860.",
+        "confidence":  "high",
+        "citations":  [
+                          "cite-uscm-free-origins",
+                          "cite-uscm-free-discipline"
+                      ]
+    },
+    {
+        "id":  "us-pent-cleveland-to-cogop-1923",
+        "name":  "Tomlinson branch organizes separately",
+        "from_id":  "church-of-god-cleveland",
+        "to_id":  "church-of-god-of-prophecy",
+        "type":  "split",
+        "year":  1923,
+        "zoom_tier":  "full",
+        "reasons":  [
+                        "dispute over leadership and constitutional authority"
+                    ],
+        "description":  "A. J. Tomlinson’s supporters organized separately after his removal in 1923. The Cleveland node represents the shared church before this division and the separately continuing Cleveland body thereafter.",
+        "citations":  [
+                          "cite-us-pent-pc",
+                          "cite-us-pent-pa",
+                          "cite-us-pent-pj"
+                      ],
+        "confidence":  "high"
+    },
+    {
+        "id":  "uscr-rca-crcna-1857",
+        "name":  "1857 separation from the Classis of Holland",
+        "from_id":  "reformed-church-in-america",
+        "to_id":  "christian-reformed-church-in-north-america",
+        "type":  "split",
+        "year":  1857,
+        "zoom_tier":  "full",
+        "description":  "Several congregations withdrew from the Reformed Dutch Church\u0027s Classis of Holland and organized the denomination now known as CRCNA in 1857.",
+        "narrative":  "Seceders raised objections about worship, discipline, and church order. The joint RCA–CRCNA history puts the disagreement in the context of Dutch immigrant congregations negotiating their place in an American denomination. The parent church continued and adopted the name Reformed Church in America in 1867.",
+        "reasons":  [
+                        "Disagreement about worship and the application of Reformed church order"
+                    ],
+        "citations":  [
+                          "cite-uscr-crc-separation",
+                          "cite-uscr-crc-formation",
+                          "cite-uscr-crc-polity",
+                          "cite-uscr-rca-charter"
+                      ]
+    },
+    {
+        "id":  "uscr-elca-lcmc-2001",
+        "name":  "ELCA full communion dispute and LCMC formation",
+        "from_id":  "evangelical-lutheran-church-in-america",
+        "to_id":  "lutheran-congregations-in-mission-for-christ",
+        "type":  "influence",
+        "year":  2001,
+        "zoom_tier":  "full",
+        "description":  "Dissent over an ELCA full communion agreement helped prompt LCMC\u0027s organization at a WordAlone convention in 2001.",
+        "narrative":  "The ELCA adopted Called to Common Mission in 1999. WordAlone organizers opposed its provisions for episcopal ordination, and a new association was constituted at the network\u0027s convention in 2001. Some early congregations retained ELCA affiliation. The year marks LCMC\u0027s constitution.",
+        "reasons":  [
+                        "Disagreement over episcopal ordination and Lutheran church governance"
+                    ],
+        "citations":  [
+                          "cite-uscr-lcmc-agreement",
+                          "cite-uscr-lcmc-elca-view",
+                          "cite-uscr-lcmc-foundation",
+                          "cite-uscr-lcmc-dual"
+                      ]
     }
 ],
   events: [
@@ -16892,6 +22510,1425 @@ window.CHURCHTREE_DATA = {
         "publisher":  "Presbyterian Church in America",
         "year":  null,
         "url":  "https://pcahistory.org/thisday/december-4/"
+    },
+    {
+        "id":  "src-us-coverage-baptist-usrc",
+        "title":  "2020 U.S. Religion Census",
+        "kind":  "book",
+        "url":  "https://usreligioncensus.org/sites/default/files/2023-10/2020_US_Religion_Census.pdf"
+    },
+    {
+        "id":  "src-us-coverage-baptist-nmbca-about",
+        "title":  "NMBCA — Who We Are",
+        "kind":  "website",
+        "url":  "https://www.nmbca.org/who-we-are"
+    },
+    {
+        "id":  "src-us-coverage-baptist-nbca-annuals",
+        "title":  "National Baptist Convention of America Annuals — Southern Baptist Historical Library \u0026 Archives",
+        "kind":  "website",
+        "url":  "https://sbhla.org/digital-resources/national-baptist-america-annuals/"
+    },
+    {
+        "id":  "src-us-coverage-baptist-nmbca-dispute",
+        "title":  "Black Baptist Group Splits Over Control of Education — The Washington Post",
+        "kind":  "article",
+        "url":  "https://www.washingtonpost.com/archive/local/1988/12/03/black-baptist-group-splits-over-control-of-education/48cb198e-6e81-4556-9266-ae1ae906e82c/"
+    },
+    {
+        "id":  "src-us-coverage-baptist-nmbca-session",
+        "title":  "The Afro-American archive — First national convention announcement",
+        "kind":  "article",
+        "url":  "https://msa.maryland.gov/megafile/ecpdata/webroot/msaref14/msa_sc5458_000045_000436/pdf/msa_afro_1990_01_06-0219.pdf"
+    },
+    {
+        "id":  "src-us-coverage-baptist-nmbca-lockridge",
+        "title":  "Los Angeles Times — W. T. Snead Sr. and the NMBCA winter meeting",
+        "kind":  "article",
+        "url":  "https://www.latimes.com/archives/la-xpm-1996-02-24-me-39550-story.html"
+    },
+    {
+        "id":  "src-us-coverage-baptist-nmbca-registration",
+        "title":  "NMBCA — Registration PDF Forms",
+        "kind":  "website",
+        "url":  "https://www.nmbca.org/registration"
+    },
+    {
+        "id":  "src-us-coverage-baptist-nafwb-history",
+        "title":  "National Association of Free Will Baptists — History",
+        "kind":  "website",
+        "url":  "https://nafwb.org/site/about/history/"
+    },
+    {
+        "id":  "src-us-coverage-baptist-nafwb-treatise",
+        "title":  "A Treatise of the Faith and Practices of the Original Free Will Baptists",
+        "kind":  "book",
+        "url":  "https://nafwb.org/site/wp-content/uploads/2023/05/2023-NAFWB-Treatise.pdf"
+    },
+    {
+        "id":  "src-us-coverage-baptist-nafwb-treatise-history",
+        "title":  "Free Will Baptist Historical Commission — The Treatise",
+        "kind":  "website",
+        "url":  "https://fwbhistory.com/site?p=298"
+    },
+    {
+        "id":  "src-us-coverage-baptist-aba-faq",
+        "title":  "American Baptist Association — Start Here",
+        "kind":  "website",
+        "url":  "https://www.abaptist.org/start-here-page"
+    },
+    {
+        "id":  "src-us-coverage-baptist-aba-arkansas",
+        "title":  "Encyclopedia of Arkansas — State Association of Missionary Baptist Churches of Arkansas",
+        "kind":  "article",
+        "url":  "https://encyclopediaofarkansas.net/entries/State-Association-of-Missionary-Baptist-Churches-of-Arkansas-2689/"
+    },
+    {
+        "id":  "src-us-coverage-baptist-aba-archive",
+        "title":  "American Baptist Association History and Archives",
+        "kind":  "website",
+        "url":  "https://baptistville.org/abahistory/"
+    },
+    {
+        "id":  "src-us-coverage-baptist-aba-doctrine",
+        "title":  "American Baptist Association Doctrinal Statement — Bogard Press",
+        "kind":  "website",
+        "url":  "https://bogardpress.org/doctrinal-statement/"
+    },
+    {
+        "id":  "src-us-coverage-baptist-aba-bma-mississippi",
+        "title":  "Mississippi Baptists Then and Now — Baptist Missionary Association of Mississippi",
+        "kind":  "book",
+        "url":  "https://bmams.org/assets/docs/ms_baptists.pdf"
+    },
+    {
+        "id":  "src-us-coverage-baptist-aba-1950",
+        "title":  "American Baptist Association History Committee — Historical papers",
+        "kind":  "paper",
+        "url":  "https://www.abahistory.org/_files/ugd/397dfb_da81f478dab24a8fa9d8082dd6ed6bdc.pdf"
+    },
+    {
+        "id":  "src-us-coverage-baptist-fgbcf-about",
+        "title":  "About Full Gospel — Full Gospel Baptist Church Fellowship International",
+        "kind":  "website",
+        "url":  "https://www.fullgospelbaptist.org/leadership/"
+    },
+    {
+        "id":  "src-us-coverage-baptist-fgbcf-leadership",
+        "title":  "Leadership — Full Gospel Baptist Church Fellowship International",
+        "kind":  "website",
+        "url":  "https://www.fullgospelbaptist.org/leadership-2/"
+    },
+    {
+        "id":  "src-us-coverage-baptist-fgbcf-debra",
+        "title":  "Full Gospel Road to 30 — Fellowship anniversary interview",
+        "kind":  "website",
+        "url":  "https://www.youtube.com/watch?v=2x87czOIaxA"
+    },
+    {
+        "id":  "src-us-coverage-baptist-fgbcf-manual",
+        "title":  "New Member’s Manual — Impact Church",
+        "kind":  "book",
+        "url":  "https://storage2.snappages.site/MZSG9T/assets/files/NEW-MEMBER-MANUAL.pdf"
+    },
+    {
+        "id":  "src-us-coverage-baptist-fgbcf-1994",
+        "title":  "Paul S. Morton Sr. — 1994 New Orleans Superdome conference recording",
+        "kind":  "website",
+        "url":  "https://www.youtube.com/watch?v=g682fHXlkUI"
+    },
+    {
+        "id":  "src-us-coverage-baptist-fgbcf-walker",
+        "title":  "Southern University and A\u0026M College — Bishop Walker to lead Full Gospel Fellowship International",
+        "kind":  "website",
+        "url":  "https://www.subr.edu/news/485"
+    },
+    {
+        "id":  "src-us-coverage-baptist-fgcai-identity",
+        "title":  "Full Gospel Christian Assemblies International — Church History",
+        "kind":  "website",
+        "url":  "https://fgcai.org/history/"
+    },
+    {
+        "id":  "src-us-coverage-baptist-fgbcf-launch-interview",
+        "title":  "Bishop Paul S. Morton — CBN interview profile",
+        "kind":  "article",
+        "url":  "https://secure.cbn.com/700club/guests/bios/bishop_morton_042104.aspx"
+    },
+    {
+        "id":  "src-us-coverage-holiness-census",
+        "title":  "2020 U.S. Religion Census group detail",
+        "kind":  "website",
+        "url":  "https://www.usreligioncensus.org/sites/default/files/2023-06/2020_USRC_Group_Detail.xlsx"
+    },
+    {
+        "id":  "src-us-coverage-holiness-anderson-history",
+        "title":  "Our History — Church of God Ministries",
+        "kind":  "website",
+        "url":  "https://www.jesusisthesubject.org/our-history/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-anderson-beliefs",
+        "title":  "Mission \u0026 Beliefs — Church of God Ministries",
+        "kind":  "website",
+        "url":  "https://www.jesusisthesubject.org/mission-beliefs/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-trumpet",
+        "title":  "Church of God Periodicals — Anderson University Archives",
+        "kind":  "website",
+        "url":  "https://omeka.anderson.edu/exhibits/show/periodicals/chog-periodicals"
+    },
+    {
+        "id":  "src-us-coverage-holiness-cole",
+        "title":  "Trials and Triumphs of Faith — Mary Cole",
+        "kind":  "book",
+        "url":  "https://www.gutenberg.org/cache/epub/7429/pg7429.html"
+    },
+    {
+        "id":  "src-us-coverage-holiness-anderson-school",
+        "title":  "Anderson University staff handbook",
+        "kind":  "website",
+        "url":  "https://anderson.edu/uploads/hr/staff-handbook.pdf"
+    },
+    {
+        "id":  "src-us-coverage-holiness-anderson-association",
+        "title":  "National Association of the Church of God — Anderson University exhibit",
+        "kind":  "website",
+        "url":  "https://omeka.anderson.edu/exhibits/show/black-and-white-relations/the-church-of-god/the-national-association-of-th"
+    },
+    {
+        "id":  "src-us-coverage-holiness-anderson-bylaws",
+        "title":  "Bylaws of Church of God Ministries, Inc.",
+        "kind":  "website",
+        "url":  "https://www.jesusisthesubject.org/files/downloads/documents/ga/ChoG_Ministries_Bylaws_adopted_March_17_2016.pdf"
+    },
+    {
+        "id":  "src-us-coverage-holiness-alliance-history",
+        "title":  "Our History — The U.S. Alliance",
+        "kind":  "website",
+        "url":  "https://cmalliance.org/who-we-are/our-history/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-alliance-archives",
+        "title":  "Board of Managers fonds — The Christian and Missionary Alliance Archives",
+        "kind":  "website",
+        "url":  "https://ambrose.edu/sites/default/files/2000-02_cma_board_of_managers_0.pdf"
+    },
+    {
+        "id":  "src-us-coverage-holiness-alliance-charters",
+        "title":  "Founding of the Alliance — constitutions and participant accounts",
+        "kind":  "website",
+        "url":  "https://online.ambrose.edu/alliancestudies/ahtreadings/ahtr_s4.html"
+    },
+    {
+        "id":  "src-us-coverage-holiness-alliance-fourfold",
+        "title":  "The Four-Fold Gospel — A. B. Simpson, revised third edition",
+        "kind":  "book",
+        "url":  "https://archive.org/details/fourfoldgospel00simp"
+    },
+    {
+        "id":  "src-us-coverage-holiness-alliance-faith",
+        "title":  "Alliance Statements and Perspectives",
+        "kind":  "website",
+        "url":  "https://cmalliance.org/who-we-are/our-faith-and-mission/perspectives/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-alliance-timeline",
+        "title":  "The C\u0026MA Timeline — The Alliance",
+        "kind":  "website",
+        "url":  "https://a101.cmalliance.org/downloads/theC%26MA_Timeline_2019-01.pdf"
+    },
+    {
+        "id":  "src-us-coverage-holiness-alliance-council",
+        "title":  "Council 2025 Report and Minutes — The U.S. Alliance",
+        "kind":  "website",
+        "url":  "https://cdn.cmalliance.org/wordpress/cmalliance/Council-2025-Report-and-Minutes.pdf"
+    },
+    {
+        "id":  "src-us-coverage-holiness-alliance-1916",
+        "title":  "Religious Bodies: 1916, Part II — U.S. Bureau of the Census",
+        "kind":  "book",
+        "url":  "https://www2.census.gov/library/publications/1919/demographics/religious-bodies-1916/1916-religious-bodies-part-2.pdf"
+    },
+    {
+        "id":  "src-us-coverage-holiness-brethren-history",
+        "title":  "History — Church of the Brethren",
+        "kind":  "website",
+        "url":  "https://www.brethren.org/about/history/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-brethren-sketches",
+        "title":  "Historical Sketches — Brethren Historical Library and Archives",
+        "kind":  "website",
+        "url":  "https://www.brethren.org/bhla/sketches/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-brethren-guide",
+        "title":  "Guide to Research in Brethren History — Brethren Historical Library and Archives",
+        "kind":  "website",
+        "url":  "https://www.brethren.org/bhla/wp-content/uploads/sites/24/2019/07/guide-to-reseach-in-brethren-history.pdf"
+    },
+    {
+        "id":  "src-us-coverage-holiness-brethren-beliefs",
+        "title":  "Beliefs — Church of the Brethren",
+        "kind":  "website",
+        "url":  "https://www.brethren.org/about/beliefs/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-brethren-practices",
+        "title":  "Practices — Church of the Brethren",
+        "kind":  "website",
+        "url":  "https://www.brethren.org/about/practices/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-brethren-polity",
+        "title":  "Manual of Organization and Polity: Overview — Church of the Brethren",
+        "kind":  "website",
+        "url":  "https://www.brethren.org/ac/wp-content/uploads/sites/18/2023/02/ch.-0-MOP-Overview-Feb.-2023.pdf"
+    },
+    {
+        "id":  "src-us-coverage-holiness-brethren-progressive",
+        "title":  "History Series: Henry Holsinger — The Brethren Church",
+        "kind":  "website",
+        "url":  "https://brethrenchurch.org/history-series-this-chapter-in-brethren-hymnology-centers-on-henry-holsinger/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-brethren-conference",
+        "title":  "Congregational Disagreements — Church of the Brethren Annual Conference",
+        "kind":  "website",
+        "url":  "https://www.brethren.org/ac/statements/2004-congregational-disagreements/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-brethren-service",
+        "title":  "History — Brethren Volunteer Service",
+        "kind":  "website",
+        "url":  "https://www.brethren.org/bvs/history/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-brethren-peace",
+        "title":  "Peacemaking: The Calling of God\u0027s People in History — Annual Conference",
+        "kind":  "website",
+        "url":  "https://www.brethren.org/ac/statements/1991-peacemaking/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-brethren-response",
+        "title":  "Leadership Team update regarding Covenant Brethren Church — Church of the Brethren",
+        "kind":  "website",
+        "url":  "https://www.brethren.org/news/2020/leadership-team-issues-update-in-response-to-activities-of-the-covenant-brethren-church/"
+    },
+    {
+        "id":  "src-us-coverage-holiness-covenant-faq",
+        "title":  "Frequently Asked Questions — Covenant Brethren Church",
+        "kind":  "website",
+        "url":  "https://covenantbrethren.org/frequently-asked-questions/"
+    },
+    {
+        "id":  "src-uscm-census",
+        "title":  "2020 U.S. Religion Census Group Detail Workbook",
+        "kind":  "website",
+        "author":  "Association of Statisticians of American Religious Bodies",
+        "year":  null,
+        "url":  "https://www.usreligioncensus.org/sites/default/files/2023-06/2020_USRC_Group_Detail.xlsx"
+    },
+    {
+        "id":  "src-uscm-ame-history",
+        "title":  "Our History",
+        "kind":  "website",
+        "author":  "Dennis C. Dickerson",
+        "year":  null,
+        "url":  "https://www.ame-church.com/our-church/our-history/"
+    },
+    {
+        "id":  "src-uscm-ame-1816",
+        "title":  "Message From the Senior Bishop",
+        "kind":  "website",
+        "author":  "African Methodist Episcopal Church",
+        "year":  null,
+        "url":  "https://www.ame-church.com/leadership/message-from-the-senior-bishop/"
+    },
+    {
+        "id":  "src-uscm-ame-nps",
+        "title":  "National Register nomination documenting AME origins",
+        "kind":  "website",
+        "author":  "National Park Service",
+        "year":  null,
+        "url":  "https://npgallery.nps.gov/GetAsset/3cff29f9-7aab-4d66-b479-af3a1bac8d93"
+    },
+    {
+        "id":  "src-uscm-ame-allen",
+        "title":  "The Life, Experience, and Gospel Labours of the Rt. Rev. Richard Allen",
+        "kind":  "book",
+        "author":  "Richard Allen",
+        "year":  1833,
+        "url":  "https://classicslaunch.org/works/allen-life-experience-and-gospel-labours/read/"
+    },
+    {
+        "id":  "src-uscm-ame-beliefs",
+        "title":  "Our Beliefs",
+        "kind":  "website",
+        "author":  "African Methodist Episcopal Church",
+        "year":  null,
+        "url":  "https://www.ame-church.com/our-church/our-beliefs/"
+    },
+    {
+        "id":  "src-uscm-ame-mckenzie",
+        "title":  "June 2022 Treasurer’s Memorandum",
+        "kind":  "paper",
+        "author":  "Marcus T. Henderson, Sr.",
+        "year":  2022,
+        "url":  "https://www.ame-church.com/reports/General_Board_Docs_2022/General%20Officer%20Reports/Treasurer%3ACFO/Memorandum%20-%202022%20a.pdf"
+    },
+    {
+        "id":  "src-uscm-zion-history",
+        "title":  "About The A.M.E. Zion Church",
+        "kind":  "website",
+        "author":  "African Methodist Episcopal Zion Church",
+        "year":  null,
+        "url":  "https://amezion.org/about/"
+    },
+    {
+        "id":  "src-uscm-zion-exhibit",
+        "title":  "History of the A.M.E. Zion Church",
+        "kind":  "website",
+        "author":  "Hudson River Valley Heritage Exhibits",
+        "year":  null,
+        "url":  "https://omeka.hrvh.org/exhibits/show/ame-zion-church-in-new-paltz/history-of-the-a-m-e--zion-chu"
+    },
+    {
+        "id":  "src-uscm-zion-discipline",
+        "title":  "The Doctrines and Discipline of the African Methodist Episcopal Zion Church in America",
+        "kind":  "book",
+        "author":  "African Methodist Episcopal Zion Church",
+        "year":  1892,
+        "url":  "https://books.google.com/books?id=SVpPAQAAIAAJ"
+    },
+    {
+        "id":  "src-uscm-zion-union",
+        "title":  "The Star of Zion",
+        "kind":  "article",
+        "author":  "African Methodist Episcopal Zion Church",
+        "year":  1886,
+        "url":  "https://newspapers.digitalnc.org/lccn/sf88092969/1886-01-22/ed-1/seq-4.pdf"
+    },
+    {
+        "id":  "src-uscm-cme-history",
+        "title":  "About the Christian Methodist Episcopal Church",
+        "kind":  "website",
+        "author":  "Christian Methodist Episcopal Church",
+        "year":  null,
+        "url":  "https://thecmechurch.org/about-us/"
+    },
+    {
+        "id":  "src-uscm-cme-phillips",
+        "title":  "The History of the Colored Methodist Episcopal Church in America",
+        "kind":  "book",
+        "author":  "Charles Henry Phillips",
+        "year":  1898,
+        "url":  "https://thecmechurch.org/cme-church-history/"
+    },
+    {
+        "id":  "src-uscm-cme-tsha",
+        "title":  "Christian Methodist Episcopal Church",
+        "kind":  "website",
+        "author":  "Texas State Historical Association",
+        "year":  null,
+        "url":  "https://www.tshaonline.org/handbook/entries/christian-methodist-episcopal-church"
+    },
+    {
+        "id":  "src-uscm-cme-wcc",
+        "title":  "Christian Methodist Episcopal Church",
+        "kind":  "website",
+        "author":  "World Council of Churches",
+        "year":  null,
+        "url":  "https://www.oikoumene.org/member-churches/christian-methodist-episcopal-church"
+    },
+    {
+        "id":  "src-uscm-cme-civil",
+        "title":  "CME Church in the Memory of the Civil Rights Movement",
+        "kind":  "paper",
+        "author":  "Brandon Nightingale",
+        "year":  2019,
+        "url":  "https://stars.library.ucf.edu/etd/6737/"
+    },
+    {
+        "id":  "src-uscm-wes-history",
+        "title":  "History in the Wesleyan Discipline",
+        "kind":  "website",
+        "author":  "The Wesleyan Church",
+        "year":  null,
+        "url":  "https://discipline.wesleyan.org/wiki/Wesleyan_Church,_The:_History"
+    },
+    {
+        "id":  "src-uscm-wes-union",
+        "title":  "The Formation of The Wesleyan Church",
+        "kind":  "website",
+        "author":  "The Wesleyan Church",
+        "year":  null,
+        "url":  "https://discipline.wesleyan.org/wiki/F._The_Formation_of_The_Wesleyan_Church"
+    },
+    {
+        "id":  "src-uscm-wes-doctrine",
+        "title":  "Summary of Articles of Religion",
+        "kind":  "website",
+        "author":  "The Wesleyan Church",
+        "year":  null,
+        "url":  "https://discipline.wesleyan.org/wiki/Summary_of_Articles_of_Religion"
+    },
+    {
+        "id":  "src-uscm-wes-modern",
+        "title":  "The Wesleyan Advocate and Wesleyan Life",
+        "kind":  "website",
+        "author":  "The Wesleyan Church",
+        "year":  null,
+        "url":  "https://www.wesleyan.org/the-wesleyan-advocate-and-wesleyan-life-4902"
+    },
+    {
+        "id":  "src-uscm-wes-minority",
+        "title":  "Our History",
+        "kind":  "website",
+        "author":  "Bible Methodist Connection of Churches",
+        "year":  null,
+        "url":  "https://www.biblemethodist.org/about-us/"
+    },
+    {
+        "id":  "src-uscm-wes-pilgrim",
+        "title":  "History",
+        "kind":  "website",
+        "author":  "Midwest Pilgrim Holiness Church",
+        "year":  null,
+        "url":  "https://midwestphc.org/about/history/"
+    },
+    {
+        "id":  "src-uscm-wes-standard",
+        "title":  "Don Hodgins retires after extraordinary service in Canada",
+        "kind":  "website",
+        "author":  "The Wesleyan Church",
+        "year":  null,
+        "url":  "https://www.wesleyan.org/don-hodgins-retires-after-extraordinary-service-in-canada-1445"
+    },
+    {
+        "id":  "src-uscm-wes-archives",
+        "title":  "Wesleyan Archives and Historical Library",
+        "kind":  "website",
+        "author":  "Wesleyan Archives and Historical Library",
+        "year":  null,
+        "url":  "https://www.wesleyanarchives.com/"
+    },
+    {
+        "id":  "src-uscm-army-history",
+        "title":  "History",
+        "kind":  "website",
+        "author":  "The Salvation Army International Headquarters",
+        "year":  null,
+        "url":  "https://www.salvationarmy.org/history"
+    },
+    {
+        "id":  "src-uscm-army-us",
+        "title":  "History of The Salvation Army",
+        "kind":  "website",
+        "author":  "The Salvation Army USA",
+        "year":  null,
+        "url":  "https://www.salvationarmyusa.org/about-us/our-history/"
+    },
+    {
+        "id":  "src-uscm-army-archives",
+        "title":  "Report on the records of the Salvation Army",
+        "kind":  "website",
+        "author":  "The National Archives",
+        "year":  null,
+        "url":  "https://www.nationalarchives.gov.uk/nra/lists/GB-2133-SA.htm"
+    },
+    {
+        "id":  "src-uscm-army-doctrine",
+        "title":  "Handbook of Doctrine",
+        "kind":  "book",
+        "author":  "The Salvation Army International Headquarters",
+        "year":  null,
+        "url":  "https://www.salvationarmy.org/sites/default/files/2025-06/Handbook%2Bof%2BDoctrine.pdf"
+    },
+    {
+        "id":  "src-uscm-army-global",
+        "title":  "A Global Army",
+        "kind":  "website",
+        "author":  "The Salvation Army International Heritage Centre",
+        "year":  null,
+        "url":  "https://www.salvationarmy.org.uk/about-us/international-heritage-centre/virtual-heritage-centre/a-global-army"
+    },
+    {
+        "id":  "src-uscm-army-catherine",
+        "title":  "William and Catherine Booth",
+        "kind":  "website",
+        "author":  "The Salvation Army Australia",
+        "year":  null,
+        "url":  "https://www.salvationarmy.org.au/about-us/our-history/william-and-catherine-booth/"
+    },
+    {
+        "id":  "src-uscm-free-history",
+        "title":  "Historical Heritage \u0026 Perspective",
+        "kind":  "website",
+        "author":  "Marston Memorial Historical Center",
+        "year":  null,
+        "url":  "https://historical.fmcusa.org/historical-heritage-perspective/"
+    },
+    {
+        "id":  "src-uscm-free-official",
+        "title":  "History of the Free Methodist Church",
+        "kind":  "website",
+        "author":  "Free Methodist Church USA",
+        "year":  null,
+        "url":  "https://fmcusa.org/history"
+    },
+    {
+        "id":  "src-uscm-free-1860",
+        "title":  "The Doctrines and Discipline of the Free Methodist Church",
+        "kind":  "book",
+        "author":  "Free Methodist Church",
+        "year":  1860,
+        "url":  "https://historical.fmcusa.org/wp-content/uploads/1860-Book-of-Discipline.pdf"
+    },
+    {
+        "id":  "src-uscm-free-2023",
+        "title":  "2023 Book of Discipline",
+        "kind":  "book",
+        "author":  "Free Methodist Church USA",
+        "year":  2023,
+        "url":  "https://fmcusa.org/wp-content/uploads/2023-Book-of-Discipline-Interactive-PDF-FINAL.pdf"
+    },
+    {
+        "id":  "src-uscm-free-women",
+        "title":  "FMC Statement on Women in Ministry",
+        "kind":  "website",
+        "author":  "Free Methodist Study Commission on Doctrine",
+        "year":  null,
+        "url":  "https://scod.fmcusa.org/fmc-statement-on-women-in-ministry/"
+    },
+    {
+        "id":  "src-uscm-free-sanctification",
+        "title":  "SCOD Report to the 2003 General Conference",
+        "kind":  "paper",
+        "author":  "Free Methodist Study Commission on Doctrine",
+        "year":  2003,
+        "url":  "https://scod.fmcusa.org/scod-report-to-the-2003-general-conference/"
+    },
+    {
+        "id":  "src-uscm-cme-lane",
+        "title":  "History of Lane College",
+        "kind":  "website",
+        "author":  "Lane College",
+        "year":  null,
+        "url":  "https://lanecollege.edu/about/history-of-lane-college"
+    },
+    {
+        "id":  "src-us-orthodox-census",
+        "title":  "2020 U.S. Religion Census",
+        "kind":  "website",
+        "url":  "https://usreligioncensus.org/sites/default/files/2023-10/2020_US_Religion_Census.pdf"
+    },
+    {
+        "id":  "src-us-orthodox-methods",
+        "title":  "U.S. Religion Census, Appendix F: Orthodox Christian Groups",
+        "kind":  "website",
+        "url":  "https://www.usreligioncensus.org/sites/default/files/2023-03/Appendix_F--Orthodox_Christian_Groups.pdf"
+    },
+    {
+        "id":  "src-us-orthodox-greek",
+        "title":  "Greek Orthodox Archdiocese: The Mission of the Greek Orthodox Parish in America",
+        "kind":  "website",
+        "url":  "https://prod.goarch.org/web/greek-orthodox-archdiocese-of-america/-/the-mission-of-the-greek-orthodox-parish-in-america"
+    },
+    {
+        "id":  "src-us-orthodox-charter",
+        "title":  "Greek Orthodox Archdiocese: History of the Charter",
+        "kind":  "website",
+        "url":  "https://charter.goarch.org/history"
+    },
+    {
+        "id":  "src-us-orthodox-greekregs",
+        "title":  "Greek Orthodox Archdiocese: 1996 Special Regulations and Uniform Parish Regulations",
+        "kind":  "website",
+        "url":  "https://www.goarch.org/-/1996-special-regulations-and-uniform-parish-regulations-of-the-greek-orthodox-archdiocese-of-america"
+    },
+    {
+        "id":  "src-us-orthodox-greeklit",
+        "title":  "Greek Orthodox Archdiocese: Divine Liturgy of Saint John Chrysostom",
+        "kind":  "website",
+        "url":  "https://www.goarch.org/-/the-divine-liturgy-of-saint-john-chrysostom"
+    },
+    {
+        "id":  "src-us-orthodox-patsavos",
+        "title":  "Lewis Patsavos: History of Governance of the Greek Orthodox Archdiocese",
+        "kind":  "website",
+        "url":  "https://charter.goarch.org/-/statement-patsavos-history-governance"
+    },
+    {
+        "id":  "src-us-orthodox-oriental",
+        "title":  "World Council of Churches: Orthodox churches (Oriental)",
+        "kind":  "website",
+        "url":  "https://www.oikoumene.org/church-families/orthodox-churches-oriental"
+    },
+    {
+        "id":  "src-us-orthodox-coptic",
+        "title":  "St. Mark’s Coptic Church, Jersey City: About Us",
+        "kind":  "website",
+        "url":  "https://saintmark.com/about-us/"
+    },
+    {
+        "id":  "src-us-orthodox-south",
+        "title":  "Coptic Orthodox Diocese of the Southern United States: 25th Anniversary",
+        "kind":  "website",
+        "url":  "https://www.youtube.com/watch?v=_Tn4yUit1vk"
+    },
+    {
+        "id":  "src-us-orthodox-coptlit",
+        "title":  "Divine Liturgies of the Coptic Orthodox Patriarchate of Alexandria",
+        "kind":  "website",
+        "url":  "https://cdn.suscopts.org/files/messages/preface.pdf"
+    },
+    {
+        "id":  "src-us-orthodox-ethstart",
+        "title":  "St. Gabriel Ethiopian Orthodox Tewahedo Church: Abune Yesehaq",
+        "kind":  "website",
+        "url":  "https://www.stgabrielseotcnj.com/copy-of-the-church"
+    },
+    {
+        "id":  "src-us-orthodox-etharchive",
+        "title":  "Schomburg Center: Ethiopian Orthodox Tewahedo Church in the Western Hemisphere and Southern Africa records",
+        "kind":  "website",
+        "url":  "https://nyplorg-data-archives.s3.amazonaws.com/uploads/collection/generated_finding_aids/scm23949.pdf"
+    },
+    {
+        "id":  "src-us-orthodox-ethrecon",
+        "title":  "World Council of Churches: Ethiopian Orthodox reconciliation",
+        "kind":  "website",
+        "url":  "https://www.oikoumene.org/news/jubilation-after-ethiopian-orthodox-tewahedo-churchs-27-year-old-schism-is-healed"
+    },
+    {
+        "id":  "src-us-orthodox-ethlit",
+        "title":  "Ethiopian Orthodox Church: The Liturgy of the Ethiopian Orthodox Church",
+        "kind":  "website",
+        "url":  "https://www.ethiopianorthodox.org/english/church/englishethiopianliturgy.pdf"
+    },
+    {
+        "id":  "src-us-orthodox-ethlocal",
+        "title":  "Ethiopian Orthodox Tewahedo Church of Our Savior: Our Church",
+        "kind":  "website",
+        "url":  "https://www.medhanialem.org/About/Our-Church/our-church.html"
+    },
+    {
+        "id":  "src-us-orthodox-ethap",
+        "title":  "Associated Press: An Ethiopian church in Washington preserves an ancient language and Orthodox tradition",
+        "kind":  "website",
+        "url":  "https://apnews.com/article/0c2d8bc3b9666c488a2c26f583789d0f"
+    },
+    {
+        "id":  "src-us-orthodox-arm",
+        "title":  "Diocese of the Armenian Church of America (Eastern): Diocesan History",
+        "kind":  "website",
+        "url":  "https://armenianchurch.us/history/"
+    },
+    {
+        "id":  "src-us-orthodox-armletter",
+        "title":  "Catholicos Karekin II: Letter on the 125th Anniversary of the Eastern Diocese",
+        "kind":  "website",
+        "url":  "https://armenianchurch.us/wp-content/uploads/2023/06/HHK2-230605-DAC125-Congrats-PDF.pdf"
+    },
+    {
+        "id":  "src-us-orthodox-armnews",
+        "title":  "Diocese of the Armenian Church of America (Eastern): The Lord Has Done Great Things for Us",
+        "kind":  "website",
+        "url":  "https://armenianchurch.us/the-lord-has-done-great-things-for-us/"
+    },
+    {
+        "id":  "src-us-orthodox-armcil",
+        "title":  "Armenian Prelacy: Our Prelacy",
+        "kind":  "website",
+        "url":  "https://armenianprelacy.org/our-prelacy/"
+    },
+    {
+        "id":  "src-us-orthodox-armcreed",
+        "title":  "Diocese of the Armenian Church of America (Eastern): Seventeen Centuries of We Believe",
+        "kind":  "website",
+        "url":  "https://armenianchurch.us/seventeen-centuries-of-we-believe/"
+    },
+    {
+        "id":  "src-us-orthodox-alaskan",
+        "title":  "National Park Service: Russian America",
+        "kind":  "website",
+        "url":  "https://home.nps.gov/subjects/nhlalaska/russian-alaska.htm"
+    },
+    {
+        "id":  "src-us-orthodox-ocahist",
+        "title":  "Orthodox Church in America: From the Russian Mission to the OCA",
+        "kind":  "website",
+        "url":  "https://www.oca.org/orthodoxy/the-orthodox-faith/church-history/twentieth-century/orthodoxy-in-america-part-one-from-the-russian-mission-to-the-oca"
+    },
+    {
+        "id":  "src-us-orthodox-ocamonk",
+        "title":  "Orthodox Church in America: Mission to Alaska",
+        "kind":  "website",
+        "url":  "https://www.oca.org/orthodoxy/the-orthodox-faith/church-history/eighteenth-century/mission-to-alaska"
+    },
+    {
+        "id":  "src-us-orthodox-ocatomos",
+        "title":  "Moscow Patriarchate: Tomos of Autocephaly",
+        "kind":  "website",
+        "url":  "https://www.oca.org/history-archives/tomos-of-autocephaly"
+    },
+    {
+        "id":  "src-us-orthodox-ocarec",
+        "title":  "Orthodox Church in America: Sunday of Orthodoxy visit to the Ecumenical Patriarchate",
+        "kind":  "website",
+        "url":  "https://www.oca.org/news/headline-news/the-sunday-of-orthodoxy-visit-of-metropolitan-tikhon-to-the-ecumenical-patr"
+    },
+    {
+        "id":  "src-us-orthodox-assembly",
+        "title":  "Assembly of Canonical Orthodox Bishops of the USA: Jurisdictions",
+        "kind":  "website",
+        "url":  "https://www.assemblyofbishops.org/directories/jurisdictions/"
+    },
+    {
+        "id":  "src-us-orthodox-ocacreeds",
+        "title":  "Orthodox Church in America: The Orthodox Faith, Nicene Creed",
+        "kind":  "website",
+        "url":  "https://www.oca.org/orthodoxy/the-orthodox-faith/doctrine-scripture/the-symbol-of-faith/nicene-creed"
+    },
+    {
+        "id":  "src-us-orthodox-ocastat",
+        "title":  "Orthodox Church in America: Statute",
+        "kind":  "website",
+        "url":  "https://www.oca.org/statute"
+    },
+    {
+        "id":  "src-us-orthodox-armwest",
+        "title":  "Western Diocese: Chronicles of the Western Diocese’s Centennial History",
+        "kind":  "website",
+        "url":  "https://wdacna.com/en/news/3330/chronicles-of-the-western-diocese-s-centennial-history-with-norayr-poghosyan"
+    },
+    {
+        "id":  "src-us-pent-census",
+        "title":  "2020 U.S. Religion Census",
+        "kind":  "website",
+        "url":  "https://usreligioncensus.org/sites/default/files/2023-10/2020_US_Religion_Census.pdf"
+    },
+    {
+        "id":  "src-us-pent-mailing",
+        "title":  "U.S. Religion Census Appendix E — Mailing Address Lists",
+        "kind":  "website",
+        "url":  "https://www.usreligioncensus.org/sites/default/files/2023-03/Appendix_E--Mailing_Address_Lists.pdf"
+    },
+    {
+        "id":  "src-us-pent-directory",
+        "title":  "U.S. Religion Census Appendix D — African American Groups",
+        "kind":  "website",
+        "url":  "https://www.usreligioncensus.org/sites/default/files/2023-03/Appendix_D--African_American_Groups.pdf"
+    },
+    {
+        "id":  "src-us-pent-fgh",
+        "title":  "FGCAI church history",
+        "kind":  "website",
+        "url":  "https://fgcai.org/history/"
+    },
+    {
+        "id":  "src-us-pent-fgm",
+        "title":  "FGCAI mission statement",
+        "kind":  "website",
+        "url":  "https://fgcai.org/mission-statement/"
+    },
+    {
+        "id":  "src-us-pent-fgc",
+        "title":  "FGCAI — Coalition of Apostolic and International Ministries",
+        "kind":  "website",
+        "url":  "https://fgcai.org/caim/"
+    },
+    {
+        "id":  "src-us-pent-vh",
+        "title":  "Vineyard USA — History \u0026 Legacy",
+        "kind":  "website",
+        "url":  "https://vineyardusa.org/about/history/"
+    },
+    {
+        "id":  "src-us-pent-vw",
+        "title":  "Vineyard USA — John Wimber",
+        "kind":  "website",
+        "url":  "https://vineyardusa.org/about/john-wimber/"
+    },
+    {
+        "id":  "src-us-pent-vb",
+        "title":  "Vineyard USA — Core Values \u0026 Beliefs",
+        "kind":  "website",
+        "url":  "https://vineyardusa.org/Vineyard-Core-Values-Beliefs.pdf"
+    },
+    {
+        "id":  "src-us-pent-vg",
+        "title":  "Guidepost Solutions — Vineyard USA Organizational Assessment",
+        "kind":  "website",
+        "url":  "https://vineyardusa.org/wp-content/uploads/Guidepost-Vineyard-Organizational-Assessment-Report.pdf?guidepost="
+    },
+    {
+        "id":  "src-us-pent-vn",
+        "title":  "Vineyard USA — National Leadership Handbook",
+        "kind":  "website",
+        "url":  "https://vineyardusa.org/handbook/"
+    },
+    {
+        "id":  "src-us-pent-ch",
+        "title":  "COOLJC — Founder",
+        "kind":  "website",
+        "url":  "https://www.cooljc.org/founder/"
+    },
+    {
+        "id":  "src-us-pent-cb",
+        "title":  "COOLJC — Our Story and Statement of Faith",
+        "kind":  "website",
+        "url":  "https://www.cooljc.org/our-story/"
+    },
+    {
+        "id":  "src-us-pent-cm",
+        "title":  "COOLJC — International Missionary Department",
+        "kind":  "website",
+        "url":  "https://www.cooljc.org/intl-missionary-dept/"
+    },
+    {
+        "id":  "src-us-pent-ca",
+        "title":  "Schomburg Center — Alexander and Shirlene Stewart Pentecostal collection",
+        "kind":  "website",
+        "url":  "https://archives.nypl.org/scm/20818"
+    },
+    {
+        "id":  "src-us-pent-cd",
+        "title":  "COOLJC — Ministerial credential application",
+        "kind":  "website",
+        "url":  "https://www.cooljc.org/wp-content/uploads/2024/06/COOLJC-APPLICATION-FOR-CREDENTIAL-20240527.pdf"
+    },
+    {
+        "id":  "src-us-pent-uh",
+        "title":  "UPCI — About the UPCI",
+        "kind":  "website",
+        "url":  "https://upci.org/about-the-upci/"
+    },
+    {
+        "id":  "src-us-pent-ua",
+        "title":  "UPCI — 80th anniversary announcement",
+        "kind":  "website",
+        "url":  "https://upci.org/upci-to-celebrate-80th-anniversary-in-st-louis/"
+    },
+    {
+        "id":  "src-us-pent-ub",
+        "title":  "UPCI — 2023 Articles of Faith",
+        "kind":  "website",
+        "url":  "https://dmc.upci.org/wp-content/uploads/2023/03/2023-UPCI-ARTICLES-OF-FAITH.pdf"
+    },
+    {
+        "id":  "src-us-pent-ur",
+        "title":  "UPCI — Racial and Ethnic Affirmation",
+        "kind":  "website",
+        "url":  "https://upci.org/wp-content/uploads/2022/12/Racial_and_Ethnic_Affirmation-with-Addendum.pdf"
+    },
+    {
+        "id":  "src-us-pent-ph",
+        "title":  "Church of God of Prophecy — Our History",
+        "kind":  "website",
+        "url":  "https://cogop.org/our-history/"
+    },
+    {
+        "id":  "src-us-pent-pa",
+        "title":  "Church of God of Prophecy — 1923 Assembly minutes",
+        "kind":  "website",
+        "url":  "https://cogop.org/wp-content/uploads/2025/03/1923-18th-Assembly-Minutes-compressed.pdf"
+    },
+    {
+        "id":  "src-us-pent-pc",
+        "title":  "Hal Bernard Dixon Jr. Pentecostal Research Center — Tomlinson family collection",
+        "kind":  "website",
+        "url":  "https://cogheritage.libraryhost.com/repositories/2/resources/25"
+    },
+    {
+        "id":  "src-us-pent-pj",
+        "title":  "Tennessee Supreme Court — Church of God v. Tomlinson Church of God",
+        "kind":  "website",
+        "url":  "https://openjurist.org/193/tenn/583/church-of-god-v-tomlinson-church-of-god"
+    },
+    {
+        "id":  "src-us-pent-pf",
+        "title":  "Church of God of Prophecy — Frequently Asked Questions",
+        "kind":  "website",
+        "url":  "https://cogop.org/frequently-asked-questions/"
+    },
+    {
+        "id":  "src-us-pent-pb",
+        "title":  "Church of God of Prophecy — What We Believe",
+        "kind":  "website",
+        "url":  "https://cogop.org/what-we-believe/"
+    },
+    {
+        "id":  "src-us-pent-pm",
+        "title":  "Church of God of Prophecy Archives — 1951 Assembly minutes",
+        "kind":  "website",
+        "url":  "https://library.cogop.org/documents/assembly-minutes-1951"
+    },
+    {
+        "id":  "src-us-pent-pd",
+        "title":  "Flower Pentecostal Heritage Center — Published name dispute case",
+        "kind":  "website",
+        "url":  "https://archives.ifphc.org/index.cfm?ArchiveGUID=F8E9A0F9-0A36-4D4A-8592-A5D300F07E1C\u0026fuseaction=research.showArchiveDetails"
+    },
+    {
+        "id":  "src-us-pent-ps",
+        "title":  "The Church of God (Charleston) — About",
+        "kind":  "website",
+        "url":  "https://www.thechurchofgod.org/about/"
+    },
+    {
+        "id":  "src-us-pent-goss-office",
+        "title":  "UPCI Wall of Honor — Howard Archibald Goss",
+        "kind":  "website",
+        "url":  "https://www.upciwallofhonor.org/minister-bio/howard-goss"
+    },
+    {
+        "id":  "src-us-pent-goss",
+        "title":  "Robin Johnston — Howard A. Goss, Assemblies of God Heritage",
+        "url":  "https://archives.ifphc.org/pdf/Heritage/2011.pdf",
+        "kind":  "website"
+    },
+    {
+        "id":  "src-us-pent-merger",
+        "title":  "Apostolic Archives — United Pentecostal Church International",
+        "url":  "https://www.apostolicarchives.com/articles/article/8795236/172433.htm",
+        "kind":  "website"
+    },
+    {
+        "id":  "src-us-pent-witherspoon",
+        "title":  "Apostolic Archives — William Thomas Witherspoon",
+        "url":  "https://www.apostolicarchives.com/articles/article/8795590/173099.htm",
+        "kind":  "website"
+    },
+    {
+        "id":  "src-uscr-census",
+        "title":  "2020 U.S. Religion Census group-detail workbook",
+        "kind":  "website",
+        "publisher":  "Association of Statisticians of American Religious Bodies",
+        "url":  "https://www.usreligioncensus.org/sites/default/files/2023-06/2020_USRC_Group_Detail.xlsx"
+    },
+    {
+        "id":  "src-uscr-ucc-history",
+        "title":  "A Short Course in the History of the United Church of Christ",
+        "kind":  "website",
+        "publisher":  "United Church of Christ",
+        "url":  "https://www.ucc.org/who-we-are/about/history/"
+    },
+    {
+        "id":  "src-uscr-ucc-basis",
+        "title":  "Basis of Union",
+        "kind":  "website",
+        "publisher":  "United Church of Christ",
+        "url":  "https://www.ucc.org/who-we-are/about/general-synod/general-synod-resolutions-regarding-environmental-justice/beliefs/beliefs_basis-of-union/"
+    },
+    {
+        "id":  "src-uscr-ucc-archive",
+        "title":  "Congregational Christian and Evangelical and Reformed Church merger records",
+        "kind":  "website",
+        "publisher":  "Congregational Library \u0026 Archives",
+        "url":  "https://congrelib.libraryhost.com/repositories/2/resources/1164"
+    },
+    {
+        "id":  "src-uscr-ucc-polity",
+        "title":  "UCC History and Polity Resources",
+        "kind":  "website",
+        "publisher":  "United Church of Christ",
+        "url":  "https://www.ucc.org/what-we-do/justice-local-church-ministries/mesa/ucc-history-and-polity-resources/"
+    },
+    {
+        "id":  "src-uscr-ucc-herbster",
+        "title":  "The First President of the United Church of Christ",
+        "kind":  "website",
+        "publisher":  "United Church of Christ",
+        "url":  "https://www.ucc.org/ucc_roots_april_2019/"
+    },
+    {
+        "id":  "src-uscr-ucc-beliefs",
+        "title":  "What is the United Church of Christ?",
+        "kind":  "website",
+        "publisher":  "United Church of Christ",
+        "url":  "https://www.ucc.org/domestic-policy/ourfaithourvote_about/about-us_what-is-the-united-church-of/"
+    },
+    {
+        "id":  "src-uscr-rca-history",
+        "title":  "History of the RCA",
+        "kind":  "website",
+        "publisher":  "Reformed Church in America",
+        "url":  "https://www.rca.org/about/history/"
+    },
+    {
+        "id":  "src-uscr-rca-letter",
+        "title":  "Letter of Reverend Jonas Michaelius, 1628",
+        "kind":  "website",
+        "publisher":  "Narratives of New Netherland, 1609–1664",
+        "url":  "https://readingroo.ms/3/1/6/3161/3161-h/3161-h.htm"
+    },
+    {
+        "id":  "src-uscr-rca-order",
+        "title":  "Book of Church Order, 2021 edition",
+        "kind":  "website",
+        "publisher":  "Reformed Church in America",
+        "url":  "https://www.rca.org/wp-content/uploads/2022/02/BCO-2021-English.pdf"
+    },
+    {
+        "id":  "src-uscr-rca-joint",
+        "title":  "A Concise History of Relationships Between the RCA and CRCNA",
+        "kind":  "website",
+        "publisher":  "Reformed Church in America and Christian Reformed Church in North America",
+        "url":  "https://rca.org/wp-content/uploads/2014/10/Synod2014-ConciseHistory-RCA-CRC.pdf"
+    },
+    {
+        "id":  "src-uscr-rca-confessions",
+        "title":  "Creeds and Confessions",
+        "kind":  "website",
+        "publisher":  "Reformed Church in America",
+        "url":  "https://www.rca.org/about/theology/creeds-and-confessions/"
+    },
+    {
+        "id":  "src-uscr-rca-belhar",
+        "title":  "The Belhar Confession",
+        "kind":  "website",
+        "publisher":  "Reformed Church in America",
+        "url":  "https://www.rca.org/about/theology/creeds-and-confessions/the-belhar-confession/"
+    },
+    {
+        "id":  "src-uscr-rca-vanraalte",
+        "title":  "History of the Van Raalte Institute",
+        "kind":  "website",
+        "publisher":  "Hope College",
+        "url":  "https://www.hope.edu/offices/van-raalte-institute/history-institute.html"
+    },
+    {
+        "id":  "src-uscr-rca-vision",
+        "title":  "General Synod Council financial statements, 2023 and 2022",
+        "kind":  "website",
+        "publisher":  "Reformed Church in America",
+        "url":  "https://www.rca.org/wp-content/uploads/2024/03/RCA-GSC-Final-Financial-Statements.pdf"
+    },
+    {
+        "id":  "src-uscr-crc-history",
+        "title":  "Our History",
+        "kind":  "website",
+        "publisher":  "Christian Reformed Church in North America",
+        "url":  "https://www.crcna.org/welcome/history"
+    },
+    {
+        "id":  "src-uscr-crc-timeline",
+        "title":  "Memorable Events in the History of the CRC",
+        "kind":  "website",
+        "publisher":  "Christian Reformed Church in North America",
+        "url":  "https://www.crcna.org/welcome/history/memorable-events"
+    },
+    {
+        "id":  "src-uscr-crc-acts",
+        "title":  "Minutes, Acts, and Agendas of Synod",
+        "kind":  "website",
+        "publisher":  "Heritage Hall, Calvin University",
+        "url":  "https://library.calvin.edu/hh/acts-of-synod"
+    },
+    {
+        "id":  "src-uscr-crc-order",
+        "title":  "CRC Church Order",
+        "kind":  "website",
+        "publisher":  "Heritage Hall, Calvin University",
+        "url":  "https://library.calvin.edu/hh/church-order"
+    },
+    {
+        "id":  "src-uscr-crc-faith",
+        "title":  "Our Faith",
+        "kind":  "website",
+        "publisher":  "Christian Reformed Church in North America",
+        "url":  "https://www.crcna.org/welcome/beliefs"
+    },
+    {
+        "id":  "src-uscr-crc-belhar",
+        "title":  "Summary of Decisions of Synod 2017 for the Churches",
+        "kind":  "website",
+        "publisher":  "Christian Reformed Church in North America",
+        "url":  "https://www.crcna.org/sites/default/files/letter_re_summary_of_synod_2017_to_churches.pdf"
+    },
+    {
+        "id":  "src-uscr-crc-women",
+        "title":  "Women in Ecclesiastical Office",
+        "kind":  "website",
+        "publisher":  "Christian Reformed Church in North America",
+        "url":  "https://www.crcna.org/welcome/beliefs/position-statements/women-ecclesiastical-office"
+    },
+    {
+        "id":  "src-uscr-crc-urc",
+        "title":  "History of the URCNA",
+        "kind":  "website",
+        "publisher":  "United Reformed Churches in North America",
+        "url":  "https://www.urcna.org/about"
+    },
+    {
+        "id":  "src-uscr-lcmc-history",
+        "title":  "LCMC History",
+        "kind":  "website",
+        "publisher":  "Lutheran Congregations in Mission for Christ",
+        "url":  "https://lcmc.net/history"
+    },
+    {
+        "id":  "src-uscr-lcmc-constitution",
+        "title":  "Constitution of Lutheran Congregations in Mission for Christ",
+        "kind":  "website",
+        "publisher":  "Lutheran Congregations in Mission for Christ",
+        "url":  "https://lcmc.net/lcmcconstitution/278"
+    },
+    {
+        "id":  "src-uscr-lcmc-ccm",
+        "title":  "Called to Common Mission",
+        "kind":  "website",
+        "publisher":  "Evangelical Lutheran Church in America and The Episcopal Church",
+        "url":  "https://download.elca.org/ELCA%20Resource%20Repository/Called_To_Common_Mission.pdf"
+    },
+    {
+        "id":  "src-uscr-lcmc-wordalone",
+        "title":  "Open letter to Daniel Lehmann",
+        "kind":  "website",
+        "publisher":  "WordAlone Network",
+        "url":  "https://archives.wordalone.com/docs/open-ltr-lehmann.html"
+    },
+    {
+        "id":  "src-uscr-lcmc-elca-news",
+        "title":  "WordAlone Network Formed, Speakers Say They Want to Stay in ELCA",
+        "kind":  "website",
+        "publisher":  "ELCA News",
+        "url":  "https://listserv.elca.org/scripts/wa.exe?A2=ELCANEWS%3Bbdc6f27a.0004\u0026FT=\u0026H=A\u0026P=T\u0026S="
+    },
+    {
+        "id":  "src-uscr-ecc-history",
+        "title":  "Evangelical Covenant Church History",
+        "kind":  "website",
+        "publisher":  "Evangelical Covenant Church",
+        "url":  "https://covchurch.org/resource/evangelical-covenant-church-history/"
+    },
+    {
+        "id":  "src-uscr-ecc-affirmations",
+        "title":  "Covenant Affirmations",
+        "kind":  "website",
+        "publisher":  "Evangelical Covenant Church",
+        "url":  "https://covchurch.org/wp-content/uploads/2015/03/covenant_affirmations_booklet.pdf"
+    },
+    {
+        "id":  "src-uscr-ecc-yearbooks",
+        "title":  "Frisk Collection of Covenant Yearbooks",
+        "kind":  "website",
+        "publisher":  "North Park University and CARLI Digital Collections",
+        "url":  "https://collections.carli.illinois.edu/digital/collection/npu_covyb"
+    },
+    {
+        "id":  "src-uscr-ecc-northpark",
+        "title":  "F. M. Johnson Archives and Special Collections",
+        "kind":  "website",
+        "publisher":  "North Park University",
+        "url":  "https://www.northpark.edu/academics/brandel-library/archives/"
+    },
+    {
+        "id":  "src-uscr-efca-history",
+        "title":  "Our History",
+        "kind":  "website",
+        "publisher":  "Evangelical Free Church of America",
+        "url":  "https://www.efca.org/our-history"
+    },
+    {
+        "id":  "src-uscr-efca-yearbook",
+        "title":  "1951 EFCA Yearbook",
+        "kind":  "website",
+        "publisher":  "Trinity International University and CARLI Digital Collections",
+        "url":  "https://collections.carli.illinois.edu/digital/collection/tiu_efcadir/id/87/"
+    },
+    {
+        "id":  "src-uscr-efca-trinity",
+        "title":  "History \u0026 Heritage",
+        "kind":  "website",
+        "publisher":  "Trinity International University",
+        "url":  "https://www.tiu.edu/history-heritage/"
+    },
+    {
+        "id":  "src-uscr-efca-original",
+        "title":  "1950 Statement of Faith",
+        "kind":  "website",
+        "publisher":  "Evangelical Free Church of America",
+        "url":  "https://go.efca.org/sites/default/files/resources/docs/2013/04/microsoft-word-1950-sof.pdf"
+    },
+    {
+        "id":  "src-uscr-efca-current",
+        "title":  "Statement of Faith",
+        "kind":  "website",
+        "publisher":  "Evangelical Free Church of America",
+        "url":  "https://www.efca.org/sof/"
+    },
+    {
+        "id":  "src-uscr-efca-polity",
+        "title":  "EFCA Distinctives",
+        "kind":  "website",
+        "publisher":  "Evangelical Free Church of America",
+        "url":  "https://www.efca.org/distinctives"
+    },
+    {
+        "id":  "src-uscr-crc-prc",
+        "title":  "Why Protestant Reformed? An Early Testimony to the CRC",
+        "kind":  "website",
+        "publisher":  "Protestant Reformed Churches in America",
+        "url":  "https://www.prca.org/resources/pamphlets/why-protestant-reformed-an-early-testimony-to-the-crc"
+    },
+    {
+        "id":  "src-uscr-ecc-women",
+        "title":  "A Biblical and Theological Basis for Women in Ministry",
+        "kind":  "website",
+        "publisher":  "Evangelical Covenant Church",
+        "url":  "https://covchurch.org/resource/occasional-women-in-ministry/"
+    },
+    {
+        "id":  "src-uscr-ucc-statement",
+        "title":  "Statement of Faith of the United Church of Christ",
+        "kind":  "website",
+        "publisher":  "United Church of Christ",
+        "url":  "https://www.ucc.org/what-we-believe/beliefs_statement-of-faith/"
+    },
+    {
+        "id":  "src-uscr-ucc-afro-archive",
+        "title":  "Historical Council of the United Church of Christ",
+        "kind":  "website",
+        "publisher":  "United Church of Christ",
+        "url":  "https://www.ucc.org/who-we-are/about/history/historical-council-of-the-united-church-of-christ/"
+    },
+    {
+        "id":  "src-uscr-ucc-afro-stream",
+        "title":  "Afro-Christian tradition\u0027s status as distinct UCC stream gets Historical Council support",
+        "kind":  "website",
+        "publisher":  "United Church of Christ",
+        "url":  "https://www.ucc.org/afro-christian-traditions-status-as-distinct-ucc-stream-gets-historical-council-support/"
+    },
+    {
+        "id":  "src-us-restoration-census",
+        "title":  "ARDA — 2020 U.S. Religion Census, national congregation and adherent totals",
+        "kind":  "website",
+        "url":  "https://www.thearda.com/us-religion/census/congregational-membership?c=99\u0026t=4\u0026y=2020"
+    },
+    {
+        "id":  "src-us-restoration-lds-organization",
+        "title":  "Joseph Smith Papers — The Organization of the Church",
+        "kind":  "website",
+        "url":  "https://www.josephsmithpapers.org/site/the-organization-of-the-church"
+    },
+    {
+        "id":  "src-us-restoration-lds-name",
+        "title":  "Joseph Smith Papers — Revelation, 26 April 1838 [D\u0026C 115]",
+        "kind":  "website",
+        "url":  "https://www.josephsmithpapers.org/paper-summary/revelation-26-april-1838-dc-115/2"
+    },
+    {
+        "id":  "src-us-restoration-lds-covenants",
+        "title":  "Joseph Smith Papers — Minutes, 9 June 1830",
+        "kind":  "website",
+        "url":  "https://www.josephsmithpapers.org/paper-summary/minutes-9-june-1830/1"
+    },
+    {
+        "id":  "src-us-restoration-lds-faith",
+        "title":  "The Church of Jesus Christ of Latter-day Saints — Articles of Faith",
+        "kind":  "website",
+        "url":  "https://www.churchofjesuschrist.org/study/scriptures/pgp/a-of-f/1?lang=eng"
+    },
+    {
+        "id":  "src-us-restoration-lds-rigdon",
+        "title":  "Joseph Smith Papers — Sidney Rigdon biography",
+        "kind":  "website",
+        "url":  "https://www.josephsmithpapers.org/person/sidney-rigdon"
+    },
+    {
+        "id":  "src-us-restoration-lds-succession",
+        "title":  "Church History Topics — Succession of Church Leadership",
+        "kind":  "website",
+        "url":  "https://www.churchofjesuschrist.org/study/history/topics/succession-of-church-leadership?lang=eng"
+    },
+    {
+        "id":  "src-us-restoration-lds-nps",
+        "title":  "National Park Service — Joseph Fielding Smith, the Mormon Pioneer Trail",
+        "kind":  "website",
+        "url":  "https://home.nps.gov/articles/000/joseph-fielding-smith-mormon-pioneer-trail.htm"
+    },
+    {
+        "id":  "src-us-restoration-lds-trail",
+        "title":  "National Park Service — Mormon Pioneer Trail Timeline",
+        "kind":  "website",
+        "url":  "https://www.nps.gov/articles/000/mormon-pioneer-trail-timeline.htm"
+    },
+    {
+        "id":  "src-us-restoration-lds-manifesto",
+        "title":  "Doctrine and Covenants — Official Declaration 1",
+        "kind":  "website",
+        "url":  "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/od/1?lang=eng"
+    },
+    {
+        "id":  "src-us-restoration-lds-1978",
+        "title":  "Doctrine and Covenants — Official Declaration 2",
+        "kind":  "website",
+        "url":  "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/od/2?lang=eng"
+    },
+    {
+        "id":  "src-us-restoration-lds-style",
+        "title":  "Church Newsroom — Style Guide",
+        "kind":  "website",
+        "url":  "https://newsroom.churchofjesuschrist.org/style-guide"
+    },
+    {
+        "id":  "src-us-restoration-jw-origins",
+        "title":  "Jehovah’s Witnesses — Their Modern Development and Growth",
+        "kind":  "website",
+        "url":  "https://www.jw.org/en/library/brochures/Jehovahs-Witnesses-Who-Are-They-What-Do-They-Believe/Their-Modern-Development-and-Growth/"
+    },
+    {
+        "id":  "src-us-restoration-jw-history",
+        "title":  "Jehovah’s Witnesses — Cambridge Elements",
+        "kind":  "website",
+        "url":  "https://www.cambridge.org/core/elements/jehovahs-witnesses/605AED05C9FA13DC68BB74FE3D2C651D"
+    },
+    {
+        "id":  "src-us-restoration-jw-succession",
+        "title":  "George D. Chryssides — Finishing the Mystery: The Watch Tower and “the 1917 schism”",
+        "kind":  "website",
+        "url":  "https://www.cambridge.org/core/books/abs/sacred-schisms/finishing-the-mystery-the-watch-tower-and-the-1917-schism/9B4F69E1D685968292F535D157238F4B"
+    },
+    {
+        "id":  "src-us-restoration-jw-name",
+        "title":  "Jehovah’s Witnesses — How We Came to Be Known as Jehovah’s Witnesses",
+        "kind":  "website",
+        "url":  "https://wol.jw.org/en/wol/d/r1/lp-e/1101993013"
+    },
+    {
+        "id":  "src-us-restoration-jw-beliefs",
+        "title":  "Jehovah’s Witnesses — What Do Jehovah’s Witnesses Believe?",
+        "kind":  "website",
+        "url":  "https://www.jw.org/en/jehovahs-witnesses/faq/jehovah-witness-beliefs/"
+    },
+    {
+        "id":  "src-us-restoration-jw-government",
+        "title":  "Jehovah’s Witnesses — What Is the Governing Body?",
+        "kind":  "website",
+        "url":  "https://www.jw.org/en/jehovahs-witnesses/faq/governing-body-jw-helpers/"
+    },
+    {
+        "id":  "src-us-restoration-jw-barnette",
+        "title":  "United States Reports — West Virginia State Board of Education v. Barnette",
+        "kind":  "website",
+        "url":  "https://www.loc.gov/item/usrep319624/"
+    },
+    {
+        "id":  "src-us-restoration-jw-translation",
+        "title":  "Jehovah’s Witnesses — New World Translation",
+        "kind":  "website",
+        "url":  "https://www.jw.org/en/library/books/Reasoning-From-the-Scriptures/New-World-Translation/"
+    },
+    {
+        "id":  "src-us-restoration-lds-book-of-mormon",
+        "title":  "Joseph Smith Papers — Book of Mormon, 1830",
+        "kind":  "website",
+        "url":  "https://www.josephsmithpapers.org/paper-summary/book-of-mormon-1830/1"
     }
 ],
   citations: [
@@ -19553,6 +26590,1734 @@ window.CHURCHTREE_DATA = {
         "locator":  "L20-L21",
         "accessed":  "2026-01-25",
         "note":  "W. Jack Williamson moderator; Morton Smith stated clerk."
+    },
+    {
+        "id":  "cite-us-coverage-baptist-nmbca-about",
+        "source_id":  "src-us-coverage-baptist-nmbca-about",
+        "locator":  "Founding information, mission and vision",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-nbca-annuals",
+        "source_id":  "src-us-coverage-baptist-nbca-annuals",
+        "locator":  "Introduction, paragraph on the 1988 division",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-nmbca-dispute",
+        "source_id":  "src-us-coverage-baptist-nmbca-dispute",
+        "locator":  "December 3, 1988, reporting on the Dallas and San Antonio meetings and statements from Edward Jones and the publishing house",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-nmbca-session",
+        "source_id":  "src-us-coverage-baptist-nmbca-session",
+        "locator":  "Item announcing the September 5–10, 1989 Chicago session; statement from President Lockridge",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-nmbca-lockridge",
+        "source_id":  "src-us-coverage-baptist-nmbca-lockridge",
+        "locator":  "February 24, 1996, paragraphs on the 1988 formation and first president",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-nmbca-registration",
+        "source_id":  "src-us-coverage-baptist-nmbca-registration",
+        "locator":  "Official auxiliary, board and Women’s Auxiliary forms",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-nafwb-history",
+        "source_id":  "src-us-coverage-baptist-nafwb-history",
+        "locator":  "Palmer and Randall origins, Northern Baptist union, Cooperative General Association and 1935 Nashville organization",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-nafwb-treatise",
+        "source_id":  "src-us-coverage-baptist-nafwb-treatise",
+        "locator":  "2023 edition, preface and Part II, chapters VI–VIII, XIII and XVIII; Part IV, chapters I and III",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-nafwb-treatise-history",
+        "source_id":  "src-us-coverage-baptist-nafwb-treatise-history",
+        "locator":  "1834 publication, 1935 meeting and drafting committee",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-aba-faq",
+        "source_id":  "src-us-coverage-baptist-aba-faq",
+        "locator":  "Founding and voluntary fellowship; how churches cooperate and send missionaries",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-aba-arkansas",
+        "source_id":  "src-us-coverage-baptist-aba-arkansas",
+        "locator":  "1902 organizing meeting, Ben M. Bogard and 1924 national organization",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-aba-archive",
+        "source_id":  "src-us-coverage-baptist-aba-archive",
+        "locator":  "Minute Books and List of Missionaries by Year",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-aba-doctrine",
+        "source_id":  "src-us-coverage-baptist-aba-doctrine",
+        "locator":  "Articles 3, 9 and 14–19",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-aba-bma-mississippi",
+        "source_id":  "src-us-coverage-baptist-aba-bma-mississippi",
+        "locator":  "Timeline entries for the American Baptist Association (1924) and North American Baptist Association (1950)",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-aba-1950",
+        "source_id":  "src-us-coverage-baptist-aba-1950",
+        "locator":  "Printed page 89, account of Dr. Cobb\u0027s decision to stay in the ABA during the 1950 split",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-fgbcf-about",
+        "source_id":  "src-us-coverage-baptist-fgbcf-about",
+        "locator":  "Who Is Full Gospel? and What We Believe",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-fgbcf-leadership",
+        "source_id":  "src-us-coverage-baptist-fgbcf-leadership",
+        "locator":  "Profiles of Joseph W. Walker III and Paul S. Morton Sr.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-fgbcf-debra",
+        "source_id":  "src-us-coverage-baptist-fgbcf-debra",
+        "locator":  "Fellowship channel’s description, identifying Debra B. Morton as co-founder",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-fgbcf-manual",
+        "source_id":  "src-us-coverage-baptist-fgbcf-manual",
+        "locator":  "Full Gospel section, pp. 13–14, local autonomy, 1992 vision, gifts and fellowship offices",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-fgbcf-1994",
+        "source_id":  "src-us-coverage-baptist-fgbcf-1994",
+        "locator":  "Archival footage and founder’s caption identifying the 1994 conference and venue",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-fgbcf-walker",
+        "source_id":  "src-us-coverage-baptist-fgbcf-walker",
+        "locator":  "2013 succession announcement and planned 2015 transfer",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-fgcai-identity",
+        "source_id":  "src-us-coverage-baptist-fgcai-identity",
+        "locator":  "Founding of the distinct Wilson congregation in 1983",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-usrc-302",
+        "source_id":  "src-us-coverage-baptist-usrc",
+        "locator":  "Table 1: Religious Body Totals for the United States, 2020; USRC code 302; compare codes 301, 300 and 364",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-usrc-223",
+        "source_id":  "src-us-coverage-baptist-usrc",
+        "locator":  "Table 1: Religious Body Totals for the United States, 2020; USRC code 223",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-usrc-017",
+        "source_id":  "src-us-coverage-baptist-usrc",
+        "locator":  "Table 1: Religious Body Totals for the United States, 2020; USRC code 017; compare code 019",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-usrc-232",
+        "source_id":  "src-us-coverage-baptist-usrc",
+        "locator":  "Table 1: Religious Body Totals for the United States, 2020; USRC code 232",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-baptist-fgbcf-launch-interview",
+        "source_id":  "src-us-coverage-baptist-fgbcf-launch-interview",
+        "locator":  "Discussion of the July 1994 launch and first conference",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-anderson-scale",
+        "source_id":  "src-us-coverage-holiness-census",
+        "locator":  "2020 Group by Nation, code 123, columns C and D",
+        "note":  "1,944 congregations and 427,038 U.S. adherents in 2020.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-anderson-start",
+        "source_id":  "src-us-coverage-holiness-anderson-history",
+        "locator":  "Opening paragraphs",
+        "note":  "1881 movement marker, Warner and Cole, Scripture, unity and holiness.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-anderson-print",
+        "source_id":  "src-us-coverage-holiness-trumpet",
+        "locator":  "Opening paragraph and Gospel Trumpet exhibit",
+        "note":  "Warner\u0027s publishing work and the launch of The Gospel Trumpet in 1881.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-anderson-cole",
+        "source_id":  "src-us-coverage-holiness-cole",
+        "locator":  "The Church of God; Gospel Work Begins",
+        "note":  "Participant account of Cole\u0027s encounter with Warner and work as an evangelist.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-anderson-teaching",
+        "source_id":  "src-us-coverage-holiness-anderson-beliefs",
+        "locator":  "Mission and Beliefs; ordinances",
+        "note":  "Contemporary teaching on unity, holy living and baptism, communion and foot washing.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-anderson-training",
+        "source_id":  "src-us-coverage-holiness-anderson-school",
+        "locator":  "Historical Perspective, p. 6",
+        "note":  "The 1917 ministry training school developed into a liberal arts institution with continuing ties to the church.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-anderson-black-organizing",
+        "source_id":  "src-us-coverage-holiness-anderson-association",
+        "locator":  "West Middlesex camp meeting and National Association",
+        "note":  "Black members built a national ministry network in the face of racial barriers. The first West Middlesex camp meeting was in 1917.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-anderson-government",
+        "source_id":  "src-us-coverage-holiness-anderson-bylaws",
+        "locator":  "Article I, definitions and purposes",
+        "note":  "Bylaws govern the national ministry corporation and define its relationship to the movement and General Assembly.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-alliance-scale",
+        "source_id":  "src-us-coverage-holiness-census",
+        "locator":  "2020 Group by Nation, code 089, columns C and D",
+        "note":  "1,776 congregations and 414,360 U.S. adherents in 2020.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-alliance-outreach",
+        "source_id":  "src-us-coverage-holiness-alliance-history",
+        "locator":  "The Founding Era and Sacrifice and Expansion",
+        "note":  "Simpson\u0027s New York outreach, formation of the training institute, women in the early overseas workforce, and Rader\u0027s leadership.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-alliance-societies",
+        "source_id":  "src-us-coverage-holiness-alliance-archives",
+        "locator":  "p. 2, Administrative History",
+        "note":  "Identifies the two alliances formed in 1887 and dates their merger to 1897.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-alliance-constitutions",
+        "source_id":  "src-us-coverage-holiness-alliance-charters",
+        "locator":  "Constitution of the Christian Alliance (1887); Constitution of the Evangelical Missionary Alliance (1887)",
+        "note":  "Distinguishes interdenominational fellowship from the overseas mission organization.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-alliance-simpson-teaching",
+        "source_id":  "src-us-coverage-holiness-alliance-fourfold",
+        "locator":  "Title page and parts I–IV",
+        "note":  "Simpson\u0027s exposition of Jesus as Savior, Sanctifier, Healer and Coming King.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-alliance-doctrine",
+        "source_id":  "src-us-coverage-holiness-alliance-faith",
+        "locator":  "Statement of Faith; Sanctification; Healing",
+        "note":  "Current Alliance confession and interpretive statements.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-alliance-denomination",
+        "source_id":  "src-us-coverage-holiness-alliance-history",
+        "locator":  "The Evangelical Era (1947–1974) and The Missionary Church Era (1975–present)",
+        "note":  "1974 declaration and restructuring, Tozer\u0027s editorial work and continuing church and mission activity.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-alliance-canada",
+        "source_id":  "src-us-coverage-holiness-alliance-timeline",
+        "locator":  "1981 entry",
+        "note":  "Canadian Alliance became autonomous in 1981.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-alliance-current",
+        "source_id":  "src-us-coverage-holiness-alliance-council",
+        "locator":  "Report of the Board of Directors and General Council minutes",
+        "note":  "Documents ongoing U.S. governance and contemporary doctrinal deliberation.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-alliance-date-conflict",
+        "source_id":  "src-us-coverage-holiness-alliance-1916",
+        "locator":  "Christian and Missionary Alliance, History",
+        "note":  "The 1916 report records 1895 for the society union, in conflict with the Alliance archival finding aid.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-scale",
+        "source_id":  "src-us-coverage-holiness-census",
+        "locator":  "2020 Group by Nation, code 157, columns C and D",
+        "note":  "921 congregations and 109,288 U.S. adherents in 2020.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-baptisms",
+        "source_id":  "src-us-coverage-holiness-brethren-history",
+        "locator":  "Opening paragraphs",
+        "note":  "Schwarzenau baptisms, Pietist and Anabaptist influences, and the community\u0027s new understanding of baptism.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-migration",
+        "source_id":  "src-us-coverage-holiness-brethren-history",
+        "locator":  "Moving to America",
+        "note":  "Peter Becker and the 1719 migration, the 1723 Germantown congregation and Mack\u0027s arrival in 1729.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-founders",
+        "source_id":  "src-us-coverage-holiness-brethren-sketches",
+        "locator":  "Part 1 — The beginning",
+        "note":  "Alexander Mack and Johanna Kipping are among the first eight. The member who baptized Mack remains unidentified.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-name",
+        "source_id":  "src-us-coverage-holiness-brethren-guide",
+        "locator":  "Introduction",
+        "note":  "German Baptist Brethren, historical Dunker/Dunkard labels, and adoption of Church of the Brethren in 1908.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-division",
+        "source_id":  "src-us-coverage-holiness-brethren-sketches",
+        "locator":  "Part 2 — The division",
+        "note":  "The Old Order and Progressive departures and the issues that divided the German Baptist Brethren.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-progressives",
+        "source_id":  "src-us-coverage-holiness-brethren-progressive",
+        "locator":  "Opening paragraphs, Progressive Brethren",
+        "note":  "The Progressive branch\u0027s account of Holsinger, reform proposals and formation of The Brethren Church in 1883.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-authority",
+        "source_id":  "src-us-coverage-holiness-brethren-conference",
+        "locator":  "Historical discussion of Annual Meeting authority and the division of 1881–1883",
+        "note":  "The 2004 Annual Conference paper describes competing views of conformity to Annual Conference decisions and the resulting division.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-scripture",
+        "source_id":  "src-us-coverage-holiness-brethren-beliefs",
+        "locator":  "The centrality of Jesus Christ; The New Testament; Life in community",
+        "note":  "The New Testament guides discipleship, peace and service.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-ordinances",
+        "source_id":  "src-us-coverage-holiness-brethren-practices",
+        "locator":  "Baptism; Love feast and communion; Feetwashing",
+        "note":  "Believer\u0027s baptism by three forward immersions and the components of the love feast.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-old-letter",
+        "source_id":  "src-us-coverage-holiness-brethren-polity",
+        "locator":  "Introduction, p. 1 and note 1",
+        "note":  "Quotes a 1708 letter circulated by the early Brethren after the baptisms.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-volunteers",
+        "source_id":  "src-us-coverage-holiness-brethren-service",
+        "locator":  "Opening history, 1948 Annual Conference",
+        "note":  "Youths proposed the volunteer service program to Annual Conference, which approved it in 1948.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-peacemaking",
+        "source_id":  "src-us-coverage-holiness-brethren-peace",
+        "locator":  "Historical Background; Action of the 1991 Annual Conference",
+        "note":  "Official peace and nonviolence statement, relating conscientious objection and service.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-recent",
+        "source_id":  "src-us-coverage-holiness-brethren-response",
+        "locator":  "Leadership Team update, September 14, 2020",
+        "note":  "Continuing body\u0027s account of the Covenant Brethren separation and disputed recruitment.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-coverage-holiness-brethren-covenant",
+        "source_id":  "src-us-coverage-holiness-covenant-faq",
+        "locator":  "Origins and beliefs of the Covenant Brethren Church",
+        "note":  "Departing body\u0027s rationale, 2019 organizing and May 2020 incorporation.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-ame-roots",
+        "source_id":  "src-uscm-ame-history",
+        "locator":  "opening paragraph",
+        "note":  "Free African Society, racial exclusion at St. George’s, the Bethel dedication, and the struggle for autonomy.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-ame-organization",
+        "source_id":  "src-uscm-ame-1816",
+        "locator":  "paragraph beginning ‘While a Senior Bishop’",
+        "note":  "The denomination was incorporated in 1816.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-ame-site",
+        "source_id":  "src-uscm-ame-nps",
+        "locator":  "National Register nomination, significance",
+        "note":  "Mother Bethel site and Allen’s role in founding the denomination.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-ame-testimony",
+        "source_id":  "src-uscm-ame-allen",
+        "locator":  "The Life, Experience, and Gospel Labours, St. George’s account",
+        "note":  "Allen’s retrospective eyewitness account of the prayer incident and withdrawal.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-ame-growth",
+        "source_id":  "src-uscm-ame-history",
+        "locator":  "geographical spread and Civil War/Reconstruction paragraphs",
+        "note":  "Reconstruction-era southern expansion and Turner’s promotion of work in Africa.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-ame-current",
+        "source_id":  "src-uscm-ame-history",
+        "locator":  "final paragraph",
+        "note":  "Present connectional structure across multiple continents.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-ame-election",
+        "source_id":  "src-uscm-ame-mckenzie",
+        "locator":  "AME Pillars",
+        "note":  "Vashti Murphy McKenzie was elected the denomination’s first woman bishop in 2000.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-ame-articles",
+        "source_id":  "src-uscm-ame-beliefs",
+        "locator":  "Twenty Five Articles of Religion, especially I, IX, XVI–XVIII",
+        "note":  "Trinity, justification by faith, baptism, and the Lord’s Supper in the church’s published doctrinal standards.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-african-methodist-episcopal-church-count",
+        "source_id":  "src-uscm-census",
+        "locator":  "2020 Group by Nation, group code 003, column D (Adherents)",
+        "note":  "1,059,888 U.S. adherents in 2020 for African Methodist Episcopal Church.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-zion-local",
+        "source_id":  "src-uscm-zion-history",
+        "locator":  "Our History, paragraphs on 1796–1801",
+        "note":  "John Street origins, local incorporation and arrangement for sacramental ministry.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-zion-independent",
+        "source_id":  "src-uscm-zion-history",
+        "locator":  "Our History, paragraphs on 1820–1822",
+        "note":  "Withdrawal, first Discipline, ordinations, and Varick’s election as first bishop.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-zion-name",
+        "source_id":  "src-uscm-zion-history",
+        "locator":  "Our History, 1801 charter paragraph",
+        "note":  "The denomination dates adoption of Zion in the name to 1848 to distinguish it from the Philadelphia AME body.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-zion-reform",
+        "source_id":  "src-uscm-zion-exhibit",
+        "locator":  "Rochester AME Zion Church History",
+        "note":  "Local work associated with Harriet Tubman, Frederick Douglass and Thomas James, and Christopher Rush’s ministry.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-zion-belief",
+        "source_id":  "src-uscm-zion-history",
+        "locator":  "Our Beliefs",
+        "note":  "Salvation through Jesus Christ and renewal by divine grace through the Holy Spirit.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-zion-text",
+        "source_id":  "src-uscm-zion-discipline",
+        "locator":  "Articles of Religion and forms for Baptism and the Lord’s Supper",
+        "note":  "Historical denominational edition documents Methodist doctrines, sacramental forms and church order.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-zion-living",
+        "source_id":  "src-uscm-zion-history",
+        "locator":  "Our History, ‘Freedom Church’ paragraph",
+        "note":  "Current international continuation and abolition and civil-rights heritage.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-zion-proposal",
+        "source_id":  "src-uscm-zion-union",
+        "locator":  "Articles of agreement of the joint commission of the A M E and A M E Zion connections",
+        "note":  "Joint commission’s 1885 agreement proposed an organic union subject to further action.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-african-methodist-episcopal-zion-church-count",
+        "source_id":  "src-uscm-census",
+        "locator":  "2020 Group by Nation, group code 005, column D (Adherents)",
+        "note":  "304,704 U.S. adherents in 2020 for African Methodist Episcopal Zion Church.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-cme-formation",
+        "source_id":  "src-uscm-cme-tsha",
+        "locator":  "opening three paragraphs",
+        "note":  "Postwar petition, authorization and separate church organization in Jackson in December 1870.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-cme-bishops",
+        "source_id":  "src-uscm-cme-phillips",
+        "locator":  "chapters on the founding convention and early bishops",
+        "note":  "Institutional history of organization and the election of William Miles and Richard H. Vanderhorst.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-cme-name",
+        "source_id":  "src-uscm-cme-tsha",
+        "locator":  "1954 General Conference paragraph",
+        "note":  "General Conference approved the new name in Memphis in 1954.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-cme-teaching",
+        "source_id":  "src-uscm-cme-wcc",
+        "locator":  "paragraph on doctrine and discipline",
+        "note":  "Inherited Wesleyan doctrine and Methodist discipline and bishop-led polity.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-cme-council",
+        "source_id":  "src-uscm-cme-history",
+        "locator":  "Connectional Council paragraph",
+        "note":  "Authorized by General Conference in 1946 and operational in 1950.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-cme-activism",
+        "source_id":  "src-uscm-cme-civil",
+        "locator":  "abstract",
+        "note":  "Archival research on CME engagement with civil rights from the 1950s through the 1970s.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-cme-active",
+        "source_id":  "src-uscm-cme-history",
+        "locator":  "Connectional Council and church departments",
+        "note":  "Continuing connectional denomination and its organizational departments.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-christian-methodist-episcopal-church-count",
+        "source_id":  "src-uscm-census",
+        "locator":  "2020 Group by Nation, group code 101, column D (Adherents)",
+        "note":  "269,126 U.S. adherents in 2020 for Christian Methodist Episcopal Church.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-wes-roots",
+        "source_id":  "src-uscm-wes-history",
+        "locator":  "Wesleyan Methodist and Pilgrim Holiness historical sections",
+        "note":  "Antislavery Wesleyan Methodist organization and revivalist roots of Pilgrim Holiness.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-wes-merger",
+        "source_id":  "src-uscm-wes-union",
+        "locator":  "paragraph 50",
+        "note":  "Merger rejection in 1959, 1966 approvals, and June 26, 1968 union of the two denominations.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-wes-faith",
+        "source_id":  "src-uscm-wes-doctrine",
+        "locator":  "¶299, summary of Articles of Religion",
+        "note":  "Scripture, repentance and faith, justification, cleansing, perfecting in love and growth in grace.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-wes-media",
+        "source_id":  "src-uscm-wes-modern",
+        "locator":  "opening and ‘Wesleyan Life’ paragraphs",
+        "note":  "Predecessor periodicals joined in 1968 and Wesleyan Life succeeded the merged publication in 2004.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-wes-separate-wm",
+        "source_id":  "src-uscm-wes-minority",
+        "locator":  "Our History, paragraphs on 1967–1968",
+        "note":  "Account from Wesleyan Methodist churches and ministers who withdrew around the proposed merger.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-wes-separate-ph",
+        "source_id":  "src-uscm-wes-pilgrim",
+        "locator":  "paragraphs on 1966–1967",
+        "note":  "Account from Pilgrim Holiness congregations that organized independently during the merger period.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-wes-canada",
+        "source_id":  "src-uscm-wes-standard",
+        "locator":  "paragraph about Central Canada District",
+        "note":  "Standard Church of America congregations joined the continuing Wesleyan Church through the 2004 merger.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-wes-records",
+        "source_id":  "src-uscm-wes-archives",
+        "locator":  "collections introduction",
+        "note":  "Archive collects both merger partners’ records and records of the continuing denomination.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-wesleyan-church-count",
+        "source_id":  "src-uscm-census",
+        "locator":  "2020 Group by Nation, group code 467, column D (Adherents)",
+        "note":  "306,005 U.S. adherents in 2020 for The Wesleyan Church.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-army-roots",
+        "source_id":  "src-uscm-army-history",
+        "locator":  "opening and early timeline entries",
+        "note":  "The Booths established the East London mission work in 1865 and renamed it in 1878.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-army-name",
+        "source_id":  "src-uscm-army-archives",
+        "locator":  "introduction to the archive report",
+        "note":  "The Christian Mission became The Salvation Army in 1878, with a military-style structure.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-army-arrival",
+        "source_id":  "src-uscm-army-global",
+        "locator":  "‘The United States’",
+        "note":  "Official pioneer party led by George Scott Railton in 1880.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-army-current",
+        "source_id":  "src-uscm-army-history",
+        "locator":  "introductory paragraph and timeline",
+        "note":  "Continuing international Christian organization and development of religious and social services.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-army-teaching",
+        "source_id":  "src-uscm-army-doctrine",
+        "locator":  "Eleven doctrines and chapter 10, ‘People of God’",
+        "note":  "Wesleyan emphasis on conversion and sanctification, and spiritual practice without prescribed outward rites of baptism and communion.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-army-deed",
+        "source_id":  "src-uscm-army-doctrine",
+        "locator":  "Foreword and ‘Before you begin reading’",
+        "note":  "The 1878 foundational deed carried the body’s eleven doctrines.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-army-cofounder",
+        "source_id":  "src-uscm-army-catherine",
+        "locator":  "biographies of William and Catherine Booth",
+        "note":  "Catherine’s co-founding and public preaching, and William’s Methodist background.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-army-us-early",
+        "source_id":  "src-uscm-army-us",
+        "locator":  "paragraphs on the first American operations",
+        "note":  "Early U.S. work and official expansion.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-salvation-army-count",
+        "source_id":  "src-uscm-census",
+        "locator":  "2020 Group by Nation, group code 403, column D (Adherents)",
+        "note":  "141,098 U.S. adherents in 2020 for The Salvation Army.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-free-origins",
+        "source_id":  "src-uscm-free-history",
+        "locator":  "sections on Roberts and the Pekin convention",
+        "note":  "Reform, denominational controversy and organization by laypeople and clergy at Pekin on August 23, 1860.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-free-reforms",
+        "source_id":  "src-uscm-free-official",
+        "locator":  "‘The Story of B. T. Roberts’",
+        "note":  "Roberts’s objections to rented pews, slavery and the treatment of the poor, and the formation of the church.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-free-discipline",
+        "source_id":  "src-uscm-free-1860",
+        "locator":  "title page and Articles of Religion",
+        "note":  "Original Discipline adopted August 23, 1860.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-free-holiness",
+        "source_id":  "src-uscm-free-sanctification",
+        "locator":  "‘The Absence of an Article on Entire Sanctification in the Methodist Discipline’",
+        "note":  "Free Methodists adapted the Methodist Episcopal Discipline and explicitly added an article on entire sanctification.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-free-modern",
+        "source_id":  "src-uscm-free-2023",
+        "locator":  "Foreword and chapter 1, Articles of Religion",
+        "note":  "Current U.S. general conference and Free Methodist teaching on grace, sanctification and growth.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-free-ordination",
+        "source_id":  "src-uscm-free-women",
+        "locator":  "historical account of 1890, 1891 and 1974",
+        "note":  "Roberts argued for ordaining women; the General Conference approved equal status for women in ministry in 1974.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-free-methodist-church-usa-count",
+        "source_id":  "src-uscm-census",
+        "locator":  "2020 Group by Nation, group code 221, column D (Adherents)",
+        "note":  "71,634 U.S. adherents in 2020 for Free Methodist Church–USA.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscm-cme-school",
+        "source_id":  "src-uscm-cme-lane",
+        "locator":  "paragraphs on the first session of CME High School",
+        "note":  "Bishop Isaac Lane helped establish the school, and Jennie E. Lane was its first principal and teacher in 1882.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-methods",
+        "source_id":  "src-us-orthodox-methods",
+        "locator":  "Data collection and definition of adherents",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-greek",
+        "source_id":  "src-us-orthodox-greek",
+        "locator":  "Early parish organization, 1921 congress, patriarchal recognition and archbishops",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-charter",
+        "source_id":  "src-us-orthodox-charter",
+        "locator":  "First Charter and Charter of 1931",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-greekregs",
+        "source_id":  "src-us-orthodox-greekregs",
+        "locator":  "Introduction and Chapter 11, parish mission and governance",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-greeklit",
+        "source_id":  "src-us-orthodox-greeklit",
+        "locator":  "Creed, Eucharistic prayer and Holy Communion",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-patsavos",
+        "source_id":  "src-us-orthodox-patsavos",
+        "locator":  "Jurisdictional division and the Charter of 1931",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-oriental",
+        "source_id":  "src-us-orthodox-oriental",
+        "locator":  "Chalcedon and the Cyrillian formula",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-coptic",
+        "source_id":  "src-us-orthodox-coptic",
+        "locator":  "Summary and Medhat Riad Wassef’s account of the foundation",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-south",
+        "source_id":  "src-us-orthodox-south",
+        "locator":  "Description: diocesan formation and appointment of Bishop Youssef",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-coptlit",
+        "source_id":  "src-us-orthodox-coptlit",
+        "locator":  "Preface: work on the English, Coptic and Arabic liturgical texts",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-ethstart",
+        "source_id":  "src-us-orthodox-ethstart",
+        "locator":  "New York branch, mission and episcopal ordination",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-etharchive",
+        "source_id":  "src-us-orthodox-etharchive",
+        "locator":  "Historical note and scope and content note",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-ethrecon",
+        "source_id":  "src-us-orthodox-ethrecon",
+        "locator":  "July 2018 reconciliation and roles of the two patriarchs",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-ethlit",
+        "source_id":  "src-us-orthodox-ethlit",
+        "locator":  "Title page, Creed and eucharistic prayers",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-ethlocal",
+        "source_id":  "src-us-orthodox-ethlocal",
+        "locator":  "1984 parish foundation",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-ethap",
+        "source_id":  "src-us-orthodox-ethap",
+        "locator":  "Reporting on Ge’ez worship and Ethiopian migration",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-arm",
+        "source_id":  "src-us-orthodox-arm",
+        "locator":  "Armenian immigration, Worcester, diocesan establishment and St. Vartan Cathedral",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-armletter",
+        "source_id":  "src-us-orthodox-armletter",
+        "locator":  "Page 1: foundation in 1898",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-armnews",
+        "source_id":  "src-us-orthodox-armnews",
+        "locator":  "Khrimian’s founding encyclical and anniversary",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-armcil",
+        "source_id":  "src-us-orthodox-armcil",
+        "locator":  "History of the Armenian Prelacy and jurisdiction of the Holy See of Cilicia",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-armcreed",
+        "source_id":  "src-us-orthodox-armcreed",
+        "locator":  "The Havadamk in the Armenian Badarak",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-alaskan",
+        "source_id":  "src-us-orthodox-alaskan",
+        "locator":  "Russian Orthodox missionaries and Alaska Native communities",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-ocahist",
+        "source_id":  "src-us-orthodox-ocahist",
+        "locator":  "The Metropolia, All-American councils and autocephaly",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-ocamonk",
+        "source_id":  "src-us-orthodox-ocamonk",
+        "locator":  "Kodiak mission and Herman of Alaska",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-ocatomos",
+        "source_id":  "src-us-orthodox-ocatomos",
+        "locator":  "Grant of self-government, numbered provisions and dated signatures",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-ocarec",
+        "source_id":  "src-us-orthodox-ocarec",
+        "locator":  "2016 concelebration and Constantinople’s position on recognition",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-assembly",
+        "source_id":  "src-us-orthodox-assembly",
+        "locator":  "Member jurisdictions, GOARCH and OCA",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-ocacreeds",
+        "source_id":  "src-us-orthodox-ocacreeds",
+        "locator":  "Symbol of Faith, baptism and Divine Liturgy",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-ocastat",
+        "source_id":  "src-us-orthodox-ocastat",
+        "locator":  "Preamble and Article I, identity and governance",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-armwest",
+        "source_id":  "src-us-orthodox-armwest",
+        "locator":  "Official foundation on November 28, 1927",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-census-246",
+        "source_id":  "src-us-orthodox-census",
+        "locator":  "Table 1, national totals, religious body code 246",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-census-186",
+        "source_id":  "src-us-orthodox-census",
+        "locator":  "Table 1, national totals, religious body code 186",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-census-204",
+        "source_id":  "src-us-orthodox-census",
+        "locator":  "Table 1, national totals, religious body code 204",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-census-050",
+        "source_id":  "src-us-orthodox-census",
+        "locator":  "Table 1, national totals, religious body code 050",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-orthodox-census-331",
+        "source_id":  "src-us-orthodox-census",
+        "locator":  "Table 1, national totals, religious body code 331",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-ffr-count",
+        "source_id":  "src-us-pent-census",
+        "locator":  "Table 1, national row FFR",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-vineyard-count",
+        "source_id":  "src-us-pent-census",
+        "locator":  "Table 1, national row 463",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-cooljc-count",
+        "source_id":  "src-us-pent-census",
+        "locator":  "Table 1, national row 155",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-upci-count",
+        "source_id":  "src-us-pent-census",
+        "locator":  "Table 1, national row 454 (adherents NR)",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-cogop-count",
+        "source_id":  "src-us-pent-census",
+        "locator":  "Table 1, national row 145 (adherents NR)",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-mailing",
+        "source_id":  "src-us-pent-mailing",
+        "locator":  "p. 1, concluding paragraph on the two address-list-only bodies",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-directory",
+        "source_id":  "src-us-pent-directory",
+        "locator":  "pp. 1–2, online directories with address-list size data",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-fgh",
+        "source_id":  "src-us-pent-fgh",
+        "locator":  "Opening account and 1983–1989, 1989–1996, and 1996–2008 sections",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-fgm",
+        "source_id":  "src-us-pent-fgm",
+        "locator":  "Mission Statement",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-fgc",
+        "source_id":  "src-us-pent-fgc",
+        "locator":  "Coalition overview",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-vh",
+        "source_id":  "src-us-pent-vh",
+        "locator":  "Kenn Gulliksen and John Wimber sections",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-vw",
+        "source_id":  "src-us-pent-vw",
+        "locator":  "Relationship with Calvary Chapel and start of Anaheim Vineyard",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-vb",
+        "source_id":  "src-us-pent-vb",
+        "locator":  "Core Values and Statement of Faith",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-vg",
+        "source_id":  "src-us-pent-vg",
+        "locator":  "Brief Governance History and Bylaws Review",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-vn",
+        "source_id":  "src-us-pent-vn",
+        "locator":  "Version history, Version 3.0 ratification and effective date",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-ch",
+        "source_id":  "src-us-pent-ch",
+        "locator":  "Our Founder, including Lawson’s 1914 baptism and 1919 inception",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-cb",
+        "source_id":  "src-us-pent-cb",
+        "locator":  "Opening history and Statement of Faith",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-cm",
+        "source_id":  "src-us-pent-cm",
+        "locator":  "History of the National Missionary Department",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-ca",
+        "source_id":  "src-us-pent-ca",
+        "locator":  "Collection overview, including related denominations",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-cd",
+        "source_id":  "src-us-pent-cd",
+        "locator":  "Doctrinal subscription question",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-uh",
+        "source_id":  "src-us-pent-uh",
+        "locator":  "History, organization and international structure",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-ua",
+        "source_id":  "src-us-pent-ua",
+        "locator":  "Original merger conference at Kiel Auditorium and founding footprint",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-ub",
+        "source_id":  "src-us-pent-ub",
+        "locator":  "Fundamental Doctrine, The One True God, and Baptism of the Holy Ghost",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-ur",
+        "source_id":  "src-us-pent-ur",
+        "locator":  "Historical account of predecessor unions, racial separation and 1945 merger",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-ph",
+        "source_id":  "src-us-pent-ph",
+        "locator":  "1886, 1923 and subsequent mission milestones",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-pa",
+        "source_id":  "src-us-pent-pa",
+        "locator":  "November 23 proceedings on the constitution",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-pc",
+        "source_id":  "src-us-pent-pc",
+        "locator":  "Historical note on 1923 removal, reorganizing meetings, and succession",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-pj",
+        "source_id":  "src-us-pent-pj",
+        "locator":  "Opinion of March 7, 1952, procedural history and injunction",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-pf",
+        "source_id":  "src-us-pent-pf",
+        "locator":  "How did you get the name Church of God of Prophecy?",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-pb",
+        "source_id":  "src-us-pent-pb",
+        "locator":  "Trinity, sanctification, and baptism with the Holy Spirit",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-pm",
+        "source_id":  "src-us-pent-pm",
+        "locator":  "Teachings of the Church of God over which M. A. Tomlinson is General Overseer",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-pd",
+        "source_id":  "src-us-pent-pd",
+        "locator":  "Catalog description of the published naming case",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-ps",
+        "source_id":  "src-us-pent-ps",
+        "locator":  "History, separation in 1993",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-goss-office",
+        "source_id":  "src-us-pent-goss-office",
+        "locator":  "Biography, election in 1945 and service through 1951",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-goss",
+        "source_id":  "src-us-pent-goss",
+        "locator":  "From Infidel to Christ, opening and closing biographical sections",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-merger",
+        "source_id":  "src-us-pent-merger",
+        "locator":  "Merger preparations and first officers",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-pent-witherspoon",
+        "source_id":  "src-us-pent-witherspoon",
+        "locator":  "PAJC chairmanship and election at the 1945 merger",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ucc-census",
+        "source_id":  "src-uscr-census",
+        "locator":  "2020 Group by Nation, group code 443",
+        "note":  "924,744 adherents",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-rca-census",
+        "source_id":  "src-uscr-census",
+        "locator":  "2020 Group by Nation, group code 371",
+        "note":  "235,195 adherents",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-lcmc-census",
+        "source_id":  "src-uscr-census",
+        "locator":  "2020 Group by Nation, group code 255",
+        "note":  "194,144 adherents",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ecc-census",
+        "source_id":  "src-uscr-census",
+        "locator":  "2020 Group by Nation, group code 201",
+        "note":  "154,267 adherents",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-crc-census",
+        "source_id":  "src-uscr-census",
+        "locator":  "2020 Group by Nation, group code 105",
+        "note":  "149,096 adherents",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-efca-census",
+        "source_id":  "src-uscr-census",
+        "locator":  "2020 Group by Nation, group code 203",
+        "note":  "1,602 congregations. Adherents cell is blank.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ucc-streams",
+        "source_id":  "src-uscr-ucc-beliefs",
+        "locator":  "Four predecessor traditions",
+        "note":  "Identifies both intermediate partners and distinguishes the Christian and German Reformed streams.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ucc-union",
+        "source_id":  "src-uscr-ucc-history",
+        "locator":  "The United Church of Christ",
+        "note":  "Cleveland uniting synod of June 25, 1957, and the roles of James E. Wagner and Fred Hoskins.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ucc-minorities",
+        "source_id":  "src-uscr-ucc-archive",
+        "locator":  "Scope and Contents, Series 2 and Historical Note",
+        "note":  "Documents church votes and the Cadman Memorial Church challenge against moderator Helen Kenyon. Identifies Congregational alternatives after the merger.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ucc-union-text",
+        "source_id":  "src-uscr-ucc-basis",
+        "locator":  "Preamble and sections on faith and polity",
+        "note":  "The agreement that supplied the terms of the union.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ucc-faith",
+        "source_id":  "src-uscr-ucc-statement",
+        "locator":  "Traditional version and About this testimony",
+        "note":  "Text and 1959 General Synod adoption of the original testimony.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ucc-constitutional",
+        "source_id":  "src-uscr-ucc-herbster",
+        "locator":  "Third General Synod, 1961",
+        "note":  "Constitutional consolidation and election of the first sole president, Ben Mohr Herbster.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ucc-autonomy",
+        "source_id":  "src-uscr-ucc-polity",
+        "locator":  "Patterns of Polity and The Autonomy of the Local Church",
+        "note":  "Explains local freedom and accountability within the wider church.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ucc-marriage",
+        "source_id":  "src-uscr-ucc-polity",
+        "locator":  "Equal Marriage Rights for All",
+        "note":  "General Synod\u0027s 2005 resolution and associated resources.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-rca-origins",
+        "source_id":  "src-uscr-rca-history",
+        "locator":  "1628 origins and early Dutch congregations",
+        "note":  "The denomination dates its origins to Communion at the first New Amsterdam congregation.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-rca-michaelius",
+        "source_id":  "src-uscr-rca-letter",
+        "locator":  "Letter of Reverend Jonas Michaelius, August 11, 1628",
+        "note":  "The minister\u0027s account of organizing the first church in New Netherland.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-rca-charter",
+        "source_id":  "src-uscr-rca-order",
+        "locator":  "Historical Note and Incorporation of the General Synod",
+        "note":  "The 1819 act incorporated the General Synod. The current denominational name dates to 1867.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-rca-west",
+        "source_id":  "src-uscr-rca-joint",
+        "locator":  "Immigrant Church and Separation of 1857",
+        "note":  "Records the relationship between Dutch immigration, the Classis of Holland, and the early separation.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-rca-vanraalte-role",
+        "source_id":  "src-uscr-rca-vanraalte",
+        "locator":  "History of the Institute, opening paragraphs",
+        "note":  "Van Raalte led a body of immigrants and founded the Holland settlement in 1847.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-rca-missions",
+        "source_id":  "src-uscr-rca-history",
+        "locator":  "Mission work and westward growth",
+        "note":  "John and Harriet Scudder began mission work in Ceylon in 1819 and the church expanded westward.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-rca-doctrine",
+        "source_id":  "src-uscr-rca-confessions",
+        "locator":  "Standards of Unity and historic ecumenical creeds",
+        "note":  "Names the three heritage confessions and the Confession of Belhar.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-rca-belhar-status",
+        "source_id":  "src-uscr-rca-belhar",
+        "locator":  "History and adoption of the confession",
+        "note":  "South African origins and the 2009–2010 RCA adoption and ratification.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-rca-departures",
+        "source_id":  "src-uscr-rca-vision",
+        "locator":  "Notes to Consolidated Financial Statements, note 11, p. 20",
+        "note":  "Vision 2020 discernment, 2021 decisions, and subsequent congregational departures.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-crc-formation",
+        "source_id":  "src-uscr-crc-history",
+        "locator":  "From the Netherlands to North America",
+        "note":  "Explains Dutch Seceder immigration and records the concerns voiced by the 1857 congregations.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-crc-separation",
+        "source_id":  "src-uscr-rca-joint",
+        "locator":  "Separation of 1857 and further departures in the 1880s",
+        "note":  "Joint account of the 1857 division and the subsequent Freemasonry dispute.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-crc-early-acts",
+        "source_id":  "src-uscr-crc-acts",
+        "locator":  "Translation of the Minutes of the Highest Assembly, 1857–1880",
+        "note":  "Archival index to the earliest assembly proceedings.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-crc-polity",
+        "source_id":  "src-uscr-crc-order",
+        "locator":  "Historical introduction and historic editions",
+        "note":  "Distinguishes the inherited Church Order of Dort from its later CRC revisions.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-crc-expansion",
+        "source_id":  "src-uscr-crc-history",
+        "locator":  "Language transition, common grace dispute, and postwar Canadian immigration",
+        "note":  "Explains institutional expansion and two periods of immigration.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-crc-milestones",
+        "source_id":  "src-uscr-crc-timeline",
+        "locator":  "1890, 1905, and 1924 chronological entries",
+        "note":  "Documents the eastern merger, first Canadian congregation, and common grace controversy.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-crc-confessions",
+        "source_id":  "src-uscr-crc-faith",
+        "locator":  "Creeds and confessions and contemporary testimonies",
+        "note":  "Names the three historic Reformed confessions and the distinct contemporary testimonies.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-crc-belhar-status",
+        "source_id":  "src-uscr-crc-belhar",
+        "locator":  "Summary of Synod decisions, Belhar Confession",
+        "note":  "Synod placed Belhar in the category of contemporary testimony and left adherence outside the Covenant for Officebearers.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-crc-women-office",
+        "source_id":  "src-uscr-crc-women",
+        "locator":  "History and current position",
+        "note":  "Documents the CRC synods\u0027 decisions on women\u0027s ordination and authority left to local churches.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-crc-urc-organization",
+        "source_id":  "src-uscr-crc-urc",
+        "locator":  "History of the URCNA, 1994–1996",
+        "note":  "Departing churches explain objections and record their first federation synod in 1996.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-lcmc-agreement",
+        "source_id":  "src-uscr-lcmc-ccm",
+        "locator":  "Paragraphs 11–20, Ministry and Ordination",
+        "note":  "The agreement uses the historic episcopate within a full communion relationship and preserves the churches\u0027 distinct constitutional frameworks.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-lcmc-foundation",
+        "source_id":  "src-uscr-lcmc-history",
+        "locator":  "March and October 2001 timeline entries",
+        "note":  "March 27 constitutional adoption and 25 charter congregations, followed by the first national convention.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-lcmc-early-growth",
+        "source_id":  "src-uscr-lcmc-history",
+        "locator":  "2002–2003 timeline entries",
+        "note":  "Decision to become independent of WordAlone, national office, and opening to international congregations.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-lcmc-dual",
+        "source_id":  "src-uscr-lcmc-wordalone",
+        "locator":  "Mark Chavez\u0027s open letter, paragraphs on LCMC and the ordination exception",
+        "note":  "A WordAlone leader recalls overlapping affiliations and the ELCA\u0027s 2001 provision for exceptional ordinations.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-lcmc-elca-view",
+        "source_id":  "src-uscr-lcmc-elca-news",
+        "locator":  "April 5, 2000 report on the WordAlone organizing convention",
+        "note":  "ELCA News records that participants planned to seek reform within the ELCA while opposing the historic episcopate requirement.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-lcmc-doctrine",
+        "source_id":  "src-uscr-lcmc-constitution",
+        "locator":  "Articles 2 and 3",
+        "note":  "Current constitutional language on confessional standards, mission and authority.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-lcmc-coordinator",
+        "source_id":  "src-uscr-lcmc-history",
+        "locator":  "2010 and 2020 gatherings and leadership transitions",
+        "note":  "Introduces Mark Vander Tuig and Mike Bradley and documents later growth and gatherings.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ecc-organization",
+        "source_id":  "src-uscr-ecc-history",
+        "locator":  "Covenant Foundations and Pietist Roots",
+        "note":  "Dates U.S. organization and describes the Mission Friends, Rosenius, Waldenström and F. M. Johnson.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ecc-yearbook-series",
+        "source_id":  "src-uscr-ecc-yearbooks",
+        "locator":  "Collection description and 1885 onward",
+        "note":  "Digitized yearbooks contain administrative, educational, and home and foreign mission reports.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ecc-identity",
+        "source_id":  "src-uscr-ecc-affirmations",
+        "locator":  "Acknowledgments and the six affirmation sections",
+        "note":  "Describes the authority of Scripture, new birth, fellowship, mission, dependence on the Holy Spirit, and Christian freedom.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ecc-school",
+        "source_id":  "src-uscr-ecc-history",
+        "locator":  "Songs, Schools, and an Abiding Question",
+        "note":  "Covenant took responsibility for its school in 1891 and moved it to Chicago in 1894.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ecc-missions",
+        "source_id":  "src-uscr-ecc-history",
+        "locator":  "Covenant Home and World Mission",
+        "note":  "Describes the Home of Mercy and early Alaska and China missions.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ecc-growth",
+        "source_id":  "src-uscr-ecc-history",
+        "locator":  "Strength Through Diversity",
+        "note":  "Documents Willie Jemison and Oakdale Covenant, and the founding of a Spanish-language training ministry.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ecc-archives",
+        "source_id":  "src-uscr-ecc-northpark",
+        "locator":  "Covenant Archives and Historical Library",
+        "note":  "Repository documents the development of North Park and the Covenant since the late 1800s.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-efca-roots",
+        "source_id":  "src-uscr-efca-history",
+        "locator":  "19th century origins and 20th century developments",
+        "note":  "Distinguishes Swedish and Norwegian–Danish Free Church institutions and traces their cooperation before the merger.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-efca-merger",
+        "source_id":  "src-uscr-efca-history",
+        "locator":  "20th–21st Centuries: Evangelical Free Church of America",
+        "note":  "June 1950 merger, participating bodies, and roles of Olson and Halleen.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-efca-first-year",
+        "source_id":  "src-uscr-efca-yearbook",
+        "locator":  "Presidential and financial reports, and Trinity Seminary and Bible College report",
+        "note":  "First post-merger yearbook records the work of the merged body.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-efca-schools",
+        "source_id":  "src-uscr-efca-trinity",
+        "locator":  "History of Trinity College and Trinity Evangelical Divinity School",
+        "note":  "Traces Swedish and Norwegian–Danish education and the institutional union before the denominational merger.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-efca-development",
+        "source_id":  "src-uscr-efca-history",
+        "locator":  "20th–21st Centuries, post-merger growth and doctrinal revisions",
+        "note":  "Describes growth, diversification efforts, and the 2008 and 2019 statements.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-efca-1950-beliefs",
+        "source_id":  "src-uscr-efca-original",
+        "locator":  "Articles 2 and 8–11",
+        "note":  "1950 teaching on Scripture, the church, local polity, and premillennial return.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-efca-2019-beliefs",
+        "source_id":  "src-uscr-efca-current",
+        "locator":  "Articles 1–10, especially 2, 5, 7, and 9",
+        "note":  "Current statement sets out authority of Scripture, Christ\u0027s saving work, the church, and Christ\u0027s return.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-efca-congregations",
+        "source_id":  "src-uscr-efca-polity",
+        "locator":  "Congregational government",
+        "note":  "Official explanation of autonomy and interdependence among the member churches.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-crc-prc-testimony",
+        "source_id":  "src-uscr-crc-prc",
+        "locator":  "Herman Hoeksema\u0027s account of the 1924–1925 division",
+        "note":  "A participant gives the rationale of the deposed church leaders and the churches they organized.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ecc-ordination",
+        "source_id":  "src-uscr-ecc-women",
+        "locator":  "Resource introduction and 1987 adoption note",
+        "note":  "Identifies the 1976 decision to ordain women and the adoption of a paper explaining its theological rationale.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ucc-afro-recognition",
+        "source_id":  "src-uscr-ucc-afro-archive",
+        "locator":  "Historical Council projects and Afro-Christian Convention Archives",
+        "note":  "Identifies the fifth stream, its own convention and repository, and 2023 synod recognition.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-uscr-ucc-afro-history",
+        "source_id":  "src-uscr-ucc-afro-stream",
+        "locator":  "Julia Speller\u0027s account of the Afro-Christian stream and its institutional history",
+        "note":  "Distinguishes the 1931 Congregational Christian connection, the 1950 Convention of the South, and the 1957 union.",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-census",
+        "source_id":  "src-us-restoration-census",
+        "locator":  "2020 United States table, rows for Church of Jesus Christ of Latter-day Saints and Jehovah’s Witnesses",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-lds-organization",
+        "source_id":  "src-us-restoration-lds-organization",
+        "locator":  "Organization meeting, early believers, Articles and Covenants, and discussion of meeting location",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-lds-name",
+        "source_id":  "src-us-restoration-lds-name",
+        "locator":  "Historical introduction and journal text naming the church",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-lds-covenants",
+        "source_id":  "src-us-restoration-lds-covenants",
+        "locator":  "Introduction on the Articles and Covenants and first conference",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-lds-faith",
+        "source_id":  "src-us-restoration-lds-faith",
+        "locator":  "Heading and articles 1, 3–6, and 8–9",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-lds-rigdon",
+        "source_id":  "src-us-restoration-lds-rigdon",
+        "locator":  "Biography: Reformed Baptist ministry, baptism, presidency and succession bid",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-lds-succession",
+        "source_id":  "src-us-restoration-lds-succession",
+        "locator":  "Competing leadership claims and reconstitution of the First Presidency",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-lds-nps",
+        "source_id":  "src-us-restoration-lds-nps",
+        "locator":  "Nauvoo deaths, succession crisis and Brigham Young’s leadership",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-lds-trail",
+        "source_id":  "src-us-restoration-lds-trail",
+        "locator":  "1846 exodus and July 1847 arrival in the Salt Lake Valley",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-lds-manifesto",
+        "source_id":  "src-us-restoration-lds-manifesto",
+        "locator":  "Woodruff’s September 1890 statement; October General Conference vote",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-lds-1978",
+        "source_id":  "src-us-restoration-lds-1978",
+        "locator":  "Heading, First Presidency letter and September 30 vote",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-lds-style",
+        "source_id":  "src-us-restoration-lds-style",
+        "locator":  "Full church name and guidance on Mormon and LDS labels",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-jw-origins",
+        "source_id":  "src-us-restoration-jw-origins",
+        "locator":  "Early Bible study, 1879 periodical, 1884 corporation and later organization",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-jw-history",
+        "source_id":  "src-us-restoration-jw-history",
+        "locator":  "Historical section on Russell, the Second Adventist contacts, and the 1931 convention",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-jw-succession",
+        "source_id":  "src-us-restoration-jw-succession",
+        "locator":  "Chapter summary on the leadership controversy and competing claims of continuity",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-jw-name",
+        "source_id":  "src-us-restoration-jw-name",
+        "locator":  "July 26, 1931 convention and reproduced name resolution",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-jw-beliefs",
+        "source_id":  "src-us-restoration-jw-beliefs",
+        "locator":  "Sections on God, Bible, Jesus, the Kingdom and salvation",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-jw-government",
+        "source_id":  "src-us-restoration-jw-government",
+        "locator":  "Opening explanation and the two ways the Governing Body directs the Witnesses",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-jw-barnette",
+        "source_id":  "src-us-restoration-jw-barnette",
+        "locator":  "Opinion, 319 U.S. 624, 626–630 and 642, decided June 14, 1943",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-jw-translation",
+        "source_id":  "src-us-restoration-jw-translation",
+        "locator":  "Opening definition and serial publication dates, 1950–1960",
+        "accessed":  "2026-11-22"
+    },
+    {
+        "id":  "cite-us-restoration-lds-book-of-mormon",
+        "source_id":  "src-us-restoration-lds-book-of-mormon",
+        "locator":  "First edition, historical introduction and title page",
+        "accessed":  "2026-11-22"
     }
 ]
 };

@@ -100,6 +100,78 @@ async function assertExpandedCatalog(browser, url) {
     await page.screenshot({path: path.join(output, 'review-lineage-new-families.png')});
     await page.close();
 }
+async function assertCoverageDiscovery(browser, url, mobile) {
+    const page = await browser.newPage(mobile
+        ? { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true }
+        : { viewport: { width: 1440, height: 1000 } });
+    try {
+        const errors = [];
+        page.on('pageerror', error => errors.push(error.message));
+        await page.goto(url);
+        await page.locator('#graph .time-node').first().waitFor();
+        const hidden = ['church-of-jesus-christ-of-latter-day-saints', 'jehovahs-witnesses'];
+        const retained = await page.evaluate(ids => CHURCHTREE_DATA.nodes
+            .filter(node => ids.includes(node.id))
+            .map(({ id, name, aliases, tradition_family }) => ({ id, name, aliases, tradition_family })), hidden);
+        assert.deepEqual(retained.map(node => node.id).sort(), hidden);
+        const search = page.getByRole('button', { name: 'Search church history', exact: true });
+        const results = page.locator('#results');
+        for (const view of ['timeline', 'horizontal', 'lineage']) {
+            await setView(page, view);
+            await page.locator('#graph .node').first().waitFor();
+            const graphIds = await page.locator('#graph .node').evaluateAll(items => items.flatMap(item => [
+                item.getAttribute('data-id'),
+                ...(item.getAttribute('data-members')?.split(',') ?? item.__data__?.members ?? []),
+            ]));
+            for (const { id, tradition_family } of retained) {
+                assert.equal(await page.locator('#branch option').filter({ hasText: tradition_family }).count(), 0, view);
+                assert(!graphIds.includes(id), `${view} exposed ${id}`);
+            }
+        }
+        await setView(page, 'timeline');
+        const filters = page.getByRole('button', { name: 'Filters', exact: true });
+        if (await filters.getAttribute('aria-expanded') === 'true') await filters.click();
+        await search.click();
+        for (const { name, aliases } of retained) {
+            for (const query of [name, ...aliases]) {
+                await page.locator('#search').fill(query);
+                const displayed = await results.locator('button').allTextContents();
+                for (const record of retained) {
+                    assert(!displayed.some(result => result.split(' · ').includes(record.name)),
+                        `Searching for "${query}" exposed ${record.id}`);
+                }
+            }
+        }
+        for (const view of ['timeline', 'horizontal']) {
+            if (await search.getAttribute('aria-expanded') === 'true') await search.click();
+            await setView(page, view);
+            if (await filters.getAttribute('aria-expanded') === 'true') await filters.click();
+            await search.click();
+            await page.locator('#search').fill('Church of God');
+            const names = await results.locator('button').allTextContents();
+            assert(names.some(name => name.includes('Anderson')), names.join('\n'));
+            assert(names.some(name => name.includes('Cleveland')), names.join('\n'));
+            assert(names.some(name => name.includes('of Prophecy')), names.join('\n'));
+            const result = results.getByRole('button', { name: /Church of God.*Anderson/ });
+            if (mobile) await result.tap();
+            else await result.click();
+            assert.equal(await page.locator('#details h2').innerText(), 'Church of God (Anderson, Indiana)');
+            if (mobile) {
+                const dialog = page.getByRole('dialog', { name: 'Historical details' });
+                await dialog.waitFor();
+                await page.keyboard.press('Escape');
+                await dialog.waitFor({ state: 'hidden' });
+            }
+            await page.locator('#graph .node.selected').first().waitFor();
+            const selected = await page.locator('#graph .node.selected').first().getAttribute('data-members');
+            assert(selected?.split(',').includes('church-of-god-anderson'), view);
+        }
+        assert.deepEqual(errors, []);
+    } finally {
+        await page.close();
+    }
+}
+
 (async () => {
     let browser;
     try {
@@ -321,7 +393,10 @@ async function assertExpandedCatalog(browser, url) {
         await info.click();
         assert(await page.locator('#details').isVisible());
         assert.deepEqual(errors, []);
-        await assertExpandedCatalog(browser, `http://127.0.0.1:${server.address().port}/church-history/`);
+        const url = `http://127.0.0.1:${server.address().port}/church-history/`;
+        await assertCoverageDiscovery(browser, url, false);
+        await assertCoverageDiscovery(browser, url, true);
+        await assertExpandedCatalog(browser, url);
         console.log(JSON.stringify({ passed: true, families: families.length, clustered: initial.clusters.length, zoomed: zoomed.clusters.length, collapsed: collapsed.clusters.length, browserErrors: errors }));
     }
     finally {
