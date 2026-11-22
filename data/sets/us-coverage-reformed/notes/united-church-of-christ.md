@@ -1,0 +1,9 @@
+# United Church of Christ
+
+Audit rank 18, census code 443. The 1957 marker is the effective Cleveland union. Reformed is a broad placement for a union with Congregational, Christian Connection, German Reformed, and German Evangelical roots, and the Afro-Christian Convention as a distinct fifth historical stream.
+
+**Covered within scope.** The profile names both immediate partners and both earlier unions, the authority dispute, Congregational alternatives, the 1959 Statement of Faith, 1961 constitutional consolidation, later national witness, and the 2023 acknowledgment of the Afro-Christian Convention. The [Basis of Union](https://www.ucc.org/who-we-are/about/general-synod/general-synod-resolutions-regarding-environmental-justice/beliefs/beliefs_basis-of-union/) sets out the terms. The [Congregational Library & Archives finding aid](https://congrelib.libraryhost.com/repositories/2/resources/1164) independently locates the votes, litigation and minority responses.
+
+**Priority A missing nodes and relationships.** Research Congregational Christian Churches (1931 union to 1957) and Evangelical and Reformed Church (1934 union to 1957) together for paired merger edges. Disambiguate the German Reformed Church in the United States of the 1934 merger and later uses of the name. English Separatists is distant ancestry for one stream. The Christian Connection contribution needs its own identity. The existing Stone–Campbell Churches of Christ body is distinct.
+
+**Priority B missing episodes.** Check local accession in the archive's vote series and the separate histories of the NACCC and CCCC. Use the [Afro-Christian Convention Archives](https://www.ucc.org/who-we-are/about/history/historical-council-of-the-united-church-of-christ/) for a fuller account of the Convention of the South and local Black congregations. Later milestones sample General Synod action through 2023.

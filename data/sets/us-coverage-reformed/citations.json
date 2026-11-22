@@ -1,0 +1,415 @@
+[
+  {
+    "id": "cite-uscr-ucc-census",
+    "source_id": "src-uscr-census",
+    "locator": "2020 Group by Nation, group code 443",
+    "note": "924,744 adherents",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-rca-census",
+    "source_id": "src-uscr-census",
+    "locator": "2020 Group by Nation, group code 371",
+    "note": "235,195 adherents",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-lcmc-census",
+    "source_id": "src-uscr-census",
+    "locator": "2020 Group by Nation, group code 255",
+    "note": "194,144 adherents",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ecc-census",
+    "source_id": "src-uscr-census",
+    "locator": "2020 Group by Nation, group code 201",
+    "note": "154,267 adherents",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-crc-census",
+    "source_id": "src-uscr-census",
+    "locator": "2020 Group by Nation, group code 105",
+    "note": "149,096 adherents",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-efca-census",
+    "source_id": "src-uscr-census",
+    "locator": "2020 Group by Nation, group code 203",
+    "note": "1,602 congregations. Adherents cell is blank.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ucc-streams",
+    "source_id": "src-uscr-ucc-beliefs",
+    "locator": "Four predecessor traditions",
+    "note": "Identifies both intermediate partners and distinguishes the Christian and German Reformed streams.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ucc-union",
+    "source_id": "src-uscr-ucc-history",
+    "locator": "The United Church of Christ",
+    "note": "Cleveland uniting synod of June 25, 1957, and the roles of James E. Wagner and Fred Hoskins.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ucc-minorities",
+    "source_id": "src-uscr-ucc-archive",
+    "locator": "Scope and Contents, Series 2 and Historical Note",
+    "note": "Documents church votes and the Cadman Memorial Church challenge against moderator Helen Kenyon. Identifies Congregational alternatives after the merger.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ucc-union-text",
+    "source_id": "src-uscr-ucc-basis",
+    "locator": "Preamble and sections on faith and polity",
+    "note": "The agreement that supplied the terms of the union.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ucc-faith",
+    "source_id": "src-uscr-ucc-statement",
+    "locator": "Traditional version and About this testimony",
+    "note": "Text and 1959 General Synod adoption of the original testimony.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ucc-constitutional",
+    "source_id": "src-uscr-ucc-herbster",
+    "locator": "Third General Synod, 1961",
+    "note": "Constitutional consolidation and election of the first sole president, Ben Mohr Herbster.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ucc-autonomy",
+    "source_id": "src-uscr-ucc-polity",
+    "locator": "Patterns of Polity and The Autonomy of the Local Church",
+    "note": "Explains local freedom and accountability within the wider church.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ucc-marriage",
+    "source_id": "src-uscr-ucc-polity",
+    "locator": "Equal Marriage Rights for All",
+    "note": "General Synod's 2005 resolution and associated resources.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-rca-origins",
+    "source_id": "src-uscr-rca-history",
+    "locator": "1628 origins and early Dutch congregations",
+    "note": "The denomination dates its origins to Communion at the first New Amsterdam congregation.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-rca-michaelius",
+    "source_id": "src-uscr-rca-letter",
+    "locator": "Letter of Reverend Jonas Michaelius, August 11, 1628",
+    "note": "The minister's account of organizing the first church in New Netherland.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-rca-charter",
+    "source_id": "src-uscr-rca-order",
+    "locator": "Historical Note and Incorporation of the General Synod",
+    "note": "The 1819 act incorporated the General Synod. The current denominational name dates to 1867.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-rca-west",
+    "source_id": "src-uscr-rca-joint",
+    "locator": "Immigrant Church and Separation of 1857",
+    "note": "Records the relationship between Dutch immigration, the Classis of Holland, and the early separation.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-rca-vanraalte-role",
+    "source_id": "src-uscr-rca-vanraalte",
+    "locator": "History of the Institute, opening paragraphs",
+    "note": "Van Raalte led a body of immigrants and founded the Holland settlement in 1847.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-rca-missions",
+    "source_id": "src-uscr-rca-history",
+    "locator": "Mission work and westward growth",
+    "note": "John and Harriet Scudder began mission work in Ceylon in 1819 and the church expanded westward.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-rca-doctrine",
+    "source_id": "src-uscr-rca-confessions",
+    "locator": "Standards of Unity and historic ecumenical creeds",
+    "note": "Names the three heritage confessions and the Confession of Belhar.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-rca-belhar-status",
+    "source_id": "src-uscr-rca-belhar",
+    "locator": "History and adoption of the confession",
+    "note": "South African origins and the 2009–2010 RCA adoption and ratification.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-rca-departures",
+    "source_id": "src-uscr-rca-vision",
+    "locator": "Notes to Consolidated Financial Statements, note 11, p. 20",
+    "note": "Vision 2020 discernment, 2021 decisions, and subsequent congregational departures.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-crc-formation",
+    "source_id": "src-uscr-crc-history",
+    "locator": "From the Netherlands to North America",
+    "note": "Explains Dutch Seceder immigration and records the concerns voiced by the 1857 congregations.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-crc-separation",
+    "source_id": "src-uscr-rca-joint",
+    "locator": "Separation of 1857 and further departures in the 1880s",
+    "note": "Joint account of the 1857 division and the subsequent Freemasonry dispute.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-crc-early-acts",
+    "source_id": "src-uscr-crc-acts",
+    "locator": "Translation of the Minutes of the Highest Assembly, 1857–1880",
+    "note": "Archival index to the earliest assembly proceedings.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-crc-polity",
+    "source_id": "src-uscr-crc-order",
+    "locator": "Historical introduction and historic editions",
+    "note": "Distinguishes the inherited Church Order of Dort from its later CRC revisions.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-crc-expansion",
+    "source_id": "src-uscr-crc-history",
+    "locator": "Language transition, common grace dispute, and postwar Canadian immigration",
+    "note": "Explains institutional expansion and two periods of immigration.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-crc-milestones",
+    "source_id": "src-uscr-crc-timeline",
+    "locator": "1890, 1905, and 1924 chronological entries",
+    "note": "Documents the eastern merger, first Canadian congregation, and common grace controversy.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-crc-confessions",
+    "source_id": "src-uscr-crc-faith",
+    "locator": "Creeds and confessions and contemporary testimonies",
+    "note": "Names the three historic Reformed confessions and the distinct contemporary testimonies.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-crc-belhar-status",
+    "source_id": "src-uscr-crc-belhar",
+    "locator": "Summary of Synod decisions, Belhar Confession",
+    "note": "Synod placed Belhar in the category of contemporary testimony and left adherence outside the Covenant for Officebearers.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-crc-women-office",
+    "source_id": "src-uscr-crc-women",
+    "locator": "History and current position",
+    "note": "Documents the CRC synods' decisions on women's ordination and authority left to local churches.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-crc-urc-organization",
+    "source_id": "src-uscr-crc-urc",
+    "locator": "History of the URCNA, 1994–1996",
+    "note": "Departing churches explain objections and record their first federation synod in 1996.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-lcmc-agreement",
+    "source_id": "src-uscr-lcmc-ccm",
+    "locator": "Paragraphs 11–20, Ministry and Ordination",
+    "note": "The agreement uses the historic episcopate within a full communion relationship and preserves the churches' distinct constitutional frameworks.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-lcmc-foundation",
+    "source_id": "src-uscr-lcmc-history",
+    "locator": "March and October 2001 timeline entries",
+    "note": "March 27 constitutional adoption and 25 charter congregations, followed by the first national convention.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-lcmc-early-growth",
+    "source_id": "src-uscr-lcmc-history",
+    "locator": "2002–2003 timeline entries",
+    "note": "Decision to become independent of WordAlone, national office, and opening to international congregations.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-lcmc-dual",
+    "source_id": "src-uscr-lcmc-wordalone",
+    "locator": "Mark Chavez's open letter, paragraphs on LCMC and the ordination exception",
+    "note": "A WordAlone leader recalls overlapping affiliations and the ELCA's 2001 provision for exceptional ordinations.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-lcmc-elca-view",
+    "source_id": "src-uscr-lcmc-elca-news",
+    "locator": "April 5, 2000 report on the WordAlone organizing convention",
+    "note": "ELCA News records that participants planned to seek reform within the ELCA while opposing the historic episcopate requirement.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-lcmc-doctrine",
+    "source_id": "src-uscr-lcmc-constitution",
+    "locator": "Articles 2 and 3",
+    "note": "Current constitutional language on confessional standards, mission and authority.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-lcmc-coordinator",
+    "source_id": "src-uscr-lcmc-history",
+    "locator": "2010 and 2020 gatherings and leadership transitions",
+    "note": "Introduces Mark Vander Tuig and Mike Bradley and documents later growth and gatherings.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ecc-organization",
+    "source_id": "src-uscr-ecc-history",
+    "locator": "Covenant Foundations and Pietist Roots",
+    "note": "Dates U.S. organization and describes the Mission Friends, Rosenius, Waldenström and F. M. Johnson.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ecc-yearbook-series",
+    "source_id": "src-uscr-ecc-yearbooks",
+    "locator": "Collection description and 1885 onward",
+    "note": "Digitized yearbooks contain administrative, educational, and home and foreign mission reports.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ecc-identity",
+    "source_id": "src-uscr-ecc-affirmations",
+    "locator": "Acknowledgments and the six affirmation sections",
+    "note": "Describes the authority of Scripture, new birth, fellowship, mission, dependence on the Holy Spirit, and Christian freedom.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ecc-school",
+    "source_id": "src-uscr-ecc-history",
+    "locator": "Songs, Schools, and an Abiding Question",
+    "note": "Covenant took responsibility for its school in 1891 and moved it to Chicago in 1894.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ecc-missions",
+    "source_id": "src-uscr-ecc-history",
+    "locator": "Covenant Home and World Mission",
+    "note": "Describes the Home of Mercy and early Alaska and China missions.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ecc-growth",
+    "source_id": "src-uscr-ecc-history",
+    "locator": "Strength Through Diversity",
+    "note": "Documents Willie Jemison and Oakdale Covenant, and the founding of a Spanish-language training ministry.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ecc-archives",
+    "source_id": "src-uscr-ecc-northpark",
+    "locator": "Covenant Archives and Historical Library",
+    "note": "Repository documents the development of North Park and the Covenant since the late 1800s.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-efca-roots",
+    "source_id": "src-uscr-efca-history",
+    "locator": "19th century origins and 20th century developments",
+    "note": "Distinguishes Swedish and Norwegian–Danish Free Church institutions and traces their cooperation before the merger.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-efca-merger",
+    "source_id": "src-uscr-efca-history",
+    "locator": "20th–21st Centuries: Evangelical Free Church of America",
+    "note": "June 1950 merger, participating bodies, and roles of Olson and Halleen.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-efca-first-year",
+    "source_id": "src-uscr-efca-yearbook",
+    "locator": "Presidential and financial reports, and Trinity Seminary and Bible College report",
+    "note": "First post-merger yearbook records the work of the merged body.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-efca-schools",
+    "source_id": "src-uscr-efca-trinity",
+    "locator": "History of Trinity College and Trinity Evangelical Divinity School",
+    "note": "Traces Swedish and Norwegian–Danish education and the institutional union before the denominational merger.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-efca-development",
+    "source_id": "src-uscr-efca-history",
+    "locator": "20th–21st Centuries, post-merger growth and doctrinal revisions",
+    "note": "Describes growth, diversification efforts, and the 2008 and 2019 statements.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-efca-1950-beliefs",
+    "source_id": "src-uscr-efca-original",
+    "locator": "Articles 2 and 8–11",
+    "note": "1950 teaching on Scripture, the church, local polity, and premillennial return.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-efca-2019-beliefs",
+    "source_id": "src-uscr-efca-current",
+    "locator": "Articles 1–10, especially 2, 5, 7, and 9",
+    "note": "Current statement sets out authority of Scripture, Christ's saving work, the church, and Christ's return.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-efca-congregations",
+    "source_id": "src-uscr-efca-polity",
+    "locator": "Congregational government",
+    "note": "Official explanation of autonomy and interdependence among the member churches.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-crc-prc-testimony",
+    "source_id": "src-uscr-crc-prc",
+    "locator": "Herman Hoeksema's account of the 1924–1925 division",
+    "note": "A participant gives the rationale of the deposed church leaders and the churches they organized.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ecc-ordination",
+    "source_id": "src-uscr-ecc-women",
+    "locator": "Resource introduction and 1987 adoption note",
+    "note": "Identifies the 1976 decision to ordain women and the adoption of a paper explaining its theological rationale.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ucc-afro-recognition",
+    "source_id": "src-uscr-ucc-afro-archive",
+    "locator": "Historical Council projects and Afro-Christian Convention Archives",
+    "note": "Identifies the fifth stream, its own convention and repository, and 2023 synod recognition.",
+    "accessed": "2026-11-22"
+  },
+  {
+    "id": "cite-uscr-ucc-afro-history",
+    "source_id": "src-uscr-ucc-afro-stream",
+    "locator": "Julia Speller's account of the Afro-Christian stream and its institutional history",
+    "note": "Distinguishes the 1931 Congregational Christian connection, the 1950 Convention of the South, and the 1957 union.",
+    "accessed": "2026-11-22"
+  }
+]
