@@ -265,7 +265,7 @@
             $('scope-title').textContent=mobile.matches?(focus ? label(nodes.get(selected)) + ' · ancestry' : family || 'All branches'):scopeTitle;
             $('scope-title').setAttribute('aria-label',scopeTitle);$('scope-title').title=scopeTitle;
             $('scope-note').textContent = layout === 'horizontal' ? 'Time runs left to right. Scroll sideways (Shift + wheel) to travel through time. Use +/− or Ctrl + wheel to zoom; nearby records collapse into named groups.' : 'Mouse wheel zooms time; drag to pan. Nearby records cluster within each tradition and separate as you zoom in. Cluster dates show their actual range.';
-            timelineControl = (layout === 'horizontal' ? window.renderHorizontalTimeline : window.renderChurchTimeline)({ container: graph, entries: scoped, edges: d.edges, roots, period, onNode: id => { if(!family&&!focus)openNode(id);else showNode(id); }, onEdge: showEdge, onRange: domain => {
+            timelineControl = (layout === 'horizontal' ? window.renderHorizontalTimeline : window.renderChurchTimeline)({ container: graph, entries: scoped, edges: d.edges, roots, period, onNode: showNode, onEdge: showEdge, onRange: domain => {
                     if (!['year-from', 'year-to'].includes(document.activeElement?.id)) {
                         $('year-from').value = Math.floor(domain[0]);
                         $('year-to').value = Math.ceil(domain[1]);

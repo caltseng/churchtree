@@ -11,6 +11,19 @@ async function setView(page,value){
     await page.locator('#layout').selectOption(value==='lineage'?'lineage':'timeline');
     if(value!=='lineage')await page.getByRole('button',{name:value==='horizontal'?'Horizontal':'Vertical',exact:true}).click();
 }
+async function assertTimelineDetailsPreserveView(page) {
+    const node = page.locator('#graph .node[data-id="episcopal-church"]');
+    await node.scrollIntoViewIfNeeded();
+    const snapshot = () => page.evaluate(() => {
+        const { domain, scale } = CHURCHTREE_TIMELINE.snapshot();
+        return { domain, scale };
+    });
+    const before = await snapshot();
+    await node.click();
+    assert.match(await page.locator('#details h2').innerText(), /Episcopal Church/);
+    assert.equal(await page.locator('#branch').inputValue(), '');
+    assert.deepEqual(await snapshot(), before);
+}
 async function noOverlap(page, selector = '.node') {
     const boxes = await page.locator(selector).evaluateAll(items => items.map(item => ({...item.getBoundingClientRect().toJSON(),record:item.getAttribute('data-members')||item.getAttribute('data-id')})));
     for (let i = 0; i < boxes.length; i++)
@@ -35,10 +48,15 @@ async function noOverlap(page, selector = '.node') {
         await page.screenshot({ path: path.join(output, 'review-default-timeline.png') });
         const defaultDomain = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot().domain);
         await page.getByRole('button', { name: 'Zoom in', exact: true }).click();
-        await page.waitForFunction(() => CHURCHTREE_TIMELINE.snapshot().scale > 1.5);
+        await page.waitForFunction(() => CHURCHTREE_TIMELINE.snapshot().scale >= 1.7);
+        await assertTimelineDetailsPreserveView(page);
         await page.getByRole('button', { name: 'Reset', exact: true }).click();
         assert.deepEqual(await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot().domain), defaultDomain);
         assert.equal(await page.locator('#layout').inputValue(), 'timeline');
+        await page.locator('#orientation-horizontal').click();
+        await page.getByRole('button', { name: 'Zoom in', exact: true }).click();
+        await assertTimelineDetailsPreserveView(page);
+        await page.reload();
         await setView(page, 'lineage');
         await page.locator('[data-id="family:Presbyterian"]').waitFor();
         const overviewBox=await page.locator('#graph').boundingBox();
