@@ -176,54 +176,101 @@
     }
     const mobile = matchMedia('(max-width: 1099px)');
     const detailsPanel=$('details'),detailsDialog=$('mobile-details');
-    function syncDetailLayout(){
-        if(mobile.matches)$('mobile-details-body').append(detailsPanel);
-        else {if(detailsDialog.open)detailsDialog.close();document.querySelector('main').append(detailsPanel);}
+    const detailsButton = $("mobile-open-details");
+    function setDesktopDetails(open) {
+        detailsPanel.hidden = !open;
+        $("splitter").hidden = !open;
+        document.querySelector("main").classList.toggle("details-collapsed", !open);
+        detailsButton.setAttribute("aria-expanded", String(open));
     }
-    function openMobileDetails(){if(mobile.matches&&!detailsDialog.open)detailsDialog.showModal();}
-    $('mobile-open-details').onclick=openMobileDetails;
-    $('mobile-close-details').onclick=()=>detailsDialog.close();
-    detailsDialog.addEventListener('close',()=>{if(mobile.matches)$('mobile-open-details').focus({preventScroll:true});});
-    new MutationObserver(()=>{
-        const badge=detailsPanel.querySelector('.badge')?.textContent;
-        if(badge!=='Explore this scope')openMobileDetails();
-    }).observe(detailsPanel,{childList:true});
-    // CSS can blur a newly hidden input before the media-query callback runs.
-    let searchHadFocus=false;
-    document.addEventListener('focusin',event=>{searchHadFocus=$('search-form').contains(event.target);});
-    document.addEventListener('pointerdown',event=>{if(!$('search-form').contains(event.target))searchHadFocus=false;});
-    function closeSearch(restoreFocus=false){
-        searchHadFocus=false;
-        document.body.classList.remove('mobile-search-open');
-        $('mobile-search-toggle').setAttribute('aria-expanded','false');
-        $('results').replaceChildren();
-        if(restoreFocus)$('mobile-search-toggle').focus({preventScroll:true});
+    function syncDetailLayout() {
+        if (mobile.matches) {
+            setDesktopDetails(false);
+            detailsPanel.hidden = false;
+            $("mobile-details-body").append(detailsPanel);
+            detailsButton.removeAttribute("aria-expanded");
+            detailsButton.setAttribute("aria-controls", detailsDialog.id);
+            detailsButton.setAttribute("aria-haspopup", "dialog");
+        } else {
+            if (detailsDialog.open) detailsDialog.close();
+            document.querySelector("main").append(detailsPanel);
+            setDesktopDetails(true);
+            detailsButton.setAttribute("aria-controls", detailsPanel.id);
+            detailsButton.removeAttribute("aria-haspopup");
+        }
     }
-    $('mobile-search-toggle').onclick=()=>{
-        if(document.body.classList.contains('mobile-search-open'))closeSearch(true);
+    function openDetails() {
+        if (mobile.matches) {
+            if (!detailsDialog.open) detailsDialog.showModal();
+        } else if (detailsPanel.hidden) {
+            setDesktopDetails(true);
+        }
+    }
+    detailsButton.onclick = () => {
+        if (!mobile.matches && !detailsPanel.hidden) setDesktopDetails(false);
+        else openDetails();
+    };
+    $("mobile-close-details").onclick = () => detailsDialog.close();
+    detailsDialog.addEventListener("close", () => detailsButton.focus({preventScroll: true}));
+    new MutationObserver(() => {
+        if (detailsPanel.querySelector(".badge")?.textContent !== "Explore this scope") openDetails();
+    }).observe(detailsPanel, {childList: true});
+
+    const searchPanel = $("search-form");
+    const filtersPanel = $("view-settings");
+    const searchButton = $("mobile-search-toggle");
+    const filtersButton = $("mobile-settings-toggle");
+    const rangeButton = $("mobile-range-toggle");
+    function showPanel(panel, button, open) {
+        panel.hidden = !open;
+        button.setAttribute("aria-expanded", String(open));
+    }
+    function closeSearch(restoreFocus = false) {
+        showPanel(searchPanel, searchButton, false);
+        $("results").replaceChildren();
+        if (restoreFocus) searchButton.focus({preventScroll: true});
+    }
+    searchButton.onclick = () => {
+        if (!searchPanel.hidden) closeSearch(true);
         else {
-            document.body.classList.add('mobile-search-open');
-            $('mobile-search-toggle').setAttribute('aria-expanded','true');
-            $('search').focus({preventScroll:true});
+            showPanel(filtersPanel, filtersButton, false);
+            showPanel(searchPanel, searchButton, true);
+            $("search").focus({preventScroll: true});
             search();
         }
     };
-    $('search-form').addEventListener('keydown',event=>{
-        if(event.key==='Escape'&&mobile.matches){event.preventDefault();event.stopPropagation();closeSearch(true);}
+    $("mobile-close-search").onclick = () => closeSearch(true);
+    filtersButton.onclick = () => {
+        closeSearch();
+        const open = filtersPanel.hidden;
+        showPanel(filtersPanel, filtersButton, open);
+        if (open) $("branch").focus({preventScroll: true});
+    };
+    const explorerHeader = document.querySelector(".explorer-header");
+    document.addEventListener("pointerdown", event => {
+        if (explorerHeader.contains(event.target)) return;
+        if (!searchPanel.hidden) closeSearch(searchPanel.contains(document.activeElement));
+        if (!filtersPanel.hidden) {
+            if (filtersPanel.contains(document.activeElement)) filtersButton.focus({preventScroll: true});
+            showPanel(filtersPanel, filtersButton, false);
+        }
     });
-    mobile.addEventListener('change',()=>{const focused=searchHadFocus||$('search-form').contains(document.activeElement);closeSearch(mobile.matches&&focused);searchHadFocus=!mobile.matches&&focused;});
-    function closeSettings(){document.body.classList.remove('mobile-settings-open');$('mobile-settings-toggle').setAttribute('aria-expanded','false');}
-    $('mobile-settings-toggle').onclick=()=>{const open=document.body.classList.toggle('mobile-settings-open');$('mobile-settings-toggle').setAttribute('aria-expanded',String(open));};
-    $('view-settings').addEventListener('keydown',event=>{if(event.key==='Escape'&&mobile.matches){closeSettings();$('mobile-settings-toggle').focus();}});
-    mobile.addEventListener('change',()=>{closeSettings();document.body.classList.remove('mobile-dates-open');$('mobile-range-toggle').setAttribute('aria-expanded','false');});
-    $('mobile-range-toggle').onclick=()=>{const expanded=document.body.classList.toggle('mobile-dates-open');$('mobile-range-toggle').setAttribute('aria-expanded',String(expanded));};
-    $('time-earlier').onclick=()=>timelineControl?.pan?.(-.65);
-    $('time-later').onclick=()=>timelineControl?.pan?.(.65);
-    const scopeHeader=document.querySelector('.scope');
-    function syncScopeHeader(){if(mobile.matches)document.querySelector('nav').append(scopeHeader);else $('canvas').insertBefore(scopeHeader,$('graph'));}
-    syncScopeHeader();
-    mobile.addEventListener('change',syncScopeHeader);
-    $('mobile-close-search').onclick=()=>closeSearch(true);
+    explorerHeader.addEventListener("keydown", event => {
+        if (event.key !== "Escape") return;
+        if (!searchPanel.hidden) closeSearch(true);
+        else if (!filtersPanel.hidden) {
+            showPanel(filtersPanel, filtersButton, false);
+            filtersButton.focus({preventScroll: true});
+        } else return;
+        event.preventDefault();
+        event.stopPropagation();
+    });
+    rangeButton.onclick = () => {
+        const expanded = filtersPanel.classList.toggle("dates-open");
+        rangeButton.setAttribute("aria-expanded", String(expanded));
+    };
+    $("time-earlier").onclick = () => timelineControl?.pan?.(-.65);
+    $("time-later").onclick = () => timelineControl?.pan?.(.65);
     syncDetailLayout();
     mobile.addEventListener('change',()=>{syncDetailLayout();render();});
     function render() {
@@ -601,9 +648,8 @@
             b.type = 'button';
             b.textContent = `${label(n)} · ${n.start_year} · ${n.tradition_family}`;
             b.onclick = () => {
-                if(mobile.matches){$('search').blur();closeSearch();}
+                closeSearch(true);
                 openNode(n.id);
-                $('results').replaceChildren();
             };
             $('results').append(b);
         });
@@ -644,9 +690,12 @@
     splitter.setAttribute('aria-valuenow',Math.round($('details').getBoundingClientRect().width));
     splitter.setAttribute('aria-valuemin','300');
     splitter.setAttribute('aria-valuemax',Math.round(innerWidth*.55));
-    let resizeTimer, previousSize = '';
+    render();
+    const graph = $('graph');
+    const graphSize = () => graph.clientWidth + 'x' + graph.clientHeight;
+    let resizeTimer, previousSize = graphSize();
     new ResizeObserver(() => {
-        const graph = $('graph'), size = graph.clientWidth + 'x' + graph.clientHeight;
+        const size = graphSize();
         if (size === previousSize)
             return;
         previousSize = size;
@@ -659,10 +708,9 @@
             graph.scrollLeft = left;
             graph.scrollTop = top;
         }, 100);
-    }).observe($('graph'));
+    }).observe(graph);
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape')
             $('results').replaceChildren();
     });
-    render();
 })();
