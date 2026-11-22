@@ -12,11 +12,11 @@ module.exports=async function testStudy({browser,baseURL,root,repoRoot}) {
   await page.goto(readerURL);
   assert.equal(await page.locator('.study').count(),33);
   assert.equal(await page.locator('.study[open]').count(),0,'Study starts closed');
-  assert.equal(await page.locator('.study-note').count(),67);
+  assert.equal(await page.locator('.study-note').count(),notes.chapters.reduce((count,chapter)=>count+chapter.entries.length,0));
   assert.equal(await page.locator('.pca-comparison').count(),33);
   assert.equal(await page.locator('.pca-status[data-status="substantive-difference"]').count(),6);
   assert.equal(await page.locator('.pca-status[data-status="no-substantive-difference"]').count(),27);
-  assert.deepEqual(await page.locator('.passage p').allTextContents(),expectedText,'Every historical passage is unchanged');
+  assert.deepEqual(await page.locator('.passage > p').allTextContents(),expectedText,'Every historical passage is unchanged');
   const summary=page.locator('#study-1>summary');await summary.focus();await page.keyboard.press('Enter');
   assert.equal(await page.locator('#study-1').getAttribute('open'),'','Keyboard opens native disclosure');
   assert(await page.locator('#note-1-authority').isVisible());
@@ -54,7 +54,7 @@ module.exports=async function testStudy({browser,baseURL,root,repoRoot}) {
   await page.waitForFunction(()=>document.querySelector('#study-31>summary')===document.activeElement);
   assert.equal(await page.locator('#study-31>summary').evaluate(el=>el===document.activeElement),true);
   assert.equal(await page.locator('#study-31>summary').evaluate(el=>el.tabIndex),0,'Deep-linked summary remains in the Tab order');
-  await page.locator('#study-31 .study-disclaimer a').click();
+  await page.locator('#study-31 a.study-disclaimer').click();
   await page.locator('#study-method[open]').waitFor({state:'visible'});
   assert(await page.locator('#study-method[open]').isVisible());
   assert.match(await page.locator('#study-method').innerText(),/No individual presbytery grants/);
@@ -78,6 +78,6 @@ module.exports=async function testStudy({browser,baseURL,root,repoRoot}) {
  if(!await page.locator('#pca-31').isVisible())await page.locator('#study-31>summary').click();
  assert(await page.locator('#pca-31').isVisible(),'No-JavaScript PCA audit access');
  assert.equal(await page.locator('.passage').count(),172);
- assert.deepEqual(await page.locator('.passage p').allTextContents(),expectedText);await context.close();
+ assert.deepEqual(await page.locator('.passage > p').allTextContents(),expectedText);await context.close();
  console.log('No-JavaScript study and unchanged primary text: passed');
 };

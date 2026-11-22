@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "baselineEdition": "Hosted 1647 English confession in Schaff, fourth edition (1919); original section numbering",
-  "lastReviewed": "2026-11-14",
+  "lastReviewed": "2026-11-22",
   "editorialPolicy": "Optional editorial comparisons and reading notes. Descriptive, not denominational advice or an exhaustive commentary. Modern sources are paraphrased; the confession itself is unchanged.",
   "researchLimits": [
     "Source-checked editorial first release; not independently peer reviewed.",
@@ -60,7 +60,7 @@
             1,
             6
           ],
-          "body": "The confession existed before its attached Scripture proofs. The Westminster Assembly Project documents a manuscript and limited printing in 1646, followed by an edition with proofs requested by Parliament in 1647. This reader omits those proofs but preserves the confession’s assertions. That omission is a presentation choice, not a claim that the Assembly offered doctrine without biblical argument.",
+          "body": "The confession existed before its attached Scripture proofs. The Westminster Assembly Project documents a manuscript and limited printing in 1646, followed by an edition with proofs requested by Parliament in 1647. This reader now links the references in Schaff’s historical English column separately under each section. These are that edition’s apparatus, not newly invented arguments or a modern denomination’s selection; bracketed American additions are excluded.",
           "citations": [
             {
               "sourceId": "wcf-1647",
@@ -75,7 +75,7 @@
             }
           ],
           "reviewStatus": "source-checked-editorial",
-          "reviewedOn": "2026-11-14"
+          "reviewedOn": "2026-11-22"
         }
       ],
       "furtherReading": [
@@ -151,6 +151,19 @@
       "orientation": "Keep the pastoral closing paragraph alongside the language about the divine decree.",
       "entries": [
         {
+          "id": "note-3-remonstrance-history",
+          "kind": "historical-context",
+          "title": "A disagreement already stated in 1610",
+          "sections": [2, 5, 7],
+          "body": "The first of the Five Arminian Articles (1610) describes God's saving purpose in relation to those who believe in Christ and persevere through grace. Westminster's 1647 chapter instead denies foreseen faith as the basis of election. Comparing these dated texts locates the disagreement more precisely than opposing grace to effort: both invoke grace, but connect election and faith differently. This comparison does not establish which individual divines intended to answer that document.",
+          "citations": [
+            {"sourceId": "remonstrance-schaff", "locator": "Article I", "supports": "The 1610 article's description of election"},
+            {"sourceId": "wcf-1647", "locator": "3.2; 3.5; 3.7", "url": "#section-3-5", "supports": "Westminster's denial of election based on foreseen faith"}
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-22"
+        },
+        {
           "id": "note-3-election",
           "kind": "doctrinal-comparison",
           "title": "Election and foreseen faith",
@@ -208,13 +221,26 @@
       "orientation": "Separate the claims about creation from later arguments about interpreting the six days.",
       "entries": [
         {
+          "id": "note-4-opc-subscription",
+          "kind": "historical-context",
+          "title": "The OPC's 2004 creation debate: interpretation and subscription",
+          "sections": [1],
+          "body": "The OPC's 2004 creation committee presented several accounts of the creation days and acknowledged that its members had not reached complete agreement about their nature and duration. Part II discusses how the church's shared interpretation of its standards bears on subscription, rather than treating a candidate's private reading as decisive. The report explicitly distinguishes itself from constitutional documents. It records a real Presbyterian controversy, not blanket permission for every view or a grant to any named candidate.",
+          "citations": [
+            {"sourceId": "opc-creation-2004", "locator": "Preface; I.1-6; II, The Days of Creation and Confessional Subscription", "url": "https://www.opc.org/GA/creation.html#Days", "supports": "Committee disagreement, alternative views and discussion of subscription"},
+            {"sourceId": "wcf-1647", "locator": "4.1", "url": "#section-4-1", "supports": "The six-day wording being discussed"}
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-22"
+        },
+        {
           "id": "note-4-creation-days",
           "kind": "historical-context",
           "title": "A documented Presbyterian debate about six days",
           "sections": [
             1
           ],
-          "body": "The PCA’s 1999 Creation Study Committee report describes calendar-day, day-age, framework and analogical-day interpretations. Its authors agreed on creation from nothing and a historical Adam and Eve, while reporting no unanimity on the nature and duration of the days. This records a bounded committee debate; it neither rewrites the 1647 sentence nor establishes that every view is acceptable in every Presbyterian jurisdiction.",
+          "body": "The PCA’s 2000 Creation Study Committee report describes calendar-day, day-age, framework and analogical-day interpretations. Its authors agreed on creation from nothing and a historical Adam and Eve, while reporting no unanimity on the nature and duration of the days. This records a bounded committee debate; it neither rewrites the 1647 sentence nor establishes that every view is acceptable in every Presbyterian jurisdiction.",
           "citations": [
             {
               "sourceId": "wcf-1647",
@@ -897,6 +923,19 @@
       "orientation": "Distinguish works as evidence and obedience from a claim that they earn acceptance.",
       "entries": [
         {
+          "id": "note-16-adoption-1936",
+          "kind": "historical-context",
+          "title": "Good works in the OPC's 1936 adoption dispute",
+          "sections": [7],
+          "body": "The OPC's constitution committee in 1936 recommended adopting the pre-1903 form of the standards, except for two retained deletions elsewhere. It specifically recommended removing the 1903 revision of 16.7 and printed the unrevised paragraph about works done by unregenerate people. The Assembly adopted the doctrinal-standard recommendations by 57 votes to 20. That record documents a church's choice of wording; the vote alone does not identify each opponent's reasons or establish an individual exception.",
+          "citations": [
+            {"sourceId": "opc-constitution-1936", "locator": "Report II; III.C; recorded Assembly action", "url": "https://www.opc.org/GA/constitution.html#Report", "supports": "Recommended text of 16.7 and recorded adoption vote"},
+            {"sourceId": "wcf-1647", "locator": "16.7", "url": "#section-16-7", "supports": "Historical wording preserved by this reader"}
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-22"
+        },
+        {
           "id": "note-16-fruit",
           "kind": "reading-guide",
           "title": "Works matter without becoming the basis of pardon",
@@ -954,6 +993,19 @@
       "chapter": 17,
       "orientation": "Final preservation through failures is not a promise that believers cannot sin seriously.",
       "entries": [
+        {
+          "id": "note-17-open-question-1610",
+          "kind": "historical-context",
+          "title": "Do not read later Arminian conclusions back into 1610",
+          "sections": [1, 2, 3],
+          "body": "Article V of the 1610 Remonstrance affirms Christ's help against temptation but leaves final falling away for further scriptural examination. Westminster 17.1 explicitly denies total and final falling from grace, while 17.3 allows serious temporary falls. The contrast is therefore between a definite Westminster answer and an early document that reserved part of the question, not proof that all early Remonstrants already taught every later position on apostasy.",
+          "citations": [
+            {"sourceId": "remonstrance-schaff", "locator": "Article V, closing qualification", "supports": "The article leaves final falling away for further examination"},
+            {"sourceId": "wcf-1647", "locator": "17.1-3", "url": "#section-17-1", "supports": "Final perseverance distinguished from temporary falls"}
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-22"
+        },
         {
           "id": "note-17-perseverance",
           "kind": "doctrinal-comparison",
@@ -1136,6 +1188,19 @@
       "orientation": "Read freedom of conscience together with this edition’s limits on religious liberty.",
       "entries": [
         {
+          "id": "note-20-savoy-forbearance",
+          "kind": "historical-context",
+          "title": "Savoy's 1658 plea for limited religious forbearance",
+          "sections": [2, 4],
+          "body": "The Savoy Declaration's preface argues for forbearance toward Christians who retain the foundations of faith and holiness while differing on other spiritual matters. It qualifies that plea by excluding errors that overthrow civil society. Set beside Westminster 20.4, this identifies a seventeenth-century debate over the limits of toleration, not an unrestricted modern right to religious freedom. Savoy is a Congregational declaration, not an amendment or subscription ruling of a Presbyterian church.",
+          "citations": [
+            {"sourceId": "savoy", "locator": "Preface, second remarkable attendant; Schaff pp. 710-711", "supports": "Stated scope and limits of mutual forbearance"},
+            {"sourceId": "wcf-1647", "locator": "20.4", "url": "#section-20-4", "supports": "The historical civil-enforcement clause"}
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-22"
+        },
+        {
           "id": "note-20-liberty-limits",
           "kind": "historical-context",
           "title": "Not a modern religious-liberty charter",
@@ -1204,6 +1269,19 @@
       "orientation": "Rules for worship are joined to a demanding account of the Christian Sabbath.",
       "entries": [
         {
+          "id": "note-21-sunday-1530",
+          "kind": "historical-context",
+          "title": "Sunday observance: an older dispute about binding consciences",
+          "sections": [7, 8],
+          "body": "Augsburg XXVIII (1530) addresses the claim that church authorities can impose ceremonies as necessary to salvation. Its discussion of Sunday treats appointing a common day as an orderly church arrangement, while denying that observance merits grace. Westminster 21.7-8 instead describes a continuing moral command for one day in seven and specifies the Christian Sabbath's observance. The disagreement concerns the authority and obligation of the day, not simply whether either confession values gathering for worship.",
+          "citations": [
+            {"sourceId": "augsburg-power", "locator": "Article XXVIII, paragraphs 30-60", "supports": "Ceremonies, conscience and the rationale for Sunday"},
+            {"sourceId": "wcf-1647", "locator": "21.7-8", "url": "#section-21-7", "supports": "Westminster's account of the moral command and observance"}
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-22"
+        },
+        {
           "id": "note-21-worship",
           "kind": "doctrinal-comparison",
           "title": "Instituted worship and human church ordinances",
@@ -1264,6 +1342,19 @@
       "chapter": 22,
       "orientation": "Solemn oaths are permitted, with limits on what may be promised.",
       "entries": [
+        {
+          "id": "note-22-deletion-1936",
+          "kind": "historical-context",
+          "title": "A retained deletion, not abolition of lawful oaths",
+          "sections": [1, 2, 3],
+          "body": "The OPC's 1936 committee recommended retaining the 1903 deletion of the final sentence of 22.3 about refusing an oath imposed by lawful authority, even while recommending the removal of other 1903 changes. The recorded Assembly action adopted those recommendations. The surrounding chapter still treats lawful oaths as permissible. This was a denominational choice of adopted text, not acceptance of the Mennonite rejection of oath-taking and not a personal exception to the historical wording.",
+          "citations": [
+            {"sourceId": "opc-constitution-1936", "locator": "Report II.A; recorded Assembly action", "supports": "Retention and adoption of the deletion in 22.3"},
+            {"sourceId": "wcf-1647", "locator": "22.1-3", "url": "#section-22-3", "supports": "Scope of the historical sentence and surrounding chapter"}
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-22"
+        },
         {
           "id": "note-22-oath-disagreement",
           "kind": "doctrinal-comparison",
@@ -1332,6 +1423,20 @@
       "chapter": 23,
       "orientation": "The original gives civil authority religious responsibilities later American texts revise.",
       "entries": [
+        {
+          "id": "note-23-authority-boundaries",
+          "kind": "historical-context",
+          "title": "Church and civil power: distinguish two different boundaries",
+          "sections": [3],
+          "body": "Augsburg XXVIII (1530) protests confusing the church's power of the keys with civil government, assigning teaching and sacraments to the former and public justice to the latter. Historical Westminster 23.3 also denies the magistrate administration of Word, sacraments and keys, yet gives that magistrate duties concerning religious truth and worship. The American replacement printed by the OPC removes interference in matters of faith. These are distinct boundaries; rejecting clerical civil rule alone does not establish modern disestablishment.",
+          "citations": [
+            {"sourceId": "augsburg-power", "locator": "Article XXVIII, paragraphs 1-21", "supports": "Distinction between ecclesiastical and civil authority"},
+            {"sourceId": "wcf-1647", "locator": "23.3", "url": "#section-23-3", "supports": "Historical limits and religious duties of the magistrate"},
+            {"sourceId": "opc-revisions", "locator": "Chapter XXIII / 23, section 3", "supports": "The American replacement's protection of religious activity"}
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-22"
+        },
         {
           "id": "note-23-magistrate-revision",
           "kind": "textual-revision",
@@ -1478,6 +1583,19 @@
       "chapter": 25,
       "orientation": "Invisible church, visible church and particular churches are related but distinct categories.",
       "entries": [
+        {
+          "id": "note-25-antichrist-1936",
+          "kind": "historical-context",
+          "title": "The OPC's recorded choice about the Antichrist clause",
+          "sections": [6],
+          "body": "In 1936 the OPC's constitution committee recommended keeping the deletion of the historical identification of the pope as Antichrist, while retaining the denial that the pope is head of the church. The Assembly adopted the recommendations. The committee also mentioned copyright concerns about using recently added wording, so its record should not be reduced to one inferred motive. The deletion identifies an adopted-text difference, not permission to assume that every Presbyterian edition omits the clause.",
+          "citations": [
+            {"sourceId": "opc-constitution-1936", "locator": "Report II.B; recorded Assembly action", "supports": "Recommended retained wording, stated copyright concern and adoption"},
+            {"sourceId": "wcf-1647", "locator": "25.6", "url": "#section-25-6", "supports": "Historical polemical identification being compared"}
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-22"
+        },
         {
           "id": "note-25-visible-members",
           "kind": "doctrinal-comparison",
@@ -1785,6 +1903,20 @@
       "orientation": "Discipline is a spiritual responsibility with purposes beyond punishment.",
       "entries": [
         {
+          "id": "note-30-assembly-dissent",
+          "kind": "historical-context",
+          "title": "Disagreement within the Assembly about presbyteries",
+          "sections": [1, 2],
+          "body": "The surviving Reasons of the Dissenting Brethren object to the proposition that several congregations may share one presbyterial government; the Assembly's Answer defends it. The Westminster Assembly Project identifies both manuscripts and their printed exchange, ordered in December 1644 and published in 1645. This documents an actual internal dispute over the organization of church authority. It should not be confused with a modern presbytery granting a candidate an exception, or taken as evidence that all participants disagreed about every use of discipline.",
+          "citations": [
+            {"sourceId": "assembly-dissent", "locator": "Braye MS fos. 33r-59r and 63r-108r; first printed edition", "supports": "Subject, surviving documents and print-order date"},
+            {"sourceId": "assembly-documents", "locator": "Reasons of the Dissenting Brethren", "supports": "February 1645 publication and seven Congregational dissenters"},
+            {"sourceId": "wcf-1647", "locator": "30.1-2", "url": "#section-30-1", "supports": "Church officers and keys in the finished confession"}
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-22"
+        },
+        {
           "id": "note-30-purposes",
           "kind": "reading-guide",
           "title": "Restoration, protection and the keys",
@@ -1848,6 +1980,19 @@
       "chapter": 31,
       "orientation": "Keep original text, Scottish reception and American numbering distinct.",
       "entries": [
+        {
+          "id": "note-31-dissent-and-councils",
+          "kind": "historical-context",
+          "title": "Councils after the presbyterial-government dispute",
+          "sections": [1, 3, 4],
+          "body": "The Assembly's earlier exchange with its dissenting brethren concerned whether multiple congregations could come under one presbytery. The finished confession later affirms synods or councils and their ministerial determination of controversies, while allowing that councils can err. Reading 31.3 with 31.4 avoids treating conciliar authority as infallibility. The surviving exchange supplies context for disputed church organization, not proof of one unanimous private theory among the divines or a present-day allowance to depart from a church's standards.",
+          "citations": [
+            {"sourceId": "assembly-dissent", "locator": "Reasons and Answer, manuscript titles and first edition", "supports": "Documented dispute about shared presbyterial government"},
+            {"sourceId": "wcf-1647", "locator": "31.1; 31.3-4", "url": "#section-31-3", "supports": "Conciliar authority qualified by fallibility"}
+          ],
+          "reviewStatus": "source-checked-editorial",
+          "reviewedOn": "2026-11-22"
+        },
         {
           "id": "note-31-scottish-reception",
           "kind": "historical-context",

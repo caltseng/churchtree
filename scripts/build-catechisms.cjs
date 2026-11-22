@@ -26,7 +26,7 @@ for (const book of books) {
   }).join('\n');
   const questions = entries.map(({ number, question, answer }) => `      <article id="q-${number}" tabindex="-1">
         <h2><a href="#q-${number}">Q. ${number}.</a> ${escape(question)}</h2>
-        <p><b>A.</b> ${escape(answer)}</p>
+        <p class="reading-prose"><b>A.</b> ${escape(answer)}</p>
       </article>`).join('\n');
 
   fs.writeFileSync(path.join(folder, 'index.html'), `<!doctype html>
@@ -42,6 +42,7 @@ for (const book of books) {
   <link rel="stylesheet" href="../theme.css">
   <link rel="stylesheet" href="../brand.css">
   <link rel="stylesheet" href="../catechisms.css">
+  <link rel="stylesheet" href="../reading.css">
   <script src="../theme.js"></script>
 </head>
 <body class="catechism">
@@ -58,7 +59,7 @@ for (const book of books) {
   </header>
   <main>
     <div class="catechism-intro">
-      <h1>${title}</h1>
+      <h1 class="reading-title">${title}</h1>
       <p>${count} questions and answers · <a href="#sources">1860 English edition</a></p>
       <nav class="question-index" aria-label="Question ranges">
         <h2>Jump to questions</h2>

@@ -92,3 +92,50 @@
 .pca-comparison:target{outline:2px solid var(--ct-focus,#a36330);outline-offset:8px}
 #pca-audit-method{scroll-margin-top:32px}
 @media(max-width:800px){.pca-comparison,.pca-variants,#pca-audit-method{scroll-margin-top:86px}.pca-title h4{font-size:23px}.pca-title>a{min-width:44px;min-height:44px}.pca-summary,.pca-changes p,.pca-variants p{font-size:14px}.pca-numbering th,.pca-numbering td{padding:9px 7px}}
+
+/* Shared reading typography keeps all three Westminster readers consistent. */
+.introduction h1{max-width:36rem}
+.passage p.reading-prose{font:var(--reading-size)/var(--reading-leading) var(--reading-font)}
+.chapter-picker{display:none;padding:0 6px 18px;font:12px/1.5 Arial,sans-serif}
+.enhanced .chapter-picker{display:block}
+.chapter-picker label{display:block;margin-bottom:6px}
+.chapter-picker select{width:100%;min-height:44px;padding:8px;border:1px solid var(--ct-border-control);border-radius:4px;background:var(--ct-surface);color:var(--ct-text);font:14px Arial,sans-serif}
+select:focus-visible,details:focus-visible{outline:3px solid var(--ct-focus);outline-offset:3px}
+.chapter-nav-top{margin:0 0 20px;padding:0;border:0;gap:12px}
+.chapter-nav-top a{display:flex;align-items:center;min-height:44px;padding:8px 10px;border:1px solid var(--ct-border-control);border-radius:4px;background:var(--ct-surface)}
+.chapter-nav-top a:last-child{justify-content:flex-end}
+.chapter-nav-top small{margin:0;font:13px/1.4 Arial,sans-serif;letter-spacing:0;color:var(--ct-link)}
+.chapter-boundary{align-self:center;font:12px Arial,sans-serif;color:var(--muted)}
+.section-index{margin:0 0 20px;font:12px/1.5 Arial,sans-serif}
+.section-index>summary{cursor:pointer;min-height:44px;padding:12px 0}
+.section-index .section-links{margin:4px 0 14px}
+.study{margin:0 0 24px}
+.scripture-proofs{margin:10px 0 0;font:12px/1.65 Arial,sans-serif;scroll-margin-top:32px}
+.scripture-proofs>summary{cursor:pointer;min-height:44px;padding:10px 0;color:var(--ct-link)}
+.scripture-proofs>summary span{color:var(--muted);margin-left:6px}
+.scripture-proofs>div{border-left:2px solid var(--line);padding-left:12px}
+.scripture-proofs .proof-credit{font:12px/1.65 Arial,sans-serif;color:var(--muted)}
+.scripture-proofs ul{padding-left:18px;margin:12px 0}
+.scripture-proofs li{margin-bottom:12px;overflow-wrap:anywhere}
+.scripture-proofs li>a{display:inline-block;padding:5px 0}
+.proof-source{display:block!important;font-size:11px}
+.edition-note{font-family:Arial,sans-serif;scroll-margin-top:32px}
+.edition-note>summary{cursor:pointer;min-height:48px;padding:12px 0;color:var(--ct-link);font-size:13px}
+.edition-note>div{padding-top:12px}
+@media(max-width:800px){
+ .chapter-picker{padding:12px 6% 4px}
+ .contents summary{padding:12px 6%;min-height:44px}
+ html{scroll-padding-top:140px}
+ article,.passage,.study,.study-note,.study-method,.pca-comparison,.pca-variants,#pca-audit-method,.scripture-proofs,.edition-note{scroll-margin-top:8px}
+ .chapter-heading{padding-bottom:14px;margin-bottom:10px}
+ .chapter-heading h2{font-size:28px;margin:12px 0}
+ .passage{padding-bottom:20px}
+}
+@media(max-width:800px) and (max-height:500px){
+ .chapter-picker label{position:absolute;clip-path:inset(50%)}
+ .chapter-picker{padding-top:6px}
+ .contents summary{padding-block:6px;min-height:36px}
+ html{scroll-padding-top:104px}
+ article,.passage,.study,.study-note,.study-method,.pca-comparison,.pca-variants,#pca-audit-method,.scripture-proofs,.edition-note{scroll-margin-top:8px}
+}
+@media print{.scripture-proofs,.section-index,.chapter-picker,.edition-note{display:none}}

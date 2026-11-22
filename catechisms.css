@@ -21,7 +21,7 @@ body.catechism {
 .catechism-header nav { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
 .catechism main { max-width: 46rem; padding: clamp(1.5rem, 5vw, 4rem) 1rem; margin: auto; }
 .catechism h1, .catechism h2, .catechism article p { font-family: Georgia, 'Times New Roman', serif; }
-.catechism h1 { margin: 0; font-size: clamp(2rem, 6vw, 3.75rem); line-height: 1.07; }
+.catechism h1 { margin: 0; }
 .catechism-intro > p { color: var(--ct-text-secondary); }
 .question-index { margin: 2rem 0; padding: 1rem; border: 1px solid var(--ct-border-control); background: var(--ct-surface); border-radius: .6rem; }
 .question-index h2 { margin: 0 0 .5rem; font-size: 1.25rem; }
@@ -29,6 +29,6 @@ body.catechism {
 .question-index a { display: block; padding: .25rem; font-variant-numeric: tabular-nums; }
 .catechism article { padding: 1.25rem .75rem; border-top: 1px solid var(--ct-border); scroll-margin-top: 1rem; }
 .catechism article:target { background: var(--ct-surface); box-shadow: inset 3px 0 var(--ct-accent); }
-.catechism article h2 { margin: 0 0 .55rem; font-size: 1.25rem; line-height: 1.35; }
-.catechism article p { margin: 0; font-size: 1.16rem; line-height: 1.65; }
+.catechism article h2 { margin: 0 0 .55rem; font-size: 1.125rem; line-height: 1.45; }
+.catechism article p { margin: 0; }
 .catechism footer { border-top: 1px solid var(--ct-border); margin-top: 1rem; }
