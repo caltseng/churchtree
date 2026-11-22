@@ -32,6 +32,44 @@ Sources: [2023–24 national interactive database](https://www.pewresearch.org/r
 
 ## Interaction and layout
 
+### Confirmed demographic expansion
+
+In addition to v1, provide **Affiliations within demographics** as an independent
+view. The confirmed dimensions are age, gender, race/ethnicity and education,
+with affiliations **within** the selected population, not demographic composition
+of a religion. Select one dimension and one published population at a time; no
+intersectional combinations, inherited national ancestors, denomination
+cross-tabs or attendance answers. Show the subgroup denominator next to every
+comparison and retain it in chart, list, static fallback and deep links.
+
+Keep this renewed excerpt deliberately broad: Christian, Other religions and
+Religiously unaffiliated within twelve populations (36 directly published
+cells). Use the interactive's 2023-24 top-level aggregates for ages 18-29,
+30-49, 50-64 and 65+. Use chapter 1's published 2023-24 columns for men/women
+(printed p. 98), White/Black/Asian/Hispanic adults (p. 95), and college graduates/
+less than a college degree (p. 97). These are not chapter 24's reverse-denominator
+tables. Preserve non-Hispanic single-race definitions, English-speaking Asian
+coverage and Hispanic-any-race wording. Gender is self-described, not sex at
+birth; link GENDER in the questionnaire and Appendix A. Keep publisher bins,
+exact strings, nonresponse notes, uncertainty and precise row/column/path
+locators. Never add rounded cells or substitute national values.
+
+Use native dimension/population selects, validated
+`?view=demographics&dimension=race-ethnicity&population=asian` links and browser
+Back/Forward; List remains a display preference. Use a fixed 0-100% scale within
+the selected population and semantic tables. Keep focus visible, restore
+in-memory affiliation focus when returning, and support 320px portrait,
+667x375 landscape, desktop, keyboard and 200% equivalent layout.
+
+Record the expanded Terms/excerpt review in the route-local input; keep the
+public projection intentional, not a recursive input/tooling copy. Run offline
+validation and focused/full CI. Deliver the PR **draft** for independent source
+reconciliation with its complete ledger before marking ready or enabling
+auto-merge; record the reviewed revision/scope. Passing draft CI is not source
+review. National affiliation/attendance inputs and the historical timeline
+remain unchanged. See the [route data contract](../us-denominations/README.md)
+for the precise population map and review procedure.
+
 - The page opens with the title **U.S. denominations**, the survey period and denominator, a labeled view selector, and the national overview. Clicking or tapping a bar or its linked name opens that group. The new view replaces the rows with the named children and keeps the parent’s estimate above the chart. The example paths are **U.S. adults → Christian → Protestant → Baptist** and **U.S. adults → Christian → Protestant → Presbyterian**. The alternate lens uses **Protestant → Mainline Protestant → Presbyterian (mainline)**.
 - A clickable breadcrumb, **Back** (one level up) and **Reset** (national overview of the current affiliation lens) provide predictable zoom-out controls. Browser Back/Forward replays visited states. Encode validated lens and group IDs in a shareable URL such as `?view=families&group=baptist`. Derive breadcrumbs from the selected hierarchy. On changing the affiliation grouping, preserve the current focus only if its scope is identical in both views. Otherwise use the shared Protestant parent for a Protestant descendant. Invalid or incompatible URL IDs resolve to the default or nearest valid shared parent.
 - Use semantic text and native links/buttons in a consistent tab order. Put focus on the new group heading on drill-in, and restore it to the departing group row when going up where possible. Mark the current breadcrumb, provide visible focus and retain a heading describing the selected group. Bars can be CSS decoration on the same semantic rows, so a screen reader does not encounter a duplicate chart control. Provide a **List** toggle that hides bars and keeps the full navigation and values. Generate static overview and nested list content for no-JavaScript access, and make the controls progressive enhancements.

@@ -11,6 +11,39 @@ const copy = () => structuredClone(original);
 const row = (data, id) => data.affiliation.records.find(record => record.id === id);
 const panel = (data, lens, id) => data.hierarchies.lenses[lens].panels.find(item => item.parentId === id);
 
+test('demographic broad excerpts retain independent populations and primary source anchors', () => {
+  const anchors = {'age-18-29': ['45%', '9%', '44%'], men: ['59%', '8%', '31%'],
+    asian: ['33%', '32%', '33%'], 'college-graduate': ['58%', '10%', '31%']};
+  for (const [id, values] of Object.entries(anchors)) {
+    const population = original.demographics.populations.find(row => row.id === id);
+    assert.deepEqual(population.estimates.map(row => row.published), values);
+  }
+  assert.match(original.demographics.dimensions.find(row => row.id === 'gender').definition, /Self-described gender, not sex assigned at birth/);
+  assert.match(original.demographics.populations.find(row => row.id === 'asian').denominatorLabel, /English-speaking non-Hispanic/);
+  assert.equal(original.demographics.populations.find(row => row.id === 'women').column, 'Among women > 2023-24');
+  assert.match(ledger(original), /age-distribution\/18-29 > Religious composition > top-level cards/);
+  assert.throws(() => getRecord(original, 'men'), /Unknown record/);
+});
+
+test('demographic validation rejects denominator qualifications, source drift and mixed scopes', () => {
+  for (const edit of [
+    data => { data.demographics.wave = '2014'; },
+    data => { data.demographics.populations[0].dimension = 'gender'; },
+    data => { data.demographics.populations[0].column = '2014'; },
+    data => { data.demographics.populations[0].denominatorLabel = ''; },
+    data => { data.demographics.populations.find(row => row.id === 'asian').denominatorLabel = 'U.S. Asian adults'; },
+    data => { data.demographics.populations[0].estimates[0].value = 62; },
+    data => { data.demographics.populations[0].estimates[0].categoryId = 'baptist'; },
+    data => { data.demographics.populations[0].estimates[1].categoryId = 'christian'; },
+    data => { data.demographics.sources[0].sha256 = 'unknown'; },
+    data => { data.demographics.review.status = 'passed'; delete data.demographics.review.reviewedCommit; }
+  ]) {
+    const fixture = copy();
+    edit(fixture);
+    assert.throws(() => validateData(fixture));
+  }
+});
+
 test('named published anchors retain national values, precision and thresholds', () => {
   const anchors = {
     baptist: '12.0%', presbyterian: '1.7%', sbc: '4.4%', abcusa: '1.0%',

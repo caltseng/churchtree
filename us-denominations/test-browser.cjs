@@ -168,6 +168,67 @@ fs.mkdirSync(output, {recursive: true});
       await heading('Religious service attendance');
       assert.match(await page.locator('#route-status').textContent(), /corrected/);
       assert.equal(new URL(page.url()).search, '?view=attendance');
+      await page.goto(base + '/us-denominations/?view=families&group=baptist');
+      await page.locator('#affiliation-view').selectOption('demographics');
+      await heading('Affiliations within 18-29');
+      assert.equal(new URL(page.url()).search, '?view=demographics&dimension=age&population=age-18-29');
+      assert(!await page.locator('#back').isVisible() && !await page.locator('#reset').isVisible());
+      assert.equal(await content.locator('.breadcrumbs, .row-target, .selected-estimate').count(), 0);
+      for (const [dimension, populations] of [
+        ['age', ['age-18-29', 'age-30-49', 'age-50-64', 'age-65-plus']],
+        ['gender', ['men', 'women']], ['race-ethnicity', ['white', 'black', 'asian', 'hispanic']],
+        ['education', ['college-graduate', 'less-than-college']]
+      ]) {
+        await page.locator('#demographic-dimension').selectOption(dimension);
+        for (const population of populations) {
+          await page.locator('#demographic-population').selectOption(population);
+          assert.equal(await content.locator('tbody tr').count(), 3);
+          assert.match(await content.textContent(), /within this population, not its share of a religion/);
+          assert.match(await content.textContent(), /No intersectional combinations/);
+          assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Demographic content wraps');
+          for (const id of ['demographic-dimension', 'demographic-population']) {
+            assert((await page.locator('#' + id).boundingBox()).height >= 44);
+          }
+        }
+      }
+      await page.locator('#demographic-dimension').selectOption('race-ethnicity');
+      await page.locator('#demographic-population').selectOption('asian');
+      await heading('Affiliations within Asian (English-speaking, non-Hispanic, one race)');
+      assert(await content.locator('#group-heading').evaluate(el => el === document.activeElement));
+      assert.match(await content.textContent(), /English-speaking non-Hispanic U.S. adults reporting only Asian race/);
+      assert.equal(await content.locator('[data-demographic="christian"] td strong').textContent(), '33%');
+      const demographicRows = () => content.locator('tbody tr').evaluateAll(rows => rows.map(row => row.textContent));
+      const demographicChart = await demographicRows();
+      const barRatio = await content.locator('[data-demographic="other-religions"] .bar-track').evaluate(track =>
+        track.firstElementChild.getBoundingClientRect().width / (track.clientWidth - 1));
+      assert(Math.abs(barRatio - .32) < .01);
+      await page.locator('#list-toggle').click();
+      assert.deepEqual(await demographicRows(), demographicChart);
+      assert.equal(await content.locator('.bar:visible').count(), 0);
+      await content.locator('[data-demographic="christian"] summary').click();
+      assert(await content.locator('[data-demographic="christian"] a').isVisible());
+      assert.match(await content.locator('[data-demographic="christian"] .row-source').textContent(), /Among Asian adults > 2023-24/);
+      await page.screenshot({path: path.join(output, `us-demographics-${size.width}.png`), fullPage: true});
+      await page.locator('#affiliation-view').selectOption('attendance');
+      await heading('Religious service attendance');
+      assert(!await page.locator('#demographic-controls').isVisible());
+      await page.locator('#affiliation-view').selectOption('families');
+      await heading('Baptist');
+      await page.locator('#affiliation-view').selectOption('demographics');
+      await heading('Affiliations within Asian (English-speaking, non-Hispanic, one race)');
+      assert.equal(await page.locator('#list-toggle').getAttribute('aria-pressed'), 'true');
+      await page.reload();
+      await heading('Affiliations within Asian (English-speaking, non-Hispanic, one race)');
+      await page.locator('#demographic-dimension').selectOption('gender');
+      await heading('Affiliations within Men');
+      await page.goBack();
+      await heading('Affiliations within Asian (English-speaking, non-Hispanic, one race)');
+      await page.goForward();
+      await heading('Affiliations within Men');
+      await page.goto(base + '/us-denominations/?view=demographics&dimension=gender&population=asian&group=baptist');
+      await heading('Affiliations within Men');
+      assert.match(await page.locator('#route-status').textContent(), /corrected/);
+      assert.equal(new URL(page.url()).search, '?view=demographics&dimension=gender&population=men');
       await page.getByRole('button', {name: 'Site menu', exact: true}).click();
       await page.getByRole('button', {name: 'Settings', exact: true}).click();
       await page.locator('input[value="ink"]').check();
@@ -213,6 +274,20 @@ fs.mkdirSync(output, {recursive: true});
     await page.keyboard.press('Enter');
     await tabTo('#interactive-view [data-attendance="attendance-us-adults"] a');
     assert(await page.evaluate(() => document.activeElement.href.includes('pewresearch.org')));
+    await page.goto(base + '/us-denominations/?view=demographics&dimension=age&population=age-18-29');
+    await tabTo('#demographic-dimension');
+    assert(await page.evaluate(() => getComputedStyle(document.activeElement).outlineStyle !== 'none'));
+    await page.keyboard.press('End');
+    await page.keyboard.press('Enter');
+    assert.equal(await content.locator('#group-heading').textContent(), 'Affiliations within College graduate');
+    await tabTo('#demographic-population');
+    await page.keyboard.press('End');
+    await page.keyboard.press('Enter');
+    assert.equal(await content.locator('#group-heading').textContent(), 'Affiliations within Less than a college degree');
+    await tabTo('#interactive-view [data-demographic="christian"] summary');
+    await page.keyboard.press('Enter');
+    await tabTo('#interactive-view [data-demographic="christian"] a');
+    assert(await page.evaluate(() => document.activeElement.href.includes('pewresearch.org')));
     // A 1280px desktop browser at 200% page zoom has a 640px CSS layout viewport.
     const session = await page.context().newCDPSession(page);
     await session.send('Emulation.setDeviceMetricsOverride', {width: 640, height: 480, deviceScaleFactor: 2, mobile: false});
@@ -252,6 +327,17 @@ fs.mkdirSync(output, {recursive: true});
     assert.match(await attendance.textContent(), /ATTENDPERRLS/);
     assert(await staticPage.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     await staticPage.screenshot({path: path.join(output, 'us-attendance-no-js-320.png'), fullPage: true});
+    await staticPage.goto(base + '/us-denominations/?view=demographics&dimension=race-ethnicity&population=asian#static-demographics-asian');
+    const demographic = staticPage.locator('#static-demographics-asian');
+    assert(await demographic.isVisible());
+    if (!await demographic.evaluate(el => el.open)) await demographic.locator(':scope > summary').click();
+    assert.equal(await demographic.locator('tbody tr').count(), 3);
+    assert.match(await demographic.textContent(), /English-speaking non-Hispanic/);
+    assert.match(await demographic.textContent(), /No intersectional combinations/);
+    await demographic.locator('[data-demographic="christian"] summary').click();
+    assert(await demographic.locator('[data-demographic="christian"] a').isVisible());
+    assert(await staticPage.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    await staticPage.screenshot({path: path.join(output, 'us-demographics-no-js-320.png'), fullPage: true});
     await noJS.close();
     console.log('Keyboard-only drill/restore, 200% equivalent CSS layout, and no-JS nested sources: passed. Real screen-reader testing is not performed.');
   } finally {

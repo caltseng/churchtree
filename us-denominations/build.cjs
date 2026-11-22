@@ -2,6 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const {loadData, getRecord, getChildren, presentation} = require('./data.cjs');
 const view = require('./view.js');
+const {projectDemographics} = require('./demographics.cjs');
 
 function publicData(data) {
   const lenses = {};
@@ -67,7 +68,7 @@ function publicData(data) {
   };
   return {
     schemaVersion: 1, study: {publicationDate: data.provenance.study.publicationDate},
-    records, lenses, sources, attendance,
+    records, lenses, sources, attendance, demographics: projectDemographics(data.demographics),
     interactiveStrings: data.provenance.decisions.find(decision => decision.id === 'tradition-precision').interactiveStrings,
     reuse: {notices: reuse.notices, disclaimer: reuse.disclaimer, termsUrl: reuse.termsUrl}
   };
@@ -92,14 +93,17 @@ function build() {
 <span class="main-branch-copy">Main Branch<small>HISTORY · IDEAS · SOURCES</small></span></a><a class="info-link" href="#methodology">Info</a></header>
 <main id="main"><h1>U.S. denominations</h1>
 <p class="intro">Pew Research Center &middot; 2023-24 Religious Landscape Study</p>
-<p>Explore adult affiliations by family or Pew's Protestant traditions, or compare in-person religious service attendance independently. Affiliation uses the national denominator; attendance uses adults in each religious group.</p>
+<p>Compare national affiliations, affiliations within demographic populations, or in-person attendance. Each view names its adult denominator.</p>
 <div id="route-controls" class="route-controls" hidden>
-<label for="affiliation-view">View <select id="affiliation-view"><option value="families">Families and denominations</option><option value="traditions">Protestant traditions</option><option value="attendance">Religious service attendance</option></select></label>
+<label for="affiliation-view">View <select id="affiliation-view"><option value="families">Families and denominations</option><option value="traditions">Protestant traditions</option><option value="demographics">Affiliations within demographics</option><option value="attendance">Religious service attendance</option></select></label>
+<div id="demographic-controls" class="route-controls" hidden>
+<label for="demographic-dimension">Demographic <select id="demographic-dimension">${data.demographics.dimensions.map(row => `<option value="${esc(row.id)}">${esc(row.label)}</option>`).join('')}</select></label>
+<label for="demographic-population">Population <select id="demographic-population"></select></label></div>
 <button type="button" id="back">Back</button><button type="button" id="reset">Reset</button>
 <button type="button" id="list-toggle" aria-pressed="false">List</button></div>
 <p id="route-status" role="status"></p>
 <section id="interactive-view" aria-label="Selected religious comparison" hidden>${view.renderView(data, {view: 'families', group: 'us-adults', format: 'chart'})}</section>
-<section id="static-view" aria-label="All published comparisons"><nav aria-label="Static views"><a href="#static-families-title">Families and denominations</a> &middot; <a href="#static-traditions-title">Protestant traditions</a> &middot; <a href="?view=attendance#static-attendance">Religious service attendance</a></nav><p>Nested lists and the attendance table work without JavaScript. Expand a group to explore its published children; source notes are available with every estimate.</p>${view.renderStatic(data)}</section>
+<section id="static-view" aria-label="All published comparisons"><nav aria-label="Static views"><a href="#static-families-title">Families and denominations</a> &middot; <a href="#static-traditions-title">Protestant traditions</a> &middot; <a href="?view=attendance#static-attendance">Religious service attendance</a> &middot; <a href="?view=demographics#static-demographics">Affiliations within demographics</a></nav><p>Nested lists and comparison tables work without JavaScript. Expand a group to explore its published children; source notes are available with every estimate.</p>${view.renderStatic(data)}</section>
 <section id="methodology" aria-labelledby="methodology-heading"><h2 id="methodology-heading">Sources and methodology</h2>
 ${view.context(data)}
 <p>These are weighted national estimates of self-identification from published aggregates, not institutional membership, historical lineage or attendance. The study was fielded July 17, 2023-March 4, 2024 among 36,908 adults in the 50 states and D.C.
@@ -109,15 +113,15 @@ The overall margin of error is &plusmn;0.8 percentage points at the 95% confiden
 ${sourceLink('classification')}. Nondenominational and nonspecific Protestant responses remain separate.</p>
 <p>The report's tradition decimals (23.1%, 11.5%, 5.4%) and interactive displays (23%, 11%, 5%) are separate published presentations. Report decimals take precedence for the matched wave, denominator and taxonomy. Ordinary rounding does not explain 11.5% versus 11%; no unrounded microdata was used to explain it. ${sourceLink('report')}; ${sourceLink('interactive')} (DOI: <a href="https://doi.org/10.58094/3zs9-jc14">10.58094/3zs9-jc14</a>).</p>
 <p>Appendix B alone supplies names and classification, not values. Orthodox Presbyterian and Cumberland Presbyterian have no selected reconciled estimate here. Independent Baptist estimates remain tradition-specific; no all-family total is manufactured.</p>
-<p>Questionnaire: ${sourceLink('topline')}, religious identity questions and denomination coding. ${sourceLink('dataset-description')} explains that the public-use file omits detailed identity variables. No survey dataset or respondent data was used. No practice or demographic comparison is included in this affiliation view.</p>
+<p>Questionnaire: ${sourceLink('topline')}, religious identity questions and denomination coding. ${sourceLink('dataset-description')} explains that the public-use file omits detailed identity variables. No survey dataset or respondent data was used. Demographic comparisons are independent of the national affiliation tree and attendance: three published broad affiliations within twelve populations, selected one at a time. No intersecting filters, group-composition denominator reversal or denomination cross-tabs.</p>
 <p>Original Main Branch visualization of selected attributed published aggregate excerpts, not a mirrored chart, full catalogue or principal-part republication.
-<a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a> (effective May 25, 2018; checked November 22, 2026), sections 1 and 2; section 3 restrictions and section 13 dataset terms also reviewed. No written permission has been obtained or claimed. Expansion requires renewed excerpt/reuse review. Publisher artwork, prior waves, cross-tabs and microdata are excluded.</p>
+<a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a> (effective May 25, 2018; checked November 22, 2026), sections 1 and 2; section 3 restrictions and section 13 dataset terms also reviewed. No written permission has been obtained or claimed. Expansion requires renewed excerpt/reuse review. Publisher artwork, prior waves, detailed demographic cross-tabs and microdata are excluded. ${esc(data.demographics.reuseLimits)}</p>
 <p><a href="#main">Return to explorer</a> &middot; <a href="../#explore">All Main Branch explorations</a></p></section></main></body></html>
 `;
-  fs.writeFileSync(path.join(__dirname, 'public-data.js'), '// Generated public affiliation and attendance projection. Do not edit by hand.\nwindow.US_AFFILIATION_DATA = ' +
+  fs.writeFileSync(path.join(__dirname, 'public-data.js'), '// Generated public affiliation, attendance and demographic projection. Do not edit by hand.\nwindow.US_AFFILIATION_DATA = ' +
     JSON.stringify(data).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029') + ';\n');
   fs.writeFileSync(path.join(__dirname, 'index.html'), html.replace(/[ \t]+$/gm, ''));
-  console.log(`Built U.S. denominations route: ${Object.keys(data.records).length} affiliation records, two lenses, ${data.attendance.records.length} attendance rows.`);
+  console.log(`Built U.S. denominations route: ${Object.keys(data.records).length} affiliation records, two lenses, ${data.attendance.records.length} attendance rows, ${data.demographics.populations.length} demographic populations.`);
 }
 
 module.exports = {publicData, build};

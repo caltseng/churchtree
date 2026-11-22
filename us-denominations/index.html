@@ -13,9 +13,12 @@
 <span class="main-branch-copy">Main Branch<small>HISTORY · IDEAS · SOURCES</small></span></a><a class="info-link" href="#methodology">Info</a></header>
 <main id="main"><h1>U.S. denominations</h1>
 <p class="intro">Pew Research Center &middot; 2023-24 Religious Landscape Study</p>
-<p>Explore adult affiliations by family or Pew's Protestant traditions, or compare in-person religious service attendance independently. Affiliation uses the national denominator; attendance uses adults in each religious group.</p>
+<p>Compare national affiliations, affiliations within demographic populations, or in-person attendance. Each view names its adult denominator.</p>
 <div id="route-controls" class="route-controls" hidden>
-<label for="affiliation-view">View <select id="affiliation-view"><option value="families">Families and denominations</option><option value="traditions">Protestant traditions</option><option value="attendance">Religious service attendance</option></select></label>
+<label for="affiliation-view">View <select id="affiliation-view"><option value="families">Families and denominations</option><option value="traditions">Protestant traditions</option><option value="demographics">Affiliations within demographics</option><option value="attendance">Religious service attendance</option></select></label>
+<div id="demographic-controls" class="route-controls" hidden>
+<label for="demographic-dimension">Demographic <select id="demographic-dimension"><option value="age">Age</option><option value="gender">Gender</option><option value="race-ethnicity">Race/ethnicity</option><option value="education">Education</option></select></label>
+<label for="demographic-population">Population <select id="demographic-population"></select></label></div>
 <button type="button" id="back">Back</button><button type="button" id="reset">Reset</button>
 <button type="button" id="list-toggle" aria-pressed="false">List</button></div>
 <p id="route-status" role="status"></p>
@@ -79,7 +82,7 @@
       Adult religious self-identification. <strong>Share of U.S. adults</strong>, not membership rolls or children.</p>
       <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
       <a href="#methodology">Methods, classification, questionnaire and reuse</a>.</p></section>
-<section id="static-view" aria-label="All published comparisons"><nav aria-label="Static views"><a href="#static-families-title">Families and denominations</a> &middot; <a href="#static-traditions-title">Protestant traditions</a> &middot; <a href="?view=attendance#static-attendance">Religious service attendance</a></nav><p>Nested lists and the attendance table work without JavaScript. Expand a group to explore its published children; source notes are available with every estimate.</p><section aria-labelledby="static-families-title"><h2 id="static-families-title">Families and denominations</h2>
+<section id="static-view" aria-label="All published comparisons"><nav aria-label="Static views"><a href="#static-families-title">Families and denominations</a> &middot; <a href="#static-traditions-title">Protestant traditions</a> &middot; <a href="?view=attendance#static-attendance">Religious service attendance</a> &middot; <a href="?view=demographics#static-demographics">Affiliations within demographics</a></nav><p>Nested lists and comparison tables work without JavaScript. Expand a group to explore its published children; source notes are available with every estimate.</p><section aria-labelledby="static-families-title"><h2 id="static-families-title">Families and denominations</h2>
       <section id="static-families-us-adults" class="static-panel">
         <h3>U.S. adults &mdash; Affiliations</h3>
         <p class="coverage">Published estimates are independently rounded and need not add to the parent or to 100%. No residual is inferred.</p>
@@ -1928,7 +1931,549 @@
       The national margin of error is &plusmn;0.8 percentage points at 95% confidence, not a margin for every subgroup.
       <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.</p>
       <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
-      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>; <a href="#methodology">Methods and excerpt reuse limits</a>.</p></section></section>
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>; <a href="#methodology">Methods and excerpt reuse limits</a>.</p></section><section id="static-demographics"><h2>Affiliations within demographic populations</h2>
+      <p>Select one published population at a time. No combined demographic filters or inferred denominations.</p>
+      <details id="static-demographics-age-18-29">
+      <summary>Age: 18-29</summary>
+      <h2 id="static-demographics-age-18-29-heading" tabindex="-1">Affiliations within 18-29</h2>
+      <p><strong>Denominator: U.S. adults ages 18-29</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="list">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within U.S. adults ages 18-29, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody><tr data-demographic="christian" data-status="numeric">
+        <th scope="row">Christian<details class="row-source"><summary>Source for Christian</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/18-29/">18- to 29-year-olds - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/18-29 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage, not a sum of treeData children; column: 2023-24; row: Christians.</p><p>Denominator: U.S. adults ages 18-29.</p></details></th>
+        <td><strong>45%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="other-religions" data-status="numeric">
+        <th scope="row">Other religions<details class="row-source"><summary>Source for Other religions</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/18-29/">18- to 29-year-olds - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/18-29 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage, not a sum of treeData children; column: 2023-24; row: Other religions.</p><p>Denominator: U.S. adults ages 18-29.</p></details></th>
+        <td><strong>9%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="unaffiliated" data-status="numeric">
+        <th scope="row">Religiously unaffiliated<details class="row-source"><summary>Source for Religiously unaffiliated</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/18-29/">18- to 29-year-olds - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/18-29 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage, not a sum of treeData children; column: 2023-24; row: Religiously unaffiliated.</p><p>Denominator: U.S. adults ages 18-29.</p></details></th>
+        <td><strong>44%</strong>
+
+
+        </td>
+      </tr></tbody></table></div>
+      <p>Published age bins: 18-29, 30-49, 50-64 and 65+. The survey asks year of birth; approximate age is survey year (2023 or 2024) minus birth year. These are not birth-cohort tables or ages in the current calendar year.</p>
+      <p class="coverage">Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.</p>
+      <p>1% did not answer the question. Published subgroup margin of error: +/-2.2 percentage points.</p>
+      <p class="panel-source">Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/18-29/">18- to 29-year-olds - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/18-29 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage, not a sum of treeData children; column: 2023-24; row: Christians. All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: Adult religious self-identification within the selected demographic population. Denominator: U.S. adults ages 18-29.</p>
+      <p>English/Spanish web/phone questionnaire printed/PDF p. 74, YOBMOD; report printed p. 89 (PDF p. 90), age calculation note. <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_questionnaire-web-phone.pdf">2023-24 RLS English/Spanish web/phone questionnaire</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p></details><details id="static-demographics-age-30-49">
+      <summary>Age: 30-49</summary>
+      <h2 id="static-demographics-age-30-49-heading" tabindex="-1">Affiliations within 30-49</h2>
+      <p><strong>Denominator: U.S. adults ages 30-49</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="list">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within U.S. adults ages 30-49, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody><tr data-demographic="christian" data-status="numeric">
+        <th scope="row">Christian<details class="row-source"><summary>Source for Christian</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/30-49/">30- to 49-year-olds - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/30-49 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage; column: 2023-24; row: Christians.</p><p>Denominator: U.S. adults ages 30-49.</p></details></th>
+        <td><strong>54%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="other-religions" data-status="numeric">
+        <th scope="row">Other religions<details class="row-source"><summary>Source for Other religions</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/30-49/">30- to 49-year-olds - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/30-49 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage; column: 2023-24; row: Other religions.</p><p>Denominator: U.S. adults ages 30-49.</p></details></th>
+        <td><strong>8%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="unaffiliated" data-status="numeric">
+        <th scope="row">Religiously unaffiliated<details class="row-source"><summary>Source for Religiously unaffiliated</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/30-49/">30- to 49-year-olds - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/30-49 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage; column: 2023-24; row: Religiously unaffiliated.</p><p>Denominator: U.S. adults ages 30-49.</p></details></th>
+        <td><strong>37%</strong>
+
+
+        </td>
+      </tr></tbody></table></div>
+      <p>Published age bins: 18-29, 30-49, 50-64 and 65+. The survey asks year of birth; approximate age is survey year (2023 or 2024) minus birth year. These are not birth-cohort tables or ages in the current calendar year.</p>
+      <p class="coverage">Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.</p>
+      <p>1% did not answer the question. Published subgroup margin of error: +/-1.3 percentage points.</p>
+      <p class="panel-source">Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/30-49/">30- to 49-year-olds - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/30-49 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage; column: 2023-24; row: Christians. All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: Adult religious self-identification within the selected demographic population. Denominator: U.S. adults ages 30-49.</p>
+      <p>English/Spanish web/phone questionnaire printed/PDF p. 74, YOBMOD; report printed p. 89 (PDF p. 90), age calculation note. <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_questionnaire-web-phone.pdf">2023-24 RLS English/Spanish web/phone questionnaire</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p></details><details id="static-demographics-age-50-64">
+      <summary>Age: 50-64</summary>
+      <h2 id="static-demographics-age-50-64-heading" tabindex="-1">Affiliations within 50-64</h2>
+      <p><strong>Denominator: U.S. adults ages 50-64</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="list">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within U.S. adults ages 50-64, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody><tr data-demographic="christian" data-status="numeric">
+        <th scope="row">Christian<details class="row-source"><summary>Source for Christian</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/50-64/">50- to 64-year-olds - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/50-64 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage; column: 2023-24; row: Christians.</p><p>Denominator: U.S. adults ages 50-64.</p></details></th>
+        <td><strong>72%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="other-religions" data-status="numeric">
+        <th scope="row">Other religions<details class="row-source"><summary>Source for Other religions</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/50-64/">50- to 64-year-olds - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/50-64 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage; column: 2023-24; row: Other religions.</p><p>Denominator: U.S. adults ages 50-64.</p></details></th>
+        <td><strong>5%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="unaffiliated" data-status="numeric">
+        <th scope="row">Religiously unaffiliated<details class="row-source"><summary>Source for Religiously unaffiliated</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/50-64/">50- to 64-year-olds - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/50-64 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage; column: 2023-24; row: Religiously unaffiliated.</p><p>Denominator: U.S. adults ages 50-64.</p></details></th>
+        <td><strong>22%</strong>
+
+
+        </td>
+      </tr></tbody></table></div>
+      <p>Published age bins: 18-29, 30-49, 50-64 and 65+. The survey asks year of birth; approximate age is survey year (2023 or 2024) minus birth year. These are not birth-cohort tables or ages in the current calendar year.</p>
+      <p class="coverage">Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.</p>
+      <p>2% did not answer the question. Published subgroup margin of error: +/-1.4 percentage points.</p>
+      <p class="panel-source">Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/50-64/">50- to 64-year-olds - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/50-64 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage; column: 2023-24; row: Christians. All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: Adult religious self-identification within the selected demographic population. Denominator: U.S. adults ages 50-64.</p>
+      <p>English/Spanish web/phone questionnaire printed/PDF p. 74, YOBMOD; report printed p. 89 (PDF p. 90), age calculation note. <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_questionnaire-web-phone.pdf">2023-24 RLS English/Spanish web/phone questionnaire</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p></details><details id="static-demographics-age-65-plus">
+      <summary>Age: 65+</summary>
+      <h2 id="static-demographics-age-65-plus-heading" tabindex="-1">Affiliations within 65+</h2>
+      <p><strong>Denominator: U.S. adults ages 65 and older</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="list">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within U.S. adults ages 65 and older, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody><tr data-demographic="christian" data-status="numeric">
+        <th scope="row">Christian<details class="row-source"><summary>Source for Christian</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/65/">People ages 65 and older - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/65 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage; column: 2023-24; row: Christians.</p><p>Denominator: U.S. adults ages 65 and older.</p></details></th>
+        <td><strong>78%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="other-religions" data-status="numeric">
+        <th scope="row">Other religions<details class="row-source"><summary>Source for Other religions</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/65/">People ages 65 and older - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/65 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage; column: 2023-24; row: Other religions.</p><p>Denominator: U.S. adults ages 65 and older.</p></details></th>
+        <td><strong>5%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="unaffiliated" data-status="numeric">
+        <th scope="row">Religiously unaffiliated<details class="row-source"><summary>Source for Religiously unaffiliated</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/65/">People ages 65 and older - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/65 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage; column: 2023-24; row: Religiously unaffiliated.</p><p>Denominator: U.S. adults ages 65 and older.</p></details></th>
+        <td><strong>15%</strong>
+
+
+        </td>
+      </tr></tbody></table></div>
+      <p>Published age bins: 18-29, 30-49, 50-64 and 65+. The survey asks year of birth; approximate age is survey year (2023 or 2024) minus birth year. These are not birth-cohort tables or ages in the current calendar year.</p>
+      <p class="coverage">Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.</p>
+      <p>2% did not answer the question. Published subgroup margin of error: +/-1.2 percentage points.</p>
+      <p class="panel-source">Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/age-distribution/65/">People ages 65 and older - 2023-24 U.S. Religious Landscape Study Interactive Database</a>.
+      age-distribution/65 &gt; Religious composition &gt; top-level cards; data-wp-context traditionHeading/traditionPercentage; column: 2023-24; row: Christians. All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: Adult religious self-identification within the selected demographic population. Denominator: U.S. adults ages 65 and older.</p>
+      <p>English/Spanish web/phone questionnaire printed/PDF p. 74, YOBMOD; report printed p. 89 (PDF p. 90), age calculation note. <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_questionnaire-web-phone.pdf">2023-24 RLS English/Spanish web/phone questionnaire</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p></details><details id="static-demographics-men">
+      <summary>Gender: Men</summary>
+      <h2 id="static-demographics-men-heading" tabindex="-1">Affiliations within Men</h2>
+      <p><strong>Denominator: U.S. adults who describe themselves as men</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="list">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within U.S. adults who describe themselves as men, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody><tr data-demographic="christian" data-status="numeric">
+        <th scope="row">Christian<details class="row-source"><summary>Source for Christian</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by gender, printed p. 98 (PDF p. 99); table 01-018, attachment 198916; column: Among men &gt; 2023-24; row: Christian.</p><p>Denominator: U.S. adults who describe themselves as men.</p></details></th>
+        <td><strong>59%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="other-religions" data-status="numeric">
+        <th scope="row">Other religions<details class="row-source"><summary>Source for Other religions</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by gender, printed p. 98 (PDF p. 99); table 01-018, attachment 198916; column: Among men &gt; 2023-24; row: Other religions.</p><p>Denominator: U.S. adults who describe themselves as men.</p></details></th>
+        <td><strong>8%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="unaffiliated" data-status="numeric">
+        <th scope="row">Religiously unaffiliated<details class="row-source"><summary>Source for Religiously unaffiliated</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by gender, printed p. 98 (PDF p. 99); table 01-018, attachment 198916; column: Among men &gt; 2023-24; row: Religiously unaffiliated.</p><p>Denominator: U.S. adults who describe themselves as men.</p></details></th>
+        <td><strong>31%</strong>
+
+
+        </td>
+      </tr></tbody></table></div>
+      <p>Self-described gender, not sex assigned at birth. GENDER asks: Do you describe yourself as a man, a woman or in some other way? Only the published Men and Women columns are selected; no estimate for In some other way is available in this table. The selection is not an exhaustive gender classification.</p>
+      <p class="coverage">Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.</p>
+      <p>Don&#39;t know/Refused: 1%. A subgroup margin of error is not shown in this table; the national margin is not a subgroup margin.</p>
+      <p class="panel-source">Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by gender, printed p. 98 (PDF p. 99); table 01-018, attachment 198916; column: Among men &gt; 2023-24; row: Christian. All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: Adult religious self-identification within the selected demographic population. Denominator: U.S. adults who describe themselves as men.</p>
+      <p>English/Spanish web/phone questionnaire printed/PDF p. 82, GENDER; Appendix A, report printed p. 348 (PDF p. 349). <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_questionnaire-web-phone.pdf">2023-24 RLS English/Spanish web/phone questionnaire</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p></details><details id="static-demographics-women">
+      <summary>Gender: Women</summary>
+      <h2 id="static-demographics-women-heading" tabindex="-1">Affiliations within Women</h2>
+      <p><strong>Denominator: U.S. adults who describe themselves as women</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="list">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within U.S. adults who describe themselves as women, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody><tr data-demographic="christian" data-status="numeric">
+        <th scope="row">Christian<details class="row-source"><summary>Source for Christian</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by gender, printed p. 98 (PDF p. 99); table 01-018, attachment 198916; column: Among women &gt; 2023-24; row: Christian.</p><p>Denominator: U.S. adults who describe themselves as women.</p></details></th>
+        <td><strong>66%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="other-religions" data-status="numeric">
+        <th scope="row">Other religions<details class="row-source"><summary>Source for Other religions</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by gender, printed p. 98 (PDF p. 99); table 01-018, attachment 198916; column: Among women &gt; 2023-24; row: Other religions.</p><p>Denominator: U.S. adults who describe themselves as women.</p></details></th>
+        <td><strong>6%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="unaffiliated" data-status="numeric">
+        <th scope="row">Religiously unaffiliated<details class="row-source"><summary>Source for Religiously unaffiliated</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by gender, printed p. 98 (PDF p. 99); table 01-018, attachment 198916; column: Among women &gt; 2023-24; row: Religiously unaffiliated.</p><p>Denominator: U.S. adults who describe themselves as women.</p></details></th>
+        <td><strong>27%</strong>
+
+
+        </td>
+      </tr></tbody></table></div>
+      <p>Self-described gender, not sex assigned at birth. GENDER asks: Do you describe yourself as a man, a woman or in some other way? Only the published Men and Women columns are selected; no estimate for In some other way is available in this table. The selection is not an exhaustive gender classification.</p>
+      <p class="coverage">Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.</p>
+      <p>Don&#39;t know/Refused: 1%. A subgroup margin of error is not shown in this table; the national margin is not a subgroup margin.</p>
+      <p class="panel-source">Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by gender, printed p. 98 (PDF p. 99); table 01-018, attachment 198916; column: Among women &gt; 2023-24; row: Christian. All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: Adult religious self-identification within the selected demographic population. Denominator: U.S. adults who describe themselves as women.</p>
+      <p>English/Spanish web/phone questionnaire printed/PDF p. 82, GENDER; Appendix A, report printed p. 348 (PDF p. 349). <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_questionnaire-web-phone.pdf">2023-24 RLS English/Spanish web/phone questionnaire</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p></details><details id="static-demographics-white">
+      <summary>Race/ethnicity: White (non-Hispanic, one race)</summary>
+      <h2 id="static-demographics-white-heading" tabindex="-1">Affiliations within White (non-Hispanic, one race)</h2>
+      <p><strong>Denominator: Non-Hispanic U.S. adults reporting only White race</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="list">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within Non-Hispanic U.S. adults reporting only White race, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody><tr data-demographic="christian" data-status="numeric">
+        <th scope="row">Christian<details class="row-source"><summary>Source for Christian</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among White adults &gt; 2023-24; row: Christian.</p><p>Denominator: Non-Hispanic U.S. adults reporting only White race.</p></details></th>
+        <td><strong>62%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="other-religions" data-status="numeric">
+        <th scope="row">Other religions<details class="row-source"><summary>Source for Other religions</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among White adults &gt; 2023-24; row: Other religions.</p><p>Denominator: Non-Hispanic U.S. adults reporting only White race.</p></details></th>
+        <td><strong>6%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="unaffiliated" data-status="numeric">
+        <th scope="row">Religiously unaffiliated<details class="row-source"><summary>Source for Religiously unaffiliated</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among White adults &gt; 2023-24; row: Religiously unaffiliated.</p><p>Denominator: Non-Hispanic U.S. adults reporting only White race.</p></details></th>
+        <td><strong>31%</strong>
+
+
+        </td>
+      </tr></tbody></table></div>
+      <p>White, Black and Asian adults report only one race and are not Hispanic. Hispanic adults may be of any race. Asian estimates represent English speakers only. Other racial identities and multiracial groups are not included in this selected published table.</p>
+      <p class="coverage">Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.</p>
+      <p>Don&#39;t know/Refused: 1%. A subgroup margin of error is not shown in this table; the national margin is not a subgroup margin.</p>
+      <p class="panel-source">Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among White adults &gt; 2023-24; row: Christian. All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: Adult religious self-identification within the selected demographic population. Denominator: Non-Hispanic U.S. adults reporting only White race.</p>
+      <p>Report printed p. 95 (PDF p. 96), table note; questionnaire race and Hispanic-origin items. <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_questionnaire-web-phone.pdf">2023-24 RLS English/Spanish web/phone questionnaire</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p></details><details id="static-demographics-black">
+      <summary>Race/ethnicity: Black (non-Hispanic, one race)</summary>
+      <h2 id="static-demographics-black-heading" tabindex="-1">Affiliations within Black (non-Hispanic, one race)</h2>
+      <p><strong>Denominator: Non-Hispanic U.S. adults reporting only Black race</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="list">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within Non-Hispanic U.S. adults reporting only Black race, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody><tr data-demographic="christian" data-status="numeric">
+        <th scope="row">Christian<details class="row-source"><summary>Source for Christian</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among Black adults &gt; 2023-24; row: Christian.</p><p>Denominator: Non-Hispanic U.S. adults reporting only Black race.</p></details></th>
+        <td><strong>73%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="other-religions" data-status="numeric">
+        <th scope="row">Other religions<details class="row-source"><summary>Source for Other religions</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among Black adults &gt; 2023-24; row: Other religions.</p><p>Denominator: Non-Hispanic U.S. adults reporting only Black race.</p></details></th>
+        <td><strong>4%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="unaffiliated" data-status="numeric">
+        <th scope="row">Religiously unaffiliated<details class="row-source"><summary>Source for Religiously unaffiliated</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among Black adults &gt; 2023-24; row: Religiously unaffiliated.</p><p>Denominator: Non-Hispanic U.S. adults reporting only Black race.</p></details></th>
+        <td><strong>22%</strong>
+
+
+        </td>
+      </tr></tbody></table></div>
+      <p>White, Black and Asian adults report only one race and are not Hispanic. Hispanic adults may be of any race. Asian estimates represent English speakers only. Other racial identities and multiracial groups are not included in this selected published table.</p>
+      <p class="coverage">Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.</p>
+      <p>Don&#39;t know/Refused: 1%. A subgroup margin of error is not shown in this table; the national margin is not a subgroup margin.</p>
+      <p class="panel-source">Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among Black adults &gt; 2023-24; row: Christian. All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: Adult religious self-identification within the selected demographic population. Denominator: Non-Hispanic U.S. adults reporting only Black race.</p>
+      <p>Report printed p. 95 (PDF p. 96), table note; questionnaire race and Hispanic-origin items. <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_questionnaire-web-phone.pdf">2023-24 RLS English/Spanish web/phone questionnaire</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p></details><details id="static-demographics-asian">
+      <summary>Race/ethnicity: Asian (English-speaking, non-Hispanic, one race)</summary>
+      <h2 id="static-demographics-asian-heading" tabindex="-1">Affiliations within Asian (English-speaking, non-Hispanic, one race)</h2>
+      <p><strong>Denominator: English-speaking non-Hispanic U.S. adults reporting only Asian race</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="list">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within English-speaking non-Hispanic U.S. adults reporting only Asian race, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody><tr data-demographic="christian" data-status="numeric">
+        <th scope="row">Christian<details class="row-source"><summary>Source for Christian</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among Asian adults &gt; 2023-24; row: Christian.</p><p>Denominator: English-speaking non-Hispanic U.S. adults reporting only Asian race.</p></details></th>
+        <td><strong>33%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="other-religions" data-status="numeric">
+        <th scope="row">Other religions<details class="row-source"><summary>Source for Other religions</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among Asian adults &gt; 2023-24; row: Other religions.</p><p>Denominator: English-speaking non-Hispanic U.S. adults reporting only Asian race.</p></details></th>
+        <td><strong>32%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="unaffiliated" data-status="numeric">
+        <th scope="row">Religiously unaffiliated<details class="row-source"><summary>Source for Religiously unaffiliated</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among Asian adults &gt; 2023-24; row: Religiously unaffiliated.</p><p>Denominator: English-speaking non-Hispanic U.S. adults reporting only Asian race.</p></details></th>
+        <td><strong>33%</strong>
+
+
+        </td>
+      </tr></tbody></table></div>
+      <p>White, Black and Asian adults report only one race and are not Hispanic. Hispanic adults may be of any race. Asian estimates represent English speakers only. Other racial identities and multiracial groups are not included in this selected published table.</p>
+      <p class="coverage">Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.</p>
+      <p>Don&#39;t know/Refused: 2%. A subgroup margin of error is not shown in this table; the national margin is not a subgroup margin.</p>
+      <p class="panel-source">Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among Asian adults &gt; 2023-24; row: Christian. All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: Adult religious self-identification within the selected demographic population. Denominator: English-speaking non-Hispanic U.S. adults reporting only Asian race.</p>
+      <p>Report printed p. 95 (PDF p. 96), table note; questionnaire race and Hispanic-origin items. <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_questionnaire-web-phone.pdf">2023-24 RLS English/Spanish web/phone questionnaire</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p></details><details id="static-demographics-hispanic">
+      <summary>Race/ethnicity: Hispanic (any race)</summary>
+      <h2 id="static-demographics-hispanic-heading" tabindex="-1">Affiliations within Hispanic (any race)</h2>
+      <p><strong>Denominator: Hispanic U.S. adults of any race</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="list">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within Hispanic U.S. adults of any race, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody><tr data-demographic="christian" data-status="numeric">
+        <th scope="row">Christian<details class="row-source"><summary>Source for Christian</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among Hispanic adults &gt; 2023-24; row: Christian.</p><p>Denominator: Hispanic U.S. adults of any race.</p></details></th>
+        <td><strong>67%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="other-religions" data-status="numeric">
+        <th scope="row">Other religions<details class="row-source"><summary>Source for Other religions</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among Hispanic adults &gt; 2023-24; row: Other religions.</p><p>Denominator: Hispanic U.S. adults of any race.</p></details></th>
+        <td><strong>5%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="unaffiliated" data-status="numeric">
+        <th scope="row">Religiously unaffiliated<details class="row-source"><summary>Source for Religiously unaffiliated</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among Hispanic adults &gt; 2023-24; row: Religiously unaffiliated.</p><p>Denominator: Hispanic U.S. adults of any race.</p></details></th>
+        <td><strong>27%</strong>
+
+
+        </td>
+      </tr></tbody></table></div>
+      <p>White, Black and Asian adults report only one race and are not Hispanic. Hispanic adults may be of any race. Asian estimates represent English speakers only. Other racial identities and multiracial groups are not included in this selected published table.</p>
+      <p class="coverage">Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.</p>
+      <p>Don&#39;t know/Refused: 2%. A subgroup margin of error is not shown in this table; the national margin is not a subgroup margin.</p>
+      <p class="panel-source">Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition of racial and ethnic groups, printed p. 95 (PDF p. 96); table 01-015, attachment 198913; column: Among Hispanic adults &gt; 2023-24; row: Christian. All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: Adult religious self-identification within the selected demographic population. Denominator: Hispanic U.S. adults of any race.</p>
+      <p>Report printed p. 95 (PDF p. 96), table note; questionnaire race and Hispanic-origin items. <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_questionnaire-web-phone.pdf">2023-24 RLS English/Spanish web/phone questionnaire</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p></details><details id="static-demographics-college-graduate">
+      <summary>Education: College graduate</summary>
+      <h2 id="static-demographics-college-graduate-heading" tabindex="-1">Affiliations within College graduate</h2>
+      <p><strong>Denominator: U.S. adult college graduates</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="list">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within U.S. adult college graduates, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody><tr data-demographic="christian" data-status="numeric">
+        <th scope="row">Christian<details class="row-source"><summary>Source for Christian</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by educational attainment, printed p. 97 (PDF p. 98); table 01-017, attachment 198915; column: Among college graduates &gt; 2023-24; row: Christian.</p><p>Denominator: U.S. adult college graduates.</p></details></th>
+        <td><strong>58%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="other-religions" data-status="numeric">
+        <th scope="row">Other religions<details class="row-source"><summary>Source for Other religions</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by educational attainment, printed p. 97 (PDF p. 98); table 01-017, attachment 198915; column: Among college graduates &gt; 2023-24; row: Other religions.</p><p>Denominator: U.S. adult college graduates.</p></details></th>
+        <td><strong>10%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="unaffiliated" data-status="numeric">
+        <th scope="row">Religiously unaffiliated<details class="row-source"><summary>Source for Religiously unaffiliated</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by educational attainment, printed p. 97 (PDF p. 98); table 01-017, attachment 198915; column: Among college graduates &gt; 2023-24; row: Religiously unaffiliated.</p><p>Denominator: U.S. adult college graduates.</p></details></th>
+        <td><strong>31%</strong>
+
+
+        </td>
+      </tr></tbody></table></div>
+      <p>Use the report&#39;s two published groups: college graduates and adults with less than a college degree. College graduates include bachelor&#39;s and postgraduate degrees. Less than a college degree includes some college and associate degrees; do not interpret it as high school only.</p>
+      <p class="coverage">Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.</p>
+      <p>Don&#39;t know/Refused: 1%. A subgroup margin of error is not shown in this table; the national margin is not a subgroup margin.</p>
+      <p class="panel-source">Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by educational attainment, printed p. 97 (PDF p. 98); table 01-017, attachment 198915; column: Among college graduates &gt; 2023-24; row: Christian. All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: Adult religious self-identification within the selected demographic population. Denominator: U.S. adult college graduates.</p>
+      <p>English/Spanish web/phone questionnaire printed/PDF p. 74, EDUC_ACS; report printed p. 97 (PDF p. 98). <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_questionnaire-web-phone.pdf">2023-24 RLS English/Spanish web/phone questionnaire</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p></details><details id="static-demographics-less-than-college">
+      <summary>Education: Less than a college degree</summary>
+      <h2 id="static-demographics-less-than-college-heading" tabindex="-1">Affiliations within Less than a college degree</h2>
+      <p><strong>Denominator: U.S. adults with less than a college degree</strong>. Each percentage is within this population, not its share of a religion.</p>
+      <div class="chart demographic-chart" data-format="list">
+      <p>Fixed scale: 0-100% of the selected demographic population.</p>
+      <table class="attendance-table"><caption>Selected broad affiliations within U.S. adults with less than a college degree, 2023-24</caption>
+      <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
+      <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
+      <tbody><tr data-demographic="christian" data-status="numeric">
+        <th scope="row">Christian<details class="row-source"><summary>Source for Christian</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by educational attainment, printed p. 97 (PDF p. 98); table 01-017, attachment 198915; column: Among adults with less than a college degree &gt; 2023-24; row: Christian.</p><p>Denominator: U.S. adults with less than a college degree.</p></details></th>
+        <td><strong>64%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="other-religions" data-status="numeric">
+        <th scope="row">Other religions<details class="row-source"><summary>Source for Other religions</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by educational attainment, printed p. 97 (PDF p. 98); table 01-017, attachment 198915; column: Among adults with less than a college degree &gt; 2023-24; row: Other religions.</p><p>Denominator: U.S. adults with less than a college degree.</p></details></th>
+        <td><strong>6%</strong>
+
+
+        </td>
+      </tr><tr data-demographic="unaffiliated" data-status="numeric">
+        <th scope="row">Religiously unaffiliated<details class="row-source"><summary>Source for Religiously unaffiliated</summary>
+        <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by educational attainment, printed p. 97 (PDF p. 98); table 01-017, attachment 198915; column: Among adults with less than a college degree &gt; 2023-24; row: Religiously unaffiliated.</p><p>Denominator: U.S. adults with less than a college degree.</p></details></th>
+        <td><strong>29%</strong>
+
+
+        </td>
+      </tr></tbody></table></div>
+      <p>Use the report&#39;s two published groups: college graduates and adults with less than a college degree. College graduates include bachelor&#39;s and postgraduate degrees. Less than a college degree includes some college and associate degrees; do not interpret it as high school only.</p>
+      <p class="coverage">Only Christian, other religions and religiously unaffiliated aggregates are selected. Nonresponses remain in each subgroup denominator but are not plotted; the published nonresponse note is retained. Independently rounded estimates need not sum to 100%. No residual, sum, re-rounding or denominator reversal is used. No intersectional combinations, denomination estimates or attendance answers are inferred. Other demographic populations and religious details are outside this excerpt.</p>
+      <p>Don&#39;t know/Refused: 2%. A subgroup margin of error is not shown in this table; the national margin is not a subgroup margin.</p>
+      <p class="panel-source">Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
+      Chapter 1, Religious composition by educational attainment, printed p. 97 (PDF p. 98); table 01-017, attachment 198915; column: Among adults with less than a college degree &gt; 2023-24; row: Christian. All three rows link to their exact source row and column.</p>
+      <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
+      Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
+      Measure: Adult religious self-identification within the selected demographic population. Denominator: U.S. adults with less than a college degree.</p>
+      <p>English/Spanish web/phone questionnaire printed/PDF p. 74, EDUC_ACS; report printed p. 97 (PDF p. 98). <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_questionnaire-web-phone.pdf">2023-24 RLS English/Spanish web/phone questionnaire</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>.
+      Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
+      <p class="credit">© 2026 Pew Research Center. Main Branch&#39;s selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.
+      <a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a>. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p></details></section></section>
 <section id="methodology" aria-labelledby="methodology-heading"><h2 id="methodology-heading">Sources and methodology</h2>
 <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published 2025-02-26.
       Fielded July 17, 2023-March 4, 2024; 36,908 adults in the 50 U.S. states and D.C.
@@ -1942,7 +2487,7 @@ The overall margin of error is &plusmn;0.8 percentage points at the 95% confiden
 <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>. Nondenominational and nonspecific Protestant responses remain separate.</p>
 <p>The report's tradition decimals (23.1%, 11.5%, 5.4%) and interactive displays (23%, 11%, 5%) are separate published presentations. Report decimals take precedence for the matched wave, denominator and taxonomy. Ordinary rounding does not explain 11.5% versus 11%; no unrounded microdata was used to explain it. <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>; <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a> (DOI: <a href="https://doi.org/10.58094/3zs9-jc14">10.58094/3zs9-jc14</a>).</p>
 <p>Appendix B alone supplies names and classification, not values. Orthodox Presbyterian and Cumberland Presbyterian have no selected reconciled estimate here. Independent Baptist estimates remain tradition-specific; no all-family total is manufactured.</p>
-<p>Questionnaire: <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_topline.pdf">2023-24 Religious Landscape Study questionnaire topline</a>, religious identity questions and denomination coding. <a href="https://www.pewresearch.org/dataset/2023-24-religious-landscape-study-rls-dataset/">2023-24 Religious Landscape Study (RLS) Dataset</a> explains that the public-use file omits detailed identity variables. No survey dataset or respondent data was used. No practice or demographic comparison is included in this affiliation view.</p>
+<p>Questionnaire: <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_topline.pdf">2023-24 Religious Landscape Study questionnaire topline</a>, religious identity questions and denomination coding. <a href="https://www.pewresearch.org/dataset/2023-24-religious-landscape-study-rls-dataset/">2023-24 Religious Landscape Study (RLS) Dataset</a> explains that the public-use file omits detailed identity variables. No survey dataset or respondent data was used. Demographic comparisons are independent of the national affiliation tree and attendance: three published broad affiliations within twelve populations, selected one at a time. No intersecting filters, group-composition denominator reversal or denomination cross-tabs.</p>
 <p>Original Main Branch visualization of selected attributed published aggregate excerpts, not a mirrored chart, full catalogue or principal-part republication.
-<a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a> (effective May 25, 2018; checked November 22, 2026), sections 1 and 2; section 3 restrictions and section 13 dataset terms also reviewed. No written permission has been obtained or claimed. Expansion requires renewed excerpt/reuse review. Publisher artwork, prior waves, cross-tabs and microdata are excluded.</p>
+<a href="https://www.pewresearch.org/about/terms-and-conditions/">Pew Terms of Use</a> (effective May 25, 2018; checked November 22, 2026), sections 1 and 2; section 3 restrictions and section 13 dataset terms also reviewed. No written permission has been obtained or claimed. Expansion requires renewed excerpt/reuse review. Publisher artwork, prior waves, detailed demographic cross-tabs and microdata are excluded. Only three directly published broad affiliation aggregates for twelve demographic populations in one wave, in addition to the existing national affiliation and attendance excerpt. No demographic denomination detail, multi-wave database, respondent data, publisher prose or artwork is republished. No written permission obtained or claimed. This does not reproduce the principal part of the 393-page report or multi-measure interactive database.</p>
 <p><a href="#main">Return to explorer</a> &middot; <a href="../#explore">All Main Branch explorations</a></p></section></main></body></html>

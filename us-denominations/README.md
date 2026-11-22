@@ -31,6 +31,8 @@ also remain offline.
 | `sources.json` | Study/wave, field period, geography, denominator and metric definitions, source revisions and hashes, table panels/columns, reuse notices, source-precedence decisions and omissions. |
 | `affiliation.json` | Stable record IDs, source and display labels, kind, explicit classification scope, exact published string, numeric/threshold/unavailable/suppressed status, precision, source panel and row. Interactive-only records include the full published path. |
 | `attendance.json` | Independent monthly in-person NETs. Each `populationId` identifies the adults answering that row, **not** a child estimate in an affiliation tree. |
+| `demographics.json` | Independently curated broad affiliations within twelve demographic populations, exact source cells, subgroup denominators, definitions, nonresponse/uncertainty and renewed reuse/review record. |
+| `demographics.cjs` | Offline validation, explicit public projection and demographic source ledger (`node us-denominations/demographics.cjs --ledger`). No requests or national estimate substitution. |
 | `hierarchies.json` | Two trees referencing the same estimate records; shared broad panels plus lens-specific panels. Parent/child edges include a source and subset locator. An absent panel is a leaf. `coverage: selected` means **Published detail**, never a closed total. |
 | `data.cjs` | CommonJS loader, validation and pure data helpers for the later builder. No route controller or network access. |
 
@@ -136,9 +138,10 @@ reference to sections 2/3/13 does not replace section 1's principal-part limit.
 
 This selection retains one national wave's family column, selected denomination
 cells, selected interactive family intersections/response categories and one
-attendance NET for twelve groups, out of a 393-page report and a multi-wave,
-multi-geography database with many measures. We omit prior waves, demographic
-cross-tabs, most interactive details, report prose and publisher chart artwork.
+attendance NET for twelve groups, plus 36 broad affiliation cells within twelve
+demographic populations, out of a 393-page report and a multi-wave,
+multi-geography database with many measures. We omit prior waves, detailed demographic
+denomination cross-tabs, most interactive details, report prose and publisher chart artwork.
 This is an original, attributed excerpt comparison, not a mirrored chart,
 catalogue or principal-part reproduction. No downloaded PDF, publisher image or
 microdata is checked into Git. No written permission has been obtained or
@@ -213,9 +216,9 @@ context without JavaScript. Each row uses adults in its named religious group;
 the overall row uses all U.S. adults. No affiliation ratios, denomination
 inference, virtual measure or sums of rounded frequency cells are used.
 
-Later demographic views must likewise remain independent and add only their
-explicitly reviewed public projection. No timeline or home-card changes belong
-to this attendance integration. The route tests exercise both affiliation
+Demographic views remain independent and add only their
+explicit public projection. No timeline or home-card changes belong
+to this integration. The route tests exercise both affiliation
 lenses/paths and attendance together as v1 acceptance, including source context,
 public boundary, focus, view switching, history and no-JavaScript access.
 
@@ -225,3 +228,64 @@ viewport at DPR 2 equivalent to a 1280px desktop at 200% page zoom. This emulati
 is a layout check, not a manual browser-zoom test. DOM/keyboard checks are not
 real screen-reader testing; that manual assistive-technology check remains a
 release limitation until actually performed.
+
+### Demographic expansion and source gate
+
+The confirmed expansion answers **affiliations within each demographic**, not
+demographic makeup of a religion. `?view=demographics&dimension=age&population=age-18-29`
+selects one population; `&format=list` preserves the same values and sources.
+The four dimensions are age, self-described gender, race/ethnicity and education.
+There are no combined/intersectional filters, national ancestors, attendance
+answers or denomination cross-tabs. Switching back restores an in-memory
+affiliation focus; a fresh demographic deep link has none. Browser history
+replays dimension, population and format. Invalid/duplicate/incompatible
+parameters are corrected visibly. Static `#static-demographics-{populationId}`
+details carry the same tables, denominators and citations without JavaScript.
+
+The selected excerpt is just **Christian, Other religions, Religiously
+unaffiliated** for twelve populations. Each cell is directly published, not a
+sum or residual. Nonresponse stays in the denominator and its published note
+remains visible, without a fabricated bar. Four age bins (18-29, 30-49, 50-64,
+65+) use the 2023-24 interactive's top-level cards, specifically
+`traditionHeading`/`traditionPercentage`, not sums of rounded child cells.
+The other eight populations use chapter 1's composition tables, **not chapter
+24's demographic makeup of religious groups**:
+
+| Dimension | Population columns and precise source |
+| --- | --- |
+| Gender | Among men / Among women > 2023-24; report printed p. 98 / PDF p. 99, table 01-018 (attachment 198916). |
+| Race/ethnicity | Among White / Black / Asian / Hispanic adults > 2023-24; printed p. 95 / PDF p. 96, table 01-015 (198913). |
+| Education | Among college graduates / Among adults with less than a college degree > 2023-24; printed p. 97 / PDF p. 98, table 01-017 (198915). |
+
+White, Black and Asian columns are non-Hispanic single-race populations; Asian
+estimates represent English speakers only. Hispanics may be of any race.
+GENDER is self-description, not sex at birth (web/phone questionnaire p. 82;
+Appendix A, printed p. 348 / PDF p. 349). The source's two gender columns are
+not an exhaustive classification; no estimate for “In some other way” is
+invented. Education preserves the report's two bins, rather than claiming
+unpublished detailed levels. The age bins reflect approximate survey-time age,
+not current age or the report's overlapping birth-cohort age labels.
+
+`demographics.json` pins report/instrument hashes and checked interactive
+snapshot hashes. Dynamic HTML hashes may change on a later visit; reconcile
+the selected wave, top-level cells and notes rather than assuming a later
+HTML snapshot is identical. The main and demographic ledgers resolve every
+cell and preserve exact source-row/column/path locators. No downloaded report,
+image, instrument, full database or snapshot is committed or published.
+
+**Independent demographic reconciliation passed November 22, 2026**, covering
+revision `606dff5b766d74d5c8af8e75898296c5e4142e9b`: all 36 cells, twelve
+nonresponse notes, four age margins of error, denominators, definitions and
+renewed limited-excerpt reuse. No numeric corrections. The reviewer corrected
+the age instrument item to **YOBMOD, questionnaire p. 74** (not BIRTHYR), and
+clarified **EDUC_ACS, p. 74**. These locator/review-only follow-ups were approved
+without a second reconciliation. The recorded review does not imply Pew's
+review or endorsement of Main Branch.
+
+For future expanded selections, existing national affiliation/attendance review
+is not sufficient. Keep the PR draft even with passing CI: the repository's
+trusted-PR workflow can merge non-draft PRs. Send the draft revision and complete
+demographic ledger to the coordinator; record the reviewed commit/scope and
+corrections before making it ready. Renewed Terms review limits this expansion
+to the original 36-cell broad comparison and preserves credit/notices/no
+endorsement; no written permission or principal-part republication is claimed.

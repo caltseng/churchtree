@@ -1,5 +1,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const {loadDemographics, validateDemographics, ledger: demographicLedger} = require('./demographics.cjs');
 
 function readJSON(name) {
   return JSON.parse(fs.readFileSync(path.join(__dirname, name), 'utf8'));
@@ -10,7 +11,8 @@ function loadData() {
     provenance: readJSON('sources.json'),
     affiliation: readJSON('affiliation.json'),
     attendance: readJSON('attendance.json'),
-    hierarchies: readJSON('hierarchies.json')
+    hierarchies: readJSON('hierarchies.json'),
+    demographics: loadDemographics(validateEstimate)
   };
   validateData(data);
   return data;
@@ -95,6 +97,7 @@ function sameSeries(a, b) {
 }
 
 function validateData(data) {
+  validateDemographics(data.demographics, validateEstimate);
   const provenance = data.provenance;
   requireValue(provenance.schemaVersion === 1, 'Unsupported data schema');
   requireValue(/^\d{4}-\d{2}-\d{2}$/.test(provenance.checkedDate), 'Missing checked date');
@@ -287,6 +290,8 @@ function ledger(data) {
     lines.push(`\n${lens}: verified subset mapping to reconcile`);
     for (const panel of panels(data, lens)) lines.push(`${panel.parentId} -> ${panel.children.join(', ')}\t${panel.coverage}\t${panel.sourceId}: ${panel.locator}`);
   }
+  lines.push('\nDemographics: independent subgroup-denominator source ledger',
+    JSON.stringify(demographicLedger(data.demographics), null, 2));
   return lines.join('\n');
 }
 
@@ -295,5 +300,5 @@ module.exports = {loadData, validateData, records, getRecord, getChildren, getAn
 if (require.main === module) {
   const data = loadData();
   if (process.argv.includes('--ledger')) console.log(ledger(data));
-  else console.log(`Validated ${data.affiliation.records.length} affiliation records, ${data.attendance.records.length} attendance records and two reference hierarchies (offline). Source reconciliation: ${data.provenance.review.status}.`);
+  else console.log(`Validated ${data.affiliation.records.length} affiliation records, ${data.attendance.records.length} attendance records, two reference hierarchies and ${data.demographics.populations.length} demographic populations (offline). Source reconciliation: national ${data.provenance.review.status}; demographics ${data.demographics.review.status}.`);
 }

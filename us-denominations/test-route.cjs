@@ -14,7 +14,7 @@ test('public projection and generated artifact contain only intentional affiliat
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'public-data.js'), 'utf8'), sandbox);
   assert.equal(JSON.stringify(sandbox.window.US_AFFILIATION_DATA), JSON.stringify(data));
   assert.deepEqual(Object.keys(data).sort(),
-    ['schemaVersion', 'study', 'records', 'lenses', 'sources', 'interactiveStrings', 'reuse', 'attendance'].sort());
+    ['schemaVersion', 'study', 'records', 'lenses', 'sources', 'interactiveStrings', 'reuse', 'attendance', 'demographics'].sort());
   for (const record of Object.values(data.records)) {
     assert.deepEqual(Object.keys(record).sort(),
       ['id', 'label', 'sourceLabel', 'kind', 'scope', 'status', 'valueText', 'barValue', 'reason', 'source'].sort());
@@ -164,4 +164,77 @@ test('static nested content includes every lens occurrence and source/threshold/
   assert.match(html, /No written permission has been obtained or claimed/);
   assert.match(html, /Appendix B alone supplies names and classification, not values/);
   assert.match(html, /religious identity questions and denomination coding/);
+});
+
+test('demographics use independent subgroup denominators, exact cells and intentional public projection', () => {
+  assert.deepEqual(Object.keys(data.demographics).sort(),
+    ['wave', 'metric', 'caveat', 'reuseLimits', 'dimensions', 'questionnaire', 'populations'].sort());
+  for (const population of data.demographics.populations) {
+    assert.deepEqual(Object.keys(population).sort(), [
+      'id', 'dimension', 'label', 'denominatorId', 'denominatorLabel', 'nonresponse', 'uncertainty', 'records'
+    ].sort());
+    const original = internal.demographics.populations.find(row => row.id === population.id);
+    assert.equal(population.denominatorId, original.id);
+    assert.equal(population.denominatorLabel, original.denominatorLabel);
+    const state = {view: 'demographics', group: null, dimension: population.dimension, population: population.id, format: 'chart'};
+    const chart = view.renderView(data, state), list = view.renderView(data, {...state, format: 'list'});
+    assert.equal(chart.replace('data-format="chart"', 'data-format="list"'), list);
+    assert.deepEqual(view.ancestors(data, 'demographics', null), []);
+    assert.equal(view.panelFor(data, state), undefined);
+    assert.match(chart, /within this population, not its share of a religion/);
+    assert.match(chart, /Fixed scale: 0-100%/);
+    assert.match(chart, /Fielded July 17, 2023-March 4, 2024/);
+    assert.match(chart, /No intersectional combinations/);
+    assert.match(chart, /Pew Research Center has not reviewed or endorsed/);
+    assert(!chart.includes('data-group=') && !chart.includes('Affiliation breadcrumb'));
+    assert(chart.includes(view.esc(population.denominatorLabel)));
+    for (const record of population.records) {
+      assert.deepEqual(Object.keys(record).sort(), ['id', 'label', 'status', 'valueText', 'barValue', 'reason', 'source'].sort());
+      const estimate = original.estimates.find(row => row.categoryId === record.id);
+      assert.equal(record.valueText, estimate.published);
+      assert.equal(record.barValue, estimate.value);
+      assert.equal(record.source.column, original.column);
+      assert.equal(record.source.locator, original.locator);
+      assert(chart.includes(`<strong>${view.esc(estimate.published)}</strong>`));
+      assert(chart.includes(`width:${record.barValue}%`));
+      assert(chart.includes(view.esc(record.source.row)) && chart.includes(view.esc(record.source.url)));
+    }
+    const staticMarkup = view.renderStatic(data).split(`id="static-demographics-${population.id}"`)[1].split('</table>')[0];
+    assert(!staticMarkup.includes('class="bar"'));
+    assert(staticMarkup.includes(view.esc(population.denominatorLabel)));
+  }
+});
+
+test('demographic URLs reject incompatible, duplicate, national and intersectional state', () => {
+  const defaultState = {view: 'demographics', group: null, dimension: 'age', population: 'age-18-29', format: 'chart'};
+  for (const search of [
+    '?view=demographics&group=baptist', '?view=demographics&population=baptist',
+    '?view=demographics&dimension=invalid', '?view=demographics&dimension=age&dimension=gender',
+    '?view=demographics&population=age-18-29&population=women',
+    '?view=demographics&age=18-29&gender=men'
+  ]) assert.deepEqual(view.readURL(data, search), {state: defaultState, corrected: true});
+  const state = {...defaultState, dimension: 'race-ethnicity', population: 'asian', format: 'list'};
+  assert.deepEqual(view.readURL(data, view.query(state)), {state, corrected: false});
+  assert.equal(view.query(state), '?view=demographics&dimension=race-ethnicity&population=asian&format=list');
+  assert.deepEqual(view.readURL(data, '?view=demographics&dimension=gender&population=asian'),
+    {state: {...defaultState, dimension: 'gender', population: 'men'}, corrected: true});
+  for (const target of ['attendance', 'families']) {
+    const result = view.readURL(data, `?view=${target}&dimension=gender&population=men`);
+    assert(result.corrected);
+    assert(!Object.hasOwn(result.state, 'population'));
+  }
+});
+
+test('demographic bounds and missing estimates preserve exact text without bars', () => {
+  for (const [status, valueText, reason] of [
+    ['threshold', '<1%', null], ['suppressed', 'Suppressed', 'Insufficient sample'], ['unavailable', 'Unavailable', 'Not published']
+  ]) {
+    const fixture = structuredClone(data);
+    Object.assign(fixture.demographics.populations[0].records[0], {status, valueText, reason, barValue: null});
+    const markup = view.renderView(fixture, {view: 'demographics', population: 'age-18-29', format: 'chart'});
+    const row = markup.split('data-demographic="christian"')[1].split('</tr>')[0];
+    assert(!row.includes('class="bar"'));
+    assert(row.includes(view.esc(valueText)));
+    if (reason) assert(row.includes(reason));
+  }
 });
