@@ -70,12 +70,6 @@ window.ChurchTimelineModel.branchLanes = function(entries, edges) {
   for(const [id,slot] of positions)positions.set(id,used.indexOf(slot));
   return {positions,count:Math.max(1,used.length)};
 };
-window.ChurchTimelineModel.originOnly = function(container, roots, onNode) {
-  const panel=document.createElement('div');panel.className='empty';
-  const message=document.createElement('p');message.textContent='Origin context is shown without a fixed founding date. Open the profile to read its history, or choose another branch to explore dated developments.';panel.append(message);
-  for(const root of roots){const button=document.createElement('button');button.className='context';button.textContent=root.name;button.onclick=()=>onNode(root.id);panel.append(button);}
-  container.append(panel);
-};
 // Own gestures only inside the interactive viewport. Rebase on every finger
 // transition so adding/removing a finger never jumps the time scale.
 window.ChurchTimelineModel.touch = function(element, {pan, pinch}) {
@@ -134,4 +128,16 @@ window.ChurchTimelineModel.graphGestures = function(container,svg,scene,width,he
   container.addEventListener('wheel',wheel,{passive:false});for(const [type,handler]of Object.entries(handlers))container.addEventListener(type,handler);
   size();
   return {snapshot:()=>({scale:k,left:container.scrollLeft,top:container.scrollTop}),destroy:()=>{stop();container.removeEventListener('wheel',wheel);for(const [type,handler]of Object.entries(handlers))container.removeEventListener(type,handler);}};
+};
+
+window.ChurchTimelineModel.timelineLanes = function (dated, edges) {
+    const family = n => n.tradition_family || 'Other';
+    const isCatholic = n => n.id === 'catholic-church';
+    const families = [...new Set(dated.map(family))].sort((a, b) =>
+        Number(b === 'Catholic') - Number(a === 'Catholic') || a.localeCompare(b));
+    const scopedBranch = families.length === 1;
+    const branchLayout = scopedBranch ? this.branchLanes(dated, edges) : null;
+    const laneOf = n => scopedBranch ? branchLayout.positions.get(n.id) : families.indexOf(family(n));
+    const partition = n => isCatholic(n) ? n.id : laneOf(n);
+    return { isCatholic, scopedBranch, laneOf, partition, count: branchLayout?.count ?? families.length, families };
 };

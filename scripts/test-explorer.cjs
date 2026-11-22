@@ -50,7 +50,15 @@ async function noOverlap(page, selector = '.node') {
         assert.equal(await page.locator('#layout').inputValue(), 'timeline');
         assert.equal(await page.locator('#branch').inputValue(), '');
         assert.equal(await page.locator('#orientation-vertical').getAttribute('aria-pressed'), 'true');
+        const catholic = page.locator('#graph [data-id="catholic-church"]');
+        assert.equal(await catholic.locator('.date').textContent(), '1054 schism');
+        assert.equal(await page.locator('#graph .context, #graph .horizontal-origin').count(), 0);
+        assert(await page.locator('#graph path.link').evaluateAll(links =>
+            links.every(({ __data__: edge }) => ![edge.a.id, edge.b.id].includes('catholic-church'))));
         await page.screenshot({ path: path.join(output, 'review-default-timeline.png') });
+        await catholic.focus();
+        await page.keyboard.press('Enter');
+        assert.equal(await page.locator('#details h2').textContent(), 'Roman Catholic Church');
         const defaultDomain = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot().domain);
         await page.getByRole('button', { name: 'Zoom in', exact: true }).click();
         await page.waitForFunction(() => CHURCHTREE_TIMELINE.snapshot().scale >= 1.7);
@@ -230,9 +238,13 @@ async function noOverlap(page, selector = '.node') {
         await page.getByRole('button',{name:'Presbyterian',exact:true}).click();
         assert.equal(await page.locator('#orientation-horizontal').getAttribute('aria-pressed'),'true','Drill-in should preserve the last timeline orientation');
         await openFilters(page);
+        assert.equal(await catholic.count(), 0);
+        assert.equal(Math.round(await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot().domain[0])), 1550);
         await page.locator('#branch').selectOption('Catholic');
-        assert(await page.getByRole('button',{name:'Roman Catholic Church',exact:true}).count() || await page.getByRole('button',{name:'Catholic Church',exact:true}).count());
-        assert(await page.getByRole('button',{name:'Zoom in',exact:true}).isDisabled());
+        assert.equal(await catholic.locator('.date').textContent(), '1054 schism');
+        await catholic.click();
+        assert.equal(await page.locator('#details h2').textContent(), 'Roman Catholic Church');
+        assert(await page.getByRole('button',{name:'Zoom in',exact:true}).isEnabled());
         for(const width of [1100,1440]){
             await page.setViewportSize({width,height:800});await page.waitForTimeout(180);
             assert(await page.locator('#splitter').isVisible(),'Desktop split view must remain available');

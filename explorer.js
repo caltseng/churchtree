@@ -314,10 +314,9 @@
             $('zoom-in').disabled = false;
             $('period').hidden = false;
             const scoped = scopeNodes();
-            const ids = new Set();
-            scoped.forEach(n => ancestors(n.id).forEach(id => ids.add(id)));
-            const roots = d.nodes.filter(n => n.id === 'catholic-church' && ids.has(n.id));
-            const years = scoped.filter(n => !roots.some(r => r.id === n.id)).map(n => n.start_year).filter(Number.isFinite);
+            const catholicId = 'catholic-church';
+            const edges = d.edges.filter(e => e.from_id !== catholicId && e.to_id !== catholicId);
+            const years = scoped.map(n => n.start_year).filter(Number.isFinite);
             if (years.length) {
                 $('year-from').value = period?.[0] ?? Math.min(...years) - 10;
                 $('year-to').value = period?.[1] ?? Math.max(...years) + 10;
@@ -326,7 +325,7 @@
             $('scope-title').textContent=mobile.matches?(focus ? label(nodes.get(selected)) + ' · ancestry' : family || 'All branches'):scopeTitle;
             $('scope-title').setAttribute('aria-label',scopeTitle);$('scope-title').title=scopeTitle;
             $('scope-note').textContent = layout === 'horizontal' ? 'Time runs left to right. Scroll sideways (Shift + wheel) to travel through time. Use +/− or Ctrl + wheel to zoom; nearby records collapse into named groups.' : 'Mouse wheel zooms time; drag to pan. Nearby records cluster within each tradition and separate as you zoom in. Cluster dates show their actual range.';
-            timelineControl = (layout === 'horizontal' ? window.renderHorizontalTimeline : window.renderChurchTimeline)({ container: graph, entries: scoped, edges: d.edges, roots, period, onNode: showNode, onEdge: showEdge, onRange: domain => {
+            timelineControl = (layout === 'horizontal' ? window.renderHorizontalTimeline : window.renderChurchTimeline)({ container: graph, entries: scoped, edges, period, onNode: showNode, onEdge: showEdge, onRange: domain => {
                     if (!['year-from', 'year-to'].includes(document.activeElement?.id)) {
                         $('year-from').value = Math.floor(domain[0]);
                         $('year-to').value = Math.ceil(domain[1]);
@@ -346,7 +345,7 @@
                         $('cluster-members').append(b);
                     });
                 } });
-            if(!timelineControl){$('zoom-in').disabled=true;$('zoom-out').disabled=true;$('period').hidden=true;$('level').textContent='Origin context';$('count').textContent=scoped.length+' entries in scope';}
+            if(!timelineControl){$('zoom-in').disabled=true;$('zoom-out').disabled=true;$('period').hidden=true;$('level').textContent='No dated entries';$('count').textContent=scoped.length+' entries in scope';}
             timeNavigation.hidden=!timelineControl;
             placeGraphTools();
             if(mobile.matches)$('scope-note').textContent=layout==='horizontal'?'Drag to explore time; pinch to zoom around your fingers. Tap a node for its history.':'Drag to pan time and branches; pinch to zoom around your fingers. Earlier/Later and +/− also work.';
