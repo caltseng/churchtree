@@ -1,7 +1,7 @@
 # U.S. denominations data contract
 
-This is the route-local data foundation, not the public route or a timeline data
-set. The selected estimates come from Pew Research Center's 2023-24 Religious
+The standalone `/us-denominations/` route uses this route-local data foundation,
+independently of the historical timeline. The selected estimates come from Pew Research Center's 2023-24 Religious
 Landscape Study (RLS), published February 26, 2025. They measure **adult
 self-identification**, not membership rolls, institutional counts, children or
 historical lineage. Source provenance and reuse decisions are in
@@ -13,6 +13,7 @@ From the repository root, run:
 
 ```text
 npm run test:us-denominations
+node us-denominations/build.cjs
 node us-denominations/data.cjs
 node us-denominations/data.cjs --ledger
 ```
@@ -154,15 +155,51 @@ states that detailed identity variables are omitted; no dataset was used here.
 
 ## Publication boundary and downstream handoff
 
-This PR does not register `us-denominations` in the public directory allowlist.
-The later builder should intentionally emit only its browser-needed curated
-records, hierarchy and source/reuse context, along with static nested lists.
+The route does not register `us-denominations` in the public directory allowlist.
+`build.cjs` intentionally emits only browser-needed affiliation records,
+hierarchy and source/reuse context in `public-data.js`, plus static nested lists.
 Do **not** copy this directory recursively: `data.cjs`, `test-data.cjs`, the
-review tooling and source inputs are internal. Add a public-boundary test in
-the route PR when replacing this data-only boundary check.
+review tooling and source inputs are internal. `site.config.json` registers five
+exact public files, never this directory. Route tests assert both the generated
+payload shape and the complete published directory; attendance inputs are not
+serialized. Run `npm run build` before route tests.
 
 Do not sum displayed children, infer missing denominations from Appendix B,
 create an all-family Independent Baptist total, assign group attendance to a
 denomination, or join these contemporary estimates to the historical timeline.
 PRRI and U.S. Religion Census are deliberately excluded pending their separate
-scope and reuse decisions. No timeline, home page or site route is changed here.
+scope and reuse decisions. The home card comes from the existing home builder
+and site configuration. No timeline files or state are changed.
+
+### Route/controller handoff
+
+`view.js` is a pure CommonJS/browser module shared by the generator and controller.
+Its public projection has `schemaVersion: 1`, keyed `records`, two `lenses` with
+ranked panel children, estimate-specific source locators, selected source links,
+the exact separate tradition interactive strings and applicable reuse context.
+Internal review hashes, inputs, source extraction tooling and attendance records
+are not browser assets. `data.cjs` remains the authoritative build-time API.
+
+`controller.js` enhances the static page without requests. State is
+`{view: "families" | "traditions", group: recordId, format: "chart" | "list"}`.
+URLs use `?view=families&group=baptist` with optional `&format=list`; native links
+also carry static fragments in nested fallback content. Invalid IDs resolve to
+the national root; a known incompatible Protestant descendant resolves to
+Protestant. Lens switching preserves an identical shared record/scope, including
+denominations, otherwise falls back to Protestant. Duplicate and unknown URL
+parameters are corrected with a visible status message. Back goes up one parent;
+Reset keeps the lens. Browser history replays state. Drill-in focuses the selected
+heading; going up restores the departing child link when available.
+
+Later attendance and demographic views must remain independent of affiliation
+state and denominator. Add only their explicitly reviewed public projection and
+their own controls; do not add them to these affiliation trees or inherit a
+denomination's parent answers. This chunk intentionally implements affiliation
+only. The spec's attendance acceptance belongs to its separate implementation PR.
+
+Automated browser tests cover 320px portrait, 667x375 landscape, desktop,
+keyboard-only interaction, no-JavaScript nested content, and a 640px CSS layout
+viewport at DPR 2 equivalent to a 1280px desktop at 200% page zoom. This emulation
+is a layout check, not a manual browser-zoom test. DOM/keyboard checks are not
+real screen-reader testing; that manual assistive-technology check remains a
+release limitation until actually performed.
