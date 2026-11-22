@@ -9,23 +9,23 @@ const view = require('./view.js');
 const internal = loadData(), data = publicData(internal);
 const root = path.resolve(__dirname, '..');
 
-test('public projection and generated artifact contain only intentional affiliation content', () => {
+test('public projection and generated artifact contain only intentional affiliation and attendance content', () => {
   const sandbox = {window: {}};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'public-data.js'), 'utf8'), sandbox);
   assert.equal(JSON.stringify(sandbox.window.US_AFFILIATION_DATA), JSON.stringify(data));
   assert.deepEqual(Object.keys(data).sort(),
-    ['schemaVersion', 'study', 'records', 'lenses', 'sources', 'interactiveStrings', 'reuse'].sort());
+    ['schemaVersion', 'study', 'records', 'lenses', 'sources', 'interactiveStrings', 'reuse', 'attendance'].sort());
   for (const record of Object.values(data.records)) {
     assert.deepEqual(Object.keys(record).sort(),
       ['id', 'label', 'sourceLabel', 'kind', 'scope', 'status', 'valueText', 'barValue', 'reason', 'source'].sort());
     assert.equal(record.valueText, presentation(internal, record.id).valueText);
   }
   for (const record of internal.attendance.records) assert(!Object.hasOwn(data.records, record.id));
-  assert(!Object.hasOwn(data.sources, 'attendance-chapter'));
+  assert(Object.hasOwn(data.sources, 'attendance-chapter'));
   const published = path.join(root, 'dist', 'us-denominations');
   assert.deepEqual(fs.readdirSync(published).sort(),
     ['affiliation.css', 'controller.js', 'index.html', 'public-data.js', 'view.js']);
-  assert(!JSON.stringify(data).match(/sha256|reviewStatus|sourcePanelId|monthly-attendance|attendance-chapter|checkedDate/));
+  assert(!JSON.stringify(data).match(/sha256|reviewStatus|sourcePanelId|checkedDate|reviewedCommit/));
   for (const file of ['index.html', 'public-data.js']) {
     assert.equal(fs.readFileSync(path.join(published, file), 'utf8'), fs.readFileSync(path.join(__dirname, file), 'utf8'));
   }
@@ -79,7 +79,13 @@ test('URL validation, identical-scope lens preservation and incompatible Protest
     ['?view=families&group=%3Cscript%3E', 'families', 'us-adults', 'chart', true],
     ['?group=baptist&group=christian', 'families', 'us-adults', 'chart', true],
     ['?view=traditions&view=families', 'families', 'us-adults', 'chart', true],
-    ['?format=invalid&unknown=1', 'families', 'us-adults', 'chart', true]
+    ['?format=invalid&unknown=1', 'families', 'us-adults', 'chart', true],
+    ['?view=attendance', 'attendance', null, 'chart', false],
+    ['?view=attendance&format=list', 'attendance', null, 'list', false],
+    ['?view=attendance&group=baptist', 'attendance', null, 'chart', true],
+    ['?view=attendance&group=attendance-mainline', 'attendance', null, 'chart', true],
+    ['?view=attendance&group=baptist&group=christian', 'attendance', null, 'chart', true],
+    ['?view=attendance&format=list&format=chart', 'attendance', null, 'chart', true]
   ];
   for (const [search, lens, group, format, corrected] of cases) {
     assert.deepEqual(view.readURL(data, search), {state: {view: lens, group, format}, corrected});
@@ -87,6 +93,62 @@ test('URL validation, identical-scope lens preservation and incompatible Protest
   for (const id of ['us-adults', 'christian', 'protestant', 'sbc', 'pcusa']) {
     assert.equal(view.normalize(data, {view: 'traditions', group: id}).group, id);
   }
+});
+
+test('attendance retains published NETs, exact projection, independent populations and table/chart/static equivalence', () => {
+  assert.equal(Object.keys(data.records).length, 85);
+  assert.deepEqual(Object.keys(data.attendance).sort(), [
+    'metric', 'denominatorId', 'denominatorLabel', 'axisLabel', 'question', 'instrumentSourceId',
+    'instrumentLocator', 'responseDefinition', 'scale', 'caveat', 'records'
+  ].sort());
+  assert.equal(data.attendance.records.length, 12);
+  assert.deepEqual(data.attendance.scale, [0, 100]);
+  const chart = view.renderView(data, {view: 'attendance', group: null, format: 'chart'});
+  const list = view.renderView(data, {view: 'attendance', group: null, format: 'list'});
+  assert.equal(chart.replace('data-format="chart"', 'data-format="list"'), list);
+  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  const staticTable = html.split('<section id="static-attendance"')[1].split('</section>')[0];
+  for (const record of data.attendance.records) {
+    assert.deepEqual(Object.keys(record).sort(), [
+      'id', 'label', 'populationId', 'sourceLabel', 'status', 'valueText', 'barValue', 'source'
+    ].sort());
+    const original = internal.attendance.records.find(row => row.id === record.id);
+    const display = presentation(internal, record.id);
+    assert.equal(record.valueText, original.estimate.published);
+    assert.equal(record.barValue, original.estimate.value);
+    assert.equal(record.source.row, display.source.row);
+    assert.equal(record.source.locator, display.source.locator);
+    assert.deepEqual(Object.keys(record.source).sort(), [
+      'title', 'publisher', 'publicationDate', 'url', 'locator', 'column', 'row', 'caveat'
+    ].sort());
+    assert(!Object.hasOwn(data.records, record.id));
+    for (const markup of [chart, list, staticTable]) {
+      assert(markup.includes(`data-attendance="${record.id}"`));
+      assert(markup.includes(`<strong>${record.valueText}</strong>`));
+      assert(markup.includes(view.esc(record.source.row)));
+      assert(markup.includes(view.esc(record.source.column)));
+    }
+    assert(chart.includes(`style="width:${record.barValue}%"`));
+  }
+  assert(!staticTable.includes('class="bar"'));
+  for (const markup of [chart, list, staticTable]) {
+    assert.match(markup, /Adults in each religious group/);
+    assert.match(markup, /table 08-04 \(attachment 199166\)/);
+    assert.match(markup, /printed p. 165 \(PDF p. 166\)/);
+    assert.match(markup, /ATTENDPERRLS/);
+    assert.match(markup, /Printed p. 23 \(PDF p. 23\)/);
+    assert.match(markup, /Fielded July 17, 2023-March 4, 2024/);
+    assert.match(markup, /not a margin for every subgroup/);
+    assert.match(markup, /not directly comparable with the 2014/);
+    assert.match(markup, /Pew Research Center has not reviewed or endorsed/);
+    assert(!markup.includes(' of U.S. adults'));
+    assert(!markup.includes('data-group='));
+  }
+  for (const [id, value] of [['us-adults', 33], ['evangelical', 60], ['historically-black', 46], ['mainline', 34]]) {
+    assert.equal(data.attendance.records.find(row => row.populationId === id).barValue, value);
+  }
+  assert.deepEqual(view.ancestors(data, 'attendance', null), []);
+  assert.equal(view.query({view: 'attendance', group: null, format: 'list'}), '?view=attendance&format=list');
 });
 
 test('static nested content includes every lens occurrence and source/threshold/reuse context', () => {

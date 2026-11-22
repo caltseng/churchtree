@@ -38,6 +38,13 @@ button[aria-pressed="true"] { background: var(--ct-accent); color: var(--ct-on-a
 .bar { display: block; height: 100%; background: var(--ct-accent); }
 .axis { display: flex; justify-content: space-between; gap: .5rem; color: var(--ct-text-secondary); font-size: .9rem; }
 .chart[data-format="list"] .bar-track, .chart[data-format="list"] .axis { display: none; }
+.attendance-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.attendance-table caption { text-align: left; padding: .5rem 0; }
+.attendance-table th, .attendance-table td { text-align: left; vertical-align: top; padding: .6rem .25rem; border-bottom: 1px solid var(--ct-border); overflow-wrap: anywhere; }
+.attendance-table th:first-child { width: 60%; }
+.attendance-table tbody th { font-weight: normal; }
+.attendance-table .row-source { font-weight: normal; }
+.attendance-table .bar-track { height: .8rem; }
 summary { min-height: 44px; padding: .6rem .25rem; overflow-wrap: anywhere; }
 .row-source { font-size: .9rem; }
 .row-source p, .source-context, .panel-source, .credit, .coverage, .precision-note { overflow-wrap: anywhere; }

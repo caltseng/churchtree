@@ -35,7 +35,7 @@ function publicData(data) {
   }
   const sourceIds = new Set([
     ...Object.values(lenses).flatMap(lens => lens.panels.map(panel => panel.sourceId)),
-    'methods', 'topline', 'classification', 'dataset-description'
+    'methods', 'topline', 'classification', 'dataset-description', 'attendance-chapter'
   ]);
   const sources = {};
   for (const source of data.provenance.sources.filter(source => sourceIds.has(source.id))) {
@@ -44,9 +44,30 @@ function publicData(data) {
     };
   }
   const reuse = data.provenance.reuse[0];
+  const series = data.provenance.series.attendance;
+  const attendance = {
+    metric: series.metric, denominatorId: series.denominatorId, denominatorLabel: series.denominatorLabel,
+    axisLabel: series.axisLabel, question: series.question, instrumentSourceId: series.instrumentSourceId,
+    instrumentLocator: series.instrumentLocator, responseDefinition: series.responseDefinition,
+    scale: series.scale, caveat: series.caveat,
+    records: data.attendance.records.map(record => {
+      const display = presentation(data, record.id);
+      const source = display.source;
+      return {
+        id: record.id, label: record.label, populationId: record.populationId,
+        sourceLabel: record.sourceLabel, status: display.status, valueText: display.valueText,
+        barValue: display.barValue,
+        source: {
+          title: source.title, publisher: source.publisher, publicationDate: source.publicationDate,
+          url: source.url, locator: source.locator, column: source.column, row: source.row,
+          caveat: source.caveat
+        }
+      };
+    })
+  };
   return {
     schemaVersion: 1, study: {publicationDate: data.provenance.study.publicationDate},
-    records, lenses, sources,
+    records, lenses, sources, attendance,
     interactiveStrings: data.provenance.decisions.find(decision => decision.id === 'tradition-precision').interactiveStrings,
     reuse: {notices: reuse.notices, disclaimer: reuse.disclaimer, termsUrl: reuse.termsUrl}
   };
@@ -70,15 +91,15 @@ function build() {
 <img class="main-branch-symbol" src="../assets/brand/logos/main-branch.svg" width="44" height="44" alt="">
 <span class="main-branch-copy">Main Branch<small>HISTORY · IDEAS · SOURCES</small></span></a><a class="info-link" href="#methodology">Info</a></header>
 <main id="main"><h1>U.S. denominations</h1>
-<p class="intro">2023-24 Religious Landscape Study &middot; <strong>Share of U.S. adults</strong></p>
-<p>How common are different religious affiliations? Explore families or Pew's Protestant traditions. Every percentage keeps the national denominator.</p>
+<p class="intro">Pew Research Center &middot; 2023-24 Religious Landscape Study</p>
+<p>Explore adult affiliations by family or Pew's Protestant traditions, or compare in-person religious service attendance independently. Affiliation uses the national denominator; attendance uses adults in each religious group.</p>
 <div id="route-controls" class="route-controls" hidden>
-<label for="affiliation-view">View <select id="affiliation-view"><option value="families">Families and denominations</option><option value="traditions">Protestant traditions</option></select></label>
+<label for="affiliation-view">View <select id="affiliation-view"><option value="families">Families and denominations</option><option value="traditions">Protestant traditions</option><option value="attendance">Religious service attendance</option></select></label>
 <button type="button" id="back">Back</button><button type="button" id="reset">Reset</button>
 <button type="button" id="list-toggle" aria-pressed="false">List</button></div>
 <p id="route-status" role="status"></p>
-<section id="interactive-view" aria-label="Selected affiliation" hidden>${view.renderView(data, {view: 'families', group: 'us-adults', format: 'chart'})}</section>
-<section id="static-view" aria-label="All published affiliation lists"><p>Nested lists work without JavaScript. Expand a group to explore its published children; source notes are available with every estimate.</p>${view.renderStatic(data)}</section>
+<section id="interactive-view" aria-label="Selected religious comparison" hidden>${view.renderView(data, {view: 'families', group: 'us-adults', format: 'chart'})}</section>
+<section id="static-view" aria-label="All published comparisons"><nav aria-label="Static views"><a href="#static-families-title">Families and denominations</a> &middot; <a href="#static-traditions-title">Protestant traditions</a> &middot; <a href="?view=attendance#static-attendance">Religious service attendance</a></nav><p>Nested lists and the attendance table work without JavaScript. Expand a group to explore its published children; source notes are available with every estimate.</p>${view.renderStatic(data)}</section>
 <section id="methodology" aria-labelledby="methodology-heading"><h2 id="methodology-heading">Sources and methodology</h2>
 ${view.context(data)}
 <p>These are weighted national estimates of self-identification from published aggregates, not institutional membership, historical lineage or attendance. The study was fielded July 17, 2023-March 4, 2024 among 36,908 adults in the 50 states and D.C.
@@ -93,10 +114,10 @@ ${sourceLink('classification')}. Nondenominational and nonspecific Protestant re
 <a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a> (effective May 25, 2018; checked November 22, 2026), sections 1 and 2; section 3 restrictions and section 13 dataset terms also reviewed. No written permission has been obtained or claimed. Expansion requires renewed excerpt/reuse review. Publisher artwork, prior waves, cross-tabs and microdata are excluded.</p>
 <p><a href="#main">Return to explorer</a> &middot; <a href="../#explore">All Main Branch explorations</a></p></section></main></body></html>
 `;
-  fs.writeFileSync(path.join(__dirname, 'public-data.js'), '// Generated public affiliation projection. Do not edit by hand.\nwindow.US_AFFILIATION_DATA = ' +
+  fs.writeFileSync(path.join(__dirname, 'public-data.js'), '// Generated public affiliation and attendance projection. Do not edit by hand.\nwindow.US_AFFILIATION_DATA = ' +
     JSON.stringify(data).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029') + ';\n');
   fs.writeFileSync(path.join(__dirname, 'index.html'), html.replace(/[ \t]+$/gm, ''));
-  console.log(`Built U.S. affiliation route: ${Object.keys(data.records).length} curated records, two lenses.`);
+  console.log(`Built U.S. denominations route: ${Object.keys(data.records).length} affiliation records, two lenses, ${data.attendance.records.length} attendance rows.`);
 }
 
 module.exports = {publicData, build};
