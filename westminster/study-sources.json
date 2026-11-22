@@ -1,7 +1,51 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-11-14",
+  "lastReviewed": "2026-11-22",
   "sources": {
+    "opc-creation-2004": {
+      "id": "opc-creation-2004",
+      "title": "Report of the Committee to Study the Views of Creation",
+      "institution": "Orthodox Presbyterian Church, 71st General Assembly",
+      "date": "2004",
+      "url": "https://www.opc.org/GA/creation.html",
+      "type": "primary",
+      "scope": "Dated committee report and recorded Assembly actions; the report itself is not a constitutional document or an individual subscription ruling.",
+      "accessedOn": "2026-11-22",
+      "reuse": "Original paraphrase only; no modern report text or publisher commentary reproduced."
+    },
+    "opc-constitution-1936": {
+      "id": "opc-constitution-1936",
+      "title": "Report of the Committee on the Constitution and Assembly action",
+      "institution": "Orthodox Presbyterian Church, Second General Assembly",
+      "date": "1936; Minutes pp. 13-14 and recorded roll-call action",
+      "url": "https://www.opc.org/GA/constitution.html",
+      "type": "primary",
+      "scope": "Committee recommendations and their adoption in 1936, distinguished from the hosting site's later historical introduction.",
+      "accessedOn": "2026-11-22",
+      "reuse": "Original paraphrase only; no modern source commentary reproduced."
+    },
+    "assembly-dissent": {
+      "id": "assembly-dissent",
+      "title": "Reasons of the Dissenting Brethren and the Assembly's Answer",
+      "institution": "Westminster Assembly Project; Westminster College Library and Cambridge Digital Library",
+      "date": "1644-1645 documents; facsimile catalogue accessed 2026",
+      "url": "https://westminsterassembly.org/principal-documents-of-the-assembly-facsimile-editions/principal-documents-the-reasons-of-the-dissenting-brethren/",
+      "type": "historical-scholarship",
+      "scope": "Catalogue of surviving manuscripts and the printed exchange over several congregations sharing a presbytery; not evidence of every divine's private position.",
+      "accessedOn": "2026-11-22",
+      "reuse": "Original paraphrase of document titles and catalogue facts; no facsimile images or modern commentary reproduced."
+    },
+    "remonstrance-schaff": {
+      "id": "remonstrance-schaff",
+      "title": "The Five Arminian Articles",
+      "institution": "Remonstrant ministers; Philip Schaff, editor",
+      "date": "1610; Schaff fourth edition, 1919",
+      "url": "https://ccel.org/ccel/schaff/creeds3/creeds3.iv.xv.html",
+      "type": "primary",
+      "scope": "Five historical articles in Schaff's English translation, not a summary of every later Arminian position.",
+      "accessedOn": "2026-11-22",
+      "reuse": "Original paraphrase of the historical articles; no CCEL site or editorial content reproduced."
+    },
     "wcf-1647": {
       "id": "wcf-1647",
       "title": "Westminster Confession: historical English text",
@@ -71,12 +115,12 @@
     "pca-creation": {
       "id": "pca-creation",
       "title": "Report of the Creation Study Committee",
-      "institution": "Presbyterian Church in America; PCA Historical Center",
-      "date": "1999 report, with proposal for reporting to the 2000 Assembly",
-      "url": "https://www.pcahistory.org/pca/studies/creation/report.html",
+      "institution": "Presbyterian Church in America; hosted with permission by the American Scientific Affiliation",
+      "date": "2000 report to the 28th General Assembly",
+      "url": "https://www.asa3.org/ASA/topics/Evolution/PCA-Report2000.html",
       "type": "primary",
       "scope": "Committee report describing views, not itself an amendment or an individual court ruling.",
-      "accessedOn": "2026-11-14",
+      "accessedOn": "2026-11-22",
       "reuse": "Paraphrase only; no modern source text, site commentary or study-guide material reproduced."
     },
     "pca-bco-2024": {
