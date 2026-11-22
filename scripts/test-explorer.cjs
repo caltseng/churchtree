@@ -37,6 +37,68 @@ async function noOverlap(page, selector = '.node') {
             assert(!(a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top), `Overlapping nodes ${JSON.stringify(a)}, ${JSON.stringify(b)}`);
         }
 }
+async function assertExpandedCatalog(browser, url) {
+    const page = await browser.newPage({ viewport: { width: 1200, height: 800 } });
+    const families = ['Oriental Orthodox', 'Latter-day Saints', 'Jehovah’s Witnesses', 'Brethren', 'Evangelical'];
+    const fixtures = Array.from({length: 16}, (_, i) => ({
+        id: `coverage-fixture-${i}`, name: `Grace Church ${String(i).padStart(2, '0')}`,
+        short_label: 'Grace', aliases: ['Shared Name', 'Grace Church 15'], tradition_family: families[i % families.length],
+        start_year: 1840 + i, current_status: 'active'
+    }));
+    fixtures.at(-1).aliases.push('Grace’s Fellowship');
+    await page.route('**/data/data.js', async route => {
+        const data = fs.readFileSync(path.join(root, 'data', 'data.js'), 'utf8');
+        await route.fulfill({ contentType: 'application/javascript',
+            body: data + `\nwindow.CHURCHTREE_DATA.nodes.push(...${JSON.stringify(fixtures)});` });
+    });
+    await page.goto(url);
+    await page.locator('#graph .time-node').first().waitFor();
+    const search = page.locator('#search');
+    const results = page.locator('#results');
+    await page.getByRole('button', {name: 'Search church history'}).click();
+    await search.fill('Grace Church 15');
+    assert.match(await results.locator('button').first().textContent(), /Grace Church 15/);
+    await search.fill('GRACES   Fellowship');
+    assert.match(await results.locator('button').first().textContent(), /Grace Church 15/);
+    await search.fill('Shared Name');
+    await search.press('Enter');
+    assert(await results.locator('button').first().evaluate(button => button === document.activeElement));
+    assert.equal(await page.locator('#search-status').textContent(), 'Showing 12 of 16 matches');
+    await page.screenshot({path: path.join(output, 'review-search-similar-names.png')});
+    const more = results.getByRole('button', {name: 'Show more results'});
+    await more.focus();
+    await page.keyboard.press('Enter');
+    assert.equal(await page.locator('#search-status').textContent(), '16 matches');
+    assert.match(await page.evaluate(() => document.activeElement.textContent), /Grace Church 12/);
+    await results.getByRole('button', {name: /Grace Church 15/}).click();
+    assert.equal(await page.locator('#details h2').textContent(), 'Grace Church 15');
+    await openFilters(page);
+    for (const family of families)
+        assert(await page.locator('#branch option').filter({hasText: family}).count(), family);
+    for (const view of ['timeline', 'horizontal']) {
+        await setView(page, view);
+        await page.locator('#branch').selectOption('Brethren');
+        const node = page.locator('#graph [data-id="coverage-fixture-3"]');
+        await node.waitFor();
+        const fill = await node.locator('rect').first().evaluate(rect => getComputedStyle(rect).fill);
+        assert(fill && fill !== 'none', `${view} styles a new family's node`);
+        const snapshot = () => page.evaluate(() => {
+            const {domain, scale} = CHURCHTREE_TIMELINE.snapshot();
+            return {domain, scale};
+        });
+        const before = await snapshot();
+        await node.click();
+        assert.equal(await page.locator('#details h2').textContent(), 'Grace Church 03');
+        assert.equal(await page.locator('#branch').inputValue(), 'Brethren');
+        assert.deepEqual(await snapshot(), before);
+    }
+    await page.locator('#branch').selectOption('');
+    await setView(page, 'lineage');
+    await page.locator('[data-id="family:Oriental Orthodox"]').waitFor();
+    await noOverlap(page, '#graph .node rect');
+    await page.screenshot({path: path.join(output, 'review-lineage-new-families.png')});
+    await page.close();
+}
 (async () => {
     let browser;
     try {
@@ -258,6 +320,7 @@ async function noOverlap(page, selector = '.node') {
         await info.click();
         assert(await page.locator('#details').isVisible());
         assert.deepEqual(errors, []);
+        await assertExpandedCatalog(browser, `http://127.0.0.1:${server.address().port}/church-history/`);
         console.log(JSON.stringify({ passed: true, families: families.length, clustered: initial.clusters.length, zoomed: zoomed.clusters.length, collapsed: collapsed.clusters.length, browserErrors: errors }));
     }
     finally {

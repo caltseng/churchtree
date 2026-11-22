@@ -61,6 +61,14 @@ const server=require('./test-server.cjs')(root);
   assert(await page.locator('#search').evaluate(el=>parseFloat(getComputedStyle(el).fontSize)>=16),'Input avoids iOS focus zoom');
   assert.equal(await page.locator('#search-form').getByRole('button',{name:'Find',exact:true}).evaluate(el=>getComputedStyle(el).fontSize),'13px');
   assert.deepEqual(await page.locator('#graph').boundingBox(),graphBefore,'Search does not resize the timeline');
+  if(size.width===320||size.height===390){
+   await page.locator('#search').fill('Church');
+   const more=page.getByRole('button',{name:'Show more results',exact:true});
+   await more.tap();
+   assert(await page.locator('#results button').nth(12).evaluate(button=>button===document.activeElement));
+   assert(await page.locator('#search-form').evaluate(panel=>panel.scrollWidth<=panel.clientWidth));
+   await page.screenshot({path:path.join(output,`mobile-search-more-${size.width}.png`)});
+  }
   await page.locator('#search').fill('OPC');
   await page.screenshot({path:path.join(output,`mobile-search-expanded-${size.width}.png`)});
   await page.keyboard.press('Escape');
