@@ -1,0 +1,427 @@
+[
+  {
+    "kind": "denomination",
+    "region": "US",
+    "geographic_origin": "US",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "zoom_tier": "overview",
+    "id": "church-of-jesus-christ-of-latter-day-saints",
+    "name": "The Church of Jesus Christ of Latter-day Saints",
+    "short_label": "Latter-day Saints",
+    "aliases": [
+      "Church of Jesus Christ of Latter-day Saints",
+      "LDS",
+      "LDS Church",
+      "Mormon Church",
+      "Mormons"
+    ],
+    "tradition_family": "Latter-day Saints",
+    "start_year": 1830,
+    "notes": "April 6, 1830 marks formal organization in New York as the Church of Christ. The foundational name behind the present name was recorded on April 26, 1838.",
+    "summary": "The church organized by Joseph Smith and fellow believers in 1830, represented here through the branch led west by Brigham Young after the succession crisis of 1844.",
+    "formation_narrative": "A circle of believers developed around Joseph Smith’s reported revelations and the Book of Mormon before formal organization. Smith and Oliver Cowdery helped organize the Church of Christ on April 6, 1830. The church identifies Fayette, New York, as the traditional site. The first church conference in June approved the Articles and Covenants, which specified offices and practices such as baptism and the Lord’s Supper. Sidney Rigdon, a preacher associated with Alexander Campbell’s movement, joined later in 1830 and became a church leader. An April 1838 revelation at Far West, Missouri, prescribed the name that underlies the modern form.",
+    "core_beliefs": [
+      "The church understands itself as the restoration of Jesus Christ’s church through divine revelation and restored priesthood authority.",
+      "The Articles of Faith affirm salvation through Jesus Christ’s atonement and describe faith, repentance, immersion baptism and the laying on of hands for the gift of the Holy Ghost.",
+      "The church receives the Bible and the Book of Mormon as scripture and affirms continuing revelation. It is led by a First Presidency and a Quorum of the Twelve Apostles."
+    ],
+    "distinctives": [
+      "Restored priesthood authority",
+      "Book of Mormon",
+      "Continuing revelation"
+    ],
+    "ending_narrative": "After Joseph Smith was killed at Carthage in 1844, the church faced competing leadership claims, including Sidney Rigdon’s proposal to serve as guardian. The branch represented here followed the Twelve under Brigham Young, began leaving Nauvoo in 1846 and reached the Salt Lake Valley in 1847. Young reconstituted the First Presidency that December. In 1890 the church accepted Wilford Woodruff’s Manifesto against contracting plural marriages, beginning a transition away from the practice. In 1978 the church announced a revelation opening priesthood ordination and temple blessings without the previous racial restrictions. This branch continues as The Church of Jesus Christ of Latter-day Saints.",
+    "profile_scope": "Introductory U.S. profile from early organization through selected twentieth-century changes and a 2020 census snapshot. Other Latter Day Saint succession lines and the full histories of plural marriage and racial restrictions require separate treatment. Mormon and LDS are historical search terms. The church prefers its full name.",
+    "size_estimate": "6,721,031 U.S. 2020 adherents (U.S. Religion Census) · 14,567 U.S. 2020 congregations",
+    "key_figures": [
+      {
+        "name": "Joseph Smith Jr.",
+        "role": "founding leader",
+        "summary": "Organized the church with fellow believers and dictated the 1838 naming revelation.",
+        "url": "https://www.josephsmithpapers.org/site/the-organization-of-the-church",
+        "citations": [
+          "cite-us-restoration-lds-organization",
+          "cite-us-restoration-lds-name"
+        ]
+      },
+      {
+        "name": "Oliver Cowdery",
+        "role": "organizer and early record keeper",
+        "summary": "Prepared an early church instruction text and took part in the organization and first conference.",
+        "url": "https://www.josephsmithpapers.org/site/the-organization-of-the-church",
+        "citations": [
+          "cite-us-restoration-lds-organization",
+          "cite-us-restoration-lds-covenants"
+        ]
+      },
+      {
+        "name": "Sidney Rigdon",
+        "role": "early leader and succession claimant",
+        "summary": "Entered from the Campbellite preaching network and later advanced a competing claim to guide the church after Smith’s death.",
+        "url": "https://www.josephsmithpapers.org/person/sidney-rigdon",
+        "citations": [
+          "cite-us-restoration-lds-rigdon",
+          "cite-us-restoration-lds-succession"
+        ]
+      },
+      {
+        "name": "Brigham Young",
+        "role": "president of the Twelve and later of the church",
+        "summary": "Led the branch that settled in the Salt Lake Valley and reconstituted its First Presidency in 1847.",
+        "url": "https://www.churchofjesuschrist.org/study/history/topics/succession-of-church-leadership?lang=eng",
+        "citations": [
+          "cite-us-restoration-lds-succession",
+          "cite-us-restoration-lds-trail"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1830,
+        "label": "Church of Christ formally organized on April 6",
+        "citations": [
+          "cite-us-restoration-lds-organization"
+        ]
+      },
+      {
+        "year": 1830,
+        "label": "First conference approves the Articles and Covenants on June 9",
+        "citations": [
+          "cite-us-restoration-lds-covenants"
+        ]
+      },
+      {
+        "year": 1838,
+        "label": "April 26 revelation prescribes the name Church of Jesus Christ of Latter Day Saints",
+        "citations": [
+          "cite-us-restoration-lds-name"
+        ]
+      },
+      {
+        "year": 1844,
+        "label": "Joseph Smith is killed and competing succession claims emerge",
+        "citations": [
+          "cite-us-restoration-lds-nps",
+          "cite-us-restoration-lds-succession"
+        ]
+      },
+      {
+        "year": 1847,
+        "label": "Pioneers reach the Salt Lake Valley and Young reconstitutes the First Presidency",
+        "citations": [
+          "cite-us-restoration-lds-trail",
+          "cite-us-restoration-lds-succession"
+        ]
+      },
+      {
+        "year": 1890,
+        "label": "General Conference accepts Woodruff’s Manifesto on plural marriage",
+        "citations": [
+          "cite-us-restoration-lds-manifesto"
+        ]
+      },
+      {
+        "year": 1978,
+        "label": "General Conference sustains the revelation removing racial priesthood restrictions",
+        "citations": [
+          "cite-us-restoration-lds-1978"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Book of Mormon",
+        "year": 1830,
+        "significance": "Published in 1830 and received by the church as scripture alongside the Bible.",
+        "url": "https://www.josephsmithpapers.org/paper-summary/book-of-mormon-1830/1",
+        "citations": [
+          "cite-us-restoration-lds-book-of-mormon",
+          "cite-us-restoration-lds-faith"
+        ]
+      },
+      {
+        "title": "Minutes of the First Conference",
+        "year": 1830,
+        "significance": "Records the first conference, at which the church approved an early governing text now known as Doctrine and Covenants 20.",
+        "url": "https://www.josephsmithpapers.org/paper-summary/minutes-9-june-1830/1",
+        "citations": [
+          "cite-us-restoration-lds-covenants"
+        ]
+      },
+      {
+        "title": "Revelation, 26 April 1838",
+        "year": 1838,
+        "significance": "Records the naming instruction now published as Doctrine and Covenants 115.",
+        "url": "https://www.josephsmithpapers.org/paper-summary/revelation-26-april-1838-dc-115/2",
+        "citations": [
+          "cite-us-restoration-lds-name"
+        ]
+      },
+      {
+        "title": "Articles of Faith",
+        "year": 1842,
+        "significance": "Statements first published in 1842 and now included in the Pearl of Great Price.",
+        "url": "https://www.churchofjesuschrist.org/study/scriptures/pgp/a-of-f/1?lang=eng",
+        "citations": [
+          "cite-us-restoration-lds-faith"
+        ]
+      },
+      {
+        "title": "Official Declaration 1",
+        "year": 1890,
+        "significance": "Woodruff’s Manifesto, accepted by General Conference and now published in the Doctrine and Covenants.",
+        "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/od/1?lang=eng",
+        "citations": [
+          "cite-us-restoration-lds-manifesto"
+        ]
+      },
+      {
+        "title": "Official Declaration 2",
+        "year": 1978,
+        "significance": "The First Presidency’s announcement and the conference vote on removing the racial restrictions.",
+        "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/od/2?lang=eng",
+        "citations": [
+          "cite-us-restoration-lds-1978"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "The Organization of the Church",
+        "snippet": "The Joseph Smith Papers discusses what the records establish about the organizing meeting and what remains uncertain about its location.",
+        "url": "https://www.josephsmithpapers.org/site/the-organization-of-the-church",
+        "citations": [
+          "cite-us-restoration-lds-organization"
+        ]
+      },
+      {
+        "title": "Mormon Pioneer Trail Timeline",
+        "snippet": "The National Park Service tracks the departure from Nauvoo and the first arrivals in the Salt Lake Valley.",
+        "url": "https://www.nps.gov/articles/000/mormon-pioneer-trail-timeline.htm",
+        "citations": [
+          "cite-us-restoration-lds-trail"
+        ]
+      }
+    ],
+    "citations": [
+      "cite-us-restoration-lds-organization",
+      "cite-us-restoration-lds-name",
+      "cite-us-restoration-lds-faith",
+      "cite-us-restoration-lds-nps",
+      "cite-us-restoration-census",
+      "cite-us-restoration-lds-style"
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-us-restoration-lds-book-of-mormon",
+        "cite-us-restoration-lds-organization",
+        "cite-us-restoration-lds-covenants",
+        "cite-us-restoration-lds-rigdon",
+        "cite-us-restoration-lds-name"
+      ],
+      "ending_narrative": [
+        "cite-us-restoration-lds-nps",
+        "cite-us-restoration-lds-succession",
+        "cite-us-restoration-lds-trail",
+        "cite-us-restoration-lds-manifesto",
+        "cite-us-restoration-lds-1978",
+        "cite-us-restoration-lds-style"
+      ],
+      "core_beliefs": [
+        "cite-us-restoration-lds-organization",
+        "cite-us-restoration-lds-faith",
+        "cite-us-restoration-lds-succession"
+      ],
+      "size_estimate": [
+        "cite-us-restoration-census"
+      ]
+    }
+  },
+  {
+    "kind": "denomination",
+    "region": "US",
+    "geographic_origin": "US",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "zoom_tier": "overview",
+    "id": "jehovahs-witnesses",
+    "name": "Jehovah’s Witnesses",
+    "short_label": "Jehovah’s Witnesses",
+    "aliases": [
+      "Jehovah's Witnesses",
+      "Jehovah Witnesses",
+      "JW",
+      "JWs"
+    ],
+    "tradition_family": "Jehovah’s Witnesses",
+    "start_year": 1931,
+    "notes": "July 26, 1931 marks adoption of the name in Columbus, Ohio. Organizational roots reach back to the early 1870s Bible Students in Allegheny, Pennsylvania.",
+    "summary": "A Christian religious body that emerged from Charles Taze Russell’s Bible Student movement and adopted its present name in 1931 under Joseph F. Rutherford.",
+    "formation_narrative": "Charles Taze Russell and associates began studying the Bible in Allegheny, Pennsylvania, in the early 1870s. Russell exchanged ideas with Second Adventist writers and collaborated with Nelson H. Barbour on prophetic chronology. They parted over the meaning of Christ’s ransom, and Russell launched Zion’s Watch Tower in 1879. A tract society was incorporated in Pennsylvania in 1884 to support publication and distribution. After Russell’s death in 1916, Joseph F. Rutherford’s presidency brought a contested reorganization and departures. Bible Students associated with the Watch Tower leadership adopted the name Jehovah’s Witnesses at a Columbus convention on July 26, 1931.",
+    "core_beliefs": [
+      "Witnesses describe their aim as following the Christianity practiced by Jesus and the apostles. They treat the 66 books of the Bible as authoritative.",
+      "They worship Jehovah as the almighty God and recognize Jesus as God’s Son and the means of salvation through his ransom sacrifice. They reject the Trinity.",
+      "They teach that God’s Kingdom is a heavenly government ruled by Jesus and expect it to bring lasting peace to earth. Public preaching communicates that hope."
+    ],
+    "distinctives": [
+      "Use of the divine name Jehovah",
+      "Non-Trinitarian teaching",
+      "Public preaching about God’s Kingdom"
+    ],
+    "ending_narrative": "The Witnesses continued as a preaching and publishing community under the new name. The 1931 resolution distinguished the religious body from the corporations it used and from other Bible Student groups. In the United States, Witness families challenged compulsory flag salutes. In 1943 the Supreme Court ruled in Barnette that public schools could not compel the salute and pledge. The community began publishing its New World Translation in 1950 and continues internationally under the direction of a Governing Body.",
+    "profile_scope": "Introductory U.S. profile of the Watch Tower-associated community that adopted the Witness name. The 1931 anchor marks naming, with earlier movement years given in the profile. Separate Bible Student branches, international persecution and local legal histories are outside this profile.",
+    "size_estimate": "3,016,924 U.S. 2020 adherents (U.S. Religion Census) · 12,285 U.S. 2020 congregations",
+    "key_figures": [
+      {
+        "name": "Charles Taze Russell",
+        "role": "Bible Student organizer and publisher",
+        "summary": "Helped organize the Allegheny study circle and founded Zion’s Watch Tower.",
+        "url": "https://www.jw.org/en/library/brochures/Jehovahs-Witnesses-Who-Are-They-What-Do-They-Believe/Their-Modern-Development-and-Growth/",
+        "citations": [
+          "cite-us-restoration-jw-origins",
+          "cite-us-restoration-jw-history"
+        ]
+      },
+      {
+        "name": "Nelson H. Barbour",
+        "role": "Second Adventist collaborator in the precursor network",
+        "summary": "Worked with Russell on prophetic chronology before they parted over Christ’s ransom.",
+        "url": "https://www.cambridge.org/core/elements/jehovahs-witnesses/605AED05C9FA13DC68BB74FE3D2C651D",
+        "citations": [
+          "cite-us-restoration-jw-history"
+        ]
+      },
+      {
+        "name": "Joseph F. Rutherford",
+        "role": "Watch Tower Society president",
+        "summary": "Succeeded Russell after his death and led the convention at which the name Jehovah’s Witnesses was adopted.",
+        "url": "https://wol.jw.org/en/wol/d/r1/lp-e/1101993013",
+        "citations": [
+          "cite-us-restoration-jw-name",
+          "cite-us-restoration-jw-succession"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1879,
+        "label": "Russell begins publishing Zion’s Watch Tower",
+        "citations": [
+          "cite-us-restoration-jw-origins",
+          "cite-us-restoration-jw-history"
+        ]
+      },
+      {
+        "year": 1884,
+        "label": "Watch Tower tract society legally incorporated",
+        "citations": [
+          "cite-us-restoration-jw-origins"
+        ]
+      },
+      {
+        "year": 1917,
+        "label": "Rutherford’s election is followed by a Watch Tower leadership schism",
+        "citations": [
+          "cite-us-restoration-jw-succession"
+        ]
+      },
+      {
+        "year": 1931,
+        "label": "Columbus convention adopts the name Jehovah’s Witnesses on July 26",
+        "citations": [
+          "cite-us-restoration-jw-name",
+          "cite-us-restoration-jw-history"
+        ]
+      },
+      {
+        "year": 1943,
+        "label": "U.S. Supreme Court decides the Barnette flag-salute case",
+        "citations": [
+          "cite-us-restoration-jw-barnette"
+        ]
+      },
+      {
+        "year": 1950,
+        "label": "Witnesses begin releasing the New World Translation in installments",
+        "citations": [
+          "cite-us-restoration-jw-translation"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Columbus convention name resolution",
+        "year": 1931,
+        "significance": "Adopted resolution explaining the new name, drawn from Isaiah 43:10, and distinguishing it from corporate names.",
+        "url": "https://wol.jw.org/en/wol/d/r1/lp-e/1101993013",
+        "citations": [
+          "cite-us-restoration-jw-name"
+        ]
+      },
+      {
+        "title": "West Virginia State Board of Education v. Barnette",
+        "year": 1943,
+        "significance": "U.S. Supreme Court decision in a challenge brought by Witness families to compelled flag salutes and pledges.",
+        "url": "https://www.loc.gov/item/usrep319624/",
+        "citations": [
+          "cite-us-restoration-jw-barnette"
+        ]
+      },
+      {
+        "title": "New World Translation",
+        "year": 1950,
+        "significance": "Bible translation produced by Witnesses and first issued in installments from 1950 to 1960.",
+        "url": "https://www.jw.org/en/library/books/Reasoning-From-the-Scriptures/New-World-Translation/",
+        "citations": [
+          "cite-us-restoration-jw-translation"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Jehovah’s Witnesses",
+        "snippet": "A scholarly account of the Bible Student roots, Adventist contacts and development of Witness identity.",
+        "url": "https://www.cambridge.org/core/elements/jehovahs-witnesses/605AED05C9FA13DC68BB74FE3D2C651D",
+        "citations": [
+          "cite-us-restoration-jw-history"
+        ]
+      },
+      {
+        "title": "The 1917 Watch Tower schism",
+        "snippet": "George D. Chryssides examines the disputed leadership transition and the alternative movements it produced.",
+        "url": "https://www.cambridge.org/core/books/abs/sacred-schisms/finishing-the-mystery-the-watch-tower-and-the-1917-schism/9B4F69E1D685968292F535D157238F4B",
+        "citations": [
+          "cite-us-restoration-jw-succession"
+        ]
+      }
+    ],
+    "citations": [
+      "cite-us-restoration-jw-origins",
+      "cite-us-restoration-jw-history",
+      "cite-us-restoration-jw-name",
+      "cite-us-restoration-jw-beliefs",
+      "cite-us-restoration-census"
+    ],
+    "profile_citations": {
+      "formation_narrative": [
+        "cite-us-restoration-jw-origins",
+        "cite-us-restoration-jw-history",
+        "cite-us-restoration-jw-succession",
+        "cite-us-restoration-jw-name"
+      ],
+      "ending_narrative": [
+        "cite-us-restoration-jw-name",
+        "cite-us-restoration-jw-barnette",
+        "cite-us-restoration-jw-translation",
+        "cite-us-restoration-jw-government"
+      ],
+      "core_beliefs": [
+        "cite-us-restoration-jw-beliefs"
+      ],
+      "size_estimate": [
+        "cite-us-restoration-census"
+      ]
+    }
+  }
+]
