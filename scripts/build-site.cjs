@@ -4,7 +4,7 @@ const repo = path.resolve(__dirname, '..');
 const output = path.join(repo, 'dist');
 const readJSON = file => JSON.parse(fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, ''));
 const {spawnSync}=require('child_process');
-for(const script of ['scripts/build-home.cjs','westminster/build.cjs'])if(fs.existsSync(path.join(repo,script))){const result=spawnSync(process.execPath,[path.join(repo,script)],{stdio:'inherit'});if(result.status!==0)throw new Error('Page build failed: '+script);}
+for(const script of ['scripts/build-home.cjs','westminster/build.cjs','scripts/build-catechisms.cjs'])if(fs.existsSync(path.join(repo,script))){const result=spawnSync(process.execPath,[path.join(repo,script)],{stdio:'inherit'});if(result.status!==0)throw new Error('Page build failed: '+script);}
 const config = readJSON(path.join(repo, 'site.config.json'));
 // Delete only this build's fixed output directory; refuse a redirected target.
 if (path.dirname(output) !== repo || path.basename(output) !== 'dist' || (fs.existsSync(output) && fs.lstatSync(output).isSymbolicLink())) throw new Error('Unsafe build output directory');
