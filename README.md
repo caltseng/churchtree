@@ -104,9 +104,7 @@ canonical SVGs are `assets/brand/logos/main-branch.svg` and
 `main-branch-wordmark.svg`. Update source templates/builders and their generated
 pages so branding survives rebuilding.
 
-Shared semantic colors live in `theme.css`. Appearance previews **Parchment**
-(default), **Slate**, and **Ink**; the selection is saved only in that browser and
-shared across pages. These interface palettes remain evolving proposals, separate
+Shared semantic colors live in `theme.css`. Open **Site menu → Settings → Appearance** to choose **Parchment** (default), **Slate**, or **Ink**. The browser saves the selection across pages. These interface palettes remain evolving proposals, separate
 from the selected logo's fixed colors. See the [design-language contract](docs/design-language.md).
 
 ## Where to make changes

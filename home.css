@@ -65,8 +65,5 @@ h1 em { color: var(--ct-accent); font-weight: normal; }
  .book-page h3 { font-size: 18px; }
  .growing-note { align-items: flex-start; flex-direction: column; gap: 15px; padding: 30px 0; margin-top: 30px; }
  .home-footer { padding: 20px 18px; flex-direction: column; align-items: flex-start; gap: 0; }
- .home-header #theme-open { position: static; }
 }
 @media (prefers-reduced-motion: reduce) { .tool-card { transition: none; } }
-
-.home-header #theme-open { position: static; }
