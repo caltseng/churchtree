@@ -75,9 +75,11 @@ Follow [AGENTS.md](AGENTS.md) and preserve other chats' unrelated working files.
 - Passing trusted same-repository PRs can merge automatically for now. The automation
   honors branch rules; it does not merge arbitrary public-fork PRs or drafts. Set
   repository variable `MAIN_BRANCH_AUTOMERGE=false` to pause it.
-- GitHub Pages is configured for GitHub Actions and `main-branch.com`. **The GoDaddy
-  DNS cutover is still pending**; repository configuration is not proof that the
-  domain is serving the site. See [deployment instructions](docs/deployment.md).
+- GitHub Pages serves `main-branch.com` through GitHub Actions. DNS and HTTPS were
+  verified on 2026-11-22; see the [deployment evidence](docs/deployment.md#domain-cutover).
+  If Fortinet blocks the site as "Newly Registered Domain", use the
+  [approved access-remediation steps](docs/deployment.md#fortiguard-access-blocks).
+  Website code cannot override a network administrator's policy.
 
 The checked-in workflow and ruleset template describe the intended policy;
 GitHub settings and the actual workflow/check/deployment results establish its live
