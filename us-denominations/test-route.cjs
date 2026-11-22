@@ -1,0 +1,105 @@
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
+const {loadData, getChildren, getAncestors, presentation} = require('./data.cjs');
+const {publicData} = require('./build.cjs');
+const view = require('./view.js');
+const internal = loadData(), data = publicData(internal);
+const root = path.resolve(__dirname, '..');
+
+test('public projection and generated artifact contain only intentional affiliation content', () => {
+  const sandbox = {window: {}};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'public-data.js'), 'utf8'), sandbox);
+  assert.equal(JSON.stringify(sandbox.window.US_AFFILIATION_DATA), JSON.stringify(data));
+  assert.deepEqual(Object.keys(data).sort(),
+    ['schemaVersion', 'study', 'records', 'lenses', 'sources', 'interactiveStrings', 'reuse'].sort());
+  for (const record of Object.values(data.records)) {
+    assert.deepEqual(Object.keys(record).sort(),
+      ['id', 'label', 'sourceLabel', 'kind', 'scope', 'status', 'valueText', 'barValue', 'reason', 'source'].sort());
+    assert.equal(record.valueText, presentation(internal, record.id).valueText);
+  }
+  for (const record of internal.attendance.records) assert(!Object.hasOwn(data.records, record.id));
+  assert(!Object.hasOwn(data.sources, 'attendance-chapter'));
+  const published = path.join(root, 'dist', 'us-denominations');
+  assert.deepEqual(fs.readdirSync(published).sort(),
+    ['affiliation.css', 'controller.js', 'index.html', 'public-data.js', 'view.js']);
+  assert(!JSON.stringify(data).match(/sha256|reviewStatus|sourcePanelId|monthly-attendance|attendance-chapter|checkedDate/));
+  for (const file of ['index.html', 'public-data.js']) {
+    assert.equal(fs.readFileSync(path.join(published, file), 'utf8'), fs.readFileSync(path.join(__dirname, file), 'utf8'));
+  }
+});
+
+test('each panel preserves source ranking, national labels, locators and coverage', () => {
+  for (const [lens, tree] of Object.entries(data.lenses)) {
+    for (const panel of tree.panels) {
+      assert.deepEqual(panel.children, getChildren(internal, lens, panel.parentId).map(row => row.id));
+      assert.deepEqual(view.ancestors(data, lens, panel.parentId), getAncestors(internal, lens, panel.parentId));
+      const html = view.renderView(data, {view: lens, group: panel.parentId, format: 'chart'});
+      assert.match(html, /% of U.S. adults/);
+      assert.match(html, /Fielded July 17, 2023-March 4, 2024/);
+      assert.match(html, /Pew Research Center has not reviewed or endorsed/);
+      assert.match(html, /No residual is inferred/);
+      if (panel.coverage === 'selected') assert.match(html, /Published detail covers selected reported affiliations/);
+      for (const id of panel.children) {
+        const record = data.records[id];
+        assert(html.includes(view.esc(record.source.row)));
+        assert(html.includes(view.esc(record.source.url)));
+        assert(html.includes(view.esc(record.valueText) + ' of U.S. adults'));
+        const markup = html.split(`data-record="${id}"`)[1].split('</li>')[0];
+        assert.equal(markup.includes('class="bar"'), record.barValue !== null);
+        assert.equal(markup.includes('class="row-target"'), Boolean(tree.panels.find(p => p.parentId === id)));
+      }
+    }
+  }
+});
+
+test('missing and suppressed fixtures retain reasons, exact text and no fabricated bars', () => {
+  for (const status of ['unavailable', 'suppressed']) {
+    const fixture = structuredClone(data);
+    Object.assign(fixture.records.pnbc, {status, valueText: status === 'unavailable' ? 'Unavailable' : 'Suppressed', barValue: null, reason: 'Not published for this scope'});
+    const html = view.renderView(fixture, {view: 'families', group: 'baptist', format: 'chart'});
+    const row = html.split('data-record="pnbc"')[1].split('</li>')[0];
+    assert.match(row, /Not published for this scope; no numeric bar/);
+    assert(!row.includes('class="bar"'));
+  }
+});
+
+test('URL validation, identical-scope lens preservation and incompatible Protestant fallback', () => {
+  const cases = [
+    ['', 'families', 'us-adults', 'chart', false],
+    ['?view=families&group=baptist', 'families', 'baptist', 'chart', false],
+    ['?view=traditions&group=presbyterian-mainline&format=list', 'traditions', 'presbyterian-mainline', 'list', false],
+    ['?view=traditions&group=baptist', 'traditions', 'protestant', 'chart', true],
+    ['?view=families&group=mainline', 'families', 'protestant', 'chart', true],
+    ['?view=traditions&group=pcusa', 'traditions', 'pcusa', 'chart', false],
+    ['?view=bogus&group=bogus', 'families', 'us-adults', 'chart', true],
+    ['?view=families&group=__proto__', 'families', 'us-adults', 'chart', true],
+    ['?view=families&group=%3Cscript%3E', 'families', 'us-adults', 'chart', true],
+    ['?group=baptist&group=christian', 'families', 'us-adults', 'chart', true],
+    ['?view=traditions&view=families', 'families', 'us-adults', 'chart', true],
+    ['?format=invalid&unknown=1', 'families', 'us-adults', 'chart', true]
+  ];
+  for (const [search, lens, group, format, corrected] of cases) {
+    assert.deepEqual(view.readURL(data, search), {state: {view: lens, group, format}, corrected});
+  }
+  for (const id of ['us-adults', 'christian', 'protestant', 'sbc', 'pcusa']) {
+    assert.equal(view.normalize(data, {view: 'traditions', group: id}).group, id);
+  }
+});
+
+test('static nested content includes every lens occurrence and source/threshold/reuse context', () => {
+  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  for (const [lens, tree] of Object.entries(data.lenses)) {
+    for (const panel of tree.panels) {
+      assert(html.includes(`id="static-${lens}-${panel.parentId}"`));
+    }
+  }
+  assert.match(html, /&lt;0\.3% of U.S. adults/);
+  assert.match(html, /Main Branch&#39;s selection and presentation are independent/);
+  assert.match(html, /Ordinary rounding does not explain 11.5% versus 11%/);
+  assert.match(html, /No written permission has been obtained or claimed/);
+  assert.match(html, /Appendix B alone supplies names and classification, not values/);
+  assert.match(html, /religious identity questions and denomination coding/);
+});

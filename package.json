@@ -18,7 +18,7 @@
     "test:features": "node scripts/test-features.cjs",
     "serve": "node scripts/serve-site.cjs",
     "test:guards": "node scripts/test-build-guards.cjs",
-    "test:us-denominations": "node --test us-denominations/test-data.cjs"
+    "test:us-denominations": "node --test us-denominations/test-data.cjs us-denominations/test-route.cjs && node us-denominations/test-browser.cjs"
   },
   "devDependencies": {
     "playwright": "1.65.1"

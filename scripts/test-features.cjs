@@ -1,5 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const repo=path.resolve(__dirname,'..'),root=process.env.CHURCHTREE_TEST_ROOT?path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT):path.join(repo,'dist'),server=require('./test-server.cjs')(root),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
+const pageCount=JSON.parse(fs.readFileSync(path.join(repo,'site.config.json'),'utf8')).pages.length;
 async function openAppearance(page) {
  const trigger = page.getByRole('button', {name:'Site menu', exact:true});
  assert.equal(await trigger.count(), 1);
@@ -16,7 +17,7 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
  const base=`http://127.0.0.1:${server.address().port}`;
  for(const size of [{width:1440,height:1000},{width:390,height:844},{width:320,height:568},{width:768,height:1024}]){
   const page=await browser.newPage({viewport:size}),errors=[];page.on('pageerror',e=>errors.push(e.message));
-  assert.equal((await page.goto(base+'/')).status(),200);assert.equal(await page.locator('.tool-card').count(),4);
+  assert.equal((await page.goto(base+'/')).status(),200);assert.equal(await page.locator('.tool-card').count(),pageCount);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   for(const theme of ['parchment','slate','ink']){
    await openAppearance(page);await page.locator(`input[name="theme"][value="${theme}"]`).check();
@@ -28,9 +29,9 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   await page.reload();assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
   await page.screenshot({path:path.join(output,`home-ink-${size.width}.png`),fullPage:true});
   await page.locator('.tool-card[data-id="church-history"]').click();await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
-  await page.getByRole('link',{name:'Main Branch home',exact:true}).click();assert.equal(await page.locator('.tool-card').count(),4);
+  await page.getByRole('link',{name:'Main Branch home',exact:true}).click();assert.equal(await page.locator('.tool-card').count(),pageCount);
   await page.locator('.tool-card[data-id="westminster"]').click();assert.match(page.url(),/\/wcf\/$/);assert.equal(await page.locator('.passage').count(),172);assert(await page.locator('#chapter-1').isVisible());assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
-  for (const route of ['/church-history/', '/wcf/', '/wsc/', '/wlc/']) {
+  for (const route of ['/church-history/', '/wcf/', '/wsc/', '/wlc/', '/us-denominations/']) {
    assert.equal((await page.goto(base+route)).status(),200);
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),route+' fits the viewport');
    const trigger = await openAppearance(page);

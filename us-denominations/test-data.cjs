@@ -173,7 +173,9 @@ test('reject malformed locators, fabricated threshold values and precision drift
   assert.match(ledger(original), /Adults in each religious group/);
 });
 
-test('internal inputs are not registered for public copying in this data-only PR', () => {
+test('internal inputs are never registered for recursive public copying', () => {
   const config = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'site.config.json'), 'utf8'));
   assert.equal(config.publicDirectories.includes('us-denominations'), false);
+  assert.deepEqual(config.publicFiles.filter(name => name.startsWith('us-denominations/')).sort(),
+    ['affiliation.css', 'controller.js', 'index.html', 'public-data.js', 'view.js'].map(name => 'us-denominations/' + name).sort());
 });

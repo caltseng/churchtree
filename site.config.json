@@ -23,7 +23,23 @@
     ".woff2",
     ".webmanifest"
   ],
+  "publicFiles": [
+    "us-denominations/index.html",
+    "us-denominations/affiliation.css",
+    "us-denominations/controller.js",
+    "us-denominations/view.js",
+    "us-denominations/public-data.js"
+  ],
   "pages": [
+    {
+      "id": "us-denominations",
+      "title": "U.S. denominations",
+      "path": "us-denominations/",
+      "kind": "Affiliation explorer",
+      "description": "See how common U.S. adult religious affiliations are. Explore selected published families, denominations and Protestant traditions from Pew Research Center's 2023-24 study.",
+      "tags": ["National estimates", "Two affiliation lenses", "Sourced detail"],
+      "action": "Explore U.S. affiliations"
+    },
     {
       "id": "church-history",
       "title": "Church History",
