@@ -1,0 +1,128 @@
+[
+  {
+    "id": "src-us-restoration-census",
+    "title": "ARDA — 2020 U.S. Religion Census, national congregation and adherent totals",
+    "kind": "website",
+    "url": "https://www.thearda.com/us-religion/census/congregational-membership?c=99&t=4&y=2020"
+  },
+  {
+    "id": "src-us-restoration-lds-organization",
+    "title": "Joseph Smith Papers — The Organization of the Church",
+    "kind": "website",
+    "url": "https://www.josephsmithpapers.org/site/the-organization-of-the-church"
+  },
+  {
+    "id": "src-us-restoration-lds-name",
+    "title": "Joseph Smith Papers — Revelation, 26 April 1838 [D&C 115]",
+    "kind": "website",
+    "url": "https://www.josephsmithpapers.org/paper-summary/revelation-26-april-1838-dc-115/2"
+  },
+  {
+    "id": "src-us-restoration-lds-covenants",
+    "title": "Joseph Smith Papers — Minutes, 9 June 1830",
+    "kind": "website",
+    "url": "https://www.josephsmithpapers.org/paper-summary/minutes-9-june-1830/1"
+  },
+  {
+    "id": "src-us-restoration-lds-faith",
+    "title": "The Church of Jesus Christ of Latter-day Saints — Articles of Faith",
+    "kind": "website",
+    "url": "https://www.churchofjesuschrist.org/study/scriptures/pgp/a-of-f/1?lang=eng"
+  },
+  {
+    "id": "src-us-restoration-lds-rigdon",
+    "title": "Joseph Smith Papers — Sidney Rigdon biography",
+    "kind": "website",
+    "url": "https://www.josephsmithpapers.org/person/sidney-rigdon"
+  },
+  {
+    "id": "src-us-restoration-lds-succession",
+    "title": "Church History Topics — Succession of Church Leadership",
+    "kind": "website",
+    "url": "https://www.churchofjesuschrist.org/study/history/topics/succession-of-church-leadership?lang=eng"
+  },
+  {
+    "id": "src-us-restoration-lds-nps",
+    "title": "National Park Service — Joseph Fielding Smith, the Mormon Pioneer Trail",
+    "kind": "website",
+    "url": "https://home.nps.gov/articles/000/joseph-fielding-smith-mormon-pioneer-trail.htm"
+  },
+  {
+    "id": "src-us-restoration-lds-trail",
+    "title": "National Park Service — Mormon Pioneer Trail Timeline",
+    "kind": "website",
+    "url": "https://www.nps.gov/articles/000/mormon-pioneer-trail-timeline.htm"
+  },
+  {
+    "id": "src-us-restoration-lds-manifesto",
+    "title": "Doctrine and Covenants — Official Declaration 1",
+    "kind": "website",
+    "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/od/1?lang=eng"
+  },
+  {
+    "id": "src-us-restoration-lds-1978",
+    "title": "Doctrine and Covenants — Official Declaration 2",
+    "kind": "website",
+    "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/od/2?lang=eng"
+  },
+  {
+    "id": "src-us-restoration-lds-style",
+    "title": "Church Newsroom — Style Guide",
+    "kind": "website",
+    "url": "https://newsroom.churchofjesuschrist.org/style-guide"
+  },
+  {
+    "id": "src-us-restoration-jw-origins",
+    "title": "Jehovah’s Witnesses — Their Modern Development and Growth",
+    "kind": "website",
+    "url": "https://www.jw.org/en/library/brochures/Jehovahs-Witnesses-Who-Are-They-What-Do-They-Believe/Their-Modern-Development-and-Growth/"
+  },
+  {
+    "id": "src-us-restoration-jw-history",
+    "title": "Jehovah’s Witnesses — Cambridge Elements",
+    "kind": "website",
+    "url": "https://www.cambridge.org/core/elements/jehovahs-witnesses/605AED05C9FA13DC68BB74FE3D2C651D"
+  },
+  {
+    "id": "src-us-restoration-jw-succession",
+    "title": "George D. Chryssides — Finishing the Mystery: The Watch Tower and “the 1917 schism”",
+    "kind": "website",
+    "url": "https://www.cambridge.org/core/books/abs/sacred-schisms/finishing-the-mystery-the-watch-tower-and-the-1917-schism/9B4F69E1D685968292F535D157238F4B"
+  },
+  {
+    "id": "src-us-restoration-jw-name",
+    "title": "Jehovah’s Witnesses — How We Came to Be Known as Jehovah’s Witnesses",
+    "kind": "website",
+    "url": "https://wol.jw.org/en/wol/d/r1/lp-e/1101993013"
+  },
+  {
+    "id": "src-us-restoration-jw-beliefs",
+    "title": "Jehovah’s Witnesses — What Do Jehovah’s Witnesses Believe?",
+    "kind": "website",
+    "url": "https://www.jw.org/en/jehovahs-witnesses/faq/jehovah-witness-beliefs/"
+  },
+  {
+    "id": "src-us-restoration-jw-government",
+    "title": "Jehovah’s Witnesses — What Is the Governing Body?",
+    "kind": "website",
+    "url": "https://www.jw.org/en/jehovahs-witnesses/faq/governing-body-jw-helpers/"
+  },
+  {
+    "id": "src-us-restoration-jw-barnette",
+    "title": "United States Reports — West Virginia State Board of Education v. Barnette",
+    "kind": "website",
+    "url": "https://www.loc.gov/item/usrep319624/"
+  },
+  {
+    "id": "src-us-restoration-jw-translation",
+    "title": "Jehovah’s Witnesses — New World Translation",
+    "kind": "website",
+    "url": "https://www.jw.org/en/library/books/Reasoning-From-the-Scriptures/New-World-Translation/"
+  },
+  {
+    "id": "src-us-restoration-lds-book-of-mormon",
+    "title": "Joseph Smith Papers — Book of Mormon, 1830",
+    "kind": "website",
+    "url": "https://www.josephsmithpapers.org/paper-summary/book-of-mormon-1830/1"
+  }
+]
