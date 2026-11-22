@@ -17,7 +17,7 @@
     const searchPageSize = 12;
     const normalizeSearch = value => String(value ?? '').toLowerCase().normalize('NFKD')
         .replace(/\p{M}/gu, '').replace(/['’‘]/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
-    const searchEntries = d.nodes.map(node => ({
+    const searchEntries = Array.from(nodes.values(), node => ({
         node,
         name: normalizeSearch(node.name),
         terms: [node.short_label, ...(node.aliases || []), node.id].map(normalizeSearch).filter(Boolean)

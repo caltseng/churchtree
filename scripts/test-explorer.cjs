@@ -39,7 +39,7 @@ async function noOverlap(page, selector = '.node') {
 }
 async function assertExpandedCatalog(browser, url) {
     const page = await browser.newPage({ viewport: { width: 1200, height: 800 } });
-    const families = ['Oriental Orthodox', 'Latter-day Saints', 'Jehovah’s Witnesses', 'Brethren', 'Evangelical'];
+    const families = ['Oriental Orthodox', 'Anabaptist', 'Pietist', 'Brethren', 'Evangelical'];
     const fixtures = Array.from({length: 16}, (_, i) => ({
         id: `coverage-fixture-${i}`, name: `Grace Church ${String(i).padStart(2, '0')}`,
         short_label: 'Grace', aliases: ['Shared Name', 'Grace Church 15'], tradition_family: families[i % families.length],
