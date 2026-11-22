@@ -3,6 +3,8 @@
   "publicDirectories": [
     "church-history",
     "westminster",
+    "wsc",
+    "wlc",
     "assets"
   ],
   "publicExtensions": [
@@ -47,6 +49,30 @@
         "Historical text"
       ],
       "action": "Read the confession"
+    },
+    {
+      "id": "wsc",
+      "title": "Westminster Shorter Catechism",
+      "path": "wsc/",
+      "kind": "Primary-source reader",
+      "description": "Read a concise introduction to Reformed belief, the Ten Commandments, the sacraments and the Lord’s Prayer.",
+      "tags": [
+        "107 questions",
+        "Historical text"
+      ],
+      "action": "Read the Shorter Catechism"
+    },
+    {
+      "id": "wlc",
+      "title": "Westminster Larger Catechism",
+      "path": "wlc/",
+      "kind": "Primary-source reader",
+      "description": "Read the Assembly’s fuller treatment of what Christians are to believe and how they are to live and pray.",
+      "tags": [
+        "196 questions",
+        "Historical text"
+      ],
+      "action": "Read the Larger Catechism"
     }
   ]
 }

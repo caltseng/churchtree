@@ -6,7 +6,7 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
  const base=`http://127.0.0.1:${server.address().port}`;
  for(const size of [{width:1440,height:1000},{width:390,height:844},{width:320,height:568},{width:768,height:1024}]){
   const page=await browser.newPage({viewport:size}),errors=[];page.on('pageerror',e=>errors.push(e.message));
-  assert.equal((await page.goto(base+'/')).status(),200);assert.equal(await page.locator('.tool-card').count(),2);
+  assert.equal((await page.goto(base+'/')).status(),200);assert.equal(await page.locator('.tool-card').count(),4);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   for(const theme of ['parchment','slate','ink']){
    await page.locator('#theme-open').click();await page.locator(`input[name="theme"][value="${theme}"]`).check();
@@ -18,7 +18,7 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   await page.reload();assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
   await page.screenshot({path:path.join(output,`home-ink-${size.width}.png`),fullPage:true});
   await page.locator('.tool-card[data-id="church-history"]').click();await page.locator('[data-id="family:Presbyterian"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
-  await page.getByRole('link',{name:'Main Branch home',exact:true}).click();assert.equal(await page.locator('.tool-card').count(),2);
+  await page.getByRole('link',{name:'Main Branch home',exact:true}).click();assert.equal(await page.locator('.tool-card').count(),4);
   await page.locator('.tool-card[data-id="westminster"]').click();assert.match(page.url(),/\/wcf\/$/);assert.equal(await page.locator('.passage').count(),172);assert(await page.locator('#chapter-1').isVisible());assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
   await page.goto(base+'/');await page.locator('#theme-open').click();await page.locator('#theme-reset').click();await page.locator('#theme-close').click();assert.equal(await page.locator('html').getAttribute('data-theme'),'parchment');
   await page.screenshot({path:path.join(output,`home-${size.width}.png`),fullPage:true});

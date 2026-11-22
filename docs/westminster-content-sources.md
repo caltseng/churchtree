@@ -38,3 +38,5 @@ The chapter study notes are separate original editorial material. They paraphras
 ## PCA comparison audit (14 November 2026)
 
 The audit now compares all 33 chapters directly with the official PCA 2022 publication while preserving the historical transcript unchanged. [The audit memo](westminster-pca-audit.md) records scope, method, results, minor variants and apparent transcript/printing problems. `westminster/pca-audit.json` contains the original editorial summaries, exact edition/hash provenance and complete section maps. The official PCA publication’s entire text, proof apparatus and publisher commentary are not reproduced. Copyright Office Circular 14 distinguishes new edition authorship from underlying public-domain material; this is not blanket clearance for modern protected additions.
+
+For the companion readers, see the [Westminster catechism editions and reuse notes](westminster-catechism-sources.md).
