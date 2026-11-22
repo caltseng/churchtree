@@ -1,0 +1,940 @@
+[
+  {
+    "id": "african-methodist-episcopal-church",
+    "name": "African Methodist Episcopal Church",
+    "kind": "denomination",
+    "start_year": 1816,
+    "short_label": "AME Church",
+    "aliases": [
+      "AME",
+      "A.M.E. Church",
+      "AMEC"
+    ],
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Methodist",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "summary": "A historically Black Methodist denomination organized in Philadelphia in 1816 under Richard Allen.",
+    "formation_narrative": "Black Methodists in Philadelphia sought control over their worship and church life in the face of racial discrimination. Richard Allen and Absalom Jones helped establish the Free African Society in 1787. Allen’s group retained Methodist worship, dedicated Bethel in 1794, and secured local autonomy through litigation. In 1816 Allen brought Black Methodist congregations together in Philadelphia to organize an independent denomination.",
+    "ending_narrative": "AME ministers and congregations expanded across the South during the Civil War and Reconstruction. Bishop Henry M. Turner promoted the connection’s expansion into Africa in the 1890s. The church continues across multiple continents under an episcopal structure. In 2000 it elected Vashti Murphy McKenzie as its first woman bishop.",
+    "profile_scope": "Covers the Philadelphia origins, 1816 denominational organization, selected expansion and leadership milestones, and the 2020 U.S. adherent count. The exact chronology of the St. George’s withdrawal and the development of individual overseas districts require further research.",
+    "core_beliefs": [
+      "The Twenty-Five Articles confess the Trinity and teach that sinners are justified through faith in Christ. Good works follow faith.",
+      "Baptism and the Lord’s Supper are the two Gospel sacraments. The AME connection is governed through bishops and districts."
+    ],
+    "size_estimate": "1,059,888 U.S. adherents (2020 U.S. Religion Census)",
+    "key_figures": [
+      {
+        "name": "Richard Allen",
+        "role": "Organizer and first bishop",
+        "summary": "A formerly enslaved Methodist preacher who organized Bethel and convened the new denomination.",
+        "url": "https://www.ame-church.com/our-church/our-history/",
+        "citations": [
+          "cite-uscm-ame-roots",
+          "cite-uscm-ame-site"
+        ]
+      },
+      {
+        "name": "Absalom Jones",
+        "role": "Free African Society co-organizer",
+        "summary": "Helped establish the mutual aid society that preceded Bethel’s organization.",
+        "url": "https://www.ame-church.com/our-church/our-history/",
+        "citations": [
+          "cite-uscm-ame-roots"
+        ]
+      },
+      {
+        "name": "Henry M. Turner",
+        "role": "Bishop and advocate for African missions",
+        "summary": "Promoted the establishment of AME work in West and southern Africa.",
+        "url": "https://www.ame-church.com/our-church/our-history/",
+        "citations": [
+          "cite-uscm-ame-growth"
+        ]
+      },
+      {
+        "name": "Vashti Murphy McKenzie",
+        "role": "First woman elected AME bishop",
+        "summary": "Her 2000 election opened the episcopacy to women in the denomination.",
+        "url": "https://www.ame-church.com/reports/General_Board_Docs_2022/General%20Officer%20Reports/Treasurer%3ACFO/Memorandum%20-%202022%20a.pdf",
+        "citations": [
+          "cite-uscm-ame-election"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1787,
+        "label": "Free African Society founded in Philadelphia",
+        "citations": [
+          "cite-uscm-ame-roots"
+        ]
+      },
+      {
+        "year": 1794,
+        "label": "Bethel congregation dedicates its church",
+        "citations": [
+          "cite-uscm-ame-roots"
+        ]
+      },
+      {
+        "year": 1816,
+        "label": "Independent AME denomination organized in Philadelphia",
+        "citations": [
+          "cite-uscm-ame-organization",
+          "cite-uscm-ame-site"
+        ]
+      },
+      {
+        "year": 2000,
+        "label": "General Conference elects the first woman bishop",
+        "citations": [
+          "cite-uscm-ame-election"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Apostles’ Creed and Twenty-Five Articles of Religion",
+        "year": null,
+        "significance": "Inherited Methodist doctrinal standards as published by the AME Church.",
+        "url": "https://www.ame-church.com/our-church/our-beliefs/",
+        "citations": [
+          "cite-uscm-ame-articles"
+        ]
+      },
+      {
+        "title": "The Life, Experience, and Gospel Labours of Richard Allen",
+        "year": 1833,
+        "significance": "Posthumously published firsthand account of Allen’s ministry and struggle for autonomy.",
+        "url": "https://classicslaunch.org/works/allen-life-experience-and-gospel-labours/read/",
+        "citations": [
+          "cite-uscm-ame-testimony"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "AME denominational history",
+        "url": "https://www.ame-church.com/our-church/our-history/",
+        "snippet": "Historian Dennis C. Dickerson surveys the founding, Reconstruction expansion, and overseas missions.",
+        "citations": [
+          "cite-uscm-ame-roots",
+          "cite-uscm-ame-growth"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "start_year": [
+        "cite-uscm-ame-organization",
+        "cite-uscm-ame-site"
+      ],
+      "summary": [
+        "cite-uscm-ame-roots",
+        "cite-uscm-ame-organization",
+        "cite-uscm-ame-site",
+        "cite-uscm-ame-testimony"
+      ],
+      "formation_narrative": [
+        "cite-uscm-ame-roots",
+        "cite-uscm-ame-organization",
+        "cite-uscm-ame-site",
+        "cite-uscm-ame-testimony"
+      ],
+      "ending_narrative": [
+        "cite-uscm-ame-growth",
+        "cite-uscm-ame-current",
+        "cite-uscm-ame-election"
+      ],
+      "core_beliefs": [
+        "cite-uscm-ame-articles",
+        "cite-uscm-ame-current"
+      ],
+      "size_estimate": [
+        "cite-uscm-african-methodist-episcopal-church-count"
+      ]
+    },
+    "citations": [
+      "cite-uscm-ame-roots",
+      "cite-uscm-ame-organization",
+      "cite-uscm-ame-site",
+      "cite-uscm-ame-testimony",
+      "cite-uscm-ame-articles",
+      "cite-uscm-ame-current",
+      "cite-uscm-ame-growth",
+      "cite-uscm-ame-election",
+      "cite-uscm-african-methodist-episcopal-church-count"
+    ]
+  },
+  {
+    "id": "african-methodist-episcopal-zion-church",
+    "name": "African Methodist Episcopal Zion Church",
+    "kind": "denomination",
+    "start_year": 1822,
+    "short_label": "AME Zion",
+    "aliases": [
+      "AME Zion Church",
+      "A.M.E. Zion",
+      "A.M.E. Zion Church",
+      "Freedom Church",
+      "African Methodist Episcopal Church in the City of New York"
+    ],
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Methodist",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "summary": "A historically Black Methodist denomination that grew from New York City’s Zion congregation and attained an independently ordained ministry in 1822.",
+    "formation_narrative": "In 1796 Black worshippers from New York’s John Street Methodist Episcopal Church began meeting separately. Zion incorporated locally in 1801 and governed its own affairs, while John Street still provided an elder to administer the sacraments. Zion decided to withdraw and published its own Discipline in 1820. In 1822 former Methodist Episcopal elders ordained Zion’s ministers, giving the new denomination its own ordained ministry. The conference chose James Varick as its first bishop.",
+    "ending_narrative": "Zion congregations spread beyond New York City. The Rochester congregation became associated with abolitionists including Harriet Tubman and Frederick Douglass. The church adopted Zion in its denominational name in 1848 to distinguish itself from the Philadelphia-based AME Church. The two connections discussed organic union in the 1880s and continued as separate denominations. AME Zion remains active internationally.",
+    "profile_scope": "Covers the New York origins, stages of independence, selected abolitionist history, and the 2020 U.S. adherent count. The timeline uses the 1822 ordinations as the milestone for a fully functioning independent ministry.",
+    "core_beliefs": [
+      "AME Zion professes salvation through Jesus Christ and renewal of believers by divine grace through the Holy Spirit.",
+      "The denomination’s historical Discipline applies Methodist teaching and episcopal order to church life and provides forms for baptism and the Lord’s Supper."
+    ],
+    "size_estimate": "304,704 U.S. adherents (2020 U.S. Religion Census)",
+    "key_figures": [
+      {
+        "name": "James Varick",
+        "role": "First bishop",
+        "summary": "A Zion minister ordained in 1822 and then elected to lead the independent connection.",
+        "url": "https://amezion.org/about/",
+        "citations": [
+          "cite-uscm-zion-independent"
+        ]
+      },
+      {
+        "name": "Christopher Rush",
+        "role": "Second denominational superintendent",
+        "summary": "A formerly enslaved preacher who succeeded Varick in denominational leadership in 1828.",
+        "url": "https://omeka.hrvh.org/exhibits/show/ame-zion-church-in-new-paltz/history-of-the-a-m-e--zion-chu",
+        "citations": [
+          "cite-uscm-zion-reform"
+        ]
+      },
+      {
+        "name": "Harriet Tubman",
+        "role": "Abolitionist associated with Rochester Zion",
+        "summary": "The Hudson River Valley Heritage exhibit connects Tubman’s Underground Railroad work with the Rochester church.",
+        "url": "https://omeka.hrvh.org/exhibits/show/ame-zion-church-in-new-paltz/history-of-the-a-m-e--zion-chu",
+        "citations": [
+          "cite-uscm-zion-reform"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1796,
+        "label": "Black Methodists begin meeting separately in New York City",
+        "citations": [
+          "cite-uscm-zion-local"
+        ]
+      },
+      {
+        "year": 1801,
+        "label": "Zion incorporates locally in New York",
+        "citations": [
+          "cite-uscm-zion-local"
+        ]
+      },
+      {
+        "year": 1820,
+        "label": "Zion publishes its first Discipline after voting to withdraw",
+        "citations": [
+          "cite-uscm-zion-independent"
+        ]
+      },
+      {
+        "year": 1822,
+        "label": "Zion ministers ordained and first bishop elected",
+        "citations": [
+          "cite-uscm-zion-independent"
+        ]
+      },
+      {
+        "year": 1848,
+        "label": "Zion adopted in the denominational name",
+        "citations": [
+          "cite-uscm-zion-name"
+        ]
+      },
+      {
+        "year": 1885,
+        "label": "Joint AME and AME Zion commission agrees to a union proposal",
+        "citations": [
+          "cite-uscm-zion-proposal"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Doctrines and Discipline of the African Methodist Episcopal Zion Church in America",
+        "year": 1892,
+        "significance": "Historical published edition of the denomination’s doctrines and church order. Zion issued its first Discipline in 1820.",
+        "url": "https://books.google.com/books?id=SVpPAQAAIAAJ",
+        "citations": [
+          "cite-uscm-zion-text",
+          "cite-uscm-zion-independent"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "History of the A.M.E. Zion Church",
+        "url": "https://omeka.hrvh.org/exhibits/show/ame-zion-church-in-new-paltz/history-of-the-a-m-e--zion-chu",
+        "snippet": "A regional exhibit illustrates the growth of the denomination through the Rochester and New Paltz congregations.",
+        "citations": [
+          "cite-uscm-zion-reform"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "start_year": [
+        "cite-uscm-zion-independent"
+      ],
+      "summary": [
+        "cite-uscm-zion-local",
+        "cite-uscm-zion-independent"
+      ],
+      "formation_narrative": [
+        "cite-uscm-zion-local",
+        "cite-uscm-zion-independent"
+      ],
+      "ending_narrative": [
+        "cite-uscm-zion-reform",
+        "cite-uscm-zion-name",
+        "cite-uscm-zion-proposal",
+        "cite-uscm-zion-living"
+      ],
+      "core_beliefs": [
+        "cite-uscm-zion-belief",
+        "cite-uscm-zion-text"
+      ],
+      "size_estimate": [
+        "cite-uscm-african-methodist-episcopal-zion-church-count"
+      ]
+    },
+    "citations": [
+      "cite-uscm-zion-local",
+      "cite-uscm-zion-independent",
+      "cite-uscm-zion-belief",
+      "cite-uscm-zion-text",
+      "cite-uscm-zion-reform",
+      "cite-uscm-zion-name",
+      "cite-uscm-zion-proposal",
+      "cite-uscm-zion-living",
+      "cite-uscm-african-methodist-episcopal-zion-church-count"
+    ]
+  },
+  {
+    "id": "christian-methodist-episcopal-church",
+    "name": "Christian Methodist Episcopal Church",
+    "kind": "denomination",
+    "start_year": 1870,
+    "short_label": "CME Church",
+    "aliases": [
+      "CME",
+      "C.M.E. Church",
+      "Colored Methodist Episcopal Church",
+      "Colored Methodist Episcopal Church in America"
+    ],
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Methodist",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "summary": "A historically Black Methodist denomination organized by Black Methodists from the Methodist Episcopal Church, South, in 1870.",
+    "formation_narrative": "After emancipation, Black members of the Methodist Episcopal Church, South sought a church they could govern. The Southern church’s 1866 General Conference authorized separate organization, followed by the development of Black conferences. Delegates organized the Colored Methodist Episcopal Church in Jackson, Tennessee, on December 16, 1870 and elected William Miles and Richard H. Vanderhorst as its first bishops.",
+    "ending_narrative": "CME churches built schools as the connection grew. In 1882 the school that became Lane College opened in Jackson, with Jennie E. Lane as its first principal and teacher. The 1946 General Conference authorized a Connectional Council, which began operating in 1950. In 1954 the General Conference approved the name Christian Methodist Episcopal Church. The same connection continued under the new name. Research in the denomination’s archives documents CME participation in the civil rights movement. The church remains active under connectional government.",
+    "profile_scope": "Covers Reconstruction-era organization, selected twentieth-century institutional and civil-rights developments, and the 2020 U.S. adherent count. It is an introductory U.S. profile of a wider church.",
+    "core_beliefs": [
+      "CME retained the Wesleyan Methodist doctrinal inheritance of the Methodist Episcopal Church, South when it formed its own connection.",
+      "The church applies Methodist discipline through bishops and conferences, with a General Conference and a Connectional Council."
+    ],
+    "size_estimate": "269,126 U.S. adherents (2020 U.S. Religion Census)",
+    "key_figures": [
+      {
+        "name": "William Miles",
+        "role": "Founding bishop",
+        "summary": "One of the two bishops chosen at the organizing conference in 1870.",
+        "url": "https://thecmechurch.org/cme-church-history/",
+        "citations": [
+          "cite-uscm-cme-bishops"
+        ]
+      },
+      {
+        "name": "Richard H. Vanderhorst",
+        "role": "Founding bishop",
+        "summary": "Elected at the organizing conference alongside William Miles.",
+        "url": "https://thecmechurch.org/cme-church-history/",
+        "citations": [
+          "cite-uscm-cme-bishops"
+        ]
+      },
+      {
+        "name": "Jennie E. Lane",
+        "role": "First principal and teacher of CME High School",
+        "summary": "Led the school’s first session in 1882. The school became Lane College.",
+        "url": "https://lanecollege.edu/about/history-of-lane-college",
+        "citations": [
+          "cite-uscm-cme-school"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1866,
+        "label": "Southern Methodist General Conference authorizes separate organization",
+        "citations": [
+          "cite-uscm-cme-formation"
+        ]
+      },
+      {
+        "year": 1870,
+        "label": "Delegates organize the independent denomination in Jackson",
+        "citations": [
+          "cite-uscm-cme-formation",
+          "cite-uscm-cme-bishops"
+        ]
+      },
+      {
+        "year": 1882,
+        "label": "CME High School, later Lane College, opens in Jackson",
+        "citations": [
+          "cite-uscm-cme-school"
+        ]
+      },
+      {
+        "year": 1950,
+        "label": "Connectional Council begins operating",
+        "citations": [
+          "cite-uscm-cme-council"
+        ]
+      },
+      {
+        "year": 1954,
+        "label": "General Conference approves the Christian Methodist Episcopal name",
+        "citations": [
+          "cite-uscm-cme-name"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Methodist Articles of Religion and Discipline",
+        "year": null,
+        "significance": "Inherited doctrinal and organizational basis of the new denomination, as described in the ecumenical profile.",
+        "url": "https://www.oikoumene.org/member-churches/christian-methodist-episcopal-church",
+        "citations": [
+          "cite-uscm-cme-teaching"
+        ]
+      },
+      {
+        "title": "The History of the Colored Methodist Episcopal Church in America",
+        "year": 1898,
+        "significance": "Early denominational history by Bishop Charles Henry Phillips, reproduced by the church.",
+        "url": "https://thecmechurch.org/cme-church-history/",
+        "citations": [
+          "cite-uscm-cme-bishops"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "CME Church in the Memory of the Civil Rights Movement",
+        "url": "https://stars.library.ucf.edu/etd/6737/",
+        "snippet": "An archival study of CME civil-rights participation from the 1950s to the 1970s.",
+        "citations": [
+          "cite-uscm-cme-activism"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "start_year": [
+        "cite-uscm-cme-formation",
+        "cite-uscm-cme-bishops"
+      ],
+      "summary": [
+        "cite-uscm-cme-formation",
+        "cite-uscm-cme-bishops"
+      ],
+      "formation_narrative": [
+        "cite-uscm-cme-formation",
+        "cite-uscm-cme-bishops"
+      ],
+      "ending_narrative": [
+        "cite-uscm-cme-school",
+        "cite-uscm-cme-name",
+        "cite-uscm-cme-council",
+        "cite-uscm-cme-activism",
+        "cite-uscm-cme-active"
+      ],
+      "core_beliefs": [
+        "cite-uscm-cme-teaching",
+        "cite-uscm-cme-council"
+      ],
+      "size_estimate": [
+        "cite-uscm-christian-methodist-episcopal-church-count"
+      ]
+    },
+    "citations": [
+      "cite-uscm-cme-formation",
+      "cite-uscm-cme-bishops",
+      "cite-uscm-cme-teaching",
+      "cite-uscm-cme-council",
+      "cite-uscm-cme-name",
+      "cite-uscm-cme-activism",
+      "cite-uscm-cme-active",
+      "cite-uscm-christian-methodist-episcopal-church-count",
+      "cite-uscm-cme-school"
+    ]
+  },
+  {
+    "id": "wesleyan-church",
+    "name": "The Wesleyan Church",
+    "kind": "denomination",
+    "start_year": 1968,
+    "short_label": "Wesleyan Church",
+    "aliases": [
+      "Wesleyan Church",
+      "The Wesleyan Church (North America)"
+    ],
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Holiness",
+    "ecclesial_orientation": "evangelical",
+    "current_status": "active",
+    "summary": "A Wesleyan-Holiness denomination formed in 1968 by the union of the Pilgrim Holiness Church and the Wesleyan Methodist Church of America.",
+    "formation_narrative": "The Wesleyan Methodist Church of America traced its origin to the antislavery organizing of Orange Scott and other Methodist reformers in the 1840s. The Pilgrim Holiness Church grew out of holiness evangelism and church unions. The two bodies shared an emphasis on sanctification. After an earlier merger proposal failed, both conferences adopted a basis for union in 1966. The uniting conference formed The Wesleyan Church on June 26, 1968.",
+    "ending_narrative": "Some churches and ministers organized separately around the merger period, including congregations associated with the Bible Methodist Connection and Midwest Pilgrim Holiness. The united church continued its own denominational governance and publications. In 2004 it incorporated congregations from the Canadian-based Standard Church of America, and Wesleyan Life became its official publication.",
+    "profile_scope": "Covers both immediate merger partners through the 1968 effective union, selected minority and later developments, and the 2020 U.S. adherent count. The two immediate merger partners lack standalone records in the explorer.",
+    "core_beliefs": [
+      "The Discipline teaches salvation through repentance and faith in Christ, and that the Holy Spirit frees believers from sin’s dominion.",
+      "Entire sanctification describes purification and being made perfect in love by faith. Wesleyans also teach continued growth in grace."
+    ],
+    "size_estimate": "306,005 U.S. adherents (2020 U.S. Religion Census)",
+    "key_figures": [
+      {
+        "name": "Orange Scott",
+        "role": "Organizer in the Wesleyan Methodist predecessor",
+        "summary": "Helped organize a Methodist connection around opposition to slavery.",
+        "url": "https://discipline.wesleyan.org/wiki/Wesleyan_Church,_The:_History",
+        "citations": [
+          "cite-uscm-wes-roots"
+        ]
+      },
+      {
+        "name": "Seth Cook Rees",
+        "role": "Holiness evangelist in the Pilgrim lineage",
+        "summary": "His Pilgrim Church joined what became the Pilgrim Holiness Church in 1922.",
+        "url": "https://discipline.wesleyan.org/wiki/Wesleyan_Church,_The:_History",
+        "citations": [
+          "cite-uscm-wes-roots"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1843,
+        "label": "Wesleyan Methodist Connection organizes",
+        "citations": [
+          "cite-uscm-wes-roots"
+        ]
+      },
+      {
+        "year": 1922,
+        "label": "Holiness bodies unite to form the Pilgrim Holiness Church",
+        "citations": [
+          "cite-uscm-wes-roots"
+        ]
+      },
+      {
+        "year": 1966,
+        "label": "Both conferences adopt a basis for union",
+        "citations": [
+          "cite-uscm-wes-merger"
+        ]
+      },
+      {
+        "year": 1968,
+        "label": "Uniting General Conference forms The Wesleyan Church",
+        "citations": [
+          "cite-uscm-wes-merger"
+        ]
+      },
+      {
+        "year": 2004,
+        "label": "Standard Church of America merges into The Wesleyan Church",
+        "citations": [
+          "cite-uscm-wes-canada"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Basis for Merger and Constitution",
+        "year": 1966,
+        "significance": "Adopted by both partner conferences. The Discipline records its adoption ahead of the effective union.",
+        "url": "https://discipline.wesleyan.org/wiki/F._The_Formation_of_The_Wesleyan_Church",
+        "citations": [
+          "cite-uscm-wes-merger"
+        ]
+      },
+      {
+        "title": "The Discipline, Summary of Articles of Religion",
+        "year": null,
+        "significance": "Current membership teaching in the denomination’s official Discipline.",
+        "url": "https://discipline.wesleyan.org/wiki/Summary_of_Articles_of_Religion",
+        "citations": [
+          "cite-uscm-wes-faith"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Wesleyan Archives and Historical Library",
+        "url": "https://www.wesleyanarchives.com/",
+        "snippet": "Collections preserve records of both immediate merger partners and the continuing church.",
+        "citations": [
+          "cite-uscm-wes-records"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "start_year": [
+        "cite-uscm-wes-merger"
+      ],
+      "summary": [
+        "cite-uscm-wes-roots",
+        "cite-uscm-wes-merger"
+      ],
+      "formation_narrative": [
+        "cite-uscm-wes-roots",
+        "cite-uscm-wes-merger"
+      ],
+      "ending_narrative": [
+        "cite-uscm-wes-separate-wm",
+        "cite-uscm-wes-separate-ph",
+        "cite-uscm-wes-media",
+        "cite-uscm-wes-canada",
+        "cite-uscm-wes-records"
+      ],
+      "core_beliefs": [
+        "cite-uscm-wes-faith"
+      ],
+      "size_estimate": [
+        "cite-uscm-wesleyan-church-count"
+      ]
+    },
+    "citations": [
+      "cite-uscm-wes-roots",
+      "cite-uscm-wes-merger",
+      "cite-uscm-wes-faith",
+      "cite-uscm-wes-separate-wm",
+      "cite-uscm-wes-separate-ph",
+      "cite-uscm-wes-media",
+      "cite-uscm-wes-canada",
+      "cite-uscm-wes-records",
+      "cite-uscm-wesleyan-church-count"
+    ]
+  },
+  {
+    "id": "salvation-army",
+    "name": "The Salvation Army",
+    "kind": "denomination",
+    "start_year": 1865,
+    "short_label": "Salvation Army",
+    "aliases": [
+      "Salvation Army",
+      "The Salvation Army USA",
+      "The Christian Mission",
+      "East London Christian Mission"
+    ],
+    "zoom_tier": "full",
+    "region": "Global",
+    "geographic_origin": "England",
+    "tradition_family": "Holiness",
+    "ecclesial_orientation": "evangelical",
+    "current_status": "active",
+    "summary": "An international Wesleyan-Holiness church and social mission that began in East London in 1865 and took the Salvation Army name in 1878.",
+    "formation_narrative": "William Booth, a former Methodist preacher, and Catherine Booth began an evangelistic mission in East London in 1865. They brought preaching to people who were often excluded from established congregations and combined it with practical help. The mission became known as the Christian Mission and in 1878 adopted the Salvation Army name and a military-style structure with William Booth as General.",
+    "ending_narrative": "George Scott Railton led the official pioneer party to the United States in 1880. The international Army continues to organize local corps for worship and evangelism and to operate social services. The U.S. census count measures adherents of the religious body and is geographically limited to the United States.",
+    "profile_scope": "Covers the international movement’s English origins, adoption of its name, official U.S. expansion and U.S. religious-adherent count. It uses 1865 for the mission’s beginning. National charities, territorial corporations and service recipients are outside the census profile.",
+    "core_beliefs": [
+      "The Army’s eleven doctrines teach salvation through repentance and faith in Christ and sanctification through the Holy Spirit, reflecting its Wesleyan heritage.",
+      "Salvationists seek the spiritual realities associated with baptism and communion without prescribing the outward sacramental rites. Local corps combine worship, evangelism and practical service."
+    ],
+    "size_estimate": "141,098 U.S. adherents (2020 U.S. Religion Census)",
+    "key_figures": [
+      {
+        "name": "William Booth",
+        "role": "Co-founder and first General",
+        "summary": "A Methodist preacher who led the East London mission and the new Salvation Army.",
+        "url": "https://www.salvationarmy.org.au/about-us/our-history/william-and-catherine-booth/",
+        "citations": [
+          "cite-uscm-army-cofounder",
+          "cite-uscm-army-name"
+        ]
+      },
+      {
+        "name": "Catherine Booth",
+        "role": "Co-founder and preacher",
+        "summary": "Helped establish the mission and preached publicly in support of its work.",
+        "url": "https://www.salvationarmy.org.au/about-us/our-history/william-and-catherine-booth/",
+        "citations": [
+          "cite-uscm-army-cofounder"
+        ]
+      },
+      {
+        "name": "George Scott Railton",
+        "role": "Leader of the official U.S. pioneer party",
+        "summary": "Arrived with seven Salvationists in 1880 to establish official Army operations in the United States.",
+        "url": "https://www.salvationarmy.org.uk/about-us/international-heritage-centre/virtual-heritage-centre/a-global-army",
+        "citations": [
+          "cite-uscm-army-arrival"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1865,
+        "label": "The Booths’ East London mission begins",
+        "citations": [
+          "cite-uscm-army-roots",
+          "cite-uscm-army-cofounder"
+        ]
+      },
+      {
+        "year": 1878,
+        "label": "Christian Mission adopts the Salvation Army name",
+        "citations": [
+          "cite-uscm-army-name",
+          "cite-uscm-army-deed"
+        ]
+      },
+      {
+        "year": 1880,
+        "label": "Official U.S. pioneer party arrives",
+        "citations": [
+          "cite-uscm-army-arrival",
+          "cite-uscm-army-us-early"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Foundation Deed of The Salvation Army",
+        "year": 1878,
+        "significance": "Organizational foundation carrying the eleven doctrines, discussed in the official Handbook of Doctrine.",
+        "url": "https://www.salvationarmy.org/sites/default/files/2025-06/Handbook%2Bof%2BDoctrine.pdf",
+        "citations": [
+          "cite-uscm-army-deed"
+        ]
+      },
+      {
+        "title": "Handbook of Doctrine",
+        "year": null,
+        "significance": "Official exposition of the doctrines and their implications for Salvationist practice.",
+        "url": "https://www.salvationarmy.org/sites/default/files/2025-06/Handbook%2Bof%2BDoctrine.pdf",
+        "citations": [
+          "cite-uscm-army-teaching"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "A Global Army",
+        "url": "https://www.salvationarmy.org.uk/about-us/international-heritage-centre/virtual-heritage-centre/a-global-army",
+        "snippet": "The International Heritage Centre places official U.S. work in the context of early cross-border expansion.",
+        "citations": [
+          "cite-uscm-army-arrival"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "start_year": [
+        "cite-uscm-army-roots",
+        "cite-uscm-army-cofounder"
+      ],
+      "summary": [
+        "cite-uscm-army-roots",
+        "cite-uscm-army-name",
+        "cite-uscm-army-cofounder"
+      ],
+      "formation_narrative": [
+        "cite-uscm-army-roots",
+        "cite-uscm-army-name",
+        "cite-uscm-army-cofounder"
+      ],
+      "ending_narrative": [
+        "cite-uscm-army-arrival",
+        "cite-uscm-army-us-early",
+        "cite-uscm-army-current"
+      ],
+      "core_beliefs": [
+        "cite-uscm-army-teaching",
+        "cite-uscm-army-deed",
+        "cite-uscm-army-current"
+      ],
+      "size_estimate": [
+        "cite-uscm-salvation-army-count"
+      ]
+    },
+    "citations": [
+      "cite-uscm-army-roots",
+      "cite-uscm-army-name",
+      "cite-uscm-army-cofounder",
+      "cite-uscm-army-teaching",
+      "cite-uscm-army-deed",
+      "cite-uscm-army-current",
+      "cite-uscm-army-arrival",
+      "cite-uscm-army-us-early",
+      "cite-uscm-salvation-army-count"
+    ]
+  },
+  {
+    "id": "free-methodist-church-usa",
+    "name": "Free Methodist Church–USA",
+    "kind": "denomination",
+    "start_year": 1860,
+    "short_label": "Free Methodist Church",
+    "aliases": [
+      "Free Methodist Church USA",
+      "Free Methodist Church--USA",
+      "FMCUSA",
+      "Free Methodists"
+    ],
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "US",
+    "tradition_family": "Holiness",
+    "ecclesial_orientation": "evangelical",
+    "current_status": "active",
+    "summary": "The U.S. Free Methodist denomination traces its organization to an 1860 convention at Pekin, New York.",
+    "formation_narrative": "Benjamin Titus Roberts and other Methodist Episcopal reformers promoted entire sanctification and challenged practices they believed favored wealth and status. Roberts opposed slavery and the renting of pews. After conflict and expulsions in the Genesee Conference, laypeople and ministers met in Pekin on August 23, 1860, organized the Free Methodist Church, and adopted its first Discipline.",
+    "ending_narrative": "Roberts argued for women’s ordination, a position the 1890 General Conference did not adopt. In 1974 the General Conference voted to give women equal status in ministry. The U.S. church continues within a worldwide Free Methodist family and governs its own affairs through its General Conference and Book of Discipline.",
+    "profile_scope": "Covers U.S. organizational origins, selected developments in doctrine and ordination, and the 2020 U.S. adherent count. The start year dates the founding convention of the original Free Methodist Church in the United States.",
+    "core_beliefs": [
+      "The founders added an explicit article on entire sanctification to their adapted Methodist Discipline. Free Methodists teach that the Holy Spirit enables believers to love God and neighbor and grow in holiness.",
+      "The founding reform program linked holiness with access to worship, including free seating, and with opposition to slavery."
+    ],
+    "size_estimate": "71,634 U.S. adherents (2020 U.S. Religion Census)",
+    "key_figures": [
+      {
+        "name": "Benjamin Titus Roberts",
+        "role": "Founding organizer and reform advocate",
+        "summary": "A Methodist reformer who advocated free pews, abolition and women’s ordination.",
+        "url": "https://historical.fmcusa.org/historical-heritage-perspective/",
+        "citations": [
+          "cite-uscm-free-origins",
+          "cite-uscm-free-reforms",
+          "cite-uscm-free-ordination"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1860,
+        "label": "Pekin convention organizes the Free Methodist Church and adopts its Discipline",
+        "citations": [
+          "cite-uscm-free-origins",
+          "cite-uscm-free-discipline"
+        ]
+      },
+      {
+        "year": 1891,
+        "label": "Roberts publishes his argument for ordaining women",
+        "citations": [
+          "cite-uscm-free-ordination"
+        ]
+      },
+      {
+        "year": 1974,
+        "label": "General Conference votes for equal status for women in ministry",
+        "citations": [
+          "cite-uscm-free-ordination"
+        ]
+      },
+      {
+        "year": 2023,
+        "label": "U.S. General Conference edition of the Book of Discipline",
+        "citations": [
+          "cite-uscm-free-modern"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Doctrines and Discipline of the Free Methodist Church",
+        "year": 1860,
+        "significance": "Founding Discipline as adopted at Pekin. It adapted Methodist Episcopal teaching and explicitly included entire sanctification.",
+        "url": "https://historical.fmcusa.org/wp-content/uploads/1860-Book-of-Discipline.pdf",
+        "citations": [
+          "cite-uscm-free-discipline",
+          "cite-uscm-free-holiness"
+        ]
+      },
+      {
+        "title": "Book of Discipline of the Free Methodist Church–USA",
+        "year": 2023,
+        "significance": "Modern General Conference edition containing the U.S. church’s teaching and polity.",
+        "url": "https://fmcusa.org/wp-content/uploads/2023-Book-of-Discipline-Interactive-PDF-FINAL.pdf",
+        "citations": [
+          "cite-uscm-free-modern"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Historical Heritage & Perspective",
+        "url": "https://historical.fmcusa.org/historical-heritage-perspective/",
+        "snippet": "The denominational archive recounts the reform conflict and the proceedings that led to the Pekin convention.",
+        "citations": [
+          "cite-uscm-free-origins"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "start_year": [
+        "cite-uscm-free-origins",
+        "cite-uscm-free-discipline"
+      ],
+      "summary": [
+        "cite-uscm-free-origins",
+        "cite-uscm-free-reforms",
+        "cite-uscm-free-discipline"
+      ],
+      "formation_narrative": [
+        "cite-uscm-free-origins",
+        "cite-uscm-free-reforms",
+        "cite-uscm-free-discipline"
+      ],
+      "ending_narrative": [
+        "cite-uscm-free-ordination",
+        "cite-uscm-free-modern"
+      ],
+      "core_beliefs": [
+        "cite-uscm-free-holiness",
+        "cite-uscm-free-modern",
+        "cite-uscm-free-reforms"
+      ],
+      "size_estimate": [
+        "cite-uscm-free-methodist-church-usa-count"
+      ]
+    },
+    "citations": [
+      "cite-uscm-free-origins",
+      "cite-uscm-free-reforms",
+      "cite-uscm-free-discipline",
+      "cite-uscm-free-holiness",
+      "cite-uscm-free-modern",
+      "cite-uscm-free-ordination",
+      "cite-uscm-free-methodist-church-usa-count"
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "uscm-african-methodist-episcopal-church-1816",
+    "name": "Black Methodist congregations organize independently",
+    "from_id": "methodist-episcopal-church",
+    "to_id": "african-methodist-episcopal-church",
+    "type": "split",
+    "year": 1816,
+    "zoom_tier": "full",
+    "description": "Local separation and Bethel’s legal struggle preceded the 1816 organization of an independent denomination.",
+    "confidence": "high",
+    "citations": [
+      "cite-uscm-ame-roots",
+      "cite-uscm-ame-organization",
+      "cite-uscm-ame-site"
+    ]
+  },
+  {
+    "id": "uscm-african-methodist-episcopal-zion-church-1822",
+    "name": "Zion ordains its own ministry",
+    "from_id": "methodist-episcopal-church",
+    "to_id": "african-methodist-episcopal-zion-church",
+    "type": "split",
+    "year": 1822,
+    "zoom_tier": "full",
+    "description": "Black Methodists from John Street organized Zion locally. The 1822 ordinations completed a staged separation following the 1820 withdrawal decision.",
+    "confidence": "high",
+    "citations": [
+      "cite-uscm-zion-local",
+      "cite-uscm-zion-independent"
+    ]
+  },
+  {
+    "id": "uscm-christian-methodist-episcopal-church-1870",
+    "name": "Black conferences organize the CME Church",
+    "from_id": "methodist-episcopal-church-south",
+    "to_id": "christian-methodist-episcopal-church",
+    "type": "origin",
+    "year": 1870,
+    "zoom_tier": "full",
+    "description": "Southern Methodist authorization followed Black members’ requests for separate organization; Black delegates established an independent denomination in December 1870.",
+    "confidence": "high",
+    "citations": [
+      "cite-uscm-cme-formation",
+      "cite-uscm-cme-bishops"
+    ]
+  },
+  {
+    "id": "uscm-free-methodist-church-usa-1860",
+    "name": "Free Methodist organization at Pekin",
+    "from_id": "methodist-episcopal-church",
+    "to_id": "free-methodist-church-usa",
+    "type": "split",
+    "year": 1860,
+    "zoom_tier": "full",
+    "description": "After conflict and expulsions in the Genesee Conference, laypeople and ministers organized a new Methodist body at Pekin in 1860.",
+    "confidence": "high",
+    "citations": [
+      "cite-uscm-free-origins",
+      "cite-uscm-free-discipline"
+    ]
+  }
+]
