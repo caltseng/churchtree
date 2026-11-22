@@ -1,0 +1,298 @@
+[
+  {
+    "id": "src-uscm-census",
+    "title": "2020 U.S. Religion Census Group Detail Workbook",
+    "kind": "website",
+    "author": "Association of Statisticians of American Religious Bodies",
+    "year": null,
+    "url": "https://www.usreligioncensus.org/sites/default/files/2023-06/2020_USRC_Group_Detail.xlsx"
+  },
+  {
+    "id": "src-uscm-ame-history",
+    "title": "Our History",
+    "kind": "website",
+    "author": "Dennis C. Dickerson",
+    "year": null,
+    "url": "https://www.ame-church.com/our-church/our-history/"
+  },
+  {
+    "id": "src-uscm-ame-1816",
+    "title": "Message From the Senior Bishop",
+    "kind": "website",
+    "author": "African Methodist Episcopal Church",
+    "year": null,
+    "url": "https://www.ame-church.com/leadership/message-from-the-senior-bishop/"
+  },
+  {
+    "id": "src-uscm-ame-nps",
+    "title": "National Register nomination documenting AME origins",
+    "kind": "website",
+    "author": "National Park Service",
+    "year": null,
+    "url": "https://npgallery.nps.gov/GetAsset/3cff29f9-7aab-4d66-b479-af3a1bac8d93"
+  },
+  {
+    "id": "src-uscm-ame-allen",
+    "title": "The Life, Experience, and Gospel Labours of the Rt. Rev. Richard Allen",
+    "kind": "book",
+    "author": "Richard Allen",
+    "year": 1833,
+    "url": "https://classicslaunch.org/works/allen-life-experience-and-gospel-labours/read/"
+  },
+  {
+    "id": "src-uscm-ame-beliefs",
+    "title": "Our Beliefs",
+    "kind": "website",
+    "author": "African Methodist Episcopal Church",
+    "year": null,
+    "url": "https://www.ame-church.com/our-church/our-beliefs/"
+  },
+  {
+    "id": "src-uscm-ame-mckenzie",
+    "title": "June 2022 Treasurer’s Memorandum",
+    "kind": "paper",
+    "author": "Marcus T. Henderson, Sr.",
+    "year": 2022,
+    "url": "https://www.ame-church.com/reports/General_Board_Docs_2022/General%20Officer%20Reports/Treasurer%3ACFO/Memorandum%20-%202022%20a.pdf"
+  },
+  {
+    "id": "src-uscm-zion-history",
+    "title": "About The A.M.E. Zion Church",
+    "kind": "website",
+    "author": "African Methodist Episcopal Zion Church",
+    "year": null,
+    "url": "https://amezion.org/about/"
+  },
+  {
+    "id": "src-uscm-zion-exhibit",
+    "title": "History of the A.M.E. Zion Church",
+    "kind": "website",
+    "author": "Hudson River Valley Heritage Exhibits",
+    "year": null,
+    "url": "https://omeka.hrvh.org/exhibits/show/ame-zion-church-in-new-paltz/history-of-the-a-m-e--zion-chu"
+  },
+  {
+    "id": "src-uscm-zion-discipline",
+    "title": "The Doctrines and Discipline of the African Methodist Episcopal Zion Church in America",
+    "kind": "book",
+    "author": "African Methodist Episcopal Zion Church",
+    "year": 1892,
+    "url": "https://books.google.com/books?id=SVpPAQAAIAAJ"
+  },
+  {
+    "id": "src-uscm-zion-union",
+    "title": "The Star of Zion",
+    "kind": "article",
+    "author": "African Methodist Episcopal Zion Church",
+    "year": 1886,
+    "url": "https://newspapers.digitalnc.org/lccn/sf88092969/1886-01-22/ed-1/seq-4.pdf"
+  },
+  {
+    "id": "src-uscm-cme-history",
+    "title": "About the Christian Methodist Episcopal Church",
+    "kind": "website",
+    "author": "Christian Methodist Episcopal Church",
+    "year": null,
+    "url": "https://thecmechurch.org/about-us/"
+  },
+  {
+    "id": "src-uscm-cme-phillips",
+    "title": "The History of the Colored Methodist Episcopal Church in America",
+    "kind": "book",
+    "author": "Charles Henry Phillips",
+    "year": 1898,
+    "url": "https://thecmechurch.org/cme-church-history/"
+  },
+  {
+    "id": "src-uscm-cme-tsha",
+    "title": "Christian Methodist Episcopal Church",
+    "kind": "website",
+    "author": "Texas State Historical Association",
+    "year": null,
+    "url": "https://www.tshaonline.org/handbook/entries/christian-methodist-episcopal-church"
+  },
+  {
+    "id": "src-uscm-cme-wcc",
+    "title": "Christian Methodist Episcopal Church",
+    "kind": "website",
+    "author": "World Council of Churches",
+    "year": null,
+    "url": "https://www.oikoumene.org/member-churches/christian-methodist-episcopal-church"
+  },
+  {
+    "id": "src-uscm-cme-civil",
+    "title": "CME Church in the Memory of the Civil Rights Movement",
+    "kind": "paper",
+    "author": "Brandon Nightingale",
+    "year": 2019,
+    "url": "https://stars.library.ucf.edu/etd/6737/"
+  },
+  {
+    "id": "src-uscm-wes-history",
+    "title": "History in the Wesleyan Discipline",
+    "kind": "website",
+    "author": "The Wesleyan Church",
+    "year": null,
+    "url": "https://discipline.wesleyan.org/wiki/Wesleyan_Church,_The:_History"
+  },
+  {
+    "id": "src-uscm-wes-union",
+    "title": "The Formation of The Wesleyan Church",
+    "kind": "website",
+    "author": "The Wesleyan Church",
+    "year": null,
+    "url": "https://discipline.wesleyan.org/wiki/F._The_Formation_of_The_Wesleyan_Church"
+  },
+  {
+    "id": "src-uscm-wes-doctrine",
+    "title": "Summary of Articles of Religion",
+    "kind": "website",
+    "author": "The Wesleyan Church",
+    "year": null,
+    "url": "https://discipline.wesleyan.org/wiki/Summary_of_Articles_of_Religion"
+  },
+  {
+    "id": "src-uscm-wes-modern",
+    "title": "The Wesleyan Advocate and Wesleyan Life",
+    "kind": "website",
+    "author": "The Wesleyan Church",
+    "year": null,
+    "url": "https://www.wesleyan.org/the-wesleyan-advocate-and-wesleyan-life-4902"
+  },
+  {
+    "id": "src-uscm-wes-minority",
+    "title": "Our History",
+    "kind": "website",
+    "author": "Bible Methodist Connection of Churches",
+    "year": null,
+    "url": "https://www.biblemethodist.org/about-us/"
+  },
+  {
+    "id": "src-uscm-wes-pilgrim",
+    "title": "History",
+    "kind": "website",
+    "author": "Midwest Pilgrim Holiness Church",
+    "year": null,
+    "url": "https://midwestphc.org/about/history/"
+  },
+  {
+    "id": "src-uscm-wes-standard",
+    "title": "Don Hodgins retires after extraordinary service in Canada",
+    "kind": "website",
+    "author": "The Wesleyan Church",
+    "year": null,
+    "url": "https://www.wesleyan.org/don-hodgins-retires-after-extraordinary-service-in-canada-1445"
+  },
+  {
+    "id": "src-uscm-wes-archives",
+    "title": "Wesleyan Archives and Historical Library",
+    "kind": "website",
+    "author": "Wesleyan Archives and Historical Library",
+    "year": null,
+    "url": "https://www.wesleyanarchives.com/"
+  },
+  {
+    "id": "src-uscm-army-history",
+    "title": "History",
+    "kind": "website",
+    "author": "The Salvation Army International Headquarters",
+    "year": null,
+    "url": "https://www.salvationarmy.org/history"
+  },
+  {
+    "id": "src-uscm-army-us",
+    "title": "History of The Salvation Army",
+    "kind": "website",
+    "author": "The Salvation Army USA",
+    "year": null,
+    "url": "https://www.salvationarmyusa.org/about-us/our-history/"
+  },
+  {
+    "id": "src-uscm-army-archives",
+    "title": "Report on the records of the Salvation Army",
+    "kind": "website",
+    "author": "The National Archives",
+    "year": null,
+    "url": "https://www.nationalarchives.gov.uk/nra/lists/GB-2133-SA.htm"
+  },
+  {
+    "id": "src-uscm-army-doctrine",
+    "title": "Handbook of Doctrine",
+    "kind": "book",
+    "author": "The Salvation Army International Headquarters",
+    "year": null,
+    "url": "https://www.salvationarmy.org/sites/default/files/2025-06/Handbook%2Bof%2BDoctrine.pdf"
+  },
+  {
+    "id": "src-uscm-army-global",
+    "title": "A Global Army",
+    "kind": "website",
+    "author": "The Salvation Army International Heritage Centre",
+    "year": null,
+    "url": "https://www.salvationarmy.org.uk/about-us/international-heritage-centre/virtual-heritage-centre/a-global-army"
+  },
+  {
+    "id": "src-uscm-army-catherine",
+    "title": "William and Catherine Booth",
+    "kind": "website",
+    "author": "The Salvation Army Australia",
+    "year": null,
+    "url": "https://www.salvationarmy.org.au/about-us/our-history/william-and-catherine-booth/"
+  },
+  {
+    "id": "src-uscm-free-history",
+    "title": "Historical Heritage & Perspective",
+    "kind": "website",
+    "author": "Marston Memorial Historical Center",
+    "year": null,
+    "url": "https://historical.fmcusa.org/historical-heritage-perspective/"
+  },
+  {
+    "id": "src-uscm-free-official",
+    "title": "History of the Free Methodist Church",
+    "kind": "website",
+    "author": "Free Methodist Church USA",
+    "year": null,
+    "url": "https://fmcusa.org/history"
+  },
+  {
+    "id": "src-uscm-free-1860",
+    "title": "The Doctrines and Discipline of the Free Methodist Church",
+    "kind": "book",
+    "author": "Free Methodist Church",
+    "year": 1860,
+    "url": "https://historical.fmcusa.org/wp-content/uploads/1860-Book-of-Discipline.pdf"
+  },
+  {
+    "id": "src-uscm-free-2023",
+    "title": "2023 Book of Discipline",
+    "kind": "book",
+    "author": "Free Methodist Church USA",
+    "year": 2023,
+    "url": "https://fmcusa.org/wp-content/uploads/2023-Book-of-Discipline-Interactive-PDF-FINAL.pdf"
+  },
+  {
+    "id": "src-uscm-free-women",
+    "title": "FMC Statement on Women in Ministry",
+    "kind": "website",
+    "author": "Free Methodist Study Commission on Doctrine",
+    "year": null,
+    "url": "https://scod.fmcusa.org/fmc-statement-on-women-in-ministry/"
+  },
+  {
+    "id": "src-uscm-free-sanctification",
+    "title": "SCOD Report to the 2003 General Conference",
+    "kind": "paper",
+    "author": "Free Methodist Study Commission on Doctrine",
+    "year": 2003,
+    "url": "https://scod.fmcusa.org/scod-report-to-the-2003-general-conference/"
+  },
+  {
+    "id": "src-uscm-cme-lane",
+    "title": "History of Lane College",
+    "kind": "website",
+    "author": "Lane College",
+    "year": null,
+    "url": "https://lanecollege.edu/about/history-of-lane-college"
+  }
+]
