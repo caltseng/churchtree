@@ -114,6 +114,13 @@ main {
   flex-direction: column;
 }
 
+.graph-stage {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
 #graph {
   flex: 1;
   min-height: 200px;
@@ -364,8 +371,6 @@ aside p,aside li {
   .legend { gap: 4px 9px; font-size: 9px; }
   .legend span:last-child { display: none; }
   .mobile-only:not([hidden]) { display: block; }
-  #mobile-pan:not([hidden]) { display: flex; gap: 8px; padding-top: 6px; }
-  #mobile-pan button { flex: 1; }
   #mobile-details-body aside { padding: 16px; }
   #mobile-details-body h2 { font-size: 25px; }
   #mobile-close-details { font-size: 14px; min-height: 44px; }
@@ -424,7 +429,31 @@ aside p,aside li {
 .zoom button { min-width: 40px; font-size: 17px; }
 main.details-collapsed { grid-template-columns: minmax(0,1fr); }
 @media (max-width: 1099px) {
+  .explorer-header { padding-block: 4px; }
+  .explorer-actions button, .explorer-header .site-menu-trigger {
+    width: 40px;
+    min-height: 40px;
+  }
+  .explorer-actions svg, .explorer-header .site-menu-trigger svg { width: 18px; height: 18px; }
+  .graph-tools { gap: 8px; }
+  .graph-tools button { min-height: 36px; padding: 4px 8px; }
+  .zoom { gap: 5px; }
+  .zoom button { min-width: 36px; }
   #mobile-pan:not([hidden]) { display: flex; gap: 5px; }
+  #mobile-pan button { display: inline-flex; justify-content: center; align-items: center; gap: 4px; }
+  #time-earlier svg { transform: scaleX(-1); }
+
+  /* Keep the timeline and its controls in the first viewport. The legend
+     follows in page flow, where a swipe outside the graph can reach it. */
+  body:has(#mobile-pan:not([hidden])) { height: 100dvh; overflow-y: auto; }
+  body:has(#mobile-pan:not([hidden])) main { flex: 1; height: auto; grid-template-rows: minmax(0, 1fr); }
+  body:has(#mobile-pan:not([hidden])) #canvas { padding-bottom: 0; }
+  body:has(#mobile-pan:not([hidden])) #canvas .graph-stage {
+    flex: none;
+    height: 100%;
+    min-height: 201px;
+  }
+  body:has(#mobile-pan:not([hidden])) #canvas .legend { padding-bottom: 8px; }
 }
 @media (max-width: 600px) {
   .explorer-header h1 .main-branch-brand { font-size: clamp(17px, 5vw, 23px); gap: 4px; }
@@ -437,3 +466,9 @@ main.details-collapsed { grid-template-columns: minmax(0,1fr); }
   .explorer-header h1 .main-branch-brand { font-size: 15px; gap: 3px; white-space: nowrap; }
   .explorer-header .main-branch-symbol { width: 22px; flex-basis: 22px; }
 }
+
+.explorer-header:has(> .graph-tools) { grid-template-columns: minmax(0, 1fr) auto auto auto; }
+.explorer-header:has(> .graph-tools) h1 .main-branch-brand { font-size: clamp(17px, 3.2vw, 23px); gap: 4px; }
+.explorer-header:has(> .graph-tools) .main-branch-symbol { width: 28px; flex-basis: 28px; }
+.explorer-header > .graph-tools { margin: 0 4px 0 0; }
+body:has(.explorer-header > .graph-tools) .graph-stage { min-height: 160px; }
