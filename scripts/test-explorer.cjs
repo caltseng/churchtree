@@ -65,7 +65,7 @@ async function assertExpandedCatalog(browser, url) {
     assert(await results.locator('button').first().evaluate(button => button === document.activeElement));
     assert.equal(await page.locator('#search-status').textContent(), 'Showing 12 of 16 matches');
     await page.screenshot({path: path.join(output, 'review-search-similar-names.png')});
-    const more = results.getByRole('button', {name: 'Show more results'});
+    const more = page.getByRole('button', {name: 'Show more results'});
     await more.focus();
     await page.keyboard.press('Enter');
     assert.equal(await page.locator('#search-status').textContent(), '16 matches');
@@ -92,6 +92,7 @@ async function assertExpandedCatalog(browser, url) {
         assert.equal(await page.locator('#branch').inputValue(), 'Brethren');
         assert.deepEqual(await snapshot(), before);
     }
+    await openFilters(page);
     await page.locator('#branch').selectOption('');
     await setView(page, 'lineage');
     await page.locator('[data-id="family:Oriental Orthodox"]').waitFor();

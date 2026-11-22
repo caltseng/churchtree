@@ -13,6 +13,7 @@
     const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const label = n => n.short_label || n.name;
     const searchInput = $('search'), searchResults = $('results'), searchStatus = $('search-status');
+    const searchMore = $('search-more');
     const searchPageSize = 12;
     const normalizeSearch = value => String(value ?? '').toLowerCase().normalize('NFKD')
         .replace(/\p{M}/gu, '').replace(/['’‘]/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
@@ -238,6 +239,7 @@
         showPanel(searchPanel, searchButton, false);
         searchResults.replaceChildren();
         searchStatus.textContent = '';
+        searchMore.hidden = true;
         if (restoreFocus) searchButton.focus({preventScroll: true});
     }
     searchButton.onclick = () => {
@@ -666,6 +668,7 @@
         const query = normalizeSearch(searchInput.value);
         searchResults.replaceChildren();
         searchStatus.textContent = '';
+        searchMore.hidden = true;
         searchPanel.scrollTop = 0;
         if (!query)
             return [];
@@ -699,17 +702,11 @@
             }
             searchStatus.textContent = end < matches.length ? `Showing ${end} of ${matches.length} matches`
                 : `${matches.length} ${matches.length === 1 ? 'match' : 'matches'}`;
-            if (end < matches.length) {
-                const more = document.createElement('button');
-                more.type = 'button';
-                more.textContent = 'Show more results';
-                more.onclick = () => {
-                    more.remove();
-                    appendResults(end);
-                    searchResults.children[end].focus();
-                };
-                searchResults.append(more);
-            }
+            searchMore.hidden = end === matches.length;
+            searchMore.onclick = () => {
+                appendResults(end);
+                searchResults.children[end].focus();
+            };
         }
         appendResults(0);
         return matches;
