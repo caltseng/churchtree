@@ -1,0 +1,632 @@
+[
+  {
+    "id": "church-of-god-anderson",
+    "name": "Church of God (Anderson, Indiana)",
+    "short_label": "Church of God (Anderson)",
+    "aliases": [
+      "Church of God Reformation Movement",
+      "Church of God (Anderson, IN)",
+      "Anderson Church of God",
+      "CHOG Anderson"
+    ],
+    "start_year": 1881,
+    "geographic_origin": "US",
+    "tradition_family": "Holiness",
+    "ecclesial_orientation": "evangelical",
+    "summary": "A U.S. Holiness movement of churches identified by its Anderson, Indiana, offices, with roots in Daniel Sidney Warner's publishing and evangelism. Church of God (Cleveland), Church of God of Prophecy, and Church of God in Christ are separate bodies.",
+    "formation_narrative": "In 1881, Daniel Sidney Warner began publishing The Gospel Trumpet under that title. The paper and traveling evangelists gave the movement a way to teach holy living and gather believers across existing denominational lines. Warner and coworkers understood Christian unity as a spiritual reality to be lived out. They appealed to Scripture and the Holy Spirit in place of formal creeds and denominational hierarchies. Mary Cole's account describes her encounter with Warner and her own work as an evangelist.",
+    "ending_narrative": "The movement built durable institutions even as it retained its emphasis on Christian unity. The Anderson Bible Training School opened in 1917 and developed into Anderson University. Racial barriers constrained Black participants' access to shared venues. Black Church of God members held a camp meeting at West Middlesex, Pennsylvania, in 1917 and built a national ministry network through the National Association of the Church of God. Today Church of God Ministries serves the movement's General Assembly from Anderson.",
+    "profile_scope": "1881 is the conventional movement start and the first year of The Gospel Trumpet under that title. The profile covers the U.S. Anderson movement, selected institutions and contemporary teaching. Early organizational breaks, the full history of racial integration and international churches remain outside this account.",
+    "distinctives": [
+      "Christian unity across denominational lines",
+      "Holiness in daily life",
+      "Baptism, communion and foot washing"
+    ],
+    "core_beliefs": [
+      "Christian unity: salvation in Christ makes believers members of one church, and churches are called to make that unity visible.",
+      "Holiness: the Holy Spirit shapes believers' conduct and service as they follow Jesus.",
+      "Ordinances: the movement recognizes baptism, communion and foot washing. Foot washing enacts Jesus' example of serving others."
+    ],
+    "size_estimate": "427,038 U.S. adherents and 1,944 U.S. congregations (2020 U.S. Religion Census).",
+    "key_figures": [
+      {
+        "name": "Daniel Sidney Warner",
+        "role": "early leader and editor",
+        "summary": "Used The Gospel Trumpet to circulate the movement's message of holy living and Christian unity.",
+        "url": "https://omeka.anderson.edu/exhibits/show/periodicals/chog-periodicals",
+        "citations": [
+          "cite-us-coverage-holiness-anderson-start",
+          "cite-us-coverage-holiness-anderson-print"
+        ]
+      },
+      {
+        "name": "Mary Cole",
+        "role": "early evangelist",
+        "summary": "Her memoir recounts receiving the movement's teaching and preaching in early Church of God work.",
+        "url": "https://www.gutenberg.org/cache/epub/7429/pg7429.html",
+        "citations": [
+          "cite-us-coverage-holiness-anderson-cole"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1881,
+        "label": "The Gospel Trumpet launches under that title, the conventional start of the movement",
+        "citations": [
+          "cite-us-coverage-holiness-anderson-start",
+          "cite-us-coverage-holiness-anderson-print"
+        ]
+      },
+      {
+        "year": 1917,
+        "label": "Anderson Bible Training School opens",
+        "citations": [
+          "cite-us-coverage-holiness-anderson-training"
+        ]
+      },
+      {
+        "year": 1917,
+        "label": "Black Church of God members hold their first camp meeting at West Middlesex",
+        "citations": [
+          "cite-us-coverage-holiness-anderson-black-organizing"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "The Gospel Trumpet",
+        "year": 1881,
+        "significance": "Influential periodical that circulated the movement's teaching. The year marks its launch under this title.",
+        "url": "https://omeka.anderson.edu/exhibits/show/periodicals/chog-periodicals",
+        "citations": [
+          "cite-us-coverage-holiness-anderson-print"
+        ]
+      },
+      {
+        "title": "Bylaws of Church of God Ministries, Inc.",
+        "year": 2016,
+        "significance": "Bylaws of the national ministry corporation as amended in the linked edition. They describe its service to the General Assembly.",
+        "url": "https://www.jesusisthesubject.org/files/downloads/documents/ga/ChoG_Ministries_Bylaws_adopted_March_17_2016.pdf",
+        "citations": [
+          "cite-us-coverage-holiness-anderson-government"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Trials and Triumphs of Faith",
+        "url": "https://www.gutenberg.org/cache/epub/7429/pg7429.html",
+        "snippet": "Mary Cole's account of her evangelism and life in the movement.",
+        "citations": [
+          "cite-us-coverage-holiness-anderson-cole"
+        ]
+      },
+      {
+        "title": "National Association of the Church of God",
+        "url": "https://omeka.anderson.edu/exhibits/show/black-and-white-relations/the-church-of-god/the-national-association-of-th",
+        "snippet": "An Anderson University exhibit on Black congregational organizing and the West Middlesex camp meeting.",
+        "citations": [
+          "cite-us-coverage-holiness-anderson-black-organizing"
+        ]
+      }
+    ],
+    "kind": "denomination",
+    "region": "US",
+    "current_status": "active",
+    "zoom_tier": "full",
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-us-coverage-holiness-anderson-start",
+        "cite-us-coverage-holiness-anderson-scale"
+      ],
+      "formation_narrative": [
+        "cite-us-coverage-holiness-anderson-start",
+        "cite-us-coverage-holiness-anderson-print",
+        "cite-us-coverage-holiness-anderson-cole"
+      ],
+      "ending_narrative": [
+        "cite-us-coverage-holiness-anderson-training",
+        "cite-us-coverage-holiness-anderson-black-organizing",
+        "cite-us-coverage-holiness-anderson-government",
+        "cite-us-coverage-holiness-anderson-teaching"
+      ],
+      "core_beliefs": [
+        "cite-us-coverage-holiness-anderson-start",
+        "cite-us-coverage-holiness-anderson-teaching"
+      ],
+      "distinctives": [
+        "cite-us-coverage-holiness-anderson-teaching"
+      ],
+      "size_estimate": [
+        "cite-us-coverage-holiness-anderson-scale"
+      ],
+      "key_figures": [
+        "cite-us-coverage-holiness-anderson-start",
+        "cite-us-coverage-holiness-anderson-print",
+        "cite-us-coverage-holiness-anderson-cole"
+      ],
+      "key_dates": [
+        "cite-us-coverage-holiness-anderson-start",
+        "cite-us-coverage-holiness-anderson-print",
+        "cite-us-coverage-holiness-anderson-training",
+        "cite-us-coverage-holiness-anderson-black-organizing"
+      ],
+      "key_documents": [
+        "cite-us-coverage-holiness-anderson-print",
+        "cite-us-coverage-holiness-anderson-government"
+      ]
+    },
+    "citations": [
+      "cite-us-coverage-holiness-anderson-start",
+      "cite-us-coverage-holiness-anderson-scale",
+      "cite-us-coverage-holiness-anderson-print",
+      "cite-us-coverage-holiness-anderson-cole",
+      "cite-us-coverage-holiness-anderson-training",
+      "cite-us-coverage-holiness-anderson-black-organizing",
+      "cite-us-coverage-holiness-anderson-government",
+      "cite-us-coverage-holiness-anderson-teaching"
+    ]
+  },
+  {
+    "id": "christian-and-missionary-alliance",
+    "name": "Christian and Missionary Alliance",
+    "short_label": "C&MA",
+    "aliases": [
+      "The Christian and Missionary Alliance",
+      "Christian & Missionary Alliance",
+      "The Alliance",
+      "CMA",
+      "U.S. Alliance"
+    ],
+    "start_year": 1974,
+    "geographic_origin": "US",
+    "tradition_family": "Holiness",
+    "ecclesial_orientation": "evangelical",
+    "summary": "A U.S. evangelical denomination in the Holiness tradition, known as The Alliance. It emerged from A. B. Simpson's interdenominational evangelistic and missionary societies.",
+    "formation_narrative": "Albert Benjamin Simpson organized evangelistic outreach through New York's Gospel Tabernacle and trained overseas workers through the Missionary Training Institute. In 1887 the Christian Alliance gathered believers around the Fourfold Gospel, while the Evangelical Missionary Alliance, later called the International Missionary Alliance, organized overseas missions. Both societies had distinct purposes and constitutions. Alliance archival records date their union as The Christian and Missionary Alliance to 1897. Women made up most of the early overseas workforce according to the U.S. Alliance's history.",
+    "ending_narrative": "Paul Rader succeeded Simpson in leading the missions society. After World War II, the Alliance expanded its congregational work and restructured, formally declaring itself a denomination in 1974. The Canadian Alliance became autonomous in 1981. The U.S. denomination continues to plant churches, send workers overseas and govern through its General Council.",
+    "profile_scope": "The timeline begins with the U.S. denomination's 1974 declaration and reorganization. It includes the 1887 societies and their 1897 union as predecessors. The federal 1916 report gives 1895 for the union, while the Alliance archival finding aid gives 1897. The latter date is used here. Canadian and other national church histories and the full Council vote sequence are outside this introductory account.",
+    "distinctives": [
+      "Fourfold Gospel",
+      "Sanctification and divine healing",
+      "Local church planting and overseas missions"
+    ],
+    "core_beliefs": [
+      "The Fourfold Gospel describes Jesus as Savior, Sanctifier, Healer and Coming King. It connects salvation, holy living, prayer for healing and hope for Christ's return.",
+      "Sanctification: the Holy Spirit empowers believers for holy living and service. The Alliance describes a decisive surrender to God and continued growth.",
+      "Divine healing: the Alliance encourages prayer for healing and locates healing in Christ's redemptive work."
+    ],
+    "size_estimate": "414,360 U.S. adherents and 1,776 U.S. congregations (2020 U.S. Religion Census).",
+    "key_figures": [
+      {
+        "name": "Albert Benjamin Simpson",
+        "role": "founder of both predecessor societies",
+        "summary": "Organized urban evangelism and mission training and articulated the Fourfold Gospel.",
+        "url": "https://online.ambrose.edu/alliancestudies/ahtreadings/ahtr_s4.html",
+        "citations": [
+          "cite-us-coverage-holiness-alliance-outreach",
+          "cite-us-coverage-holiness-alliance-constitutions",
+          "cite-us-coverage-holiness-alliance-simpson-teaching"
+        ]
+      },
+      {
+        "name": "Paul Rader",
+        "role": "successor to Simpson",
+        "summary": "Took leadership of the mission society after Simpson's death.",
+        "url": "https://cmalliance.org/who-we-are/our-history/",
+        "citations": [
+          "cite-us-coverage-holiness-alliance-outreach"
+        ]
+      },
+      {
+        "name": "A. W. Tozer",
+        "role": "pastor and editor",
+        "summary": "Pastored Southside Alliance Church in Chicago and became editor of Alliance Weekly in 1950.",
+        "url": "https://cmalliance.org/who-we-are/our-history/",
+        "citations": [
+          "cite-us-coverage-holiness-alliance-denomination"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1887,
+        "label": "Christian Alliance and Evangelical Missionary Alliance organize as separate societies",
+        "citations": [
+          "cite-us-coverage-holiness-alliance-societies",
+          "cite-us-coverage-holiness-alliance-constitutions"
+        ]
+      },
+      {
+        "year": 1897,
+        "label": "Christian Alliance and International Missionary Alliance unite as one missions society, per Alliance archives",
+        "citations": [
+          "cite-us-coverage-holiness-alliance-societies",
+          "cite-us-coverage-holiness-alliance-date-conflict"
+        ]
+      },
+      {
+        "year": 1974,
+        "label": "The U.S. Alliance formally declares itself a denomination and restructures",
+        "citations": [
+          "cite-us-coverage-holiness-alliance-denomination"
+        ]
+      },
+      {
+        "year": 1981,
+        "label": "The Canadian Alliance becomes autonomous",
+        "citations": [
+          "cite-us-coverage-holiness-alliance-canada"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "The founding Alliance constitutions",
+        "year": 1887,
+        "significance": "Adopted rules for the two predecessor societies. The transcriptions distinguish the home fellowship from the overseas mission organization.",
+        "url": "https://online.ambrose.edu/alliancestudies/ahtreadings/ahtr_s4.html",
+        "citations": [
+          "cite-us-coverage-holiness-alliance-constitutions"
+        ]
+      },
+      {
+        "title": "The Four-Fold Gospel",
+        "year": 1890,
+        "significance": "Simpson's influential teaching in the revised third edition. The year refers to the edition linked here.",
+        "url": "https://archive.org/details/fourfoldgospel00simp",
+        "citations": [
+          "cite-us-coverage-holiness-alliance-simpson-teaching"
+        ]
+      },
+      {
+        "title": "Alliance Statement of Faith",
+        "significance": "The U.S. denomination's published confession, presented with interpretive statements on sanctification and healing.",
+        "url": "https://cmalliance.org/who-we-are/our-faith-and-mission/perspectives/",
+        "citations": [
+          "cite-us-coverage-holiness-alliance-doctrine"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Board of Managers fonds",
+        "url": "https://ambrose.edu/sites/default/files/2000-02_cma_board_of_managers_0.pdf",
+        "snippet": "An archival guide to the predecessor societies, their union and the records of the united mission.",
+        "citations": [
+          "cite-us-coverage-holiness-alliance-societies"
+        ]
+      },
+      {
+        "title": "Council 2025 report and minutes",
+        "url": "https://cdn.cmalliance.org/wordpress/cmalliance/Council-2025-Report-and-Minutes.pdf",
+        "snippet": "Proceedings showing the current U.S. denomination's governance and doctrinal deliberation.",
+        "citations": [
+          "cite-us-coverage-holiness-alliance-current"
+        ]
+      }
+    ],
+    "kind": "denomination",
+    "region": "US",
+    "current_status": "active",
+    "zoom_tier": "full",
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-us-coverage-holiness-alliance-outreach",
+        "cite-us-coverage-holiness-alliance-denomination"
+      ],
+      "formation_narrative": [
+        "cite-us-coverage-holiness-alliance-outreach",
+        "cite-us-coverage-holiness-alliance-societies",
+        "cite-us-coverage-holiness-alliance-constitutions"
+      ],
+      "ending_narrative": [
+        "cite-us-coverage-holiness-alliance-outreach",
+        "cite-us-coverage-holiness-alliance-denomination",
+        "cite-us-coverage-holiness-alliance-canada",
+        "cite-us-coverage-holiness-alliance-current"
+      ],
+      "profile_scope": [
+        "cite-us-coverage-holiness-alliance-denomination",
+        "cite-us-coverage-holiness-alliance-date-conflict",
+        "cite-us-coverage-holiness-alliance-societies"
+      ],
+      "core_beliefs": [
+        "cite-us-coverage-holiness-alliance-doctrine",
+        "cite-us-coverage-holiness-alliance-simpson-teaching"
+      ],
+      "distinctives": [
+        "cite-us-coverage-holiness-alliance-denomination",
+        "cite-us-coverage-holiness-alliance-doctrine"
+      ],
+      "size_estimate": [
+        "cite-us-coverage-holiness-alliance-scale"
+      ],
+      "key_figures": [
+        "cite-us-coverage-holiness-alliance-outreach",
+        "cite-us-coverage-holiness-alliance-constitutions",
+        "cite-us-coverage-holiness-alliance-simpson-teaching",
+        "cite-us-coverage-holiness-alliance-denomination"
+      ],
+      "key_dates": [
+        "cite-us-coverage-holiness-alliance-societies",
+        "cite-us-coverage-holiness-alliance-constitutions",
+        "cite-us-coverage-holiness-alliance-date-conflict",
+        "cite-us-coverage-holiness-alliance-denomination",
+        "cite-us-coverage-holiness-alliance-canada"
+      ],
+      "key_documents": [
+        "cite-us-coverage-holiness-alliance-constitutions",
+        "cite-us-coverage-holiness-alliance-simpson-teaching",
+        "cite-us-coverage-holiness-alliance-doctrine"
+      ]
+    },
+    "citations": [
+      "cite-us-coverage-holiness-alliance-outreach",
+      "cite-us-coverage-holiness-alliance-denomination",
+      "cite-us-coverage-holiness-alliance-societies",
+      "cite-us-coverage-holiness-alliance-constitutions",
+      "cite-us-coverage-holiness-alliance-canada",
+      "cite-us-coverage-holiness-alliance-current",
+      "cite-us-coverage-holiness-alliance-date-conflict",
+      "cite-us-coverage-holiness-alliance-doctrine",
+      "cite-us-coverage-holiness-alliance-simpson-teaching",
+      "cite-us-coverage-holiness-alliance-scale"
+    ]
+  },
+  {
+    "id": "church-of-the-brethren",
+    "name": "Church of the Brethren",
+    "short_label": "Church of the Brethren",
+    "aliases": [
+      "CoB",
+      "German Baptist Brethren",
+      "Dunkers",
+      "Dunkards"
+    ],
+    "start_year": 1723,
+    "geographic_origin": "Germany",
+    "tradition_family": "Schwarzenau Brethren",
+    "ecclesial_orientation": "other",
+    "summary": "A U.S. Historic Peace Church in the Schwarzenau Brethren tradition. Its American congregational history begins at Germantown, Pennsylvania, and its European roots go back to the 1708 Schwarzenau baptisms.",
+    "formation_narrative": "In 1708 eight people, including Alexander Mack and Johanna Kipping, received believers' baptism at the Eder River in Schwarzenau. Pietist and Anabaptist ideas shaped their commitment to follow Jesus together as a disciplined community. Facing persecution and economic hardship, Brethren began emigrating under Peter Becker in 1719. The first American congregation organized at Germantown in 1723. Mack arrived with a later group in 1729.",
+    "ending_narrative": "Disputes over how binding Annual Meeting decisions should be, and over changes such as paid ministry, Sunday schools and higher education, divided the German Baptist Brethren in the early 1880s. Old Order Brethren sought to preserve inherited practices. Progressives led by Henry Holsinger pressed for changes and organized The Brethren Church in 1883. The largest continuing branch adopted the name Church of the Brethren in 1908. Youth advocacy at Annual Conference led to Brethren Volunteer Service in 1948. The denomination continues through Annual Conference, congregations and ministries. Covenant Brethren Church incorporated in 2020 after organizing around its stated concerns about biblical authority and accountability. Church of the Brethren leaders objected to recruitment among their congregations.",
+    "profile_scope": "1723 is the first American congregation, 1708 the European movement origin, and 1908 the adoption of the present name. This profile follows the U.S. line that took that name. German Baptist Brethren and Dunkers were names used for a wider historical community before the divisions. Plymouth Brethren, Brethren in Christ, and the later daughter bodies have distinct histories.",
+    "distinctives": [
+      "New Testament discipleship",
+      "Believer's baptism by trine immersion",
+      "Love feast and peacemaking"
+    ],
+    "core_beliefs": [
+      "The New Testament guides congregational life and daily discipleship. Brethren emphasize living Jesus' teaching through service and accountability in community.",
+      "Believers' baptism uses three forward immersions. The traditional love feast joins feet washing, a shared meal and communion.",
+      "Peacemaking is part of discipleship. Annual Conference has affirmed nonviolence and conscientious objection, and the denomination has organized volunteer service."
+    ],
+    "size_estimate": "109,288 U.S. adherents and 921 U.S. congregations (2020 U.S. Religion Census).",
+    "key_figures": [
+      {
+        "name": "Alexander Mack",
+        "role": "early organizer",
+        "summary": "Received baptism at Schwarzenau and baptized the other members of the founding group. He came to Pennsylvania in 1729.",
+        "url": "https://www.brethren.org/about/history/",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-baptisms",
+          "cite-us-coverage-holiness-brethren-migration"
+        ]
+      },
+      {
+        "name": "Johanna Kipping",
+        "role": "founding participant",
+        "summary": "Took part in the first baptisms and migrated to Pennsylvania in 1729.",
+        "url": "https://www.brethren.org/bhla/sketches/",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-founders"
+        ]
+      },
+      {
+        "name": "Peter Becker",
+        "role": "migration leader",
+        "summary": "Led the 1719 migration that preceded the formation of the Germantown congregation.",
+        "url": "https://www.brethren.org/about/history/",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-migration"
+        ]
+      },
+      {
+        "name": "Henry Holsinger",
+        "role": "Progressive Brethren leader",
+        "summary": "His publishing and advocacy for reforms helped shape the movement that organized The Brethren Church.",
+        "url": "https://brethrenchurch.org/history-series-this-chapter-in-brethren-hymnology-centers-on-henry-holsinger/",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-division",
+          "cite-us-coverage-holiness-brethren-progressives"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1708,
+        "label": "First Schwarzenau Brethren baptisms at the Eder River",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-baptisms",
+          "cite-us-coverage-holiness-brethren-founders"
+        ]
+      },
+      {
+        "year": 1723,
+        "label": "First American congregation organizes at Germantown",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-migration"
+        ]
+      },
+      {
+        "year": 1883,
+        "label": "Progressive branch organizes The Brethren Church",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-division",
+          "cite-us-coverage-holiness-brethren-progressives"
+        ]
+      },
+      {
+        "year": 1908,
+        "label": "Continuing German Baptist Brethren branch adopts the name Church of the Brethren",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-name",
+          "cite-us-coverage-holiness-brethren-division"
+        ]
+      },
+      {
+        "year": 1948,
+        "label": "Annual Conference establishes Brethren Volunteer Service",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-volunteers",
+          "cite-us-coverage-holiness-brethren-peacemaking"
+        ]
+      },
+      {
+        "year": 2020,
+        "label": "Departing Covenant Brethren Church incorporates separately",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-recent",
+          "cite-us-coverage-holiness-brethren-covenant"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Early Brethren letter",
+        "year": 1708,
+        "significance": "Founding-era statement of intent to follow Christ's teachings, quoted in the denomination's polity manual.",
+        "url": "https://www.brethren.org/ac/wp-content/uploads/sites/18/2023/02/ch.-0-MOP-Overview-Feb.-2023.pdf",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-old-letter"
+        ]
+      },
+      {
+        "title": "Peacemaking: The Calling of God's People in History",
+        "year": 1991,
+        "significance": "Annual Conference statement linking the church's peace witness with nonviolence, conscientious objection and volunteer service.",
+        "url": "https://www.brethren.org/ac/statements/1991-peacemaking/",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-peacemaking"
+        ]
+      },
+      {
+        "title": "Manual of Organization and Polity: Overview",
+        "year": 2023,
+        "significance": "Governance overview in the February 2023 edition. It relates contemporary polity to the historical commitments of the Brethren.",
+        "url": "https://www.brethren.org/ac/wp-content/uploads/sites/18/2023/02/ch.-0-MOP-Overview-Feb.-2023.pdf",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-old-letter"
+        ]
+      }
+    ],
+    "further_reading": [
+      {
+        "title": "Historical sketches",
+        "url": "https://www.brethren.org/bhla/sketches/",
+        "snippet": "Archival sketches of the founding participants and the late nineteenth-century divisions.",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-founders",
+          "cite-us-coverage-holiness-brethren-division"
+        ]
+      },
+      {
+        "title": "Covenant Brethren Church FAQ",
+        "url": "https://covenantbrethren.org/frequently-asked-questions/",
+        "snippet": "The departing body's account of its organization and concerns. The Church of the Brethren's response is listed in the evidence.",
+        "citations": [
+          "cite-us-coverage-holiness-brethren-covenant",
+          "cite-us-coverage-holiness-brethren-recent"
+        ]
+      }
+    ],
+    "kind": "denomination",
+    "region": "US",
+    "current_status": "active",
+    "zoom_tier": "full",
+    "successor_ids": [],
+    "profile_citations": {
+      "summary": [
+        "cite-us-coverage-holiness-brethren-baptisms",
+        "cite-us-coverage-holiness-brethren-migration",
+        "cite-us-coverage-holiness-brethren-peacemaking"
+      ],
+      "formation_narrative": [
+        "cite-us-coverage-holiness-brethren-baptisms",
+        "cite-us-coverage-holiness-brethren-migration",
+        "cite-us-coverage-holiness-brethren-founders"
+      ],
+      "ending_narrative": [
+        "cite-us-coverage-holiness-brethren-division",
+        "cite-us-coverage-holiness-brethren-authority",
+        "cite-us-coverage-holiness-brethren-progressives",
+        "cite-us-coverage-holiness-brethren-name",
+        "cite-us-coverage-holiness-brethren-volunteers",
+        "cite-us-coverage-holiness-brethren-recent",
+        "cite-us-coverage-holiness-brethren-covenant"
+      ],
+      "profile_scope": [
+        "cite-us-coverage-holiness-brethren-name",
+        "cite-us-coverage-holiness-brethren-migration",
+        "cite-us-coverage-holiness-brethren-baptisms"
+      ],
+      "core_beliefs": [
+        "cite-us-coverage-holiness-brethren-scripture",
+        "cite-us-coverage-holiness-brethren-ordinances",
+        "cite-us-coverage-holiness-brethren-peacemaking"
+      ],
+      "distinctives": [
+        "cite-us-coverage-holiness-brethren-scripture",
+        "cite-us-coverage-holiness-brethren-ordinances",
+        "cite-us-coverage-holiness-brethren-peacemaking"
+      ],
+      "size_estimate": [
+        "cite-us-coverage-holiness-brethren-scale"
+      ],
+      "key_figures": [
+        "cite-us-coverage-holiness-brethren-baptisms",
+        "cite-us-coverage-holiness-brethren-migration",
+        "cite-us-coverage-holiness-brethren-founders",
+        "cite-us-coverage-holiness-brethren-division",
+        "cite-us-coverage-holiness-brethren-progressives"
+      ],
+      "key_dates": [
+        "cite-us-coverage-holiness-brethren-baptisms",
+        "cite-us-coverage-holiness-brethren-founders",
+        "cite-us-coverage-holiness-brethren-migration",
+        "cite-us-coverage-holiness-brethren-division",
+        "cite-us-coverage-holiness-brethren-progressives",
+        "cite-us-coverage-holiness-brethren-name",
+        "cite-us-coverage-holiness-brethren-volunteers",
+        "cite-us-coverage-holiness-brethren-peacemaking",
+        "cite-us-coverage-holiness-brethren-recent",
+        "cite-us-coverage-holiness-brethren-covenant"
+      ],
+      "key_documents": [
+        "cite-us-coverage-holiness-brethren-old-letter",
+        "cite-us-coverage-holiness-brethren-peacemaking"
+      ]
+    },
+    "citations": [
+      "cite-us-coverage-holiness-brethren-baptisms",
+      "cite-us-coverage-holiness-brethren-migration",
+      "cite-us-coverage-holiness-brethren-peacemaking",
+      "cite-us-coverage-holiness-brethren-founders",
+      "cite-us-coverage-holiness-brethren-division",
+      "cite-us-coverage-holiness-brethren-authority",
+      "cite-us-coverage-holiness-brethren-progressives",
+      "cite-us-coverage-holiness-brethren-name",
+      "cite-us-coverage-holiness-brethren-volunteers",
+      "cite-us-coverage-holiness-brethren-recent",
+      "cite-us-coverage-holiness-brethren-covenant",
+      "cite-us-coverage-holiness-brethren-scripture",
+      "cite-us-coverage-holiness-brethren-ordinances",
+      "cite-us-coverage-holiness-brethren-scale",
+      "cite-us-coverage-holiness-brethren-old-letter"
+    ]
+  }
+]
