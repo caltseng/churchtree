@@ -19,8 +19,8 @@
 
 ## Explorer and site controls
 
-- Use one compact explorer header for Search, Filters, and Info. Put Settings and Appearance in the hamburger menu across the site so they have a consistent home.
+- Use one compact explorer header for Search, Filters, and Info. Put Settings in the hamburger menu across the site, with Appearance under Settings.
 - Remove headings that repeat nearby labels. Keep labels and controls compact, especially in mobile filters, while keeping touch targets easy to use. Give paired controls matching visual treatments, such as mirrored arrows for Earlier and Later.
 - Give the graph priority in narrow portrait and short landscape layouts. Move lower-priority legend content below the initial view when it frees useful graph space. Integrate explanatory context into the timeline when a separate section would crowd the graph.
 - Default the explorer to the all-branches proportional timeline and keep Compact lineage selectable. Preserve the user's filters, date range, and zoom when they inspect details and return to the graph.
-- Browser-test explorer changes in narrow mobile portrait and short landscape. Check how much graph is visible on load, whether header and filter controls are usable by touch, and whether opening details preserves the view. Also check desktop layout and keyboard access, including focus visibility and order.
+- Browser-test both vertical and horizontal timeline modes in narrow mobile portrait and short landscape. Check how much graph is visible on load, whether header and filter controls are usable by touch, and whether opening details preserves the view. Also check desktop layout and keyboard access, including focus visibility and order.
