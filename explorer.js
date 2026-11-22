@@ -269,6 +269,19 @@
         const expanded = filtersPanel.classList.toggle("dates-open");
         rangeButton.setAttribute("aria-expanded", String(expanded));
     };
+    const shortLandscape = matchMedia('(min-width: 568px) and (max-width: 1099px) and (max-height: 450px) and (orientation: landscape)');
+    const graphTools = document.querySelector('.graph-tools');
+    const graphStage = graphTools.parentElement;
+    const headerActions = explorerHeader.querySelector('.explorer-actions');
+    const timeNavigation = $('mobile-pan');
+    function placeGraphTools() {
+        const parent = shortLandscape.matches && !timeNavigation.hidden ? explorerHeader : graphStage;
+        if (graphTools.parentElement === parent) return;
+        const focusedControl = graphTools.contains(document.activeElement) ? document.activeElement : null;
+        parent.insertBefore(graphTools, parent === explorerHeader ? headerActions : null);
+        focusedControl?.focus({preventScroll: true});
+    }
+    shortLandscape.addEventListener('change', placeGraphTools);
     $("time-earlier").onclick = () => timelineControl?.pan?.(-.65);
     $("time-later").onclick = () => timelineControl?.pan?.(.65);
     syncDetailLayout();
@@ -279,7 +292,8 @@
         graphControl?.destroy();graphControl=null;window.CHURCHTREE_GRAPH=null;graphViewKey=nextGraphKey;
         document.body.classList.toggle('major-overview',layout==='lineage'&&level===0);
         $('mobile-range-toggle').hidden=layout==='lineage';
-        $('mobile-pan').hidden=layout==='lineage';
+        timeNavigation.hidden=layout==='lineage';
+        placeGraphTools();
         $('branch').value = family;
         $('layout').value = layout==='lineage'?'lineage':'timeline';
         $('orientation').hidden=layout==='lineage';
@@ -333,7 +347,8 @@
                     });
                 } });
             if(!timelineControl){$('zoom-in').disabled=true;$('zoom-out').disabled=true;$('period').hidden=true;$('level').textContent='Origin context';$('count').textContent=scoped.length+' entries in scope';}
-            $('mobile-pan').hidden=!timelineControl;
+            timeNavigation.hidden=!timelineControl;
+            placeGraphTools();
             if(mobile.matches)$('scope-note').textContent=layout==='horizontal'?'Drag to explore time; pinch to zoom around your fingers. Tap a node for its history.':'Drag to pan time and branches; pinch to zoom around your fingers. Earlier/Later and +/− also work.';
             window.CHURCHTREE_TIMELINE = timelineControl;
             return;

@@ -446,14 +446,14 @@ main.details-collapsed { grid-template-columns: minmax(0,1fr); }
   /* Keep the timeline and its controls in the first viewport. The legend
      follows in page flow, where a swipe outside the graph can reach it. */
   body:has(#mobile-pan:not([hidden])) { height: 100dvh; overflow-y: auto; }
-  main:has(#mobile-pan:not([hidden])) { flex: 1; height: auto; grid-template-rows: minmax(0, 1fr); }
-  #canvas:has(#mobile-pan:not([hidden])) { padding-bottom: 0; }
-  #canvas:has(#mobile-pan:not([hidden])) .graph-stage {
+  body:has(#mobile-pan:not([hidden])) main { flex: 1; height: auto; grid-template-rows: minmax(0, 1fr); }
+  body:has(#mobile-pan:not([hidden])) #canvas { padding-bottom: 0; }
+  body:has(#mobile-pan:not([hidden])) #canvas .graph-stage {
     flex: none;
     height: 100%;
     min-height: 201px;
   }
-  #canvas:has(#mobile-pan:not([hidden])) .legend { padding-bottom: 8px; }
+  body:has(#mobile-pan:not([hidden])) #canvas .legend { padding-bottom: 8px; }
 }
 @media (max-width: 600px) {
   .explorer-header h1 .main-branch-brand { font-size: clamp(17px, 5vw, 23px); gap: 4px; }
@@ -466,3 +466,9 @@ main.details-collapsed { grid-template-columns: minmax(0,1fr); }
   .explorer-header h1 .main-branch-brand { font-size: 15px; gap: 3px; white-space: nowrap; }
   .explorer-header .main-branch-symbol { width: 22px; flex-basis: 22px; }
 }
+
+.explorer-header:has(> .graph-tools) { grid-template-columns: minmax(0, 1fr) auto auto auto; }
+.explorer-header:has(> .graph-tools) h1 .main-branch-brand { font-size: clamp(17px, 3.2vw, 23px); gap: 4px; }
+.explorer-header:has(> .graph-tools) .main-branch-symbol { width: 28px; flex-basis: 28px; }
+.explorer-header > .graph-tools { margin: 0 4px 0 0; }
+body:has(.explorer-header > .graph-tools) .graph-stage { min-height: 160px; }

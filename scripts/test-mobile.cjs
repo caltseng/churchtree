@@ -19,6 +19,16 @@ const server=require('./test-server.cjs')(root);
    const legend=await page.locator('.legend').boundingBox();
    assert(controls.y+controls.height<=size.height,'Timeline controls fit in the first viewport');
    assert(legend.y>=size.height,'Timeline legend follows the first viewport');
+   const graph=await page.locator('#graph').boundingBox();
+   if(size.width===844){
+    const brand=await page.locator('.main-branch-brand').boundingBox();
+    const headerActions=await page.locator('.explorer-actions').boundingBox();
+    assert(controls.y+controls.height<=graph.y,'Short landscape controls sit above the graph');
+    assert(brand.x+brand.width<=controls.x,'Timeline controls leave room for the brand');
+    assert(controls.x+controls.width<=headerActions.x,'Timeline controls leave room for the header actions');
+   }else{
+    assert(controls.y>=graph.y+graph.height,'Timeline controls sit below the graph');
+   }
    const [earlier,later,zoom]=await Promise.all(['#time-earlier','#time-later','#zoom-in'].map(id=>page.locator(id).boundingBox()));
    assert.equal(earlier.y,later.y,'Time navigation buttons align');
    assert.equal(later.y,zoom.y,'Time navigation and zoom buttons align');
