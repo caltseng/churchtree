@@ -690,9 +690,12 @@
     splitter.setAttribute('aria-valuenow',Math.round($('details').getBoundingClientRect().width));
     splitter.setAttribute('aria-valuemin','300');
     splitter.setAttribute('aria-valuemax',Math.round(innerWidth*.55));
-    let resizeTimer, previousSize = '';
+    render();
+    const graph = $('graph');
+    const graphSize = () => graph.clientWidth + 'x' + graph.clientHeight;
+    let resizeTimer, previousSize = graphSize();
     new ResizeObserver(() => {
-        const graph = $('graph'), size = graph.clientWidth + 'x' + graph.clientHeight;
+        const size = graphSize();
         if (size === previousSize)
             return;
         previousSize = size;
@@ -705,10 +708,9 @@
             graph.scrollLeft = left;
             graph.scrollTop = top;
         }, 100);
-    }).observe($('graph'));
+    }).observe(graph);
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape')
             $('results').replaceChildren();
     });
-    render();
 })();
