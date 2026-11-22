@@ -21,6 +21,16 @@
     let graphControl=null,graphViewKey='';
     const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const label = n => n.short_label || n.name;
+    const searchInput = $('search'), searchResults = $('results'), searchStatus = $('search-status');
+    const searchMore = $('search-more');
+    const searchPageSize = 12;
+    const normalizeSearch = value => String(value ?? '').toLowerCase().normalize('NFKD')
+        .replace(/\p{M}/gu, '').replace(/['’‘]/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+    const searchEntries = Array.from(nodes.values(), node => ({
+        node,
+        name: normalizeSearch(node.name),
+        terms: [node.short_label, ...(node.aliases || []), node.id].map(normalizeSearch).filter(Boolean)
+    }));
     families.forEach(f => {
         const o = document.createElement('option');
         o.value = f;
@@ -236,7 +246,9 @@
     }
     function closeSearch(restoreFocus = false) {
         showPanel(searchPanel, searchButton, false);
-        $("results").replaceChildren();
+        searchResults.replaceChildren();
+        searchStatus.textContent = '';
+        searchMore.hidden = true;
         if (restoreFocus) searchButton.focus({preventScroll: true});
     }
     searchButton.onclick = () => {
@@ -426,15 +438,20 @@
         if (level === 0)
             $('count').textContent = `${entries.length} branches · ${edges.length} connections`;
         const positions = new Map(), width = Math.max(650, graph.clientWidth - 20);
-        let height = 0, maxColumn = 0;
+        let height = 0;
         if (level === 0) {
             const rowMap = { Catholic: 0, Orthodox: 0, Reformed: 1, Anglican: 1, Lutheran: 1, Presbyterian: 2, Baptist: 2, Methodist: 2, Revivalist: 3, Holiness: 3, Restorationist: 3, Adventist: 4, Pentecostal: 4 };
             const rows = d3.group(entries, n => rowMap[n.family] ?? 5);
-            for (const [row, ns] of rows) {
-                ns.forEach((n, i) => positions.set(n.id, { x: 30 + i * (width - 240) / Math.max(1, ns.length - 1), y: 35 + row * 112 }));
-                height = Math.max(height, 35 + row * 112 + 100);
+            const cardsPerRow = 1 + Math.floor((width - 240) / 220);
+            let row = 0;
+            for (const [, members] of [...rows].sort(([a], [b]) => a - b)) {
+                for (let start = 0; start < members.length; start += cardsPerRow) {
+                    const cards = members.slice(start, start + cardsPerRow);
+                    const y = 35 + row++ * 112;
+                    cards.forEach((n, i) => positions.set(n.id, { x: 30 + i * (width - 240) / Math.max(1, cards.length - 1), y }));
+                    height = y + 100;
+                }
             }
-            maxColumn = 3;
         }
         else {
             const ordered = [...entries].sort((a, b) => (a.context ? -1 : b.context ? 1 : 0) || a.start_year - b.start_year || a.id.localeCompare(b.id));
@@ -447,7 +464,7 @@
                 // Compact chronology may add vertical room to keep full-size cards legible.
                 for(const previous of positions.values())if(Math.abs(previous.x-px)<220&&py<previous.y+65)py=previous.y+65;
                 positions.set(n.id,{x:px,y:py});
-                maxColumn=Math.max(maxColumn,slot+1);height=Math.max(height,py+100);
+                height=Math.max(height,py+100);
             }
         }
 
@@ -620,8 +637,8 @@
         level = 0;
         focus = null;
         selected = null;
-        $('search').value = '';
-        $('results').replaceChildren();
+        searchInput.value = '';
+        search();
         scopeIntroduction();
         render();
     };
@@ -657,31 +674,64 @@
         render();
     };
     function search() {
-        const q = $('search').value.trim().toLowerCase();
-        $('results').replaceChildren();
-        if (!q)
-            return;
-        const matches = d.nodes.filter(n => [n.name, n.short_label, n.id, ...(n.aliases || [])].some(v => String(v || '').toLowerCase().includes(q))).slice(0, 12);
+        const query = normalizeSearch(searchInput.value);
+        searchResults.replaceChildren();
+        searchStatus.textContent = '';
+        searchMore.hidden = true;
+        searchPanel.scrollTop = 0;
+        if (!query)
+            return [];
+        const matches = searchEntries.map(({node, name, terms}) => {
+            if (name === query) return {node, rank: 0};
+            if (terms.includes(query)) return {node, rank: 1};
+            const values = [name, ...terms];
+            if (values.some(value => value.startsWith(query))) return {node, rank: 2};
+            if (values.some(value => value.includes(query))) return {node, rank: 3};
+            return null;
+        }).filter(Boolean)
+            .sort((a, b) => a.rank - b.rank || a.node.name.localeCompare(b.node.name) || a.node.id.localeCompare(b.node.id));
         if (!matches.length) {
-            $('results').textContent = 'No matching entries.';
-            return;
+            searchStatus.textContent = 'No matching entries.';
+            return matches;
         }
-        matches.forEach(n => {
-            const b = document.createElement('button');
-            b.type = 'button';
-            b.textContent = `${label(n)} · ${n.start_year} · ${n.tradition_family}`;
-            b.onclick = () => {
-                closeSearch(true);
-                openNode(n.id);
+        function appendResults(start) {
+            const end = Math.min(start + searchPageSize, matches.length);
+            for (const {node} of matches.slice(start, end)) {
+                const button = document.createElement('button');
+                button.type = 'button';
+                const short = label(node);
+                const title = short === node.name ? node.name : `${short} · ${node.name}`;
+                const year = node.start_year ?? 'Unknown origin';
+                button.textContent = `${title} · ${year} · ${node.tradition_family || 'Other'}`;
+                button.onclick = () => {
+                    closeSearch(true);
+                    openNode(node.id);
+                };
+                searchResults.append(button);
+            }
+            searchStatus.textContent = end < matches.length ? `Showing ${end} of ${matches.length} matches`
+                : `${matches.length} ${matches.length === 1 ? 'match' : 'matches'}`;
+            searchMore.hidden = end === matches.length;
+            searchMore.onclick = () => {
+                appendResults(end);
+                const firstAdded = searchResults.children[end];
+                firstAdded.focus({preventScroll: true});
+                searchPanel.scrollTop += firstAdded.getBoundingClientRect().top
+                    - searchPanel.getBoundingClientRect().top - 8;
             };
-            $('results').append(b);
-        });
+        }
+        appendResults(0);
+        return matches;
     }
-    $('search').oninput = search;
-    $('search-form').onsubmit = e => {
+    searchInput.oninput = search;
+    searchPanel.onsubmit = e => {
         e.preventDefault();
-        search();
-        $('results').querySelector('button')?.click();
+        const [first, second] = search();
+        const button = searchResults.firstElementChild;
+        if (first && (!second || (first.rank <= 1 && first.rank < second.rank)))
+            button.click();
+        else
+            button?.focus();
     };
     const splitter = $('splitter');
     function resizeDetails(width) {
@@ -732,8 +782,4 @@
             graph.scrollTop = top;
         }, 100);
     }).observe(graph);
-    document.addEventListener('keydown', e => {
-        if (e.key === 'Escape')
-            $('results').replaceChildren();
-    });
 })();

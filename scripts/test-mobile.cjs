@@ -38,7 +38,7 @@ const server=require('./test-server.cjs')(root);
   assert(!await page.locator('#search-form').isVisible(),'Search starts collapsed');
   const graphBefore=await page.locator('#graph').boundingBox();
   await page.screenshot({path:path.join(output,`mobile-search-collapsed-${size.width}.png`)});
-  if(size.width===390){
+  if(size.width===390||size.width===320||size.height===390){
    await page.getByRole('button',{name:'Zoom in',exact:true}).tap();
    await page.waitForFunction(()=>CHURCHTREE_TIMELINE.snapshot().scale>=1.7);
    const node=page.locator('#graph .node[data-id="episcopal-church"]');
@@ -54,6 +54,7 @@ const server=require('./test-server.cjs')(root);
    assert.equal(await page.locator('#branch').inputValue(),'');
    assert.deepEqual(await snapshot(),before);
    await page.getByRole('button',{name:'Back to graph'}).tap();
+   assert.deepEqual(await snapshot(),before);
   }
   await searchToggle.tap();
   assert.equal(await searchToggle.getAttribute('aria-expanded'),'true');
@@ -61,6 +62,17 @@ const server=require('./test-server.cjs')(root);
   assert(await page.locator('#search').evaluate(el=>parseFloat(getComputedStyle(el).fontSize)>=16),'Input avoids iOS focus zoom');
   assert.equal(await page.locator('#search-form').getByRole('button',{name:'Find',exact:true}).evaluate(el=>getComputedStyle(el).fontSize),'13px');
   assert.deepEqual(await page.locator('#graph').boundingBox(),graphBefore,'Search does not resize the timeline');
+  if(size.width===320||size.height===390){
+   await page.locator('#search').fill('Church');
+   const more=page.getByRole('button',{name:'Show more results',exact:true});
+   await more.tap();
+   const firstAdded=page.locator('#results button').nth(12);
+   assert(await firstAdded.evaluate(button=>button===document.activeElement));
+   const hit=await firstAdded.boundingBox(),panel=await page.locator('#search-form').boundingBox();
+   assert(hit.y>=panel.y&&hit.y+hit.height<=panel.y+panel.height,'First added result is fully visible');
+   assert(await page.locator('#search-form').evaluate(panel=>panel.scrollWidth<=panel.clientWidth));
+   await page.screenshot({path:path.join(output,`mobile-search-more-${size.width}.png`)});
+  }
   await page.locator('#search').fill('OPC');
   await page.screenshot({path:path.join(output,`mobile-search-expanded-${size.width}.png`)});
   await page.keyboard.press('Escape');
@@ -172,6 +184,16 @@ const server=require('./test-server.cjs')(root);
   await page.screenshot({path:path.join(output,`mobile-profile-${size.width}x${size.height}.png`)});
   await page.getByRole('button',{name:'Back to graph',exact:true}).tap();assert(!await dialog.isVisible());
   const selectedRange=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain);assert(selectedRange[0]<=1973&&selectedRange[1]>=1973,'Search must reveal the selected date on mobile');
+  if(size.width===320||size.height===390){
+   const snapshot=()=>page.evaluate(()=>{
+    const {domain,scale}=CHURCHTREE_TIMELINE.snapshot();
+    return {domain,scale,branch:document.getElementById('branch').value};
+   });
+   const before=await snapshot();
+   await page.getByRole('button',{name:'Details',exact:true}).tap();
+   await page.getByRole('button',{name:'Back to graph',exact:true}).tap();
+   assert.deepEqual(await snapshot(),before);
+  }
   await page.getByRole('button',{name:'Details',exact:true}).tap();assert(await dialog.isVisible());
   if(size.width===390){
    await page.setViewportSize({width:1280,height:800});await page.waitForTimeout(200);

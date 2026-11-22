@@ -388,6 +388,9 @@ aside p,aside li {
 .explorer-header [hidden], .graph-tools [hidden], #splitter[hidden] { display: none; }
 #search-form label { display: block; margin-bottom: 4px; font-size: 12px; }
 #search { min-width: 0; font-size: 16px; }
+.search-progress { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+.search-progress:has(#search-status:not(:empty)) { margin-top: 6px; }
+#search-status { font: 13px/1.4 system-ui; color: var(--ct-text-muted); }
 #results:not(:empty) { margin-top: 6px; font: 13px/1.4 system-ui; }
 #view-settings:not([hidden]) { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
 #view-settings label { display: grid; gap: 3px; font-size: 12px; }
