@@ -196,6 +196,23 @@ parameters are corrected with a visible status message. Back goes up one parent;
 Reset keeps the lens. Browser history replays state. Drill-in focuses the selected
 heading; going up restores the departing child link when available.
 
+Chart mode has a bounded, independently scrollable viewport. Real two-pointer
+pinches zoom the chart from 100% to 400% around the gesture midpoint, while
+one-pointer drags pan it. Labels, values, bars and axes enlarge together; the
+scale and national denominators do not change. Numeric bars and all affiliation
+labels navigate to published children or the leaf's sourced detail. Thresholds
+remain selectable by label but never acquire a fabricated bar.
+
+Zoom out/in and Fit chart buttons, plus `+`, `-`, `0` and arrow keys when the
+chart region is focused, provide non-gesture alternatives. Ctrl/Cmd+wheel zooms
+only over the chart; browser page zoom remains available outside it. Source
+disclosures retain native keyboard/click behavior. Gestures suppress accidental
+drill-ins, including pointer cancellation and two-to-one-finger transitions.
+During a visit, each comparison remembers its zoom, scroll position and open
+chart source notes across detail navigation, browser history and List switches.
+List removes chart zoom/pan behavior without changing estimates or sources.
+Reloads start at a fitted chart; zoom is presentation state, not a URL/data filter.
+
 Attendance extends state with `{view: "attendance", group: null, format:
 "chart" | "list"}`. Its canonical URL is `?view=attendance` (optionally
 `&format=list`), without an affiliation group. A supplied group is removed with
