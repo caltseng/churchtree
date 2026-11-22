@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "checkedDate": "2026-11-22",
+  "study": {
+    "id": "pew-rls-2023-24",
+    "publisher": "Pew Research Center",
+    "publicationDate": "2025-02-26",
+    "wave": "2023-24",
+    "fieldPeriod": {"start": "2023-07-17", "end": "2024-03-04"},
+    "geography": "50 U.S. states and the District of Columbia",
+    "sampleSize": 36908,
+    "population": "U.S. adults",
+    "nationalMarginOfError": "±0.8 percentage points at the 95% confidence level; not a margin for every subgroup."
+  },
+  "series": {
+    "affiliation": {
+      "studyId": "pew-rls-2023-24",
+      "metric": "Adult religious self-identification",
+      "denominatorId": "us-adults",
+      "denominatorLabel": "Share of U.S. adults",
+      "axisLabel": "% of U.S. adults"
+    },
+    "attendance": {
+      "studyId": "pew-rls-2023-24",
+      "metric": "In-person religious service attendance at least once or twice a month",
+      "denominatorId": "adults-in-each-religious-group",
+      "denominatorLabel": "Adults in each religious group",
+      "axisLabel": "% of adults in each religious group",
+      "question": "Aside from weddings and funerals, how often do you attend religious services in person?",
+      "instrumentSourceId": "topline",
+      "instrumentLocator": "Printed p. 23 (PDF p. 23), ATTENDPERRLS (coded red), ASK ALL",
+      "responseDefinition": "The published NET Monthly or more often: more than once a week, once a week, or once or twice a month. Use the published NET, not a sum of rounded response cells.",
+      "scale": [0, 100],
+      "caveat": "Self-reported in-person attendance, excluding weddings and funerals. Virtual participation is a separate question. These findings are not directly comparable with the 2014 RLS attendance question and survey mode."
+    }
+  },
+  "sources": [
+    {
+      "id": "report",
+      "title": "Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off",
+      "publisher": "Pew Research Center",
+      "publicationDate": "2025-02-26",
+      "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf",
+      "sha256": "0851c7a9bea9d6bb85a43d6dea1281037550e535e6f35db9d04cd6e60cb4e4c3",
+      "revision": "Dated report downloaded and checked 2026-11-22; 393 PDF pages. Printed report page n is PDF page n+1.",
+      "reuseDecisionId": "pew-published-excerpts"
+    },
+    {
+      "id": "interactive",
+      "title": "2023-24 U.S. Religious Landscape Study Interactive Database",
+      "publisher": "Pew Research Center",
+      "publicationDate": "2025-02-26",
+      "url": "https://www.pewresearch.org/religious-landscape-study/region/united-states/",
+      "doi": "10.58094/3zs9-jc14",
+      "revision": "National page checked 2026-11-22; explicitly selected 2023-24 (data-independent-var=2024). Mutable source; no claim of an immutable web revision.",
+      "reuseDecisionId": "pew-published-excerpts"
+    },
+    {
+      "id": "identity",
+      "title": "1. Religious identity",
+      "publisher": "Pew Research Center",
+      "publicationDate": "2025-02-26",
+      "url": "https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-religious-identity/",
+      "revision": "Checked 2026-11-22",
+      "reuseDecisionId": "pew-published-excerpts"
+    },
+    {
+      "id": "classification",
+      "title": "Appendix B: Classification of Protestant denominations",
+      "publisher": "Pew Research Center",
+      "publicationDate": "2025-02-26",
+      "url": "https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/",
+      "revision": "Checked 2026-11-22; used for parentage, not as a source of estimates.",
+      "reuseDecisionId": "pew-published-excerpts"
+    },
+    {
+      "id": "attendance-chapter",
+      "title": "8. Religious attendance and congregational involvement",
+      "publisher": "Pew Research Center",
+      "publicationDate": "2025-02-26",
+      "url": "https://www.pewresearch.org/religion/2025/02/26/religious-attendance-and-congregational-involvement/#attending-religious-services-in-person",
+      "revision": "Checked 2026-11-22; table image 08-04, attachment 199166, matches printed report p. 165.",
+      "reuseDecisionId": "pew-published-excerpts"
+    },
+    {
+      "id": "topline",
+      "title": "2023-24 Religious Landscape Study questionnaire topline",
+      "publisher": "Pew Research Center",
+      "publicationDate": "2025-02-26",
+      "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_topline.pdf",
+      "sha256": "01c6b1dc2161d6df048a946e02823f7f9821360d9e248952ab2058a6bb772c80",
+      "revision": "Dated topline downloaded and checked 2026-11-22.",
+      "reuseDecisionId": "pew-published-excerpts"
+    },
+    {
+      "id": "methods",
+      "title": "Methodology for the 2023-24 Religious Landscape Study",
+      "publisher": "Pew Research Center",
+      "publicationDate": "2025-02-26",
+      "url": "https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/",
+      "revision": "Checked 2026-11-22",
+      "reuseDecisionId": "pew-published-excerpts"
+    },
+    {
+      "id": "dataset-description",
+      "title": "2023-24 Religious Landscape Study (RLS) Dataset",
+      "publisher": "Pew Research Center",
+      "publicationDate": "2025",
+      "url": "https://www.pewresearch.org/dataset/2023-24-religious-landscape-study-rls-dataset/",
+      "revision": "Checked 2026-11-22; description only. No respondent data downloaded or used.",
+      "reuseDecisionId": "pew-published-excerpts"
+    }
+  ],
+  "panels": [
+    {
+      "id": "national",
+      "sourceId": "interactive",
+      "locator": "United States > Religious composition > 2023-24",
+      "column": "Share of U.S. adults",
+      "caveat": "1% did not answer the question. Figures may not sum to 100% due to rounding."
+    },
+    {
+      "id": "families",
+      "sourceId": "report",
+      "locator": "Printed p. 86 (PDF p. 87), Among Protestants, share who are nondenominational has doubled since 2007",
+      "column": "Among all U.S. adults > 2023-24",
+      "caveat": "Figures may not add to subtotals due to rounding. Explicit nondenominational identities are separate from just Christian / just Protestant (Nonspecific Protestant)."
+    },
+    {
+      "id": "denominations",
+      "sourceId": "report",
+      "locator": "Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States",
+      "column": "Among all U.S. adults > 2023-24",
+      "caveat": "Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24."
+    },
+    {
+      "id": "denominations-extended",
+      "sourceId": "report",
+      "locator": "Printed p. 30 (PDF p. 31), A look at the largest Protestant denominations in the 2023-24 RLS",
+      "column": "% of U.S. adults > 2023-24",
+      "caveat": "Additional published thresholds, not missing values or zero estimates."
+    },
+    {
+      "id": "traditions",
+      "sourceId": "report",
+      "locator": "Printed p. 85 (PDF p. 86), Mainline Protestants have declined as a share of both the overall public and of all Protestants",
+      "column": "Among all U.S. adults > 2023-24",
+      "caveat": "Report decimals and the interactive's whole-percent display are separate published presentations. Do not obtain interactive values by rounding these decimal cells."
+    },
+    {
+      "id": "monthly-attendance",
+      "sourceId": "attendance-chapter",
+      "locator": "Attending religious services in person > table 08-04 (attachment 199166); report printed p. 165 (PDF p. 166)",
+      "column": "NET Monthly or more often",
+      "caveat": "Selected group rows only. Those who did not answer are not shown. Figures may not add to subtotals due to rounding; use the published NET."
+    },
+    {
+      "id": "population",
+      "sourceId": "methods",
+      "locator": "Opening methodology paragraphs: national cross-sectional survey, dates and sample",
+      "column": "Population definition, not an estimate",
+      "caveat": "U.S. adults is the population anchor, not a plotted 100% affiliation."
+    }
+  ],
+  "reuse": [
+    {
+      "id": "pew-published-excerpts",
+      "termsUrl": "https://www.pewresearch.org/about/terms-and-conditions/",
+      "termsEffectiveDate": "2018-05-25",
+      "checkedDate": "2026-11-22",
+      "decision": "Selected attributed published aggregate excerpts for an original Main Branch comparison, including Git source files and a later browser-delivered curated subset, under Terms of Use sections 1 and 2. No written permission has been sought or obtained. This is not a mirror, full table collection, dataset or republication in principal part.",
+      "limits": "Only selected 2023-24 national affiliation cells and one in-person attendance NET for selected religious groups. No prior waves, demographic/state/metro cross-tabs, full report prose, publisher chart images, full interactive, microdata, PRRI data or USRC data. Expansion requires a fresh principal-part/reuse review.",
+      "attribution": "Pew Research Center, Washington, D.C. (February 26, 2025). Use each source's title and direct URL, and the interactive's recommended citation and DOI when applicable.",
+      "notices": ["© 2026 Pew Research Center"],
+      "disclaimer": "Main Branch's selection and presentation are independent. Pew Research Center has not reviewed or endorsed this site.",
+      "datasetTerms": "Section 13 was reviewed but no survey dataset was used. If adding one, reassess its excerpt limits and carry its required disclaimer; do not treat these aggregate excerpts as permission to redistribute a dataset."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "tradition-precision",
+      "records": ["evangelical", "mainline", "historically-black"],
+      "sourcePanelId": "traditions",
+      "interactivePanelId": "national",
+      "interactiveStrings": {"evangelical": "23%", "mainline": "11%", "historically-black": "5%"},
+      "reportStrings": {"evangelical": "23.1%", "mainline": "11.5%", "historically-black": "5.4%"},
+      "scopeCheck": "Both are 2023-24 U.S. adults, adult affiliation, the three Pew Protestant traditions. Chapter 1 and Appendix B define the same denomination/race/born-again classification. Neither source is a percent-of-Protestants value here.",
+      "precedence": "Prefer the report's expressly published national decimals after matching wave, denominator and taxonomy. Preserve the independently published interactive strings as corroboration, not as re-rounded values. No unrounded microdata is available here to explain the 11.5 versus 11 display; do not assert ordinary rounding of 11.5 produces 11.",
+      "reviewStatus": "awaiting-second-review"
+    },
+    {
+      "id": "named-denominations",
+      "records": ["sbc", "abcusa", "nbc-usa", "nbca", "pnbc", "pcusa", "pca"],
+      "precedence": "Use p. 87 decimals, corroborated by p. 30; PNB Convention's <0.3% is on p. 30 only. Match interactive parentage against Appendix B. Names offered or volunteered in Appendix B alone never generate a numeric row.",
+      "reviewStatus": "awaiting-second-review"
+    }
+  ],
+  "omissions": [
+    "No all-family Independent Baptist estimate: retain evangelical 3% and historically Black <1% separately, only within the traditions lens. Never add those rounded/censored cells.",
+    "Orthodox Presbyterian, Cumberland Presbyterian and other Appendix-B-only names have no selected, reconciled national value and are not numeric rows.",
+    "Tradition panels select Baptist, Presbyterian where reported, and several major family intersections; other intersections are intentionally omitted, not combined into Other.",
+    "Deep detail is selected, not a total of its parent. Published Other rows are included only with their original tradition/family scope. No synthetic residual.",
+    "Attendance selects twelve published groups; no Baptist/Presbyterian practice inference, virtual measure, demographic rows or synthetic group estimates.",
+    "PRRI Christian nationalism and USRC counts remain link-only follow-ups; no reuse permission for their public data republication is claimed."
+  ],
+  "review": {
+    "status": "awaiting-second-review",
+    "instructions": "Reconcile every selected published string, qualifier, denominator and parentage against the source panels and record paths, especially tradition-precision. Initial transcription is not independent verification. Do not mark reviewed or enable auto-merge until the coordinator completes this reconciliation."
+  }
+}

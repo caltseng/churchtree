@@ -1,0 +1,17 @@
+{
+  "seriesId": "attendance",
+  "records": [
+    {"id":"attendance-us-adults","sourceLabel":"All U.S. adults","label":"All U.S. adults","populationId":"us-adults","estimate":{"status":"numeric","value":33,"precision":0,"published":"33%"},"source":{"panelId":"monthly-attendance","row":"All U.S. adults"}},
+    {"id":"attendance-evangelical","sourceLabel":"Evangelical","label":"Evangelical Protestant","populationId":"evangelical","estimate":{"status":"numeric","value":60,"precision":0,"published":"60%"},"source":{"panelId":"monthly-attendance","row":"Protestant > Evangelical"}},
+    {"id":"attendance-mainline","sourceLabel":"Mainline","label":"Mainline Protestant","populationId":"mainline","estimate":{"status":"numeric","value":34,"precision":0,"published":"34%"},"source":{"panelId":"monthly-attendance","row":"Protestant > Mainline"}},
+    {"id":"attendance-historically-black","sourceLabel":"Historically Black","label":"Historically Black Protestant","populationId":"historically-black","estimate":{"status":"numeric","value":46,"precision":0,"published":"46%"},"source":{"panelId":"monthly-attendance","row":"Protestant > Historically Black"}},
+    {"id":"attendance-catholic","sourceLabel":"Catholic","label":"Catholic","populationId":"catholic","estimate":{"status":"numeric","value":40,"precision":0,"published":"40%"},"source":{"panelId":"monthly-attendance","row":"Catholic"}},
+    {"id":"attendance-orthodox","sourceLabel":"Orthodox Christian","label":"Orthodox Christian","populationId":"orthodox","estimate":{"status":"numeric","value":37,"precision":0,"published":"37%"},"source":{"panelId":"monthly-attendance","row":"Orthodox Christian"}},
+    {"id":"attendance-latter-day-saint","sourceLabel":"Latter-day Saint (Mormon)","label":"Latter-day Saint (Mormon)","populationId":"latter-day-saint","estimate":{"status":"numeric","value":76,"precision":0,"published":"76%"},"source":{"panelId":"monthly-attendance","row":"Latter-day Saint (Mormon)"}},
+    {"id":"attendance-jewish","sourceLabel":"Jewish","label":"Jewish","populationId":"jewish","estimate":{"status":"numeric","value":23,"precision":0,"published":"23%"},"source":{"panelId":"monthly-attendance","row":"Other religions > Jewish"}},
+    {"id":"attendance-muslim","sourceLabel":"Muslim","label":"Muslim","populationId":"muslim","estimate":{"status":"numeric","value":46,"precision":0,"published":"46%"},"source":{"panelId":"monthly-attendance","row":"Other religions > Muslim"}},
+    {"id":"attendance-buddhist","sourceLabel":"Buddhist","label":"Buddhist","populationId":"buddhist","estimate":{"status":"numeric","value":17,"precision":0,"published":"17%"},"source":{"panelId":"monthly-attendance","row":"Other religions > Buddhist"}},
+    {"id":"attendance-hindu","sourceLabel":"Hindu","label":"Hindu","populationId":"hindu","estimate":{"status":"numeric","value":35,"precision":0,"published":"35%"},"source":{"panelId":"monthly-attendance","row":"Other religions > Hindu"}},
+    {"id":"attendance-unaffiliated","sourceLabel":"Religiously unaffiliated","label":"Religiously unaffiliated","populationId":"unaffiliated","estimate":{"status":"numeric","value":3,"precision":0,"published":"3%"},"source":{"panelId":"monthly-attendance","row":"Religiously unaffiliated"}}
+  ]
+}

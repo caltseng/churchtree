@@ -1,0 +1,163 @@
+# U.S. denominations data contract
+
+This is the route-local data foundation, not the public route or a timeline data
+set. The selected estimates come from Pew Research Center's 2023-24 Religious
+Landscape Study (RLS), published February 26, 2025. They measure **adult
+self-identification**, not membership rolls, institutional counts, children or
+historical lineage. Source provenance and reuse decisions are in
+[`sources.json`](sources.json).
+
+## Offline commands
+
+From the repository root, run:
+
+```text
+npm run test:us-denominations
+node us-denominations/data.cjs
+node us-denominations/data.cjs --ledger
+```
+
+The ledger resolves every cell to its source title, precise panel/column/row
+locator or complete interactive hierarchy, and emits each lens's subset
+mapping. It is generated from the same inputs rather than a second copy of the
+values. None of these commands downloads anything. The build and reader must
+also remain offline.
+
+## Inputs and API
+
+| File | Contract |
+| --- | --- |
+| `sources.json` | Study/wave, field period, geography, denominator and metric definitions, source revisions and hashes, table panels/columns, reuse notices, source-precedence decisions and omissions. |
+| `affiliation.json` | Stable record IDs, source and display labels, kind, explicit classification scope, exact published string, numeric/threshold/unavailable/suppressed status, precision, source panel and row. Interactive-only records include the full published path. |
+| `attendance.json` | Independent monthly in-person NETs. Each `populationId` identifies the adults answering that row, **not** a child estimate in an affiliation tree. |
+| `hierarchies.json` | Two trees referencing the same estimate records; shared broad panels plus lens-specific panels. Parent/child edges include a source and subset locator. An absent panel is a leaf. `coverage: selected` means **Published detail**, never a closed total. |
+| `data.cjs` | CommonJS loader, validation and pure data helpers for the later builder. No route controller or network access. |
+
+`loadData()` reads and validates these files. `records(data)` and
+`getRecord(data, id)` resolve each row's inherited `seriesId` into explicit
+`series` (metric and denominator), `study` (wave, geography, population and field
+period) and `checkedDate`. Common metadata is stored once, not copied into every
+input cell. IDs are also group IDs in any lens where that record occurs.
+
+`getChildren(data, lens, id)` returns independent rows ranked by numeric estimate
+descending, then thresholds, suppressed and unavailable rows, with ASCII ID
+tie-breaking for reproducibility. It does not mutate source order.
+`getAncestors(data, lens, id)` supplies root-to-parent IDs for later breadcrumbs.
+These functions reject IDs outside the selected lens; the later URL controller
+must choose its own documented fallback before calling them.
+
+`presentation(data, id)` exposes the exact `valueText`, nullable `barValue`,
+denominator ID/label, population label and fully resolved source. Render a bar
+**only when `barValue !== null`**. A threshold is not its upper bound, half its
+bound or zero. Unavailable/suppressed rows carry an explicit reason and no
+number. The population root has no plotted affiliation estimate. Keep national
+labels at every affiliation depth; attendance uses **Adults in each religious
+group**, with all-U.S. adults explicitly identified for its overall row.
+
+`deriveShare(data, lens, childId, parentId)` returns either `null` or an approximate
+whole-percent conditional value with denominator, both input IDs, formula and
+rounding disclosure. It requires an actual ancestor, compatible national
+affiliation series and numeric inputs. Whole-percent cells below 10% are too
+coarse for this optional ratio and are suppressed; thresholds, missing values,
+attendance and unrelated groups are excluded. Example: `sbc` within `baptist`
+is about 37%, calculated as 4.4 / 12.0 * 100 using rounded published inputs.
+This does not replace SBC's primary **4.4% of U.S. adults**.
+
+## Source reconciliation procedure
+
+Initial source transcription and matching are complete. **Independent second
+review is pending**; see `review` and each decision's `reviewStatus` in
+`sources.json`. Do not claim that validation of local inputs is independent
+verification against the publisher. Do not enable auto-merge until the
+coordinator completes that reconciliation.
+
+1. Open the [dated report](https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf).
+   Check its SHA256 against `sources.json`. Report printed p. 85 is PDF p. 86,
+   printed p. 86 is PDF p. 87, and printed p. 87 is PDF p. 88. Read the **Among
+   all U.S. adults > 2023-24** column only. Family totals match printed p. 25;
+   denominations match printed p. 30. The four additional denomination
+   thresholds, including Progressive National Baptist Convention, come from
+   p. 30, not p. 87. Retain `<0.3%` exactly.
+2. Open the [national interactive](https://www.pewresearch.org/religious-landscape-study/region/united-states/).
+   Explicitly select **2023-24** (its selector's `data-independent-var` is
+   `2024`). Follow the complete `source.path` of each selected cell, preserving
+   its string, whole-percent precision and family/tradition qualifiers. The
+   national broad values are Christian 62%, other religions 7%, unaffiliated
+   29%, and the separately published nonresponse note 1%; these are not a
+   synthetic 100% partition. Check broad Christian categories against
+   [chapter 1](https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-religious-identity/).
+3. Reconcile every denomination's family and tradition against
+   [Appendix B](https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/).
+   ABCUSA is mainline, SBC evangelical, and the three named National Baptist
+   conventions historically Black. PC(USA) is mainline and PCA evangelical.
+   Churches of Christ is a network/identity grouping, not a single institutional
+   denomination. Independent Baptist is a general identity classified by race;
+   its evangelical and historically Black estimates are distinct.
+4. Review `tradition-precision` explicitly: report p. 85 shows 23.1%, 11.5%,
+   5.4% of **all U.S. adults**. The interactive shows 23%, 11%, 5% for the same
+   wave, national denominator and Pew tradition taxonomy. The current
+   source-precedence decision selects the report's published decimals.
+   **11.5 does not ordinarily round to 11.** We have not used unrounded
+   microdata to explain the different displays and do not assert that the
+   interactive is obtained by rounding the report's cells. If a reviewer
+   cannot reconcile scope/precision, omit the affected estimate until resolved,
+   rather than silently changing its value or qualifier.
+5. Open [chapter 8's in-person attendance table](https://www.pewresearch.org/religion/2025/02/26/religious-attendance-and-congregational-involvement/#attending-religious-services-in-person)
+   (image 08-04, attachment 199166; report printed p. 165 / PDF p. 166). Check
+   the selected religious-group rows against **NET Monthly or more often**.
+   Read the [topline](https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_topline.pdf)
+   printed/PDF p. 23, `ATTENDPERRLS` (coded `red`), excluding weddings and
+   funerals. The overall NET is 33%; never derive the Black Protestant NET
+   by adding its rounded 33% weekly and 12% once/twice-monthly cells (the
+   published NET is 46%).
+6. Record the completed independent review and any corrections in
+   `sources.json`, including the checked revision, reviewed selection and
+   decisions; rerun the offline checks.
+
+Pew reports that 36% of Protestants had nonspecific denominational identities
+and were classified using race and/or born-again identification. See Appendix
+B's opening paragraphs. “Mainline” is a Pew survey classification, not a
+general synonym for a denomination family. Nondenominational and nonspecific
+Protestant responses remain separate, as explained in report p. 86's note.
+
+## Selected excerpt and reuse boundary
+
+[Pew Terms of Use](https://www.pewresearch.org/about/terms-and-conditions/),
+effective May 25, 2018, were checked November 22, 2026. The grant permitting
+attributed content use is **section 1**, citation is section 2, prohibited
+conduct is section 3, and survey dataset terms are section 13. The spec's
+reference to sections 2/3/13 does not replace section 1's principal-part limit.
+
+This selection retains one national wave's family column, selected denomination
+cells, selected interactive family intersections/response categories and one
+attendance NET for twelve groups, out of a 393-page report and a multi-wave,
+multi-geography database with many measures. We omit prior waves, demographic
+cross-tabs, most interactive details, report prose and publisher chart artwork.
+This is an original, attributed excerpt comparison, not a mirrored chart,
+catalogue or principal-part reproduction. No downloaded PDF, publisher image or
+microdata is checked into Git. No written permission has been obtained or
+claimed. Expansion needs renewed review of the Terms' excerpt boundary.
+
+The later route must carry **Pew Research Center** credit, source titles/direct
+links, publication date, field period, denominator, row qualifiers, coverage
+notes, links to classification/methods/instrument, and the applicable notice
+**© 2026 Pew Research Center** observed on the consulted website. It must not
+imply Pew endorsement; carry `reuse[].disclaimer`. If introducing respondent
+data, reassess section 13 and add its required dataset disclaimer. The
+[public-use-file description](https://www.pewresearch.org/dataset/2023-24-religious-landscape-study-rls-dataset/)
+states that detailed identity variables are omitted; no dataset was used here.
+
+## Publication boundary and downstream handoff
+
+This PR does not register `us-denominations` in the public directory allowlist.
+The later builder should intentionally emit only its browser-needed curated
+records, hierarchy and source/reuse context, along with static nested lists.
+Do **not** copy this directory recursively: `data.cjs`, `test-data.cjs`, the
+review tooling and source inputs are internal. Add a public-boundary test in
+the route PR when replacing this data-only boundary check.
+
+Do not sum displayed children, infer missing denominations from Appendix B,
+create an all-family Independent Baptist total, assign group attendance to a
+denomination, or join these contemporary estimates to the historical timeline.
+PRRI and U.S. Religion Census are deliberately excluded pending their separate
+scope and reuse decisions. No timeline, home page or site route is changed here.
