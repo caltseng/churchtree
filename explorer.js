@@ -1,12 +1,21 @@
 /* Graph selection is independent of SVG rendering so a future renderer can reuse it. */
 (() => {
     'use strict';
-    const d = window.CHURCHTREE_DATA, $ = id => document.getElementById(id);
-    if (!d || !window.d3) {
+    const data = window.CHURCHTREE_DATA, $ = id => document.getElementById(id);
+    if (!data || !window.d3) {
         $('graph').textContent = 'Unable to load graph data or D3. Check your connection and rebuild data/data.js.';
         return;
     }
-    const nodes = new Map(d.nodes.map(n => [n.id, n])), sources = new Map(d.sources.map(s => [s.id, s])), citations = new Map(d.citations.map(c => [c.id, c]));
+    // Limit the Church History view while keeping the full catalog available to other views.
+    const excludedIds = new Set(['church-of-jesus-christ-of-latter-day-saints', 'jehovahs-witnesses']);
+    const visibleNodes = data.nodes.filter(n => !excludedIds.has(n.id));
+    const nodes = new Map(visibleNodes.map(n => [n.id, n]));
+    const d = {
+        ...data,
+        nodes: visibleNodes,
+        edges: data.edges.filter(e => nodes.has(e.from_id) && nodes.has(e.to_id)),
+    };
+    const sources = new Map(d.sources.map(s => [s.id, s])), citations = new Map(d.citations.map(c => [c.id, c]));
     const families = [...new Set(d.nodes.map(n => n.tradition_family || 'Other'))].sort();
     let level = 0, family = '', selected = null, focus = null, layout = 'timeline', period = null, timelineControl = null, lastTimeline = 'timeline';
     let graphControl=null,graphViewKey='';
