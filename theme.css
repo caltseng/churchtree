@@ -1,4 +1,6 @@
 /* Shared semantic colors; contract: docs/design-language.md */
+@import url("theme-controls.css");
+
 :root {
   color-scheme: light;
   --ct-text: #253b36;

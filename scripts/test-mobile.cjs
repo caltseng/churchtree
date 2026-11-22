@@ -15,7 +15,7 @@ const server=require('./test-server.cjs')(root);
   assert.equal(await page.locator('#splitter').isVisible(),false);
   const searchToggle=page.getByRole('button',{name:'Search church history',exact:true});
   assert(!await page.locator('#search-form').isVisible(),'Search starts collapsed');
-  const headerBefore=await page.locator('header').evaluate(el=>el.clientHeight);
+  const graphBefore=await page.locator('#graph').boundingBox();
   await page.screenshot({path:path.join(output,`mobile-search-collapsed-${size.width}.png`)});
   if(size.width===390){
    await page.getByRole('button',{name:'Zoom in',exact:true}).tap();
@@ -38,8 +38,8 @@ const server=require('./test-server.cjs')(root);
   assert.equal(await searchToggle.getAttribute('aria-expanded'),'true');
   assert(await page.locator('#search').evaluate(el=>el===document.activeElement),'Opening search focuses input');
   assert(await page.locator('#search').evaluate(el=>parseFloat(getComputedStyle(el).fontSize)>=16),'Input avoids iOS focus zoom');
-  assert.equal(await page.locator('#search-form').getByRole('button',{name:'Find',exact:true}).evaluate(el=>getComputedStyle(el).fontSize),await page.locator('#mobile-settings-toggle').evaluate(el=>getComputedStyle(el).fontSize));
-  assert(await page.locator('header').evaluate(el=>el.clientHeight)>=headerBefore+44,'Collapsed search saves at least one touch-target row');
+  assert.equal(await page.locator('#search-form').getByRole('button',{name:'Find',exact:true}).evaluate(el=>getComputedStyle(el).fontSize),'13px');
+  assert.deepEqual(await page.locator('#graph').boundingBox(),graphBefore,'Search does not resize the timeline');
   await page.locator('#search').fill('OPC');
   await page.screenshot({path:path.join(output,`mobile-search-expanded-${size.width}.png`)});
   await page.keyboard.press('Escape');
@@ -51,22 +51,25 @@ const server=require('./test-server.cjs')(root);
   if(size.width===390){
    await searchToggle.tap();
    await page.setViewportSize({width:1280,height:800});await page.waitForTimeout(200);
-   assert(await page.locator('#search').isVisible());assert(!await searchToggle.isVisible());
+   assert(await page.locator('#search').isVisible());assert(await searchToggle.isVisible());
    await page.locator('#search').focus();
    await page.setViewportSize(size);await page.waitForTimeout(200);
-   assert(!await page.locator('#search-form').isVisible());
-   assert(await searchToggle.evaluate(el=>el===document.activeElement),'Resizing must not strand focus inside hidden search');
+   assert(await page.locator('#search').evaluate(el=>el===document.activeElement),'Resizing preserves focus in the open search');
+   await page.keyboard.press('Escape');
    assert.equal(await page.locator('#search').inputValue(),'OPC');
   }
   assert.equal(await page.locator('#branch').isVisible(),false,'Filters start collapsed');
-  const compactHeight=await page.locator('nav').evaluate(el=>el.clientHeight);
-  await page.getByRole('button',{name:'Filters / View',exact:true}).tap();
+  const filters=page.getByRole('button',{name:'Filters',exact:true});
+  async function openFilters(){if(await filters.getAttribute('aria-expanded')==='false')await filters.tap();}
+  async function closeFilters(){if(await filters.getAttribute('aria-expanded')==='true')await filters.tap();}
+  await page.getByRole('button',{name:'Filters',exact:true}).tap();
   assert(await page.locator('#branch').isVisible());
   await page.locator('#branch').focus();await page.keyboard.press('Escape');
   assert.equal(await page.locator('#branch').isVisible(),false);
   assert.equal(await page.locator('#mobile-settings-toggle').evaluate(el=>el===document.activeElement),true);
-  await page.getByRole('button',{name:'Filters / View',exact:true}).tap();
-  assert(compactHeight<await page.locator('nav').evaluate(el=>el.clientHeight),'Collapsed filters occupy less vertical space');
+  await page.getByRole('button',{name:'Filters',exact:true}).tap();
+  assert.deepEqual(await page.locator('#graph').boundingBox(),graphBefore,'Filters do not resize the timeline');
+  assert(await page.locator('#view-settings').evaluate(el=>el.scrollWidth<=el.clientWidth),'Filter controls fit their panel');
   await page.screenshot({path:path.join(output,`mobile-settings-${size.width}x${size.height}.png`)});
   await page.locator('#branch').selectOption('Presbyterian');
   assert.equal(await page.getByRole('button',{name:'Vertical',exact:true}).getAttribute('aria-pressed'),'true');
@@ -82,8 +85,10 @@ const server=require('./test-server.cjs')(root);
     await client.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(80);
    }
    for(const orientation of ['Vertical','Horizontal'])for(const branch of ['Presbyterian','']){
+    await openFilters();
     await page.locator('#branch').selectOption(branch);
     await page.getByRole('button',{name:orientation,exact:true}).tap();
+    await closeFilters();
     await page.locator('#graph').scrollIntoViewIfNeeded();await page.waitForTimeout(300);
     const box=await page.locator('#graph').boundingBox(),x=box.x+box.width*.58,y=box.y+Math.min(box.height*.6,180);
     const a=[{id:0,x:x-25,y:y-25},{id:1,x:x+25,y:y+25}],b=[{id:0,x:x-55,y:y-55},{id:1,x:x+55,y:y+55}];
@@ -106,17 +111,20 @@ const server=require('./test-server.cjs')(root);
     await gesture([{id:0,x,y}],[{id:0,x:x-65,y:y-65}]);
     const panned=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain);assert(Math.max(...panned.map((v,i)=>Math.abs(v-domain[i])))>.1,orientation+' '+branch+' One-finger drag must pan time '+JSON.stringify({domain,panned}));
    }
-   await page.locator('#branch').selectOption('Presbyterian');await page.getByRole('button',{name:'Vertical',exact:true}).tap();
+   await openFilters();await page.locator('#branch').selectOption('Presbyterian');await page.getByRole('button',{name:'Vertical',exact:true}).tap();
   }
+  await closeFilters();
   const start=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot());
   await page.getByRole('button',{name:'Zoom in',exact:true}).tap();await page.waitForTimeout(350);
   const afterZoom=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot());assert(afterZoom.domain[1]-afterZoom.domain[0]<start.domain[1]-start.domain[0],'Touch zoom must narrow the visible date range');
   const beforePan=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain[0]);
   await page.getByRole('button',{name:'Later →',exact:true}).tap();await page.waitForTimeout(350);
   assert((await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain[0]))>beforePan);
+  await openFilters();
   await page.getByRole('button',{name:'Horizontal',exact:true}).tap();
   await page.getByRole('button',{name:'Date range',exact:true}).tap();assert(await page.locator('#year-from').isVisible());
   await page.getByRole('button',{name:'Date range',exact:true}).tap();assert(!await page.locator('#year-from').isVisible());
+  await closeFilters();
   if(size.width===390){
    await page.locator('#graph').scrollIntoViewIfNeeded();const box=await page.locator('#graph').boundingBox();const client=await context.newCDPSession(page);const x=box.x+box.width*.86,y=box.y+box.height*.55;
    const before=await page.locator('#graph').evaluate(el=>el.scrollLeft);
@@ -144,13 +152,13 @@ const server=require('./test-server.cjs')(root);
   await page.getByRole('button',{name:'Details',exact:true}).tap();assert(await dialog.isVisible());
   if(size.width===390){
    await page.setViewportSize({width:1280,height:800});await page.waitForTimeout(200);
-   assert(!await dialog.isVisible());assert(await page.locator('#search').isVisible(),'Desktop search remains visible');assert(!await searchToggle.isVisible());assert(await page.locator('#branch').isVisible(),'Desktop exposes settings');assert(await page.locator('#splitter').isVisible());assert.equal(await page.locator('#details').evaluate(el=>el.parentElement.tagName),'MAIN');
+   assert(!await dialog.isVisible());assert(await searchToggle.isVisible());assert(!await page.locator('#branch').isVisible(),'Desktop filters stay collapsed');assert(await page.locator('#splitter').isVisible());assert.equal(await page.locator('#details').evaluate(el=>el.parentElement.tagName),'MAIN');
    await page.setViewportSize(size);await page.waitForTimeout(200);assert(!await page.locator('#search-form').isVisible(),'Returning to mobile collapses search');assert(!await page.locator('#branch').isVisible(),'Returning to mobile collapses settings');assert(!await dialog.isVisible());
    await page.getByRole('button',{name:'Details',exact:true}).tap();assert(await dialog.isVisible());
   }
   await page.getByRole('button',{name:'Back to graph',exact:true}).tap();
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
-  if(await page.locator('#branch').isVisible())await page.getByRole('button',{name:'Filters / View',exact:true}).tap();
+  if(await page.locator('#branch').isVisible())await page.getByRole('button',{name:'Filters',exact:true}).tap();
   await page.waitForTimeout(250);
   await page.screenshot({path:path.join(output,`mobile-graph-${size.width}x${size.height}.png`)});
   assert.deepEqual(errors,[]);await context.close();console.log(`Mobile ${size.width}×${size.height}: passed`);

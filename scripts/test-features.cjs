@@ -1,5 +1,15 @@
 const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const repo=path.resolve(__dirname,'..'),root=process.env.CHURCHTREE_TEST_ROOT?path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT):path.join(repo,'dist'),server=require('./test-server.cjs')(root),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
+async function openAppearance(page) {
+ const trigger = page.getByRole('button', {name:'Site menu', exact:true});
+ assert.equal(await trigger.count(), 1);
+ assert.equal(await page.getByRole('button', {name:'Appearance', exact:true}).count(), 0);
+ await trigger.click();
+ const dialog = page.getByRole('dialog', {name:'Site menu', exact:true});
+ await dialog.getByRole('button', {name:'Settings', exact:true}).click();
+ assert(await page.getByRole('dialog', {name:'Settings', exact:true}).getByRole('heading', {name:'Appearance'}).isVisible());
+ return trigger;
+}
 function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((sum,v,i)=>sum+v*[.2126,.7152,.0722][i],0);}
 (async()=>{let browser;try{
  await new Promise(r=>server.listen(0,'127.0.0.1',r));browser=await chromium.launch({...(process.env.PLAYWRIGHT_CHANNEL==='chromium'?{}:{channel:process.env.PLAYWRIGHT_CHANNEL||'msedge'}),headless:true});
@@ -9,10 +19,10 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   assert.equal((await page.goto(base+'/')).status(),200);assert.equal(await page.locator('.tool-card').count(),4);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   for(const theme of ['parchment','slate','ink']){
-   await page.locator('#theme-open').click();await page.locator(`input[name="theme"][value="${theme}"]`).check();
+   await openAppearance(page);await page.locator(`input[name="theme"][value="${theme}"]`).check();
    assert.equal(await page.locator('html').getAttribute('data-theme'),theme);
-   assert(await page.locator('#theme-dialog').evaluate(el=>el.scrollWidth<=el.clientWidth+1));
-   await page.locator('#theme-close').click();
+   assert(await page.locator('#site-menu').evaluate(el=>el.scrollWidth<=el.clientWidth+1));
+   await page.getByRole('button',{name:'Close',exact:true}).click();
    const colors=await page.evaluate(()=>({text:getComputedStyle(document.body).color,background:getComputedStyle(document.documentElement).backgroundColor}));const a=luminance(colors.text),b=luminance(colors.background);assert((Math.max(a,b)+.05)/(Math.min(a,b)+.05)>=4.5,'Main reading colors must have sufficient contrast');
   }
   await page.reload();assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
@@ -20,7 +30,29 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   await page.locator('.tool-card[data-id="church-history"]').click();await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
   await page.getByRole('link',{name:'Main Branch home',exact:true}).click();assert.equal(await page.locator('.tool-card').count(),4);
   await page.locator('.tool-card[data-id="westminster"]').click();assert.match(page.url(),/\/wcf\/$/);assert.equal(await page.locator('.passage').count(),172);assert(await page.locator('#chapter-1').isVisible());assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
-  await page.goto(base+'/');await page.locator('#theme-open').click();await page.locator('#theme-reset').click();await page.locator('#theme-close').click();assert.equal(await page.locator('html').getAttribute('data-theme'),'parchment');
+  for (const route of ['/church-history/', '/wcf/', '/wsc/', '/wlc/']) {
+   assert.equal((await page.goto(base+route)).status(),200);
+   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),route+' fits the viewport');
+   const trigger = await openAppearance(page);
+   assert(await page.locator('input[name="theme"][value="ink"]').isChecked());
+   await page.getByRole('button',{name:'Back to menu'}).click();
+   const settings = page.getByRole('button',{name:'Settings',exact:true});
+   assert(await settings.evaluate(el=>el===document.activeElement));
+   await page.keyboard.press('Enter');
+   if(size.width===320 || size.width===1440) await page.screenshot({path:path.join(output,'settings-'+route.split('/')[1]+'-'+size.width+'.png')});
+   await page.keyboard.press('Escape');
+   assert(!await page.locator('#site-menu').isVisible());
+   await page.waitForFunction(()=>document.activeElement.classList.contains('site-menu-trigger'));
+   await trigger.press('Enter');
+   await page.getByRole('link',{name:'All explorations',exact:true}).click();
+   await page.waitForURL('**/#explore');
+   assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
+  }
+  await openAppearance(page);
+  await page.locator('#theme-reset').click();
+  await page.getByRole('button',{name:'Close',exact:true}).click();
+  await page.reload();
+  assert.equal(await page.locator('html').getAttribute('data-theme'),'parchment');
   await page.screenshot({path:path.join(output,`home-${size.width}.png`),fullPage:true});
   assert(await page.locator('.main-branch-symbol').evaluateAll(images=>images.length>0&&images.every(img=>img.complete&&img.naturalWidth>0)));assert.match(await page.locator('link[rel=icon]').getAttribute('href'),/main-branch\.svg$/);await page.locator('.growing-note a').click();await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   assert.deepEqual(errors,[]);await page.close();console.log(`Landing, themes, links and logos ${size.width}px: passed`);

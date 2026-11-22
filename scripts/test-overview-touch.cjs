@@ -2,9 +2,9 @@ const assert=require('node:assert/strict'),fs=require('fs'),path=require('path')
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const repo=path.resolve(__dirname,'..'),root=path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT||'.'),server=require('./test-server.cjs')(root),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
 async function selectOverview(page){
-  await page.getByRole('button',{name:'Filters / View',exact:true}).tap();
+  await page.getByRole('button',{name:'Filters',exact:true}).tap();
   await page.locator('#layout').selectOption('lineage');
-  await page.getByRole('button',{name:'Filters / View',exact:true}).tap();
+  await page.getByRole('button',{name:'Filters',exact:true}).tap();
   await page.locator('[data-id="family:Catholic"]').waitFor();
 }
 (async()=>{let browser;try{
@@ -35,10 +35,13 @@ async function selectOverview(page){
    for(let i=0;i<4;i++)await gesture(b,a);assert.equal(await page.evaluate(()=>CHURCHTREE_GRAPH.snapshot().scale),.5,'Repeated reverse pinch has a lower bound');
   }
   await page.reload();await selectOverview(page);
-  const header=await page.locator('#scope-title').boundingBox(),filter=await page.locator('#mobile-settings-toggle').boundingBox(),details=await page.getByRole('button',{name:'Details',exact:true}).boundingBox();
-  assert.equal(await page.locator('#scope-title').innerText(),'Major branches');assert(Math.abs(header.y+header.height/2-filter.y-filter.height/2)<3);assert(Math.abs(details.y-filter.y)<3,'Scope and action buttons share one row');
-  assert(await page.locator('#scope-title').evaluate(el=>el.scrollWidth<=el.clientWidth),'Major branches title fits without truncation');
-  await page.screenshot({path:path.join(output,`overview-compact-${size.width}.png`)});
+  const header=page.locator('.explorer-header');
+  const controls=header.getByRole('button');
+  assert.equal(await controls.count(),4,'Search, Filters, Details and Site menu share the header');
+  const boxes=await Promise.all((await controls.all()).map(button=>button.boundingBox()));
+  assert(boxes.every(box=>Math.abs(box.y-boxes[0].y)<3 && box.width>=44),'Header actions fit on one row');
+  assert(await page.locator('.graph-status').evaluate(el=>el.offsetHeight<=1),'Overview title takes no space above graph');
+  await page.screenshot({path:path.join(output,'review-overview-header-'+size.width+'.png')});
   await page.getByRole('button',{name:'Search church history',exact:true}).tap();await page.locator('#search').fill('OPC');
   const close=page.getByRole('button',{name:'Close search',exact:true});assert(await close.isVisible());if(size.width===390){await close.focus();await page.keyboard.press('Enter');}else await close.tap();assert(!await page.locator('#search-form').isVisible());assert.equal(await page.locator('#search').inputValue(),'OPC');assert(await page.locator('#mobile-search-toggle').evaluate(el=>el===document.activeElement));
   await page.getByRole('button',{name:'Search church history',exact:true}).tap();assert(await page.getByRole('button',{name:/^OPC ·/}).isVisible());await page.keyboard.press('Escape');

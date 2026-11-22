@@ -7,7 +7,12 @@ const root = process.env.CHURCHTREE_TEST_ROOT ? path.resolve(repoRoot, process.e
 const output = path.join(repoRoot, '.tmp', 'browser-check');
 fs.mkdirSync(output, { recursive: true });
 const server=require('./test-server.cjs')(root);
+async function openFilters(page) {
+    const button = page.getByRole("button",{name:"Filters",exact:true});
+    if (await button.getAttribute("aria-expanded") === "false") await button.click();
+}
 async function setView(page,value){
+    await openFilters(page);
     await page.locator('#layout').selectOption(value==='lineage'?'lineage':'timeline');
     if(value!=='lineage')await page.getByRole('button',{name:value==='horizontal'?'Horizontal':'Vertical',exact:true}).click();
 }
@@ -50,6 +55,7 @@ async function noOverlap(page, selector = '.node') {
         await page.getByRole('button', { name: 'Zoom in', exact: true }).click();
         await page.waitForFunction(() => CHURCHTREE_TIMELINE.snapshot().scale >= 1.7);
         await assertTimelineDetailsPreserveView(page);
+        await openFilters(page);
         await page.getByRole('button', { name: 'Reset', exact: true }).click();
         assert.deepEqual(await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot().domain), defaultDomain);
         assert.equal(await page.locator('#layout').inputValue(), 'timeline');
@@ -94,8 +100,8 @@ async function noOverlap(page, selector = '.node') {
             n.further_reading = [{ title: 'Article fixture', snippet: 'Article context fixture', url: 'https://example.com/article' }];
             n.key_documents = [{ title: 'Document fixture', year: 1973, significance: 'Document context fixture', url: 'https://example.com/document', citations: [] }];
         });
-        assert(await page.locator('#search').isVisible(),'Desktop search stays expanded');
-        assert(!await page.locator('#mobile-search-toggle').isVisible());
+        assert(!await page.locator('#search').isVisible(),'Desktop search starts collapsed');
+        await page.getByRole('button',{name:'Search church history'}).click();
         await page.locator('#search').fill('PCA');
         await page.getByRole('button', { name: /^PCA ·/ }).click();
         assert.match(await page.locator('#details').innerText(), /Why it formed/);
@@ -113,6 +119,7 @@ async function noOverlap(page, selector = '.node') {
         await noOverlap(page);
         const families = await page.locator('#branch option').evaluateAll(options => options.map(o => o.value).filter(Boolean));
         for (const family of families) {
+            await openFilters(page);
             await page.locator('#branch').selectOption(family);
             await setView(page,'lineage');
             await page.getByRole('button',{name:'Zoom out',exact:true}).click();
@@ -120,6 +127,7 @@ async function noOverlap(page, selector = '.node') {
             await page.getByRole('button', { name: 'Zoom in', exact: true }).click();
             await noOverlap(page);
         }
+        await openFilters(page);
         await page.locator('#branch').selectOption('Baptist');
         await setView(page,'timeline');
         const initial = await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot());
@@ -162,9 +170,11 @@ async function noOverlap(page, selector = '.node') {
         await noOverlap(page);
         assert((await page.locator('.horizontal-node .date').allTextContents()).every(label => !/(entries|records)/.test(label)));
         await page.screenshot({ path: path.join(output, 'review-horizontal.png') });
+        await openFilters(page);
         await page.getByRole('button', { name: 'Reset', exact: true }).click();
         assert.equal((await page.evaluate(() => CHURCHTREE_TIMELINE.snapshot())).scale, 1);
         await page.screenshot({ path: path.join(output, 'review-horizontal-initial.png') });
+        await openFilters(page);
         await page.locator('#branch').selectOption('');
         await noOverlap(page);
         await page.locator('#graph').evaluate(el=>el.scrollTop=350);
@@ -174,12 +184,15 @@ async function noOverlap(page, selector = '.node') {
         assert(axisBox.y<graphBox.y+50,'Dates must remain visible while scrolling through traditions');
         await page.screenshot({ path: path.join(output, 'review-horizontal-all.png') });
         await setView(page,'timeline');
+        await page.getByRole('button',{name:'Search church history'}).click();
         await page.locator('#search').fill('OPC');
         await page.getByRole('button',{name:/^OPC ·/}).click();
         await page.waitForTimeout(400);
         const revealDomain=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain);
         assert(revealDomain[0]<1936&&revealDomain[1]>1936,'Search must bring the selected date into view');
         assert(await page.locator('.time-node.selected').count());
+        await openFilters(page);
+        await page.getByRole('button',{name:'Date range',exact:true}).click();
         await page.locator('#year-from').fill('2000');
         await page.locator('#year-to').fill('1800');
         await page.getByRole('button',{name:'Apply',exact:true}).click();
@@ -194,9 +207,11 @@ async function noOverlap(page, selector = '.node') {
         await page.mouse.wheel(0, -300);
         await page.waitForTimeout(300);
         await page.waitForFunction(span=>{const d=CHURCHTREE_TIMELINE.snapshot().domain;return d[1]-d[0]<span*.99;},verticalBefore);
+        await openFilters(page);
         await page.locator('#branch').selectOption('');
         await noOverlap(page);
         await setView(page,'lineage');
+        await openFilters(page);
         await page.getByRole('button', { name: 'Reset', exact: true }).click();
         await page.setViewportSize({ width: 1280, height: 800 });
         await page.waitForTimeout(180);
@@ -210,19 +225,26 @@ async function noOverlap(page, selector = '.node') {
         await page.screenshot({ path: path.join(output, 'review-desktop.png') });
         await setView(page,'horizontal');
         await setView(page,'lineage');
+        await openFilters(page);
         await page.locator('#branch').selectOption('');
         await page.getByRole('button',{name:'Presbyterian',exact:true}).click();
-        assert.equal(await page.getByRole('button',{name:'Horizontal',exact:true}).getAttribute('aria-pressed'),'true','Drill-in should preserve the last timeline orientation');
+        assert.equal(await page.locator('#orientation-horizontal').getAttribute('aria-pressed'),'true','Drill-in should preserve the last timeline orientation');
+        await openFilters(page);
         await page.locator('#branch').selectOption('Catholic');
         assert(await page.getByRole('button',{name:'Roman Catholic Church',exact:true}).count() || await page.getByRole('button',{name:'Catholic Church',exact:true}).count());
         assert(await page.getByRole('button',{name:'Zoom in',exact:true}).isDisabled());
         for(const width of [1100,1440]){
             await page.setViewportSize({width,height:800});await page.waitForTimeout(180);
             assert(await page.locator('#splitter').isVisible(),'Desktop split view must remain available');
-            assert(!await page.locator('#mobile-open-details').isVisible());
+            assert(await page.locator('#mobile-open-details').isVisible());
             assert.equal(await page.locator('#details').evaluate(el=>el.parentElement.tagName),'MAIN');
             assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
         }
+        const info=page.getByRole('button',{name:'Details',exact:true});
+        await info.click();
+        assert(!await page.locator('#details').isVisible());
+        await info.click();
+        assert(await page.locator('#details').isVisible());
         assert.deepEqual(errors, []);
         console.log(JSON.stringify({ passed: true, families: families.length, clustered: initial.clusters.length, zoomed: zoomed.clusters.length, collapsed: collapsed.clusters.length, browserErrors: errors }));
     }
