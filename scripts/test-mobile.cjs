@@ -14,6 +14,16 @@ const server=require('./test-server.cjs')(root);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Page must fit the mobile width');
   assert.equal(await page.locator('#splitter').isVisible(),false);
   assert(await page.locator('#mobile-pan button').evaluateAll(buttons=>buttons.every(button=>getComputedStyle(button).whiteSpace==='nowrap'&&button.scrollWidth<=button.clientWidth)),'Time navigation fits on one line');
+  async function assertTimelineControlsFit(){
+   const controls=await page.locator('.graph-tools').boundingBox();
+   const legend=await page.locator('.legend').boundingBox();
+   assert(controls.y+controls.height<=size.height,'Timeline controls fit in the first viewport');
+   assert(legend.y>=size.height,'Timeline legend follows the first viewport');
+   const [earlier,later,zoom]=await Promise.all(['#time-earlier','#time-later','#zoom-in'].map(id=>page.locator(id).boundingBox()));
+   assert.equal(earlier.y,later.y,'Time navigation buttons align');
+   assert.equal(later.y,zoom.y,'Time navigation and zoom buttons align');
+  }
+  await assertTimelineControlsFit();
   const searchToggle=page.getByRole('button',{name:'Search church history',exact:true});
   assert(!await page.locator('#search-form').isVisible(),'Search starts collapsed');
   const graphBefore=await page.locator('#graph').boundingBox();
@@ -119,13 +129,15 @@ const server=require('./test-server.cjs')(root);
   await page.getByRole('button',{name:'Zoom in',exact:true}).tap();await page.waitForTimeout(350);
   const afterZoom=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot());assert(afterZoom.domain[1]-afterZoom.domain[0]<start.domain[1]-start.domain[0],'Touch zoom must narrow the visible date range');
   const beforePan=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain[0]);
-  await page.getByRole('button',{name:'Later →',exact:true}).tap();await page.waitForTimeout(350);
+  await page.getByRole('button',{name:'Later',exact:true}).tap();await page.waitForTimeout(350);
   assert((await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain[0]))>beforePan);
   await openFilters();
   await page.getByRole('button',{name:'Horizontal',exact:true}).tap();
   await page.getByRole('button',{name:'Date range',exact:true}).tap();assert(await page.locator('#year-from').isVisible());
   await page.getByRole('button',{name:'Date range',exact:true}).tap();assert(!await page.locator('#year-from').isVisible());
   await closeFilters();
+  await page.evaluate(()=>scrollTo(0,0));
+  await assertTimelineControlsFit();
   if(size.width===390){
    await page.locator('#graph').scrollIntoViewIfNeeded();const box=await page.locator('#graph').boundingBox();const client=await context.newCDPSession(page);const x=box.x+box.width*.86,y=box.y+box.height*.55;
    const before=await page.locator('#graph').evaluate(el=>el.scrollLeft);
