@@ -1,0 +1,643 @@
+[
+  {
+    "id": "national-missionary-baptist-convention-of-america",
+    "name": "National Missionary Baptist Convention of America",
+    "aliases": [
+      "NMBCA",
+      "National Missionary Baptist Convention",
+      "National Missionary Baptist Convention, Inc."
+    ],
+    "short_label": "National Missionary Baptist (NMBCA)",
+    "kind": "denomination",
+    "start_year": 1988,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "Dallas, Texas",
+    "tradition_family": "Baptist",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "summary": "A historically Black Baptist convention organized in Dallas in 1988 after a dispute over who would direct religious education and publishing.",
+    "profile_scope": "This U.S. profile covers the convention organized in Dallas in 1988, its early education work and selected evidence of its continuation. It is distinct from National Baptist Convention of America (NBCA), National Baptist Convention, USA, Inc. (NBCUSA), and Progressive National Baptist Convention (PNBC).",
+    "formation_narrative": "At its 1988 session in San Antonio, the National Baptist Convention of America decided to organize a Christian education congress under its own officers. Contemporary reporting describes a dispute with the publishing house led by the Boyd family over control of the congress, curriculum and funds. Leaders who backed continued cooperation with the publishing house and its congress met in Dallas and organized the National Missionary Baptist Convention of America, with S. M. Lockridge as its first president. The National Baptist Convention of America continued separately.",
+    "distinctives": [
+      "Historically Black Baptist convention",
+      "Christian education and evangelism"
+    ],
+    "core_beliefs": [
+      "In its public mission, the convention centers its cooperation on proclaiming the Christian gospel and equipping member churches for evangelism and Christian education.",
+      "Its mission calls on member churches to use spiritual gifts, leadership and shared resources to build up congregations and serve their communities. Its published priorities include benevolence and outreach."
+    ],
+    "key_figures": [
+      {
+        "name": "Shadrach Meshach Lockridge",
+        "role": "First president",
+        "summary": "The San Diego pastor led the new convention and explained its aims ahead of the planned 1989 national session.",
+        "url": "https://www.latimes.com/archives/la-xpm-1996-02-24-me-39550-story.html",
+        "citations": [
+          "cite-us-coverage-baptist-nmbca-lockridge",
+          "cite-us-coverage-baptist-nmbca-session"
+        ]
+      },
+      {
+        "name": "E. Edward Jones",
+        "role": "President of the continuing NBCA during the dispute",
+        "summary": "He publicly argued for convention officers to direct their own congress and curriculum.",
+        "url": "https://www.washingtonpost.com/archive/local/1988/12/03/black-baptist-group-splits-over-control-of-education/48cb198e-6e81-4556-9266-ae1ae906e82c/",
+        "citations": [
+          "cite-us-coverage-baptist-nmbca-dispute"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1988,
+        "label": "Organized in Dallas after the NBCA education and publishing dispute",
+        "citations": [
+          "cite-us-coverage-baptist-nmbca-about",
+          "cite-us-coverage-baptist-nbca-annuals",
+          "cite-us-coverage-baptist-nmbca-dispute"
+        ]
+      },
+      {
+        "year": 1989,
+        "label": "First national session under the new structure announced for Chicago",
+        "citations": [
+          "cite-us-coverage-baptist-nmbca-session"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "NMBCA mission and vision",
+        "year": null,
+        "significance": "The convention’s public statement of ministry priorities, including Christian education and congregational support.",
+        "url": "https://www.nmbca.org/who-we-are",
+        "citations": [
+          "cite-us-coverage-baptist-nmbca-about"
+        ]
+      }
+    ],
+    "ending_narrative": "The convention continues to organize national sessions and work through member churches, boards and auxiliaries. Its registration materials include separate forms for the Women’s Auxiliary. Its public mission continues to emphasize congregational support, education and outreach.",
+    "successor_ids": [],
+    "size_estimate": "2,428,820 U.S. adherents across 7,564 congregations (2020 U.S. Religion Census)",
+    "further_reading": [
+      {
+        "title": "National Baptist Convention of America Annuals",
+        "url": "https://sbhla.org/digital-resources/national-baptist-america-annuals/",
+        "snippet": "The archive identifies the parent convention and links to its historical proceedings.",
+        "citations": [
+          "cite-us-coverage-baptist-nbca-annuals"
+        ]
+      },
+      {
+        "title": "Contemporary reporting on the education dispute",
+        "url": "https://www.washingtonpost.com/archive/local/1988/12/03/black-baptist-group-splits-over-control-of-education/48cb198e-6e81-4556-9266-ae1ae906e82c/",
+        "snippet": "The article records why leaders on both sides sought different arrangements for the congress.",
+        "citations": [
+          "cite-us-coverage-baptist-nmbca-dispute"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "summary": [
+        "cite-us-coverage-baptist-nmbca-about",
+        "cite-us-coverage-baptist-nbca-annuals",
+        "cite-us-coverage-baptist-nmbca-dispute"
+      ],
+      "start_year": [
+        "cite-us-coverage-baptist-nmbca-about",
+        "cite-us-coverage-baptist-nmbca-dispute"
+      ],
+      "profile_scope": [
+        "cite-us-coverage-baptist-nmbca-about",
+        "cite-us-coverage-baptist-nbca-annuals",
+        "cite-us-coverage-baptist-usrc-302"
+      ],
+      "formation_narrative": [
+        "cite-us-coverage-baptist-nbca-annuals",
+        "cite-us-coverage-baptist-nmbca-dispute",
+        "cite-us-coverage-baptist-nmbca-lockridge"
+      ],
+      "core_beliefs": [
+        "cite-us-coverage-baptist-nmbca-about"
+      ],
+      "distinctives": [
+        "cite-us-coverage-baptist-nmbca-about"
+      ],
+      "ending_narrative": [
+        "cite-us-coverage-baptist-nmbca-about",
+        "cite-us-coverage-baptist-nmbca-registration"
+      ],
+      "size_estimate": [
+        "cite-us-coverage-baptist-usrc-302"
+      ]
+    },
+    "citations": [
+      "cite-us-coverage-baptist-nmbca-about",
+      "cite-us-coverage-baptist-nbca-annuals",
+      "cite-us-coverage-baptist-nmbca-dispute",
+      "cite-us-coverage-baptist-usrc-302",
+      "cite-us-coverage-baptist-nmbca-lockridge",
+      "cite-us-coverage-baptist-nmbca-registration",
+      "cite-us-coverage-baptist-nmbca-session"
+    ]
+  },
+  {
+    "id": "national-association-of-free-will-baptists",
+    "name": "National Association of Free Will Baptists",
+    "aliases": [
+      "NAFWB",
+      "Free Will Baptists",
+      "National Association of Free Will Baptists, Inc."
+    ],
+    "short_label": "Free Will Baptists (NAFWB)",
+    "kind": "denomination",
+    "start_year": 1935,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "Nashville, Tennessee",
+    "tradition_family": "Baptist",
+    "ecclesial_orientation": "evangelical",
+    "current_status": "active",
+    "summary": "A fellowship formed in 1935 when southern Free Will Baptist churches and the reorganized remnant of a northern movement united in Nashville.",
+    "profile_scope": "The 1935 date marks organization of the national association. This U.S. profile traces its two antecedent streams and selected national developments. Free Will Baptist is also used for churches outside this association.",
+    "formation_narrative": "The association traces its southern line to Paul Palmer’s congregation in Chowan County, North Carolina, in 1727 and its northern line to Benjamin Randall’s church in New Durham, New Hampshire, in 1780. Both streams taught free salvation and human response to grace. Much of the Randall line joined the Northern Baptist denomination in 1910–1911. Remaining congregations organized the Cooperative General Association in 1916. The Palmer-line churches had organized the General Conference by 1921. Representatives of these two associations met at Cofer’s Chapel in Nashville on November 5, 1935 to form a single national fellowship and provide a common statement of faith and practice.",
+    "distinctives": [
+      "Free grace, free salvation and free will",
+      "Washing of the saints’ feet"
+    ],
+    "core_beliefs": [
+      "The Treatise teaches that Christ’s atonement is offered to all, that people can resist grace, and that believers are warned against apostasy.",
+      "It teaches immersion of professing believers and observes the Lord’s Supper and the washing of the saints’ feet.",
+      "Local congregations govern their own affairs and cooperate through associations."
+    ],
+    "key_figures": [
+      {
+        "name": "Paul Palmer",
+        "role": "Early southern organizer",
+        "summary": "Organized the North Carolina congregation to which the association traces one antecedent stream.",
+        "url": "https://nafwb.org/site/about/history/",
+        "citations": [
+          "cite-us-coverage-baptist-nafwb-history"
+        ]
+      },
+      {
+        "name": "Benjamin Randall",
+        "role": "Early northern organizer",
+        "summary": "Organized the New Durham congregation. The churches that reorganized in 1916 traced their history through this movement.",
+        "url": "https://nafwb.org/site/about/history/",
+        "citations": [
+          "cite-us-coverage-baptist-nafwb-history"
+        ]
+      },
+      {
+        "name": "J. C. Griffin",
+        "role": "Member of the national Treatise drafting committee",
+        "summary": "Helped formulate the national statement using disciplines and treatises already in use among the churches.",
+        "url": "https://fwbhistory.com/site?p=298",
+        "citations": [
+          "cite-us-coverage-baptist-nafwb-treatise-history"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1727,
+        "label": "Palmer’s Chowan congregation organized",
+        "citations": [
+          "cite-us-coverage-baptist-nafwb-history"
+        ]
+      },
+      {
+        "year": 1780,
+        "label": "Randall’s New Durham congregation organized",
+        "citations": [
+          "cite-us-coverage-baptist-nafwb-history"
+        ]
+      },
+      {
+        "year": 1910,
+        "label": "Union of much of the Randall movement with Northern Baptists begins",
+        "citations": [
+          "cite-us-coverage-baptist-nafwb-history"
+        ]
+      },
+      {
+        "year": 1916,
+        "label": "Cooperative General Association organized by remaining Randall-line churches",
+        "citations": [
+          "cite-us-coverage-baptist-nafwb-history"
+        ]
+      },
+      {
+        "year": 1921,
+        "label": "Palmer-line churches organize the General Conference",
+        "citations": [
+          "cite-us-coverage-baptist-nafwb-history",
+          "cite-us-coverage-baptist-nafwb-treatise-history"
+        ]
+      },
+      {
+        "year": 1935,
+        "label": "National association organized at Cofer’s Chapel on November 5",
+        "citations": [
+          "cite-us-coverage-baptist-nafwb-history",
+          "cite-us-coverage-baptist-nafwb-treatise-history"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "A Treatise of the Faith and Practices of the Original Free Will Baptists",
+        "year": 2023,
+        "significance": "Revised edition of the association’s doctrinal and organizational guide. The 1935 organization commissioned a text drawing on earlier Free Will Baptist documents.",
+        "url": "https://nafwb.org/site/wp-content/uploads/2023/05/2023-NAFWB-Treatise.pdf",
+        "citations": [
+          "cite-us-coverage-baptist-nafwb-treatise",
+          "cite-us-coverage-baptist-nafwb-treatise-history"
+        ]
+      }
+    ],
+    "ending_narrative": "The national association continues as a fellowship of congregations. It has revised its Treatise over time while retaining a shared doctrinal and organizational guide for participating churches.",
+    "successor_ids": [],
+    "size_estimate": "156,895 U.S. adherents across 1,930 congregations (2020 U.S. Religion Census)",
+    "further_reading": [
+      {
+        "title": "Free Will Baptist Historical Commission — The Treatise",
+        "url": "https://fwbhistory.com/site?p=298",
+        "snippet": "Traces the 1834 Randall treatise and explains the drafting of a national successor after organization in 1935.",
+        "citations": [
+          "cite-us-coverage-baptist-nafwb-treatise-history"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "summary": [
+        "cite-us-coverage-baptist-nafwb-history",
+        "cite-us-coverage-baptist-nafwb-treatise-history"
+      ],
+      "start_year": [
+        "cite-us-coverage-baptist-nafwb-history",
+        "cite-us-coverage-baptist-nafwb-treatise-history"
+      ],
+      "profile_scope": [
+        "cite-us-coverage-baptist-nafwb-history",
+        "cite-us-coverage-baptist-nafwb-treatise"
+      ],
+      "formation_narrative": [
+        "cite-us-coverage-baptist-nafwb-history",
+        "cite-us-coverage-baptist-nafwb-treatise-history"
+      ],
+      "core_beliefs": [
+        "cite-us-coverage-baptist-nafwb-treatise"
+      ],
+      "distinctives": [
+        "cite-us-coverage-baptist-nafwb-treatise"
+      ],
+      "ending_narrative": [
+        "cite-us-coverage-baptist-nafwb-history",
+        "cite-us-coverage-baptist-nafwb-treatise"
+      ],
+      "size_estimate": [
+        "cite-us-coverage-baptist-usrc-223"
+      ]
+    },
+    "citations": [
+      "cite-us-coverage-baptist-nafwb-history",
+      "cite-us-coverage-baptist-nafwb-treatise-history",
+      "cite-us-coverage-baptist-nafwb-treatise",
+      "cite-us-coverage-baptist-usrc-223"
+    ]
+  },
+  {
+    "id": "american-baptist-association",
+    "name": "American Baptist Association",
+    "aliases": [
+      "ABA"
+    ],
+    "short_label": "American Baptist Association (ABA)",
+    "kind": "denomination",
+    "start_year": 1924,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "Texarkana, Texas–Arkansas",
+    "tradition_family": "Baptist",
+    "ecclesial_orientation": "evangelical",
+    "current_status": "active",
+    "summary": "A voluntary fellowship of Missionary Baptist churches organized in 1924, with Landmark Baptist roots and a strong emphasis on church-directed missions.",
+    "profile_scope": "This profile covers the U.S. association organized in 1924, selected antecedents, the 1950 division and present practice. American Baptist Churches USA is a separate denomination with Northern Baptist roots.",
+    "formation_narrative": "Landmark Baptist churches organized in Arkansas in 1902 around church equality, with each church entitled to a voice regardless of size. In 1924 the Arkansas state association, the Baptist Missionary Association of Texas and other churches came together in Texarkana to form the American Baptist Association. Their model let churches cooperate in funding and outreach while keeping authority to send and supervise missionaries with local churches.",
+    "distinctives": [
+      "Landmark Baptist roots",
+      "Church-sent missions",
+      "Local church authority"
+    ],
+    "core_beliefs": [
+      "The doctrinal statement teaches the inspiration and authority of Scripture and believer’s baptism by immersion under the authority of a New Testament church.",
+      "It describes a church as a local congregation that governs itself and can cooperate with other churches. Its published mission policy assigns the sending and supervision of missionaries to churches.",
+      "The statement teaches that miraculous manifestation gifts ceased with the completion of the Bible."
+    ],
+    "key_figures": [
+      {
+        "name": "Ben M. Bogard",
+        "role": "Organizer in the Arkansas predecessor association",
+        "summary": "Helped bring Landmark churches together at the 1902 Arkansas meeting that preceded national organization.",
+        "url": "https://encyclopediaofarkansas.net/entries/State-Association-of-Missionary-Baptist-Churches-of-Arkansas-2689/",
+        "citations": [
+          "cite-us-coverage-baptist-aba-arkansas"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1902,
+        "label": "Arkansas predecessor association organized in Little Rock",
+        "citations": [
+          "cite-us-coverage-baptist-aba-arkansas"
+        ]
+      },
+      {
+        "year": 1924,
+        "label": "American Baptist Association organized in Texarkana",
+        "citations": [
+          "cite-us-coverage-baptist-aba-faq",
+          "cite-us-coverage-baptist-aba-arkansas",
+          "cite-us-coverage-baptist-aba-bma-mississippi"
+        ]
+      },
+      {
+        "year": 1950,
+        "label": "Departing churches organize the North American Baptist Association",
+        "citations": [
+          "cite-us-coverage-baptist-aba-bma-mississippi",
+          "cite-us-coverage-baptist-aba-1950"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "American Baptist Association Doctrinal Statement",
+        "year": null,
+        "significance": "Published statement of the fellowship’s teaching on Scripture, congregations, baptism and spiritual gifts.",
+        "url": "https://bogardpress.org/doctrinal-statement/",
+        "citations": [
+          "cite-us-coverage-baptist-aba-doctrine"
+        ]
+      },
+      {
+        "title": "ABA Mission Policy",
+        "year": null,
+        "significance": "The published policy sets out how churches may assist each other while retaining responsibility for sending and supervising missionaries.",
+        "url": "https://www.abaptist.org/start-here-page",
+        "citations": [
+          "cite-us-coverage-baptist-aba-faq"
+        ]
+      }
+    ],
+    "ending_narrative": "A 1950 division produced the North American Baptist Association, later the Baptist Missionary Association of America. The ABA continued as a separate voluntary fellowship. Churches still cooperate in missions, and the association maintains an archive of minutes and historical missionary lists.",
+    "successor_ids": [],
+    "size_estimate": "146,820 U.S. adherents across 766 congregations (2020 U.S. Religion Census)",
+    "further_reading": [
+      {
+        "title": "American Baptist Association History and Archives",
+        "url": "https://baptistville.org/abahistory/",
+        "snippet": "Browse minutes from the association and its antecedents and missionary lists by year.",
+        "citations": [
+          "cite-us-coverage-baptist-aba-archive"
+        ]
+      },
+      {
+        "title": "Arkansas Missionary Baptist association history",
+        "url": "https://encyclopediaofarkansas.net/entries/State-Association-of-Missionary-Baptist-Churches-of-Arkansas-2689/",
+        "snippet": "Explains the 1902 organizing meeting and its connection to national organization.",
+        "citations": [
+          "cite-us-coverage-baptist-aba-arkansas"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "summary": [
+        "cite-us-coverage-baptist-aba-faq",
+        "cite-us-coverage-baptist-aba-arkansas"
+      ],
+      "start_year": [
+        "cite-us-coverage-baptist-aba-faq",
+        "cite-us-coverage-baptist-aba-arkansas"
+      ],
+      "profile_scope": [
+        "cite-us-coverage-baptist-usrc-017",
+        "cite-us-coverage-baptist-aba-arkansas"
+      ],
+      "formation_narrative": [
+        "cite-us-coverage-baptist-aba-arkansas",
+        "cite-us-coverage-baptist-aba-faq",
+        "cite-us-coverage-baptist-aba-bma-mississippi"
+      ],
+      "core_beliefs": [
+        "cite-us-coverage-baptist-aba-doctrine",
+        "cite-us-coverage-baptist-aba-faq"
+      ],
+      "distinctives": [
+        "cite-us-coverage-baptist-aba-arkansas",
+        "cite-us-coverage-baptist-aba-faq"
+      ],
+      "ending_narrative": [
+        "cite-us-coverage-baptist-aba-bma-mississippi",
+        "cite-us-coverage-baptist-aba-1950",
+        "cite-us-coverage-baptist-aba-faq",
+        "cite-us-coverage-baptist-aba-archive"
+      ],
+      "size_estimate": [
+        "cite-us-coverage-baptist-usrc-017"
+      ]
+    },
+    "citations": [
+      "cite-us-coverage-baptist-aba-faq",
+      "cite-us-coverage-baptist-aba-arkansas",
+      "cite-us-coverage-baptist-usrc-017",
+      "cite-us-coverage-baptist-aba-bma-mississippi",
+      "cite-us-coverage-baptist-aba-doctrine",
+      "cite-us-coverage-baptist-aba-1950",
+      "cite-us-coverage-baptist-aba-archive"
+    ]
+  },
+  {
+    "id": "full-gospel-baptist-church-fellowship",
+    "name": "Full Gospel Baptist Church Fellowship International",
+    "aliases": [
+      "Full Gospel Baptist Church Fellowship",
+      "Full Gospel Baptist",
+      "FGBCF",
+      "FGBCFI"
+    ],
+    "short_label": "Full Gospel Baptist (FGBCF)",
+    "kind": "denomination",
+    "start_year": 1994,
+    "zoom_tier": "full",
+    "region": "US",
+    "geographic_origin": "New Orleans, Louisiana",
+    "tradition_family": "Baptist",
+    "ecclesial_orientation": "other",
+    "current_status": "active",
+    "summary": "A fellowship with Black Baptist roots that brought charismatic worship and the active use of spiritual gifts into a network of autonomous congregations.",
+    "profile_scope": "This profile covers the U.S. founding and selected developments in the international fellowship. The 1994 date marks public establishment and the New Orleans conference. Full Gospel Christian Assemblies International is a distinct congregation founded in the Chicago area.",
+    "formation_narrative": "Paul S. Morton Sr., pastor of Greater Saint Stephen in New Orleans, sought to bring Baptist congregations together around the active exercise of spiritual gifts. Fellowship materials trace his vision to 1992. Paul and Debra Morton helped found the fellowship, which dates its establishment to 1994. Its first public conference at the New Orleans Superdome brought together churches interested in charismatic practice within a Baptist framework.",
+    "distinctives": [
+      "Charismatic Baptist worship",
+      "Continuing spiritual gifts",
+      "Autonomous participating churches"
+    ],
+    "core_beliefs": [
+      "The fellowship teaches that the Holy Spirit continues to equip believers with spiritual gifts and emphasizes a Spirit-filled life.",
+      "Its principle of freedom to exercise spiritual gifts pairs charismatic practice with local autonomy. It has a council and presiding bishop for fellowship leadership, while participating churches retain local government."
+    ],
+    "key_figures": [
+      {
+        "name": "Paul S. Morton Sr.",
+        "role": "Founder and founding presiding bishop",
+        "summary": "The New Orleans pastor led the fellowship’s formation and spoke at the 1994 Superdome conference.",
+        "url": "https://www.fullgospelbaptist.org/leadership-2/",
+        "citations": [
+          "cite-us-coverage-baptist-fgbcf-leadership",
+          "cite-us-coverage-baptist-fgbcf-1994"
+        ]
+      },
+      {
+        "name": "Debra B. Morton",
+        "role": "Co-founder",
+        "summary": "The fellowship credits her as co-founder. An affiliate’s manual also identifies her in national women’s ministry leadership.",
+        "url": "https://www.youtube.com/watch?v=2x87czOIaxA",
+        "citations": [
+          "cite-us-coverage-baptist-fgbcf-debra",
+          "cite-us-coverage-baptist-fgbcf-manual"
+        ]
+      },
+      {
+        "name": "Joseph W. Walker III",
+        "role": "Presiding bishop in the next leadership generation",
+        "summary": "The Mt. Zion Baptist Church pastor in Nashville was announced as Morton’s successor in 2013.",
+        "url": "https://www.fullgospelbaptist.org/leadership-2/",
+        "citations": [
+          "cite-us-coverage-baptist-fgbcf-leadership",
+          "cite-us-coverage-baptist-fgbcf-walker"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1992,
+        "label": "Vision for the fellowship articulated in New Orleans, in the affiliate account",
+        "citations": [
+          "cite-us-coverage-baptist-fgbcf-manual"
+        ]
+      },
+      {
+        "year": 1994,
+        "label": "Fellowship launches at its first conference, New Orleans Superdome, July",
+        "citations": [
+          "cite-us-coverage-baptist-fgbcf-about",
+          "cite-us-coverage-baptist-fgbcf-1994",
+          "cite-us-coverage-baptist-fgbcf-launch-interview"
+        ]
+      },
+      {
+        "year": 2013,
+        "label": "Joseph W. Walker III announced as Morton’s successor",
+        "citations": [
+          "cite-us-coverage-baptist-fgbcf-walker"
+        ]
+      }
+    ],
+    "key_documents": [
+      {
+        "title": "Who We Are and What We Believe",
+        "year": null,
+        "significance": "The fellowship’s public summary explains its founding principle and teaching on the Holy Spirit.",
+        "url": "https://www.fullgospelbaptist.org/leadership/",
+        "citations": [
+          "cite-us-coverage-baptist-fgbcf-about"
+        ]
+      },
+      {
+        "title": "New Member’s Manual — Impact Church",
+        "year": null,
+        "significance": "An affiliate’s orientation guide explains how local autonomy and fellowship participation work together.",
+        "url": "https://storage2.snappages.site/MZSG9T/assets/files/NEW-MEMBER-MANUAL.pdf",
+        "citations": [
+          "cite-us-coverage-baptist-fgbcf-manual"
+        ]
+      }
+    ],
+    "ending_narrative": "The fellowship continues under presiding bishop Joseph W. Walker III and maintains a network of churches and leaders. Its regional, state and district offices and recurring conferences support cooperation and ministry training.",
+    "successor_ids": [],
+    "size_estimate": "138,354 U.S. adherents across 817 congregations (2020 U.S. Religion Census)",
+    "further_reading": [
+      {
+        "title": "1994 New Orleans Superdome conference",
+        "url": "https://www.youtube.com/watch?v=g682fHXlkUI",
+        "snippet": "The founder’s recording documents the public launch period.",
+        "citations": [
+          "cite-us-coverage-baptist-fgbcf-1994"
+        ]
+      },
+      {
+        "title": "Fellowship leadership",
+        "url": "https://www.fullgospelbaptist.org/leadership-2/",
+        "snippet": "Official biographies identify the founding and current presiding bishops and describe the wider leadership structure.",
+        "citations": [
+          "cite-us-coverage-baptist-fgbcf-leadership"
+        ]
+      }
+    ],
+    "profile_citations": {
+      "summary": [
+        "cite-us-coverage-baptist-fgbcf-about",
+        "cite-us-coverage-baptist-fgbcf-manual",
+        "cite-us-coverage-baptist-fgbcf-debra"
+      ],
+      "start_year": [
+        "cite-us-coverage-baptist-fgbcf-about",
+        "cite-us-coverage-baptist-fgbcf-1994"
+      ],
+      "profile_scope": [
+        "cite-us-coverage-baptist-fgbcf-about",
+        "cite-us-coverage-baptist-fgbcf-1994",
+        "cite-us-coverage-baptist-fgcai-identity"
+      ],
+      "formation_narrative": [
+        "cite-us-coverage-baptist-fgbcf-about",
+        "cite-us-coverage-baptist-fgbcf-manual",
+        "cite-us-coverage-baptist-fgbcf-debra",
+        "cite-us-coverage-baptist-fgbcf-1994",
+        "cite-us-coverage-baptist-fgbcf-launch-interview"
+      ],
+      "core_beliefs": [
+        "cite-us-coverage-baptist-fgbcf-about",
+        "cite-us-coverage-baptist-fgbcf-manual",
+        "cite-us-coverage-baptist-fgbcf-leadership"
+      ],
+      "distinctives": [
+        "cite-us-coverage-baptist-fgbcf-about",
+        "cite-us-coverage-baptist-fgbcf-manual"
+      ],
+      "ending_narrative": [
+        "cite-us-coverage-baptist-fgbcf-leadership",
+        "cite-us-coverage-baptist-fgbcf-manual"
+      ],
+      "size_estimate": [
+        "cite-us-coverage-baptist-usrc-232"
+      ]
+    },
+    "citations": [
+      "cite-us-coverage-baptist-fgbcf-about",
+      "cite-us-coverage-baptist-fgbcf-manual",
+      "cite-us-coverage-baptist-fgbcf-debra",
+      "cite-us-coverage-baptist-fgbcf-1994",
+      "cite-us-coverage-baptist-fgcai-identity",
+      "cite-us-coverage-baptist-fgbcf-leadership",
+      "cite-us-coverage-baptist-usrc-232",
+      "cite-us-coverage-baptist-fgbcf-walker",
+      "cite-us-coverage-baptist-fgbcf-launch-interview"
+    ]
+  }
+]

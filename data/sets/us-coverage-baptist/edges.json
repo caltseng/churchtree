@@ -1,0 +1,56 @@
+[
+  {
+    "id": "us-coverage-baptist-nbca-nmbca-1988",
+    "name": "NMBCA organizes after education and publishing dispute",
+    "from_id": "national-baptist-convention-of-america",
+    "to_id": "national-missionary-baptist-convention-of-america",
+    "type": "split",
+    "year": 1988,
+    "zoom_tier": "full",
+    "confidence": "high",
+    "reasons": [
+      "Publishing board independence",
+      "Control of Christian education"
+    ],
+    "description": "The National Missionary Baptist Convention of America formed in Dallas in 1988. The National Baptist Convention of America continued separately.",
+    "narrative": "At its 1988 session in San Antonio, the National Baptist Convention of America decided to organize a Christian education congress under its own officers. Contemporary reporting describes a dispute with the publishing house led by the Boyd family over control of the congress, curriculum and funds. Leaders who backed continued cooperation with the publishing house and its congress met in Dallas and organized the National Missionary Baptist Convention of America, with S. M. Lockridge as its first president. The National Baptist Convention of America continued separately.",
+    "key_figures": [
+      {
+        "name": "Shadrach Meshach Lockridge",
+        "role": "First president",
+        "summary": "The San Diego pastor led the new convention and explained its aims ahead of the planned 1989 national session.",
+        "url": "https://www.latimes.com/archives/la-xpm-1996-02-24-me-39550-story.html",
+        "citations": [
+          "cite-us-coverage-baptist-nmbca-lockridge",
+          "cite-us-coverage-baptist-nmbca-session"
+        ]
+      },
+      {
+        "name": "E. Edward Jones",
+        "role": "President of the continuing NBCA during the dispute",
+        "summary": "He publicly argued for convention officers to direct their own congress and curriculum.",
+        "url": "https://www.washingtonpost.com/archive/local/1988/12/03/black-baptist-group-splits-over-control-of-education/48cb198e-6e81-4556-9266-ae1ae906e82c/",
+        "citations": [
+          "cite-us-coverage-baptist-nmbca-dispute"
+        ]
+      }
+    ],
+    "key_dates": [
+      {
+        "year": 1988,
+        "label": "Organized in Dallas after the NBCA education and publishing dispute",
+        "citations": [
+          "cite-us-coverage-baptist-nmbca-about",
+          "cite-us-coverage-baptist-nbca-annuals",
+          "cite-us-coverage-baptist-nmbca-dispute"
+        ]
+      }
+    ],
+    "citations": [
+      "cite-us-coverage-baptist-nmbca-about",
+      "cite-us-coverage-baptist-nbca-annuals",
+      "cite-us-coverage-baptist-nmbca-dispute",
+      "cite-us-coverage-baptist-nmbca-lockridge"
+    ]
+  }
+]
