@@ -17,6 +17,13 @@
 - Preserve its three fixed colors: bark `#9B7555`, leaf `#6E9D50`, straw `#D6B579`. Use shared `brand.css` for page lockups, with accessible text and a link home.
 - Update source templates/builders as well as tracked generated pages so branding survives a rebuild.
 
+## Citations and attribution
+
+- Cite the sources for substantive historical claims and for data displayed in visualizations. Prefer primary sources where available. Place visible credit and a direct source link near the relevant claim, section, chart or drill-down. A bibliography can supplement these citations.
+- When displaying sourced data, identify the publisher, measure, population or denominator, publication date and reference period as applicable. Show meaningful rounding, thresholds, missing values and coverage limits. Link to the applicable questionnaire, methods or classification when they affect interpretation.
+- Preserve row-level or section-level provenance with a precise source locator. Document transformations and calculations so a reviewer can reproduce the result. Verify reuse terms and carry through required attribution, notices and permissions in the generated output.
+- Make source links, credit and caveats available to keyboard and screen-reader users. Check that they appear in the generated page and remain available at each relevant level of interaction.
+
 ## Explorer and site controls
 
 - Use one compact explorer header for Search, Filters, and Info. Put Settings in the hamburger menu across the site, with Appearance under Settings.
