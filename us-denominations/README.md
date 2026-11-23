@@ -50,8 +50,8 @@ These functions reject IDs outside the selected lens; the later URL controller
 must choose its own documented fallback before calling them.
 
 `presentation(data, id)` exposes the exact `valueText`, nullable `barValue`,
-denominator ID/label, population label and fully resolved source. Render a bar
-**only when `barValue !== null`**. A threshold is not its upper bound, half its
+denominator ID/label, population label and fully resolved source. Render a pie
+slice or bar **only when `barValue !== null`**. A threshold is not its upper bound, half its
 bound or zero. Unavailable/suppressed rows carry an explicit reason and no
 number. The population root has no plotted affiliation estimate. Keep national
 labels at every affiliation depth; attendance uses **Adults in each religious
@@ -196,12 +196,25 @@ parameters are corrected with a visible status message. Back goes up one parent;
 Reset keeps the lens. Browser history replays state. Drill-in focuses the selected
 heading; going up restores the departing child link when available.
 
-Chart mode has a bounded, independently scrollable viewport. Real two-pointer
-pinches zoom the chart from 100% to 400% around the gesture midpoint, while
-one-pointer drags pan it. Labels, values, bars and axes enlarge together; the
-scale and national denominators do not change. Numeric bars and all affiliation
-labels navigate to published children or the leaf's sourced detail. Thresholds
-remain selectable by label but never acquire a fabricated bar.
+Affiliation chart mode is a drill-down pie (`pieModel`/`renderPie` in
+`view.js`). The full circle is the current parent's national share (all U.S.
+adults at the root); each numeric child is a slice drawn to that national scale.
+When published children sum to less than the parent (`coverage: selected`), a
+hatched remainder is labelled "not itemized" and is never inferred as another
+group; when independently rounded children exceed the parent, the circle is
+their sum and the caption says so. Thresholds, unavailable and suppressed rows
+get no slice and are named in the caption. Selecting a slice by pointer, touch
+or keyboard (one tab stop; arrow keys, Home/End, Enter/Space) zooms that slice
+to a full ring, then shows its published children. The centre link, Back, Reset
+and breadcrumbs zoom out. A leaf draws no further pie and says it is a leaf, not
+a zero estimate. The legend list below the pie keeps every label, exact value,
+denominator and source disclosure; reduced motion removes the zoom animation.
+
+Attendance and demographic charts keep a bounded, independently scrollable
+viewport. Real two-pointer pinches zoom the chart from 100% to 400% around the
+gesture midpoint, while one-pointer drags pan it. Labels, values, bars and axes
+enlarge together; the scale and denominators do not change. Thresholds never
+acquire a fabricated bar or slice.
 
 Zoom out/in and Fit chart buttons, plus `+`, `-`, `0` and arrow keys when the
 chart region is focused, provide non-gesture alternatives. Ctrl/Cmd+wheel zooms
