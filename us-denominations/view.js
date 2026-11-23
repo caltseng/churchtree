@@ -78,15 +78,29 @@
       <p class="credit">${data.reuse.notices.map(esc).join(' ')}. ${esc(data.reuse.disclaimer)}
       <a href="#methodology">Methods, classification, questionnaire and reuse</a>.</p>`;
   }
-  function sourceDetail(record) {
-    return `<details class="row-source"><summary>Source and caveats for ${esc(record.label)}</summary>
-      <p>${citation(record.source)}</p><p>${esc(record.source.caveat)}</p>
+  function recordNotes(record) {
+    return `<p>${citation(record.source)}</p><p>${esc(record.source.caveat)}</p>
       ${record.reason ? `<p>${esc(record.reason)}</p>` : ''}
-      <p>Published label: ${esc(record.sourceLabel)}. ${esc(record.kind.replace(/-/g, ' '))}.
-      ${record.scope.tradition ? `Pew tradition: ${esc(record.scope.tradition.replace(/-/g, ' '))}.` : ''}</p></details>`;
+      <p>Published label: ${esc(record.sourceLabel)}. ${kind(record)}.
+      ${record.scope.tradition ? `Pew tradition: ${esc(record.scope.tradition.replace(/-/g, ' '))}.` : ''}</p>`;
   }
+  function sourceDetail(record) {
+    return `<details class="row-source"><summary>Source<span class="visually-hidden"> and caveats for ${esc(record.label)}</span></summary>
+      ${recordNotes(record)}</details>`;
+  }
+  const kind = record => esc(record.kind.replace(/-/g, ' '));
   function estimate(record) {
     return `${esc(record.valueText)}${record.id === 'us-adults' ? '' : ' of U.S. adults'}`;
+  }
+  // Compact visible credit with direct links; the Info disclosure holds the full locators and notices.
+  function sourceLine(data, sources) {
+    const unique = [...new Map(sources.map(source => [source.url, source])).values()];
+    return `<p class="source-line">Source: ${esc(unique[0].publisher)}, ${unique.map(link).join('; ')}.
+      ${data.reuse.notices.map(esc).join(' ')}.</p>`;
+  }
+  function info(label, body) {
+    return `<details class="info-detail"><summary><span aria-hidden="true">&#9432;</span> Info<span class="visually-hidden">: sources, methods and notes for ${esc(label)}</span></summary>
+      <div class="info-body">${body}</div></details>`;
   }
   // Fixed fills with a text color that meets 4.5:1 for in-slice percentages.
   const palette = [
@@ -128,9 +142,8 @@
       : `<a class="row-detail" data-group="${esc(id)}" href="${query(target)}">${swatch}${esc(record.label)} <span aria-hidden="true">&rsaquo;</span></a>`;
     return `<div class="estimate-row" data-record="${esc(id)}" data-status="${esc(record.status)}">
       <div class="row-label">${name}<strong class="national-value">${estimate(record)}</strong></div>
-      <small class="row-kind">${esc(record.kind.replace(/-/g, ' '))}${record.scope.tradition ? ' / ' + esc(record.scope.tradition.replace(/-/g, ' ')) : ''}</small>
-      ${record.status === 'threshold' ? '<small>Published upper threshold; no numeric slice.</small>' : ''}
-      ${['unavailable', 'suppressed'].includes(record.status) ? `<small>${esc(record.reason)}; no numeric slice.</small>` : ''}
+      ${record.status === 'threshold' ? '<small>Upper threshold; no slice.</small>' : ''}
+      ${['unavailable', 'suppressed'].includes(record.status) ? `<small>${esc(record.reason)}; no slice.</small>` : ''}
       ${sourceDetail(record)}</div>`;
   }
   function renderPie(data, state, panel, model) {
@@ -141,7 +154,7 @@
     const shown = gap > 0.05 && model.slices.length;
     const unsliced = panel.children.filter(id => data.records[id].barValue === null);
     if (!model.slices.length) {
-      return `<p class="pie-empty">No pie is drawn: every published child of ${label} is an upper threshold or lacks a numeric estimate. The list below keeps each exact published value.</p>`;
+      return `<p class="pie-empty">No pie: each published child of ${label} is an upper threshold or unavailable. Exact values are listed below.</p>`;
     }
     const slices = model.slices.map((slice, index) => {
       const child = data.records[slice.id];
@@ -153,7 +166,7 @@
       return `<a class="pie-slice" href="${query(target)}" data-group="${esc(slice.id)}" data-slice="${esc(slice.id)}"
         data-start="${fmt(slice.start)}" data-end="${fmt(slice.end)}" tabindex="${index ? -1 : 0}"
         style="--dx:${fmt(6 * Math.cos(mid))}px;--dy:${fmt(6 * Math.sin(mid))}px"
-        aria-label="${esc(child.label)}, ${estimate(child)}. ${expandable ? 'Zoom in to its published breakdown' : 'Open its sourced details'}">
+        aria-label="${esc(child.label)}, ${estimate(child)}. ${expandable ? 'Zoom in' : 'Open details'}">
         <title>${esc(child.label)}: ${estimate(child)}</title><path d="${arcPath(slice.start, slice.end)}" fill="${slice.fill}"/>${text}</a>`;
     }).join('');
     const center = parentId
@@ -163,9 +176,9 @@
       : `<g class="pie-center" aria-hidden="true"><circle r="${INNER - 4}"/>
         <text class="pie-center-value" y="-4">100%</text><text class="pie-center-note" y="16">U.S. adults</text></g>`;
     const scale = model.sum > (model.whole || 0) + 0.05
-      ? `Rounded slices total ${fmt(model.sum)}%, more than ${label}'s ${esc(record.valueText)}, so the circle is scaled to their total.`
-      : state.group === 'us-adults' ? 'The full circle is all U.S. adults (100%).'
-      : `The full circle is ${label}, ${estimate(record)}.`;
+      ? `Rounded slices total ${fmt(model.sum)}%, above ${label}'s ${esc(record.valueText)}, so the circle is scaled to their total.`
+      : state.group === 'us-adults' ? 'Full circle: all U.S. adults.'
+      : `Full circle: ${label}, ${estimate(record)}.`;
     return `<figure class="pie-figure">
       <svg class="pie" viewBox="-112 -112 224 224" role="group" aria-labelledby="pie-title" aria-describedby="pie-help">
       <title id="pie-title">Pie chart of ${label}: ${panel.coverage === 'selected' ? 'published detail' : 'affiliations'}</title>
@@ -173,30 +186,33 @@
       <rect class="pie-gap-base" width="8" height="8"/><line class="pie-gap-line" x1="0" y1="0" x2="0" y2="8"/></pattern></defs>
       <path class="pie-gap" d="${arcPath(0, TURN)}" fill="url(#pie-gap-hatch)" aria-hidden="true"/>
       <g class="pie-slices">${slices}</g>${center}</svg>
-      <figcaption id="pie-help" class="pie-help"><span>${scale} Each slice is that affiliation's share of all U.S. adults.
-      Select a slice, or use arrow keys and Enter, to zoom in.${parentId ? ' Select the centre, Back or a breadcrumb to zoom out.' : ''}</span>
+      <figcaption id="pie-help" class="pie-help"><span>${scale}${state.group === 'us-adults' ? '' : ' Slices are shares of all U.S. adults.'}<span class="visually-hidden"> Arrow keys move between slices; Enter zooms in.${parentId ? ' The centre zooms out.' : ''}</span></span>
       ${shown ? `<span class="pie-key"><span class="swatch swatch-gap" aria-hidden="true"></span>${panel.coverage === 'selected'
-        ? `Hatched: the part of ${label} not itemized in the selected published detail. It is not an estimate; no residual is inferred.`
-        : 'Hatched: independent rounding of published estimates, not an unlisted group.'}</span>` : ''}
-      ${unsliced.length ? `<span class="pie-key">No slice for ${unsliced.map(id => `${esc(data.records[id].label)} (${esc(data.records[id].valueText)})`).join(', ')}: published upper thresholds or unavailable values are never drawn as amounts.</span>` : ''}
+        ? 'Hatched: not itemized by Pew. Not an estimate; no residual is inferred.'
+        : 'Hatched: rounding gap, not an unlisted group.'}</span>` : ''}
+      ${unsliced.length ? `<span class="pie-key">No slice: ${unsliced.map(id => `${esc(data.records[id].label)} (${esc(data.records[id].valueText)})`).join(', ')}; thresholds and unavailable values are not drawn.</span>` : ''}
       </figcaption></figure>`;
   }
   function precisionNote(data, ids) {
     const selected = ids.filter(id => Object.hasOwn(data.interactiveStrings, id));
-    return selected.length ? `<p class="precision-note">We use the report's published decimals.
-      The separate national interactive displays ${selected.map(id => `${esc(data.records[id].label)} ${esc(data.interactiveStrings[id])}`).join('; ')}.
-      These are independently published strings, not re-rounded report cells; ordinary rounding does not explain 11.5% versus 11%.</p>` : '';
+    return selected.length ? `<p class="precision-note">Report decimals shown. Pew's interactive separately displays
+      ${selected.map(id => `${esc(data.records[id].label)} ${esc(data.interactiveStrings[id])}`).join('; ')}.</p>` : '';
+  }
+  const precisionDetail = '<p>Report decimals and interactive displays are independently published strings, not re-rounded report cells; ordinary rounding does not explain 11.5% versus 11%.</p>';
+  const helpText = '<p>Select a slice, or use arrow keys and Enter, to zoom in. The centre, Back, Reset and breadcrumbs zoom out. List shows the same values without the pie.</p>';
+  function coverageLine(panel) {
+    return panel.coverage === 'selected' ? '<p class="coverage">Selected published detail, not every group.</p>' : '';
   }
   function panelContext(data, state, panel) {
     const source = data.sources[panel.sourceId];
-    const estimates = new Map([state.group, ...panel.children].map(id => {
-      const source = data.records[id].source;
-      return [source.url, source];
-    }));
-    return `<p class="panel-source">Estimates: ${[...estimates.values()].map(source =>
-      `${esc(source.publisher)} (${esc(source.publicationDate)}), ${link(source)}`).join('; ')}.</p>
+    const sources = [state.group, ...panel.children].map(id => data.records[id].source);
+    const record = data.records[state.group];
+    return `${sourceLine(data, sources)}${info(record.label, `<p>${panel.coverage === 'selected' ? partial : complete}</p>
+      ${state.group === 'us-adults' ? '' : `<p><strong>${esc(record.label)}</strong></p>${recordNotes(record)}`}
       <p class="panel-source">Hierarchy: ${link(source)}; ${esc(panel.locator)}.
-      Each row's Source and caveats identifies its estimate, source column and precise locator.</p>${context(data)}`;
+      Each row's Source identifies its estimate, column and precise locator.</p>
+      ${panel.children.concat(state.group).some(id => Object.hasOwn(data.interactiveStrings, id)) ? precisionDetail : ''}
+      ${context(data)}${helpText}`)}`;
   }
   function renderView(data, state) {
     if (state.view === 'demographics') return renderDemographics(data, state);
@@ -209,16 +225,15 @@
       ? `<span aria-current="page">${esc(data.records[id].label)}</span>`
       : `<a data-group="${esc(id)}" href="${query({...state, group: id})}">${esc(data.records[id].label)}</a>`}</li>`).join('')}</ol></nav>
       <h2 id="group-heading" tabindex="-1">${esc(record.label)}</h2>
-      ${state.group === 'us-adults' ? '' : `<p class="selected-estimate"><strong>${estimate(record)}</strong> &middot; ${esc(record.kind.replace(/-/g, ' '))}</p>`}
-      ${state.group === 'us-adults' ? '' : sourceDetail(record)}${precisionNote(data, [state.group, ...(panel ? panel.children : [])])}
-      ${panel ? `<h3>${panel.coverage === 'selected' ? 'Published detail' : 'Affiliations'}</h3>
-      <p class="coverage">${panel.coverage === 'selected' ? partial : complete}</p>
-      <div class="chart pie-chart" data-format="${state.format}">
+      ${state.group === 'us-adults' ? '' : `<p class="selected-estimate"><strong>${estimate(record)}</strong> &middot; ${kind(record)}${
+        record.status === 'threshold' ? ' &middot; upper threshold' : ''}</p>`}
+      ${precisionNote(data, [state.group, ...(panel ? panel.children : [])])}
+      ${panel ? `${coverageLine(panel)}<div class="chart pie-chart" data-format="${state.format}">
       ${renderPie(data, state, panel, model)}
-      <ol class="estimate-list">${panel.children.map(id => `<li>${row(data, state, id, model, false)}</li>`).join('')}</ol></div>
-      ${panelContext(data, state, panel)}` : `<p class="leaf-note">No published drill-down in this selection. This is a leaf, not a zero estimate:
-      the sourced tables used here publish no finer breakdown of ${esc(record.label)}, so no further pie is drawn or estimated.
-      Use Back, Reset or a breadcrumb to zoom out.</p>${context(data)}`}`;
+      <ol class="estimate-list">${panel.children.map((id, index) => `<li style="--i:${index}">${row(data, state, id, model, false)}</li>`).join('')}</ol></div>
+      ${panelContext(data, state, panel)}` : `<p class="leaf-note">No finer breakdown is published.</p>
+      ${sourceLine(data, [record.source])}${info(record.label, `${recordNotes(record)}
+      ${Object.hasOwn(data.interactiveStrings, state.group) ? precisionDetail : ''}${context(data)}`)}`}`;
   }
   function renderAttendance(data, format, staticMode = false) {
     const attendance = data.attendance;
@@ -289,7 +304,7 @@
       return `<section id="static-${state.view}-${state.group}" class="static-panel">
         <h3>${esc(data.records[state.group].label)} &mdash; ${panel.coverage === 'selected' ? 'Published detail' : 'Affiliations'}</h3>
         <p class="coverage">${panel.coverage === 'selected' ? partial : complete}</p>
-        ${panelContext(data, state, panel)}${precisionNote(data, [state.group, ...panel.children])}
+        ${precisionNote(data, [state.group, ...panel.children])}${panelContext(data, state, panel)}
         <ol class="estimate-list">${panel.children.map(id => `<li>${row(data, state, id, null, true)}
         ${panelFor(data, {...state, group: id}) ? `<details class="nested-detail"><summary>Explore ${esc(data.records[id].label)} &mdash; published children</summary>${nested({...state, group: id})}</details>` : ''}</li>`).join('')}</ol></section>`;
     }

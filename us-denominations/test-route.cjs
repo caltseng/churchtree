@@ -61,9 +61,9 @@ test('each panel preserves source ranking, national labels, locators and coverag
         assert(Math.abs(swept / (Math.PI * 2) - model.sum / model.total) < 1e-9, 'Slices are drawn to scale');
         assert.equal(new Set(model.slices.map(slice => slice.fill)).size, model.slices.length, 'Each slice and legend swatch has a distinct fill');
         if (model.sum > whole + 0.05) assert.match(html, /circle is scaled to their total/);
-        if (panel.coverage === 'selected' && whole - model.sum > 0.05) assert.match(html, /not itemized in the selected published detail\. It is not an estimate/);
+        if (panel.coverage === 'selected' && whole - model.sum > 0.05) assert.match(html, /Hatched: not itemized by Pew\. Not an estimate/);
       } else {
-        assert.match(html, /No pie is drawn/);
+        assert.match(html, /No pie: each published child/);
       }
     }
   }
@@ -84,9 +84,10 @@ test('pie palette text colors meet WCAG 4.5:1 against their fills', () => {
 
 test('leaf categories explain the missing breakdown without a pie', () => {
   const html = view.renderView(data, {view: 'families', group: 'sbc', format: 'chart'});
-  assert.match(html, /No published drill-down in this selection\. This is a leaf, not a zero estimate/);
+  assert.match(html, /No finer breakdown is published\./);
   assert(!html.includes('class="pie"') && !html.includes('data-slice='));
-  assert.match(html, /Pew Research Center has not reviewed or endorsed/);
+  assert.match(html, /class="source-line"[^]*Pew Research Center[^]*© 2026 Pew Research Center/, 'Leaf keeps a visible source credit and notice');
+  assert.match(html, /<details class="info-detail"[^]*Pew Research Center has not reviewed or endorsed/, 'Disclaimer moves behind Info');
 });
 
 test('missing and suppressed fixtures retain reasons, exact text and no fabricated bars', () => {
@@ -95,7 +96,7 @@ test('missing and suppressed fixtures retain reasons, exact text and no fabricat
     Object.assign(fixture.records.pnbc, {status, valueText: status === 'unavailable' ? 'Unavailable' : 'Suppressed', barValue: null, reason: 'Not published for this scope'});
     const html = view.renderView(fixture, {view: 'families', group: 'baptist', format: 'chart'});
     const row = html.split('data-record="pnbc"')[1].split('</li>')[0];
-    assert.match(row, /Not published for this scope; no numeric slice/);
+    assert.match(row, /Not published for this scope; no slice/);
     assert(!row.includes('class="bar"'));
     assert(!html.includes('data-slice="pnbc"'));
   }
