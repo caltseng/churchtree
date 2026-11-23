@@ -69,10 +69,20 @@ a.pie-center:hover circle { fill: var(--ct-hover); }
 a.pie-center:focus-visible { outline: none; }
 a.pie-center:focus-visible circle { stroke: var(--ct-focus); stroke-width: 4; }
 .pie-zooming .pie-slice:not(.pie-chosen), .pie-zooming .pie-center, .pie-zooming .pie-label { opacity: 0; }
-.pie-enter-in { animation: pie-in .32s ease-out; }
-.pie-enter-out { animation: pie-out .32s ease-out; }
-@keyframes pie-in { from { opacity: .2; transform: scale(.7); } }
-@keyframes pie-out { from { opacity: .2; transform: scale(1.25); } }
+.pie-zooming .pie-slice.pie-chosen path { transform: none; }
+.pie-slice, .pie-center, .pie-gap { transition: opacity .22s ease; }
+.pie-sweeping .pie-label { opacity: 0; }
+.pie-collapsing .pie-slice:not(.pie-chosen), .pie-collapsing .pie-gap { opacity: 0; }
+.pie-collapsing .pie-label { opacity: 0; }
+.pie-center { animation: pie-center-in .3s ease-out backwards; }
+@keyframes pie-center-in { from { opacity: 0; transform: scale(.6); } }
+.pie-busy { pointer-events: none; }
+#interactive-view.level-in #group-heading, #interactive-view.level-in .selected-estimate,
+#interactive-view.level-in .estimate-list > li { animation: level-in .32s ease-out backwards; animation-delay: calc(min(var(--i, 0), 8) * 30ms); }
+#interactive-view.level-out #group-heading, #interactive-view.level-out .selected-estimate,
+#interactive-view.level-out .estimate-list > li { animation: level-out .32s ease-out backwards; animation-delay: calc(min(var(--i, 0), 8) * 30ms); }
+@keyframes level-in { from { opacity: 0; transform: translateX(.75rem); } }
+@keyframes level-out { from { opacity: 0; transform: translateX(-.75rem); } }
 .pie-help { max-width: 40rem; font-size: .9rem; color: var(--ct-text-secondary); display: grid; gap: .4rem; overflow-wrap: anywhere; }
 .pie-key { display: flex; gap: .5rem; align-items: flex-start; }
 .pie-empty { background: var(--ct-surface); border-left: 3px solid var(--ct-border-control); padding: .75rem; }
@@ -92,7 +102,13 @@ summary { min-height: 44px; padding: .6rem .25rem; overflow-wrap: anywhere; }
 .row-source { font-size: .9rem; }
 .row-source p, .source-context, .panel-source, .credit, .coverage, .precision-note { overflow-wrap: anywhere; }
 .coverage, .precision-note { background: var(--ct-surface); border-left: 3px solid var(--ct-border-control); padding: .75rem; }
-.source-context, .credit, .panel-source { font-size: .9rem; color: var(--ct-text-secondary); }
+.source-context, .credit, .panel-source, .source-line { font-size: .9rem; color: var(--ct-text-secondary); }
+.source-line { margin: 1rem 0 .25rem; overflow-wrap: anywhere; }
+.info-detail { font-size: .9rem; }
+.info-detail > summary { display: inline-flex; align-items: center; gap: .35rem; min-width: 44px; padding: .6rem .5rem .6rem .25rem; }
+.info-body { padding: 0 .75rem .25rem; border-left: 2px solid var(--ct-border); overflow-wrap: anywhere; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.leaf-note { color: var(--ct-text-secondary); }
 .nested-detail > section { padding-left: .75rem; border-left: 2px solid var(--ct-border); }
 #methodology { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--ct-border); }
 #route-status:empty { display: none; }
@@ -105,5 +121,5 @@ summary { min-height: 44px; padding: .6rem .25rem; overflow-wrap: anywhere; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }
-  .pie *, .pie { transition: none !important; animation: none !important; }
+  .pie *, .pie, #interactive-view * { transition: none !important; animation: none !important; }
 }

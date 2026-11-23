@@ -24,6 +24,74 @@
   let animating = false;
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 
+  // One pie animation runs at a time; any newer animation or render settles it to its final geometry first.
+  let motion = null;
+  let pendingFill = null;
+  const TOP = -Math.PI / 2, TURN = Math.PI * 2;
+  const easeInOut = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+  function settle() {
+    if (!motion) return;
+    const current = motion;
+    motion = null;
+    current.end(false);
+  }
+  function tween(ms, ease, step, end) {
+    settle();
+    const began = performance.now();
+    const handle = {end(completed) { cancelAnimationFrame(handle.frame); step(1); end(completed); }};
+    motion = handle;
+    step(0);
+    handle.frame = requestAnimationFrame(function frame(now) {
+      if (motion !== handle) return;
+      const t = Math.min(1, (now - began) / ms);
+      if (t < 1) { step(ease(t)); handle.frame = requestAnimationFrame(frame); }
+      else { motion = null; handle.end(true); }
+    });
+  }
+  function geometry(pie) {
+    return [...pie.querySelectorAll('.pie-slice')].map(el => ({
+      el, path: el.querySelector('path'), d: el.querySelector('path').getAttribute('d'),
+      start: Number(el.dataset.start), end: Number(el.dataset.end)
+    }));
+  }
+  // Drilling in: the new children sweep clockwise over a ring in the chosen slice's colour.
+  function sweep(pie, fill) {
+    const slices = geometry(pie);
+    let under = null;
+    if (fill) {
+      under = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      under.setAttribute('class', 'pie-underlay');
+      under.setAttribute('aria-hidden', 'true');
+      under.setAttribute('fill', fill);
+      under.setAttribute('d', view.arcPath(TOP, TOP + TURN));
+      pie.querySelector('.pie-slices').before(under);
+    }
+    pie.classList.add('pie-sweeping');
+    tween(480, easeOut, p => {
+      slices.forEach(s => s.path.setAttribute('d', p === 1 ? s.d : view.arcPath(TOP + (s.start - TOP) * p, TOP + (s.end - TOP) * p)));
+      if (under) under.style.opacity = String(1 - p);
+    }, () => {
+      under?.remove();
+      pie.classList.remove('pie-sweeping');
+    });
+  }
+  // Zooming out: the slice we came from shrinks from a full ring back into place as its siblings return.
+  function collapse(pie, id) {
+    const slice = geometry(pie).find(s => s.el.dataset.group === id);
+    if (!slice) return sweep(pie, null);
+    const mid = (slice.start + slice.end) / 2;
+    slice.el.classList.add('pie-chosen');
+    pie.classList.add('pie-collapsing');
+    tween(460, easeInOut, p => {
+      slice.path.setAttribute('d', p === 1 ? slice.d : view.arcPath(mid - Math.PI + (slice.start - mid + Math.PI) * p, mid + Math.PI + (slice.end - mid - Math.PI) * p));
+      if (p > .45) pie.classList.remove('pie-collapsing');
+    }, () => {
+      pie.classList.remove('pie-collapsing');
+      slice.el.classList.remove('pie-chosen');
+    });
+  }
+
   function enhanceChart() {
     const chart = container.querySelector('.chart');
     if (!chart) { saveChart = () => {}; return; }
@@ -31,7 +99,7 @@
     const saved = chartViews.get(key) || {scale: 1, left: 0, top: 0, sources: []};
     if (chart.classList.contains('pie-chart')) {
       // The pie drills in by navigation, so it has no pan/zoom viewport; remember open source notes only.
-      const sources = [...chart.querySelectorAll('.row-source')];
+      const sources = [...container.querySelectorAll('.info-detail'), ...chart.querySelectorAll('.row-source')];
       sources.forEach((source, index) => source.open = saved.sources.includes(index));
       saveChart = () => chartViews.set(key, {...saved, sources: sources.flatMap((source, index) => source.open ? [index] : [])});
       return;
@@ -170,13 +238,24 @@
   }
 
   function render(previous, focus) {
+    settle();
     chartResize?.disconnect();
     container.innerHTML = view.renderView(data, state);
     enhanceChart();
-    const pie = container.querySelector('.pie');
-    if (pie && previous && previous.view === state.view && previous.group !== state.group && !reduceMotion.matches) {
+    const fill = pendingFill;
+    pendingFill = null;
+    container.classList.remove('level-in', 'level-out');
+    if (previous && previous.view === state.view && previous.group !== state.group && isAffiliation(state) && !reduceMotion.matches) {
       const up = view.ancestors(data, previous.view, previous.group).includes(state.group);
-      pie.classList.add(up ? 'pie-enter-out' : 'pie-enter-in');
+      void container.offsetWidth;
+      container.classList.add(up ? 'level-out' : 'level-in');
+      const pie = container.querySelector('.pie');
+      if (pie && state.format === 'chart') {
+        pie.classList.add(up ? 'pie-enter-out' : 'pie-enter-in');
+        const path = [...view.ancestors(data, previous.view, previous.group), previous.group];
+        if (up) collapse(pie, path[path.indexOf(state.group) + 1]);
+        else sweep(pie, fill);
+      }
     }
     selector.value = state.view;
     back.hidden = reset.hidden = !isAffiliation(state);
@@ -216,17 +295,21 @@
   function zoomInto(group, done) {
     const slice = [...container.querySelectorAll('.pie-slice')].find(el => el.dataset.group === group);
     if (!slice || reduceMotion.matches || state.format === 'list' || !visible(slice.ownerSVGElement)) return done();
+    settle();
     animating = true;
-    const path = slice.querySelector('path');
+    const pie = slice.ownerSVGElement, path = slice.querySelector('path');
     const start = Number(slice.dataset.start), end = Number(slice.dataset.end), mid = (start + end) / 2;
-    slice.ownerSVGElement.classList.add('pie-zooming');
+    pie.classList.add('pie-zooming', 'pie-busy');
     slice.classList.add('pie-chosen');
-    const began = performance.now();
-    requestAnimationFrame(function frame(now) {
-      const progress = Math.min(1, (now - began) / 380), eased = 1 - Math.pow(1 - progress, 3);
-      path.setAttribute('d', view.arcPath(start + (mid - Math.PI - start) * eased, end + (mid + Math.PI - end) * eased));
-      if (progress < 1) requestAnimationFrame(frame);
-      else { animating = false; done(); }
+    tween(360, easeInOut, p => {
+      path.setAttribute('d', view.arcPath(start + (mid - Math.PI - start) * p, end + (mid + Math.PI - end) * p));
+    }, completed => {
+      animating = false;
+      pie.classList.remove('pie-busy');
+      if (!completed) return;
+      pendingFill = path.getAttribute('fill');
+      done();
+      pendingFill = null;
     });
   }
   container.addEventListener('click', event => {

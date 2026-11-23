@@ -24,6 +24,13 @@
 - Preserve row-level or section-level provenance with a precise source locator. Document transformations and calculations so a reviewer can reproduce the result. Verify reuse terms and carry through required attribution, notices and permissions in the generated output.
 - Make source links, credit and caveats available to keyboard and screen-reader users. Check that they appear in the generated page and remain available at each relevant level of interaction.
 
+## Concise copy and disclosures
+
+- Keep UI copy short. Remove text that repeats nearby labels, restates the chart or adds no needed information.
+- Collapse secondary attribution, methodology, notices and disclaimer detail behind a clearly labelled Info or disclosure control, especially in drill-down and terminal views. Use a native or equally accessible control that works by keyboard, announces its purpose to screen readers and keeps focus in a sensible place.
+- Keep these visible: legally required attribution, a compact source credit or direct source link near substantive claims and data, and caveats critical to reading a chart correctly, such as thresholds, missing values and incomplete coverage.
+- Collapse supporting detail instead of silently deleting provenance or hiding essential qualifications. Delete a disclaimer only if it is unnecessary; do not keep every disclaimer by default.
+
 ## Explorer and site controls
 
 - Use one compact explorer header for Search, Filters, and Info. Put Settings in the hamburger menu across the site, with Appearance under Settings.

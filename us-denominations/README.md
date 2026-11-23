@@ -205,10 +205,19 @@ group; when independently rounded children exceed the parent, the circle is
 their sum and the caption says so. Thresholds, unavailable and suppressed rows
 get no slice and are named in the caption. Selecting a slice by pointer, touch
 or keyboard (one tab stop; arrow keys, Home/End, Enter/Space) zooms that slice
-to a full ring, then shows its published children. The centre link, Back, Reset
-and breadcrumbs zoom out. A leaf draws no further pie and says it is a leaf, not
-a zero estimate. The legend list below the pie keeps every label, exact value,
-denominator and source disclosure; reduced motion removes the zoom animation.
+to a full ring, then sweeps its published children in clockwise from the top.
+The centre link, Back, Reset and breadcrumbs zoom out: the departing slice
+shrinks back into its arc as its siblings return, and the list slides in from
+the direction of travel. One motion runs at a time; a new selection, Back or
+Reset snaps any running animation to its final state before navigating. A leaf
+draws no further pie and says "No finer breakdown is published." Each level
+shows a compact visible source credit with direct links and the Pew notice;
+coverage, the selected record's notes, locator, precision, fielding,
+denominator, disclaimer and methods sit behind an Info disclosure. Caveats
+needed to read the chart (hatched not-itemized arcs, unsliced thresholds,
+scaled circles) stay visible. The legend list below the pie keeps every label,
+exact value and source disclosure; reduced motion removes all pie and list
+animation.
 
 Attendance and demographic charts keep a bounded, independently scrollable
 viewport. Real two-pointer pinches zoom the chart from 100% to 400% around the
