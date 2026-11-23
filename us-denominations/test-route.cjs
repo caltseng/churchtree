@@ -59,12 +59,26 @@ test('each panel preserves source ranking, national labels, locators and coverag
         assert.equal(model.total, Math.max(whole, model.sum), 'Circle is the parent estimate unless rounded children exceed it');
         const swept = model.slices.reduce((total, slice) => total + slice.end - slice.start, 0);
         assert(Math.abs(swept / (Math.PI * 2) - model.sum / model.total) < 1e-9, 'Slices are drawn to scale');
+        assert.equal(new Set(model.slices.map(slice => slice.fill)).size, model.slices.length, 'Each slice and legend swatch has a distinct fill');
         if (model.sum > whole + 0.05) assert.match(html, /circle is scaled to their total/);
         if (panel.coverage === 'selected' && whole - model.sum > 0.05) assert.match(html, /not itemized in the selected published detail\. It is not an estimate/);
       } else {
         assert.match(html, /No pie is drawn/);
       }
     }
+  }
+});
+
+test('pie palette text colors meet WCAG 4.5:1 against their fills', () => {
+  const luminance = hex => {
+    const [r, g, b] = [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16) / 255)
+      .map(v => v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  };
+  for (const [fill, ink] of view.palette) {
+    const [a, b] = [luminance(fill), luminance(ink)];
+    const ratio = (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+    assert(ratio >= 4.5, `${ink} on ${fill} is ${ratio.toFixed(2)}:1`);
   }
 });
 

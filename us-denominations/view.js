@@ -91,8 +91,9 @@
   // Fixed fills with a text color that meets 4.5:1 for in-slice percentages.
   const palette = [
     ['#315b43', '#ffffff'], ['#d6b579', '#1f2a26'], ['#284f7a', '#ffffff'], ['#6e9d50', '#1f2a26'],
-    ['#9c3f57', '#ffffff'], ['#9b7555', '#1f2a26'], ['#5b4a8a', '#ffffff'], ['#5fa3a3', '#1f2a26'],
-    ['#a04b18', '#ffffff'], ['#b7b06a', '#1f2a26'], ['#3e6f8f', '#ffffff'], ['#d99a6c', '#1f2a26']
+    ['#9c3f57', '#ffffff'], ['#7a5a3f', '#ffffff'], ['#5b4a8a', '#ffffff'], ['#5fa3a3', '#1f2a26'],
+    ['#a04b18', '#ffffff'], ['#b7b06a', '#1f2a26'], ['#3e6f8f', '#ffffff'], ['#d99a6c', '#1f2a26'],
+    ['#e3c4d0', '#1f2a26'], ['#c7d6e6', '#1f2a26']
   ];
   const RADIUS = 100, INNER = 56, TURN = Math.PI * 2;
   const fmt = n => String(Math.round(n * 1000) / 1000);
@@ -301,5 +302,5 @@
       <summary>${esc(data.demographics.dimensions.find(row => row.id === population.dimension).label)}: ${esc(population.label)}</summary>
       ${renderDemographics(data, {population: population.id, format: 'list'}, true)}</details>`).join('')}</section>`;
   }
-  return {esc, normalize, readURL, query, ancestors, panelFor, renderView, renderStatic, context, arcPath, pieModel};
+  return {esc, normalize, readURL, query, ancestors, panelFor, renderView, renderStatic, context, arcPath, pieModel, palette};
 });
