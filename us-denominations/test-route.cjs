@@ -48,11 +48,45 @@ test('each panel preserves source ranking, national labels, locators and coverag
         assert(html.includes(view.esc(record.source.url)));
         assert(html.includes(view.esc(record.valueText) + ' of U.S. adults'));
         const markup = html.split(`data-record="${id}"`)[1].split('</li>')[0];
-        assert.equal(markup.includes('class="bar"'), record.barValue !== null);
+        assert(!markup.includes('class="bar"'));
+        assert.equal(html.includes(`data-slice="${id}"`), record.barValue !== null, 'Only numeric estimates become slices');
         assert.equal(markup.includes('class="row-target"'), Boolean(tree.panels.find(p => p.parentId === id)));
+      }
+      const model = view.pieModel(data, {view: lens, group: panel.parentId}, panel);
+      if (model.slices.length) {
+        assert.match(html, /class="pie"/);
+        const whole = panel.parentId === 'us-adults' ? 100 : data.records[panel.parentId].barValue;
+        assert.equal(model.total, Math.max(whole, model.sum), 'Circle is the parent estimate unless rounded children exceed it');
+        const swept = model.slices.reduce((total, slice) => total + slice.end - slice.start, 0);
+        assert(Math.abs(swept / (Math.PI * 2) - model.sum / model.total) < 1e-9, 'Slices are drawn to scale');
+        assert.equal(new Set(model.slices.map(slice => slice.fill)).size, model.slices.length, 'Each slice and legend swatch has a distinct fill');
+        if (model.sum > whole + 0.05) assert.match(html, /circle is scaled to their total/);
+        if (panel.coverage === 'selected' && whole - model.sum > 0.05) assert.match(html, /not itemized in the selected published detail\. It is not an estimate/);
+      } else {
+        assert.match(html, /No pie is drawn/);
       }
     }
   }
+});
+
+test('pie palette text colors meet WCAG 4.5:1 against their fills', () => {
+  const luminance = hex => {
+    const [r, g, b] = [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16) / 255)
+      .map(v => v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  };
+  for (const [fill, ink] of view.palette) {
+    const [a, b] = [luminance(fill), luminance(ink)];
+    const ratio = (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+    assert(ratio >= 4.5, `${ink} on ${fill} is ${ratio.toFixed(2)}:1`);
+  }
+});
+
+test('leaf categories explain the missing breakdown without a pie', () => {
+  const html = view.renderView(data, {view: 'families', group: 'sbc', format: 'chart'});
+  assert.match(html, /No published drill-down in this selection\. This is a leaf, not a zero estimate/);
+  assert(!html.includes('class="pie"') && !html.includes('data-slice='));
+  assert.match(html, /Pew Research Center has not reviewed or endorsed/);
 });
 
 test('missing and suppressed fixtures retain reasons, exact text and no fabricated bars', () => {
@@ -61,8 +95,9 @@ test('missing and suppressed fixtures retain reasons, exact text and no fabricat
     Object.assign(fixture.records.pnbc, {status, valueText: status === 'unavailable' ? 'Unavailable' : 'Suppressed', barValue: null, reason: 'Not published for this scope'});
     const html = view.renderView(fixture, {view: 'families', group: 'baptist', format: 'chart'});
     const row = html.split('data-record="pnbc"')[1].split('</li>')[0];
-    assert.match(row, /Not published for this scope; no numeric bar/);
+    assert.match(row, /Not published for this scope; no numeric slice/);
     assert(!row.includes('class="bar"'));
+    assert(!html.includes('data-slice="pnbc"'));
   }
 });
 

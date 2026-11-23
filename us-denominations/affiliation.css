@@ -49,6 +49,38 @@ button[aria-pressed="true"] { background: var(--ct-accent); color: var(--ct-on-a
 .chart-list .chart-viewport { max-height: none; overflow: visible; border: 0; touch-action: auto; }
 .axis { display: flex; justify-content: space-between; gap: .5rem; color: var(--ct-text-secondary); font-size: .9rem; }
 .chart[data-format="list"] .bar-track, .chart[data-format="list"] .axis { display: none; }
+.pie-figure { margin: .5rem 0 1rem; display: grid; justify-items: center; gap: .75rem; }
+.pie { width: min(100%, 22rem); height: auto; overflow: visible; touch-action: manipulation; font-family: system-ui, sans-serif; }
+.pie-gap-base { fill: var(--ct-grid); }
+.pie-gap-line { stroke: var(--ct-border-control); stroke-width: 2; }
+.pie-slice { cursor: pointer; outline: none; transition: opacity .3s ease; }
+.pie-slice path { stroke: var(--ct-page); stroke-width: 1.5; transition: transform .18s ease; }
+.pie-slice:hover path, .pie-slice.is-active path, .pie-slice:focus path { transform: translate(var(--dx), var(--dy)); }
+.pie-slice:focus-visible path { stroke: var(--ct-focus); stroke-width: 4; }
+.pie-slice:focus-visible { outline: none; }
+.pie-label { font-size: 11px; font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; transition: transform .18s ease; }
+.pie-slice:hover .pie-label, .pie-slice.is-active .pie-label, .pie-slice:focus .pie-label { transform: translate(var(--dx), var(--dy)); }
+.pie-center circle { fill: var(--ct-surface); stroke: var(--ct-border); }
+.pie-center text { text-anchor: middle; dominant-baseline: central; fill: var(--ct-text); }
+.pie-center-value { font-size: 20px; font-weight: 700; }
+.pie-center .pie-center-note { font-size: 10px; fill: var(--ct-text-secondary); }
+a.pie-center { cursor: pointer; }
+a.pie-center:hover circle { fill: var(--ct-hover); }
+a.pie-center:focus-visible { outline: none; }
+a.pie-center:focus-visible circle { stroke: var(--ct-focus); stroke-width: 4; }
+.pie-zooming .pie-slice:not(.pie-chosen), .pie-zooming .pie-center, .pie-zooming .pie-label { opacity: 0; }
+.pie-enter-in { animation: pie-in .32s ease-out; }
+.pie-enter-out { animation: pie-out .32s ease-out; }
+@keyframes pie-in { from { opacity: .2; transform: scale(.7); } }
+@keyframes pie-out { from { opacity: .2; transform: scale(1.25); } }
+.pie-help { max-width: 40rem; font-size: .9rem; color: var(--ct-text-secondary); display: grid; gap: .4rem; overflow-wrap: anywhere; }
+.pie-key { display: flex; gap: .5rem; align-items: flex-start; }
+.pie-empty { background: var(--ct-surface); border-left: 3px solid var(--ct-border-control); padding: .75rem; }
+.swatch { flex: none; width: .9rem; height: .9rem; border-radius: .2rem; border: 1px solid var(--ct-border-control); }
+.swatch-empty { background: transparent; border-style: dashed; }
+.swatch-gap { margin-top: .2rem; background: repeating-linear-gradient(45deg, var(--ct-grid) 0 3px, var(--ct-border-control) 3px 4px); }
+.estimate-row.is-active { background: var(--ct-hover); }
+.chart[data-format="list"] .pie-figure, .chart[data-format="list"] .pie-empty, .chart[data-format="list"] .swatch { display: none; }
 .attendance-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
 .attendance-table caption { text-align: left; padding: .5rem 0; }
 .attendance-table th, .attendance-table td { text-align: left; vertical-align: top; padding: .6rem .25rem; border-bottom: 1px solid var(--ct-border); overflow-wrap: anywhere; }
@@ -71,4 +103,7 @@ summary { min-height: 44px; padding: .6rem .25rem; overflow-wrap: anywhere; }
   select { width: 100%; }
   .main-branch-copy small { display: none; }
 }
-@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+  .pie *, .pie { transition: none !important; animation: none !important; }
+}

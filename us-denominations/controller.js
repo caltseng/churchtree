@@ -21,12 +21,21 @@
   const chartViews = new Map();
   let saveChart = () => {};
   let chartResize;
+  let animating = false;
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 
   function enhanceChart() {
     const chart = container.querySelector('.chart');
     if (!chart) { saveChart = () => {}; return; }
     const key = view.query({...state, format: 'chart'});
     const saved = chartViews.get(key) || {scale: 1, left: 0, top: 0, sources: []};
+    if (chart.classList.contains('pie-chart')) {
+      // The pie drills in by navigation, so it has no pan/zoom viewport; remember open source notes only.
+      const sources = [...chart.querySelectorAll('.row-source')];
+      sources.forEach((source, index) => source.open = saved.sources.includes(index));
+      saveChart = () => chartViews.set(key, {...saved, sources: sources.flatMap((source, index) => source.open ? [index] : [])});
+      return;
+    }
     const shell = document.createElement('div');
     shell.className = 'chart-shell';
     shell.innerHTML = `<div class="chart-controls" role="group" aria-label="Chart zoom">
@@ -164,6 +173,11 @@
     chartResize?.disconnect();
     container.innerHTML = view.renderView(data, state);
     enhanceChart();
+    const pie = container.querySelector('.pie');
+    if (pie && previous && previous.view === state.view && previous.group !== state.group && !reduceMotion.matches) {
+      const up = view.ancestors(data, previous.view, previous.group).includes(state.group);
+      pie.classList.add(up ? 'pie-enter-out' : 'pie-enter-in');
+    }
     selector.value = state.view;
     back.hidden = reset.hidden = !isAffiliation(state);
     demographicControls.hidden = state.view !== 'demographics';
@@ -194,12 +208,70 @@
     status.textContent = '';
     render(previous, focus);
   }
+  function visible(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.bottom > 0 && rect.top < innerHeight;
+  }
+  // Grow the chosen slice to a full ring before showing its breakdown.
+  function zoomInto(group, done) {
+    const slice = [...container.querySelectorAll('.pie-slice')].find(el => el.dataset.group === group);
+    if (!slice || reduceMotion.matches || state.format === 'list' || !visible(slice.ownerSVGElement)) return done();
+    animating = true;
+    const path = slice.querySelector('path');
+    const start = Number(slice.dataset.start), end = Number(slice.dataset.end), mid = (start + end) / 2;
+    slice.ownerSVGElement.classList.add('pie-zooming');
+    slice.classList.add('pie-chosen');
+    const began = performance.now();
+    requestAnimationFrame(function frame(now) {
+      const progress = Math.min(1, (now - began) / 380), eased = 1 - Math.pow(1 - progress, 3);
+      path.setAttribute('d', view.arcPath(start + (mid - Math.PI - start) * eased, end + (mid + Math.PI - end) * eased));
+      if (progress < 1) requestAnimationFrame(frame);
+      else { animating = false; done(); }
+    });
+  }
   container.addEventListener('click', event => {
     const anchor = event.target.closest('a[data-group]');
     if (!anchor || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
-    navigate({...state, group: anchor.dataset.group});
+    if (animating) return;
+    const group = anchor.dataset.group, from = state;
+    const go = () => { if (state === from) navigate({...state, group}); };
+    if (anchor.classList.contains('pie-center')) go();
+    else zoomInto(group, go);
   });
+  container.addEventListener('keydown', event => {
+    const slice = event.target.closest && event.target.closest('.pie-slice');
+    if (!slice) return;
+    const slices = [...container.querySelectorAll('.pie-slice')];
+    let index = slices.indexOf(slice);
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      slice.dispatchEvent(new MouseEvent('click', {bubbles: true, cancelable: true}));
+      return;
+    }
+    if (['ArrowRight', 'ArrowDown'].includes(event.key)) index = (index + 1) % slices.length;
+    else if (['ArrowLeft', 'ArrowUp'].includes(event.key)) index = (index - 1 + slices.length) % slices.length;
+    else if (event.key === 'Home') index = 0;
+    else if (event.key === 'End') index = slices.length - 1;
+    else return;
+    event.preventDefault();
+    slices.forEach((el, i) => el.setAttribute('tabindex', i === index ? '0' : '-1'));
+    slices[index].focus();
+  });
+  function highlight(event, on) {
+    const source = event.target.closest && event.target.closest('.pie-slice, .estimate-row');
+    if (!source || !container.querySelector('.pie')) return;
+    const id = source.dataset.slice || source.dataset.record;
+    container.querySelectorAll('.is-active').forEach(el => el.classList.remove('is-active'));
+    if (!on) return;
+    container.querySelectorAll('.pie-slice, .estimate-row').forEach(el => {
+      if ((el.dataset.slice || el.dataset.record) === id) el.classList.add('is-active');
+    });
+  }
+  container.addEventListener('pointerover', event => highlight(event, true));
+  container.addEventListener('pointerout', event => highlight(event, false));
+  container.addEventListener('focusin', event => highlight(event, true));
+  container.addEventListener('focusout', event => highlight(event, false));
   selector.addEventListener('change', () => navigate({
     ...state, ...demographicState, group: isAffiliation(state) ? state.group : affiliationGroup, view: selector.value
   }));

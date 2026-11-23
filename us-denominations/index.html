@@ -28,12 +28,39 @@
 
       <h3>Affiliations</h3>
       <p class="coverage">Published estimates are independently rounded and need not add to the parent or to 100%. No residual is inferred.</p>
-      <div class="chart" data-format="chart">
-      <p class="axis"><span>0</span><span>% of U.S. adults</span><span>70%</span></p>
+      <div class="chart pie-chart" data-format="chart">
+      <figure class="pie-figure">
+      <svg class="pie" viewBox="-112 -112 224 224" role="group" aria-labelledby="pie-title" aria-describedby="pie-help">
+      <title id="pie-title">Pie chart of U.S. adults: affiliations</title>
+      <defs><pattern id="pie-gap-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect class="pie-gap-base" width="8" height="8"/><line class="pie-gap-line" x1="0" y1="0" x2="0" y2="8"/></pattern></defs>
+      <path class="pie-gap" d="M100 0A100 100 0 1 1 100 -0.01L56 -0.006A56 56 0 1 0 56 0Z" fill="url(#pie-gap-hatch)" aria-hidden="true"/>
+      <g class="pie-slices"><a class="pie-slice" href="?view=families&group=christian" data-group="christian" data-slice="christian"
+        data-start="-1.571" data-end="2.325" tabindex="0"
+        style="--dx:5.579px;--dy:2.209px"
+        aria-label="Christian, 62% of U.S. adults. Zoom in to its published breakdown">
+        <title>Christian: 62% of U.S. adults</title><path d="M0 -100A100 100 0 1 1 -68.455 72.897L-38.335 40.822A56 56 0 1 0 0 -56Z" fill="#315b43"/><text class="pie-label" x="72.523" y="28.714" fill="#ffffff" aria-hidden="true">62%</text></a><a class="pie-slice" href="?view=families&group=unaffiliated" data-group="unaffiliated" data-slice="unaffiliated"
+        data-start="2.325" data-end="4.147" tabindex="-1"
+        style="--dx:-5.973px;--dy:-0.565px"
+        aria-label="Religiously unaffiliated, 29% of U.S. adults. Zoom in to its published breakdown">
+        <title>Religiously unaffiliated: 29% of U.S. adults</title><path d="M-68.455 72.897A100 100 0 0 1 -53.583 -84.433L-30.006 -47.282A56 56 0 0 0 -38.335 40.822Z" fill="#d6b579"/><text class="pie-label" x="-77.654" y="-7.34" fill="#1f2a26" aria-hidden="true">29%</text></a><a class="pie-slice" href="?view=families&group=other-religions" data-group="other-religions" data-slice="other-religions"
+        data-start="4.147" data-end="4.587" tabindex="-1"
+        style="--dx:-2.032px;--dy:-5.645px"
+        aria-label="Other religions, 7% of U.S. adults. Zoom in to its published breakdown">
+        <title>Other religions: 7% of U.S. adults</title><path d="M-53.583 -84.433A100 100 0 0 1 -12.533 -99.211L-7.019 -55.558A56 56 0 0 0 -30.006 -47.282Z" fill="#284f7a"/><text class="pie-label" x="-26.422" y="-73.389" fill="#ffffff" aria-hidden="true">7%</text></a><a class="pie-slice" href="?view=families&group=no-answer" data-group="no-answer" data-slice="no-answer"
+        data-start="4.587" data-end="4.65" tabindex="-1"
+        style="--dx:-0.565px;--dy:-5.973px"
+        aria-label="Did not answer, 1% of U.S. adults. Open its sourced details">
+        <title>Did not answer: 1% of U.S. adults</title><path d="M-12.533 -99.211A100 100 0 0 1 -6.279 -99.803L-3.516 -55.889A56 56 0 0 0 -7.019 -55.558Z" fill="#6e9d50"/></a></g><g class="pie-center" aria-hidden="true"><circle r="52"/>
+        <text class="pie-center-value" y="-4">100%</text><text class="pie-center-note" y="16">U.S. adults</text></g></svg>
+      <figcaption id="pie-help" class="pie-help"><span>The full circle is all U.S. adults (100%). Each slice is that affiliation's share of all U.S. adults.
+      Select a slice, or use arrow keys and Enter, to zoom in.</span>
+      <span class="pie-key"><span class="swatch swatch-gap" aria-hidden="true"></span>Hatched: independent rounding of published estimates, not an unlisted group.</span>
+
+      </figcaption></figure>
       <ol class="estimate-list"><li><div class="estimate-row" data-record="christian" data-status="numeric">
-      <div class="row-label"><a class="row-target" data-group="christian" href="?view=families&group=christian">Christian <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">62% of U.S. adults</strong></div>
+      <div class="row-label"><a class="row-target" data-group="christian" href="?view=families&group=christian"><span class="swatch" aria-hidden="true" style="background:#315b43"></span>Christian <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">62% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-      <a class="bar-link" data-group="christian" href="?view=families&group=christian" aria-label="Explore Christian"><div class="bar-track" aria-hidden="true"><span class="bar" style="width:88.57142857142857%"></span></div></a>
 
 
       <details class="row-source"><summary>Source and caveats for Christian</summary>
@@ -42,9 +69,8 @@
 
       <p>Published label: Christians. affiliation.
       </p></details></div></li><li><div class="estimate-row" data-record="unaffiliated" data-status="numeric">
-      <div class="row-label"><a class="row-target" data-group="unaffiliated" href="?view=families&group=unaffiliated">Religiously unaffiliated <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">29% of U.S. adults</strong></div>
+      <div class="row-label"><a class="row-target" data-group="unaffiliated" href="?view=families&group=unaffiliated"><span class="swatch" aria-hidden="true" style="background:#d6b579"></span>Religiously unaffiliated <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">29% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-      <a class="bar-link" data-group="unaffiliated" href="?view=families&group=unaffiliated" aria-label="Explore Religiously unaffiliated"><div class="bar-track" aria-hidden="true"><span class="bar" style="width:41.42857142857143%"></span></div></a>
 
 
       <details class="row-source"><summary>Source and caveats for Religiously unaffiliated</summary>
@@ -53,9 +79,8 @@
 
       <p>Published label: Religiously unaffiliated. affiliation.
       </p></details></div></li><li><div class="estimate-row" data-record="other-religions" data-status="numeric">
-      <div class="row-label"><a class="row-target" data-group="other-religions" href="?view=families&group=other-religions">Other religions <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">7% of U.S. adults</strong></div>
+      <div class="row-label"><a class="row-target" data-group="other-religions" href="?view=families&group=other-religions"><span class="swatch" aria-hidden="true" style="background:#284f7a"></span>Other religions <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">7% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-      <a class="bar-link" data-group="other-religions" href="?view=families&group=other-religions" aria-label="Explore Other religions"><div class="bar-track" aria-hidden="true"><span class="bar" style="width:10%"></span></div></a>
 
 
       <details class="row-source"><summary>Source and caveats for Other religions</summary>
@@ -64,9 +89,8 @@
 
       <p>Published label: Other religions. affiliation.
       </p></details></div></li><li><div class="estimate-row" data-record="no-answer" data-status="numeric">
-      <div class="row-label"><a class="row-detail" data-group="no-answer" href="?view=families&group=no-answer">Did not answer <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">1% of U.S. adults</strong></div>
+      <div class="row-label"><a class="row-detail" data-group="no-answer" href="?view=families&group=no-answer"><span class="swatch" aria-hidden="true" style="background:#6e9d50"></span>Did not answer <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">response category</small>
-      <a class="bar-link" data-group="no-answer" href="?view=families&group=no-answer" aria-label="Details for Did not answer"><div class="bar-track" aria-hidden="true"><span class="bar" style="width:1.4285714285714286%"></span></div></a>
 
 
       <details class="row-source"><summary>Source and caveats for Did not answer</summary>
@@ -98,7 +122,6 @@
       <small class="row-kind">affiliation</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Christian</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -118,7 +141,6 @@
         <ol class="estimate-list"><li><div class="estimate-row" data-record="protestant" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="protestant" href="?view=families&group=protestant&format=list#static-families-protestant">Protestant <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">40.0% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Protestant</summary>
@@ -142,7 +164,6 @@
       <small class="row-kind">family</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Baptist</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 86 (PDF p. 87), Among Protestants, share who are nondenominational has doubled since 2007; column: Among all U.S. adults &gt; 2023-24; row: Baptist.</p><p>Figures may not add to subtotals due to rounding. Explicit nondenominational identities are separate from just Christian / just Protestant (Nonspecific Protestant).</p>
@@ -164,7 +185,6 @@
       <small class="row-kind">denomination / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Southern Baptist Convention</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Southern Baptist Convention (evangelical tradition).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -174,7 +194,6 @@
         </li><li><div class="estimate-row" data-record="abcusa" data-status="numeric">
       <div class="row-label"><span class="row-name">American Baptist Churches USA</span><strong class="national-value">1.0% of U.S. adults</strong></div>
       <small class="row-kind">denomination / mainline</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for American Baptist Churches USA</summary>
@@ -188,7 +207,6 @@
       <small class="row-kind">denomination / historically black</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for National Baptist Convention, USA</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: National Baptist Convention, USA (historically Black Prot.)*.</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -200,7 +218,6 @@
       <small class="row-kind">denomination / historically black</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for National Baptist Convention of America</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: National Baptist Convention of America (historically Black Prot.)*.</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -210,8 +227,7 @@
         </li><li><div class="estimate-row" data-record="pnbc" data-status="threshold">
       <div class="row-label"><span class="row-name">Progressive National Baptist Convention</span><strong class="national-value">&lt;0.3% of U.S. adults</strong></div>
       <small class="row-kind">denomination / historically black</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Progressive National Baptist Convention</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
@@ -222,7 +238,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="nondenominational" data-status="numeric">
       <div class="row-label"><span class="row-name">Nondenominational Protestant</span><strong class="national-value">7.1% of U.S. adults</strong></div>
       <small class="row-kind">family</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Nondenominational Protestant</summary>
@@ -236,7 +251,6 @@
       <small class="row-kind">response category</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Nonspecific Protestant</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 86 (PDF p. 87), Among Protestants, share who are nondenominational has doubled since 2007; column: Among all U.S. adults &gt; 2023-24; row: Nonspecific Protestant.</p><p>Figures may not add to subtotals due to rounding. Explicit nondenominational identities are separate from just Christian / just Protestant (Nonspecific Protestant).</p>
@@ -246,7 +260,6 @@
         </li><li><div class="estimate-row" data-record="pentecostal" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="pentecostal" href="?view=families&group=pentecostal&format=list#static-families-pentecostal">Pentecostal <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">3.9% of U.S. adults</strong></div>
       <small class="row-kind">family</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Pentecostal</summary>
@@ -270,7 +283,6 @@
       <small class="row-kind">denomination / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Assemblies of God</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Assemblies of God (evangelical).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -280,7 +292,6 @@
         </li><li><div class="estimate-row" data-record="cogic" data-status="numeric">
       <div class="row-label"><span class="row-name">Church of God in Christ</span><strong class="national-value">0.7% of U.S. adults</strong></div>
       <small class="row-kind">denomination / historically black</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Church of God in Christ</summary>
@@ -294,7 +305,6 @@
       <small class="row-kind">denomination / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Church of God (Cleveland, Tennessee)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Church of God (Cleveland, TN) (evangelical).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -304,7 +314,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="methodist" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="methodist" href="?view=families&group=methodist&format=list#static-families-methodist">Methodist <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">3.5% of U.S. adults</strong></div>
       <small class="row-kind">family</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Methodist</summary>
@@ -328,7 +337,6 @@
       <small class="row-kind">denomination / mainline</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for United Methodist Church</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: United Methodist Church (mainline).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -338,8 +346,7 @@
         </li><li><div class="estimate-row" data-record="ame" data-status="threshold">
       <div class="row-label"><span class="row-name">African Methodist Episcopal Church</span><strong class="national-value">&lt;0.3% of U.S. adults</strong></div>
       <small class="row-kind">denomination / historically black</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for African Methodist Episcopal Church</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
@@ -350,8 +357,7 @@
         </li><li><div class="estimate-row" data-record="global-methodist" data-status="threshold">
       <div class="row-label"><span class="row-name">Global Methodist Church</span><strong class="national-value">&lt;0.3% of U.S. adults</strong></div>
       <small class="row-kind">denomination / evangelical</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Global Methodist Church</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
@@ -362,7 +368,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="lutheran" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="lutheran" href="?view=families&group=lutheran&format=list#static-families-lutheran">Lutheran <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">2.9% of U.S. adults</strong></div>
       <small class="row-kind">family</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Lutheran</summary>
@@ -386,7 +391,6 @@
       <small class="row-kind">denomination / mainline</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Evangelical Lutheran Church in America (ELCA)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Evangelical Lutheran Church in America (ELCA) (mainline).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -398,7 +402,6 @@
       <small class="row-kind">denomination / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Lutheran Church-Missouri Synod</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Lutheran Church-Missouri Synod (evangelical).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -408,7 +411,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="presbyterian" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="presbyterian" href="?view=families&group=presbyterian&format=list#static-families-presbyterian">Presbyterian <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">1.7% of U.S. adults</strong></div>
       <small class="row-kind">family</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Presbyterian</summary>
@@ -432,7 +434,6 @@
       <small class="row-kind">denomination / mainline</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Presbyterian Church (USA)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Presbyterian Church (USA) (mainline).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -444,7 +445,6 @@
       <small class="row-kind">denomination / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Presbyterian Church in America</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Presbyterian Church in America (evangelical).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -454,7 +454,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="restorationist" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="restorationist" href="?view=families&group=restorationist&format=list#static-families-restorationist">Restorationist <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">1.3% of U.S. adults</strong></div>
       <small class="row-kind">family</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Restorationist</summary>
@@ -478,7 +477,6 @@
       <small class="row-kind">network / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Churches of Christ</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Church of Christ (evangelical).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -488,8 +486,7 @@
         </li><li><div class="estimate-row" data-record="disciples-of-christ" data-status="threshold">
       <div class="row-label"><span class="row-name">Disciples of Christ</span><strong class="national-value">&lt;0.3% of U.S. adults</strong></div>
       <small class="row-kind">denomination / mainline</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Disciples of Christ</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
@@ -500,7 +497,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="episcopalian-anglican" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="episcopalian-anglican" href="?view=families&group=episcopalian-anglican&format=list#static-families-episcopalian-anglican">Episcopalian/Anglican <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">1.1% of U.S. adults</strong></div>
       <small class="row-kind">family</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Episcopalian/Anglican</summary>
@@ -524,7 +520,6 @@
       <small class="row-kind">denomination / mainline</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Episcopal Church</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Episcopal Church (mainline).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -536,7 +531,6 @@
       <small class="row-kind">family</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Holiness</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 86 (PDF p. 87), Among Protestants, share who are nondenominational has doubled since 2007; column: Among all U.S. adults &gt; 2023-24; row: Holiness.</p><p>Figures may not add to subtotals due to rounding. Explicit nondenominational identities are separate from just Christian / just Protestant (Nonspecific Protestant).</p>
@@ -546,7 +540,6 @@
         </li><li><div class="estimate-row" data-record="congregational" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="congregational" href="?view=families&group=congregational&format=list#static-families-congregational">Congregational <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">0.5% of U.S. adults</strong></div>
       <small class="row-kind">family</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Congregational</summary>
@@ -570,7 +563,6 @@
       <small class="row-kind">denomination / mainline</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for United Church of Christ</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: United Church of Christ (mainline).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -580,7 +572,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="adventist" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="adventist" href="?view=families&group=adventist&format=list#static-families-adventist">Adventist <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">0.3% of U.S. adults</strong></div>
       <small class="row-kind">family</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Adventist</summary>
@@ -604,7 +595,6 @@
       <small class="row-kind">denomination / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Seventh-day Adventist</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Seventh-day Adventist (evangelical).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -616,7 +606,6 @@
       <small class="row-kind">family</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Reformed</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 86 (PDF p. 87), Among Protestants, share who are nondenominational has doubled since 2007; column: Among all U.S. adults &gt; 2023-24; row: Reformed.</p><p>Figures may not add to subtotals due to rounding. Explicit nondenominational identities are separate from just Christian / just Protestant (Nonspecific Protestant).</p>
@@ -626,8 +615,7 @@
         </li><li><div class="estimate-row" data-record="anabaptist" data-status="threshold">
       <div class="row-label"><span class="row-name">Anabaptist</span><strong class="national-value">&lt;0.3% of U.S. adults</strong></div>
       <small class="row-kind">family</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Anabaptist</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
@@ -638,8 +626,7 @@
         </li><li><div class="estimate-row" data-record="friends" data-status="threshold">
       <div class="row-label"><span class="row-name">Friends</span><strong class="national-value">&lt;0.3% of U.S. adults</strong></div>
       <small class="row-kind">family</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Friends</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
@@ -650,8 +637,7 @@
         </li><li><div class="estimate-row" data-record="other-evangelical" data-status="threshold">
       <div class="row-label"><span class="row-name">Other evangelical/Fundamentalist</span><strong class="national-value">&lt;0.3% of U.S. adults</strong></div>
       <small class="row-kind">response category</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Other evangelical/Fundamentalist</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
@@ -662,8 +648,7 @@
         </li><li><div class="estimate-row" data-record="pietist" data-status="threshold">
       <div class="row-label"><span class="row-name">Pietist</span><strong class="national-value">&lt;0.3% of U.S. adults</strong></div>
       <small class="row-kind">family</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Pietist</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
@@ -674,7 +659,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="catholic" data-status="numeric">
       <div class="row-label"><span class="row-name">Catholic</span><strong class="national-value">19% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Catholic</summary>
@@ -688,7 +672,6 @@
       <small class="row-kind">affiliation</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Latter-day Saint (Mormon)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Latter-day Saint (Mormon).</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -698,7 +681,6 @@
         </li><li><div class="estimate-row" data-record="orthodox" data-status="numeric">
       <div class="row-label"><span class="row-name">Orthodox Christian</span><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Orthodox Christian</summary>
@@ -712,7 +694,6 @@
       <small class="row-kind">response category</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Other Christian</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Other Christian.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -722,8 +703,7 @@
         </li><li><div class="estimate-row" data-record="jehovahs-witness" data-status="threshold">
       <div class="row-label"><span class="row-name">Jehovah&#39;s Witness</span><strong class="national-value">&lt;1% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Jehovah&#39;s Witness</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
@@ -734,7 +714,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="unaffiliated" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="unaffiliated" href="?view=families&group=unaffiliated&format=list#static-families-unaffiliated">Religiously unaffiliated <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">29% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Religiously unaffiliated</summary>
@@ -758,7 +737,6 @@
       <small class="row-kind">response category</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Nothing in particular</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Religiously unaffiliated &gt; Nothing in particular.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -768,7 +746,6 @@
         </li><li><div class="estimate-row" data-record="agnostic" data-status="numeric">
       <div class="row-label"><span class="row-name">Agnostic</span><strong class="national-value">6% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Agnostic</summary>
@@ -782,7 +759,6 @@
       <small class="row-kind">affiliation</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Atheist</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Religiously unaffiliated &gt; Atheist.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -792,7 +768,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="other-religions" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="other-religions" href="?view=families&group=other-religions&format=list#static-families-other-religions">Other religions <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">7% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Other religions</summary>
@@ -816,7 +791,6 @@
       <small class="row-kind">affiliation</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Jewish</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Other religions &gt; Jewish.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -826,7 +800,6 @@
         </li><li><div class="estimate-row" data-record="something-else" data-status="numeric">
       <div class="row-label"><span class="row-name">Something else</span><strong class="national-value">2% of U.S. adults</strong></div>
       <small class="row-kind">response category</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Something else</summary>
@@ -840,7 +813,6 @@
       <small class="row-kind">affiliation</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Buddhist</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Other religions &gt; Buddhist.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -850,7 +822,6 @@
         </li><li><div class="estimate-row" data-record="hindu" data-status="numeric">
       <div class="row-label"><span class="row-name">Hindu</span><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Hindu</summary>
@@ -864,7 +835,6 @@
       <small class="row-kind">affiliation</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Muslim</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Other religions &gt; Muslim.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -874,8 +844,7 @@
         </li><li><div class="estimate-row" data-record="other-world-religions" data-status="threshold">
       <div class="row-label"><span class="row-name">Other world religions</span><strong class="national-value">&lt;1% of U.S. adults</strong></div>
       <small class="row-kind">response category</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Other world religions</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
@@ -886,7 +855,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="no-answer" data-status="numeric">
       <div class="row-label"><span class="row-name">Did not answer</span><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">response category</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Did not answer</summary>
@@ -911,7 +879,6 @@
       <small class="row-kind">affiliation</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Christian</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -931,7 +898,6 @@
         <ol class="estimate-list"><li><div class="estimate-row" data-record="protestant" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="protestant" href="?view=traditions&group=protestant&format=list#static-traditions-protestant">Protestant <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">40.0% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Protestant</summary>
@@ -957,7 +923,6 @@
       <small class="row-kind">tradition / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Evangelical Protestant</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 85 (PDF p. 86), Mainline Protestants have declined as a share of both the overall public and of all Protestants; column: Among all U.S. adults &gt; 2023-24; row: Evangelical Protestant.</p><p>Report decimals and the interactive&#39;s whole-percent display are separate published presentations. Do not obtain interactive values by rounding these decimal cells.</p>
@@ -981,7 +946,6 @@
       <small class="row-kind">family intersection / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Baptist (evangelical)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Evangelical Protestant &gt; Baptist family (evangelical trad.).</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1003,7 +967,6 @@
       <small class="row-kind">denomination / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Southern Baptist Convention</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Southern Baptist Convention (evangelical tradition).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -1015,7 +978,6 @@
       <small class="row-kind">response category / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Independent Baptist (evangelical)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Evangelical Protestant &gt; Baptist family (evangelical trad.) &gt; Independent Baptist (evangelical trad.).</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1025,8 +987,7 @@
         </li><li><div class="estimate-row" data-record="other-baptist-evangelical" data-status="threshold">
       <div class="row-label"><span class="row-name">Other Baptist (evangelical)</span><strong class="national-value">&lt;1% of U.S. adults</strong></div>
       <small class="row-kind">response category / evangelical</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Other Baptist (evangelical)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
@@ -1039,7 +1000,6 @@
       <small class="row-kind">family intersection / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Nondenominational (evangelical)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Evangelical Protestant &gt; Nondenominational family (evangelical trad.).</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1049,7 +1009,6 @@
         </li><li><div class="estimate-row" data-record="pentecostal-evangelical" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="pentecostal-evangelical" href="?view=traditions&group=pentecostal-evangelical&format=list#static-traditions-pentecostal-evangelical">Pentecostal (evangelical) <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">3% of U.S. adults</strong></div>
       <small class="row-kind">family intersection / evangelical</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Pentecostal (evangelical)</summary>
@@ -1073,7 +1032,6 @@
       <small class="row-kind">denomination / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Assemblies of God</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Assemblies of God (evangelical).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -1083,7 +1041,6 @@
         </li><li><div class="estimate-row" data-record="cog-cleveland" data-status="numeric">
       <div class="row-label"><span class="row-name">Church of God (Cleveland, Tennessee)</span><strong class="national-value">0.4% of U.S. adults</strong></div>
       <small class="row-kind">denomination / evangelical</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Church of God (Cleveland, Tennessee)</summary>
@@ -1097,7 +1054,6 @@
       <small class="row-kind">family intersection / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Nonspecific Protestant (evangelical)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Evangelical Protestant &gt; Nonspecific Protestant family (evangelical trad.).</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1107,7 +1063,6 @@
         </li><li><div class="estimate-row" data-record="lutheran-evangelical" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="lutheran-evangelical" href="?view=traditions&group=lutheran-evangelical&format=list#static-traditions-lutheran-evangelical">Lutheran (evangelical) <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">family intersection / evangelical</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Lutheran (evangelical)</summary>
@@ -1131,7 +1086,6 @@
       <small class="row-kind">denomination / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Lutheran Church-Missouri Synod</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Lutheran Church-Missouri Synod (evangelical).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -1141,7 +1095,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="presbyterian-evangelical" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="presbyterian-evangelical" href="?view=traditions&group=presbyterian-evangelical&format=list#static-traditions-presbyterian-evangelical">Presbyterian (evangelical) <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">family intersection / evangelical</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Presbyterian (evangelical)</summary>
@@ -1165,7 +1118,6 @@
       <small class="row-kind">denomination / evangelical</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Presbyterian Church in America</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Presbyterian Church in America (evangelical).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -1175,8 +1127,7 @@
         </li><li><div class="estimate-row" data-record="other-presbyterian-evangelical" data-status="threshold">
       <div class="row-label"><span class="row-name">Other Presbyterian (evangelical)</span><strong class="national-value">&lt;1% of U.S. adults</strong></div>
       <small class="row-kind">response category / evangelical</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Other Presbyterian (evangelical)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
@@ -1187,8 +1138,7 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="methodist-evangelical" data-status="threshold">
       <div class="row-label"><a class="row-target" data-group="methodist-evangelical" href="?view=traditions&group=methodist-evangelical&format=list#static-traditions-methodist-evangelical">Methodist (evangelical) <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">&lt;1% of U.S. adults</strong></div>
       <small class="row-kind">family intersection / evangelical</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Methodist (evangelical)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
@@ -1209,8 +1159,7 @@
         <ol class="estimate-list"><li><div class="estimate-row" data-record="global-methodist" data-status="threshold">
       <div class="row-label"><span class="row-name">Global Methodist Church</span><strong class="national-value">&lt;0.3% of U.S. adults</strong></div>
       <small class="row-kind">denomination / evangelical</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Global Methodist Church</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
@@ -1221,7 +1170,6 @@
         </li></ol></section></details></li></ol></section></details></li><li><div class="estimate-row" data-record="mainline" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="mainline" href="?view=traditions&group=mainline&format=list#static-traditions-mainline">Mainline Protestant <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">11.5% of U.S. adults</strong></div>
       <small class="row-kind">tradition / mainline</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Mainline Protestant</summary>
@@ -1247,7 +1195,6 @@
       <small class="row-kind">family intersection / mainline</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Methodist (mainline)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Mainline Protestant &gt; Methodist family (mainline trad.).</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1269,7 +1216,6 @@
       <small class="row-kind">denomination / mainline</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for United Methodist Church</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: United Methodist Church (mainline).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -1279,7 +1225,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="lutheran-mainline" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="lutheran-mainline" href="?view=traditions&group=lutheran-mainline&format=list#static-traditions-lutheran-mainline">Lutheran (mainline) <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">2% of U.S. adults</strong></div>
       <small class="row-kind">family intersection / mainline</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Lutheran (mainline)</summary>
@@ -1303,7 +1248,6 @@
       <small class="row-kind">denomination / mainline</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Evangelical Lutheran Church in America (ELCA)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Evangelical Lutheran Church in America (ELCA) (mainline).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -1315,7 +1259,6 @@
       <small class="row-kind">family intersection / mainline</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Nonspecific Protestant (mainline)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Mainline Protestant &gt; Nonspecific Protestant family (mainline trad.).</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1325,7 +1268,6 @@
         </li><li><div class="estimate-row" data-record="baptist-mainline" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="baptist-mainline" href="?view=traditions&group=baptist-mainline&format=list#static-traditions-baptist-mainline">Baptist (mainline) <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">family intersection / mainline</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Baptist (mainline)</summary>
@@ -1349,7 +1291,6 @@
       <small class="row-kind">denomination / mainline</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for American Baptist Churches USA</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: American Baptist Churches USA (mainline).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -1359,8 +1300,7 @@
         </li><li><div class="estimate-row" data-record="other-baptist-mainline" data-status="threshold">
       <div class="row-label"><span class="row-name">Other Baptist (mainline)</span><strong class="national-value">&lt;1% of U.S. adults</strong></div>
       <small class="row-kind">response category / mainline</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Other Baptist (mainline)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
@@ -1373,7 +1313,6 @@
       <small class="row-kind">family intersection / mainline</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Nondenominational (mainline)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Mainline Protestant &gt; Nondenominational family (mainline trad.).</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1383,7 +1322,6 @@
         </li><li><div class="estimate-row" data-record="presbyterian-mainline" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="presbyterian-mainline" href="?view=traditions&group=presbyterian-mainline&format=list#static-traditions-presbyterian-mainline">Presbyterian (mainline) <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">family intersection / mainline</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Presbyterian (mainline)</summary>
@@ -1407,7 +1345,6 @@
       <small class="row-kind">denomination / mainline</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Presbyterian Church (USA)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Presbyterian Church (USA) (mainline).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -1417,8 +1354,7 @@
         </li><li><div class="estimate-row" data-record="other-presbyterian-mainline" data-status="threshold">
       <div class="row-label"><span class="row-name">Other Presbyterian (mainline)</span><strong class="national-value">&lt;1% of U.S. adults</strong></div>
       <small class="row-kind">response category / mainline</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Other Presbyterian (mainline)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
@@ -1429,7 +1365,6 @@
         </li></ol></section></details></li></ol></section></details></li><li><div class="estimate-row" data-record="historically-black" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="historically-black" href="?view=traditions&group=historically-black&format=list#static-traditions-historically-black">Historically Black Protestant <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">5.4% of U.S. adults</strong></div>
       <small class="row-kind">tradition / historically black</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Historically Black Protestant</summary>
@@ -1455,7 +1390,6 @@
       <small class="row-kind">family intersection / historically black</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Baptist (historically Black Protestant)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Historically Black Protestant &gt; Baptist family (historically Black Protestant trad.).</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1477,7 +1411,6 @@
       <small class="row-kind">denomination / historically black</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for National Baptist Convention, USA</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: National Baptist Convention, USA (historically Black Prot.)*.</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -1487,7 +1420,6 @@
         </li><li><div class="estimate-row" data-record="other-baptist-historically-black" data-status="numeric">
       <div class="row-label"><span class="row-name">Other Baptist (historically Black Protestant)</span><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">response category / historically black</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Other Baptist (historically Black Protestant)</summary>
@@ -1501,7 +1433,6 @@
       <small class="row-kind">denomination / historically black</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for National Baptist Convention of America</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: National Baptist Convention of America (historically Black Prot.)*.</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -1511,8 +1442,7 @@
         </li><li><div class="estimate-row" data-record="independent-baptist-historically-black" data-status="threshold">
       <div class="row-label"><span class="row-name">Independent Baptist (historically Black Protestant)</span><strong class="national-value">&lt;1% of U.S. adults</strong></div>
       <small class="row-kind">response category / historically black</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Independent Baptist (historically Black Protestant)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
@@ -1523,8 +1453,7 @@
         </li><li><div class="estimate-row" data-record="pnbc" data-status="threshold">
       <div class="row-label"><span class="row-name">Progressive National Baptist Convention</span><strong class="national-value">&lt;0.3% of U.S. adults</strong></div>
       <small class="row-kind">denomination / historically black</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Progressive National Baptist Convention</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
@@ -1537,7 +1466,6 @@
       <small class="row-kind">family intersection / historically black</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Nonspecific Protestant (historically Black Protestant)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Historically Black Protestant &gt; Nonspecific Protestant family (historically Black Protestant trad.).</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1547,7 +1475,6 @@
         </li><li><div class="estimate-row" data-record="pentecostal-historically-black" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="pentecostal-historically-black" href="?view=traditions&group=pentecostal-historically-black&format=list#static-traditions-pentecostal-historically-black">Pentecostal (historically Black Protestant) <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">family intersection / historically black</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Pentecostal (historically Black Protestant)</summary>
@@ -1571,7 +1498,6 @@
       <small class="row-kind">denomination / historically black</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Church of God in Christ</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
       Printed p. 87 (PDF p. 88), Largest Protestant denominations in the United States; column: Among all U.S. adults &gt; 2023-24; row: Church of God in Christ (historically Black Prot.).</p><p>Selected published denominations, not an exhaustive inventory. National Baptist Convention, USA, and National Baptist Convention of America were first differentiated in 2023-24.</p>
@@ -1581,8 +1507,7 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="methodist-historically-black" data-status="threshold">
       <div class="row-label"><a class="row-target" data-group="methodist-historically-black" href="?view=traditions&group=methodist-historically-black&format=list#static-traditions-methodist-historically-black">Methodist (historically Black Protestant) <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">&lt;1% of U.S. adults</strong></div>
       <small class="row-kind">family intersection / historically black</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Methodist (historically Black Protestant)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
@@ -1603,8 +1528,7 @@
         <ol class="estimate-list"><li><div class="estimate-row" data-record="ame" data-status="threshold">
       <div class="row-label"><span class="row-name">African Methodist Episcopal Church</span><strong class="national-value">&lt;0.3% of U.S. adults</strong></div>
       <small class="row-kind">denomination / historically black</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for African Methodist Episcopal Church</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>.
@@ -1615,8 +1539,7 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="nondenominational-historically-black" data-status="threshold">
       <div class="row-label"><span class="row-name">Nondenominational (historically Black Protestant)</span><strong class="national-value">&lt;1% of U.S. adults</strong></div>
       <small class="row-kind">family intersection / historically black</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Nondenominational (historically Black Protestant)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
@@ -1627,7 +1550,6 @@
         </li></ol></section></details></li></ol></section></details></li><li><div class="estimate-row" data-record="catholic" data-status="numeric">
       <div class="row-label"><span class="row-name">Catholic</span><strong class="national-value">19% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Catholic</summary>
@@ -1641,7 +1563,6 @@
       <small class="row-kind">affiliation</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Latter-day Saint (Mormon)</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Latter-day Saint (Mormon).</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1651,7 +1572,6 @@
         </li><li><div class="estimate-row" data-record="orthodox" data-status="numeric">
       <div class="row-label"><span class="row-name">Orthodox Christian</span><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Orthodox Christian</summary>
@@ -1665,7 +1585,6 @@
       <small class="row-kind">response category</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Other Christian</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Christians &gt; Other Christian.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1675,8 +1594,7 @@
         </li><li><div class="estimate-row" data-record="jehovahs-witness" data-status="threshold">
       <div class="row-label"><span class="row-name">Jehovah&#39;s Witness</span><strong class="national-value">&lt;1% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Jehovah&#39;s Witness</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
@@ -1687,7 +1605,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="unaffiliated" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="unaffiliated" href="?view=traditions&group=unaffiliated&format=list#static-traditions-unaffiliated">Religiously unaffiliated <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">29% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Religiously unaffiliated</summary>
@@ -1711,7 +1628,6 @@
       <small class="row-kind">response category</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Nothing in particular</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Religiously unaffiliated &gt; Nothing in particular.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1721,7 +1637,6 @@
         </li><li><div class="estimate-row" data-record="agnostic" data-status="numeric">
       <div class="row-label"><span class="row-name">Agnostic</span><strong class="national-value">6% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Agnostic</summary>
@@ -1735,7 +1650,6 @@
       <small class="row-kind">affiliation</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Atheist</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Religiously unaffiliated &gt; Atheist.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1745,7 +1659,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="other-religions" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="other-religions" href="?view=traditions&group=other-religions&format=list#static-traditions-other-religions">Other religions <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">7% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Other religions</summary>
@@ -1769,7 +1682,6 @@
       <small class="row-kind">affiliation</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Jewish</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Other religions &gt; Jewish.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1779,7 +1691,6 @@
         </li><li><div class="estimate-row" data-record="something-else" data-status="numeric">
       <div class="row-label"><span class="row-name">Something else</span><strong class="national-value">2% of U.S. adults</strong></div>
       <small class="row-kind">response category</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Something else</summary>
@@ -1793,7 +1704,6 @@
       <small class="row-kind">affiliation</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Buddhist</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Other religions &gt; Buddhist.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1803,7 +1713,6 @@
         </li><li><div class="estimate-row" data-record="hindu" data-status="numeric">
       <div class="row-label"><span class="row-name">Hindu</span><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">affiliation</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Hindu</summary>
@@ -1817,7 +1726,6 @@
       <small class="row-kind">affiliation</small>
 
 
-
       <details class="row-source"><summary>Source and caveats for Muslim</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Other religions &gt; Muslim.</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
@@ -1827,8 +1735,7 @@
         </li><li><div class="estimate-row" data-record="other-world-religions" data-status="threshold">
       <div class="row-label"><span class="row-name">Other world religions</span><strong class="national-value">&lt;1% of U.S. adults</strong></div>
       <small class="row-kind">response category</small>
-
-      <small>Published upper threshold; no numeric bar.</small>
+      <small>Published upper threshold; no numeric slice.</small>
 
       <details class="row-source"><summary>Source and caveats for Other world religions</summary>
       <p>Pew Research Center (2025-02-26), <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
@@ -1839,7 +1746,6 @@
         </li></ol></section></details></li><li><div class="estimate-row" data-record="no-answer" data-status="numeric">
       <div class="row-label"><span class="row-name">Did not answer</span><strong class="national-value">1% of U.S. adults</strong></div>
       <small class="row-kind">response category</small>
-
 
 
       <details class="row-source"><summary>Source and caveats for Did not answer</summary>
@@ -2482,8 +2388,9 @@
       <a href="#methodology">Methods, classification, questionnaire and reuse</a>.</p>
 <p>These are weighted national estimates of self-identification from published aggregates, not institutional membership, historical lineage or attendance. The study was fielded July 17, 2023-March 4, 2024 among 36,908 adults in the 50 states and D.C.
 The overall margin of error is &plusmn;0.8 percentage points at the 95% confidence level, not a margin for every subgroup. <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>.</p>
-<p>Each bar starts at zero on the visible view-specific scale. Pinch inside the chart to zoom, then drag to pan; zoom buttons and keyboard controls provide non-gesture alternatives. Zoom enlarges labels, bars and the axis together without changing estimates or denominators. Select a label or bar to explore published children or denomination details. Back restores the chart's zoom, position and source notes during this visit; Fit chart returns to 100%. List mode has no gestures and keeps the same ranked rows, national values and navigation. Browser page zoom remains available outside the chart.</p>
-<p>Only numeric estimates have bars. Published upper thresholds retain their exact strings; unavailable or suppressed estimates have reasons and no bars. Selected detail never implies complete coverage; no residuals, sums of censored cells or inferred denominations are added.</p>
+<p>Families and denominations and Protestant traditions use a drill-down pie. Its full circle is the selected group's published share of U.S. adults (all U.S. adults at the top); each slice is one listed affiliation's published share of all U.S. adults, drawn to that scale. Select a slice, or focus the pie and use arrow keys and Enter, to zoom into its published children or, for a leaf, its sourced details. The centre, Back, Reset and breadcrumbs zoom out. When independently rounded children total more than their parent, the circle is scaled to their total and says so. A hatched arc marks the part of a parent not itemized in selected published detail; it is not an estimate. Leaves have no finer published breakdown, so no further pie is drawn. Animation is skipped when reduced motion is requested. The ranked list below each pie keeps the exact values, navigation and source notes; List mode hides the pie. Back restores open source notes during this visit.</p>
+<p>Attendance and demographic comparisons keep zero-based bars on a fixed scale. Pinch inside those charts to zoom, then drag to pan; zoom buttons and keyboard controls provide non-gesture alternatives without changing estimates or denominators. Browser page zoom remains available outside the chart.</p>
+<p>Only numeric estimates have slices or bars. Published upper thresholds retain their exact strings; unavailable or suppressed estimates have reasons and no slice or bar. Selected detail never implies complete coverage; no residuals, sums of censored cells or inferred denominations are added.</p>
 <p>Pew's mainline, evangelical and historically Black Protestant traditions use denomination and, for some nonspecific responses, race and/or born-again identification. Pew reports that 36% of Protestants were classified using the latter approach. Mainline is a survey classification; some rows are families, networks or general identities, not single denominations.
 <a href="https://www.pewresearch.org/religion/2025/02/26/appendix-b-classification-of-protestant-denominations/">Appendix B: Classification of Protestant denominations</a>. Nondenominational and nonspecific Protestant responses remain separate.</p>
 <p>The report's tradition decimals (23.1%, 11.5%, 5.4%) and interactive displays (23%, 11%, 5%) are separate published presentations. Report decimals take precedence for the matched wave, denominator and taxonomy. Ordinary rounding does not explain 11.5% versus 11%; no unrounded microdata was used to explain it. <a href="https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/PR_2025.02.26_religious-landscape-study_report.pdf">Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off</a>; <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a> (DOI: <a href="https://doi.org/10.58094/3zs9-jc14">10.58094/3zs9-jc14</a>).</p>
