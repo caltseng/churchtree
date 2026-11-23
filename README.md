@@ -68,6 +68,12 @@ Changes go through **topic branch → pushed PR → required CI → merge → de
 A local commit is not completion: push the relevant work and open/update its PR.
 Follow [AGENTS.md](AGENTS.md) and preserve other chats' unrelated working files.
 
+For an explicitly requested independent review, use the repository-local
+[code-review-swarm skill](.github/skills/code-review-swarm/SKILL.md). It coordinates
+bounded read-only reviews of security, correctness, simplicity, architecture,
+tests and relevant performance risks; accessibility is excluded for now.
+Invoking it does not authorize fixes, posted comments or merging.
+
 - The active GitHub `main` ruleset requires a PR and the **Build and test** check.
   It blocks force pushes and has no bypass actors.
 - PRs are checked but do not publish. Main builds publish only after all checks pass.
