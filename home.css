@@ -18,7 +18,6 @@ h1 em { color: var(--ct-accent); font-weight: normal; }
 .lead { font-size: 18px; line-height: 1.65; color: var(--ct-text-secondary); max-width: 640px; margin: 0; }
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 16px; }
 .section-heading h2 { font-size: 22px; font-weight: normal; margin: 0; }
-.section-heading>span { font: 11px system-ui; color: var(--ct-text-muted); }
 .tool-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
 .tool-card { display: flex; flex-direction: column; min-width: 0; color: inherit; text-decoration: none; border: 1px solid var(--ct-border-control); border-radius: 13px; overflow: hidden; background: var(--ct-surface); transition: transform .16s,border-color .16s; }
 .tool-card:hover { transform: translateY(-3px); border-color: var(--ct-accent); }
@@ -43,10 +42,7 @@ h1 em { color: var(--ct-accent); font-weight: normal; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: auto 0 25px; }
 .tags li { border: 1px solid var(--ct-border); border-radius: 20px; padding: 5px 9px; font: 10px system-ui; color: var(--ct-text-secondary); }
 .card-action { display: flex; justify-content: space-between; font: 600 13px system-ui; color: var(--ct-accent); border-top: 1px solid var(--ct-border); padding-top: 17px; }
-.growing-note { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 45px 0; margin-top: 40px; border-top: 1px solid var(--ct-border); }
-.growing-note h2 { font-size: 24px; font-weight: normal; margin: 0 0 10px; }
-.growing-note p:not(.eyebrow) { font: 13px/1.7 system-ui; color: var(--ct-text-secondary); max-width: 560px; margin: 0; }
-.growing-note>a { flex-shrink: 0; font: 12px system-ui; padding: 12px 0; }
+#explore { padding-bottom: 48px; }
 .home-footer { max-width: 1240px; margin: auto; padding: 22px 30px 30px; border-top: 1px solid var(--ct-border); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .home-footer>span { font-weight: bold; }
 .home-footer p { font: 11px/1.5 system-ui; color: var(--ct-text-muted); }
@@ -63,7 +59,7 @@ h1 em { color: var(--ct-accent); font-weight: normal; }
  .card-copy h3 { font-size: 27px; }
  .book-page { padding: 24px 15px; }
  .book-page h3 { font-size: 18px; }
- .growing-note { align-items: flex-start; flex-direction: column; gap: 15px; padding: 30px 0; margin-top: 30px; }
+ #explore { padding-bottom: 30px; }
  .home-footer { padding: 20px 18px; flex-direction: column; align-items: flex-start; gap: 0; }
 }
 @media (prefers-reduced-motion: reduce) { .tool-card { transition: none; } }

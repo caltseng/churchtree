@@ -174,7 +174,7 @@
         return out;
     }
     function groupDetails(n) {
-        $('details').innerHTML = `<span class="badge">Collapsed historical group</span><h2>${esc(n.name)}</h2><p>This is a display group containing ${n.members.length} recorded entries, rather than a separate denomination. Expand it to inspect the individual histories.</p><button id="expand-group">Expand group</button><h3>Included entries</h3><div id="group-members"></div>`;
+        $('details').innerHTML = `<span class="badge">Collapsed historical group</span><h2>${esc(n.name)}</h2><p>A display group of ${n.members.length} recorded entries, not a separate denomination.</p><button id="expand-group">Expand group</button><h3>Included entries</h3><div id="group-members"></div>`;
         $('expand-group').onclick = () => {
             if(detailsDialog.open)detailsDialog.close();
             level = 2;
@@ -191,7 +191,7 @@
     }
     function scopeIntroduction() {
         const title = family || 'Church history';
-        $('details').innerHTML = '<span class="badge">Explore this scope</span><h2>' + esc(title) + '</h2><p>Select a historical body to read its beliefs, formation, people and documents. Select a connection to understand the transition.</p><p>Compact lineage groups related records. The proportional timeline clusters nearby dates as you zoom out.</p>';
+        $('details').innerHTML = '<span class="badge">Explore this scope</span><h2>' + esc(title) + '</h2><p>Select a node or connection to read its history.</p>';
     }
     const mobile = matchMedia('(max-width: 1099px)');
     const detailsPanel=$('details'),detailsDialog=$('mobile-details');
@@ -345,7 +345,7 @@
             const scopeTitle=(focus ? label(nodes.get(selected)) + ' · ancestry' : family || 'All branches')+(layout==='horizontal'?' · horizontal timeline':' · proportional timeline');
             $('scope-title').textContent=mobile.matches?(focus ? label(nodes.get(selected)) + ' · ancestry' : family || 'All branches'):scopeTitle;
             $('scope-title').setAttribute('aria-label',scopeTitle);$('scope-title').title=scopeTitle;
-            $('scope-note').textContent = layout === 'horizontal' ? 'Time runs left to right. Scroll sideways (Shift + wheel) to travel through time. Use +/− or Ctrl + wheel to zoom; nearby records collapse into named groups.' : 'Mouse wheel zooms time; drag to pan. Nearby records cluster within each tradition and separate as you zoom in. Cluster dates show their actual range.';
+            $('scope-note').textContent = layout === 'horizontal' ? 'Shift + wheel moves through time; +/− or Ctrl + wheel zooms. Nearby records form named groups.' : 'Wheel zooms; drag pans. Nearby records cluster until you zoom in.';
             timelineControl = (layout === 'horizontal' ? window.renderHorizontalTimeline : window.renderChurchTimeline)({ container: graph, entries: scoped, edges, period, onNode: showNode, onEdge: showEdge, onRange: domain => {
                     if (!['year-from', 'year-to'].includes(document.activeElement?.id)) {
                         $('year-from').value = Math.floor(domain[0]);
@@ -354,7 +354,7 @@
                     $('level').textContent = Math.round(domain[0]) + '–' + Math.round(domain[1]);
                     $('count').textContent = scoped.length + ' records in scope';
                 }, onCluster: (members, title) => {
-                    $('details').innerHTML = '<span class="badge">Nearby records in time</span><h2>' + esc(title) + '</h2><p>These records are visually clustered, not a single historical body. Zoom in to explore their dates, or select an entry below. Entries sharing a date may remain grouped.</p><div id="cluster-members"></div>';
+                    $('details').innerHTML = '<span class="badge">Nearby records in time</span><h2>' + esc(title) + '</h2><p>Clustered for display, not a single historical body. Zoom in or select an entry.</p><div id="cluster-members"></div>';
                     [...new Map(members.map(n => [n.id, n])).values()].forEach(n => {
                         const b = document.createElement('button');
                         b.className = 'relationship';
@@ -369,7 +369,7 @@
             if(!timelineControl){$('zoom-in').disabled=true;$('zoom-out').disabled=true;$('period').hidden=true;$('level').textContent='No dated entries';$('count').textContent=scoped.length+' entries in scope';}
             timeNavigation.hidden=!timelineControl;
             placeGraphTools();
-            if(mobile.matches)$('scope-note').textContent=layout==='horizontal'?'Drag to explore time; pinch to zoom around your fingers. Tap a node for its history.':'Drag to pan time and branches; pinch to zoom around your fingers. Earlier/Later and +/− also work.';
+            if(mobile.matches)$('scope-note').textContent=layout==='horizontal'?'Drag through time; pinch to zoom.':'Drag to pan; pinch or +/− to zoom.';
             window.CHURCHTREE_TIMELINE = timelineControl;
             return;
         }
@@ -377,7 +377,7 @@
         $('scope-title').removeAttribute('aria-label');$('scope-title').removeAttribute('title');
         if (level === 0) {
             $('scope-title').textContent = 'Major branches';
-            $('scope-note').textContent = 'Connections summarize recorded relationships between traditions. Spacing is for readability, not elapsed time. Select a branch to drill in.';
+            $('scope-note').textContent = 'Connections summarize recorded relationships. Spacing is not elapsed time.';
             entries = families.map(f => ({ id: 'family:' + f, name: f, short_label: f, members: d.nodes.filter(n => (n.tradition_family || 'Other') === f).map(n => n.id), family: f, aggregate: true }));
             rawEdges = d.edges;
         }
@@ -412,7 +412,7 @@
                 }
             }
             $('scope-title').textContent = (focus ? `${label(nodes.get(selected))} · ancestry` : family) + (' · lineage');
-            $('scope-note').textContent = 'Chronological order with compact spacing, not elapsed time. Dashed origin nodes stay visible; zoom reveals or collapses historical groups.';
+            $('scope-note').textContent = 'Chronological order; spacing is not elapsed time. Dashed nodes are earlier origins.';
             $('count').textContent = `${scoped.length} of ${allScoped.length} records · ${entries.length} visible nodes`;
         }
         if (!entries.length) {
@@ -496,7 +496,7 @@
                 showEdge(e.originals[0]);
                 return;
             }
-            $('details').innerHTML = `<span class="badge">${e.context ? 'Origin context' : 'Grouped relationships'}</span><h2>${e.originals.length} recorded connection${e.originals.length === 1 ? '' : 's'}</h2><p>${e.context ? 'Intermediate ancestors are collapsed. This does not assert a direct split.' : 'This line combines the following recorded relationships. Expand the groups to see individual bodies.'}</p><div id="connection-list"></div>`;
+            $('details').innerHTML = `<span class="badge">${e.context ? 'Origin context' : 'Grouped relationships'}</span><h2>${e.originals.length} recorded connection${e.originals.length === 1 ? '' : 's'}</h2><p>${e.context ? 'Intermediate ancestors are collapsed. This does not assert a direct split.' : 'This line combines these recorded relationships.'}</p><div id="connection-list"></div>`;
             e.originals.forEach(original => {
                 const b = document.createElement('button');
                 b.className = 'relationship';
