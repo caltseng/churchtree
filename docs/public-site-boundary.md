@@ -24,6 +24,14 @@ assets, the hosting identity in DNS/HTTP, or copies and forks made while public.
 Never place secrets or private research in the publishable artifact. Removing
 backlinks reduces casual discovery; it does not provide anonymity or access control.
 
+The China timeline publishes only `china-history/index.html`, `history.css`,
+`controller.js` and `public-data.js`. Its canonical editorial input, H/C research
+crosswalks, held-record ledger, template, validator and tests are not public files.
+The approved projection contains original summaries, critical caveats, source
+metadata and passage locators, not the staged research packet or copied media.
+`npm run test:china` checks this route-specific boundary as well as data isolation
+from the denomination explorer.
+
 Official references: [Pages availability](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages),
 [protected branch availability](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches),
 [visibility changes](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility).

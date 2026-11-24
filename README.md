@@ -11,6 +11,7 @@ or login required.
 | --- | --- | --- |
 | Home | `/` | Tile-based inventory of the available explorations |
 | Church History | `/church-history/` | Connected branch overview, compact lineage, vertical and horizontal timelines, search, sourced profiles, ancestry and successor navigation |
+| Church in China | `/china-history/` | Separate sourced chronology, 635-2024; shared vertical/horizontal timelines, search, display-lane/date filters, evidence details and a complete text fallback |
 | Westminster Confession | `/wcf/` | Text-first reader of all 33 chapters / 172 sections, chapter navigation, section links and historical-edition source notes |
 | Logo studies | `/assets/brand/logos/` | Design-study archive, not another primary exploration |
 
@@ -100,9 +101,16 @@ coverage gaps. Read the [data audit](docs/data-quality-audit.md) and
 adding records. Filled fields and resolved citations do not prove historical accuracy.
 
 Research not yet approved for production discovery belongs outside `data/sets/`.
-The [China church-history foundation](docs/research/china/README.md) contains
-staged synthesis, chronology, evidence and an implementation handoff, not a
-published exploration. Use the reusable
+The [China church-history foundation](docs/research/china/README.md) remains
+outside the public artifact. The separate `/china-history/` experience uses
+45 selected records (including two unplaced research gaps) from that merged
+research. Nine further rows are explicitly held or outside the selected milestone
+roster, not silently turned into institutional origins.
+Its canonical editorial input, validator and page builder live in `china-history/`;
+only generated HTML, approved public data, CSS and controller are allowlisted for
+publication. China records never enter `data/sets/` or the denomination bundle.
+This is a writer-reviewed introductory selection, not independent scholarly
+approval or a current-through-2026 history. Use the reusable
 [country church history research skill](.github/skills/country-church-history/SKILL.md)
 for comparable country-specific research.
 
@@ -123,6 +131,9 @@ from the selected logo's fixed colors. See the [design-language contract](docs/d
 - `templates/home.html` + `scripts/build-home.cjs`: generated home page.
 - `church-history/index.html`, root explorer CSS/JS and timeline modules: history UI.
 - `timeline-model.js`: shared temporal clustering and branch-lane model.
+- `china-history/data.cjs`, `validate.cjs`, `build.cjs`, `template.html`: separate
+  country chronology, explicit research crosswalk/held roster and public-field
+  projection. `historical-dates.js` preserves year/month/day precision.
 - `westminster/content.json` + `westminster/build.cjs`: reader text and generated HTML.
 - `theme.css`, `theme.js`, `theme-controls.css`, `brand.css`: shared visual foundation.
 - `scripts/build-site.cjs`: clean website-only artifact; `.github/workflows/`: CI/deploy.

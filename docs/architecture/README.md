@@ -11,3 +11,23 @@ Current implementation:
 
 This is a static multi-page site. Older plan documents are historical context,
 not evidence that an old renderer, single-set model, or backend is current.
+
+The country-history route `/china-history/` is deliberately separate from the
+denomination catalog. Its canonical input is `china-history/data.cjs`; validation
+accounts for every H01-H54 research row as a selected record or an explicitly held
+row, verifies calendar bounds and evidence references, and rejects structural
+lineage relationships. `build.cjs` projects approved public fields into tracked
+HTML and `public-data.js`. Only those two outputs, `history.css` and `controller.js`
+are published by the explicit file allowlist. Source research and builder/template
+inputs remain private to the repository.
+
+The route reuses `timeline-model.js`, `timeline.js` and
+`horizontal-timeline.js`, with optional presentation hooks for display lanes,
+precise date labels and interval marks. Existing callers retain the denomination
+defaults. `historical-dates.js` validates ISO calendar periods and converts dates
+to fractional years only at the rendering boundary; the original dates, basis,
+testimony and caveats remain in both the generated list and detail profile.
+Context/attestation links are navigable text with evidence, not graph lineage.
+The progressive HTML list is complete without JS or D3. There is intentionally no
+Compact lineage option because this research does not establish a national
+institutional genealogy.

@@ -1,0 +1,64 @@
+.country-history {min-width:0;height:auto;min-height:100vh;overflow:auto;display:block}
+.country-history [hidden] {display:none!important}
+.country-history .explorer-header {display:flex;flex-wrap:wrap;gap:8px;padding:8px 16px}
+.country-history h1 {font-size:clamp(16px,2vw,24px);margin:0 auto 0 8px}
+.country-history .main-branch-copy {font-size:22px}
+.country-history .header-panel {position:static;width:100%;max-height:none;box-shadow:none}
+.country-history #filters-panel {display:flex;flex-wrap:wrap;gap:10px;align-items:end}
+.country-history #filters-panel label {display:grid;gap:4px}
+.country-history #filters-panel input {width:8em}
+.country-history button {min-height:44px}
+.country-history a {color:var(--ct-link)}
+.country-history details>summary {cursor:pointer;padding:8px 0;min-height:40px}
+.country-history summary:focus-visible,.country-history article:focus-visible,.country-history #graph:focus-visible {outline:3px solid var(--ct-focus);outline-offset:3px}
+.country-intro {padding:8px 18px;font-size:14px}
+.country-intro p {margin:0 0 4px;line-height:1.4}
+.country-intro details {max-width:85ch}
+.country-main {display:grid;height:auto;grid-template-columns:minmax(0,1fr) minmax(280px,32%);gap:12px;padding:0 16px 16px}
+.country-main:has(#selection[hidden]) {grid-template-columns:minmax(0,1fr)}
+.country-exploration {min-width:0}
+.country-toolbar {display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:6px 0}
+.country-toolbar button[aria-pressed=true] {border:2px solid var(--ct-focus);font-weight:bold}
+.country-history #graph {height:clamp(340px,64vh,760px);min-height:0}
+.country-history #graph-help,.country-history .lane-note {font:12px/1.5 system-ui;margin:4px 0}
+.country-history #visible-range {font:12px system-ui}
+.country-history #selection {border:1px solid var(--ct-border);border-radius:8px;max-height:80vh;position:sticky;top:8px;padding:16px}
+.country-history #record-list {max-width:95ch;margin:0 auto}
+.country-history article {padding:14px 0;border-bottom:1px solid var(--ct-border);scroll-margin-top:16px}
+.country-history article h3 {font-size:20px;margin:4px 0 10px}
+.country-history .record-meta {font:12px/1.5 system-ui;color:var(--ct-text-muted)}
+.country-history .critical-note {border-left:3px solid var(--ct-focus);padding-left:10px}
+.country-history .sources {padding-left:22px}
+.country-history .sources li {margin:12px 0;overflow-wrap:anywhere}
+.country-history .sources li>span {display:block;font:12px/1.5 system-ui}
+.country-history .sources p {font-size:13px}
+.country-history .source-credit {font:12px/1.6 system-ui;overflow-wrap:anywhere;margin-top:12px}
+.country-history .event-interval {stroke:var(--ct-focus);stroke-width:6;opacity:.65;pointer-events:none}
+.country-history .event-interval.uncertain {stroke-dasharray:5 5}
+.country-history .horizontal-lane-label {white-space:normal;line-height:1.2}
+.country-history .cluster-members {display:grid;gap:6px}
+.country-history .cluster-members button {text-align:left}
+.country-history #record-dialog {width:min(720px,100%);max-height:92dvh;background:var(--ct-surface);color:var(--ct-text);border:1px solid var(--ct-border);border-radius:10px;padding:16px}
+.country-dialog-header {display:flex;justify-content:space-between;align-items:center;gap:8px;position:sticky;top:-16px;background:var(--ct-surface);padding:8px 0;z-index:1}
+.country-history .skip-link {position:absolute;left:8px;top:-100px;z-index:30;background:var(--ct-surface);padding:12px}
+.country-history .skip-link:focus {top:8px}
+@media(max-width:1099px) {
+ .country-main {display:block;padding:0 8px 10px}
+ .country-history #selection {display:none}
+ .country-history .explorer-header {padding:5px 8px;gap:4px}
+ .country-history .main-branch-copy {display:none}
+ .country-history h1 {margin-left:0;font-size:17px}
+ .country-history .explorer-actions {gap:3px}
+ .country-history .explorer-actions button {padding:7px;min-width:44px;font-size:13px}
+ .country-intro {padding:5px 10px;font-size:12px}
+ .country-history #graph {height:58dvh;min-height:250px}
+ .country-history #graph-help {margin-bottom:6px}
+ .country-history .country-toolbar button {padding:7px 9px}
+}
+@media(max-height:500px) and (orientation:landscape) {
+ .country-history #graph {height:70dvh;min-height:240px}
+ .country-intro>p {display:inline}
+}
+@media(prefers-reduced-motion:reduce) {
+ .country-history * {scroll-behavior:auto!important;animation:none!important;transition:none!important}
+}

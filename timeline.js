@@ -1,18 +1,20 @@
 /* Proportional, vertically zoomable timeline. Clustering is computed in screen
    space within each tradition, so clusters dissolve as dates move apart. */
-window.renderChurchTimeline = function ({ container, entries, edges, onNode, onEdge, onCluster, period, onRange }) {
+window.renderChurchTimeline = function ({ container, entries, edges, onNode, onEdge, onCluster, period, onRange, presentation = {} }) {
     const margin = { top: 63, bottom: 35, left: 62, right: 20 }, height = Math.max(350, container.clientHeight - 4), available = container.clientWidth - 4;
     const family = n => n.tradition_family || 'Other';
     // A temporal cluster is a display grouping, not a newly invented church.
     // Prefer the most specific curated historical group that contains its members.
-    const clusterTitle = window.churchClusterTitle;
+    const clusterTitle = presentation.clusterTitle || window.churchClusterTitle;
+    const dateLabel = presentation.dateLabel || (n => String(n.start_year));
+    const duration = matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 250;
     const dated = entries.filter(n => Number.isFinite(n.start_year));
     if (!dated.length) {
         container.innerHTML = '<p class="empty">No dated entries in this branch.</p>';
         return null;
     }
     const { isCatholic, scopedBranch, laneOf, partition, count, families } =
-        window.ChurchTimelineModel.timelineLanes(dated, edges);
+        (presentation.lanes || window.ChurchTimelineModel.timelineLanes.bind(window.ChurchTimelineModel))(dated, edges);
     const spacing = Math.max(scopedBranch ? 120 : 105, (available - margin.left - margin.right) / count);
     const width = margin.left + count * spacing + margin.right;
     const years = dated.map(n => n.start_year), extent = period || [Math.min(...years) - 10, Math.max(...years) + 10];
@@ -41,6 +43,10 @@ window.renderChurchTimeline = function ({ container, entries, edges, onNode, onE
             ...c, x: margin.left + (laneOf(c.members[0]) + .5) * spacing, y: c.position,
         }));
         currentClusters = clusters;
+        plot.selectAll('line.event-interval').data(presentation.intervalEnd ? dated.filter(n => presentation.intervalEnd(n) > n.start_year) : [], n => n.id)
+            .join('line').attr('class', n => 'event-interval ' + (n.date_kind || ''))
+            .attr('x1', n => margin.left + (laneOf(n) + .5) * spacing).attr('x2', n => margin.left + (laneOf(n) + .5) * spacing)
+            .attr('y1', n => y(n.start_year)).attr('y2', n => y(presentation.intervalEnd(n))).lower();
         const combined = window.ChurchTimelineModel.connections(clusters, edges);
         links.selectAll('path').data(combined, e => e.a.id + '>' + e.b.id).join('path').attr('class', e => 'link ' + (new Set(e.edges.map(x=>x.type)).size>1?'mixed':e.edges[0].type)).attr('marker-end', 'url(#time-arrow)').attr('d', e => {
             const a = e.a, b = e.b;
@@ -58,7 +64,7 @@ window.renderChurchTimeline = function ({ container, entries, edges, onNode, onE
             g.append('text').attr('class', 'date');
             g.append('title');
             return g;
-        }).attr('class', c => 'node time-node' + (c.members.length > 1 ? ' aggregate' : '') + (c.members.some(n => n.id === highlighted) ? ' selected' : '')).attr('data-id',c=>c.members.length===1?c.members[0].id:null).attr('data-members', c => c.members.map(n => n.id).join(',')).attr('transform', c => `translate(${c.x},${c.y})`).attr('aria-label', c => c.members.length > 1 ? `${clusterTitle(c)}, ${c.members.length} entries, ${c.min} to ${c.max}` : c.members[0].name + (isCatholic(c.members[0]) ? ', ' + c.min + ' schism' : '')).on('click', (_, c) => {
+        }).attr('class', c => 'node time-node' + (c.members.length > 1 ? ' aggregate' : '') + (c.members.some(n => n.id === highlighted) ? ' selected' : '')).attr('data-id',c=>c.members.length===1?c.members[0].id:null).attr('data-members', c => c.members.map(n => n.id).join(',')).attr('transform', c => `translate(${c.x},${c.y})`).attr('aria-label', c => c.members.length > 1 ? `${clusterTitle(c)}, ${c.members.length} entries, ${c.min} to ${c.max}` : c.members[0].name + (presentation.dateLabel ? ', ' + dateLabel(c.members[0]) : isCatholic(c.members[0]) ? ', ' + c.min + ' schism' : '')).on('click', (_, c) => {
             if (c.members.length === 1)
                 onNode(c.members[0].id);
             else {
@@ -101,8 +107,8 @@ window.renderChurchTimeline = function ({ container, entries, edges, onNode, onE
             const full=this.textContent;let length=full.length;
             while(this.getComputedTextLength()>boxWidth-12&&length>1){length--;this.textContent=full.slice(0,length).replace(/…$/,'')+'…';}
         });
-        joined.select('.date').attr('x', 0).attr('y', 14).attr('text-anchor', 'middle').text(c => isCatholic(c.members[0]) ? c.min + ' schism' : (c.min === c.max ? c.min : `${c.min}–${c.max}`));
-        joined.select('title').text(c => clusterTitle(c) + '\n' + c.members.map(n => `${n.name} (${n.start_year})`).join('\n'));
+        joined.select('.date').attr('x', 0).attr('y', 14).attr('text-anchor', 'middle').text(c => presentation.dateLabel && c.members.length === 1 ? dateLabel(c.members[0]) : isCatholic(c.members[0]) ? c.min + ' schism' : (Math.floor(c.min) === Math.floor(c.max) ? Math.floor(c.min) : `${Math.floor(c.min)}–${Math.floor(c.max)}`));
+        joined.select('title').text(c => clusterTitle(c) + '\n' + c.members.map(n => `${n.name} (${dateLabel(n)})`).join('\n'));
     }
     const zoom = d3.zoom().scaleExtent([.6, 100]).filter(e => !e.button && (!e.target.closest('.node') || e.type === 'wheel')).on('zoom', event => draw(event.transform));
     svg.call(zoom).on('dblclick.zoom', null);
@@ -118,15 +124,15 @@ window.renderChurchTimeline = function ({ container, entries, edges, onNode, onE
     });
     function fit(domain) {
         const k = (extent[1] - extent[0]) / (domain[1] - domain[0]), bounded = Math.max(.6, Math.min(100, k)), target = d3.zoomIdentity.translate(0, margin.top - bounded * scale(domain[0])).scale(bounded);
-        svg.transition().duration(300).call(zoom.transform, target);
+        svg.transition().duration(duration ? 300 : 0).call(zoom.transform, target);
     }
     draw(d3.zoomIdentity);
-    return { pan: fraction => svg.transition().duration(250).call(zoom.translateBy,0,-fraction*(height-margin.top-margin.bottom)/transform.k), destroy: () => { stopTouch(); svg.interrupt(); svg.on('.zoom', null); }, reveal: id => {
+    return { pan: fraction => svg.transition().duration(duration).call(zoom.translateBy,0,-fraction*(height-margin.top-margin.bottom)/transform.k), destroy: () => { stopTouch(); svg.interrupt(); svg.on('.zoom', null); }, reveal: id => {
             const n = dated.find(n => n.id === id);
             if (!n)
                 return;
             highlighted = id;
             const pad = Math.max(3, (extent[1] - extent[0]) / 35);
             fit([n.start_year - pad, n.start_year + pad]);
-        }, step: factor => svg.transition().duration(250).call(zoom.scaleBy, factor, [width / 2, (margin.top + height - margin.bottom) / 2]), reset: () => svg.transition().duration(250).call(zoom.transform, d3.zoomIdentity), snapshot: () => ({ domain: transform.rescaleY(scale).domain(), clusters: currentClusters.map(c => ({ title: clusterTitle(c), count: c.members.length, min: c.min, max: c.max })), scale: transform.k }) };
+        }, step: factor => svg.transition().duration(duration).call(zoom.scaleBy, factor, [width / 2, (margin.top + height - margin.bottom) / 2]), reset: () => svg.transition().duration(duration).call(zoom.transform, d3.zoomIdentity), snapshot: () => ({ domain: transform.rescaleY(scale).domain(), clusters: currentClusters.map(c => ({ title: clusterTitle(c), count: c.members.length, min: c.min, max: c.max })), scale: transform.k }) };
 };

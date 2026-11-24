@@ -31,7 +31,7 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   await page.locator('.tool-card[data-id="church-history"]').click();await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
   await page.getByRole('link',{name:'Main Branch home',exact:true}).click();assert.equal(await page.locator('.tool-card').count(),pageCount);
   await page.locator('.tool-card[data-id="westminster"]').click();await page.waitForURL(/\/wcf\/$/);assert.equal(await page.locator('.passage').count(),172);assert(await page.locator('#chapter-1').isVisible());assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
-  for (const route of ['/church-history/', '/wcf/', '/wsc/', '/wlc/', '/us-denominations/']) {
+  for (const route of ['/church-history/', '/china-history/', '/wcf/', '/wsc/', '/wlc/', '/us-denominations/']) {
    assert.equal((await page.goto(base+route)).status(),200);
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),route+' fits the viewport');
    const trigger = await openAppearance(page);
