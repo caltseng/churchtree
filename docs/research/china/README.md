@@ -54,10 +54,16 @@ historical presences has been completed. Do not infer their nonexistence.
 | [Entities and relationships](entities.md) | Typed identities, bilingual/variant names and independently cited links |
 | [Sources and citations](sources.md) | Exactly inspected passages, provenance, dependence and reuse decisions |
 | [Coverage and uncertainties](coverage.md) | Substantive per-unit review, disputes and prioritized research gaps |
+| [Independent audit](audit.md) | External question/answer baseline retained before packet comparison; exact before/after and public mappings; remediation re-audit |
 | [Implementation handoff](handoff.md) | Research-to-timeline boundary, reusable components and later gates |
 
 The method is the repository's reusable
 [country church history skill](../../../.github/skills/country-church-history/SKILL.md).
+The applied [audit companion](../../../.github/skills/country-church-history-audit/SKILL.md)
+adds an independent-first comparison/remediation sequence without replacing
+those safeguards. This audit expands the packet to 79 chronology rows,
+72 entities, 42 relationship dispositions and 59 passage citations. These
+counts identify the maintained registers, **not historical completeness**.
 The packet adapts the existing dated natural-language set notes and
 [second timeline research tables](../../second-historical-timeline.md), but
 deliberately stays out of `data/sets/` and all public directories.
@@ -71,7 +77,7 @@ not independent approval or a numerical probability. A P record can contain
 retrospective, interested or translated testimony. Claims about what a document
 says are different from claims that everything it says happened.
 
-Citation IDs C01-C39 resolve to exact locators in the source index. Repeated
+Citation IDs C01-C59 resolve to exact locators in the source index. Repeated
 citations within one index entry do not create independent witnesses.
 Dates are Common Era, retaining source-supported precision. Uncertain ranges
 are not continuous institutional lifespans. Chinese characters are included
@@ -80,3 +86,9 @@ without a cited Chinese form remain in their attested Latin spelling.
 
 No scans, photographs, book pages, bulk translations, contemporary community
 rosters or identifying meeting-location data are part of this deliverable.
+
+The already-implemented `/china-history/` route remains a **45-record selection
+from the original 54 research rows**, with nine original rows held/outside that
+roster. The 25 audit additions are researched but not selected for publication,
+not hidden by search. This work does not change public data or rendering; the
+[handoff](handoff.md) records the current selection and exact remaining work.

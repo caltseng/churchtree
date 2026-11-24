@@ -9,6 +9,11 @@ Use for a country-specific historical foundation, or to audit one before a
 timeline is implemented. A country is a research boundary, not a church body.
 Do not assume its Christian histories form one institutional tree.
 
+For an existing packet or public selection, use the complementary
+[country-church-history-audit](../country-church-history-audit/SKILL.md) sequence:
+retain independently researched historical answers before repository comparison,
+repair the underlying research, and re-audit exact research/public mappings.
+
 ## Inputs and authorization
 
 Establish `country_or_region`, `historical_geography`, `period`, `as_of_date`,
