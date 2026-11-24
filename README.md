@@ -99,6 +99,13 @@ coverage gaps. Read the [data audit](docs/data-quality-audit.md) and
 [historical coverage standard](docs/spec/historical-coverage-standard.md) before
 adding records. Filled fields and resolved citations do not prove historical accuracy.
 
+Research not yet approved for production discovery belongs outside `data/sets/`.
+The [China church-history foundation](docs/research/china/README.md) contains
+staged synthesis, chronology, evidence and an implementation handoff, not a
+published exploration. Use the reusable
+[country church history research skill](.github/skills/country-church-history/SKILL.md)
+for comparable country-specific research.
+
 ## Design language and identity
 
 The selected mark is **Woodland solid**, a side-graft symbol, with three fixed colors:
