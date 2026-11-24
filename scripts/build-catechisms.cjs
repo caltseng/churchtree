@@ -53,6 +53,7 @@ for (const book of books) {
       <span class="main-branch-copy">Main Branch</span>
     </a>
     <nav aria-label="Related Westminster readings">
+      <a href="../westminster-standards/">Westminster Standards</a>
       <a href="../wcf/">Westminster Confession of Faith</a>
       <a href="../${other.route}/">${other.title}</a>
     </nav>

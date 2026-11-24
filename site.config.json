@@ -24,6 +24,7 @@
     ".webmanifest"
   ],
   "publicFiles": [
+    "westminster-standards/index.html",
     "china-history/index.html",
     "china-history/history.css",
     "china-history/controller.js",
@@ -68,15 +69,26 @@
     },
     {
       "id": "westminster",
-      "title": "The Westminster Confession",
+      "title": "Westminster Standards",
+      "path": "westminster-standards/",
+      "kind": "Primary-source collection",
+      "description": "Read the Confession of Faith, Shorter Catechism and Larger Catechism.",
+      "tags": [
+        "Confession of Faith",
+        "Shorter Catechism",
+        "Larger Catechism"
+      ],
+      "action": "Choose a Westminster reading"
+    }
+  ],
+  "westminsterDocuments": [
+    {
+      "id": "wcf",
+      "title": "Westminster Confession of Faith",
       "path": "wcf/",
       "kind": "Primary-source reader",
       "description": "Read a foundational Reformed confession, one chapter and section at a time.",
-      "tags": [
-        "33 chapters",
-        "172 sections",
-        "Historical text"
-      ],
+      "tags": ["33 chapters", "172 sections", "Historical text"],
       "action": "Read the confession"
     },
     {
