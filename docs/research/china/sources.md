@@ -49,6 +49,26 @@ the linked entries; a source with several C IDs is still one source.
 | S33 | Yale Vautrin archival introduction | [C37](#c37) |
 | S34 | UBS China Partnership Union Version history | [C38](#c38) |
 | S35 | WCC China Christian Council member profile | [C39](#c39) |
+| S36 | Rabban Sawma history, Budge edited translation | [C40](#c40) |
+| S37 | Marignolli recollections, Yule/Cordier edition | [C41](#c41) |
+| S38 | Chambon 2019, Catholic religious women | [C42](#c42) |
+| S39 | Guo and Wang 2024, Chinese hymnody | [C43](#c43) |
+| S40 | BDCC Hudson Taylor biography | [C44](#c44) |
+| S41 | Covell 1998, Taylor, BU reprint | [C45](#c45) |
+| S42 | Stockment, BDCC Lottie Moon biography | [C46](#c46) |
+| S43 | BDCC Timothy Richard biography | [C47](#c47) |
+| S44 | Stanley 1998, Richard, BU reprint | [C48](#c48) |
+| S45 | BDCC Wang Mingdao, revised entry | [C49](#c49) |
+| S46 | BDCC John Sung biography | [C50](#c50) |
+| S47 | Li Yading, Chinese BDCC Jing Dianying | [C51](#c51) |
+| S48 | WCC 2012 Ting obituary | [C52](#c52) |
+| S49 | Ding, October 1980 address, CCC/TSPM republication | [C53](#c53) |
+| S50 | Chen Yilu 2019, Ding's theology, CCC/TSPM | [C54](#c54) |
+| S51 | UBS China Partnership, Miao Bible, 2009 | [C55](#c55) |
+| S52 | BDCC Samuel Pollard, part two | [C56](#c56) |
+| S53 | Smith archives/Yale-hosted Ginling historical overview | [C57](#c57) |
+| S54 | Pozdnyaev 1998, Orthodoxy, chapter V, English translation | [C58](#c58) |
+| S55 | Richard, *Forty-five Years in China*, 1916 | [C59](#c59) |
 
 ### C01
 
@@ -388,6 +408,17 @@ Asia Harvest 2020 all-age Protestant 109.7 million, as **reported and critiqued
 by Pew**. We did not independently verify advocacy rosters or government totals.
 Do not treat multiple series reproduced by Pew as independent new fieldwork.
 
+Audit extension: also read "Geographic distribution of churches," the full
+"Claims by advocacy groups" discussion of migration and CFPS reinterviews,
+and the Catholic-decline section. The 2004 venue census is **registered sites,
+not persons or a current map**. Among 2012 CFPS adult Christian identifiers,
+about a quarter no longer identified in 2016; among 2016 identifiers, about a
+third had not identified in 2012. These conditional denominators differ.
+Pew also reports that 72% of 2018 CGSS Christian identifiers were women.
+Its qualitative rural/urban discussion is secondary reporting, not a measured
+national migration effect. Read with C27; do not turn responses into known
+individual conversion dates, permanent retention rates or private rosters.
+
 ### C27
 
 **Pew Research Center, Methodology, same report**, 2023-08-30.
@@ -554,6 +585,317 @@ proof that every Protestant community joined or ceased prior identities.
 Undated population/church totals are not used. Original paraphrase and link
 only; no asset license asserted.
 
+### C40
+
+**Anonymous Syriac history, *The History of the Life and Travels of Rabban
+Sawma*, E. A. Wallis Budge, trans. (1928), Harrison & Sons**;
+[University of Washington Silk Road edition](https://depts.washington.edu/silkroad/texts/sauma.html).
+Read translator's prayer/preface and chapters I-III through the first westward
+journey. Exact claim locators: I, "There was a certain man" and Sawma's education,
+parental objections and tonsure (Bedjan text pp. 3-8); II, "There was, in the city
+of KAWSHANG" and Markos's training (pp. 9-12); III, departure discussion and
+Christian reception en route. Parenthetical numbers are **Bedjan's Syriac text
+pagination**, not Budge's English page numbers. Retrospective hagiographic
+testimony, not a contemporary register or a newly inspected Syriac manuscript.
+Supports households, clergy/monastic formation and outward networks in a
+thirteenth-century setting; no exact departure year adopted. The editor offers
+competing Kawshang identifications; do not silently map it or assign modern
+national/ethnic identity. No Tang institutional bridge follows. Original
+paraphrase/link only; no translation or scan republished.
+
+### C41
+
+**John de' Marignolli, recollections, in Henry Yule, revised Henri Cordier,
+*Cathay and the Way Thither*, II (1913-1916), pp. 209-269**;
+[Washington edited extract](https://depts.washington.edu/silkroad/texts/marignolli.html).
+Read pp. 209-217, particularly Cambalec's Franciscan churches, cathedral,
+archbishop's residence, imperial support and Alans (pp. 210-216). Supports
+fourteenth-century Latin worship and institutions alongside, not identical
+with, C40's eastern Christian world. Retrospective, triumphalist participant
+account through a later English edition. Neither national totals nor an exact
+institutional extinction date adopted; no presumed meeting with Sawma.
+Original paraphrase/link; no copied translation.
+
+### C42
+
+**Michel Chambon, "Chinese Catholic Nuns and the Organization of Religious
+Life in Contemporary China," *Religions* 10(7) (2019), 447**,
+[DOI](https://doi.org/10.3390/rel10070447);
+[inspected publisher XML](https://mdpi-res.com/d_attachment/religions/religions-10-00447/article_deploy/religions-10-00447.xml).
+Read introduction and section 1.1, "Historical Roots," plus opening of 1.2.
+The introduction describes March 2015-July 2017 fieldwork, including eighteen
+months in one locality. Section 1.1 treats seventeenth-century Fujian/Sichuan
+introductions, Petronilla Chen's 1643 vows, family-resident beatas, teaching
+women, baptism, care of sick people and upkeep of worship places, plus conflicts
+over marriage and later congregational standardization. The historical account
+depends on cited scholarship not independently read here; modern ethnography
+does not itself establish seventeenth-century dates. Supports `zhennü` 贞女
+and `gupo` 姑婆 as local terms, not one national order. Do not copy contemporary
+case identities/meeting details. CC BY 4.0 article; original paraphrase and
+credit only, no third-party images reused.
+
+### C43
+
+**Guo Dengjie and Wang Lina, "Glocalization: The Development and Localization
+of Chinese Christian Hymns between 1807 and 1949," *Religions* 15(2)
+(2024), 168**, published 2024-01-30,
+[DOI](https://doi.org/10.3390/rel15020168);
+[inspected publisher XML](https://mdpi-res.com/d_attachment/religions/religions-15-00168/article_deploy/religions-15-00168.xml).
+Read introduction, opening of section 2, sections 3.2.1-3.3, 4.1-4.2.2
+and opening of conclusion. Claim locators: 3.2.1, E. C. Lord's 1856 hymnbook
+with Chinese characters, Romanized Ningbo and staff notation; 4.2.1,
+1936 *Hymns of Universal Praise* / 普天頌贊, six collaborating churches;
+4.2.2, Chao Tzu-ch'en 趙紫宸's 1931 poem, Hu De'ai 胡德愛's 1934 tune and
+Bliss Wiant's 1936 harmony, with a rural morning-devotion setting and later
+overseas versions. No lyrics or scores reproduced. The hymnals/poems themselves
+were not independently inspected. **Reject** internally inconsistent totals:
+452 translated plus 62 original hymns does not equal the stated 512.
+Also withhold the anomalous Goodrich lifespan attached to 1872 editing.
+Its Protestant periodization is not the beginning of all Christianity in China.
+CC BY 4.0 article; original paraphrase/credit, no assumed score/image license.
+
+### C44
+
+**BDCC, "James Hudson Taylor"**, undated,
+[entry](https://www.bdcconline.net/en/stories/taylor-james-hudson).
+Read formation/Lammermuir narrative and analysis through education, cultural
+attitudes, administration and leadership. Locators: "The China Inland Mission
+is born" (1865), "The Lammermuir party" (1866 arrival and Wang Laijun's 1867
+ordination); analysis on women, medical work, education and Chinese dress;
+"Opposition to imperialism and the opium trade." Supports a China-administered,
+nondenominational faith mission and named Chinese coworkers, not a separate
+Chinese denomination. Evangelical biographical assessment drawing on mission
+histories; its praise and civilizational judgments are not neutral findings.
+Do not adopt totals, superlatives, or treat female recruitment as equal Chinese
+women's authority. Original paraphrase/link, no portrait/text reuse.
+
+### C45
+
+**Ralph R. Covell, "Taylor, James Hudson," in Gerald H. Anderson, ed.,
+*Biographical Dictionary of Christian Missions* (1998), pp. 657-658**,
+[Boston University reprint](https://www.bu.edu/missiology/missionary-biography/t-u-v/taylor-j-hudson-1832-1905/).
+Full entry read. Second/third paragraphs locate CIM formation in 1865 and
+1866 party; explain faith-finance, Chinese cultural identification,
+China-based administration, nondenominational evangelical belief and single
+women's interior work. Specialist secondary account, but shares mission
+historiography with C44, not wholly independent archival verification.
+Conversion/station totals not adopted. Reprint explicitly copyright 1998,
+all rights reserved; original paraphrase/link only.
+
+### C46
+
+**Martha Stockment, "Charlotte 'Lottie' Diggs Moon," BDCC**, undated,
+[entry](https://www.bdcconline.net/en/stories/moon-charlotte-lottie-diggs).
+Full main biography and source list read. Exact locators: 1873 North China
+arrival paragraph; "Moon set out to study" (1879 rural trips; 1885 Pingdu);
+"Trying to arouse" (women's hymn/doctrine classes);
+"Still struggling" (1887 invitation); women's fundraising/1888 offering and
+1889 congregation paragraphs. Uses Hyatt (1976), *Mission Legacies* (1994)
+and Tiedemann (2010), not independently read for this entry. Devotional
+mission biography supplies a limited example of women's constrained authority,
+local invitation and rural/urban choices, not a national pattern or sole-founder
+proof. Withhold "first" superlatives, baptism/home-visit totals, outdated
+fundraising figures and the starvation-death interpretation pending comparison.
+Original paraphrase/link only; no portrait copied.
+
+### C47
+
+**BDCC, "Timothy Richard"**, undated,
+[entry](https://www.bdcconline.net/en/stories/richard-timothy).
+Read arrival, famine relief, publishing/education and later evaluation through
+the methodological disagreement. Locators: 1870 arrival; "Famine relief and
+afterwards" (1876-1879); "1891-1910" (literature society, reform and education).
+**Header ends his life in 1915; narrative says April 1919.** C48's scholarly
+entry identifies 1915 as retirement, not death. Do not copy the header.
+Biographical interpretation of liberalism, evangelism and colleagues' criticism
+is contested; no independent adjudication of doctrinal orthodoxy.
+Compare C48 and Richard's own civilizational framing in C59, rather than a
+uniform benevolent-modernization verdict. Original paraphrase/link only.
+
+### C48
+
+**Brian Stanley, "Richard, Timothy," in Anderson, ed., *Biographical Dictionary
+of Christian Missions* (1998), pp. 567-568**,
+[Boston University reprint](https://www.bu.edu/missiology/missionary-biography/r-s/richard-timothy-1845-1919/).
+Full entry read. Second paragraph: 1876-1879 famine, 1877 Taiyuan relief and
+elite/scientific-education strategy; third: BMS colleagues' criticism, 1891
+secondment to the Society for the Diffusion of Christian and General Knowledge,
+later Christian Literature Society, 1915 retirement. Heading gives 1845-1919.
+Useful scholarly account of motivations and controversy, not a claim that
+Western expertise was objectively the only remedy for famine or that one
+missionary caused China's reforms. Reprint copyright/all rights reserved;
+original paraphrase/link, no images.
+
+### C49
+
+**BDCC, "Wang Mingdao (Revised and Updated)"**, revised entry accessed 2026-11-24,
+[entry](https://www.bdcconline.net/en/stories/wang-mingdao).
+Read Life, After 1949, Long imprisonment, Later years, Evaluation and
+opening theological discussions. Locators: household congregation and 1937
+Tabernacle; wartime federation refusal; After 1949 doctrinal dispute and
+1955 arrest; Long imprisonment (1958 retraction/reimprisonment);
+Later years (end-1979 release). Supports attributed self-support/independence,
+strict baptism/ethical criteria and repression, not a corporate ancestor of
+every house church. Evangelical source quoting Wang, Aikman and other
+biographers; original prison/state records and the full 1955 essay not read.
+Do not make "martyr" a neutral classification, calculate continuous
+imprisonment from inconsistent duration wording, or adopt its uncorroborated
+Trinity allegation. Compare Ding's actual contrasting advocacy, C53-C54,
+without claiming those later speeches are direct replies to Wang.
+Original paraphrase/link; no private rosters or present meeting details.
+
+### C50
+
+**BDCC, "John Sung"**, undated,
+[entry](https://www.bdcconline.net/en/stories/john-sung).
+Read introduction/early ministry through periods 1-4 and much of "China's John
+the Baptist." Locators: ministry period 1, men/women lay training and rural
+Bible instruction; period 2, Bethel Band 1930-1933 and separation;
+period 3, 1935-1940 Southeast Asian/Taiwan travel, 1937 Bible institute and
+1938 Methodist ordination; discussions of music, repentance/restitution,
+prayer and retaining church connections. Source spells both Sung and Song;
+Shangjie occurs in childhood paragraph. Contemporary diaries and scholarly
+works cited by this biography were **not** separately inspected.
+Evangelical narrative; healing experiences and forecasts remain testimony,
+not established supernatural events or validated conversion/retention totals.
+Its account places Dora Yu in Bethel leadership in 1933, conflicting with her
+1931 death in C17: withhold that assertion rather than silently reconcile it.
+No new denomination or universal secession is inferred from itineration.
+Original paraphrase/link only.
+
+### C51
+
+**李亚丁 (Li Yading), "敬奠瀛," Chinese BDCC**, undated,
+[entry](https://www.bdcconline.net/zh-hans/stories/jing-dianying).
+Main Chinese biography read, especially paragraphs on 1921 cooperative,
+sixth-year school, 1927 耶稣家庭 naming, communal labor/property,
+gender-separated housing, lengthy prayer, tongues/healing, 陈壁玺 (Chen Bixi)
+and 1952 suppression after early Three-Self participation.
+Same author/platform and narrative family as C20: **not independent
+corroboration**. Adds source-established script/naming/practice, not a newly
+inspected local archive. Allegations of personal privilege are allegations;
+neither vindication nor an abuse finding is established here.
+Original paraphrase/link; no copied Chinese text beyond names/terms.
+
+### C52
+
+**World Council of Churches, "WCC pays tribute to Bishop K. H. Ting,"
+2012-11-23**, [obituary](https://oikoumene.org/news/wcc-pays-tribute-to-bishop-k-h-ting).
+Full text read. Paragraph beginning "Bishop Ting worked closely" names
+Nanjing Union Theological Seminary, TSPM chairmanship and CCC presidency;
+following paragraphs describe 1980s-1990s international/ecumenical re-entry.
+Opening gives death on November 22. Commemorative institutional testimony,
+not independent proof of universal church approval, political innocence or
+net demographic growth. Original paraphrase/link; photograph withheld.
+
+### C53
+
+**丁光训 (Ding Guangxun/K. H. Ting), "回顾与展望," October 1980 opening
+address**, originally *天风* 1981, no. 1, republished by CCC/TSPM,
+[Chinese text](https://www.ccctspm.org/cppccinfo/13615).
+Body and original-publication footer read during initial research; later
+repeat retrieval had intermittent DNS failures. Locator: opening identification
+of October 1980 national meeting; discussion of patriotism and self-government,
+and the concluding 治好、养好、传好 program. Supports the speaker's advocacy of
+national reconstruction, Christian faith and Three-Self organization, **not**
+proof that dissenters were disloyal or that the 1980 meeting created every
+Chinese church. Republication date is not speech date. Historical primary
+voice in an institutional reprint; no contemporaneous original issue inspected.
+Original paraphrase/link; no bulk translation.
+
+### C54
+
+**陈逸鲁 (Chen Yilu), address on Ding Guangxun's theological thought,
+CCC/TSPM, 2019-11-27**,
+[Chinese article](https://www.ccctspm.org/specialinfo/529).
+Read body, especially November 1998 Jinan theological reconstruction decision
+and sections presenting 宇宙的基督 (cosmic Christ), God as love, reconciliation,
+adaptation to socialist society and clergy education. Initial passage retrieval
+succeeded; later retry had intermittent DNS failure. A sympathetic institutional
+retrospective, not 1998 minutes or independent assessment of coercion/reception.
+Do not turn this into a compulsory unified theology of all Protestants.
+Original paraphrase/link, no reproduced address.
+
+### C55
+
+**UBS China Partnership, "Miao Bible - 106 Years of Waiting," 2009-10-01**,
+page byline Cynthia Oh, text credited Yeo Tan Tan,
+[article](https://ubscp.org/miaobible/).
+Full article read; locators: "The History" (1917 NT, 1988 Ruth trial,
+1990 local OT team); "Support" (1992 institutional assistance and Chinese/
+original-language checking); opening/full-Bible publication (2009).
+Big Flowery Miao in Yunnan/Guizhou/Sichuan is a bounded language project,
+not all Miao/Hmong varieties. Institutional retrospective and fundraising
+perspective; no donor/member totals, contemporary meeting location or
+missionary-only script invention accepted. Compare C56 for collaborators,
+without pretending those two accounts independently establish every stage.
+Original paraphrase/link only; no Bible text or photographs.
+
+### C56
+
+**BDCC, "Samuel Pollard," part two**, undated,
+[entry](https://www.bdcconline.net/en/stories/samuel-pollard-1).
+Read first mass-movement narrative and later translation/organization passages.
+Locators: July 1904 Miao envoys from James Adam; Stephen Lee and Miao
+teachers; "The Second Phase of the Mass Movement" (local funding/worship,
+missionary disciplinary authority); later elder baptism review, translation
+team and preachers' meetings. Includes Grist/mission-memoir dependency; those
+originals not separately read. The account's "January 1904" meeting sequence
+is inconsistent with the preceding July encounter; no exact causal meeting
+sequence or day adopted. Reject derogatory ethnic/sexual generalizations
+as neutral ethnography, and attribute its liberation and miraculous claims.
+Useful for both local agency and missionary regulation/treaty leverage;
+not independent evidence that every participant wanted all changes.
+Original paraphrase/link; no image copied.
+
+### C57
+
+**Smith College Archives, "Ginling College Records in the Smith College
+Archives" / "The History of Ginling College," undated**, in *The American
+Context of China's Christian Colleges*, Yale-hosted
+[overview](https://divinity-adhoc.library.yale.edu/ChinaCollegesProject/Smith/SmithOverview.html).
+Full overview read. Locators: historical opening (1915 opening and five
+sponsoring boards); next paragraph (Wu Yi-fang president 1928);
+"Throughout the increasing turmoil" (1938 exile to West China Union
+University, Chengtu); "The new government pushed" (1950 financial cutoff,
+1951 combination with University of Nanking). This is an archivists'
+historical narrative, **more than catalog metadata but not inspection of
+the described correspondence, budgets or diaries**. Its US sister-college
+perspective is incomplete; no national women's-education "first" or rescue
+total adopted. Educational combination is not a denominational merger.
+Later reopening is mentioned but continuity of legal institution not
+reconstructed here. Original paraphrase/link; collection images withheld.
+
+### C58
+
+**Dionisy Pozdnyaev, *Orthodoxy in China* (1998), chapter V, Katherine
+Ilachinski, English trans.**, [chapter](https://orthodox.cn/localchurch/pozdnyaev/5_en.htm).
+Read chapter opening through bishops' deaths/property and early Cultural
+Revolution discussions. Locators: November 23, 1956 autonomy project;
+May 30, 1957 Vasily consecration; intended council not convened and
+Simeon disagreement; emigration, church/property losses and leadership deaths.
+Names and rival leadership do not supply a fully constituted separate
+corporate succession. Moscow-associated ecclesial narrative, not underlying
+synodal minutes, PRC recognition documents or an independent second witness
+to C31. Improves translation legibility, not source independence.
+Attempted ROCOR Studies counteraccounts failed retrieval; strong claims
+about accepted jurisdiction or motives remain held. No current parish map.
+Original paraphrase/link, no copyrighted translation reproduced.
+
+### C59
+
+**Timothy Richard, *Forty-five Years in China: Reminiscences* (London:
+T. Fisher Unwin, 1916)**,
+[Cornell scan/OCR via Internet Archive](https://archive.org/stream/cu31924023067741/cu31924023067741_djvu.txt).
+Read title/publication pages, dedication and introduction, pp. 7-8, signed
+Shanghai, January 1916. Richard links Christian salvation, scientific/
+industrial education, publishing and commerce, and describes Chinese
+philosophy/customs in a strongly civilizational hierarchy. This is his own
+retrospective justification, not objective proof that local society lacked
+knowledge or that he caused national modernization. The rest of the memoir
+has not been read for this audit. OCR/edition limits; no inferred famine
+totals or unseen chapter citations. Original paraphrase/link only.
+
 ## Discovery leads, not verified evidence for release
 
 These are worth pursuing, but catalog/abstract/search access is **not** a
@@ -590,6 +932,14 @@ exist.
 | Vatican: C23, C32-C36 | Distinct official actions/messages, not independent evaluations of policy effectiveness. English/Chinese versions of one message count once. Links and short original summaries only, no bulk translation. |
 | Yale: C16/C37 | Archival descriptions read, not underlying diaries. Collection/exhibit access is not permission for photographs or scans. No media copied. |
 | UBS/WCC: C38/C39 | Institutional histories with specific missions and perspectives. Their broad success narratives and undated counts are not independently validated; C39's conflicting ancient date is rejected. No media/text copied. |
+| Medieval editions: C40/C41 | Distinct Syriac/Latin traditions through old English editions; not independent witnesses to the same event, full modern critical scholarship or original-manuscript inspection. Original paraphrase only. |
+| Scholarship: C42/C43 | Read publisher XML under CC BY 4.0; historical references and hymnals not thereby independently read. Preserve scholarly attribution and internal errors/limits; no figures, lyrics or score assets reused. |
+| BDCC/dictionary expansion: C44-C51/C56 | Shared confessional/mission source networks; BU reprints identify printed authors/editions but do not automatically provide independent evidence. English/Chinese Jing counts once. Copyrighted entries/portraits not copied. |
+| Ting/CCC-TSPM/WCC: C52-C54 | Obituary, primary speech reprint and sympathetic retrospective theology address are different evidence kinds, not three neutral endorsements. Institutional viewpoint retained alongside dissent; no bulk translations or images. |
+| Minority translation: C55/C56 | UBS describes its supported project; BDCC reuses missionary narratives. Local agency present without pretending to have directly inspected minority-language editions or independent local oral histories. No Bible text, donor/member lists or meeting details. |
+| Ginling: C57 | Read archival historical narrative, not underlying letters, budgets or diaries; US institutional perspective explicitly limited. No collection images. |
+| Orthodox: C58 | Legible translation, likely same historiographic family as C31; source-language original and opposing jurisdictional materials not verified. No population/current parish data. |
+| Richard: C59 | Inspected memoir introduction gives the author's perspective, not independent validation of his achievements. No copied scan or long translated/text excerpt. |
 
 **Asset status:** no assets proposed for immediate publication. A later proposal
 must record item, creator/custodian, item-specific stable URL, underlying-work

@@ -103,8 +103,8 @@ adding records. Filled fields and resolved citations do not prove historical acc
 Research not yet approved for production discovery belongs outside `data/sets/`.
 The [China church-history foundation](docs/research/china/README.md) remains
 outside the public artifact. The separate `/china-history/` experience uses
-45 selected records (including two unplaced research gaps) from that merged
-research. Nine further rows are explicitly held or outside the selected milestone
+45 selected records (including two unplaced research gaps) from the original
+54-row research foundation. Nine of those original rows are held or outside the selected milestone
 roster, not silently turned into institutional origins.
 Its canonical editorial input, validator and page builder live in `china-history/`;
 only generated HTML, approved public data, CSS and controller are allowlisted for
@@ -112,7 +112,11 @@ publication. China records never enter `data/sets/` or the denomination bundle.
 This is a writer-reviewed introductory selection, not independent scholarly
 approval or a current-through-2026 history. Use the reusable
 [country church history research skill](.github/skills/country-church-history/SKILL.md)
-for comparable country-specific research.
+for comparable country-specific research, and its
+[independent research-audit companion](.github/skills/country-church-history-audit/SKILL.md)
+to test substantive coverage before comparison with existing records.
+The [applied China audit](docs/research/china/audit.md) expands the underlying
+research beyond the public selection; it does not automatically publish new rows.
 
 ## Design language and identity
 
