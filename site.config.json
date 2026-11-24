@@ -24,6 +24,10 @@
     ".webmanifest"
   ],
   "publicFiles": [
+    "china-history/index.html",
+    "china-history/history.css",
+    "china-history/controller.js",
+    "china-history/public-data.js",
     "us-denominations/index.html",
     "us-denominations/affiliation.css",
     "us-denominations/controller.js",
@@ -31,6 +35,15 @@
     "us-denominations/public-data.js"
   ],
   "pages": [
+    {
+      "id": "china-history",
+      "title": "Church in China",
+      "path": "china-history/",
+      "kind": "Sourced historical timeline",
+      "description": "Explore selected Christian encounters, Chinese-led movements and institutional ruptures, from Tang testimony to 2024.",
+      "tags": ["635–2024", "Parallel episodes", "Evidence and gaps"],
+      "action": "Explore church in China"
+    },
     {
       "id": "us-denominations",
       "title": "U.S. denominations",

@@ -1,13 +1,14 @@
 /* Native horizontal scrolling with proportional dates and screen-space clusters. */
-window.renderHorizontalTimeline = function ({ container, entries, edges, onNode, onEdge, onCluster, period, onRange }) {
-    const title = window.churchClusterTitle;
+window.renderHorizontalTimeline = function ({ container, entries, edges, onNode, onEdge, onCluster, period, onRange, presentation = {} }) {
+    const title = presentation.clusterTitle || window.churchClusterTitle;
+    const dateLabel = presentation.dateLabel || (n => String(n.start_year));
     const dated = entries.filter(n => Number.isFinite(n.start_year));
     if (!dated.length) {
         container.innerHTML = '<p class="empty">No dated entries in this branch.</p>';
         return null;
     }
     const { isCatholic, laneOf, partition, count, families } =
-        window.ChurchTimelineModel.timelineLanes(dated, edges);
+        (presentation.lanes || window.ChurchTimelineModel.timelineLanes.bind(window.ChurchTimelineModel))(dated, edges);
     const mobile = matchMedia('(max-width:1099px)').matches, rail = mobile ? 96 : 155;
     const left = mobile ? 198 : 270, right = mobile ? 102 : 120, top = 68, lane = 100, axisTop = 26;
     const compactFirstLane = families.length > 1 && families[0] === 'Catholic';
@@ -55,7 +56,11 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, onNode,
         axis.call(d3.axisTop(scale).ticks(Math.max(5, Math.floor(base * k / 110))).tickFormat(d3.format('d')));
         axis.selectAll('text').attr('fill', 'var(--ct-text-muted)');
         axis.selectAll('line,.domain').attr('stroke', 'var(--ct-axis)');
-        grid.selectAll('line').data(families).join('line').attr('x1', left).attr('x2', currentWidth - right).attr('y1', (_, i) => laneCenter(i)).attr('y2', (_, i) => laneCenter(i)).attr('stroke', 'var(--ct-grid)');
+        grid.selectAll('line.lane-guide').data(families).join('line').attr('class', 'lane-guide').attr('x1', left).attr('x2', currentWidth - right).attr('y1', (_, i) => laneCenter(i)).attr('y2', (_, i) => laneCenter(i)).attr('stroke', 'var(--ct-grid)');
+        grid.selectAll('line.event-interval').data(presentation.intervalEnd ? dated.filter(n => presentation.intervalEnd(n) > n.start_year) : [], n => n.id)
+            .join('line').attr('class', n => 'event-interval ' + (n.date_kind || ''))
+            .attr('x1', n => scale(n.start_year)).attr('x2', n => scale(presentation.intervalEnd(n)))
+            .attr('y1', n => laneCenter(laneOf(n))).attr('y2', n => laneCenter(laneOf(n)));
         const visible = dated.filter(n => !isCatholic(n) || (n.start_year >= extent[0] && n.start_year <= extent[1]));
         clusters = window.ChurchTimelineModel.cluster(visible, scale, 225, partition).map(c => ({
             ...c, x: c.position, y: laneCenter(laneOf(c.members[0])),
@@ -81,7 +86,7 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, onNode,
             g.append('text').attr('class', 'date');
             g.append('title');
             return g;
-        }).attr('class', c => 'node horizontal-node' + (c.members.length > 1 ? ' aggregate' : '') + (c.members.some(n => n.id === highlighted) ? ' selected' : '')).attr('data-members', c => c.members.map(n => n.id).join(',')).attr('data-id', c => c.members.length === 1 ? c.members[0].id : null).attr('transform', c => `translate(${c.x},${c.y})`).attr('aria-label', c => isCatholic(c.members[0]) ? c.members[0].name + ', ' + c.min + ' schism' : title(c) + ', ' + c.min + '–' + c.max).on('click', (_, c) => {
+        }).attr('class', c => 'node horizontal-node' + (c.members.length > 1 ? ' aggregate' : '') + (c.members.some(n => n.id === highlighted) ? ' selected' : '')).attr('data-members', c => c.members.map(n => n.id).join(',')).attr('data-id', c => c.members.length === 1 ? c.members[0].id : null).attr('transform', c => `translate(${c.x},${c.y})`).attr('aria-label', c => presentation.dateLabel && c.members.length === 1 ? title(c) + ', ' + dateLabel(c.members[0]) : isCatholic(c.members[0]) ? c.members[0].name + ', ' + c.min + ' schism' : title(c) + ', ' + c.min + '–' + c.max).on('click', (_, c) => {
             if (c.members.length === 1) {
                 onNode(c.members[0].id);
                 return;
@@ -118,8 +123,8 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, onNode,
             text.attr('text-anchor', 'middle').attr('y', shown.length > 1 ? -12 : -5);
             shown.forEach((s, i) => text.append('tspan').attr('x', 0).attr('dy', i ? 13 : 0).text(s));
         });
-        joined.select('.date').attr('text-anchor', 'middle').attr('y', c => isCatholic(c.members[0]) ? 13 : 18).text(c => isCatholic(c.members[0]) ? c.min + ' schism' : c.min === c.max ? c.min : `${c.min}–${c.max}`);
-        joined.select('title').text(c => title(c) + '\n' + c.members.map(n => n.name + ' (' + n.start_year + ')').join('\n'));
+        joined.select('.date').attr('text-anchor', 'middle').attr('y', c => isCatholic(c.members[0]) ? 13 : 18).text(c => presentation.dateLabel && c.members.length === 1 ? dateLabel(c.members[0]) : isCatholic(c.members[0]) ? c.min + ' schism' : Math.floor(c.min) === Math.floor(c.max) ? Math.floor(c.min) : `${Math.floor(c.min)}–${Math.floor(c.max)}`);
+        joined.select('title').text(c => title(c) + '\n' + c.members.map(n => n.name + ' (' + dateLabel(n) + ')').join('\n'));
         report();
     }
     function zoom(factor, anchor = container.clientWidth / 2) {
