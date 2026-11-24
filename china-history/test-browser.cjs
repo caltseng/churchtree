@@ -17,6 +17,40 @@ fs.mkdirSync(output, {recursive: true});
             await page.locator('.tool-card[data-id="china-history"]').click();
             await page.locator('#graph svg').waitFor();
             assert.match(page.url(), /\/china-history\/$/);
+            await page.goto(base + '/china-history/?from=1900&to=2000');
+            await page.locator('#graph svg').waitFor();
+            const period = await page.locator('#visible-range').innerText();
+            assert.equal(period, '1900-2001 CE');
+            for (const orientation of ['horizontal', 'vertical', 'horizontal', 'vertical']) {
+                await page.locator('#' + orientation).click();
+                await page.waitForTimeout(200);
+                assert.equal(await page.locator('#visible-range').innerText(), period,
+                    'Changing orientation preserves the full visible period, including on narrow screens');
+                if (orientation === 'horizontal') {
+                    assert(await page.locator('#graph .horizontal-axis .tick text').evaluateAll(labels => {
+                        const boxes = labels.map(label => label.getBoundingClientRect()).sort((a, b) => a.left - b.left);
+                        return boxes.every((box, i) => !i || box.left >= boxes[i - 1].right);
+                    }), 'Horizontal date labels remain readable at the fitted width');
+                }
+            }
+            await page.locator('#horizontal').click();
+            await page.locator('#zoom-in').click();
+            await page.waitForTimeout(200);
+            const zoomedPeriod = await page.locator('#visible-range').innerText();
+            for (const width of [viewport.width + 40, viewport.width]) {
+                await page.setViewportSize({...viewport, width});
+                await page.waitForTimeout(300);
+                assert.equal(await page.locator('#visible-range').innerText(), zoomedPeriod,
+                    'Resizing preserves the zoomed horizontal period rather than narrowing it again');
+            }
+            const clustered = await page.locator('#graph .node').count();
+            await page.locator('#zoom-in').evaluate(button => {
+                for (let i = 0; i < 24; i++) button.click();
+            });
+            assert(await page.locator('#graph .node').count() > clustered,
+                'Narrow-screen fit retains enough zoom depth to separate dated records');
+            await page.goto(base + '/china-history/');
+            await page.locator('#graph svg').waitFor();
             assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
             assert(await page.locator('#graph').evaluate(el => {
                 const r = el.getBoundingClientRect();

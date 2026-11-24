@@ -140,7 +140,8 @@ const server=require('./test-server.cjs')(root);
     await gesture(b,a);
     const reversed=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot());assert(reversed.scale<zoomed.s.scale*.7,'Reverse pinch must zoom out');
     assert(!await page.getByRole('dialog',{name:'Historical details'}).isVisible(),'Pinch must not activate a node');
-    const domain=reversed.domain;
+    await page.getByRole('button',{name:'Zoom in',exact:true}).tap();await page.waitForTimeout(350);
+    const domain=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain);
     await gesture([{id:0,x,y}],[{id:0,x:x-65,y:y-65}]);
     const panned=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain);assert(Math.max(...panned.map((v,i)=>Math.abs(v-domain[i])))>.1,orientation+' '+branch+' One-finger drag must pan time '+JSON.stringify({domain,panned}));
    }
@@ -161,6 +162,8 @@ const server=require('./test-server.cjs')(root);
   await page.evaluate(()=>scrollTo(0,0));
   await assertTimelineControlsFit();
   if(size.width===390){
+   await page.getByRole('button',{name:'Zoom in',exact:true}).tap();await page.waitForTimeout(350);
+   assert(await page.locator('#graph').evaluate(el=>el.scrollWidth>el.clientWidth),'Zoom creates a pannable horizontal scene');
    await page.locator('#graph').scrollIntoViewIfNeeded();const box=await page.locator('#graph').boundingBox();const client=await context.newCDPSession(page);const x=box.x+box.width*.86,y=box.y+box.height*.55;
    const before=await page.locator('#graph').evaluate(el=>el.scrollLeft);
    await client.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});
@@ -183,7 +186,7 @@ const server=require('./test-server.cjs')(root);
   assert(await page.locator('#details').evaluate(el=>el.scrollWidth<=el.clientWidth+1),'Profile text must fit its sheet');
   await page.screenshot({path:path.join(output,`mobile-profile-${size.width}x${size.height}.png`)});
   await page.getByRole('button',{name:'Back to graph',exact:true}).tap();assert(!await dialog.isVisible());
-  const selectedRange=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain);assert(selectedRange[0]<=1973&&selectedRange[1]>=1973,'Search must reveal the selected date on mobile');
+  const selectedRange=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain);assert(selectedRange[0]<=1973&&selectedRange[1]>=1973,'Search must reveal the selected date on mobile: '+JSON.stringify(selectedRange));
   if(size.width===320||size.height===390){
    const snapshot=()=>page.evaluate(()=>{
     const {domain,scale}=CHURCHTREE_TIMELINE.snapshot();

@@ -9,12 +9,15 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, onNode,
     }
     const { isCatholic, laneOf, partition, count, families } =
         (presentation.lanes || window.ChurchTimelineModel.timelineLanes.bind(window.ChurchTimelineModel))(dated, edges);
-    const mobile = matchMedia('(max-width:1099px)').matches, rail = mobile ? 96 : 155;
-    const left = mobile ? 198 : 270, right = mobile ? 102 : 120, top = 68, lane = 100, axisTop = 26;
+    const mobile = matchMedia('(max-width:1099px)').matches, rail = mobile ? 96 : 155, viewWidth = container.clientWidth;
+    const cardWidth = mobile ? Math.min(204, Math.max(100, viewWidth - rail - 64)) : 204;
+    const left = mobile ? rail + cardWidth / 2 : 270, right = mobile ? cardWidth / 2 : 120, top = 68, lane = 100, axisTop = 26;
     const compactFirstLane = families.length > 1 && families[0] === 'Catholic';
     const laneCenter = index => top + index * lane - (compactFirstLane && index > 0 ? lane - 62 : 0);
     const years = dated.map(n => n.start_year), extent = period || [Math.min(...years) - 10, Math.max(...years) + 10];
-    const viewWidth = container.clientWidth, height = Math.max(container.clientHeight - 20, laneCenter(count - 1) + lane + 40), base = Math.max(280, viewWidth - left - right);
+    const height = Math.max(container.clientHeight - 20, laneCenter(count - 1) + lane + 40), base = Math.max(1, viewWidth - left - right);
+    // Fit narrow screens without reducing the previous maximum time resolution.
+    const maxScale = 64 * Math.max(1, 280 / base);
     const stateKey = dated.map(n => n.id).sort().join('|') + ':' + extent.join(',');
     const saved = window.CHURCHTREE_HORIZONTAL_STATE?.key === stateKey ? window.CHURCHTREE_HORIZONTAL_STATE : null;
     let k = saved?.scale || 1, clusters = [], scale, currentWidth, highlighted = null;
@@ -39,7 +42,7 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, onNode,
         labels.append(label);
     });
     function domain() {
-        return [scale.invert(Math.max(left, container.scrollLeft + rail)), scale.invert(Math.min(currentWidth - right, container.scrollLeft + container.clientWidth))];
+        return [scale.invert(container.scrollLeft + left), scale.invert(container.scrollLeft + left + base)];
     }
     function report() {
         const axisY=Math.max(axisTop,container.scrollTop+28);
@@ -53,7 +56,7 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, onNode,
         scene.style.width = currentWidth + 'px';
         svg.attr('width', currentWidth);
         scale = d3.scaleLinear().domain(extent).range([left, currentWidth - right]);
-        axis.call(d3.axisTop(scale).ticks(Math.max(5, Math.floor(base * k / 110))).tickFormat(d3.format('d')));
+        axis.call(d3.axisTop(scale).ticks(Math.max(1, Math.floor(base * k / 110))).tickFormat(d3.format('d')));
         axis.selectAll('text').attr('fill', 'var(--ct-text-muted)');
         axis.selectAll('line,.domain').attr('stroke', 'var(--ct-axis)');
         grid.selectAll('line.lane-guide').data(families).join('line').attr('class', 'lane-guide').attr('x1', left).attr('x2', currentWidth - right).attr('y1', (_, i) => laneCenter(i)).attr('y2', (_, i) => laneCenter(i)).attr('stroke', 'var(--ct-grid)');
@@ -100,15 +103,16 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, onNode,
                 this.dispatchEvent(new MouseEvent('click', { bubbles: true }));
             }
         });
-        joined.select('rect').attr('x', c => isCatholic(c.members[0]) ? -58 : -102).attr('y', c => isCatholic(c.members[0]) ? -22 : -28)
-            .attr('width', c => isCatholic(c.members[0]) ? 116 : 204).attr('height', c => isCatholic(c.members[0]) ? 44 : 56);
+        joined.select('rect').attr('x', c => isCatholic(c.members[0]) ? -58 : -cardWidth / 2).attr('y', c => isCatholic(c.members[0]) ? -22 : -28)
+            .attr('width', c => isCatholic(c.members[0]) ? 116 : cardWidth).attr('height', c => isCatholic(c.members[0]) ? 44 : 56);
         joined.select('.horizontal-title').each(function (c) {
             const text = d3.select(this);
             text.selectAll('*').remove();
             const words = title(c).split(/\s+/);
+            const limit = Math.max(10, Math.min(30, Math.floor(((isCatholic(c.members[0]) ? 116 : cardWidth) - 12) / 6)));
             let lines = [], line = '';
             for (const word of words) {
-                if (line && (line + ' ' + word).length > 30) {
+                if (line && (line + ' ' + word).length > limit) {
                     lines.push(line);
                     line = word;
                 }
@@ -123,19 +127,24 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, onNode,
             text.attr('text-anchor', 'middle').attr('y', shown.length > 1 ? -12 : -5);
             shown.forEach((s, i) => text.append('tspan').attr('x', 0).attr('dy', i ? 13 : 0).text(s));
         });
+        joined.selectAll('.horizontal-title tspan').each(function (c) {
+            const width = (isCatholic(c.members[0]) ? 116 : cardWidth) - 12, full = this.textContent;
+            let length = full.length;
+            while (this.getComputedTextLength() > width && length > 1) this.textContent = full.slice(0, --length).replace(/…$/, '') + '…';
+        });
         joined.select('.date').attr('text-anchor', 'middle').attr('y', c => isCatholic(c.members[0]) ? 13 : 18).text(c => presentation.dateLabel && c.members.length === 1 ? dateLabel(c.members[0]) : isCatholic(c.members[0]) ? c.min + ' schism' : Math.floor(c.min) === Math.floor(c.max) ? Math.floor(c.min) : `${Math.floor(c.min)}–${Math.floor(c.max)}`);
         joined.select('title').text(c => title(c) + '\n' + c.members.map(n => n.name + ' (' + dateLabel(n) + ')').join('\n'));
         report();
     }
     function zoom(factor, anchor = container.clientWidth / 2) {
         const year = scale.invert(container.scrollLeft + anchor);
-        k = Math.max(.55, Math.min(64, k * factor));
+        k = Math.max(.55, Math.min(maxScale, k * factor));
         draw();
         container.scrollLeft = scale(year) - anchor;
         report();
     }
     function fit(range) {
-        k = Math.max(.55, Math.min(64, (extent[1] - extent[0]) / (range[1] - range[0]) * (container.clientWidth - left - right) / base));
+        k = Math.max(.55, Math.min(maxScale, (extent[1] - extent[0]) / (range[1] - range[0]) * (container.clientWidth - left - right) / base));
         draw();
         container.scrollLeft = scale(range[0]) - left;
         report();
