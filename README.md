@@ -15,6 +15,10 @@ or login required.
 | Westminster Confession | `/wcf/` | Text-first reader of all 33 chapters / 172 sections, chapter navigation, section links and historical-edition source notes |
 | Logo studies | `/assets/brand/logos/` | Design-study archive, not another primary exploration |
 
+The home card **The global church** introduces country histories. Only China is
+currently available; its title, chronology and existing `/china-history/` links
+remain country-specific.
+
 The reader hosts the historical 1647 English text in Schaff's 1919 edition, with
 specified exclusions and spelling conventions; see the [source/licensing memo](docs/westminster-content-sources.md).
 The optional chapter-study layer is being developed separately; don't treat a
