@@ -18,6 +18,20 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
  for(const size of [{width:1440,height:1000},{width:390,height:844},{width:320,height:568},{width:768,height:1024},{width:844,height:390},{width:568,height:320}]){
   const page=await browser.newPage({viewport:size}),errors=[];page.on('pageerror',e=>errors.push(e.message));
   assert.equal((await page.goto(base+'/')).status(),200);assert.equal(await page.locator('.tool-card').count(),pageCount);
+  const globalChurch=page.locator('.tool-card[data-id="china-history"]');
+  assert.equal(await globalChurch.getAttribute('href'),'china-history/');
+  assert.equal(await globalChurch.getByRole('heading').innerText(),'The global church');
+  assert.match(await globalChurch.innerText(),/Only China is currently available/);
+  assert.match(await globalChurch.locator('.card-action').innerText(),/Explore church in China/);
+  assert.equal(await globalChurch.locator('.card-preview svg').count(),1);
+  assert.match(await globalChurch.locator('.card-preview').textContent(),/CHINA.*SELECTED EPISODES/);
+  assert.doesNotMatch(await globalChurch.innerText(),/Questions and answers|QUESTION & ANSWER/);
+  assert.match(await page.locator('.card-preview.westminster').innerText(),/Confession & catechisms/);
+  await globalChurch.screenshot({path:path.join(output,`global-church-${size.width}.png`)});
+  await globalChurch.focus();await page.keyboard.press('Enter');
+  await page.waitForURL('**/china-history/');
+  assert.equal(await page.title(),'Church in China history · Main Branch');
+  await page.goto(base+'/');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   for(const theme of ['parchment','slate','ink']){
    await openAppearance(page);await page.locator(`input[name="theme"][value="${theme}"]`).check();
@@ -34,6 +48,8 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   await page.locator('.tool-card[data-id="westminster"]').click();await page.waitForURL(/\/westminster-standards\/$/);
   assert.equal(await page.getByRole('heading',{name:'Westminster Standards',exact:true}).count(),1);
   assert.deepEqual(await page.locator('.tool-card').evaluateAll(cards=>cards.map(card=>card.getAttribute('href'))),['../wcf/','../wsc/','../wlc/']);
+  assert.match(await page.locator('.card-preview.wcf').innerText(),/Of the Holy Scripture/);
+  for(const id of ['wsc','wlc']) assert.match(await page.locator('.card-preview.'+id).innerText(),/Questions and answers/);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.keyboard.press('Tab');assert(await page.locator('.skip-link').evaluate(el=>el===document.activeElement));
   await page.keyboard.press('Enter');assert.equal(new URL(page.url()).hash,'#explore');

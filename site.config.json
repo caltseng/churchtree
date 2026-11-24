@@ -38,10 +38,10 @@
   "pages": [
     {
       "id": "china-history",
-      "title": "Church in China",
+      "title": "The global church",
       "path": "china-history/",
       "kind": "Sourced historical timeline",
-      "description": "Explore selected Christian encounters, Chinese-led movements and institutional ruptures, from Tang testimony to 2024.",
+      "description": "Explore church history by country. Only China is currently available, with selected episodes from 635 to 2024; more countries will follow.",
       "tags": ["635–2024", "Parallel episodes", "Evidence and gaps"],
       "action": "Explore church in China"
     },
