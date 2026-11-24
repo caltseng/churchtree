@@ -15,7 +15,7 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
 (async()=>{let browser;try{
  await new Promise(r=>server.listen(0,'127.0.0.1',r));browser=await chromium.launch({...(process.env.PLAYWRIGHT_CHANNEL==='chromium'?{}:{channel:process.env.PLAYWRIGHT_CHANNEL||'msedge'}),headless:true});
  const base=`http://127.0.0.1:${server.address().port}`;
- for(const size of [{width:1440,height:1000},{width:390,height:844},{width:320,height:568},{width:768,height:1024}]){
+ for(const size of [{width:1440,height:1000},{width:390,height:844},{width:320,height:568},{width:768,height:1024},{width:844,height:390},{width:568,height:320}]){
   const page=await browser.newPage({viewport:size}),errors=[];page.on('pageerror',e=>errors.push(e.message));
   assert.equal((await page.goto(base+'/')).status(),200);assert.equal(await page.locator('.tool-card').count(),pageCount);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
@@ -30,8 +30,22 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   await page.screenshot({path:path.join(output,`home-ink-${size.width}.png`),fullPage:true});
   await page.locator('.tool-card[data-id="church-history"]').click();await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
   await page.getByRole('link',{name:'Main Branch home',exact:true}).click();assert.equal(await page.locator('.tool-card').count(),pageCount);
-  await page.locator('.tool-card[data-id="westminster"]').click();await page.waitForURL(/\/wcf\/$/);assert.equal(await page.locator('.passage').count(),172);assert(await page.locator('#chapter-1').isVisible());assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
-  for (const route of ['/church-history/', '/china-history/', '/wcf/', '/wsc/', '/wlc/', '/us-denominations/']) {
+  assert.equal(await page.locator('.tool-card[href="wcf/"], .tool-card[href="wsc/"], .tool-card[href="wlc/"]').count(),0);
+  await page.locator('.tool-card[data-id="westminster"]').click();await page.waitForURL(/\/westminster-standards\/$/);
+  assert.equal(await page.getByRole('heading',{name:'Westminster Standards',exact:true}).count(),1);
+  assert.deepEqual(await page.locator('.tool-card').evaluateAll(cards=>cards.map(card=>card.getAttribute('href'))),['../wcf/','../wsc/','../wlc/']);
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await page.keyboard.press('Tab');assert(await page.locator('.skip-link').evaluate(el=>el===document.activeElement));
+  await page.keyboard.press('Enter');assert.equal(new URL(page.url()).hash,'#explore');
+  for (const [id,count,selector] of [['wcf',172,'.passage'],['wsc',107,'#reading article'],['wlc',196,'#reading article']]) {
+   await page.locator(`.tool-card[data-id="${id}"]`).focus();await page.keyboard.press('Enter');await page.waitForURL(new RegExp('/'+id+'/$'));
+   assert.equal(await page.locator(selector).count(),count);
+   assert(await page.locator('#sources').count());
+   assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
+   await page.getByRole('link',{name:/Westminster Standards/}).click();await page.waitForURL(/\/westminster-standards\/$/);
+  }
+  await page.screenshot({path:path.join(output,`westminster-${size.width}.png`),fullPage:true});
+  for (const route of ['/church-history/', '/china-history/', '/westminster-standards/', '/wcf/', '/wsc/', '/wlc/', '/us-denominations/']) {
    assert.equal((await page.goto(base+route)).status(),200);
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),route+' fits the viewport');
    const trigger = await openAppearance(page);
@@ -45,7 +59,7 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
    assert(!await page.locator('#site-menu').isVisible());
    await page.waitForFunction(()=>document.activeElement.classList.contains('site-menu-trigger'));
    await trigger.press('Enter');
-   await page.getByRole('link',{name:'All explorations',exact:true}).click();
+   await page.locator('#site-menu').getByRole('link',{name:'All explorations',exact:true}).click();
    await page.waitForURL('**/#explore');
    assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
   }
