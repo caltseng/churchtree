@@ -53,6 +53,21 @@ test('each panel preserves source ranking, national labels, locators and coverag
         assert.equal(markup.includes('class="row-target"'), Boolean(tree.panels.find(p => p.parentId === id)));
       }
       const model = view.pieModel(data, {view: lens, group: panel.parentId}, panel);
+      assert(html.indexOf('id="pie-notes"') > html.indexOf('</ol>', html.indexOf('class="estimate-list"')),
+        'Supporting notes follow the estimate key');
+      if (html.includes('class="precision-note"')) {
+        assert(html.indexOf('class="precision-note"') > html.indexOf('id="pie-notes"'), 'Precision follows the key');
+      }
+      for (const id of panel.children) {
+        const record = data.records[id];
+        const callout = html.match(new RegExp(`data-callout="${id}"[^]*?</div>`));
+        if (record.barValue === null) assert.equal(callout, null, 'Thresholds never acquire a numeric callout');
+        else {
+          assert(callout, 'Even the smallest numeric slices have visible callouts');
+          assert(callout[0].includes(view.esc(record.label)), 'Callouts contain the full category name');
+          assert(callout[0].includes(`<strong>${view.esc(record.valueText)}</strong>`), 'Callouts keep the published national value');
+        }
+      }
       if (model.slices.length) {
         assert.match(html, /class="pie"/);
         const whole = panel.parentId === 'us-adults' ? 100 : data.records[panel.parentId].barValue;

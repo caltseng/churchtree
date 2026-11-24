@@ -150,12 +150,19 @@
     const record = data.records[state.group];
     const label = esc(record.label);
     const parentId = ancestors(data, state.view, state.group).at(-1);
-    const gap = model.whole ? model.whole - model.sum : 0;
-    const shown = gap > 0.05 && model.slices.length;
-    const unsliced = panel.children.filter(id => data.records[id].barValue === null);
     if (!model.slices.length) {
       return `<p class="pie-empty">No pie: each published child of ${label} is an upper threshold or unavailable. Exact values are listed below.</p>`;
     }
+    const callouts = model.slices.map(slice => {
+      const mid = (slice.start + slice.end) / 2;
+      return {...slice, mid, side: Math.cos(mid) < 0 ? 'left' : 'right', y: Math.sin(mid)};
+    });
+    const labels = side => `<div class="pie-callouts pie-callouts-${side}" aria-hidden="true">${
+      callouts.filter(slice => slice.side === side).sort((a, b) => a.y - b.y).map(slice => {
+        const child = data.records[slice.id];
+        return `<div class="pie-callout" data-callout="${esc(slice.id)}"><span>${esc(child.label)}</span>
+          <strong>${esc(child.valueText)}</strong></div>`;
+      }).join('')}</div>`;
     const slices = model.slices.map((slice, index) => {
       const child = data.records[slice.id];
       const target = {...state, group: slice.id};
@@ -176,22 +183,32 @@
       : `<g class="pie-center" aria-hidden="true"><circle r="${INNER - 4}"/>
         <text class="pie-center-value" y="-4">100%</text><text class="pie-center-note" y="16">U.S. adults</text></g>`;
     const scale = model.sum > (model.whole || 0) + 0.05
-      ? `Rounded slices total ${fmt(model.sum)}%, above ${label}'s ${esc(record.valueText)}, so the circle is scaled to their total.`
+      ? `Circle: published child total, ${fmt(model.sum)}% of U.S. adults. Selected ${label}: ${estimate(record)}.`
       : state.group === 'us-adults' ? 'Full circle: all U.S. adults.'
       : `Full circle: ${label}, ${estimate(record)}.`;
     return `<figure class="pie-figure">
-      <svg class="pie" viewBox="-112 -112 224 224" role="group" aria-labelledby="pie-title" aria-describedby="pie-help">
+      <figcaption id="pie-help" class="pie-help"><span>${scale} Labels are shares of all U.S. adults.<span class="visually-hidden"> Arrow keys move between slices; Enter zooms in.${parentId ? ' The centre zooms out.' : ''}</span></span></figcaption>
+      <div class="pie-plot">
+      <svg class="pie-connectors" aria-hidden="true"></svg>${labels('left')}
+      <svg class="pie" viewBox="-112 -112 224 224" role="group" aria-labelledby="pie-title" aria-describedby="pie-help pie-notes">
       <title id="pie-title">Pie chart of ${label}: ${panel.coverage === 'selected' ? 'published detail' : 'affiliations'}</title>
       <defs><pattern id="pie-gap-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
       <rect class="pie-gap-base" width="8" height="8"/><line class="pie-gap-line" x1="0" y1="0" x2="0" y2="8"/></pattern></defs>
       <path class="pie-gap" d="${arcPath(0, TURN)}" fill="url(#pie-gap-hatch)" aria-hidden="true"/>
-      <g class="pie-slices">${slices}</g>${center}</svg>
-      <figcaption id="pie-help" class="pie-help"><span>${scale}${state.group === 'us-adults' ? '' : ' Slices are shares of all U.S. adults.'}<span class="visually-hidden"> Arrow keys move between slices; Enter zooms in.${parentId ? ' The centre zooms out.' : ''}</span></span>
+      <g class="pie-slices">${slices}</g>${center}</svg>${labels('right')}</div></figure>`;
+  }
+  function pieNotes(data, state, panel, model) {
+    const gap = model.whole ? model.whole - model.sum : 0;
+    const shown = gap > 0.05 && model.slices.length;
+    const unsliced = panel.children.filter(id => data.records[id].barValue === null);
+    return `<div id="pie-notes" class="pie-notes">
+      ${model.sum > (model.whole || 0) + 0.05
+        ? `<span>Rounded slices total ${fmt(model.sum)}%, above ${esc(data.records[state.group].label)}'s ${esc(data.records[state.group].valueText)}, so the circle is scaled to their total.</span>` : ''}
       ${shown ? `<span class="pie-key"><span class="swatch swatch-gap" aria-hidden="true"></span>${panel.coverage === 'selected'
         ? 'Hatched: not itemized by Pew. Not an estimate; no residual is inferred.'
         : 'Hatched: rounding gap, not an unlisted group.'}</span>` : ''}
       ${unsliced.length ? `<span class="pie-key">No slice: ${unsliced.map(id => `${esc(data.records[id].label)} (${esc(data.records[id].valueText)})`).join(', ')}; thresholds and unavailable values are not drawn.</span>` : ''}
-      </figcaption></figure>`;
+      </div>`;
   }
   function precisionNote(data, ids) {
     const selected = ids.filter(id => Object.hasOwn(data.interactiveStrings, id));
@@ -227,11 +244,13 @@
       <h2 id="group-heading" tabindex="-1">${esc(record.label)}</h2>
       ${state.group === 'us-adults' ? '' : `<p class="selected-estimate"><strong>${estimate(record)}</strong> &middot; ${kind(record)}${
         record.status === 'threshold' ? ' &middot; upper threshold' : ''}</p>`}
-      ${precisionNote(data, [state.group, ...(panel ? panel.children : [])])}
       ${panel ? `${coverageLine(panel)}<div class="chart pie-chart" data-format="${state.format}">
       ${renderPie(data, state, panel, model)}
-      <ol class="estimate-list">${panel.children.map((id, index) => `<li style="--i:${index}">${row(data, state, id, model, false)}</li>`).join('')}</ol></div>
+      <ol class="estimate-list">${panel.children.map((id, index) => `<li style="--i:${index}">${row(data, state, id, model, false)}</li>`).join('')}</ol>
+      ${pieNotes(data, state, panel, model)}</div>
+      ${precisionNote(data, [state.group, ...panel.children])}
       ${panelContext(data, state, panel)}` : `<p class="leaf-note">No finer breakdown is published.</p>
+      ${precisionNote(data, [state.group])}
       ${sourceLine(data, [record.source])}${info(record.label, `${recordNotes(record)}
       ${Object.hasOwn(data.interactiveStrings, state.group) ? precisionDetail : ''}${context(data)}`)}`}`;
   }
