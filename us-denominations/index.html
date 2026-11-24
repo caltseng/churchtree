@@ -24,10 +24,15 @@
 <section id="interactive-view" aria-label="Selected religious comparison" hidden><nav aria-label="Affiliation breadcrumb"><ol class="breadcrumbs"><li><span aria-current="page">U.S. adults</span></li></ol></nav>
       <h2 id="group-heading" tabindex="-1">U.S. adults</h2>
 
-
       <div class="chart pie-chart" data-format="chart">
       <figure class="pie-figure">
-      <svg class="pie" viewBox="-112 -112 224 224" role="group" aria-labelledby="pie-title" aria-describedby="pie-help">
+      <figcaption id="pie-help" class="pie-help"><span>Full circle: all U.S. adults. Labels are shares of all U.S. adults.<span class="visually-hidden"> Arrow keys move between slices; Enter zooms in.</span></span></figcaption>
+      <div class="pie-plot">
+      <svg class="pie-connectors" aria-hidden="true"></svg><div class="pie-callouts pie-callouts-left" aria-hidden="true"><div class="pie-callout" data-callout="no-answer"><span>Did not answer</span>
+          <strong>1%</strong></div><div class="pie-callout" data-callout="other-religions"><span>Other religions</span>
+          <strong>7%</strong></div><div class="pie-callout" data-callout="unaffiliated"><span>Religiously unaffiliated</span>
+          <strong>29%</strong></div></div>
+      <svg class="pie" viewBox="-112 -112 224 224" role="group" aria-labelledby="pie-title" aria-describedby="pie-help pie-notes">
       <title id="pie-title">Pie chart of U.S. adults: affiliations</title>
       <defs><pattern id="pie-gap-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
       <rect class="pie-gap-base" width="8" height="8"/><line class="pie-gap-line" x1="0" y1="0" x2="0" y2="8"/></pattern></defs>
@@ -49,11 +54,8 @@
         style="--dx:-0.565px;--dy:-5.973px"
         aria-label="Did not answer, 1% of U.S. adults. Open details">
         <title>Did not answer: 1% of U.S. adults</title><path d="M-12.533 -99.211A100 100 0 0 1 -6.279 -99.803L-3.516 -55.889A56 56 0 0 0 -7.019 -55.558Z" fill="#6e9d50"/></a></g><g class="pie-center" aria-hidden="true"><circle r="52"/>
-        <text class="pie-center-value" y="-4">100%</text><text class="pie-center-note" y="16">U.S. adults</text></g></svg>
-      <figcaption id="pie-help" class="pie-help"><span>Full circle: all U.S. adults.<span class="visually-hidden"> Arrow keys move between slices; Enter zooms in.</span></span>
-      <span class="pie-key"><span class="swatch swatch-gap" aria-hidden="true"></span>Hatched: rounding gap, not an unlisted group.</span>
-
-      </figcaption></figure>
+        <text class="pie-center-value" y="-4">100%</text><text class="pie-center-note" y="16">U.S. adults</text></g></svg><div class="pie-callouts pie-callouts-right" aria-hidden="true"><div class="pie-callout" data-callout="christian"><span>Christian</span>
+          <strong>62%</strong></div></div></div></figure>
       <ol class="estimate-list"><li style="--i:0"><div class="estimate-row" data-record="christian" data-status="numeric">
       <div class="row-label"><a class="row-target" data-group="christian" href="?view=families&group=christian"><span class="swatch" aria-hidden="true" style="background:#315b43"></span>Christian <span aria-hidden="true">&rsaquo;</span></a><strong class="national-value">62% of U.S. adults</strong></div>
 
@@ -90,7 +92,13 @@
       United States &gt; Religious composition &gt; 2023-24; column: Share of U.S. adults; row: Note: 1% did not answer the question..</p><p>1% did not answer the question. Figures may not sum to 100% due to rounding.</p>
 
       <p>Published label: 1% did not answer the question. response category.
-      </p></details></div></li></ol></div>
+      </p></details></div></li></ol>
+      <div id="pie-notes" class="pie-notes">
+
+      <span class="pie-key"><span class="swatch swatch-gap" aria-hidden="true"></span>Hatched: rounding gap, not an unlisted group.</span>
+
+      </div></div>
+
       <p class="source-line">Source: Pew Research Center, <a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-methodology/">Methodology for the 2023-24 Religious Landscape Study</a>; <a href="https://www.pewresearch.org/religious-landscape-study/region/united-states/">2023-24 U.S. Religious Landscape Study Interactive Database</a>.
       © 2026 Pew Research Center.</p><details class="info-detail"><summary><span aria-hidden="true">&#9432;</span> Info<span class="visually-hidden">: sources, methods and notes for U.S. adults</span></summary>
       <div class="info-body"><p>Published estimates are independently rounded and need not add to the parent or to 100%. No residual is inferred.</p>

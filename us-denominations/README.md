@@ -203,7 +203,13 @@ When published children sum to less than the parent (`coverage: selected`), a
 hatched remainder is labelled "not itemized" and is never inferred as another
 group; when independently rounded children exceed the parent, the circle is
 their sum and the caption says so. Thresholds, unavailable and suppressed rows
-get no slice and are named in the caption. Selecting a slice by pointer, touch
+get no slice and are named in the notes after the estimate key. Every numeric
+slice has a full-name and exact national-value callout beside the circle,
+including small slices. HTML callouts wrap at the current viewport width;
+leader lines route outside the ring and follow label layout on resize.
+The selected group and circle denominator stay above the chart. Supporting
+rounding, hatch, threshold and precision explanations follow the complete key
+and remain associated with the SVG through `aria-describedby`. Selecting a slice by pointer, touch
 or keyboard (one tab stop; arrow keys, Home/End, Enter/Space) zooms that slice
 to a full ring, then sweeps its published children in clockwise from the top.
 The centre link, Back, Reset and breadcrumbs zoom out: the departing slice

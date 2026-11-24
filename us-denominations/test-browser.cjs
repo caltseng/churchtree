@@ -93,6 +93,53 @@ fs.mkdirSync(output, {recursive: true});
       assert.match(await content.locator('.pie-help').textContent(), /Full circle: all U\.S\. adults\./);
       assert(await content.locator('.source-line a').first().isVisible(), 'Root keeps a visible direct source link');
       assert.equal(await content.locator('.info-detail').getAttribute('open'), null, 'Secondary notes start behind Info');
+      for (const [lens, group] of [
+        ['families', 'us-adults'], ['families', 'christian'], ['families', 'protestant'],
+        ['families', 'baptist'], ['traditions', 'protestant'], ['traditions', 'historically-black']
+      ]) {
+        await page.goto(`${base}/us-denominations/?view=${lens}&group=${group}`);
+        const layout = await content.locator('.pie-plot').evaluate(async plot => {
+          await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+          const pie = plot.querySelector('.pie'), box = plot.getBoundingClientRect();
+          const labels = [...plot.querySelectorAll('.pie-callout')];
+          const rects = labels.map(label => label.getBoundingClientRect());
+          const data = window.US_AFFILIATION_DATA;
+          return {
+            count: labels.length, slices: pie.querySelectorAll('.pie-slice').length,
+            connectors: plot.querySelectorAll('.pie-connectors path').length,
+            outsideRing: [...plot.querySelectorAll('.pie-connectors path')].every(path => {
+              const inverse = pie.getScreenCTM().inverse(), screen = path.getScreenCTM();
+              for (let i = 0; i <= 30; i++) {
+                const point = path.getPointAtLength(path.getTotalLength() * i / 30)
+                  .matrixTransform(screen).matrixTransform(inverse);
+                if (Math.hypot(point.x, point.y) < 101) return false;
+              }
+              return true;
+            }),
+            text: labels.every(label => {
+              const record = data.records[label.dataset.callout];
+              return label.querySelector('span').textContent === record.label &&
+                label.querySelector('strong').textContent === record.valueText &&
+                label.scrollWidth <= label.clientWidth + 1 && parseFloat(getComputedStyle(label).fontSize) >= 14;
+            }),
+            fits: rects.every(rect => rect.left >= box.left && rect.right <= box.right + 1 &&
+              rect.top >= box.top && rect.bottom <= box.bottom + 1),
+            separated: rects.every((a, i) => rects.every((b, j) => i === j ||
+              a.right <= b.left || a.left >= b.right || a.bottom <= b.top || a.top >= b.bottom)),
+            order: Boolean(plot.closest('.chart').querySelector('.estimate-list')
+              .compareDocumentPosition(document.getElementById('pie-notes')) & Node.DOCUMENT_POSITION_FOLLOWING),
+            described: pie.getAttribute('aria-describedby')
+          };
+        });
+        assert.equal(layout.count, layout.slices, 'Every slice has a category and value beside the chart');
+        assert.equal(layout.connectors, layout.count, 'Leader lines identify even small slices');
+        assert(layout.outsideRing, 'Callout leaders never run across another slice');
+        assert(layout.text && layout.fits && layout.separated, `Full readable labels fit without overlap: ${lens}/${group}`);
+        assert(layout.order, 'Supporting notes follow the complete key');
+        assert.equal(layout.described, 'pie-help pie-notes', 'Context and moved caveats remain associated');
+        assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Callouts never widen the page');
+        await content.locator('.pie-figure').screenshot({path: path.join(output, `us-pie-labels-${lens}-${group}-${size.width}.png`)});
+      }
       await page.goto(base + '/us-denominations/?view=attendance');
       const viewport = content.locator('.chart-viewport');
       await viewport.scrollIntoViewIfNeeded();
@@ -159,9 +206,9 @@ fs.mkdirSync(output, {recursive: true});
       assert.match(await content.locator('.pie-slice[data-group="sbc"]').getAttribute('aria-label'),
         /^Southern Baptist Convention, 4.4% of U.S. adults\. Open details$/);
       assert.equal(await content.locator('.pie-slice[data-group="pnbc"]').count(), 0, 'Threshold never becomes a slice');
-      assert.match(await content.locator('.pie-help').textContent(), /Full circle: Baptist, 12.0% of U.S. adults/);
-      assert.match(await content.locator('.pie-help').textContent(), /Hatched: not itemized by Pew\. Not an estimate/);
-      assert.match(await content.locator('.pie-help').textContent(), /No slice: Progressive National Baptist Convention \(<0.3%\)/);
+      assert.match(await content.locator('#pie-help').textContent(), /Full circle: Baptist, 12.0% of U.S. adults/);
+      assert.match(await content.locator('#pie-notes').textContent(), /Hatched: not itemized by Pew\. Not an estimate/);
+      assert.match(await content.locator('#pie-notes').textContent(), /No slice: Progressive National Baptist Convention \(<0.3%\)/);
       await selectSlice('sbc');
       await heading('Southern Baptist Convention');
       assert.match(await content.textContent(), /No finer breakdown is published/);
@@ -193,7 +240,8 @@ fs.mkdirSync(output, {recursive: true});
       await content.locator('.pie-center').scrollIntoViewIfNeeded();
       if (size.width < 700) await content.locator('.pie-center').tap(); else await content.locator('.pie-center').click();
       await heading('Christian');
-      assert.match(await content.locator('.pie-help').textContent(), /circle is scaled to their total/);
+      assert.match(await content.locator('#pie-help').textContent(), /Circle: published child total, 63% of U.S. adults\. Selected Christian: 62% of U.S. adults/);
+      assert.match(await content.locator('#pie-notes').textContent(), /circle is scaled to their total/);
       await fits();
       await page.goto(base + '/us-denominations/');
       await heading('U.S. adults');

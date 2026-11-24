@@ -102,6 +102,36 @@
       const sources = [...container.querySelectorAll('.info-detail'), ...chart.querySelectorAll('.row-source')];
       sources.forEach((source, index) => source.open = saved.sources.includes(index));
       saveChart = () => chartViews.set(key, {...saved, sources: sources.flatMap((source, index) => source.open ? [index] : [])});
+      const plot = chart.querySelector('.pie-plot');
+      if (plot && state.format === 'chart') {
+        const pie = plot.querySelector('.pie'), connectors = plot.querySelector('.pie-connectors');
+        function connect() {
+          const box = plot.getBoundingClientRect(), matrix = pie.getScreenCTM();
+          if (!box.width || !matrix) return;
+          connectors.setAttribute('viewBox', `0 0 ${box.width} ${box.height}`);
+          connectors.replaceChildren(...[...plot.querySelectorAll('.pie-callout')].map(label => {
+            const slice = [...pie.querySelectorAll('.pie-slice')].find(el => el.dataset.group === label.dataset.callout);
+            const mid = (Number(slice.dataset.start) + Number(slice.dataset.end)) / 2;
+            const point = radius => {
+              const p = new DOMPoint(radius * Math.cos(mid), radius * Math.sin(mid)).matrixTransform(matrix);
+              return `${p.x - box.x},${p.y - box.y}`;
+            };
+            const rect = label.getBoundingClientRect();
+            const left = label.parentElement.classList.contains('pie-callouts-left');
+            const x = left ? rect.right + 3 : rect.left - 3;
+            const edge = pie.getBoundingClientRect();
+            const elbow = left ? edge.left - box.x : edge.right - box.x;
+            const outer = new DOMPoint(110 * Math.cos(mid), 110 * Math.sin(mid)).matrixTransform(matrix);
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.dataset.connector = label.dataset.callout;
+            path.setAttribute('d', `M${point(102)} L${point(110)} L${elbow},${outer.y - box.y} L${x - box.x},${rect.top + rect.height / 2 - box.y}`);
+            return path;
+          }));
+        }
+        chartResize = new ResizeObserver(connect);
+        chartResize.observe(plot);
+        connect();
+      }
       return;
     }
     const shell = document.createElement('div');

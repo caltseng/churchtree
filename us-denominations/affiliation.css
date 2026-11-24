@@ -50,6 +50,15 @@ button[aria-pressed="true"] { background: var(--ct-accent); color: var(--ct-on-a
 .axis { display: flex; justify-content: space-between; gap: .5rem; color: var(--ct-text-secondary); font-size: .9rem; }
 .chart[data-format="list"] .bar-track, .chart[data-format="list"] .axis { display: none; }
 .pie-figure { margin: .5rem 0 1rem; display: grid; justify-items: center; gap: .75rem; }
+.pie-plot { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) clamp(6rem, 36vw, 22rem) minmax(0, 1fr); align-items: center; gap: .65rem; width: 100%; }
+.pie-callouts { display: grid; gap: .85rem; min-width: 0; }
+.pie-callouts-left { text-align: right; }
+.pie-callout { font-size: .875rem; line-height: 1.4; overflow-wrap: anywhere; }
+.pie-callout strong { display: block; font-variant-numeric: tabular-nums; }
+.pie-connectors { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.pie-connectors path { fill: none; stroke: var(--ct-text-secondary); stroke-width: 1; }
+.pie-plot:has(.pie-zooming, .pie-sweeping, .pie-collapsing) .pie-callouts,
+.pie-plot:has(.pie-zooming, .pie-sweeping, .pie-collapsing) .pie-connectors { visibility: hidden; }
 .pie { width: min(100%, 22rem); height: auto; overflow: visible; touch-action: manipulation; font-family: system-ui, sans-serif; }
 .pie-gap-base { fill: var(--ct-grid); }
 .pie-gap-line { stroke: var(--ct-border-control); stroke-width: 2; }
@@ -83,7 +92,8 @@ a.pie-center:focus-visible circle { stroke: var(--ct-focus); stroke-width: 4; }
 #interactive-view.level-out .estimate-list > li { animation: level-out .32s ease-out backwards; animation-delay: calc(min(var(--i, 0), 8) * 30ms); }
 @keyframes level-in { from { opacity: 0; transform: translateX(.75rem); } }
 @keyframes level-out { from { opacity: 0; transform: translateX(-.75rem); } }
-.pie-help { max-width: 40rem; font-size: .9rem; color: var(--ct-text-secondary); display: grid; gap: .4rem; overflow-wrap: anywhere; }
+.pie-help, .pie-notes { max-width: 40rem; font-size: .9rem; color: var(--ct-text-secondary); display: grid; gap: .4rem; overflow-wrap: anywhere; }
+.pie-notes { margin-top: 1rem; }
 .pie-key { display: flex; gap: .5rem; align-items: flex-start; }
 .pie-empty { background: var(--ct-surface); border-left: 3px solid var(--ct-border-control); padding: .75rem; }
 .swatch { flex: none; width: .9rem; height: .9rem; border-radius: .2rem; border: 1px solid var(--ct-border-control); }
@@ -113,6 +123,8 @@ summary { min-height: 44px; padding: .6rem .25rem; overflow-wrap: anywhere; }
 #methodology { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--ct-border); }
 #route-status:empty { display: none; }
 @media (max-width: 480px) {
+  .pie-label { display: none; }
+  .pie-center-value { font-size: 24px; }
   .row-label { display: block; }
   .national-value { display: block; text-align: left; }
   .route-controls label { width: 100%; }
