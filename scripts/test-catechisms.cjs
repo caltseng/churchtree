@@ -24,6 +24,8 @@ async function run() {
       const source = JSON.parse(fs.readFileSync(path.join(repo, route, 'questions.json'), 'utf8'));
       assert.equal(source.length, count, title);
       await page.goto(base + '/');
+      await page.locator('.tool-card[data-id="westminster"]').click();
+      assert.equal(page.url(), base + '/westminster-standards/');
       await page.locator('.tool-card[data-id="' + route + '"]').click();
       assert.equal(page.url(), base + '/' + route + '/');
       assert.equal(await page.locator('h1').textContent(), title);
