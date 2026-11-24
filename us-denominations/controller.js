@@ -111,8 +111,7 @@
       <output aria-live="polite" aria-label="Chart zoom level"></output>
       <button type="button" data-zoom="in" aria-label="Zoom chart in">+</button>
       <button type="button" data-zoom="reset">Fit chart</button></div>
-      <p id="chart-help" class="chart-help">Pinch to zoom; drag to pan. Select an affiliation label or bar to explore.
-      Keyboard: focus the chart, use + or &minus; to zoom, 0 to fit, and arrow keys to pan. List keeps the same values and sources.</p>
+      <p id="chart-help" class="chart-help">Pinch or +/&minus; to zoom; drag or arrow keys to pan; 0 fits.</p>
       <div class="chart-viewport" tabindex="0" role="region" aria-label="Religious comparison chart" aria-describedby="chart-help"></div>`;
     chart.before(shell);
     const viewport = shell.querySelector('.chart-viewport');
@@ -126,7 +125,7 @@
     let suppressClickUntil = 0;
     const output = shell.querySelector('output');
     const buttons = shell.querySelectorAll('[data-zoom]');
-    const sources = [...chart.querySelectorAll('.row-source')];
+    const sources = [...chart.querySelectorAll('.row-source'), ...container.querySelectorAll('.info-detail')];
     sources.forEach((source, index) => source.open = saved.sources.includes(index));
     function paint() {
       chart.style.zoom = list ? '' : String(scale);

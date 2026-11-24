@@ -36,7 +36,7 @@
       "title": "U.S. denominations",
       "path": "us-denominations/",
       "kind": "Affiliation explorer",
-      "description": "See how common U.S. adult religious affiliations are. Explore selected published families, denominations and Protestant traditions from Pew Research Center's 2023-24 study.",
+      "description": "See how common U.S. adult religious affiliations are, from Pew Research Center's 2023-24 study.",
       "tags": ["National estimates", "Two affiliation lenses", "Sourced detail"],
       "action": "Explore U.S. affiliations"
     },
@@ -45,7 +45,7 @@
       "title": "Church History",
       "path": "church-history/",
       "kind": "Interactive atlas",
-      "description": "Trace the people, churches, splits and reunions that shaped Christian traditions. Move between a branching map and timelines, then open the histories behind them.",
+      "description": "Trace the people, churches, splits and reunions that shaped Christian traditions, then open the histories behind them.",
       "tags": [
         "Branching maps",
         "Timelines",
@@ -58,7 +58,7 @@
       "title": "The Westminster Confession",
       "path": "wcf/",
       "kind": "Primary-source reader",
-      "description": "Read a foundational Reformed confession, one chapter and section at a time. A quiet reading space with clear navigation, lasting links and a documented historical edition.",
+      "description": "Read a foundational Reformed confession, one chapter and section at a time.",
       "tags": [
         "33 chapters",
         "172 sections",

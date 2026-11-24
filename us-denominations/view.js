@@ -239,7 +239,7 @@
     const attendance = data.attendance;
     return `<h2 id="${staticMode ? 'static-attendance-heading' : 'group-heading'}" tabindex="-1">Religious service attendance</h2>
       <p><strong>${esc(attendance.denominatorLabel)}</strong>. ${esc(attendance.metric)}, excluding weddings and funerals.</p>
-      <p>Each row has its own adult population; the overall row is all U.S. adults. These are self-reports, not denomination-level estimates or virtual attendance. This comparison does not inherit an affiliation focus.</p>
+      <p>Self-reports; each row has its own adult population. Selected published rows, not a partition to sum.</p>
       <div class="chart attendance-chart" data-format="${format}">
       <p>Fixed scale: 0-100%, ${esc(attendance.axisLabel)}.</p>
       <table class="attendance-table"><caption>Monthly-or-more in-person attendance, 2023-24</caption>
@@ -250,21 +250,23 @@
         <p>${citation(record.source)}</p><p>Published label: ${esc(record.sourceLabel)}. ${esc(record.source.caveat)}</p></details></th>
         <td><strong>${esc(record.valueText)}</strong>${!staticMode ? `<div class="bar-track" aria-hidden="true"><span class="bar" style="width:${record.barValue}%"></span></div>` : ''}</td>
       </tr>`).join('')}</tbody></table></div>
+      ${sourceLine(data, [data.sources['attendance-chapter'], data.sources.report])}${info('religious service attendance', `
       <p class="panel-source">Pew Research Center (${esc(data.study.publicationDate)}), ${link(data.sources['attendance-chapter'])}.
       Attending religious services in person, table 08-04 (attachment 199166); ${link(data.sources.report)}, printed p. 165 (PDF p. 166).
-      Column: NET Monthly or more often; precise source rows are available with each estimate.</p>
+      Column: NET Monthly or more often; each row's Source gives its precise row.</p>
       <p class="source-context">2023-24 Religious Landscape Study, published ${esc(data.study.publicationDate)}.
       Fielded July 17, 2023-March 4, 2024; 36,908 adults in the 50 U.S. states and D.C.
-      <strong>${esc(attendance.denominatorLabel)}</strong>. ${esc(attendance.responseDefinition)}</p>
+      <strong>${esc(attendance.denominatorLabel)}</strong>. ${esc(attendance.responseDefinition)}
+      Not denomination-level estimates or virtual attendance; this comparison does not inherit an affiliation focus.</p>
       <p>Question: ${esc(attendance.question)} ${link(data.sources[attendance.instrumentSourceId])},
       ${esc(attendance.instrumentLocator)}. ${esc(attendance.caveat)}</p>
-      <p>Selected twelve published population rows, not an exhaustive inventory or a partition to sum.
+      <p>Selected twelve published population rows, not an exhaustive inventory.
       Nonresponses are not shown in the source table; rounded figures need not add to subtotals.
       Whole-percent estimates are retained as published, without summing rounded frequency cells.
       The national margin of error is &plusmn;0.8 percentage points at 95% confidence, not a margin for every subgroup.
       ${link(data.sources.methods)}; ${link(data.sources.classification)}.</p>
-      <p class="credit">${data.reuse.notices.map(esc).join(' ')}. ${esc(data.reuse.disclaimer)}
-      <a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a>; <a href="#methodology">Methods and excerpt reuse limits</a>.</p>`;
+      <p class="credit">${esc(data.reuse.disclaimer)}
+      <a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a>; <a href="#methodology">Methods and excerpt reuse limits</a>.</p>`)}`;
   }
   function renderDemographics(data, state, staticMode = false) {
     const demographics = data.demographics;
@@ -287,6 +289,7 @@
       </tr>`).join('')}</tbody></table></div>
       <p>${esc(dimension.definition)}</p>
       <p class="coverage">${esc(demographics.caveat)}</p>
+      ${sourceLine(data, [population.records[0].source, demographics.questionnaire])}${info(population.label, `
       <p>${esc(population.nonresponse)} ${esc(population.uncertainty)}</p>
       <p class="panel-source">${citation(population.records[0].source)} All three rows link to their exact source row and column.</p>
       <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published ${esc(data.study.publicationDate)}.
@@ -294,8 +297,8 @@
       Measure: ${esc(demographics.metric)}. Denominator: ${esc(population.denominatorLabel)}.</p>
       <p>${esc(dimension.instrumentLocator)} ${link(demographics.questionnaire)}; ${link(data.sources.methods)}; ${link(data.sources.classification)}.
       Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
-      <p class="credit">${data.reuse.notices.map(esc).join(' ')}. ${esc(data.reuse.disclaimer)}
-      <a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a>. ${esc(demographics.reuseLimits)}</p>`;
+      <p class="credit">${esc(data.reuse.disclaimer)}
+      <a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a>. ${esc(demographics.reuseLimits)}</p>`)}`;
   }
   function renderStatic(data) {
     function nested(state) {
@@ -312,7 +315,7 @@
       ${nested({view, group: 'us-adults', format: 'list'})}</section>`).join('') +
       `<section id="static-attendance" aria-labelledby="static-attendance-heading">${renderAttendance(data, 'list', true)}</section>` +
       `<section id="static-demographics"><h2>Affiliations within demographic populations</h2>
-      <p>Select one published population at a time. No combined demographic filters or inferred denominations.</p>
+      <p>One published population at a time; no combined filters or inferred denominations.</p>
       ${data.demographics.populations.map(population => `<details id="static-demographics-${population.id}">
       <summary>${esc(data.demographics.dimensions.find(row => row.id === population.dimension).label)}: ${esc(population.label)}</summary>
       ${renderDemographics(data, {population: population.id, format: 'list'}, true)}</details>`).join('')}</section>`;

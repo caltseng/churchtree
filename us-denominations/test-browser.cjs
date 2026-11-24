@@ -27,6 +27,28 @@ fs.mkdirSync(output, {recursive: true});
       async function heading(name) {
         assert.equal(await content.locator('#group-heading').textContent(), name);
       }
+      async function openInfo(name) {
+        const detail = content.locator('.info-detail');
+        const summary = detail.locator('summary');
+        assert.match(await summary.textContent(), name);
+        assert.equal(await detail.getAttribute('open'), null, 'Secondary provenance starts collapsed');
+        assert(await content.locator('.source-line a').first().isVisible(), 'Direct source stays visible');
+        assert.match(await content.locator('.source-line').textContent(), /© 2026 Pew Research Center/);
+        await summary.focus();
+        await page.keyboard.press('Shift+Tab');
+        await page.keyboard.press('Tab');
+        assert(await summary.evaluate(el => el === document.activeElement), 'Keyboard reaches Info');
+        assert(await summary.evaluate(el => getComputedStyle(el).outlineStyle !== 'none'), 'Info focus is visible');
+        await page.keyboard.press('Enter');
+        assert(await detail.locator('.info-body').isVisible(), 'Enter opens provenance');
+        assert(await summary.evaluate(el => el === document.activeElement), 'Opening keeps focus on Info');
+        await page.keyboard.press('Space');
+        assert.equal(await detail.getAttribute('open'), null, 'Space closes provenance');
+        await page.keyboard.press('Space');
+        assert(await detail.locator('.info-body').isVisible(), 'Space reopens provenance');
+        assert.match(await detail.textContent(), /has not reviewed or endorsed/);
+        assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Open Info fits');
+      }
       async function fits() {
         assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'No horizontal clipping');
         const rows = await content.locator('.row-target').evaluateAll(elements => elements.map(el => ({
@@ -260,6 +282,7 @@ fs.mkdirSync(output, {recursive: true});
       assert.match(await content.textContent(), /excluding weddings and funerals/);
       assert.match(await content.textContent(), /ATTENDPERRLS/);
       assert(!/ of U.S. adults/.test(await content.textContent()));
+      await openInfo(/Info.*religious service attendance/);
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
       const attendanceRows = () => content.locator('tbody tr').evaluateAll(rows => rows.map(row => ({
         id: row.dataset.attendance, text: row.textContent
@@ -279,6 +302,7 @@ fs.mkdirSync(output, {recursive: true});
       await page.screenshot({path: path.join(output, `us-attendance-${size.width}.png`), fullPage: true});
       await page.locator('#list-toggle').click();
       assert.deepEqual(await attendanceRows(), attendanceChart);
+      assert(await content.locator('.info-detail[open] .info-body').isVisible(), 'List preserves attendance Info');
       assert.equal(await content.locator('.bar:visible').count(), 0);
       assert(await page.locator('#list-toggle').evaluate(el => el === document.activeElement));
       await page.locator('#affiliation-view').selectOption('families');
@@ -338,6 +362,10 @@ fs.mkdirSync(output, {recursive: true});
       await content.locator('[data-demographic="christian"] summary').click();
       assert(await content.locator('[data-demographic="christian"] a').isVisible());
       assert.match(await content.locator('[data-demographic="christian"] .row-source').textContent(), /Among Asian adults > 2023-24/);
+      await openInfo(/Info.*Asian/);
+      await page.locator('#list-toggle').click();
+      assert(await content.locator('.info-detail[open] .info-body').isVisible(), 'Chart preserves demographic Info');
+      await page.locator('#list-toggle').click();
       await page.screenshot({path: path.join(output, `us-demographics-${size.width}.png`), fullPage: true});
       await page.locator('#affiliation-view').selectOption('attendance');
       await heading('Religious service attendance');
@@ -351,6 +379,17 @@ fs.mkdirSync(output, {recursive: true});
       await heading('Affiliations within Asian (English-speaking, non-Hispanic, one race)');
       await page.locator('#demographic-dimension').selectOption('gender');
       await heading('Affiliations within Men');
+      for (const detail of await page.locator('#methodology > details').all()) {
+        const summary = detail.locator('summary').first();
+        assert.equal(await detail.getAttribute('open'), null, 'Methodology starts collapsed');
+        await summary.focus();
+        await page.keyboard.press('Enter');
+        assert(await detail.locator('.info-body').isVisible(), 'Methodology opens by keyboard');
+        assert(await summary.evaluate(el => el === document.activeElement), 'Methodology retains focus');
+        assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Open methodology fits');
+        await page.keyboard.press('Space');
+        assert.equal(await detail.getAttribute('open'), null, 'Methodology closes by keyboard');
+      }
       await page.goBack();
       await heading('Affiliations within Asian (English-speaking, non-Hispanic, one race)');
       await page.goForward();
