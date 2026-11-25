@@ -201,11 +201,12 @@ Households remain the curated relationship unit, with optional household rollups
 
 Initial views:
 
-- A network view connecting people to the threads where they participate, distinguishing membership from activity.
+- A primary hub-and-spoke view centered on the user, showing people with more frequent observed interaction nearer the center and less frequent interaction farther away.
+- A supporting person-to-thread view distinguishing group membership from actual participation.
 - A ranked frequency view separating direct conversations from group activity.
 - A weekly timeline showing changes within available history.
 
-The primary output is a summary and visualization of interactions with people over the last 7 days, last 30 days, or a selected custom period, combining all available sources. Show distinct people with observed direct activity, group-only participants separately, sent/received activity by channel, active days, and latest observed interaction. Include a people table, person-to-thread graph, and daily activity timeline; each must use the same filtered dataset and expose source coverage.
+The primary output is a summary and visualization of interactions with people over the last 7 days, last 30 days, or a selected custom period, combining all available sources. Show distinct people with observed direct activity, group-only participants separately, sent/received activity by channel, active days, and latest observed interaction. Include a people table, user-centered relationship graph, supporting person-to-thread graph, and daily activity timeline; each must use the same filtered dataset and expose source coverage.
 
 Make period semantics explicit. As an initial convention, "last N days" means the current local calendar day plus the preceding N-1 days, ending at the displayed as-of instant, with the current day labeled partial. Resolve boundaries in the selected time zone and use a start-inclusive, end-exclusive interval. Preserve event timestamps so custom ranges and daylight-saving transitions are handled correctly. Display the actual date range, time zone, as-of time, and source freshness. This convention is a proposed default, not a previously confirmed user preference.
 
@@ -296,7 +297,21 @@ In the interactive graph, use distinct shapes for people, households, and thread
 
 Support a date-range selector and filters for channel, direct versus group conversations, and outgoing versus incoming-only activity. Selecting a person, household, or thread reveals its supporting activity and source coverage. Household rollups deduplicate the same underlying message/activity record rather than counting it once per household member.
 
-The network view answers who participates where; the ranked view and timeline answer how often. Do not rely on force-directed layout distance to imply relationship closeness.
+#### Primary visualization: user-centered relationship map
+
+Place the user at the center, with people as surrounding nodes and spokes representing observed communication with the user. Encode interaction frequency using intentional radial positioning: people with more frequent observed direct activity appear closer to the center, and less frequent activity farther away. This is communication proximity, not a judgment of affection, importance, or relationship quality. Use labeled frequency bands and an inspectable metric rather than incidental force-directed layout distance.
+
+As an initial proposed metric, use distinct days with observed direct communication in the selected period, with sent/received breakdowns, message counts, and latest activity shown on selection. Show time since latest observed direct activity with a labeled visual treatment such as color or an age badge. Keep unknown coverage distinct from an observed lack of activity.
+
+Group-only participants must remain visible as a separately labeled category or through the supporting thread view. Do not give them a direct-interaction spoke or move them inward merely because other members posted in a shared group. Shared group participation can be displayed as a separate layer, with an explicit legend; it is not evidence that the user addressed each participant.
+
+Keep previously observed or curated people available even when they have no observed activity in the selected window, rather than filtering away precisely the people who may warrant reconnection. Show them in an outer "no observed activity in this period" band, distinguishing complete observed silence from incomplete/unknown source history.
+
+Highlight potential reconnection opportunities and activity outliers: people whose recent interaction has fallen below their own historical pattern, or whose user-selected reconnection rhythm is due. These are separate signals from simple low frequency. Show the prior baseline, current activity, last observed contact, coverage, and reason for each highlight. Do not invent a baseline when history is insufficient or compare mismatched source coverage as if it were a decline. Thresholds remain an implementation/tuning decision, not a universal relationship score.
+
+Selecting a person opens the supporting channel/thread activity and any separately recorded meaningful connections or reconnection preferences. Do not automatically reset a meaningful-connection date or send outreach from this view.
+
+The supporting person-to-thread graph answers who participates where; the primary map, ranked view, and timeline answer how often and where recent changes may merit attention. The diagram above illustrates the underlying data model, not the final hub-and-spoke screen layout.
 
 Milestone acceptance criteria:
 
@@ -311,6 +326,8 @@ Milestone acceptance criteria:
 9. Produce consistent 7-day, 30-day, and custom-period summaries, people tables, graphs, and timelines from the same aggregates, with explicit interval semantics.
 10. Define independently usable source-collection, identity-reconciliation, aggregation, and presentation skills with shared contracts; demonstrate the eventual implementation using synthetic fixtures rather than committing private messages.
 11. Preserve visible partial-source failures and unresolved identities in the final summary; neither may be silently dropped into a success-shaped empty report.
+12. Render the user at the center of the primary map, with explainable frequency-based radial positioning, visible recency, and distinct treatment for group-only activity and unknown coverage.
+13. Retain known people with no observed activity in the selected period and highlight explainable reconnection opportunities or changes from a person's own baseline without equating low message volume with relationship neglect.
 
 Keep stable provider identifiers where available. Application-generated IDs must be labeled as local identities; if the source exposes only names, require explicit reconciliation rather than silently merging identities.
 
