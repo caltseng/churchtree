@@ -98,7 +98,7 @@ browserTest(root,async({browser,server})=>{
   await page.reload();assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
   await page.screenshot({path:path.join(output,`home-ink-${size.width}.png`),fullPage:true});
   await page.locator('.tool-card[data-id="church-history"]').click();await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
-  await page.getByRole('link',{name:'Main Branch home',exact:true}).click();assert.equal(await page.locator('.tool-card').count(),pageCount);
+  await page.getByRole('link',{name:'Main Branch home',exact:true}).click();await page.waitForURL(base+'/');assert.equal(await page.locator('.tool-card').count(),pageCount);
   assert.equal(await page.locator('.tool-card[href="wcf/"], .tool-card[href="wsc/"], .tool-card[href="wlc/"]').count(),0);
   await page.locator('.tool-card[data-id="westminster"]').click();await page.waitForURL(/\/westminster-standards\/$/);
   assert.equal(await page.getByRole('heading',{name:'Westminster Standards',exact:true}).count(),1);
