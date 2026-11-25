@@ -575,9 +575,18 @@ browserTest(root, async ({browser, base}) => {
       motion.on('pageerror', error => motionErrors.push(error.message));
       await motion.goto(base + '/us-denominations/');
       await motion.locator('.pie-slice[data-group="christian"]').focus();
+      await motion.evaluate(() => {
+        document.addEventListener('keydown', () => {
+          window.testZoomSnapshot = {
+            zooming: document.querySelector('.pie').classList.contains('pie-zooming'),
+            group: new URL(location.href).searchParams.get('group')
+          };
+        }, {once: true});
+      });
       await motion.keyboard.press('Enter');
-      assert(await motion.locator('.pie').evaluate(el => el.classList.contains('pie-zooming')), 'Selected slice zooms before navigation');
-      assert.equal(new URL(motion.url()).searchParams.get('group'), 'us-adults', 'Zoom finishes before drilling in');
+      const zoomSnapshot = await motion.evaluate(() => window.testZoomSnapshot);
+      assert(zoomSnapshot.zooming, 'Selected slice zooms before navigation');
+      assert.equal(zoomSnapshot.group, 'us-adults', 'Zoom finishes before drilling in');
       await motion.locator('#group-heading', {hasText: 'Christian'}).waitFor();
       assert(await motion.locator('.pie').evaluate(el => el.classList.contains('pie-enter-in')), 'Child pie zooms in');
       await motion.locator('.pie-center').click();
