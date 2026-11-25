@@ -573,20 +573,15 @@ browserTest(root, async ({browser, base}) => {
       const motion = await browser.newPage({viewport: size, isMobile: size.width < 700, hasTouch: size.width < 700, reducedMotion: 'no-preference'});
       const motionErrors = [];
       motion.on('pageerror', error => motionErrors.push(error.message));
+      // Keep protocol latency from completing animations between rapid inputs or state assertions.
+      await motion.clock.install({time: new Date(0)});
+      await motion.clock.pauseAt(new Date(1000));
       await motion.goto(base + '/us-denominations/');
       await motion.locator('.pie-slice[data-group="christian"]').focus();
-      await motion.evaluate(() => {
-        document.addEventListener('keydown', () => {
-          window.testZoomSnapshot = {
-            zooming: document.querySelector('.pie').classList.contains('pie-zooming'),
-            group: new URL(location.href).searchParams.get('group')
-          };
-        }, {once: true});
-      });
       await motion.keyboard.press('Enter');
-      const zoomSnapshot = await motion.evaluate(() => window.testZoomSnapshot);
-      assert(zoomSnapshot.zooming, 'Selected slice zooms before navigation');
-      assert.equal(zoomSnapshot.group, 'us-adults', 'Zoom finishes before drilling in');
+      assert(await motion.locator('.pie').evaluate(el => el.classList.contains('pie-zooming')), 'Selected slice zooms before navigation');
+      assert.equal(new URL(motion.url()).searchParams.get('group'), 'us-adults', 'Zoom finishes before drilling in');
+      await motion.clock.runFor(400);
       await motion.locator('#group-heading', {hasText: 'Christian'}).waitFor();
       assert(await motion.locator('.pie').evaluate(el => el.classList.contains('pie-enter-in')), 'Child pie zooms in');
       await motion.locator('.pie-center').click();
@@ -598,8 +593,8 @@ browserTest(root, async ({browser, base}) => {
       };
       // After any interrupted motion, the pie must rest at its true geometry with no transient state left behind.
       const assertSettled = async (group, label) => {
+        await motion.clock.runFor(1100);
         await motion.locator('#group-heading', {hasText: label}).waitFor();
-        await motion.waitForTimeout(700);
         assert.equal(new URL(motion.url()).searchParams.get('group'), group, `Rapid input ends at ${label}`);
         assert.equal(await motion.locator('.pie-busy, .pie-zooming, .pie-sweeping, .pie-collapsing, .pie-chosen, .pie-underlay').count(), 0,
           `No transient pie state remains at ${label}`);
@@ -617,6 +612,7 @@ browserTest(root, async ({browser, base}) => {
       await assertSettled('christian', 'Christian');
       await motion.goto(base + '/us-denominations/');
       await press('christian');
+      await motion.clock.runFor(400);
       await motion.waitForFunction(() => document.querySelector('#group-heading')?.textContent === 'Christian'
         && document.querySelector('.pie.pie-sweeping'), null, {polling: 'raf'});
       await press('protestant');
