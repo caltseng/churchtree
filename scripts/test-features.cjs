@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const repo=path.resolve(__dirname,'..'),root=process.env.CHURCHTREE_TEST_ROOT?path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT):path.join(repo,'dist'),server=require('./test-server.cjs')(root),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
-const pageCount=JSON.parse(fs.readFileSync(path.join(repo,'site.config.json'),'utf8')).pages.length;
+const {pages,countryHistories}=JSON.parse(fs.readFileSync(path.join(repo,'site.config.json'),'utf8')),pageCount=pages.length;
 async function openAppearance(page) {
  const trigger = page.getByRole('button', {name:'Site menu', exact:true});
  assert.equal(await trigger.count(), 1);
@@ -21,7 +21,8 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   const globalChurch=page.locator('.tool-card[data-id="global-church"]');
   assert.equal(await globalChurch.getAttribute('href'),'global-church/');
   assert.equal(await globalChurch.getByRole('heading').innerText(),'The global church');
-  assert.match(await globalChurch.innerText(),/China and Cambodia/);
+  const countryCopy=await globalChurch.innerText();
+  for(const country of countryHistories) assert(countryCopy.includes(country.title),country.title+' appears in the available-country copy');
   assert.match(await globalChurch.locator('.card-action').innerText(),/Choose a country/);
   assert.equal(await globalChurch.locator('.card-preview svg').count(),1);
   assert.match(await globalChurch.locator('.card-preview').textContent(),/COUNTRY HISTORIES.*SELECTED EPISODES/);
@@ -30,6 +31,8 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   await globalChurch.screenshot({path:path.join(output,`global-church-${size.width}.png`)});
   await globalChurch.focus();await page.keyboard.press('Enter');
   await page.waitForURL('**/global-church/');
+  assert.deepEqual(await page.locator('.tool-card').evaluateAll(cards=>cards.map(card=>card.dataset.id)),countryHistories.map(country=>country.id));
+  for(const country of countryHistories) assert.equal(await page.locator(`.tool-card[data-id="${country.id}"]`).getAttribute('href'),'../'+country.path);
   await page.locator('.tool-card[data-id="china-history"]').click();
   await page.waitForURL('**/china-history/');
   assert.equal(await page.title(),'Church in China history · Main Branch');
@@ -63,7 +66,7 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
    await page.getByRole('link',{name:/Westminster Standards/}).click();await page.waitForURL(/\/westminster-standards\/$/);
   }
   await page.screenshot({path:path.join(output,`westminster-${size.width}.png`),fullPage:true});
-  for (const route of ['/church-history/', '/china-history/', '/global-church/', '/cambodia-history/', '/westminster-standards/', '/wcf/', '/wsc/', '/wlc/', '/us-denominations/']) {
+  for (const route of ['/church-history/', ...countryHistories.map(country=>'/'+country.path), '/global-church/', '/westminster-standards/', '/wcf/', '/wsc/', '/wlc/', '/us-denominations/']) {
    assert.equal((await page.goto(base+route)).status(),200);
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),route+' fits the viewport');
    const trigger = await openAppearance(page);

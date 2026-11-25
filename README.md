@@ -14,6 +14,7 @@ or login required.
 | Church in China | `/china-history/` | Separate sourced chronology, 635-2024; shared vertical/horizontal timelines, search, display-lane/date filters, evidence details and a complete text fallback |
 | The global church | `/global-church/` | Country chooser for the available sourced histories |
 | Church in Cambodia | `/cambodia-history/` | Introductory 42-record chronology, 1555-2025; visible source credit, uncertainty, shared timelines and complete text fallback |
+| Church in Thailand | `/thailand-history/` | Introductory 40-record chronology, 1567-2023; local and cross-border agency, claim sources, qualified dates and complete text fallback |
 | Westminster Confession | `/wcf/` | Text-first reader of all 33 chapters / 172 sections, chapter navigation, section links and historical-edition source notes |
 | Westminster Standards | `/westminster-standards/` | Shared entry point for the Confession of Faith and both catechisms |
 | Westminster Shorter Catechism | `/wsc/` | Complete 107 questions and answers, question links and edition sources |
@@ -21,7 +22,7 @@ or login required.
 | Logo studies | `/assets/brand/logos/` | Design-study archive, not another primary exploration |
 
 The home card **The global church** opens a country chooser generated from
-`site.config.json`'s `countryHistories`. China and Cambodia are available;
+`site.config.json`'s `countryHistories`. China, Cambodia and Thailand are available;
 existing `/china-history/` links and fragments remain country-specific.
 
 The reader hosts the historical 1647 English text in Schaff's 1919 edition, with
@@ -135,6 +136,15 @@ Khmer scholarship, primary documents and demographic methods. Writer self-review
 is not the later independent research audit. No country records enter denomination
 discovery and no contemporary vulnerable rosters or copied media are published.
 
+The [Thailand foundation](docs/research/thailand/README.md) contains 44 research
+rows, with 40 selected for `/thailand-history/` and four explicitly held. Supported
+coverage ends in 2023; the national affiliation reference is December 2021,
+not the 2026 retrieval date. Its [coverage register](docs/research/thailand/coverage.md)
+retains local-language, regional, tradition and demographic gaps, including a
+provisional hospital-closure date. The route reuses the same selector, approved-field
+builder and China controller/CSS; only generated HTML/public data are added
+to the artifact. Writer self-review is not the later independent research audit.
+
 ## Design language and identity
 
 The selected mark is **Woodland solid**, a side-graft symbol, with three fixed colors:
@@ -161,7 +171,7 @@ from the selected logo's fixed colors. See the [design-language contract](docs/d
   country chronology, explicit research crosswalk/held roster and public-field
   projection. `historical-dates.js` preserves year/month/day precision.
 - `scripts/build-country-history.cjs`: shared approved-field projection;
-  Cambodia reuses the China controller/CSS without changing the China renderer.
+  Cambodia and Thailand reuse the China controller/CSS without changing its renderer.
 - `westminster/content.json` + `westminster/build.cjs`: reader text and generated HTML.
 - `theme.css`, `theme.js`, `theme-controls.css`, `brand.css`: shared visual foundation.
 - `scripts/build-site.cjs`: clean website-only artifact; `.github/workflows/`: CI/deploy.

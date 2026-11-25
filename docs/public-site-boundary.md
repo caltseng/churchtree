@@ -40,6 +40,13 @@ research roster dispositions, citation links, no-JS fallback and data isolation.
 The generated `global-church/index.html` chooser is also explicitly public;
 the country registry does not recursively expose country folders.
 
+Thailand likewise adds only `thailand-history/index.html` and `public-data.js`,
+sharing the same renderer/assets. Its seven research documents, H/C crosswalks,
+four held rows, downloaded research sources and builder/test inputs remain
+outside `dist/`. `npm run test:thailand` checks exact selected/held accounting,
+claim locators, public projection and source-linked fallback, alongside
+desktop, mobile portrait and short-landscape interactions.
+
 Official references: [Pages availability](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages),
 [protected branch availability](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches),
 [visibility changes](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility).
