@@ -10,8 +10,11 @@ const countryHistory=`<svg viewBox="0 0 500 210" aria-hidden="true"><g class="pr
 const collectionPreview=reader.replace('THE WESTMINSTER CONFESSION','WESTMINSTER STANDARDS').replace('Of the Holy Scripture','Confession &amp; catechisms').replace('CHAPTER I <span>01 / 33</span>','THREE READINGS');
 const globalPreview=countryHistory.replace('CHINA · SELECTED EPISODES','COUNTRY HISTORIES · SELECTED EPISODES').replace('>635<','>DATES<').replace('>2024<','>SOURCES<');
 const countryIds=new Set(config.countryHistories.map(page=>page.id));
+function validatePages(pages){
+const ids=new Set();for(const page of pages){if(ids.has(page.id))throw Error('Duplicate page ID '+page.id);ids.add(page.id);if(!/^[a-z0-9-]+\/$/.test(page.path))throw Error('Expected a relative page directory');}
+}
 function tilesFor(pages,prefix=''){
-const ids=new Set();return pages.map(page=>{if(ids.has(page.id))throw Error('Duplicate page ID '+page.id);ids.add(page.id);if(!/^[a-z0-9-]+\/$/.test(page.path))throw Error('Expected a relative page directory');return `<a class="tool-card" data-id="${esc(page.id)}" href="${prefix}${esc(page.path)}"><div class="card-preview ${esc(page.id)}">${page.id==='church-history'?history:page.id==='global-church'||countryIds.has(page.id)?globalPreview:page.id==='us-denominations'?affiliation:page.id==='westminster'?collectionPreview:page.id==='wcf'?reader:catechismPreview(page.title)}</div><div class="card-copy"><p class="eyebrow">${esc(page.kind)}</p><h3>${esc(page.title)}</h3><p>${esc(page.description)}</p><ul class="tags">${page.tags.map(tag=>`<li>${esc(tag)}</li>`).join('')}</ul><span class="card-action">${esc(page.action)} <span aria-hidden="true">→</span></span></div></a>`;}).join('\n');
+validatePages(pages);return pages.map(page=>`<a class="tool-card" data-id="${esc(page.id)}" href="${prefix}${esc(page.path)}"><div class="card-preview ${esc(page.id)}">${page.id==='church-history'?history:page.id==='global-church'||countryIds.has(page.id)?globalPreview:page.id==='us-denominations'?affiliation:page.id==='westminster'?collectionPreview:page.id==='wcf'?reader:catechismPreview(page.title)}</div><div class="card-copy"><p class="eyebrow">${esc(page.kind)}</p><h3>${esc(page.title)}</h3><p>${esc(page.description)}</p><ul class="tags">${page.tags.map(tag=>`<li>${esc(tag)}</li>`).join('')}</ul><span class="card-action">${esc(page.action)} <span aria-hidden="true">→</span></span></div></a>`).join('\n');
 }
 const tiles=tilesFor(config.pages);
 let html=fs.readFileSync(path.join(root,'templates/home.html'),'utf8').replace('{{tiles}}',tiles);fs.writeFileSync(path.join(root,'index.html'),html);console.log('Built landing: '+config.pages.length+' exploration tiles.');
@@ -19,6 +22,7 @@ const collection=fs.readFileSync(path.join(root,'templates/westminster-standards
 fs.mkdirSync(path.join(root,'westminster-standards'),{recursive:true});
 fs.writeFileSync(path.join(root,'westminster-standards/index.html'),collection);
 console.log('Built Westminster collection: '+config.westminsterDocuments.length+' readers.');
+validatePages(config.countryHistories);
 for(const country of config.countryHistories){
 if(!fs.existsSync(path.join(root,country.path,'build.cjs')))throw Error('Missing country builder: '+country.path);
 }
