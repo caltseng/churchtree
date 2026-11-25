@@ -1,5 +1,9 @@
 # Contacts collection: initial technical approach
 
+> Archived: heartbeat now owns the collector and skills. The implementation and
+> npm commands described below have been removed from Churchtree; retain this
+> document as historical design context, not runnable instructions.
+
 Status: proposed architecture with a runnable metadata-handoff slice. No accounts
 are connected by this change, and no live endpoint adapter or native archive parser
 is implemented. See the [product specification](contacts-store-spec.md) and
