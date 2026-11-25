@@ -1,4 +1,5 @@
 const fs=require('fs'),path=require('path');
+const countryOutline=require('./country-outlines.cjs');
 const root=path.resolve(__dirname,'..');const config=JSON.parse(fs.readFileSync(path.join(root,'site.config.json'),'utf8'));
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const history=`<svg viewBox="0 0 500 210" role="img" aria-label="Paths diverging and reconnecting in a history graph"><g fill="none" stroke-width="2.5"><path class="preview-path" d="M70 105H150C200 105 190 45 245 45H420M150 105H245C300 105 290 165 345 165H420"/><path class="preview-split" d="M245 45C300 45 290 105 345 105H420"/></g><g class="preview-node"><circle cx="70" cy="105" r="9"/><circle cx="245" cy="45" r="9"/><circle cx="245" cy="105" r="9"/><circle cx="345" cy="165" r="9"/><circle cx="420" cy="45" r="9"/><circle cx="420" cy="105" r="9"/><circle cx="420" cy="165" r="9"/></g><g class="preview-label"><text x="48" y="142">ROOTS</text><text x="205" y="198">BRANCHES</text><text x="378" y="198">CONNECTIONS</text></g></svg>`;
@@ -9,8 +10,11 @@ const countryHistory=`<svg viewBox="0 0 500 210" aria-hidden="true"><g class="pr
 const collectionPreview=reader.replace('THE WESTMINSTER CONFESSION','WESTMINSTER STANDARDS').replace('Of the Holy Scripture','Confession &amp; catechisms').replace('CHAPTER I <span>01 / 33</span>','THREE READINGS');
 const globalPreview=countryHistory.replace('CHINA · SELECTED EPISODES','COUNTRY HISTORIES · SELECTED EPISODES').replace('>635<','>DATES<').replace('>2024<','>SOURCES<');
 const countryIds=new Set(config.countryHistories.map(page=>page.id));
+function validatePages(pages){
+const ids=new Set();for(const page of pages){if(ids.has(page.id))throw Error('Duplicate page ID '+page.id);ids.add(page.id);if(!/^[a-z0-9-]+\/$/.test(page.path))throw Error('Expected a relative page directory');}
+}
 function tilesFor(pages,prefix=''){
-const ids=new Set();return pages.map(page=>{if(ids.has(page.id))throw Error('Duplicate page ID '+page.id);ids.add(page.id);if(!/^[a-z0-9-]+\/$/.test(page.path))throw Error('Expected a relative page directory');return `<a class="tool-card" data-id="${esc(page.id)}" href="${prefix}${esc(page.path)}"><div class="card-preview ${esc(page.id)}">${page.id==='church-history'?history:page.id==='global-church'||countryIds.has(page.id)?globalPreview:page.id==='us-denominations'?affiliation:page.id==='westminster'?collectionPreview:page.id==='wcf'?reader:catechismPreview(page.title)}</div><div class="card-copy"><p class="eyebrow">${esc(page.kind)}</p><h3>${esc(page.title)}</h3><p>${esc(page.description)}</p><ul class="tags">${page.tags.map(tag=>`<li>${esc(tag)}</li>`).join('')}</ul><span class="card-action">${esc(page.action)} <span aria-hidden="true">→</span></span></div></a>`;}).join('\n');
+validatePages(pages);return pages.map(page=>`<a class="tool-card" data-id="${esc(page.id)}" href="${prefix}${esc(page.path)}"><div class="card-preview ${esc(page.id)}">${page.id==='church-history'?history:page.id==='global-church'||countryIds.has(page.id)?globalPreview:page.id==='us-denominations'?affiliation:page.id==='westminster'?collectionPreview:page.id==='wcf'?reader:catechismPreview(page.title)}</div><div class="card-copy"><p class="eyebrow">${esc(page.kind)}</p><h3>${esc(page.title)}</h3><p>${esc(page.description)}</p><ul class="tags">${page.tags.map(tag=>`<li>${esc(tag)}</li>`).join('')}</ul><span class="card-action">${esc(page.action)} <span aria-hidden="true">→</span></span></div></a>`).join('\n');
 }
 const tiles=tilesFor(config.pages);
 let html=fs.readFileSync(path.join(root,'templates/home.html'),'utf8').replace('{{tiles}}',tiles);fs.writeFileSync(path.join(root,'index.html'),html);console.log('Built landing: '+config.pages.length+' exploration tiles.');
@@ -18,10 +22,12 @@ const collection=fs.readFileSync(path.join(root,'templates/westminster-standards
 fs.mkdirSync(path.join(root,'westminster-standards'),{recursive:true});
 fs.writeFileSync(path.join(root,'westminster-standards/index.html'),collection);
 console.log('Built Westminster collection: '+config.westminsterDocuments.length+' readers.');
+validatePages(config.countryHistories);
 for(const country of config.countryHistories){
 if(!fs.existsSync(path.join(root,country.path,'build.cjs')))throw Error('Missing country builder: '+country.path);
 }
-const countries=fs.readFileSync(path.join(root,'templates/global-church.html'),'utf8').replace('{{tiles}}',tilesFor(config.countryHistories,'../'));
+const countryTiles=config.countryHistories.map(country=>`<a class="tool-card country-card" data-id="${esc(country.id)}" href="../${esc(country.path)}" aria-labelledby="${esc(country.id)}-name" aria-describedby="${esc(country.id)}-description"><div class="country-map" aria-hidden="true"><span class="country-north">N</span>${countryOutline(country.outline)}<span class="country-map-label">COUNTRY HISTORY</span></div><div class="card-copy"><h3 id="${esc(country.id)}-name">${esc(country.title)}</h3><p id="${esc(country.id)}-description">${esc(country.description)}</p><span class="card-action">${esc(country.action)} <span aria-hidden="true">→</span></span></div></a>`).join('\n');
+const countries=fs.readFileSync(path.join(root,'templates/global-church.html'),'utf8').replace('{{tiles}}',countryTiles);
 fs.mkdirSync(path.join(root,'global-church'),{recursive:true});
 fs.writeFileSync(path.join(root,'global-church/index.html'),countries);
 console.log('Built global church: '+config.countryHistories.length+' country histories.');
