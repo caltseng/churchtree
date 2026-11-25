@@ -48,3 +48,13 @@ The source packet and staging crosswalks are not published; dates, original
 summaries, caveats, credit and precise locators are. See its
 [handoff](../research/cambodia/handoff.md) and
 [coverage register](../research/cambodia/coverage.md).
+
+`/thailand-history/` follows the same contract, with H01-H44 explicitly
+accounted for as 40 selected events and four held rows. Its year/month/day
+bounds, evidence and provisional claims remain qualified; the 1918-1919
+Adventist interval retains the December arrival in prose rather than inventing
+a 1919 month. Research/held crosswalks remain outside the artifact. See its
+[handoff](../research/thailand/handoff.md) and
+[coverage register](../research/thailand/coverage.md).
+Syntax checks discover all registered country folders; each country also has
+its own validation and browser-test command.

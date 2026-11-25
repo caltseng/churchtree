@@ -28,6 +28,8 @@
     "global-church/index.html",
     "cambodia-history/index.html",
     "cambodia-history/public-data.js",
+    "thailand-history/index.html",
+    "thailand-history/public-data.js",
     "china-history/index.html",
     "china-history/history.css",
     "china-history/controller.js",
@@ -44,7 +46,7 @@
       "title": "The global church",
       "path": "global-church/",
       "kind": "Sourced historical timeline",
-      "description": "Explore selected, sourced church histories in China and Cambodia, with explicit evidence and gaps.",
+      "description": "Explore selected, sourced church histories in China, Cambodia and Thailand, with explicit evidence and gaps.",
       "tags": ["Country histories", "Parallel episodes", "Evidence and gaps"],
       "action": "Choose a country"
     },
@@ -102,6 +104,15 @@
       "description": "Selected episodes, 1555-2025: communities, language, lay agency, displacement and reconstruction.",
       "tags": ["1555-2025", "Evidence and gaps"],
       "action": "Explore church in Cambodia"
+    },
+    {
+      "id": "thailand-history",
+      "title": "Thailand",
+      "path": "thailand-history/",
+      "kind": "Sourced historical timeline",
+      "description": "Selected episodes, 1567-2023: communities, local agency, language, institutions and cross-border links.",
+      "tags": ["1567-2023", "Evidence and gaps"],
+      "action": "Explore church in Thailand"
     }
   ],
   "westminsterDocuments": [
