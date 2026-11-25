@@ -2,6 +2,9 @@
 
 Product specification · Draft v0.4
 
+Companions: [initial technical approach](contacts-technical-spec.md) ·
+[concrete work items](contacts-work-items.md).
+
 ## 1. Purpose
 
 Create a household-centered relationship store that builds on existing Google contacts, email, Facebook Messenger, and text-message conversations, adding the context needed to care for people intentionally.

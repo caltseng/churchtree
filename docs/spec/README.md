@@ -22,4 +22,7 @@ plans. Distinguish implementation completeness from historical completeness.
   reconnection signals.
   The visualization belongs in the contacts product, not Muse. This specification
   does not change the current Main Branch website scope or claim implemented
-  skills, connected endpoints, or authorization to collect private data.
+  endpoint access or authorization to collect private data.
+  [Technical approach and runnable collection slice](contacts-technical-spec.md) ·
+  [Concrete work items and dependencies](contacts-work-items.md) ·
+  [Collection skill](../../.github/skills/contacts-collect/SKILL.md).
