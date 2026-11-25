@@ -241,12 +241,12 @@ module.exports = {
     geography: 'Present-day Cambodia is the research boundary, not the whole Khmer Empire. Earlier vicariate territory crossed into Laos and southern Vietnam; Thailand, France and diaspora locations are cross-border context. State names and borders changed.',
     limits: '42 selected milestones from 50 researched rows; eight rows are held outside this public roster, not hidden by filters. Missing research includes wider Pentecostal/Baptist/Adventist/Anglican histories, Khmer scholarship, minority-language communities, Catholic laywomen, primary constitutions, and post-2023 law. Bunong evidence is abstract-only. Salas death years conflict (1976/1977). No comparable national growth series is established: the NIS census-variable page warns its data-file frequencies are not population statistics, and church/WRD/NGO estimates differ. USDOS describes registration and proselytism/inducement restrictions in 2023, not current legal advice. Evidence retrieved November 24, 2026; latest selected event June 28, 2025. Writer self-review is not independent scholarly approval.',
     lanes: [
-        {id: 'catholic', label: 'Catholic communities'},
-        {id: 'protestant', label: 'Protestant and evangelical'},
-        {id: 'texts', label: 'Language and texts'},
-        {id: 'service', label: 'Education and social action'},
-        {id: 'other', label: 'Orthodox and Latter-day Saints'},
-        {id: 'context', label: 'State, displacement and survival'}
+        {id: 'catholic', label: 'Catholic'},
+        {id: 'protestant', label: 'Protestant'},
+        {id: 'texts', label: 'Language / texts'},
+        {id: 'service', label: 'Education / aid'},
+        {id: 'other', label: 'Orthodox / LDS'},
+        {id: 'context', label: 'State / exile'}
     ],
     events,
     relations: [

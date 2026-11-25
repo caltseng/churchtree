@@ -59,7 +59,7 @@ No linked asset is imported. Bibliographic uncertainty remains explicit.
 | C26 | S07, art. 43(1)-(3), editor's date note | Conditional religious liberty and Buddhism as state religion, historical English edition not enforcement survey. |
 | C27 | S10, 1994-02-26 entry, English and Khmer | LDS state recognition; same institution's two language editions. |
 | C28 | S11, paragraphs "Since 2001" and "The Royal Government" | Pastoral care from Thailand, registration 2013-07-03; primary letter not read. |
-| C29 | S16, 2003 entry and S17, paragraph "The Methodist Church" plus partner list | Five-agency cooperation and 2018 denomination; do not depict all world Methodist bodies merging. |
+| C29 | S16, 2003 entry and opening 2018 autonomy description | Five-agency cooperation and 2018 stage; do not depict all world Methodist bodies merging. S17 is separately indexed as C38. |
 | C30 | S04, pp. 25-27, 29-30 and p. 34 opening | 2019 fieldwork, women's authority/ordination differences; generalize without protected interlocutors' details. |
 | C31 | S08, P10 categories and final Warning | Data-file frequency is not a valid national estimate; no demographic growth curve. |
 | C32 | S03, first three substantive paragraphs | January 26 Alliance and January 27-28 evangelical centennial commemorations; not 100 years of all Christianity. |

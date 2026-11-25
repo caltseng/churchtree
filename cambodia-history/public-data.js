@@ -7,27 +7,27 @@ window.COUNTRY_HISTORY_DATA = {
   "lanes": [
     {
       "id": "catholic",
-      "label": "Catholic communities"
+      "label": "Catholic"
     },
     {
       "id": "protestant",
-      "label": "Protestant and evangelical"
+      "label": "Protestant"
     },
     {
       "id": "texts",
-      "label": "Language and texts"
+      "label": "Language / texts"
     },
     {
       "id": "service",
-      "label": "Education and social action"
+      "label": "Education / aid"
     },
     {
       "id": "other",
-      "label": "Orthodox and Latter-day Saints"
+      "label": "Orthodox / LDS"
     },
     {
       "id": "context",
-      "label": "State, displacement and survival"
+      "label": "State / exile"
     }
   ],
   "events": [
