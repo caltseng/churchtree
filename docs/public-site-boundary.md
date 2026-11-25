@@ -32,6 +32,14 @@ metadata and passage locators, not the staged research packet or copied media.
 `npm run test:china` checks this route-specific boundary as well as data isolation
 from the denomination explorer.
 
+The Cambodia route adds only `cambodia-history/index.html` and `public-data.js`
+to this explicit allowlist, reusing China's public controller/CSS. Its seven-file
+research packet, editorial data, KH crosswalks, held ledger, template, builders
+and tests remain outside the artifact. `npm run test:cambodia` checks projection,
+research roster dispositions, citation links, no-JS fallback and data isolation.
+The generated `global-church/index.html` chooser is also explicitly public;
+the country registry does not recursively expose country folders.
+
 Official references: [Pages availability](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages),
 [protected branch availability](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches),
 [visibility changes](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility).

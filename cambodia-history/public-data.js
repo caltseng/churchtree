@@ -1,0 +1,1483 @@
+// Generated approved public fields. Do not edit.
+window.COUNTRY_HISTORY_DATA = {
+  "title": "Church in Cambodia",
+  "scope": "Selected episodes, 1555-2025: Catholic, Protestant, Orthodox and other Christian histories, with language, lay agency, displacement and reconstruction. Introductory, not comprehensive.",
+  "geography": "Present-day Cambodia is the research boundary, not the whole Khmer Empire. Earlier vicariate territory crossed into Laos and southern Vietnam; Thailand, France and diaspora locations are cross-border context. State names and borders changed.",
+  "limits": "42 selected milestones from 50 researched rows; eight rows are held outside this public roster, not hidden by filters. Missing research includes wider Pentecostal/Baptist/Adventist/Anglican histories, Khmer scholarship, minority-language communities, Catholic laywomen, primary constitutions, and post-2023 law. Bunong evidence is abstract-only. Salas death years conflict (1976/1977). No comparable national growth series is established: the NIS census-variable page warns its data-file frequencies are not population statistics, and church/WRD/NGO estimates differ. USDOS describes registration and proselytism/inducement restrictions in 2023, not current legal advice. Evidence retrieved November 24, 2026; latest selected event June 28, 2025. Writer self-review is not independent scholarly approval.",
+  "lanes": [
+    {
+      "id": "catholic",
+      "label": "Catholic communities"
+    },
+    {
+      "id": "protestant",
+      "label": "Protestant and evangelical"
+    },
+    {
+      "id": "texts",
+      "label": "Language and texts"
+    },
+    {
+      "id": "service",
+      "label": "Education and social action"
+    },
+    {
+      "id": "other",
+      "label": "Orthodox and Latter-day Saints"
+    },
+    {
+      "id": "context",
+      "label": "State, displacement and survival"
+    }
+  ],
+  "events": [
+    {
+      "id": "da-cruz-mission",
+      "lane_id": "catholic",
+      "title": "Da Cruz attempts a mission",
+      "summary": "The open scholarly summary places Portuguese Dominican Gaspar da Cruz in Cambodia in 1555-1556.",
+      "caveat": "Earliest mission documented in this packet, not proof of the first Christian visitor. Original travel account not inspected.",
+      "date": {
+        "start": "1555",
+        "end": "1556",
+        "kind": "uncertain",
+        "basis": "Reported visit spans 1555-1556; no exact arrival day"
+      },
+      "testimony": "Retrospective account summarized by Mam",
+      "claim_citations": {
+        "date": [
+          "c01"
+        ],
+        "summary": [
+          "c01"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "refugee-catholic-encounters",
+      "lane_id": "catholic",
+      "title": "Refugee communities precede Chevreul",
+      "summary": "Chevreul encounters Portuguese and Vietnamese Christian refugee settings around Phnom Penh and Udong.",
+      "caveat": "Migration and existing lay communities matter; an MEP arrival is not their foundation. Early counts are not independently verified.",
+      "date": {
+        "start": "1665",
+        "end": "1665",
+        "kind": "point",
+        "basis": "Source-reported event year"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c02"
+        ],
+        "summary": [
+          "c02"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "Colompe",
+        "Oudong",
+        "Cochinchina",
+        "Makassar"
+      ]
+    },
+    {
+      "id": "khmer-catechesis",
+      "lane_id": "texts",
+      "title": "Catechetical work in Khmer",
+      "summary": "The Catholic encyclopedia describes Levasseur translating a catechism and other works into Khmer during his service.",
+      "caveat": "A period of work, not the publication dates of individual books; collaborators and manuscripts remain underresearched.",
+      "date": {
+        "start": "1768",
+        "end": "1777",
+        "kind": "duration",
+        "basis": "Service period 1768-1777 reported in the encyclopedia"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c03"
+        ],
+        "summary": [
+          "c03"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "cambodia-vicariate",
+      "lane_id": "catholic",
+      "title": "A cross-border Catholic vicariate",
+      "summary": "Cambodia and part of Laos become a vicariate; eight Vietnamese provinces enter its jurisdiction in 1865.",
+      "caveat": "Ecclesiastical territory is not identical to today's national border. Membership across these changes is not a comparable national series.",
+      "date": {
+        "start": "1850",
+        "end": "1850",
+        "kind": "point",
+        "basis": "Jurisdictional organization, not first Christianity"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c03"
+        ],
+        "summary": [
+          "c03"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "french-protectorate",
+      "lane_id": "context",
+      "title": "French protectorate begins",
+      "summary": "Cambodia becomes a French protectorate, altering the political setting of mission and migration.",
+      "caveat": "Christian communities predate French protection. A colonial political change is not a church founding.",
+      "date": {
+        "start": "1863",
+        "end": "1863",
+        "kind": "point",
+        "basis": "Source-reported event year"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c03"
+        ],
+        "summary": [
+          "c03"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "alliance-families-arrive",
+      "lane_id": "protestant",
+      "title": "Alliance families and Khmer collaborators",
+      "summary": "Arthur and Esther Hammond and David and Muriel Ellison begin Alliance work; Khmer Buddhist and Christian consultants contribute to translation.",
+      "caveat": "An evangelical mission milestone, not the beginning of all Christianity in Cambodia. Not all collaborators are named in the evidence.",
+      "date": {
+        "start": "1923",
+        "end": "1923",
+        "kind": "point",
+        "basis": "Source-reported event year"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c05",
+          "c06"
+        ],
+        "summary": [
+          "c05",
+          "c06"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "CMA",
+        "C&MA"
+      ]
+    },
+    {
+      "id": "battambang-bible-training",
+      "lane_id": "protestant",
+      "title": "Battambang Bible training begins",
+      "summary": "Alliance history dates the Bible Institute's first term in Battambang to September 1, 1925.",
+      "caveat": "The exact day comes from a retrospective institutional account; the school's original register was not inspected.",
+      "date": {
+        "start": "1925-09-01",
+        "end": "1925-09-01",
+        "kind": "point",
+        "basis": "First school term, not mission arrival"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c05"
+        ],
+        "summary": [
+          "c05"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "hammond-bible-distributed",
+      "lane_id": "texts",
+      "title": "Complete Khmer Bible distributed",
+      "summary": "Alliance history dates distribution of the complete Hammond Bible to 1954, after translation completion in 1952.",
+      "caveat": "Completion, publication and distribution are different acts. Khmer collaborators are not erased by the Hammond label.",
+      "date": {
+        "start": "1954",
+        "end": "1954",
+        "kind": "point",
+        "basis": "First edition distribution year"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c05",
+          "c06"
+        ],
+        "summary": [
+          "c05",
+          "c06"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "KHOV",
+        "Khmer Old Version"
+      ]
+    },
+    {
+      "id": "national-alliance-organization",
+      "lane_id": "protestant",
+      "title": "National Alliance organization",
+      "summary": "The Cambodian Christian Alliance becomes organizationally independent of the Alliance Mission, according to its history.",
+      "caveat": "The constituting text was not inspected. National political independence in 1953 is a different event.",
+      "date": {
+        "start": "1954",
+        "end": "1954",
+        "kind": "point",
+        "basis": "Organizational independence reported by the institution"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c07"
+        ],
+        "summary": [
+          "c07"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "cantho-jurisdiction-separated",
+      "lane_id": "catholic",
+      "title": "Vietnamese jurisdiction separated",
+      "summary": "Cantho territory is separated and the Phnom Penh vicariate's boundaries align with the kingdom.",
+      "caveat": "An administrative territorial change, not a doctrinal split of Khmer and Vietnamese Christians.",
+      "date": {
+        "start": "1955",
+        "end": "1955",
+        "kind": "point",
+        "basis": "Reported jurisdictional separation"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c04"
+        ],
+        "summary": [
+          "c04"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "Can Tho"
+      ]
+    },
+    {
+      "id": "kec-name",
+      "lane_id": "protestant",
+      "title": "Khmer Evangelical Church name",
+      "summary": "The national Alliance church adopts the Khmer Evangelical Church name.",
+      "caveat": "KEC is a particular organization, not a synonym for all Cambodian evangelicals.",
+      "date": {
+        "start": "1957",
+        "end": "1957",
+        "kind": "point",
+        "basis": "Name adoption"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c07"
+        ],
+        "summary": [
+          "c07"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "KEC"
+      ]
+    },
+    {
+      "id": "women-support-nai",
+      "lane_id": "protestant",
+      "title": "Women support a Cambodian worker",
+      "summary": "A Kompong Thom women's group supports the worker identified in mission reports as Mrs. Nai.",
+      "caveat": "Wong reads these reports; the underlying archives were not independently inspected. Nai's later work with Muriel Ellison is documented in 1963.",
+      "date": {
+        "start": "1960",
+        "end": "1960",
+        "kind": "point",
+        "basis": "1960 report of existing support, not group foundation"
+      },
+      "testimony": "1960 and 1963 reports analyzed in Wong (2021)",
+      "claim_citations": {
+        "date": [
+          "c08"
+        ],
+        "summary": [
+          "c08"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "women-long-term-training",
+      "lane_id": "protestant",
+      "title": "Long-term training opens to women",
+      "summary": "The Ta Khmau long-term Bible school admits women, according to the report analyzed by Wong.",
+      "caveat": "Short-term training was already coeducational; this is not the first Christian instruction ever available to Cambodian women.",
+      "date": {
+        "start": "1961",
+        "end": "1961",
+        "kind": "point",
+        "basis": "Admission-policy change"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c08"
+        ],
+        "summary": [
+          "c08"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "Takhmao"
+      ]
+    },
+    {
+      "id": "missionary-removal-local-persistence",
+      "lane_id": "context",
+      "title": "Missionaries leave; local church persists",
+      "summary": "American Alliance missionaries leave under state restrictions; Cambodian believers sustain church life.",
+      "caveat": "Foreign removal is not the end of indigenous Christianity or proof it resumed only when missionaries returned.",
+      "date": {
+        "start": "1965",
+        "end": "1965",
+        "kind": "point",
+        "basis": "Source-reported event year"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c06",
+          "c09"
+        ],
+        "summary": [
+          "c06",
+          "c09"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "catholic-prefectures",
+      "lane_id": "catholic",
+      "title": "New prefectures and Khmer leadership",
+      "summary": "Battambang and Kompong Cham prefectures are established; Tep Im Sotha heads Battambang.",
+      "caveat": "Jurisdictions are distinct from the provinces' entire Christian populations. First ethnic Khmer prefect does not mean first Khmer Christian.",
+      "date": {
+        "start": "1968",
+        "end": "1968",
+        "kind": "point",
+        "basis": "Jurisdictional organization"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c04"
+        ],
+        "summary": [
+          "c04"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "Kampong Cham"
+      ]
+    },
+    {
+      "id": "anti-vietnamese-expulsions",
+      "lane_id": "context",
+      "title": "Anti-Vietnamese violence and expulsions",
+      "summary": "Violence and forced deportation devastate Catholic communities with large Vietnamese populations.",
+      "caveat": "Ethnic persecution and forced movement are not voluntary church splits. Approximate mission counts are not a national census.",
+      "date": {
+        "start": "1970",
+        "end": "1970",
+        "kind": "point",
+        "basis": "Source-reported event year"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c10"
+        ],
+        "summary": [
+          "c10"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "bunong-recruits-convert",
+      "lane_id": "protestant",
+      "title": "Bunong recruits encounter Khmer preachers",
+      "summary": "Scheer's abstract describes some Bunong recruits joining the Khmer Evangelical Church in Phnom Penh in the early 1970s.",
+      "caveat": "Abstract-only evidence. The 1970-1975 bracket marks the regime period, not exact conversion dates or conversion of all Bunong people.",
+      "date": {
+        "start": "1970",
+        "end": "1975",
+        "kind": "uncertain",
+        "basis": "Early 1970s within the broad Lon Nol regime bracket"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c11"
+        ],
+        "summary": [
+          "c11"
+        ]
+      },
+      "review": "provisional",
+      "aliases": []
+    },
+    {
+      "id": "khmer-woman-radio",
+      "lane_id": "texts",
+      "title": "A Cambodian woman broadcasts from Manila",
+      "summary": "Keam Ny/Sumido edits and creates Khmer-language radio programs from the Philippines.",
+      "caveat": "Wong's archival analysis shows women's agency and gendered limits; cross-border broadcasting is not institutional descent.",
+      "date": {
+        "start": "1974",
+        "end": "1974",
+        "kind": "point",
+        "basis": "Activity documented in 1974 report"
+      },
+      "testimony": "1974-1975 reports analyzed by Wong (2021)",
+      "claim_citations": {
+        "date": [
+          "c12"
+        ],
+        "summary": [
+          "c12"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "women-correspondence-report",
+      "lane_id": "texts",
+      "title": "Report documents women teaching by correspondence",
+      "summary": "A report describes women staffing Bible correspondence instruction under Tien Soth's leadership.",
+      "caveat": "The report date is testimony to earlier activities, not the foundation of the department.",
+      "date": {
+        "start": "1975-06-02",
+        "end": "1975-06-02",
+        "kind": "point",
+        "basis": "Date of the report cited by Wong, not activity onset"
+      },
+      "testimony": "June 2, 1975 report, read through Wong pp. 33-34",
+      "claim_citations": {
+        "date": [
+          "c13"
+        ],
+        "summary": [
+          "c13"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "salas-consecration",
+      "lane_id": "catholic",
+      "title": "Salas consecrated bishop",
+      "summary": "Joseph Chhmar Salas is consecrated bishop shortly before the Khmer Rouge take Phnom Penh.",
+      "caveat": "Consecration is distinct from appointment. Sources give competing death years, 1976 and 1977; neither is silently selected.",
+      "date": {
+        "start": "1975-04-15",
+        "end": "1975-04-15",
+        "kind": "point",
+        "basis": "Consecration day in the Catholic encyclopedia"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c14",
+          "c19"
+        ],
+        "summary": [
+          "c14",
+          "c19"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "khmer-rouge-destruction",
+      "lane_id": "context",
+      "title": "Repression and institutional destruction",
+      "summary": "Khmer Rouge rule brings forced labor, death and destruction of Christian institutions amid wider national persecution.",
+      "caveat": "Buddhists, Muslims, ethnic minorities and others also suffered. No Christian mortality percentage or universal extinction is claimed.",
+      "date": {
+        "start": "1975",
+        "end": "1979",
+        "kind": "duration",
+        "basis": "Regime period, not a church lifetime"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c15",
+          "c16"
+        ],
+        "summary": [
+          "c15",
+          "c16"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "survival-refugees-return",
+      "lane_id": "context",
+      "title": "Survival, border camps and return",
+      "summary": "Domestic believers, refugee-camp networks and returning diaspora Christians sustain and reshape communities while restrictions continue.",
+      "caveat": "These are different trajectories, not a foreign refoundation of an extinct church or a claim that all religions were uniformly banned throughout.",
+      "date": {
+        "start": "1979",
+        "end": "1990",
+        "kind": "duration",
+        "basis": "Broad post-regime restriction and survival period"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c15",
+          "c25"
+        ],
+        "summary": [
+          "c15",
+          "c25"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "translation-resumes-exile",
+      "lane_id": "texts",
+      "title": "Interconfessional translation resumes in exile",
+      "summary": "Khmer translation restarts in France with a team including Ponchaud and Arun Sok Nhep after earlier Khmer translators were lost.",
+      "caveat": "Retrospective institutional testimony; not the work of one foreign priest or a merger of Catholic and Protestant churches.",
+      "date": {
+        "start": "1985",
+        "end": "1985",
+        "kind": "point",
+        "basis": "Restart year reported by UBS"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c17"
+        ],
+        "summary": [
+          "c17"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "France",
+        "diaspora"
+      ]
+    },
+    {
+      "id": "border-vocational-work",
+      "lane_id": "service",
+      "title": "Vocational training in border camps",
+      "summary": "Salesians and Cambodian instructors participate in technical training in Thai-border refugee camps.",
+      "caveat": "The institutional page gives different beginnings for different programs. This entry does not resolve them into one universal foundation date.",
+      "date": {
+        "start": "1989",
+        "end": "1989",
+        "kind": "point",
+        "basis": "Explicit 1989 training entries, not all program origins"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c20"
+        ],
+        "summary": [
+          "c20"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "public-easter-resumes",
+      "lane_id": "catholic",
+      "title": "Public Easter worship resumes",
+      "summary": "Catholic public Easter liturgy resumes with government permission.",
+      "caveat": "Public reopening is not the first worship since 1975: survivors had maintained prayer and clandestine religious life.",
+      "date": {
+        "start": "1990",
+        "end": "1990",
+        "kind": "point",
+        "basis": "Public liturgy year, not first-ever postwar worship"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c21"
+        ],
+        "summary": [
+          "c21"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "jrs-government-agreement",
+      "lane_id": "service",
+      "title": "Relief team enters by agreement",
+      "summary": "A JRS agreement allows a team including women religious and a lay volunteer to begin operations in Cambodia.",
+      "caveat": "The service organization is not the ancestor of every Catholic community. Aid outcomes are not independently evaluated here.",
+      "date": {
+        "start": "1990",
+        "end": "1990",
+        "kind": "point",
+        "basis": "Government agreement in institutional history"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c22"
+        ],
+        "summary": [
+          "c22"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "technical-classes-open",
+      "lane_id": "service",
+      "title": "Technical classes open",
+      "summary": "Don Bosco welding and electromechanics instruction begins after project approval in May.",
+      "caveat": "Approval, classroom opening, buildings and inaugurations have different dates. No beneficiary identities or locations are published.",
+      "date": {
+        "start": "1991-09",
+        "end": "1991-09",
+        "kind": "point",
+        "basis": "September classes, not May approval"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c23"
+        ],
+        "summary": [
+          "c23"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "sisters-vocational-education",
+      "lane_id": "service",
+      "title": "Sisters expand women's vocational education",
+      "summary": "Salesian Sisters open vocational training for young women in the reconstruction period.",
+      "caveat": "Institutional account, not an independent impact study. Education and class barriers need fuller local research.",
+      "date": {
+        "start": "1992",
+        "end": "1992",
+        "kind": "point",
+        "basis": "Source-reported event year"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c23"
+        ],
+        "summary": [
+          "c23"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "methodist-diaspora-connections",
+      "lane_id": "protestant",
+      "title": "Diaspora supports Methodist congregations",
+      "summary": "Cambodian Methodist connections from Paris and Switzerland support congregations in Cambodia.",
+      "caveat": "Diaspora initiative and local agency are distinct from a single foreign mission founding all Christianity.",
+      "date": {
+        "start": "1992",
+        "end": "1992",
+        "kind": "point",
+        "basis": "Source-reported event year"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c24"
+        ],
+        "summary": [
+          "c24"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "kec-legal-reestablishment",
+      "lane_id": "protestant",
+      "title": "KEC legally reestablished",
+      "summary": "Alliance history dates legal reestablishment of the Khmer Evangelical Church to April 1993.",
+      "caveat": "Legal status is not the beginning of a community that had survived restrictions.",
+      "date": {
+        "start": "1993-04",
+        "end": "1993-04",
+        "kind": "point",
+        "basis": "Legal reestablishment month"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c25"
+        ],
+        "summary": [
+          "c25"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "constitutional-religious-freedom",
+      "lane_id": "context",
+      "title": "Conditional constitutional religious freedom",
+      "summary": "Article 43 protects belief and worship subject to conditions, while establishing Buddhism as the state religion.",
+      "caveat": "Historical adapted English edition; not proof of unrestricted proselytism, uniform enforcement or present law.",
+      "date": {
+        "start": "1993",
+        "end": "1993",
+        "kind": "point",
+        "basis": "1993 constitutional text, not an invented promulgation day"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c26"
+        ],
+        "summary": [
+          "c26"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "lds-recognition",
+      "lane_id": "other",
+      "title": "Latter-day Saint recognition",
+      "summary": "LDS institutional chronology dates government recognition in Cambodia to February 26, 1994.",
+      "caveat": "Khmer and English editions are one witness. This is recognition of this church, not all Christianity.",
+      "date": {
+        "start": "1994-02-26",
+        "end": "1994-02-26",
+        "kind": "point",
+        "basis": "Institutional recognition entry"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c27"
+        ],
+        "summary": [
+          "c27"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "modern-khmer-bible",
+      "lane_id": "texts",
+      "title": "Modern Khmer Bible published",
+      "summary": "The full interconfessional Modern Khmer Bible is published following exile translation and work after return.",
+      "caveat": "Publication is not proof that one text caused all growth. No copyrighted Bible text is reproduced.",
+      "date": {
+        "start": "1997",
+        "end": "1997",
+        "kind": "point",
+        "basis": "Full Bible publication year in UBS account"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c18"
+        ],
+        "summary": [
+          "c18"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "orthodox-pastoral-care",
+      "lane_id": "other",
+      "title": "Orthodox care from Thailand",
+      "summary": "The Orthodox institutional account places pastoral care under the Russian church representation in Thailand.",
+      "caveat": "Not a first-ever Orthodox visitor claim, an ancient Cambodian lineage or a complete history of every Orthodox presence.",
+      "date": {
+        "start": "2001",
+        "end": "2001",
+        "kind": "point",
+        "basis": "Pastoral arrangement, distinct from later registration"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c28"
+        ],
+        "summary": [
+          "c28"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "methodist-joint-mission",
+      "lane_id": "protestant",
+      "title": "Five-agency Methodist cooperation",
+      "summary": "UMC, Connexio, Korean Methodist Church, Singapore MMS and the World Federation of Chinese Methodist Churches constitute a joint mission.",
+      "caveat": "Cooperation does not mean five worldwide denominations dissolved in a merger. Original declaration not inspected.",
+      "date": {
+        "start": "2003-01",
+        "end": "2003-01",
+        "kind": "point",
+        "basis": "Joint mission constitution month"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c29"
+        ],
+        "summary": [
+          "c29"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "orthodox-registration",
+      "lane_id": "other",
+      "title": "Orthodox registration reported",
+      "summary": "Orthodox institutional history dates registration to government letter No. 234/13 SSR of July 3, 2013.",
+      "caveat": "The letter itself was not inspected; this is attributed institutional testimony, not independent archival confirmation.",
+      "date": {
+        "start": "2013-07-03",
+        "end": "2013-07-03",
+        "kind": "point",
+        "basis": "Reported date of registration letter"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c28"
+        ],
+        "summary": [
+          "c28"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "methodist-denomination",
+      "lane_id": "protestant",
+      "title": "Methodist denomination and autonomy stage",
+      "summary": "Global Ministries describes the Methodist Church in Cambodia as an autonomous denomination from 2018.",
+      "caveat": "Later annual-conference development is a distinct status. International partnerships continue; no universal separation date is implied.",
+      "date": {
+        "start": "2018",
+        "end": "2018",
+        "kind": "point",
+        "basis": "Denomination/autonomy stage in institutional accounts"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c29",
+          "c38"
+        ],
+        "summary": [
+          "c29",
+          "c38"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "women-leadership-fieldwork",
+      "lane_id": "protestant",
+      "title": "Women's leadership beyond formal office",
+      "summary": "Wong's fieldwork documents evangelical women teaching and leading despite differences in ordination rules.",
+      "caveat": "A bounded study, not a national gender census. Protected interlocutors and congregations are not identified here.",
+      "date": {
+        "start": "2019",
+        "end": "2019",
+        "kind": "point",
+        "basis": "Fieldwork year, not beginning of women's ministry"
+      },
+      "testimony": "Study published 2021",
+      "claim_citations": {
+        "date": [
+          "c30"
+        ],
+        "summary": [
+          "c30"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "evangelical-centennial",
+      "lane_id": "protestant",
+      "title": "Evangelical centennial commemorations",
+      "summary": "Alliance and broader evangelical gatherings commemorate the 1923 mission, with separate celebrations on January 26 and January 27-28.",
+      "caveat": "Not the hundredth anniversary of all Christianity in Cambodia. Attendance and annual growth claims are not treated as census data.",
+      "date": {
+        "start": "2023-01-26",
+        "end": "2023-01-28",
+        "kind": "duration",
+        "basis": "Commemoration dates, not church foundation"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c32"
+        ],
+        "summary": [
+          "c32"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "khmer-coadjutor-appointment",
+      "lane_id": "catholic",
+      "title": "Khmer coadjutor appointed",
+      "summary": "The Holy See appoints Pierre Suon Hangly coadjutor vicar apostolic of Phnom Penh.",
+      "caveat": "An appointment, not episcopal ordination or completed succession. Later events have not been comprehensively researched.",
+      "date": {
+        "start": "2025-06-28",
+        "end": "2025-06-28",
+        "kind": "point",
+        "basis": "Primary appointment announcement day"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c34"
+        ],
+        "summary": [
+          "c34"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "khmer-methodist-hymnal",
+      "lane_id": "texts",
+      "title": "A cooperative Khmer hymnal",
+      "summary": "Five Methodist partners publish a Christian Hymn and Worship Book for Cambodian churches.",
+      "caveat": "A publication and worship milestone, not another denomination. No songs or lyrics are reproduced.",
+      "date": {
+        "start": "2001",
+        "end": "2001",
+        "kind": "point",
+        "basis": "Hymn and worship book publication year"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c35"
+        ],
+        "summary": [
+          "c35"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "landmine-campaign-agency",
+      "lane_id": "service",
+      "title": "Cambodian agency in landmine advocacy",
+      "summary": "Jesuit history identifies Tun Channareth and Denise Coghlan among contributors to the International Campaign to Ban Landmines.",
+      "caveat": "The campaign received the 1997 Nobel Peace Prize, not exclusively this church or these participants.",
+      "date": {
+        "start": "1997",
+        "end": "1997",
+        "kind": "point",
+        "basis": "Campaign award year in institutional account"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c36"
+        ],
+        "summary": [
+          "c36"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    }
+  ],
+  "relations": [
+    {
+      "id": "exile-to-publication",
+      "type": "cooperation",
+      "from_id": "translation-resumes-exile",
+      "to_id": "modern-khmer-bible",
+      "summary": "The interconfessional project resumes in exile and is later completed after return, not a merger of churches.",
+      "claim_citations": {
+        "summary": [
+          "c17",
+          "c18"
+        ]
+      }
+    },
+    {
+      "id": "methodist-cooperation-development",
+      "type": "cooperation",
+      "from_id": "methodist-joint-mission",
+      "to_id": "methodist-denomination",
+      "summary": "The five-agency Cambodian mission precedes the later denomination; partner world churches are not dissolved.",
+      "claim_citations": {
+        "summary": [
+          "c29",
+          "c38"
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "s01",
+      "title": "Cambodia (open chapter summary)",
+      "publisher": "Barnabas Mam / Edinburgh University Press, Cambridge hosting",
+      "published": "Online 2026-08-05; edition date differs from 2020 scholarly citations",
+      "url": "https://www.cambridge.org/core/books/christianity-in-east-and-southeast-asia/cambodia/54DB743DF8AF47C359C1EF1DBB943FAE",
+      "perspective": "Only open summary and metadata inspected, not the full chapter or original da Cruz narrative."
+    },
+    {
+      "id": "s02",
+      "title": "Cambodia, the Catholic Church in",
+      "publisher": "J. Guennou / J. Y. Tan, New Catholic Encyclopedia / Gale",
+      "published": "Edition date not displayed; account through early 21st century",
+      "url": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/cambodia-catholic-church",
+      "perspective": "Catholic historical synthesis, not independently inspected early registers. Salas death date conflicts with later reporting; broad claims about all religions are not adopted."
+    },
+    {
+      "id": "s03",
+      "title": "A Century of Gospel Proclamation in Cambodia",
+      "publisher": "Jura Yanagihara / Alliance World Fellowship",
+      "published": "2023-02-20",
+      "url": "https://awf.world/awf-news/a-century-of-gospel-proclamation-in-cambodia/",
+      "perspective": "Institutional centennial narrative. Its origin is evangelical, not all-Christian. Mortality percentages and annual growth estimates are not adopted."
+    },
+    {
+      "id": "s04",
+      "title": "\"We Believe the Bible\": Cambodian Women in Christian Leadership, 1953-Present",
+      "publisher": "Briana Wong / Indonesian Journal of Theology 9(1), pp. 23-40",
+      "published": "2021-08-12",
+      "url": "https://doi.org/10.46567/ijt.v9i1.170",
+      "perspective": "Inspected publisher abstract and PDF pp. 24-34 plus opening p. 35. Archival reports mediated through scholarship, not independently read. Modern interlocutors are protected; no identifying details reused. Article displays CC BY-NC-ND 4.0; only original summaries and links published."
+    },
+    {
+      "id": "s05",
+      "title": "Minority Converts in a Majority Church",
+      "publisher": "Catherine Scheer / International Journal of Asian Christianity 6(1), pp. 73-98 / HAL",
+      "published": "2023",
+      "url": "https://hal.science/hal-04042034v1",
+      "perspective": "Abstract and metadata only; full article inaccessible. Narrow summary is provisional, not a history of all Bunong conversions."
+    },
+    {
+      "id": "s06",
+      "title": "Modern Khmer Bible at the Heart of the Revival of the Cambodian Church",
+      "publisher": "United Bible Societies / Bible Society of Singapore mirror",
+      "published": "Undated visible page",
+      "url": "https://www.biblesociety.sg/modern-khmer-bible-at-the-heart-of-the-revival-of-the-cambodian-church/",
+      "perspective": "Institutional retrospective testimony, one account across mirrors. Growth totals and claims of sole causation are not adopted; no Bible text or images reproduced."
+    },
+    {
+      "id": "s07",
+      "title": "Constitution of Cambodia, Article 43",
+      "publisher": "International Constitutional Law / University of Bern",
+      "published": "1993 historical English edition",
+      "url": "https://www.servat.unibe.ch/icl/cb00000_.html",
+      "perspective": "Adapted English text, not authenticated Khmer original or current consolidated law. A constitutional guarantee does not establish uniform enforcement."
+    },
+    {
+      "id": "s08",
+      "title": "2019 Census: P10 Religion variable",
+      "publisher": "National Institute of Statistics, Cambodia",
+      "published": "2019 data reference; catalog page undated",
+      "url": "https://nada.nis.gov.kh/index.php/catalog/39/variable/V150",
+      "perspective": "The page expressly warns its data-file case frequencies cannot be interpreted as population summary statistics. No national Christian estimate derived here."
+    },
+    {
+      "id": "s09",
+      "title": "2023 Report on International Religious Freedom: Cambodia",
+      "publisher": "U.S. Department of State / ecoi.net mirror",
+      "published": "2024; reference period 2023",
+      "url": "https://www.ecoi.net/en/document/2111837.html",
+      "perspective": "State originals returned 403; substantive mirror sections I-III inspected. Multiple estimates have different definitions and methods. Not current legal advice; no vulnerable refugee details reused."
+    },
+    {
+      "id": "s10",
+      "title": "Cambodia: Church Chronology (Khmer; parallel English edition inspected)",
+      "publisher": "Church of Jesus Christ of Latter-day Saints",
+      "published": "Undated; inspected historical entries",
+      "url": "https://www.churchofjesuschrist.org/study/history/global-histories/cambodia/kh-chronology?lang=khm",
+      "perspective": "Institutional self-history; the two language editions are one witness. Recognition applies to this church, not all Cambodian Christians. No living convert roster or meeting addresses reused."
+    },
+    {
+      "id": "s11",
+      "title": "Orthodoxy in Cambodia",
+      "publisher": "Orthodox Christian Church of Cambodia (Moscow Patriarchate)",
+      "published": "Undated visible history",
+      "url": "https://orthodoxchurchcambodia.org/orthodoxy-in-cambodia/",
+      "perspective": "Institutional self-report; government registration letter not independently inspected. No current parish map, clergy roster or contact details reused."
+    },
+    {
+      "id": "s12",
+      "title": "Jesuit Mission in Cambodia",
+      "publisher": "Jesuit Conference of Asia Pacific",
+      "published": "April 2016 institutional snapshot",
+      "url": "https://oldsite.jcapsj.org/about-us/about-the-jesuit-conference/our-provinces-regions-and-missions/jesuit-mission-in-cambodia/",
+      "perspective": "Mission/service history, not independent evaluation of aid outcomes. Landmine campaign was broader than this institution."
+    },
+    {
+      "id": "s13",
+      "title": "History",
+      "publisher": "Don Bosco Foundation of Cambodia",
+      "published": "Undated changing page",
+      "url": "https://donboscocambodia.org/history/",
+      "perspective": "Program foundation dates vary within the page; use individually dated entries, not one universal origin. No beneficiary records or photographs copied."
+    },
+    {
+      "id": "s14",
+      "title": "In Cambogia la fede cresce grazie ai giovani",
+      "publisher": "Paolo Affatato / Vatican News",
+      "published": "2025-07-09",
+      "url": "https://www.vaticannews.va/it/chiesa/news/2025-07/cambogia-fede-chiesa-cattolici-giovani.html",
+      "perspective": "Italian institutional reporting gives Salas death in 1977, versus 1976 in the encyclopedia. Original death register not inspected."
+    },
+    {
+      "id": "s15",
+      "title": "Resignations and Appointments: Phnom-Penh",
+      "publisher": "Holy See Press Office",
+      "published": "2025-06-28",
+      "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2025/06/28/250628c.html",
+      "perspective": "Primary appointment announcement. Appointment is not episcopal ordination or completed succession."
+    },
+    {
+      "id": "s16",
+      "title": "History of Methodist cooperation in Cambodia",
+      "publisher": "United Methodist Cambodia Initiative",
+      "published": "Undated changing page; entries through 2024",
+      "url": "https://umccambodia.org/history/",
+      "perspective": "Mission-agency account; its 2018 denomination/autonomy stage is distinct from later annual-conference development. Underlying constitutions not inspected."
+    },
+    {
+      "id": "s17",
+      "title": "Visit the young, vibrant Methodist community in Cambodia",
+      "publisher": "Elliott Wright / UMC Global Ministries",
+      "published": "2021-03-08",
+      "url": "https://umcmission.org/story/come-visit-the-young-vibrant-methodist-community-in-cambodia/",
+      "perspective": "Based on the same mission website, not independent corroboration. Membership and attendance are different measures; no beneficiary identities or program addresses reused."
+    },
+    {
+      "id": "s18",
+      "title": "Cambodian Genocide Program",
+      "publisher": "Yale University, MacMillan Center",
+      "published": "Program overview 1994-2019",
+      "url": "https://macmillan.yale.edu/gsp/research-collection/cambodian-genocide-program",
+      "perspective": "Scholarly archival-program context; linked judgments, demographic report and primary security files not separately read. No victim database or location data reused."
+    }
+  ],
+  "citations": [
+    {
+      "id": "c01",
+      "source_id": "s01",
+      "locator": "Summary, Christianity Before the Killing Fields, opening mission paragraph.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c02",
+      "source_id": "s02",
+      "locator": "Early History, paragraph beginning \"Although Fernando\": 1665 encounters and 1670 detention.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c03",
+      "source_id": "s02",
+      "locator": "Early History, paragraph beginning \"For two centuries\": 1768-1777, 1850, 1863 and 1865.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c04",
+      "source_id": "s02",
+      "locator": "Early History, from \"The name of the vicariate\": 1953 independence, 1955 separation and 1968 prefectures.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c05",
+      "source_id": "s03",
+      "locator": "Paragraphs \"It all started in 1923\" and \"Ellison, while\": translation completion/distribution and first school term.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c06",
+      "source_id": "s04",
+      "locator": "p. 28, Historical Background and notes 16-18: families, Khmer consultants, 1965 and 1970.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c07",
+      "source_id": "s03",
+      "locator": "Paragraph \"In 1954\": national independence from mission, followed by 1957 name.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c08",
+      "source_id": "s04",
+      "locator": "pp. 30-31, Courageous Creativity, notes 30-35: women, long-term training, support group and Nai.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c09",
+      "source_id": "s03",
+      "locator": "Paragraph \"The church in Cambodia grew\": 1965 removal and restrictions, local persistence.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c10",
+      "source_id": "s02",
+      "locator": "Persecutions, first paragraph: anti-Vietnamese violence and forced deportations in 1970.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c11",
+      "source_id": "s05",
+      "locator": "Abstract, middle sentences beginning \"Under the pro-American regime\": Bunong recruits and Khmer preachers.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c12",
+      "source_id": "s04",
+      "locator": "pp. 32-33, notes 37-41: Keam Ny/Sumido and Khmer-language radio reports, 1974-1975.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c13",
+      "source_id": "s04",
+      "locator": "p. 33 and p. 34 notes 42-43: Tien Soth and correspondence teaching in report dated June 2, 1975.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c14",
+      "source_id": "s02",
+      "locator": "Persecutions, paragraph beginning \"Life for the remaining\": Salas consecration April 15, 1975.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c15",
+      "source_id": "s04",
+      "locator": "pp. 28-29, Historical Background: repression, refugees, survival, return and restrictions until 1990.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c16",
+      "source_id": "s18",
+      "locator": "Opening genocide/persecution context and subsequent archive-program paragraphs.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c17",
+      "source_id": "s06",
+      "locator": "Sections \"Two million dead\" and \"We will do something\": loss of Khmer translators and 1985 restart.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c18",
+      "source_id": "s06",
+      "locator": "\"A true revival\", opening paragraph: return, Old Testament translation and full Bible publication in 1997.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c19",
+      "source_id": "s14",
+      "locator": "Opening paragraph gives 1977 for Salas death; compare encyclopedia Persecutions giving 1976.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c20",
+      "source_id": "s13",
+      "locator": "January-August 1989 dated entries: technical preparation in Thai-border refugee camps.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c21",
+      "source_id": "s02",
+      "locator": "Persecutions, final paragraph: public Easter liturgy and permission in 1990.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c22",
+      "source_id": "s12",
+      "locator": "History, 1990 and 1994 paragraphs: pioneering team/government agreement and Jesuit Service.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c23",
+      "source_id": "s13",
+      "locator": "May and September 1991 entries, followed by \"In 1992\": school approval, technical classes and Sisters.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c24",
+      "source_id": "s16",
+      "locator": "1992 entry: Paris Cambodian congregations and returnee connections from Switzerland.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c25",
+      "source_id": "s03",
+      "locator": "Paragraph \"Even after the fall\": survival and April 1993 legal reestablishment of KEC.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c26",
+      "source_id": "s07",
+      "locator": "Article 43(1)-(3), Religion; editor date note identifies historical 1993 edition.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c27",
+      "source_id": "s10",
+      "locator": "Entry February 26, 1994, checked in Khmer and parallel English edition.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c28",
+      "source_id": "s11",
+      "locator": "Paragraphs \"Since 2001\" and \"The Royal Government\": pastoral arrangement and letter No. 234/13 SSR dated July 3, 2013.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c29",
+      "source_id": "s16",
+      "locator": "2003 entry: five-agency mission constitution; opening 2018 autonomy stage.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c30",
+      "source_id": "s04",
+      "locator": "pp. 25-27, pp. 29-30, and p. 34 opening: 2019 fieldwork, ordination differences and protected identities.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c31",
+      "source_id": "s08",
+      "locator": "P10 category table and final Warning: data-file cases are not population summary statistics.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c32",
+      "source_id": "s03",
+      "locator": "First three substantive paragraphs: January 26 Alliance and January 27-28 evangelical centennials.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c33",
+      "source_id": "s09",
+      "locator": "Sections I (Religious Demography) and II (Legal Framework): incompatible estimates and restrictions.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c34",
+      "source_id": "s15",
+      "locator": "Appointment of coadjutor vicar apostolic of Phnom-Penh, Cambodia, first paragraph.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c35",
+      "source_id": "s16",
+      "locator": "2001 entry: five-agency Christian Hymn and Worship Book publication.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c36",
+      "source_id": "s12",
+      "locator": "History, 1997 paragraph: ICBL, Denise Coghlan and Tun Channareth.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c37",
+      "source_id": "s02",
+      "locator": "Renaissance and Growth, 1995 sentences: seminary reopening and renewed indigenous ordination.",
+      "accessed": "2026-11-24"
+    },
+    {
+      "id": "c38",
+      "source_id": "s17",
+      "locator": "Paragraph \"The Methodist Church in Cambodia\" and complete five-agency partner list: denomination in 2018; subsequent membership and attendance measures remain distinct.",
+      "accessed": "2026-11-24"
+    }
+  ]
+};

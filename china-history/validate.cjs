@@ -1,6 +1,6 @@
 const dates = require('../historical-dates.js');
 const assert = require('node:assert/strict');
-function validate(data) {
+function validate(data, researchIds = Array.from({length: 54}, (_, i) => 'H' + String(i + 1).padStart(2, '0'))) {
     const index = (name, pattern = /^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/) => {
         assert(Array.isArray(data[name]), name + ' must be an array');
         const map = new Map();
@@ -57,7 +57,7 @@ function validate(data) {
         text(reason, 'Held-record reason');
         crosswalk.add(id);
     }
-    assert.deepEqual([...crosswalk].sort(), Array.from({length: 54}, (_, i) => 'H' + String(i + 1).padStart(2, '0')).sort(), 'Account for the complete research roster');
+    assert.deepEqual([...crosswalk].sort(), [...researchIds].sort(), 'Account for the complete research roster');
     return data;
 }
 module.exports = validate;

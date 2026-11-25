@@ -4,8 +4,14 @@ const repo = path.resolve(__dirname, '..');
 const output = path.join(repo, 'dist');
 const readJSON = file => JSON.parse(fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, ''));
 const {spawnSync}=require('child_process');
-for(const script of ['scripts/build-home.cjs','westminster/build.cjs','scripts/build-catechisms.cjs','us-denominations/build.cjs','china-history/build.cjs'])if(fs.existsSync(path.join(repo,script))){const result=spawnSync(process.execPath,[path.join(repo,script)],{stdio:'inherit'});if(result.status!==0)throw new Error('Page build failed: '+script);}
 const config = readJSON(path.join(repo, 'site.config.json'));
+for(const script of ['scripts/build-home.cjs','westminster/build.cjs','scripts/build-catechisms.cjs','us-denominations/build.cjs', ...config.countryHistories.map(country => {
+  if (!/^[a-z0-9-]+\/$/.test(country.path)) throw new Error('Invalid country path');
+  return country.path + 'build.cjs';
+})]) {
+  const result=spawnSync(process.execPath,[path.join(repo,script)],{stdio:'inherit'});
+  if(result.status!==0)throw new Error('Page build failed: '+script);
+}
 // Delete only this build's fixed output directory; refuse a redirected target.
 if (path.dirname(output) !== repo || path.basename(output) !== 'dist' || (fs.existsSync(output) && fs.lstatSync(output).isSymbolicLink())) throw new Error('Unsafe build output directory');
 fs.rmSync(output, { recursive: true, force: true });
