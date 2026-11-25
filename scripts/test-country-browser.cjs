@@ -87,7 +87,7 @@ browserTest(root, async ({browser, base}) => {
                 assert(await details.locator('.sources li').first().isVisible());
                 if (viewport.width < 1100) {
                     await page.locator('#back-to-timeline').click();
-                    assert(await page.evaluate(() => document.getElementById('graph').contains(document.activeElement)));
+                    await page.waitForFunction(() => document.getElementById('graph').contains(document.activeElement));
                 }
                 assert.equal(await page.locator('#visible-range').innerText(), selectedRange);
                 assert.equal(await page.locator('#lane').inputValue(), lane);
