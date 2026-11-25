@@ -162,6 +162,13 @@ The route does not register `us-denominations` in the public directory allowlist
 `build.cjs` intentionally emits only browser-needed affiliation records,
 hierarchy, attendance and source/reuse context in `public-data.js`, plus static
 nested lists and an attendance table.
+The no-JavaScript page keeps every affiliation occurrence, attendance row and
+demographic cell with its exact published value and source row/path. Row links
+lead to shared source locators (publisher, date, table and column) and caveats;
+study methods, coverage, definitions and reuse notes are stated once rather than
+repeated per row or panel. The hidden interactive container starts empty and is
+rendered by the controller. Route tests cap generated HTML at 120,000 UTF-8 bytes
+and check every fallback row's locator and shared-note links.
 Do **not** copy this directory recursively: `data.cjs`, `test-data.cjs`, the
 review tooling and source inputs are internal. `site.config.json` registers five
 exact public files, never this directory. Route tests assert both the generated
