@@ -5,6 +5,12 @@ are connected by this change, and no live endpoint adapter or native archive par
 is implemented. See the [product specification](contacts-store-spec.md) and
 [work items](contacts-work-items.md).
 
+Confirmed execution boundary: **one user, local tool, local store in a private
+location**. Prove the flow in Churchtree before polished design. No hosted
+website/dashboard, cloud backend, multi-tenancy, deployment, or product account
+system is in scope. Authorized source-account reads remain part of eventual
+collection; local-only describes this tool's execution/storage/presentation.
+
 ## 1. Repository fit and first vertical slice
 
 Churchtree currently builds a public, static website using Node.js 20+ CommonJS
@@ -12,7 +18,8 @@ scripts, with file-backed inputs, explicit publication allowlists, and skills in
 `.github/skills/<name>/SKILL.md`. There is no contacts backend, OAuth service, or
 private application store. Reuse Node's standard library and the existing skill
 format; do not put contacts into the historical `data/sets/` pipeline or add a
-public website route.
+public website route. The JSON snapshot below is the selected initial local
+persistence approach, not a reason to provision a server or database service.
 
 The smallest delivered slice is:
 
@@ -248,7 +255,9 @@ source evidence.
 
 ## 5. Storage, atomicity, and recovery
 
-Use a private local JSON store initially, not a database/server dependency.
+Use a private local JSON store for this single-user tool, not a database/server
+dependency. Prove acquisition, normalization, summaries and local graph files
+before choosing polished UI design; there is no hosted dashboard to deploy.
 Default operational location is a chosen subdirectory of ignored
 `.private/contacts/`; an explicitly selected folder outside this checkout is also
 allowed. Outputs within any other checkout path, including `docs/`, `assets/`,
@@ -316,11 +325,13 @@ bounds, and interrupted manifests as incomplete.
    To/CC roles, group-only participation, direct activity, channel breakdowns,
    active-day unions, exclusions and unresolved records. Reconcile all totals
    before generating narrative or charts.
-3. **Summary and map:** produce shared 7/30/custom datasets, then a user-centered
+3. **Summary and map:** produce shared 7/30/custom datasets as local CLI/file output,
+   then a locally generated user-centered
    hub-and-spoke map with labeled frequency bands, visible recency, known people
    without recent observations, and a supporting person-to-thread view. The
    initial proposed radius metric is distinct direct-communication days, not
-   emotional closeness. Household rollups deduplicate events.
+   emotional closeness. Household rollups deduplicate events. Keep generated
+   HTML/SVG/JSON files private and local; no website route, server or hosting.
 4. **Opportunities/outliers:** compare a person's own covered baseline or curated
    reconnection rhythm, not population rankings. Never turn absent history or a
    newly disconnected channel into an apparent decline.

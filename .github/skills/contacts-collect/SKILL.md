@@ -10,6 +10,11 @@ Read [the product specification](../../../docs/spec/contacts-store-spec.md),
 and [work-item status](../../../docs/spec/contacts-work-items.md). Follow AGENTS.md.
 This skill coordinates acquisition instructions and a runnable local metadata
 importer; it does not provide API access, connect accounts, or render the map.
+The product is a single-user local tool with a local file store. Do not create a
+hosted website/dashboard, server, cloud backend, multi-tenant or product account
+system. Prove the flow before polished design; future reports/graphs are local
+CLI output or private generated files. Authorized endpoint reads are a separate
+source-access capability, not prohibited by the local-only execution boundary.
 
 ## Inputs and authorization
 

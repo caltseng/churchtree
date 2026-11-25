@@ -15,6 +15,8 @@ The store also supports prayer planning, remembering conversations, following th
 
 This is a relationship companion, not a donation-management system or an autonomous messaging system.
 
+For now, build a single-user local tool in the Churchtree repository with a local data store. Prove the collection-to-summary/visualization flow before investing in polished interface or system design. Summaries and graphs can be local CLI output or generated private files; do not host a website/dashboard or add a cloud backend, multi-tenant infrastructure, or product account system. This does not prevent separately authorized reads from source accounts.
+
 ## 2. Confirmed product decisions
 
 - Households are the primary relationship unit.
@@ -33,6 +35,7 @@ This is a relationship companion, not a donation-management system or an autonom
 - Update wording may differ for Christian and non-Christian audiences.
 - Donation records remain in a separate system.
 - Detailed privacy and access-control design is deferred.
+- The initial tool is local and single-user, with local storage and no hosted website/dashboard. Prove the flow first; defer polished design.
 
 The mechanics described below are proposed implementation requirements, not additional decisions already made by the user.
 
@@ -188,7 +191,7 @@ Display source-access failures and uncertain matches explicitly. The user must s
 
 Detailed privacy design is deferred, not waived. Do not assume shared access, spouse access, team access, or unrestricted use of sensitive notes in AI processing or drafts.
 
-Before deployment with real private notes, explicitly decide access scope, storage and processing boundaries, retention/deletion, and which information may appear in outreach outputs.
+Before using the local tool with real private notes, explicitly decide access scope, storage and processing boundaries, retention/deletion, and which information may appear in outreach outputs. Single-user operation removes the need for a product account system, not the need to protect local data.
 
 ## 12. First-version scope and acceptance criteria
 
@@ -355,4 +358,4 @@ The first version is successful when:
 
 The first version requires the conversation-linking model and workflow. Live Messenger/text synchronization is a desired connector outcome, not a verified first-release capability.
 
-The specification does not yet select a technology stack, interface, hosting model, messaging device/platform, connector access mechanism, or automation schedule. Those choices should follow the relationship workflows above rather than drive them.
+The initial execution/storage model is a single-user local tool, not a hosted application. The specification does not yet select a polished interface, messaging device/platform, connector access mechanism, or automation schedule. Those choices should follow the relationship workflows above rather than drive them; the companion technical approach uses a local file store to prove the flow.

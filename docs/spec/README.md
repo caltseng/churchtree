@@ -20,6 +20,7 @@ plans. Distinguish implementation completeness from historical completeness.
   aggregation, and 7-day, 30-day, or custom-period summaries and visualizations,
   led by a user-centered hub-and-spoke map with frequency, recency, and explainable
   reconnection signals.
+  The initial delivery is a single-user local tool/file store, not a hosted site.
   The visualization belongs in the contacts product, not Muse. This specification
   does not change the current Main Branch website scope or claim implemented
   endpoint access or authorization to collect private data.
