@@ -1,6 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const repo=path.resolve(__dirname,'..'),root=process.env.CHURCHTREE_TEST_ROOT?path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT):path.join(repo,'dist'),server=require('./test-server.cjs')(root),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
 const pageCount=JSON.parse(fs.readFileSync(path.join(repo,'site.config.json'),'utf8')).pages.length;
+const countries=JSON.parse(fs.readFileSync(path.join(repo,'site.config.json'),'utf8')).countryHistories;
 async function openAppearance(page) {
  const trigger = page.getByRole('button', {name:'Site menu', exact:true});
  assert.equal(await trigger.count(), 1);
@@ -30,6 +31,58 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   await globalChurch.screenshot({path:path.join(output,`global-church-${size.width}.png`)});
   await globalChurch.focus();await page.keyboard.press('Enter');
   await page.waitForURL('**/global-church/');
+  const countryCards=page.locator('.country-card');
+  assert.deepEqual(await countryCards.evaluateAll(cards=>cards.map(card=>card.getAttribute('href'))),countries.map(country=>'../'+country.path));
+  assert.equal(await countryCards.count(),countries.length);
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Country picker fits the viewport');
+  const paths=await countryCards.locator('.country-outline path').evaluateAll(elements=>elements.map(element=>element.getAttribute('d')));
+  assert.equal(new Set(paths).size,countries.length,'Countries have distinct source outlines');
+  assert(paths.every(d=>d.length>500&&!/NaN|Infinity/.test(d)),'Outlines contain detailed, finite geometry');
+  for(const [index,country] of countries.entries()){
+   const card=countryCards.nth(index);
+   assert.equal(await card.getAttribute('aria-labelledby'),country.id+'-name');
+   assert.equal(await card.getByRole('heading').innerText(),country.title);
+   assert.equal(await card.locator('.country-outline').getAttribute('aria-hidden'),'true');
+   const shape=await card.locator('.country-outline path').evaluate(element=>{const b=element.getBBox();return {x:b.x,y:b.y,width:b.width,height:b.height};});
+   assert(shape.width>50&&shape.height>100&&shape.x>=15&&shape.y>=15&&shape.x+shape.width<=305&&shape.y+shape.height<=225,'Entire country is legible inside its map');
+  }
+  for(const theme of ['parchment','slate','ink']){
+   await page.locator('html').evaluate((element,value)=>element.dataset.theme=value,theme);
+   for(const selector of ['.country-card h3','.country-card .card-copy>p','.country-card .card-action','.country-section-heading>p','.country-map-notes>p']){
+    const colors=await page.locator(selector).first().evaluate(element=>{
+     let ancestor=element,background;
+     do{background=getComputedStyle(ancestor).backgroundColor;ancestor=ancestor.parentElement;}while(ancestor&&background==='rgba(0, 0, 0, 0)');
+     return {text:getComputedStyle(element).color,background};
+    });
+    const a=luminance(colors.text),b=luminance(colors.background);
+    assert((Math.max(a,b)+.05)/(Math.min(a,b)+.05)>=4.5,theme+' country picker contrast: '+selector);
+   }
+   await page.screenshot({path:path.join(output,`country-picker-${theme}-${size.width}.png`),fullPage:true});
+  }
+  await page.locator('html').evaluate(element=>element.dataset.theme='parchment');
+  await page.locator('.skip-link').focus();await page.keyboard.press('Enter');await page.keyboard.press('Tab');
+  for(const country of countries){
+   const card=page.getByRole('link',{name:country.title,exact:true});
+   assert(await card.evaluate(element=>element===document.activeElement),'Sequential keyboard navigation: '+country.title);
+   assert(await card.evaluate(element=>getComputedStyle(element).outlineStyle!=='none'&&parseFloat(getComputedStyle(element).outlineWidth)>=3),'Visible focus: '+country.title);
+   await page.keyboard.press('Tab');
+  }
+  const disclosure=page.getByText('About these maps',{exact:true});
+  await disclosure.focus();await page.keyboard.press('Enter');
+  assert(await page.getByText(/Shapes are individually fitted/).isVisible());
+  assert(await page.getByRole('link',{name:'Reuse terms',exact:true}).isVisible());
+  await page.keyboard.press('Enter');
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await countryCards.first().hover();
+  assert.equal(await countryCards.first().evaluate(element=>getComputedStyle(element).transform),'none');
+  assert.equal(await countryCards.first().locator('.country-outline').evaluate(element=>getComputedStyle(element).transitionDuration),'0s');
+  await page.emulateMedia({reducedMotion:'no-preference'});
+  for(const country of countries){
+   await page.getByRole('link',{name:country.title,exact:true}).focus();await page.keyboard.press('Enter');
+   await page.waitForURL('**/'+country.path);
+   assert.equal(await page.title(),`Church in ${country.title} history · Main Branch`);
+   await page.goBack();await page.waitForURL('**/global-church/**');
+  }
   await page.locator('.tool-card[data-id="china-history"]').click();
   await page.waitForURL('**/china-history/');
   assert.equal(await page.title(),'Church in China history · Main Branch');

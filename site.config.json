@@ -87,6 +87,7 @@
   "countryHistories": [
     {
       "id": "china-history",
+      "outline": "CHN",
       "title": "China",
       "path": "china-history/",
       "kind": "Sourced historical timeline",
@@ -96,6 +97,7 @@
     },
     {
       "id": "cambodia-history",
+      "outline": "KHM",
       "title": "Cambodia",
       "path": "cambodia-history/",
       "kind": "Sourced historical timeline",
