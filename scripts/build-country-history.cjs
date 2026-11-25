@@ -1,8 +1,12 @@
 const fs = require('fs'), path = require('path');
 const dates = require('../historical-dates.js');
-module.exports = function buildCountryHistory({directory, data: input, validate, globalName, lastVerified}) {
-const canonical = validate(input);
-if (!/^[A-Z][A-Z_]*$/.test(globalName)) throw new Error('Invalid country data global');
+module.exports = function buildCountryHistory(country, {root = path.resolve(__dirname, '..'), domain = 'main-branch.com'} = {}) {
+if (!/^[a-z0-9-]+\/$/.test(country.path)) throw new Error('Invalid country path');
+for (const key of ['title', 'pageDescription', 'searchPlaceholder', 'lastVerified']) {
+    if (typeof country[key] !== 'string' || !country[key].trim()) throw new Error('Missing country ' + key);
+}
+const directory = path.join(root, country.path), {lastVerified} = country;
+const canonical = require(path.join(directory, 'validate.cjs'))(require(path.join(directory, 'data.cjs')));
 dates.period(lastVerified);
 const esc = value => String(value).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
 // Only these public fields leave the editorial input; no research packet or staging fields.
@@ -41,13 +45,28 @@ ${relations.map(r => {
     return `<a href="${esc(s.url)}">${esc(s.publisher)}</a>`;
 }).join('; ')}.</p></article>`;
 }
-const template = fs.readFileSync(path.join(directory, 'template.html'), 'utf8');
+const values = {
+    country: esc(country.title), description: esc(country.pageDescription), domain: esc(domain), path: esc(country.path),
+    searchPlaceholder: esc(country.searchPlaceholder),
+    scopeDetails: country.scopeDetails || '',
+    afterScope: country.showCountryChooser ? '\n<p><a href="../global-church/">Choose another country</a></p>' : '',
+    noScript: esc(country.noScript || 'This is the complete sourced text view. Follow record links to bookmark an episode; expand its evidence to read source locators.')
+};
+const template = fs.readFileSync(path.join(__dirname, '../templates/country-history.html'), 'utf8')
+    .replace(/\{\{(\w+)\}\}/g, (_, key) => {
+        if (!Object.hasOwn(values, key)) throw new Error('Unknown country template field: ' + key);
+        return values[key];
+    });
 const html = template.replace('<!--SCOPE-->', `<p>${esc(data.scope)}</p><p class="critical-note">Last verified event: ${esc(lastVerified)}. Gaps are not extinction dates.</p>`)
     .replace('<!--INFO-->', `<p>${esc(data.geography)}</p><p>${esc(data.limits)}</p><p>Solid interval marks show periods; dashed intervals show approximate or competing date bases, not institutional continuity. Undated gaps remain in the text view. Sorting within partial dates is an editorial convention.</p><p>All summaries are original paraphrases with passage locators. No scans, portraits, Bible text or translated extracts are reproduced. Sources express different institutional perspectives; linked versions may depend on the same underlying evidence.</p>`)
     .replace('<!--LANES-->', data.lanes.map(l => `<option value="${l.id}">${esc(l.label)}</option>`).join(''))
     .replace('<!--RECORDS-->', sorted.map(article).join('\n'));
 fs.writeFileSync(path.join(directory, 'index.html'), html);
-fs.writeFileSync(path.join(directory, 'public-data.js'), '// Generated approved public fields. Do not edit.\nwindow.' + globalName + ' = ' + JSON.stringify(data, null, 2).replace(/</g, '\\u003c') + ';\n');
+fs.writeFileSync(path.join(directory, 'public-data.js'), '// Generated approved public fields. Do not edit.\nwindow.COUNTRY_HISTORY_DATA = ' + JSON.stringify(data, null, 2).replace(/</g, '\\u003c') + ';\n');
 console.log(`Built ${data.title}: ${data.events.length} selected records; isolated from denomination data.`);
 return {data, article};
 };
+if (require.main === module) {
+    const config = require('../site.config.json');
+    for (const country of config.countryHistories) module.exports(country, {domain: config.domain});
+}

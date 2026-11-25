@@ -1,5 +1,5 @@
 // Generated approved public fields. Do not edit.
-window.CHINA_HISTORY_DATA = {
+window.COUNTRY_HISTORY_DATA = {
   "title": "Church in China",
   "scope": "Selected episodes, 635-2024. Parallel display lanes are not institutional lifespans or a national church genealogy.",
   "geography": "Mainland historical settings, with Macau as a mission hub and Rome/Edinburgh as specifically linked external contexts. Borders and jurisdictions changed. Taiwan, full Hong Kong/Macau denominational histories and overseas communities are not covered.",

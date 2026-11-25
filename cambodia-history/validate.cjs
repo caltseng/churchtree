@@ -1,4 +1,4 @@
-const validateCountry = require('../china-history/validate.cjs');
+const validateCountry = require('../scripts/validate-country-history.cjs');
 const roster = Array.from({length: 57}, (_, i) => 'KH' + String(i + 1).padStart(2, '0'));
 module.exports = data => validateCountry(data, roster);
 if (require.main === module) {

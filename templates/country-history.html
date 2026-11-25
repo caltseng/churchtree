@@ -2,29 +2,29 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Church in China history · Main Branch</title>
-<meta name="description" content="Explore selected, sourced episodes of Christianity in China, 635-2024, with explicit uncertainty and research gaps.">
+<title>Church in {{country}} history · Main Branch</title>
+<meta name="description" content="{{description}}">
 <meta name="application-name" content="Main Branch"><meta property="og:site_name" content="Main Branch">
-<link rel="canonical" href="https://main-branch.com/china-history/">
+<link rel="canonical" href="https://{{domain}}/{{path}}">
 <link rel="icon" type="image/svg+xml" href="../assets/brand/logos/main-branch.svg">
 <link rel="stylesheet" href="../theme.css"><script src="../theme.js"></script>
-<link rel="stylesheet" href="../brand.css"><link rel="stylesheet" href="../explorer.css"><link rel="stylesheet" href="history.css">
+<link rel="stylesheet" href="../brand.css"><link rel="stylesheet" href="../explorer.css"><link rel="stylesheet" href="../country-history/history.css">
 <script defer src="https://d3js.org/d3.v7.min.js"></script>
 <script defer src="../historical-dates.js"></script><script defer src="../timeline-model.js"></script>
 <script defer src="../timeline.js"></script><script defer src="../horizontal-timeline.js"></script>
-<script defer src="public-data.js"></script><script defer src="controller.js"></script>
+<script defer src="public-data.js"></script><script defer src="../country-history/controller.js"></script>
 </head>
 <body class="country-history">
 <a class="skip-link" href="#record-list">Skip to sourced records</a>
 <header class="explorer-header">
 <a class="main-branch-brand" href="../" aria-label="Main Branch home"><img class="main-branch-symbol" src="../assets/brand/logos/main-branch.svg" width="44" height="44" alt=""><span class="main-branch-copy">Main Branch</span></a>
-<h1>Church in China</h1>
+<h1>Church in {{country}}</h1>
 <div class="explorer-actions" id="enhanced-actions" hidden>
 <button id="search-toggle" aria-expanded="false" aria-controls="search-panel">Search</button>
 <button id="filters-toggle" aria-expanded="false" aria-controls="filters-panel">Filters</button>
 <button id="info-toggle" aria-expanded="false" aria-controls="scope-info">Info</button>
 </div>
-<form id="search-panel" class="header-panel" hidden><label for="search">Find a person, institution, text or episode</label><div class="search-row"><input id="search" type="search" placeholder="Try Liang Fa or council"><button>Find</button></div></form>
+<form id="search-panel" class="header-panel" hidden><label for="search">Find a person, institution, text or episode</label><div class="search-row"><input id="search" type="search" placeholder="{{searchPlaceholder}}"><button>Find</button></div></form>
 <form id="filters-panel" class="header-panel" hidden>
 <label>Display lane <select id="lane"><option value="">All lanes</option><!--LANES--></select></label>
 <label>From year <input id="year-from" type="text" inputmode="numeric" aria-describedby="period-error"></label>
@@ -33,14 +33,14 @@
 </form>
 </header>
 <section class="country-intro" aria-label="Timeline scope"><!--SCOPE-->
-<details id="scope-info"><summary>Scope, gaps and evidence</summary><!--INFO--></details>
+<details id="scope-info"><summary>Scope, gaps and evidence</summary><!--INFO-->{{scopeDetails}}</details>{{afterScope}}
 </section>
 <main class="country-main">
-<section class="country-exploration" aria-label="China historical episodes">
+<section class="country-exploration" aria-label="{{country}} historical episodes">
 <div id="timeline-panel" hidden>
 <div class="country-toolbar"><div role="group" aria-label="Timeline orientation"><button id="vertical" aria-pressed="true">Vertical</button><button id="horizontal" aria-pressed="false">Horizontal</button></div><button id="text-view">Text view</button></div>
 <p class="lane-note">Display lanes, not lineage. Select a cluster to inspect every member.</p>
-<div id="graph" role="region" tabindex="0" aria-label="Church in China timeline" aria-describedby="graph-help"></div>
+<div id="graph" role="region" tabindex="0" aria-label="Church in {{country}} timeline" aria-describedby="graph-help"></div>
 <div class="country-toolbar"><button id="earlier">← Earlier</button><button id="later">Later →</button><button id="zoom-out" aria-label="Zoom out">−</button><button id="zoom-in" aria-label="Zoom in">+</button><span id="visible-range"></span></div>
 <p id="graph-help">Arrow keys pan; + / − zoom. All records and sources are also available in Text view without dragging or color.</p>
 </div>
@@ -52,6 +52,6 @@
 <aside id="selection" aria-label="Selected historical details" hidden><p>Select an episode to read its evidence.</p></aside>
 </main>
 <dialog id="record-dialog" aria-label="Historical details"><div class="country-dialog-header"><strong>Historical details</strong><button id="back-to-timeline">Back to timeline</button></div><div id="dialog-content"></div></dialog>
-<noscript><p class="country-intro">This is the complete sourced text view. Follow record links to bookmark an episode; expand its evidence to read source locators.</p></noscript>
+<noscript><p class="country-intro">{{noScript}}</p></noscript>
 </body>
 </html>
