@@ -1,6 +1,5 @@
-const fs=require('fs'),path=require('path'),assert=require('node:assert/strict'),{spawnSync}=require('child_process');
+const fs=require('fs'),path=require('path'),vm=require('node:vm'),assert=require('node:assert/strict'),{spawnSync}=require('child_process');
 const root=path.resolve(__dirname,'..'),fixtures=path.join(root,'.tmp','build-guard-checks');
-const vm = require('node:vm');
 const htmlEscape = require('../html-escape.js');
 const browser = vm.createContext({});
 vm.runInContext(fs.readFileSync(path.join(root, 'html-escape.js'), 'utf8'), browser);
@@ -30,7 +29,17 @@ const directory = path.join(fixtures, country.path);
 fs.mkdirSync(directory);
 fs.copyFileSync(path.join(root, 'china-history/data.cjs'), path.join(directory, 'data.cjs'));
 fs.writeFileSync(path.join(directory, 'validate.cjs'), `module.exports = require(${JSON.stringify(path.join(root, 'china-history/validate.cjs'))});`);
-buildCountry(country, {root: fixtures, domain: 'fixture.example'});
+const {data: countryData} = buildCountry(country, {root: fixtures, domain: 'fixture.example'});
+function assertCompactBundle(file, name, expected) {
+    const text = fs.readFileSync(file, 'utf8');
+    const payload = text.slice(text.indexOf(' = ') + 3).trim().replace(/;$/, '');
+    assert(!/[\r\n\t]/.test(payload), 'Bundle payload must not contain indentation or line breaks');
+    assert.equal(payload, JSON.stringify(JSON.parse(payload)).replace(/</g, '\\u003c'));
+    const context = {window: {}};
+    vm.runInNewContext(text, context);
+    assert.deepEqual(JSON.parse(JSON.stringify(context.window[name])), JSON.parse(JSON.stringify(expected)));
+}
+assertCompactBundle(path.join(directory, 'public-data.js'), 'COUNTRY_HISTORY_DATA', countryData);
 const generated = fs.readFileSync(path.join(directory, 'index.html'), 'utf8');
 assert(generated.includes('Church in Fixture &lt;country&gt; &amp; &quot;$&amp;&quot;'));
 assert(generated.includes('placeholder="Try &quot;fixture&quot; &lt;search&gt;"'));
@@ -56,6 +65,11 @@ for (const country of config.countryHistories) build(country, {root: require('pa
 fs.mkdirSync(path.join(fixtures, 'data/common'), {recursive: true});
 fs.mkdirSync(path.join(fixtures, 'data/sets'));
 for (const type of ['sources', 'citations']) fs.writeFileSync(path.join(fixtures, 'data/common', type + '.json'), '[]');
+const fixtureSet = path.join(fixtures, 'data/sets/fixture');
+fs.mkdirSync(fixtureSet);
+const fixtureNodes = [{id: 'fixture', name: 'Keep  double spaces\nand a newline', start_year: 1600}];
+fs.writeFileSync(path.join(fixtureSet, 'nodes.json'), JSON.stringify(fixtureNodes));
+fs.writeFileSync(path.join(fixtureSet, 'edges.json'), '[]');
 fs.writeFileSync(path.join(fixtures, 'site.config.json'), JSON.stringify({
     domain: 'fixture.example', publicDirectories: [], publicExtensions: ['.html', '.js'],
     publicFiles: [], countryHistories: [country]
@@ -64,4 +78,6 @@ const registered = spawnSync(process.execPath, [path.join(fixtureScripts, 'build
 assert.equal(registered.status, 0, registered.stderr);
 assert.deepEqual(fs.readdirSync(path.join(fixtures, 'dist', country.path)).sort(), ['index.html', 'public-data.js']);
 assert.equal(fs.readFileSync(path.join(fixtures, 'dist', country.path, 'index.html'), 'utf8'), generated);
+assertCompactBundle(path.join(fixtures, 'dist/data/data.js'), 'CHURCHTREE_DATA',
+    {nodes: fixtureNodes, edges: [], events: [], sources: [], citations: []});
 console.log('Broken data, missing assets and exposed development files are rejected.');

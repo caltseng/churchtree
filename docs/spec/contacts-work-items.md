@@ -1,5 +1,9 @@
 # Contacts work-item register
 
+> Archived: heartbeat now owns the collector and skills. This is the historical
+> Churchtree register, not an active backlog or dispatch request. The delivered
+> paths and npm commands below are no longer present in this repository.
+
 Scope: [product specification](contacts-store-spec.md) and
 [initial technical approach](contacts-technical-spec.md). Stable IDs below are
 the dispatch units; dependencies are explicit, not inferred from list order.

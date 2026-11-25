@@ -120,7 +120,6 @@ foreach ($row in $source.SelectNodes('.//tr')) {
         reference = $reference
         sourceLabel = $originalLabel
         sourceId = $ref.GetAttribute('id')
-        url = 'https://www.biblegateway.com/passage/?search=' + [uri]::EscapeDataString($reference) + '&version=ASV'
       }
     }
     if ($refs.Count) {
