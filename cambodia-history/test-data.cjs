@@ -62,7 +62,7 @@ test('one generated country registry drives the selector and every registered bu
     assert.equal(config.pages.find(p => p.id === 'global-church').path, 'global-church/');
     assert(config.countryHistories.some(c => c.id === 'china-history'));
     assert(config.countryHistories.some(c => c.id === 'cambodia-history'));
-    assert.equal((html.match(/class="tool-card"/g) || []).length, config.countryHistories.length);
+    assert.equal((html.match(/class="tool-card(?: [^"]*)?"/g) || []).length, config.countryHistories.length);
     for (const country of config.countryHistories) {
         assert(html.includes('href="../' + country.path + '"'));
         assert(fs.existsSync(path.join(dist, country.path, 'index.html')));
