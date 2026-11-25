@@ -100,6 +100,100 @@ async function assertExpandedCatalog(browser, url) {
     await page.screenshot({path: path.join(output, 'review-lineage-new-families.png')});
     await page.close();
 }
+async function assertActiveStatus(browser, url) {
+    const fixtures = ['active', 'merged', 'dissolved', 'unknown', undefined].map((status, i) => ({
+        id: `status-${status || 'missing'}`, name: `Status ${status || 'missing'}`,
+        tradition_family: 'Status fixtures', start_year: 100 + i * 600,
+        ...(status ? { current_status: status } : {}),
+    }));
+    fixtures.push(...[1, 2].map(i => ({
+        id: `status-group-${i}`, name: `Active grouped ${i}`, tradition_family: 'Status fixtures',
+        start_year: 3700, current_status: 'active',
+    })));
+    for (const viewport of [{ width: 1440, height: 1000 }, { width: 320, height: 640 }, { width: 844, height: 390 }]) {
+        const mobile = viewport.width < 1100;
+        const page = await browser.newPage({ viewport, isMobile: mobile, hasTouch: mobile, reducedMotion: 'reduce' });
+        const errors = [];
+        page.on('pageerror', error => errors.push(error.message));
+        try {
+            await page.route('**/data/data.js', route => route.fulfill({
+                contentType: 'application/javascript',
+                body: fs.readFileSync(path.join(root, 'data', 'data.js'), 'utf8') +
+                    `\nwindow.CHURCHTREE_DATA.nodes.push(...${JSON.stringify(fixtures)});
+                    window.CHURCHTREE_DATA.edges.push({id:'status-group-link',from_id:'status-group-1',to_id:'status-group-2',type:'continuation',year:3700});`,
+            }));
+            await page.goto(url);
+            await page.locator('#graph .node').first().waitFor();
+            assert.match(await page.locator('.legend').textContent(), /Bold border: recorded as active today/);
+            assert(await page.locator('.legend-active').isVisible());
+            for (const theme of ['parchment', 'ink']) {
+                await page.evaluate(value => document.documentElement.dataset.theme = value, theme);
+                for (const view of ['timeline', 'horizontal']) {
+                    await setView(page, view);
+                    await page.locator('#branch').selectOption('Status fixtures');
+                    const filters = page.getByRole('button', { name: 'Filters', exact: true });
+                    if (await filters.getAttribute('aria-expanded') === 'true') await filters.click();
+                    await page.evaluate(() => CHURCHTREE_TIMELINE.reset());
+                    const activeWidth = await page.locator('#graph [data-id="status-active"] rect')
+                        .evaluate(el => parseFloat(getComputedStyle(el).strokeWidth));
+                    const unknownWidth = await page.locator('#graph [data-id="status-unknown"] rect')
+                        .evaluate(el => parseFloat(getComputedStyle(el).strokeWidth));
+                    assert(activeWidth >= 3 && activeWidth > unknownWidth, 'Unselected active entries have a heavier border');
+                    const group = page.locator('#graph .aggregate[data-members*="status-group-1"]');
+                    await page.evaluate(() => CHURCHTREE_TIMELINE.reveal('status-group-1'));
+                    await group.waitFor();
+                    assert(!await group.evaluate(el => el.classList.contains('active')), 'Even all-active clusters are not bodies');
+                    assert(!/active today/.test(await group.getAttribute('aria-label')));
+                    for (const fixture of fixtures.slice(0, 5)) {
+                        await page.evaluate(id => CHURCHTREE_TIMELINE.reveal(id), fixture.id);
+                        const node = page.locator(`#graph .node[data-id="${fixture.id}"]`);
+                        await node.waitFor();
+                        const active = fixture.current_status === 'active';
+                        assert.equal(await node.evaluate(el => el.classList.contains('active')), active,
+                            `${viewport.width}/${theme}/${view}/${fixture.id}`);
+                        assert.equal(/active today/.test(await node.getAttribute('aria-label')), active);
+                    }
+                    await page.evaluate(() => CHURCHTREE_TIMELINE.reveal('status-active'));
+                    const node = page.locator('#graph .node[data-id="status-active"]');
+                    await node.scrollIntoViewIfNeeded();
+                    const strokeWidth = () => node.locator('rect').evaluate(el => parseFloat(getComputedStyle(el).strokeWidth));
+                    const selectedWidth = await strokeWidth();
+                    assert(selectedWidth >= 4, 'Active emphasis survives selection');
+                    await node.focus();
+                    await page.keyboard.press('Tab');
+                    await page.keyboard.press('Shift+Tab');
+                    assert(await node.evaluate(el => el === document.activeElement));
+                    assert(await strokeWidth() > selectedWidth, 'Keyboard focus is distinct from active/selected emphasis');
+                    const before = await page.evaluate(() => {
+                        const { domain, scale } = CHURCHTREE_TIMELINE.snapshot();
+                        return { domain, scale, branch: document.getElementById('branch').value };
+                    });
+                    await page.screenshot({ path: path.join(output, `review-active-${viewport.width}-${theme}-${view}.png`) });
+                    await page.keyboard.press('Enter');
+                    assert.equal(await page.locator('#details h2').textContent(), 'Status active');
+                    if (mobile) {
+                        await page.getByRole('dialog', { name: 'Historical details' }).waitFor();
+                        await page.keyboard.press('Escape');
+                        await page.getByRole('dialog', { name: 'Historical details' }).waitFor({ state: 'hidden' });
+                    }
+                    assert.deepEqual(await page.evaluate(() => {
+                        const { domain, scale } = CHURCHTREE_TIMELINE.snapshot();
+                        return { domain, scale, branch: document.getElementById('branch').value };
+                    }), before);
+                    assert(await node.evaluate(el => el.classList.contains('active')));
+                    assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+                    assert((await page.locator('#graph').boundingBox()).height >= 160);
+                }
+            }
+            await setView(page, 'lineage');
+            assert.equal(await page.locator('#graph .node.active').count(), 3);
+            assert.match(await page.locator('#graph [data-id="status-active"]').getAttribute('aria-label'), /active today/);
+            assert.deepEqual(errors, []);
+        } finally {
+            await page.close();
+        }
+    }
+}
 async function assertCoverageDiscovery(browser, url, mobile) {
     const page = await browser.newPage(mobile
         ? { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true }
@@ -397,6 +491,7 @@ async function assertCoverageDiscovery(browser, url, mobile) {
         await assertCoverageDiscovery(browser, url, false);
         await assertCoverageDiscovery(browser, url, true);
         await assertExpandedCatalog(browser, url);
+        await assertActiveStatus(browser, url);
         console.log(JSON.stringify({ passed: true, families: families.length, clustered: initial.clusters.length, zoomed: zoomed.clusters.length, collapsed: collapsed.clusters.length, browserErrors: errors }));
     }
     finally {

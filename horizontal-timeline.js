@@ -2,6 +2,7 @@
 window.renderHorizontalTimeline = function ({ container, entries, edges, onNode, onEdge, onCluster, period, onRange, presentation = {} }) {
     const title = presentation.clusterTitle || window.churchClusterTitle;
     const dateLabel = presentation.dateLabel || (n => String(n.start_year));
+    const isActive = c => c.members.length === 1 && !!presentation.isActive?.(c.members[0]);
     const dated = entries.filter(n => Number.isFinite(n.start_year));
     if (!dated.length) {
         container.innerHTML = '<p class="empty">No dated entries in this branch.</p>';
@@ -89,7 +90,7 @@ window.renderHorizontalTimeline = function ({ container, entries, edges, onNode,
             g.append('text').attr('class', 'date');
             g.append('title');
             return g;
-        }).attr('class', c => 'node horizontal-node' + (c.members.length > 1 ? ' aggregate' : '') + (c.members.some(n => n.id === highlighted) ? ' selected' : '')).attr('data-members', c => c.members.map(n => n.id).join(',')).attr('data-id', c => c.members.length === 1 ? c.members[0].id : null).attr('transform', c => `translate(${c.x},${c.y})`).attr('aria-label', c => presentation.dateLabel && c.members.length === 1 ? title(c) + ', ' + dateLabel(c.members[0]) : isCatholic(c.members[0]) ? c.members[0].name + ', ' + c.min + ' schism' : title(c) + ', ' + c.min + '–' + c.max).on('click', (_, c) => {
+        }).attr('class', c => 'node horizontal-node' + (c.members.length > 1 ? ' aggregate' : '') + (isActive(c) ? ' active' : '') + (c.members.some(n => n.id === highlighted) ? ' selected' : '')).attr('data-members', c => c.members.map(n => n.id).join(',')).attr('data-id', c => c.members.length === 1 ? c.members[0].id : null).attr('transform', c => `translate(${c.x},${c.y})`).attr('aria-label', c => (presentation.dateLabel && c.members.length === 1 ? title(c) + ', ' + dateLabel(c.members[0]) : isCatholic(c.members[0]) ? c.members[0].name + ', ' + c.min + ' schism' : title(c) + ', ' + c.min + '–' + c.max) + (isActive(c) ? ', active today' : '')).on('click', (_, c) => {
             if (c.members.length === 1) {
                 onNode(c.members[0].id);
                 return;

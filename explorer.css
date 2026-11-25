@@ -168,11 +168,18 @@ aside a {
   stroke-width: 1.3;
 }
 
+.node.active rect {
+  stroke: var(--ct-text-secondary);
+  stroke-width: 3;
+}
+
 .node.selected rect {
   fill: var(--ct-node-selected);
   stroke: var(--ct-accent);
   stroke-width: 2.5;
 }
+
+.node.active.selected rect { stroke-width: 4; }
 
 .node text {
   fill: var(--ct-text);
@@ -325,6 +332,7 @@ aside p,aside li {
 .link.mixed { stroke: var(--ct-relationship-mixed); stroke-dasharray: 4 3; }
 #period-error { color: var(--ct-error); font: 12px system-ui; }
 .node:focus-visible rect { stroke: var(--ct-focus); stroke-width: 3; }
+.node.active:focus-visible rect { stroke-width: 5; }
 .orientation { display: flex; border: 1px solid var(--ct-border-control); border-radius: 7px; overflow: hidden; }
 .orientation[hidden] { display: none; }
 .orientation button { border: 0; border-radius: 0; background: transparent; padding: 7px 11px; }
@@ -365,6 +373,7 @@ aside p,aside li {
 .legend-line { display: inline-block; width: 16px; margin-right: 5px; vertical-align: middle; border-top: 2px solid var(--ct-relationship); }
 .legend-line.split { border-color: var(--ct-relationship-split); }
 .legend-line.mixed { border-color: var(--ct-relationship-mixed); border-top-style: dashed; }
+.legend-active { display: inline-block; width: 16px; height: 11px; margin-right: 5px; vertical-align: middle; border: 3px solid var(--ct-text-secondary); border-radius: 3px; }
 
 .explorer-header {
   position: relative; z-index: 2;

@@ -7,6 +7,7 @@ window.renderChurchTimeline = function ({ container, entries, edges, onNode, onE
     // Prefer the most specific curated historical group that contains its members.
     const clusterTitle = presentation.clusterTitle || window.churchClusterTitle;
     const dateLabel = presentation.dateLabel || (n => String(n.start_year));
+    const isActive = c => c.members.length === 1 && !!presentation.isActive?.(c.members[0]);
     const duration = matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 250;
     const dated = entries.filter(n => Number.isFinite(n.start_year));
     if (!dated.length) {
@@ -64,7 +65,7 @@ window.renderChurchTimeline = function ({ container, entries, edges, onNode, onE
             g.append('text').attr('class', 'date');
             g.append('title');
             return g;
-        }).attr('class', c => 'node time-node' + (c.members.length > 1 ? ' aggregate' : '') + (c.members.some(n => n.id === highlighted) ? ' selected' : '')).attr('data-id',c=>c.members.length===1?c.members[0].id:null).attr('data-members', c => c.members.map(n => n.id).join(',')).attr('transform', c => `translate(${c.x},${c.y})`).attr('aria-label', c => c.members.length > 1 ? `${clusterTitle(c)}, ${c.members.length} entries, ${c.min} to ${c.max}` : c.members[0].name + (presentation.dateLabel ? ', ' + dateLabel(c.members[0]) : isCatholic(c.members[0]) ? ', ' + c.min + ' schism' : '')).on('click', (_, c) => {
+        }).attr('class', c => 'node time-node' + (c.members.length > 1 ? ' aggregate' : '') + (isActive(c) ? ' active' : '') + (c.members.some(n => n.id === highlighted) ? ' selected' : '')).attr('data-id',c=>c.members.length===1?c.members[0].id:null).attr('data-members', c => c.members.map(n => n.id).join(',')).attr('transform', c => `translate(${c.x},${c.y})`).attr('aria-label', c => (c.members.length > 1 ? `${clusterTitle(c)}, ${c.members.length} entries, ${c.min} to ${c.max}` : c.members[0].name + (presentation.dateLabel ? ', ' + dateLabel(c.members[0]) : isCatholic(c.members[0]) ? ', ' + c.min + ' schism' : '')) + (isActive(c) ? ', active today' : '')).on('click', (_, c) => {
             if (c.members.length === 1)
                 onNode(c.members[0].id);
             else {
