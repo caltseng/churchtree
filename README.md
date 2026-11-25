@@ -73,6 +73,11 @@ landing/theme checks. See [user scenarios](docs/user-scenarios.md) for manual st
 expected behavior, automated coverage and the difference between emulation and
 physical-device testing.
 
+Builders and browser views share `html-escape.js` through CommonJS or the
+`HTMLEscape` browser global. Load it before dependent views. Its `esc` escapes
+all five HTML metacharacters; `escReader` preserves the reader's existing
+three-character serialization, and `escNullable` keeps missing explorer text empty.
+
 ## Delivery and hosting
 
 Changes go through **topic branch → pushed PR → required CI → merge → deployment**.

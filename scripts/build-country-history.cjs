@@ -1,5 +1,6 @@
 const fs = require('fs'), path = require('path');
 const dates = require('../historical-dates.js');
+const {esc} = require('../html-escape.js');
 module.exports = function buildCountryHistory(country, {root = path.resolve(__dirname, '..'), domain = 'main-branch.com'} = {}) {
 if (!/^[a-z0-9-]+\/$/.test(country.path)) throw new Error('Invalid country path');
 for (const key of ['title', 'pageDescription', 'searchPlaceholder', 'lastVerified']) {
@@ -8,7 +9,6 @@ for (const key of ['title', 'pageDescription', 'searchPlaceholder', 'lastVerifie
 const directory = path.join(root, country.path), {lastVerified} = country;
 const canonical = require(path.join(directory, 'validate.cjs'))(require(path.join(directory, 'data.cjs')));
 dates.period(lastVerified);
-const esc = value => String(value).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
 // Only these public fields leave the editorial input; no research packet or staging fields.
 const data = {
     title: canonical.title, scope: canonical.scope, geography: canonical.geography, limits: canonical.limits,

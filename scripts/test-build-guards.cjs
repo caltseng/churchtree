@@ -1,5 +1,19 @@
 const fs=require('fs'),path=require('path'),assert=require('node:assert/strict'),{spawnSync}=require('child_process');
 const root=path.resolve(__dirname,'..'),fixtures=path.join(root,'.tmp','build-guard-checks');
+const vm = require('node:vm');
+const htmlEscape = require('../html-escape.js');
+const browser = vm.createContext({});
+vm.runInContext(fs.readFileSync(path.join(root, 'html-escape.js'), 'utf8'), browser);
+vm.runInContext(fs.readFileSync(path.join(root, 'us-denominations/view.js'), 'utf8'), browser);
+for (const helpers of [htmlEscape, browser.HTMLEscape]) {
+    assert.equal(helpers.esc(`<&>"' &amp;`), '&lt;&amp;&gt;&quot;&#39; &amp;amp;');
+    assert.equal(helpers.escReader(`<&>"' &amp;`), '&lt;&amp;>&quot;\' &amp;amp;');
+    assert.deepEqual([null, undefined, 0, false].map(helpers.esc), ['null', 'undefined', '0', 'false']);
+    assert.deepEqual([null, undefined, 0, false].map(helpers.escNullable), ['', '', '0', 'false']);
+    assert.equal(helpers.esc('Plain text'), 'Plain text');
+}
+assert.equal(require('../us-denominations/view.js').esc, htmlEscape.esc);
+assert.equal(browser.USAffiliationView.esc, browser.HTMLEscape.esc);
 if(path.dirname(fixtures)!==path.join(root,'.tmp')||path.basename(fixtures)!=='build-guard-checks'||(fs.existsSync(fixtures)&&fs.lstatSync(fixtures).isSymbolicLink()))throw Error('Unsafe fixture path');
 fs.rmSync(fixtures,{recursive:true,force:true});fs.mkdirSync(fixtures,{recursive:true});
 function run(script,arg){return spawnSync(process.execPath,[path.join(__dirname,script),arg],{encoding:'utf8'});}

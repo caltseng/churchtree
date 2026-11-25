@@ -2,7 +2,7 @@
 const assert = require('node:assert/strict');
 const proofs = require('./scripture-proofs.json');
 const text = require('./content.json');
-const esc = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');
+const {escReader: esc} = require('../html-escape.js');
 assert.equal(proofs.schemaVersion, 1);
 assert.equal(proofs.chapters.length, text.chapters.length);
 const sourceIDs = new Set();
