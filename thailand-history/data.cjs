@@ -17,13 +17,15 @@ const sources = [
     ['religious-freedom', '2023 Report on International Religious Freedom: Thailand', 'US Department of State / ecoi.net mirror', '2024; reporting year 2023', 'https://www.ecoi.net/en/document/2111971.html', 'Diplomatic report, not original law or independently verified census. Direct State page inaccessible; relevant mirror sections inspected. No current 2026 guarantee.'],
     ['eft', 'History of the Evangelical Fellowship of Thailand (Thai)', 'Evangelical Fellowship of Thailand', 'Undated, evolving page', 'https://eft.or.th/history/', 'Institutional self-report. Recognition, license and cooperation dates distinguished; 2018 count is affiliated age 15+, not national/all-age. No current roster reused.'],
     ['adventist', 'Thailand', 'Osée Kamgang Toho / Encyclopedia of Seventh-day Adventists', '2026-03-02', 'https://encyclopedia.adventist.org/article?id=CATD', 'Adventist institutional history; linked original periodicals not independently inspected. General demographic/state-religion errors excluded; no copied images.'],
+    ['longway', 'Longway, Ezra Leon and Inez Ruth; later Florence Ione', 'Milton Hook / Encyclopedia of Seventh-day Adventists', '2020-08-06', 'https://encyclopedia.adventist.org/article?id=98IV', 'Earlier institutional biography; Mission Service opening inspected. Shares Adventist source networks, not independent confirmation of every later country-history claim.'],
     ['bradley', 'A Sketch of the Life and Character of Mrs. Emelie Royce Bradley, chapter V', 'Nancy Royce / American Tract Society; Digital Bangkok Recorder transcription', 'c.1856 per edition header; footer says c.1865', 'https://digitalbangkokrecorder.com/publications/emelie_royce_bradley/chapter-5/', 'Family biography with diary extracts, via undated library typescript. Edition-date discrepancy and transcription limits; anti-Buddhist/class judgments not adopted.']
 ].map(([id, title, publisher, published, url, perspective]) => ({id, title, publisher, published, url, perspective}));
 
 const citations = [
     ['resident-mission', 'catholic-history', 'C01', 'Opening Portuguese-contact and Dominican-mission paragraphs: hypothetical chaplains, unconfirmed 1544 conversion, resident mission 1567.'],
-    ['arrivals-synod', 'catholic-history', 'C02', 'Lambert/Pallu arrival and Ayutthaya synod paragraphs: 1662-08-22, 1664 synod and 1665 seminary.'],
+    ['arrivals-synod', 'catholic-history', 'C02', 'Lambert/Pallu arrival and Ayutthaya synod paragraphs; nearby 1669/1674 community paragraph: 1662-08-22, 1664 synod, 1665 seminary and older Portuguese/Asian communities. No later community count projected backward.'],
     ['vicariate', 'catholic-history', 'C03', '1669 jurisdiction and hospital paragraphs; separate from sixteenth-century presence.'],
+    ['vicariate-anniversary', 'vatican-news', 'C03', 'Opening anniversary paragraphs: 350 years in 2019 commemorates the 1669 vicariate, not first Christian contact.'],
     ['coup-scholarship', 'strathern', 'C04', 'Accepted manuscript pp.1-4 and 42-45, especially "The persecution of Christianity?"; not journal pagination.'],
     ['coup-institution', 'catholic-history', 'C04', 'Narai and 1688 upheaval/imprisonment paragraphs. Read alongside Strathern, not as neutral explanation of opponents.'],
     ['dispersal-return', 'catholic-history', 'C05', 'Fall of Ayutthaya, Taksin expulsion and Rama I return paragraphs; exact return date not established.'],
@@ -32,36 +34,37 @@ const citations = [
     ['northern-arrival', 'swanson-women', 'C08', 'Printed pp.188-192: Daniel and Sophia, April 1867; literacy 1868; girls\' class 1876; historical Laos terminology.'],
     ['executions-memoir', 'mcgilvary', 'C09', 'Printed pp.97-109, especially 107-108, northern converts\' persecution and deaths; source spells the name Noi Sunya. Retrospective participant narrative.'],
     ['teachers-family', 'swanson-women', 'C09', 'Printed pp.193-195: Chantah as daughter of a convert executed in 1869.'],
-    ['edict', 'mcgilvary', 'C10', 'Printed pp.207-218; proclamation translation pp.216-217, date clause October8,1878; territorial and labor/marriage context.'],
+    ['edict', 'mcgilvary', 'C10', 'Printed pp.207-218; proclamation translation pp.216-217, date clause October 8, 1878; territorial and labor/marriage context.'],
     ['women-teachers', 'swanson-women', 'C11', 'Printed pp.192-202: formal school 1879; Chantah, Buk, Kom Tip head assistant 1888, Nyawt Huan full teacher 1892; constraints and agency.'],
     ['catholic-service', 'catholic-history', 'C12', 'Education, St Paul de Chartres sisters and hospital paragraphs: Assumption 1885 and sisters 1898.'],
     ['northern-bible', 'swanson-translation', 'C13', 'Printed pp.30-33,35-36: press 1892/products 1893/NT 1914; incomplete OT, suspension about 1920, translator authority and causal uncertainty.'],
     ['adventist-formation', 'adventist', 'C14', '"Origins of Seventh-Day Adventism" and "First Permanent Missionaries (1918-1919)": earlier literature/Chinese lay networks, Longways December 1918, organization 1919.'],
+    ['longway-service', 'longway', 'C14', '"Mission Service", first three paragraphs: Bangkok arrival Christmas 1918, mission roles, language study and Chinese graduates from Singapore. Underlying travel records not separately inspected.'],
     ['union-transfer-revival', 'swanson-history', 'C15', 'Printed pp.xiii-xv: union April 1934 with some Baptist/Churches of Christ partners; Japanese invasion 1941; transfer 1957/1961; Sung 1938/1939 and Boonmark.'],
-    ['songkhon-witness', 'songkhon', 'C16', 'Biography opening on war/police pressure and death paragraphs (1940, December 16/26); embedded John Paul II homily 1989-10-22, section4, on lay/women\'s leadership.'],
+    ['songkhon-witness', 'songkhon', 'C16', 'Biography opening on war/police pressure and death paragraphs (1940, December 16/26); embedded John Paul II homily 1989-10-22, section 4, on lay/women\'s leadership.'],
     ['nicholas', 'vatican-news', 'C17', 'Nicholas Bunkerd Nitbamrung paragraph: prison/tuberculosis 1944, espionage accusation, beatification 2000.'],
     ['conventions', 'swanson-history', 'C18', 'Printed pp.xvii-xviii: TKBC 1955, TLBC 1971, later CCT affiliation retaining identity; no exact accession dates.'],
-    ['hierarchy', 'catholic-history', 'C19', '1965 hierarchy paragraph: December18 establishment and two ecclesiastical provinces.'],
+    ['hierarchy', 'catholic-history', 'C19', '1965 hierarchy paragraph: December 18 establishment and two ecclesiastical provinces.'],
     ['fellowship', 'eft', 'C20', 'Opening historical paragraphs and 1956/1969 chronology: June 19 recognition distinguished from September 9 license.'],
     ['fellowship-scholarship', 'swanson-history', 'C20', 'Printed pp.xvii-xviii: fellowship/cooperation and formalization 1969; compressed legal chronology.'],
-    ['thai-revision', 'tbs-1971', 'C21', 'Edition/project paragraphs: 1954 project,1967 NT,1971 whole Bible; Thai stylists and interconfessional terminology.'],
+    ['thai-revision', 'tbs-1971', 'C21', 'Edition/project paragraphs: 1954 project, 1967 NT, 1971 whole Bible; Thai stylists and interconfessional terminology.'],
     ['self-government', 'wcc', 'C22', 'First historical paragraph: CCT fully self-governing 1976; distinguish earlier mission transfers.'],
-    ['autonomy-limits', 'swanson-history', 'C22', 'Printed pp.xiii-xiv:1957/1961 mission transfer and continuing foreign senior influence.'],
+    ['autonomy-limits', 'swanson-history', 'C22', 'Printed pp.xiii-xiv: 1957/1961 mission transfer and continuing foreign senior influence.'],
     ['urban-charismatic', 'swanson-history', 'C23', 'Printed pp.xvi-xvii: Romklao April 1979 and Hope of Bangkok September 1981; independent/Pentecostal diversification.'],
     ['kuy', 'tbs-history', 'C24', 'Chronology entry 1979: Kuy-language New Testament, not central Thai or Khmer.'],
-    ['karen-measures', 'hayami', 'C25', 'Visible footnote3: Karen Baptist baptized11,500 in 1988; Catholic baptized9,630 in 1986; abstract on religious diversity. Full article/registers not inspected.'],
-    ['hospital-closure', 'adventist', 'C26', '"Geographic expansion (1930s-1950s)", Haadyai paragraph: hospital 1954,closure 1987, attributed personnel shortage.'],
+    ['karen-measures', 'hayami', 'C25', 'Visible footnote 3: Karen Baptist baptized 11,500 in 1988; Catholic baptized 9,630 in 1986; abstract on religious diversity. Full article/registers not inspected.'],
+    ['hospital-closure', 'adventist', 'C26', '"Geographic expansion (1930s-1950s)", Haadyai paragraph and footnote 38: hospital 1954, closure 1987, attributed personnel shortage. Underlying older encyclopedia entry unread; date/explanation provisional.'],
     ['orthodox-dates', 'orthodox', 'C27', '"Historical Background": parish decision 1999-12-28 and diocese 2019-02-26; Thailand/Cambodia/Laos/Myanmar jurisdiction.'],
     ['standard-edition', 'tbs-standard', 'C28', 'Standard edition 2011 and revision 1997-2010 paragraphs; language, grammar/register and textual scholarship.'],
     ['affiliation', 'religious-freedom', 'C29', 'I. Religious Demography: December 2021 RAD 1.2% Christian; midyear 2023 US population estimate is a different reference period.'],
     ['legal-context', 'religious-freedom', 'C30', 'II. Legal Framework, opening constitutional and registration/missionary-quota paragraphs, as reported for 2023.'],
     ['early-bible-conflict', 'tbs-history', 'C31', '1834/1843/1883/1940 entries; compare incompatible early-edition dates on Society 1971 edition page. Held, not a settled early-first claim.'],
-    ['affiliates', 'eft', 'C32', 'Paragraph explicitly reporting 2018:196,177 affiliates age 15+,2,729 congregations; not national/all-age/current.'],
+    ['affiliates', 'eft', 'C32', 'Paragraph explicitly reporting 2018: 196,177 affiliates age 15+, 2,729 congregations; not national/all-age/current.'],
     ['refugee-service', 'wcc', 'C33', 'Social-work/refugee paragraph: Cambodian refugee relief 1970s, later Myanmar work and overseas Asian links.'],
-    ['bradley-work', 'bradley', 'C34', 'ChapterV opening and July 1835 diary passages: arrival, dispensary/language/household labor and court/poor-patient contact.']
+    ['bradley-work', 'bradley', 'C34', 'Chapter V opening and July 1835 diary passages: arrival, dispensary/language/household labor and court/poor-patient contact.']
 ].map(([id, source_id, research, locator]) => ({
     id, source_id, research, locator,
-    accessed: ['eft', 'adventist', 'bradley'].includes(source_id) ? '2026-11-25' : '2026-11-24'
+    accessed: ['eft', 'adventist', 'longway', 'bradley'].includes(source_id) ? '2026-11-25' : '2026-11-24'
 }));
 
 function event(id, research, lane_id, start, title, summary, caveat, evidence, options = {}) {
@@ -70,7 +73,7 @@ function event(id, research, lane_id, start, title, summary, caveat, evidence, o
         date: {start, end: start, kind: 'point', basis: 'Source-reported event date at stated precision', ...options.date},
         testimony: options.testimony || 'Later institutional or scholarly account; source date and inspected extent in evidence.',
         claim_citations: {date: evidence, summary: evidence},
-        review: 'qualified',
+        review: options.review || 'qualified',
         aliases: options.aliases || []
     };
 }
@@ -90,7 +93,7 @@ const events = [
     event('siam-vicariate', 'H04', 'catholic', '1669', 'Vicariate and care institutions',
         'Rome establishes the Siam vicariate in an existing Catholic field; the institutional history also dates a hospital project to 1669.',
         'The 2019 anniversary commemorates a jurisdiction, not the arrival of all Christianity. Historical territories differ from today\'s borders.',
-        ['vicariate']),
+        ['vicariate', 'vicariate-anniversary']),
     event('ayutthaya-upheaval', 'H05', 'society', '1688', 'Coup, mobilization and arrests',
         'The 1688 upheaval involves royal succession, French imperial diplomacy/troops, Buddhist and popular mobilization, and imprisonment of Christians.',
         'Strathern distinguishes phases and overlapping motives. Neither pure xenophobia nor a single religious or political cause explains every arrest.',
@@ -154,7 +157,7 @@ const events = [
     event('adventist-permanent-mission', 'H21', 'adventist', '1918', 'Permanent Adventist mission',
         'Ezra and Inez Longway arrive in December 1918; mission organization follows in 1919, alongside Chinese migrant/lay links including the Tan family.',
         'Earlier literature work and lay networks are distinct from permanent foreign personnel. This is Adventist institutional history, not an all-Christian origin.',
-        ['adventist-formation'], {date: {end: '1919', kind: 'uncertain', basis: 'Permanent personnel December 1918; organization 1919'}, testimony: 'Adventist encyclopedia 2026, linked original periodicals not independently read', aliases: ['Tan Thiam Tsua', 'Tan Thian Tsua', 'Phang Yin Hee', 'Forrest Pratt', 'Seventh-day Adventist']}),
+        ['adventist-formation', 'longway-service'], {date: {end: '1919', kind: 'uncertain', basis: 'Permanent personnel December 1918; organization 1919'}, testimony: 'Adventist biographies 2020/2026, linked original periodicals not independently read', aliases: ['Tan Thiam Tsua', 'Tan Thian Tsua', 'Phang Yin Hee', 'Forrest Pratt', 'Seventh-day Adventist']}),
     event('church-in-siam-union', 'H22', 'protestant', '1934-04', 'Church in Siam union',
         'Presbyterian congregations and some Baptist and Churches of Christ congregations form the Church in Siam, later the Church of Christ in Thailand.',
         'Not every Protestant joined. Complete partner/accession acts are not read, so no complete merger genealogy is drawn.',
@@ -209,8 +212,8 @@ const events = [
         ['karen-measures'], {date: {end: '1988', kind: 'uncertain', basis: 'Two different population observations,1986 and 1988'}, testimony: 'Hayami 1996, visible footnote3; underlying registers not read', aliases: ['Karen', 'demography', 'statistics']}),
     event('haadyai-hospital-closure', 'H35', 'adventist', '1987', 'Haadyai hospital closes',
         'The Adventist encyclopedia records the closure in 1987 of a hospital opened in 1954, attributing it to personnel shortages.',
-        'An institution\'s explanation, not independently established causation. Closure of one facility is not extinction of Adventist churches.',
-        ['hospital-closure'], {testimony: 'Adventist encyclopedia 2026', aliases: ['Hat Yai', 'Haadyai', 'medicine', 'decline']}),
+        'Provisional date and explanation from one institutional history; its underlying encyclopedia entry remains unread. Closure of one facility is not extinction of Adventist churches.',
+        ['hospital-closure'], {review: 'provisional', testimony: 'Adventist encyclopedia 2026', aliases: ['Hat Yai', 'Haadyai', 'medicine', 'decline']}),
     event('orthodox-parish-decision', 'H36', 'orthodox', '1999-12-28', 'Moscow parish decision',
         'The Russian Orthodox account dates a synodal decision to establish a Bangkok parish to December 28, 1999.',
         'Modern institutional/diaspora beginning, not proven continuity from ancient Eastern Christians or the origin of all Orthodoxy in Thailand.',
@@ -224,7 +227,7 @@ const events = [
         'One ecclesial perspective; original act and other Orthodox accounts not inspected. Jurisdiction is not the modern Thai state or a Catholic/Protestant successor.',
         ['orthodox-dates'], {date: {basis: 'Synodal establishment date reported by diocese'}, aliases: ['Russian Orthodox', 'Cambodia', 'Laos', 'Myanmar']}),
     event('reported-affiliation-snapshot', 'H39', 'society', '2021-12', 'Reported Christian affiliation',
-        'The 2023 religious-freedom report quotes Thailand\'s Religious Affairs Department:1.2% Christian affiliation in December 2021.',
+        'The 2023 religious-freedom report quotes Thailand\'s Religious Affairs Department: 1.2% Christian affiliation in December 2021.',
         'Administrative reported affiliation; questionnaire/method not supplied. The separate 2023 population estimate is not a matching denominator. This is not a 2026 share or a growth series.',
         ['affiliation'], {date: {basis: 'December 2021 statistical reference month, not report publication'}, testimony: '2023 report published 2024', aliases: ['RAD', 'demography', 'statistics', 'population']}),
     event('legal-framework-snapshot', 'H40', 'society', '2023', 'Religious framework as reported',
@@ -239,9 +242,9 @@ const events = [
 
 module.exports = {
     title: 'Church in Thailand',
-    scope: 'Selected episodes,1567-2023. Multiple traditions and changing borders; not one national church tree or comprehensive coverage.',
+    scope: 'Selected episodes, 1567-2023. Multiple traditions and changing borders; not one national church tree or comprehensive coverage.',
     geography: 'Present Thailand organizes the selection; Ayutthaya/Siam, northern Lanna/Laos Mission and transborder jurisdictions retain historical meanings.',
-    limits: 'Sources retrieved 2026-11-24/25; latest selected context 2023, affiliation referenceDecember 2021. Writer self-review, not independent scholarly or Thai-language review. Southern/Isan histories, ordinary worship, other traditions and comparable growth/retention remain incomplete. Conflicting early Bible dates and undated continuities are held, not UI-hidden. No copied media or vulnerable contemporary rosters/locations.',
+    limits: 'Sources retrieved 2026-11-24/25; latest selected context 2023, affiliation reference December 2021. Writer self-review, not independent scholarly or Thai-language review. Southern/Isan histories, ordinary worship, other traditions and comparable growth/retention remain incomplete. Conflicting early Bible dates and undated continuities are held, not UI-hidden. No copied media or vulnerable contemporary rosters/locations.',
     lanes: [
         {id: 'catholic', label: 'Catholic communities'},
         {id: 'protestant', label: 'Protestant and independent'},
@@ -255,7 +258,7 @@ module.exports = {
     held: {
         H07: 'Return under Rama I follows 1782 but no exact arrival date is checked; do not substitute a reign boundary.',
         H41: 'Early Thai Bible dates conflict within Society histories; original edition imprints/critical bibliography needed.',
-        H42: 'About 1920 northern translation suspension remains approximate; H19 retains incomplete-OTqualification without a new false point.',
+        H42: 'About 1920 northern translation suspension remains approximate; H19 retains the incomplete-OT qualification without a new false point.',
         H43: 'EFT 2018 age 15+ self-reported affiliates are a researched measurement comparison, not a national/current timeline total.'
     }
 };

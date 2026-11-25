@@ -1,7 +1,7 @@
 # Sources, inspected passages and reuse
 
 Evidence was retrieved on **2026-11-24** (S01-S13) and
-**2026-11-25** (S16-S17 and C34); S14-S15 were accessed on 2026-11-24.
+**2026-11-25** (S16-S18 and C34); S14-S15 were accessed on 2026-11-24.
 Dates below distinguish publication from access
 and an event from later testimony. All claims are original paraphrases.
 No photographs, maps, scan pages, Bible text or substantial quotations are
@@ -29,6 +29,7 @@ are published. No downloaded research PDF is a repository/public asset.
 | S15 | US Department of State, [2023 Report on International Religious Freedom: Thailand](https://www.ecoi.net/en/document/2111971.html), 2024 report, ecoi.net mirror | Executive Summary, I Religious Demography, II Legal Framework; direct State page returned 403. Political/diplomatic report, not independent census or original law. Mirror listing date is not event date. No vulnerable refugee details reused. |
 | S16 | Evangelical Fellowship of Thailand, [ประวัติความเป็นมา / History](https://eft.or.th/history/), undated evolving page | Thai opening history and dated chronology through 1969, plus 2018 statistical paragraph. Self-report distinguishes June recognition/September license, unlike S03 compression. No membership roster, addresses or current officials reproduced. English paraphrase needs Thai review. |
 | S17 | Osée Kamgang Toho, [Thailand](https://encyclopedia.adventist.org/article?id=CATD), *Encyclopedia of Seventh-day Adventists*, first published 2026-03-02 | Origins, First Permanent Missionaries, Development Phase, Indigenous Pioneers, Geographic Expansion passages and headline statistics. Institutional/mission-centered history; linked underlying periodicals not independently read. Erroneous state-religion/general demographic assertions rejected. No pictures, modern personnel/location list or text copied. |
+| S18 | Milton Hook, [Longway, Ezra Leon and Inez Ruth; later Florence Ione](https://encyclopedia.adventist.org/article?id=98IV), *Encyclopedia of Seventh-day Adventists*, 2020-08-06 | Opening three Mission Service paragraphs read: Christmas 1918 arrival, mission roles/language study and Chinese Singapore-trained coworkers. Earlier institutional biography, not independent of Adventist source networks; underlying travel documents not read. No family pictures or personal roster copied. |
 
 ## Claim-specific passage index
 
@@ -39,7 +40,7 @@ independent witnesses.
 | Citation | Source and precise locator | Supported claims and limits |
 | --- | --- | --- |
 | C01 | S01, opening paragraphs, Portuguese contacts and first Dominican mission | H01: resident Dominicans 1567; earlier chaplains and alleged 1544 royal conversion unconfirmed. Not first-ever Christian person in this geography. |
-| C02 | S01, Lambert/Pallu arrival and Ayutthaya synod paragraphs | H02-H03: Lambert 1662-08-22; Pallu 1664; synod 1664, seminary 1665. Not one national church founding. |
+| C02 | S01, Lambert/Pallu arrival and Ayutthaya synod paragraphs; nearby 1669/1674 community paragraph | H02-H03: Lambert 1662-08-22; Pallu 1664; synod 1664, seminary 1665; older Portuguese/Asian Christian communities, without assigning the later community count to 1662. Not one national church founding. |
 | C03 | S01, 1669 jurisdiction and hospital paragraphs; S12 anniversary opening | H04: vicariate 1669, Catholic medical/clerical institutions. Anniversary is later testimony, not origin of all Christianity. |
 | C04 | S02 accepted manuscript pp.1-4, 42-45; S01, Narai/1688 paragraphs | H05: French conversion diplomacy, troops, royal succession, Buddhist/lay mobilization and Christian arrests. Motives/time phases differ; no single-cause persecution explanation. |
 | C05 | S01, fall of Ayutthaya, Taksin and Rama I paragraphs | H06-H07: 1767 destruction/dispersal; missionary expulsion then return under Rama I after 1782. H07 year is lower bound/context, not a documented exact return date. |
@@ -51,7 +52,7 @@ independent witnesses.
 | C11 | S04 pp.192-202 | H16-H17: formal girls' school 1879; Chantah, Buk, Kom Tip and Nyawt Huan as workers/teachers; Kom Tip head assistant 1888, Nyawt Huan full teacher 1892. Agency plus domestic-discipline constraints. |
 | C12 | S01, modern education, sisters and hospital paragraphs | H18/H20: Assumption 1885; St Paul de Chartres sisters 1898 and St Louis Hospital/local women religious formation. Not origin of all Thai education or medicine. |
 | C13 | S05 pp.30-33, 35-36 | H19/H42: press 1892, first products 1893, northern Thai NT completed 1914, incomplete OT and suspension about 1920. Causal effect on Bible use explicitly not proven; discrepancy over final NT book not resolved. |
-| C14 | S17, First Permanent Missionaries; Origins; Indigenous Pioneers | H21: Longways December 1918, organization 1919; earlier colportage distinguished; Tan family Chinese links. "First" confined to permanent Adventist mission, not Thai Christianity. |
+| C14 | S17, First Permanent Missionaries; Origins; Indigenous Pioneers; S18, Mission Service first three paragraphs | H21: Longways December 1918 (S18 specifies Christmas), organization 1919; earlier colportage distinguished; Tan family Chinese links. S18 also supplies language study/Chinese Singapore-trained coworkers. "First" confined to permanent Adventist mission, not Thai Christianity. |
 | C15 | S03 pp.xiii-xv | H22/H23/H26: CCT union April 1934 with some Baptist/Churches of Christ partners; Japanese invasion December 1941 and Thai initiative; Presbyterian mission transfer 1957, Disciples 1961; John Sung 1938/1939, Boonmark. Partner rosters/acts not read. |
 | C16 | S11, biography opening on war/police pressure, death paragraphs and embedded homily 1989-10-22 section 4 | H24: seven deaths 1940, Philip 16 December, six women 26 December; women religious and laity led after priest's expulsion. Biography connects coercion with war against French Indochina; that explanation remains attributed. Precise days from later biography, not homily; public selection uses year. |
 | C17 | S12, Nicholas Bunkerd Nitbamrung paragraph | H25: imprisoned under espionage accusations, died of tuberculosis 1944, beatified 2000. Does not settle criminal case or quantify wartime repression. |
@@ -63,7 +64,7 @@ independent witnesses.
 | C23 | S03 pp.xvi-xvii | H32: Romklao April 1979, Hope of Bangkok September 1981; independent/charismatic urban diversification. Personal movement does not establish a CCT corporate split. |
 | C24 | S08, 1979 entry | H33: Kuy-language NT 1979. Distinct from central/northern Thai and from Cambodian Khmer; translators/reception unresearched. |
 | C25 | S14 abstract and footnote 3 | H34: Karen Baptist baptized 11,500 (1988), Catholic baptized 9,630 (1986); unequal years, definitions/excluded children, underlying lists not read. No summed total, growth or population conversion rate. |
-| C26 | S17, Geographic expansion (1930s-1950s), Haadyai paragraph | H35: hospital opened 1954, closed 1987 with staff shortage attributed by institution. Decline/closure of one facility, not extinction of Adventism or independent causal finding. |
+| C26 | S17, Geographic expansion (1930s-1950s), Haadyai paragraph and footnote 38 | H35: hospital opened 1954, closed 1987 with staff shortage attributed by institution. Closure date/explanation provisional pending unread older encyclopedia entry; not extinction of Adventism or independent causal finding. |
 | C27 | S13, Historical Background | H36/H38: parish synodal decision 1999-12-28 and diocese 2019-02-26, transborder jurisdiction. No medieval succession. |
 | C28 | S10, 2011 edition and 1997-2010 revision paragraphs | H37: edition designation 2011 versus completion 2010. No copied biblical text or claim to every minority language. |
 | C29 | S15, I Religious Demography | H39: December 2021 RAD figure 1.2% Christian as reported in 2023 report. Administrative affiliation, methods unavailable; separate 2023 population denominator not used. |
@@ -85,6 +86,13 @@ independent witnesses.
 - S11's general 1881 Christian-origin sentence conflicts with earlier evidence;
   S17's state-religion/2% statements conflict with the more explicitly dated
   S15. Those errors are not silently propagated.
+- S17 gives incompatible 2025 membership totals and 1925/1930 first-ethnic-Thai
+  baptism dates; none is adopted. H35's 1987 hospital closure remains explicitly
+  provisional pending its cited older encyclopedia entry (footnote 38).
+  [Hat Yai Focus's retrospective](https://www.hatyaifocus.com/forums-detail/1300/),
+  2019-07-20, opening hospital-history paragraphs read on 2026-11-25, supports
+  a former hospital/1954 opening, but does not independently establish 1987
+  or the staffing explanation; its modern site/address/pictures are not copied.
 - A newly indexed Thai Chiang Mai Theological Journal pioneer article could
   not be fetched (DNS failure). Thai government religious-survey catalog
   returned403; search metadata suggests an age 13+ universe, not the RAD

@@ -43,7 +43,7 @@ to the source, not automatically to the event.
 | H32 | 1979-04 to 1981-09 / uncertain paired formations / scholarship 1999 | Bangkok; Romklao/Hope, independent/charismatic Christians | Urban diversification; personal departures cannot prove complete corporate split histories. C23 | Q |
 | H33 | 1979 / point, edition year / Thai Society history | Kuy-language readers / cross-border language context | Kuy NT milestone, not Khmer or all minority-language Bible. Translators/reception missing. C24 | Q |
 | H34 | 1986 to 1988 / uncertain observation years /1996 footnote | Karen Baptists/Catholics in Thailand | Two baptized counts with different years/populations; no total, rate or growth chart. C25 | Q |
-| H35 | 1987 / point, year / institutional history 2026 | Haadyai/Hat Yai; Adventist medicine | Hospital closure attributed to staffing; facility ending not church extinction. C26 | Q |
+| H35 | 1987 / point, year / institutional history 2026 | Haadyai/Hat Yai; Adventist medicine | Provisional hospital closure date/staffing explanation pending underlying encyclopedia; facility ending not church extinction. C26 | P |
 | H36 | 1999-12-28 / point, synodal-decision day / S13 retrospective | Bangkok/transnational Orthodox diaspora | Moscow parish decision, not ancient local continuity or all Orthodox origins. C27 | Q |
 | H37 | 2011 / point, edition year / Thai Society | Thai Bible revision | Standard edition follows 1997-2010 work; completion/edition dates different. C28 | Q |
 | H38 | 2019-02-26 / point, synodal-decision day / S13 | Thailand/Cambodia/Laos/Myanmar jurisdiction | Diocese established according to Moscow account; original act/other Orthodox perspectives not read. C27 | Q |

@@ -23,10 +23,11 @@ fs.mkdirSync(output, {recursive: true});
                 const box = element.getBoundingClientRect();
                 return Math.min(box.bottom, innerHeight) - Math.max(box.top, 0) >= Math.min(180, innerHeight * .4);
             }), 'Timeline retains useful initial visible area');
-            await page.goto(base + '/thailand-history/?from=1860&to=1900');
-            await page.locator('#graph svg').waitFor();
-            const period = await page.locator('#visible-range').innerText();
+            await page.screenshot({path: path.join(output, `thailand-initial-${viewport.width}.png`)});
             for (const orientation of ['horizontal', 'vertical']) {
+                await page.goto(base + '/thailand-history/?from=1860&to=1900');
+                await page.locator('#graph svg').waitFor();
+                const period = await page.locator('#visible-range').innerText();
                 await page.locator('#' + orientation).click();
                 await page.waitForTimeout(200);
                 assert.equal(await page.locator('#visible-range').innerText(), period);
@@ -36,6 +37,7 @@ fs.mkdirSync(output, {recursive: true});
                 await details.waitFor({state: 'visible'});
                 const members = details.locator('.cluster-members button');
                 if (await members.count()) await members.first().click();
+                const selectedRange = await page.locator('#visible-range').innerText();
                 assert(await details.locator('article').isVisible());
                 assert(await details.locator('.source-credit a').count());
                 assert(await details.locator('.critical-note').isVisible());
@@ -43,9 +45,9 @@ fs.mkdirSync(output, {recursive: true});
                 assert(await details.locator('.sources li').first().isVisible());
                 if (viewport.width < 1100) {
                     await page.locator('#back-to-timeline').click();
-                    assert(await page.evaluate(() => document.activeElement !== document.body));
+                    assert(await page.evaluate(() => document.getElementById('graph').contains(document.activeElement)));
                 }
-                assert.equal(await page.locator('#visible-range').innerText(), period);
+                assert.equal(await page.locator('#visible-range').innerText(), selectedRange);
                 assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
                 await page.screenshot({path: path.join(output, `thailand-${orientation}-${viewport.width}.png`)});
             }
@@ -63,6 +65,7 @@ fs.mkdirSync(output, {recursive: true});
             await details.locator('.record-evidence > summary').click();
             assert.match(await details.innerText(), /1912/);
             assert.match(await details.locator('.sources a').first().getAttribute('href'), /archive.org/);
+            await page.screenshot({path: path.join(output, `thailand-evidence-${viewport.width}.png`)});
             if (viewport.width < 1100) await page.keyboard.press('Escape');
             await page.getByRole('button', {name: 'Search', exact: true}).click();
             await page.locator('#search').fill('Kom Tip');
