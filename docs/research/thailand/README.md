@@ -13,14 +13,16 @@ peer-reviewed history.
 | Exclusions | A national institutional tree, exhaustive congregational/clerical lists, unverified medieval origins, present vulnerable-community locations, private personal data and copied assets |
 | Delivery | Research and a separately authorized selected `/thailand-history/` timeline, reusing the shared country-history mechanism |
 
-Read [synthesis](synthesis.md), [chronology](chronology.md),
+Read [audit and repairs](audit.md), [synthesis](synthesis.md), [chronology](chronology.md),
 [entities and relationships](entities.md), [sources and passage index](sources.md),
 [coverage and uncertainties](coverage.md), and [conversion handoff](handoff.md).
-H01-H44 are a research roster, not 44 denominations. The handoff distinguishes
+H01-H50 are a research roster, not 50 denominations. The handoff distinguishes
 selected records from researched-but-held material and never-researched gaps.
 
 The method is [country-church-history](../../../.github/skills/country-church-history/SKILL.md).
 The later independent-sequence [audit skill](../../../.github/skills/country-church-history-audit/SKILL.md)
-has **not** been completed by this packet. English paraphrases of Thai material
+was applied separately on **2026-11-25** after the foundation merged, with
+external answers frozen before packet reading. It is an independent-sequence
+writer audit, not independent scholarly approval. English paraphrases of Thai material
 need Thai-speaking review. Source availability and OCR are not substitutes for
 critical editions or independent corroboration.

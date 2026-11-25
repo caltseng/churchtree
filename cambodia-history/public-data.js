@@ -3,7 +3,7 @@ window.COUNTRY_HISTORY_DATA = {
   "title": "Church in Cambodia",
   "scope": "Selected episodes, 1555-2025: Catholic, Protestant, Orthodox and other Christian histories, with language, lay agency, displacement and reconstruction. Introductory, not comprehensive.",
   "geography": "Present-day Cambodia is the research boundary, not the whole Khmer Empire. Earlier vicariate territory crossed into Laos and southern Vietnam; Thailand, France and diaspora locations are cross-border context. State names and borders changed.",
-  "limits": "42 selected milestones from 50 researched rows; eight rows are held outside this public roster, not hidden by filters. Missing research includes wider Pentecostal/Baptist/Adventist/Anglican histories, Khmer scholarship, minority-language communities, Catholic laywomen, primary constitutions, and post-2023 law. Bunong evidence is abstract-only. Salas death years conflict (1976/1977). No comparable national growth series is established: the NIS census-variable page warns its data-file frequencies are not population statistics, and church/WRD/NGO estimates differ. USDOS describes registration and proselytism/inducement restrictions in 2023, not current legal advice. Evidence retrieved November 24, 2026; latest selected event June 28, 2025. Writer self-review is not independent scholarly approval.",
+  "limits": "46 selected milestones from 57 researched rows; eleven rows are held outside this public roster, not hidden by filters. The November 25, 2026 independent-sequence writer audit adds women, local negotiation and jurisdiction evidence, not comprehensive coverage or independent scholarly approval. Wider Pentecostal/Baptist/Adventist/Anglican histories, Khmer scholarship, minority-language communities, women beyond these exemplars, primary constitutions and post-2023 law remain incomplete. Bunong evidence is abstract-only. Salas consecration days (April 14/15) and death years (1976/1977) conflict. No comparable national growth series is established: the NIS census-variable page warns its data-file frequencies are not population statistics, and church/WRD/NGO estimates differ. USDOS describes registration and proselytism/inducement restrictions in 2023, not current legal advice. Evidence retrieved November 24-25, 2026; latest selected event June 28, 2025.",
   "lanes": [
     {
       "id": "catholic",
@@ -214,22 +214,24 @@ window.COUNTRY_HISTORY_DATA = {
       "lane_id": "texts",
       "title": "Complete Khmer Bible distributed",
       "summary": "Alliance history dates distribution of the complete Hammond Bible to 1954, after translation completion in 1952.",
-      "caveat": "Completion, publication and distribution are different acts. Khmer collaborators are not erased by the Hammond label.",
+      "caveat": "Completion, publication and distribution are different acts. OMF reports publication in 1953; original imprints remain unchecked. Khmer collaborators are not erased by the Hammond label.",
       "date": {
         "start": "1954",
         "end": "1954",
         "kind": "point",
-        "basis": "First edition distribution year"
+        "basis": "Distribution in Alliance history, not a resolved first-printing year"
       },
       "testimony": "",
       "claim_citations": {
         "date": [
           "c05",
-          "c06"
+          "c06",
+          "c43"
         ],
         "summary": [
           "c05",
-          "c06"
+          "c06",
+          "c43"
         ]
       },
       "review": "qualified",
@@ -516,23 +518,25 @@ window.COUNTRY_HISTORY_DATA = {
       "id": "salas-consecration",
       "lane_id": "catholic",
       "title": "Salas consecrated bishop",
-      "summary": "Joseph Chhmar Salas is consecrated bishop shortly before the Khmer Rouge take Phnom Penh.",
-      "caveat": "Consecration is distinct from appointment. Sources give competing death years, 1976 and 1977; neither is silently selected.",
+      "summary": "Joseph Chhmar Salas is consecrated bishop shortly before the Khmer Rouge take Phnom Penh; inspected accounts give April 14 or April 15.",
+      "caveat": "The two-day window records conflicting days, not a two-day ceremony. Consecration is distinct from appointment. Death years also conflict, 1976 and 1977.",
       "date": {
-        "start": "1975-04-15",
+        "start": "1975-04-14",
         "end": "1975-04-15",
-        "kind": "point",
-        "basis": "Consecration day in the Catholic encyclopedia"
+        "kind": "uncertain",
+        "basis": "Local Catholic history April 14 versus encyclopedia April 15; original register not inspected"
       },
       "testimony": "",
       "claim_citations": {
         "date": [
           "c14",
-          "c19"
+          "c19",
+          "c39"
         ],
         "summary": [
           "c14",
-          "c19"
+          "c19",
+          "c39"
         ]
       },
       "review": "qualified",
@@ -568,8 +572,8 @@ window.COUNTRY_HISTORY_DATA = {
       "id": "survival-refugees-return",
       "lane_id": "context",
       "title": "Survival, border camps and return",
-      "summary": "Domestic believers, refugee-camp networks and returning diaspora Christians sustain and reshape communities while restrictions continue.",
-      "caveat": "These are different trajectories, not a foreign refoundation of an extinct church or a claim that all religions were uniformly banned throughout.",
+      "summary": "Domestic believers, refugee-camp networks and returning diaspora Christians sustain and reshape communities; Alliance history describes a surviving pastor visiting scattered believers.",
+      "caveat": "Different trajectories, not a foreign refoundation or uniform ban on all religions. Mission accounts disagree on universal leader loss and use incompatible killed versus killed-or-fled percentages; none is adopted.",
       "date": {
         "start": "1979",
         "end": "1990",
@@ -580,15 +584,23 @@ window.COUNTRY_HISTORY_DATA = {
       "claim_citations": {
         "date": [
           "c15",
-          "c25"
+          "c25",
+          "c43",
+          "c44"
         ],
         "summary": [
           "c15",
-          "c25"
+          "c25",
+          "c43",
+          "c44"
         ]
       },
       "review": "qualified",
-      "aliases": []
+      "aliases": [
+        "Yourng South",
+        "Yourng Soth",
+        "refugees"
+      ]
     },
     {
       "id": "translation-resumes-exile",
@@ -838,7 +850,7 @@ window.COUNTRY_HISTORY_DATA = {
       "lane_id": "texts",
       "title": "Modern Khmer Bible published",
       "summary": "The full interconfessional Modern Khmer Bible is published following exile translation and work after return.",
-      "caveat": "Publication is not proof that one text caused all growth. No copyrighted Bible text is reproduced.",
+      "caveat": "Publication does not prove that one text caused all growth or displaced older versions. Wong reports some evangelicals' loyalty to KHOV; inconsistent version wording in her footnote is not silently resolved. No Bible text reproduced.",
       "date": {
         "start": "1997",
         "end": "1997",
@@ -848,14 +860,21 @@ window.COUNTRY_HISTORY_DATA = {
       "testimony": "",
       "claim_citations": {
         "date": [
-          "c18"
+          "c18",
+          "c46"
         ],
         "summary": [
-          "c18"
+          "c18",
+          "c46"
         ]
       },
       "review": "qualified",
-      "aliases": []
+      "aliases": [
+        "KHOV",
+        "Khmer Old Version",
+        "KSV",
+        "Khmer Standard Version"
+      ]
     },
     {
       "id": "orthodox-pastoral-care",
@@ -1074,6 +1093,119 @@ window.COUNTRY_HISTORY_DATA = {
       },
       "review": "qualified",
       "aliases": []
+    },
+    {
+      "id": "cambodian-sisters-first-profession",
+      "lane_id": "catholic",
+      "title": "Women teach and enter religious life",
+      "summary": "Ang Songvat (Marie) and Bun Tharin (Teresa) make their first profession after marketplace encounters through Bun Nath, catechesis and sewing/literacy teaching with Thai sisters.",
+      "caveat": "Participant and institutional accounts, not the beginning of Cambodian women's Christian agency. Baptism, novitiate and first profession are different stages; no present residence or group roster is published.",
+      "date": {
+        "start": "2004",
+        "end": "2004",
+        "kind": "point",
+        "basis": "First profession year shared by accounts; not first contact or baptism"
+      },
+      "testimony": "Undated local history and 2023 participant account",
+      "claim_citations": {
+        "date": [
+          "c39",
+          "c40"
+        ],
+        "summary": [
+          "c39",
+          "c40"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "Lovers of the Cross",
+        "Ang Songvat",
+        "Bun Tharin",
+        "Bun Nath",
+        "Sister Marie",
+        "Sister Teresa"
+      ]
+    },
+    {
+      "id": "villagers-negotiate-irrigation",
+      "lane_id": "service",
+      "title": "Villagers negotiate irrigation work",
+      "summary": "In a 2015 interview, Ponchaud recalls villagers initially rejecting a canal proposal associated with Khmer Rouge labor, negotiating road work and later undertaking irrigation work in May 2000.",
+      "caveat": "His account makes local refusal and collective labor visible, but is not independent proof of consent, safety or impact. Numerical benefits and broad cultural judgments are not adopted.",
+      "date": {
+        "start": "2000-05",
+        "end": "2000-05",
+        "kind": "point",
+        "basis": "May 2000 work as recalled in January 2015, not interview publication date"
+      },
+      "testimony": "Interview 2015-01-06, revised March, published 2015-03-23",
+      "claim_citations": {
+        "date": [
+          "c41"
+        ],
+        "summary": [
+          "c41"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "Francois Ponchaud",
+        "social action",
+        "local agency"
+      ]
+    },
+    {
+      "id": "orthodox-jurisdiction-reassigned",
+      "lane_id": "other",
+      "title": "Orthodox jurisdiction reassigned",
+      "summary": "The Moscow account reports Cambodia and Laos parishes reassigned to Bishop Sergiy of Solnechnogorsk when a separate Thailand deanery is established.",
+      "caveat": "A jurisdictional change in one Orthodox institution, not Cambodian civil registration, a doctrinal split or a history of all Orthodox Christians.",
+      "date": {
+        "start": "2016-10-21",
+        "end": "2016-10-21",
+        "kind": "point",
+        "basis": "Reported synodal jurisdiction decision; original act not read"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c42"
+        ],
+        "summary": [
+          "c42"
+        ]
+      },
+      "review": "qualified",
+      "aliases": []
+    },
+    {
+      "id": "orthodox-regional-diocese",
+      "lane_id": "other",
+      "title": "A four-country Orthodox diocese",
+      "summary": "The Moscow account establishes the Diocese of Thailand with Cambodia, Laos and Myanmar as well as Thailand; the episcopal title includes Bangkok and Phnom Penh.",
+      "caveat": "Transborder ecclesiastical jurisdiction, not a Cambodian national church or descent from earlier Catholic and Protestant missions. Original act and other Orthodox perspectives remain uninspected.",
+      "date": {
+        "start": "2019-02-26",
+        "end": "2019-02-26",
+        "kind": "point",
+        "basis": "Reported synodal establishment day"
+      },
+      "testimony": "",
+      "claim_citations": {
+        "date": [
+          "c42"
+        ],
+        "summary": [
+          "c42"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "Diocese of Thailand",
+        "Bangkok",
+        "Phnom Penh"
+      ]
     }
   ],
   "relations": [
@@ -1248,6 +1380,54 @@ window.COUNTRY_HISTORY_DATA = {
       "published": "Program overview 1994-2019",
       "url": "https://macmillan.yale.edu/gsp/research-collection/cambodian-genocide-program",
       "perspective": "Scholarly archival-program context; linked judgments, demographic report and primary security files not separately read. No victim database or location data reused."
+    },
+    {
+      "id": "s19",
+      "title": "Community history",
+      "publisher": "Catholic Church in Cambodia",
+      "published": "Undated; narrative through 2010",
+      "url": "https://catholiccambodia.org/?page_id=22496&lang=en",
+      "perspective": "Local Catholic institutional retrospective. Salas consecration April 14 conflicts with the encyclopedia April 15. Obvious 1068 typo and damaged first-priest sentence are not adopted."
+    },
+    {
+      "id": "s20",
+      "title": "Cambodia: Two Sisters and a Church Reborn",
+      "publisher": "Alessandra De Poli / Comboni Youth, credited De Poli/MM",
+      "published": "2023-11-07",
+      "url": "https://www.comboniyouth.org/witnesses/cambodia-two-sisters-and-a-church-reborn.html",
+      "perspective": "Catholic participant testimony about marketplace catechesis, teaching and religious formation. Apparently syndicated, not independent witnesses across copies. Sweeping first-Christian claim rejected; no current residential/group details or images reused."
+    },
+    {
+      "id": "s21",
+      "title": "Cambodge - Entretien avec Francois Ponchaud",
+      "publisher": "Gilbert Lam and Nicolas Leron / Nonfiction.fr",
+      "published": "2015-03-23; interview 2015-01-06, revised March",
+      "url": "https://www.nonfiction.fr/article-7498-cambodge-entretien-avec-franois-ponchaud.htm",
+      "perspective": "French participant interview, not independent evaluation. Village refusal and labor complicate a one-sided aid narrative. Claimed impact totals, health/environment claims and generalizations about Buddhism or Khmer character are not adopted."
+    },
+    {
+      "id": "s22",
+      "title": "Diocese of Thailand: Historical Background",
+      "publisher": "Russian Orthodox Diocese of Thailand",
+      "published": "Undated",
+      "url": "https://dioceseofthailand.org/english-version/",
+      "perspective": "Moscow institutional account of regional jurisdiction, not original synodal acts or all Orthodox perspectives. No contemporary parish, clergy or contact roster reused."
+    },
+    {
+      "id": "s23",
+      "title": "The Growth of Christianity in Cambodia",
+      "publisher": "OMF International",
+      "published": "2021-08-27; updated January 2022",
+      "url": "https://omf.org/ca/the-growth-of-christianity-in-cambodia/",
+      "perspective": "Mission narrative citing Cormack 1997, not a demographic survey. Its 1953 publication differs from the Alliance distribution date; killed-or-fled estimate is not comparable to killed alone. Universal leader-loss claim not adopted."
+    },
+    {
+      "id": "s24",
+      "title": "Khmer Standard Version: title, edition and rights metadata",
+      "publisher": "eBible.org / Bible Society in Cambodia",
+      "published": "Page last updated 2012-11-24; copyright 1997, 2005",
+      "url": "https://ebible.org/find/details.php?id=khm",
+      "perspective": "Title/rights and format metadata inspected, not textual collation. Copyright years and digital update are not independently verified printing/completion dates. No Bible text or translated extracts reproduced."
     }
   ],
   "citations": [
@@ -1478,6 +1658,54 @@ window.COUNTRY_HISTORY_DATA = {
       "source_id": "s17",
       "locator": "Paragraph \"The Methodist Church in Cambodia\" and complete five-agency partner list: denomination in 2018; subsequent membership and attendance measures remain distinct.",
       "accessed": "2026-11-24"
+    },
+    {
+      "id": "c39",
+      "source_id": "s19",
+      "locator": "Community history, April 14, 1975 paragraph, contrasted with C14 April 15; March 2004 first-vows paragraph. Do not silently correct unrelated 1068 typo.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "c40",
+      "source_id": "s20",
+      "locator": "Marketplace, catechetical journey, sewing/writing teaching and final formation paragraphs: baptisms 1994-1996, novitiate 2002, first profession 2004. No national first-Christian inference.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "c41",
+      "source_id": "s21",
+      "locator": "Questions \"Que faites-vous depuis ?\", \"Avec quelle entreprise ?\" and \"Y avait-il un ingenieur ?\": refusal of canal proposal, road-work negotiation, May 2000 collective digging. Participant testimony in January 2015, not verified impact or a model of consensual labor.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "c42",
+      "source_id": "s22",
+      "locator": "Historical Background, October 21, 2016 and February 26, 2019 paragraphs: Cambodia/Laos reassignment, then four-country diocese. Not civil registration or ecclesial descent.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "c43",
+      "source_id": "s23",
+      "locator": "Opening Bible paragraph (1953 publication) and fourth paragraph (90% killed or fled, all leaders). Compare C05 completion/distribution and C44 surviving pastor; neither percentage adopted.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "c44",
+      "source_id": "s03",
+      "locator": "Paragraph \"Even after the fall\": Yourng South, later spelled Yourng Soth on the same page, visits scattered Christians; camps/returnee leadership in subsequent paragraphs. No independent resolution of spelling or national survivor census.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "c45",
+      "source_id": "s24",
+      "locator": "Title, Language, Abbreviation, format and copyright blocks: KSV, Central Khmer, 1997/2005 copyright, no notes/intros; last updated 2012-11-24 is digital metadata, not publication date.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "c46",
+      "source_id": "s04",
+      "locator": "pp.25-26 and notes 9-12: some evangelical interlocutors favor KHOV; indigenous-tune Khmer hymn collection associated with Barnabas Mam and Sarin Sam; devotional practices. Footnote 9 version reversal remains unresolved; no universal preference or hymn publication year inferred.",
+      "accessed": "2026-11-25"
     }
   ]
 };

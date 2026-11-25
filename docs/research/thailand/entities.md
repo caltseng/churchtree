@@ -26,6 +26,10 @@ modern congregation roster is compiled. Citations resolve in [sources](sources.m
 | E19 | Adventist mission/institutions and lay network | December 1918/1919 permanent organization, Tan family Chinese links, medical/educational expansion and provisionally reported 1987 facility closure | C14,C26 |
 | E20 | Jurisdiction; Moscow-linked Diocese of Thailand | 1999 parish decision,2019 diocese; includes neighboring countries, not all Orthodox | C27 |
 | E21 | Measurement/legal containers; RAD, baptized Karen, EFT15+ | Different reference dates/age universes; never institutions in a genealogy | C25,C29-C30,C32 |
+| E22 | Lay workers; two schoolgirls at Ban Chang Kam, pa Wan | 1885 mixed-sex worship leadership; 1890 theological training/hospital ministry. Girls unnamed rather than identities invented; pa Wan retains source name, not inferred ordination | C35-C36 |
+| E23 | Person/jurisdiction; Jacques Louis Cheng, Chanthaburi | Contemporary French papal letter reports Thai leadership/territorial organization by 1944-10-29. Source name retained; exact effective acts/consecration need records | C38 |
+| E24 | Self-identified Christian tradition; Church of Jesus Christ of Latter-day Saints / LDS | Short 1854 mission distinct from early-1960s expatriate worship; no uninterrupted corporate bridge or Protestant split established | C39-C41 |
+| E25 | Translator/text; Srilaksana Suntarahut, Thai Book of Mormon | 1970 review committee and principal translator of October 1976 publication in church chronology; not a Thai Bible edition, full team/reception unknown | C40 |
 
 ## Relationship register
 
@@ -45,6 +49,11 @@ modern congregation roster is compiled. Citations resolve in [sources](sources.m
 | R12 | E20 -> earlier Catholic/Protestant missions; purported descent | **Rejected**: common country/Christian identity does not supply institutional continuity | C01,C06,C27 |
 | R13 | Ancient Eastern Christians -> E01/E20; proposed medieval bridge | **Missing research/unsupported**, not absence proven; no edge or invented ancient national foundation | C01,C27 |
 | R14 | E19 -> medical facility; operation/closure 1954/1987 | Institutional report, with closure date/explanation provisional pending underlying entry; not ending of Adventist church | C26 |
+| R15 | E22 -> village worship/hospital ministry; leadership/training 1885/1890 | Supported bounded association through mission-based scholarship, not universal ordination or corporate descent | C35-C36 |
+| R16 | E02/Bangkok -> Chanthaburi/E23; jurisdiction/local leadership reported 1944 | Primary letter supports prior organization and Thai leader, but not exact effective date/complete intermediate act. **No production lineage edge** | C38 |
+| R17 | E24's 1854 visit -> early-1960s expatriate community; proposed uninterrupted continuation | **Unsupported bridge**: institution's two attestations do not establish continuous intervening activity | C39 |
+| R18 | E25 -> E24 scripture; translation/review 1970-1976 | Qualified institutional attribution, not sole authorship or guaranteed reception, and no Bible-edition or church-union relationship | C40 |
+| R19 | E24 -> older Catholic/Protestant churches; proposed corporate split | **Rejected**: shared country/Christian self-identification supplies no institutional ancestry | C39-C40 |
 
 Public timelines deliberately have no structural lineage relations. Event
 sequence, shared lane, geographical overlap and personal affiliation do not

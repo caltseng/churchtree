@@ -76,6 +76,27 @@ fs.mkdirSync(output, {recursive: true});
             await page.locator('#search-panel button').click();
             assert.equal(await page.locator('#record-list article:visible').count(), 1);
             assert.match(await page.locator('#local-women-teachers').innerText(), /1888.*1892/s);
+            await page.goto(base + '/thailand-history/?view=text');
+            await page.getByRole('button', {name: 'Search', exact: true}).click();
+            await page.locator('#search').fill('Srilaksana Suntarahut');
+            await page.locator('#search-panel button').click();
+            assert.equal(await page.locator('#record-list article:visible').count(), 1);
+            assert.match(await page.locator('#thai-lds-text-publication').innerText(), /not another Thai Bible edition/);
+            if (viewport.width === 1440 || viewport.width === 320) {
+                for (const id of ['girls-lead-village-worship', 'pa-wan-theological-training',
+                    'cheng-local-leadership-letter', 'lds-short-mission-visit', 'thai-lds-text-publication']) {
+                    await page.goto(base + '/thailand-history/#' + id);
+                    await details.getByRole('heading', {
+                        name: require('./data.cjs').events.find(event => event.id === id).title, exact: true
+                    }).waitFor();
+                    assert(await details.locator('.source-credit a').count());
+                    assert(await details.locator('.critical-note').isVisible());
+                    await details.locator('.record-evidence > summary').click();
+                    assert(await details.locator('.sources li').first().isVisible());
+                    await page.screenshot({path: path.join(output, `thailand-${id}-${viewport.width}.png`)});
+                    if (viewport.width < 1100) await page.keyboard.press('Escape');
+                }
+            }
             await page.goto(base + '/thailand-history/?from=oops');
             assert.match(await page.locator('#period-error').innerText(), /Use whole years/);
             assert.deepEqual(errors, []);
@@ -84,7 +105,7 @@ fs.mkdirSync(output, {recursive: true});
         }
         const noJS = await browser.newPage({javaScriptEnabled: false});
         await noJS.goto(base + '/thailand-history/#reported-affiliation-snapshot');
-        assert.equal(await noJS.locator('#record-list article').count(), 40);
+        assert.equal(await noJS.locator('#record-list article').count(), 45);
         assert.match(await noJS.locator('#reported-affiliation-snapshot').innerText(), /1.2%.*December 2021/s);
         await noJS.locator('#reported-affiliation-snapshot .record-evidence > summary').click();
         assert.match(await noJS.locator('#reported-affiliation-snapshot .sources').innerText(), /Religious Demography/);
@@ -93,7 +114,7 @@ fs.mkdirSync(output, {recursive: true});
         await offline.route('https://d3js.org/**', route => route.abort());
         await offline.goto(base + '/thailand-history/');
         assert.match(await offline.locator('#load-status').innerText(), /D3 could not load/);
-        assert.equal(await offline.locator('#record-list article:visible').count(), 40);
+        assert.equal(await offline.locator('#record-list article:visible').count(), 45);
         await offline.close();
     } finally { await browser?.close(); server.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

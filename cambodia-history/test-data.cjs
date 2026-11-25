@@ -6,7 +6,7 @@ test('Cambodia selection exactly reconciles researched and held rows without fal
     validate(canonical);
     const chronology = fs.readFileSync(path.join(repo, 'docs/research/cambodia/chronology.md'), 'utf8');
     const rows = [...chronology.matchAll(/^\| (KH\d+) \|(.+)$/gm)];
-    assert.equal(rows.length, 50);
+    assert.equal(rows.length, 57);
     for (const [, id, text] of rows) {
         const selected = canonical.events.filter(e => e.research === id);
         assert.equal(selected.length, text.includes('| Selected') ? 1 : 0, id);
@@ -18,7 +18,15 @@ test('Cambodia selection exactly reconciles researched and held rows without fal
     assert.equal(byId['women-correspondence-report'].date.start, '1975-06-02');
     assert.match(byId['women-correspondence-report'].date.basis, /report/);
     assert.match(byId['salas-consecration'].caveat, /1976 and 1977/);
+    assert.equal(byId['salas-consecration'].date.kind, 'uncertain');
+    assert.equal(byId['salas-consecration'].date.start, '1975-04-14');
+    assert.equal(byId['salas-consecration'].date.end, '1975-04-15');
+    assert(byId['salas-consecration'].claim_citations.date.includes('c14'));
+    assert(byId['salas-consecration'].claim_citations.date.includes('c39'));
+    assert.match(byId['villagers-negotiate-irrigation'].testimony, /2015/);
+    assert.equal(byId['villagers-negotiate-irrigation'].date.start, '2000-05');
     assert(!canonical.events.some(e => e.research === 'KH26'));
+    assert(!canonical.events.some(e => ['KH55', 'KH56', 'KH57'].includes(e.research)));
     assert.equal(byId['khmer-coadjutor-appointment'].date.start, '2025-06-28');
     for (const mutate of [
         d => d.events.pop(),

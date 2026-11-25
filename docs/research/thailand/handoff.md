@@ -5,12 +5,13 @@ research-only [skill](../../../.github/skills/country-church-history/SKILL.md).
 Use the [coverage standard](../../spec/historical-coverage-standard.md),
 [audit checklist](../../spec/data-audit-checklist.md) and
 [data model](../../architecture/data-model.md). Writer review is not the
-later independent-sequence country-history audit.
+independent scholarly approval. The separate independent-sequence
+[audit](audit.md) now records its pre-packet answers, repairs and limits.
 
 ## Boundary and selection
 
-The packet has **44** H rows and **34** claim-locator C rows. The canonical
-`thailand-history/data.cjs` selects **40** events: H01-H06, H08-H40, H44.
+The packet has **50** H rows and **41** claim-locator C rows. The canonical
+`thailand-history/data.cjs` selects **45** events: H01-H06, H08-H40, H44-H49.
 Its `held` ledger explicitly accounts for:
 
 | Research row | Disposition, not public/UI-hidden |
@@ -19,6 +20,7 @@ Its `held` ledger explicitly accounts for:
 | H41 | Early Thai Bible dates conflict within one institution; original imprints needed. |
 | H42 | About 1920 suspension remains approximate; H19 includes incomplete-OT caveat. No new point date imposed. |
 | H43 | 2018 EFT age 15+ count is researched comparison, not a national/current demographic milestone. |
+| H50 | June 1972 offensive-image incident/sentences in LDS institutional account; no court/news corroboration read, no image or definitive judicial finding published. |
 
 Every event carries its H crosswalk, date kind/basis, later testimony,
 critical caveat, aliases, review disposition and separate date/summary
@@ -31,6 +33,17 @@ The Adventist 1918-1919 interval uses year bounds because the organization
 month is unknown; December 1918 arrival precision remains in prose/basis.
 This accommodates the shared model's equal-precision bound requirement
 without inventing a 1919 month.
+
+Audit additions append, not renumber: H45/`girls-lead-village-worship`,
+H46/`pa-wan-theological-training`, H47/`cheng-local-leadership-letter`,
+H48/`lds-short-mission-visit`, H49/`thai-lds-text-publication`.
+H47 plots **letter testimony**, not an inferred erection, appointment or
+consecration day. H15/`northern-toleration-edict` retains its translated date
+and now exposes Morishima's competing interpretation in C37. H48's four-month
+stay does not create an exact departure date or bridge to the 1960s.
+Society/Language are thematic lanes for the separately identified LDS
+visit/scripture, not assimilation into Protestant ancestry or a seventh
+renderer mode. All original stable public IDs remain.
 
 ## Model, build and UX contract
 
@@ -58,7 +71,7 @@ No copied asset is needed.
 
 ## Conversion review and acceptance
 
-Check exact 44-row selected/held accounting, unique semantic IDs, real calendar
+Check exact 50-row selected/held accounting, unique semantic IDs, real calendar
 bounds, all cited sources/locators, no invented point dates or lineage, and
 one-to-one generated/public selection. Test claims' evidence and mechanical
 schema separately. Preserve differing reference populations and names.
@@ -73,5 +86,7 @@ equate automation with historical review.
 Remaining priority A claims are qualified or held, not smuggled into structural
 edges. Priority B gaps in [coverage](coverage.md) remain real, especially
 local-language testimony, southern/Isan history, independent churches,
-ordinary worship and comparable demographics. Later audit must independently
-research its answers before comparing this packet or expanding selection.
+ordinary worship beyond the added examples and comparable demographics.
+The audit independently researched before comparison, then added evidence;
+it did not certify comprehensive coverage or inspect every foundation source
+afresh. Source-specific read extents remain binding.

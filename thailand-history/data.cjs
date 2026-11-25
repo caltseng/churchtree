@@ -3,7 +3,7 @@ const sources = [
     ['catholic-history', 'History of the Catholic Church in Thailand', 'Fr. Surachai Chumsriphan / Archdiocese of Bangkok', 'Undated', 'https://www.catholic.or.th/eng/history/history.html', 'Catholic institutional retrospective; original acts not inspected. Earlier hypothetical contacts and erroneous totals are not adopted.'],
     ['strathern', 'Thailand\'s first revolution? Religious mobilisation and the Ayutthaya rebellion of 1688', 'Alan Strathern / Modern Asian Studies 56(4), 1295-1328', 'Online 2021-07-22', 'https://ora.ox.ac.uk/objects/uuid:5d1d3346-b1c2-42df-ad82-b8468997e762', 'Critical scholarship; accepted-manuscript pagination. European narratives need source criticism; no single motive explains every arrest.'],
     ['swanson-history', 'Protestantism in Thailand', 'Herbert R. Swanson / White Lotus, introduction to McFarland, Historical Sketch', '1999', 'https://www.herbswanson.com/_files/ugd/4cfa9b_d271568d10cc44cb9cc44c95d370df41.pdf', 'Historian in CCT Office of History; introduction vii-xxvi inspected through scan OCR, not every underlying archive.'],
-    ['swanson-women', 'A New Generation: Missionary Education and Changes in Women\'s Roles in Traditional Northern Thai Society', 'Herbert R. Swanson / Sojourn 3(2), 187-206', '1988-08', 'https://www.herbswanson.com/_files/ugd/4cfa9b_1ad976d77fa24ddebecc15d6ee8b910c.pdf', 'Scholarship using mission records; pp.188-202 inspected through scan OCR, not the women\'s full personal archives.'],
+    ['swanson-women', 'A New Generation: Missionary Education and Changes in Women\'s Roles in Traditional Northern Thai Society', 'Herbert R. Swanson / Sojourn 3(2), 187-206', '1988-08', 'https://www.herbswanson.com/_files/ugd/4cfa9b_1ad976d77fa24ddebecc15d6ee8b910c.pdf', 'Scholarship using mission records. Foundation read pp.188-202 by OCR; audit independently read all pp.187-206 visually from the author-hosted scan. Not the women\'s full personal archives or directly inspected cited letters.'],
     ['swanson-translation', 'Reflections on the History of Bible Translation in Northern Thailand', 'Herbert R. Swanson / Bulletin: United Bible Societies 170/171, 30-36', '1994', 'https://www.herbswanson.com/_files/ugd/4cfa9b_cf112f2e2cbc4dc79b6048a2b6282513.pdf', 'Insider scholarly critique, read through scan OCR. Author explicitly cannot prove a simple causal relation to later Bible use.'],
     ['mcgilvary', 'A Half Century Among the Siamese and the Lao', 'Daniel McGilvary / Fleming H. Revell', '1912', 'https://archive.org/details/ahalfcenturyamo00mcgigoog', 'Participant missionary memoir and its English proclamation translation, read in scan-derived OCR. Not the original Thai royal document.'],
     ['wcc', 'Church of Christ in Thailand', 'World Council of Churches', 'Undated', 'https://www.oikoumene.org/member-churches/church-of-christ-in-thailand', 'Ecumenical institutional self-presentation, not independent demographic or legal verification; undated totals excluded.'],
@@ -18,7 +18,10 @@ const sources = [
     ['eft', 'History of the Evangelical Fellowship of Thailand (Thai)', 'Evangelical Fellowship of Thailand', 'Undated, evolving page', 'https://eft.or.th/history/', 'Institutional self-report. Recognition, license and cooperation dates distinguished; 2018 count is affiliated age 15+, not national/all-age. No current roster reused.'],
     ['adventist', 'Thailand', 'Osée Kamgang Toho / Encyclopedia of Seventh-day Adventists', '2026-03-02', 'https://encyclopedia.adventist.org/article?id=CATD', 'Adventist institutional history; linked original periodicals not independently inspected. General demographic/state-religion errors excluded; no copied images.'],
     ['longway', 'Longway, Ezra Leon and Inez Ruth; later Florence Ione', 'Milton Hook / Encyclopedia of Seventh-day Adventists', '2020-08-06', 'https://encyclopedia.adventist.org/article?id=98IV', 'Earlier institutional biography; Mission Service opening inspected. Shares Adventist source networks, not independent confirmation of every later country-history claim.'],
-    ['bradley', 'A Sketch of the Life and Character of Mrs. Emelie Royce Bradley, chapter V', 'Nancy Royce / American Tract Society; Digital Bangkok Recorder transcription', 'c.1856 per edition header; footer says c.1865', 'https://digitalbangkokrecorder.com/publications/emelie_royce_bradley/chapter-5/', 'Family biography with diary extracts, via undated library typescript. Edition-date discrepancy and transcription limits; anti-Buddhist/class judgments not adopted.']
+    ['bradley', 'A Sketch of the Life and Character of Mrs. Emelie Royce Bradley, chapter V', 'Nancy Royce / American Tract Society; Digital Bangkok Recorder transcription', 'c.1856 per edition header; footer says c.1865', 'https://digitalbangkokrecorder.com/publications/emelie_royce_bradley/chapter-5/', 'Family biography with diary extracts, via undated library typescript. Edition-date discrepancy and transcription limits; anti-Buddhist/class judgments not adopted.'],
+    ['morishima', 'The Influence and Challenges of Christianity on Religious Freedom in Thailand: Final Research Report', 'Morishima Yutaka / KAKEN project 19K00085, Aoyama Gakuin University', 'FY2024 report, published 2026-01-16', 'https://kaken.nii.ac.jp/report/KAKENHI-PROJECT-19K00085/19K00085seika/', 'English project-summary argument actually read, not full Japanese report/monograph. Interprets the edict as primarily protecting Americans and highlights later persecution. Distinguish contested intention/enforcement from the memoir translation\'s broad language.'],
+    ['cheng-letter', 'Letter to the Regent of Thailand', 'Pius XII / Holy See; Actes et Documents, vol.11, pp.596-597', '1944-10-29', 'https://www.vatican.va/content/pius-xii/fr/letters/documents/hf_p-xii_lett_19441029_reggente-tailandia.html', 'Full French diplomatic letter inspected: primary papal representation of jurisdiction/local leadership and request for protection, not neutral proof of government practice. Its 1555 origin statement differs from resident-mission evidence and is not adopted.'],
+    ['lds-history', 'Thailand: Church Chronology', 'Church of Jesus Christ of Latter-day Saints', 'Undated evolving institutional chronology', 'https://www.churchofjesuschrist.org/study/history/global-histories/thailand/th-chronology?lang=eng', 'Full English chronology inspected; selected historical entries only. Institutional first claims confined to this church, not all Thai Christians. No images, contemporary convert roster, meeting addresses or temple ritual content reused.']
 ].map(([id, title, publisher, published, url, perspective]) => ({id, title, publisher, published, url, perspective}));
 
 const citations = [
@@ -61,10 +64,17 @@ const citations = [
     ['early-bible-conflict', 'tbs-history', 'C31', '1834/1843/1883/1940 entries; compare incompatible early-edition dates on Society 1971 edition page. Held, not a settled early-first claim.'],
     ['affiliates', 'eft', 'C32', 'Paragraph explicitly reporting 2018: 196,177 affiliates age 15+, 2,729 congregations; not national/all-age/current.'],
     ['refugee-service', 'wcc', 'C33', 'Social-work/refugee paragraph: Cambodian refugee relief 1970s, later Myanmar work and overseas Asian links.'],
-    ['bradley-work', 'bradley', 'C34', 'Chapter V opening and July 1835 diary passages: arrival, dispensary/language/household labor and court/poor-patient contact.']
+    ['bradley-work', 'bradley', 'C34', 'Chapter V opening and July 1835 diary passages: arrival, dispensary/language/household labor and court/poor-patient contact.'],
+    ['girls-worship', 'swanson-women', 'C35', 'Printed p.197: two schoolgirls led mixed-sex village worship at Ban Chang Kam in 1885; later Chiang Rai women held church positions in 1899. Mediated mission accounts, not universal authorization.'],
+    ['pa-wan-training', 'swanson-women', 'C36', 'Printed p.196: pa Wan entered theological training in 1890 for hospital religious work; growth of Bible-women work after 1905. Not ordination or general equal access.'],
+    ['toleration-interpretation', 'morishima', 'C37', 'FY2024 final report, English summary, final clause on American safety and later persecutions. Published 2026-01-16, not an 1878 primary text or full argument inspected.'],
+    ['thai-catholic-leadership', 'cheng-letter', 'C38', 'Opening three paragraphs report Chanthaburi constituted from Bangkok and Jacques Louis Cheng placed at its head; following paragraph requests protection. Letter dated 1944-10-29, not erection/appointment/consecration instrument.'],
+    ['lds-visit', 'lds-history', 'C39', 'April 6, 1854 entry: Elam Luddington arrived and stayed four months; early-1960s entry describes expatriate worship. No demonstrated uninterrupted bridge between them.'],
+    ['lds-translation', 'lds-history', 'C40', 'January 19, 1970 translation-review committee and October 1976 Thai Book of Mormon publication entries: Srilaksana Suntarahut as principal translator. Not a Bible edition or evidence for every translator\'s role.'],
+    ['lds-cultural-conflict', 'lds-history', 'C41', 'June 1972 entry: two missionaries\' offensive Buddha-statue photograph, arrests and reported six-month sentences. Institutional admission, court/news files not read; image and identities not reproduced.']
 ].map(([id, source_id, research, locator]) => ({
     id, source_id, research, locator,
-    accessed: ['eft', 'adventist', 'longway', 'bradley'].includes(source_id) ? '2026-11-25' : '2026-11-24'
+    accessed: Number(research.slice(1)) >= 35 || ['eft', 'adventist', 'longway', 'bradley'].includes(source_id) ? '2026-11-25' : '2026-11-24'
 }));
 
 function event(id, research, lane_id, start, title, summary, caveat, evidence, options = {}) {
@@ -132,8 +142,8 @@ const events = [
         ['executions-memoir', 'teachers-family'], {testimony: 'McGilvary memoir 1912; source spelling Noi Sunya; Swanson 1988', aliases: ['Noi Sunya', 'Nan Chai', 'Chantah']}),
     event('northern-toleration-edict', 'H15', 'society', '1878-10-08', 'Northern toleration proclamation',
         'McGilvary reproduces a proclamation addressing religious choice, marriage and labor/Sabbath conflict in the Chiang Mai, Lamphun and Lampang context.',
-        'Date from his later English translation. Original Thai/calendar equivalence and local enforcement remain unchecked; not a modern nationwide liberty guarantee.',
-        ['edict'], {date: {basis: 'October 8, 1878 in the translated proclamation\'s date clause'}, testimony: '1912 memoir, printed pp.216-217'}),
+        'Date from a later English translation, not a checked Thai original. Morishima\'s research summary interprets the measure as primarily American protection and notes later persecution; broad wording did not ensure uniform liberty.',
+        ['edict', 'toleration-interpretation'], {date: {basis: 'October 8, 1878 in the translated proclamation\'s date clause'}, testimony: '1912 memoir pp.216-217; FY2024 research summary published 2026-01-16'}),
     event('northern-girls-school', 'H16', 'society', '1879', 'Girls\' school formalized',
         'Mary Campbell and Edna Cole lead the formal school after earlier classes; local women including Chantah and Buk work and teach within its development.',
         'No exact appointment date is assigned to every local worker. Agency and paid work coexisted with missionary domestic discipline.',
@@ -237,14 +247,34 @@ const events = [
     event('crossborder-refugee-service', 'H44', 'society', '1970', 'Cross-border refugee service',
         'The WCC profile records CCT aid for Cambodian refugees in the 1970s, with later Myanmar refugee work and Asian Christian links.',
         'Decade bounds locate the historical account, not continuous operation dates. Later work has no invented start/end; no present vulnerable-community sites are published.',
-        ['refugee-service'], {date: {end: '1979', kind: 'uncertain', basis: 'Source says 1970s; decade bounds, not service duration'}, aliases: ['Cambodia', 'Myanmar', 'refugees', 'social action']})
+        ['refugee-service'], {date: {end: '1979', kind: 'uncertain', basis: 'Source says 1970s; decade bounds, not service duration'}, aliases: ['Cambodia', 'Myanmar', 'refugees', 'social action']}),
+    event('girls-lead-village-worship', 'H45', 'society', '1885', 'Schoolgirls lead village worship',
+        'Swanson describes two schoolgirls leading worship for women and men at Ban Chang Kam, showing lay religious work beyond the classroom.',
+        'A scholarly account mediated through mission records, not the girls\' own full testimony or proof that all churches authorized women equally. No invented ordination follows.',
+        ['girls-worship'], {testimony: 'Swanson 1988, printed p.197', aliases: ['Ban Chang Kam', 'women', 'lay worship']}),
+    event('pa-wan-theological-training', 'H46', 'society', '1890', 'Pa Wan enters theological training',
+        'Swanson records pa Wan entering theological training for religious work with hospital patients, in a program otherwise attended by men.',
+        'Training and hospital ministry are not ordination or universal equal access. The source\'s name form is retained without an invented full identity.',
+        ['pa-wan-training'], {testimony: 'Swanson 1988, printed p.196', aliases: ['pa Wan', 'Bible women', 'women', 'formation']}),
+    event('cheng-local-leadership-letter', 'H47', 'catholic', '1944-10-29', 'Papal letter on Thai leadership',
+        'Pius XII tells Regent Pridi that Chanthaburi has been constituted from Bangkok under Thai church leader Jacques Louis Cheng, and asks protection for its ministry.',
+        'The letter reports earlier decisions; its date is not their effective date or Cheng\'s episcopal consecration. Papal claims about long-term policy and state goodwill are not independent proof of local freedom.',
+        ['thai-catholic-leadership'], {date: {basis: 'Date of diplomatic testimony reporting prior jurisdiction/leadership decisions'}, testimony: 'Primary French papal letter, 1944-10-29', aliases: ['Jacques Louis Cheng', 'Chanthaburi', 'Pridi']}),
+    event('lds-short-mission-visit', 'H48', 'society', '1854-04-06', 'A short Latter-day Saint mission',
+        'Latter-day Saint institutional history dates Elam Luddington\'s arrival in Bangkok to April 6 and describes a four-month stay.',
+        'An episode within this self-identified Christian tradition, not Thailand\'s first Christianity or demonstrated uninterrupted continuity to expatriate worship in the 1960s. No unverified departure day is plotted.',
+        ['lds-visit'], {date: {basis: 'Institutional arrival day, not the full mission duration'}, aliases: ['Latter-day Saints', 'LDS', 'Elam Luddington']}),
+    event('thai-lds-text-publication', 'H49', 'language', '1976-10', 'A Thai Latter-day Saint scripture',
+        'The church chronology dates publication of the Thai Book of Mormon to October 1976 and credits Srilaksana Suntarahut as principal translator after committee work from 1970.',
+        'This tradition\'s scripture, not another Thai Bible edition or a Protestant institutional offshoot. The account does not independently establish the full team, reception or every translation decision. No text reproduced.',
+        ['lds-translation'], {date: {basis: 'Publication month, distinct from translation-review committee in 1970'}, aliases: ['Srilaksana Suntarahut', 'Book of Mormon', 'Latter-day Saints', 'LDS', 'translation']})
 ];
 
 module.exports = {
     title: 'Church in Thailand',
     scope: 'Selected episodes, 1567-2023. Multiple traditions and changing borders; not one national church tree or comprehensive coverage.',
     geography: 'Present Thailand organizes the selection; Ayutthaya/Siam, northern Lanna/Laos Mission and transborder jurisdictions retain historical meanings.',
-    limits: 'Sources retrieved 2026-11-24/25; latest selected context 2023, affiliation reference December 2021. Writer self-review, not independent scholarly or Thai-language review. Southern/Isan histories, ordinary worship, other traditions and comparable growth/retention remain incomplete. Conflicting early Bible dates and undated continuities are held, not UI-hidden. Protestant includes independent and charismatic histories; Society groups people, service and state. No copied media or vulnerable contemporary rosters/locations.',
+    limits: 'Sources retrieved 2026-11-24/25; latest selected context 2023, affiliation reference December 2021. The November 25 independent-sequence writer audit is not independent scholarly or Thai-language review. Southern/Isan histories, worship beyond the selected examples, other traditions and comparable growth/retention remain incomplete. Conflicting early Bible dates and held research are not UI-hidden events. Protestant includes independent and charismatic histories; Society groups people, service and state, including the separately identified LDS visit. Its later scripture appears under Language, not a Protestant lineage. No copied media or vulnerable contemporary rosters/locations.',
     lanes: [
         {id: 'catholic', label: 'Catholic'},
         {id: 'protestant', label: 'Protestant'},
@@ -259,6 +289,7 @@ module.exports = {
         H07: 'Return under Rama I follows 1782 but no exact arrival date is checked; do not substitute a reign boundary.',
         H41: 'Early Thai Bible dates conflict within Society histories; original edition imprints/critical bibliography needed.',
         H42: 'About 1920 northern translation suspension remains approximate; H19 retains the incomplete-OT qualification without a new false point.',
-        H43: 'EFT 2018 age 15+ self-reported affiliates are a researched measurement comparison, not a national/current timeline total.'
+        H43: 'EFT 2018 age 15+ self-reported affiliates are a researched measurement comparison, not a national/current timeline total.',
+        H50: '1972 offensive-image incident and sentences reported by LDS chronology; judicial/news corroboration not inspected. Discussed as attributed institutional admission, no image or manufactured verdict.'
     }
 };

@@ -47,7 +47,12 @@ the role of Cambodian Buddhist and Christian language consultants. Phnom Penh
 translation and Battambang training were different kinds of work. The
 Battambang Bible Institute's first term is dated September 1, 1925 by the
 centennial account. It distinguishes translation completion in 1952 from
-distribution of the complete Hammond Bible in 1954. This is a Protestant
+distribution of the complete Hammond Bible in 1954. OMF's 2021 history
+(updated January 2022) instead calls 1953 the whole-Bible publication year.
+Those might describe different acts, but original title pages/imprints have
+not been inspected: this packet does not declare them reconciled or replace
+distribution with an unverified first-printing date (C43/KH55).
+This is a Protestant
 milestone, not Christianity's first Cambodian presence.
 [C05, Alliance](https://awf.world/awf-news/a-century-of-gospel-proclamation-in-cambodia/);
 [C06, Wong p.28](https://doi.org/10.46567/ijt.v9i1.170).
@@ -94,8 +99,11 @@ a uniform "modernization" strategy. Only the abstract was accessible; no detaile
 life histories or universal claim about Bunong religion is imported.
 [C11, Scheer abstract](https://hal.science/hal-04042034v1).
 
-Salas's episcopal consecration on April 15, 1975 preceded the Khmer Rouge
-capture of Phnom Penh. His death under the regime is not in question here, but
+Salas's episcopal consecration preceded the Khmer Rouge capture of Phnom Penh.
+The encyclopedia gives April 15, 1975, while the local Catholic community
+history gives April 14 (C39). The public record now retains a two-day uncertain
+window, not a two-day ceremony or a silently selected day. His death under the
+regime is not in question here, but
 the inspected sources give 1976 and 1977; the timeline does not silently select
 one. Christians suffered destruction of schools and churches, forced labor,
 hunger and killing during 1975-1979. These events belong within broader
@@ -119,6 +127,13 @@ restrictions and actual worship until public reopening around 1990.
 [C21, Catholic reopening](https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/cambodia-catholic-church);
 [C25, Alliance persistence](https://awf.world/awf-news/a-century-of-gospel-proclamation-in-cambodia/).
 
+The Alliance account specifically describes a surviving pastor, rendered
+Yourng South and Yourng Soth on the same page, visiting scattered believers.
+That account cannot be combined uncritically with OMF's assertion that all
+leaders died or fled. OMF's "killed or fled" estimate and the Alliance's killed
+estimate also measure different outcomes, not competing samples to average.
+Both are mission narratives, not verified mortality surveys (C43-C44).
+
 ## Reconstruction, service, texts and plural institutions
 
 The interconfessional translation team had lost Khmer colleagues under the
@@ -128,6 +143,27 @@ Khmer Bible in 1997. This is collaboration across confessional boundaries, not
 a Catholic-Protestant merger. Translation choices and reception need fuller Khmer
 textual study; publication does not prove that the Bible alone caused numerical
 growth. [C17-C18, UBS mirror](https://www.biblesociety.sg/modern-khmer-bible-at-the-heart-of-the-revival-of-the-cambodian-church/).
+Wong's pp.25-26 add reception rather than another founding date: some
+evangelical interlocutors remained attached to KHOV, and a Khmer-song
+repertoire using indigenous tunes is associated with Barnabas Mam and Sarin
+Sam. This is not a universal worship inventory or a checked publication year
+for their collection. Footnote 9 reverses the adjacent version wording, so
+no conclusion about which version readers condemned is taken from it (C46).
+The eBible KSV title/rights page adds Central Khmer and 1997/2005 copyright
+metadata, but is not an inspected printing colophon or a textual comparison
+(C45/KH56). Neither edition labels nor translation advocacy establish uptake.
+
+Catholic women's reconstruction also occurred through work, friendship,
+teaching and vocation, not only male clerical replacement. De Poli's 2023
+account follows Bun Nath's marketplace conversations and Ang Songvat/Marie
+and Bun Tharin/Teresa's catechesis, sewing/literacy teaching with Thai sisters,
+family expectations about marriage, 2002 novitiate and 2004 first profession.
+The local church history also dates two Cambodian Lovers of the Cross first
+vows to 2004. These accounts support a bounded formation history, not De
+Poli's sweeping assertion of the first Christian in a supposedly empty
+postwar church. Older survivors are already attested. Current residences and
+group membership are not republished.
+[C39-C40](sources.md#claim-specific-passage-index)
 
 Christian reconstruction was also educational, medical and social, not just
 clerical replacement. Salesian accounts distinguish Thai-camp vocational work
@@ -141,6 +177,16 @@ Prize. Neither organizational success claims nor beneficiary counts are
 independently evaluated here.
 [C20/C23, Don Bosco](https://donboscocambodia.org/history/);
 [C22/C36, Jesuit history](https://oldsite.jcapsj.org/about-us/about-the-jesuit-conference/our-provinces-regions-and-missions/jesuit-mission-in-cambodia/).
+
+Ponchaud's January 2015 interview supplies a different kind of evidence:
+he recalls villagers first refusing canal reconstruction because it evoked
+Khmer Rouge labor, negotiating road work, and later undertaking irrigation
+work in May 2000. Local refusal, memory, knowledge and bargaining complicate
+a donor-to-passive-beneficiary success story. This remains his retrospective
+account, not independently verified consent, labor safety, hydrological
+benefits or a template for development practice. His numerical impact and
+broad cultural/religious judgments are not adopted.
+[C41, development questions](https://www.nonfiction.fr/article-7498-cambodge-entretien-avec-franois-ponchaud.htm)
 
 Postwar Methodist beginnings include diaspora initiative from France and
 Switzerland in 1992, followed by cooperation among five agencies: UMC Global
@@ -161,6 +207,12 @@ cross-border story: its institutional page gives pastoral oversight from
 Thailand in 2001 and registration in 2013, not descent from Catholic or Tang
 Church of the East missions. [C27, English/Khmer chronology](https://www.churchofjesuschrist.org/study/history/global-histories/cambodia/kh-chronology?lang=khm);
 [C28, Orthodox history](https://orthodoxchurchcambodia.org/orthodoxy-in-cambodia/).
+The regional Moscow history further distinguishes the October 21, 2016
+reassignment of Cambodia/Laos parishes from the Thailand deanery and the
+February 26, 2019 establishment of a diocese across four countries. These are
+ecclesiastical reorganizations, not new Cambodian state registrations or
+proof that every Orthodox community shares this jurisdiction. Original
+synodal acts and non-Moscow/local reception remain uninspected (C42).
 
 Wong's 2019 fieldwork makes independent/charismatic congregations and women
 leaders visible while documenting different rules for ordination. Her
