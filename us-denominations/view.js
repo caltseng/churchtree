@@ -130,7 +130,7 @@
     });
     return {whole, sum, total, slices, colors: new Map(slices.map(slice => [slice.id, slice.fill]))};
   }
-  function row(data, state, id, model, staticMode) {
+  function row(data, state, id, model, staticMode, staticSources) {
     const record = data.records[id];
     const target = {...state, group: id};
     const expandable = Boolean(panelFor(data, target));
@@ -144,7 +144,7 @@
       <div class="row-label">${name}<strong class="national-value">${estimate(record)}</strong></div>
       ${record.status === 'threshold' ? '<small>Upper threshold; no slice.</small>' : ''}
       ${['unavailable', 'suppressed'].includes(record.status) ? `<small>${esc(record.reason)}; no slice.</small>` : ''}
-      ${sourceDetail(record)}</div>`;
+      ${staticSources ? staticSources(record) : sourceDetail(record)}</div>`;
   }
   function renderPie(data, state, panel, model) {
     const record = data.records[state.group];
@@ -254,7 +254,7 @@
       ${sourceLine(data, [record.source])}${info(record.label, `${recordNotes(record)}
       ${Object.hasOwn(data.interactiveStrings, state.group) ? precisionDetail : ''}${context(data)}`)}`}`;
   }
-  function renderAttendance(data, format, staticMode = false) {
+  function renderAttendance(data, format, staticMode = false, staticSources) {
     const attendance = data.attendance;
     return `<h2 id="${staticMode ? 'static-attendance-heading' : 'group-heading'}" tabindex="-1">Religious service attendance</h2>
       <p><strong>${esc(attendance.denominatorLabel)}</strong>. ${esc(attendance.metric)}, excluding weddings and funerals.</p>
@@ -265,11 +265,16 @@
       <thead><tr><th scope="col">Religious group (adult population)</th><th scope="col">Monthly or more often
       <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
       <tbody>${attendance.records.map(record => `<tr data-attendance="${esc(record.id)}">
-        <th scope="row">${esc(record.label)}<details class="row-source"><summary>Source and caveats for ${esc(record.label)}</summary>
-        <p>${citation(record.source)}</p><p>Published label: ${esc(record.sourceLabel)}. ${esc(record.source.caveat)}</p></details></th>
+        <th scope="row">${esc(record.label)}${staticSources ? staticSources(record) : `<details class="row-source"><summary>Source and caveats for ${esc(record.label)}</summary>
+        <p>${citation(record.source)}</p><p>Published label: ${esc(record.sourceLabel)}. ${esc(record.source.caveat)}</p></details>`}</th>
         <td><strong>${esc(record.valueText)}</strong>${!staticMode ? `<div class="bar-track" aria-hidden="true"><span class="bar" style="width:${record.barValue}%"></span></div>` : ''}</td>
       </tr>`).join('')}</tbody></table></div>
-      ${sourceLine(data, [data.sources['attendance-chapter'], data.sources.report])}${info('religious service attendance', `
+      ${staticMode ? `<p>Question: ${esc(attendance.question)} ${link(data.sources[attendance.instrumentSourceId])},
+      ${esc(attendance.instrumentLocator)}. ${esc(attendance.caveat)}</p>
+      <p>${esc(attendance.responseDefinition)} Not denomination-level estimates or virtual attendance.
+      Whole-percent estimates are retained as published, without summing rounded frequency cells.</p>
+      <p>${link(data.sources.report)}, printed p. 165 (PDF p. 166).
+      <a href="#methodology">Study methods and reuse</a>.</p>` : `${sourceLine(data, [data.sources['attendance-chapter'], data.sources.report])}${info('religious service attendance', `
       <p class="panel-source">Pew Research Center (${esc(data.study.publicationDate)}), ${link(data.sources['attendance-chapter'])}.
       Attending religious services in person, table 08-04 (attachment 199166); ${link(data.sources.report)}, printed p. 165 (PDF p. 166).
       Column: NET Monthly or more often; each row's Source gives its precise row.</p>
@@ -285,9 +290,9 @@
       The national margin of error is &plusmn;0.8 percentage points at 95% confidence, not a margin for every subgroup.
       ${link(data.sources.methods)}; ${link(data.sources.classification)}.</p>
       <p class="credit">${esc(data.reuse.disclaimer)}
-      <a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a>; <a href="#methodology">Methods and excerpt reuse limits</a>.</p>`)}`;
+      <a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a>; <a href="#methodology">Methods and excerpt reuse limits</a>.</p>`)}`}`;
   }
-  function renderDemographics(data, state, staticMode = false) {
+  function renderDemographics(data, state, staticMode = false, staticSources) {
     const demographics = data.demographics;
     const population = demographics.populations.find(row => row.id === state.population);
     const dimension = demographics.dimensions.find(row => row.id === population.dimension);
@@ -299,14 +304,16 @@
       <thead><tr><th scope="col">Affiliation</th><th scope="col">% within selected population
       <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
       <tbody>${population.records.map(record => `<tr data-demographic="${esc(record.id)}" data-status="${esc(record.status)}">
-        <th scope="row">${esc(record.label)}<details class="row-source"><summary>Source for ${esc(record.label)}</summary>
-        <p>${citation(record.source)}</p><p>Denominator: ${esc(population.denominatorLabel)}.</p></details></th>
+        <th scope="row">${esc(record.label)}${staticSources ? staticSources(record) : `<details class="row-source"><summary>Source for ${esc(record.label)}</summary>
+        <p>${citation(record.source)}</p><p>Denominator: ${esc(population.denominatorLabel)}.</p></details>`}</th>
         <td><strong>${esc(record.valueText)}</strong>
         ${record.barValue !== null && !staticMode ? `<div class="bar-track" aria-hidden="true"><span class="bar" style="width:${record.barValue}%"></span></div>` : ''}
         ${record.status === 'threshold' ? '<small>Published upper threshold; no numeric bar.</small>' : ''}
         ${record.reason ? `<small>${esc(record.reason)}; no numeric bar.</small>` : ''}</td>
       </tr>`).join('')}</tbody></table></div>
-      <p>${esc(dimension.definition)}</p>
+      ${staticMode ? `<p>${esc(population.nonresponse)} ${esc(population.uncertainty)}</p>
+      <p><a href="#static-demographic-notes">Demographic definitions and caveats</a>;
+      <a href="#methodology">study methods and reuse</a>.</p>` : `<p>${esc(dimension.definition)}</p>
       <p class="coverage">${esc(demographics.caveat)}</p>
       ${sourceLine(data, [population.records[0].source, demographics.questionnaire])}${info(population.label, `
       <p>${esc(population.nonresponse)} ${esc(population.uncertainty)}</p>
@@ -317,27 +324,54 @@
       <p>${esc(dimension.instrumentLocator)} ${link(demographics.questionnaire)}; ${link(data.sources.methods)}; ${link(data.sources.classification)}.
       Religious identity questionnaire: RELIG and associated classification. Gender is self-described, not sex at birth.</p>
       <p class="credit">${esc(data.reuse.disclaimer)}
-      <a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a>. ${esc(demographics.reuseLimits)}</p>`)}`;
+      <a href="${esc(data.reuse.termsUrl)}">Pew Terms of Use</a>. ${esc(demographics.reuseLimits)}</p>`)}`}`;
   }
   function renderStatic(data) {
+    const sources = new Map(), caveats = new Map();
+    function staticSources(record) {
+      const {row, path, caveat, ...source} = record.source;
+      const key = JSON.stringify({...source, caveat});
+      if (!sources.has(key)) sources.set(key, {id: sources.size + 1, source, caveat});
+      const id = sources.get(key).id;
+      if (caveat && !caveats.has(caveat)) caveats.set(caveat, caveats.size + 1);
+      return `<p class="row-source"><a href="#static-source-${id}">Source ${id}</a>;
+        row: ${esc(path ? path.join(' > ') : row)}.${record.sourceLabel && record.sourceLabel !== row ? ` Published label: ${esc(record.sourceLabel)}.` : ''}</p>`;
+    }
     function nested(state) {
       const panel = panelFor(data, state);
       if (!panel) return '';
       return `<section id="static-${state.view}-${state.group}" class="static-panel">
         <h3>${esc(data.records[state.group].label)} &mdash; ${panel.coverage === 'selected' ? 'Published detail' : 'Affiliations'}</h3>
-        <p class="coverage">${panel.coverage === 'selected' ? partial : complete}</p>
-        ${precisionNote(data, [state.group, ...panel.children])}${panelContext(data, state, panel)}
-        <ol class="estimate-list">${panel.children.map(id => `<li>${row(data, state, id, null, true)}
+        <p class="coverage">${panel.coverage === 'selected' ? 'Selected detail, not every group. ' : ''}<a href="#static-${panel.coverage === 'selected' ? 'selected' : 'complete'}">Coverage and rounding</a>.
+        Hierarchy: ${link(data.sources[panel.sourceId])}; ${esc(panel.locator)}.</p>
+        <ol class="estimate-list">${panel.children.map(id => `<li>${row(data, state, id, null, true, staticSources)}
         ${panelFor(data, {...state, group: id}) ? `<details class="nested-detail"><summary>Explore ${esc(data.records[id].label)} &mdash; published children</summary>${nested({...state, group: id})}</details>` : ''}</li>`).join('')}</ol></section>`;
     }
-    return Object.keys(data.lenses).map(view => `<section aria-labelledby="static-${view}-title"><h2 id="static-${view}-title">${esc(data.lenses[view].label)}</h2>
+    const panels = Object.keys(data.lenses).map(view => `<section aria-labelledby="static-${view}-title"><h2 id="static-${view}-title">${esc(data.lenses[view].label)}</h2>
       ${nested({view, group: 'us-adults', format: 'list'})}</section>`).join('') +
-      `<section id="static-attendance" aria-labelledby="static-attendance-heading">${renderAttendance(data, 'list', true)}</section>` +
+      `<section id="static-attendance" aria-labelledby="static-attendance-heading">${renderAttendance(data, 'list', true, staticSources)}</section>` +
       `<section id="static-demographics"><h2>Affiliations within demographic populations</h2>
       <p>One published population at a time; no combined filters or inferred denominations.</p>
       ${data.demographics.populations.map(population => `<details id="static-demographics-${population.id}">
       <summary>${esc(data.demographics.dimensions.find(row => row.id === population.dimension).label)}: ${esc(population.label)}</summary>
-      ${renderDemographics(data, {population: population.id, format: 'list'}, true)}</details>`).join('')}</section>`;
+      ${renderDemographics(data, {population: population.id, format: 'list'}, true, staticSources)}</details>`).join('')}</section>`;
+    return `${panels}<section id="static-notes"><h2>Comparison notes</h2>
+      <p id="static-selected">${partial}</p><p id="static-complete">${complete.replace(' No residual is inferred.', '')}</p>
+      <p>Affiliation values are shares of U.S. adults, not membership rolls or children.
+      Upper thresholds are not zero estimates. Each Source link gives the publisher, date, exact table locator, column and caveats;
+      the row is identified beside the estimate. <a href="#methodology">Methods, classification, precision and reuse</a>.</p>
+      <section id="static-demographic-notes"><h3>Demographic definitions</h3>
+      <p>${esc(data.demographics.caveat)}</p>
+      ${data.demographics.dimensions.map(dimension => `<p><strong>${esc(dimension.label)}</strong>: ${esc(dimension.definition)}
+      ${esc(dimension.instrumentLocator)}</p>`).join('')}
+      <p>${link(data.demographics.questionnaire)}. Religious identity questionnaire: RELIG and associated classification.
+      Gender is self-described, not sex at birth.</p></section>
+      <h3>Source locators</h3>
+      ${[...sources.values()].map(({id, source, caveat}) => `<p id="static-source-${id}"><strong>Source ${id}</strong>:
+      ${esc(source.publisher)} (${esc(source.publicationDate)}), ${link(source)}.
+      ${esc(source.locator)}; column: ${esc(source.column)}.${caveat ? ` <a href="#static-caveat-${caveats.get(caveat)}">Caveat ${caveats.get(caveat)}</a>.` : ''}</p>`).join('')}
+      ${[...caveats].map(([text, id]) => `<p id="static-caveat-${id}"><strong>Caveat ${id}</strong>: ${esc(text)}</p>`).join('')}
+      </section>`;
   }
   return {esc, normalize, readURL, query, ancestors, panelFor, renderView, renderStatic, context, arcPath, pieModel, palette};
 });
