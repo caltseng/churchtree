@@ -57,6 +57,12 @@ Optional fields:
 - profile_citations: field-name-to-citation-ID arrays for the supported profile
   claims; these do not verify unrelated inherited fields automatically
 
+The Church History explorer gives individual `active` records a bold border and
+an "active today" accessible label. Display groups are not historical bodies and
+do not receive this treatment. An unmarked record is not necessarily extinct:
+`unknown` or missing status makes no assertion, and a missing `end_year` does not
+establish that a body still exists. Other explorers do not inherit this treatment.
+
 ### Edge (relationship)
 Represents a lineage relationship between two nodes.
 

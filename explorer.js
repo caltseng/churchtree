@@ -21,6 +21,7 @@
     let graphControl=null,graphViewKey='';
     const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const label = n => n.short_label || n.name;
+    const isActive = n => !n.aggregate && n.current_status === 'active';
     const searchInput = $('search'), searchResults = $('results'), searchStatus = $('search-status');
     const searchMore = $('search-more');
     const searchPageSize = 12;
@@ -346,7 +347,7 @@
             $('scope-title').textContent=mobile.matches?(focus ? label(nodes.get(selected)) + ' · ancestry' : family || 'All branches'):scopeTitle;
             $('scope-title').setAttribute('aria-label',scopeTitle);$('scope-title').title=scopeTitle;
             $('scope-note').textContent = layout === 'horizontal' ? 'Shift + wheel moves through time; +/− or Ctrl + wheel zooms. Nearby records form named groups.' : 'Wheel zooms; drag pans. Nearby records cluster until you zoom in.';
-            timelineControl = (layout === 'horizontal' ? window.renderHorizontalTimeline : window.renderChurchTimeline)({ container: graph, entries: scoped, edges, period, onNode: showNode, onEdge: showEdge, onRange: domain => {
+            timelineControl = (layout === 'horizontal' ? window.renderHorizontalTimeline : window.renderChurchTimeline)({ container: graph, entries: scoped, edges, period, presentation: { isActive }, onNode: showNode, onEdge: showEdge, onRange: domain => {
                     if (!['year-from', 'year-to'].includes(document.activeElement?.id)) {
                         $('year-from').value = Math.floor(domain[0]);
                         $('year-to').value = Math.ceil(domain[1]);
@@ -544,10 +545,10 @@
                 showConnection(e);
             }
         }).append('title').text(e => e.originals.map(x => x.name || x.type).join('; '));
-        const groups = scene.append('g').selectAll('g').data(entries).join('g').attr('class', n => `node ${n.aggregate ? 'aggregate' : ''} ${n.context ? 'context' : ''}${n.id === selected ? ' selected' : ''}`).attr('data-id', n => n.id).attr('transform', n => {
+        const groups = scene.append('g').selectAll('g').data(entries).join('g').attr('class', n => `node ${n.aggregate ? 'aggregate' : ''} ${n.context ? 'context' : ''}${isActive(n) ? ' active' : ''}${n.id === selected ? ' selected' : ''}`).attr('data-id', n => n.id).attr('transform', n => {
             const p = positions.get(n.id);
             return `translate(${p.x},${p.y})`;
-        }).attr('tabindex', 0).attr('role', 'button').attr('aria-label', n => n.name).on('click', (_, n) => {
+        }).attr('tabindex', 0).attr('role', 'button').attr('aria-label', n => n.name + (isActive(n) ? ', active today' : '')).on('click', (_, n) => {
             if (n.family) {
                 family = n.family;
                 focus = null;
