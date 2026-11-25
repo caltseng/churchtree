@@ -12,6 +12,7 @@ assert.deepEqual(data.chapters.map(chapter => chapter.sections.length),
   [10,3,8,2,7,6,6,8,5,4,6,1,3,3,6,7,3,4,7,4,8,7,4,6,6,3,5,7,8,4,5,3,3]);
 const expectedProofs = proofs.chapters.flatMap(chapter => chapter.sections)
   .flatMap(section => section.groups).flatMap(group => group.references);
+assert(expectedProofs.every(ref => !Object.hasOwn(ref, 'url')), 'Proof entries store references, not derived URLs');
 for (const [sourceId, reference] of [
   ['iv.xvii.ii-p3.468', 'Psalms 145:3'],
   ['iv.xvii.ii-p7.644', 'Hebrews 9:15-17'],
@@ -40,11 +41,15 @@ async function run() {
       assert.equal(await page.locator('article:visible').count(), 1);
       assert.equal(await page.locator('.passage').count(), 172);
       assert.equal(await page.locator('#sources[open]').count(), 0, 'Global footer starts collapsed');
+      assert.equal(await page.locator('.proof-credit').count(), 1, 'Proof credit appears once per page');
+      assert.equal(await page.locator('#sources .proof-credit').count(), 1, 'Proof credit lives in the edition note');
       assert.equal(await page.locator('article .pca-scope').count(), 0, 'No repeated global audit caveat');
       assert.equal(await page.locator('.section-index[open]').count(), 0, 'Chapter navigation is prioritized');
       assert.deepEqual(await page.locator('.scripture-proofs li>a:not(.proof-source)').evaluateAll(links =>
         links.map(link => ({ reference: link.textContent, url: link.href }))),
-      expectedProofs.map(({ reference, url }) => ({ reference, url })));
+      expectedProofs.map(({ reference }) => ({
+        reference, url: `https://www.biblegateway.com/passage/?search=${encodeURIComponent(reference)}&version=ASV`,
+      })));
       const readingStyle = await typography(page);
       assert.equal(readingStyle[1], '17px', 'Slightly smaller reading text');
       for (const route of ['wsc', 'wlc']) {
@@ -69,8 +74,10 @@ async function run() {
       await page.locator('#proofs-23-3>summary').focus();
       await page.keyboard.press('Enter');
       assert(await page.locator('#proofs-23-3 li>a').first().isVisible(), 'Keyboard opens clickable proofs');
-      await page.locator('#proofs-23-3 .proof-credit a').click();
+      await page.locator('#sources>summary').focus();
+      await page.keyboard.press('Enter');
       await page.locator('#sources[open]').waitFor({ state: 'visible' });
+      assert(await page.locator('.proof-credit').isVisible(), 'Keyboard reveals the shared proof credit');
       assert(await page.locator('#sources').innerText().then(text => text.includes('bracketed American additions')));
       await page.goto(url + '#note-30-assembly-dissent');
       assert(await page.locator('#note-30-assembly-dissent').isVisible());
@@ -95,6 +102,7 @@ async function run() {
     const page = await browser.newPage({ javaScriptEnabled: false, viewport: { width: 320, height: 568 } });
     await page.goto(url + '#chapter-23');
     assert.equal(await page.locator('article:visible').count(), 33);
+    assert.equal(await page.locator('.proof-credit').count(), 1, 'No-JavaScript page has one proof credit');
     await page.locator('#chapter-23 .chapter-nav-top a').last().click();
     assert.equal(new URL(page.url()).hash, '#chapter-24');
     await page.locator('#proofs-24-1>summary').click();

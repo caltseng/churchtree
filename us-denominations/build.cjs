@@ -86,7 +86,7 @@ function build() {
 <link rel="icon" type="image/svg+xml" href="../assets/brand/logos/main-branch.svg">
 <link rel="stylesheet" href="../theme.css"><script src="../theme.js"></script>
 <link rel="stylesheet" href="../brand.css"><link rel="stylesheet" href="affiliation.css">
-<script defer src="public-data.js"></script><script defer src="view.js"></script><script defer src="controller.js"></script>
+<script defer src="public-data.js"></script><script defer src="../html-escape.js"></script><script defer src="view.js"></script><script defer src="controller.js"></script>
 </head><body><a class="skip-link" href="#main">Skip to U.S. denominations</a>
 <header class="site-header"><a class="main-branch-brand" href="../" aria-label="Main Branch home">
 <img class="main-branch-symbol" src="../assets/brand/logos/main-branch.svg" width="44" height="44" alt="">
@@ -101,7 +101,7 @@ function build() {
 <button type="button" id="back">Back</button><button type="button" id="reset">Reset</button>
 <button type="button" id="list-toggle" aria-pressed="false">List</button></div>
 <p id="route-status" role="status"></p>
-<section id="interactive-view" aria-label="Selected religious comparison" hidden>${view.renderView(data, {view: 'families', group: 'us-adults', format: 'chart'})}</section>
+<section id="interactive-view" aria-label="Selected religious comparison" hidden></section>
 <section id="static-view" aria-label="All published comparisons"><nav aria-label="Static views"><a href="#static-families-title">Families and denominations</a> &middot; <a href="#static-traditions-title">Protestant traditions</a> &middot; <a href="?view=attendance#static-attendance">Religious service attendance</a> &middot; <a href="?view=demographics#static-demographics">Affiliations within demographics</a></nav><p>Expand a group to see its published children. Each estimate has a Source note.</p>${view.renderStatic(data)}</section>
 <section id="methodology" aria-labelledby="methodology-heading"><h2 id="methodology-heading">Sources and methodology</h2>
 <p>Weighted estimates of adult self-identification from Pew Research Center's 2023-24 Religious Landscape Study, published ${esc(data.study.publicationDate)}: not membership rolls, children, historical lineage or attendance. The national margin of error is &plusmn;0.8 percentage points at 95% confidence, not a margin for every subgroup. ${sourceLink('methods')}.</p>
@@ -125,7 +125,7 @@ ${sourceLink('classification')}. Nondenominational and nonspecific Protestant re
 `;
   fs.writeFileSync(path.join(__dirname, 'public-data.js'), '// Generated public affiliation, attendance and demographic projection. Do not edit by hand.\nwindow.US_AFFILIATION_DATA = ' +
     JSON.stringify(data).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029') + ';\n');
-  fs.writeFileSync(path.join(__dirname, 'index.html'), html.replace(/[ \t]+$/gm, ''));
+  fs.writeFileSync(path.join(__dirname, 'index.html'), html.replace(/^[ \t]+|[ \t]+$/gm, ''));
   console.log(`Built U.S. denominations route: ${Object.keys(data.records).length} affiliation records, two lenses, ${data.attendance.records.length} attendance rows, ${data.demographics.populations.length} demographic populations.`);
 }
 

@@ -2,7 +2,7 @@
 const assert = require('node:assert/strict');
 const proofs = require('./scripture-proofs.json');
 const text = require('./content.json');
-const esc = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');
+const {escReader: esc} = require('../html-escape.js');
 assert.equal(proofs.schemaVersion, 1);
 assert.equal(proofs.chapters.length, text.chapters.length);
 const sourceIDs = new Set();
@@ -19,11 +19,6 @@ for (const [i, chapter] of proofs.chapters.entries()) {
         assert(ref.reference && ref.sourceLabel && !sourceIDs.has(ref.sourceId));
         assert(!excludedIDs.has(ref.sourceId), 'American additions must not enter the historical proof list');
         sourceIDs.add(ref.sourceId);
-        const url = new URL(ref.url);
-        assert.equal(url.origin, 'https://www.biblegateway.com');
-        assert.equal(url.pathname, '/passage/');
-        assert.equal(url.searchParams.get('search'), ref.reference);
-        assert.equal(url.searchParams.get('version'), 'ASV');
       }
     }
   }
@@ -31,6 +26,6 @@ for (const [i, chapter] of proofs.chapters.entries()) {
 function render(chapter, section) {
   const groups = proofs.chapters[chapter - 1].sections[section - 1].groups;
   const count = groups.reduce((total, group) => total + group.references.length, 0);
-  return `<details class="scripture-proofs" id="proofs-${chapter}-${section}"><summary>Scripture references <span>${count}</span></summary><div><p class="proof-credit">From Schaff’s historical edition, §${chapter}.${section}; not a modern denominational proof list. Links open the ASV (1901). <a href="#sources">Edition limits</a>.</p><ul>${groups.map(group => `<li>${group.references.map(ref => `<a href="${esc(ref.url)}">${esc(ref.reference)}</a>`).join('; ')} <a class="proof-source" href="${esc(proofs.source.url)}#fna_${esc(group.sourceNote)}" aria-label="Source proof note ${esc(group.sourceNumber)} for section ${chapter}.${section}">Source note ${esc(group.sourceNumber)} ↗</a></li>`).join('')}</ul></div></details>`;
+  return `<details class="scripture-proofs" id="proofs-${chapter}-${section}"><summary>Scripture references <span>${count}</span></summary><div><ul>${groups.map(group => `<li>${group.references.map(ref => `<a href="${esc('https://www.biblegateway.com/passage/?search=' + encodeURIComponent(ref.reference) + '&version=ASV')}">${esc(ref.reference)}</a>`).join('; ')} <a class="proof-source" href="${esc(proofs.source.url)}#fna_${esc(group.sourceNote)}" aria-label="Source proof note ${esc(group.sourceNumber)} for section ${chapter}.${section}">Source note ${esc(group.sourceNumber)} ↗</a></li>`).join('')}</ul></div></details>`;
 }
 module.exports = { render, proofs };

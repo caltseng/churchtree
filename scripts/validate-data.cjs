@@ -1,7 +1,7 @@
 const fs = require('fs'), vm = require('vm');
 const root = require('path').resolve(__dirname, '..');
 const context = { window: {} };
-vm.runInNewContext(fs.readFileSync(process.argv[2] ? require('path').resolve(root, process.argv[2]) : root + '/data/data.js', 'utf8'), context);
+vm.runInNewContext(fs.readFileSync(require('path').resolve(root, process.argv[2] || 'dist/data/data.js'), 'utf8'), context);
 const d = context.window.CHURCHTREE_DATA, errors = [];
 for (const key of ['nodes', 'edges', 'events', 'sources', 'citations']) {
     const seen = new Set();

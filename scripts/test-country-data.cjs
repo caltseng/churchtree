@@ -1,11 +1,10 @@
 const test = require('node:test'), assert = require('node:assert/strict');
 const fs = require('node:fs'), path = require('node:path'), vm = require('node:vm');
 const dates = require('../historical-dates.js');
+const {esc: escape} = require('../html-escape.js');
 const {countryHistories} = require('../site.config.json');
 const repo = path.resolve(__dirname, '..');
 const root = path.resolve(repo, process.env.CHURCHTREE_TEST_ROOT || 'dist');
-const escape = value => value.replace(/[&<>"']/g, character =>
-    ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[character]));
 
 test('calendar periods retain precision, leap days, duration and unknown bounds', () => {
     assert.equal(dates.period('1924-05').precision, 'month');

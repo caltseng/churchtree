@@ -173,7 +173,7 @@ test('attendance retains published NETs, exact projection, independent populatio
       'title', 'publisher', 'publicationDate', 'url', 'locator', 'column', 'row', 'caveat'
     ].sort());
     assert(!Object.hasOwn(data.records, record.id));
-    for (const markup of [chart, list, staticTable]) {
+    for (const markup of [chart, list, html]) {
       assert(markup.includes(`data-attendance="${record.id}"`));
       assert(markup.includes(`<strong>${record.valueText}</strong>`));
       assert(markup.includes(view.esc(record.source.row)));
@@ -182,7 +182,7 @@ test('attendance retains published NETs, exact projection, independent populatio
     assert(chart.includes(`style="width:${record.barValue}%"`));
   }
   assert(!staticTable.includes('class="bar"'));
-  for (const markup of [chart, list, staticTable]) {
+  for (const markup of [chart, list, html]) {
     assert.match(markup, /Adults in each religious group/);
     assert.match(markup, /table 08-04 \(attachment 199166\)/);
     assert.match(markup, /printed p. 165 \(PDF p. 166\)/);
@@ -192,6 +192,8 @@ test('attendance retains published NETs, exact projection, independent populatio
     assert.match(markup, /not a margin for every subgroup/);
     assert.match(markup, /not directly comparable with/);
     assert.match(markup, /Pew Research Center has not reviewed or endorsed/);
+  }
+  for (const markup of [chart, list, staticTable]) {
     assert(!markup.includes(' of U.S. adults'));
     assert(!markup.includes('data-group='));
   }
@@ -212,6 +214,70 @@ test('static nested content includes every lens occurrence and source/threshold/
   assert.match(html, /No written permission has been obtained or claimed/);
   assert.match(html, /Appendix B alone supplies names and classification, not values/);
   assert.match(html, /religious identity questions and denomination coding/);
+});
+
+test('built HTML shares repeated notes, stays below 120 KB and preserves every static row locator', () => {
+  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  assert(Buffer.byteLength(html) < 120000, `HTML is ${Buffer.byteLength(html)} bytes`);
+  const repeated = [
+    data.reuse.disclaimer, ...data.reuse.notices,
+    'No residual is inferred.',
+    'Published detail covers selected reported affiliations, not an exhaustive inventory.',
+    'Published estimates are independently rounded and need not add to the parent or to 100%.',
+    'Fielded ',
+    data.demographics.caveat, data.demographics.reuseLimits
+  ];
+  for (const text of repeated) assert.equal(html.split(view.esc(text)).length - 1, 1, text);
+  for (const text of [
+    'has not reviewed or endorsed', 'Select a slice, or use arrow keys',
+    'Fielded ', 'need not add to the parent'
+  ]) assert(html.split(text).length - 1 <= 1, text);
+  assert(!html.includes('<details class="row-source">'), 'Static rows link to shared evidence rather than repeating disclosures');
+  assert.match(html, /id="interactive-view"[^>]*hidden><\/section>/, 'JS renders the interactive view, not a second static copy');
+  function checkRow(markup, record) {
+    const target = markup.match(/href="#(static-source-\d+)"/);
+    assert(target, `Source link for ${record.id}`);
+    const source = html.split(`id="${target[1]}"`)[1].split('</p>')[0];
+    for (const value of ['url', 'publisher', 'publicationDate', 'locator', 'column']) {
+      assert(source.includes(view.esc(record.source[value])), `${record.id}: ${value}`);
+    }
+    assert(markup.includes(view.esc(record.source.path ? record.source.path.join(' > ') : record.source.row)), record.id);
+    assert(markup.includes(view.esc(record.valueText)), `${record.id}: estimate`);
+    if (record.source.caveat) {
+      const caveat = source.match(/href="#(static-caveat-\d+)"/);
+      assert(caveat, `${record.id}: caveat link`);
+      assert(html.split(`id="${caveat[1]}"`)[1].split('</p>')[0].includes(view.esc(record.source.caveat)));
+    }
+  }
+  for (const [lens, tree] of Object.entries(data.lenses)) {
+    for (const panel of tree.panels) {
+      const section = html.split(`id="static-${lens}-${panel.parentId}"`)[1];
+      for (const id of panel.children) {
+        const row = section.split(`data-record="${id}"`)[1].split('</li>')[0];
+        checkRow(row, data.records[id]);
+      }
+    }
+  }
+  for (const record of data.attendance.records) {
+    checkRow(html.split(`data-attendance="${record.id}"`)[1].split('</tr>')[0], record);
+  }
+  for (const population of data.demographics.populations) {
+    const section = html.split(`id="static-demographics-${population.id}"`)[1];
+    for (const record of population.records) {
+      checkRow(section.split(`data-demographic="${record.id}"`)[1].split('</tr>')[0], record);
+    }
+  }
+});
+
+test('shared static sources preserve distinct caveats on otherwise identical source metadata', () => {
+  const fixture = structuredClone(data);
+  fixture.records.catholic.source = {...fixture.records.christian.source, caveat: 'Distinct population caveat.'};
+  const html = view.renderStatic(fixture);
+  const row = html.split('data-record="catholic"')[1].split('</li>')[0];
+  const sourceId = row.match(/href="#(static-source-\d+)"/)[1];
+  const source = html.split(`id="${sourceId}"`)[1].split('</p>')[0];
+  const caveatId = source.match(/href="#(static-caveat-\d+)"/)[1];
+  assert(html.split(`id="${caveatId}"`)[1].split('</p>')[0].includes('Distinct population caveat.'));
 });
 
 test('demographics use independent subgroup denominators, exact cells and intentional public projection', () => {

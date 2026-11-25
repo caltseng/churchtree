@@ -538,9 +538,13 @@ browserTest(root, async ({browser, base}) => {
     const baptist = staticPage.locator('#static-families-baptist');
     assert(await baptist.isVisible());
     assert.equal(await baptist.locator('[data-record="pnbc"] .national-value').textContent(), data.records.pnbc.valueText + ' of U.S. adults');
-    await baptist.locator('[data-record="pnbc"] summary').click();
-    assert(await baptist.locator('[data-record="pnbc"] a[href$=".pdf"]').isVisible());
-    assert.match(await baptist.locator('.source-context').textContent(), /Share of U.S. adults/);
+    const thresholdSource = baptist.locator('[data-record="pnbc"] .row-source a');
+    await thresholdSource.focus();
+    await staticPage.keyboard.press('Enter');
+    const sourceLocator = staticPage.locator(new URL(staticPage.url()).hash);
+    assert(await sourceLocator.isVisible(), 'Keyboard follows a static row to its shared locator without JS');
+    assert((await sourceLocator.textContent()).includes(data.records.pnbc.source.column));
+    assert(await sourceLocator.locator('a[href$=".pdf"]').isVisible());
     await staticPage.goto(base + '/us-denominations/?view=traditions&group=presbyterian-mainline#static-traditions-presbyterian-mainline');
     assert(await staticPage.locator('#static-traditions-presbyterian-mainline').isVisible(), 'No-JS fragment opens nested ancestors');
     assert(await staticPage.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
@@ -551,7 +555,6 @@ browserTest(root, async ({browser, base}) => {
     assert.equal(await attendance.locator('tbody tr').count(), 12);
     assert.equal(await attendance.locator('[data-attendance="attendance-historically-black"] td strong').textContent(),
       data.attendance.records.find(record => record.id === 'attendance-historically-black').valueText);
-    await attendance.locator('[data-attendance="attendance-us-adults"] summary').click();
     assert(await attendance.locator('[data-attendance="attendance-us-adults"] a').isVisible());
     assert.match(await attendance.textContent(), /Adults in each religious group/);
     assert.match(await attendance.textContent(), /ATTENDPERRLS/);
@@ -563,9 +566,9 @@ browserTest(root, async ({browser, base}) => {
     if (!await demographic.evaluate(el => el.open)) await demographic.locator(':scope > summary').click();
     assert.equal(await demographic.locator('tbody tr').count(), 3);
     assert.match(await demographic.textContent(), /English-speaking non-Hispanic/);
-    assert.match(await demographic.textContent(), /No intersectional combinations/);
-    await demographic.locator('[data-demographic="christian"] summary').click();
     assert(await demographic.locator('[data-demographic="christian"] a').isVisible());
+    await demographic.locator('a[href="#static-demographic-notes"]').click();
+    assert.match(await staticPage.locator('#static-demographic-notes').textContent(), /No intersectional combinations/);
     assert(await staticPage.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     await staticPage.screenshot({path: path.join(output, 'us-demographics-no-js-320.png'), fullPage: true});
     await noJS.close();

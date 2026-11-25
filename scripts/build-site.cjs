@@ -26,7 +26,7 @@ for (const set of fs.readdirSync(path.join(repo, 'data/sets')).sort()) {
     data[type].push(...rows);
   }
 }
-const bundle = '// Generated from local JSON sources. Do not edit by hand.\nwindow.CHURCHTREE_DATA = ' + JSON.stringify(data, null, 2) + ';\n';
+const bundle = '// Generated from local JSON sources. Do not edit by hand.\nwindow.CHURCHTREE_DATA = ' + JSON.stringify(data) + ';\n';
 fs.writeFileSync(path.join(output, 'data/data.js'), bundle);
 const allowed = new Set(config.publicExtensions);
 function copyPublic(source, destination) {
