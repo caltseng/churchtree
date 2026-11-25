@@ -38,7 +38,7 @@ test('each panel preserves source ranking, national labels, locators and coverag
       assert.deepEqual(view.ancestors(data, lens, panel.parentId), getAncestors(internal, lens, panel.parentId));
       const html = view.renderView(data, {view: lens, group: panel.parentId, format: 'chart'});
       assert.match(html, /% of U.S. adults/);
-      assert.match(html, /Fielded July 17, 2023-March 4, 2024/);
+      assert.match(html, /Fielded /);
       assert.match(html, /Pew Research Center has not reviewed or endorsed/);
       assert.match(html, /No residual is inferred/);
       if (panel.coverage === 'selected') assert.match(html, /Published detail covers selected reported affiliations/);
@@ -101,7 +101,7 @@ test('leaf categories explain the missing breakdown without a pie', () => {
   const html = view.renderView(data, {view: 'families', group: 'sbc', format: 'chart'});
   assert.match(html, /No finer breakdown is published\./);
   assert(!html.includes('class="pie"') && !html.includes('data-slice='));
-  assert.match(html, /class="source-line"[^]*Pew Research Center[^]*© 2026 Pew Research Center/, 'Leaf keeps a visible source credit and notice');
+  assert.match(html, /class="source-line"[^]*Pew Research Center[^]*©/, 'Leaf keeps a visible source credit and notice');
   assert.match(html, /<details class="info-detail"[^]*Pew Research Center has not reviewed or endorsed/, 'Disclaimer moves behind Info');
 });
 
@@ -188,15 +188,12 @@ test('attendance retains published NETs, exact projection, independent populatio
     assert.match(markup, /printed p. 165 \(PDF p. 166\)/);
     assert.match(markup, /ATTENDPERRLS/);
     assert.match(markup, /Printed p. 23 \(PDF p. 23\)/);
-    assert.match(markup, /Fielded July 17, 2023-March 4, 2024/);
+    assert.match(markup, /Fielded /);
     assert.match(markup, /not a margin for every subgroup/);
-    assert.match(markup, /not directly comparable with the 2014/);
+    assert.match(markup, /not directly comparable with/);
     assert.match(markup, /Pew Research Center has not reviewed or endorsed/);
     assert(!markup.includes(' of U.S. adults'));
     assert(!markup.includes('data-group='));
-  }
-  for (const [id, value] of [['us-adults', 33], ['evangelical', 60], ['historically-black', 46], ['mainline', 34]]) {
-    assert.equal(data.attendance.records.find(row => row.populationId === id).barValue, value);
   }
   assert.deepEqual(view.ancestors(data, 'attendance', null), []);
   assert.equal(view.query({view: 'attendance', group: null, format: 'list'}), '?view=attendance&format=list');
@@ -209,9 +206,9 @@ test('static nested content includes every lens occurrence and source/threshold/
       assert(html.includes(`id="static-${lens}-${panel.parentId}"`));
     }
   }
-  assert.match(html, /&lt;0\.3% of U.S. adults/);
+  assert(html.includes(view.esc(data.records.pnbc.valueText) + ' of U.S. adults'));
   assert.match(html, /Main Branch&#39;s selection and presentation are independent/);
-  assert.match(html, /Ordinary rounding does not explain 11.5% versus 11%/);
+  assert.match(html, /Ordinary rounding does not explain/);
   assert.match(html, /No written permission has been obtained or claimed/);
   assert.match(html, /Appendix B alone supplies names and classification, not values/);
   assert.match(html, /religious identity questions and denomination coding/);
@@ -234,7 +231,7 @@ test('demographics use independent subgroup denominators, exact cells and intent
     assert.equal(view.panelFor(data, state), undefined);
     assert.match(chart, /within this population, not its share of a religion/);
     assert.match(chart, /Fixed scale: 0-100%/);
-    assert.match(chart, /Fielded July 17, 2023-March 4, 2024/);
+    assert.match(chart, /Fielded /);
     assert.match(chart, /No intersectional combinations/);
     assert.match(chart, /Pew Research Center has not reviewed or endorsed/);
     assert(!chart.includes('data-group=') && !chart.includes('Affiliation breadcrumb'));

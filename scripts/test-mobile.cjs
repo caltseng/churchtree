@@ -1,10 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');
-const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const browserTest=require('./browser-test.cjs');
 const repoRoot=path.resolve(__dirname,'..'),root=process.env.CHURCHTREE_TEST_ROOT?path.resolve(repoRoot,process.env.CHURCHTREE_TEST_ROOT):repoRoot,output=path.join(repoRoot,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
-const server=require('./test-server.cjs')(root);
-(async()=>{let browser;try{
- await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
- browser=await chromium.launch({...(process.env.PLAYWRIGHT_CHANNEL==='chromium'?{}:{channel:process.env.PLAYWRIGHT_CHANNEL||'msedge'}),headless:true});
+browserTest(root,async({browser,server})=>{
  for(const size of [{width:390,height:844},{width:320,height:568},{width:768,height:1024},{width:1024,height:768},{width:844,height:390}]){
   const context=await browser.newContext({viewport:size,isMobile:true,hasTouch:true,deviceScaleFactor:1});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(`http://127.0.0.1:${server.address().port}/church-history/`);await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();
@@ -186,7 +183,7 @@ const server=require('./test-server.cjs')(root);
   assert(await page.locator('#details').evaluate(el=>el.scrollWidth<=el.clientWidth+1),'Profile text must fit its sheet');
   await page.screenshot({path:path.join(output,`mobile-profile-${size.width}x${size.height}.png`)});
   await page.getByRole('button',{name:'Back to graph',exact:true}).tap();assert(!await dialog.isVisible());
-  const selectedRange=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain);assert(selectedRange[0]<=1973&&selectedRange[1]>=1973,'Search must reveal the selected date on mobile: '+JSON.stringify(selectedRange));
+  const selectedRange=await page.evaluate(()=>CHURCHTREE_TIMELINE.snapshot().domain),selectedYear=await page.evaluate(()=>CHURCHTREE_DATA.nodes.find(node=>node.id==='pca').start_year);assert(selectedRange[0]<=selectedYear&&selectedRange[1]>=selectedYear,'Search must reveal the selected date on mobile: '+JSON.stringify(selectedRange));
   if(size.width===320||size.height===390){
    const snapshot=()=>page.evaluate(()=>{
     const {domain,scale}=CHURCHTREE_TIMELINE.snapshot();
@@ -211,4 +208,4 @@ const server=require('./test-server.cjs')(root);
   await page.screenshot({path:path.join(output,`mobile-graph-${size.width}x${size.height}.png`)});
   assert.deepEqual(errors,[]);await context.close();console.log(`Mobile ${size.width}×${size.height}: passed`);
  }
-}finally{await browser?.close();server.close();}})().catch(error=>{console.error(error);process.exitCode=1;});
+}).catch(error=>{console.error(error);process.exitCode=1;});

@@ -1,23 +1,17 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const browserTest = require('./browser-test.cjs');
 
 const repo = path.resolve(__dirname, '..');
 const root = path.resolve(repo, process.env.CHURCHTREE_TEST_ROOT || 'dist');
-const server = require('./test-server.cjs')(root);
 const books = [
   ['wsc', 'Westminster Shorter Catechism', 107],
   ['wlc', 'Westminster Larger Catechism', 196],
 ];
 
 async function run() {
-  let browser;
-  try {
-    await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
-    const base = 'http://127.0.0.1:' + server.address().port;
-    const channel = process.env.PLAYWRIGHT_CHANNEL || 'msedge';
-    browser = await chromium.launch(channel === 'chromium' ? {} : { channel });
+  return browserTest(root, async ({browser, base}) => {
     const page = await browser.newPage({ javaScriptEnabled: false, viewport: { width: 320, height: 640 } });
 
     for (const [route, title, count] of books) {
@@ -69,10 +63,7 @@ async function run() {
     await page.goto(base + '/wlc/#q-109');
     assert(await page.locator('#q-109').isVisible());
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
-  } finally {
-    await browser?.close();
-    server.close();
-  }
+  });
 }
 
 run().catch(error => {

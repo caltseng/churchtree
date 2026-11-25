@@ -14,16 +14,14 @@
     "test:contacts": "node --test scripts/contacts/collect.test.cjs",
     "test:desktop": "node scripts/test-explorer.cjs",
     "test:mobile": "node scripts/test-overview-touch.cjs && node scripts/test-mobile.cjs",
-    "test": "npm run test:contacts && npm run test:guards && npm run test:model && npm run test:desktop && npm run test:mobile && npm run test:reader && node scripts/test-catechisms.cjs && npm run test:features && node scripts/test-public-privacy.cjs && npm run test:us-denominations && npm run test:china && npm run test:cambodia && npm run test:thailand",
+    "test": "npm run test:contacts && npm run test:guards && npm run test:model && npm run test:desktop && npm run test:mobile && npm run test:reader && node scripts/test-catechisms.cjs && npm run test:features && node scripts/test-public-privacy.cjs && npm run test:us-denominations && npm run test:countries",
     "ci": "npm run build && npm run check && npm test",
     "test:reader": "node westminster/test-reader.cjs",
     "test:features": "node scripts/test-features.cjs",
     "serve": "node scripts/serve-site.cjs",
     "test:guards": "node scripts/test-build-guards.cjs",
     "test:us-denominations": "node --test us-denominations/test-data.cjs us-denominations/test-route.cjs && node us-denominations/test-browser.cjs",
-    "test:china": "node --test china-history/test-data.cjs && node china-history/test-browser.cjs",
-    "test:cambodia": "node --test cambodia-history/test-data.cjs && node cambodia-history/test-browser.cjs",
-    "test:thailand": "node --test thailand-history/test-data.cjs && node thailand-history/test-browser.cjs"
+    "test:countries": "node --test scripts/test-country-data.cjs && node scripts/test-country-browser.cjs"
   },
   "devDependencies": {
     "playwright": "1.65.1"
