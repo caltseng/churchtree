@@ -1,5 +1,9 @@
 # Relationship and contacts store
 
+> Archived: heartbeat now owns this product's collector and skills. This document
+> preserves the earlier Churchtree proposal; its repository scope and execution
+> instructions are no longer current.
+
 Product specification · Draft v0.4
 
 Companions: [initial technical approach](contacts-technical-spec.md) ·
