@@ -63,7 +63,7 @@ royal original, nor a guarantee that every locality enjoyed modern freedom.
 
 Catholic schools, sisters' nursing and local religious formation also shaped
 Christian institutional life: Assumption College 1885 and the St Paul de
-Chartres sisters'1898 arrival are examples, not the whole education/medical
+Chartres sisters' 1898 arrival are examples, not the whole education/medical
 history. Later CCT social action included leprosy rehabilitation, urban and
 rural development and refugee aid. Institutional self-reports do not measure
 how all patients or pupils received religious authority.
@@ -85,9 +85,10 @@ Society's conflicting early dates are held pending edition/imprint study.
 Adventist permanent mission 1918-1919 must be distinguished from earlier
 colportage and from Chinese migrant/lay networks, including the Tan family.
 Its medical and school development reached regions outside the northern
-Presbyterian story. The 1987 Haadyai hospital closure complicates any
-uninterrupted-growth narrative; institutional attribution to staffing is
-not independently verified. [C14/C26](sources.md#claim-specific-passage-index)
+Presbyterian story. The encyclopedia's provisional report of a 1987 Haadyai
+hospital closure complicates any uninterrupted-growth narrative; the date
+and institutional staffing explanation await the underlying entry, not an
+independently verified causal finding. [C14/C26](sources.md#claim-specific-passage-index)
 
 The 1934 Church in Siam/CCT union involved Presbyterians and **some**
 Baptist/Churches of Christ congregations, not every Protestant. John Sung's
@@ -115,7 +116,7 @@ identities. "Minority churches" does not name one ethnicity or theology.
 Hayami's abstract treats Christian/Buddhist Karen diversity and changing
 identity during state integration; it does not license a universal story
 of conversion or an ancient Christian "lost book" ancestry. A partial CCT
-series cited by Swanson rises from5% in one minority district in 1980 to38%
+series cited by Swanson rises from 5% in one minority district in 1980 to 38%
 across four in 1997, but district additions/classification and missing
 communities prevent an all-Thailand conversion curve.
 [C18/C25; S03 xviii](sources.md)

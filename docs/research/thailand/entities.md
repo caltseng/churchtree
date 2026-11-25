@@ -23,7 +23,7 @@ modern congregation roster is compiled. Citations resolve in [sources](sources.m
 | E16 | Conventions; Thailand Karen Baptist Convention / TKBC; Thailand Lahu Baptist Convention / TLBC | 1955/1971 formation, later CCT membership with distinct organization; exact accession terms missing | C18 |
 | E17 | Umbrella; สหกิจคริสเตียนแห่งประเทศไทย / Evangelical Fellowship of Thailand / EFT | 1956 cooperation,1969 formal recognition; member bodies not one merged denomination | C20,C32 |
 | E18 | Independent/charismatic congregational movements; Romklao, Hope of Bangkok | 1979/1981 formations; later splits/endings not established here | C23 |
-| E19 | Adventist mission/institutions and lay network | December 1918/1919 permanent organization, Tan family Chinese links, medical/educational expansion and 1987 facility closure | C14,C26 |
+| E19 | Adventist mission/institutions and lay network | December 1918/1919 permanent organization, Tan family Chinese links, medical/educational expansion and provisionally reported 1987 facility closure | C14,C26 |
 | E20 | Jurisdiction; Moscow-linked Diocese of Thailand | 1999 parish decision,2019 diocese; includes neighboring countries, not all Orthodox | C27 |
 | E21 | Measurement/legal containers; RAD, baptized Karen, EFT15+ | Different reference dates/age universes; never institutions in a genealogy | C25,C29-C30,C32 |
 
@@ -44,7 +44,7 @@ modern congregation roster is compiled. Citations resolve in [sources](sources.m
 | R11 | E12 -> refugee relief; service 1970s/later | Supported service across boundaries; no vulnerable present-location map | C33 |
 | R12 | E20 -> earlier Catholic/Protestant missions; purported descent | **Rejected**: common country/Christian identity does not supply institutional continuity | C01,C06,C27 |
 | R13 | Ancient Eastern Christians -> E01/E20; proposed medieval bridge | **Missing research/unsupported**, not absence proven; no edge or invented ancient national foundation | C01,C27 |
-| R14 | E19 -> medical facility; operation/closure 1954/1987 | Supported facility history, not ending of Adventist church | C26 |
+| R14 | E19 -> medical facility; operation/closure 1954/1987 | Institutional report, with closure date/explanation provisional pending underlying entry; not ending of Adventist church | C26 |
 
 Public timelines deliberately have no structural lineage relations. Event
 sequence, shared lane, geographical overlap and personal affiliation do not
