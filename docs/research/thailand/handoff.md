@@ -34,9 +34,9 @@ without inventing a 1919 month.
 
 ## Model, build and UX contract
 
-Reuse Cambodia's shared `scripts/build-country-history.cjs` and country
-registry/selector when merged; do not make a second country-selection pattern.
-Reuse China controller/CSS and the established shared timeline model/layouts.
+The route uses Cambodia's shared `scripts/build-country-history.cjs` and country
+registry/selector, not a second country-selection pattern. It reuses the China
+controller/CSS and established shared timeline model/layouts.
 China's public slugs and independent denomination dataset remain unchanged.
 Display lanes group historical subject matter, **not ancestry**; country
 chronology must never enter denomination auto-discovery.
