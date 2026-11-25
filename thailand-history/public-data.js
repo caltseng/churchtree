@@ -3,7 +3,7 @@ window.COUNTRY_HISTORY_DATA = {
   "title": "Church in Thailand",
   "scope": "Selected episodes, 1567-2023. Multiple traditions and changing borders; not one national church tree or comprehensive coverage.",
   "geography": "Present Thailand organizes the selection; Ayutthaya/Siam, northern Lanna/Laos Mission and transborder jurisdictions retain historical meanings.",
-  "limits": "Sources retrieved 2026-11-24/25; latest selected context 2023, affiliation reference December 2021. Writer self-review, not independent scholarly or Thai-language review. Southern/Isan histories, ordinary worship, other traditions and comparable growth/retention remain incomplete. Conflicting early Bible dates and undated continuities are held, not UI-hidden. Protestant includes independent and charismatic histories; Society groups people, service and state. No copied media or vulnerable contemporary rosters/locations.",
+  "limits": "Sources retrieved 2026-11-24/25; latest selected context 2023, affiliation reference December 2021. The November 25 independent-sequence writer audit is not independent scholarly or Thai-language review. Southern/Isan histories, worship beyond the selected examples, other traditions and comparable growth/retention remain incomplete. Conflicting early Bible dates and held research are not UI-hidden events. Protestant includes independent and charismatic histories; Society groups people, service and state, including the separately identified LDS visit. Its later scripture appears under Language, not a Protestant lineage. No copied media or vulnerable contemporary rosters/locations.",
   "lanes": [
     {
       "id": "catholic",
@@ -393,20 +393,22 @@ window.COUNTRY_HISTORY_DATA = {
       "lane_id": "society",
       "title": "Northern toleration proclamation",
       "summary": "McGilvary reproduces a proclamation addressing religious choice, marriage and labor/Sabbath conflict in the Chiang Mai, Lamphun and Lampang context.",
-      "caveat": "Date from his later English translation. Original Thai/calendar equivalence and local enforcement remain unchecked; not a modern nationwide liberty guarantee.",
+      "caveat": "Date from a later English translation, not a checked Thai original. Morishima's research summary interprets the measure as primarily American protection and notes later persecution; broad wording did not ensure uniform liberty.",
       "date": {
         "start": "1878-10-08",
         "end": "1878-10-08",
         "kind": "point",
         "basis": "October 8, 1878 in the translated proclamation's date clause"
       },
-      "testimony": "1912 memoir, printed pp.216-217",
+      "testimony": "1912 memoir pp.216-217; FY2024 research summary published 2026-01-16",
       "claim_citations": {
         "date": [
-          "edict"
+          "edict",
+          "toleration-interpretation"
         ],
         "summary": [
-          "edict"
+          "edict",
+          "toleration-interpretation"
         ]
       },
       "review": "qualified",
@@ -1143,6 +1145,149 @@ window.COUNTRY_HISTORY_DATA = {
         "refugees",
         "social action"
       ]
+    },
+    {
+      "id": "girls-lead-village-worship",
+      "lane_id": "society",
+      "title": "Schoolgirls lead village worship",
+      "summary": "Swanson describes two schoolgirls leading worship for women and men at Ban Chang Kam, showing lay religious work beyond the classroom.",
+      "caveat": "A scholarly account mediated through mission records, not the girls' own full testimony or proof that all churches authorized women equally. No invented ordination follows.",
+      "date": {
+        "start": "1885",
+        "end": "1885",
+        "kind": "point",
+        "basis": "Source-reported event date at stated precision"
+      },
+      "testimony": "Swanson 1988, printed p.197",
+      "claim_citations": {
+        "date": [
+          "girls-worship"
+        ],
+        "summary": [
+          "girls-worship"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "Ban Chang Kam",
+        "women",
+        "lay worship"
+      ]
+    },
+    {
+      "id": "pa-wan-theological-training",
+      "lane_id": "society",
+      "title": "Pa Wan enters theological training",
+      "summary": "Swanson records pa Wan entering theological training for religious work with hospital patients, in a program otherwise attended by men.",
+      "caveat": "Training and hospital ministry are not ordination or universal equal access. The source's name form is retained without an invented full identity.",
+      "date": {
+        "start": "1890",
+        "end": "1890",
+        "kind": "point",
+        "basis": "Source-reported event date at stated precision"
+      },
+      "testimony": "Swanson 1988, printed p.196",
+      "claim_citations": {
+        "date": [
+          "pa-wan-training"
+        ],
+        "summary": [
+          "pa-wan-training"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "pa Wan",
+        "Bible women",
+        "women",
+        "formation"
+      ]
+    },
+    {
+      "id": "cheng-local-leadership-letter",
+      "lane_id": "catholic",
+      "title": "Papal letter on Thai leadership",
+      "summary": "Pius XII tells Regent Pridi that Chanthaburi has been constituted from Bangkok under Thai church leader Jacques Louis Cheng, and asks protection for its ministry.",
+      "caveat": "The letter reports earlier decisions; its date is not their effective date or Cheng's episcopal consecration. Papal claims about long-term policy and state goodwill are not independent proof of local freedom.",
+      "date": {
+        "start": "1944-10-29",
+        "end": "1944-10-29",
+        "kind": "point",
+        "basis": "Date of diplomatic testimony reporting prior jurisdiction/leadership decisions"
+      },
+      "testimony": "Primary French papal letter, 1944-10-29",
+      "claim_citations": {
+        "date": [
+          "thai-catholic-leadership"
+        ],
+        "summary": [
+          "thai-catholic-leadership"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "Jacques Louis Cheng",
+        "Chanthaburi",
+        "Pridi"
+      ]
+    },
+    {
+      "id": "lds-short-mission-visit",
+      "lane_id": "society",
+      "title": "A short Latter-day Saint mission",
+      "summary": "Latter-day Saint institutional history dates Elam Luddington's arrival in Bangkok to April 6 and describes a four-month stay.",
+      "caveat": "An episode within this self-identified Christian tradition, not Thailand's first Christianity or demonstrated uninterrupted continuity to expatriate worship in the 1960s. No unverified departure day is plotted.",
+      "date": {
+        "start": "1854-04-06",
+        "end": "1854-04-06",
+        "kind": "point",
+        "basis": "Institutional arrival day, not the full mission duration"
+      },
+      "testimony": "Later institutional or scholarly account; source date and inspected extent in evidence.",
+      "claim_citations": {
+        "date": [
+          "lds-visit"
+        ],
+        "summary": [
+          "lds-visit"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "Latter-day Saints",
+        "LDS",
+        "Elam Luddington"
+      ]
+    },
+    {
+      "id": "thai-lds-text-publication",
+      "lane_id": "language",
+      "title": "A Thai Latter-day Saint scripture",
+      "summary": "The church chronology dates publication of the Thai Book of Mormon to October 1976 and credits Srilaksana Suntarahut as principal translator after committee work from 1970.",
+      "caveat": "This tradition's scripture, not another Thai Bible edition or a Protestant institutional offshoot. The account does not independently establish the full team, reception or every translation decision. No text reproduced.",
+      "date": {
+        "start": "1976-10",
+        "end": "1976-10",
+        "kind": "point",
+        "basis": "Publication month, distinct from translation-review committee in 1970"
+      },
+      "testimony": "Later institutional or scholarly account; source date and inspected extent in evidence.",
+      "claim_citations": {
+        "date": [
+          "lds-translation"
+        ],
+        "summary": [
+          "lds-translation"
+        ]
+      },
+      "review": "qualified",
+      "aliases": [
+        "Srilaksana Suntarahut",
+        "Book of Mormon",
+        "Latter-day Saints",
+        "LDS",
+        "translation"
+      ]
     }
   ],
   "relations": [],
@@ -1177,7 +1322,7 @@ window.COUNTRY_HISTORY_DATA = {
       "publisher": "Herbert R. Swanson / Sojourn 3(2), 187-206",
       "published": "1988-08",
       "url": "https://www.herbswanson.com/_files/ugd/4cfa9b_1ad976d77fa24ddebecc15d6ee8b910c.pdf",
-      "perspective": "Scholarship using mission records; pp.188-202 inspected through scan OCR, not the women's full personal archives."
+      "perspective": "Scholarship using mission records. Foundation read pp.188-202 by OCR; audit independently read all pp.187-206 visually from the author-hosted scan. Not the women's full personal archives or directly inspected cited letters."
     },
     {
       "id": "swanson-translation",
@@ -1298,6 +1443,30 @@ window.COUNTRY_HISTORY_DATA = {
       "published": "c.1856 per edition header; footer says c.1865",
       "url": "https://digitalbangkokrecorder.com/publications/emelie_royce_bradley/chapter-5/",
       "perspective": "Family biography with diary extracts, via undated library typescript. Edition-date discrepancy and transcription limits; anti-Buddhist/class judgments not adopted."
+    },
+    {
+      "id": "morishima",
+      "title": "The Influence and Challenges of Christianity on Religious Freedom in Thailand: Final Research Report",
+      "publisher": "Morishima Yutaka / KAKEN project 19K00085, Aoyama Gakuin University",
+      "published": "FY2024 report, published 2026-01-16",
+      "url": "https://kaken.nii.ac.jp/report/KAKENHI-PROJECT-19K00085/19K00085seika/",
+      "perspective": "English project-summary argument actually read, not full Japanese report/monograph. Interprets the edict as primarily protecting Americans and highlights later persecution. Distinguish contested intention/enforcement from the memoir translation's broad language."
+    },
+    {
+      "id": "cheng-letter",
+      "title": "Letter to the Regent of Thailand",
+      "publisher": "Pius XII / Holy See; Actes et Documents, vol.11, pp.596-597",
+      "published": "1944-10-29",
+      "url": "https://www.vatican.va/content/pius-xii/fr/letters/documents/hf_p-xii_lett_19441029_reggente-tailandia.html",
+      "perspective": "Full French diplomatic letter inspected: primary papal representation of jurisdiction/local leadership and request for protection, not neutral proof of government practice. Its 1555 origin statement differs from resident-mission evidence and is not adopted."
+    },
+    {
+      "id": "lds-history",
+      "title": "Thailand: Church Chronology",
+      "publisher": "Church of Jesus Christ of Latter-day Saints",
+      "published": "Undated evolving institutional chronology",
+      "url": "https://www.churchofjesuschrist.org/study/history/global-histories/thailand/th-chronology?lang=eng",
+      "perspective": "Full English chronology inspected; selected historical entries only. Institutional first claims confined to this church, not all Thai Christians. No images, contemporary convert roster, meeting addresses or temple ritual content reused."
     }
   ],
   "citations": [
@@ -1539,6 +1708,48 @@ window.COUNTRY_HISTORY_DATA = {
       "id": "bradley-work",
       "source_id": "bradley",
       "locator": "Chapter V opening and July 1835 diary passages: arrival, dispensary/language/household labor and court/poor-patient contact.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "girls-worship",
+      "source_id": "swanson-women",
+      "locator": "Printed p.197: two schoolgirls led mixed-sex village worship at Ban Chang Kam in 1885; later Chiang Rai women held church positions in 1899. Mediated mission accounts, not universal authorization.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "pa-wan-training",
+      "source_id": "swanson-women",
+      "locator": "Printed p.196: pa Wan entered theological training in 1890 for hospital religious work; growth of Bible-women work after 1905. Not ordination or general equal access.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "toleration-interpretation",
+      "source_id": "morishima",
+      "locator": "FY2024 final report, English summary, final clause on American safety and later persecutions. Published 2026-01-16, not an 1878 primary text or full argument inspected.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "thai-catholic-leadership",
+      "source_id": "cheng-letter",
+      "locator": "Opening three paragraphs report Chanthaburi constituted from Bangkok and Jacques Louis Cheng placed at its head; following paragraph requests protection. Letter dated 1944-10-29, not erection/appointment/consecration instrument.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "lds-visit",
+      "source_id": "lds-history",
+      "locator": "April 6, 1854 entry: Elam Luddington arrived and stayed four months; early-1960s entry describes expatriate worship. No demonstrated uninterrupted bridge between them.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "lds-translation",
+      "source_id": "lds-history",
+      "locator": "January 19, 1970 translation-review committee and October 1976 Thai Book of Mormon publication entries: Srilaksana Suntarahut as principal translator. Not a Bible edition or evidence for every translator's role.",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "lds-cultural-conflict",
+      "source_id": "lds-history",
+      "locator": "June 1972 entry: two missionaries' offensive Buddha-statue photograph, arrests and reported six-month sentences. Institutional admission, court/news files not read; image and identities not reproduced.",
       "accessed": "2026-11-25"
     }
   ]

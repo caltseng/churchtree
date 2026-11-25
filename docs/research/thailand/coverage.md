@@ -1,7 +1,9 @@
 # Coverage, uncertainty and writer review
 
 **Writer self-review, 2026-11-25; no independent scholarly, Thai-language
-expert or complementary audit approval.** Read extents are explicit in
+expert approval.** Separate independent-sequence writer
+[audit and repairs](audit.md), also dated 2026-11-25, do not change that
+review limitation. Read extents are explicit in
 [sources](sources.md); the writer compared the proposed claims to those
 passages, not to unseen underlying archives. Mechanical consistency is not
 historical completeness.
@@ -39,25 +41,25 @@ within the named scope, not final completeness.
 | --- | --- | --- |
 | U01 / A | H01/H04, R13; covered with qualification; earlier/medieval histories unsupported | Compare Portuguese archival/critical editions and relevant Eastern evidence. No confident first-ever or continuous ancient church claim. Church of the East/Oriental Orthodox historical presence not established, not declared impossible. |
 | U02 / A | H05-H07; covered with qualification, exact return and persistence missing | Read local/Thai/other-party sources and community records; distinguish destruction, expulsion, survival and rebuilding. Do not plot 1782 as exact return. |
-| U03 / A | H15; translated testimony qualified | Obtain Thai royal text, calendar conversion and regional implementation; preserve 1912 testimony versus 1878 event. |
+| U03 / A | H15/C37; translated testimony qualified, competing interpretation added | Morishima summary and memoir's consular/treaty leverage now compared. Obtain Thai text, full Japanese argument and regional implementation; broad clauses, diplomatic motives and actual enforcement are different claims. |
 | U04 / A | H22/H26-H31, R05-R09; exact union/affiliation lineage missing research | Read 1934 acts, partner rosters,1957/1961 transfer instruments and convention accession constitutions before drawing structural edges. |
 | U05 / A | H41; unsupported/conflicted, researched but held | Society history says 1843 NT/1883 OT/1940 revision, edition page 1893/1896/1930. Inspect title pages/imprints and critical bibliography; don't silently harmonize or average. |
 | U06 / A | H34/H39/H43; covered as incomparable measures | Retrieve original questionnaires/register methods and matched denominator/reference years before any trend or total. H43 held; H34 public methodological caveat, not count chart. |
 | U07 / B | E04/E09/E14; partially covered, local women's/lay voices missing | Read Thai/Vietnamese/minority-language correspondence/oral-history editions with consent/rights review. Named exemplars do not represent every class or region. |
 | U08 / B | North/Bangkok overrepresentation; Isan/Malay-majority south missing research | Follow regional scholarship, local clergy/lay histories, schooling and work. Haadyai closure is not adequate southern history. No inference of Christian absence. |
 | U09 / B | Karen/Lahu/Hmong/Akha/Chinese differences; partly covered | Hayami full text and minority-authored histories; distinguish state integration, migration, citizenship and voluntary religious change; no "lost book" proto-Christian ancestry. |
-| U10 / B | Independent/Pentecostal/Adventist/Anglican traditions; partial/missing research | Read Thai independent-church studies and competing institutional histories; verify Anglican archives rather than inaccessible parish-history pages or Wikipedia. Christian Science, LDS, Jehovah's Witnesses and other self-identifying Christian communities remain unresearched, not silently assimilated or excluded by creed. |
-| U11 / B | Theology/documents/ordinary worship; missing research | Study Thai hymns/liturgies, contextual theology, lay prayer, seminary formation, doctrinal bases and minority-language reception. No copied hymns/Bible assets without rights. |
+| U10 / B | Independent/Pentecostal/Adventist/Anglican traditions; partial/missing research; LDS partly repaired | H48-H49/C39-C40 now establish LDS short mission/Thai scripture, not every institutional bridge. Anglican retries failed DNS/404 and Pentecostal PDF403: original grants/chapel registers and accessible Thai studies still needed. Christian Science/Jehovah's Witnesses and other self-identifying histories remain unresearched, not excluded by creed. |
+| U11 / B | Theology/documents/ordinary worship; partly repaired | H45-H46/C35-C36 add girls' mixed-sex worship and pa Wan's training, not general female ordination. Thai hymns/liturgies, contextual theology, lay prayer, doctrinal bases and minority-language reception still need evidence. No copied hymns/Bible assets. |
 | U12 / B | Class, retention, growth/decline, urban/rural comparison; partial | Compare like measures and longitudinal studies; hospital closure/union/mission proliferation do not measure conversion or national decline. Administrative series does not establish personal belief. |
 | U13 / B | Modern borders/refugees/diaspora; partly covered | Seek migration scholarship on Chinese/Vietnamese/Thai overseas networks and Myanmar displacement. Historical aid only in current selection; protect identifying present details. |
-| U14 / B | Catholic local hierarchy/clerical development,1898 women's formation; partial | Read ordination records, women's congregation histories and Thai-language scholarship. Don't adopt conflicting cardinal/episcopal dates in institutional summaries. |
+| U14 / B | Catholic local hierarchy/clerical development,1898 women's formation; partly repaired | H47/C38 adds primary 1944 letter on Thai leader/Chanthaburi. Exact erection/appointment/consecration records, local reception, women's congregation histories and Thai scholarship still missing. Do not treat testimony date as the act's effective date. |
 | U15 / B | Orthodox institutional self-report; partly covered | Read synodal acts and non-Moscow/local accounts; include other jurisdictions if established. No claim to universal Orthodox representation. |
 | U16 / C | Individual school/clinic biographies and additional anniversary visits | Optional breadth after consequential gaps. No famous-visitor list substituted for ordinary church histories. |
 
 ## Selection versus absence
 
-**Selected**: H01-H06, H08-H40 and H44. **Researched but not displayed**:
-H07, H41-H43. H42's incomplete-OT qualification also appears in H19;
+**Selected**: H01-H06, H08-H40 and H44-H49. **Researched but not displayed**:
+H07, H41-H43 and H50. H42's incomplete-OT qualification also appears in H19;
 that does not make H42 a selectable independent event. **Missing research**:
 the questions above, including Anglican formation and uninspected archives.
 These are not "UI-hidden" records. Raw data and handoff must agree; only a
@@ -68,3 +70,22 @@ permissions are outstanding because no media is proposed. Contemporary
 names/addresses encountered in source pages were not aggregated. Public
 claims retain critical source limitations; supplementary details may be in
 native disclosures but not silently removed.
+
+## Post-remediation per-unit supplement
+
+E22/R15 adds women's mixed-sex worship and hospital-oriented theological
+training to the already researched E06-E10 school/teacher story. E23/R16 adds
+Thai Catholic jurisdictional leadership before 1965 from a contemporary letter.
+E24-E25/R17-R19 distinguish a short mission, later worship and a locally
+translated scripture without inventing continuity or Protestant descent.
+All are **research present**, not exhaustive denominational coverage.
+H50/C41 is an attributed institutional admission of missionary cultural
+offense, **research present but held** pending judicial/news evidence, not
+silently treated as persecution or definitive guilt adjudication.
+
+The broad per-unit questions above remain in force. Adding several Northern
+examples does not repair southern/Isan imbalance; a French papal letter does
+not replace Thai laity; an LDS self-history does not independently verify its
+own claims. English/French access and one northern historian still dominate.
+The [audit](audit.md) retains exact before/after dispositions and next passages,
+including failed attempts, rather than calling gaps "not applicable."

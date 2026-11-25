@@ -53,3 +53,15 @@ to the source, not automatically to the event.
 | H42 | About 1920 / uncertain approximation /1994 scholarship | Northern Thai translation | Work suspension and incomplete OT; no invented 1920-01-01 or definitive project extinction date. C13 | P |
 | H43 | 2018 / point, reference year / evolving EFT page | EFT-affiliated Christians age 15+ | 196,177 self-reported affiliates,2,729 congregations; not all Christians/all ages/current estimate. C32 | Q |
 | H44 | 1970 to 1979 / uncertain decade, not service duration / undated WCC | CCT/Cambodian refugees, later Myanmar links | Relief crosses national boundary; later work has no manufactured start/end or public sensitive locations. C33 | Q |
+| H45 | 1885 / point, year / scholarship 1988 | Ban Chang Kam; two schoolgirls and mixed-sex worshipers | Local women lead village worship beyond classroom work. Mediated mission reports, not the girls' full testimony or universal female ordination. C35 | Q |
+| H46 | 1890 / point, year / scholarship 1988 | North; pa Wan, theological training/hospital ministry | Woman enters otherwise male training for religious work with patients. Source name form preserved; training not ordination or general equal access. C36 | Q |
+| H47 | 1944-10-29 / point, day of testimony / contemporary diplomatic letter | Chanthaburi/Bangkok; Pius XII, Regent Pridi, Jacques Louis Cheng | Letter reports prior creation of vicariate and Thai leader at its head; asks protection. Not exact effective erection/appointment/consecration date or proof of uniform state tolerance. C38 | Q |
+| H48 | 1854-04-06 / point, arrival day / institutional chronology | Bangkok; Elam Luddington, LDS | Four-month mission visit; no exact departure day plotted or uninterrupted bridge to early-1960s expatriate worship. Not all-Christian origin. C39 | Q |
+| H49 | 1976-10 / point, publication month / institutional chronology | Thai LDS scripture; Srilaksana Suntarahut | Thai Book of Mormon published, following translation-review committee from 1970. Not a Thai Bible edition or Protestant offshoot; full team/reception not verified. C40 | Q |
+| H50 | 1972-06 / point, source-reported month / institutional chronology | Thailand; two LDS missionaries and offended Buddhist publics | Church account admits offensive-image incident/arrests and six-month sentences; court/news records not inspected, image/identities not reproduced. Research-only, not a definitive judicial account. C41 | P |
+
+Audit supplement **2026-11-25**: H15 retains the memoir translation date but
+now includes Morishima's competing interpretation (C37): American protection
+and later persecution complicate universal-liberty narratives. S06's broad
+wording, exceptions and treaty context are not erased by a modern summary.
+No new date or authentic Thai original is inferred from that summary.

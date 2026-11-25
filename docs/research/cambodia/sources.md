@@ -1,6 +1,9 @@
 # Sources, inspected passages and provenance
 
-All retrievals: **2026-11-24 Pacific time**. Original paraphrases and links only;
+Foundation retrievals: **2026-11-24 Pacific time**; independent-sequence audit
+and supplementary retrievals: **2026-11-25 UTC**. These date conventions overlap,
+but identify the two research passes, not independent witnesses.
+Original paraphrases and links only;
 access is not permission to reproduce a book, scan, translation or photograph.
 No linked asset is imported. Bibliographic uncertainty remains explicit.
 
@@ -26,6 +29,12 @@ No linked asset is imported. Bibliographic uncertainty remains explicit.
 | S16 | United Methodist Cambodia Initiative, "History," undated changing page, [timeline](https://umccambodia.org/history/) | Full timeline through July 2024. Differentiates relief, 1992 diaspora, 2001 hymnal, January 2003 five-agency constitution and 2018 autonomy stage. Later page says full autonomous annual conference is a 2028 goal; do not collapse denomination/autonomy/conference statuses. | No child stories, photos or present missionary roster imported. |
 | S17 | Elliott Wright, "Visit the young, vibrant Methodist community in Cambodia," UMC Global Ministries, 2021-03-08, [article](https://umcmission.org/story/come-visit-the-young-vibrant-methodist-community-in-cambodia/) | Substantive article through program/firsthand account sections. Explicitly based on S16 website; **not independent corroboration**. Lists five partners; reports 2018 denomination and membership vs attendance as different measures. | No beneficiary details, dormitory locations, photos or program rosters imported. |
 | S18 | Yale MacMillan Center, Cambodian Genocide Program, [program overview](https://macmillan.yale.edu/gsp/research-collection/cambodian-genocide-program) | Entire overview headed CGP 1994-2019. Scholarly archival-program context, not primary security files; linked demographic report, judgment and 100,000-page archive not independently read. | No photographs, victim database, village map or personal dossiers copied. |
+| S19 | Catholic Church in Cambodia, [Community history](https://catholiccambodia.org/?page_id=22496&lang=en), undated, narrative through 2010 | Entire short history read before packet comparison. Local institutional retrospective gives Salas consecration April 14, versus S02 April 15, and March 2004 first vows of two Cambodian Lovers of the Cross sisters. Obvious "1068" typo and damaged first-priest sentence cannot establish corrected dates. Not independent of Catholic institutional memory. | Original paraphrase/link; no cathedral photographs or translated extracts. |
+| S20 | Alessandra De Poli, [Cambodia: Two Sisters and a Church Reborn](https://www.comboniyouth.org/witnesses/cambodia-two-sisters-and-a-church-reborn.html), Comboni Youth, 2023-11-07, credited De Poli/MM | Full article read before comparison and rechecked during repair. Participant recollection: Bun Nath's marketplace network, Ang Songvat/Marie, Bun Tharin/Teresa, Thai sisters, teaching, 2002 novitiate/2004 profession. Apparently syndicated from the AsiaNews/MM source family; inaccessible AsiaNews original is not a second witness. Reject its claim Bun Nath was the first Christian in the revived country: earlier survivors are established. | Historical public ministry roles only; no contemporary residences, group composition, contact details, images or copied testimony. |
+| S21 | Gilbert Lam and Nicolas Leron, [Cambodge - Entretien avec Francois Ponchaud](https://www.nonfiction.fr/article-7498-cambodge-entretien-avec-franois-ponchaud.htm), Nonfiction.fr, 2015-03-23; interview 2015-01-06, revised March | Substantive French Q&A read before comparison; development passages rechecked during repair. Participant recounts local refusal, road-work negotiation and collective canal work in May 2000. Not independently evaluated consent, labor conditions, health or impact. His generalizations about Buddhism/Khmer character, technical health/environment claims and beneficiary totals are not adopted. | Original historical analysis, not a translation/republication. No beneficiary names, village meeting map or technical advice. |
+| S22 | Russian Orthodox Diocese of Thailand, [Historical Background](https://dioceseofthailand.org/english-version/), undated | Entire historical section read before comparison, rechecked for 2016/2019. Moscow account: 2001 representation, 2016 Cambodia/Laos reassignment, 2019 four-country diocese. Shares ecclesial family with S11, not independent corroboration; original synodal acts not read. | No present parish/monastery counts, clergy roster, map, addresses or images reused. |
+| S23 | OMF International, [The Growth of Christianity in Cambodia](https://omf.org/ca/the-growth-of-christianity-in-cambodia/), 2021-08-27, updated January 2022 | Full substantive article read before comparison/rechecked after. Cites Don Cormack (1997), not independently inspected. Gives 1953 whole-Bible publication versus S03's 1952 completion/1954 distribution. Its 90% killed **or fled** is not S03's 80% killed; universal leader loss conflicts with S03 survivor account. All such mortality/current-growth claims held. | No pictures, present worker counts, copied testimony or unsupported demographic series. |
+| S24 | eBible.org / Bible Society in Cambodia, [Khmer Standard Version title and rights metadata](https://ebible.org/find/details.php?id=khm), last updated 2012-11-24 | Title, language, abbreviation, format and copyright blocks read before comparison/rechecked after. Central Khmer/KSV; title labels 2005, copyright 1997/2005; digital edition omits notes/intros. Metadata not original printing colophon or textual comparison. | No Bible verses, screenshots, translation or logo imported. No republication permission inferred from public access. |
 
 ## Claim-specific passage index
 
@@ -44,7 +53,7 @@ No linked asset is imported. Bibliographic uncertainty remains explicit.
 | C11 | S05, abstract, middle sentences beginning "Under the pro-American regime" | Early-1970s Bunong recruits, Khmer preachers, KEC incorporation, no universal conversion theory. |
 | C12 | S04, pp. 32-33, nn. 37-41 | Keam Ny/Sumido's 1974-1975 Khmer broadcasting from Manila; mediated archival evidence. |
 | C13 | S04, p. 33 and p. 34 nn. 42-43 | Tien Soth and women's correspondence teaching, reported 1975-06-02; date is testimony, not department foundation. |
-| C14 | S02, Persecutions, paragraph beginning "Life for the remaining" | Salas consecration 1975-04-15, distinct from appointment; source's death year contested (C19). |
+| C14 | S02, Persecutions, paragraph beginning "Life for the remaining" | Reports Salas consecration 1975-04-15, versus S19 April 14 (C39). Neither day silently selected; distinct from appointment. Source's death year also contested (C19). |
 | C15 | S04, pp. 28-29, Historical Background | Regime repression, border refugees, Christian survival/return, restrictions until 1990. Numerical survivor claims not adopted. |
 | C16 | S18, opening and archive-program paragraphs | National genocide 1975-1979 and multi-community persecution context, not Christian-specific death rates. |
 | C17 | S06, "Two million dead" and "We will do something" | Khmer translation team lost, 1985 restart in France; institutional retrospective testimony. |
@@ -69,6 +78,20 @@ No linked asset is imported. Bibliographic uncertainty remains explicit.
 | C36 | S12, History, 1997 paragraph | Attributed Jesuit Service participation in ICBL; prize belongs to the campaign, not exclusively this church. |
 | C37 | S02, Renaissance and Growth, 1995 sentences | Seminary reopening and renewed local ordination; registers not inspected. |
 | C38 | S17, paragraph "The Methodist Church in Cambodia" and complete five-agency list | 2018 denomination/autonomy description and partners. Dependent on S16, not independent corroboration. |
+| C39 | S19, April 14, 1975 paragraph and March 2004 first-vows paragraph | KH24 competing consecration day; KH51 two Cambodian Lovers of the Cross first professions. S20 supplies names/stages, not an independently checked profession register. |
+| C40 | S20, marketplace, catechetical journey, sewing/writing and final formation paragraphs | KH51: Bun Nath, Ang Songvat/Marie, Bun Tharin/Teresa; Thai sisters Pelagie/Xavier, 1994-1996 baptisms, 2002 novitiate, 2004 first profession and education work. No universal "first Christian" claim. |
+| C41 | S21, questions "Que faites-vous depuis ?", "Avec quelle entreprise ?" and "Y avait-il un ingenieur ?" | KH52: participant's account of initial refusal linked to forced-labor memory, road negotiation, villagers' work in May 2000. Not independent impact/consent verification; numerical/technical claims excluded. |
+| C42 | S22, Historical Background, October 21, 2016 and February 26, 2019 paragraphs | KH53-KH54: Cambodia/Laos reassignment then diocese including Thailand/Cambodia/Laos/Myanmar. Not 2013 civil registration, a doctrinal split or a national church. |
+| C43 | S23, opening Bible paragraph and fourth paragraph | KH55: 1953 publication claim, not demonstrated contradiction with later distribution; original imprints needed. Leader-loss and killed-or-fled wording tested against C44, not imported as a statistic. |
+| C44 | S03, paragraph "Even after the fall" and following camp/returnee paragraphs | KH27: Yourng South/Soth (spellings vary within the page) visiting scattered survivors; camp and return networks. Does not verify national mortality or settle the spelling. |
+| C45 | S24, title, language, abbreviation, format, copyright and update blocks | KH56: KSV/Central Khmer, 1997/2005 copyright and 2012 digital update; distinguish edition label from verified printing/completion. Metadata supports no comparative reception or copied Bible text. |
+| C46 | S04, pp.25-26, notes 9-12 | KH38/KH57: some evangelical interlocutors favor KHOV; Khmer songs/indigenous tunes associated with former refugee ministers Barnabas Mam and Sarin Sam; devotional inheritance. No collection publication year or national prevalence. Note 9's reversed version wording unresolved. |
+
+Audit writer re-read S02, S03, S06 and the relevant S09 passages; S04 PDF
+pp.24-33 plus p.34 opening were independently re-read after baseline freeze,
+including pp.25-26 for C46. This does not claim a fresh reading of every
+foundation source or the underlying CMA archives. Full-text S05 remained
+inaccessible (HAL/Brill download 403); its abstract is still the evidence limit.
 
 ## Leads not admitted as read evidence
 

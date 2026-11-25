@@ -19,7 +19,7 @@ source, not silently treated as a second independent witness. Sources and C IDs:
 | battambang-prefecture | Catholic jurisdiction; Battambang/Battam-bang | Established 1968, later mission responsibilities do not make Jesuit Service its original parent. C04/C22. |
 | kampong-cham-prefecture | Kompong-Cham/Kampong Cham, jurisdiction | Established 1968; not all churches in this province. C04. |
 | tep-im-sotha | Catholic prefect, person | Khmer head of Battambang in 1968; killed under Khmer Rouge per S02, exact circumstances not independently established. C04/C14. |
-| salas | Joseph Chhmar Salas, bishop | Consecration 1975-04-15; death 1976/1977 conflicted. C14/C19. |
+| salas | Joseph Chhmar Salas, bishop | Consecration April 14/15, 1975 conflicted (C14/C39); death 1976/1977 also conflicted (C19). Original register needed. |
 | alliance-mission | Christian and Missionary Alliance/C&MA/CMA mission agency | Cambodia work 1923, national organization independent 1954; agency continues externally, no artificial terminal date. C05-C07. |
 | hammond-team | Arthur and Esther Hammond with Cambodian Buddhist/Christian consultants | Translation from 1920s, full version distributed 1954. Consultants not collapsed into sole foreign authorship; individual names missing. C05-C06. |
 | ellison-team | David and Muriel Ellison, missionary educators | Battambang work and 1925 school; Muriel's 1963 collaboration with Nai. C06/C08. |
@@ -45,11 +45,18 @@ source, not silently treated as a second independent witness. Sources and C IDs:
 | methodist-diaspora | Cambodian Methodist networks in Paris/Switzerland | 1992 local initiatives described by mission history. C24. |
 | mcc | Methodist Church in Cambodia/MCC | Joint mission 2003, denomination/autonomy stage 2018; annual-conference developments not equated with all earlier statuses. C29. |
 | lds | Church of Jesus Christ of Latter-day Saints, self-identified Christian tradition | Diaspora/expatriate context, national recognition 1994; no parent edge from KEC. C27. |
-| orthodox-cambodia | Orthodox Christian Church of Cambodia (Moscow Patriarchate), Eastern Orthodox institution | Pastoral care from Thailand 2001, reported registration 2013, resident priest 2014; earlier household presence not precisely dated. C28. |
+| orthodox-cambodia | Orthodox Christian Church of Cambodia (Moscow Patriarchate), Eastern Orthodox institution | Pastoral care from Thailand 2001, reported registration 2013, resident priest 2014, reassignment 2016 and regional diocese 2019; earlier household presence not precisely dated. C28/C42. |
 | suon-hangly | Pierre Suon Hangly, senior Catholic institutional office-holder | 2025 coadjutor appointment; not automatically completed succession. C34. |
 | khov | Hammond Bible / Khmer Old Version, text | 1954 distribution, not beginning of all Khmer Christian literature. C05-C06. |
 | modern-khmer-bible | Modern Khmer Bible, interconfessional text | 1997 publication in institutional account; version/revision nomenclature needs bibliographic study. C18. |
 | methodist-hymnal | Christian Hymn and Worship Book, text | 2001 cooperative Khmer publication, not quoted/reproduced. C35. |
+| catholic-women-formation | Ang Songvat / Sister Marie; Bun Tharin / Sister Teresa; distinct women, not one corporate body | Marketplace encounters, catechesis, sewing/literacy teaching, novitiate 2002 and first profession 2004. Public historical ministry roles, not contemporary residences or roster. C39-C40. |
+| bun-nath | Laywoman/marketplace evangelizing network | De Poli's participant account links earlier acquaintance with Lesouef to later conversations and introductions; no universal first-Christian claim or invented baptism day. C40. |
+| lovers-cross-formation | Lovers of the Cross sisters, local/transborder formation context | Thai sisters Pelagie/Xavier teach alongside Cambodian women; first profession in 2004 is not foundation of the worldwide congregation. C39-C40. |
+| village-development-participants | Collective local actors in a development interview, not a membership list | Refusal, road negotiation and irrigation labor around 2000 as recalled by Ponchaud in 2015. Consent/impact not independently verified. C41. |
+| yourng-survivor-network | Pastor Yourng South / Yourng Soth, source-internal spelling variants | Alliance account of visits to scattered post-1979 Christians. Identity spelling not independently resolved; no current contact or survivor census. C44. |
+| regional-orthodox-diocese | Moscow-linked Diocese of Thailand, transborder jurisdiction | 2019 organization includes Cambodia/Thailand/Laos/Myanmar, after 2016 reassignment; not a timeless Cambodian national body. C42. |
+| khmer-hymn-network | Barnabas Mam, Sarin Sam and Khmer hymn repertoire | Wong pp.25-26 associates former refugee ministers with songs using indigenous tunes; collection date, authorship of every song and national reception unknown. C46. Distinct from the 2001 Methodist book. |
 
 ## Relationships: evidence, direction and disposition
 
@@ -75,3 +82,8 @@ relationships; a display lane is not an entity or a denominational parent.
 | KR15 | modern-khmer-team -> Catholic/Protestant universal merger | **Rejected**. Shared translation does not merge churches. |
 | KR16 | genocide -> all postwar churches, causal origin | **Rejected overbroad**. Violence, survival, refugee conversion and return differ; no single founding cause. |
 | KR17 | cambodia-region -> every church, "national ancestor" | **Not applicable**. A country is a research boundary, not a church body. |
+| KR18 | bun-nath -> catholic-women-formation; encounter/catechesis network | 1990s recollection in C40. Qualified association and lay agency, not ecclesial descent or first-ever Christian transmission. |
+| KR19 | lovers-cross-formation <-> catholic-women-formation; teaching/formation | 1990s-2004 stages in C39-C40, qualified institutional/participant accounts. No claim women's teaching equals clerical ordination or a new denomination. |
+| KR20 | village-development-participants <-> ponchaud; negotiation/cooperation | Work in May 2000, testimony January 2015, C41. Qualified participant account; neither donor control nor universal voluntary consent inferred. No public lineage edge. |
+| KR21 | orthodox-cambodia -> regional-orthodox-diocese; jurisdiction | 2016 reassignment precedes 2019 organization, C42. Qualified Moscow report, original acts missing; not civil recognition, merger of all Orthodox or descent from older missions. |
+| KR22 | khmer-hymn-network -> worship repertoire; composition/reception | Undated collection described by Wong 2021, C46/KH57. Research present, publication date missing. No conflation with methodist-hymnal or inferred universal adoption. |

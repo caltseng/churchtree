@@ -6,8 +6,8 @@ const clone = () => structuredClone(canonical);
 test('Thailand research selection preserves held conflicts and date/testimony boundaries', () => {
     validate(canonical);
     const records = new Map(canonical.events.map(event => [event.research, event]));
-    assert.equal(records.size, 40);
-    assert.deepEqual(Object.keys(canonical.held).sort(), ['H07', 'H41', 'H42', 'H43']);
+    assert.equal(records.size, 45);
+    assert.deepEqual(Object.keys(canonical.held).sort(), ['H07', 'H41', 'H42', 'H43', 'H50']);
     assert.match(records.get('H01').caveat, /Not the first-ever/);
     assert.equal(records.get('H12').date.start, '1867-04');
     assert.equal(records.get('H15').date.start, '1878-10-08');
@@ -18,6 +18,11 @@ test('Thailand research selection preserves held conflicts and date/testimony bo
     assert.equal(records.get('H39').date.start, '2021-12');
     assert.match(records.get('H39').caveat, /not a matching denominator/);
     assert.match(records.get('H40').testimony, /2023.*2024/);
+    assert.match(records.get('H15').caveat, /Morishima/);
+    assert.match(records.get('H47').date.basis, /testimony/);
+    assert.match(records.get('H47').caveat, /not their effective date/);
+    assert.equal(records.get('H49').date.start, '1976-10');
+    assert.match(records.get('H49').caveat, /not another Thai Bible edition/);
     assert.deepEqual(canonical.relations, []);
 });
 

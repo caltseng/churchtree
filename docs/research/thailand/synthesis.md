@@ -61,6 +61,23 @@ northern jurisdictions. Its translated date is not a newly checked Thai
 royal original, nor a guarantee that every locality enjoyed modern freedom.
 [C09-C10](sources.md#claim-specific-passage-index)
 
+Women's religious work also extended beyond classroom employment: Swanson
+p.197 describes two schoolgirls leading mixed-sex worship at Ban Chang Kam in
+1885; p.196 records pa Wan entering otherwise male theological training in
+1890 for religious work with hospital patients. These are bounded examples,
+not universal female ordination, equal admission or the women's unmediated
+testimony. They complicate a school-to-male-clergy-only narrative
+(C35-C36/H45-H46).
+
+Morishima's FY2024 research summary interprets the 1878 measure primarily as
+American protection and sees later persecution as exposing its limits.
+McGilvary's 1912 account, pp.210-217, also describes consular intervention and
+treaty employment rights, alongside broad conscience clauses and exceptions
+to Sabbath labor protection. Textual wording, diplomatic motive and actual
+enforcement are different questions. Only Morishima's summary, not the full
+Japanese argument or Thai decree, was inspected; this packet presents the
+competing interpretation without deciding every later case (C37).
+
 Catholic schools, sisters' nursing and local religious formation also shaped
 Christian institutional life: Assumption College 1885 and the St Paul de
 Chartres sisters' 1898 arrival are examples, not the whole education/medical
@@ -104,6 +121,17 @@ separate wartime history. No national casualty total or adjudication of
 every accusation follows from these sources.
 [C15-C17](sources.md#claim-specific-passage-index)
 
+Thai Catholic leadership did not simply begin with the 1965 hierarchy.
+In a French letter dated October 29, 1944, Pius XII tells Regent Pridi that
+Chanthaburi has been constituted from Bangkok under Jacques Louis Cheng,
+whom he describes as Thai, and asks protection for the ministry. The letter
+is primary evidence of papal representation and diplomacy, not the erection,
+appointment or episcopal-consecration instrument. Its date must not become
+the effective date of those separate acts. Its long-term papal-policy and
+royal-goodwill claims are interested testimony, not proof against wartime
+persecution elsewhere; its general 1555 origin sentence is not adopted
+over the resident-mission evidence (C38/H47).
+
 Presbyterian institutional transfer in 1957, Disciples transfer 1961 and
 CCT formal self-government 1976 mark different stages, not an instantaneous
 end to foreign money or senior influence. The Catholic hierarchy 1965 is
@@ -137,6 +165,23 @@ Orthodox/diaspora connections without creating descent from the older
 Catholic or Protestant missions. No contemporary vulnerable roster or
 meeting-site map is published.
 [C27/C33](sources.md#claim-specific-passage-index)
+
+Other self-identified Christian histories must not be silently absorbed into
+Protestant or Catholic lineage. The LDS institutional chronology dates Elam
+Luddington's Bangkok arrival to April 6, 1854 and a four-month stay, distinct
+from expatriate worship in the early 1960s; no uninterrupted bridge is
+established (C39/H48). It credits Srilaksana Suntarahut's work on a 1970
+review committee and as principal translator of the Thai Book of Mormon
+published in October 1976 (C40/H49). That scripture is not another Thai Bible
+edition. Institutional "first" claims are confined to this church, not all
+Thai Christians, and no private contemporary convert roster is reproduced.
+
+The same church chronology admits that missionaries' offensive photograph
+with a Buddha statue in June 1972 led to arrests and six-month sentences.
+This is useful evidence against a uniformly respectful missionary
+self-portrait, but remains an institutional account, not a judicial finding
+independently reconstructed here; H50 is held pending court/news records.
+The photograph, identities and ritual text are not republished (C41).
 
 The 2023 religious-freedom report quotes a **December 2021 administrative
 1.2% Christian affiliation figure**. Its midyear 2023 population estimate is

@@ -1,7 +1,7 @@
 # Sources, inspected passages and reuse
 
 Evidence was retrieved on **2026-11-24** (S01-S13) and
-**2026-11-25** (S16-S18 and C34); S14-S15 were accessed on 2026-11-24.
+**2026-11-25** (S16-S21 and C34-C41); S14-S15 were accessed on 2026-11-24.
 Dates below distinguish publication from access
 and an event from later testimony. All claims are original paraphrases.
 No photographs, maps, scan pages, Bible text or substantial quotations are
@@ -30,6 +30,21 @@ are published. No downloaded research PDF is a repository/public asset.
 | S16 | Evangelical Fellowship of Thailand, [ประวัติความเป็นมา / History](https://eft.or.th/history/), undated evolving page | Thai opening history and dated chronology through 1969, plus 2018 statistical paragraph. Self-report distinguishes June recognition/September license, unlike S03 compression. No membership roster, addresses or current officials reproduced. English paraphrase needs Thai review. |
 | S17 | Osée Kamgang Toho, [Thailand](https://encyclopedia.adventist.org/article?id=CATD), *Encyclopedia of Seventh-day Adventists*, first published 2026-03-02 | Origins, First Permanent Missionaries, Development Phase, Indigenous Pioneers, Geographic Expansion passages and headline statistics. Institutional/mission-centered history; linked underlying periodicals not independently read. Erroneous state-religion/general demographic assertions rejected. No pictures, modern personnel/location list or text copied. |
 | S18 | Milton Hook, [Longway, Ezra Leon and Inez Ruth; later Florence Ione](https://encyclopedia.adventist.org/article?id=98IV), *Encyclopedia of Seventh-day Adventists*, 2020-08-06 | Opening three Mission Service paragraphs read: Christmas 1918 arrival, mission roles/language study and Chinese Singapore-trained coworkers. Earlier institutional biography, not independent of Adventist source networks; underlying travel documents not read. No family pictures or personal roster copied. |
+| S19 | Morishima Yutaka, [The Influence and Challenges of Christianity on Religious Freedom in Thailand: Final Research Report](https://kaken.nii.ac.jp/report/KAKENHI-PROJECT-19K00085/19K00085seika/), KAKEN19K00085/Aoyama Gakuin University, FY2024, published 2026-01-16 | English summary actually read before packet comparison, not full Japanese report/monograph. Argues the edict primarily protected Americans and later persecution exposed limits. A different scholarly interpretation of intention/enforcement, not a new authenticated Thai text or proof the translated broad clauses never existed. |
+| S20 | Pius XII, [Letter to the Regent of Thailand](https://www.vatican.va/content/pius-xii/fr/letters/documents/hf_p-xii_lett_19441029_reggente-tailandia.html), 1944-10-29, source note *Actes et Documents du Saint-Siege*, vol.11, pp.596-597 | Full French letter read after baseline freeze, during repair. Primary diplomatic statement on Chanthaburi/Jacques Louis Cheng and request for protection; not independent evidence that stated papal policy or government goodwill was uniformly realized. Letter date does not establish exact erection/appointment/consecration dates. Its general 1555 arrival claim is not adopted as resident-mission evidence. |
+| S21 | Church of Jesus Christ of Latter-day Saints, [Thailand: Church Chronology](https://www.churchofjesuschrist.org/study/history/global-histories/thailand/th-chronology?lang=eng), undated evolving page | Full English chronology read after baseline freeze; admitted 1854 visit, 1970/1976 translation and bounded 1972 incident. Later entries do not extend the public observation horizon beyond 2023. Institutional account, not independently read mission diaries/court records. "First" confined to this church; no all-Christian origin or uninterrupted continuity inferred. No images, contemporary convert list, meeting sites or ritual text reused. |
+
+Audit inspection supplement, **2026-11-25 UTC**: before packet comparison,
+the audit writer independently read **all printed pp.187-206 of S04 visually**
+from ten rendered spreads of the author-hosted scan after text extraction/OCR
+failed. This expands, not retroactively replaces, the foundation's recorded
+read extent. Page206 identifies Swanson's CCT history office; S03-S05 remain one
+historian's works, not three independent witnesses. S06 pp.210-217 were
+rechecked through Internet Archive OCR after comparison: consul/treaty leverage,
+universal-sounding choice clauses and work exceptions coexist in the memoir.
+The Thai original and local enforcement files remain uninspected.
+Only original paraphrases/links from S19-S21 are used; no report/letter
+translation, scan, scripture, photograph or substantial quotation is republished.
 
 ## Claim-specific passage index
 
@@ -73,6 +88,13 @@ independent witnesses.
 | C32 | S16, paragraph explicitly headed by 2018 statistical reference | H43: 196,177 affiliated Christians **age 15+**, 2,729 congregations, self-reported 2018. Not comparable to all-age/state counts; not a current total. |
 | C33 | S07, social-work/refugee paragraph | H44: CCT relief for Cambodian refugees in 1970s, later Myanmar work and transnational links. Decade bounds locate evidence, not continuous operation dates or present sites. |
 | C34 | Nancy Royce, [A Sketch of the Life and Character of Mrs. Emelie Royce Bradley](https://digitalbangkokrecorder.com/publications/emelie_royce_bradley/chapter-5/), chapter V, opening and July 1835 diary passages; [edition note](https://digitalbangkokrecorder.com/publications/emelie_royce_bradley/) | H10: July 1835 arrival, dispensary/language/household work and contact with court and poorer patients. Edited family memoir, c.1856 per header/c.1865 footer; digital transcription of undated typescript, not manuscript diary checked. Colonial/anti-Buddhist judgments not adopted. Access 2026-11-25; no modern transcription copied. |
+| C35 | S04 p.197, schoolgirls and northern church work paragraphs | H45: two schoolgirls led mixed-sex village worship at Ban Chang Kam in 1885; later Chiang Rai women's positions mentioned for 1899. Mediated mission evidence; not the girls' full testimony, general ordination or every congregation's practice. |
+| C36 | S04 p.196, theological training and Bible women paragraphs | H46: pa Wan entered theological training in 1890 for hospital religious work; later Bible-women work expanded after 1905. No invented full name, ordination or general equal-admission policy. |
+| C37 | S19, English final-report summary, final clause | H15: scholarly interpretation of American protection/later persecution. Compare S06 pp.210-217 including treaty/employment leverage and broad choice clauses. Only summary read; stronger causal adjudication held for Thai original/full argument/enforcement records. |
+| C38 | S20, opening three paragraphs and following request for protection; final date/source note | H47: reports Chanthaburi constituted from Bangkok and Thai leader Jacques Louis Cheng at its head by the letter of 1944-10-29. Primary diplomatic testimony, not exact effective date or episcopal-consecration record. |
+| C39 | S21, April 6, 1854 and early-1960s entries | H48: Elam Luddington's arrival/four-month stay, distinct from later expatriate worship. No checked intervening institutional bridge or exact departure day. |
+| C40 | S21, January 19, 1970 and October 1976 entries | H49: translation review and Thai Book of Mormon publication; Srilaksana Suntarahut principal translator. Separate from Thai Bible editions; no claim to full team, reception or copied scripture. |
+| C41 | S21, June 1972 entry | H50: institutional account admits missionaries' offensive Buddha-statue photograph, arrests and six-month sentences. Judicial/news files not read; no image, personal roster or definitive legal reconstruction. |
 
 ## Excluded leads, errors and dependence
 
@@ -107,3 +129,12 @@ independent witnesses.
   not archival documents read by this writer. S03/S04/S05 are distinct works
   by one historian; S01/S12, S08-S10, and S03/S07 each share institutional
   contexts. No spurious independent witness count is claimed.
+- Audit retry of the Thai Christ Church history (`ccbthai.org/mobile/about_us.html`,
+  HTTP/HTTPS and hostname variants) failed DNS; English parish `/history`
+  returned404. Indexed Thai text is **not** passage verification. Original
+  1861 grant, 1864 chapel records and 1905 dedication remain specific leads,
+  not newly verified dates. No Wikipedia chronology imported to fill the gap.
+- An author-hosted S03 scan was downloaded by the audit writer but not newly
+  read; this does not add to the foundation's inspected extent. Thai Missions
+  Pentecostal-history PDF download still returned403; catalog metadata is not
+  a Pentecostal institutional history.
