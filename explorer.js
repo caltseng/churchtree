@@ -19,7 +19,7 @@
     const families = [...new Set(d.nodes.map(n => n.tradition_family || 'Other'))].sort();
     let level = 0, family = '', selected = null, focus = null, layout = 'timeline', period = null, timelineControl = null, lastTimeline = 'timeline';
     let graphControl=null,graphViewKey='';
-    const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const {escNullable: esc} = window.HTMLEscape;
     const label = n => n.short_label || n.name;
     const isActive = n => !n.aggregate && n.current_status === 'active';
     const searchInput = $('search'), searchResults = $('results'), searchStatus = $('search-status');

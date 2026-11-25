@@ -3,7 +3,7 @@ const path = require('node:path');
 const data = require('./content.json');
 const study = require('./study-build.cjs');
 const proofs = require('./proofs-build.cjs');
-const esc = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');
+const {escReader: esc} = require('../html-escape.js');
 const chapters = data.chapters;
 const toc = chapters.map(chapter => `<li><a href="#chapter-${chapter.number}"><span>${String(chapter.number).padStart(2, '0')}</span>${esc(chapter.title.replace(/^Of /, ''))}</a></li>`).join('');
 const options = chapters.map(chapter => `<option value="${chapter.number}">${chapter.number}. ${esc(chapter.title.replace(/^Of /, ''))}</option>`).join('');

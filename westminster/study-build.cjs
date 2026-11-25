@@ -4,7 +4,7 @@ const load=name=>JSON.parse(fs.readFileSync(path.join(__dirname,name),'utf8'));
 const notes=load('study-notes.json'),registry=load('study-sources.json'),text=load('content.json'),sources=registry.sources;
 const pca=require('./pca-audit-build.cjs');
 const labels={'reading-guide':'Reading the text','historical-context':'Historical context','doctrinal-comparison':'Doctrinal comparison','textual-revision':'Textual revision','subscription-procedure':'Subscription procedure'};
-const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
+const {escReader:esc}=require('../html-escape.js');
 const safeURL=url=>/^https:\/\/|^#(?:section|chapter|study|note)-[\w-]+$/.test(url);
 const allIDs=new Set();
 assert.equal(notes.schemaVersion,1);assert.equal(registry.schemaVersion,1);assert.equal(notes.chapters.length,33);

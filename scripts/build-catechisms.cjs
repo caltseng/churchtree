@@ -1,14 +1,12 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const {esc: escape} = require('../html-escape.js');
 
 const root = path.resolve(__dirname, '..');
 const books = [
   { route: 'wsc', title: 'Westminster Shorter Catechism', count: 107, pages: '285–314' },
   { route: 'wlc', title: 'Westminster Larger Catechism', count: 196, pages: '127–281' },
 ];
-const escape = value => value.replace(/[&<>"']/g, character => ({
-  '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
-})[character]);
 
 for (const book of books) {
   const { route, title, count, pages } = book;

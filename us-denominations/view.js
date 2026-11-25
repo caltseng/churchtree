@@ -1,12 +1,10 @@
 /* Shared by the offline generator and browser; inputs are the intentional public projection. */
 (function (root, factory) {
-  if (typeof module === 'object' && module.exports) module.exports = factory();
-  else root.USAffiliationView = factory();
-})(typeof globalThis === 'object' ? globalThis : this, function () {
+  if (typeof module === 'object' && module.exports) module.exports = factory(require('../html-escape.js'));
+  else root.USAffiliationView = factory(root.HTMLEscape);
+})(typeof globalThis === 'object' ? globalThis : this, function (htmlEscape) {
   'use strict';
-  const esc = value => String(value).replace(/[&<>"']/g, c => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
-  }[c]));
+  const {esc} = htmlEscape;
   const partial = 'Published detail covers selected reported affiliations, not an exhaustive inventory. No residual is inferred. Totals and children may differ because of rounding or available detail.';
   const complete = 'Published estimates are independently rounded and need not add to the parent or to 100%. No residual is inferred.';
   function members(data, lens) {
