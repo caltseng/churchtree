@@ -19,6 +19,10 @@ fs.mkdirSync(output, {recursive: true});
             await page.locator('#graph svg').waitFor();
             assert.match(page.url(), /\/thailand-history\/$/);
             assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+            assert(await page.locator('#graph svg > text.mode-note[text-anchor="middle"]').evaluateAll(labels => {
+                const boxes = labels.map(label => label.getBoundingClientRect()).sort((a, b) => a.left - b.left);
+                return boxes.length === 6 && boxes.every((box, index) => !index || box.left >= boxes[index - 1].right);
+            }), 'Country lane headings do not overlap');
             assert(await page.locator('#graph').evaluate(element => {
                 const box = element.getBoundingClientRect();
                 return Math.min(box.bottom, innerHeight) - Math.max(box.top, 0) >= Math.min(180, innerHeight * .4);

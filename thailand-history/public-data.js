@@ -3,15 +3,15 @@ window.COUNTRY_HISTORY_DATA = {
   "title": "Church in Thailand",
   "scope": "Selected episodes, 1567-2023. Multiple traditions and changing borders; not one national church tree or comprehensive coverage.",
   "geography": "Present Thailand organizes the selection; Ayutthaya/Siam, northern Lanna/Laos Mission and transborder jurisdictions retain historical meanings.",
-  "limits": "Sources retrieved 2026-11-24/25; latest selected context 2023, affiliation reference December 2021. Writer self-review, not independent scholarly or Thai-language review. Southern/Isan histories, ordinary worship, other traditions and comparable growth/retention remain incomplete. Conflicting early Bible dates and undated continuities are held, not UI-hidden. No copied media or vulnerable contemporary rosters/locations.",
+  "limits": "Sources retrieved 2026-11-24/25; latest selected context 2023, affiliation reference December 2021. Writer self-review, not independent scholarly or Thai-language review. Southern/Isan histories, ordinary worship, other traditions and comparable growth/retention remain incomplete. Conflicting early Bible dates and undated continuities are held, not UI-hidden. Protestant includes independent and charismatic histories; Society groups people, service and state. No copied media or vulnerable contemporary rosters/locations.",
   "lanes": [
     {
       "id": "catholic",
-      "label": "Catholic communities"
+      "label": "Catholic"
     },
     {
       "id": "protestant",
-      "label": "Protestant and independent"
+      "label": "Protestant"
     },
     {
       "id": "adventist",
@@ -19,15 +19,15 @@ window.COUNTRY_HISTORY_DATA = {
     },
     {
       "id": "orthodox",
-      "label": "Modern Orthodox"
+      "label": "Orthodox"
     },
     {
       "id": "language",
-      "label": "Language and texts"
+      "label": "Language"
     },
     {
       "id": "society",
-      "label": "People, society and state"
+      "label": "Society"
     }
   ],
   "events": [

@@ -40,6 +40,9 @@ controller/CSS and established shared timeline model/layouts.
 China's public slugs and independent denomination dataset remain unchanged.
 Display lanes group historical subject matter, **not ancestry**; country
 chronology must never enter denomination auto-discovery.
+Compact lane names avoid mobile heading overlap; the scope disclosure explains
+that Protestant includes independent/charismatic episodes and Society groups
+people, service and state. The shorter labels do not change historical units.
 
 There are no structural relations: the research separately records context,
 teaching, union, jurisdiction, influence and rejected edges. Especially do not
