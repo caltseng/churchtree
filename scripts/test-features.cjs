@@ -1,7 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const repo=path.resolve(__dirname,'..'),root=process.env.CHURCHTREE_TEST_ROOT?path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT):path.join(repo,'dist'),server=require('./test-server.cjs')(root),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
-const pageCount=JSON.parse(fs.readFileSync(path.join(repo,'site.config.json'),'utf8')).pages.length;
-const countries=JSON.parse(fs.readFileSync(path.join(repo,'site.config.json'),'utf8')).countryHistories;
+const {pages,countryHistories}=JSON.parse(fs.readFileSync(path.join(repo,'site.config.json'),'utf8')),pageCount=pages.length;
 async function openAppearance(page) {
  const trigger = page.getByRole('button', {name:'Site menu', exact:true});
  assert.equal(await trigger.count(), 1);
@@ -22,7 +21,8 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   const globalChurch=page.locator('.tool-card[data-id="global-church"]');
   assert.equal(await globalChurch.getAttribute('href'),'global-church/');
   assert.equal(await globalChurch.getByRole('heading').innerText(),'The global church');
-  assert.match(await globalChurch.innerText(),/China and Cambodia/);
+  const countryCopy=await globalChurch.innerText();
+  for(const country of countryHistories) assert(countryCopy.includes(country.title),country.title+' appears in the available-country copy');
   assert.match(await globalChurch.locator('.card-action').innerText(),/Choose a country/);
   assert.equal(await globalChurch.locator('.card-preview svg').count(),1);
   assert.match(await globalChurch.locator('.card-preview').textContent(),/COUNTRY HISTORIES.*SELECTED EPISODES/);
@@ -32,13 +32,14 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   await globalChurch.focus();await page.keyboard.press('Enter');
   await page.waitForURL('**/global-church/');
   const countryCards=page.locator('.country-card');
-  assert.deepEqual(await countryCards.evaluateAll(cards=>cards.map(card=>card.getAttribute('href'))),countries.map(country=>'../'+country.path));
-  assert.equal(await countryCards.count(),countries.length);
+  assert.deepEqual(await countryCards.evaluateAll(cards=>cards.map(card=>card.dataset.id)),countryHistories.map(country=>country.id));
+  assert.deepEqual(await countryCards.evaluateAll(cards=>cards.map(card=>card.getAttribute('href'))),countryHistories.map(country=>'../'+country.path));
+  assert.equal(await countryCards.count(),countryHistories.length);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Country picker fits the viewport');
   const paths=await countryCards.locator('.country-outline path').evaluateAll(elements=>elements.map(element=>element.getAttribute('d')));
-  assert.equal(new Set(paths).size,countries.length,'Countries have distinct source outlines');
+  assert.equal(new Set(paths).size,countryHistories.length,'Countries have distinct source outlines');
   assert(paths.every(d=>d.length>500&&!/NaN|Infinity/.test(d)),'Outlines contain detailed, finite geometry');
-  for(const [index,country] of countries.entries()){
+  for(const [index,country] of countryHistories.entries()){
    const card=countryCards.nth(index);
    assert.equal(await card.getAttribute('aria-labelledby'),country.id+'-name');
    assert.equal(await card.getByRole('heading').innerText(),country.title);
@@ -61,7 +62,7 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   }
   await page.locator('html').evaluate(element=>element.dataset.theme='parchment');
   await page.locator('.skip-link').focus();await page.keyboard.press('Enter');await page.keyboard.press('Tab');
-  for(const country of countries){
+  for(const country of countryHistories){
    const card=page.getByRole('link',{name:country.title,exact:true});
    assert(await card.evaluate(element=>element===document.activeElement),'Sequential keyboard navigation: '+country.title);
    assert(await card.evaluate(element=>getComputedStyle(element).outlineStyle!=='none'&&parseFloat(getComputedStyle(element).outlineWidth)>=3),'Visible focus: '+country.title);
@@ -77,7 +78,7 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   assert.equal(await countryCards.first().evaluate(element=>getComputedStyle(element).transform),'none');
   assert.equal(await countryCards.first().locator('.country-outline').evaluate(element=>getComputedStyle(element).transitionDuration),'0s');
   await page.emulateMedia({reducedMotion:'no-preference'});
-  for(const country of countries){
+  for(const country of countryHistories){
    await page.getByRole('link',{name:country.title,exact:true}).focus();await page.keyboard.press('Enter');
    await page.waitForURL('**/'+country.path);
    assert.equal(await page.title(),`Church in ${country.title} history · Main Branch`);
@@ -116,7 +117,7 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
    await page.getByRole('link',{name:/Westminster Standards/}).click();await page.waitForURL(/\/westminster-standards\/$/);
   }
   await page.screenshot({path:path.join(output,`westminster-${size.width}.png`),fullPage:true});
-  for (const route of ['/church-history/', '/china-history/', '/global-church/', '/cambodia-history/', '/westminster-standards/', '/wcf/', '/wsc/', '/wlc/', '/us-denominations/']) {
+  for (const route of ['/church-history/', ...countryHistories.map(country=>'/'+country.path), '/global-church/', '/westminster-standards/', '/wcf/', '/wsc/', '/wlc/', '/us-denominations/']) {
    assert.equal((await page.goto(base+route)).status(),200);
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),route+' fits the viewport');
    const trigger = await openAppearance(page);
