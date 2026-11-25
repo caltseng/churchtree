@@ -6,9 +6,11 @@ citations live in `common/`; set-local source/citation files are also supported.
 `common/tags.json` is optional metadata and is not currently an explorer filter.
 
 The release build discovers every set and writes generated `dist/data/data.js`.
-Use `npm run build` and the validator on that artifact. `data/data.js` remains a
-legacy source-preview bundle refreshed by `scripts/build-data-js.ps1`; don't edit
-it by hand. Build discovery is not permission to import unreviewed or malformed data.
+Use `npm run build` (`scripts/build-site.cjs`), the only denomination bundle
+generator, and run `node scripts/validate-data.cjs dist/data/data.js` on that
+artifact. The compact bundle is generated, not edited by hand. The obsolete
+source-preview `data/data.js` is ignored and no longer tracked; serve the built
+`dist/` site instead. Build discovery is not permission to import unreviewed or malformed data.
 
 The catalog contains 94 nodes across 20 sets. Church History shows 92 of them.
 The Latter-day Saints and Jehovah’s Witnesses profiles remain in the public data

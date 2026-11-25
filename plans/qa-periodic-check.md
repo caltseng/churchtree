@@ -19,10 +19,10 @@ Run this checklist before major merges or data refreshes.
 - Check hover tooltips for nodes and edges render correctly.
 
 ## Build
-- Re-run the bundle build: `powershell -ExecutionPolicy Bypass -File scripts/build-data-js.ps1`.
+- Re-run the bundle build: `npm run build`, then validate `dist/data/data.js`.
 
 ## Checklist
 - [x] Run `docs/spec/data-audit-checklist.md`.
 - [x] Validate zoom tier integrity and cluster labels.
 - [ ] Review visual alignment and hover behavior.
-- [x] Rebuild `data/data.js`.
+- [x] Rebuild `dist/data/data.js`.

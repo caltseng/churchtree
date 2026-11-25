@@ -62,7 +62,7 @@ const html = template.replace('<!--SCOPE-->', `<p>${esc(data.scope)}</p><p class
     .replace('<!--LANES-->', data.lanes.map(l => `<option value="${l.id}">${esc(l.label)}</option>`).join(''))
     .replace('<!--RECORDS-->', sorted.map(article).join('\n'));
 fs.writeFileSync(path.join(directory, 'index.html'), html);
-fs.writeFileSync(path.join(directory, 'public-data.js'), '// Generated approved public fields. Do not edit.\nwindow.COUNTRY_HISTORY_DATA = ' + JSON.stringify(data, null, 2).replace(/</g, '\\u003c') + ';\n');
+fs.writeFileSync(path.join(directory, 'public-data.js'), '// Generated approved public fields. Do not edit.\nwindow.COUNTRY_HISTORY_DATA = ' + JSON.stringify(data).replace(/</g, '\\u003c') + ';\n');
 console.log(`Built ${data.title}: ${data.events.length} selected records; isolated from denomination data.`);
 return {data, article};
 };
