@@ -5,10 +5,7 @@ const output = path.join(repo, 'dist');
 const readJSON = file => JSON.parse(fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, ''));
 const {spawnSync}=require('child_process');
 const config = readJSON(path.join(repo, 'site.config.json'));
-for(const script of ['scripts/build-home.cjs','westminster/build.cjs','scripts/build-catechisms.cjs','us-denominations/build.cjs', ...config.countryHistories.map(country => {
-  if (!/^[a-z0-9-]+\/$/.test(country.path)) throw new Error('Invalid country path');
-  return country.path + 'build.cjs';
-})]) {
+for(const script of ['scripts/build-home.cjs','westminster/build.cjs','scripts/build-catechisms.cjs','us-denominations/build.cjs','scripts/build-country-history.cjs']) {
   const result=spawnSync(process.execPath,[path.join(repo,script)],{stdio:'inherit'});
   if(result.status!==0)throw new Error('Page build failed: '+script);
 }
@@ -48,7 +45,8 @@ for (const name of config.publicDirectories) {
   if (fs.existsSync(path.join(repo, name))) copyPublic(path.join(repo, name), path.join(output, name === 'westminster' ? 'wcf' : name));
 }
 // Route inputs and build tooling live beside the page but are never copied recursively.
-for (const name of config.publicFiles || []) {
+const countryFiles = config.countryHistories.flatMap(country => ['index.html', 'public-data.js'].map(file => country.path + file));
+for (const name of [...config.publicFiles || [], ...countryFiles]) {
   const source = path.resolve(repo, name);
   if (!name || path.isAbsolute(name) || !source.startsWith(repo + path.sep) ||
       name.split(/[\\/]/).some(part => part === '..' || part.startsWith('.')) ||

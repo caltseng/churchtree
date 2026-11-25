@@ -44,7 +44,7 @@ test('validator rejects corrupt IDs, dates, source references and relationship e
 test('generated public route is isolated, citation-complete and excludes staging fields', () => {
     const root = path.resolve(__dirname, '../dist'), context = {window: {}};
     vm.runInNewContext(fs.readFileSync(path.join(root, 'china-history/public-data.js'), 'utf8'), context);
-    const data = context.window.CHINA_HISTORY_DATA;
+    const data = context.window.COUNTRY_HISTORY_DATA;
     assert.equal(data.events.length, canonical.events.length);
     const html = fs.readFileSync(path.join(root, 'china-history/index.html'), 'utf8');
     for (const event of data.events) {

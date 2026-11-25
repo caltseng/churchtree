@@ -67,9 +67,8 @@ test('Thailand public selection has complete credits without private research or
         }
     }
     assert.match(html, /Last verified event: 2023/);
-    assert.match(html, /\.\.\/china-history\/controller\.js/);
-    assert.match(html, /\.\.\/china-history\/history\.css/);
-    assert(!/CHINA_HISTORY_DATA/.test(fs.readFileSync(path.join(root, 'thailand-history/public-data.js'), 'utf8')));
+    assert.match(html, /\.\.\/country-history\/controller\.js/);
+    assert.match(html, /\.\.\/country-history\/history\.css/);
     assert.deepEqual(fs.readdirSync(path.join(root, 'thailand-history')).sort(), ['index.html', 'public-data.js']);
     assert(!fs.existsSync(path.join(root, 'docs/research/thailand')));
     const selection = fs.readFileSync(path.join(root, 'global-church/index.html'), 'utf8');

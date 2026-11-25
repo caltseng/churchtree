@@ -64,7 +64,7 @@ test('public artifacts retain source locators, strip research and isolate countr
     vm.runInNewContext(fs.readFileSync(path.join(dist, 'data/data.js'), 'utf8'), denominations);
     assert(data.events.every(e => !denominations.window.CHURCHTREE_DATA.nodes.some(n => n.id === e.id)));
 });
-test('one generated country registry drives the selector and every registered builder', () => {
+test('one generated country registry drives the selector and every registered route', () => {
     const config = require('../site.config.json');
     const html = fs.readFileSync(path.join(dist, 'global-church/index.html'), 'utf8');
     assert.equal(config.pages.find(p => p.id === 'global-church').path, 'global-church/');
@@ -74,7 +74,8 @@ test('one generated country registry drives the selector and every registered bu
     for (const country of config.countryHistories) {
         assert(html.includes('href="../' + country.path + '"'));
         assert(fs.existsSync(path.join(dist, country.path, 'index.html')));
-        assert(fs.existsSync(path.join(repo, country.path, 'build.cjs')));
+        assert(fs.existsSync(path.join(repo, country.path, 'data.cjs')));
+        assert(fs.existsSync(path.join(repo, country.path, 'validate.cjs')));
     }
     const sourceIndex = fs.readFileSync(path.join(repo, 'docs/research/cambodia/sources.md'), 'utf8');
     for (const citation of canonical.citations) assert(sourceIndex.includes('| ' + citation.id.toUpperCase() + ' |'));

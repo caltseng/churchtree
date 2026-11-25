@@ -38,11 +38,11 @@ reason: H11 is supporting context outside the roster; H19 has source/date
 qualification; H50 is a measurement comparison, not a dated milestone.
 The exact remaining reasons are in that object, not inferred from absence.
 
-The [builder](../../../china-history/build.cjs) emits
+The [shared builder](../../../scripts/build-country-history.cjs) emits
 [public-data.js](../../../china-history/public-data.js) and
 [HTML articles](../../../china-history/index.html) with the same stable public
 slugs but strips research crosswalk fields and held records.
-The [controller](../../../china-history/controller.js) searches title,
+The [shared controller](../../../country-history/controller.js) searches title,
 summary, caveat and aliases, and filters lane/date; it does not search the
 research packet or add historical figures from citation metadata.
 Thus missing records cannot be fixed by changing aliases or filters alone.

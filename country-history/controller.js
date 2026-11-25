@@ -1,6 +1,6 @@
 (() => {
     'use strict';
-    const $ = id => document.getElementById(id), data = window.COUNTRY_HISTORY_DATA || window.CHINA_HISTORY_DATA, dates = window.HistoricalDates;
+    const $ = id => document.getElementById(id), data = window.COUNTRY_HISTORY_DATA, dates = window.HistoricalDates;
     if (!data || !dates || !window.ChurchTimelineModel) {
         $('load-status').textContent = 'Interactive data could not load. The complete sourced text remains available below.';
         return;
