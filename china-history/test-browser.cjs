@@ -14,6 +14,7 @@ fs.mkdirSync(output, {recursive: true});
             const page = await browser.newPage({viewport, reducedMotion: 'reduce'}), errors = [];
             page.on('pageerror', error => errors.push(error.message));
             await page.goto(base + '/');
+            await page.locator('.tool-card[data-id="global-church"]').click();
             await page.locator('.tool-card[data-id="china-history"]').click();
             await page.locator('#graph svg').waitFor();
             assert.match(page.url(), /\/china-history\/$/);
