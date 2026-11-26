@@ -1,6 +1,19 @@
 /* Shared semantic colors; contract: docs/design-language.md */
 @import url("theme-controls.css");
 
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 12px;
+  z-index: 100;
+  padding: 12px;
+  color: var(--ct-text);
+  background: var(--ct-surface);
+  font: 14px/1.5 system-ui, sans-serif;
+  transform: translateY(calc(-100% - 12px));
+}
+.skip-link:focus { transform: none; outline: 3px solid var(--ct-focus); outline-offset: 2px; }
+
 :root {
   color-scheme: light;
   --ct-text: #253b36;

@@ -289,6 +289,7 @@
         window.CHURCHTREE_HORIZONTAL_STATE = null; draw();
     };
     $('text-view').onclick = () => { range = control?.snapshot().domain || range; mode = 'text'; draw(); $('record-list').focus(); };
+    document.querySelector('.skip-link').onclick = $('text-view').onclick;
     $('timeline-view').onclick = () => { mode = 'timeline'; draw(); graph.focus(); };
     $('zoom-in').onclick = () => control?.step(1.5);
     $('zoom-out').onclick = () => control?.step(1 / 1.5);
@@ -323,6 +324,12 @@
     });
     function restore() {
         if (location.search !== renderedQuery) { readQuery(); range = null; if (!draw()) return; }
+        if (location.hash === '#record-list') {
+            range = control?.snapshot().domain || range;
+            mode = 'text';
+            if (draw()) $('record-list').focus();
+            return;
+        }
         const id = location.hash.slice(1);
         if (id) select(id, false);
         else {

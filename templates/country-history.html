@@ -1,14 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Church in {{country}} history · Main Branch</title>
-<meta name="description" content="{{description}}">
-<meta name="application-name" content="Main Branch"><meta property="og:site_name" content="Main Branch">
-<link rel="canonical" href="https://{{domain}}/{{path}}">
-<link rel="icon" type="image/svg+xml" href="../assets/brand/logos/main-branch.svg">
-<link rel="stylesheet" href="../theme.css"><script src="../theme.js"></script>
-<link rel="stylesheet" href="../brand.css"><link rel="stylesheet" href="../explorer.css"><link rel="stylesheet" href="../country-history/history.css">
+{{head}}
+<link rel="stylesheet" href="../explorer.css"><link rel="stylesheet" href="../country-history/history.css">
 {{readingAssets}}
 <script defer src="https://d3js.org/d3.v7.min.js"></script>
 <script defer src="../historical-dates.js"></script><script defer src="../timeline-model.js"></script>
@@ -16,9 +10,8 @@
 <script defer src="public-data.js"></script><script defer src="../country-history/controller.js"></script>
 </head>
 <body class="country-history">
-<a class="skip-link" href="#record-list">Skip to sourced records</a>
-<header class="explorer-header">
-<a class="main-branch-brand" href="../" aria-label="Main Branch home"><img class="main-branch-symbol" src="../assets/brand/logos/main-branch.svg" width="44" height="44" alt=""><span class="main-branch-copy">Main Branch</span></a>
+{{header}}
+<!--HEADER-CONTENT-->
 <h1>Church in {{country}}</h1>
 <div class="explorer-actions" id="enhanced-actions" hidden>
 <button id="search-toggle" aria-expanded="false" aria-controls="search-panel">Search</button>
@@ -32,7 +25,7 @@
 <label>To year <input id="year-to" type="text" inputmode="numeric" aria-describedby="period-error"></label>
 <button>Apply</button><button type="button" id="reset">Reset</button><span id="period-error" role="alert"></span>
 </form>
-</header>
+<!--HEADER-END-->
 <section class="country-intro" aria-label="Timeline scope"><!--SCOPE-->
 <details id="scope-info"><summary>Scope, gaps and evidence</summary><!--INFO-->{{scopeDetails}}</details>{{afterScope}}
 </section>
