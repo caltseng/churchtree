@@ -6,6 +6,7 @@ data/data.js
 
 # Generated pages and public bundles; edit their templates/builders instead.
 /index.html
+/church-history/index.html
 /global-church/index.html
 /westminster-standards/index.html
 /westminster/index.html

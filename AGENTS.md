@@ -15,7 +15,7 @@
 - The public website is named **Main Branch**, at `main-branch.com`.
 - The selected logo is Woodland solid, the side-graft mark: `assets/brand/logos/main-branch.svg`. The horizontal asset is `assets/brand/logos/main-branch-wordmark.svg`.
 - Preserve its three fixed colors: bark `#9B7555`, leaf `#6E9D50`, straw `#D6B579`. Use shared `brand.css` for page lockups, with accessible text and a link home.
-- Update source templates/builders so branding survives a rebuild. Keep hand-authored pages such as `church-history/index.html` and the logo studies tracked; generated pages and public bundles are ignored.
+- Update source templates/builders so branding survives a rebuild. Church History uses `templates/church-history.html`; keep the hand-authored logo studies tracked. Generated pages and public bundles are ignored.
 
 ## Citations and attribution
 

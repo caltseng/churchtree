@@ -4,6 +4,7 @@ const repo = path.resolve(__dirname, '..');
 const output = path.join(repo, 'dist');
 const readJSON = file => JSON.parse(fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, ''));
 const {spawnSync}=require('child_process');
+const shell = require('./page-shell.cjs');
 const config = readJSON(path.join(repo, 'site.config.json'));
 for(const script of ['scripts/build-home.cjs','westminster/build.cjs','scripts/build-catechisms.cjs','us-denominations/build.cjs','scripts/build-country-history.cjs']) {
   const result=spawnSync(process.execPath,[path.join(repo,script)],{stdio:'inherit'});
@@ -36,7 +37,15 @@ function copyPublic(source, destination) {
     for (const child of fs.readdirSync(source).sort()) copyPublic(path.join(source, child), path.join(destination, child));
   } else if (allowed.has(path.extname(source))) {
     fs.mkdirSync(path.dirname(destination), { recursive: true });
-    fs.copyFileSync(source, destination);
+    if (path.extname(source) === '.html' && path.relative(repo, source).split(path.sep).slice(0, 3).join('/') === 'assets/brand/logos') {
+      const text = fs.readFileSync(source, 'utf8');
+      const title = text.match(/<title>([^<]+)<\/title>/)?.[1];
+      if (!title || !text.includes('<style>') || !text.includes('<body><main>')) throw new Error('Invalid logo-study page structure: ' + source);
+      const route = path.relative(repo, source).split(path.sep).join('/');
+      fs.writeFileSync(destination, text.replace(/<head>[\s\S]*?(?=<style>)/, () =>
+        '<head>' + shell.head({title, description: 'Main Branch identity design-study archive.', canonical: `https://${config.domain}/${route.endsWith('/index.html') ? route.slice(0, -10) : route}`, prefix: '../../../', themeScript: false}))
+        .replace('<body><main>', () => '<body>' + shell.skipLink('main', 'Skip to logo studies') + '<main id="main" tabindex="-1">'));
+    } else fs.copyFileSync(source, destination);
   }
 }
 for (const name of fs.readdirSync(repo).sort()) if (fs.statSync(path.join(repo, name)).isFile() && ['.html', '.css', '.js', '.svg', '.png', '.ico', '.webmanifest'].includes(path.extname(name))) copyPublic(path.join(repo, name), path.join(output, name));
@@ -55,7 +64,8 @@ for (const name of [...config.publicFiles || [], ...countryFiles]) {
 }
 // Preserve existing bookmarks, including chapter and section fragments.
 fs.mkdirSync(path.join(output, 'westminster'), { recursive: true });
-fs.writeFileSync(path.join(output, 'westminster/index.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Westminster Confession · Main Branch</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="https://main-branch.com/wcf/"><script>location.replace('../wcf/'+location.search+location.hash);</script><noscript><meta http-equiv="refresh" content="0;url=../wcf/"></noscript></head><body><p>The reader has moved to <a href="../wcf/">the Westminster Confession</a>.</p></body></html>`);
+fs.writeFileSync(path.join(output, 'westminster/index.html'), `<!doctype html><html lang="en"><head>${shell.head({title: 'Westminster Confession · Main Branch',
+ description: 'The Westminster Confession reader has moved to /wcf/.', canonical: `https://${config.domain}/wcf/`})}<script>location.replace('../wcf/'+location.search+location.hash);</script><noscript><meta http-equiv="refresh" content="0;url=../wcf/"></noscript></head><body>${shell.skipLink('main', 'Skip to reader link')}<main id="main" tabindex="-1"><p>The reader has moved to <a href="../wcf/">the Westminster Confession</a>.</p></main></body></html>`);
 
 fs.writeFileSync(path.join(output, 'CNAME'), config.domain + '\n');
 fs.writeFileSync(path.join(output, '.nojekyll'), '');

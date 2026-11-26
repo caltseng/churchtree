@@ -1,6 +1,7 @@
 const fs = require('fs'), path = require('path');
 const dates = require('../historical-dates.js');
 const {esc} = require('../html-escape.js');
+const shell = require('./page-shell.cjs');
 const {loadCountry} = require('./validate-country-history.cjs');
 module.exports = function buildCountryHistory(country, {root = path.resolve(__dirname, '..'), domain = 'main-branch.com'} = {}) {
 if (!/^[a-z0-9-]+\/$/.test(country.path)) throw new Error('Invalid country path');
@@ -92,6 +93,8 @@ ${relations.map(r => {
 }).join('; ')}.</p></article>`;
 }
 const values = {
+    head: shell.head({title: `Church in ${country.title} history · Main Branch`, description: country.pageDescription,
+        canonical: `https://${domain}/${country.path}`}),
     country: esc(country.title), description: esc(country.pageDescription), domain: esc(domain), path: esc(country.path),
     searchPlaceholder: esc(country.searchPlaceholder),
     scopeDetails: country.scopeDetails || '',
@@ -102,6 +105,8 @@ const values = {
     noScript: esc(country.noScript || 'This is the complete sourced text view. Follow record links to bookmark an episode; expand its evidence to read source locators.')
 };
 const template = fs.readFileSync(path.join(__dirname, '../templates/country-history.html'), 'utf8')
+    .replace(/\{\{header\}\}\s*<!--HEADER-CONTENT-->([\s\S]*?)<!--HEADER-END-->/, (_, content) =>
+        shell.header({className: 'explorer-header', skipTarget: 'record-list', skipLabel: 'Skip to sourced records', content}))
     .replace(/\{\{(\w+)\}\}/g, (_, key) => {
         if (!Object.hasOwn(values, key)) throw new Error('Unknown country template field: ' + key);
         return values[key];

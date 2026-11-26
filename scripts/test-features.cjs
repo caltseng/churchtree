@@ -1,6 +1,27 @@
 const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');const browserTest=require('./browser-test.cjs');
 const repo=path.resolve(__dirname,'..'),root=process.env.CHURCHTREE_TEST_ROOT?path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT):path.join(repo,'dist'),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
 const {pages,countryHistories}=JSON.parse(fs.readFileSync(path.join(repo,'site.config.json'),'utf8')),pageCount=pages.length;
+function files(folder) {return fs.readdirSync(folder).flatMap(name=>{const file=path.join(folder,name);return fs.statSync(file).isDirectory()?files(file):[file];});}
+const publishedPages=files(root).filter(file=>file.endsWith('.html'));
+for(const file of publishedPages){
+ const html=fs.readFileSync(file,'utf8'),route=path.relative(root,file).split(path.sep).join('/');
+ assert.equal((html.match(/<meta property="og:site_name" content="Main Branch">/g)||[]).length,1,route+' has one site name');
+ const canonical=route==='westminster/index.html'?'wcf/':route.endsWith('index.html')?route.slice(0,-10):route;
+ assert.equal((html.match(/<link rel="canonical"/g)||[]).length,1,route+' has one canonical');
+ assert(html.includes(`href="https://main-branch.com/${canonical}"`),route+' canonical matches its published route');
+ const skip=[...html.matchAll(/<a class="skip-link" href="#([^"]+)">/g)];
+ assert.equal(skip.length,1,route+' has one skip link');
+ assert(html.includes(`id="${skip[0][1]}"`),route+' skip target exists');
+ assert(!html.includes('class="skip"'),route+' does not use the legacy skip class');
+ assert(!html.includes('{{')&&!html.includes('<!--HEADER-'),route+' contains no unresolved shell slots');
+}
+const sourceFiles=require('child_process').execFileSync('git',['ls-files','--cached','--others','--exclude-standard'],{cwd:repo,encoding:'utf8'}).trim().split('\n')
+ .filter(file=>/\.(cjs|html)$/.test(file)&&fs.existsSync(path.join(repo,file)));
+assert.deepEqual(sourceFiles.filter(file=>/class=["']main-branch-brand["']/.test(fs.readFileSync(path.join(repo,file),'utf8'))),['scripts/page-shell.cjs'],'Only the page shell owns brand markup');
+const css=files(root).filter(file=>file.endsWith('.css')).map(file=>fs.readFileSync(file,'utf8')).join('\n');
+assert.equal((css.match(/\.skip-link\s*\{/g)||[]).length,1,'One shared base skip-link rule');
+assert.equal((css.match(/\.skip-link:focus\s*\{/g)||[]).length,1,'One shared focus rule');
+assert(!/\.skip(?:\s|:|\{)/.test(css),'No legacy skip style');
 async function openAppearance(page) {
  const trigger = page.getByRole('button', {name:'Site menu', exact:true});
  assert.equal(await trigger.count(), 1);
@@ -118,6 +139,26 @@ browserTest(root,async({browser,server})=>{
   await page.screenshot({path:path.join(output,`westminster-${size.width}.png`),fullPage:true});
   for (const route of ['/church-history/', ...countryHistories.map(country=>'/'+country.path), '/global-church/', '/westminster-standards/', '/wcf/', '/wsc/', '/wlc/', '/us-denominations/']) {
    assert.equal((await page.goto(base+route)).status(),200);
+   await page.keyboard.press('Tab');
+   const skip=page.locator('.skip-link');
+   assert(await skip.evaluate(element=>element===document.activeElement),route+' skip link is first in keyboard order');
+   const bounds=await skip.boundingBox();
+   assert(bounds.y>=0&&bounds.y+bounds.height<=size.height,route+' skip link is visible above the header');
+   await page.keyboard.press('Enter');
+   await page.waitForFunction(()=>document.activeElement.id===location.hash.slice(1));
+   assert(await page.locator(new URL(page.url()).hash).isVisible(),route+' skip link reveals its content');
+   const country=countryHistories.find(country=>route==='/'+country.path);
+   if(country){
+    await page.locator(country.readingChapters?'#proportional-view':'#timeline-view').click();
+    assert.equal(new URL(page.url()).hash,'',route+' view change clears the skip fragment');
+    if(country.readingChapters){
+     await page.goBack();await page.waitForFunction(()=>!document.getElementById('record-list').hidden);
+     await page.goForward();await page.waitForFunction(()=>!document.getElementById('timeline-panel').hidden);
+    }
+    await page.reload();await page.waitForFunction(()=>!document.getElementById('timeline-panel').hidden);
+    await skip.focus();await page.keyboard.press('Enter');
+    await page.waitForFunction(()=>document.activeElement.id==='record-list'&&!document.getElementById('record-list').hidden);
+   }
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),route+' fits the viewport');
    const trigger = await openAppearance(page);
    assert(await page.locator('input[name="theme"][value="ink"]').isChecked());
