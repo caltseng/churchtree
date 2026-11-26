@@ -16,8 +16,12 @@ validation and browser tests; GitHub Pages serves the resulting static files.
 - `/church-history/`: `templates/church-history.html` generates the page; root `explorer.js`
   handles scope, search, selection and compact lineage. `timeline.js` and
   `horizontal-timeline.js` render the two proportional orientations.
-- `/westminster/`: `content.json` and `build.cjs` generate a full-text HTML reader;
-  `reader.js` enhances navigation. The primary text remains available without JS.
+- `/us-denominations/`: separate canonical affiliation inputs and
+  `us-denominations/build.cjs` generate the two-lens U.S. adult affiliation explorer.
+- `/westminster-standards/`: collection entry point for `/wcf/`, `/wsc/` and
+  `/wlc/`. `westminster/content.json`, `westminster/build.cjs` and the catechism
+  builder generate full-text readers; legacy `/westminster/` bookmarks redirect
+  to `/wcf/`. Primary text remains available without JS.
 - `theme.css` defines semantic colors; `theme.js` applies the browser's saved
   palette. `theme-controls.css` styles the chooser and `brand.css` shares lockups.
   Palette proposals and the selected logo's fixed colors are separate concerns.
@@ -44,8 +48,8 @@ when the viewport returns to desktop; the canonical record/selection is unchange
 
 Every set has nodes/edges; events and local sources/citations are optional. Shared
 sources/citations come from `data/common`. The build discovers sets rather than
-hard-coding their names. The legacy PowerShell builder refreshes `data/data.js` for
-source preview; the release builder regenerates data directly from canonical JSON.
+hard-coding their names. The release builder is the sole denomination bundle
+generator; source-preview `data/data.js` is ignored and is not a build input.
 Tests of the release serve `dist/`, not an old source bundle.
 
 ## Release boundary
