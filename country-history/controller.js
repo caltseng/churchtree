@@ -329,6 +329,12 @@
             selected = null; if (dialog.open) dialog.close(); $('selection').hidden = true;
             if (mode === 'era') drawReading(filtered());
         }
+        // History traversal can restore focus after popstate; focus the rendered Era context afterward.
+        if (mode === 'era') requestAnimationFrame(() => {
+            if (mode !== 'era') return;
+            const target = id && byId.has(id) ? $('reading-selection').querySelector('h3') : $('chapter-title');
+            if (target) { target.tabIndex = -1; target.focus(); }
+        });
     }
     window.addEventListener('popstate', restore);
     window.addEventListener('hashchange', restore);
