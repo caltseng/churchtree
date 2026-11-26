@@ -83,6 +83,7 @@
   "countryHistories": [
     {
       "id": "china-history",
+      "roster": {"prefix": "H", "count": 54},
       "outline": "CHN",
       "title": "China",
       "path": "china-history/",
@@ -96,6 +97,7 @@
     },
     {
       "id": "cambodia-history",
+      "roster": {"prefix": "KH", "count": 57},
       "outline": "KHM",
       "title": "Cambodia",
       "path": "cambodia-history/",
@@ -112,6 +114,7 @@
     },
     {
       "id": "thailand-history",
+      "roster": {"prefix": "H", "count": 50},
       "outline": "THA",
       "title": "Thailand",
       "path": "thailand-history/",

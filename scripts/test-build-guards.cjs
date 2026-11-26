@@ -28,7 +28,6 @@ const country = {...require('../site.config.json').countryHistories[0], path: 'f
 const directory = path.join(fixtures, country.path);
 fs.mkdirSync(directory);
 fs.copyFileSync(path.join(root, 'china-history/data.cjs'), path.join(directory, 'data.cjs'));
-fs.writeFileSync(path.join(directory, 'validate.cjs'), `module.exports = require(${JSON.stringify(path.join(root, 'china-history/validate.cjs'))});`);
 const {data: countryData} = buildCountry(country, {root: fixtures, domain: 'fixture.example'});
 function assertCompactBundle(file, name, expected) {
     const text = fs.readFileSync(file, 'utf8');
@@ -48,6 +47,7 @@ assert(generated.includes('../country-history/controller.js'));
 assert(!generated.includes('{{'));
 assert(!fs.existsSync(path.join(directory, 'template.html')));
 assert(!fs.existsSync(path.join(directory, 'build.cjs')));
+assert(!fs.existsSync(path.join(directory, 'validate.cjs')));
 assert.throws(() => buildCountry({...country, path: '../escape/'}, {root: fixtures}), /Invalid country path/);
 assert.throws(() => buildCountry({...country, lastVerified: '2024-02-30'}, {root: fixtures}));
 assert.throws(() => buildCountry({...country, pageDescription: ''}, {root: fixtures}), /Missing country pageDescription/);

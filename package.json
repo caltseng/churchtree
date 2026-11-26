@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "node scripts/build-site.cjs",
-    "check": "node scripts/check-code.cjs && node us-denominations/data.cjs && node china-history/validate.cjs && node cambodia-history/validate.cjs && node thailand-history/validate.cjs && node scripts/validate-data.cjs dist/data/data.js && node scripts/verify-site.cjs && node scripts/check-doc-links.cjs",
+    "check": "node scripts/check-code.cjs && node us-denominations/data.cjs && node scripts/validate-country-history.cjs && node scripts/validate-data.cjs dist/data/data.js && node scripts/verify-site.cjs && node scripts/check-doc-links.cjs",
     "test:model": "node scripts/test-timeline-model.cjs",
     "test:desktop": "node scripts/test-explorer.cjs",
     "test:mobile": "node scripts/test-overview-touch.cjs && node scripts/test-mobile.cjs",
