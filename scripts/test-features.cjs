@@ -32,6 +32,17 @@ async function openAppearance(page) {
  assert(await page.getByRole('dialog', {name:'Settings', exact:true}).getByRole('heading', {name:'Appearance'}).isVisible());
  return trigger;
 }
+async function checkSkipLink(page,size,route) {
+ await page.keyboard.press('Tab');
+ const skip=page.locator('.skip-link');
+ assert(await skip.evaluate(element=>element===document.activeElement),route+' skip link is first in keyboard order');
+ const bounds=await skip.boundingBox();
+ assert(bounds.y>=0&&bounds.y+bounds.height<=size.height,route+' skip link is visible above the header');
+ await page.keyboard.press('Enter');
+ await page.waitForFunction(()=>document.activeElement.id===location.hash.slice(1));
+ assert(await page.locator(new URL(page.url()).hash).isVisible(),route+' skip link reveals its content');
+ return skip;
+}
 function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((sum,v,i)=>sum+v*[.2126,.7152,.0722][i],0);}
 browserTest(root,async({browser,server})=>{
  const base=`http://127.0.0.1:${server.address().port}`;
@@ -50,6 +61,7 @@ browserTest(root,async({browser,server})=>{
    await page.screenshot({path:path.join(output,`country-picker-layout-${size.width}x${size.height}.png`),fullPage:true});
    for(const route of ['/', '/church-history/',...countryHistories.map(country=>'/'+country.path),'/global-church/','/westminster-standards/','/wcf/','/wsc/','/wlc/','/us-denominations/']){
     assert.equal((await page.goto(base+route)).status(),200);
+    await checkSkipLink(page,size,route);
     assert.equal(await page.getByRole('button',{name:'Site menu',exact:true}).count(),1);
     for(const theme of ['parchment','slate','ink']){
      await page.locator('html').evaluate((element,value)=>element.dataset.theme=value,theme);
@@ -163,14 +175,7 @@ browserTest(root,async({browser,server})=>{
   await page.screenshot({path:path.join(output,`westminster-${size.width}.png`),fullPage:true});
   for (const route of ['/church-history/', ...countryHistories.map(country=>'/'+country.path), '/global-church/', '/westminster-standards/', '/wcf/', '/wsc/', '/wlc/', '/us-denominations/']) {
    assert.equal((await page.goto(base+route)).status(),200);
-   await page.keyboard.press('Tab');
-   const skip=page.locator('.skip-link');
-   assert(await skip.evaluate(element=>element===document.activeElement),route+' skip link is first in keyboard order');
-   const bounds=await skip.boundingBox();
-   assert(bounds.y>=0&&bounds.y+bounds.height<=size.height,route+' skip link is visible above the header');
-   await page.keyboard.press('Enter');
-   await page.waitForFunction(()=>document.activeElement.id===location.hash.slice(1));
-   assert(await page.locator(new URL(page.url()).hash).isVisible(),route+' skip link reveals its content');
+   const skip=await checkSkipLink(page,size,route);
    const country=countryHistories.find(country=>route==='/'+country.path);
    if(country){
     await page.locator(country.readingChapters?'#proportional-view':'#timeline-view').click();
