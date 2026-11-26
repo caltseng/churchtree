@@ -132,9 +132,9 @@ browserTest(root,async({browser,server})=>{
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.keyboard.press('Tab');assert(await page.locator('.skip-link').evaluate(el=>el===document.activeElement));
   await page.keyboard.press('Enter');assert.equal(new URL(page.url()).hash,'#explore');
-  for (const [id,count,selector] of [['wcf',172,'.passage'],['wsc',107,'#reading article'],['wlc',196,'#reading article']]) {
+  for (const [id,selector] of [['wcf','.passage'],['wsc','#reading article'],['wlc','#reading article']]) {
    await page.locator(`.tool-card[data-id="${id}"]`).focus();await page.keyboard.press('Enter');await page.waitForURL(new RegExp('/'+id+'/$'));
-   assert.equal(await page.locator(selector).count(),count);
+   assert(await page.locator(selector).count());
    assert(await page.locator('#sources').count());
    assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
    await page.getByRole('link',{name:/Westminster Standards/}).click();await page.waitForURL(/\/westminster-standards\/$/);

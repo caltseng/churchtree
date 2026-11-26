@@ -386,7 +386,8 @@ browserTest(root, async ({browser, base}) => {
         await page.locator('#demographic-dimension').selectOption(dimension);
         for (const population of populations) {
           await page.locator('#demographic-population').selectOption(population);
-          assert.equal(await content.locator('tbody tr').count(), 3);
+          assert.equal(await content.locator('tbody tr').count(),
+            data.demographics.populations.find(row => row.id === population).records.length);
           assert.match(await content.textContent(), /within this population, not its share of a religion/);
           assert.match(await content.textContent(), /No intersectional combinations/);
           assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Demographic content wraps');
@@ -574,7 +575,8 @@ browserTest(root, async ({browser, base}) => {
     const demographic = staticPage.locator('#static-demographics-asian');
     assert(await demographic.isVisible());
     if (!await demographic.evaluate(el => el.open)) await demographic.locator(':scope > summary').click();
-    assert.equal(await demographic.locator('tbody tr').count(), 3);
+    assert.equal(await demographic.locator('tbody tr').count(),
+      data.demographics.populations.find(row => row.id === 'asian').records.length);
     assert.match(await demographic.textContent(), /English-speaking non-Hispanic/);
     assert(await demographic.locator('[data-demographic="christian"] a').isVisible());
     await demographic.locator('a[href="#static-demographic-notes"]').click();

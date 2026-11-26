@@ -2,19 +2,39 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const vm = require('node:vm');
+const os = require('node:os');
 const {loadData, getChildren, getAncestors, presentation} = require('./data.cjs');
 const {publicData} = require('./build.cjs');
 const view = require('./view.js');
 const internal = loadData(), data = publicData(internal);
 const root = path.resolve(__dirname, '..');
 
-test('public output excludes internal review and research metadata', () => {
-  const sandbox = {window: {}};
-  const published = path.resolve(root, process.env.CHURCHTREE_TEST_ROOT || 'dist', 'us-denominations');
-  vm.runInNewContext(fs.readFileSync(path.join(published, 'public-data.js'), 'utf8'), sandbox);
-  assert(!JSON.stringify(sandbox.window.US_AFFILIATION_DATA)
-    .match(/sha256|reviewStatus|sourcePanelId|checkedDate|reviewedCommit/));
+function assertNoPrivateInputs(folder) {
+  for (const entry of fs.readdirSync(folder, {withFileTypes: true})) {
+    const file = path.join(folder, entry.name);
+    if (entry.isDirectory()) assertNoPrivateInputs(file);
+    else if (/\.(html|js|json|txt|css|svg|webmanifest)$/i.test(file)) {
+      const privateField = fs.readFileSync(file, 'utf8')
+        .match(/"(?:sha256|reviewStatus|sourcePanelId|checkedDate|reviewedCommit|panelId|research|held)"\s*:/);
+      assert(!privateField, `Private input metadata must not be published: ${file}`);
+    }
+  }
+}
+
+test('the complete U.S. public artifact excludes internal inputs and review metadata', () => {
+  assertNoPrivateInputs(path.resolve(root, process.env.CHURCHTREE_TEST_ROOT || 'dist', 'us-denominations'));
+});
+
+test('privacy inspection rejects an internal input copied under an arbitrary public name', () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), 'main-branch-input-privacy-'));
+  try {
+    fs.writeFileSync(path.join(fixture, 'citation.json'), '{"url":"https://example.com/source","locator":"p. 10"}');
+    assert.doesNotThrow(() => assertNoPrivateInputs(fixture));
+    fs.copyFileSync(path.join(__dirname, 'attendance.json'), path.join(fixture, 'arbitrary.json'));
+    assert.throws(() => assertNoPrivateInputs(fixture), /Private input metadata must not be published/);
+  } finally {
+    fs.rmSync(fixture, {recursive: true, force: true});
+  }
 });
 
 test('each panel preserves source ranking, national labels, locators and coverage', () => {

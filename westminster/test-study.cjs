@@ -23,7 +23,7 @@ module.exports=async function testStudy({browser,baseURL,root,repoRoot}) {
    if(size.width!==390&&![1,19,20,31].includes(chapter.chapter))continue;
    const id=chapter.entries[0].id;
    await page.goto(readerURL+`#${id}`);
-   assert(await page.locator('#pca-'+chapter.chapter).isVisible(),'Direct PCA comparison link reveals its chapter');
+   assert(await page.locator('#pca-'+chapter.chapter).isVisible(),'The chapter note reveals its comparison');
    if(chapter.chapter===31){
     assert.equal(await page.locator('.pca-numbering tbody tr').count(),5);
     assert.match(await page.locator('.pca-numbering').innerText(),/Omitted/);
@@ -41,6 +41,9 @@ module.exports=async function testStudy({browser,baseURL,root,repoRoot}) {
    assert.deepEqual(invalidLinks,[],'Local citations resolve');
   }
   if(size.width===390){
+  await page.goto(readerURL+'#pca-31');
+  assert(await page.locator('#pca-31').isVisible(),'A direct PCA comparison permalink reveals its chapter with JavaScript');
+  assert.equal(await page.locator('article:visible').count(),1);
   await page.goto(readerURL+'#note-31-scottish-reception');await page.reload();
   assert(await page.locator('#note-31-scottish-reception').isVisible());
   const sourceReturn=page.locator('#study-31 .study-tools [data-study-return]');await sourceReturn.click();
