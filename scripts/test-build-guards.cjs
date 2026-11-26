@@ -29,6 +29,9 @@ const directory = path.join(fixtures, country.path);
 fs.mkdirSync(directory);
 fs.copyFileSync(path.join(root, 'china-history/data.cjs'), path.join(directory, 'data.cjs'));
 fs.writeFileSync(path.join(directory, 'validate.cjs'), `module.exports = require(${JSON.stringify(path.join(root, 'china-history/validate.cjs'))});`);
+for (const name of ['reading.cjs', 'observations.cjs'])
+    fs.copyFileSync(path.join(root, 'china-history', name), path.join(directory, name));
+fs.writeFileSync(path.join(directory, 'validate-reading.cjs'), `module.exports = require(${JSON.stringify(path.join(root, 'china-history/validate-reading.cjs'))});`);
 const {data: countryData} = buildCountry(country, {root: fixtures, domain: 'fixture.example'});
 function assertCompactBundle(file, name, expected) {
     const text = fs.readFileSync(file, 'utf8');

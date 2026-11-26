@@ -28,6 +28,7 @@
     "global-church/index.html",
     "country-history/history.css",
     "country-history/controller.js",
+    "country-history/reading.css",
     "us-denominations/index.html",
     "us-denominations/affiliation.css",
     "us-denominations/controller.js",
@@ -83,6 +84,7 @@
   "countryHistories": [
     {
       "id": "china-history",
+      "readingChapters": true,
       "outline": "CHN",
       "title": "China",
       "path": "china-history/",

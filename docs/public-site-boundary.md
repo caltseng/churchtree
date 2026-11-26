@@ -29,6 +29,9 @@ The China timeline publishes only `china-history/index.html`, `history.css`,
 crosswalks, held-record ledger, template, validator and tests are not public files.
 The approved projection contains original summaries, critical caveats, source
 metadata and passage locators, not the staged research packet or copied media.
+China's Era navigator additionally uses shared `country-history/reading.css`,
+public chapter metadata and sourced observation HTML. Its `reading.cjs`,
+`observations.cjs` and `validate-reading.cjs` inputs are not published.
 `npm run test:countries` checks this route-specific boundary as well as data isolation
 from the denomination explorer.
 

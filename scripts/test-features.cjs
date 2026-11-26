@@ -79,12 +79,12 @@ browserTest(root,async({browser,server})=>{
   await page.emulateMedia({reducedMotion:'no-preference'});
   for(const country of countryHistories){
    await page.getByRole('link',{name:country.title,exact:true}).focus();await page.keyboard.press('Enter');
-   await page.waitForURL('**/'+country.path);
+   await page.waitForURL(url=>url.pathname==='/'+country.path);
    assert.equal(await page.title(),`Church in ${country.title} history · Main Branch`);
    await page.goBack();await page.waitForURL('**/global-church/**');
   }
   await page.locator('.tool-card[data-id="china-history"]').click();
-  await page.waitForURL('**/china-history/');
+  await page.waitForURL(url=>url.pathname==='/china-history/');
   assert.equal(await page.title(),'Church in China history · Main Branch');
   await page.goto(base+'/');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
