@@ -5,8 +5,6 @@ a { color: var(--ct-link); text-underline-offset: .15em; }
 a:focus-visible, button:focus-visible, select:focus-visible, summary:focus-visible, [tabindex="-1"]:focus {
   outline: 3px solid var(--ct-focus); outline-offset: 3px;
 }
-.skip-link { position: absolute; top: -100px; left: 1rem; padding: .8rem; background: var(--ct-surface); z-index: 10; }
-.skip-link:focus { top: .5rem; }
 .site-header { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; padding: .75rem max(1rem, calc((100% - 960px) / 2)); border-bottom: 1px solid var(--ct-border); }
 .site-header .main-branch-brand { margin-right: auto; }
 .info-link { display: inline-flex; align-items: center; min-height: 44px; }

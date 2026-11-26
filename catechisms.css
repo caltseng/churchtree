@@ -7,8 +7,6 @@ body.catechism {
 .catechism a { color: var(--ct-link); text-underline-offset: .18em; }
 .catechism a.main-branch-brand { color: var(--ct-text); }
 .catechism :focus-visible { outline: 3px solid var(--ct-focus); outline-offset: 3px; }
-.catechism .skip { position: absolute; inset-inline-start: 1rem; top: 1rem; padding: .5rem; background: var(--ct-surface); }
-.catechism .skip:not(:focus) { clip-path: inset(50%); }
 .catechism-header {
   display: flex;
   align-items: center;

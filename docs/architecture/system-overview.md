@@ -13,7 +13,7 @@ validation and browser tests; GitHub Pages serves the resulting static files.
   `/china-history/`, `/cambodia-history/` and `/thailand-history/` keep separate editorial inputs;
   the shared country builder publishes only approved fields and full sourced
   HTML. Country events never enter denomination discovery.
-- `/church-history/`: source HTML in `church-history/index.html`; root `explorer.js`
+- `/church-history/`: `templates/church-history.html` generates the page; root `explorer.js`
   handles scope, search, selection and compact lineage. `timeline.js` and
   `horizontal-timeline.js` render the two proportional orientations.
 - `/us-denominations/`: separate canonical affiliation inputs and
@@ -25,6 +25,9 @@ validation and browser tests; GitHub Pages serves the resulting static files.
 - `theme.css` defines semantic colors; `theme.js` applies the browser's saved
   palette. `theme-controls.css` styles the chooser and `brand.css` shares lockups.
   Palette proposals and the selected logo's fixed colors are separate concerns.
+- `scripts/page-shell.cjs` owns the brand markup and shared head/header/footer
+  partials. Every published page has a canonical URL, site-name metadata and
+  a skip link; the shared skip-link rule is in `theme.css`.
 
 The explorer's broad overview groups traditions. `graph-groups.js` defines curated
 historical display groups; these are not new canonical denominations. The pure

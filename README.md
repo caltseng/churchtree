@@ -52,8 +52,8 @@ Rebuild after editing source files. D3 currently loads from d3js.org, so the exp
 needs access to that CDN. The home page and reader have no D3 dependency.
 
 Generated pages, `public-data.js` bundles and `dist/` are ignored. Commit source
-templates, builders and editorial inputs, not generated output. Hand-authored
-`church-history/index.html` and logo studies remain tracked. CI checks that
+templates, builders and editorial inputs, not generated output. Church History
+builds from `templates/church-history.html`; hand-authored logo studies remain tracked. CI checks that
 rebuilding leaves Git status clean on Windows and Linux.
 
 For the same checks used in GitHub Actions:
@@ -88,6 +88,11 @@ local asset references, and runs model, failure-guard, desktop, mobile, reader a
 landing/theme checks. See [user scenarios](docs/user-scenarios.md) for manual steps,
 expected behavior, automated coverage and the difference between emulation and
 physical-device testing.
+
+Page builders share `scripts/page-shell.cjs` for head metadata, branded headers
+and footer partials. Keep the Main Branch lockup in that file, pass each page's
+canonical URL and skip target, and put page-specific controls in the template.
+The single skip-link style lives in `theme.css`.
 
 ## Delivery and hosting
 

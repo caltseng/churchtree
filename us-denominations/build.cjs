@@ -3,6 +3,7 @@ const path = require('node:path');
 const {loadData, getRecord, getChildren, presentation} = require('./data.cjs');
 const view = require('./view.js');
 const {projectDemographics} = require('./demographics.cjs');
+const shell = require('../scripts/page-shell.cjs');
 
 function publicData(data) {
   const lenses = {};
@@ -79,19 +80,14 @@ function build() {
   const esc = view.esc;
   const sourceLink = id => `<a href="${esc(data.sources[id].url)}">${esc(data.sources[id].title)}</a>`;
   const html = `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>U.S. denominations · Main Branch</title>
-<meta name="description" content="Explore selected published U.S. adult religious affiliations, families and denominations from Pew's 2023-24 Religious Landscape Study.">
-<link rel="canonical" href="https://main-branch.com/us-denominations/">
-<link rel="icon" type="image/svg+xml" href="../assets/brand/logos/main-branch.svg">
-<link rel="stylesheet" href="../theme.css"><script src="../theme.js"></script>
-<link rel="stylesheet" href="../brand.css"><link rel="stylesheet" href="affiliation.css">
+<html lang="en"><head>${shell.head({title: 'U.S. denominations · Main Branch',
+ description: "Explore selected published U.S. adult religious affiliations, families and denominations from Pew's 2023-24 Religious Landscape Study.",
+ canonical: `https://${shell.domain}/us-denominations/`})}
+<link rel="stylesheet" href="affiliation.css">
 <script defer src="public-data.js"></script><script defer src="../html-escape.js"></script><script defer src="view.js"></script><script defer src="controller.js"></script>
-</head><body><a class="skip-link" href="#main">Skip to U.S. denominations</a>
-<header class="site-header"><a class="main-branch-brand" href="../" aria-label="Main Branch home">
-<img class="main-branch-symbol" src="../assets/brand/logos/main-branch.svg" width="44" height="44" alt="">
-<span class="main-branch-copy">Main Branch<small>HISTORY · IDEAS · SOURCES</small></span></a><a class="info-link" href="#methodology">Info</a></header>
-<main id="main"><h1>U.S. denominations</h1>
+</head><body>${shell.header({className: 'site-header', tagline: true, skipTarget: 'main', skipLabel: 'Skip to U.S. denominations',
+ content: '<a class="info-link" href="#methodology">Info</a>'})}
+<main id="main" tabindex="-1"><h1>U.S. denominations</h1>
 <p class="intro">Pew Research Center &middot; 2023-24 Religious Landscape Study</p>
 <div id="route-controls" class="route-controls" hidden>
 <label for="affiliation-view">View <select id="affiliation-view"><option value="families">Families and denominations</option><option value="traditions">Protestant traditions</option><option value="demographics">Affiliations within demographics</option><option value="attendance">Religious service attendance</option></select></label>

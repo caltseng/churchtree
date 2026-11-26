@@ -52,6 +52,7 @@ assert.throws(() => buildCountry({...country, pageDescription: ''}, {root: fixtu
 const fixtureScripts = path.join(fixtures, 'scripts');
 fs.mkdirSync(fixtureScripts);
 fs.copyFileSync(path.join(__dirname, 'build-site.cjs'), path.join(fixtureScripts, 'build-site.cjs'));
+fs.writeFileSync(path.join(fixtureScripts, 'page-shell.cjs'), `module.exports = require(${JSON.stringify(path.join(__dirname, 'page-shell.cjs'))});`);
 for (const script of ['scripts/build-home.cjs', 'westminster/build.cjs', 'scripts/build-catechisms.cjs', 'us-denominations/build.cjs']) {
     fs.mkdirSync(path.dirname(path.join(fixtures, script)), {recursive: true});
     fs.writeFileSync(path.join(fixtures, script), '');

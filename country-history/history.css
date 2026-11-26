@@ -40,8 +40,6 @@
 .country-history .cluster-members button {text-align:left}
 .country-history #record-dialog {width:min(720px,100%);max-height:92dvh;background:var(--ct-surface);color:var(--ct-text);border:1px solid var(--ct-border);border-radius:10px;padding:16px}
 .country-dialog-header {display:flex;justify-content:space-between;align-items:center;gap:8px;position:sticky;top:-16px;background:var(--ct-surface);padding:8px 0;z-index:1}
-.country-history .skip-link {position:absolute;left:8px;top:-100px;z-index:30;background:var(--ct-surface);padding:12px}
-.country-history .skip-link:focus {top:8px}
 @media(max-width:1099px) {
  .country-main {display:block;padding:0 8px 10px}
  .country-history #selection {display:none}

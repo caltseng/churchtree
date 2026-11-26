@@ -399,6 +399,7 @@
     toggle.focus();
   });
   window.addEventListener('popstate', () => {
+    if (location.search === view.query(state)) return;
     const previous = state;
     saveChart();
     remember();

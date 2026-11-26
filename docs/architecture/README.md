@@ -71,17 +71,21 @@ folders; no country names need to be added to the check command.
 | Area | Source inputs and implementation |
 | --- | --- |
 | Home and collection pages | `site.config.json`, `templates/home.html`, `templates/global-church.html`, `templates/westminster-standards.html`, `scripts/build-home.cjs` |
-| Church History | `church-history/index.html`, root explorer CSS/JS, `timeline-model.js` and timeline renderers |
+| Church History | `templates/church-history.html`, `scripts/build-home.cjs`, root explorer CSS/JS, `timeline-model.js` and timeline renderers |
 | Country histories | Each country's `data.cjs`, `scripts/validate-country-history.cjs`, `scripts/build-country-history.cjs`, `templates/country-history.html`, shared `country-history/` assets |
 | U.S. denominations | `us-denominations/` canonical affiliation inputs, `data.cjs`, `build.cjs`, controller/view and CSS; [route documentation](../../us-denominations/README.md) |
 | Westminster readers | `westminster/content.json`, `westminster/build.cjs`, catechism inputs and `scripts/build-catechisms.cjs` |
-| Visual foundation | `theme.css`, `theme.js`, `theme-controls.css`, `brand.css`, canonical SVGs under `assets/brand/logos/` |
+| Visual foundation | `scripts/page-shell.cjs`, `theme.css`, `theme.js`, `theme-controls.css`, `brand.css`, canonical SVGs under `assets/brand/logos/` |
 | Release and CI | `scripts/build-site.cjs`, `.github/workflows/`; [deployment](../deployment.md) |
 
 Builders and browser views share `html-escape.js` through CommonJS or the
 `HTMLEscape` browser global; load it before dependent views. `esc` escapes all five
 HTML metacharacters, `escReader` preserves the reader's three-character
 serialization, and `escNullable` keeps missing explorer text empty.
+
+Page builders share `scripts/page-shell.cjs` for head metadata and header/footer
+partials. It owns the brand markup; each page supplies its canonical URL, skip
+target and page-specific controls. The one skip-link style is in `theme.css`.
 
 Country controllers consume only `COUNTRY_HISTORY_DATA`. China also enables
 reading chapters and an Era navigator through its registry configuration.
@@ -91,6 +95,6 @@ those are not UI-hidden records. See the [China handoff](../research/china/hando
 `scripts/build-site.cjs` is the sole denomination bundle generator, discovering
 canonical sets and evidence and writing `dist/data/data.js`. Source-preview
 `data/data.js`, generated page HTML, `public-data.js` and `dist/` are ignored;
-commit templates, builders and editorial inputs instead. Hand-authored
-`church-history/index.html` and logo studies remain tracked. Browser suites share
+commit templates, builders and editorial inputs instead. Hand-authored logo
+studies remain tracked. Browser suites share
 startup and cleanup in `scripts/browser-test.cjs`; release checks serve `dist/`.
