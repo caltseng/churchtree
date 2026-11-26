@@ -11,8 +11,10 @@ async function resizeTimeline(page, viewport) {
     await page.setViewportSize(viewport);
     await page.waitForFunction(({width, height}) => {
         const graph = document.getElementById('graph'), svg = graph.querySelector('svg');
+        // The filtered single-lane scene refits the viewport, with a 4px vertical gutter.
+        const inset = document.getElementById('vertical').getAttribute('aria-pressed') === 'true' ? 4 : 0;
         return innerWidth === width && innerHeight === height && svg &&
-            Math.abs(svg.getBoundingClientRect().width - graph.clientWidth) <= 4;
+            Math.abs(svg.getBoundingClientRect().width - (graph.clientWidth - inset)) < .5;
     }, viewport);
 }
 
