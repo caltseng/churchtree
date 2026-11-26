@@ -24,7 +24,7 @@ fs.writeFileSync(path.join(root,'westminster-standards/index.html'),collection);
 console.log('Built Westminster collection: '+config.westminsterDocuments.length+' readers.');
 validatePages(config.countryHistories);
 for(const country of config.countryHistories){
-for(const file of ['data.cjs','validate.cjs'])if(!fs.existsSync(path.join(root,country.path,file)))throw Error('Missing country input: '+country.path+file);
+if(!fs.existsSync(path.join(root,country.path,'data.cjs')))throw Error('Missing country input: '+country.path+'data.cjs');
 }
 const countryTiles=config.countryHistories.map(country=>`<a class="tool-card country-card" data-id="${esc(country.id)}" href="../${esc(country.path)}" aria-labelledby="${esc(country.id)}-name" aria-describedby="${esc(country.id)}-description"><div class="country-map" aria-hidden="true"><span class="country-north">N</span>${countryOutline(country.outline)}<span class="country-map-label">COUNTRY HISTORY</span></div><div class="card-copy"><h3 id="${esc(country.id)}-name">${esc(country.title)}</h3><p id="${esc(country.id)}-description">${esc(country.description)}</p><span class="card-action">${esc(country.action)} <span aria-hidden="true">→</span></span></div></a>`).join('\n');
 const countries=fs.readFileSync(path.join(root,'templates/global-church.html'),'utf8').replace('{{tiles}}',countryTiles);
