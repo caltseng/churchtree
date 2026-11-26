@@ -67,9 +67,32 @@ function publicData(data) {
       };
     })
   };
+  const demographics = projectDemographics(data.demographics);
+  const sourceContexts = {};
+  const contexts = new Map();
+  for (const record of [
+    ...Object.values(records), ...attendance.records,
+    ...demographics.populations.flatMap(population => population.records)
+  ]) {
+    const {title, publisher, publicationDate, url, row, path: sourcePath, ...context} = record.source;
+    let sourceId = Object.keys(sources).find(id => sources[id].url === url);
+    if (!sourceId) {
+      sourceId = `demographic-${Object.keys(sources).length}`;
+      sources[sourceId] = {title, publisher, publicationDate, url};
+    }
+    const shared = {sourceId, ...context};
+    const key = JSON.stringify(shared);
+    if (!contexts.has(key)) {
+      const id = `context-${contexts.size + 1}`;
+      contexts.set(key, id);
+      sourceContexts[id] = shared;
+    }
+    record.source = {contextId: contexts.get(key), row};
+    if (sourcePath !== undefined) record.source.path = sourcePath;
+  }
   return {
     schemaVersion: 1, study: {publicationDate: data.provenance.study.publicationDate},
-    records, lenses, sources, attendance, demographics: projectDemographics(data.demographics),
+    records, lenses, sources, sourceContexts, attendance, demographics,
     interactiveStrings: data.provenance.decisions.find(decision => decision.id === 'tradition-precision').interactiveStrings,
     reuse: {notices: reuse.notices, disclaimer: reuse.disclaimer, termsUrl: reuse.termsUrl}
   };

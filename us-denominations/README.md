@@ -148,6 +148,12 @@ and `reuse[].disclaimer`. Respondent data requires reassessing section 13.
 publication. `public-data.js` intentionally projects `schemaVersion: 1`, keyed
 records, two ranked lenses, locators, separate tradition strings and reuse context;
 attendance and demographics have independent explicit projections.
+Public records keep only `source.contextId`, the precise `row`, and an optional
+interactive `path`. `sourceContexts` stores each distinct locator, column and
+caveat once and references canonical metadata in `sources` by `sourceId`.
+`view.sourceFor(data, record)` resolves citations for both static and browser
+rendering; unknown references throw rather than silently omit provenance.
+Build-time inputs, expanded presentations and demographic ledgers are unchanged.
 Inputs, hashes, review tooling and CommonJS loaders remain internal.
 Generated HTML is capped at 120,000 UTF-8 bytes; route tests check every fallback
 row's locator/shared-note links, payload shape and complete published directory.
