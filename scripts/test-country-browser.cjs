@@ -9,6 +9,21 @@ fs.mkdirSync(output, {recursive: true});
 async function checkChinaReading(page, url, data, viewport) {
     await page.locator('#reading-panel').waitFor({state: 'visible'});
     assert(!await page.locator('#record-dialog').isVisible());
+    await page.goto(url + '?lane=catholic');
+    await page.locator('#graph svg').waitFor();
+    assert(!await page.locator('#reading-panel').isVisible());
+    assert.equal(await page.locator('#lane').inputValue(), 'catholic');
+    await page.goto(url + '?view=era&era=tang#xian-stele');
+    await page.locator('#reading-selection article').waitFor();
+    await page.locator('#proportional-view').click();
+    if (viewport.width < 1100) await page.locator('#record-dialog').waitFor({state: 'visible'});
+    await page.goBack();
+    await page.locator('#reading-panel').waitFor({state: 'visible'});
+    await page.waitForFunction(() => !document.getElementById('record-dialog').open &&
+        document.getElementById('reading-panel').contains(document.activeElement));
+    assert(await page.locator('#reading-selection article').isVisible());
+    await page.goto(url);
+    await page.locator('#reading-panel').waitFor({state: 'visible'});
     const chapters = require('../china-history/reading.cjs');
     for (const chapter of chapters) {
         await page.locator(`[data-chapter="${chapter.id}"]`).click();

@@ -1,6 +1,7 @@
 const test = require('node:test'), assert = require('node:assert/strict');
 const fs = require('node:fs'), path = require('node:path'), vm = require('node:vm');
 const dates = require('../historical-dates.js');
+const validateCountry = require('./validate-country-history.cjs');
 const {esc: escape} = require('../html-escape.js');
 const {countryHistories} = require('../site.config.json');
 const repo = path.resolve(__dirname, '..');
@@ -23,8 +24,10 @@ test('calendar periods retain precision, leap days, duration and unknown bounds'
 
 for (const country of countryHistories) {
     const canonical = require(path.join(repo, country.path, 'data.cjs'));
-    const validate = require(path.join(repo, country.path, 'validate.cjs'));
+    const roster = [...canonical.events.map(event => event.research), ...Object.keys(canonical.held)];
+    const validate = data => validateCountry(data, roster);
     test(`${country.title}: validator rejects broken rosters, evidence, dates and relations`, () => {
+        assert.equal(validateCountry.loadCountry(country), canonical);
         assert.equal(validate(canonical), canonical);
         const relation = {
             id: 'fixture-link', type: 'attests', from_id: canonical.events[0].id,
@@ -83,6 +86,21 @@ for (const country of countryHistories) {
         assert(data.events.every(event => !ids.has(event.id)));
     });
 }
+
+test('country registry rejects missing or invalid rosters and incomplete coverage', () => {
+    const country = countryHistories[0];
+    for (const roster of [
+        undefined, {}, {prefix: '', count: 54}, {prefix: '../H', count: 54},
+        {prefix: 1, count: 54}, {prefix: 'H', count: 0}, {prefix: 'H', count: -1},
+        {prefix: 'H', count: 1.5}, {prefix: 'H', count: '54'}
+    ]) assert.throws(() => validateCountry.loadCountry({...country, roster}), /Invalid country roster/);
+    assert.throws(() => validateCountry.loadCountry({...country, path: '../escape/'}), /Invalid country path/);
+    for (const roster of [
+        {...country.roster, count: country.roster.count - 1},
+        {...country.roster, count: country.roster.count + 1},
+        {...country.roster, prefix: 'OTHER'}
+    ]) assert.throws(() => validateCountry.loadCountry({...country, roster}), /complete research roster/);
+});
 
 test('the country registry drives every selector card and generated route', () => {
     const html = fs.readFileSync(path.join(root, 'global-church/index.html'), 'utf8');

@@ -8,7 +8,7 @@ existing timeline. `china-history/reading.cjs` partitions the unchanged canonica
 proportional timespans, institutional lifespans or claims of continuity. Unplaced
 gaps retain null dates. `view=era&era=rupture#cultural-revolution` selects a
 chapter/episode; `view=timeline` and `view=text` retain the existing views.
-Legacy date/orientation/search queries continue to select the timeline unless
+Legacy date/orientation/search/lane queries continue to select the timeline unless
 an explicit view overrides them. Record fragments remain stable in every view.
 
 `china-history/observations.cjs` is a distinct, non-event observation contract:

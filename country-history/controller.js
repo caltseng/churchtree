@@ -27,7 +27,7 @@
         $('year-to').value = query.get('to') || '';
         orientation = query.get('orientation') === 'horizontal' ? 'horizontal' : 'vertical';
         const view = query.get('view');
-        const legacyTimeline = ['orientation', 'from', 'to', 'q'].some(key => query.has(key));
+        const legacyTimeline = ['orientation', 'from', 'to', 'q', 'lane'].some(key => query.has(key));
         mode = view === 'text' ? 'text' : chapters && (view === 'era' || (!view && !legacyTimeline)) ? 'era' : graphical ? 'timeline' : 'text';
         if (chapters) {
             chapter = chapters.find(c => c.events.includes(location.hash.slice(1))) ||
@@ -153,6 +153,7 @@
         $('timeline-panel').hidden = mode !== 'timeline';
         if (chapters) {
             $('reading-panel').hidden = mode !== 'era';
+            if (mode === 'era' && dialog.open) dialog.close();
             if (mode === 'era') $('selection').hidden = true;
             $('reading-lane').value = $('lane').value;
             for (const [id, value] of [['era-view', 'era'], ['proportional-view', 'timeline'], ['sourced-view', 'text']])
@@ -312,6 +313,11 @@
     });
     $('back-to-timeline').onclick = () => dialog.close();
     dialog.addEventListener('close', () => {
+        if (mode === 'era') {
+            const button = [...$('episodes').querySelectorAll('button')].find(b => b.dataset.event === selected);
+            (button || $('chapter-title')).focus();
+            return;
+        }
         const fallback = selected && [...graph.querySelectorAll('.node')].find(el => (el.dataset.members || '').split(',').includes(selected));
         (trigger?.isConnected ? trigger : fallback || graph).focus({preventScroll: true});
     });

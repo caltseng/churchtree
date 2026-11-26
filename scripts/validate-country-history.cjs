@@ -1,5 +1,6 @@
 const dates = require('../historical-dates.js');
 const assert = require('node:assert/strict');
+const path = require('node:path');
 function validate(data, researchIds) {
     const index = (name, pattern = /^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/) => {
         assert(Array.isArray(data[name]), name + ' must be an array');
@@ -61,3 +62,19 @@ function validate(data, researchIds) {
     return data;
 }
 module.exports = validate;
+function loadCountry(country, {root = path.resolve(__dirname, '..')} = {}) {
+    assert.match(country.path, /^[a-z0-9-]+\/$/, 'Invalid country path');
+    assert(country.roster && typeof country.roster.prefix === 'string'
+        && /^[A-Z]+$/.test(country.roster.prefix), 'Invalid country roster prefix');
+    assert(Number.isSafeInteger(country.roster.count) && country.roster.count > 0, 'Invalid country roster count');
+    const roster = Array.from({length: country.roster.count}, (_, i) =>
+        country.roster.prefix + String(i + 1).padStart(2, '0'));
+    return validate(require(path.join(root, country.path, 'data.cjs')), roster);
+}
+module.exports.loadCountry = loadCountry;
+if (require.main === module) {
+    for (const country of require('../site.config.json').countryHistories) {
+        loadCountry(country);
+        console.log(`${country.title} chronology: complete research dispositions, dates and claim evidence resolve.`);
+    }
+}
