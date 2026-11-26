@@ -3,3 +3,16 @@ node_modules/
 dist/
 data/data.js
 .private/contacts/
+
+# Generated pages and public bundles; edit their templates/builders instead.
+/index.html
+/global-church/index.html
+/westminster-standards/index.html
+/westminster/index.html
+/wsc/index.html
+/wlc/index.html
+/us-denominations/index.html
+/china-history/index.html
+/cambodia-history/index.html
+/thailand-history/index.html
+public-data.js
