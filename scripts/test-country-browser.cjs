@@ -8,11 +8,12 @@ fs.mkdirSync(output, {recursive: true});
 const flowCountry = countryHistories.find(country => !country.readingChapters) || countryHistories[0];
 
 async function resizeTimeline(page, viewport) {
-    const previous = await page.locator('#graph svg').elementHandle();
     await page.setViewportSize(viewport);
-    await page.waitForFunction(element => !element.isConnected, previous);
-    await previous.dispose();
-    await page.locator('#graph svg').waitFor();
+    await page.waitForFunction(({width, height}) => {
+        const graph = document.getElementById('graph'), svg = graph.querySelector('svg');
+        return innerWidth === width && innerHeight === height && svg &&
+            Math.abs(svg.getBoundingClientRect().width - graph.clientWidth) <= 4;
+    }, viewport);
 }
 
 async function checkChinaReading(page, url, data, viewport) {
