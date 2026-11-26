@@ -3,7 +3,7 @@ const path = require('path');
 const assert = require('node:assert/strict');
 const browserTest = require('./browser-test.cjs');
 const repoRoot = path.resolve(__dirname, '..');
-const root = process.env.CHURCHTREE_TEST_ROOT ? path.resolve(repoRoot, process.env.CHURCHTREE_TEST_ROOT) : repoRoot;
+const root = path.resolve(repoRoot, process.env.CHURCHTREE_TEST_ROOT || 'dist');
 const output = path.join(repoRoot, '.tmp', 'browser-check');
 fs.mkdirSync(output, { recursive: true });
 async function openFilters(page) {
@@ -143,6 +143,11 @@ async function assertActiveStatus(browser, url) {
                     await group.waitFor();
                     assert(!await group.evaluate(el => el.classList.contains('active')), 'Even all-active clusters are not bodies');
                     assert(!/active today/.test(await group.getAttribute('aria-label')));
+                    if (viewport.width !== 1440 || theme !== 'parchment' || view !== 'timeline') {
+                        assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+                        assert((await page.locator('#graph').boundingBox()).height >= 160);
+                        continue;
+                    }
                     for (const fixture of fixtures.slice(0, 5)) {
                         await page.evaluate(id => CHURCHTREE_TIMELINE.reveal(id), fixture.id);
                         const node = page.locator(`#graph .node[data-id="${fixture.id}"]`);

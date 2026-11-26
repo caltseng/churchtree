@@ -11,8 +11,6 @@ for (const helpers of [htmlEscape, browser.HTMLEscape]) {
     assert.deepEqual([null, undefined, 0, false].map(helpers.escNullable), ['', '', '0', 'false']);
     assert.equal(helpers.esc('Plain text'), 'Plain text');
 }
-assert.equal(require('../us-denominations/view.js').esc, htmlEscape.esc);
-assert.equal(browser.USAffiliationView.esc, browser.HTMLEscape.esc);
 if(path.dirname(fixtures)!==path.join(root,'.tmp')||path.basename(fixtures)!=='build-guard-checks'||(fs.existsSync(fixtures)&&fs.lstatSync(fixtures).isSymbolicLink()))throw Error('Unsafe fixture path');
 fs.rmSync(fixtures,{recursive:true,force:true});fs.mkdirSync(fixtures,{recursive:true});
 function run(script,arg){return spawnSync(process.execPath,[path.join(__dirname,script),arg],{encoding:'utf8'});}
@@ -48,9 +46,6 @@ assert(generated.includes('placeholder="Try &quot;fixture&quot; &lt;search&gt;"'
 assert(generated.includes('https://fixture.example/fixture-history/'));
 assert(generated.includes('../country-history/controller.js'));
 assert(!generated.includes('{{'));
-assert(!fs.existsSync(path.join(directory, 'template.html')));
-assert(!fs.existsSync(path.join(directory, 'build.cjs')));
-assert(!fs.existsSync(path.join(directory, 'validate.cjs')));
 assert.throws(() => buildCountry({...country, path: '../escape/'}, {root: fixtures}), /Invalid country path/);
 assert.throws(() => buildCountry({...country, lastVerified: '2024-02-30'}, {root: fixtures}));
 assert.throws(() => buildCountry({...country, pageDescription: ''}, {root: fixtures}), /Missing country pageDescription/);
@@ -80,7 +75,6 @@ fs.writeFileSync(path.join(fixtures, 'site.config.json'), JSON.stringify({
 }));
 const registered = spawnSync(process.execPath, [path.join(fixtureScripts, 'build-site.cjs')], {encoding: 'utf8'});
 assert.equal(registered.status, 0, registered.stderr);
-assert.deepEqual(fs.readdirSync(path.join(fixtures, 'dist', country.path)).sort(), ['index.html', 'public-data.js']);
 assert.equal(fs.readFileSync(path.join(fixtures, 'dist', country.path, 'index.html'), 'utf8'), generated);
 assertCompactBundle(path.join(fixtures, 'dist/data/data.js'), 'CHURCHTREE_DATA',
     {nodes: fixtureNodes, edges: [], events: [], sources: [], citations: []});

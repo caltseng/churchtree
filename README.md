@@ -70,6 +70,19 @@ browser otherwise defaults to Microsoft Edge. Screenshots go to
 `.tmp/browser-check/`. `npm run test:countries` discovers country data and browser
 cases from `site.config.json`.
 
+Full interaction flows run once for each shared implementation. Other viewport
+cases are layout smokes, not repeats of the full flow: they check overflow,
+readable labels, usable controls and responsive details. Country routes still
+each exercise their source links and no-JavaScript/D3-offline fallbacks; China
+has a separate Era flow. Country and U.S. suites wait for observable state or
+animation frames, not fixed sleeps. Validator mutations run once per validator;
+editorial values, module identity and public-file inventories are not test oracles.
+
+For timing comparisons, record the browser channel, artifact revision, exact
+script digests and pass/fail results alongside elapsed wall time. Consolidated
+and original suites have different test sets: report their suite-time change as
+an **unmatched** comparison, not a speedup for identical tests.
+
 `npm run ci` builds the artifact, checks JavaScript/JSON syntax, validates data and
 local asset references, and runs model, failure-guard, desktop, mobile, reader and
 landing/theme checks. See [user scenarios](docs/user-scenarios.md) for manual steps,

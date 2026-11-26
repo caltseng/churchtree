@@ -1,9 +1,7 @@
 const assert = require('node:assert/strict');
 const {test} = require('node:test');
-const fs = require('node:fs');
-const path = require('node:path');
 const {
-  loadData, validateData, getRecord, getChildren, getAncestors,
+  loadData, validateData, getChildren,
   presentation, deriveShare, ledger
 } = require('./data.cjs');
 const original = loadData();
@@ -29,25 +27,12 @@ test('demographic validation rejects denominator qualifications, source drift an
     assert.throws(() => validateData(fixture));
   }
 });
-
-test('families and traditions use distinct intersections and identical denomination records', () => {
-  assert.deepEqual(getAncestors(original, 'families', 'baptist'), ['us-adults', 'christian', 'protestant']);
-  assert.deepEqual(getAncestors(original, 'families', 'presbyterian'), ['us-adults', 'christian', 'protestant']);
-  assert.deepEqual(getAncestors(original, 'traditions', 'presbyterian-mainline'),
-    ['us-adults', 'christian', 'protestant', 'mainline']);
-  assert.deepEqual(getChildren(original, 'families', 'presbyterian').map(record => record.id), ['pcusa', 'pca']);
-  assert.deepEqual(getChildren(original, 'traditions', 'presbyterian-mainline').map(record => record.id),
-    ['pcusa', 'other-presbyterian-mainline']);
+test('groups outside a selected lens are rejected', () => {
   assert.throws(() => getChildren(original, 'traditions', 'presbyterian'), /Group not in lens/);
   assert.throws(() => getChildren(original, 'families', 'baptist-mainline'), /Group not in lens/);
 });
 
 test('published detail never manufactures a residual or all-family Independent Baptist', () => {
-  const baptists = getChildren(original, 'families', 'baptist');
-  assert.equal(baptists.length, 5);
-  assert.equal(panel(original, 'families', 'baptist').coverage, 'selected');
-  assert.equal(baptists.some(record => /other|remainder|independent/.test(record.id)), false);
-  assert.throws(() => getRecord(original, 'independent-baptist'), /Unknown record/);
   const data = copy();
   panel(data, 'families', 'baptist').remainder = 5.2;
   assert.throws(() => validateData(data), /Synthetic remainder/);
@@ -92,8 +77,8 @@ test('stable numeric-first ranking has no fabricated threshold bars and leaves s
   const data = copy();
   panel(data, 'families', 'baptist').children.reverse();
   assert.deepEqual(getChildren(data, 'families', 'baptist').map(record => record.id), initial);
-  assert.equal(initial[0], 'sbc');
-  assert.equal(initial.at(-1), 'pnbc');
+  assert(initial.findIndex(id => row(original, id).estimate.status !== 'numeric') >
+    initial.findLastIndex(id => row(original, id).estimate.status === 'numeric'));
   assert.deepEqual(getChildren(original, 'families', 'pcusa'), []);
   assert.equal(getChildren(original, 'families', 'us-adults').some(record => record.id === 'no-answer'), true);
 });
@@ -132,8 +117,6 @@ test('reject overlapping sibling aggregates, incompatible scopes/series and impl
     mutate(data);
     assert.throws(() => validateData(data), expected);
   }
-  // A whole-percent parent of 1% can contain the separately published decimal child of 1.1%.
-  assert.equal(getChildren(original, 'traditions', 'lutheran-evangelical')[0].estimate.value, 1.1);
 });
 
 test('reject malformed locators, fabricated threshold values and precision drift', () => {
@@ -159,13 +142,5 @@ test('reject malformed locators, fabricated threshold values and precision drift
       assert.equal(view.source.publisher, 'Pew Research Center');
     }
   }
-  assert(ledger(original).includes('pnbc\t' + row(original, 'pnbc').estimate.published));
   assert.match(ledger(original), /Adults in each religious group/);
-});
-
-test('internal inputs are never registered for recursive public copying', () => {
-  const config = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'site.config.json'), 'utf8'));
-  assert.equal(config.publicDirectories.includes('us-denominations'), false);
-  assert.deepEqual(config.publicFiles.filter(name => name.startsWith('us-denominations/')).sort(),
-    ['affiliation.css', 'controller.js', 'index.html', 'public-data.js', 'view.js'].map(name => 'us-denominations/' + name).sort());
 });

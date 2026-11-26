@@ -8,19 +8,9 @@ fs.mkdirSync(path.join(repoRoot, '.tmp/browser-check'), { recursive: true });
 const readerPath = fs.existsSync(path.join(root, 'wcf/content.json')) ? 'wcf' : 'westminster';
 const data = require(path.join(root, readerPath, 'content.json'));
 const proofs = require(path.join(root, readerPath, 'scripture-proofs.json'));
-assert.deepEqual(data.chapters.map(chapter => chapter.sections.length),
-  [10,3,8,2,7,6,6,8,5,4,6,1,3,3,6,7,3,4,7,4,8,7,4,6,6,3,5,7,8,4,5,3,3]);
 const expectedProofs = proofs.chapters.flatMap(chapter => chapter.sections)
   .flatMap(section => section.groups).flatMap(group => group.references);
 assert(expectedProofs.every(ref => !Object.hasOwn(ref, 'url')), 'Proof entries store references, not derived URLs');
-for (const [sourceId, reference] of [
-  ['iv.xvii.ii-p3.468', 'Psalms 145:3'],
-  ['iv.xvii.ii-p7.644', 'Hebrews 9:15-17'],
-  ['iv.xvii.ii-p9.734', '1 Corinthians 11:23-26'],
-]) {
-  assert.equal(expectedProofs.find(ref => ref.sourceId === sourceId)?.reference, reference,
-    'Printed proof labels override malformed machine metadata');
-}
 const typography = page => page.locator('.reading-prose').first().evaluate(element => {
   const style = getComputedStyle(element);
   return [style.fontFamily, style.fontSize, style.lineHeight];
@@ -39,13 +29,13 @@ async function run() {
       page.on('pageerror', error => errors.push(error.message));
       await page.goto(url);
       assert.equal(await page.locator('article:visible').count(), 1);
-      assert.equal(await page.locator('.passage').count(), 172);
+      assert.equal(await page.locator('.passage').count(), data.chapters.reduce((sum, chapter) => sum + chapter.sections.length, 0));
       assert.equal(await page.locator('#sources[open]').count(), 0, 'Global footer starts collapsed');
       assert.equal(await page.locator('.proof-credit').count(), 1, 'Proof credit appears once per page');
       assert.equal(await page.locator('#sources .proof-credit').count(), 1, 'Proof credit lives in the edition note');
       assert.equal(await page.locator('article .pca-scope').count(), 0, 'No repeated global audit caveat');
       assert.equal(await page.locator('.section-index[open]').count(), 0, 'Chapter navigation is prioritized');
-      assert.deepEqual(await page.locator('.scripture-proofs li>a:not(.proof-source)').evaluateAll(links =>
+      if (size.width === 390) assert.deepEqual(await page.locator('.scripture-proofs li>a:not(.proof-source)').evaluateAll(links =>
         links.map(link => ({ reference: link.textContent, url: link.href }))),
       expectedProofs.map(({ reference }) => ({
         reference, url: `https://www.biblegateway.com/passage/?search=${encodeURIComponent(reference)}&version=ASV`,
@@ -57,6 +47,20 @@ async function run() {
         assert.deepEqual(await typography(page), readingStyle, `${route} matches WCF typography`);
       }
       await page.goto(url);
+      if (size.width !== 390) {
+        await page.goto(url + '#proofs-31-2');
+        assert(await page.locator('#proofs-31-2[open]').isVisible());
+        for (const theme of ['parchment', 'slate', 'ink']) {
+          await page.evaluate(value => document.documentElement.dataset.theme = value, theme);
+          assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+        }
+        assert((await page.locator('#chapter-31 .chapter-nav-top a').last().boundingBox()).height >= 44);
+        await page.screenshot({path: path.join(repoRoot, `.tmp/browser-check/reader-${size.width}x${size.height}.png`)});
+        assert.deepEqual(errors, []);
+        await page.close();
+        console.log(`Westminster layout ${size.width}x${size.height}: passed`);
+        continue;
+      }
       await page.locator('#chapter-select').selectOption('23');
       await page.waitForFunction(() => document.querySelector('#chapter-23 h2') === document.activeElement);
       assert.equal(await page.locator('#chapter-select').inputValue(), '23');
@@ -101,7 +105,7 @@ async function run() {
     }
     const page = await browser.newPage({ javaScriptEnabled: false, viewport: { width: 320, height: 568 } });
     await page.goto(url + '#chapter-23');
-    assert.equal(await page.locator('article:visible').count(), 33);
+    assert.equal(await page.locator('article:visible').count(), data.chapters.length);
     assert.equal(await page.locator('.proof-credit').count(), 1, 'No-JavaScript page has one proof credit');
     await page.locator('#chapter-23 .chapter-nav-top a').last().click();
     assert.equal(new URL(page.url()).hash, '#chapter-24');

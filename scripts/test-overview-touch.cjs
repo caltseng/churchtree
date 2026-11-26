@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');
 const browserTest=require('./browser-test.cjs');
-const repo=path.resolve(__dirname,'..'),root=path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT||'.'),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
+const repo=path.resolve(__dirname,'..'),root=path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT||'dist'),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
 async function selectOverview(page){
   await page.getByRole('button',{name:'Filters',exact:true}).tap();
   await page.locator('#layout').selectOption('lineage');
@@ -8,16 +8,32 @@ async function selectOverview(page){
   await page.locator('[data-id="family:Catholic"]').waitFor();
 }
 browserTest(root,async({browser,server})=>{
+ const context=await browser.newContext({isMobile:true,hasTouch:true});
  for(const size of [{width:320,height:568},{width:390,height:844},{width:768,height:1024},{width:844,height:390}]){
-  const context=await browser.newContext({viewport:size,isMobile:true,hasTouch:true});const page=await context.newPage();
+  const page=await context.newPage();await page.setViewportSize(size);
   await page.goto(process.env.OVERVIEW_TEST_URL||`http://127.0.0.1:${server.address().port}/church-history/`);await selectOverview(page);await page.waitForTimeout(250);
+  const header=page.locator('.explorer-header');
+  const controls=header.getByRole('button');
+  assert.equal(await controls.count(),4,'Search, Filters, Details and Site menu share the header');
+  const boxes=await Promise.all((await controls.all()).map(button=>button.boundingBox()));
+  assert(boxes.every(box=>Math.abs(box.y-boxes[0].y)<3 && box.width>=40 && box.height>=40),'Header actions fit on one row with at least 40 px targets');
+  const brand=await header.locator('.main-branch-brand').boundingBox();
+  assert(brand.x+brand.width+4<=boxes[0].x,'Brand leaves space before the header actions');
+  assert(await page.locator('.graph-status').evaluate(el=>el.offsetHeight<=1),'Overview title takes no space above graph');
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await page.screenshot({path:path.join(output,'review-overview-header-'+size.width+'.png')});
+  if(size.width!==390&&!process.env.OVERVIEW_TEST_URL){
+   await page.getByRole('button',{name:'Catholic',exact:true}).tap();
+   assert.equal(await page.locator('#branch').inputValue(),'Catholic');
+   await page.close();console.log(`Overview touch layout ${size.width}: passed`);continue;
+  }
   const client=await context.newCDPSession(page),graph=page.locator('#graph');
   async function gesture(a,b){await client.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:a});for(let i=1;i<=12;i++){await client.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:a.map((p,j)=>({id:j,x:p.x+(b[j].x-p.x)*i/12,y:p.y+(b[j].y-p.y)*i/12}))});await page.waitForTimeout(16);}await client.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(80);}
   const box=await graph.boundingBox(),x=box.x+box.width*.5,y=box.y+Math.min(190,(size.height-box.y)*.5);
   const a=[{id:0,x:x-25,y:y-25},{id:1,x:x+25,y:y+25}],b=[{id:0,x:x-55,y:y-55},{id:1,x:x+55,y:y+55}];
   const before=await page.evaluate(()=>({page:visualViewport.scale,width:document.querySelector('.node rect').getBoundingClientRect().width}));
   await gesture(a,b);const after=await page.evaluate(()=>({page:visualViewport.scale,width:document.querySelector('.node rect').getBoundingClientRect().width}));
-  if(process.env.OVERVIEW_TEST_URL){console.log(JSON.stringify({size,before,after}));await page.screenshot({path:path.join(output,`overview-production-${size.width}.png`)});await context.close();continue;}
+  if(process.env.OVERVIEW_TEST_URL){console.log(JSON.stringify({size,before,after}));await page.screenshot({path:path.join(output,`overview-production-${size.width}.png`)});await page.close();continue;}
   assert.equal(after.page,before.page,'Overview pinch must not zoom the webpage');assert(after.width>before.width*1.6,'Overview pinch enlarges actual graph geometry '+JSON.stringify({before,after,graph:await page.evaluate(()=>CHURCHTREE_GRAPH?.snapshot())}));
   const zoomed=await page.evaluate(()=>CHURCHTREE_GRAPH.snapshot());
   assert(Math.abs((zoomed.left+box.width/2)/zoomed.scale-box.width/2)<3,'Graph midpoint remains anchored horizontally');
@@ -34,21 +50,13 @@ browserTest(root,async({browser,server})=>{
    for(let i=0;i<4;i++)await gesture(b,a);assert.equal(await page.evaluate(()=>CHURCHTREE_GRAPH.snapshot().scale),.5,'Repeated reverse pinch has a lower bound');
   }
   await page.reload();await selectOverview(page);
-  const header=page.locator('.explorer-header');
-  const controls=header.getByRole('button');
-  assert.equal(await controls.count(),4,'Search, Filters, Details and Site menu share the header');
-  const boxes=await Promise.all((await controls.all()).map(button=>button.boundingBox()));
-  assert(boxes.every(box=>Math.abs(box.y-boxes[0].y)<3 && box.width>=40 && box.height>=40),'Header actions fit on one row with at least 40 px targets');
-  const brand=await header.locator('.main-branch-brand').boundingBox();
-  assert(brand.x+brand.width+4<=boxes[0].x,'Brand leaves space before the header actions');
-  assert(await page.locator('.graph-status').evaluate(el=>el.offsetHeight<=1),'Overview title takes no space above graph');
-  await page.screenshot({path:path.join(output,'review-overview-header-'+size.width+'.png')});
   await page.getByRole('button',{name:'Search church history',exact:true}).tap();await page.locator('#search').fill('OPC');
   const close=page.getByRole('button',{name:'Close search',exact:true});assert(await close.isVisible());if(size.width===390){await close.focus();await page.keyboard.press('Enter');}else await close.tap();assert(!await page.locator('#search-form').isVisible());assert.equal(await page.locator('#search').inputValue(),'OPC');assert(await page.locator('#mobile-search-toggle').evaluate(el=>el===document.activeElement));
   await page.getByRole('button',{name:'Search church history',exact:true}).tap();assert(await page.getByRole('button',{name:/^OPC ·/}).isVisible());await page.keyboard.press('Escape');
   await page.getByRole('button',{name:'Catholic',exact:true}).tap();assert.equal(await page.locator('#branch').inputValue(),'Catholic','A node remains tappable after pinching/cancellation');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   if(size.width===390){await gesture([{id:0,x:100,y:25},{id:1,x:150,y:25}],[{id:0,x:60,y:25},{id:1,x:190,y:25}]);assert(await page.evaluate(()=>visualViewport.scale)>1,'Browser pinch remains available outside graph');}
-  await context.close();console.log(`Overview gestures and combined header ${size.width}: passed`);
+  await page.close();console.log(`Overview gestures and combined header ${size.width}: passed`);
  }
+ await context.close();
 }).catch(e=>{console.error(e);process.exitCode=1;});
