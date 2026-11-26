@@ -6,4 +6,4 @@ The existing `eastern-orthodox-tradition` record provides communion-level contex
 
 The existing Eastern Orthodox node is a tradition-level context record without a governing hierarchy. The prototype edge vocabulary has no communion-affiliation or jurisdiction type. The relevant sees, missions, metropolitanate and earlier jurisdictional phases do not have dedicated endpoints. The per-node notes distinguish those missing nodes and links from intentional scope exclusions. Assembly participation is described in the OCA profile as cooperation between jurisdictions.
 
-The official release builder includes set-local evidence automatically. The tracked legacy source-preview bundle is outside this batch and can be refreshed in a coordinated pass using the repository’s PowerShell data builder.
+The release builder includes set-local evidence automatically. Run `npm run build` to regenerate `dist/data/data.js` from canonical JSON; serve the built `dist/` site. Generated bundles are ignored, not tracked; commit the canonical set inputs and notes.

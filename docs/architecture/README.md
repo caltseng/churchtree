@@ -18,8 +18,8 @@ accounts for every H01-H54 research row as a selected record or an explicitly he
 row, verifies calendar bounds and evidence references, and rejects structural
 lineage relationships. `scripts/build-country-history.cjs` uses the shared
 `templates/country-history.html` and each country configuration to project approved
-public fields into tracked HTML and `public-data.js`. Only those two outputs and
-the shared `country-history/history.css` and `controller.js` are published.
+public fields into generated, ignored HTML and `public-data.js`. Only those two
+outputs and shared `country-history/` CSS/controller assets are published.
 Source research and builder/template inputs remain private to the repository.
 
 The route reuses `timeline-model.js`, `timeline.js` and
@@ -50,14 +50,14 @@ the country builder/template, neutral controller/CSS and the same date/timeline
 modules. Every route uses only `COUNTRY_HISTORY_DATA`. The shared
 `scripts/validate-country-history.cjs` receives each route's explicit research-ID
 roster, retaining China's H01-H54 coverage without cross-country imports.
-Cambodia accounts for KH01-KH50, selecting 42 and explicitly holding eight.
+Cambodia accounts for KH01-KH57, selecting 46 and explicitly holding 11.
 The source packet and staging crosswalks are not published; dates, original
 summaries, caveats, credit and precise locators are. See its
 [handoff](../research/cambodia/handoff.md) and
 [coverage register](../research/cambodia/coverage.md).
 
-`/thailand-history/` follows the same contract, with H01-H44 explicitly
-accounted for as 40 selected events and four held rows. Its year/month/day
+`/thailand-history/` follows the same contract, with H01-H50 explicitly
+accounted for as 45 selected events and five held rows. Its year/month/day
 bounds, evidence and provisional claims remain qualified; the 1918-1919
 Adventist interval retains the December arrival in prose rather than inventing
 a 1919 month. Research/held crosswalks remain outside the artifact. See its
@@ -65,3 +65,32 @@ a 1919 month. Research/held crosswalks remain outside the artifact. See its
 [coverage register](../research/thailand/coverage.md).
 Syntax, validation and country browser tests discover all registered country
 folders; no country names need to be added to the check command.
+
+## Source map
+
+| Area | Source inputs and implementation |
+| --- | --- |
+| Home and collection pages | `site.config.json`, `templates/home.html`, `templates/global-church.html`, `templates/westminster-standards.html`, `scripts/build-home.cjs` |
+| Church History | `church-history/index.html`, root explorer CSS/JS, `timeline-model.js` and timeline renderers |
+| Country histories | Each country's `data.cjs`, `scripts/validate-country-history.cjs`, `scripts/build-country-history.cjs`, `templates/country-history.html`, shared `country-history/` assets |
+| U.S. denominations | `us-denominations/` canonical affiliation inputs, `data.cjs`, `build.cjs`, controller/view and CSS; [route documentation](../../us-denominations/README.md) |
+| Westminster readers | `westminster/content.json`, `westminster/build.cjs`, catechism inputs and `scripts/build-catechisms.cjs` |
+| Visual foundation | `theme.css`, `theme.js`, `theme-controls.css`, `brand.css`, canonical SVGs under `assets/brand/logos/` |
+| Release and CI | `scripts/build-site.cjs`, `.github/workflows/`; [deployment](../deployment.md) |
+
+Builders and browser views share `html-escape.js` through CommonJS or the
+`HTMLEscape` browser global; load it before dependent views. `esc` escapes all five
+HTML metacharacters, `escReader` preserves the reader's three-character
+serialization, and `escNullable` keeps missing explorer text empty.
+
+Country controllers consume only `COUNTRY_HISTORY_DATA`. China also enables
+reading chapters and an Era navigator through its registry configuration.
+The approved public projection excludes editorial research/held crosswalks;
+those are not UI-hidden records. See the [China handoff](../research/china/handoff.md).
+
+`scripts/build-site.cjs` is the sole denomination bundle generator, discovering
+canonical sets and evidence and writing `dist/data/data.js`. Source-preview
+`data/data.js`, generated page HTML, `public-data.js` and `dist/` are ignored;
+commit templates, builders and editorial inputs instead. Hand-authored
+`church-history/index.html` and logo studies remain tracked. Browser suites share
+startup and cleanup in `scripts/browser-test.cjs`; release checks serve `dist/`.
