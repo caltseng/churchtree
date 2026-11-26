@@ -13,6 +13,8 @@
     });
     const byId = new Map(nodes.map(n => [n.id, n]));
     const originals = new Map([...$('record-list').children].map(el => [el.id, el]));
+    const chapters = data.reading?.chapters;
+    let chapter = chapters?.[0];
     const dialog = $('record-dialog'), graph = $('graph');
     let control = null, orientation = 'vertical', mode = 'timeline', selected = null, range = null, trigger = null;
     let renderedQuery = '', resizeTimer;
@@ -24,13 +26,21 @@
         $('year-from').value = query.get('from') || '';
         $('year-to').value = query.get('to') || '';
         orientation = query.get('orientation') === 'horizontal' ? 'horizontal' : 'vertical';
-        mode = query.get('view') === 'text' || !graphical ? 'text' : 'timeline';
+        const view = query.get('view');
+        const legacyTimeline = ['orientation', 'from', 'to', 'q', 'lane'].some(key => query.has(key));
+        mode = view === 'text' ? 'text' : chapters && (view === 'era' || (!view && !legacyTimeline)) ? 'era' : graphical ? 'timeline' : 'text';
+        if (chapters) {
+            chapter = chapters.find(c => c.events.includes(location.hash.slice(1))) ||
+                chapters.find(c => c.id === query.get('era')) || chapters[0];
+            selected = byId.has(location.hash.slice(1)) ? location.hash.slice(1) : null;
+        }
     }
     function updateQuery() {
         const url = new URL(location.href);
         for (const [key, value] of Object.entries({
             q: $('search').value.trim(), lane: $('lane').value, from: $('year-from').value,
-            to: $('year-to').value, orientation: orientation === 'horizontal' ? orientation : '', view: mode === 'text' ? mode : ''
+            to: $('year-to').value, orientation: orientation === 'horizontal' ? orientation : '',
+            view: chapters ? mode : mode === 'text' ? mode : '', era: chapters ? chapter.id : ''
         })) {
             if (value) url.searchParams.set(key, value);
             else url.searchParams.delete(key);
@@ -64,8 +74,8 @@
                 isCatholic: () => false, laneOf, partition: n => n.lane_id};
         }
     };
-    function showContent(content, heading) {
-        const target = matchMedia('(max-width:1099px)').matches ? $('dialog-content') : $('selection');
+    function showContent(content, heading, focus = true) {
+        const target = mode === 'era' ? $('reading-selection') : matchMedia('(max-width:1099px)').matches ? $('dialog-content') : $('selection');
         target.replaceChildren(content);
         target.hidden = false;
         if (target === $('dialog-content')) {
@@ -73,10 +83,10 @@
             $('back-to-timeline').focus();
         } else {
             const title = target.querySelector('h3') || heading;
-            if (title) { title.tabIndex = -1; title.focus({preventScroll: true}); }
+            if (title && focus) { title.tabIndex = -1; title.focus({preventScroll: mode !== 'era'}); }
         }
     }
-    function select(id, push = true, origin = document.activeElement) {
+    function select(id, push = true, origin = document.activeElement, focus = true) {
         const node = byId.get(id);
         if (!node) {
             $('load-status').textContent = 'Unknown record link. Use Search or Text view to choose a historical episode.';
@@ -84,19 +94,34 @@
         }
         trigger = origin;
         selected = id;
+        if (mode === 'era' && !chapter.events.includes(id)) {
+            chapter = chapters.find(c => c.events.includes(id));
+            draw();
+        }
         if (push && location.hash !== '#' + id) {
             const url = new URL(location.href); url.hash = id;
             history.pushState(null, '', url);
         }
         const article = originals.get(id).cloneNode(true);
         article.removeAttribute('id');
+        article.hidden = false;
         article.querySelector('h3 a').replaceWith(document.createTextNode(node.title));
         if (mode === 'text') {
             const original = originals.get(id);
             // A linked record outside current filters remains reachable without silently resetting them.
             if (original.hidden) showContent(article);
             else { original.scrollIntoView({block: 'start'}); original.focus({preventScroll: true}); }
-        } else showContent(article);
+        } else {
+            if (mode === 'era' && !$('period-error').textContent && !filtered().some(n => n.id === id)) {
+                const note = document.createElement('p');
+                note.className = 'critical-note';
+                note.textContent = 'Linked episode outside the current filters. Your filters have been preserved.';
+                article.prepend(note);
+            }
+            showContent(article, null, focus);
+        }
+        if (mode === 'era') $('episodes').querySelectorAll('button').forEach(button =>
+            button.setAttribute('aria-pressed', button.dataset.event === id));
         graph.querySelectorAll('.node').forEach(el => {
             el.classList.toggle('selected', (el.dataset.members || '').split(',').includes(id));
         });
@@ -126,6 +151,15 @@
         const gaps = visible.filter(n => n.review === 'gap').length;
         $('count').textContent = `${visible.length} records${gaps ? `, including ${gaps} unplaced research gaps` : ''}.`;
         $('timeline-panel').hidden = mode !== 'timeline';
+        if (chapters) {
+            $('reading-panel').hidden = mode !== 'era';
+            if (mode === 'era' && dialog.open) dialog.close();
+            if (mode === 'era') $('selection').hidden = true;
+            $('reading-lane').value = $('lane').value;
+            for (const [id, value] of [['era-view', 'era'], ['proportional-view', 'timeline'], ['sourced-view', 'text']])
+                $(id).setAttribute('aria-pressed', mode === value);
+            if (mode === 'era') drawReading(visible);
+        }
         $('record-list').hidden = mode !== 'text';
         $('text-controls').hidden = mode !== 'text' || !graphical;
         $('vertical').setAttribute('aria-pressed', orientation === 'vertical');
@@ -143,11 +177,87 @@
             if (selected) graph.querySelectorAll('.node').forEach(el =>
                 el.classList.toggle('selected', (el.dataset.members || '').split(',').includes(selected)));
         }
-        $('load-status').textContent = graphical ?
+        $('load-status').textContent = mode === 'era' ? 'Editorial chapters / sourced episodes / no institutional bridges inferred across gaps.' : graphical ?
             'Source-linked records / no institutional bridges are inferred across gaps.' :
             'D3 could not load. Search, filters and the complete sourced text remain available.';
         updateQuery();
         return true;
+    }
+    function drawReading(visible) {
+        const index = chapters.indexOf(chapter), ids = new Set(visible.map(n => n.id));
+        $('chapter-position').textContent = `Reading chapter ${index + 1} of ${chapters.length} / ${chapter.dates}`;
+        $('chapter-title').textContent = chapter.title;
+        $('chapter-summary').textContent = chapter.summary;
+        $('previous-chapter').disabled = index === 0;
+        $('next-chapter').disabled = index === chapters.length - 1;
+        $('chapters').querySelectorAll('a').forEach(link => {
+            if (link.dataset.chapter === chapter.id) link.setAttribute('aria-current', 'step');
+            else link.removeAttribute('aria-current');
+        });
+        const events = chapter.events.map(id => byId.get(id)).filter(n => ids.has(n.id));
+        $('episode-count').textContent = events.length ? `${events.length} episodes, including any unplaced gaps.` :
+            'No episodes match in this chapter. Change the display lane, search or date filters.';
+        $('episodes').replaceChildren(...events.map(n => {
+            const button = document.createElement('button'), meta = document.createElement('span'), title = document.createElement('strong');
+            button.dataset.event = n.id;
+            button.setAttribute('aria-controls', 'reading-detail');
+            meta.textContent = dates.label(n.date) + ' / ' + n.tradition_family;
+            title.textContent = n.title;
+            button.append(meta, title);
+            button.onclick = () => select(n.id);
+            return button;
+        }));
+        $('size-evidence').querySelectorAll('[data-size-chapter]').forEach(section =>
+            section.hidden = section.dataset.sizeChapter !== chapter.id);
+        const id = selected && chapter.events.includes(selected) ? selected :
+            events.find(n => n.id === chapter.feature)?.id || events[0]?.id;
+        if (id) select(id, false, null, false);
+        else {
+            selected = null;
+            const message = document.createElement('p');
+            message.textContent = 'No episode selected. Choose another chapter or change filters. Size evidence remains separately scoped.';
+            $('reading-selection').replaceChildren(message);
+        }
+    }
+    function changeChapter(next) {
+        chapter = next; selected = null;
+        const url = new URL(location.href);
+        url.searchParams.set('era', chapter.id); url.hash = '';
+        history.pushState(null, '', url);
+        draw();
+        $('chapter-title').focus();
+        revealChapter();
+    }
+    function revealChapter() {
+        const current = $('chapters').querySelector('[aria-current]');
+        if (current) $('chapters').scrollLeft = current.offsetLeft - $('chapters').offsetLeft;
+    }
+    if (chapters) {
+        $('reading-views').hidden = false;
+        for (const [id, next] of [['era-view', 'era'], ['proportional-view', 'timeline'], ['sourced-view', 'text']]) $(id).onclick = () => {
+            range = control?.snapshot().domain || range;
+            mode = next === 'timeline' && !graphical ? 'text' : next;
+            const url = new URL(location.href); url.searchParams.set('view', mode);
+            history.pushState(null, '', url);
+            draw();
+            if (selected && location.hash) select(selected, false);
+            else (mode === 'era' ? $('chapter-title') : mode === 'text' ? $('record-list') : graph).focus();
+        };
+        $('chapters').querySelectorAll('a').forEach(link => link.onclick = event => {
+            event.preventDefault(); changeChapter(chapters.find(c => c.id === link.dataset.chapter));
+        });
+        $('previous-chapter').onclick = () => changeChapter(chapters[chapters.indexOf(chapter) - 1]);
+        $('next-chapter').onclick = () => changeChapter(chapters[chapters.indexOf(chapter) + 1]);
+        $('reading-lane').onchange = () => {
+            $('lane').value = $('reading-lane').value; selected = null;
+            const url = new URL(location.href);
+            url.hash = ''; url.searchParams.set('lane', $('lane').value);
+            history.pushState(null, '', url); draw();
+        };
+        $('back-to-episodes').onclick = () => {
+            const button = [...$('episodes').querySelectorAll('button')].find(b => b.dataset.event === selected);
+            (button || $('chapter-title')).focus();
+        };
     }
     for (const [button, panel] of [['search-toggle', 'search-panel'], ['filters-toggle', 'filters-panel']]) {
         $(button).onclick = () => {
@@ -203,14 +313,28 @@
     });
     $('back-to-timeline').onclick = () => dialog.close();
     dialog.addEventListener('close', () => {
+        if (mode === 'era') {
+            const button = [...$('episodes').querySelectorAll('button')].find(b => b.dataset.event === selected);
+            (button || $('chapter-title')).focus();
+            return;
+        }
         const fallback = selected && [...graph.querySelectorAll('.node')].find(el => (el.dataset.members || '').split(',').includes(selected));
         (trigger?.isConnected ? trigger : fallback || graph).focus({preventScroll: true});
     });
     function restore() {
-        if (location.search !== renderedQuery) { readQuery(); range = null; draw(); }
+        if (location.search !== renderedQuery) { readQuery(); range = null; if (!draw()) return; }
         const id = location.hash.slice(1);
         if (id) select(id, false);
-        else { selected = null; if (dialog.open) dialog.close(); $('selection').hidden = true; }
+        else {
+            selected = null; if (dialog.open) dialog.close(); $('selection').hidden = true;
+            if (mode === 'era') drawReading(filtered());
+        }
+        // History traversal can restore focus after popstate; focus the rendered Era context afterward.
+        if (mode === 'era') requestAnimationFrame(() => {
+            if (mode !== 'era') return;
+            const target = id && byId.has(id) ? $('reading-selection').querySelector('h3') : $('chapter-title');
+            if (target) { target.tabIndex = -1; target.focus(); }
+        });
     }
     window.addEventListener('popstate', restore);
     window.addEventListener('hashchange', restore);
@@ -230,4 +354,5 @@
         restore();
         if (mode === 'timeline') { control?.reveal(location.hash.slice(1)); window.scrollTo(0, 0); }
     }
+    if (mode === 'era') revealChapter();
 })();

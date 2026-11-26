@@ -21,6 +21,51 @@ const data = {
     sources: canonical.sources.map(({id, title, publisher, published, url, perspective}) => ({id, title, publisher, published, url, perspective})),
     citations: canonical.citations.map(({id, source_id, locator, accessed}) => ({id, source_id, locator, accessed}))
 };
+let readingPanel = '';
+if (country.readingChapters) {
+    const chapters = require(path.join(directory, 'reading.cjs'));
+    const evidence = require(path.join(directory, 'observations.cjs'));
+    require(path.join(directory, 'validate-reading.cjs'))(chapters, evidence, canonical);
+    data.reading = {chapters};
+    const measureLabels = {'cumulative-flow': 'Cumulative baptisms, not living membership',
+        'population-estimate': 'Population estimate', 'self-identification': 'Self-identification', belief: 'Belief, not affiliation'};
+    function snapshot(o) {
+        return `<article id="size-${esc(o.id)}" class="size-snapshot" tabindex="-1">
+<p class="record-meta">Reference: ${esc(o.reference)} / ${esc(o.tradition)} / ${esc(measureLabels[o.measure])}</p>
+<h3>${esc(o.magnitude)}</h3><p>${esc(o.population)}</p><p>${esc(o.age)}</p>
+<p class="critical-note">${esc(o.uncertainty.note)}</p>
+<p class="source-credit">${esc(o.attribution)}. ${[...new Set(o.citations.map(c => c.source_id))].map(id => {
+    const s = evidence.sources[id];
+    return `<a href="${esc(s.url)}">${esc(s.publisher)}</a> (${esc(s.published)})`;
+}).join('; ')}.</p>
+<details><summary>Geography, method and confidence</summary>
+<dl><dt>Geography</dt><dd>${esc(o.geography)}</dd><dt>Method</dt><dd>${esc(o.method)}</dd>
+<dt>Uncertainty</dt><dd>${esc(o.uncertainty.type.replace(/-/g, ' '))}</dd><dt>Confidence</dt><dd>${esc(o.confidence)}</dd></dl>
+<ul class="sources">${o.citations.map(c => {
+    const s = evidence.sources[c.source_id];
+    return `<li><a href="${esc(s.url)}">${esc(s.title)}</a><span>Published: ${esc(s.published)}</span><p>${esc(c.locator)}</p><p>${esc(s.context)}</p></li>`;
+}).join('')}</ul><p>Passages reviewed and accessed ${esc(evidence.reviewed)}. Attribution review, not independent demographic enumeration.</p>
+</details></article>`;
+    }
+    readingPanel = `<section id="reading-panel" aria-label="Era navigator" hidden>
+<p class="reading-note">Reading chapters, not proportional time, institutional lifespans or a continuous genealogy.</p>
+<div class="reading-layout"><nav id="chapters" aria-label="Reading chapters">${chapters.map((c, i) =>
+    `<a href="?view=era&amp;era=${c.id}" data-chapter="${c.id}"><span>${i + 1} / ${esc(c.dates)}</span>${esc(c.title)}</a>`).join('')}</nav>
+<section class="reading-story" aria-labelledby="chapter-title"><p id="chapter-position" class="record-meta"></p>
+<h2 id="chapter-title" tabindex="-1"></h2><p id="chapter-summary"></p>
+<div class="chapter-steps"><button id="previous-chapter">Earlier chapter</button><button id="next-chapter">Later chapter</button></div>
+<label class="reading-lane">Display lane <select id="reading-lane"><option value="">All traditions and context</option>${data.lanes.map(l =>
+    `<option value="${l.id}">${esc(l.label)}</option>`).join('')}</select></label>
+<p id="episode-count" role="status"></p><div id="episodes" class="episode-list"></div></section>
+<aside id="reading-detail" aria-label="Selected historical episode"><div id="reading-selection"></div>
+<button id="back-to-episodes">Back to chapter episodes</button></aside>
+<section id="size-evidence" aria-labelledby="size-heading"><h2 id="size-heading">Church-size evidence</h2>
+<p>Separate snapshots, not a growth series. This track is not filtered by display lane, search or date range. Unknown is not zero.</p>
+<p class="reading-note">Affiliation, belief, official counts and cumulative baptisms are different measures. No interpolation, combined national total or implied growth rate.</p>
+${chapters.map(c => `<section data-size-chapter="${c.id}" aria-label="${esc(c.title)} size evidence"><p class="critical-note">${esc(c.gap)}</p>${
+    evidence.observations.filter(o => o.chapter === c.id).map(snapshot).join('')}</section>`).join('')}
+</section></div></section>`;
+}
 const lane = new Map(data.lanes.map(l => [l.id, l.label]));
 const sorted = [...data.events].sort((a, b) => (dates.bounds(a.date)?.start ?? Infinity) - (dates.bounds(b.date)?.start ?? Infinity) || a.id.localeCompare(b.id));
 function evidence(ids) {
@@ -50,6 +95,9 @@ const values = {
     country: esc(country.title), description: esc(country.pageDescription), domain: esc(domain), path: esc(country.path),
     searchPlaceholder: esc(country.searchPlaceholder),
     scopeDetails: country.scopeDetails || '',
+    readingAssets: country.readingChapters ? '<link rel="stylesheet" href="../country-history/reading.css">' : '',
+    readingControls: country.readingChapters ? '<nav id="reading-views" class="country-toolbar" aria-label="History view" hidden><button id="era-view" aria-pressed="false">Era navigator</button><button id="proportional-view" aria-pressed="false">Proportional timeline</button><button id="sourced-view" aria-pressed="false">Text view</button></nav>' : '',
+    readingPanel,
     afterScope: country.showCountryChooser ? '\n<p><a href="../global-church/">Choose another country</a></p>' : '',
     noScript: esc(country.noScript || 'This is the complete sourced text view. Follow record links to bookmark an episode; expand its evidence to read source locators.')
 };

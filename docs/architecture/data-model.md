@@ -1,5 +1,44 @@
 # Data Model
 
+## China reading chapters and size observations
+
+The China page has an opt-in Era navigator; other country routes retain their
+existing timeline. `china-history/reading.cjs` partitions the unchanged canonical
+45-record roster into seven editorial reading groups. Chapter labels are not
+proportional timespans, institutional lifespans or claims of continuity. Unplaced
+gaps retain null dates. `view=era&era=rupture#cultural-revolution` selects a
+chapter/episode; `view=timeline` and `view=text` retain the existing views.
+Legacy date/orientation/search/lane queries continue to select the timeline unless
+an explicit view overrides them. Record fragments remain stable in every view.
+
+`china-history/observations.cjs` is a distinct, non-event observation contract:
+reference period, magnitude as published (not a computed common-scale value),
+tradition, population, age universe, geography, measure, method, attribution,
+uncertainty type/note, confidence, claim-level source locators, source publication
+dates and access/review date. Flow, self-identification, belief and population
+estimates are different measures. Missing periods are explicitly unknown; no
+interpolation, sums, midpoint or national growth curve is generated.
+
+The report's N12 Catholic source spread is stored as two observations,
+`N12-hssc` and `N12-asia-harvest`, linked by `spread_group`, never as a confidence
+interval. Confidence describes attribution versus demographic coverage, not a
+numeric probability. The build validates the contract and emits escaped HTML
+snapshots; source inputs and research crosswalks are not copied to the site.
+The selected chapter scopes the size track, but lane/search/date filters do not;
+that distinction remains visible. Method and confidence use native disclosures.
+Desktop details stay alongside the episode list; narrow screens use in-flow
+details and a focus-return button rather than a modal.
+
+The 2026-11-26 claim review re-read the translated Montecorvino letter (baptism,
+purchased-boys and date paragraphs), Pew's Christianity chapter and CGSS/CFPS
+methods, the 1997 official mirror section I, and the 2018 State Council
+republication section III. Sources verify attributed claims, not exhaustive
+populations. In particular HSSC/Asia Harvest remain secondary attributions through
+Pew; their underlying rosters were not independently inspected. Only original
+paraphrases, facts and credited links are reproduced, not charts or translated
+extracts. This is not a new independent historical audit, a repair of research-only
+omissions, or a claim of full contemporary coverage.
+
 This project represents church history as a graph that is rendered as a tree
 when possible. The data model needs to support:
 - Multiple parents (mergers or shared origins).

@@ -9,6 +9,7 @@
 <link rel="icon" type="image/svg+xml" href="../assets/brand/logos/main-branch.svg">
 <link rel="stylesheet" href="../theme.css"><script src="../theme.js"></script>
 <link rel="stylesheet" href="../brand.css"><link rel="stylesheet" href="../explorer.css"><link rel="stylesheet" href="../country-history/history.css">
+{{readingAssets}}
 <script defer src="https://d3js.org/d3.v7.min.js"></script>
 <script defer src="../historical-dates.js"></script><script defer src="../timeline-model.js"></script>
 <script defer src="../timeline.js"></script><script defer src="../horizontal-timeline.js"></script>
@@ -37,6 +38,8 @@
 </section>
 <main class="country-main">
 <section class="country-exploration" aria-label="{{country}} historical episodes">
+{{readingControls}}
+{{readingPanel}}
 <div id="timeline-panel" hidden>
 <div class="country-toolbar"><div role="group" aria-label="Timeline orientation"><button id="vertical" aria-pressed="true">Vertical</button><button id="horizontal" aria-pressed="false">Horizontal</button></div><button id="text-view">Text view</button></div>
 <p class="lane-note">Display lanes, not lineage. Select a cluster to inspect every member.</p>

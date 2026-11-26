@@ -110,3 +110,46 @@ test('the country registry drives every selector card and generated route', () =
         assert(fs.existsSync(path.join(root, country.path, 'index.html')));
     }
 });
+
+test('China reading groups preserve exactly the canonical roster; observations stay independently scoped', () => {
+    const canonical = require('../china-history/data.cjs');
+    const chapters = require('../china-history/reading.cjs');
+    const evidence = require('../china-history/observations.cjs');
+    const validate = require('../china-history/validate-reading.cjs');
+    validate(chapters, evidence, canonical);
+    for (const mutate of [
+        (c, e) => c[0].events.pop(),
+        (c, e) => c[0].events.push(c[1].events[0]),
+        (c, e) => c[0].feature = 'missing',
+        (c, e) => e.observations[0].age = '',
+        (c, e) => e.observations[0].reference = '1305-02-30',
+        (c, e) => e.observations[0].citations[0].source_id = 'missing',
+        (c, e) => e.observations[0].citations[0].locator = '',
+        (c, e) => e.observations[0].measure = 'membership',
+        (c, e) => e.observations[0].uncertainty.type = 'confidence-interval',
+        (c, e) => e.observations.find(o => o.id === 'N12-hssc').spread_group = ''
+    ]) {
+        const c = structuredClone(chapters), e = structuredClone(evidence);
+        mutate(c, e); assert.throws(() => validate(c, e, canonical));
+    }
+    const html = fs.readFileSync(path.join(root, 'china-history/index.html'), 'utf8');
+    assert.equal(evidence.observations.filter(o => o.spread_group === 'catholic-2020').length, 2);
+    for (const o of evidence.observations) {
+        const article = html.split(`id="size-${o.id}"`)[1]?.split('</article>')[0];
+        assert(article);
+        for (const value of [o.reference, o.population, o.age, o.geography, o.method, o.attribution, o.confidence, o.uncertainty.note])
+            assert(article.includes(escape(value)), o.id + ': ' + value);
+        for (const citation of o.citations) {
+            assert(article.includes(escape(evidence.sources[citation.source_id].url)));
+            assert(article.includes(escape(evidence.sources[citation.source_id].published)));
+            assert(article.includes(escape(citation.locator)));
+        }
+    }
+    assert.match(html, /Source spread, NOT a confidence interval/);
+    assert.match(html, /Size unknown here, not zero/);
+    assert.match(html, /Cumulative baptisms, not living membership/);
+    for (const country of ['cambodia', 'thailand']) {
+        const other = fs.readFileSync(path.join(root, country + '-history/index.html'), 'utf8');
+        assert(!other.includes('id="reading-panel"'));
+    }
+});
