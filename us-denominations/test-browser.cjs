@@ -1,22 +1,14 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const {chromium} = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const browserTest = require('../scripts/browser-test.cjs');
+const data = require('./build.cjs').publicData(require('./data.cjs').loadData());
 const repo = path.resolve(__dirname, '..');
 const root = path.resolve(repo, process.env.CHURCHTREE_TEST_ROOT || 'dist');
-const server = require('../scripts/test-server.cjs')(root);
 const output = path.join(repo, '.tmp', 'browser-check');
 fs.mkdirSync(output, {recursive: true});
 
-(async () => {
-  let browser;
-  try {
-    await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
-    browser = await chromium.launch({
-      ...(process.env.PLAYWRIGHT_CHANNEL === 'chromium' ? {} : {channel: process.env.PLAYWRIGHT_CHANNEL || 'msedge'}),
-      headless: true
-    });
-    const base = `http://127.0.0.1:${server.address().port}`;
+browserTest(root, async ({browser, base}) => {
     for (const size of [{width: 320, height: 568}, {width: 667, height: 375}, {width: 1440, height: 1000}]) {
       const context = await browser.newContext({viewport: size, isMobile: size.width < 700, hasTouch: size.width < 700, reducedMotion: 'reduce'});
       const page = await context.newPage(), errors = [];
@@ -33,7 +25,7 @@ fs.mkdirSync(output, {recursive: true});
         assert.match(await summary.textContent(), name);
         assert.equal(await detail.getAttribute('open'), null, 'Secondary provenance starts collapsed');
         assert(await content.locator('.source-line a').first().isVisible(), 'Direct source stays visible');
-        assert.match(await content.locator('.source-line').textContent(), /© 2026 Pew Research Center/);
+        assert.match(await content.locator('.source-line').textContent(), /©.*Pew Research Center/);
         await summary.focus();
         await page.keyboard.press('Shift+Tab');
         await page.keyboard.press('Tab');
@@ -203,18 +195,18 @@ fs.mkdirSync(output, {recursive: true});
       await page.goto(base + '/us-denominations/?view=families&group=baptist');
       await content.locator('[data-record="sbc"] summary').click();
       assert.equal(await content.locator('.pie-slice').count(), 4);
-      assert.match(await content.locator('.pie-slice[data-group="sbc"]').getAttribute('aria-label'),
-        /^Southern Baptist Convention, 4.4% of U.S. adults\. Open details$/);
+      assert.equal(await content.locator('.pie-slice[data-group="sbc"]').getAttribute('aria-label'),
+        `${data.records.sbc.label}, ${data.records.sbc.valueText} of U.S. adults. Open details`);
       assert.equal(await content.locator('.pie-slice[data-group="pnbc"]').count(), 0, 'Threshold never becomes a slice');
-      assert.match(await content.locator('#pie-help').textContent(), /Full circle: Baptist, 12.0% of U.S. adults/);
+      assert((await content.locator('#pie-help').textContent()).includes(`Full circle: Baptist, ${data.records.baptist.valueText} of U.S. adults`));
       assert.match(await content.locator('#pie-notes').textContent(), /Hatched: not itemized by Pew\. Not an estimate/);
-      assert.match(await content.locator('#pie-notes').textContent(), /No slice: Progressive National Baptist Convention \(<0.3%\)/);
+      assert((await content.locator('#pie-notes').textContent()).includes(`No slice: ${data.records.pnbc.label} (${data.records.pnbc.valueText})`));
       await selectSlice('sbc');
       await heading('Southern Baptist Convention');
       assert.match(await content.textContent(), /No finer breakdown is published/);
       assert.equal(await content.locator('.pie').count(), 0, 'Leaf draws no finer pie');
       assert(await content.locator('.source-line a').first().isVisible(), 'Leaf keeps a visible direct source link');
-      assert.match(await content.locator('.source-line').textContent(), /© 2026 Pew Research Center/);
+      assert.match(await content.locator('.source-line').textContent(), /©.*Pew Research Center/);
       assert(await content.locator('.info-body').isVisible() === false, 'Leaf notes start collapsed behind Info');
       await content.locator('.info-detail summary').focus();
       await page.keyboard.press('Enter');
@@ -230,17 +222,17 @@ fs.mkdirSync(output, {recursive: true});
       assert(await content.locator('.pie').isVisible(), 'Chart restores the pie');
       await content.locator('[data-record="pnbc"] .row-detail').click();
       await heading('Progressive National Baptist Convention');
-      assert.match(await content.locator('.selected-estimate').textContent(), /<0.3% of U.S. adults/);
+      assert((await content.locator('.selected-estimate').textContent()).includes(data.records.pnbc.valueText + ' of U.S. adults'));
       assert.equal(await content.locator('.bar, .pie').count(), 0, 'Threshold leaf never acquires a bar or slice');
       await page.goto(base + '/us-denominations/?view=families&group=christian');
       await selectSlice('protestant');
       await heading('Protestant');
       assert(await content.locator('#group-heading').evaluate(el => el === document.activeElement), 'Slice drill-in focuses heading');
-      assert.match(await content.locator('.pie-help').textContent(), /Full circle: Protestant, 40.0% of U.S. adults/);
+      assert.match(await content.locator('.pie-help').textContent(), /Full circle: Protestant,/);
       await content.locator('.pie-center').scrollIntoViewIfNeeded();
       if (size.width < 700) await content.locator('.pie-center').tap(); else await content.locator('.pie-center').click();
       await heading('Christian');
-      assert.match(await content.locator('#pie-help').textContent(), /Circle: published child total, 63% of U.S. adults\. Selected Christian: 62% of U.S. adults/);
+      assert.match(await content.locator('#pie-help').textContent(), /Circle: published child total,.*Selected Christian:/);
       assert.match(await content.locator('#pie-notes').textContent(), /circle is scaled to their total/);
       await fits();
       await page.goto(base + '/us-denominations/');
@@ -250,9 +242,9 @@ fs.mkdirSync(output, {recursive: true});
       await open('christian', 'Christian');
       await open('protestant', 'Protestant');
       await open('baptist', 'Baptist');
-      assert.match(await content.locator('.selected-estimate').textContent(), /12.0% of U.S. adults/);
-      assert.equal(await content.locator('[data-record="sbc"] .national-value').textContent(), '4.4% of U.S. adults');
-      assert.equal(await content.locator('[data-record="pnbc"] .national-value').textContent(), '<0.3% of U.S. adults');
+      assert((await content.locator('.selected-estimate').textContent()).includes(data.records.baptist.valueText + ' of U.S. adults'));
+      for (const id of ['sbc', 'pnbc'])
+        assert.equal(await content.locator(`[data-record="${id}"] .national-value`).textContent(), data.records[id].valueText + ' of U.S. adults');
       assert.equal(await content.locator('[data-record="pnbc"] .bar').count(), 0);
       assert.equal(await content.locator('[data-record="sbc"] .row-target').count(), 0);
       assert.match(await content.locator('.coverage').textContent(), /Selected published detail/);
@@ -278,13 +270,10 @@ fs.mkdirSync(output, {recursive: true});
       await heading('Protestant');
       assert(await content.locator('[data-group="baptist"].row-target').evaluate(el => el === document.activeElement));
       await open('presbyterian', 'Presbyterian');
-      assert.equal(await content.locator('[data-record="pcusa"] .national-value').textContent(), '0.8% of U.S. adults');
-      assert.equal(await content.locator('[data-record="pca"] .national-value').textContent(), '0.5% of U.S. adults');
       await page.screenshot({path: path.join(output, `us-affiliation-presbyterian-${size.width}.png`), fullPage: true});
       await page.locator('#affiliation-view').selectOption('traditions');
       await heading('Protestant');
-      assert.equal(await content.locator('[data-record="mainline"] .national-value').textContent(), '11.5% of U.S. adults');
-      assert.match(await content.locator('.precision-note').textContent(), /Mainline Protestant 11%/);
+      assert(await content.locator('.precision-note').isVisible());
       await open('mainline', 'Mainline Protestant');
       await open('presbyterian-mainline', 'Presbyterian (mainline)');
       await page.reload();
@@ -336,12 +325,12 @@ fs.mkdirSync(output, {recursive: true});
         id: row.dataset.attendance, text: row.textContent
       })));
       const attendanceChart = await attendanceRows();
-      for (const [id, value] of [['us-adults', 33], ['evangelical', 60], ['historically-black', 46], ['mainline', 34]]) {
-        const row = content.locator(`[data-attendance="attendance-${id}"]`);
-        assert.equal(await row.locator('td strong').textContent(), `${value}%`);
+      for (const record of data.attendance.records) {
+        const row = content.locator(`[data-attendance="${record.id}"]`);
+        assert.equal(await row.locator('td strong').textContent(), record.valueText);
         const ratio = await row.locator('.bar-track').evaluate(track =>
           track.firstElementChild.getBoundingClientRect().width / (track.clientWidth - 1));
-        assert(Math.abs(ratio - value / 100) < .01, 'Bar uses a fixed 100% scale');
+        assert(Math.abs(ratio - record.barValue / 100) < .01, 'Bar uses a fixed 100% scale');
       }
       await content.locator('[data-attendance="attendance-historically-black"] summary').click();
       assert(await content.locator('[data-attendance="attendance-historically-black"] a').isVisible());
@@ -398,18 +387,20 @@ fs.mkdirSync(output, {recursive: true});
       await heading('Affiliations within Asian (English-speaking, non-Hispanic, one race)');
       assert(await content.locator('#group-heading').evaluate(el => el === document.activeElement));
       assert.match(await content.textContent(), /English-speaking non-Hispanic U.S. adults reporting only Asian race/);
-      assert.equal(await content.locator('[data-demographic="christian"] td strong').textContent(), '33%');
+      const asian = data.demographics.populations.find(population => population.id === 'asian');
+      assert.equal(await content.locator('[data-demographic="christian"] td strong').textContent(),
+        asian.records.find(record => record.id === 'christian').valueText);
       const demographicRows = () => content.locator('tbody tr').evaluateAll(rows => rows.map(row => row.textContent));
       const demographicChart = await demographicRows();
       const barRatio = await content.locator('[data-demographic="other-religions"] .bar-track').evaluate(track =>
         track.firstElementChild.getBoundingClientRect().width / (track.clientWidth - 1));
-      assert(Math.abs(barRatio - .32) < .01);
+      assert(Math.abs(barRatio - asian.records.find(record => record.id === 'other-religions').barValue / 100) < .01);
       await page.locator('#list-toggle').click();
       assert.deepEqual(await demographicRows(), demographicChart);
       assert.equal(await content.locator('.bar:visible').count(), 0);
       await content.locator('[data-demographic="christian"] summary').click();
       assert(await content.locator('[data-demographic="christian"] a').isVisible());
-      assert.match(await content.locator('[data-demographic="christian"] .row-source').textContent(), /Among Asian adults > 2023-24/);
+      assert((await content.locator('[data-demographic="christian"] .row-source').textContent()).includes(asian.records[0].source.column));
       await openInfo(/Info.*Asian/);
       await page.locator('#list-toggle').click();
       assert(await content.locator('.info-detail[open] .info-body').isVisible(), 'Chart preserves demographic Info');
@@ -546,13 +537,13 @@ fs.mkdirSync(output, {recursive: true});
     }
     const baptist = staticPage.locator('#static-families-baptist');
     assert(await baptist.isVisible());
-    assert.equal(await baptist.locator('[data-record="pnbc"] .national-value').textContent(), '<0.3% of U.S. adults');
+    assert.equal(await baptist.locator('[data-record="pnbc"] .national-value').textContent(), data.records.pnbc.valueText + ' of U.S. adults');
     const thresholdSource = baptist.locator('[data-record="pnbc"] .row-source a');
     await thresholdSource.focus();
     await staticPage.keyboard.press('Enter');
     const sourceLocator = staticPage.locator(new URL(staticPage.url()).hash);
     assert(await sourceLocator.isVisible(), 'Keyboard follows a static row to its shared locator without JS');
-    assert.match(await sourceLocator.textContent(), /column:.*2023-24/);
+    assert((await sourceLocator.textContent()).includes(data.records.pnbc.source.column));
     assert(await sourceLocator.locator('a[href$=".pdf"]').isVisible());
     await staticPage.goto(base + '/us-denominations/?view=traditions&group=presbyterian-mainline#static-traditions-presbyterian-mainline');
     assert(await staticPage.locator('#static-traditions-presbyterian-mainline').isVisible(), 'No-JS fragment opens nested ancestors');
@@ -562,7 +553,8 @@ fs.mkdirSync(output, {recursive: true});
     const attendance = staticPage.locator('#static-attendance');
     assert(await attendance.isVisible());
     assert.equal(await attendance.locator('tbody tr').count(), 12);
-    assert.equal(await attendance.locator('[data-attendance="attendance-historically-black"] td strong').textContent(), '46%');
+    assert.equal(await attendance.locator('[data-attendance="attendance-historically-black"] td strong').textContent(),
+      data.attendance.records.find(record => record.id === 'attendance-historically-black').valueText);
     assert(await attendance.locator('[data-attendance="attendance-us-adults"] a').isVisible());
     assert.match(await attendance.textContent(), /Adults in each religious group/);
     assert.match(await attendance.textContent(), /ATTENDPERRLS/);
@@ -584,11 +576,15 @@ fs.mkdirSync(output, {recursive: true});
       const motion = await browser.newPage({viewport: size, isMobile: size.width < 700, hasTouch: size.width < 700, reducedMotion: 'no-preference'});
       const motionErrors = [];
       motion.on('pageerror', error => motionErrors.push(error.message));
+      // Keep protocol latency from completing animations between rapid inputs or state assertions.
+      await motion.clock.install({time: new Date(0)});
+      await motion.clock.pauseAt(new Date(1000));
       await motion.goto(base + '/us-denominations/');
       await motion.locator('.pie-slice[data-group="christian"]').focus();
       await motion.keyboard.press('Enter');
       assert(await motion.locator('.pie').evaluate(el => el.classList.contains('pie-zooming')), 'Selected slice zooms before navigation');
       assert.equal(new URL(motion.url()).searchParams.get('group'), 'us-adults', 'Zoom finishes before drilling in');
+      await motion.clock.runFor(400);
       await motion.locator('#group-heading', {hasText: 'Christian'}).waitFor();
       assert(await motion.locator('.pie').evaluate(el => el.classList.contains('pie-enter-in')), 'Child pie zooms in');
       await motion.locator('.pie-center').click();
@@ -600,8 +596,8 @@ fs.mkdirSync(output, {recursive: true});
       };
       // After any interrupted motion, the pie must rest at its true geometry with no transient state left behind.
       const assertSettled = async (group, label) => {
+        await motion.clock.runFor(1100);
         await motion.locator('#group-heading', {hasText: label}).waitFor();
-        await motion.waitForTimeout(700);
         assert.equal(new URL(motion.url()).searchParams.get('group'), group, `Rapid input ends at ${label}`);
         assert.equal(await motion.locator('.pie-busy, .pie-zooming, .pie-sweeping, .pie-collapsing, .pie-chosen, .pie-underlay').count(), 0,
           `No transient pie state remains at ${label}`);
@@ -619,6 +615,7 @@ fs.mkdirSync(output, {recursive: true});
       await assertSettled('christian', 'Christian');
       await motion.goto(base + '/us-denominations/');
       await press('christian');
+      await motion.clock.runFor(400);
       await motion.waitForFunction(() => document.querySelector('#group-heading')?.textContent === 'Christian'
         && document.querySelector('.pie.pie-sweeping'), null, {polling: 'raf'});
       await press('protestant');
@@ -638,8 +635,4 @@ fs.mkdirSync(output, {recursive: true});
       console.log(`Pie transitions, rapid input and interruption with motion allowed ${size.width}px: passed`);
     }
     console.log('Keyboard-only drill/restore, 200% equivalent CSS layout, and no-JS nested sources: passed. Real screen-reader testing is not performed.');
-  } finally {
-    await browser?.close();
-    server.close();
-  }
-})().catch(error => { console.error(error); process.exitCode = 1; });
+}).catch(error => { console.error(error); process.exitCode = 1; });

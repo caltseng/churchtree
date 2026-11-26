@@ -1,5 +1,5 @@
-const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
-const repo=path.resolve(__dirname,'..'),root=process.env.CHURCHTREE_TEST_ROOT?path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT):path.join(repo,'dist'),server=require('./test-server.cjs')(root),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
+const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');const browserTest=require('./browser-test.cjs');
+const repo=path.resolve(__dirname,'..'),root=process.env.CHURCHTREE_TEST_ROOT?path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT):path.join(repo,'dist'),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
 const {pages,countryHistories}=JSON.parse(fs.readFileSync(path.join(repo,'site.config.json'),'utf8')),pageCount=pages.length;
 async function openAppearance(page) {
  const trigger = page.getByRole('button', {name:'Site menu', exact:true});
@@ -12,8 +12,7 @@ async function openAppearance(page) {
  return trigger;
 }
 function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((sum,v,i)=>sum+v*[.2126,.7152,.0722][i],0);}
-(async()=>{let browser;try{
- await new Promise(r=>server.listen(0,'127.0.0.1',r));browser=await chromium.launch({...(process.env.PLAYWRIGHT_CHANNEL==='chromium'?{}:{channel:process.env.PLAYWRIGHT_CHANNEL||'msedge'}),headless:true});
+browserTest(root,async({browser,server})=>{
  const base=`http://127.0.0.1:${server.address().port}`;
  for(const size of [{width:1440,height:1000},{width:390,height:844},{width:320,height:568},{width:768,height:1024},{width:844,height:390},{width:568,height:320}]){
   const page=await browser.newPage({viewport:size}),errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -99,7 +98,7 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
   await page.reload();assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
   await page.screenshot({path:path.join(output,`home-ink-${size.width}.png`),fullPage:true});
   await page.locator('.tool-card[data-id="church-history"]').click();await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
-  await page.getByRole('link',{name:'Main Branch home',exact:true}).click();assert.equal(await page.locator('.tool-card').count(),pageCount);
+  await page.getByRole('link',{name:'Main Branch home',exact:true}).click();await page.waitForURL(base+'/');assert.equal(await page.locator('.tool-card').count(),pageCount);
   assert.equal(await page.locator('.tool-card[href="wcf/"], .tool-card[href="wsc/"], .tool-card[href="wlc/"]').count(),0);
   await page.locator('.tool-card[data-id="westminster"]').click();await page.waitForURL(/\/westminster-standards\/$/);
   assert.equal(await page.getByRole('heading',{name:'Westminster Standards',exact:true}).count(),1);
@@ -146,4 +145,4 @@ function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v
  }
  const redirectPage=await browser.newPage();await redirectPage.goto(base+'/westminster/#section-23-3');await redirectPage.waitForURL('**/wcf/#section-23-3');assert(await redirectPage.locator('#section-23-3').isVisible());await redirectPage.close();
  for(const file of fs.readdirSync(path.join(root,'assets/brand/logos')).filter(file=>file.endsWith('.svg'))){const svg=fs.readFileSync(path.join(root,'assets/brand/logos',file),'utf8');const colors=new Set((svg.match(/#[\da-f]{6}\b/gi)||[]).map(c=>c.toLowerCase()));assert(colors.size>0&&colors.size<=3,file+' must use at most three colors');}
-}finally{await browser?.close();server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
+}).catch(e=>{console.error(e);process.exitCode=1;});

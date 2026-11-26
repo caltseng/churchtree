@@ -1,14 +1,13 @@
 const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');
-const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
-const repo=path.resolve(__dirname,'..'),root=path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT||'.'),server=require('./test-server.cjs')(root),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
+const browserTest=require('./browser-test.cjs');
+const repo=path.resolve(__dirname,'..'),root=path.resolve(repo,process.env.CHURCHTREE_TEST_ROOT||'.'),output=path.join(repo,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
 async function selectOverview(page){
   await page.getByRole('button',{name:'Filters',exact:true}).tap();
   await page.locator('#layout').selectOption('lineage');
   await page.getByRole('button',{name:'Filters',exact:true}).tap();
   await page.locator('[data-id="family:Catholic"]').waitFor();
 }
-(async()=>{let browser;try{
- await new Promise(r=>server.listen(0,'127.0.0.1',r));browser=await chromium.launch({...(process.env.PLAYWRIGHT_CHANNEL==='chromium'?{}:{channel:process.env.PLAYWRIGHT_CHANNEL||'msedge'}),headless:true});
+browserTest(root,async({browser,server})=>{
  for(const size of [{width:320,height:568},{width:390,height:844},{width:768,height:1024},{width:844,height:390}]){
   const context=await browser.newContext({viewport:size,isMobile:true,hasTouch:true});const page=await context.newPage();
   await page.goto(process.env.OVERVIEW_TEST_URL||`http://127.0.0.1:${server.address().port}/church-history/`);await selectOverview(page);await page.waitForTimeout(250);
@@ -52,4 +51,4 @@ async function selectOverview(page){
   if(size.width===390){await gesture([{id:0,x:100,y:25},{id:1,x:150,y:25}],[{id:0,x:60,y:25},{id:1,x:190,y:25}]);assert(await page.evaluate(()=>visualViewport.scale)>1,'Browser pinch remains available outside graph');}
   await context.close();console.log(`Overview gestures and combined header ${size.width}: passed`);
  }
-}finally{await browser?.close();server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
+}).catch(e=>{console.error(e);process.exitCode=1;});

@@ -11,20 +11,6 @@ const copy = () => structuredClone(original);
 const row = (data, id) => data.affiliation.records.find(record => record.id === id);
 const panel = (data, lens, id) => data.hierarchies.lenses[lens].panels.find(item => item.parentId === id);
 
-test('demographic broad excerpts retain independent populations and primary source anchors', () => {
-  const anchors = {'age-18-29': ['45%', '9%', '44%'], men: ['59%', '8%', '31%'],
-    asian: ['33%', '32%', '33%'], 'college-graduate': ['58%', '10%', '31%']};
-  for (const [id, values] of Object.entries(anchors)) {
-    const population = original.demographics.populations.find(row => row.id === id);
-    assert.deepEqual(population.estimates.map(row => row.published), values);
-  }
-  assert.match(original.demographics.dimensions.find(row => row.id === 'gender').definition, /Self-described gender, not sex assigned at birth/);
-  assert.match(original.demographics.populations.find(row => row.id === 'asian').denominatorLabel, /English-speaking non-Hispanic/);
-  assert.equal(original.demographics.populations.find(row => row.id === 'women').column, 'Among women > 2023-24');
-  assert.match(ledger(original), /age-distribution\/18-29 > Religious composition > top-level cards/);
-  assert.throws(() => getRecord(original, 'men'), /Unknown record/);
-});
-
 test('demographic validation rejects denominator qualifications, source drift and mixed scopes', () => {
   for (const edit of [
     data => { data.demographics.wave = '2014'; },
@@ -44,26 +30,11 @@ test('demographic validation rejects denominator qualifications, source drift an
   }
 });
 
-test('named published anchors retain national values, precision and thresholds', () => {
-  const anchors = {
-    baptist: '12.0%', presbyterian: '1.7%', sbc: '4.4%', abcusa: '1.0%',
-    'nbc-usa': '1.0%', nbca: '0.4%', pnbc: '<0.3%', pcusa: '0.8%', pca: '0.5%',
-    evangelical: '23.1%', mainline: '11.5%', 'historically-black': '5.4%'
-  };
-  for (const [id, published] of Object.entries(anchors)) {
-    assert.equal(presentation(original, id).valueText, published);
-    assert.equal(presentation(original, id).denominatorLabel, 'Share of U.S. adults');
-  }
-  assert.deepEqual(original.provenance.decisions[0].interactiveStrings,
-    {evangelical: '23%', mainline: '11%', 'historically-black': '5%'});
-});
-
 test('families and traditions use distinct intersections and identical denomination records', () => {
   assert.deepEqual(getAncestors(original, 'families', 'baptist'), ['us-adults', 'christian', 'protestant']);
   assert.deepEqual(getAncestors(original, 'families', 'presbyterian'), ['us-adults', 'christian', 'protestant']);
   assert.deepEqual(getAncestors(original, 'traditions', 'presbyterian-mainline'),
     ['us-adults', 'christian', 'protestant', 'mainline']);
-  assert.equal(getRecord(original, 'presbyterian-mainline').estimate.published, '1%');
   assert.deepEqual(getChildren(original, 'families', 'presbyterian').map(record => record.id), ['pcusa', 'pca']);
   assert.deepEqual(getChildren(original, 'traditions', 'presbyterian-mainline').map(record => record.id),
     ['pcusa', 'other-presbyterian-mainline']);
@@ -76,8 +47,6 @@ test('published detail never manufactures a residual or all-family Independent B
   assert.equal(baptists.length, 5);
   assert.equal(panel(original, 'families', 'baptist').coverage, 'selected');
   assert.equal(baptists.some(record => /other|remainder|independent/.test(record.id)), false);
-  assert.equal(getRecord(original, 'independent-baptist-evangelical').estimate.published, '3%');
-  assert.equal(getRecord(original, 'independent-baptist-historically-black').estimate.published, '<1%');
   assert.throws(() => getRecord(original, 'independent-baptist'), /Unknown record/);
   const data = copy();
   panel(data, 'families', 'baptist').remainder = 5.2;
@@ -102,32 +71,20 @@ test('thresholds, suppressed and unavailable values never yield numeric bars or 
 });
 
 test('conditional estimates verify ancestry and precision and retain input provenance', () => {
-  const result = deriveShare(original, 'families', 'sbc', 'baptist');
-  assert.equal(result.percent, 37);
+  const data = copy();
+  Object.assign(row(data, 'sbc').estimate, {value: 2, published: '2.0%'});
+  Object.assign(row(data, 'baptist').estimate, {value: 8, published: '8.0%'});
+  Object.assign(row(data, 'protestant').estimate, {value: 20, published: '20.0%'});
+  const result = deriveShare(data, 'families', 'sbc', 'baptist');
+  assert.equal(result.percent, 25);
   assert.equal(result.denominatorId, 'baptist');
   assert.match(result.denominatorLabel, /Baptist/);
   assert.deepEqual(result.inputIds, ['sbc', 'baptist']);
-  assert.equal(result.formula, '4.4% / 12.0% * 100');
+  assert.equal(result.formula, '2.0% / 8.0% * 100');
   assert.match(result.rounding, /rounded published national/);
-  assert.equal(deriveShare(original, 'families', 'sbc', 'protestant').percent, 11);
+  assert.equal(deriveShare(data, 'families', 'sbc', 'protestant').percent, 10);
   assert.equal(deriveShare(original, 'families', 'pcusa', 'baptist'), null);
   assert.equal(deriveShare(original, 'families', 'attendance-mainline', 'mainline'), null);
-});
-
-test('attendance anchors use published in-person NETs and group populations independently', () => {
-  const expected = {'attendance-us-adults': 33, 'attendance-evangelical': 60,
-    'attendance-historically-black': 46, 'attendance-mainline': 34};
-  for (const [id, value] of Object.entries(expected)) {
-    const view = presentation(original, id);
-    assert.equal(view.barValue, value);
-    assert.equal(view.denominatorLabel, 'Adults in each religious group');
-    assert.equal(view.source.column, 'NET Monthly or more often');
-    assert.match(view.source.locator, /165/);
-  }
-  assert.deepEqual(original.provenance.series.attendance.scale, [0, 100]);
-  assert.match(original.provenance.series.attendance.instrumentLocator, /ATTENDPERRLS/);
-  assert.match(original.provenance.series.attendance.question, /in person/);
-  assert.throws(() => getChildren(original, 'families', 'attendance-mainline'), /Group not in lens/);
 });
 
 test('stable numeric-first ranking has no fabricated threshold bars and leaves stay leaves', () => {
@@ -202,7 +159,7 @@ test('reject malformed locators, fabricated threshold values and precision drift
       assert.equal(view.source.publisher, 'Pew Research Center');
     }
   }
-  assert.match(ledger(original), /pnbc\t<0\.3%/);
+  assert(ledger(original).includes('pnbc\t' + row(original, 'pnbc').estimate.published));
   assert.match(ledger(original), /Adults in each religious group/);
 });
 

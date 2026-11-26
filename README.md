@@ -66,6 +66,10 @@ On macOS/Linux, set those two environment variables in your shell before running
 `npm run ci`. Tests can use an existing Playwright installation via
 `PLAYWRIGHT_MODULE`; locally the browser defaults to Microsoft Edge unless
 `PLAYWRIGHT_CHANNEL=chromium` is set. Screenshots go to `.tmp/browser-check/`.
+Browser suites share server startup, browser launch and cleanup in
+`scripts/browser-test.cjs`. Run `npm run test:countries` for the single country
+data suite and browser suite; both discover countries from `site.config.json`.
+These cover validation and rendering behavior, not fixed editorial dates or statistics.
 
 `npm run ci` builds the artifact, checks JavaScript/JSON syntax, validates data and
 local asset references, and runs model, failure-guard, desktop, mobile, reader and

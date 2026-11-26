@@ -29,13 +29,13 @@ The China timeline publishes only `china-history/index.html`, `history.css`,
 crosswalks, held-record ledger, template, validator and tests are not public files.
 The approved projection contains original summaries, critical caveats, source
 metadata and passage locators, not the staged research packet or copied media.
-`npm run test:china` checks this route-specific boundary as well as data isolation
+`npm run test:countries` checks this route-specific boundary as well as data isolation
 from the denomination explorer.
 
 The Cambodia route adds only `cambodia-history/index.html` and `public-data.js`
 to this explicit allowlist, reusing China's public controller/CSS. Its seven-file
 research packet, editorial data, KH crosswalks, held ledger, template, builders
-and tests remain outside the artifact. `npm run test:cambodia` checks projection,
+and tests remain outside the artifact. `npm run test:countries` checks projection,
 research roster dispositions, citation links, no-JS fallback and data isolation.
 The generated `global-church/index.html` chooser is also explicitly public;
 the country registry does not recursively expose country folders.
@@ -43,7 +43,7 @@ the country registry does not recursively expose country folders.
 Thailand likewise adds only `thailand-history/index.html` and `public-data.js`,
 sharing the same renderer/assets. Its seven research documents, H/C crosswalks,
 four held rows, downloaded research sources and builder/test inputs remain
-outside `dist/`. `npm run test:thailand` checks exact selected/held accounting,
+outside `dist/`. `npm run test:countries` checks complete research-roster accounting,
 claim locators, public projection and source-linked fallback, alongside
 desktop, mobile portrait and short-landscape interactions.
 

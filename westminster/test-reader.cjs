@@ -1,11 +1,10 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const browserTest = require('../scripts/browser-test.cjs');
 const repoRoot = path.resolve(__dirname, '..');
 const root = path.resolve(repoRoot, process.env.CHURCHTREE_TEST_ROOT || 'dist');
 fs.mkdirSync(path.join(repoRoot, '.tmp/browser-check'), { recursive: true });
-const server = require('../scripts/test-server.cjs')(root);
 const readerPath = fs.existsSync(path.join(root, 'wcf/content.json')) ? 'wcf' : 'westminster';
 const data = require(path.join(root, readerPath, 'content.json'));
 const proofs = require(path.join(root, readerPath, 'scripture-proofs.json'));
@@ -27,12 +26,7 @@ const typography = page => page.locator('.reading-prose').first().evaluate(eleme
   return [style.fontFamily, style.fontSize, style.lineHeight];
 });
 async function run() {
-  let browser;
-  try {
-    await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
-    browser = await chromium.launch(process.env.PLAYWRIGHT_CHANNEL === 'chromium'
-      ? {} : { channel: process.env.PLAYWRIGHT_CHANNEL || 'msedge' });
-    const baseURL = `http://127.0.0.1:${server.address().port}`;
+  return browserTest(root, async ({browser, base: baseURL}) => {
     const url = `${baseURL}/${readerPath}/index.html`;
     await require('./test-study.cjs')({ browser, baseURL, root, repoRoot });
     for (const size of [
@@ -116,9 +110,6 @@ async function run() {
     assert.deepEqual(await page.locator('.passage > p').allTextContents(), data.chapters.flatMap(chapter => chapter.sections));
     await page.close();
     console.log('No-JavaScript complete text, chapter navigation and Scripture proofs: passed');
-  } finally {
-    await browser?.close();
-    server.close();
-  }
+  });
 }
 run().catch(error => { console.error(error); process.exitCode = 1; });
