@@ -54,6 +54,12 @@ Open **http://127.0.0.1:4173/**. The server serves the generated `dist/` website
 Rebuild after editing source files. D3 currently loads from d3js.org, so the explorer
 needs access to that CDN. The home page and reader have no D3 dependency.
 
+Generated landing, country, affiliation and reader pages and `public-data.js`
+bundles are ignored, as is `dist/`; commit their source templates, builders and
+editorial inputs instead. Hand-authored pages such as `church-history/index.html`
+and the logo studies remain tracked. `.gitattributes` keeps text files LF-normalized
+on Windows and Linux, and CI verifies that rebuilding leaves Git status clean on both.
+
 For the same checks used in GitHub Actions:
 
 ```powershell
@@ -162,8 +168,8 @@ to the artifact. Writer self-review is not the later independent research audit.
 The selected mark is **Woodland solid**, a side-graft symbol, with three fixed colors:
 bark `#9B7555`, leaf `#6E9D50`, and straw `#D6B579`. Shared lockups live in `brand.css`;
 canonical SVGs are `assets/brand/logos/main-branch.svg` and
-`main-branch-wordmark.svg`. Update source templates/builders and their generated
-pages so branding survives rebuilding.
+`main-branch-wordmark.svg`. Update source templates/builders and any hand-authored
+pages so branding survives rebuilding; inspect but do not commit generated output.
 
 Shared semantic colors live in `theme.css`. Open **Site menu → Settings → Appearance** to choose **Parchment** (default), **Slate**, or **Ink**. The browser saves the selection across pages. These interface palettes remain evolving proposals, separate
 from the selected logo's fixed colors. See the [design-language contract](docs/design-language.md).
