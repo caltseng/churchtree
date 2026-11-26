@@ -19,6 +19,17 @@ emulation covers 320×568, 390×844, 768×1024, 1024×768 and 844×390. Below 11
 profile uses a reading sheet; at 1100px and above it uses the desktop split. Also
 check a real touch device/Safari before claiming cross-browser certification.
 
+Automated interaction flows run once per shared implementation; viewport cases
+outside that flow are focused layout smokes. The mobile timeline and overview
+gesture flows run at 390x844; other mobile sizes check both timeline orientations,
+controls, search-result clipping and responsive details. Country timelines share
+one filter/zoom/resize/search flow, while every country retains orientation/layout,
+source-link, no-JavaScript and D3-offline checks. China Era, U.S. touch gestures,
+U.S. keyboard navigation and motion interruption remain distinct flows. Reader
+and study navigation run once, with all chapters/notes checked once and remaining
+sizes exercising expanded content, typography, themes and overflow. Feature
+navigation/settings run once; route/theme layouts remain checked at every size.
+
 ## Scenarios
 
 | ID | Steps | Expected result | Automated coverage |
@@ -41,7 +52,7 @@ check a real touch device/Safari before claiming cross-browser certification.
 | PROFILE-01 | Open PCA, PCUS, a historical movement, and an origin node. | Heading shows a supported lifespan (PCA 1973–present; PCUS 1861–1983). Unknown endings are not invented. Milestones precede Key people. Beliefs, formation/continuation, contextual biographies, documents and reading links are substantive. | Explorer covers rendering/links/ranges; substantive truth requires the data audit |
 | PROFILE-02 | Open PCUS and use its successor navigation; inspect a merger connection. | Goes to the supported successor(s); a split-off is not falsely treated as the ending of an active parent. Connection details explain parties and evidence. | Model/reference checks; manual successor/causation review |
 | MOBILE-01 | Select a branch on a phone; zoom using +/−; use Earlier/Later; switch to Horizontal and swipe sideways. | Controls fit, touch targets are usable, date range changes, graph scroll is contained; the page does not spill horizontally. | `scripts/test-mobile.cjs` includes actual dispatched touch events |
-| MOBILE-05 | On mobile, open Search; type a query; close with the visible X (Close search), Escape or the search button; reopen and select a suggestion or press Enter. Resize to desktop and back. | Search starts collapsed on mobile and desktop. Opening focuses the input without resizing the graph. The query survives closing, selection and resizing. Close search and Escape return focus to the toggle. Selecting a result closes search and opens details. The input stays 16px to avoid iOS focus zoom. | Mobile suite at all five sizes; desktop suite; before/after screenshot measurements |
+| MOBILE-05 | On mobile, open Search; type a query; close with the visible X (Close search), Escape or the search button; reopen and select a suggestion or press Enter. Resize to desktop and back. | Search starts collapsed on mobile and desktop. Opening focuses the input without resizing the graph. The query survives closing, selection and resizing. Close search and Escape return focus to the toggle. Selecting a result closes search and opens details. The input stays 16px to avoid iOS focus zoom. | Full mobile flow at 390x844; search/result clipping smokes at other sizes; desktop suite |
 | MOBILE-02 | Search PCA; read profile sheet; Back to graph; reopen. Resize to desktop with the sheet open, then back. | Sheet fits width and scrolls internally; close/Escape works and focus returns; desktop restores the same detail panel in the split view. | Mobile suite |
 | DESKTOP-01 | At 1100/1280/1440px, resize the divider with mouse and keyboard; maximize/restore browser. | Split view remains; graph recomputes layout and retains useful date context; width is announced; no fixed emulated viewport leaves a blank right strip. | Explorer suite; manual actual-window maximize/restore |
 | THEME-01 | Open Site menu → Settings → Appearance, apply each palette, reload, visit Church History and all three Westminster readers, then reset. | Semantic colors change consistently, selected preference persists locally, reader/explorer inherit it, reset restores Parchment. Main Branch logo keeps its fixed brand colors. | Feature suite; manual graph/selected/focus contrast review |
@@ -75,7 +86,7 @@ source of truth changes. Keep intentional future plans clearly labeled.
 
 | ID | Steps | Expected result | Coverage |
 | --- | --- | --- | --- |
-| MOBILE-03 | In Vertical and Horizontal, in Presbyterian and All branches, spread two fingers inside the timeline, pinch inward, then drag with one finger and tap a node. | Pinch narrows/widens proportional time around the fingers; nearby dates separate/collapse into meaningful groups. Page scale stays fixed. Drag pans; pinch never opens a profile; taps and controls still work. | `scripts/test-mobile.cjs`: real Chromium CDP multi-touch, reverse pinch, domain/page-scale assertions, drag, profile tap and controls at five viewport sizes. |
+| MOBILE-03 | In Vertical and Horizontal, in Presbyterian and All branches, spread two fingers inside the timeline, pinch inward, then drag with one finger and tap a node. | Pinch narrows/widens proportional time around the fingers; nearby dates separate/collapse into meaningful groups. Page scale stays fixed. Drag pans; pinch never opens a profile; taps and controls still work. | `scripts/test-mobile.cjs`: real Chromium CDP multi-touch, reverse pinch, domain/page-scale assertions and drag at 390x844; controls, orientations and profile layout at five viewport sizes. |
 
 Also manually test adding/removing a finger during a drag, touch cancellation,
 midpoint movement near viewport edges, and browser pinch outside the graph.

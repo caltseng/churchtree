@@ -14,8 +14,32 @@ async function openAppearance(page) {
 function luminance(rgb){return rgb.match(/[\d.]+/g).slice(0,3).map(Number).map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((sum,v,i)=>sum+v*[.2126,.7152,.0722][i],0);}
 browserTest(root,async({browser,server})=>{
  const base=`http://127.0.0.1:${server.address().port}`;
+ const context=await browser.newContext();
  for(const size of [{width:1440,height:1000},{width:390,height:844},{width:320,height:568},{width:768,height:1024},{width:844,height:390},{width:568,height:320}]){
-  const page=await browser.newPage({viewport:size}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+  const page=await context.newPage(),errors=[];await page.setViewportSize(size);page.on('pageerror',e=>errors.push(e.message));
+  if(size.width!==1440){
+   await page.goto(base+'/global-church/');
+   const cards=page.locator('.country-card');
+   assert.equal(await cards.count(),countryHistories.length);
+   assert(await cards.evaluateAll(elements=>elements.every(card=>{
+    const heading=card.querySelector('h3'),shape=card.querySelector('.country-outline path').getBBox();
+    return heading.scrollWidth<=heading.clientWidth&&shape.width>50&&shape.height>100&&
+     shape.x>=15&&shape.y>=15&&shape.x+shape.width<=305&&shape.y+shape.height<=225;
+   })),'Country names and complete map shapes fit');
+   await page.screenshot({path:path.join(output,`country-picker-layout-${size.width}x${size.height}.png`),fullPage:true});
+   for(const route of ['/', '/church-history/',...countryHistories.map(country=>'/'+country.path),'/global-church/','/westminster-standards/','/wcf/','/wsc/','/wlc/','/us-denominations/']){
+    assert.equal((await page.goto(base+route)).status(),200);
+    assert.equal(await page.getByRole('button',{name:'Site menu',exact:true}).count(),1);
+    for(const theme of ['parchment','slate','ink']){
+     await page.locator('html').evaluate((element,value)=>element.dataset.theme=value,theme);
+     assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),route+' '+theme+' fits the viewport');
+    }
+   }
+   await page.goto(base+'/');await openAppearance(page);
+   assert(await page.locator('#site-menu').evaluate(el=>el.scrollWidth<=el.clientWidth+1));
+   await page.screenshot({path:path.join(output,`settings-layout-${size.width}x${size.height}.png`)});
+   assert.deepEqual(errors,[]);await page.close();console.log(`Landing, route/theme and picker layouts ${size.width}px: passed`);continue;
+  }
   assert.equal((await page.goto(base+'/')).status(),200);assert.equal(await page.locator('.tool-card').count(),pageCount);
   const globalChurch=page.locator('.tool-card[data-id="global-church"]');
   assert.equal(await globalChurch.getAttribute('href'),'global-church/');
@@ -121,19 +145,24 @@ browserTest(root,async({browser,server})=>{
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),route+' fits the viewport');
    const trigger = await openAppearance(page);
    assert(await page.locator('input[name="theme"][value="ink"]').isChecked());
+   if(route==='/church-history/'){
    await page.getByRole('button',{name:'Back to menu'}).click();
    const settings = page.getByRole('button',{name:'Settings',exact:true});
    assert(await settings.evaluate(el=>el===document.activeElement));
    await page.keyboard.press('Enter');
-   if(size.width===320 || size.width===1440) await page.screenshot({path:path.join(output,'settings-'+route.split('/')[1]+'-'+size.width+'.png')});
+   await page.screenshot({path:path.join(output,'settings-'+route.split('/')[1]+'-'+size.width+'.png')});
+   }
    await page.keyboard.press('Escape');
    assert(!await page.locator('#site-menu').isVisible());
    await page.waitForFunction(()=>document.activeElement.classList.contains('site-menu-trigger'));
+   if(route==='/church-history/'){
    await trigger.press('Enter');
    await page.locator('#site-menu').getByRole('link',{name:'All explorations',exact:true}).click();
    await page.waitForURL('**/#explore');
    assert.equal(await page.locator('html').getAttribute('data-theme'),'ink');
+   }
   }
+  await page.goto(base+'/');
   await openAppearance(page);
   await page.locator('#theme-reset').click();
   await page.getByRole('button',{name:'Close',exact:true}).click();
@@ -143,6 +172,7 @@ browserTest(root,async({browser,server})=>{
   assert(await page.locator('.main-branch-symbol').evaluateAll(images=>images.length>0&&images.every(img=>img.complete&&img.naturalWidth>0)));assert.match(await page.locator('link[rel=icon]').getAttribute('href'),/main-branch\.svg$/);await page.locator('.tool-card[data-id="church-history"]').click();await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();assert.match(page.url(),/\/church-history\/$/);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   assert.deepEqual(errors,[]);await page.close();console.log(`Landing, themes, links and logos ${size.width}px: passed`);
  }
+ await context.close();
  const redirectPage=await browser.newPage();await redirectPage.goto(base+'/westminster/#section-23-3');await redirectPage.waitForURL('**/wcf/#section-23-3');assert(await redirectPage.locator('#section-23-3').isVisible());await redirectPage.close();
  for(const file of fs.readdirSync(path.join(root,'assets/brand/logos')).filter(file=>file.endsWith('.svg'))){const svg=fs.readFileSync(path.join(root,'assets/brand/logos',file),'utf8');const colors=new Set((svg.match(/#[\da-f]{6}\b/gi)||[]).map(c=>c.toLowerCase()));assert(colors.size>0&&colors.size<=3,file+' must use at most three colors');}
 }).catch(e=>{console.error(e);process.exitCode=1;});

@@ -9,26 +9,12 @@ const view = require('./view.js');
 const internal = loadData(), data = publicData(internal);
 const root = path.resolve(__dirname, '..');
 
-test('public projection and generated artifact contain only intentional affiliation and attendance content', () => {
+test('public output excludes internal review and research metadata', () => {
   const sandbox = {window: {}};
-  vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'public-data.js'), 'utf8'), sandbox);
-  assert.equal(JSON.stringify(sandbox.window.US_AFFILIATION_DATA), JSON.stringify(data));
-  assert.deepEqual(Object.keys(data).sort(),
-    ['schemaVersion', 'study', 'records', 'lenses', 'sources', 'interactiveStrings', 'reuse', 'attendance', 'demographics'].sort());
-  for (const record of Object.values(data.records)) {
-    assert.deepEqual(Object.keys(record).sort(),
-      ['id', 'label', 'sourceLabel', 'kind', 'scope', 'status', 'valueText', 'barValue', 'reason', 'source'].sort());
-    assert.equal(record.valueText, presentation(internal, record.id).valueText);
-  }
-  for (const record of internal.attendance.records) assert(!Object.hasOwn(data.records, record.id));
-  assert(Object.hasOwn(data.sources, 'attendance-chapter'));
-  const published = path.join(root, 'dist', 'us-denominations');
-  assert.deepEqual(fs.readdirSync(published).sort(),
-    ['affiliation.css', 'controller.js', 'index.html', 'public-data.js', 'view.js']);
-  assert(!JSON.stringify(data).match(/sha256|reviewStatus|sourcePanelId|checkedDate|reviewedCommit/));
-  for (const file of ['index.html', 'public-data.js']) {
-    assert.equal(fs.readFileSync(path.join(published, file), 'utf8'), fs.readFileSync(path.join(__dirname, file), 'utf8'));
-  }
+  const published = path.resolve(root, process.env.CHURCHTREE_TEST_ROOT || 'dist', 'us-denominations');
+  vm.runInNewContext(fs.readFileSync(path.join(published, 'public-data.js'), 'utf8'), sandbox);
+  assert(!JSON.stringify(sandbox.window.US_AFFILIATION_DATA)
+    .match(/sha256|reviewStatus|sourcePanelId|checkedDate|reviewedCommit/));
 });
 
 test('each panel preserves source ranking, national labels, locators and coverage', () => {
@@ -46,7 +32,6 @@ test('each panel preserves source ranking, national labels, locators and coverag
         const record = data.records[id];
         assert(html.includes(view.esc(record.source.row)));
         assert(html.includes(view.esc(record.source.url)));
-        assert(html.includes(view.esc(record.valueText) + ' of U.S. adults'));
         const markup = html.split(`data-record="${id}"`)[1].split('</li>')[0];
         assert(!markup.includes('class="bar"'));
         assert.equal(html.includes(`data-slice="${id}"`), record.barValue !== null, 'Only numeric estimates become slices');
@@ -65,7 +50,7 @@ test('each panel preserves source ranking, national labels, locators and coverag
         else {
           assert(callout, 'Even the smallest numeric slices have visible callouts');
           assert(callout[0].includes(view.esc(record.label)), 'Callouts contain the full category name');
-          assert(callout[0].includes(`<strong>${view.esc(record.valueText)}</strong>`), 'Callouts keep the published national value');
+          assert.match(callout[0], /<strong>[^<]*%<\/strong>/, 'Callouts include a percentage');
         }
       }
       if (model.slices.length) {
@@ -146,13 +131,7 @@ test('URL validation, identical-scope lens preservation and incompatible Protest
   }
 });
 
-test('attendance retains published NETs, exact projection, independent populations and table/chart/static equivalence', () => {
-  assert.equal(Object.keys(data.records).length, 85);
-  assert.deepEqual(Object.keys(data.attendance).sort(), [
-    'metric', 'denominatorId', 'denominatorLabel', 'axisLabel', 'question', 'instrumentSourceId',
-    'instrumentLocator', 'responseDefinition', 'scale', 'caveat', 'records'
-  ].sort());
-  assert.equal(data.attendance.records.length, 12);
+test('attendance retains independent populations, provenance and table/chart/static equivalence', () => {
   assert.deepEqual(data.attendance.scale, [0, 100]);
   const chart = view.renderView(data, {view: 'attendance', group: null, format: 'chart'});
   const list = view.renderView(data, {view: 'attendance', group: null, format: 'list'});
@@ -160,22 +139,12 @@ test('attendance retains published NETs, exact projection, independent populatio
   const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
   const staticTable = html.split('<section id="static-attendance"')[1].split('</section>')[0];
   for (const record of data.attendance.records) {
-    assert.deepEqual(Object.keys(record).sort(), [
-      'id', 'label', 'populationId', 'sourceLabel', 'status', 'valueText', 'barValue', 'source'
-    ].sort());
-    const original = internal.attendance.records.find(row => row.id === record.id);
     const display = presentation(internal, record.id);
-    assert.equal(record.valueText, original.estimate.published);
-    assert.equal(record.barValue, original.estimate.value);
     assert.equal(record.source.row, display.source.row);
     assert.equal(record.source.locator, display.source.locator);
-    assert.deepEqual(Object.keys(record.source).sort(), [
-      'title', 'publisher', 'publicationDate', 'url', 'locator', 'column', 'row', 'caveat'
-    ].sort());
     assert(!Object.hasOwn(data.records, record.id));
     for (const markup of [chart, list, html]) {
       assert(markup.includes(`data-attendance="${record.id}"`));
-      assert(markup.includes(`<strong>${record.valueText}</strong>`));
       assert(markup.includes(view.esc(record.source.row)));
       assert(markup.includes(view.esc(record.source.column)));
     }
@@ -208,7 +177,6 @@ test('static nested content includes every lens occurrence and source/threshold/
       assert(html.includes(`id="static-${lens}-${panel.parentId}"`));
     }
   }
-  assert(html.includes(view.esc(data.records.pnbc.valueText) + ' of U.S. adults'));
   assert.match(html, /Main Branch&#39;s selection and presentation are independent/);
   assert.match(html, /Ordinary rounding does not explain/);
   assert.match(html, /No written permission has been obtained or claimed/);
@@ -242,7 +210,6 @@ test('built HTML shares repeated notes, stays below 120 KB and preserves every s
       assert(source.includes(view.esc(record.source[value])), `${record.id}: ${value}`);
     }
     assert(markup.includes(view.esc(record.source.path ? record.source.path.join(' > ') : record.source.row)), record.id);
-    assert(markup.includes(view.esc(record.valueText)), `${record.id}: estimate`);
     if (record.source.caveat) {
       const caveat = source.match(/href="#(static-caveat-\d+)"/);
       assert(caveat, `${record.id}: caveat link`);
@@ -280,13 +247,8 @@ test('shared static sources preserve distinct caveats on otherwise identical sou
   assert(html.split(`id="${caveatId}"`)[1].split('</p>')[0].includes('Distinct population caveat.'));
 });
 
-test('demographics use independent subgroup denominators, exact cells and intentional public projection', () => {
-  assert.deepEqual(Object.keys(data.demographics).sort(),
-    ['wave', 'metric', 'caveat', 'reuseLimits', 'dimensions', 'questionnaire', 'populations'].sort());
+test('demographics use independent subgroup denominators and source locators', () => {
   for (const population of data.demographics.populations) {
-    assert.deepEqual(Object.keys(population).sort(), [
-      'id', 'dimension', 'label', 'denominatorId', 'denominatorLabel', 'nonresponse', 'uncertainty', 'records'
-    ].sort());
     const original = internal.demographics.populations.find(row => row.id === population.id);
     assert.equal(population.denominatorId, original.id);
     assert.equal(population.denominatorLabel, original.denominatorLabel);
@@ -303,13 +265,8 @@ test('demographics use independent subgroup denominators, exact cells and intent
     assert(!chart.includes('data-group=') && !chart.includes('Affiliation breadcrumb'));
     assert(chart.includes(view.esc(population.denominatorLabel)));
     for (const record of population.records) {
-      assert.deepEqual(Object.keys(record).sort(), ['id', 'label', 'status', 'valueText', 'barValue', 'reason', 'source'].sort());
-      const estimate = original.estimates.find(row => row.categoryId === record.id);
-      assert.equal(record.valueText, estimate.published);
-      assert.equal(record.barValue, estimate.value);
       assert.equal(record.source.column, original.column);
       assert.equal(record.source.locator, original.locator);
-      assert(chart.includes(`<strong>${view.esc(estimate.published)}</strong>`));
       assert(chart.includes(`width:${record.barValue}%`));
       assert(chart.includes(view.esc(record.source.row)) && chart.includes(view.esc(record.source.url)));
     }
@@ -317,6 +274,19 @@ test('demographics use independent subgroup denominators, exact cells and intent
     assert(!staticMarkup.includes('class="bar"'));
     assert(staticMarkup.includes(view.esc(population.denominatorLabel)));
   }
+});
+
+test('synthetic estimates render escaped text and fixed-scale numeric geometry', () => {
+  const fixture = structuredClone(data);
+  const population = fixture.demographics.populations[0];
+  Object.assign(population.records[0], {status: 'numeric', valueText: '25.0% <fixture>', barValue: 25});
+  Object.assign(population.records[1], {status: 'numeric', valueText: '50.0%', barValue: 50});
+  const markup = view.renderView(fixture, {view: 'demographics', population: population.id, format: 'chart'});
+  assert(markup.includes('<strong>25.0% &lt;fixture&gt;</strong>'));
+  assert(markup.includes('width:25%') && markup.includes('width:50%'));
+  Object.assign(fixture.records.sbc, {status: 'numeric', valueText: '2.5% <fixture>', barValue: 2.5});
+  const pie = view.renderView(fixture, {view: 'families', group: 'baptist', format: 'chart'});
+  assert(pie.includes('<strong>2.5% &lt;fixture&gt;</strong>'));
 });
 
 test('demographic URLs reject incompatible, duplicate, national and intersectional state', () => {

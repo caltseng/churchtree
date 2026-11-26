@@ -1,9 +1,10 @@
 const assert=require('node:assert/strict'),fs=require('fs'),path=require('path');
 const browserTest=require('./browser-test.cjs');
-const repoRoot=path.resolve(__dirname,'..'),root=process.env.CHURCHTREE_TEST_ROOT?path.resolve(repoRoot,process.env.CHURCHTREE_TEST_ROOT):repoRoot,output=path.join(repoRoot,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
+const repoRoot=path.resolve(__dirname,'..'),root=path.resolve(repoRoot,process.env.CHURCHTREE_TEST_ROOT||'dist'),output=path.join(repoRoot,'.tmp/browser-check');fs.mkdirSync(output,{recursive:true});
 browserTest(root,async({browser,server})=>{
+ const context=await browser.newContext({isMobile:true,hasTouch:true,deviceScaleFactor:1});
  for(const size of [{width:390,height:844},{width:320,height:568},{width:768,height:1024},{width:1024,height:768},{width:844,height:390}]){
-  const context=await browser.newContext({viewport:size,isMobile:true,hasTouch:true,deviceScaleFactor:1});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  const page=await context.newPage();await page.setViewportSize(size);const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(`http://127.0.0.1:${server.address().port}/church-history/`);await page.locator('#graph svg[aria-label^="Proportional timeline"]').waitFor();
   assert.equal(await page.locator('#layout').inputValue(),'timeline');
   assert.equal(await page.locator('#branch').inputValue(),'');
@@ -31,6 +32,37 @@ browserTest(root,async({browser,server})=>{
    assert.equal(later.y,zoom.y,'Time navigation and zoom buttons align');
   }
   await assertTimelineControlsFit();
+  if(size.width!==390){
+   for(const orientation of ['Vertical','Horizontal']){
+    await page.getByRole('button',{name:'Filters',exact:true}).tap();
+    await page.getByRole('button',{name:orientation,exact:true}).tap();
+    await page.getByRole('button',{name:'Filters',exact:true}).tap();
+    await assertTimelineControlsFit();
+    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+    await page.screenshot({path:path.join(output,`mobile-layout-${orientation}-${size.width}x${size.height}.png`)});
+   }
+   const toggle=page.getByRole('button',{name:'Search church history',exact:true});
+   await toggle.tap();await page.locator('#search').fill('Church');
+   if(size.width===320||size.height===390){
+    await page.getByRole('button',{name:'Show more results',exact:true}).tap();
+    const added=page.locator('#results button').nth(12);
+    assert(await added.evaluate(button=>button===document.activeElement));
+    const hit=await added.boundingBox(),panel=await page.locator('#search-form').boundingBox();
+    assert(hit.y>=panel.y&&hit.y+hit.height<=panel.y+panel.height);
+   }
+   await page.locator('#search').fill('PCA');
+   if(size.width===320)await page.locator('#search-form').getByRole('button',{name:'Find',exact:true}).tap();
+   else await page.getByRole('button',{name:/^PCA ·/}).tap();
+   const dialog=page.getByRole('dialog',{name:'Historical details'});
+   await dialog.waitFor();
+   assert(await page.locator('#details').evaluate(el=>el.scrollWidth<=el.clientWidth+1));
+   const before=await page.evaluate(()=>{const {domain,scale}=CHURCHTREE_TIMELINE.snapshot();return {domain,scale};});
+   await page.getByRole('button',{name:'Back to graph',exact:true}).tap();
+   await page.getByRole('button',{name:'Details',exact:true}).tap();
+   await page.getByRole('button',{name:'Back to graph',exact:true}).tap();
+   assert.deepEqual(await page.evaluate(()=>{const {domain,scale}=CHURCHTREE_TIMELINE.snapshot();return {domain,scale};}),before);
+   assert.deepEqual(errors,[]);await page.close();console.log(`Mobile layout ${size.width}x${size.height}: passed`);continue;
+  }
   const searchToggle=page.getByRole('button',{name:'Search church history',exact:true});
   assert(!await page.locator('#search-form').isVisible(),'Search starts collapsed');
   const graphBefore=await page.locator('#graph').boundingBox();
@@ -206,6 +238,7 @@ browserTest(root,async({browser,server})=>{
   if(await page.locator('#branch').isVisible())await page.getByRole('button',{name:'Filters',exact:true}).tap();
   await page.waitForTimeout(250);
   await page.screenshot({path:path.join(output,`mobile-graph-${size.width}x${size.height}.png`)});
-  assert.deepEqual(errors,[]);await context.close();console.log(`Mobile ${size.width}×${size.height}: passed`);
+  assert.deepEqual(errors,[]);await page.close();console.log(`Mobile ${size.width}×${size.height}: passed`);
  }
+ await context.close();
 }).catch(error=>{console.error(error);process.exitCode=1;});
