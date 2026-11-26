@@ -50,6 +50,7 @@ const countries=page(fs.readFileSync(path.join(root,'templates/global-church.htm
 fs.mkdirSync(path.join(root,'global-church'),{recursive:true});
 fs.writeFileSync(path.join(root,'global-church/index.html'),countries);
 console.log('Built global church: '+config.countryHistories.length+' country histories.');
+fs.mkdirSync(path.join(root,'church-history'),{recursive:true});
 fs.writeFileSync(path.join(root,'church-history/index.html'),page(fs.readFileSync(path.join(root,'templates/church-history.html'),'utf8'),{
  title:'Church History · Main Branch',description:'Explore church history with Main Branch: interactive maps and timelines of Christian traditions, with sourced histories.',
  route:'church-history/',brandHeading:true,skipTarget:'graph',skipLabel:'Skip to church history graph'

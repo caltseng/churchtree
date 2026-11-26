@@ -28,7 +28,7 @@
         orientation = query.get('orientation') === 'horizontal' ? 'horizontal' : 'vertical';
         const view = query.get('view');
         const legacyTimeline = ['orientation', 'from', 'to', 'q', 'lane'].some(key => query.has(key));
-        mode = view === 'text' ? 'text' : chapters && (view === 'era' || (!view && !legacyTimeline)) ? 'era' : graphical ? 'timeline' : 'text';
+        mode = view === 'text' || (!view && location.hash === '#record-list') ? 'text' : chapters && (view === 'era' || (!view && !legacyTimeline)) ? 'era' : graphical ? 'timeline' : 'text';
         if (chapters) {
             chapter = chapters.find(c => c.events.includes(location.hash.slice(1))) ||
                 chapters.find(c => c.id === query.get('era')) || chapters[0];
@@ -37,6 +37,7 @@
     }
     function updateQuery() {
         const url = new URL(location.href);
+        if (mode !== 'text' && url.hash === '#record-list') url.hash = '';
         for (const [key, value] of Object.entries({
             q: $('search').value.trim(), lane: $('lane').value, from: $('year-from').value,
             to: $('year-to').value, orientation: orientation === 'horizontal' ? orientation : '',

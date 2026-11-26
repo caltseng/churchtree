@@ -150,6 +150,12 @@ browserTest(root,async({browser,server})=>{
    const country=countryHistories.find(country=>route==='/'+country.path);
    if(country){
     await page.locator(country.readingChapters?'#proportional-view':'#timeline-view').click();
+    assert.equal(new URL(page.url()).hash,'',route+' view change clears the skip fragment');
+    if(country.readingChapters){
+     await page.goBack();await page.waitForFunction(()=>!document.getElementById('record-list').hidden);
+     await page.goForward();await page.waitForFunction(()=>!document.getElementById('timeline-panel').hidden);
+    }
+    await page.reload();await page.waitForFunction(()=>!document.getElementById('timeline-panel').hidden);
     await skip.focus();await page.keyboard.press('Enter');
     await page.waitForFunction(()=>document.activeElement.id==='record-list'&&!document.getElementById('record-list').hidden);
    }
