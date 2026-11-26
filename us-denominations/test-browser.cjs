@@ -2,6 +2,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const browserTest = require('../scripts/browser-test.cjs');
+const view = require('./view.js');
 const data = require('./build.cjs').publicData(require('./data.cjs').loadData());
 const repo = path.resolve(__dirname, '..');
 const root = path.resolve(repo, process.env.CHURCHTREE_TEST_ROOT || 'dist');
@@ -413,7 +414,7 @@ browserTest(root, async ({browser, base}) => {
       assert.equal(await content.locator('.bar:visible').count(), 0);
       await content.locator('[data-demographic="christian"] summary').click();
       assert(await content.locator('[data-demographic="christian"] a').isVisible());
-      assert((await content.locator('[data-demographic="christian"] .row-source').textContent()).includes(asian.records[0].source.column));
+      assert((await content.locator('[data-demographic="christian"] .row-source').textContent()).includes(view.sourceFor(data, asian.records[0]).column));
       await openInfo(/Info.*Asian/);
       await page.locator('#list-toggle').click();
       assert(await content.locator('.info-detail[open] .info-body').isVisible(), 'Chart preserves demographic Info');
@@ -556,7 +557,7 @@ browserTest(root, async ({browser, base}) => {
     await staticPage.keyboard.press('Enter');
     const sourceLocator = staticPage.locator(new URL(staticPage.url()).hash);
     assert(await sourceLocator.isVisible(), 'Keyboard follows a static row to its shared locator without JS');
-    assert((await sourceLocator.textContent()).includes(data.records.pnbc.source.column));
+    assert((await sourceLocator.textContent()).includes(view.sourceFor(data, data.records.pnbc).column));
     assert(await sourceLocator.locator('a[href$=".pdf"]').isVisible());
     await staticPage.goto(base + '/us-denominations/?view=traditions&group=presbyterian-mainline#static-traditions-presbyterian-mainline');
     assert(await staticPage.locator('#static-traditions-presbyterian-mainline').isVisible(), 'No-JS fragment opens nested ancestors');

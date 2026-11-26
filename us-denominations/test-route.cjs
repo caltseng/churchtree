@@ -9,6 +9,47 @@ const view = require('./view.js');
 const internal = loadData(), data = publicData(internal);
 const root = path.resolve(__dirname, '..');
 
+test('source references preserve every citation and save at least 25 KB without record metadata copies', () => {
+  const expanded = structuredClone(data);
+  const check = (record, expected, target) => {
+    for (const field of ['title', 'publisher', 'publicationDate', 'url', 'locator', 'column', 'caveat']) {
+      assert(!Object.hasOwn(record.source, field), `${record.id}: shared ${field}`);
+    }
+    const resolved = view.sourceFor(data, record);
+    for (const [field, value] of Object.entries(expected)) assert.deepEqual(resolved[field], value, `${record.id}: ${field}`);
+    target.source = resolved;
+  };
+  for (const record of Object.values(data.records)) {
+    const original = presentation(internal, record.id).source;
+    const {title, publisher, publicationDate, url, locator, column, row, path, caveat} = original;
+    check(record, {title, publisher, publicationDate, url, locator, column, row, path, caveat}, expanded.records[record.id]);
+  }
+  data.attendance.records.forEach((record, index) => {
+    const {title, publisher, publicationDate, url, locator, column, row, caveat} = presentation(internal, record.id).source;
+    check(record, {title, publisher, publicationDate, url, locator, column, row, caveat}, expanded.attendance.records[index]);
+  });
+  data.demographics.populations.forEach((population, index) => {
+    const original = internal.demographics.populations.find(row => row.id === population.id);
+    const source = internal.demographics.sources.find(row => row.id === original.sourceId);
+    population.records.forEach((record, rowIndex) => {
+      const estimate = original.estimates.find(row => row.categoryId === record.id);
+      const category = internal.demographics.categories.find(row => row.id === record.id);
+      check(record, {title: source.title, publisher: source.publisher, publicationDate: source.publicationDate,
+        url: source.url, locator: original.locator, column: original.column, row: estimate.sourceRow || category.sourceRow},
+      expanded.demographics.populations[index].records[rowIndex]);
+    });
+  });
+  delete expanded.sourceContexts;
+  const saved = Buffer.byteLength(JSON.stringify(expanded)) - Buffer.byteLength(JSON.stringify(data));
+  assert(saved >= 25000, `Saved ${saved} bytes`);
+});
+
+test('unknown source contexts fail explicitly instead of hiding missing citations', () => {
+  const fixture = structuredClone(data);
+  fixture.records.sbc.source.contextId = 'missing';
+  assert.throws(() => view.renderView(fixture, {view: 'families', group: 'sbc', format: 'list'}), /Unknown citation context/);
+});
+
 function assertNoPrivateInputs(folder) {
   for (const entry of fs.readdirSync(folder, {withFileTypes: true})) {
     const file = path.join(folder, entry.name);
@@ -50,8 +91,9 @@ test('each panel preserves source ranking, national labels, locators and coverag
       if (panel.coverage === 'selected') assert.match(html, /Published detail covers selected reported affiliations/);
       for (const id of panel.children) {
         const record = data.records[id];
-        assert(html.includes(view.esc(record.source.row)));
-        assert(html.includes(view.esc(record.source.url)));
+        const source = view.sourceFor(data, record);
+        assert(html.includes(view.esc(source.row)));
+        assert(html.includes(view.esc(source.url)));
         const markup = html.split(`data-record="${id}"`)[1].split('</li>')[0];
         assert(!markup.includes('class="bar"'));
         assert.equal(html.includes(`data-slice="${id}"`), record.barValue !== null, 'Only numeric estimates become slices');
@@ -160,13 +202,14 @@ test('attendance retains independent populations, provenance and table/chart/sta
   const staticTable = html.split('<section id="static-attendance"')[1].split('</section>')[0];
   for (const record of data.attendance.records) {
     const display = presentation(internal, record.id);
-    assert.equal(record.source.row, display.source.row);
-    assert.equal(record.source.locator, display.source.locator);
+    const source = view.sourceFor(data, record);
+    assert.equal(source.row, display.source.row);
+    assert.equal(source.locator, display.source.locator);
     assert(!Object.hasOwn(data.records, record.id));
     for (const markup of [chart, list, html]) {
       assert(markup.includes(`data-attendance="${record.id}"`));
-      assert(markup.includes(view.esc(record.source.row)));
-      assert(markup.includes(view.esc(record.source.column)));
+      assert(markup.includes(view.esc(source.row)));
+      assert(markup.includes(view.esc(source.column)));
     }
     assert(chart.includes(`style="width:${record.barValue}%"`));
   }
@@ -223,17 +266,18 @@ test('built HTML shares repeated notes, stays below 120 KB and preserves every s
   assert(!html.includes('<details class="row-source">'), 'Static rows link to shared evidence rather than repeating disclosures');
   assert.match(html, /id="interactive-view"[^>]*hidden><\/section>/, 'JS renders the interactive view, not a second static copy');
   function checkRow(markup, record) {
+    const resolved = view.sourceFor(data, record);
     const target = markup.match(/href="#(static-source-\d+)"/);
     assert(target, `Source link for ${record.id}`);
     const source = html.split(`id="${target[1]}"`)[1].split('</p>')[0];
     for (const value of ['url', 'publisher', 'publicationDate', 'locator', 'column']) {
-      assert(source.includes(view.esc(record.source[value])), `${record.id}: ${value}`);
+      assert(source.includes(view.esc(resolved[value])), `${record.id}: ${value}`);
     }
-    assert(markup.includes(view.esc(record.source.path ? record.source.path.join(' > ') : record.source.row)), record.id);
-    if (record.source.caveat) {
+    assert(markup.includes(view.esc(resolved.path ? resolved.path.join(' > ') : resolved.row)), record.id);
+    if (resolved.caveat) {
       const caveat = source.match(/href="#(static-caveat-\d+)"/);
       assert(caveat, `${record.id}: caveat link`);
-      assert(html.split(`id="${caveat[1]}"`)[1].split('</p>')[0].includes(view.esc(record.source.caveat)));
+      assert(html.split(`id="${caveat[1]}"`)[1].split('</p>')[0].includes(view.esc(resolved.caveat)));
     }
   }
   for (const [lens, tree] of Object.entries(data.lenses)) {
@@ -258,7 +302,10 @@ test('built HTML shares repeated notes, stays below 120 KB and preserves every s
 
 test('shared static sources preserve distinct caveats on otherwise identical source metadata', () => {
   const fixture = structuredClone(data);
-  fixture.records.catholic.source = {...fixture.records.christian.source, caveat: 'Distinct population caveat.'};
+  fixture.sourceContexts.distinct = {
+    ...fixture.sourceContexts[fixture.records.christian.source.contextId], caveat: 'Distinct population caveat.'
+  };
+  fixture.records.catholic.source = {...fixture.records.christian.source, contextId: 'distinct'};
   const html = view.renderStatic(fixture);
   const row = html.split('data-record="catholic"')[1].split('</li>')[0];
   const sourceId = row.match(/href="#(static-source-\d+)"/)[1];
@@ -285,10 +332,11 @@ test('demographics use independent subgroup denominators and source locators', (
     assert(!chart.includes('data-group=') && !chart.includes('Affiliation breadcrumb'));
     assert(chart.includes(view.esc(population.denominatorLabel)));
     for (const record of population.records) {
-      assert.equal(record.source.column, original.column);
-      assert.equal(record.source.locator, original.locator);
+      const source = view.sourceFor(data, record);
+      assert.equal(source.column, original.column);
+      assert.equal(source.locator, original.locator);
       assert(chart.includes(`width:${record.barValue}%`));
-      assert(chart.includes(view.esc(record.source.row)) && chart.includes(view.esc(record.source.url)));
+      assert(chart.includes(view.esc(source.row)) && chart.includes(view.esc(source.url)));
     }
     const staticMarkup = view.renderStatic(data).split(`id="static-demographics-${population.id}"`)[1].split('</table>')[0];
     assert(!staticMarkup.includes('class="bar"'));

@@ -65,6 +65,15 @@
   function link(source) {
     return `<a href="${esc(source.url)}">${esc(source.title)}</a>`;
   }
+  function sourceFor(data, record) {
+    const {contextId, row, path} = record.source;
+    const context = data.sourceContexts[contextId];
+    if (!context || !Object.hasOwn(data.sources, context.sourceId)) {
+      throw new Error(`Unknown citation context: ${contextId}`);
+    }
+    const {sourceId, ...details} = context;
+    return {...data.sources[sourceId], ...details, row, ...(path === undefined ? {} : {path})};
+  }
   function citation(source) {
     return `${esc(source.publisher)} (${esc(source.publicationDate)}), ${link(source)}.
       ${esc(source.locator)}; column: ${esc(source.column)}; row: ${esc(source.path ? source.path.join(' > ') : source.row)}.`;
@@ -76,15 +85,16 @@
       <p class="credit">${data.reuse.notices.map(esc).join(' ')}. ${esc(data.reuse.disclaimer)}
       <a href="#methodology">Methods, classification, questionnaire and reuse</a>.</p>`;
   }
-  function recordNotes(record) {
-    return `<p>${citation(record.source)}</p><p>${esc(record.source.caveat)}</p>
+  function recordNotes(data, record) {
+    const source = sourceFor(data, record);
+    return `<p>${citation(source)}</p><p>${esc(source.caveat)}</p>
       ${record.reason ? `<p>${esc(record.reason)}</p>` : ''}
       <p>Published label: ${esc(record.sourceLabel)}. ${kind(record)}.
       ${record.scope.tradition ? `Pew tradition: ${esc(record.scope.tradition.replace(/-/g, ' '))}.` : ''}</p>`;
   }
-  function sourceDetail(record) {
+  function sourceDetail(data, record) {
     return `<details class="row-source"><summary>Source<span class="visually-hidden"> and caveats for ${esc(record.label)}</span></summary>
-      ${recordNotes(record)}</details>`;
+      ${recordNotes(data, record)}</details>`;
   }
   const kind = record => esc(record.kind.replace(/-/g, ' '));
   function estimate(record) {
@@ -142,7 +152,7 @@
       <div class="row-label">${name}<strong class="national-value">${estimate(record)}</strong></div>
       ${record.status === 'threshold' ? '<small>Upper threshold; no slice.</small>' : ''}
       ${['unavailable', 'suppressed'].includes(record.status) ? `<small>${esc(record.reason)}; no slice.</small>` : ''}
-      ${staticSources ? staticSources(record) : sourceDetail(record)}</div>`;
+      ${staticSources ? staticSources(record) : sourceDetail(data, record)}</div>`;
   }
   function renderPie(data, state, panel, model) {
     const record = data.records[state.group];
@@ -220,10 +230,10 @@
   }
   function panelContext(data, state, panel) {
     const source = data.sources[panel.sourceId];
-    const sources = [state.group, ...panel.children].map(id => data.records[id].source);
+    const sources = [state.group, ...panel.children].map(id => sourceFor(data, data.records[id]));
     const record = data.records[state.group];
     return `${sourceLine(data, sources)}${info(record.label, `<p>${panel.coverage === 'selected' ? partial : complete}</p>
-      ${state.group === 'us-adults' ? '' : `<p><strong>${esc(record.label)}</strong></p>${recordNotes(record)}`}
+      ${state.group === 'us-adults' ? '' : `<p><strong>${esc(record.label)}</strong></p>${recordNotes(data, record)}`}
       <p class="panel-source">Hierarchy: ${link(source)}; ${esc(panel.locator)}.
       Each row's Source identifies its estimate, column and precise locator.</p>
       ${panel.children.concat(state.group).some(id => Object.hasOwn(data.interactiveStrings, id)) ? precisionDetail : ''}
@@ -249,7 +259,7 @@
       ${precisionNote(data, [state.group, ...panel.children])}
       ${panelContext(data, state, panel)}` : `<p class="leaf-note">No finer breakdown is published.</p>
       ${precisionNote(data, [state.group])}
-      ${sourceLine(data, [record.source])}${info(record.label, `${recordNotes(record)}
+      ${sourceLine(data, [sourceFor(data, record)])}${info(record.label, `${recordNotes(data, record)}
       ${Object.hasOwn(data.interactiveStrings, state.group) ? precisionDetail : ''}${context(data)}`)}`}`;
   }
   function renderAttendance(data, format, staticMode = false, staticSources) {
@@ -264,7 +274,7 @@
       <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
       <tbody>${attendance.records.map(record => `<tr data-attendance="${esc(record.id)}">
         <th scope="row">${esc(record.label)}${staticSources ? staticSources(record) : `<details class="row-source"><summary>Source and caveats for ${esc(record.label)}</summary>
-        <p>${citation(record.source)}</p><p>Published label: ${esc(record.sourceLabel)}. ${esc(record.source.caveat)}</p></details>`}</th>
+        <p>${citation(sourceFor(data, record))}</p><p>Published label: ${esc(record.sourceLabel)}. ${esc(sourceFor(data, record).caveat)}</p></details>`}</th>
         <td><strong>${esc(record.valueText)}</strong>${!staticMode ? `<div class="bar-track" aria-hidden="true"><span class="bar" style="width:${record.barValue}%"></span></div>` : ''}</td>
       </tr>`).join('')}</tbody></table></div>
       ${staticMode ? `<p>Question: ${esc(attendance.question)} ${link(data.sources[attendance.instrumentSourceId])},
@@ -303,7 +313,7 @@
       <p class="axis"><span>0%</span><span>100%</span></p></th></tr></thead>
       <tbody>${population.records.map(record => `<tr data-demographic="${esc(record.id)}" data-status="${esc(record.status)}">
         <th scope="row">${esc(record.label)}${staticSources ? staticSources(record) : `<details class="row-source"><summary>Source for ${esc(record.label)}</summary>
-        <p>${citation(record.source)}</p><p>Denominator: ${esc(population.denominatorLabel)}.</p></details>`}</th>
+        <p>${citation(sourceFor(data, record))}</p><p>Denominator: ${esc(population.denominatorLabel)}.</p></details>`}</th>
         <td><strong>${esc(record.valueText)}</strong>
         ${record.barValue !== null && !staticMode ? `<div class="bar-track" aria-hidden="true"><span class="bar" style="width:${record.barValue}%"></span></div>` : ''}
         ${record.status === 'threshold' ? '<small>Published upper threshold; no numeric bar.</small>' : ''}
@@ -313,9 +323,9 @@
       <p><a href="#static-demographic-notes">Demographic definitions and caveats</a>;
       <a href="#methodology">study methods and reuse</a>.</p>` : `<p>${esc(dimension.definition)}</p>
       <p class="coverage">${esc(demographics.caveat)}</p>
-      ${sourceLine(data, [population.records[0].source, demographics.questionnaire])}${info(population.label, `
+      ${sourceLine(data, [sourceFor(data, population.records[0]), demographics.questionnaire])}${info(population.label, `
       <p>${esc(population.nonresponse)} ${esc(population.uncertainty)}</p>
-      <p class="panel-source">${citation(population.records[0].source)} All three rows link to their exact source row and column.</p>
+      <p class="panel-source">${citation(sourceFor(data, population.records[0]))} All three rows link to their exact source row and column.</p>
       <p class="source-context">Pew Research Center, 2023-24 Religious Landscape Study, published ${esc(data.study.publicationDate)}.
       Fielded July 17, 2023-March 4, 2024 in the 50 U.S. states and D.C.
       Measure: ${esc(demographics.metric)}. Denominator: ${esc(population.denominatorLabel)}.</p>
@@ -327,7 +337,7 @@
   function renderStatic(data) {
     const sources = new Map(), caveats = new Map();
     function staticSources(record) {
-      const {row, path, caveat, ...source} = record.source;
+      const {row, path, caveat, ...source} = sourceFor(data, record);
       const key = JSON.stringify({...source, caveat});
       if (!sources.has(key)) sources.set(key, {id: sources.size + 1, source, caveat});
       const id = sources.get(key).id;
@@ -371,5 +381,5 @@
       ${[...caveats].map(([text, id]) => `<p id="static-caveat-${id}"><strong>Caveat ${id}</strong>: ${esc(text)}</p>`).join('')}
       </section>`;
   }
-  return {esc, normalize, readURL, query, ancestors, panelFor, renderView, renderStatic, context, arcPath, pieModel, palette};
+  return {esc, sourceFor, normalize, readURL, query, ancestors, panelFor, renderView, renderStatic, context, arcPath, pieModel, palette};
 });
